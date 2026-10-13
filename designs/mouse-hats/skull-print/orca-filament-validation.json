@@ -1,0 +1,17 @@
+{
+  "file": "MH-T3-EYE-R03-skull-Snapmaker-Orca.3mf",
+  "source_sha256": "f727ceae71065bb5b8376a842020971a293d72b2ed233fe4206792cfb5e6c2f2",
+  "assignments": {
+    "Skull": 1,
+    "Eyes": 3,
+    "Cornea": 2,
+    "Mount": 4
+  },
+  "filament_colors": [
+    "#E72F1D",
+    "#000000",
+    "#FFFFFF",
+    "#F4C032"
+  ],
+  "geometry_and_project_settings_unchanged": true
+}

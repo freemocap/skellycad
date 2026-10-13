@@ -1,0 +1,29 @@
+{
+  "revision": "MH-T3-EYE-R07",
+  "source_sha256": "8fcec2b57d3349c8a946fbaf219dc4ff3c3e0eefa20b5c1c3166b7594a139e4a",
+  "units": "mm, mm3, degrees",
+  "selected_arm": "B",
+  "printed_label": "B2",
+  "root_flare_toward_plug_deg": 25,
+  "lens_side_angle_to_plate_deg": 115,
+  "plug_side_angle_to_plate_deg": 65,
+  "previous_B_path_length_mm": 35.28742011115459,
+  "new_path_length_mm": 37.936826986905075,
+  "previous_B_rearward_extent_mm": 14.378646799710214,
+  "new_rearward_extent_mm": 14.573423275053202,
+  "max_centerline_plugward_shift_mm": 4.256832274446985,
+  "root_center_at_plate_mm": [
+    3.70677424482636,
+    8.2,
+    12.0966213179106
+  ],
+  "carrier_valid": true,
+  "carrier_solids": 1,
+  "Holder_overlap_mm3": 0.0,
+  "Clip_overlap_mm3": 0.0,
+  "Baseplate_overlap_mm3": 0.0,
+  "ApproxPCB_overlap_mm3": 0.0,
+  "Cap_overlap_mm3": 0.0022182255338513246,
+  "holder_gap_mm": 0.33316465223866826,
+  "optical_axis_clear": true
+}

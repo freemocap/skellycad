@@ -1,0 +1,63 @@
+{
+  "units": "mm",
+  "source": "58 RightCap",
+  "source_volume_mm3": 656.5616206943383,
+  "candidate_volume_mm3": 656.5616206943354,
+  "source_faces": 69,
+  "candidate_faces": 69,
+  "boolean_differences": {
+    "missing": {
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    "excess": {
+      "valid": false,
+      "error": "Unorientable shape\nUnorientable shape\nNo error\nNo error\nNo error\nUndetermined error\n",
+      "volume_mm3": null
+    }
+  },
+  "full_boolean_parity": false,
+  "source_and_candidate_deeper_check": "passed",
+  "boolean_fuzzy_tolerance_added_mm": 0.001,
+  "edit_checks": [
+    {
+      "property": "CoverThickness",
+      "original_mm": 1.0,
+      "tested_mm": 1.1,
+      "hole_tool_overlap_mm3": 0.0
+    },
+    {
+      "property": "VentRadius",
+      "original_mm": 2.0,
+      "tested_mm": 2.1,
+      "hole_tool_overlap_mm3": 0.0
+    },
+    {
+      "property": "SideHoleRadius",
+      "original_mm": 1.0,
+      "tested_mm": 1.1,
+      "hole_tool_overlap_mm3": 0.0
+    }
+  ],
+  "physical_fit_validated": false,
+  "source_to_candidate": {
+    "samples": 240,
+    "candidate_samples": 4719,
+    "edge_discretization_failures": 0,
+    "max_mm": 1.849544924947863e-13,
+    "rms_mm": 6.350052883314824e-14
+  },
+  "candidate_to_source": {
+    "samples": 240,
+    "candidate_samples": 4719,
+    "edge_discretization_failures": 0,
+    "max_mm": 1.831199043226453e-13,
+    "rms_mm": 6.260325753034236e-14
+  },
+  "common_volume_mm3": 656.5616206943383,
+  "interface_tolerance_mm": 0.001,
+  "source_cap_source_carrier_overlap_mm3": 0.0,
+  "rebuilt_cap_rebuilt_tray_overlap_mm3": 0.0,
+  "rebuilt_base_rebuilt_stem_overlap_mm3": 0.0,
+  "independent_rebuild_reopen_recompute_edit_restore": "passed"
+}

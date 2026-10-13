@@ -1,0 +1,10 @@
+{
+  "units": "mm",
+  "plate_length": 40,
+  "plate_width": 24,
+  "plate_thickness": 3,
+  "hole_diameter": 3.2,
+  "hole_edge_offset": 6,
+  "top_chamfer": 0.5,
+  "top_fillet_radius": 0.5
+}

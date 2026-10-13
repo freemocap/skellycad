@@ -1,0 +1,41 @@
+{
+  "revision": "MH-T3-EYE-R10",
+  "status": "R09 body-mounted arms with revised vertical ledge; physical fit pending",
+  "native_checkpoint": "designs/mouse-hats/current/checkpoints/MH-T3-EYE-R10.FCStd",
+  "native_sha256": "8bc7974226c8df0892f3c174f46bc34318605ea2ab5ab697c71a745af0d88111",
+  "build_script": "designs/mouse-hats/side-ledge-r10/build.py",
+  "export_script": "designs/mouse-hats/current/export_print.py",
+  "print_directory": "generated/mouse-hats/active/print-r10",
+  "pcb_baseline": "T3 tray/rail, flat upper ledge; side ledge up 0.5 mm, projection 0.96 mm, width 0.8 mm",
+  "matched_cap": "T3 / T2 deeper-hook cap with catch relief",
+  "pose_baseline": "Neutral camera pose retained; both arm ends on outer socket body; B2 plugward root flare",
+  "parts": {
+    "carrier": "Carrier",
+    "holder": "Holder",
+    "cap": "Cap",
+    "clip": "Clip",
+    "baseplate": "Baseplate"
+  },
+  "supersedes": [
+    "plain R11B as complete assembly baseline",
+    "skull-neutral-r01 print geometry",
+    "skull-neutral-r02 print geometry",
+    "model/CURRENT.md legacy reconstruction",
+    "MH-T3-EYE-R03 large rear loop"
+  ],
+  "working_document": "designs/mouse-hats/current/checkpoints/MH-T3-EYE-R10.FCStd",
+  "comparison_pack": {
+    "id": "R05-ABC",
+    "status": "User selected B on 2026-10-12; R07 B2 adds requested plugward flare",
+    "notes": "designs/mouse-hats/loop-options-r05/PRINT-NOTES.md",
+    "native_comparison": "designs/mouse-hats/loop-options-r05/R05-ABC-comparison.FCStd",
+    "print_pack": "generated/mouse-hats/loop-options-r05/R05-ABC-loop-space-print-pack.zip"
+  },
+  "design_study": {
+    "notes": "designs/mouse-hats/socket-body-study-r09/README.md",
+    "id": "MH-T3-EYE-R09-STUDY",
+    "status": "User approved STL export for physical print test",
+    "comparison": "designs/mouse-hats/socket-body-study-r09/R08-R09-comparison.FCStd",
+    "native": "designs/mouse-hats/socket-body-study-r09/MH-T3-EYE-R09-STUDY.FCStd"
+  }
+}

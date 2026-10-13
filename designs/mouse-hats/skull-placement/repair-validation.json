@@ -1,0 +1,15 @@
+{
+  "watertight": true,
+  "winding_consistent": true,
+  "volume_mm3": 947.3858183988941,
+  "volume_change_percent": -0.004786648223986667,
+  "components": 1,
+  "discarded_component_faces": [],
+  "sampled_repaired_to_original_surface_mm": {
+    "samples": 3000,
+    "median": 0.00027212384957023045,
+    "p95": 0.0026062127091996882,
+    "max": 0.019445173301625415
+  },
+  "note": "One-way sampled surface deviation, not a Hausdorff bound or anatomical validation."
+}

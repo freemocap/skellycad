@@ -1,0 +1,8 @@
+{
+  "reference_only": true,
+  "captured_date": "2026-10-09",
+  "source": "generated/mouse-hats/rear-arm-r06/r06a-assembly.FCStd",
+  "snapshot": "generated/mouse-hats/pcb-retention-study/reference/r06a-assembly-frozen.FCStd",
+  "sha256": "5e39d7c4895c0cda249cbcb608042276abf306bd6cb33382c4ad92144d1925a9",
+  "note": "Five-part shape snapshot for isolated PCB retention exploration; not a moving latest reference or arm source. Generated copy is disposable; source hash identifies the expected baseline."
+}

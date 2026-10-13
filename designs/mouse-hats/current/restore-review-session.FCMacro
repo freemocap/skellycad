@@ -1,0 +1,42 @@
+"""Restore review history IN PLACE; never close existing documents or the app."""
+from pathlib import Path
+import os,json,hashlib
+import FreeCAD as App,FreeCADGui as Gui
+from PySide import QtWidgets
+ROOT=Path(__file__).resolve().parents[3]
+paths=[
+ 'generated/mouse-hats/pcb-retention-study/height-geometry/t3-rim/R11B-T3-rim.FCStd',
+ 'generated/mouse-hats/skull-neutral-r01/neutral-joint-study.FCStd',
+ 'generated/mouse-hats/skull-neutral-r02/ribbon-space-study.FCStd',
+ 'designs/mouse-hats/current/checkpoints/MH-T3-EYE-R03.FCStd',
+ 'designs/mouse-hats/current/checkpoints/MH-T3-EYE-R04.FCStd',
+ 'designs/mouse-hats/loop-options-r05/R05-A.FCStd',
+ 'designs/mouse-hats/loop-options-r05/R05-B.FCStd',
+ 'designs/mouse-hats/loop-options-r05/R05-C.FCStd',
+ 'designs/mouse-hats/loop-options-r05/R05-ABC-comparison.FCStd',
+ 'designs/mouse-hats/current/checkpoints/MH-T3-EYE-R06.FCStd',
+ 'designs/mouse-hats/flat-ledge-r06/R06-A.FCStd',
+ 'designs/mouse-hats/flat-ledge-r06/R06-B.FCStd',
+ 'designs/mouse-hats/flat-ledge-r06/R06-C.FCStd',
+ 'designs/mouse-hats/flat-ledge-r06/ledge-comparison.FCStd',
+ 'designs/mouse-hats/skull-print/SkullBaseplatePrint.FCStd',
+]
+manifest=json.loads((ROOT/'designs/mouse-hats/current/active-model.json').read_text())
+current=ROOT/manifest['native_checkpoint']
+assert hashlib.sha256(current.read_bytes()).hexdigest()==manifest['native_sha256']
+paths.append(manifest['native_checkpoint'])
+existing={str(Path(d.FileName).resolve()).lower():d for d in App.listDocuments().values() if d.FileName}
+for rel in paths:
+ path=(ROOT/rel).resolve()
+ if not path.is_file():raise FileNotFoundError(path)
+ key=str(path).lower()
+ if key not in existing:existing[key]=App.openDocument(str(path))
+active=existing[str(current.resolve()).lower()]
+App.setActiveDocument(active.Name)
+Gui.activeDocument().activeView().setAnimationEnabled(False) if hasattr(Gui.activeDocument().activeView(),'setAnimationEnabled') else None
+Gui.activeDocument().activeView().fitAll()
+for tree in Gui.getMainWindow().findChildren(QtWidgets.QTreeWidget):
+ if tree.objectName()=='tree':tree.collapseAll()
+Gui.getMainWindow().showMaximized();Gui.getMainWindow().raise_();Gui.getMainWindow().activateWindow()
+out=ROOT/'generated/mouse-hats/review-session';out.mkdir(parents=True,exist_ok=True)
+(out/'desktop-session.json').write_text(json.dumps({'pid':os.getpid(),'active':active.Name,'documents':[{'name':d.Name,'file':d.FileName} for d in App.listDocuments().values()]},indent=2))

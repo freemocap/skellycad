@@ -1,0 +1,208 @@
+{
+  "source": "hardware/camera-assembly/camera-assembly-2arm-v5.stl",
+  "sha256": "1fce6b7931ccd03d27be857895ae4536ab6255d40d329f94bd0e128fbdd693df",
+  "units": "STL units unknown; dimensions are raw file units",
+  "analysis": "Exact coincident vertices welded in memory; no source modifications or repairs",
+  "limitations": "Connected shells are not necessarily physical parts. Watertightness does not prove absence of self-intersections or manufacturability.",
+  "versions": {
+    "trimesh": "4.12.2",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  },
+  "vertices": 4053,
+  "triangles": 8092,
+  "bounds": [
+    [
+      -7.045751571655273,
+      -30.10832405090332,
+      -6.784360885620117
+    ],
+    [
+      20.603429794311523,
+      20.077133178710938,
+      15.887861251831055
+    ]
+  ],
+  "extents": [
+    27.649181365966797,
+    50.18545722961426,
+    22.672222137451172
+  ],
+  "surface_area": 2805.844117524248,
+  "watertight": false,
+  "winding_consistent": true,
+  "is_volume": false,
+  "volume": null,
+  "euler_number": 5,
+  "connected_components": [
+    {
+      "id": 1,
+      "vertices": 1799,
+      "triangles": 3594,
+      "bounds": [
+        [
+          2.906342029571533,
+          -26.404817581176758,
+          -6.784360885620117
+        ],
+        [
+          20.603429794311523,
+          -16.631404876708984,
+          5.201549530029297
+        ]
+      ],
+      "extents": [
+        17.69708776473999,
+        9.773412704467773,
+        11.985910415649414
+      ],
+      "surface_area": 603.3699988359721,
+      "watertight": true,
+      "winding_consistent": true,
+      "is_volume": true,
+      "volume": 365.3864992249544,
+      "euler_number": 2
+    },
+    {
+      "id": 2,
+      "vertices": 1679,
+      "triangles": 3358,
+      "bounds": [
+        [
+          6.101415157318115,
+          -30.10832405090332,
+          -0.4423842430114746
+        ],
+        [
+          13.251778602600098,
+          -21.459117889404297,
+          7.38205099105835
+        ]
+      ],
+      "extents": [
+        7.150363445281982,
+        8.649206161499023,
+        7.824435234069824
+      ],
+      "surface_area": 268.02827818669397,
+      "watertight": true,
+      "winding_consistent": true,
+      "is_volume": true,
+      "volume": 139.56683229647697,
+      "euler_number": 0
+    },
+    {
+      "id": 3,
+      "vertices": 323,
+      "triangles": 650,
+      "bounds": [
+        [
+          -2.043701648712158,
+          -17.953880310058594,
+          -0.2044968605041504
+        ],
+        [
+          6.786359786987305,
+          20.077133178710938,
+          15.887861251831055
+        ]
+      ],
+      "extents": [
+        8.830061435699463,
+        38.03101348876953,
+        16.092358112335205
+      ],
+      "surface_area": 1280.492254660245,
+      "watertight": true,
+      "winding_consistent": true,
+      "is_volume": true,
+      "volume": 797.78230719447,
+      "euler_number": -2
+    },
+    {
+      "id": 4,
+      "vertices": 148,
+      "triangles": 292,
+      "bounds": [
+        [
+          -7.045751571655273,
+          -27.695995330810547,
+          -2.879178047180176
+        ],
+        [
+          8.50133228302002,
+          -10.400136947631836,
+          7.866209506988525
+        ]
+      ],
+      "extents": [
+        15.547083854675293,
+        17.29585838317871,
+        10.745387554168701
+      ],
+      "surface_area": 415.8399351504769,
+      "watertight": true,
+      "winding_consistent": true,
+      "is_volume": true,
+      "volume": 261.07660473618176,
+      "euler_number": 2
+    },
+    {
+      "id": 5,
+      "vertices": 100,
+      "triangles": 196,
+      "bounds": [
+        [
+          1.3125860691070557,
+          -27.62127113342285,
+          2.945680618286133
+        ],
+        [
+          8.479247093200684,
+          -17.469646453857422,
+          15.886096954345703
+        ]
+      ],
+      "extents": [
+        7.166661024093628,
+        10.15162467956543,
+        12.94041633605957
+      ],
+      "surface_area": 230.1134005558734,
+      "watertight": true,
+      "winding_consistent": true,
+      "is_volume": true,
+      "volume": 141.46813939968533,
+      "euler_number": 2
+    },
+    {
+      "id": 6,
+      "vertices": 4,
+      "triangles": 2,
+      "bounds": [
+        [
+          3.6004271507263184,
+          -27.62127113342285,
+          2.945680618286133
+        ],
+        [
+          7.680348873138428,
+          -25.456209182739258,
+          2.977747917175293
+        ]
+      ],
+      "extents": [
+        4.079921722412109,
+        2.1650619506835938,
+        0.032067298889160156
+      ],
+      "surface_area": 8.000250134986635,
+      "watertight": false,
+      "winding_consistent": true,
+      "is_volume": false,
+      "volume": null,
+      "euler_number": 1
+    }
+  ]
+}

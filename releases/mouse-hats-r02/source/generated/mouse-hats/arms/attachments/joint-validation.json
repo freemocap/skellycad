@@ -1,0 +1,14 @@
+{
+  "RearArm": {
+    "root_endcap_outside_parent_mm2": 0.0,
+    "socket_endcap_outside_parent_mm2": 0.0,
+    "cap_overlap_mm3": 0.0,
+    "controlled_section_rotation_deg": -33.34145766453233
+  },
+  "TopArm": {
+    "root_endcap_outside_parent_mm2": 0.0,
+    "socket_endcap_outside_parent_mm2": 0.0,
+    "cap_overlap_mm3": 0.0,
+    "controlled_section_rotation_deg": -45.21972958122174
+  }
+}

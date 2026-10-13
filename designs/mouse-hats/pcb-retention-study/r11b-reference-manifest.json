@@ -1,0 +1,7 @@
+{
+  "selected_option": "R11B",
+  "source": "generated/mouse-hats/rear-arm-r11/r11b-assembly.FCStd",
+  "snapshot": "generated/mouse-hats/pcb-retention-study/r11b-datum-preflight/r11b-assembly-frozen.FCStd",
+  "sha256": "33edc798f93734a2201d36cec89f742c10aaaa7af8f0b51b51464c8cb8aa7bc6",
+  "purpose": "new baseline for upper-edge work; older R06 study preserved as history"
+}

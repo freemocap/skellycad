@@ -218,3 +218,24 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local migration source, runtimes and reproducible outputs.
+/old-cad-playground/
+/.cad-tools/
+/generated/
+/.codex/config.toml
+*.FCBak
+
+# Local editor state and operating-system metadata.
+/.idea/
+/.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Automatic CAD backups. Preserve the two supplied historical Blender snapshots.
+*.FCStd1
+*.fcstd1
+*.blend[0-9]
+!/designs/mouse-hats/old/df-hardware/camera-assembly/cad/52nassembly/52nassembly_w_mouse_skull_and_camera.blend1
+!/designs/mouse-hats/old/df-hardware/rebuild/generated/two-arm-v5-reference.blend1

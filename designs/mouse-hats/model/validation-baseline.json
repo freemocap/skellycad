@@ -1,0 +1,81 @@
+{
+  "units": "mm",
+  "tolerance_mm": 0.001,
+  "baseline": {
+    "tray": {
+      "missing_mm3": 0.0,
+      "excess_mm3": 0.0,
+      "volume_difference_mm3": 4.150706445216201e-10
+    },
+    "baseplate": {
+      "missing_mm3": 0.0,
+      "excess_mm3": 0.0,
+      "volume_difference_mm3": 2.2737367544323206e-13
+    }
+  },
+  "clearance_probes": [
+    {
+      "clearance_mm": 0,
+      "overlap_mm3": 0.0,
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "bearing_plane_error_mm": [
+        0.0,
+        8.881784197001252e-15
+      ]
+    },
+    {
+      "clearance_mm": 0.025,
+      "overlap_mm3": 0.0,
+      "added_mm3": 0.0,
+      "removed_mm3": 0.8757417180584652,
+      "bearing_plane_error_mm": [
+        5.329070518200751e-15,
+        9.769962616701378e-15
+      ]
+    },
+    {
+      "clearance_mm": 0.05,
+      "overlap_mm3": 0.0,
+      "added_mm3": 0.0,
+      "removed_mm3": 1.7506504570611103,
+      "bearing_plane_error_mm": [
+        8.881784197001252e-16,
+        1.1546319456101628e-14
+      ]
+    },
+    {
+      "clearance_mm": 0.075,
+      "overlap_mm3": 0.0,
+      "added_mm3": 0.0,
+      "removed_mm3": 2.6248616176059762,
+      "bearing_plane_error_mm": [
+        1.7763568394002505e-15,
+        7.993605777301127e-15
+      ]
+    },
+    {
+      "clearance_mm": 0.1,
+      "overlap_mm3": 0.0,
+      "added_mm3": 0.0,
+      "removed_mm3": 3.498546508627233,
+      "bearing_plane_error_mm": [
+        0.0,
+        1.2434497875801753e-14
+      ]
+    },
+    {
+      "clearance_mm": 0,
+      "overlap_mm3": 0.0,
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "bearing_plane_error_mm": [
+        0.0,
+        8.881784197001252e-15
+      ]
+    }
+  ],
+  "physical_fit_validated": false,
+  "invalid_inputs_rejected": true,
+  "edited_save_reopen": "passed at 0.05 mm"
+}

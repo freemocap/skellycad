@@ -1,0 +1,27 @@
+{
+  "source_volume_mm3": 252.52628928008554,
+  "rebuilt_volume_mm3": 252.5168142442126,
+  "net_volume_difference_mm3": -0.009475035872924309,
+  "source_faces": 37,
+  "rebuilt_faces": 57,
+  "source_bop_check": "BOP check found the following errors:\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\n",
+  "rebuilt_bop_check": "passed",
+  "boolean_parity": "not established: source BOP failures make differences unreliable",
+  "source_to_rebuilt": {
+    "samples": 19328,
+    "edge_discretization_failures": 1,
+    "max_mm": 0.045414300289420784,
+    "rms_mm": 0.0018620386813853465
+  },
+  "rebuilt_to_source": {
+    "samples": 28838,
+    "edge_discretization_failures": 1,
+    "max_mm": 0.05882302447779388,
+    "rms_mm": 0.0013337154697482677
+  },
+  "plate_thickness_edit_mm": [
+    0.9999999999999574,
+    1.0999999999999575,
+    0.9999999999999574
+  ]
+}

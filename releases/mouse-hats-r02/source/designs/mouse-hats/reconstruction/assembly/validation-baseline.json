@@ -1,0 +1,161 @@
+{
+  "units": "mm",
+  "parts": {
+    "Baseplate": {
+      "volume_mm3": 603.6956708146519,
+      "faces": 33,
+      "center_error_mm": 0.0,
+      "bounds_error_mm": 0.0,
+      "valid": true,
+      "external_document": "C:/Users/jonma/code-stuff/codeberg/jonmatthis/playground/cad-playground/generated/mouse-hats/reconstruction/baseplate/01-baseplate-candidate.FCStd"
+    },
+    "Tray": {
+      "volume_mm3": 766.7988544202285,
+      "faces": 94,
+      "center_error_mm": 0.0,
+      "bounds_error_mm": 0.0,
+      "valid": true,
+      "external_document": "C:/Users/jonma/code-stuff/codeberg/jonmatthis/playground/cad-playground/generated/mouse-hats/reconstruction/main-carrier/01-tray-mount-candidate.FCStd"
+    },
+    "Cap": {
+      "volume_mm3": 656.5616206943351,
+      "faces": 69,
+      "center_error_mm": 0.0,
+      "bounds_error_mm": 0.0,
+      "valid": true,
+      "external_document": "C:/Users/jonma/code-stuff/codeberg/jonmatthis/playground/cad-playground/generated/mouse-hats/reconstruction/pcb-cap/01-pcb-cap-candidate.FCStd"
+    },
+    "Socket": {
+      "volume_mm3": 140.00748764342424,
+      "faces": 12,
+      "center_error_mm": 3.66205343881779e-15,
+      "bounds_error_mm": 1.7763568394002505e-15,
+      "valid": true,
+      "external_document": "C:/Users/jonma/code-stuff/codeberg/jonmatthis/playground/cad-playground/generated/mouse-hats/reconstruction/socket/01-socket-candidate.FCStd",
+      "spheres": [
+        {
+          "radius_mm": 2.31730769889371,
+          "center_mm": [
+            23.38155259467393,
+            3.70600980587081,
+            31.783218884120696
+          ]
+        },
+        {
+          "radius_mm": 2.1000000000000107,
+          "center_mm": [
+            23.245743461344798,
+            3.6361247834405503,
+            31.5453388044155
+          ]
+        }
+      ]
+    },
+    "Holder": {
+      "volume_mm3": 252.51681424437876,
+      "faces": 57,
+      "center_error_mm": 5.102196573270515e-15,
+      "bounds_error_mm": 3.552713678800501e-15,
+      "valid": true,
+      "external_document": "C:/Users/jonma/code-stuff/codeberg/jonmatthis/playground/cad-playground/generated/mouse-hats/reconstruction/camera-holder/01-holder-candidate.FCStd",
+      "spheres": [
+        {
+          "radius_mm": 2.0,
+          "center_mm": [
+            23.389866045705563,
+            3.71028776127649,
+            31.797780520653514
+          ]
+        }
+      ]
+    },
+    "Clip": {
+      "volume_mm3": 57.257905099136494,
+      "faces": 29,
+      "center_error_mm": 4.440892098500626e-16,
+      "bounds_error_mm": 0.0,
+      "valid": true,
+      "external_document": "C:/Users/jonma/code-stuff/codeberg/jonmatthis/playground/cad-playground/generated/mouse-hats/reconstruction/camera-clip/03-complete-clip.FCStd"
+    }
+  },
+  "pairs": {
+    "Baseplate / Tray": {
+      "valid": true,
+      "overlap_mm3": 0.0
+    },
+    "Baseplate / Cap": {
+      "valid": true,
+      "overlap_mm3": 0.0
+    },
+    "Baseplate / Socket": {
+      "valid": true,
+      "overlap_mm3": 0.0
+    },
+    "Baseplate / Holder": {
+      "valid": true,
+      "overlap_mm3": 0.0
+    },
+    "Baseplate / Clip": {
+      "valid": true,
+      "overlap_mm3": 0.0
+    },
+    "Tray / Cap": {
+      "valid": true,
+      "overlap_mm3": 0.0
+    },
+    "Tray / Socket": {
+      "valid": true,
+      "overlap_mm3": 0.0
+    },
+    "Tray / Holder": {
+      "valid": true,
+      "overlap_mm3": 0.0
+    },
+    "Tray / Clip": {
+      "valid": true,
+      "overlap_mm3": 0.0
+    },
+    "Cap / Socket": {
+      "valid": true,
+      "overlap_mm3": 0.0
+    },
+    "Cap / Holder": {
+      "valid": true,
+      "overlap_mm3": 0.0
+    },
+    "Cap / Clip": {
+      "valid": true,
+      "overlap_mm3": 0.0
+    },
+    "Socket / Holder": {
+      "valid": true,
+      "overlap_mm3": 0.0
+    },
+    "Socket / Clip": {
+      "valid": true,
+      "overlap_mm3": 0.0
+    },
+    "Holder / Clip": {
+      "valid": true,
+      "overlap_mm3": 0.0
+    }
+  },
+  "edits": [
+    {
+      "part": "Cap",
+      "property": "VentRadius",
+      "before_mm3": 656.5616206943351,
+      "after_mm3": 652.6974617304206
+    },
+    {
+      "part": "Baseplate",
+      "property": "BoreRadius",
+      "before_mm3": 603.6956708146519,
+      "after_mm3": 600.6326179774101
+    }
+  ],
+  "boolean_tolerance_mm": 0.001,
+  "physical_fit_validated": false,
+  "ball_socket_center_offset_mm": 0.29999714448893333,
+  "ball_socket_note": "Inherited nonconcentric placement; radius difference is not uniform clearance."
+}

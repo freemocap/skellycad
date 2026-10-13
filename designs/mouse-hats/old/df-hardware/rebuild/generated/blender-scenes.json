@@ -1,0 +1,105 @@
+{
+  "blender_version": "5.2.2 LTS",
+  "scenes": [
+    {
+      "path": "hardware/baseplate/tall_mount_w_skull.blend",
+      "objects": [
+        {
+          "name": "mouse_skull_low_poly_solid",
+          "type": "MESH",
+          "dimensions": [
+            24.005184173583984,
+            12.352750778198242,
+            11.36924934387207
+          ],
+          "modifiers": []
+        },
+        {
+          "name": "tall_53n_baseplate",
+          "type": "MESH",
+          "dimensions": [
+            10.208456993103027,
+            12.39316177368164,
+            12.921834945678711
+          ],
+          "modifiers": []
+        }
+      ]
+    },
+    {
+      "path": "hardware/camera-assembly/cad/52nassembly/52nassembly_w_mouse_skull_and_camera.blend",
+      "objects": [
+        {
+          "name": "Camera",
+          "type": "CAMERA",
+          "dimensions": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "modifiers": []
+        },
+        {
+          "name": "Mouse_Skull.001",
+          "type": "MESH",
+          "dimensions": [
+            17.599653244018555,
+            54.8422737121582,
+            37.69353103637695
+          ],
+          "modifiers": [
+            {
+              "name": "Decimate",
+              "type": "DECIMATE"
+            }
+          ]
+        },
+        {
+          "name": "Mouse_Skull.002",
+          "type": "MESH",
+          "dimensions": [
+            12.503718376159668,
+            13.593276023864746,
+            26.39667510986328
+          ],
+          "modifiers": [
+            {
+              "name": "Decimate",
+              "type": "DECIMATE"
+            }
+          ]
+        },
+        {
+          "name": "right-eye-empty",
+          "type": "EMPTY",
+          "dimensions": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "modifiers": []
+        },
+        {
+          "name": "Sphere",
+          "type": "MESH",
+          "dimensions": [
+            4.0,
+            4.0,
+            2.9846768379211426
+          ],
+          "modifiers": []
+        },
+        {
+          "name": "Sphere.001",
+          "type": "MESH",
+          "dimensions": [
+            1.8866080045700073,
+            1.8866081237792969,
+            1.5237789154052734
+          ],
+          "modifiers": []
+        }
+      ]
+    }
+  ]
+}

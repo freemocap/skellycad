@@ -1,0 +1,18 @@
+{
+  "revision": "MH-T3-EYE-R03",
+  "units": "mm",
+  "input_snapshot_sha256": "d4d6d99a59769d97d02729a4227550067e4a89447bae68fac64909e3f606fdf3",
+  "pcb_source": "generated\\mouse-hats\\pcb-retention-study\\height-geometry\\t3-rim\\R11B-T3-rim.FCStd",
+  "pcb_source_sha256": "c2b275f541764c44423374b261acfdaf3daa3f5d4bd7af93870d0493c09942b2",
+  "eye_source": "generated\\mouse-hats\\skull-neutral-r02\\ribbon-space-study.FCStd",
+  "eye_source_sha256": "0d97d37ecdc1f71b84b5f7e80e0bd1901c09f6198aa2ed72d3782c1467a44abb",
+  "source_chat": "01a1219c-72e5-7d32-8df8-111dbec1ee7f",
+  "source_chat_title": "Design an original 3D shape - pcb spring catch",
+  "latest_pcb_turn": "01a1269c-35fb-7541-8bf2-aaf037e4271d",
+  "splice_planes_mm": {
+    "full_tray_below_z": 14.5,
+    "upper_tray_min_x": 3.0,
+    "upper_tray_max_z": 18.0
+  },
+  "reason": "Preserve complete latest T3 tray and matched cap while retaining corrected eye/ribbon arm geometry. Splices cross unchanged straight arm roots."
+}

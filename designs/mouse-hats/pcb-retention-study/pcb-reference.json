@@ -1,0 +1,22 @@
+{
+  "units": "mm",
+  "status": "fit-derived envelope; not a direct measurement of PCB outline",
+  "basis": "User confirms real PCB fits unchanged lens-end printed catches. Width and transverse position inferred from those CAD slot faces.",
+  "slot_lower_y_mm": 8.1683586623637,
+  "slot_upper_y_mm": 17.3923586623637,
+  "slot_width_mm": 9.224,
+  "board_underside_origin_mm": [
+    5.28706399647303,
+    8.18,
+    -14.0
+  ],
+  "board_length_mm": 30.0,
+  "board_width_mm": 9.2,
+  "board_thickness_mm": 0.25,
+  "board_upper_y_mm": 17.38,
+  "length_note": "30 mm and longitudinal placement remain approximate; this check constrains width and transverse position.",
+  "component_heights_from_underside_mm": {
+    "ordinary": 1.0,
+    "connector": 1.7
+  }
+}

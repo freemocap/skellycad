@@ -1,0 +1,17 @@
+{
+  "rear": {
+    "volume_mm3": 213.1920045207903,
+    "bore_overlap_mm3": 0.0,
+    "ball_seat_overlap_mm3": 0.0,
+    "socket_overlap_mm3": 2.071682108577458,
+    "tray_overlap_mm3": 5.478359684038912
+  },
+  "top": {
+    "volume_mm3": 124.13124658204899,
+    "bore_overlap_mm3": 0.0,
+    "ball_seat_overlap_mm3": 0.0,
+    "socket_overlap_mm3": 2.6408093977557487,
+    "tray_overlap_mm3": 5.645400008966668
+  },
+  "combined_solid_count": 1
+}

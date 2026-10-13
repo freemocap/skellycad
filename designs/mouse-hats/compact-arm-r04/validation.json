@@ -1,0 +1,39 @@
+{
+  "revision": "MH-T3-EYE-R04",
+  "units": "mm, mm3",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 1236.6260710611512,
+  "new_root_mm": [
+    4.10677424482636,
+    8.2,
+    12.0966213179106
+  ],
+  "old_root_mm": [
+    4.10677424482636,
+    12.550767,
+    16.7662968498585
+  ],
+  "new_path_length_mm": 28.748834409330307,
+  "old_loop_plus_extension_length_mm": 42.43753,
+  "new_arm_xmin_mm": -7.490519613668405,
+  "old_arm_xmin_mm": -16.2579,
+  "holder_gap_mm": 0.3331646522386648,
+  "Holder_overlap_mm3": 0.0,
+  "Holder_baseline_overlap_mm3": 0.0,
+  "Clip_overlap_mm3": 0.0,
+  "Clip_baseline_overlap_mm3": 0.0,
+  "Baseplate_overlap_mm3": 0.0,
+  "Baseplate_baseline_overlap_mm3": 0.0,
+  "ApproxPCB_overlap_mm3": 0.0,
+  "ApproxPCB_baseline_overlap_mm3": 0.0,
+  "Cap_overlap_mm3": 0.0022182255338513246,
+  "Cap_baseline_overlap_mm3": 0.0022182255338513393,
+  "UpperCatch_missing_mm3": 0.0,
+  "UpperRail_missing_mm3": 0.0,
+  "optical_obstruction_mm": 0.0,
+  "rearward_reach_old_mm": 19.96467424482636,
+  "rearward_reach_new_mm": 11.197293858494765,
+  "rearward_reach_reduction_percent": 43.91446751806417,
+  "tray_holes_retained": true
+}

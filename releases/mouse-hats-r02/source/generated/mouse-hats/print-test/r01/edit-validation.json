@@ -1,0 +1,16 @@
+{
+  "reopen_edit_restore": "passed",
+  "tested_upper_extensions_mm": [
+    1,
+    1.5
+  ],
+  "tested_lower_extensions_mm": [
+    0.5,
+    0.7
+  ],
+  "tested_wall_additions_mm": [
+    0.4,
+    0.5
+  ],
+  "clip_width_follows_wall_addition": true
+}

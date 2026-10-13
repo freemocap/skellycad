@@ -1,0 +1,25 @@
+{
+  "carrier": {
+    "added_mm3": 17.29815982157765,
+    "removed_mm3": 0.0,
+    "cap_overlap_mm3": 0.0,
+    "baseplate_overlap_mm3": 0.0,
+    "valid": true,
+    "solid_count": 1
+  },
+  "holder": {
+    "added_mm3": 49.114738196259665,
+    "removed_mm3": 0.0,
+    "original_holder_vs_extended_clip_overlap_mm3": 0.002058040106376823,
+    "clip_overlap_mm3": 0.004474538606412517,
+    "new_material_clip_overlap_mm3": 0.0027060255706167218,
+    "added_within_original_outer_width_mm3": 0.0,
+    "clip_fit_note": "Tiny inherited-skew contact; no macroscopic interference. Inspect in print test.",
+    "valid": true,
+    "solid_count": 1
+  },
+  "clip": {
+    "valid": true,
+    "solid_count": 1
+  }
+}

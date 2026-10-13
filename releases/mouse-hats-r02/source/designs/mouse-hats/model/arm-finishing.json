@@ -1,0 +1,7 @@
+{
+  "units": "mm",
+  "tray_root_radius_mm": 0.5,
+  "socket_root_radius_mm": 0.3,
+  "collar_outer_radius_mm": 2.701637,
+  "intent": "Add material at concave arm junctions; preserve paths, flush exterior roots and fitting surfaces"
+}

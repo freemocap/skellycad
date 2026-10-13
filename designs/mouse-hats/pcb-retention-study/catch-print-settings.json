@@ -1,0 +1,13 @@
+{
+  "units": "mm",
+  "pcb_seating_x": 5.28706399647303,
+  "pcb_top_y": 17.38,
+  "pcb_thickness": 0.25,
+  "lip_z_start": -10.7,
+  "lip_length": 2.0,
+  "lip_lower_y": 17.0,
+  "roof_clearance_from_seat": 0.6,
+  "roof_thickness": 0.6,
+  "post_thickness": 0.4,
+  "cap_wall_clearance": 0.15
+}

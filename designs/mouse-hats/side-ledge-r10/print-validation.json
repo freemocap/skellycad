@@ -1,0 +1,18 @@
+{
+  "MH-T3-EYE-R10-baseplate.stl": {
+    "watertight": true,
+    "shells": 1
+  },
+  "MH-T3-EYE-R10-camera-clip.stl": {
+    "watertight": true,
+    "shells": 1
+  },
+  "MH-T3-EYE-R10-carrier-and-holder.stl": {
+    "watertight": true,
+    "shells": 2
+  },
+  "MH-T3-EYE-R10-matching-cap.stl": {
+    "watertight": true,
+    "shells": 1
+  }
+}

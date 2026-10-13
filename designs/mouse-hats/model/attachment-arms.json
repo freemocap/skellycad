@@ -1,0 +1,97 @@
+{
+  "units": "mm",
+  "socket_center_mm": [
+    12.160332519724188,
+    4.79737568941241,
+    24.086697428835436
+  ],
+  "socket_axis": [
+    -0.06766810814747441,
+    0.31767937320295375,
+    0.9457805469458125
+  ],
+  "attachment_height_mm": 3.9,
+  "attachment_radius_mm": 2.25,
+  "width_mm": 3.0,
+  "thickness_mm": 1.8,
+  "sections": 33,
+  "rear": {
+    "root_mm": [
+      4.10677424482636,
+      7.86588286441313,
+      12.26
+    ],
+    "root_tangent": [
+      -1,
+      0,
+      0
+    ],
+    "bend_mm": [
+      -3.0,
+      3.0,
+      21.0
+    ],
+    "bend_tangent": [
+      0,
+      0,
+      1
+    ],
+    "root_handle_mm": 10.0,
+    "bend_handle_mm": 5.0,
+    "socket_handle_mm": 10.0,
+    "radial_direction": [
+      -0.9977078866781307,
+      -0.02154614839589256,
+      -0.06414621071864238
+    ],
+    "root_width_direction": [
+      0,
+      1,
+      0
+    ],
+    "root_width_mm": 2.6,
+    "root_thickness_mm": 2.0
+  },
+  "top": {
+    "root_mm": [
+      4.4969191206496975,
+      16.0918887142941,
+      17.3662968498585
+    ],
+    "root_tangent": [
+      0,
+      0,
+      1
+    ],
+    "bend_mm": [
+      7.5,
+      15.0,
+      24.5
+    ],
+    "bend_tangent": [
+      0,
+      -1,
+      0.3
+    ],
+    "root_handle_mm": 5.0,
+    "bend_handle_mm": 3.0,
+    "socket_handle_mm": 4.0,
+    "radial_direction": [
+      -0.0,
+      0.9479533634787529,
+      -0.318409203179367
+    ],
+    "root_width_direction": [
+      0,
+      1,
+      0
+    ],
+    "root_width_mm": 3.0,
+    "root_thickness_mm": 1.5802897516466756
+  },
+  "socket_width_mm": 2.4,
+  "socket_thickness_mm": 1.8,
+  "root_lead_mm": 1.5,
+  "embed_mm": 0.4,
+  "socket_lead_mm": 1.0
+}

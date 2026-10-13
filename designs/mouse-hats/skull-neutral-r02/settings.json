@@ -1,0 +1,14 @@
+{
+  "units": "mm",
+  "source": "R01 neutral joint pose and R11B rear loop",
+  "joint_shift_mm": [
+    -7.492981093651684,
+    0.3428476364647732,
+    -0.6522350506163406
+  ],
+  "root_connection_overlap_mm": 0.1,
+  "root_connection_sections": 17,
+  "root_connection_loft_degree": 3,
+  "ribbon_loop_shape": "R11B rigid translation; no compression or scaling",
+  "ribbon_dimensions": "Not supplied; geometric envelope preservation, no physical cable fit claim"
+}

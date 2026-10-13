@@ -1,0 +1,50 @@
+{
+  "revision": "MH-T3-EYE-R03",
+  "native_sha256": "7cfb2b198e5c56519ec41ac9c50a12d98479c81c5f88b87e5ae1cbeed794598e",
+  "units": "mm",
+  "linear_deflection_mm": 0.03,
+  "angular_deflection_rad": 0.15,
+  "files": {
+    "MH-T3-EYE-R03-carrier-and-holder.stl": {
+      "expected_shells": 2,
+      "native_volumes_mm3": [
+        1325.0016877918847,
+        301.6317729979904
+      ],
+      "watertight": true,
+      "consistent_winding": true,
+      "shells": 2,
+      "sha256": "1c9c4842ab0f3247ff97956119be552c25eaeca138e4b560593b2ab6e5fcafcd"
+    },
+    "MH-T3-EYE-R03-matching-cap.stl": {
+      "expected_shells": 1,
+      "native_volumes_mm3": [
+        700.952520098959
+      ],
+      "watertight": true,
+      "consistent_winding": true,
+      "shells": 1,
+      "sha256": "dffc4db3a7d60a123fd3b01178aaf8f0b53a5ee6214489822b4d24cacc7c5bb9"
+    },
+    "MH-T3-EYE-R03-camera-clip.stl": {
+      "expected_shells": 1,
+      "native_volumes_mm3": [
+        62.29604497992811
+      ],
+      "watertight": true,
+      "consistent_winding": true,
+      "shells": 1,
+      "sha256": "7053b1b3f95e54cd42f07da68443d09f74bf2385a45ec1f5113a121186f5878c"
+    },
+    "MH-T3-EYE-R03-baseplate.stl": {
+      "expected_shells": 1,
+      "native_volumes_mm3": [
+        442.12802193929883
+      ],
+      "watertight": true,
+      "consistent_winding": true,
+      "shells": 1,
+      "sha256": "dfcaf39f63c3dc072ac5bacc866a5f15c954852621a81f0a72a09d94b111b166"
+    }
+  }
+}

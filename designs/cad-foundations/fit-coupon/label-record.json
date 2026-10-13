@@ -1,0 +1,11 @@
+{
+  "font": "C:/Windows/Fonts/arialbd.ttf",
+  "font_sha256": "e8f4e3baf6cc35fed6fcce3a540e8b39e8f6cda1d22a28f2ec8f526fef7a43f5",
+  "labels_mm": [
+    3.1,
+    3.3,
+    3.5
+  ],
+  "relief_mm": 0.6,
+  "solid_count": 1
+}

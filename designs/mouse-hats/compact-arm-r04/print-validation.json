@@ -1,0 +1,22 @@
+{
+  "MH-T3-EYE-R04-baseplate.stl": {
+    "watertight": true,
+    "shells": 1,
+    "volume_mm3": 442.1255004317047
+  },
+  "MH-T3-EYE-R04-camera-clip.stl": {
+    "watertight": true,
+    "shells": 1,
+    "volume_mm3": 62.296032844377486
+  },
+  "MH-T3-EYE-R04-carrier-and-holder.stl": {
+    "watertight": true,
+    "shells": 2,
+    "volume_mm3": 1538.0438239478906
+  },
+  "MH-T3-EYE-R04-matching-cap.stl": {
+    "watertight": true,
+    "shells": 1,
+    "volume_mm3": 700.9882326312968
+  }
+}

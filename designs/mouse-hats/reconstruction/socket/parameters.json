@@ -1,0 +1,24 @@
+{
+  "units": "mm",
+  "source": "58nassembly.step / Body44",
+  "source_sha256": "3286036e4cbd6b1c993e96079f24afc29d375bedddda2e24fd93b2d18c3c9260",
+  "collar_height_mm": 3.0,
+  "collar_base_z_mm": 2.4,
+  "collar_radius_mm": 2.70163704523684,
+  "bore_radius_mm": 1.45,
+  "seat_radius_mm": 2.1,
+  "local_to_assembly": {
+    "translation_mm": [
+      23.2457434613448,
+      3.63612478344055,
+      31.5453388044155
+    ],
+    "quaternion_xyzw": [
+      -0.1288164987386845,
+      0.25033200187284094,
+      0.0,
+      0.9595520822191167
+    ]
+  },
+  "profile_note": "Axial section preserves source curves; revolving approximates slightly non-coaxial bore and any azimuthal variation."
+}

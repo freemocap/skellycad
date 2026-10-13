@@ -1,0 +1,28 @@
+{
+  "units": "mm",
+  "font": "C:\\Windows\\Fonts\\arialbd.ttf",
+  "font_sha256": "e8f4e3baf6cc35fed6fcce3a540e8b39e8f6cda1d22a28f2ec8f526fef7a43f5",
+  "letter_height_mm": 3.5,
+  "relief_mm": 0.4,
+  "embed_mm": 0.05,
+  "variants": {
+    "H": {
+      "height_extra_mm": 0.5,
+      "source": "height-0p5.FCStd"
+    },
+    "T": {
+      "height_extra_mm": 1.0,
+      "source": "height-1p0.FCStd"
+    }
+  },
+  "carrier_label_center_mm": [
+    3.70677424482636,
+    14.1,
+    0.0
+  ],
+  "cap_label_center_mm": [
+    10.2870639964732,
+    12.5,
+    -15.5
+  ]
+}

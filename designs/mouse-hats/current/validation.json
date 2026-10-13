@@ -1,0 +1,15 @@
+{
+  "revision": "MH-T3-EYE-R10",
+  "units": "mm, mm3",
+  "source_sha256": "fe57f8dee4aed5fcdb1b2e303ed2b957b821e44f0a01da95e2842c353def7794",
+  "carrier_valid": true,
+  "carrier_solids": 1,
+  "ledge_cap_gap_mm": 1.0923586623637007,
+  "ledge_pcb_gap_mm": 0.5033786820893997,
+  "holder_gap_mm": 0.33316465223867014,
+  "Holder_overlap_mm3": 0.0,
+  "Cap_overlap_mm3": 0.002218225533851323,
+  "Clip_overlap_mm3": 0.0,
+  "Baseplate_overlap_mm3": 0.0,
+  "ApproxPCB_overlap_mm3": 0.0
+}

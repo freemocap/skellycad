@@ -1,0 +1,23 @@
+Mouse-hats R02 print test — dimensions in mm
+
+carrier-and-holder-print-in-place.stl contains TWO bodies in their assembled
+relative positions. Keep their positions together. Do not fuse or independently
+arrange them. Choose bed orientation/supports in Orca; no slicer setup is supplied.
+
+clip.stl, cap.stl and baseplate.stl are separate parts to print and install later.
+The clip shown gold in FreeCAD is an installed reference, excluded from the
+print-in-place STL. Use this revised clip with the thickened holder.
+
+Changes: two PCB tabs +1.5 mm along their edges, lower tab +0.7 mm; holder exterior
+walls +0.5 mm each; clip span +1 mm. Sensor cavity and ball/neck sizes unchanged.
+Carrier includes the accepted arm fillets and R3 stem blend.
+
+This is a fit-test candidate. Modeled joint separation is about 0.121 mm at the
+exported pose. Inspect support placement and joint gap in the slicer; release,
+clip retention, ribbon fit and physical strength are not yet validated.
+Full motion clearance and larger ball/neck redesign are still pending.
+
+R02 changes only the baseplate exterior below its mounting-pocket floor.
+Bottom footprint scaled to 0.57004 of width/depth, matching the supplied tapered
+mesh. Contact area 67.483 -> 21.928 mm2. Mounting interior and upper seat unchanged.
+The other three STL files are byte-identical to R01. R01 remains preserved.

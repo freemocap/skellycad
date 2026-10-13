@@ -1,0 +1,40 @@
+{
+  "units": "mm and mm3",
+  "method": {
+    "attachment_angle_deg": 45.0,
+    "attachment_center_mm": [
+      10.026888965318513,
+      4.219645095014364,
+      28.251687940284576
+    ],
+    "frame_twist_deg": -106.62820532976677,
+    "centerline_min_y_mm": 0.4833469466886595,
+    "path_length_mm": 34.78760111475176,
+    "method": "Rigidly translated original R11B loop plus cubic tray extension",
+    "extension_length_mm": 7.649933530886271,
+    "extension_overlap_mm": 0.1
+  },
+  "joint_shift_mm": [
+    -7.492981093651684,
+    0.3428476364647732,
+    -0.6522350506163406
+  ],
+  "carrier_valid": true,
+  "carrier_solids": 1,
+  "carrier_volume_mm3": 1267.2360909018957,
+  "holder_overlap_mm3": 0.0,
+  "holder_gap_mm": 0.33316465223865394,
+  "clip_overlap_mm3": 0.0,
+  "baseplate_overlap_mm3": 0.0,
+  "cap_overlap_mm3": 0.0,
+  "optical_obstruction_mm": 0.0,
+  "original_loop_rigidly_translated": true,
+  "loop_holder_gap_mm": 1.6433323369968742,
+  "extension_holder_gap_mm": 5.940540903973378,
+  "saved_reopen_pass": true,
+  "invalid_document_objects": [],
+  "holder_pose_delta_from_R01_mm": 0.0,
+  "carrier_min_x_mm": -16.2456,
+  "R01_carrier_min_x_mm": -9.65561,
+  "scope": "Static geometry; no ribbon model or full motion verification"
+}

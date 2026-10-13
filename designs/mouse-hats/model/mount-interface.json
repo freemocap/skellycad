@@ -1,0 +1,46 @@
+{
+  "units": "mm",
+  "frame": "58 assembly XYZ",
+  "bearing_faces": [
+    {
+      "name": "negative_z_bearing",
+      "normal": [
+        0.7044160264083232,
+        0.08715574274765832,
+        -0.7044160263971943
+      ],
+      "stem_offset_mm": 4.841552480001319,
+      "nominal_pocket_allowance_mm": 0
+    },
+    {
+      "name": "positive_z_bearing",
+      "normal": [
+        0.7044160264083228,
+        0.08715574274765826,
+        0.7044160263971947
+      ],
+      "stem_offset_mm": 4.787258913938508,
+      "nominal_pocket_allowance_mm": 8.0491036e-08
+    }
+  ],
+  "entry_faces": [
+    {
+      "normal": [
+        0.6644074811901424,
+        -0.3422358804846301,
+        -0.6644074811796452
+      ],
+      "offset_mm": 2.867187037847652
+    },
+    {
+      "normal": [
+        0.6644074811901419,
+        -0.3422358804846299,
+        0.6644074811796458
+      ],
+      "offset_mm": 2.8159772461316623
+    }
+  ],
+  "fixed_floor_y_mm": 1.5,
+  "note": "Normals preserved from measured geometry. Draft/slope controls are not exposed in this first refactor."
+}

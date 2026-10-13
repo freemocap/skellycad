@@ -1,0 +1,6 @@
+{
+  "holder_carrier_overlap_mm3": 0.0,
+  "pose_source": "V5 holder mesh, rigid fit with ball-center anchor",
+  "holder_pose_fit_p70_mm": 0.32800455283026675,
+  "minimum_separation_mm": 0.12114595789148572
+}

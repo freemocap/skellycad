@@ -1,0 +1,132 @@
+{
+  "units": "mm",
+  "rotation": "quaternion XYZW",
+  "parts": [
+    {
+      "name": "Baseplate",
+      "file": "generated/mouse-hats/reconstruction/baseplate/01-baseplate-candidate.FCStd",
+      "object": "Baseplate",
+      "local_to_assembly": {
+        "translation_mm": [
+          0,
+          0,
+          0
+        ],
+        "quaternion_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "group": "MountAndElectronics",
+      "label": "Skull baseplate",
+      "frame_source": "58 STEP measured frame; holder transform inverted from assembly_to_holder_frame"
+    },
+    {
+      "name": "Tray",
+      "file": "generated/mouse-hats/reconstruction/main-carrier/01-tray-mount-candidate.FCStd",
+      "object": "PCBTrayAndMount",
+      "local_to_assembly": {
+        "translation_mm": [
+          0,
+          0,
+          0
+        ],
+        "quaternion_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "group": "MountAndElectronics",
+      "label": "PCB tray + stem (arm omitted)",
+      "frame_source": "58 STEP measured frame; holder transform inverted from assembly_to_holder_frame"
+    },
+    {
+      "name": "Cap",
+      "file": "generated/mouse-hats/reconstruction/pcb-cap/01-pcb-cap-candidate.FCStd",
+      "object": "PCBCap",
+      "local_to_assembly": {
+        "translation_mm": [
+          0,
+          0,
+          0
+        ],
+        "quaternion_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "group": "MountAndElectronics",
+      "label": "PCB cap",
+      "frame_source": "58 STEP measured frame; holder transform inverted from assembly_to_holder_frame"
+    },
+    {
+      "name": "Socket",
+      "file": "generated/mouse-hats/reconstruction/socket/01-socket-candidate.FCStd",
+      "object": "UpperCollar",
+      "local_to_assembly": {
+        "translation_mm": [
+          23.2457434613448,
+          3.63612478344055,
+          31.5453388044155
+        ],
+        "quaternion_xyzw": [
+          -0.1288164987386845,
+          0.25033200187284094,
+          0.0,
+          0.9595520822191167
+        ]
+      },
+      "group": "CameraHead",
+      "label": "Socket (arm omitted)",
+      "frame_source": "58 STEP measured frame; holder transform inverted from assembly_to_holder_frame"
+    },
+    {
+      "name": "Holder",
+      "file": "generated/mouse-hats/reconstruction/camera-holder/01-holder-candidate.FCStd",
+      "object": "TrimHolderSide",
+      "local_to_assembly": {
+        "translation_mm": [
+          25.126629733164208,
+          3.2413908257972537,
+          22.76263336355321
+        ],
+        "quaternion_xyzw": [
+          -0.2652040997709253,
+          0.09431892888604314,
+          -0.6567161734207563,
+          0.6996389016386109
+        ]
+      },
+      "group": "CameraHead",
+      "label": "Camera holder + ball",
+      "frame_source": "58 STEP measured frame; holder transform inverted from assembly_to_holder_frame"
+    },
+    {
+      "name": "Clip",
+      "file": "generated/mouse-hats/reconstruction/camera-clip/03-complete-clip.FCStd",
+      "object": "RightCrown",
+      "local_to_assembly": {
+        "translation_mm": [
+          25.1266297331642,
+          3.24139082579725,
+          22.7626333635532
+        ],
+        "quaternion_xyzw": [
+          -0.26518533310899495,
+          0.09437167999662331,
+          -0.6565769920122781,
+          0.6997695182548288
+        ]
+      },
+      "group": "CameraHead",
+      "label": "Camera retaining clip",
+      "frame_source": "58 STEP measured frame; holder transform inverted from assembly_to_holder_frame"
+    }
+  ]
+}

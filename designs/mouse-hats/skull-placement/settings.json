@@ -1,0 +1,11 @@
+{
+  "units": "mm, degrees",
+  "baseline": "R11B selected 2026-10-10",
+  "repair_voxel_size_mm": 0.04,
+  "repair_decimate_ratio": 0.05,
+  "lens_plate_center_local_mm": [4.386955726550671, -4.398513889405836, 2.9995863743117397],
+  "lens_axis_local": [0, 0, -1],
+  "datum_note": "Approximate center of the flat holder region marked by user; exact lens/sensor location remains adjustable.",
+  "target_method": "Eye surface support point toward original lens; pupil-area proxy, not an anatomical pupil landmark.",
+  "placement_method": "Original tall_mount_w_skull Blender scene, rigid baseplate registration to native assembly; no scale."
+}

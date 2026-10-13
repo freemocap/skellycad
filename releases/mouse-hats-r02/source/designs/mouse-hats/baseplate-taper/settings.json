@@ -1,0 +1,9 @@
+{
+  "units": "mm",
+  "bottom_scale": 0.57004,
+  "taper_start_y_mm": 1.5,
+  "bottom_y_mm": -5.0,
+  "pivot": "arithmetic mean of the seven outer-profile vertices",
+  "reference": "old/df-hardware/baseplate/tall_tapered_53n_baseplate.stl",
+  "intent": "Match reference bottom footprint reduction; preserve all geometry at/above mounting-pocket floor"
+}

@@ -1,0 +1,27 @@
+from pathlib import Path
+import json,os
+import FreeCAD as App,FreeCADGui as Gui
+ROOT=Path(__file__).resolve().parents[3];HERE=Path(__file__).resolve().parent
+before=list(App.listDocuments())
+camera=Gui.activeDocument().activeView().getCameraOrientation()
+opened=[]
+for name in ['MH-T3-EYE-R09-STUDY.FCStd','R08-R09-comparison.FCStd']:
+ p=HERE/name
+ d=next((d for d in App.listDocuments().values() if d.FileName and Path(d.FileName).resolve()==p.resolve()),None) or App.openDocument(str(p))
+ opened.append(d)
+ App.setActiveDocument(d.Name);Gui.activeDocument().activeView().setCameraOrientation(camera.Q);Gui.activeDocument().activeView().fitAll()
+# Preserve each part's full source placement when arranging the comparison.
+baseline=next(d for d in App.listDocuments().values() if d.FileName and Path(d.FileName).name=='MH-T3-EYE-R08.FCStd')
+for key,source,offset in [('R08',baseline,0),('R09',opened[0],48)]:
+ for name in ['Carrier','Holder']:
+  sh=source.getObject(name).Shape.copy();sh.translate(App.Vector(0,0,offset))
+  obj=opened[1].getObject(key+name);obj.Placement=App.Placement();obj.Shape=sh
+opened[1].recompute();Gui.activeDocument().activeView().fitAll();Gui.activeDocument().activeView().setCameraType('Orthographic')
+Gui.activeDocument().activeView().setCameraOrientation(App.Rotation(App.Vector(0,0,-1),App.Vector(0,1,0),App.Vector(1,0,0),'ZXY').Q)
+Gui.activeDocument().activeView().fitAll()
+Gui.activeDocument().activeView().setCameraOrientation(camera.Q)
+Gui.activeDocument().activeView().fitAll()
+opened[1].save()
+Gui.getMainWindow().raise_();Gui.getMainWindow().activateWindow()
+out=ROOT/'generated/mouse-hats/socket-body-study-r09';out.mkdir(parents=True,exist_ok=True)
+(out/'desktop-open.json').write_text(json.dumps({'pid':os.getpid(),'before':before,'after':list(App.listDocuments()),'active':App.ActiveDocument.Name},indent=2))

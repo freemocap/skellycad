@@ -1,0 +1,15 @@
+{
+  "units":"mm",
+  "status":"whole-board orientation study; no new catch geometry",
+  "board_length_mm":30.0,
+  "board_width_mm":10.0,
+  "board_thickness_mm":0.25,
+  "board_underside_origin_mm":[5.28706399647303,7.4,-14.0],
+  "board_pose_verified":false,
+  "pose_note":"PCB dimensions from user; centering and longitudinal placement approximate, not measured. Original tray is unchanged.",
+  "escape_direction_tray_coordinates":[0,1,0],
+  "intended_capture":"top long edge (+Y), opposing upward escape; not bottom edge or connector end wall",
+  "component_top_from_underside_mm":1.0,
+  "connector_top_from_underside_mm":1.7,
+  "component_and_connector_footprints_verified":false
+}

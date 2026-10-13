@@ -1,0 +1,10 @@
+{
+  "units": "mm",
+  "scale": 1.0,
+  "eye_connection_diameter_mm": 1.3,
+  "eye_connection_embed_mm": 0.45,
+  "color_revision": "cornea-r02",
+  "baseplate": "Unchanged current Baseplate; skull removed only inside its overlap",
+  "pupil_note": "Black covers the smaller corneal spheroid through the existing 32-vertex cornea/sclera junction; exact original exterior triangles retained",
+  "bed_orientation": "Anatomical skull upright; minimum Z on bed; supports required; no printer profile embedded"
+}

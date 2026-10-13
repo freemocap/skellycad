@@ -1,0 +1,47 @@
+{
+  "designs/mouse-hats/AGENTS.md": {
+    "sha256": "2d2cf69101057c5eb57370f67783215d18abb5f51139e2d1f273734c6093d4ec",
+    "original": "docs/migration/original-docs/designs/mouse-hats/AGENTS.md",
+    "reason": "SkellyCAD entry-point documentation and runtime ownership/validation integration"
+  },
+  "designs/mouse-hats/current/README.md": {
+    "sha256": "1d54b128616759d95c4bb22fd57ff683b6aadc4599d62b8f70e1292cc26f1d5c",
+    "original": "docs/migration/original-docs/designs/mouse-hats/current/README.md",
+    "reason": "SkellyCAD entry-point documentation and runtime ownership/validation integration"
+  },
+  "designs/README.md": {
+    "sha256": "3bd2b381df18696adbb24d63f041fce2d4c81ad528a005566b9d41c56ea9a5d8",
+    "original": "docs/migration/original-docs/designs/README.md",
+    "reason": "SkellyCAD entry-point documentation and runtime ownership/validation integration"
+  },
+  "releases/README.md": {
+    "sha256": "81660851955c7de38f4843ae7276b65f851485969316838c8c19834db5500f70",
+    "original": "docs/migration/original-docs/releases/README.md",
+    "reason": "SkellyCAD entry-point documentation and runtime ownership/validation integration"
+  },
+  "tools/cad/cad.ps1": {
+    "sha256": "f96201e48d400c4c3a1885441669551d5f926e261aff76d4c37705cfec03b118",
+    "original": "docs/migration/original-docs/tools/cad/cad.ps1",
+    "reason": "SkellyCAD entry-point documentation and runtime ownership/validation integration"
+  },
+  "tools/cad/register_mcp.py": {
+    "sha256": "1b38819d7d94159d6d78203ab1bef2fe6c8727fc24335748c335ecd2650c949e",
+    "original": "docs/migration/original-docs/tools/cad/register_mcp.py",
+    "reason": "SkellyCAD entry-point documentation and runtime ownership/validation integration"
+  },
+  "tools/cad/test_mcp.py": {
+    "sha256": "f699e4a59a086656a4aab0ae09804c76476d53c793b7f504ea9a7a539a786e3a",
+    "original": "docs/migration/original-docs/tools/cad/test_mcp.py",
+    "reason": "SkellyCAD entry-point documentation and runtime ownership/validation integration"
+  },
+  "tools/cad/pyproject.toml": {
+    "sha256": "ae6c3070f858ccfd2f5569659dffb3a3f69075f70121b8d2312a52b3c100a532",
+    "original": "docs/migration/original-docs/tools/cad/pyproject.toml",
+    "reason": "Rename the tooling project to SkellyCAD; pinned dependency versions unchanged"
+  },
+  "tools/cad/uv.lock": {
+    "sha256": "e4a8d329e4d8c1ec5e04a5738b7a9a71ca2909b0f74043bcc2a7e85942379e2c",
+    "original": "docs/migration/original-docs/tools/cad/uv.lock",
+    "reason": "Rename the tooling project to SkellyCAD; pinned dependency versions unchanged"
+  }
+}

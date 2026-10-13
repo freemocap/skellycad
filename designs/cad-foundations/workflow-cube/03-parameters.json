@@ -1,0 +1,8 @@
+{
+  "units": "mm",
+  "length": 24,
+  "width": 20,
+  "height_to_length_ratio": 1.5,
+  "hole_diameter": 8,
+  "cut_extension_each_end": 1
+}

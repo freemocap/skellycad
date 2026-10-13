@@ -1,0 +1,10 @@
+{
+  "units": "mm",
+  "socket_arm_width_mm": 3.0,
+  "socket_arm_thickness_mm": 2.2,
+  "collar_radius_mm": 3.1,
+  "socket_root_fillet_mm": 0.3,
+  "ball_radius_mm": 2.0,
+  "ball_radial_clearance_mm": 0.35,
+  "intent": "First physical print fused ball/socket and exposed weak arm/collar connections; enlarge local arm sections and ball cavity"
+}

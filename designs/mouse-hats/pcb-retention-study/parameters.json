@@ -1,0 +1,20 @@
+{
+  "status": "exploration_only_not_build_inputs",
+  "length_units": "mm",
+  "measurement_source": "user photo and measurements, 2026-10-09",
+  "pcb_length_approx_mm": 30.0,
+  "pcb_width_approx_mm": 10.0,
+  "pcb_thickness_approx_mm": 0.25,
+  "ordinary_component_top_from_board_underside_approx_mm": 1.0,
+  "connector_top_from_board_underside_approx_mm": 1.7,
+  "roof_underside_above_seat_trial_mm": 0.6,
+  "resulting_board_lift_trial_mm": 0.35,
+  "edge_overlap_trials_mm": [0.3, 0.5],
+  "along_edge_length_trials_mm": [2.0, 3.0],
+  "catch_position_mm": null,
+  "roof_thickness_mm": null,
+  "bare_edge_contact_region_verified": false,
+  "insertion_path_verified": false,
+  "cap_path_verified": false,
+  "adopted_candidate": null
+}

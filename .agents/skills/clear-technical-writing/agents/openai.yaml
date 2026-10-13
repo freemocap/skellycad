@@ -1,0 +1,6 @@
+interface:
+  display_name: "Clear technical writing"
+  short_description: "Google documentation style with an STE option"
+  default_prompt: "Use $clear-technical-writing to revise this documentation while preserving its technical meaning."
+policy:
+  allow_implicit_invocation: true

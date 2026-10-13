@@ -1,0 +1,72 @@
+{
+  "R05-A-compact-carrier-and-holder.stl": {
+    "shells": 2,
+    "watertight": true,
+    "winding_consistent": true,
+    "size_mm": [
+      23.08097743988037,
+      23.55018663406372,
+      49.663896560668945
+    ]
+  },
+  "R05-ABC-comparison-plate.stl": {
+    "shells": 6,
+    "watertight": true,
+    "winding_consistent": true,
+    "size_mm": [
+      133.08097457885742,
+      23.55018663406372,
+      49.895904541015625
+    ]
+  },
+  "R05-B-medium-carrier-and-holder.stl": {
+    "shells": 2,
+    "watertight": true,
+    "winding_consistent": true,
+    "size_mm": [
+      26.290724754333496,
+      23.55018663406372,
+      49.71663856506348
+    ]
+  },
+  "R05-C-roomy-carrier-and-holder.stl": {
+    "shells": 2,
+    "watertight": true,
+    "winding_consistent": true,
+    "size_mm": [
+      29.498576164245605,
+      23.55018663406372,
+      49.895904541015625
+    ]
+  },
+  "R05-shared-baseplate.stl": {
+    "shells": 1,
+    "watertight": true,
+    "winding_consistent": true,
+    "size_mm": [
+      11.685274600982666,
+      11.770038604736328,
+      10.085999965667725
+    ]
+  },
+  "R05-shared-camera-clip.stl": {
+    "shells": 1,
+    "watertight": true,
+    "winding_consistent": true,
+    "size_mm": [
+      4.407332420349121,
+      10.653003692626953,
+      7.031436920166016
+    ]
+  },
+  "R05-shared-matching-cap.stl": {
+    "shells": 1,
+    "watertight": true,
+    "winding_consistent": true,
+    "size_mm": [
+      7.499999523162842,
+      14.591889381408691,
+      37.760000228881836
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "coordinate_policy": "Preserve original coordinates; no implicit centering, scaling, repair, or alignment.",
+  "stl_units": "unknown; millimeters are a working hypothesis pending a known hardware dimension",
+  "references": [
+    {"id": "two_arm_v5", "path": "hardware/camera-assembly/camera-assembly-2arm-v5.stl", "role": "User-confirmed latest two-arm design; reconstruction shape reference"},
+    {"id": "assembly_53", "path": "hardware/camera-assembly/cad/53nassembly/53nassembly.step", "role": "Earlier solid geometry; possible source for unchanged interfaces, not authoritative for new arms"},
+    {"id": "assembly_52_blender", "path": "hardware/camera-assembly/cad/52nassembly/52nassembly_w_mouse_skull_and_camera.blend", "role": "Historical scene; inspect curves/modifiers before assuming editable arm sources"}
+  ]
+}

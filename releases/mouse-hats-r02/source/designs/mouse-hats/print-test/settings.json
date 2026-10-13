@@ -1,0 +1,8 @@
+{
+  "units": "mm",
+  "pcb_tab_extension_mm": 1.5,
+  "lower_pcb_tab_extension_mm": 0.7,
+  "holder_outward_wall_addition_mm": 0.5,
+  "stl_linear_deflection_mm": 0.03,
+  "stl_angular_deflection_radians": 0.15
+}

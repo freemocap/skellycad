@@ -1,0 +1,13 @@
+{
+  "stage": "base only",
+  "excess_mm3": 0.0,
+  "missing_mm3": 0.0,
+  "base_volume_mm3": 43.96458081380565,
+  "sketches_fully_constrained": true,
+  "thickness_edit_mm": [
+    1.5,
+    1.6,
+    1.5
+  ],
+  "full_clip_parity": false
+}

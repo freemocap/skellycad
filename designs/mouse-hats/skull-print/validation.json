@@ -1,0 +1,157 @@
+{
+  "lineage": {
+    "revision": "MH-T3-EYE-R03",
+    "checkpoint": "designs/mouse-hats/current/checkpoints/MH-T3-EYE-R03.FCStd",
+    "checkpoint_sha256": "7cfb2b198e5c56519ec41ac9c50a12d98479c81c5f88b87e5ae1cbeed794598e",
+    "units": "mm",
+    "inputs": {
+      "Baseplate.stl": "1731ca2618ad39f52b1e7b30c8f9525423a5b1b04d25c76907adfc74b478fe16",
+      "Eye1.stl": "37ec96f05092e4a044d6a1e9dcad0a8e829a433bada0ba273216f05530c6d61d",
+      "Eye2.stl": "a300709a4bcd0d8ff1cf5bc5dc29a159972517aa0d2f56a8ce9f56f050e0d95d",
+      "Skull.stl": "37473a2754e8c4ee4509b24926cad9d0d7920c4bd0c0b2e46110964ccf2ab0eb"
+    }
+  },
+  "settings": {
+    "units": "mm",
+    "scale": 1.0,
+    "eye_connection_diameter_mm": 1.3,
+    "eye_connection_embed_mm": 0.45,
+    "color_revision": "cornea-r02",
+    "baseplate": "Unchanged current Baseplate; skull removed only inside its overlap",
+    "pupil_note": "Black covers the smaller corneal spheroid through the existing 32-vertex cornea/sclera junction; exact original exterior triangles retained",
+    "bed_orientation": "Anatomical skull upright; minimum Z on bed; supports required; no printer profile embedded"
+  },
+  "eye_connections": [
+    {
+      "eye": "Eye1",
+      "nearest_vertex_gap_mm": 0.369118212601528,
+      "connector_start_mm": [
+        7.6566073454612855,
+        -4.970943600351018,
+        4.129467000617944
+      ],
+      "connector_end_mm": [
+        5.539522409310624,
+        -4.84281904545931,
+        3.2327042914287007
+      ],
+      "cornea_partition": {
+        "boundary_vertices": 32,
+        "cornea_surface_triangles": 480,
+        "sclera_surface_triangles": 864,
+        "boundary_center_mm": [
+          7.555571153759956,
+          -4.139226354658604,
+          4.748333305120468
+        ],
+        "surface_geometry_preserved": true
+      }
+    },
+    {
+      "eye": "Eye2",
+      "nearest_vertex_gap_mm": 0.5636434572480584,
+      "connector_start_mm": [
+        8.231910236624909,
+        -4.9655880729246,
+        -3.606392075988272
+      ],
+      "connector_end_mm": [
+        5.864004063283641,
+        -4.775096630483103,
+        -2.837937712914452
+      ],
+      "cornea_partition": {
+        "boundary_vertices": 32,
+        "cornea_surface_triangles": 480,
+        "sclera_surface_triangles": 864,
+        "boundary_center_mm": [
+          8.336460664868355,
+          -4.133254960179329,
+          -4.2238450050354
+        ],
+        "surface_geometry_preserved": true
+      }
+    }
+  ],
+  "parts": {
+    "Skull": {
+      "volume_mm3": 863.3958127704396,
+      "watertight": true,
+      "winding_consistent": true,
+      "shells": 1,
+      "triangles": 84776
+    },
+    "Eyes": {
+      "volume_mm3": 23.07827554357745,
+      "watertight": true,
+      "winding_consistent": true,
+      "shells": 2,
+      "triangles": 1792
+    },
+    "PupilCornea": {
+      "volume_mm3": 1.16337102043459,
+      "watertight": true,
+      "winding_consistent": true,
+      "shells": 2,
+      "triangles": 1024
+    },
+    "Mount": {
+      "volume_mm3": 442.12634751813295,
+      "watertight": true,
+      "winding_consistent": true,
+      "shells": 1,
+      "triangles": 1210
+    }
+  },
+  "pairwise_overlap_mm3": {
+    "Skull / Eyes": 4.625929269271486e-17,
+    "Skull / PupilCornea": 0.0,
+    "Skull / Mount": 5.921189464667501e-16,
+    "Eyes / PupilCornea": 0.0,
+    "Eyes / Mount": 0.0,
+    "PupilCornea / Mount": 0.0
+  },
+  "combined": {
+    "volume_mm3": 1329.7638068525848,
+    "watertight": true,
+    "winding_consistent": true,
+    "shells": 1,
+    "size_mm": [
+      23.995264782580904,
+      12.347112830320121,
+      20.051409773719406
+    ],
+    "triangles": 88274
+  },
+  "assembly_to_print_transform": [
+    [
+      -0.9986850610507162,
+      0.002152730722158268,
+      -0.05122025560774781,
+      6.4359253290735845
+    ],
+    [
+      -0.051221951343789124,
+      -0.0007400675802324976,
+      0.9986870200420606,
+      0.13076014580321033
+    ],
+    [
+      0.002111997779237927,
+      0.9999974090218294,
+      0.0008493615048547694,
+      13.288577436341352
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "reopen_checks": {
+    "stl_one_watertight_shell": true,
+    "three_mf_meshes": 4,
+    "three_mf_volume_matches": true
+  }
+}

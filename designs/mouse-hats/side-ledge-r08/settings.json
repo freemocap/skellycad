@@ -1,0 +1,11 @@
+{
+  "units": "mm",
+  "source_checkpoint": "designs/mouse-hats/current/checkpoints/MH-T3-EYE-R07.FCStd",
+  "source_sha256": "b0c75fcf078aa2c1cac9d14ab63ea7ded8c7e9a3a11add04e0f6acbda695d22f",
+  "ledge_origin_mm": [5.20706399647303, 15.0, -15.1033786820894],
+  "ledge_dimensions_xyz_mm": [1.68, 2.0, 0.4],
+  "embedded_depth_mm": 0.08,
+  "exposed_projection_mm": 1.6,
+  "hole_outer_edge_z_mm": -14.9033786820894,
+  "description": "Vertical plain ledge, center aligned with outer edge of far hole; no hooked return"
+}

@@ -1,0 +1,312 @@
+{
+  "units": "mm and degrees",
+  "source_checkpoint": "designs/mouse-hats/current/checkpoints/MH-T3-EYE-R04.FCStd",
+  "source_sha256": "51f7d8ae465cf4c99f839e7101016f1f14180fd813e399c35d2c14e5eae4735f",
+  "root_mm": [
+    4.10677424482636,
+    8.2,
+    12.0966213179106
+  ],
+  "root_handle_mm": 13.0,
+  "socket_handle_mm": 13.0,
+  "root_width_mm": 2.6,
+  "root_thickness_mm": 2.0,
+  "body_width_mm": 2.6,
+  "body_thickness_mm": 1.8,
+  "attachment_angle_deg": 45.0,
+  "joint_shift_mm": [
+    -7.492981093651684,
+    0.3428476364647732,
+    -0.6522350506163406
+  ],
+  "ball_center_mm": [
+    4.646981294837287,
+    5.235332531784225,
+    23.7178353011738
+  ],
+  "ball_clearance_mm": 0.35,
+  "collar_radius_mm": 3.1,
+  "rear_data": {
+    "units": "mm",
+    "socket_center_mm": [
+      12.160332519724188,
+      4.79737568941241,
+      24.086697428835436
+    ],
+    "socket_axis": [
+      -0.06766810814747441,
+      0.31767937320295375,
+      0.9457805469458125
+    ],
+    "attachment_height_mm": 3.9,
+    "attachment_radius_mm": 2.25,
+    "width_mm": 3.0,
+    "thickness_mm": 1.8,
+    "sections": 33,
+    "rear": {
+      "root_mm": [
+        4.10677424482636,
+        7.86588286441313,
+        12.26
+      ],
+      "root_tangent": [
+        -1,
+        0,
+        0
+      ],
+      "bend_mm": [
+        -3.0,
+        3.0,
+        21.0
+      ],
+      "bend_tangent": [
+        0,
+        0,
+        1
+      ],
+      "root_handle_mm": 10.0,
+      "bend_handle_mm": 5.0,
+      "socket_handle_mm": 10.0,
+      "radial_direction": [
+        -0.9977078866781307,
+        -0.02154614839589256,
+        -0.06414621071864238
+      ],
+      "root_width_direction": [
+        0,
+        1,
+        0
+      ],
+      "root_width_mm": 2.6,
+      "root_thickness_mm": 2.0
+    },
+    "top": {
+      "root_mm": [
+        4.4969191206496975,
+        16.0918887142941,
+        17.3662968498585
+      ],
+      "root_tangent": [
+        0,
+        0,
+        1
+      ],
+      "bend_mm": [
+        7.5,
+        15.0,
+        24.5
+      ],
+      "bend_tangent": [
+        0,
+        -1,
+        0.3
+      ],
+      "root_handle_mm": 5.0,
+      "bend_handle_mm": 3.0,
+      "socket_handle_mm": 4.0,
+      "radial_direction": [
+        -0.0,
+        0.9479533634787529,
+        -0.318409203179367
+      ],
+      "root_width_direction": [
+        0,
+        1,
+        0
+      ],
+      "root_width_mm": 3.0,
+      "root_thickness_mm": 1.5802897516466756
+    },
+    "socket_width_mm": 2.4,
+    "socket_thickness_mm": 1.8,
+    "root_lead_mm": 1.5,
+    "embed_mm": 0.4,
+    "socket_lead_mm": 1.0,
+    "arm": {
+      "root_mm": [
+        4.10677424482636,
+        7.86588286441313,
+        12.26
+      ],
+      "root_tangent": [
+        -1,
+        0,
+        0
+      ],
+      "bend_mm": [
+        -3.0,
+        3.0,
+        21.0
+      ],
+      "bend_tangent": [
+        0,
+        0,
+        1
+      ],
+      "root_handle_mm": 10.0,
+      "bend_handle_mm": 5.0,
+      "socket_handle_mm": 10.0,
+      "radial_direction": [
+        -0.9977078866781307,
+        -0.02154614839589256,
+        -0.06414621071864238
+      ],
+      "root_width_direction": [
+        0,
+        1,
+        0
+      ],
+      "root_width_mm": 2.6,
+      "root_thickness_mm": 2.0
+    }
+  },
+  "top_data": {
+    "units": "mm",
+    "socket_center_mm": [
+      12.160332519724188,
+      4.79737568941241,
+      24.086697428835436
+    ],
+    "socket_axis": [
+      -0.06766810814747441,
+      0.31767937320295375,
+      0.9457805469458125
+    ],
+    "attachment_height_mm": 3.9,
+    "attachment_radius_mm": 2.25,
+    "width_mm": 3.0,
+    "thickness_mm": 1.8,
+    "sections": 33,
+    "rear": {
+      "root_mm": [
+        4.10677424482636,
+        7.86588286441313,
+        12.26
+      ],
+      "root_tangent": [
+        -1,
+        0,
+        0
+      ],
+      "bend_mm": [
+        -3.0,
+        3.0,
+        21.0
+      ],
+      "bend_tangent": [
+        0,
+        0,
+        1
+      ],
+      "root_handle_mm": 10.0,
+      "bend_handle_mm": 5.0,
+      "socket_handle_mm": 10.0,
+      "radial_direction": [
+        -0.9977078866781307,
+        -0.02154614839589256,
+        -0.06414621071864238
+      ],
+      "root_width_direction": [
+        0,
+        1,
+        0
+      ],
+      "root_width_mm": 2.6,
+      "root_thickness_mm": 2.0
+    },
+    "top": {
+      "root_mm": [
+        4.4969191206496975,
+        16.0918887142941,
+        17.3662968498585
+      ],
+      "root_tangent": [
+        0,
+        0,
+        1
+      ],
+      "bend_mm": [
+        7.5,
+        15.0,
+        24.5
+      ],
+      "bend_tangent": [
+        0,
+        -1,
+        0.3
+      ],
+      "root_handle_mm": 5.0,
+      "bend_handle_mm": 3.0,
+      "socket_handle_mm": 4.0,
+      "radial_direction": [
+        -0.0,
+        0.9479533634787529,
+        -0.318409203179367
+      ],
+      "root_width_direction": [
+        0,
+        1,
+        0
+      ],
+      "root_width_mm": 3.0,
+      "root_thickness_mm": 1.5802897516466756
+    },
+    "socket_width_mm": 2.4,
+    "socket_thickness_mm": 1.8,
+    "root_lead_mm": 1.5,
+    "embed_mm": 0.4,
+    "socket_lead_mm": 1.0,
+    "arm": {
+      "root_mm": [
+        4.4969191206496975,
+        16.0918887142941,
+        17.3662968498585
+      ],
+      "root_tangent": [
+        0,
+        0,
+        1
+      ],
+      "bend_mm": [
+        7.5,
+        15.0,
+        24.5
+      ],
+      "bend_tangent": [
+        0,
+        -1,
+        0.3
+      ],
+      "root_handle_mm": 5.0,
+      "bend_handle_mm": 3.0,
+      "socket_handle_mm": 4.0,
+      "radial_direction": [
+        -0.0,
+        0.9479533634787529,
+        -0.318409203179367
+      ],
+      "root_width_direction": [
+        0,
+        1,
+        0
+      ],
+      "root_width_mm": 3.0,
+      "root_thickness_mm": 1.5802897516466756
+    }
+  },
+  "socket_source_sha256": "8a428f9ac02b710cfe2d118e1ff26928ee364cc021264eb17499b3ea392f3b1c",
+  "variants": {
+    "A": {
+      "description": "Compact",
+      "handle_mm": 13
+    },
+    "B": {
+      "description": "Medium",
+      "handle_mm": 18
+    },
+    "C": {
+      "description": "Roomy",
+      "handle_mm": 23
+    }
+  }
+}

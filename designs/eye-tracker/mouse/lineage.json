@@ -1,0 +1,38 @@
+{
+  "imported_from": "designs/mouse-hats/current/active-model.json",
+  "baseline": "MH-T3-EYE-R10",
+  "rebuild_source": "MH-T3-EYE-R09-STUDY",
+  "skull_print_lineage": "designs/mouse-hats/skull-print/lineage.json",
+  "units": "mm",
+  "geometry_changed_during_migration": false,
+  "assets": [
+    {
+      "path": "designs/eye-tracker/mouse/checkpoints/MH-T3-EYE-R10.FCStd",
+      "sha256": "8bc7974226c8df0892f3c174f46bc34318605ea2ab5ab697c71a745af0d88111"
+    },
+    {
+      "path": "designs/eye-tracker/mouse/inputs/MH-T3-EYE-R09-STUDY.FCStd",
+      "sha256": "fe57f8dee4aed5fcdb1b2e303ed2b957b821e44f0a01da95e2842c353def7794"
+    },
+    {
+      "path": "designs/eye-tracker/mouse/references/skull/Baseplate.stl",
+      "sha256": "1731ca2618ad39f52b1e7b30c8f9525423a5b1b04d25c76907adfc74b478fe16"
+    },
+    {
+      "path": "designs/eye-tracker/mouse/references/skull/Eye1.stl",
+      "sha256": "37ec96f05092e4a044d6a1e9dcad0a8e829a433bada0ba273216f05530c6d61d"
+    },
+    {
+      "path": "designs/eye-tracker/mouse/references/skull/Eye2.stl",
+      "sha256": "a300709a4bcd0d8ff1cf5bc5dc29a159972517aa0d2f56a8ce9f56f050e0d95d"
+    },
+    {
+      "path": "designs/eye-tracker/mouse/references/skull/orca-source-project.3mf",
+      "sha256": "f727ceae71065bb5b8376a842020971a293d72b2ed233fe4206792cfb5e6c2f2"
+    },
+    {
+      "path": "designs/eye-tracker/mouse/references/skull/Skull.stl",
+      "sha256": "37473a2754e8c4ee4509b24926cad9d0d7920c4bd0c0b2e46110964ccf2ab0eb"
+    }
+  ]
+}

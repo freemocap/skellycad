@@ -1,0 +1,34 @@
+{
+  "units": "mm and mm3",
+  "source": "designs\\mouse-hats\\current\\checkpoints\\MH-T3-EYE-R04.FCStd",
+  "removed_return_mm3": 2.493325987091101,
+  "ledge_thickness_mm": 0.4,
+  "ledge_projection_from_seat_mm": 1.6,
+  "ledge_length_mm": 3.0,
+  "arm_choice": "pending; R04 reference arm retained",
+  "variants": {
+    "A": {
+      "source_sha256": "9cd0fe99cf576e31bb033bf9fb87da9292063f4e68cb2355bf52a2013aa6b70d",
+      "removed_mm3": 2.493281124881605,
+      "holder_gap_mm": 0.3331646522386674
+    },
+    "B": {
+      "source_sha256": "3c5371463001e064144b1b07f4668021d7afec8ea34c9ca903f590353a37a163",
+      "removed_mm3": 2.4933190280062263,
+      "holder_gap_mm": 0.3331646522386674
+    },
+    "C": {
+      "source_sha256": "1e1cdb05773c40342a404ee0ee1f29b78a87bd6ba8aa854349370ca6f972a877",
+      "removed_mm3": 2.4933254089557977,
+      "holder_gap_mm": 0.3331646522386674
+    }
+  },
+  "Holder_contact_mm3": 0.0,
+  "Cap_contact_mm3": 0.0022182255338513246,
+  "Clip_contact_mm3": 0.0,
+  "Baseplate_contact_mm3": 0.0,
+  "ApproxPCB_contact_mm3": 0.0,
+  "UpperRail_contact_mm3": 11.786477932457425,
+  "holder_gap_mm": 0.33316465223866576,
+  "carrier_valid": true
+}

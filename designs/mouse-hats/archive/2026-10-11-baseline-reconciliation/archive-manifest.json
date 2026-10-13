@@ -1,0 +1,42 @@
+[
+  {
+    "original": "HANDOFF.md",
+    "archive": "designs\\mouse-hats\\archive\\2026-10-11-baseline-reconciliation\\HANDOFF.md",
+    "sha256": "4be8a423801ed337032dd8038e164e95dc5f9b0342b5df67f6584a9bc5fc258a"
+  },
+  {
+    "original": "TRANSFER-STATUS.md",
+    "archive": "designs\\mouse-hats\\archive\\2026-10-11-baseline-reconciliation\\TRANSFER-STATUS.md",
+    "sha256": "968454ffdae4c95180fecbd28c8987bedb3a871d0fdc46964527954f7e04c4d0"
+  },
+  {
+    "original": "README.md",
+    "archive": "designs\\mouse-hats\\archive\\2026-10-11-baseline-reconciliation\\README.md",
+    "sha256": "1179b603142ac9d1e4016cb315f1e112209ae881e68de21085cf969d06e27989"
+  },
+  {
+    "original": "AGENTS.md",
+    "archive": "designs\\mouse-hats\\archive\\2026-10-11-baseline-reconciliation\\AGENTS.md",
+    "sha256": "a20ae8d11fd277ca5101f2863b1c556b4fa0a7e896df53861fff19c1d4c2a052"
+  },
+  {
+    "original": "designs/mouse-hats/AGENTS.md",
+    "archive": "designs\\mouse-hats\\archive\\2026-10-11-baseline-reconciliation\\designs__mouse-hats__AGENTS.md",
+    "sha256": "21d0e17da880df8e7cfa1970fbfef192292effb903169a583a3f49fd2e9b7a07"
+  },
+  {
+    "original": "designs/mouse-hats/README.md",
+    "archive": "designs\\mouse-hats\\archive\\2026-10-11-baseline-reconciliation\\designs__mouse-hats__README.md",
+    "sha256": "6a8a8654abff01de2c6c3e730b683f63645f847fe9de66735232153fd60ac5d9"
+  },
+  {
+    "original": "designs/mouse-hats/model/CURRENT.md",
+    "archive": "designs\\mouse-hats\\archive\\2026-10-11-baseline-reconciliation\\designs__mouse-hats__model__CURRENT.md",
+    "sha256": "f8a10a9f269ebca650ce759c4697e6047540a4e7c520d5bf5b47ef2c0f901c81"
+  },
+  {
+    "quarantined_stl": "generated\\mouse-hats\\archive\\wrong-baseline\\SUPERSEDED-R02-ribbon-space-carrier-and-holder.stl",
+    "reason": "Missing latest T3 PCB catch/rail geometry",
+    "sha256": "1743eea6b073835dae1d31bb468e46316e056a6d0b46ecccdda5018df513bf15"
+  }
+]

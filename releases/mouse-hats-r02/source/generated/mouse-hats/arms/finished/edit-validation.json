@@ -1,0 +1,44 @@
+[
+  {
+    "valid": true,
+    "solids": 1,
+    "added_mm3": 0.0,
+    "removed_mm3": 0.0,
+    "original_mm3": 1123.7988686022288,
+    "finished_mm3": 1123.7988686022288,
+    "tray_radius_mm": 0.0,
+    "socket_radius_mm": 0.0,
+    "screw_bore_added_overlap_mm3": 0.0,
+    "ball_seat_added_overlap_mm3": 0.0,
+    "pcb_cap_added_overlap_mm3": 0.0,
+    "addition_outside_junction_regions_mm3": 0.0
+  },
+  {
+    "valid": true,
+    "solids": 1,
+    "added_mm3": 0.418472707528685,
+    "removed_mm3": 0.0,
+    "original_mm3": 1123.7988686022288,
+    "finished_mm3": 1124.217898851428,
+    "tray_radius_mm": 0.4,
+    "socket_radius_mm": 0.2,
+    "screw_bore_added_overlap_mm3": 0.0,
+    "ball_seat_added_overlap_mm3": 0.0,
+    "pcb_cap_added_overlap_mm3": 0.0,
+    "addition_outside_junction_regions_mm3": 0.0
+  },
+  {
+    "valid": true,
+    "solids": 1,
+    "added_mm3": 0.7312265147280608,
+    "removed_mm3": 0.0,
+    "original_mm3": 1123.7988686022288,
+    "finished_mm3": 1124.5306524511477,
+    "tray_radius_mm": 0.5,
+    "socket_radius_mm": 0.3,
+    "screw_bore_added_overlap_mm3": 0.0,
+    "ball_seat_added_overlap_mm3": 0.0,
+    "pcb_cap_added_overlap_mm3": 0.0,
+    "addition_outside_junction_regions_mm3": 0.0
+  }
+]

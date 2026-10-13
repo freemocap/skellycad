@@ -1,0 +1,18 @@
+{
+  "units": "mm",
+  "status": "nose correction isolated; lip and height alternatives unadopted",
+  "board_backing_x_mm": 5.28706399647303,
+  "nose_cut_min_y_mm": 6.0,
+  "nose_cut_z_min_mm": -1.0,
+  "nose_cut_z_span_mm": 2.0,
+  "board_upper_edge_y_assumed_mm": 17.4,
+  "cap_inner_wall_y_mm": 17.5923586623637,
+  "height_increase_trial_mm": 1.0,
+  "roof_gap_mm": 0.6,
+  "roof_thickness_mm": 0.6,
+  "lip_length_mm": 2.0,
+  "lip_start_z_mm": -10.7,
+  "lip_overlap_mm": 0.4,
+  "lip_side_gap_mm": 0.1,
+  "lip_post_width_mm": 0.5
+}

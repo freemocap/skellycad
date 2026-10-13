@@ -1,0 +1,202 @@
+[
+  {
+    "path": "hardware/baseplate/tall_53n_baseplate.stl",
+    "bytes": 20484,
+    "sha256": "2a39271633cc3a816df3d62667b52bf7cf4559609a7c95f77c35fccadc1b50d5"
+  },
+  {
+    "path": "hardware/baseplate/tall_mount_w_skull.blend",
+    "bytes": 521496,
+    "sha256": "ef24bbe321ace607fe3ee80b7deaa629a904d72ad70316758e4d7389159177b4"
+  },
+  {
+    "path": "hardware/baseplate/tall_mount_w_skull.stl",
+    "bytes": 938284,
+    "sha256": "bc9571bd681f7fbfd4a7a916a27a9f3b96fd21a316abd0f604cca7b7df2c611e"
+  },
+  {
+    "path": "hardware/baseplate/tall_tapered_53n_baseplate.stl",
+    "bytes": 20484,
+    "sha256": "1e41c81fdf5502fc4c229ba2ddfb665f9143e21db2c39cc7f57b9d078182a8f7"
+  },
+  {
+    "path": "hardware/baseplate/tall_tapered_boolcut_53n_baseplate.stl",
+    "bytes": 47884,
+    "sha256": "4b14f192627dd978cd4b64561ef65bcff924561fdf7621a205627797fb13695f"
+  },
+  {
+    "path": "hardware/camera-assembly/52nassemblyCap.stl",
+    "bytes": 42084,
+    "sha256": "0dc6d6ff7456064e9a8bbc1d85c452ba1085c4587159e071e52eb309f0e36167"
+  },
+  {
+    "path": "hardware/camera-assembly/52nassemblyClip.stl",
+    "bytes": 3084,
+    "sha256": "406c7f984109ebd0d27ead4d6bcbc5fc261f1379ade99a6335a55ccec2b3a293"
+  },
+  {
+    "path": "hardware/camera-assembly/cad/50nassembly/50nassembly.f3d",
+    "bytes": 41026648,
+    "sha256": "5980a5c57fb1dc68e55627d850b730b64fbdeb1bb91f764681473742da90a239"
+  },
+  {
+    "path": "hardware/camera-assembly/cad/50nassembly/50nassembly.step",
+    "bytes": 45104546,
+    "sha256": "ea3b504f63c566e6c2d634c2274247999abf12a42a32d260f32e833a0ca42c8f"
+  },
+  {
+    "path": "hardware/camera-assembly/cad/50nassembly/50nassembly.stl",
+    "bytes": 2169284,
+    "sha256": "3e3c5832a36745bf1a045bdf33ae94eb33538ceebdeb928de88e2055df3c512f"
+  },
+  {
+    "path": "hardware/camera-assembly/cad/52nassembly/52nassembly.f3d",
+    "bytes": 41893291,
+    "sha256": "6ac6eb8b40f37f9c81289425c3ca32b484df78e6e26c64c77287c380864fcb82"
+  },
+  {
+    "path": "hardware/camera-assembly/cad/52nassembly/52nassembly.step",
+    "bytes": 304292,
+    "sha256": "f03bfe0acfbf3dcddb017cedd1737a97abe2451d51e057d4ac32061514cbf1e6"
+  },
+  {
+    "path": "hardware/camera-assembly/cad/52nassembly/52nassembly_w_mouse_skull.stl",
+    "bytes": 4598684,
+    "sha256": "784fe3ec06ce4efdd43eeaba5b04e2580cc1c81408bcb58ce2186081e50a5d0a"
+  },
+  {
+    "path": "hardware/camera-assembly/cad/52nassembly/52nassembly_w_mouse_skull_and_camera.blend",
+    "bytes": 13315381,
+    "sha256": "7f24af6517614ad0659378dbc482243a68fa3760e400eaa512e8717a1979b5f3"
+  },
+  {
+    "path": "hardware/camera-assembly/cad/52nassembly/52nassembly_w_mouse_skull_and_camera.blend1",
+    "bytes": 16798128,
+    "sha256": "5da5361d52567c84c9e1408889fa9d700b55d0c1d6c26787ace792c4390569f8"
+  },
+  {
+    "path": "hardware/camera-assembly/cad/52nassembly/52nassemblyBaseplate.stl",
+    "bytes": 21884,
+    "sha256": "aac43670ffdca739aa1e7a4618354d5bcfb44b20ba29e89d10c86f92072a405d"
+  },
+  {
+    "path": "hardware/camera-assembly/cad/52nassembly/52nassemblyBaseplate_M2.stl",
+    "bytes": 241284,
+    "sha256": "c03b0bc957753417094d286e1819c5e680f4f7cca0fddeab11f4b3c408cd6069"
+  },
+  {
+    "path": "hardware/camera-assembly/cad/52nassembly/52nassemblyCamHolder.stl",
+    "bytes": 177684,
+    "sha256": "27dbffbbcdba5f44a431f0971847e954a3a119f44c227060b8f6fd8101cb3f99"
+  },
+  {
+    "path": "hardware/camera-assembly/cad/52nassembly/52nassemblyCap.stl",
+    "bytes": 42084,
+    "sha256": "0dc6d6ff7456064e9a8bbc1d85c452ba1085c4587159e071e52eb309f0e36167"
+  },
+  {
+    "path": "hardware/camera-assembly/cad/52nassembly/52nassemblyClip.stl",
+    "bytes": 3084,
+    "sha256": "406c7f984109ebd0d27ead4d6bcbc5fc261f1379ade99a6335a55ccec2b3a293"
+  },
+  {
+    "path": "hardware/camera-assembly/cad/52nassembly/52nassemblyMain.stl",
+    "bytes": 211884,
+    "sha256": "7f37699c65e79e65b16ba12ccfc4709c68788c5e7457b9df6cd73f623f84a258"
+  },
+  {
+    "path": "hardware/camera-assembly/cad/52nassembly/52nassemblyPrintinplace.stl",
+    "bytes": 389484,
+    "sha256": "6c979c4255bdd786e24a4eccacb18a594d2ff43c42f1fb27860295154f666678"
+  },
+  {
+    "path": "hardware/camera-assembly/cad/53nassembly/53nassembly.step",
+    "bytes": 49854562,
+    "sha256": "37b6adb2464d3b2181a3f928a9df360ed54baec26284cb173f9df905d1e3fdf7"
+  },
+  {
+    "path": "hardware/camera-assembly/cad/53nassembly/Baseplate__1_.stl",
+    "bytes": 1447740,
+    "sha256": "5f6a37784427a98a9a4c4ec80cac3ebd77bfdd6a83463b67bf2cbe05d06eaea0"
+  },
+  {
+    "path": "hardware/camera-assembly/cad/53nassembly/Main__1_.stl",
+    "bytes": 700409,
+    "sha256": "2eec093b7f4efa29d41ce314e792bb48818103e4c5757a17e0d04c0b2d17e897"
+  },
+  {
+    "path": "hardware/camera-assembly/cad/54nassembly/54n_main.stl",
+    "bytes": 196684,
+    "sha256": "b902b784f4d1264d1ffd980581e81ee96111d80b1d1b16401516d0c186c226d2"
+  },
+  {
+    "path": "hardware/camera-assembly/cad/55nassembly/55nassembly.stl",
+    "bytes": 358384,
+    "sha256": "5bd43d108609790111c2e8b05d26f6686889f9d5e5cb3811fed0f7524499f721"
+  },
+  {
+    "path": "hardware/camera-assembly/cad/56nassembly/56nassembly.stl",
+    "bytes": 380184,
+    "sha256": "79e95ebfc193490935b3fc4a706a25f556f77ec7ee088a2f292b2f0c19de62f5"
+  },
+  {
+    "path": "hardware/camera-assembly/cad/57nassembly/57nassembly.stl",
+    "bytes": 380684,
+    "sha256": "ec297ddab6b24e0e151084f872530542686b27107521aff6aff32bca15ac2267"
+  },
+  {
+    "path": "hardware/camera-assembly/camera-assembly-2arm-v1.stl",
+    "bytes": 404684,
+    "sha256": "39cecddd152526056c0eda31a5128e24cff9e2f64bde228052939c15f18fa4fd"
+  },
+  {
+    "path": "hardware/camera-assembly/camera-assembly-2arm-v2.stl",
+    "bytes": 404684,
+    "sha256": "b911bc4da36def9719ef181b80d6e57f521395c7f3333b068f3c0a9ccd7d5270"
+  },
+  {
+    "path": "hardware/camera-assembly/camera-assembly-2arm-v3.stl",
+    "bytes": 404684,
+    "sha256": "80bfbf6ce96a884b961e7fd91aea69a5318dddc3b7e0932505379617b7a93d4a"
+  },
+  {
+    "path": "hardware/camera-assembly/camera-assembly-2arm-v4.stl",
+    "bytes": 404684,
+    "sha256": "3f600ff87678d523cf88d089dc5132138173bfee6be7c288d0b265e8f947caf3"
+  },
+  {
+    "path": "hardware/camera-assembly/camera-assembly-2arm-v5.stl",
+    "bytes": 404684,
+    "sha256": "1fce6b7931ccd03d27be857895ae4536ab6255d40d329f94bd0e128fbdd693df"
+  },
+  {
+    "path": "hardware/camera-assembly/full-set.3mf",
+    "bytes": 502467,
+    "sha256": "1c65d53ae5434258275a431d8930ca8866a96400c60775542bbfcd1097c6ab7a"
+  },
+  {
+    "path": "hardware/camera-assembly/old/camera-assembly-2arm-v0.stl",
+    "bytes": 404584,
+    "sha256": "8169c2b6bcee57f90c0ac6cc96258b25e60f8a798958da5e6668e8ea369c0890"
+  },
+  {
+    "path": "hardware/utility/M4_lens_adjuster.stl",
+    "bytes": 23584,
+    "sha256": "0345f2398d751232fc29a8d6d2a7ebdf4da14ed5534ceb73e837319e938dba97"
+  },
+  {
+    "path": "hardware/utility/mouse_skull_low_poly_hollow.stl",
+    "bytes": 1009984,
+    "sha256": "cf45354168b53acabbc0e90c21bc777ee7030330c734c58c2a20e5e7455d81cf"
+  },
+  {
+    "path": "hardware/utility/mouse_skull_low_poly_solid.stl",
+    "bytes": 777384,
+    "sha256": "2f3595fe7ef66f2a7419e4ea5b63cfc01f7494ab050504e371fadae1de06fab9"
+  },
+  {
+    "path": "hardware/utility/mouse_skull_low_poly_solid_w_eyes.stl",
+    "bytes": 917884,
+    "sha256": "a48353341d9d385c5fc0b665efd7c83fa7832e71408c7fe7f96a993fe9eb20ca"
+  }
+]

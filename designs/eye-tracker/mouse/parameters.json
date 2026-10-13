@@ -1,0 +1,15 @@
+{
+  "units": "mm",
+  "source_checkpoint": "designs/eye-tracker/mouse/inputs/MH-T3-EYE-R09-STUDY.FCStd",
+  "source_sha256": "fe57f8dee4aed5fcdb1b2e303ed2b957b821e44f0a01da95e2842c353def7794",
+  "upward_shift_mm": 0.5,
+  "old_projection_mm": 1.6,
+  "new_projection_mm": 0.96,
+  "old_width_mm": 0.4,
+  "new_width_mm": 0.8,
+  "vertical_length_mm": 2.0,
+  "embedded_depth_mm": 0.08,
+  "seat_x_mm": 5.28706399647303,
+  "new_bottom_y_mm": 15.5,
+  "center_z_mm": -14.9033786820894
+}

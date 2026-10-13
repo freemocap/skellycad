@@ -1,0 +1,14 @@
+{
+  "units": "mm",
+  "length": 36,
+  "width": 16,
+  "thickness": 4,
+  "nominal_pin_diameter": 3.0,
+  "diametral_clearances": [0.1, 0.3, 0.5],
+  "hole_centers_x": [8, 18, 28],
+  "label_font": "C:/Windows/Fonts/arialbd.ttf",
+  "label_size": 3.0,
+  "label_center_y": 3.0,
+  "label_relief": 0.6,
+  "label_embed": 0.1
+}

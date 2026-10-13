@@ -1,0 +1,12 @@
+{
+ "units":"mm", "status":"illustrative_local_concepts_not_print_ready",
+ "seat_x_mm":5.28706399647303,
+ "seat_source":"inherited tray front plane; actual PCB seating offset still unverified",
+ "board_edge_y_trial_mm":8.16835866236362,
+ "board_end_z_trial_mm":-14.0,
+ "placement_note":"local edge inferred from existing pocket; end position is hypothetical, not measured",
+ "pcb_thickness_mm":0.25, "roof_gap_mm":0.6,
+ "roof_thickness_mm":0.6, "overlap_mm":0.4,
+ "edge_side_gap_mm":0.1, "root_width_mm":0.7,
+ "contact_strip_verified":false
+}

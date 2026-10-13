@@ -1,0 +1,272 @@
+{
+  "hollow": {
+    "source": "designs\\mouse-hats\\old\\df-hardware\\utility\\mouse_skull_low_poly_hollow.stl",
+    "sha256": "cf45354168b53acabbc0e90c21bc777ee7030330c734c58c2a20e5e7455d81cf",
+    "raw": {
+      "vertices": 10079,
+      "faces": 20198,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "duplicate_faces": 0,
+      "degenerate_faces": 0,
+      "watertight": true,
+      "winding_consistent": true,
+      "signed_volume_mm3": 544.7173325424338,
+      "bounds_mm": [
+        [
+          -13.027298927307129,
+          -6.170115947723389,
+          -7.29524040222168
+        ],
+        [
+          10.977884292602539,
+          6.1826348304748535,
+          4.074008464813232
+        ]
+      ]
+    },
+    "clean_components": [
+      {
+        "vertices": 10079,
+        "faces": 20198,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "duplicate_faces": 0,
+        "degenerate_faces": 0,
+        "watertight": true,
+        "winding_consistent": true,
+        "signed_volume_mm3": 544.7173325424338,
+        "bounds_mm": [
+          [
+            -13.027298927307129,
+            -6.170115947723389,
+            -7.29524040222168
+          ],
+          [
+            10.977884292602539,
+            6.1826348304748535,
+            4.074008464813232
+          ]
+        ]
+      }
+    ]
+  },
+  "solid": {
+    "source": "designs\\mouse-hats\\old\\df-hardware\\utility\\mouse_skull_low_poly_solid.stl",
+    "sha256": "2f3595fe7ef66f2a7419e4ea5b63cfc01f7494ab050504e371fadae1de06fab9",
+    "raw": {
+      "vertices": 7753,
+      "faces": 15546,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 1,
+      "duplicate_faces": 1,
+      "degenerate_faces": 0,
+      "watertight": false,
+      "winding_consistent": true,
+      "signed_volume_mm3": 947.4311685960993,
+      "bounds_mm": [
+        [
+          -13.027298927307129,
+          -6.170115947723389,
+          -7.29524040222168
+        ],
+        [
+          10.977884292602539,
+          6.1826348304748535,
+          4.074008464813232
+        ]
+      ]
+    },
+    "clean_components": [
+      {
+        "vertices": 7752,
+        "faces": 15544,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "duplicate_faces": 0,
+        "degenerate_faces": 0,
+        "watertight": true,
+        "winding_consistent": true,
+        "signed_volume_mm3": 947.4311685960993,
+        "bounds_mm": [
+          [
+            -13.027298927307129,
+            -6.170115947723389,
+            -7.29524040222168
+          ],
+          [
+            10.977884292602539,
+            6.1826348304748535,
+            4.074008464813232
+          ]
+        ]
+      },
+      {
+        "vertices": 3,
+        "faces": 1,
+        "boundary_edges": 3,
+        "nonmanifold_edges": 0,
+        "duplicate_faces": 0,
+        "degenerate_faces": 0,
+        "watertight": false,
+        "winding_consistent": true,
+        "signed_volume_mm3": 0.039216787124647004,
+        "bounds_mm": [
+          [
+            9.38731861114502,
+            1.5857731103897095,
+            -3.3348629474639893
+          ],
+          [
+            9.78120231628418,
+            1.770955204963684,
+            -3.0658185482025146
+          ]
+        ]
+      }
+    ]
+  },
+  "solid_w_eyes": {
+    "source": "designs\\mouse-hats\\old\\df-hardware\\utility\\mouse_skull_low_poly_solid_w_eyes.stl",
+    "sha256": "a48353341d9d385c5fc0b665efd7c83fa7832e71408c7fe7f96a993fe9eb20ca",
+    "raw": {
+      "vertices": 9164,
+      "faces": 18356,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "duplicate_faces": 0,
+      "degenerate_faces": 0,
+      "watertight": true,
+      "winding_consistent": true,
+      "signed_volume_mm3": 988.7630488090196,
+      "bounds_mm": [
+        [
+          -13.027298927307129,
+          -6.170115947723389,
+          -7.29524040222168
+        ],
+        [
+          10.977884292602539,
+          6.1826348304748535,
+          4.074008464813232
+        ]
+      ]
+    },
+    "clean_components": [
+      {
+        "vertices": 7752,
+        "faces": 15544,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "duplicate_faces": 0,
+        "degenerate_faces": 0,
+        "watertight": true,
+        "winding_consistent": true,
+        "signed_volume_mm3": 947.4311685960993,
+        "bounds_mm": [
+          [
+            -13.027298927307129,
+            -6.170115947723389,
+            -7.29524040222168
+          ],
+          [
+            10.977884292602539,
+            6.1826348304748535,
+            4.074008464813232
+          ]
+        ]
+      },
+      {
+        "vertices": 674,
+        "faces": 1344,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "duplicate_faces": 0,
+        "degenerate_faces": 0,
+        "watertight": true,
+        "winding_consistent": true,
+        "signed_volume_mm3": 12.120823436305692,
+        "bounds_mm": [
+          [
+            -3.949856758117676,
+            2.4278931617736816,
+            -0.34293025732040405
+          ],
+          [
+            -0.9643012285232544,
+            5.264106273651123,
+            2.4829769134521484
+          ]
+        ]
+      },
+      {
+        "vertices": 674,
+        "faces": 1344,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "duplicate_faces": 0,
+        "degenerate_faces": 0,
+        "watertight": true,
+        "winding_consistent": true,
+        "signed_volume_mm3": 12.12082347568627,
+        "bounds_mm": [
+          [
+            -4.121618270874023,
+            -5.269919395446777,
+            -0.34293025732040405
+          ],
+          [
+            -1.1360628604888916,
+            -2.433706283569336,
+            2.4829769134521484
+          ]
+        ]
+      },
+      {
+        "vertices": 64,
+        "faces": 124,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "duplicate_faces": 0,
+        "degenerate_faces": 0,
+        "watertight": true,
+        "winding_consistent": true,
+        "signed_volume_mm3": 17.090233300928375,
+        "bounds_mm": [
+          [
+            -3.6051383018493652,
+            -3.5662386417388916,
+            0.40525299310684204
+          ],
+          [
+            -1.438939094543457,
+            3.5662386417388916,
+            1.8227221965789795
+          ]
+        ]
+      }
+    ],
+    "eye_sphere_fits": [
+      {
+        "component": 1,
+        "center_mm": [
+          -2.45145624454522,
+          3.895311297034924,
+          1.0723698519969571
+        ],
+        "radius_mm": 1.422251557917277,
+        "radial_max_residual_mm": 0.17255027725458238
+      },
+      {
+        "component": 2,
+        "center_mm": [
+          -2.634463427939032,
+          -3.9011244205966733,
+          1.0723698473985155
+        ],
+        "radius_mm": 1.4222515570384568,
+        "radial_max_residual_mm": 0.17255032598826525
+      }
+    ]
+  }
+}

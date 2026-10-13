@@ -1,0 +1,55 @@
+{
+  "units": "mm",
+  "baseline": "R03",
+  "source": "registered V5 rear-arm section centers",
+  "centerline_type": "degree-5 Bezier; fixed R03 end positions and tangents",
+  "fit_rms_mm": 0.8777151597806515,
+  "poles_mm": [
+    [
+      2.20677424482636,
+      7.86588286441313,
+      12.26
+    ],
+    [
+      -4.29224282726469,
+      7.86588286441313,
+      12.26
+    ],
+    [
+      -7.258280407629937,
+      0.7170969980820008,
+      21.14273331316843
+    ],
+    [
+      -6.623610964157754,
+      -2.4998620350664518,
+      26.999999999999996
+    ],
+    [
+      4.309061281476762,
+      5.8724711672833685,
+      27.2874226721145
+    ],
+    [
+      8.25479311157386,
+      5.957681803258922,
+      27.541107892801058
+    ]
+  ],
+  "variants": {
+    "A": {
+      "label": "V5-guided sweep",
+      "extra_drop_mm": 0.0
+    },
+    "B": {
+      "label": "Extra ribbon space",
+      "extra_drop_mm": 1.25
+    }
+  },
+  "extra_drop_direction": [
+    0,
+    -1,
+    0
+  ],
+  "note": "Extra drop moves only the two interior poles, scaled for a 1.25 mm midpoint change; endpoints/tangents fixed. Ribbon is not modeled."
+}

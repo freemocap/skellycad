@@ -1,0 +1,17 @@
+{
+  "rail_raise_mm": 0.7,
+  "rail_length_mm": 17.365,
+  "entry_chamfer_mm": 0.15,
+  "rail_top_y_mm": 18.2918887142941,
+  "cap_roof_y_mm": 18.5923586623637,
+  "roof_clearance_mm": 0.30046994806960114,
+  "hook_tip_y_mm": 17.7423586623637,
+  "vertical_capture_mm": 0.5495300519304003,
+  "lateral_hook_clearance_mm": 0.15,
+  "carrier_added_mm3": 8.31351973126857,
+  "seated_cap_contact_mm3": 0.0022182255338513393,
+  "board_overlap_mm3": 0,
+  "pull_test_mm": 0.3,
+  "previous_upper_hook_blocking_mm3": 0.0,
+  "new_upper_hook_blocking_mm3": 0.92533360126486
+}

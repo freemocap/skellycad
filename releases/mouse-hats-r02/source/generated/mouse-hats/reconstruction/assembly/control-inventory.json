@@ -1,0 +1,132 @@
+{
+  "units": "mm",
+  "scope": "Saved files, not unsaved GUI state",
+  "parts": {
+    "Baseplate": {
+      "file": "generated/mouse-hats/reconstruction/baseplate/01-baseplate-candidate.FCStd",
+      "sha256": "2c134b45ecad49a036ac398a90ea23edb08d6fa99c02d84e83f75db4199e412e",
+      "final_object": "Baseplate",
+      "volume_mm3": 603.6956708146519,
+      "face_count": 33,
+      "live_length_controls": [
+        {
+          "object": "Baseplate",
+          "property": "BoreRadius",
+          "value_mm": 1.45,
+          "supported_range": "Not established; individual edit probes only"
+        },
+        {
+          "object": "Baseplate",
+          "property": "SkullStockDepth",
+          "value_mm": 10.0,
+          "supported_range": "Not established; individual edit probes only"
+        }
+      ]
+    },
+    "Tray": {
+      "file": "generated/mouse-hats/reconstruction/main-carrier/01-tray-mount-candidate.FCStd",
+      "sha256": "7f588ffa7c3ec7986356dceb311d3fa555abf432916c0f9c9f9d060b3c05d2f9",
+      "final_object": "PCBTrayAndMount",
+      "volume_mm3": 766.7988544202285,
+      "face_count": 94,
+      "live_length_controls": [
+        {
+          "object": "Dimensions",
+          "property": "VentRadius",
+          "value_mm": 2.0,
+          "supported_range": "Not established; individual edit probes only"
+        },
+        {
+          "object": "Dimensions",
+          "property": "VentSpacing",
+          "value_mm": 25.0,
+          "supported_range": "Not established; individual edit probes only"
+        }
+      ]
+    },
+    "Cap": {
+      "file": "generated/mouse-hats/reconstruction/pcb-cap/01-pcb-cap-candidate.FCStd",
+      "sha256": "cba6065ae3885848649a63c43b8f4a65ee74f01ad86face5d8b65d040173c441",
+      "final_object": "PCBCap",
+      "volume_mm3": 656.5616206943351,
+      "face_count": 69,
+      "live_length_controls": [
+        {
+          "object": "Dimensions",
+          "property": "CoverThickness",
+          "value_mm": 1.0,
+          "supported_range": "Not established; individual edit probes only"
+        },
+        {
+          "object": "Dimensions",
+          "property": "SideHoleRadius",
+          "value_mm": 1.0,
+          "supported_range": "Not established; individual edit probes only"
+        },
+        {
+          "object": "Dimensions",
+          "property": "VentRadius",
+          "value_mm": 2.0,
+          "supported_range": "Not established; individual edit probes only"
+        }
+      ]
+    },
+    "Socket": {
+      "file": "generated/mouse-hats/reconstruction/socket/01-socket-candidate.FCStd",
+      "sha256": "6cb81789e332643f006c0b6ab2cb7248eb7f6626c56c848790ac4249481651bf",
+      "final_object": "UpperCollar",
+      "volume_mm3": 140.0074876434242,
+      "face_count": 12,
+      "live_length_controls": [
+        {
+          "object": "Dimensions",
+          "property": "BoreRadius",
+          "value_mm": 1.45,
+          "supported_range": "Not established; individual edit probes only"
+        },
+        {
+          "object": "Dimensions",
+          "property": "CollarHeight",
+          "value_mm": 3.0,
+          "supported_range": "Not established; individual edit probes only"
+        },
+        {
+          "object": "Dimensions",
+          "property": "CollarRadius",
+          "value_mm": 2.70163704523684,
+          "supported_range": "Not established; individual edit probes only"
+        }
+      ]
+    },
+    "Holder": {
+      "file": "generated/mouse-hats/reconstruction/camera-holder/01-holder-candidate.FCStd",
+      "sha256": "035d997a8c8f13c0d1f79edde29716fb79eb60626f4a0c73f2b31981305dbd8a",
+      "final_object": "TrimHolderSide",
+      "volume_mm3": 252.51681424437882,
+      "face_count": 57,
+      "live_length_controls": [
+        {
+          "object": "Dimensions",
+          "property": "PlateThickness",
+          "value_mm": 0.9999999999999574,
+          "supported_range": "Not established; individual edit probes only"
+        }
+      ]
+    },
+    "Clip": {
+      "file": "generated/mouse-hats/reconstruction/camera-clip/03-complete-clip.FCStd",
+      "sha256": "b9bf9ba92627d7c6bf34700d41364033ef2bb93e7fa3d1aee7648a90a73592b0",
+      "final_object": "RightCrown",
+      "volume_mm3": 57.257905099136494,
+      "face_count": 29,
+      "live_length_controls": [
+        {
+          "object": "Dimensions",
+          "property": "BaseThickness",
+          "value_mm": 1.5,
+          "supported_range": "Not established; individual edit probes only"
+        }
+      ]
+    }
+  }
+}

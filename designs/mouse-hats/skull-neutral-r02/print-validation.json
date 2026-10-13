@@ -1,0 +1,25 @@
+{
+  "file": "R02-ribbon-space-carrier-and-holder.stl",
+  "units": "mm",
+  "parts": [
+    "NeutralCarrier",
+    "CenteredHolder"
+  ],
+  "linear_deflection_mm": 0.03,
+  "angular_deflection_radians": 0.15,
+  "native_gap_mm": 0.33316465223865044,
+  "native_volumes_mm3": [
+    1267.2360909018953,
+    301.6317729979904
+  ],
+  "note": "Two shells in assembled print-in-place pose. Skull, eyes, clip, cap, baseplate and aiming guides excluded. Physical fit unverified.",
+  "watertight": true,
+  "consistent_winding": true,
+  "shells": 2,
+  "triangles": 31672,
+  "mesh_volumes_mm3": [
+    1266.9816863366977,
+    301.5748029213276
+  ],
+  "sha256": "1743eea6b073835dae1d31bb468e46316e056a6d0b46ecccdda5018df513bf15"
+}

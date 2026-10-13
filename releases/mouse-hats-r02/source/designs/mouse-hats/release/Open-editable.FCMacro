@@ -1,0 +1,13 @@
+from pathlib import Path
+import sys
+import FreeCAD as App
+ROOT=Path(__file__).resolve().parent
+for p in (ROOT/'designs/mouse-hats').rglob('*.py'):
+    if str(p.parent) not in sys.path:sys.path.insert(0,str(p.parent))
+for name in ['generated/mouse-hats/print-test/r01/carrier.FCStd',
+             'generated/mouse-hats/print-test/r01/holder.FCStd',
+             'generated/mouse-hats/baseplate-taper/tapered-baseplate.FCStd',
+             'generated/mouse-hats/reconstruction/pcb-cap/01-pcb-cap-candidate.FCStd']:
+    doc=App.openDocument(str(ROOT/name))
+    doc.recompute()
+print('Editable checkpoint loaded. Carrier/holder/baseplate/cap; clip lives in holder document.')

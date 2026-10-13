@@ -1,0 +1,12 @@
+{
+  "units": "mm",
+  "extra_backing_mm": 0.6,
+  "width_mm": 6.0,
+  "center_z_mm": -0.0385379403202,
+  "backing_rear_x_mm": 3.70677424482636,
+  "embed_mm": 0.2,
+  "start_y_mm": 8.3,
+  "taper_start_y_mm": 10.5,
+  "end_y_mm": 12.5,
+  "edge_radius_mm": 0.3
+}

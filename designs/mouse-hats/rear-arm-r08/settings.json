@@ -1,0 +1,59 @@
+{
+  "units": "mm",
+  "baseline": "R07A",
+  "source": "registered V5 rear-arm section centers",
+  "centerline_type": "degree-5 Bezier; fixed tray root, socket attachment rotated about collar axis",
+  "poles_mm": [
+    [
+      2.20677424482636,
+      7.86588286441313,
+      12.26
+    ],
+    [
+      -4.29224282726469,
+      7.86588286441313,
+      12.26
+    ],
+    [
+      -7.258280407629937,
+      0.7170969980820008,
+      21.14273331316843
+    ],
+    [
+      -6.623610964157754,
+      -2.4998620350664518,
+      26.999999999999996
+    ],
+    [
+      4.309061281476762,
+      5.8724711672833685,
+      27.2874226721145
+    ],
+    [
+      8.25479311157386,
+      5.957681803258922,
+      27.541107892801058
+    ]
+  ],
+  "variants": {
+    "A": {
+      "label": "Wide tapered root / outward band",
+      "extra_drop_mm": 1.25
+    }
+  },
+  "extra_drop_direction": [
+    0,
+    -1,
+    0
+  ],
+  "note": "Wider root spans end retainer gap, tapers to R07 width. Reference centerline unchanged; 0.5mm one-sided band addition through middle fades at ends.",
+  "attachment_angle_deg": 30.0,
+  "root_forward_mm": 4.5062968498585,
+  "outer_bulge_mm": 2.25,
+  "root_up_mm": 3.0,
+  "root_width_mm": 5.964816000000001,
+  "root_lower_y_mm": 9.568359,
+  "original_root_width_mm": 2.6,
+  "band_extra_mm": 0.5,
+  "root_taper_fraction": 0.45
+}

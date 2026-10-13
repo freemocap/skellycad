@@ -1,0 +1,16 @@
+from pathlib import Path
+import json,os,hashlib
+import FreeCAD as App,FreeCADGui as Gui
+ROOT=Path(__file__).resolve().parents[3]
+m=json.loads((ROOT/'designs/mouse-hats/current/active-model.json').read_text())
+p=ROOT/m['native_checkpoint'];assert hashlib.sha256(p.read_bytes()).hexdigest()==m['native_sha256']
+before=list(App.listDocuments())
+camera=Gui.activeDocument().activeView().getCameraOrientation() if App.ActiveDocument else None
+doc=next((d for d in App.listDocuments().values() if d.FileName and Path(d.FileName).resolve()==p.resolve()),None) or App.openDocument(str(p))
+App.setActiveDocument(doc.Name)
+if camera:Gui.activeDocument().activeView().setCameraOrientation(camera.Q)
+Gui.activeDocument().activeView().fitAll()
+Gui.getMainWindow().raise_();Gui.getMainWindow().activateWindow()
+out=ROOT/'generated/mouse-hats/active/print-r10'
+(out/'desktop-open.json').write_text(json.dumps({'pid':os.getpid(),'before':before,'after':list(App.listDocuments()),'active':doc.Name},indent=2))
+

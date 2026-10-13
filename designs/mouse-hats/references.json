@@ -1,0 +1,866 @@
+{
+  "schema_version": 1,
+  "scope": "user-supplied old/ only",
+  "coordinate_policy": "Preserve source frames; no implicit scale, centering, alignment or repair.",
+  "baseline_status": "not selected; CAD parity precedes mesh-change reconstruction",
+  "stl_units": "unknown until checked against a known physical dimension",
+  "files": [
+    {
+      "path": "old/df-hardware/baseplate/tall_53n_baseplate.stl",
+      "bytes": 20484,
+      "sha256": "2a39271633cc3a816df3d62667b52bf7cf4559609a7c95f77c35fccadc1b50d5",
+      "role": "historical-reference"
+    },
+    {
+      "path": "old/df-hardware/baseplate/tall_mount_w_skull.blend",
+      "bytes": 521496,
+      "sha256": "ef24bbe321ace607fe3ee80b7deaa629a904d72ad70316758e4d7389159177b4",
+      "role": "historical-reference"
+    },
+    {
+      "path": "old/df-hardware/baseplate/tall_mount_w_skull.stl",
+      "bytes": 938284,
+      "sha256": "bc9571bd681f7fbfd4a7a916a27a9f3b96fd21a316abd0f604cca7b7df2c611e",
+      "role": "historical-reference"
+    },
+    {
+      "path": "old/df-hardware/baseplate/tall_tapered_53n_baseplate.stl",
+      "bytes": 20484,
+      "sha256": "1e41c81fdf5502fc4c229ba2ddfb665f9143e21db2c39cc7f57b9d078182a8f7",
+      "role": "historical-reference"
+    },
+    {
+      "path": "old/df-hardware/baseplate/tall_tapered_boolcut_53n_baseplate.stl",
+      "bytes": 47884,
+      "sha256": "4b14f192627dd978cd4b64561ef65bcff924561fdf7621a205627797fb13695f",
+      "role": "historical-reference"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/52nassemblyCap.stl",
+      "bytes": 42084,
+      "sha256": "0dc6d6ff7456064e9a8bbc1d85c452ba1085c4587159e071e52eb309f0e36167",
+      "role": "historical-reference"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/52nassemblyClip-taller.stl",
+      "bytes": 3084,
+      "sha256": "d4dc67e70b2e98857210e6166606994f79b6f2690ad0e0b81f0b6647de6ffabd",
+      "role": "historical-reference"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/52nassemblyClip.stl",
+      "bytes": 3084,
+      "sha256": "406c7f984109ebd0d27ead4d6bcbc5fc261f1379ade99a6335a55ccec2b3a293",
+      "role": "historical-reference"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/cad/50nassembly/50nassembly.f3d",
+      "bytes": 41026648,
+      "sha256": "5980a5c57fb1dc68e55627d850b730b64fbdeb1bb91f764681473742da90a239",
+      "role": "original-authoring-archive",
+      "archive_members": [
+        "FusionAssetName[Active]/",
+        "FusionAssetName[Active]/Breps.BlobParts/",
+        "FusionAssetName[Active]/Images.BlobParts/",
+        "FusionAssetName[Active]/ProteinAssets.BlobParts/",
+        "FusionAssetName[Active]/DesignConfigurationTable.BlobParts/",
+        "FusionAssetName[Active]/OGS.BlobFolder/",
+        "FusionAssetName[Active]/FusionBrowserSegmentType1/",
+        "FusionAssetName[Active]/FusionACTSegmentType1/",
+        "FusionAssetName[Active]/FusionDesignSegmentType1/",
+        "FusionAssetName[Active]/Previews/",
+        "FusionAssetName[Active]/OGS.BlobFolder/OGS/",
+        "FusionAssetName[Active]/OGS.BlobFolder/OGS/DefaultScene/",
+        "Manifest.dat",
+        "Properties.dat",
+        "FusionAssetName[Active]/Manifest.dat",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.7ddb4028-4db0-4602-ba4d-e3b426dd0fd9.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.b8426227-75b4-4b73-a3a4-8e8ea9f7c0ff.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.8f48fe9b-07b9-4a54-8ae4-0b0ff62ef89c.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.5c4ca037-1d9a-40ed-9423-17163a3e5fd7.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.e618bb9a-a0dd-4cd9-8baf-4b62ae1f9ac7.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.23d3f51f-5c6e-4eeb-87c9-a56af7be766e.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.ee820902-331d-4dae-97ae-a250ff22d163.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.1fdb9aff-811b-4ad6-8733-cc6787846650.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.e8d382b2-dd0a-4d18-a84e-d59fe8afa4b7.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.d2345c24-4d50-4c61-8520-2589971a98ac.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.f9200149-2415-4287-926e-7d21c483d067.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.fca6a156-2581-4961-9603-787ddc69cf33.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.2f6519ca-10fb-4d15-8af8-ce927c7a85ac.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.6941d47b-cf1d-4223-8017-7d56edabc162.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.57902260-7b48-4d16-917c-2285271c313e.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.24904a8e-41a4-45f2-8229-79218a1e8ef4.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.00a8f179-34e4-43d8-ba38-d3d678d818f8.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.465efda5-05a8-48e7-ab3a-7c04a915ba1f.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.3ae9c28c-d8e5-4524-9749-6c0b348e57fc.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.8a4cbaca-f5ed-42e7-ac83-529575ea7125.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.a6edc592-2334-4a35-b593-28c01e116569.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.4e794007-8a40-4236-8a89-a299f7c76219.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.7e998b3b-2dcb-4de1-9f7b-3dc99524d95e.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.a81ad9e3-c02a-4621-b07e-638ee0cb2c54.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.fbb94bb8-f8a1-4605-b09c-b67e7f601c3e.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.31964551-f0bb-4d04-b671-c2808d343de1.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.fb328979-8bb6-4c84-8fb3-b9eaa80859c6.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.9dcbd2c0-f8d7-4cf2-96c1-71dad89b5e06.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.13dfef4d-850c-4819-885c-d03e5156f448.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.7ce1e2e2-715a-4458-bff0-f2ddfe358cd4.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.2b54d90b-b327-4dd2-9aab-91763f5cc65e.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.85e2db0c-eb67-41d3-96c9-6d5c1b490222.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.76438618-c040-403b-9184-35d227d1abe3.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.5ec25fba-3cca-4e18-a8d5-5afd004f2556.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.82596aeb-7d01-4613-a02d-3ca6738dfb6b.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.3c66f8b8-366f-4e40-b3bf-6da5bf838b1b.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.d25d4b56-08f1-480b-8edb-bcc1435d6fa8.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.5617be8d-dc6b-499c-b5f7-e0093504c26f.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.e9a0e423-b8cc-45ee-928c-182bb082fa3a.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.762d2c4a-ffc1-458b-be88-4b21a2205243.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.b80d1384-49c6-40c1-9b0f-8c2d8723959d.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.c2d05eaa-ddf0-4819-9dbf-7e8936c3d2ab.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.b1832f04-e3b8-419a-a784-fa5a8f92ff71.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.0ea1a2ed-8ca0-41aa-a8a1-433cfdbf7d67.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.31794ad9-b833-48de-a097-fb38a9c5f2a4.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.a40772ef-3755-45d8-9e00-62ad8d0577e3.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.d909ce77-0d1d-45de-ac45-fe75b3324ae0.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.72a1b041-c7f0-4cf2-982e-d2238c9deb9a.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.ddf5c20c-de26-4fc6-bdec-c7b7b947d6f4.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.9287d422-2e41-4b9d-8c40-1d830a1a514e.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.a560ebff-5399-4e70-a6a4-011bc3ff63e4.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.5a1ad147-3458-47cb-a1fb-eff9e1c09bff.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.81bf13b4-cd2f-4db2-8e4d-56f911b2439f.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.9c4019cc-0908-4b5e-a60b-ecf05e144e5a.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.247bc9e4-3323-47f6-b3f1-604cb3698886.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.43fcdb9c-4f39-4f4f-9c14-957e426b9e88.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.0eb73c44-8fb0-485a-8a7e-2b0014d6f0d8.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.b85fa21c-561d-4b09-9374-67ccd014a30d.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.d6d7267e-f038-495b-af6f-f6205f2ec338.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.7ca9a46e-4414-4924-9e08-fbc6e5dc75d2.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.da322e8f-47ec-466f-a35c-248f89765daf.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.dfa14806-cb59-472c-9ddb-68f510a9bf77.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.7e22df9c-3a38-4550-95ed-6453640c2675.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.96e4ec84-eeb6-4f94-bbde-9ad00560b8e5.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.c7c6043f-b0ab-46db-97a7-a20f8d8ca5d9.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.43c262ad-a9ea-4d33-ae0c-948cf44ba0ff.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.62064dcd-21b9-4613-af89-157651d77fea.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.5a54bb17-cc12-4139-b346-7778018647af.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.5d5a0208-6660-46e3-abcc-6e45f19d3f9c.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.38c82d9c-4f86-418c-a646-baea2b0fd007.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.5c111b08-f51c-4433-b16d-4351570d06a1.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.1d94c563-5197-44d2-b518-3416acd05cb5.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.2e67faf8-990c-4777-81f6-999a8d282475.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.c303050c-667f-4890-85d0-4a677e998ad5.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.45feb98b-8cd9-49ed-8172-66443bedbe10.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.1d5ddca7-cee4-44be-9e6b-7c22b0e6f384.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.5c10a044-1023-462d-b648-ce859d51f5b4.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.9f4a8c9a-9772-4a97-b269-977ce0e1cdc1.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.4d1b27f7-7cb1-4f47-a6b5-44f5d401c542.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.d46d8875-bd35-48fb-ad4b-d70236ce4522.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.b4aa5229-e704-4f52-b86e-b799456ee08b.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.cafe4e38-8da2-4b1f-823f-d72f72aa489e.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.a25c2b54-306e-4405-b49c-bdb705485b51.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.44eb6266-884e-42f2-98e6-8f70f8952d2b.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.281f38d0-a2b5-4b33-ae34-9246c52248e9.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.f5c47bf2-0a5d-4241-a51f-ecc941338620.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.fe2a0e41-8206-45bc-aacb-8b344e2b6b1a.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.51b683ce-4f07-4b2b-bfdf-e0280ef5b206.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.3c251c1f-1f64-4f7a-a205-0272275d77c9.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.c54b549a-d280-4f82-aacc-b917bb5bc8d9.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.9d608ed6-9311-45b1-82ab-232434230d05.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.9f31c471-f433-44c4-b24f-f8bb4683cc7b.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.64bc5f4e-5cff-4165-9de4-0c4f8d8c1081.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.9cc80a0e-e817-4412-8fdf-9068adae3c7f.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.d82ec63c-5303-45dd-be97-a12664f7d97a.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.994d09bb-ab3f-47bb-b698-dea864ee4374.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.a3905033-17a2-4d1e-a39e-df58d661a813.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.e17db718-df55-400e-8ca1-92b55acec776.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.3744651f-e04d-48d0-9d7c-58bf814ae78c.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.2e7b7125-92d4-4994-97e2-687f7baa8cb9.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.0f1a0df8-9e4d-4cc1-a508-913e361bf2cc.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.fcefd235-44bb-40ff-8bf0-483ab4cedb6e.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.61f654b2-3f80-40fe-97ff-5f1152f1a8dd.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.3ee92dfb-1f7d-4368-8799-762725470df1.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.f2744679-c08a-4464-8015-eeb3da6b4b20.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.8c3f09e5-e705-4a70-aa72-76a00482e18d.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.c4e6dfa4-abfa-458e-8ead-550f99af3952.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.dd5d5fdb-d444-4312-aacf-2fb8c0c00f72.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.eb05bc6b-d6d0-491d-9f69-c86a9abcedcd.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.f7fabc6f-9dd8-4884-937b-e25da0fee2d9.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.b86037f0-cf7c-4dc1-b672-dcd8b84a0b60.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.8a7d5805-c079-4b29-a518-4aa8740d11ae.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.3fa2d18d-41d7-41fd-a49b-4e879811e4e0.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.353cebe1-1d17-4284-b1b9-4b3aedb0bc4f.smbh",
+        "FusionAssetName[Active]/ProteinAssets.BlobParts/ProteinAsset.c722f695-3aee-4973-9cfa-d16a94082c73.protein",
+        "FusionAssetName[Active]/DesignConfigurationTable.BlobParts/DesignConfigurationRule.ee419a8b-3725-4312-9994-32d3bc6ed2eb.dsgcfgrule",
+        "FusionAssetName[Active]/DesignConfigurationTable.BlobParts/DesignConfigurationTable.716beaf6-60ae-4d22-8c20-18bc2da62e5a.dsgcfg",
+        "FusionAssetName[Active]/FusionBrowserSegmentType1/BulkStream.dat",
+        "FusionAssetName[Active]/FusionBrowserSegmentType1/MetaStream.dat",
+        "FusionAssetName[Active]/FusionACTSegmentType1/BulkStream.dat",
+        "FusionAssetName[Active]/FusionACTSegmentType1/MetaStream.dat",
+        "FusionAssetName[Active]/FusionDesignSegmentType1/BulkStream.dat",
+        "FusionAssetName[Active]/FusionDesignSegmentType1/MetaStream.dat",
+        "FusionAssetName[Active]/Previews/small.png",
+        "FusionAssetName[Active]/OGS.BlobFolder/OGS/DefaultScene/world",
+        "FusionAssetName[Active]/OGS.BlobFolder/OGS/DefaultScene/stream_mesh_000",
+        "FusionAssetName[Active]/OGS.BlobFolder/OGS/DefaultScene/Fusion_mesh_000"
+      ]
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/cad/50nassembly/50nassembly.step",
+      "bytes": 45104546,
+      "sha256": "ea3b504f63c566e6c2d634c2274247999abf12a42a32d260f32e833a0ca42c8f",
+      "role": "candidate-cad-baseline"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/cad/50nassembly/50nassembly.stl",
+      "bytes": 2169284,
+      "sha256": "3e3c5832a36745bf1a045bdf33ae94eb33538ceebdeb928de88e2055df3c512f",
+      "role": "historical-reference"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/cad/52nassembly/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "historical-reference"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/cad/52nassembly/52nassembly.f3d",
+      "bytes": 41893291,
+      "sha256": "6ac6eb8b40f37f9c81289425c3ca32b484df78e6e26c64c77287c380864fcb82",
+      "role": "original-authoring-archive",
+      "archive_members": [
+        "FusionAssetName[Active]/",
+        "FusionAssetName[Active]/Breps.BlobParts/",
+        "FusionAssetName[Active]/DesignConfigurationTable.BlobParts/",
+        "FusionAssetName[Active]/Images.BlobParts/",
+        "FusionAssetName[Active]/ProteinAssets.BlobParts/",
+        "FusionAssetName[Active]/OGS.BlobFolder/",
+        "FusionAssetName[Active]/FusionDesignSegmentType1/",
+        "FusionAssetName[Active]/FusionACTSegmentType1/",
+        "FusionAssetName[Active]/FusionBrowserSegmentType1/",
+        "FusionAssetName[Active]/Previews/",
+        "FusionAssetName[Active]/OGS.BlobFolder/OGS/",
+        "FusionAssetName[Active]/OGS.BlobFolder/OGS/DefaultScene/",
+        "Manifest.dat",
+        "Properties.dat",
+        "FusionAssetName[Active]/Manifest.dat",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.fcfcd163-9648-4171-a4cc-587e99173714.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.9dea1d9a-fe6d-4423-b3e6-b1e1cf3ddef6.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.772ea9e6-1a06-428b-a720-50910f57c2d0.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.3a307b93-582a-485b-9393-b7c1837b1b0a.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.240ffafd-7128-45db-b1d6-cc31b45191e0.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.a1217484-7c42-4b7f-b3bf-f96eb77351b0.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.dd81eb95-0224-4cd5-88ef-677414f91a28.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.9e2eaf06-542e-4bde-98d3-37b3019ec9be.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.f8ec475b-63cd-4d70-9a11-cc0f14e56455.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.a638a8cd-d7f6-4edf-92a7-fbba172cae40.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.042c5c1f-59ad-45ba-9941-cd958855e0d8.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.1d8bc357-9443-4ceb-9e46-3a73bda3d073.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.c95e0df8-0053-45eb-89f6-808764ebbe29.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.dab587aa-3bc7-4bc7-9288-9e378f569188.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.81e576b9-b263-4509-b519-f221eae7e7e7.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.c8c02f38-9a38-4608-a8eb-8a95e0afba53.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.f7ebab70-fb11-472c-a891-d6958c1bc673.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.2e3c0438-b727-42db-9c2c-b1523bc679c7.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.4e7015f5-7348-4f1e-9d83-77b93b92aaa5.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.d34efb6c-7273-4c1e-9466-beb054778862.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.a90cddd5-704e-4fbb-8c3f-6488afe5e028.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.23004f61-ab3f-4f3d-87e2-6f65828fb052.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.2d9ce80e-4e39-4472-bf1e-a9e4eb433277.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.791f91e6-8f71-4f93-91bf-017ec822181a.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.96eb0105-ee77-4684-8371-9ae072a191e9.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.08338104-242c-4628-a189-a9dba712cb91.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.5f8e7c06-b8b8-4f70-ae41-2414ec9ae8b7.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.96bcab6e-fa3f-40c6-b89b-c41f9ee809f8.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.b78833a0-1987-4ac2-9bb3-9a8bb44a164d.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.668c884b-55ee-40c9-9e13-32497ece9c28.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.da16dc00-74df-4cd1-8e8e-2f2939853df9.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.98ac6931-2539-45b3-aa7a-b7691b391bb2.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.3acd7d39-cc42-4e32-a47a-5942adabd911.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.08bb6613-e03e-4c6f-bbe8-2f2a960ff037.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.9c6f735a-1424-4fcc-b9f4-1749b6ed6c20.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.a954a7a7-7571-49d2-8528-da56c0990135.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.be417eb9-bd43-43de-9dc7-a354aed75a00.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.f944c99b-bf4e-41ff-9d99-5c5dd6dead94.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.3cb1eca5-e1e3-4a2a-850b-3c8ef016c80b.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.d689938b-066a-4d69-ad7d-6e34196aab24.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.e34ae9c0-edbb-48ba-91ce-93c17d29ed3d.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.0806edd1-45b7-49dd-89ce-11605ccf228d.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.37ec4f2f-e7d3-4353-ae57-8b0ab2bebf4c.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.9fd492a5-3ad3-405a-b51c-6637af184dba.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.4e6b7e9d-6a88-4485-99ba-8311a31229f4.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.367b2f86-4cfd-43f6-993f-816552a76f7c.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.2cfbf848-293e-4725-afb1-af289ae9e5b6.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.174e6746-1416-468e-ab22-f8ac24ee7032.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.f3b83eb7-1be1-454c-be56-48b5a2a6760b.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.1c814f9a-11bc-4174-9c95-4d125d7c40d6.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.14789029-376d-4639-8328-66d893a6a32a.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.ab656e1a-fc8c-403d-b3b8-30a4282c97bd.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.ddd126bc-3155-4aa0-a170-afea31ae9d41.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.25bd4528-236e-41fe-8f9b-8548de7f6859.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.e8baf921-f637-44f1-9886-414b66ab1b8a.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.c1127562-4848-4964-b0e1-02fb7f019714.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.ff569e62-d0bf-4817-a77d-03d2b134f826.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.15824899-3d69-432d-bea2-2f90a78fd711.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.a29a7146-cb91-464d-813b-28fb656bdd1a.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.4cde6c18-45f1-4fdf-8d57-afaff74db3bc.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.51077bd2-7ea9-4e30-906b-e4e85327fdad.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.8024b6e2-ea27-4421-a0b4-adb6ecfff23f.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.07f4bfec-f9cd-4730-bf23-a19d67b13451.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.ed136daf-844f-4c84-897a-1192c258f159.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.17f4e6f4-14f5-4ef4-9dfb-806c889fa55d.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.036ab3a1-f192-4763-8fc4-f2bda6bd778e.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.beeeef90-8d60-40ee-8570-c5efed805403.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.4cfd37e1-e7f5-471b-ac45-69b6b47457f6.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.041e08a5-918b-4d2c-9575-02ff3baae2d9.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.4bcfde6f-89e5-45a0-b29f-1da56fa00c0b.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.b39f98a1-8b41-41e9-9a5e-05495e8299ff.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.99ebb3ee-eea8-416f-ae2c-bb4ea1fc5391.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.9b0d9b17-5d4d-4f1b-a1af-f0dc7be441cf.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.fd7da454-7ebb-46de-acdb-cedcdb13b747.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.95a698e9-c8e6-4812-8693-3e684435b1d6.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.7676583f-0ff3-43f1-94d1-7f868d86a671.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.0c4e4420-11f4-481e-81a1-03321902bbf2.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.fccaae3d-a3af-4250-8f38-0dd623309c14.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.5eef00dc-9280-467d-b38b-7e0b2e7c0f86.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.f9f0e5f2-b8d0-44c7-a17f-326afe81a379.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.5c759bec-8b06-4359-b0b9-31858b715601.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.48ef55e4-425e-4168-8bfe-1288df4ba274.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.db74e9a4-2ee9-46c4-a5d9-e97be4400dda.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.3ce2073f-e5fb-4600-841b-3a9e27c3d153.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.f576bf6a-acaa-46f5-a8c9-315f50f662ac.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.4eb0a29c-2c6d-4912-bf89-75a7fdf37183.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.9a849c29-e3a9-49db-8b61-2bfcc78c138f.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.c539b7c9-3c37-4848-a6a5-83204d8a878b.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.f218bc41-0288-41c1-819d-2a98e2c6f83c.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.3240c731-61a6-4557-aca1-5fe357f6f7cb.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.346a8551-eb8e-4761-8c1a-f1f3bff7822b.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.3ceb2457-f35d-4df3-909d-be7ea140feed.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.64da01bd-dc03-49b7-9a3f-0eb133e97278.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.37e3515b-9fcc-41f7-91b8-825b1c292d22.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.876213c4-7fd0-4be7-bc11-2e18e7f748af.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.6116b61f-dce3-4110-ad28-4ae55ef832a3.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.ae477838-b673-4eda-82b8-c0238a103a2d.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.95f9f872-8ca9-46eb-949d-eb29e8de6480.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.81e8b264-7430-4b03-965d-a73d61bbfc1c.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.c676741f-27be-4381-a921-88751bca3db6.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.7df74513-91c5-48ef-9635-84b09534e3bf.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.66b4c4dc-9582-40e3-8661-2a845e4175a4.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.6e61a39a-7516-4731-8412-31c7de1e7e98.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.373b8b7b-245a-4386-8668-553ee2fffd11.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.3aca7b40-e561-464e-8704-36b5b00da8f8.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.111c3719-151b-4605-a24b-cf0ad43da189.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.2dbe0efd-5cc5-4fd8-98c3-d9101f5b1b7d.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.436d687b-85a1-4fab-9259-adb41ad13aa8.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.059cc24e-23f3-4a26-9c50-54ee58c87ca7.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.6c59b17a-be04-4bcd-8f64-8126d3394da7.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.31413e14-942c-4f5e-9863-3ba896264624.smbh",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.27746432-3211-472d-b17e-2b6841cc94da.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.52cb90d9-ada4-4e95-b74d-32ba96a94af2.smb",
+        "FusionAssetName[Active]/Breps.BlobParts/BREP.a2116746-8a89-4b87-a01d-b4fc19449b1e.smbh",
+        "FusionAssetName[Active]/DesignConfigurationTable.BlobParts/DesignConfigurationTable.6d62de03-4329-4239-8e57-eacfca0db54e.dsgcfg",
+        "FusionAssetName[Active]/DesignConfigurationTable.BlobParts/DesignConfigurationRule.3e7a3198-f5b8-4ac2-8514-8f2ce3540970.dsgcfgrule",
+        "FusionAssetName[Active]/ProteinAssets.BlobParts/ProteinAsset.42ab4de2-09c6-4213-a7dc-7e3d32856303.protein",
+        "FusionAssetName[Active]/FusionDesignSegmentType1/BulkStream.dat",
+        "FusionAssetName[Active]/FusionDesignSegmentType1/MetaStream.dat",
+        "FusionAssetName[Active]/FusionACTSegmentType1/BulkStream.dat",
+        "FusionAssetName[Active]/FusionACTSegmentType1/MetaStream.dat",
+        "FusionAssetName[Active]/FusionBrowserSegmentType1/BulkStream.dat",
+        "FusionAssetName[Active]/FusionBrowserSegmentType1/MetaStream.dat",
+        "FusionAssetName[Active]/Previews/small.png",
+        "FusionAssetName[Active]/OGS.BlobFolder/OGS/DefaultScene/world",
+        "FusionAssetName[Active]/OGS.BlobFolder/OGS/DefaultScene/stream_mesh_000",
+        "FusionAssetName[Active]/OGS.BlobFolder/OGS/DefaultScene/Fusion_mesh_000"
+      ]
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/cad/52nassembly/52nassembly.step",
+      "bytes": 304292,
+      "sha256": "f03bfe0acfbf3dcddb017cedd1737a97abe2451d51e057d4ac32061514cbf1e6",
+      "role": "candidate-cad-baseline"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/cad/52nassembly/52nassembly_w_mouse_skull.stl",
+      "bytes": 4598684,
+      "sha256": "784fe3ec06ce4efdd43eeaba5b04e2580cc1c81408bcb58ce2186081e50a5d0a",
+      "role": "historical-reference"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/cad/52nassembly/52nassembly_w_mouse_skull_and_camera.blend",
+      "bytes": 13315381,
+      "sha256": "7f24af6517614ad0659378dbc482243a68fa3760e400eaa512e8717a1979b5f3",
+      "role": "historical-reference"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/cad/52nassembly/52nassembly_w_mouse_skull_and_camera.blend1",
+      "bytes": 16798128,
+      "sha256": "5da5361d52567c84c9e1408889fa9d700b55d0c1d6c26787ace792c4390569f8",
+      "role": "historical-reference"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/cad/52nassembly/52nassemblyBaseplate.stl",
+      "bytes": 21884,
+      "sha256": "aac43670ffdca739aa1e7a4618354d5bcfb44b20ba29e89d10c86f92072a405d",
+      "role": "historical-reference"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/cad/52nassembly/52nassemblyBaseplate_M2.stl",
+      "bytes": 241284,
+      "sha256": "c03b0bc957753417094d286e1819c5e680f4f7cca0fddeab11f4b3c408cd6069",
+      "role": "historical-reference"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/cad/52nassembly/52nassemblyCamHolder.stl",
+      "bytes": 177684,
+      "sha256": "27dbffbbcdba5f44a431f0971847e954a3a119f44c227060b8f6fd8101cb3f99",
+      "role": "historical-reference"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/cad/52nassembly/52nassemblyCap.stl",
+      "bytes": 42084,
+      "sha256": "0dc6d6ff7456064e9a8bbc1d85c452ba1085c4587159e071e52eb309f0e36167",
+      "role": "historical-reference"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/cad/52nassembly/52nassemblyClip.stl",
+      "bytes": 3084,
+      "sha256": "406c7f984109ebd0d27ead4d6bcbc5fc261f1379ade99a6335a55ccec2b3a293",
+      "role": "historical-reference"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/cad/52nassembly/52nassemblyMain.stl",
+      "bytes": 211884,
+      "sha256": "7f37699c65e79e65b16ba12ccfc4709c68788c5e7457b9df6cd73f623f84a258",
+      "role": "historical-reference"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/cad/52nassembly/52nassemblyPrintinplace.stl",
+      "bytes": 389484,
+      "sha256": "6c979c4255bdd786e24a4eccacb18a594d2ff43c42f1fb27860295154f666678",
+      "role": "historical-reference"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/cad/53nassembly/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "historical-reference"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/cad/53nassembly/53nassembly.step",
+      "bytes": 49854562,
+      "sha256": "37b6adb2464d3b2181a3f928a9df360ed54baec26284cb173f9df905d1e3fdf7",
+      "role": "candidate-cad-baseline"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/cad/53nassembly/Baseplate__1_.stl",
+      "bytes": 1447740,
+      "sha256": "5f6a37784427a98a9a4c4ec80cac3ebd77bfdd6a83463b67bf2cbe05d06eaea0",
+      "role": "historical-reference"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/cad/53nassembly/Main__1_.stl",
+      "bytes": 700409,
+      "sha256": "2eec093b7f4efa29d41ce314e792bb48818103e4c5757a17e0d04c0b2d17e897",
+      "role": "historical-reference"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/cad/54nassembly/54n_main.stl",
+      "bytes": 196684,
+      "sha256": "b902b784f4d1264d1ffd980581e81ee96111d80b1d1b16401516d0c186c226d2",
+      "role": "historical-reference"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/cad/55nassembly/55nassembly.stl",
+      "bytes": 358384,
+      "sha256": "5bd43d108609790111c2e8b05d26f6686889f9d5e5cb3811fed0f7524499f721",
+      "role": "historical-reference"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/cad/56nassembly/56nassembly.stl",
+      "bytes": 380184,
+      "sha256": "79e95ebfc193490935b3fc4a706a25f556f77ec7ee088a2f292b2f0c19de62f5",
+      "role": "historical-reference"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/cad/57nassembly/57nassembly.stl",
+      "bytes": 380684,
+      "sha256": "ec297ddab6b24e0e151084f872530542686b27107521aff6aff32bca15ac2267",
+      "role": "historical-reference"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/camera-assembly-2arm-v1.stl",
+      "bytes": 404684,
+      "sha256": "39cecddd152526056c0eda31a5128e24cff9e2f64bde228052939c15f18fa4fd",
+      "role": "later-mesh-variant"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/camera-assembly-2arm-v2.stl",
+      "bytes": 404684,
+      "sha256": "b911bc4da36def9719ef181b80d6e57f521395c7f3333b068f3c0a9ccd7d5270",
+      "role": "later-mesh-variant"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/camera-assembly-2arm-v3.stl",
+      "bytes": 404684,
+      "sha256": "80bfbf6ce96a884b961e7fd91aea69a5318dddc3b7e0932505379617b7a93d4a",
+      "role": "later-mesh-variant"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/camera-assembly-2arm-v4.stl",
+      "bytes": 404684,
+      "sha256": "3f600ff87678d523cf88d089dc5132138173bfee6be7c288d0b265e8f947caf3",
+      "role": "later-mesh-variant"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/camera-assembly-2arm-v5.stl",
+      "bytes": 404684,
+      "sha256": "1fce6b7931ccd03d27be857895ae4536ab6255d40d329f94bd0e128fbdd693df",
+      "role": "later-mesh-variant"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/full-set.3mf",
+      "bytes": 502467,
+      "sha256": "1c65d53ae5434258275a431d8930ca8866a96400c60775542bbfcd1097c6ab7a",
+      "role": "historical-reference",
+      "archive_members": [
+        "[Content_Types].xml",
+        "Metadata/plate_1.png",
+        "Metadata/plate_1_small.png",
+        "Metadata/plate_no_light_1.png",
+        "Metadata/top_1.png",
+        "Metadata/pick_1.png",
+        "Metadata/plate_1.json",
+        "3D/3dmodel.model",
+        "3D/_rels/3dmodel.model.rels",
+        "3D/Objects/52nassemblyClip.stl_6.model",
+        "3D/Objects/tall_tapered_53n_baseplate.stl_4.model",
+        "3D/Objects/52nassemblyCap.stl_7.model",
+        "3D/Objects/tall_tapered_boolcut_53n_baseplate.stl_5.model",
+        "3D/Objects/camera-assembly-2arm-v4.stl_2.model",
+        "3D/Objects/tall_mount_w_skull.stl_3.model",
+        "Metadata/project_settings.config",
+        "Metadata/model_settings.config",
+        "Metadata/slice_info.config",
+        "_rels/.rels"
+      ]
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/old/camera-assembly-2arm-v0.stl",
+      "bytes": 404584,
+      "sha256": "8169c2b6bcee57f90c0ac6cc96258b25e60f8a798958da5e6668e8ea369c0890",
+      "role": "later-mesh-variant"
+    },
+    {
+      "path": "old/df-hardware/rebuild/baseline/assembly-53-audit.json",
+      "bytes": 2406,
+      "sha256": "aa808a6c971a8489c45c35ac6946d516c589bb2d495ada095acacefc27099905",
+      "role": "prior-inspection-artifact"
+    },
+    {
+      "path": "old/df-hardware/rebuild/baseline/blender-scenes.json",
+      "bytes": 2430,
+      "sha256": "9af9eeb45d534bc6a3966029dae0bd24c3d22cfef28a94f210036cd05a6beb0c",
+      "role": "prior-inspection-artifact"
+    },
+    {
+      "path": "old/df-hardware/rebuild/baseline/camera-assembly-2arm-v5-audit.json",
+      "bytes": 4983,
+      "sha256": "43f60b3cc234e727a057cc26ad36041e7b5e3418c9fb9d013a09ed5c4b7028ed",
+      "role": "prior-inspection-artifact"
+    },
+    {
+      "path": "old/df-hardware/rebuild/baseline/reference-inventory.json",
+      "bytes": 7500,
+      "sha256": "e530a71e5b37e7278fc731b40cc2c180719b407f9b4c61574837c12196d40040",
+      "role": "prior-inspection-artifact"
+    },
+    {
+      "path": "old/df-hardware/rebuild/generated/assembly-53-audit.json",
+      "bytes": 2406,
+      "sha256": "aa808a6c971a8489c45c35ac6946d516c589bb2d495ada095acacefc27099905",
+      "role": "prior-inspection-artifact"
+    },
+    {
+      "path": "old/df-hardware/rebuild/generated/blender-scenes.json",
+      "bytes": 2430,
+      "sha256": "9af9eeb45d534bc6a3966029dae0bd24c3d22cfef28a94f210036cd05a6beb0c",
+      "role": "prior-inspection-artifact"
+    },
+    {
+      "path": "old/df-hardware/rebuild/generated/camera-assembly-2arm-v5-audit.json",
+      "bytes": 4983,
+      "sha256": "43f60b3cc234e727a057cc26ad36041e7b5e3418c9fb9d013a09ed5c4b7028ed",
+      "role": "prior-inspection-artifact"
+    },
+    {
+      "path": "old/df-hardware/rebuild/generated/camera-assembly-2arm-v5-views.png",
+      "bytes": 391491,
+      "sha256": "d85b54583d6bd2f95c2e99176bf30ae1be37b297876232807d243b35d4d373a1",
+      "role": "prior-inspection-artifact"
+    },
+    {
+      "path": "old/df-hardware/rebuild/generated/mcp-check.json",
+      "bytes": 1414,
+      "sha256": "0e4e1f856c62cc9b1a5c758bcdfe6ce2676bb5d0c0579bc1f79c43c02de2a45d",
+      "role": "prior-inspection-artifact"
+    },
+    {
+      "path": "old/df-hardware/rebuild/generated/reference-inventory.json",
+      "bytes": 7500,
+      "sha256": "e530a71e5b37e7278fc731b40cc2c180719b407f9b4c61574837c12196d40040",
+      "role": "prior-inspection-artifact"
+    },
+    {
+      "path": "old/df-hardware/rebuild/generated/reference-study.FCStd",
+      "bytes": 10840401,
+      "sha256": "8e73dadf5dcc75ef3c1bc49017e249c261fe06111ca5d701d56b4a33dcc5712b",
+      "role": "prior-inspection-artifact"
+    },
+    {
+      "path": "old/df-hardware/rebuild/generated/toolchain-smoke.FCStd",
+      "bytes": 2539,
+      "sha256": "a8342dce64853109aed7945e6ccc6e7a3696098786d842816296928693f4937b",
+      "role": "prior-inspection-artifact"
+    },
+    {
+      "path": "old/df-hardware/rebuild/generated/toolchain-smoke.step",
+      "bytes": 6836,
+      "sha256": "17ef5bdb6b19879611adc1174556b85d8347c92f102ae2f8edf7e905db1c7191",
+      "role": "prior-inspection-artifact"
+    },
+    {
+      "path": "old/df-hardware/rebuild/generated/two-arm-v5-reference.blend",
+      "bytes": 266008,
+      "sha256": "972d964cbce8f4cccc4e11081f902afb18f582a5163366dd0e0d98cbc28a52c9",
+      "role": "prior-inspection-artifact"
+    },
+    {
+      "path": "old/df-hardware/rebuild/generated/two-arm-v5-reference.blend1",
+      "bytes": 267584,
+      "sha256": "dd4cc5035b968f309a5079f50a9157672a2640394d409b47badbee2ced066f71",
+      "role": "prior-inspection-artifact"
+    },
+    {
+      "path": "old/df-hardware/rebuild/README.md",
+      "bytes": 2711,
+      "sha256": "42960c77ec16cd5e299ef70db5e6a193d449ad9f8fc6bf177dfbe18b41b8a85b",
+      "role": "prior-inspection-artifact"
+    },
+    {
+      "path": "old/df-hardware/rebuild/references.json",
+      "bytes": 853,
+      "sha256": "7d17a7116fc0fb3f64930eb9e2c4e41d25d1b8847d9e27d7540fd6a4ce4a161d",
+      "role": "prior-inspection-artifact"
+    },
+    {
+      "path": "old/df-hardware/utility/M4_lens_adjuster.stl",
+      "bytes": 23584,
+      "sha256": "0345f2398d751232fc29a8d6d2a7ebdf4da14ed5534ceb73e837319e938dba97",
+      "role": "historical-reference"
+    },
+    {
+      "path": "old/df-hardware/utility/mouse_skull_low_poly_hollow.stl",
+      "bytes": 1009984,
+      "sha256": "cf45354168b53acabbc0e90c21bc777ee7030330c734c58c2a20e5e7455d81cf",
+      "role": "historical-reference"
+    },
+    {
+      "path": "old/df-hardware/utility/mouse_skull_low_poly_solid.stl",
+      "bytes": 777384,
+      "sha256": "2f3595fe7ef66f2a7419e4ea5b63cfc01f7494ab050504e371fadae1de06fab9",
+      "role": "historical-reference"
+    },
+    {
+      "path": "old/df-hardware/utility/mouse_skull_low_poly_solid_w_eyes.stl",
+      "bytes": 917884,
+      "sha256": "a48353341d9d385c5fc0b665efd7c83fa7832e71408c7fe7f96a993fe9eb20ca",
+      "role": "historical-reference"
+    }
+  ],
+  "identical_file_groups": [
+    [
+      "old/df-hardware/camera-assembly/52nassemblyCap.stl",
+      "old/df-hardware/camera-assembly/cad/52nassembly/52nassemblyCap.stl"
+    ],
+    [
+      "old/df-hardware/camera-assembly/52nassemblyClip.stl",
+      "old/df-hardware/camera-assembly/cad/52nassembly/52nassemblyClip.stl"
+    ],
+    [
+      "old/df-hardware/rebuild/baseline/assembly-53-audit.json",
+      "old/df-hardware/rebuild/generated/assembly-53-audit.json"
+    ],
+    [
+      "old/df-hardware/rebuild/baseline/blender-scenes.json",
+      "old/df-hardware/rebuild/generated/blender-scenes.json"
+    ],
+    [
+      "old/df-hardware/rebuild/baseline/camera-assembly-2arm-v5-audit.json",
+      "old/df-hardware/rebuild/generated/camera-assembly-2arm-v5-audit.json"
+    ],
+    [
+      "old/df-hardware/rebuild/baseline/reference-inventory.json",
+      "old/df-hardware/rebuild/generated/reference-inventory.json"
+    ]
+  ],
+  "previous_inventory_verification": [
+    {
+      "path": "old/df-hardware/baseplate/tall_53n_baseplate.stl",
+      "status": "match"
+    },
+    {
+      "path": "old/df-hardware/baseplate/tall_mount_w_skull.blend",
+      "status": "match"
+    },
+    {
+      "path": "old/df-hardware/baseplate/tall_mount_w_skull.stl",
+      "status": "match"
+    },
+    {
+      "path": "old/df-hardware/baseplate/tall_tapered_53n_baseplate.stl",
+      "status": "match"
+    },
+    {
+      "path": "old/df-hardware/baseplate/tall_tapered_boolcut_53n_baseplate.stl",
+      "status": "match"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/52nassemblyCap.stl",
+      "status": "match"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/52nassemblyClip.stl",
+      "status": "match"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/cad/50nassembly/50nassembly.f3d",
+      "status": "match"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/cad/50nassembly/50nassembly.step",
+      "status": "match"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/cad/50nassembly/50nassembly.stl",
+      "status": "match"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/cad/52nassembly/52nassembly.f3d",
+      "status": "match"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/cad/52nassembly/52nassembly.step",
+      "status": "match"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/cad/52nassembly/52nassembly_w_mouse_skull.stl",
+      "status": "match"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/cad/52nassembly/52nassembly_w_mouse_skull_and_camera.blend",
+      "status": "match"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/cad/52nassembly/52nassembly_w_mouse_skull_and_camera.blend1",
+      "status": "match"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/cad/52nassembly/52nassemblyBaseplate.stl",
+      "status": "match"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/cad/52nassembly/52nassemblyBaseplate_M2.stl",
+      "status": "match"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/cad/52nassembly/52nassemblyCamHolder.stl",
+      "status": "match"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/cad/52nassembly/52nassemblyCap.stl",
+      "status": "match"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/cad/52nassembly/52nassemblyClip.stl",
+      "status": "match"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/cad/52nassembly/52nassemblyMain.stl",
+      "status": "match"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/cad/52nassembly/52nassemblyPrintinplace.stl",
+      "status": "match"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/cad/53nassembly/53nassembly.step",
+      "status": "match"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/cad/53nassembly/Baseplate__1_.stl",
+      "status": "match"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/cad/53nassembly/Main__1_.stl",
+      "status": "match"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/cad/54nassembly/54n_main.stl",
+      "status": "match"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/cad/55nassembly/55nassembly.stl",
+      "status": "match"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/cad/56nassembly/56nassembly.stl",
+      "status": "match"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/cad/57nassembly/57nassembly.stl",
+      "status": "match"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/camera-assembly-2arm-v1.stl",
+      "status": "match"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/camera-assembly-2arm-v2.stl",
+      "status": "match"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/camera-assembly-2arm-v3.stl",
+      "status": "match"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/camera-assembly-2arm-v4.stl",
+      "status": "match"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/camera-assembly-2arm-v5.stl",
+      "status": "match"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/full-set.3mf",
+      "status": "match"
+    },
+    {
+      "path": "old/df-hardware/camera-assembly/old/camera-assembly-2arm-v0.stl",
+      "status": "match"
+    },
+    {
+      "path": "old/df-hardware/utility/M4_lens_adjuster.stl",
+      "status": "match"
+    },
+    {
+      "path": "old/df-hardware/utility/mouse_skull_low_poly_hollow.stl",
+      "status": "match"
+    },
+    {
+      "path": "old/df-hardware/utility/mouse_skull_low_poly_solid.stl",
+      "status": "match"
+    },
+    {
+      "path": "old/df-hardware/utility/mouse_skull_low_poly_solid_w_eyes.stl",
+      "status": "match"
+    }
+  ]
+}

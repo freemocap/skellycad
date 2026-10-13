@@ -1,0 +1,14 @@
+{
+  "revision": "R02",
+  "date": "2026-10-09",
+  "status": "print-test candidate; STEP exchange qualified by documented warnings",
+  "units": "mm",
+  "parts": 5,
+  "schema": "AP242",
+  "git_base": "832132feb466263d5e528cab786d375e146c701c",
+  "source_state": "working-tree snapshot; not claimed to be a clean committed tree",
+  "geometry_change_this_packaging_turn": false,
+  "all_prior_work_preserved": true,
+  "runtime": "FreeCAD 1.1.4 / Python 3.11 / OCCT 7.8",
+  "history_assets_included": false
+}

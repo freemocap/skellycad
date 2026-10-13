@@ -1,0 +1,1691 @@
+{
+  "scope": "Direct repository-relative Python string literals; generated outputs retained conservatively for computed paths. Missing output destinations may be created by builders.",
+  "references": [
+    {
+      "script": "designs/cad-foundations/replay.py",
+      "path": "generated/cad-foundations",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/eye-tracker/mouse/build.py",
+      "path": "generated/eye-tracker/mouse/rebuild-r10",
+      "exists": true,
+      "existed_in_import": false
+    },
+    {
+      "script": "designs/mouse-hats/b-flared-loop-r07/build.py",
+      "path": "designs/mouse-hats/current/checkpoints/MH-T3-EYE-R07.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/baseplate-taper/build.py",
+      "path": "generated/mouse-hats/baseplate-taper",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/baseplate-taper/build.py",
+      "path": "generated/mouse-hats/print-test/r01/print-in-place-review.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/baseplate-taper/build.py",
+      "path": "generated/mouse-hats/reconstruction/baseplate/01-baseplate-candidate.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/baseplate-taper/measure_reference.py",
+      "path": "generated/mouse-hats/baseplate-taper",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/baseplate-taper/package_r02.py",
+      "path": "generated/mouse-hats/print-test/r01",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/baseplate-taper/package_r02.py",
+      "path": "generated/mouse-hats/baseplate-taper",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/checks/compare_shared_shell.py",
+      "path": "generated/mouse-hats/inspection/shared-shell-registration.json",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/checks/inspect_fusion_names.py",
+      "path": "generated/mouse-hats/inspection/fusion-name-clues.json",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/checks/inspect_meshes.py",
+      "path": "generated/mouse-hats/inspection",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/checks/inspect_steps.py",
+      "path": "generated/mouse-hats/inspection",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/checks/prepare_cached_step53.py",
+      "path": "generated/mouse-hats/inspection/cached-53",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/checks/prepare_clip58.py",
+      "path": "generated/mouse-hats/reconstruction/camera-clip",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/checks/show_references.py",
+      "path": "generated/mouse-hats/inspection",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/checks/show_step52.py",
+      "path": "generated/mouse-hats/inspection/52-numbered-reference.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/checks/show_step53.py",
+      "path": "generated/mouse-hats/inspection",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/checks/show_step58.py",
+      "path": "generated/mouse-hats/inspection",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/compact-arm-r04/build.py",
+      "path": "generated/mouse-hats/compact-arm-r04",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/current/build.py",
+      "path": "generated/mouse-hats/active",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/flat-ledge-r06/build.py",
+      "path": "designs/mouse-hats/current/checkpoints/MH-T3-EYE-R04.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/flat-ledge-r06/build.py",
+      "path": "generated/mouse-hats/active/print-r06",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/flat-ledge-r06/build.py",
+      "path": "designs/mouse-hats/current/checkpoints/MH-T3-EYE-R06.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/flat-ledge-r06/build.py",
+      "path": "designs/mouse-hats/loop-options-r05/R05-",
+      "exists": false,
+      "existed_in_import": false
+    },
+    {
+      "script": "designs/mouse-hats/loop-options-r05/build.py",
+      "path": "generated/mouse-hats/loop-options-r05",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/model/build_attachment_arms.py",
+      "path": "generated/mouse-hats/arms/attachments",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/model/build_attachment_arms.py",
+      "path": "generated/mouse-hats/reconstruction/socket/01-socket-candidate.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/model/build_attachment_arms.py",
+      "path": "generated/mouse-hats/model/tray-cleanup/cleaned-tray.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/model/build_finished_arms.py",
+      "path": "generated/mouse-hats/arms/finished",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/model/build_finished_arms.py",
+      "path": "generated/mouse-hats/reconstruction/pcb-cap/01-pcb-cap-candidate.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/model/build_finished_arms.py",
+      "path": "generated/mouse-hats/arms/attachments/attachment-arm-concept.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/model/build_lip_trim.py",
+      "path": "generated/mouse-hats/model/lip-trim",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/model/build_mount.py",
+      "path": "generated/mouse-hats/model/mount",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/model/build_notch_cleanup.py",
+      "path": "generated/mouse-hats/model/tray-cleanup",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/model/build_notch_cleanup.py",
+      "path": "generated/mouse-hats/model/lip-trim/trimmed-mount.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/model/build_notch_cleanup.py",
+      "path": "generated/mouse-hats/reconstruction/pcb-cap/01-pcb-cap-candidate.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/model/build_planar_arms.py",
+      "path": "generated/mouse-hats/arms/planar",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/model/build_planar_arms.py",
+      "path": "generated/mouse-hats/reconstruction/socket/01-socket-candidate.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/model/build_planar_arms.py",
+      "path": "generated/mouse-hats/model/tray-cleanup/cleaned-tray.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/model/build_smooth_arms.py",
+      "path": "generated/mouse-hats/arms/smooth",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/model/build_smooth_arms.py",
+      "path": "generated/mouse-hats/reconstruction/socket/01-socket-candidate.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/model/build_smooth_arms.py",
+      "path": "generated/mouse-hats/model/tray-cleanup/cleaned-tray.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/model/build_stem_blend.py",
+      "path": "generated/mouse-hats/arms/stem-blend",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/model/build_stem_blend.py",
+      "path": "generated/mouse-hats/arms/finished/finished-arm-carrier.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/model/build_stem_blend.py",
+      "path": "generated/mouse-hats/reconstruction",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/model/build_stem_reinforcement.py",
+      "path": "generated/mouse-hats/arms/stem-reinforced",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/model/build_stem_reinforcement.py",
+      "path": "generated/mouse-hats/arms/finished/finished-arm-carrier.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/model/build_stem_reinforcement.py",
+      "path": "generated/mouse-hats/reconstruction",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/model/export_arm_reference.py",
+      "path": "generated/mouse-hats/arms",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/model/export_arm_reference.py",
+      "path": "generated/mouse-hats/model/tray-cleanup/cleaned-tray.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/model/open_current.py",
+      "path": "generated/mouse-hats/current/CURRENT.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/model/open_mount.py",
+      "path": "generated/mouse-hats/reconstruction/baseplate/01-baseplate-candidate.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/model/preview_lip_trim.py",
+      "path": "generated/mouse-hats/model/lip-trim",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/model/preview_lip_trim.py",
+      "path": "generated/mouse-hats/reconstruction/main-carrier/01-tray-mount-candidate.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/model/recover_v5_paths.py",
+      "path": "generated/mouse-hats/arms",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/model/register_v5.py",
+      "path": "generated/mouse-hats/arms",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/model/register_v5.py",
+      "path": "designs/mouse-hats/old/df-hardware/camera-assembly/camera-assembly-2arm-v5.stl",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/model/show_current.py",
+      "path": "generated/mouse-hats/current",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/model/show_finished_arms.py",
+      "path": "generated/mouse-hats/arms/finished/finished-arm-carrier.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/model/show_recovered_paths.py",
+      "path": "generated/mouse-hats/arms",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/model/show_stem_blend.py",
+      "path": "generated/mouse-hats/arms/stem-blend/stem-blended-carrier.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/model/show_v5_study.py",
+      "path": "generated/mouse-hats/arms",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/model/show_v5_study.py",
+      "path": "designs/mouse-hats/model/build_mount.py",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/model/show_v5_study.py",
+      "path": "generated/mouse-hats/model/tray-cleanup/cleaned-tray.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/model/verify_mount.py",
+      "path": "generated/mouse-hats/reconstruction",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/model/verify_stem_blend_tangency.py",
+      "path": "designs/mouse-hats/model",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/pcb-retention-study/build_catch_print_tests.py",
+      "path": "generated/mouse-hats/pcb-retention-study/height-geometry/labeled",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/pcb-retention-study/build_height_geometry.py",
+      "path": "generated/mouse-hats/pcb-retention-study/height-geometry",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/pcb-retention-study/build_mockups.py",
+      "path": "generated/mouse-hats/pcb-retention-study",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/pcb-retention-study/build_numeric_catch_labels.py",
+      "path": "generated/mouse-hats/pcb-retention-study/height-geometry/with-catch",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/pcb-retention-study/build_t2_grip.py",
+      "path": "generated/mouse-hats/pcb-retention-study/height-geometry",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/pcb-retention-study/build_t2_grip.py",
+      "path": "designs/mouse-hats/pcb-retention-study/t2-grip-settings.json",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/pcb-retention-study/build_t2_grip.py",
+      "path": "designs/mouse-hats/reconstruction/pcb_cap/parameters.json",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/pcb-retention-study/build_t3_rim.py",
+      "path": "generated/mouse-hats/pcb-retention-study/height-geometry",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/pcb-retention-study/build_t3_rim.py",
+      "path": "designs/mouse-hats/pcb-retention-study/t3-rim-settings.json",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/pcb-retention-study/build_top_lip_options.py",
+      "path": "generated/mouse-hats/pcb-retention-study",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/pcb-retention-study/build_whole_board_review.py",
+      "path": "generated/mouse-hats/pcb-retention-study",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/pcb-retention-study/export_labeled_height_tests.py",
+      "path": "generated/mouse-hats/pcb-retention-study/height-geometry",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/pcb-retention-study/preflight_upper_edge.py",
+      "path": "generated/mouse-hats/pcb-retention-study/r11b-datum-preflight",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/pcb-retention-study/preflight_upper_edge.py",
+      "path": "generated/mouse-hats/rear-arm-r11/r11b-assembly.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/pcb-retention-study/probe_catch_strength.py",
+      "path": "generated/mouse-hats/pcb-retention-study/height-geometry/with-catch/numeric-labels",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/pcb-retention-study/probe_catch_strength.py",
+      "path": "generated/mouse-hats/pcb-retention-study/catch-strength-probe.json",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/pcb-retention-study/probe_catch_thickness.py",
+      "path": "generated/mouse-hats/pcb-retention-study/height-geometry/with-catch/numeric-labels",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/pcb-retention-study/probe_catch_thickness.py",
+      "path": "generated/mouse-hats/pcb-retention-study/catch-strength-thickness-probe.json",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/pcb-retention-study/show_catch_print_tests.py",
+      "path": "generated/mouse-hats/pcb-retention-study/height-geometry/with-catch",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/pcb-retention-study/show_height_geometry.py",
+      "path": "generated/mouse-hats/pcb-retention-study/height-geometry",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/pcb-retention-study/show_mockups.py",
+      "path": "generated/mouse-hats/pcb-retention-study",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/pcb-retention-study/show_numeric_catch_labels.py",
+      "path": "generated/mouse-hats/pcb-retention-study/height-geometry/with-catch/numeric-labels",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/pcb-retention-study/show_t2_grip.py",
+      "path": "generated/mouse-hats/pcb-retention-study/height-geometry",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/pcb-retention-study/show_t3_rim.py",
+      "path": "generated/mouse-hats/pcb-retention-study/height-geometry",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/pcb-retention-study/show_top_lip_options.py",
+      "path": "generated/mouse-hats/pcb-retention-study",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/pcb-retention-study/show_whole_board_review.py",
+      "path": "generated/mouse-hats/pcb-retention-study",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/print-test/build.py",
+      "path": "generated/mouse-hats/print-test/r01",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/print-test/build.py",
+      "path": "generated/mouse-hats/arms/stem-blend/stem-blended-carrier.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/print-test/build.py",
+      "path": "generated/mouse-hats/reconstruction/camera-holder/01-holder-candidate.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/print-test/build.py",
+      "path": "generated/mouse-hats/reconstruction/camera-clip/03-complete-clip.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/print-test/build.py",
+      "path": "generated/mouse-hats/reconstruction",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/print-test/export_reference.py",
+      "path": "generated/mouse-hats/reconstruction/camera-holder/01-holder-candidate.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/print-test/fit_holder_pose.py",
+      "path": "generated/mouse-hats/print-test/r01",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/print-test/fit_holder_pose.py",
+      "path": "generated/mouse-hats/arms/v5-shell-1.stl",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/print-test/package.py",
+      "path": "generated/mouse-hats/print-test/r01",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/print-test/recover_ball_pose.py",
+      "path": "generated/mouse-hats/print-test/r01",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/print-test/recover_ball_pose.py",
+      "path": "generated/mouse-hats/arms/v5-shell-1.stl",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/print-test/recover_ball_pose.py",
+      "path": "designs/mouse-hats/reconstruction/camera_holder/parameters.json",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/print-test/show.py",
+      "path": "generated/mouse-hats/print-test/r01/print-in-place-review.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/print-test-r03/build.py",
+      "path": "generated/mouse-hats/print-test/r03",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/print-test-r03/build.py",
+      "path": "generated/mouse-hats/print-test/r01/carrier.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/print-test-r03/build.py",
+      "path": "generated/mouse-hats/print-test/r02/print-in-place-review.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/print-test-r03/build.py",
+      "path": "generated/mouse-hats/print-test/r01/holder-pose.json",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/print-test-r03/package.py",
+      "path": "generated/mouse-hats/print-test/r03",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/print-test-r03/show.py",
+      "path": "generated/mouse-hats/print-test/r03",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/print-test-r03/verify.py",
+      "path": "generated/mouse-hats/print-test/r03",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/print-test-r03/verify.py",
+      "path": "generated/mouse-hats/print-test/r02/print-in-place-review.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r04/build.py",
+      "path": "generated/mouse-hats/rear-arm-r04",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r04/build.py",
+      "path": "generated/mouse-hats/print-test/r03/print-in-place-review.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r04/build.py",
+      "path": "generated/mouse-hats/print-test/r01/holder-pose.json",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r04/build.py",
+      "path": "generated/mouse-hats/print-test/r03/carrier.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r04/package.py",
+      "path": "generated/mouse-hats/rear-arm-r04",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r04/package.py",
+      "path": "generated/mouse-hats/print-test/r03",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r04/show.py",
+      "path": "generated/mouse-hats/rear-arm-r04",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r04/show.py",
+      "path": "generated/mouse-hats/print-test/r03/print-in-place-review.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r04/show.py",
+      "path": "generated/mouse-hats/arms/v5-shell-4.stl",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r04/verify_edit.py",
+      "path": "generated/mouse-hats/rear-arm-r04",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r04/verify_export.py",
+      "path": "generated/mouse-hats/rear-arm-r04",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r04/verify_export.py",
+      "path": "generated/mouse-hats/print-test/r03",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r06/build.py",
+      "path": "generated/mouse-hats/rear-arm-r06",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r06/build.py",
+      "path": "generated/mouse-hats/print-test/r03/print-in-place-review.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r06/build.py",
+      "path": "generated/mouse-hats/print-test/r01/holder-pose.json",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r06/build.py",
+      "path": "generated/mouse-hats/print-test/r03/carrier.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r06/show.py",
+      "path": "generated/mouse-hats/rear-arm-r06",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r06/show.py",
+      "path": "generated/mouse-hats/print-test/r03/print-in-place-review.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r06/show.py",
+      "path": "generated/mouse-hats/rear-attachment-r05/r05c-carrier.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r06/verify_edit.py",
+      "path": "generated/mouse-hats/rear-arm-r06",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r06/verify_export.py",
+      "path": "generated/mouse-hats/rear-arm-r06",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r06/verify_export.py",
+      "path": "generated/mouse-hats/print-test/r03",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r07/build.py",
+      "path": "generated/mouse-hats/rear-arm-r07",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r07/build.py",
+      "path": "generated/mouse-hats/print-test/r03/print-in-place-review.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r07/build.py",
+      "path": "generated/mouse-hats/print-test/r01/holder-pose.json",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r07/build.py",
+      "path": "generated/mouse-hats/print-test/r03/carrier.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r07/show.py",
+      "path": "generated/mouse-hats/rear-arm-r07",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r07/show.py",
+      "path": "generated/mouse-hats/print-test/r03/print-in-place-review.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r07/show.py",
+      "path": "generated/mouse-hats/rear-arm-r06/r06a-carrier.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r07/verify_edit.py",
+      "path": "generated/mouse-hats/rear-arm-r07",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r07/verify_export.py",
+      "path": "generated/mouse-hats/rear-arm-r07",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r07/verify_export.py",
+      "path": "generated/mouse-hats/print-test/r03",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r08/build.py",
+      "path": "generated/mouse-hats/rear-arm-r08",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r08/build.py",
+      "path": "generated/mouse-hats/print-test/r03/print-in-place-review.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r08/build.py",
+      "path": "generated/mouse-hats/print-test/r01/holder-pose.json",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r08/build.py",
+      "path": "generated/mouse-hats/print-test/r03/carrier.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r08/show.py",
+      "path": "generated/mouse-hats/rear-arm-r08",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r08/show.py",
+      "path": "generated/mouse-hats/print-test/r03/print-in-place-review.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r08/show.py",
+      "path": "generated/mouse-hats/rear-arm-r07/r07a-carrier.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r08/verify_edit.py",
+      "path": "generated/mouse-hats/rear-arm-r08",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r08/verify_export.py",
+      "path": "generated/mouse-hats/rear-arm-r08",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r08/verify_export.py",
+      "path": "generated/mouse-hats/print-test/r03",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r09/build.py",
+      "path": "generated/mouse-hats/rear-arm-r09",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r09/build.py",
+      "path": "generated/mouse-hats/print-test/r03/print-in-place-review.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r09/build.py",
+      "path": "generated/mouse-hats/print-test/r01/holder-pose.json",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r09/build.py",
+      "path": "generated/mouse-hats/print-test/r03/carrier.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r09/show.py",
+      "path": "generated/mouse-hats/rear-arm-r09",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r09/show.py",
+      "path": "generated/mouse-hats/print-test/r03/print-in-place-review.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r09/show.py",
+      "path": "generated/mouse-hats/rear-arm-r08/r08a-carrier.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r09/verify_edit.py",
+      "path": "generated/mouse-hats/rear-arm-r09",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r09/verify_export.py",
+      "path": "generated/mouse-hats/rear-arm-r09",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r09/verify_export.py",
+      "path": "generated/mouse-hats/print-test/r03",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r10/build.py",
+      "path": "generated/mouse-hats/rear-arm-r10",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r10/build.py",
+      "path": "generated/mouse-hats/print-test/r03/print-in-place-review.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r10/build.py",
+      "path": "generated/mouse-hats/print-test/r01/holder-pose.json",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r10/build.py",
+      "path": "generated/mouse-hats/print-test/r03/carrier.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r10/show.py",
+      "path": "generated/mouse-hats/rear-arm-r10",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r10/show.py",
+      "path": "generated/mouse-hats/print-test/r03/print-in-place-review.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r10/show.py",
+      "path": "generated/mouse-hats/rear-arm-r09/r09a-carrier.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r10/verify_edit.py",
+      "path": "generated/mouse-hats/rear-arm-r10",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r10/verify_export.py",
+      "path": "generated/mouse-hats/rear-arm-r10",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r10/verify_export.py",
+      "path": "generated/mouse-hats/print-test/r03",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r11/build.py",
+      "path": "generated/mouse-hats/rear-arm-r11",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r11/build.py",
+      "path": "generated/mouse-hats/print-test/r03/print-in-place-review.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r11/build.py",
+      "path": "generated/mouse-hats/print-test/r01/holder-pose.json",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r11/build.py",
+      "path": "generated/mouse-hats/print-test/r03/carrier.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r11/show.py",
+      "path": "generated/mouse-hats/rear-arm-r11",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r11/show.py",
+      "path": "generated/mouse-hats/print-test/r03/print-in-place-review.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r11/verify_export.py",
+      "path": "generated/mouse-hats/rear-arm-r11",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r11/verify_export.py",
+      "path": "generated/mouse-hats/print-test/r03",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r11/verify_mesh.py",
+      "path": "generated/mouse-hats/rear-arm-r11",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-attachment-r05/build.py",
+      "path": "generated/mouse-hats/rear-attachment-r05",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-attachment-r05/build.py",
+      "path": "generated/mouse-hats/print-test/r03/print-in-place-review.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-attachment-r05/build.py",
+      "path": "generated/mouse-hats/print-test/r01/holder-pose.json",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-attachment-r05/build.py",
+      "path": "generated/mouse-hats/print-test/r03/carrier.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-attachment-r05/package.py",
+      "path": "generated/mouse-hats/rear-attachment-r05",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-attachment-r05/package.py",
+      "path": "generated/mouse-hats/print-test/r03",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-attachment-r05/show.py",
+      "path": "generated/mouse-hats/rear-attachment-r05",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-attachment-r05/show.py",
+      "path": "generated/mouse-hats/print-test/r03/print-in-place-review.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-attachment-r05/show.py",
+      "path": "generated/mouse-hats/rear-arm-r04/r04b-carrier.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-attachment-r05/verify_edit.py",
+      "path": "generated/mouse-hats/rear-attachment-r05",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-attachment-r05/verify_export.py",
+      "path": "generated/mouse-hats/rear-attachment-r05",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-attachment-r05/verify_export.py",
+      "path": "generated/mouse-hats/print-test/r03",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/release/build_assembly.py",
+      "path": "generated/mouse-hats/print-test/r02/print-in-place-review.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/release/finalize.py",
+      "path": "designs/mouse-hats/release",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/release/rebuild_r02_template.py",
+      "path": "designs/mouse-hats",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/release/snapshot.py",
+      "path": "generated/mouse-hats/print-test/r01/validation.json",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/release/snapshot.py",
+      "path": "generated/mouse-hats/print-test/r01/assembly-validation.json",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/release/snapshot.py",
+      "path": "generated/mouse-hats/baseplate-taper/validation.json",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/release/snapshot.py",
+      "path": "designs/mouse-hats",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/release/snapshot.py",
+      "path": "generated/mouse-hats/print-test/r02",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/release/snapshot.py",
+      "path": "generated/mouse-hats",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/side-ledge-r08/build.py",
+      "path": "designs/mouse-hats/current/checkpoints/MH-T3-EYE-R08.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/side-ledge-r10/build.py",
+      "path": "designs/mouse-hats/current/checkpoints/MH-T3-EYE-R10.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/skull-neutral-r01/build.py",
+      "path": "generated/mouse-hats/skull-neutral-r01",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/skull-neutral-r01/build.py",
+      "path": "generated/mouse-hats/print-test/r01/holder-pose.json",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/skull-neutral-r01/build.py",
+      "path": "generated/mouse-hats/skull-placement",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/skull-neutral-r01/compare.py",
+      "path": "generated/mouse-hats/skull-neutral-r01",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/skull-neutral-r01/compare.py",
+      "path": "designs/mouse-hats/skull-placement/aim-study.json",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/skull-neutral-r01/open_model.py",
+      "path": "generated/mouse-hats/skull-neutral-r01/neutral-joint-study.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/skull-neutral-r02/build.py",
+      "path": "generated/mouse-hats/skull-neutral-r02",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/skull-neutral-r02/build.py",
+      "path": "generated/mouse-hats/skull-neutral-r01/neutral-joint-study.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/skull-neutral-r02/compare.py",
+      "path": "generated/mouse-hats/skull-neutral-r02",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/skull-neutral-r02/export_print.py",
+      "path": "generated/mouse-hats/skull-neutral-r02",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/skull-neutral-r02/open_model.py",
+      "path": "generated/mouse-hats/skull-neutral-r02/ribbon-space-study.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/skull-placement/audit.py",
+      "path": "generated/mouse-hats/skull-placement",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/skull-placement/audit.py",
+      "path": "designs/mouse-hats/old/df-hardware/utility/mouse_skull_low_poly_",
+      "exists": false,
+      "existed_in_import": false
+    },
+    {
+      "script": "designs/mouse-hats/skull-placement/build_review.py",
+      "path": "generated/mouse-hats/skull-placement",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/skull-placement/build_review.py",
+      "path": "generated/mouse-hats/print-test/r01/holder-pose.json",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/skull-placement/build_review.py",
+      "path": "generated/mouse-hats",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/skull-placement/check_intersections.py",
+      "path": "generated/mouse-hats/skull-placement",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/skull-placement/inspect_blender.py",
+      "path": "generated/mouse-hats/skull-placement",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/skull-placement/inspect_blender.py",
+      "path": "designs/mouse-hats/old/df-hardware",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/skull-placement/register.py",
+      "path": "generated/mouse-hats/skull-placement",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/skull-placement/repair_blender.py",
+      "path": "generated/mouse-hats/skull-placement",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/skull-placement/verify_repair.py",
+      "path": "generated/mouse-hats/skull-placement",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/skull-print/assign_orca_filaments.py",
+      "path": "generated/mouse-hats/skull-print",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/skull-print/build.py",
+      "path": "generated/mouse-hats/skull-print",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/skull-print/build.py",
+      "path": "designs/mouse-hats/skull-placement/placement.json",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/skull-print/export_inputs.py",
+      "path": "designs/mouse-hats/current/active-model.json",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/skull-print/show.py",
+      "path": "generated/mouse-hats/skull-print",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/skull-print/show.py",
+      "path": "designs/mouse-hats/skull-print/SkullBaseplatePrint.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r11/print-labels/build.py",
+      "path": "generated/mouse-hats/rear-arm-r11",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r11/print-labels/package.py",
+      "path": "generated/mouse-hats/rear-arm-r11/labeled",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/rear-arm-r11/print-labels/show.py",
+      "path": "generated/mouse-hats/rear-arm-r11/labeled",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/reconstruction/assembly/build.py",
+      "path": "generated/mouse-hats/reconstruction/assembly",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/reconstruction/assembly/show_review.py",
+      "path": "generated/mouse-hats/reconstruction/assembly",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/reconstruction/baseplate/build.py",
+      "path": "generated/mouse-hats/reconstruction/baseplate",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/reconstruction/baseplate/inspect_source.py",
+      "path": "generated/mouse-hats/reconstruction/baseplate",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/reconstruction/baseplate/inspect_source.py",
+      "path": "designs/mouse-hats/old/58nassembly.step",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/reconstruction/baseplate/measure.py",
+      "path": "generated/mouse-hats/reconstruction/baseplate",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/reconstruction/baseplate/open_model.py",
+      "path": "generated/mouse-hats/reconstruction/baseplate/01-baseplate-candidate.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/reconstruction/baseplate/verify.py",
+      "path": "generated/mouse-hats/reconstruction/baseplate",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/reconstruction/baseplate/verify.py",
+      "path": "generated/mouse-hats/inspection/carrier-source.brep",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/reconstruction/baseplate/verify.py",
+      "path": "generated/mouse-hats/reconstruction/main-carrier/01-tray-mount-candidate.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/reconstruction/camera_clip/build_base.py",
+      "path": "generated/mouse-hats/reconstruction/camera-clip",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/reconstruction/camera_clip/finish_clip.py",
+      "path": "generated/mouse-hats/reconstruction/camera-clip",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/reconstruction/camera_holder/validate.py",
+      "path": "generated/mouse-hats/reconstruction/camera-holder",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/reconstruction/camera_holder/verify_headless.py",
+      "path": "generated/mouse-hats/reconstruction/camera-holder",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/reconstruction/camera_holder/verify_headless.py",
+      "path": "generated/mouse-hats/inspection/58-reference.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/reconstruction/main_carrier/build.py",
+      "path": "generated/mouse-hats/reconstruction/main-carrier",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/reconstruction/main_carrier/measure.py",
+      "path": "generated/mouse-hats/reconstruction/main-carrier",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/reconstruction/main_carrier/measure.py",
+      "path": "designs/mouse-hats/old/58nassembly.step",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/reconstruction/main_carrier/measure.py",
+      "path": "generated/mouse-hats/inspection/carrier-source.brep",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/reconstruction/main_carrier/open_model.py",
+      "path": "generated/mouse-hats/reconstruction/main-carrier/01-tray-mount-candidate.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/reconstruction/main_carrier/verify.py",
+      "path": "generated/mouse-hats/reconstruction/main-carrier",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/reconstruction/main_carrier/verify.py",
+      "path": "generated/mouse-hats/inspection/carrier-source.brep",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/reconstruction/pcb_cap/build.py",
+      "path": "generated/mouse-hats/reconstruction/pcb-cap",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/reconstruction/pcb_cap/inspect_source.py",
+      "path": "generated/mouse-hats/reconstruction/pcb-cap",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/reconstruction/pcb_cap/inspect_source.py",
+      "path": "designs/mouse-hats/old/58nassembly.step",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/reconstruction/pcb_cap/measure.py",
+      "path": "generated/mouse-hats/reconstruction/pcb-cap",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/reconstruction/pcb_cap/verify.py",
+      "path": "generated/mouse-hats/reconstruction/pcb-cap",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/reconstruction/pcb_cap/verify.py",
+      "path": "generated/mouse-hats/reconstruction/assembly",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/reconstruction/pcb_cap/verify.py",
+      "path": "generated/mouse-hats/reconstruction/main-carrier/01-tray-mount-candidate.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/reconstruction/pcb_cap/verify.py",
+      "path": "generated/mouse-hats/reconstruction/baseplate/01-baseplate-candidate.FCStd",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/reconstruction/pcb_cap/verify.py",
+      "path": "generated/mouse-hats/inspection/carrier-source.brep",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/reconstruction/socket/build.py",
+      "path": "generated/mouse-hats/reconstruction/socket",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/reconstruction/socket/verify.py",
+      "path": "generated/mouse-hats/reconstruction/socket",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/reconstruction/main_carrier/experiments/rejected_section_study.py",
+      "path": "generated/mouse-hats/reconstruction/main-carrier",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/reconstruction/main_carrier/experiments/rejected_section_study.py",
+      "path": "generated/mouse-hats/inspection/carrier-source.brep",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "designs/mouse-hats/reconstruction/main_carrier/experiments/rejected_section_study.py",
+      "path": "generated/mouse-hats/inspection/carrier-source.brep",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "tools/cad/test_mcp.py",
+      "path": "generated/mcp-check.json",
+      "exists": true,
+      "existed_in_import": true
+    },
+    {
+      "script": "tools/cad/validate_meshes.py",
+      "path": "generated/verification/meshes.json",
+      "exists": true,
+      "existed_in_import": false
+    },
+    {
+      "script": "tools/cad/validate_meshes.py",
+      "path": "designs/eye-tracker/mouse/active-model.json",
+      "exists": true,
+      "existed_in_import": false
+    },
+    {
+      "script": "tools/cad/validate_workspace.py",
+      "path": "generated/verification",
+      "exists": true,
+      "existed_in_import": false
+    },
+    {
+      "script": "tools/cad/validate_workspace.py",
+      "path": "designs/eye-tracker/mouse",
+      "exists": true,
+      "existed_in_import": false
+    },
+    {
+      "script": "tools/cad/validate_workspace.py",
+      "path": "designs/cad-foundations/replay.py",
+      "exists": true,
+      "existed_in_import": true
+    }
+  ]
+}

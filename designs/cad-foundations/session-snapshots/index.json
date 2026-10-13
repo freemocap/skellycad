@@ -1,0 +1,27 @@
+[
+  {
+    "document": "FitCoupon",
+    "original_file": "designs/fit-coupon/checkpoints/02-embossed-labels.FCStd",
+    "snapshot": "designs/cad-foundations/session-snapshots/FitCoupon.FCStd"
+  },
+  {
+    "document": "PracticeCameraBracket",
+    "original_file": "designs/practice-camera-bracket/checkpoints/13-screw-stack-study.FCStd",
+    "snapshot": "designs/cad-foundations/session-snapshots/PracticeCameraBracket.FCStd"
+  },
+  {
+    "document": "PracticeMount",
+    "original_file": "designs/practice-mount/checkpoints/07-top-chamfer.FCStd",
+    "snapshot": "designs/cad-foundations/session-snapshots/PracticeMount.FCStd"
+  },
+  {
+    "document": "PracticeMountFillet",
+    "original_file": "designs/practice-mount/checkpoints/08-top-fillet.FCStd",
+    "snapshot": "designs/cad-foundations/session-snapshots/PracticeMountFillet.FCStd"
+  },
+  {
+    "document": "WorkflowCube",
+    "original_file": "designs/workflow-cube/04-centered-hole.FCStd",
+    "snapshot": "designs/cad-foundations/session-snapshots/WorkflowCube.FCStd"
+  }
+]

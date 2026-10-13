@@ -1,0 +1,29 @@
+{
+  "units": "mm",
+  "scope": "PCB tray and mounting stem; old arm intentionally omitted",
+  "candidate_volume_mm3": 766.7988544202286,
+  "candidate_faces": 94,
+  "solid_count": 1,
+  "deeper_geometry_check": "passed",
+  "boolean_tolerance_mm": 0.001,
+  "lower_region_z_max_mm": 10,
+  "lower_reference_volume_mm3": 625.6181742861447,
+  "lower_missing_volume_mm3": 0.0,
+  "lower_excess_volume_mm3": 0.0,
+  "whole_candidate_excess_volume_mm3": 0.0,
+  "full_carrier_parity": false,
+  "physical_fit_validated": false,
+  "edit_checks": [
+    {
+      "property": "VentRadius",
+      "original_mm": 2.0,
+      "tested_mm": 2.1
+    },
+    {
+      "property": "VentSpacing",
+      "original_mm": 25.0,
+      "tested_mm": 26.0
+    }
+  ],
+  "independent_reopen_recompute_edit_restore": "passed"
+}

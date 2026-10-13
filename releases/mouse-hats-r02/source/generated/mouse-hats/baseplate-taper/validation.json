@@ -1,0 +1,11 @@
+{
+  "valid": true,
+  "solid_count": 1,
+  "bottom_scale": 0.57004,
+  "original_bottom_area_mm2": 67.48299769286405,
+  "tapered_bottom_area_mm2": 21.928303283079124,
+  "removed_mm3": 161.56764887858552,
+  "added_mm3": 0.0,
+  "protected_mount_region_removed_mm3": 0.0,
+  "seated_carrier_overlap_mm3": 0.0
+}

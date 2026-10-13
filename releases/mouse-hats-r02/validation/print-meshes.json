@@ -1,0 +1,22 @@
+{
+  "carrier-and-holder-print-in-place.stl": {
+    "watertight": true,
+    "consistent_winding": true,
+    "shells": 2
+  },
+  "clip.stl": {
+    "watertight": true,
+    "consistent_winding": true,
+    "shells": 1
+  },
+  "cap.stl": {
+    "watertight": true,
+    "consistent_winding": true,
+    "shells": 1
+  },
+  "baseplate.stl": {
+    "watertight": true,
+    "consistent_winding": true,
+    "shells": 1
+  }
+}

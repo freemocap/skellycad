@@ -1,0 +1,10 @@
+{
+  "rebuild_exit_code": 0,
+  "editable_loader_passed": true,
+  "print_stl_hash_matches": {
+    "carrier-and-holder-print-in-place.stl": true,
+    "clip.stl": true,
+    "cap.stl": true,
+    "baseplate.stl": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "status": "New user-supplied CAD candidate; STEP imported, F3D preserved but not opened",
+  "files": [
+    {
+      "path": "old/58nassembly.step",
+      "bytes": 5279133,
+      "sha256": "3286036e4cbd6b1c993e96079f24afc29d375bedddda2e24fd93b2d18c3c9260"
+    },
+    {
+      "path": "old/58nassembly.f3d",
+      "bytes": 179854593,
+      "sha256": "594a734ab6bad6f17f83c392b2169716cb2e1eaf93f90a5ef376898969677664"
+    }
+  ]
+}

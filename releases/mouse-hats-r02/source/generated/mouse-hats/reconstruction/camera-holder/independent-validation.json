@@ -1,0 +1,30 @@
+{
+  "source_volume_mm3": 252.52628928008556,
+  "rebuilt_volume_mm3": 252.51681424437882,
+  "net_volume_difference_mm3": -0.009475035706742574,
+  "source_faces": 37,
+  "rebuilt_faces": 57,
+  "rebuilt_bop_check": "passed",
+  "boolean_parity": false,
+  "source_bop_check": "BOP check found the following errors:\nError in Edge: BOPAlgo GeomAbs_C0\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\nError in Edge: BOPAlgo_InvalidCurveOnSurface\nError in Face: BOPAlgo_InvalidCurveOnSurface\n",
+  "source_to_rebuilt": {
+    "samples": 240,
+    "candidate_samples": 19328,
+    "edge_discretization_failures": 1,
+    "max_mm": 0.027970014702716928,
+    "rms_mm": 0.002083790450282215
+  },
+  "rebuilt_to_source": {
+    "samples": 240,
+    "candidate_samples": 28838,
+    "edge_discretization_failures": 1,
+    "max_mm": 0.0018830858223460342,
+    "rms_mm": 0.0004915861185821485
+  },
+  "plate_thickness_edit_mm": [
+    0.9999999999999574,
+    1.0999999999999575,
+    0.9999999999999574
+  ],
+  "standalone_reopen_edit_passed": true
+}

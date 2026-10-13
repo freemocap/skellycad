@@ -1,0 +1,12 @@
+"""Open the hash-verified mouse baseline in the existing desktop session."""
+from pathlib import Path
+import runpy
+import FreeCAD as App
+import FreeCADGui as Gui
+
+HERE = Path(__file__).resolve().parent
+shared = runpy.run_path(str(HERE.parent / 'shared/model.py'))
+manifest, doc = shared['open_selected'](HERE / 'active-model.json')
+App.setActiveDocument(doc.Name)
+Gui.activeDocument().activeView().viewAxonometric()
+Gui.activeDocument().activeView().fitAll()

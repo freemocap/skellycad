@@ -1,0 +1,11 @@
+{
+  "units": "mm",
+  "font": "C:\\Windows\\Fonts\\arialbd.ttf",
+  "font_sha256": "e8f4e3baf6cc35fed6fcce3a540e8b39e8f6cda1d22a28f2ec8f526fef7a43f5",
+  "letter_height_mm": 3.5,
+  "relief_mm": 0.4,
+  "embed_mm": 0.05,
+  "back_plane_x_mm": 3.70677424482636,
+  "center_y_mm": 14.1,
+  "center_z_mm": 0.0
+}

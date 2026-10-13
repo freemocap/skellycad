@@ -1,0 +1,19 @@
+{
+  "selected_option": "R11B",
+  "selected_date": "2026-10-10",
+  "user_statement": "Option B is the winner B as in Buffalo",
+  "parameters": {
+    "label": "7:30 / balanced sweep",
+    "extra_drop_mm": 1.25,
+    "attachment_angle_deg": 45.0,
+    "socket_straight_mm": 2.5,
+    "return_level_blend": 0.5,
+    "outer_bulge_mm": 3.25,
+    "sections": 41
+  },
+  "source_native": "generated/mouse-hats/rear-arm-r11/r11b-carrier.FCStd",
+  "labeled_native": "generated/mouse-hats/rear-arm-r11/labeled/R11B-labeled.FCStd",
+  "print_stl": "generated/mouse-hats/rear-arm-r11/labeled/R11B-labeled-carrier-and-holder.stl",
+  "print_stl_sha256": "d1a127c5ec10c89279fed0b07f1928758855c698e80ba646c76cfec9d3277706",
+  "scope": "Selected rear-arm design for subsequent work; preserve other variants. No additional test results inferred."
+}

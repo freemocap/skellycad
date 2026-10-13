@@ -1,0 +1,19 @@
+{
+  "status": "visual study, not selected for printing",
+  "source_sha256": "579db728f6ce6968f7472a545953cee341e1c38512070b5161b2f81736404d98",
+  "units": "mm, mm3",
+  "socket_attachment_height_old_mm": 3.9,
+  "socket_attachment_height_new_mm": 0.5,
+  "socket_attachment_radius_old_mm": 2.65,
+  "socket_attachment_radius_new_mm": 3.05,
+  "carrier_valid": true,
+  "carrier_solids": 1,
+  "rear_path_length_mm": 36.355985992136304,
+  "motion_sweep_checked": false,
+  "Holder_overlap_mm3": 0.0,
+  "Cap_overlap_mm3": 0.002218225533851323,
+  "Clip_overlap_mm3": 0.0,
+  "Baseplate_overlap_mm3": 0.0,
+  "ApproxPCB_overlap_mm3": 0.0,
+  "holder_gap_mm": 0.3331646522386679
+}

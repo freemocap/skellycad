@@ -1,0 +1,9 @@
+{
+  "units": "mm",
+  "vent_radius_mm": 2.0,
+  "vent_spacing_mm": 25.0,
+  "join_tolerance_mm": 0.001,
+  "scope": "58 PCB tray and mounting stem; old arm intentionally omitted",
+  "source": "old/58nassembly.step / Main (1)",
+  "source_sha256": "3286036e4cbd6b1c993e96079f24afc29d375bedddda2e24fd93b2d18c3c9260"
+}

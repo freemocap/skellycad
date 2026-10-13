@@ -1,0 +1,12 @@
+{
+  "revision": "MH-T3-EYE-R03",
+  "checkpoint": "designs/mouse-hats/current/checkpoints/MH-T3-EYE-R03.FCStd",
+  "checkpoint_sha256": "7cfb2b198e5c56519ec41ac9c50a12d98479c81c5f88b87e5ae1cbeed794598e",
+  "units": "mm",
+  "inputs": {
+    "Baseplate.stl": "1731ca2618ad39f52b1e7b30c8f9525423a5b1b04d25c76907adfc74b478fe16",
+    "Eye1.stl": "37ec96f05092e4a044d6a1e9dcad0a8e829a433bada0ba273216f05530c6d61d",
+    "Eye2.stl": "a300709a4bcd0d8ff1cf5bc5dc29a159972517aa0d2f56a8ce9f56f050e0d95d",
+    "Skull.stl": "37473a2754e8c4ee4509b24926cad9d0d7920c4bd0c0b2e46110964ccf2ab0eb"
+  }
+}

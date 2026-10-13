@@ -1,0 +1,19 @@
+"""Bootstrap the pinned addon only in the dedicated project FreeCAD process."""
+import os
+import sys
+from pathlib import Path
+import FreeCAD as App
+import FreeCADGui as Gui
+
+repo = Path(os.environ["CAD_PLAYGROUND_ROOT"])
+addon = repo / ".cad-tools/freecad-mcp/addon/FreeCADMCP"
+sys.path.insert(0, str(addon))
+from rpc_server import rpc_server
+
+# Keep project settings local; never change the user's normal FreeCAD profile.
+rpc_server.load_settings = lambda: {"remote_enabled": False, "allowed_ips": "127.0.0.1", "auth_token": "", "auto_start_rpc": False}
+message = rpc_server.start_rpc_server()
+rpc_server.rpc_server_instance.register_function(lambda: {"pid": os.getpid(), "root": str(repo)}, "cad_runtime_identity")
+App.Console.PrintMessage(message + "\n")
+
+# Start empty: no client references are loaded into this playground.

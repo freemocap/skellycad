@@ -1,0 +1,26 @@
+{
+  "units": "mm",
+  "source_sha256": {
+    "tall_53n_baseplate.stl": "2a39271633cc3a816df3d62667b52bf7cf4559609a7c95f77c35fccadc1b50d5",
+    "tall_tapered_53n_baseplate.stl": "1e41c81fdf5502fc4c229ba2ddfb665f9143e21db2c39cc7f57b9d078182a8f7"
+  },
+  "matching_triangles": 385,
+  "rigid_alignment_max_error_mm": 1.2324365885339814e-06,
+  "bottom_affine_2d": [
+    [
+      0.5700399473231047,
+      -3.6255367072732565e-09
+    ],
+    [
+      -1.625984250323495e-07,
+      0.5700398363665866
+    ],
+    [
+      -0.017343274157150347,
+      -1.0218536861283878
+    ]
+  ],
+  "bottom_scale": 0.5700398918448457,
+  "bottom_fit_max_error_mm": 2.166663897185117e-07,
+  "normal_displacement_max_mm": 3.577649786975271e-07
+}

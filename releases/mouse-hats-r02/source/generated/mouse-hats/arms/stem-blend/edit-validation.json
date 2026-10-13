@@ -1,0 +1,26 @@
+[
+  {
+    "valid": true,
+    "solid_count": 1,
+    "added_mm3": 0.3968856494151526,
+    "removed_mm3": 0.0,
+    "root_blend_radius_mm": 2.0,
+    "baseplate_overlap_mm3": 0.0,
+    "cap_overlap_mm3": 0.0,
+    "seated_stem_added_mm3": 0.0,
+    "pcb_side_added_mm3": 0.0,
+    "addition_outside_root_mm3": 0.0
+  },
+  {
+    "valid": true,
+    "solid_count": 1,
+    "added_mm3": 0.9134285854936524,
+    "removed_mm3": 0.0,
+    "root_blend_radius_mm": 3.0,
+    "baseplate_overlap_mm3": 0.0,
+    "cap_overlap_mm3": 0.0,
+    "seated_stem_added_mm3": 0.0,
+    "pcb_side_added_mm3": 0.0,
+    "addition_outside_root_mm3": 0.0
+  }
+]

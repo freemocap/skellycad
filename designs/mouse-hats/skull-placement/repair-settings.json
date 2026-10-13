@@ -1,0 +1,7 @@
+{
+  "method": "Blender voxel remesh then 0.05-ratio decimation, no smoothing",
+  "voxel_size_mm": 0.04,
+  "decimate_ratio": 0.05,
+  "triangles": 84560,
+  "nonadjacent_intersection_pairs": 0
+}

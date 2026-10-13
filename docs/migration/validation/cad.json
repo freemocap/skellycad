@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "freecad": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "course": [
+    {
+      "lesson": "workflow-cube",
+      "file": "generated/cad-foundations/20261013T162353424982Z-workflow-cube-hole/model.FCStd"
+    },
+    {
+      "lesson": "practice-mount",
+      "file": "generated/cad-foundations/20261013T162354853418Z-practice-mount-fillet/model.FCStd"
+    },
+    {
+      "lesson": "fit-coupon",
+      "file": "generated/cad-foundations/20261013T162355315267Z-fit-coupon-labels/model.FCStd"
+    },
+    {
+      "lesson": "practice-camera-bracket",
+      "file": "generated/cad-foundations/20261013T162358917878Z-practice-camera-bracket-complete/model.FCStd"
+    }
+  ],
+  "parts": {
+    "Carrier": {
+      "symmetric_difference_mm3": 0.0,
+      "volume_mm3": 1246.391027683564
+    },
+    "Holder": {
+      "symmetric_difference_mm3": 0.0,
+      "volume_mm3": 301.6317729979905
+    },
+    "Cap": {
+      "symmetric_difference_mm3": 0.0,
+      "volume_mm3": 697.9818477412365
+    },
+    "Clip": {
+      "symmetric_difference_mm3": 0.0,
+      "volume_mm3": 62.29604497992815
+    },
+    "Baseplate": {
+      "symmetric_difference_mm3": 0.0,
+      "volume_mm3": 442.12802193929883
+    }
+  },
+  "anatomy_unchanged": true,
+  "checkpoint_unchanged": true,
+  "revision": "MH-T3-EYE-R10"
+}

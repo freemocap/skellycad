@@ -1,0 +1,56 @@
+{
+  "source": "designs\\mouse-hats\\current\\checkpoints\\MH-T3-EYE-R04.FCStd",
+  "source_sha256": "51f7d8ae465cf4c99f839e7101016f1f14180fd813e399c35d2c14e5eae4735f",
+  "units": "mm, mm3",
+  "variants": {
+    "A": {
+      "description": "Compact",
+      "handle_mm": 13,
+      "rearward_projection_mm": 11.194594032569986,
+      "curved_path_length_mm": 28.748834409330307,
+      "holder_gap_mm": 0.3331646522386674,
+      "intersections_mm3": {
+        "Holder": 0.0,
+        "Clip": 0.0,
+        "Baseplate": 0.0,
+        "ApproxPCB": 0.0
+      },
+      "carrier_volume_mm3": 1234.6094913058118,
+      "carrier_valid": true,
+      "old_label_removed_mm3": 4.208190921264077
+    },
+    "B": {
+      "description": "Medium",
+      "handle_mm": 18,
+      "rearward_projection_mm": 14.40434152831857,
+      "curved_path_length_mm": 35.28742011115459,
+      "holder_gap_mm": 0.3331646522386674,
+      "intersections_mm3": {
+        "Holder": 0.0,
+        "Clip": 0.0,
+        "Baseplate": 0.0,
+        "ApproxPCB": 0.0
+      },
+      "carrier_volume_mm3": 1271.403435186624,
+      "carrier_valid": true,
+      "old_label_removed_mm3": 4.208190921264077
+    },
+    "C": {
+      "description": "Roomy",
+      "handle_mm": 23,
+      "rearward_projection_mm": 17.61219258061384,
+      "curved_path_length_mm": 42.11298037494517,
+      "holder_gap_mm": 0.3331646522386674,
+      "intersections_mm3": {
+        "Holder": 0.0,
+        "Clip": 0.0,
+        "Baseplate": 0.0,
+        "ApproxPCB": 0.0
+      },
+      "carrier_volume_mm3": 1308.1488563459266,
+      "carrier_valid": true,
+      "old_label_removed_mm3": 4.208190921264077
+    }
+  },
+  "common_cap_label_removed": true
+}

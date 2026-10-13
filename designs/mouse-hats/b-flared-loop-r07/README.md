@@ -1,0 +1,11 @@
+# R07 / B2 plugward ribbon loop
+
+On 2026-10-12 the user selected B as the closest printed arm and requested a wider inner loop toward the plug, matching the green outlines in their photos. This revision uses the complete, hash-verified R06 assembly (including flat PCB ledge and T3 matched cap/rail) plus B's 18 mm curve handles. It does not use an isolated arm variant as the assembly baseline.
+
+The root center at the plate is unchanged at [3.706774, 8.2, 12.096621] mm. The root lead and first Bezier control point angle 25 degrees toward negative assembly Z, the plug side. The nominal departure is 115 degrees on the lens side and 65 degrees on the plug side. The socket connection, camera pose and second curve control point are unchanged. Centerline X/depth is unchanged; the inner curve moves up to 4.2568 mm plugward. Cross-section rotation increases the modeled outer depth by about 0.195 mm. Body section remains 2.6 by 1.8 mm. This is a first fit iteration, not a measured ribbon-envelope guarantee.
+
+Printed label B2 distinguishes it from B. Old dimension text is removed from carrier and matching cap. Carrier is one valid solid; modeled holder, clip, baseplate and approximate PCB overlaps are zero. Holder gap remains 0.333165 mm. Inherited cap contact remains 0.00221823 mm3. Flat ledge, raised rail and unobstructed optical guide are checked. See validation.json and print-validation.json.
+
+Replay build.py in the pinned GUI runtime, then export using current/export_print.py after validating/updating the selector hash. settings.json stores dimensions and source hash; assembly_geometry.py and flared_arm.py preserve this revision's construction without changing historical scripts. Native complete checkpoint: current/checkpoints/MH-T3-EYE-R07.FCStd. Hidden PreviousBArm/PreviousBPath provide an overlay reference.
+
+Print files: generated/mouse-hats/active/print-r07/. The carrier-and-holder STL contains two disconnected, watertight shells in their print-in-place relationship. Use your prior slicer settings and supports. Matched cap, clip and baseplate included; no slicer settings or printer job included. Physical cable routing, flexibility and printed fit still need testing.

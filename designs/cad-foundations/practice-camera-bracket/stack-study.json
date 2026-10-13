@@ -1,0 +1,13 @@
+{
+  "units": "mm",
+  "purpose": "Hypothetical teaching scenario; not hardware specifications or measured manufacturing capability",
+  "layer_plus_minus": {
+    "washer_thickness": 0.1,
+    "floor_thickness": 0.1,
+    "support_thickness": 0.1,
+    "nut_reference_thickness": 0.1
+  },
+  "screw_length_plus_minus": 0.2,
+  "minimum_protrusion": 0.5,
+  "candidate_lengths": [10, 11, 12]
+}

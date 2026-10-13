@@ -1,0 +1,18 @@
+{
+  "catch_center_shift_toward_JST_mm": 1.5,
+  "catch_along_edge_length_mm": 3.0,
+  "catch_roof_mm": 1.0,
+  "catch_tip_overlap_mm": 0.17999999999999972,
+  "cap_hook_deeper_mm": 0.35,
+  "cap_hook_return_extra_mm": 0.15,
+  "local_cap_tab_relief_removed_mm3": 4.126146047455153,
+  "detached_tab_corner_removed_mm3": 0.09103940564556023,
+  "carrier_cap_overlap_mm3": 0.0022182255338513393,
+  "catch_cap_overlap_mm3": 0.0,
+  "catch_cap_min_gap_mm": 0.15000000000000213,
+  "board_carrier_overlap_mm3": 0.0,
+  "board_cap_overlap_mm3": 0.0,
+  "holder_gap_mm": 0.331721862669488,
+  "carrier_delta_mm3": 2.2249897624340065,
+  "cap_delta_mm3": 4.960227045526949
+}
