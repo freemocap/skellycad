@@ -1,0 +1,20 @@
+{
+  "id": "pupil-core-eye-inherited",
+  "label": "Pupil Core eye camera \u2014 inherited fit reference",
+  "units": "mm",
+  "frame": "PCB envelope minimum corner; axes parallel to recovered R10 XYZ",
+  "hardware_revision": null,
+  "limitations": [
+    "PCB and lens datum are inherited approximations, not a manufacturer camera CAD model.",
+    "Sensor, lens, connector and ribbon dimensions remain unverified."
+  ],
+  "pcb_envelope": {
+    "path": "designs/eye-tracker/shared/cameras/pupil-core-eye-inherited/pcb-envelope.brep",
+    "sha256": "b46f5b460c0c21c4d83dd598dbd1cfd91cdce71288e09a190d794e3c946574d4"
+  },
+  "pcb_envelope_size_mm": [
+    0.25,
+    9.2,
+    30.0
+  ]
+}

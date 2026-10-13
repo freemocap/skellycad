@@ -1,0 +1,23 @@
+{
+  "units": "mm",
+  "frame": "Recovered R10 assembly XYZ",
+  "mesh_checkpoint": {
+    "path": "designs/eye-tracker/mouse/references/skull/anatomy-r10.FCStd",
+    "sha256": "9618734a12773f330ba44627375b39d8349935bc7fb9eab65d5e6dad0832b332"
+  },
+  "meshes": [
+    "Skull",
+    "Eye1",
+    "Eye2"
+  ],
+  "eye_target_mm": [
+    7.826170444488526,
+    -4.086331844329834,
+    5.32676362991333
+  ],
+  "eye_target_status": "Inherited eye-surface proxy, not a verified pupil landmark",
+  "baseplate": {
+    "path": "designs/eye-tracker/mouse/inputs/baseplate-r10.brep",
+    "sha256": "9b1c7c957a718a84b2323f46af8790c93ed0b9e0266c71452ef281a3acd03403"
+  }
+}

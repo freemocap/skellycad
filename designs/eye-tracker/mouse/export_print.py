@@ -1,16 +1,14 @@
 """Export the selected mouse assembly, preserving carrier/holder positioning."""
 from pathlib import Path
-import runpy
+import json
+import sys
 
 HERE = Path(__file__).resolve().parent
-shared = runpy.run_path(str(HERE.parent / 'shared/model.py'))
+if str(HERE.parent) not in sys.path:
+    sys.path.insert(0, str(HERE.parent))
+from shared.model import export_selected
+from shared.validation import validate_selected
 
 
-def validate(doc):
-    assert doc.UpperCatch.Shape.cut(doc.Carrier.Shape).Volume < 1e-6, 'PCB catch missing'
-    assert doc.UpperRail.Shape.cut(doc.Carrier.Shape).Volume < 1e-6, 'Cap rail missing'
-    assert doc.Carrier.Shape.common(doc.ApproxPCB.Shape).Volume < 1e-6, 'PCB interference'
-    assert doc.Carrier.Shape.common(doc.Holder.Shape).Volume < 1e-6, 'Holder interference'
-
-
-shared['export_selected'](HERE / 'active-model.json', validate)
+manifest = json.loads((HERE / 'active-model.json').read_text())
+export_selected(HERE / 'active-model.json', lambda doc: validate_selected(doc, manifest))

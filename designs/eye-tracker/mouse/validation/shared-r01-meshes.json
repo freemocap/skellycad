@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "revision": "ET-MOUSE-MONO-R01",
+  "files": {
+    "ET-MOUSE-MONO-R01-skull_mount-baseplate.stl": {
+      "watertight": true,
+      "consistent_winding": true,
+      "shells": 1
+    },
+    "ET-MOUSE-MONO-R01-eye_primary-carrier-and-holder.stl": {
+      "watertight": true,
+      "consistent_winding": true,
+      "shells": 2
+    },
+    "ET-MOUSE-MONO-R01-eye_primary-matching-cap.stl": {
+      "watertight": true,
+      "consistent_winding": true,
+      "shells": 1
+    },
+    "ET-MOUSE-MONO-R01-eye_primary-camera-clip.stl": {
+      "watertight": true,
+      "consistent_winding": true,
+      "shells": 1
+    }
+  }
+}

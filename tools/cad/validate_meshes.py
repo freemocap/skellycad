@@ -1,10 +1,14 @@
 """Validate the exported active mouse meshes using the locked tooling Python."""
 from pathlib import Path
+import argparse
 import json
 import trimesh
 
 ROOT = Path(__file__).resolve().parents[2]
-manifest = json.loads((ROOT / 'designs/eye-tracker/mouse/active-model.json').read_text())
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--manifest', type=Path, default=ROOT / 'designs/eye-tracker/mouse/active-model.json')
+args = parser.parse_args()
+manifest = json.loads(args.manifest.read_text())
 folder = ROOT / manifest['print_directory']
 export = json.loads((folder / 'export.json').read_text())
 assert export['native_sha256'] == manifest['native_sha256']

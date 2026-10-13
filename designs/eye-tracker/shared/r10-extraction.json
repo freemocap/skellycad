@@ -1,0 +1,52 @@
+{
+  "source_checkpoint": "designs/eye-tracker/mouse/checkpoints/MH-T3-EYE-R10.FCStd",
+  "source_sha256": "8bc7974226c8df0892f3c174f46bc34318605ea2ab5ab697c71a745af0d88111",
+  "extracted_assets": [
+    {
+      "path": "designs/eye-tracker/shared/cameras/pupil-core-eye-inherited/pcb-envelope.brep",
+      "sha256": "b46f5b460c0c21c4d83dd598dbd1cfd91cdce71288e09a190d794e3c946574d4"
+    },
+    {
+      "path": "designs/eye-tracker/shared/mounts/r10-monocular/tray.brep",
+      "sha256": "88df3b3af40e742b41064cb16be9ac6578e858f299683680b0e925369f413499"
+    },
+    {
+      "path": "designs/eye-tracker/shared/mounts/r10-monocular/supports-and-socket.brep",
+      "sha256": "8441020120565882bb88d9f0b3c84f0962a689e3a3f16e55ccd394403bf6fcc2"
+    },
+    {
+      "path": "designs/eye-tracker/shared/mounts/r10-monocular/Holder.brep",
+      "sha256": "1c875da6841be03ed76b45b9bba4909019645528521a9af897e4a8ee0322d66b"
+    },
+    {
+      "path": "designs/eye-tracker/shared/mounts/r10-monocular/Cap.brep",
+      "sha256": "4a1d4e00fedcee7343c79e544a3f2b0de9f4635a88dd3000b7aa8c6fbba3e6c7"
+    },
+    {
+      "path": "designs/eye-tracker/shared/mounts/r10-monocular/Clip.brep",
+      "sha256": "29f0abcec96ab2c23148cdb6b5519f86e4b3ec0fecf0fe73a4ab450b5738365f"
+    },
+    {
+      "path": "designs/eye-tracker/shared/mounts/r10-monocular/UpperCatch.brep",
+      "sha256": "13f01b0334b3023dc3c857923f390d954de163002c72d1ecfcd9446120eb9c37"
+    },
+    {
+      "path": "designs/eye-tracker/shared/mounts/r10-monocular/UpperRail.brep",
+      "sha256": "7546107918d4d2bee771c611980acd5ad865484513ee1d7b5c6d6c57a6952911"
+    },
+    {
+      "path": "designs/eye-tracker/shared/mounts/r10-monocular/SideLedge.brep",
+      "sha256": "5a3e7ff3140627948fc6b8aa33ff1a7fb1042944063f006fb7978cf6b480f3a9"
+    },
+    {
+      "path": "designs/eye-tracker/mouse/references/skull/anatomy-r10.FCStd",
+      "sha256": "9618734a12773f330ba44627375b39d8349935bc7fb9eab65d5e6dad0832b332"
+    },
+    {
+      "path": "designs/eye-tracker/mouse/inputs/baseplate-r10.brep",
+      "sha256": "9b1c7c957a718a84b2323f46af8790c93ed0b9e0266c71452ef281a3acd03403"
+    }
+  ],
+  "carrier_recomposition_difference_mm3": 0.0,
+  "note": "Immutable extracted geometry. Normal builds need no R09/R10 whole-assembly checkpoint."
+}

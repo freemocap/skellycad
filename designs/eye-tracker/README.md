@@ -1,26 +1,69 @@
 # Eye tracker
 
-| Folder | Role | Starting state |
-| --- | --- | --- |
-| [shared](shared/README.md) | Common model selection and export tooling; future reusable geometry | Manifest and matched-part export helpers |
-| [human](human/README.md) | Human-specific anatomy, placement and design | Awaiting reference assets |
-| [mouse](mouse/README.md) | Mouse anatomy, placement and assembly | Preserved MH-T3-EYE-R10 baseline |
-| [rat](rat/README.md) | Rat anatomy, placement and assembly | Awaiting reference assets |
-| [marmoset](marmoset/README.md) | Marmoset anatomy, placement and assembly | Awaiting reference assets |
+Start with the **mouse monocular assembly**. It reproduces the Mouse Hats R10
+high-water mark using the shared hardware library. The selected checkpoint is
+`ET-MOUSE-MONO-R01`; the original R10 remains the comparison reference.
 
-## Boundaries
+Run `review.FCMacro` in the existing desktop FreeCAD session to open the selected
+mouse, the R10 reference and the exploded shared-hardware view together.
 
-Shared geometry will own camera hardware interfaces, retention mechanisms and
-mount primitives. Species designs own reference anatomy, anatomical landmarks,
-mounting position, and the number and poses of camera instances. Camera poses
-need explicit coordinate frames and units. Record separate left/right instances
-when developing binocular systems; evaluate handed hardware, ribbon routing,
-socket motion and skull clearance before accepting a mirrored design.
+## What lives where
 
-The initial migration adds shared selection/export tooling and preserves the
-mouse geometry. Extract geometric components incrementally, comparing a rebuilt
-mouse against its accepted baseline before adapting another species. Human,
-rat and marmoset folders intentionally contain no invented anatomical dimensions.
+| Location | What it means |
+| --- | --- |
+| [shared/cameras/](shared/cameras/) | Camera fit profiles. Today: the inherited Pupil Core PCB envelope. |
+| [shared/mounts/](shared/mounts/) | Printed hardware that fits a camera: tray/support regions, holder, cap and clip. Today: the R10 mount preset. |
+| [mouse/assembly.json](mouse/assembly.json) | The mouse recipe: one eye-camera instance, its camera/mount choice, placement and baseplate. |
+| [mouse/anatomy.json](mouse/anatomy.json) | Mouse skull/eyes, baseplate geometry and inherited anatomical target. |
+| [mouse/checkpoints/](mouse/checkpoints/) | Saved complete assemblies for opening, comparing and exporting. |
+| [rat](rat/README.md), [marmoset](marmoset/README.md), [human](human/README.md) | Reserved species folders; no anatomy or assembly has been supplied yet. |
 
-The original [Mouse Hats history](../mouse-hats/INDEX.md) remains at its old
-relative paths so earlier studies and replay scripts remain traceable.
+```mermaid
+flowchart LR
+    camera[Camera fit profile] --> mount[Compatible mount preset]
+    mount --> instances[Camera instances: choice and placement]
+    anatomy[Animal anatomy and baseplates] --> assembly[Complete assembly]
+    instances --> assembly
+    assembly --> export[Matched print parts]
+```
+
+## The four useful terms
+
+- **Camera profile:** the hardware being accommodated. The current profile is an
+  approximate PCB fit envelope, not a complete manufacturer camera model.
+- **Mount preset:** a compatible set of printed geometry and its internal camera
+  arrangement. R10 preserves the accepted tray, ribbon route, socket and holder pose.
+- **Camera instance:** one use of a camera and mount, with a unique name, an
+  `eye` or `world` role, and a position/rotation in the animal assembly.
+- **Complete assembly:** anatomy, baseplates and all camera instances together.
+  Its selected checkpoint determines the matched parts to export.
+
+Camera count is the length of the recipe's camera list. Species and camera model
+are separate choices. A future rat recipe can reuse the same hardware twice;
+a different camera needs its own fit profile and a compatible mount preset.
+
+## Where we are now
+
+The shared builder loads small extracted geometry assets and composes the mouse.
+It does not load the old complete R09/R10 assembly to construct the new one.
+R10 is opened separately for comparison. The carrier is fused from its tray/mount
+region and its support/socket region; those are regions of one printed part.
+
+Tests cover equivalence to R10, unchanged anatomy/sightline, matched-part exports,
+and two independently placed camera instances. The two-camera test is a spatial
+fixture, not a rat design or physical-fit validation.
+
+## Next: rat
+
+1. Add the rat skull/eye references with units and orientation.
+2. Register the mounting locations and eye targets.
+3. Place two instances of the existing camera/mount and inspect their clearances.
+4. Revise the mount's support route or internal aim where the rat geometry needs it.
+
+Rigid rotation/translation is implemented. Mirroring hardware, automatically
+aiming sensors, redesigning support curves and proving ribbon clearance are
+separate geometry work. Preserve the physical camera's handedness when deciding
+whether a printed mount should be mirrored.
+
+[Mouse build and review](mouse/README.md) · [Shared library details](shared/README.md) ·
+[Preserved Mouse Hats exploration](../mouse-hats/INDEX.md)

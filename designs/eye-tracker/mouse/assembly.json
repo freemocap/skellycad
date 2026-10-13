@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "revision": "ET-MOUSE-MONO-R01",
+  "label": "Mouse monocular \u2014 shared hardware R01",
+  "species": "mouse",
+  "units": "mm",
+  "anatomy": "anatomy.json",
+  "anatomy_placement": {
+    "translation_mm": [
+      0,
+      0,
+      0
+    ],
+    "rotation_xyzw": [
+      0,
+      0,
+      0,
+      1
+    ]
+  },
+  "baseplates": [
+    {
+      "id": "skull_mount",
+      "label": "Mouse baseplate \u2014 R10",
+      "placement": {
+        "translation_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      }
+    }
+  ],
+  "cameras": [
+    {
+      "id": "eye_primary",
+      "label": "Primary eye camera",
+      "role": "eye",
+      "camera": "pupil-core-eye-inherited",
+      "mount": "r10-monocular",
+      "baseplate": "skull_mount",
+      "placement": {
+        "translation_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      }
+    }
+  ],
+  "baseline": {
+    "checkpoint": "designs/eye-tracker/mouse/checkpoints/MH-T3-EYE-R10.FCStd",
+    "sha256": "8bc7974226c8df0892f3c174f46bc34318605ea2ab5ab697c71a745af0d88111",
+    "camera_instance": "eye_primary"
+  }
+}

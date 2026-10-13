@@ -1,0 +1,31 @@
+"""Open the selected mouse, R10 reference, and shared hardware in one session.
+
+Run in the existing desktop FreeCAD window. Preserve all already-open documents.
+"""
+from pathlib import Path
+import json
+import sys
+import FreeCAD as App
+import FreeCADGui as Gui
+
+HERE = Path(__file__).resolve().parent
+ROOT = HERE.parents[1]
+if str(HERE) not in sys.path:
+    sys.path.insert(0, str(HERE))
+from shared.model import open_selected
+from shared.preview import build_catalog
+
+config = json.loads((HERE / 'mouse/assembly.json').read_text())
+baseline_path = ROOT / config['baseline']['checkpoint']
+if not any(d.FileName and Path(d.FileName).resolve() == baseline_path for d in App.listDocuments().values()):
+    App.openDocument(str(baseline_path))
+catalog_path = ROOT / 'generated/eye-tracker/shared/hardware-catalog.FCStd'
+if not any(d.FileName and Path(d.FileName).resolve() == catalog_path for d in App.listDocuments().values()):
+    instance = config['cameras'][0]
+    build_catalog(instance['camera'], instance['mount'])
+manifest, doc = open_selected(HERE / 'mouse/active-model.json')
+App.setActiveDocument(doc.Name)
+Gui.activeDocument().activeView().viewAxonometric()
+Gui.activeDocument().activeView().fitAll()
+Gui.getMainWindow().show()
+Gui.getMainWindow().raise_()
