@@ -1,0 +1,27 @@
+{
+  "units": "mm",
+  "source": "User description in Create multimaterial camera dummy, 2026-10-14",
+  "nominal_lens_thread_diameter": 4,
+  "housing_plan_outline": "Pure square; no protruding tabs or mounting ears",
+  "underside_mounting": "Two small pips beneath two corners locate in PCB indentations",
+  "corner_pair": "Not specified; do not assume diagonally opposite",
+  "peg_dimensions": null,
+  "thread_pitch": null,
+  "status": "Identification in progress; previous tab-mounted image candidates rejected; no replacement geometry selected",
+  "front_marking": {
+    "text": "P",
+    "position": "upper-right corner of front of housing",
+    "source": "User observation, 2026-10-14",
+    "meaning": "Unidentified; not established as a manufacturer logo"
+  },
+  "visual_reference_feedback": "IADIY M5 board-lens photo, square housing, looks much closer; thread identity remains user-reported M4, not inferred M5.",
+  "user_measurements_2026_10_14": {
+    "square_width_mm": 6.3,
+    "square_length_mm": 6.3,
+    "base_to_square_corner_top_mm": 2.7,
+    "base_to_screw_port_rim_mm": 2.9,
+    "rim_height_approximate": true,
+    "measurement_endpoints": "Bottom of mount, not bottom of PCB; peg protrusion not specified",
+    "nominal_thread_diameter_mm": 4
+  }
+}

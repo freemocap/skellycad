@@ -1,0 +1,20 @@
+[
+  {
+    "file": "JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal.step",
+    "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Connector_JST.3dshapes/JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal.step",
+    "sha256": "4b0f89a75d3758add0041ca9e5ded3a780c23ef4e3e99bcc398b41177dff5d0f",
+    "bytes": 72004
+  },
+  {
+    "file": "JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal.step",
+    "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Connector_JST.3dshapes/JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal.step",
+    "sha256": "aacba39c0ebf407941d81e202e5fc85121532adadfd38f26725330dea8815ac7",
+    "bytes": 329331
+  },
+  {
+    "file": "LICENSE.md",
+    "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/LICENSE.md",
+    "sha256": "45d2bce75e5a4208f5afb01b8fb2c406e700371c4fe2b5f5cd5c443d46db4d8f",
+    "bytes": 2101
+  }
+]

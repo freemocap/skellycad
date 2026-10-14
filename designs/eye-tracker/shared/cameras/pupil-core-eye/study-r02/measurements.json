@@ -1,0 +1,31 @@
+{
+  "units": "mm",
+  "confirmed_by_user": true,
+  "measurement_source": "caliper-sketch.jpg",
+  "sketch_sha256": "ad46d89546fff13b214899c8dddf27d2eb216040aa98a3700bd6330bfeaa21db",
+  "main_pcb": {
+    "length": 30.85,
+    "width": 9
+  },
+  "ribbon": {
+    "length": 32.85,
+    "width": 4
+  },
+  "camera_head": {
+    "width": 6,
+    "lower_length": 10,
+    "neck_length": 2,
+    "led_section_length": 3,
+    "neck_width": 4,
+    "neck_width_status": "Sketch interpretation; not separately confirmed"
+  },
+  "assumptions": {
+    "board_thickness": 0.25,
+    "ribbon_thickness": 0.15,
+    "lens_thread_pitch": null,
+    "connector_part_number": null,
+    "safe_minimum_bend_radius": null
+  },
+  "lens_nominal_diameter": 4,
+  "source_blend_sha256": "0aa9976185a013c6b4ead17c18a4252f19973e0845e8a4a503eff84fec75913e"
+}

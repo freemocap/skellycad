@@ -1,0 +1,11 @@
+import FreeCAD as A, FreeCADGui as G, Part
+from pathlib import Path
+out=Path('C:/Users/jonma/code-stuff/github/freemocap/other/skellycad/generated/eye-tracker/shared/lens-m5-r01')
+s=Part.Shape();s.read(str(out/'IADIY-M5-SCALED-6p3mm.step'))
+d=A.newDocument('M5HolderDisplay');d.Label='M5 HOLDER - scaled to 6.3 mm'
+o=d.addObject('Part::Feature','Holder');o.Shape=s
+o.ViewObject.ShapeColor=(.3,.3,.33);o.ViewObject.Transparency=0;o.ViewObject.Visibility=True
+d.recompute();G.activeDocument().activeView().viewAxonometric();G.activeDocument().activeView().fitAll();G.updateGui()
+d.saveAs(str(out/'M5-HOLDER-DISPLAY.FCStd'))
+G.activeDocument().activeView().saveImage(str(out/'freecad-preview.png'),1200,900,'White')
+(out/'display-status.txt').write_text(str((s.isValid(),s.Volume,o.ViewObject.Visibility,o.ViewObject.Transparency)))

@@ -1,0 +1,48 @@
+{
+  "document": "rat_skulls_and_eyes_user_frame_r02",
+  "eyes": [
+    {
+      "side": "Right",
+      "center_mm": [
+        0.75,
+        -8.35,
+        0.0
+      ],
+      "rotation_xyzw": [
+        0.6077669412760626,
+        0.10305020666117286,
+        0.13162940358583025,
+        0.7763206168270087
+      ],
+      "outward_axis": [
+        0.31999999999740975,
+        -0.9165151389925811,
+        0.2399999999980573
+      ],
+      "determinant": 1.0
+    },
+    {
+      "side": "Left",
+      "center_mm": [
+        0.75,
+        8.35,
+        0.0
+      ],
+      "rotation_xyzw": [
+        0.10305020666117286,
+        0.6077669412760626,
+        0.7763206168270087,
+        0.13162940358583025
+      ],
+      "outward_axis": [
+        0.31999999999740975,
+        0.9165151389925811,
+        0.23999999999805732
+      ],
+      "determinant": 1.0
+    }
+  ],
+  "height_difference_mm": 0.0,
+  "interocular_distance_mm": 16.7,
+  "note": "Checked bilateral height, spacing and proper eye frames. Visual orbital placement remains provisional."
+}

@@ -1,0 +1,15 @@
+import FreeCAD as A, FreeCADGui as G
+from PySide import QtCore
+from pathlib import Path
+out=Path('C:/Users/jonma/code-stuff/github/freemocap/other/skellycad/generated/eye-tracker/shared/lens-m5-r01')
+d=A.activeDocument()
+d.ThreadedHolder.ViewObject.Visibility=True
+d.recompute()
+G.activeDocument().activeView().viewAxonometric()
+G.activeDocument().activeView().fitAll()
+G.updateGui()
+d.save()
+def capture_m5():
+ G.activeDocument().activeView().fitAll()
+ G.activeDocument().activeView().saveImage(str(out/'freecad-preview.png'),1200,900,'White')
+QtCore.QTimer.singleShot(1500,capture_m5)

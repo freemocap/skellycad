@@ -1,0 +1,141 @@
+{
+  "title": "Rat skull + mandible",
+  "creator": "scienceminer",
+  "source_url": "https://www.thingiverse.com/thing:469391",
+  "license_as_supplied": "Creative Commons - Attribution - Share Alike; version not specified in supplied LICENSE.txt",
+  "archive": {
+    "path": "designs/eye-tracker/rat/references/skull/thingiverse-469391/Rat skull + mandible - 469391.zip",
+    "sha256": "95107931b5100ec98e148f113c92e53b75fcd7b208525509d51f7b4395793b68"
+  },
+  "selected_mesh": {
+    "path": "designs/eye-tracker/rat/references/skull/thingiverse-469391/files/9_19_14_rat_skull.stl",
+    "sha256": "0f7b47bcd25b699c903e48d462fde1ebad59d9b4d6c38b350320e316c8e86357"
+  },
+  "selection_reason": "110116 triangles; watertight in trimesh audit. High-res-named and simplified variants are not watertight. All originals retained.",
+  "mesh_audit": {
+    "9_19_14_rat_skull-simplified-2.stl": {
+      "path": "designs/eye-tracker/rat/references/skull/thingiverse-469391/files/9_19_14_rat_skull-simplified-2.stl",
+      "sha256": "66cf89eca34de65b7111c6a952075f3ef2db37eb9550544aa9fc80605e7f6606",
+      "bounds_source_units": [
+        [
+          -23.447500228881836,
+          -11.731499671936035,
+          -0.09300000220537186
+        ],
+        [
+          23.398700714111328,
+          11.73449993133545,
+          24.419700622558594
+        ]
+      ],
+      "faces": 24550,
+      "watertight": false,
+      "connected_components": 18
+    },
+    "9_19_14_rat_skull.stl": {
+      "path": "designs/eye-tracker/rat/references/skull/thingiverse-469391/files/9_19_14_rat_skull.stl",
+      "sha256": "0f7b47bcd25b699c903e48d462fde1ebad59d9b4d6c38b350320e316c8e86357",
+      "bounds_source_units": [
+        [
+          -23.36210060119629,
+          -11.654999732971191,
+          -0.08839999884366989
+        ],
+        [
+          23.373699188232422,
+          11.660699844360352,
+          24.349599838256836
+        ]
+      ],
+      "faces": 110116,
+      "watertight": true,
+      "connected_components": 31
+    },
+    "Rat_skull+mandible_high_res.stl": {
+      "path": "designs/eye-tracker/rat/references/skull/thingiverse-469391/files/Rat_skull+mandible_high_res.stl",
+      "sha256": "39af469a82fad85857d149b1f308fec3c389f8f82f8a524baeb96b7451db0ffe",
+      "bounds_source_units": [
+        [
+          -23.433799743652344,
+          -10.838899612426758,
+          0.05889999866485596
+        ],
+        [
+          23.112600326538086,
+          12.291500091552734,
+          24.314699172973633
+        ]
+      ],
+      "faces": 102342,
+      "watertight": false,
+      "connected_components": 32
+    }
+  },
+  "units": "mm assumed, not specified by STL or supplied README",
+  "scale": 1.0,
+  "registration": {
+    "rotation_axis": "X",
+    "rotation_degrees": 90,
+    "translation_mm": [
+      12,
+      -2,
+      0
+    ],
+    "mapping": "assembly (x,y,z) = (source x + 12, -source z - 2, source y)",
+    "rationale": "Visual starting registration: rostral +X, dorsal +Y, lateral Z in inherited mouse hardware frame. Align posterior cranium below inherited mounting plate; not measured mounting placement."
+  },
+  "eye_target": {
+    "position_mm": [
+      13,
+      -10,
+      9
+    ],
+    "status": "Visual orbital-region estimate only; scan has no eyeballs or pupil landmarks. Review before changing arm geometry."
+  },
+  "unmodified_files": [
+    {
+      "path": "designs/eye-tracker/rat/references/skull/thingiverse-469391/LICENSE.txt",
+      "sha256": "85027bb93ccf79b65e293ab8d7dc956397e6c316c727cae97e7aa29e89f49498"
+    },
+    {
+      "path": "designs/eye-tracker/rat/references/skull/thingiverse-469391/Rat skull + mandible - 469391.zip",
+      "sha256": "95107931b5100ec98e148f113c92e53b75fcd7b208525509d51f7b4395793b68"
+    },
+    {
+      "path": "designs/eye-tracker/rat/references/skull/thingiverse-469391/README.txt",
+      "sha256": "ce70f3e816994e6a274a6b167d25412db11c132c6d039fc496836992eea75860"
+    },
+    {
+      "path": "designs/eye-tracker/rat/references/skull/thingiverse-469391/files/9_19_14_rat_skull-simplified-2.stl",
+      "sha256": "66cf89eca34de65b7111c6a952075f3ef2db37eb9550544aa9fc80605e7f6606"
+    },
+    {
+      "path": "designs/eye-tracker/rat/references/skull/thingiverse-469391/files/9_19_14_rat_skull.stl",
+      "sha256": "0f7b47bcd25b699c903e48d462fde1ebad59d9b4d6c38b350320e316c8e86357"
+    },
+    {
+      "path": "designs/eye-tracker/rat/references/skull/thingiverse-469391/files/Rat_skull+mandible_high_res.stl",
+      "sha256": "39af469a82fad85857d149b1f308fec3c389f8f82f8a524baeb96b7451db0ffe"
+    },
+    {
+      "path": "designs/eye-tracker/rat/references/skull/thingiverse-469391/images/9_19_14_rat_skull-simplified-2.jpg",
+      "sha256": "d01ddfc89eeb372834781467228185d95fde79f67e3c290e5f0cca7e11043c51"
+    },
+    {
+      "path": "designs/eye-tracker/rat/references/skull/thingiverse-469391/images/9_19_14_rat_skull.png",
+      "sha256": "b24f64d27b71246429a9b7a0be69edcd1508e6db25bfc248294293bc9badf75d"
+    },
+    {
+      "path": "designs/eye-tracker/rat/references/skull/thingiverse-469391/images/Rat_skull+mandible_high_res.png",
+      "sha256": "a82bc90fd379fcad5f2902f11847700932bd00092d3270d5000e27d3aecfeda0"
+    },
+    {
+      "path": "designs/eye-tracker/rat/references/skull/thingiverse-469391/images/Rat_skull.jpg",
+      "sha256": "769f5fad10167a5e3d9b0ad619226bbb129b537bcec4b9eb06e366ce2f0dabf2"
+    },
+    {
+      "path": "designs/eye-tracker/rat/references/skull/thingiverse-469391/images/rat_skull_high_res.jpg",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "revision": "ET-MARMOSET-SKULL-PRINT-R02",
+  "source_sha256": "a77680b8dad5041ad0b0fd95f0a491abe6109adc3fc2ee702ca1a2202b081f6f",
+  "units": "mm assumed; source coordinates unchanged",
+  "core": {
+    "center_mm": [
+      0.0,
+      25.0,
+      12.0
+    ],
+    "directions": 2562,
+    "interpolated_opening_rays": 194,
+    "radial_overlap_mm": 0.45
+  },
+  "neck": {
+    "center_mm": [
+      0.0,
+      6.0,
+      -8.0
+    ],
+    "radii_mm": [
+      11.0,
+      12.0,
+      13.0
+    ]
+  },
+  "orbital_fill": {
+    "voxel_pitch_mm": 0.18,
+    "closing_radius_mm": 1.2,
+    "gaussian_sigma_voxels": 0.65,
+    "isosurface_level": 0.65,
+    "masks": [
+      {
+        "center_mm": [
+          -7.0,
+          23.0,
+          21.0
+        ],
+        "radii_mm": [
+          7.0,
+          7.0,
+          8.0
+        ]
+      },
+      {
+        "center_mm": [
+          7.0,
+          23.0,
+          21.0
+        ],
+        "radii_mm": [
+          7.0,
+          7.0,
+          8.0
+        ]
+      }
+    ],
+    "operation": "Union only; no subtraction from the orbital rims or socket walls"
+  },
+  "simplification_tolerance_mm": 0.015,
+  "simplification_attempts": [
+    {
+      "tolerance_mm": 0.025,
+      "triangles": 146938,
+      "vertices": 73403,
+      "components": 2,
+      "euler": -65,
+      "watertight": false,
+      "winding_consistent": true,
+      "volume_mm3": 12548.862042541861,
+      "bounds_mm": [
+        [
+          -15.554200172424316,
+          1.5555499792099,
+          -8.078519821166992
+        ],
+        [
+          15.829000473022461,
+          34.11320114135742,
+          37.68220138549805
+        ]
+      ]
+    },
+    {
+      "tolerance_mm": 0.015,
+      "triangles": 205444,
+      "vertices": 102656,
+      "components": 1,
+      "euler": -66,
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": 12552.633499250864,
+      "bounds_mm": [
+        [
+          -15.56470012664795,
+          1.5558899641036987,
+          -8.078519821166992
+        ],
+        [
+          15.829000473022461,
+          34.11650085449219,
+          37.68220138549805
+        ]
+      ]
+    }
+  ],
+  "discarded_shells": 0,
+  "outputs": {
+    "marmoset-skull-detailed-r02.stl": {
+      "sha256": "21effd9d4050b55a3bb7a91746ca481755742795d1688cfe194a1f9030372e18",
+      "bytes": 24374284,
+      "triangles": 487484,
+      "vertices": 243676,
+      "components": 1,
+      "euler": -66,
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": 12555.956924263994,
+      "bounds_mm": [
+        [
+          -15.56470012664795,
+          1.5555100440979004,
+          -8.078519821166992
+        ],
+        [
+          15.829000473022461,
+          34.11650085449219,
+          37.68220138549805
+        ]
+      ]
+    },
+    "marmoset-skull-print-r02.stl": {
+      "sha256": "2ca153c93037184ac4c5f261317fcb8bb1f37b28ab3c8d6d3aa43f8cb51a44b3",
+      "bytes": 10272284,
+      "triangles": 205444,
+      "vertices": 102656,
+      "components": 1,
+      "euler": -66,
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": 12552.633499250864,
+      "bounds_mm": [
+        [
+          -15.56470012664795,
+          1.5558899641036987,
+          -8.078519821166992
+        ],
+        [
+          15.829000473022461,
+          34.11650085449219,
+          37.68220138549805
+        ]
+      ]
+    }
+  }
+}

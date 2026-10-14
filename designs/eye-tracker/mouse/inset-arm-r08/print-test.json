@@ -1,0 +1,190 @@
+{
+  "revision": "ET-MOUSE-MONO-STEM-R08",
+  "status": "Print-test candidate; geometry validated, physical fit pending",
+  "units": "mm",
+  "native_checkpoint": "designs/eye-tracker/mouse/inset-arm-r08/checkpoints/ET-MOUSE-MONO-STEM-R08.FCStd",
+  "native_sha256": "5472f84ddb34a32459956c42130b0cc4ba76c317f549d860a940ec22962f981d",
+  "parts": {
+    "carrier": "FinishedCarrier",
+    "holder": "eye_primary_Holder",
+    "cap": "eye_primary_Cap",
+    "clip": "eye_primary_Clip",
+    "baseplate": "skull_mount_Baseplate"
+  },
+  "print_groups": {
+    "carrier-and-holder": [
+      "FinishedCarrier",
+      "eye_primary_Holder"
+    ],
+    "matching-cap": [
+      "eye_primary_Cap"
+    ],
+    "camera-clip": [
+      "eye_primary_Clip"
+    ],
+    "baseplate": [
+      "skull_mount_Baseplate"
+    ]
+  },
+  "validation": {
+    "revision": "ET-MOUSE-MONO-STEM-R08-print-test",
+    "units": "mm",
+    "carrier_valid": true,
+    "carrier_solids": 1,
+    "detailed_bop_check_pass": true,
+    "checks": {
+      "RibbonCandidate": {
+        "carrier_overlap_mm3": 0.0,
+        "carrier_clearance_mm": 0.006536615650486999
+      },
+      "eye_primary_Holder": {
+        "carrier_overlap_mm3": 0.0,
+        "carrier_clearance_mm": 0.33316465223867253
+      },
+      "eye_primary_Clip": {
+        "carrier_overlap_mm3": 0.0,
+        "carrier_clearance_mm": 0.8032716172896012
+      },
+      "eye_primary_Cap": {
+        "carrier_overlap_mm3": 0.002218225533850559,
+        "carrier_clearance_mm": 0.0
+      },
+      "skull_mount_Baseplate": {
+        "carrier_overlap_mm3": 0.0,
+        "carrier_clearance_mm": 0.0
+      }
+    },
+    "carrier_stem_bore_overlap_mm3": 0.0,
+    "junction_finishing": [
+      {
+        "joint": "upper_root",
+        "method": "fillet",
+        "size_mm": 0.35,
+        "volume_change_mm3": 0.041542932957099765
+      },
+      {
+        "joint": "rear_stem",
+        "method": "fillet",
+        "size_mm": 0.3,
+        "volume_change_mm3": 0.14044879020275403
+      },
+      {
+        "joint": "upper_stem",
+        "method": "chamfer",
+        "size_mm": 0.05,
+        "volume_change_mm3": 0.011655632437850727
+      },
+      {
+        "joint": "rear_root",
+        "method": "chamfer",
+        "size_mm": 0.2,
+        "volume_change_mm3": 0.13293875136355382
+      }
+    ],
+    "native_file": "mouse-inset-arm-r08.FCStd",
+    "native_sha256": "5472f84ddb34a32459956c42130b0cc4ba76c317f549d860a940ec22962f981d",
+    "print_exports": {
+      "carrier-and-holder": {
+        "file": "carrier-and-holder.stl",
+        "closed": true,
+        "self_intersections": false,
+        "facets": 29942,
+        "sha256": "dea7194bedd03cbbdabe5c503c5d387035477d77d92c5c7bd8c6a40c5805f516"
+      },
+      "matching-cap": {
+        "file": "matching-cap.stl",
+        "closed": true,
+        "self_intersections": false,
+        "facets": 1918,
+        "sha256": "b4d493737e2286ded5ad664236c872b15d06d7a7e02f14d2a6bfb2825a325193"
+      },
+      "camera-clip": {
+        "file": "camera-clip.stl",
+        "closed": true,
+        "self_intersections": false,
+        "facets": 134,
+        "sha256": "663f7e4469f40626b812f2b4212b488fc373035ba044d96f7e90b5830cbac335"
+      },
+      "baseplate": {
+        "file": "baseplate.stl",
+        "closed": true,
+        "self_intersections": false,
+        "facets": 1190,
+        "sha256": "f417418367630378fbe4ead58f9511fe820c26f664daad69b3b76145af41d9db"
+      }
+    },
+    "status": "Geometry checked print-test candidate; physical strength and adjustment require testing.",
+    "ribbon_validation": {
+      "parameters": [
+        3.5750000000000006,
+        -1.7521681109377056,
+        -0.6382882369146292,
+        5.222862292148559e-20,
+        6.40396123629365,
+        -0.41294360690196275,
+        0.6204450959114549,
+        1.9030849856708212,
+        3.575000000000678,
+        -2.8999219050216754,
+        -0.32552806600218226,
+        8.723015680046717e-05
+      ],
+      "endpoint_error_mm": 4.0442409060407836e-08,
+      "frame_error": 1.7886537837681563e-09,
+      "inside_radii_mm": [
+        3.5000000000000004,
+        6.32896123629365,
+        3.5000000000006777
+      ],
+      "straight_entry_mm": 1.629075040888793,
+      "endpoint_position_error_mm": 3.956532389014313e-08,
+      "endpoint_frame_matrix_error": 1.1068313621439966e-09,
+      "source_checkpoint": "designs/eye-tracker/mouse/checkpoints/ET-MOUSE-MONO-R01.FCStd",
+      "source_sha256": "0bdd4c6cef0c4448a49fae67e398d1a34e8d1cd60c597a42ebff54f94af35a3e",
+      "units": "mm",
+      "neutral_length_mm": 32.85,
+      "width_mm": 4,
+      "assumed_thickness_mm": 0.15,
+      "metric": {
+        "max_local_length_error": 6.159133203453848e-10,
+        "max_local_shear": 4.894417093836978e-10
+      },
+      "solid_valid": true,
+      "mesh_closed": true,
+      "self_intersection": false,
+      "ribbon_overlaps_mm3": {
+        "socket": 0.0,
+        "holder": 0.0,
+        "clip": 0.0,
+        "tray": 0.0,
+        "cap": 0.0,
+        "baseplate": 0.0,
+        "PCB": 0.0,
+        "JST_4pin": 0.0,
+        "camera_pcb": 0.0,
+        "M4_lens": 0.0,
+        "IR_LED": 0.0,
+        "IR_LED_001": 0.0,
+        "M4_nominal_reference": 0.0,
+        "UpperSupport": 0.0,
+        "RearRibbonGuard": 0.0
+      },
+      "anatomy_bounding_boxes_overlap": {
+        "Skull": false,
+        "Eye1": false,
+        "Eye2": false
+      },
+      "ribbon_checks_pass": true
+    },
+    "upper_arm_change": {
+      "source": "R06 complete assembly",
+      "axial_shift_mm": -1.1,
+      "terminal_width_mm": 3.0,
+      "terminal_thickness_mm": 2.2,
+      "terminal_center_height_mm": 4.2,
+      "taper_cut": false
+    },
+    "source_checkpoint": "designs/eye-tracker/mouse/joined-arms-r06/checkpoints/ET-MOUSE-MONO-STEM-R06.FCStd",
+    "source_sha256": "ab45209c0169ea513f28176bf14c12f0ab871c784085bcced3d1658d54124a3c"
+  }
+}

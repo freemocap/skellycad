@@ -1,0 +1,25 @@
+{
+  "asset": "female_100months_403g.stl",
+  "sha256": "a77680b8dad5041ad0b0fd95f0a491abe6109adc3fc2ee702ca1a2202b081f6f",
+  "bytes": 114639021,
+  "received": "2026-10-14",
+  "species": "Callithrix jacchus",
+  "specimen_labels": {
+    "sex": "female",
+    "age_months": 100,
+    "mass_g": 403
+  },
+  "units": "millimetres assumed, STL has no unit metadata",
+  "scale": 1.0,
+  "transform": "identity; source coordinates preserved",
+  "axes": "X lateral; +Y dorsal; +Z anterior by visual inspection; left/right sign unverified",
+  "license": "CC-BY-NC-SA-4.0",
+  "source_url": "https://marmosetsa.blob.core.windows.net/$web/neuroscientific_apparatus/CT/CTsAcrossAgespan/female_100months_403g.stl",
+  "catalog_url": "https://www.marmosetbrainconnectome.org/apparatus/ct.html?HID=CT",
+  "paper_doi": "10.1162/imag_a_00483",
+  "sources": [
+    "marmosetCtFemale100",
+    "zimmermannRollin2025Apparatus"
+  ],
+  "review": "Catalog, relevant paper excerpts, page-source download path, STL geometry and source hash. No anatomical calibration or physical fit demonstrated."
+}

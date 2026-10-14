@@ -1,0 +1,27 @@
+{
+  "revision": "CAMERA-DUMMY-R06",
+  "units": "mm",
+  "board_thickness": 0.25,
+  "ribbon_thickness": 0.15,
+  "anchor_skin": null,
+  "sources": {
+    "designs/eye-tracker/shared/cameras/pupil-core-eye/study-r02/calibrated-scene.json": "d46a4bd64573688df40c6710c9c94195d5151175cacfda71cb9ec4f9798f393d",
+    "designs/eye-tracker/shared/cameras/pupil-core-eye/study-r02/measurements.json": "67a14e33df0d3c04fe1942aae7ea80c3de02ca8000d687c0863021bb55dd979d",
+    "designs/eye-tracker/shared/cameras/pupil-core-eye/study-r03/connector-selection.json": "2bba0c0a763c075a04fffd23d5b1f65b7727bff708ed4fb4c0c2aed54e4c2c19",
+    "designs/eye-tracker/shared/cameras/pupil-core-eye/study-r02/connector-candidates/JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal.step": "4b0f89a75d3758add0041ca9e5ded3a780c23ef4e3e99bcc398b41177dff5d0f",
+    "designs/eye-tracker/mouse/checkpoints/ET-MOUSE-MONO-R01.FCStd": "0bdd4c6cef0c4448a49fae67e398d1a34e8d1cd60c597a42ebff54f94af35a3e",
+    "designs/eye-tracker/rat/checkpoints/ET-RAT-MONO-R01.FCStd": "ad74a3f14aaa709880039c927690475f6119d074f73b0a550a3064383394762e",
+    "generated/eye-tracker/shared/lens-m5-r04/CompleteDummyLens.step": "f14e301f3efc9a0a924668ec77cd4a4eacc9be67d422015d34f9142864af5a9d"
+  },
+  "physical_fit_verified": false,
+  "lens_holder": {
+    "accepted_revision": "lens-m5-r04",
+    "square_mm": 6.3,
+    "optical_normal": [
+      0,
+      0,
+      1
+    ],
+    "embedded_pin_clip_z_mm": -0.25
+  }
+}

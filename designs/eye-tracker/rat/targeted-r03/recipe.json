@@ -1,0 +1,455 @@
+{
+  "revision": "ET-RAT-MONO-TARGET-R03",
+  "units": "mm",
+  "target_side": "Right",
+  "target_eye_object": "RightEye",
+  "target_center_world_mm": [
+    0.75,
+    -8.35,
+    0.0
+  ],
+  "target_status": "Provisional R02 bilateral eye placement, not a measured pupil",
+  "anatomy": {
+    "path": "designs/eye-tracker/rat/references/skull/aligned-r01/rat-skulls-and-eyes-user-frame-r02.FCStd",
+    "sha256": "32308a7eac540260785903a3fc6f77fe0c38748e916fe68f68022b713fb5ed80"
+  },
+  "hardware_manifest": "designs/eye-tracker/mouse/inset-arm-r08/print-test.json",
+  "mount_to_skull": [
+    [
+      1.0000000000000004,
+      1.3410378313027143e-09,
+      -6.239359095588353e-10,
+      -12.221824016393866
+    ],
+    [
+      -7.761053228700374e-10,
+      0.11664754417988862,
+      -0.9931733738058033,
+      1.3991692579605894
+    ],
+    [
+      -1.2591026469487097e-09,
+      0.9931733738058045,
+      0.1166475441798884,
+      8.059506080646097
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "lens_local_mm": [
+    0.088458776473999,
+    5.7195234298706055,
+    1.0
+  ],
+  "lens_position_world_mm": [
+    -5.7427723848198315,
+    -22.810248296006353,
+    12.006952450827661
+  ],
+  "roll_policy": "Explicit solved rest frame, corrected to exact eye-center aim",
+  "sensor_reference_in_mount": [
+    [
+      -0.06711205059816572,
+      0.9954397869050271,
+      0.06779087926102867,
+      -1.5335790469258956
+    ],
+    [
+      0.9443569796724891,
+      0.08530177869130706,
+      -0.3176688550927728,
+      0.1044682580714484
+    ],
+    [
+      -0.3220028999999271,
+      0.0426993817118399,
+      -0.9457752878951022,
+      19.568146089571815
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "ribbon_bounds": {
+    "minimum_inside_radius_mm": 3.5,
+    "thickness_mm": 0.15,
+    "neutral_length_mm": 32.85,
+    "width_mm": 4.0
+  },
+  "arm_parameters": {
+    "UpperSupport": {
+      "units": "mm",
+      "socket_center_mm": [
+        4.6673514260725035,
+        5.140223325877184,
+        23.434462378219095
+      ],
+      "socket_axis": [
+        -0.06766810814747441,
+        0.31767937320295375,
+        0.9457805469458125
+      ],
+      "attachment_height_mm": 4.2,
+      "attachment_radius_mm": 2.65,
+      "width_mm": 3.0,
+      "thickness_mm": 1.8,
+      "sections": 33,
+      "rear": {
+        "root_mm": [
+          4.10677424482636,
+          7.86588286441313,
+          12.26
+        ],
+        "root_tangent": [
+          -1,
+          0,
+          0
+        ],
+        "bend_mm": [
+          -3.0,
+          3.0,
+          21.0
+        ],
+        "bend_tangent": [
+          0,
+          0,
+          1
+        ],
+        "root_handle_mm": 10.0,
+        "bend_handle_mm": 5.0,
+        "socket_handle_mm": 10.0,
+        "radial_direction": [
+          -0.9977078866781307,
+          -0.02154614839589256,
+          -0.06414621071864238
+        ],
+        "root_width_direction": [
+          0,
+          1,
+          0
+        ],
+        "root_width_mm": 2.6,
+        "root_thickness_mm": 2.0
+      },
+      "top": {
+        "root_mm": [
+          4.4969191206496975,
+          16.0918887142941,
+          17.3662968498585
+        ],
+        "root_tangent": [
+          0,
+          0,
+          1
+        ],
+        "bend_mm": [
+          7.5,
+          15.0,
+          24.5
+        ],
+        "bend_tangent": [
+          0,
+          -1,
+          0.3
+        ],
+        "root_handle_mm": 5.0,
+        "bend_handle_mm": 3.0,
+        "socket_handle_mm": 4.0,
+        "radial_direction": [
+          -0.0,
+          0.9479533634787529,
+          -0.318409203179367
+        ],
+        "root_width_direction": [
+          0,
+          1,
+          0
+        ],
+        "root_width_mm": 3.0,
+        "root_thickness_mm": 1.5802897516466756
+      },
+      "socket_width_mm": 3.0,
+      "socket_thickness_mm": 2.2,
+      "root_lead_mm": 1.5,
+      "embed_mm": 0.4,
+      "socket_lead_mm": 1.0,
+      "arm": {
+        "root_mm": [
+          4.4969191206496975,
+          17.5918887142941,
+          17.3662968498585
+        ],
+        "root_tangent": [
+          0,
+          0,
+          1
+        ],
+        "bend_mm": [
+          7.5,
+          15.0,
+          24.5
+        ],
+        "bend_tangent": [
+          0,
+          -1,
+          0.3
+        ],
+        "root_handle_mm": 5.0,
+        "bend_handle_mm": 3.0,
+        "socket_handle_mm": 4.0,
+        "radial_direction": [
+          -0.0,
+          0.9479533634787529,
+          -0.318409203179367
+        ],
+        "root_width_direction": [
+          0,
+          1,
+          0
+        ],
+        "root_width_mm": 3.0,
+        "root_thickness_mm": 1.5802897516466756
+      },
+      "body_width_mm": 3.0,
+      "body_thickness_mm": 1.8
+    },
+    "RearRibbonGuard": {
+      "units": "mm",
+      "socket_center_mm": [
+        4.6673514260725035,
+        5.140223325877184,
+        23.434462378219095
+      ],
+      "socket_axis": [
+        -0.06766810814747441,
+        0.31767937320295375,
+        0.9457805469458125
+      ],
+      "attachment_height_mm": 3.9,
+      "attachment_radius_mm": 2.65,
+      "width_mm": 3.0,
+      "thickness_mm": 1.8,
+      "sections": 41,
+      "rear": {
+        "root_mm": [
+          4.10677424482636,
+          7.86588286441313,
+          12.26
+        ],
+        "root_tangent": [
+          -1,
+          0,
+          0
+        ],
+        "bend_mm": [
+          -3.0,
+          3.0,
+          21.0
+        ],
+        "bend_tangent": [
+          0,
+          0,
+          1
+        ],
+        "root_handle_mm": 10.0,
+        "bend_handle_mm": 5.0,
+        "socket_handle_mm": 10.0,
+        "radial_direction": [
+          -0.9977078866781307,
+          -0.02154614839589256,
+          -0.06414621071864238
+        ],
+        "root_width_direction": [
+          0,
+          1,
+          0
+        ],
+        "root_width_mm": 2.6,
+        "root_thickness_mm": 2.0
+      },
+      "top": {
+        "root_mm": [
+          4.4969191206496975,
+          16.0918887142941,
+          17.3662968498585
+        ],
+        "root_tangent": [
+          0,
+          0,
+          1
+        ],
+        "bend_mm": [
+          7.5,
+          15.0,
+          24.5
+        ],
+        "bend_tangent": [
+          0,
+          -1,
+          0.3
+        ],
+        "root_handle_mm": 5.0,
+        "bend_handle_mm": 3.0,
+        "socket_handle_mm": 4.0,
+        "radial_direction": [
+          -0.0,
+          0.9479533634787529,
+          -0.318409203179367
+        ],
+        "root_width_direction": [
+          0,
+          1,
+          0
+        ],
+        "root_width_mm": 3.0,
+        "root_thickness_mm": 1.5802897516466756
+      },
+      "socket_width_mm": 3.0,
+      "socket_thickness_mm": 2.2,
+      "root_lead_mm": 1.5,
+      "embed_mm": 0.4,
+      "socket_lead_mm": 1.0,
+      "arm": {
+        "root_mm": [
+          4.10677424482636,
+          8.2,
+          12.0966213179106
+        ],
+        "root_tangent": [
+          -1,
+          0,
+          0
+        ],
+        "bend_mm": [
+          -3.0,
+          3.0,
+          21.0
+        ],
+        "bend_tangent": [
+          0,
+          0,
+          1
+        ],
+        "root_handle_mm": 23.0,
+        "bend_handle_mm": 5.0,
+        "socket_handle_mm": 23.0,
+        "radial_direction": [
+          -0.7054860123134058,
+          -0.6855396792036096,
+          0.17979108617376238
+        ],
+        "root_width_direction": [
+          0,
+          1,
+          0
+        ],
+        "root_width_mm": 2.6,
+        "root_thickness_mm": 2.0
+      },
+      "plugward_flare_deg": 25,
+      "body_width_mm": 2.6,
+      "body_thickness_mm": 1.8
+    }
+  },
+  "ribbon_seed": [
+    3.5850249342264875,
+    -1.981459686249548,
+    -0.7636155416779803,
+    0.8837533753624276,
+    6.159261342191738,
+    -0.2915465131701036,
+    0.4209803419593533,
+    1.724238055351664,
+    3.592909527639109,
+    -2.9389038541286387,
+    -0.2973566232076929,
+    0.00032757791022230363
+  ],
+  "selected_species_manifest": "designs/eye-tracker/rat/active-model.json",
+  "hardware_selected_manifest": "designs/eye-tracker/mouse/active-model.json",
+  "initial_lens_position_world_mm": [
+    -8.000107660985982,
+    -17.268551295851815,
+    10.612701129009059
+  ],
+  "target_sensor_rotation_in_mount": [
+    [
+      -0.23994890800565916,
+      0.9142287030718714,
+      0.32651248065949373
+    ],
+    [
+      0.7659928992894359,
+      0.3849250424152529,
+      -0.5148665749102191
+    ],
+    [
+      -0.596388631502191,
+      0.1265645692962303,
+      -0.7926550384712153
+    ]
+  ],
+  "root_blends": [
+    {
+      "name": "upper_root",
+      "method": "fillet",
+      "size_mm": 0.35,
+      "edge_signatures": [
+        {
+          "center_mm": [
+            4.496919120649698,
+            16.0918887142941,
+            18.0
+          ],
+          "length_mm": 1.5802897516466778
+        }
+      ]
+    },
+    {
+      "name": "rear_root",
+      "method": "chamfer",
+      "size_mm": 0.2,
+      "edge_signatures": [
+        {
+          "center_mm": [
+            3.7067742448263576,
+            6.899999999999999,
+            12.09152841410543
+          ],
+          "length_mm": 2.04579318077721
+        },
+        {
+          "center_mm": [
+            3.706774244826353,
+            9.499999999999998,
+            12.09152841410543
+          ],
+          "length_mm": 2.04579318077721
+        },
+        {
+          "center_mm": [
+            3.706774244826356,
+            8.2,
+            11.068631823716824
+          ],
+          "length_mm": 2.600000000000005
+        }
+      ]
+    }
+  ],
+  "mount_seating_adjustment": {
+    "world_dorsal_lift_mm": 0,
+    "reason": "Restore inherited mouse mounting relationship; tapered baseplate intentionally intersects skull for a later Boolean cut."
+  },
+  "document_name": "monocular-rat-targeted-r03",
+  "skull_contact_policy": {
+    "skull_mount_Baseplate": "boolean_cut_stock"
+  }
+}

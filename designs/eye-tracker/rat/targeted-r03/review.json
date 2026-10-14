@@ -1,0 +1,311 @@
+{
+  "revision": "ET-RAT-MONO-TARGET-R03",
+  "units": "mm",
+  "status": "Review candidate; tapered baseplate is uncut Boolean stock, physical fit unverified",
+  "native_checkpoint": "designs/eye-tracker/rat/targeted-r03/checkpoints/ET-RAT-MONO-TARGET-R03.FCStd",
+  "native_sha256": "96a39057a734f7a84cfa5ad5e3c774133cdf8e5ad1ec5f8677427eb262c428d1",
+  "recipe_sha256": "3b2693f8bd29b332bb991543b1591c63fef8de07c600f4d401ac06e538c16875",
+  "source_hardware_manifest": "designs/eye-tracker/mouse/inset-arm-r08/print-test.json",
+  "source_anatomy": {
+    "path": "designs/eye-tracker/rat/references/skull/aligned-r01/rat-skulls-and-eyes-user-frame-r02.FCStd",
+    "sha256": "32308a7eac540260785903a3fc6f77fe0c38748e916fe68f68022b713fb5ed80"
+  },
+  "validation": {
+    "units": "mm",
+    "aim": {
+      "axis_miss_mm": 2.0350724194510405e-15,
+      "forward_distance_mm": 19.885215140391892,
+      "angle_error_deg": 5.863706266932743e-15
+    },
+    "carrier_valid": true,
+    "carrier_solids": 1,
+    "bop_check": true,
+    "ribbon_checks": {
+      "FinishedCarrier": {
+        "ribbon_overlap_mm3": 0.0
+      },
+      "eye_primary_Holder": {
+        "ribbon_overlap_mm3": 0.0
+      },
+      "eye_primary_Clip": {
+        "ribbon_overlap_mm3": 0.0
+      },
+      "eye_primary_Cap": {
+        "ribbon_overlap_mm3": 0.0
+      },
+      "skull_mount_Baseplate": {
+        "ribbon_overlap_mm3": 0.0
+      },
+      "PCB": {
+        "ribbon_overlap_mm3": 0.0
+      },
+      "JST_4pin": {
+        "ribbon_overlap_mm3": 0.0
+      },
+      "camera_pcb": {
+        "ribbon_overlap_mm3": 0.0
+      },
+      "M4_lens": {
+        "ribbon_overlap_mm3": 0.0
+      },
+      "IR_LED": {
+        "ribbon_overlap_mm3": 0.0
+      },
+      "IR_LED_001": {
+        "ribbon_overlap_mm3": 0.0
+      },
+      "M4_nominal_reference": {
+        "ribbon_overlap_mm3": 0.0
+      }
+    },
+    "carrier_checks": {
+      "eye_primary_Holder": {
+        "overlap_mm3": 0.0,
+        "inherited_overlap_mm3": 0.0,
+        "gap_mm": 0.3331646522386917
+      },
+      "eye_primary_Clip": {
+        "overlap_mm3": 0.0,
+        "inherited_overlap_mm3": 0.0,
+        "gap_mm": 0.803271617289581
+      },
+      "PCB": {
+        "overlap_mm3": 0.0,
+        "inherited_overlap_mm3": 0.0,
+        "gap_mm": 0.0
+      },
+      "JST_4pin": {
+        "overlap_mm3": 0.05902849881217072,
+        "inherited_overlap_mm3": 0.059028498812171065,
+        "gap_mm": 0.0
+      },
+      "camera_pcb": {
+        "overlap_mm3": 0.0,
+        "inherited_overlap_mm3": 0.0,
+        "gap_mm": 2.8011629025367544
+      },
+      "M4_lens": {
+        "overlap_mm3": 0.0,
+        "inherited_overlap_mm3": 0.0,
+        "gap_mm": 3.0637208852538427
+      },
+      "IR_LED": {
+        "overlap_mm3": 0.0,
+        "inherited_overlap_mm3": 0.0,
+        "gap_mm": 4.459572879919073
+      },
+      "IR_LED_001": {
+        "overlap_mm3": 0.0,
+        "inherited_overlap_mm3": 0.0,
+        "gap_mm": 5.594835026192813
+      },
+      "M4_nominal_reference": {
+        "overlap_mm3": 0.0,
+        "inherited_overlap_mm3": 0.0,
+        "gap_mm": 4.051417244133492
+      }
+    },
+    "print_exports": {
+      "carrier-and-holder": {
+        "closed": true,
+        "self_intersections": false,
+        "sha256": "391f4746caebd2371357cdad08d2e315220d12f8c1b487a40fae016e02b5f340",
+        "facets": 29636
+      },
+      "matching-cap": {
+        "closed": true,
+        "self_intersections": false,
+        "sha256": "b4d493737e2286ded5ad664236c872b15d06d7a7e02f14d2a6bfb2825a325193",
+        "facets": 1918
+      },
+      "camera-clip": {
+        "closed": true,
+        "self_intersections": false,
+        "sha256": "663f7e4469f40626b812f2b4212b488fc373035ba044d96f7e90b5830cbac335",
+        "facets": 134
+      },
+      "baseplate": {
+        "closed": true,
+        "self_intersections": false,
+        "sha256": "f417418367630378fbe4ead58f9511fe820c26f664daad69b3b76145af41d9db",
+        "facets": 1190
+      }
+    },
+    "anatomy_surface_checks": {
+      "FinishedCarrier": {
+        "skull_surface_crossings": 0,
+        "contact_policy": "clearance"
+      },
+      "eye_primary_Holder": {
+        "skull_surface_crossings": 0,
+        "contact_policy": "clearance"
+      },
+      "skull_mount_Baseplate": {
+        "skull_surface_crossings": 334,
+        "contact_policy": "boolean_cut_stock"
+      },
+      "RibbonCandidate": {
+        "skull_surface_crossings": 0,
+        "contact_policy": "clearance"
+      },
+      "camera_pcb": {
+        "skull_surface_crossings": 0,
+        "contact_policy": "clearance"
+      },
+      "M4_lens": {
+        "skull_surface_crossings": 0,
+        "contact_policy": "clearance"
+      }
+    },
+    "eye_surface_checks": {
+      "Right/FinishedCarrier": 0,
+      "Right/eye_primary_Holder": 0,
+      "Right/RibbonCandidate": 0,
+      "Right/camera_pcb": 0,
+      "Right/M4_lens": 0,
+      "Left/FinishedCarrier": 0,
+      "Left/eye_primary_Holder": 0,
+      "Left/RibbonCandidate": 0,
+      "Left/camera_pcb": 0,
+      "Left/M4_lens": 0
+    },
+    "arm_checks": {
+      "UpperSupport": {
+        "tray_engagement_mm3": 2.134530146073395,
+        "socket_engagement_mm3": 4.656815391694893
+      },
+      "RearRibbonGuard": {
+        "tray_engagement_mm3": 2.1038124510920926,
+        "socket_engagement_mm3": 4.65681539169474
+      }
+    },
+    "socket_holder_gap_mm": 0.33316465223869296,
+    "status": "Geometric review candidate; anatomy and physical mounting fit remain provisional"
+  },
+  "sampled_anatomy_checks": {
+    "FinishedCarrier": {
+      "surface_samples": 600,
+      "samples_inside_skull_bone": 0,
+      "sampled_min_skull_distance_mm": 3.431045211945235
+    },
+    "eye_primary_Holder": {
+      "surface_samples": 600,
+      "samples_inside_skull_bone": 0,
+      "sampled_min_skull_distance_mm": 14.381028320375068
+    },
+    "skull_mount_Baseplate": {
+      "surface_samples": 600,
+      "samples_inside_skull_bone": 21,
+      "sampled_min_skull_distance_mm": 0.011157907667905307
+    },
+    "RibbonCandidate": {
+      "surface_samples": 600,
+      "samples_inside_skull_bone": 0,
+      "sampled_min_skull_distance_mm": 16.66280747263338
+    },
+    "camera_pcb": {
+      "surface_samples": 600,
+      "samples_inside_skull_bone": 0,
+      "sampled_min_skull_distance_mm": 16.94061153212841
+    },
+    "M4_lens": {
+      "surface_samples": 600,
+      "samples_inside_skull_bone": 0,
+      "sampled_min_skull_distance_mm": 16.71939316587622
+    }
+  },
+  "visibility": {
+    "SkullVariants": true,
+    "StandardSkull": true,
+    "HighResSkull": false,
+    "HighResRefined": false,
+    "UserAlignedLowPoly": false,
+    "RightEye": true,
+    "Origin": false,
+    "X_Axis": false,
+    "Y_Axis": false,
+    "Z_Axis": false,
+    "XY_Plane": false,
+    "XZ_Plane": false,
+    "YZ_Plane": false,
+    "Origin001": false,
+    "RightEyeSclera": true,
+    "RightEyeCornea": true,
+    "RightEyeAxes": false,
+    "Origin002": false,
+    "X_Axis001": false,
+    "Y_Axis001": false,
+    "Z_Axis001": false,
+    "XY_Plane001": false,
+    "XZ_Plane001": false,
+    "YZ_Plane001": false,
+    "Origin003": false,
+    "RightEyeAxisX": true,
+    "RightEyeAxisY": true,
+    "RightEyeAxisZ": true,
+    "RightEyeOrigin": true,
+    "LeftEye": true,
+    "Origin004": false,
+    "X_Axis002": false,
+    "Y_Axis002": false,
+    "Z_Axis002": false,
+    "XY_Plane002": false,
+    "XZ_Plane002": false,
+    "YZ_Plane002": false,
+    "Origin005": false,
+    "LeftEyeSclera": true,
+    "LeftEyeCornea": true,
+    "LeftEyeAxes": false,
+    "Origin006": false,
+    "X_Axis003": false,
+    "Y_Axis003": false,
+    "Z_Axis003": false,
+    "XY_Plane003": false,
+    "XZ_Plane003": false,
+    "YZ_Plane003": false,
+    "Origin007": false,
+    "LeftEyeAxisX": true,
+    "LeftEyeAxisY": true,
+    "LeftEyeAxisZ": true,
+    "LeftEyeOrigin": true,
+    "SkullFrame": false,
+    "Origin008": false,
+    "X_Axis004": false,
+    "Y_Axis004": false,
+    "Z_Axis004": false,
+    "XY_Plane004": false,
+    "XZ_Plane004": false,
+    "YZ_Plane004": false,
+    "Origin009": false,
+    "WorldX": false,
+    "WorldY": false,
+    "WorldZ": false,
+    "CameraAssembly": true,
+    "eye_primary_Holder": true,
+    "eye_primary_Cap": true,
+    "eye_primary_Clip": true,
+    "skull_mount_Baseplate": true,
+    "RetainedPCBTray": false,
+    "RetainedSocket": false,
+    "UpperSupport": false,
+    "RearRibbonGuard": false,
+    "FinishedCarrier": true,
+    "RibbonCandidate": true,
+    "MeasuredMainPCB": true,
+    "PCB": true,
+    "JST_4pin": true,
+    "MeasuredSensorHead": true,
+    "camera_pcb": true,
+    "M4_lens": true,
+    "IR_LED": true,
+    "IR_LED_001": true,
+    "M4_nominal_reference": false,
+    "CameraOpticalAxis": true,
+    "TargetRecipe": false
+  },
+  "limitations": [
+    "Baseplate intentionally intersects skull; anatomical Boolean cut is not yet applied.",
+    "Eye position and optical reference are schematic.",
+    "Inherited nominal JST/tray overlap remains approximately 0.059 mm^3."
+  ]
+}

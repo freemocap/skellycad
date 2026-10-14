@@ -1,0 +1,12 @@
+{
+  "revision": "CAMERA-DUMMY-R08",
+  "passed": true,
+  "asset_hashes_verified": true,
+  "corrupt_hash_rejected": true,
+  "checkpoint_geometry_equivalent": true,
+  "coplanar_substrate": true,
+  "exclusive_material_regions": true,
+  "connected_assembly": true,
+  "two_instances_and_transformed_datum": true,
+  "physical_fit_verified": false
+}

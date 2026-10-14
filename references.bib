@@ -1,0 +1,198 @@
+% SkellyCAD bibliography. See CITATIONS.md for format and review semantics.
+% Stable keys; UTF-8, braced fields; retain custom provenance fields on export.
+
+@article{lawrenceBernalWitzgall2019,
+  author = {Lawrence, James F. and Bernal, Javier and Witzgall, Christoph J.},
+  title = {A Purely Algebraic Justification of the {Kabsch-Umeyama} Algorithm},
+  journal = {Journal of Research of the National Institute of Standards and Technology},
+  year = {2019},
+  volume = {124},
+  doi = {10.6028/jres.124.028},
+  url = {https://www.nist.gov/publications/purely-algebraic-justification-kabsch-umeyama-algorithm},
+  urldate = {2026-10-13},
+  review = {excerpt},
+  claim = {An SVD with determinant correction finds the least-squares proper rotation of corresponding points; centering reduces rigid alignment to this rotation problem.},
+  note = {NIST metadata and abstract, plus introduction and algorithm on pages 2--3 of the linked author PDF inspected. Used for the ordered low-poly skull registration; not evidence for anatomical axes or correspondence between different-resolution surfaces.}
+}
+
+@article{hughes1979RatEye,
+  author = {Hughes, A.},
+  title = {A schematic eye for the rat},
+  journal = {Vision Research},
+  year = {1979},
+  volume = {19},
+  number = {5},
+  pages = {569--588},
+  doi = {10.1016/0042-6989(79)90143-3},
+  url = {https://doi.org/10.1016/0042-6989(79)90143-3},
+  urldate = {2026-10-13},
+  review = {excerpt},
+  claim = {Tables 1 and 2 supply external eye dimensions and corneal geometry for a schematic rat-eye placement mesh, with distinct retinal and outer scleral endpoints.},
+  note = {Original article reprint inspected in Hughes's thesis at https://era.ed.ac.uk/server/api/core/bitstreams/ae063d6c-c3de-4a7c-aa2f-18c7f2551792/content : methods on printed pages 569--570 and Tables 1--2 on pages 571 and 574, PDF pages 170--172 and 175 (one-based). Both tables visually checked. D.A. strain, approximately 125 days old. Rotational symmetry and the joined spheroid construction are SkellyCAD assumptions, not a reconstruction published by Hughes.}
+}
+
+@article{lozanoTwa2013RatEye,
+  author = {Lozano, Diana C. and Twa, Michael D.},
+  title = {Development of a Rat Schematic Eye From In Vivo Biometry and the Correction of Lateral Magnification in {SD-OCT} Imaging},
+  journal = {Investigative Ophthalmology and Visual Science},
+  year = {2013},
+  volume = {54},
+  number = {9},
+  pages = {6446--6455},
+  doi = {10.1167/iovs.13-12575},
+  url = {https://pmc.ncbi.nlm.nih.gov/articles/PMC3787660/},
+  urldate = {2026-10-13},
+  review = {excerpt},
+  claim = {Older male Brown Norway rats had mean cornea-to-retina axial length 6.91 mm and corneal curvature radius 3.39 mm; cohort and endpoint differences prevent treating these as the external dimensions of the Hughes eye.},
+  note = {Indexed primary-article Methods and Results excerpts inspected; direct PMC access was limited. Mean axial length 6.91 plus or minus 0.44 mm, 33 animals aged 10--28 months. Not an input to the r01 exterior meshes. The 3.35 mm radius also mentioned in the paper belongs to an artificial contact lens, not the native cornea.}
+}
+
+@misc{freemocapCitations2026,
+  author = {{FreeMoCap contributors}},
+  title = {{FreeMoCap} citation policy and bibliography validator},
+  url = {https://github.com/freemocap/freemocap/tree/16485a188d182da88cb826f0b13981e3c8402553},
+  urldate = {2026-10-13},
+  review = {source-code},
+  claim = {Defines a root bibliography with stable keys, explicit review scope and supported claims, and offline checks for metadata and citation resolution.},
+  note = {Local clean files at this revision inspected: CITATIONS.md, AGENTS.md, references.bib, tools/check_references.py, tools/test_references.py. Checker and tests adapted under the repository's AGPL-3.0 license. SkellyCAD adds scan exclusions and ignores XML XPath attribute predicates.}
+}
+
+@misc{skellyspeakCitations2026,
+  author = {{SkellySpeak contributors}},
+  title = {{SkellySpeak} bibliography and citation conventions},
+  url = {https://github.com/freemocap/skellyspeak/tree/6963b52a4ba7dd717c29f02434c3eebb37a4a7bc},
+  urldate = {2026-10-13},
+  review = {source-code},
+  claim = {Maintains one root references.bib with citation keys in prose, code and structured sources fields, and records review scope and the claim motivating each reference.},
+  note = {Local clean references.bib header and representative entries, and AGENTS.md citation guidance inspected. SkellyCAD adopts FreeMoCap's more explicit review vocabulary rather than the older reviewed label found here.}
+}
+@misc{freecadMeshToPart,
+  author = {{FreeCAD contributors}},
+  title = {Mesh to Part},
+  url = {https://github.com/FreeCAD/FreeCAD-documentation/blob/main/wiki/Mesh_to_Part.md},
+  urldate = {2026-10-13},
+  review = {full-text},
+  claim = {FreeCAD can convert mesh topology to Part shapes and solids; coplanar segmentation can reduce the resulting faces. Mesh conversion does not recover a parametric design history.}
+}
+
+@misc{allFlexBendRadiusPartI,
+  author = {{All Flex Solutions}},
+  title = {Design Strategies to Improve Flex Bend Radius, Part I},
+  url = {https://www.allflexinc.com/wp-content/uploads/2025/04/2025-04-All-Flex-Case-Study-Design-Strategies-to-Improve-Flex-Bend-Radius-%E2%80%93-Part-I-.pdf},
+  urldate = {2026-10-13},
+  review = {excerpt},
+  claim = {Flex circuit bend limits depend on construction and thickness; tight bends and plated through-holes in bend regions can reduce reliability.},
+  note = {Reviewed extracted text on PDF pages 2 and 3. General manufacturer guidance, not a specification for this camera. No numerical safe bend radius has been assigned to the camera from this document.}
+}
+@misc{kicadConnectorModels,
+  author = {{KiCad library contributors}},
+  title = {{KiCad} Connector JST 3D models},
+  url = {https://gitlab.com/kicad/libraries/kicad-packages3D/-/tree/master/Connector_JST.3dshapes},
+  urldate = {2026-10-13},
+  review = {source-code},
+  claim = {Provides STEP models for four-pin JST SH SM04B-SRSS-TB and GH SM04B-GHS-TB connectors, imported as unidentified comparison candidates.},
+  note = {Downloaded STEP data inspected with FreeCAD and checked for valid solids. Exact file URLs and SHA-256 hashes are recorded beside the assets. These models do not establish the identity of the camera connector.}
+}
+
+@misc{kicadLibraryLicense,
+  author = {{KiCad contributors}},
+  title = {Libraries License},
+  url = {https://www.kicad.org/libraries/license/index.html},
+  urldate = {2026-10-13},
+  review = {full-text},
+  claim = {KiCad libraries use CC-BY-SA 4.0 with a design-use exception and require retained attribution and license information for redistributed library collections.}
+}
+
+@misc{jstGhCad,
+  author = {{J.S.T. Mfg. Co., Ltd.}},
+  title = {GH connector product profile and CAD listings},
+  url = {https://www.jst-mfg.com/product/index.php?lang=2&series=105},
+  urldate = {2026-10-13},
+  review = {excerpt},
+  claim = {GH uses 1.25 mm pitch and has distinct side-entry and top-entry headers; STEP listings are provided for four-position parts.},
+  note = {Reviewed product profile and CAD table. Followed SM04B-GHS-TB and BM04B-GHS-TBT download links: the portal requires personal details for email delivery and prohibits third-party disclosure of its documents. No form was submitted or manufacturer CAD imported.}
+}
+
+@misc{towinM4LensExample,
+  author = {{Towin}},
+  title = {M406014003845},
+  url = {https://www.towinlens.com/de/product/cctv-objektiv-m406014003845},
+  urldate = {2026-10-13},
+  review = {excerpt},
+  claim = {One commercial miniature camera lens specifies an M4x0.35 mount, demonstrating that thread pitch accompanies the M4 diameter designation.},
+  note = {Reviewed product description and specifications. This is an example, not an identified Pupil camera lens or a source for its holder dimensions. No model from this product was used.}
+}
+@misc{scipyConstrainedMinimize,
+  author = {{SciPy contributors}},
+  title = {scipy.optimize.minimize},
+  url = {https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.minimize.html},
+  urldate = {2026-10-13},
+  review = {excerpt},
+  claim = {SLSQP supports bounds and equality and inequality constraints, suitable for a custom geometric ribbon-routing optimization.},
+  note = {Reviewed optimizer interface and constrained-method descriptions. This is an optimization toolkit, not a prebuilt ribbon solver; convergence alone does not establish geometric or physical validity.}
+}
+
+@misc{freecad11FemContact,
+  author = {{FreeCAD contributors}},
+  title = {What's new in FEM for FreeCAD 1.1?},
+  url = {https://blog.freecad.org/2025/09/09/what-is-new-in-fem-for-freecad-1-1/comment-page-1/},
+  urldate = {2026-10-13},
+  review = {excerpt},
+  claim = {FreeCAD FEM's CalculiX integration includes contact options, providing a possible later route for mechanical contact analysis.},
+  note = {Reviewed CalculiX feature description. No FEM analysis was run for this camera, and no turnkey flexible ribbon routing capability is claimed.}
+}
+
+@misc{snapmakerU1Multimaterial2025,
+  title = {Snapmaker U1 Multi-material printing performance},
+  author = {{Snapmaker}},
+  year = {2025},
+  url = {https://support.snapmaker.com/hc/en-us/articles/34287488318615-Snapmaker-U1-Multi-material-printing-performance},
+  urldate = {2026-10-14},
+  review = {full-text},
+  claim = {U1 TPU compatibility is listed for Shore hardness of at least 90A; the article discusses mechanical interlocking for weak material bonds.},
+  note = {Text reviewed; the image-only material-pair matrix was not interpreted. This source does not validate the camera dummy's thin ribbon or its PLA-to-TPU joins.}
+}
+
+@article{zimmermannRollin2025Apparatus,
+  author = {Zimmermann Rollin, Isabela and Papoti, Daniel and Bishop, Mitchell and others},
+  title = {An open access resource for marmoset neuroscientific apparatus},
+  year = {2025},
+  journal = {Imaging Neuroscience},
+  volume = {3},
+  doi = {10.1162/imag_a_00483},
+  url = {https://pmc.ncbi.nlm.nih.gov/articles/PMC12319799/},
+  urldate = {2026-10-14},
+  review = {excerpt},
+  claim = {Section 2.2 describes CT-derived common marmoset skull STL resources across ages and the repository CC BY-NC-SA 4.0 terms.},
+  note = {Reviewed article metadata and sections 2.1 and 2.2. The article itself is CC BY 4.0; the apparatus assets have separate CC BY-NC-SA 4.0 terms. This is source provenance, not validation of the local print derivative or specimen scale.}
+}
+
+@misc{marmosetCtFemale100,
+  author = {{Marmoset Brain Connectome, Neuroscientific Apparatus contributors}},
+  title = {CTs Across Agespan: female_100months_403g.stl},
+  url = {https://marmosetsa.blob.core.windows.net/$web/neuroscientific_apparatus/CT/CTsAcrossAgespan/female_100months_403g.stl},
+  urldate = {2026-10-14},
+  review = {excerpt},
+  claim = {Source skull mesh labeled female, 100 months, 403 g; retained unchanged as the marmoset anatomy reference.},
+  note = {Inspected CT catalog and page source at https://www.marmosetbrainconnectome.org/apparatus/ct.html?HID=CT and the supplied STL geometry. The catalog STL button incorrectly links to NIfTI; its viewer code resolves the STL extension. Direct STL response was verified. Local SHA-256 and provenance are recorded beside the asset. STL has no units; millimetres and anatomical axis directions are provisional. Repository usage policy is CC BY-NC-SA 4.0.}
+}
+
+@misc{ccomMiniatureLensHolders,
+ author = {{CCOM Electronics Technology Co., Ltd.}},
+ title = {Board lens holders for CCD/CMOS sensors},
+ url = {https://www.megapixellenses.com/sale-8078699-lens-holder-m4-m5-m6-m6-4-m6-5-m7-m8-m9-m10-m12-cs-mount-lens-holder-for-ccd-cmos-sensors.html},
+ urldate = {2026-10-14},
+ review = {excerpt},
+ claim = {Product photograph supplies the square-base, short-collar and locating-pin morphology selected by the user for a camera dummy.},
+ note = {Reviewed listing and product photograph. Individual photo variants have no identified part number or dimensions. All dummy dimensions come from user measurements or explicitly recorded modeling approximations; no manufacturer CAD was obtained.}
+}
+
+@misc{iadiyM5HolderDrawing,
+ author = {{IADIY Technology}},
+ title = {M5 Camera Lens CL5P1.6, version 1.2},
+ url = {https://www.iadiy.com/image/catalog/IADIY/products/optical-lenses/optical-lenses-datasheet/M5-board-lens-CL5P1.6.pdf},
+ urldate = {2026-10-14},
+ review = {excerpt},
+ claim = {Page 2 provides 6.0 and 6.5 mm square holder drawings, heights, pin dimensions and M5 x 0.35 sectional thread callout.},
+ note = {Visually inspected supplied PDF page 2. Reconstructed CAD uses approximated thread profile and pin arrangement; not manufacturer CAD. Table P3.5 conflicts with drawing and page 1 P0.35; use P0.35.}
+}

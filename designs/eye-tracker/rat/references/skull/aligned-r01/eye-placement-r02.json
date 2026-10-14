@@ -1,0 +1,11 @@
+{
+  "revision": "eye-placement-r02",
+  "frame": "User skull frame: +X nose, +Y animal left, +Z dorsal",
+  "units": "mm",
+  "status": "New-frame visual orbital placement with bilateral height and orientation constraints; not a measured anatomical fit",
+  "rationale": "Discard the inherited roll-induced height mismatch. Use the user's approximate interocular origin as height and midline datum; keep the orbital fore-aft location near the previous visual placement.",
+  "eyes": [
+    {"side": "Right", "center_mm": [0.75, -8.35, 0.0], "outward_axis": [0.32, -0.916515139, 0.24]},
+    {"side": "Left", "center_mm": [0.75, 8.35, 0.0], "outward_axis": [0.32, 0.916515139, 0.24]}
+  ]
+}

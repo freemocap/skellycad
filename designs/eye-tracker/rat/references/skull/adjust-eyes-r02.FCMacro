@@ -1,0 +1,50 @@
+"""Revise eye placement in the user's skull frame; preserve the R01 study."""
+from pathlib import Path
+import json
+import shutil
+import runpy
+import FreeCAD as App
+import FreeCADGui as Gui
+
+here=Path(__file__).resolve().parent
+root=here.parents[4]
+assets=here/'aligned-r01'
+out=root/'generated/eye-tracker/rat/eye-placement-user-r02'
+out.mkdir(parents=True,exist_ok=True)
+source=assets/'rat-skulls-and-eyes-user-frame-r01.FCStd'
+working=out/'rat-skulls-and-eyes-user-frame-r02.FCStd'
+assert not working.exists(), 'Preserve existing R02 edits'
+shutil.copyfile(source,working)
+doc=App.openDocument(str(working))
+model=runpy.run_path(str(here.parent/'eyes/eye_model.py'))
+settings=json.loads((assets/'eye-placement-r02.json').read_text())
+report=[]
+for spec in settings['eyes']:
+    eye=doc.getObject(spec['side']+'Eye')
+    rotation=model['oriented_frame'](spec['outward_axis'],(0,0,1))
+    eye.Placement=App.Placement(App.Vector(*spec['center_mm']),rotation)
+    eye.Label=spec['side']+' eye — aligned to skull frame R02'
+    if 'PlacementStatus' not in eye.PropertiesList:
+        eye.addProperty('App::PropertyString','PlacementStatus')
+    eye.PlacementStatus=settings['status']
+    axes=[rotation.multVec(App.Vector(*v)) for v in [(1,0,0),(0,1,0),(0,0,1)]]
+    assert abs(axes[0].cross(axes[1]).dot(axes[2])-1)<1e-10
+    report.append(dict(side=spec['side'],center_mm=list(eye.Placement.Base),
+        rotation_xyzw=list(rotation.Q),outward_axis=list(axes[2]),
+        determinant=axes[0].cross(axes[1]).dot(axes[2])))
+assert doc.RightEye.Placement.Base.z==doc.LeftEye.Placement.Base.z
+assert doc.RightEye.Placement.Base.y==-doc.LeftEye.Placement.Base.y
+doc.recompute()
+doc.Label='Rat skull — eyes aligned to new skull frame R02'
+App.setActiveDocument(doc.Name)
+view=Gui.activeDocument().activeView()
+for name,normal in [('front',(1,0,0)),('dorsal',(0,0,1)),('right',(0,-1,0)),('oblique',(1,-1,1))]:
+    up=App.Vector(1,0,0) if name=='dorsal' else App.Vector(0,0,1)
+    view.setCameraOrientation(App.Rotation(App.Vector(1,0,0),up,App.Vector(*normal),'ZYX').Q)
+    view.fitAll()
+    Gui.updateGui()
+    view.saveImage(str(out/(name+'.png')),1500,1000,'White')
+doc.save()
+(out/'validation.json').write_text(json.dumps(dict(document=doc.Name,eyes=report,
+    height_difference_mm=0.0,interocular_distance_mm=16.7,
+    note='Checked bilateral height, spacing and proper eye frames. Visual orbital placement remains provisional.'),indent=2))

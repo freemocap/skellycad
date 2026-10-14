@@ -1,0 +1,20 @@
+{
+  "origin_mm": [
+    0.08845877647399902,
+    69.85286865234374,
+    1.8576923076925
+  ],
+  "sensor_center_mm": [
+    0.08845877647399902,
+    69.85286865234374,
+    0.25
+  ],
+  "direction": [
+    0,
+    0,
+    1
+  ],
+  "reference_only": true,
+  "origin_definition": "Accepted lens bounding-box center on its symmetry axis",
+  "sensor_plane_definition": "PCB top at lens center; hypothetical sensor"
+}

@@ -1,0 +1,63 @@
+{
+  "passed": true,
+  "physical_fit_verified": false,
+  "mouse_reference_sha256": "0bdd4c6cef0c4448a49fae67e398d1a34e8d1cd60c597a42ebff54f94af35a3e",
+  "parts": {
+    "skull_mount_Baseplate": {
+      "valid_single_solid": true,
+      "difference_from_mouse_mm3": 0.0
+    },
+    "eye_primary_Holder": {
+      "valid_single_solid": true,
+      "difference_from_mouse_mm3": 0.0
+    },
+    "eye_primary_Cap": {
+      "valid_single_solid": true,
+      "difference_from_mouse_mm3": 0.0
+    },
+    "eye_primary_Clip": {
+      "valid_single_solid": true,
+      "difference_from_mouse_mm3": 0.0
+    },
+    "eye_primary_Carrier": {
+      "valid_single_solid": true,
+      "difference_from_mouse_mm3": 0.0
+    }
+  },
+  "anatomy": {
+    "source_facets": 110116,
+    "assembly_facets": 110116,
+    "unscaled_source_deviation_mm": 1.966049969921673e-06,
+    "mouse_anatomy_absent": true,
+    "units": "mm assumed, not specified by STL or supplied README",
+    "registration": {
+      "rotation_axis": "X",
+      "rotation_degrees": 90,
+      "translation_mm": [
+        12,
+        -2,
+        0
+      ],
+      "mapping": "assembly (x,y,z) = (source x + 12, -source z - 2, source y)",
+      "rationale": "Visual starting registration: rostral +X, dorsal +Y, lateral Z in inherited mouse hardware frame. Align posterior cranium below inherited mounting plate; not measured mounting placement."
+    }
+  },
+  "provisional_aim": {
+    "lens_mm": [
+      6.695083697304687,
+      1.2139539154251358,
+      21.106967480538206
+    ],
+    "target_mm": [
+      13.0,
+      -10.0,
+      9.0
+    ],
+    "target_distance_mm": 17.66588219071104,
+    "distance_from_sightline_mm": 8.583897549008936,
+    "status": "Diagnostic only: target estimated visually; arms and internal aim unchanged"
+  },
+  "saved_native_reopened": true,
+  "supplied_assets_unchanged": true,
+  "native_sha256": "ad74a3f14aaa709880039c927690475f6119d074f73b0a550a3064383394762e"
+}

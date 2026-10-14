@@ -1,0 +1,7 @@
+from pathlib import Path
+import FreeCAD as A,FreeCADGui as G,json
+from PySide import QtCore
+out=Path(__file__).resolve().parents[4]/'generated/eye-tracker/rat/print-r04'
+src=A.openDocument(str(out/'RAT-R04-complete-assembly.FCStd'));cfg=json.loads(src.TargetRecipe.RecipeJSON)
+d=A.newDocument('RatLabelReview');o=d.addObject('Part::Feature','LabeledCarrier');s=src.FinishedCarrier.Shape.copy();s.Placement=A.Placement(A.Matrix(*sum(cfg['mount_to_skull'],[]))).inverse().multiply(s.Placement);o.Shape=s;o.ViewObject.ShapeColor=(.7,.75,.82);o.ViewObject.DisplayMode='Flat Lines'
+v=G.activeDocument().activeView();rot=A.Rotation(A.Vector(0,0,1),A.Vector(0,1,0),A.Vector(-1,0,0),'ZXY');rot=rot.multiply(A.Rotation(A.Vector(0,1,0),15));v.setCameraOrientation(rot.Q);v.fitAll();G.updateGui();QtCore.QTimer.singleShot(1000,lambda:v.saveImage(str(out/'label-preview.png'),1400,1000,'White'))

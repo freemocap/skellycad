@@ -24,6 +24,8 @@ def open_selected(path):
     import FreeCAD as App
     manifest, checkpoint = load_manifest(path)
     doc = App.openDocument(str(checkpoint))
+    if 'label' in manifest:
+        doc.Label = manifest['label']
     if doc.Revision.RevisionID != manifest['revision']:
         raise ValueError('Checkpoint revision differs from manifest')
     for name in manifest['parts'].values():

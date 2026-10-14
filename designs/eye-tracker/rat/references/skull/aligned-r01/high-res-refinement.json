@@ -1,0 +1,93 @@
+{
+  "status": "Optional overlap-refined candidate; exact common-transform version retained separately",
+  "method": "Deterministic area sampling, nearest-sample matching, 85% trimmed proper rigid SVD updates; no scale",
+  "source_sha256": "39af469a82fad85857d149b1f308fec3c389f8f82f8a524baeb96b7451db0ffe",
+  "reference_sha256": "0f7b47bcd25b699c903e48d462fde1ebad59d9b4d6c38b350320e316c8e86357",
+  "source_to_standard_correction": [
+    [
+      0.9999999499304978,
+      2.7350491835914235e-07,
+      0.00031644737292733065,
+      0.16144213683592254
+    ],
+    [
+      -2.685355297734366e-07,
+      0.9999999998766744,
+      -1.570372422294536e-05,
+      -0.7311169692342409
+    ],
+    [
+      -0.0003164473771833042,
+      1.570363846124803e-05,
+      0.999999949807231,
+      -0.0617870009514652
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "source_to_aligned": [
+    [
+      0.9999999499309228,
+      2.728809613904873e-07,
+      0.0003164460318993649,
+      -0.06038188170098363
+    ],
+    [
+      3.717873564340716e-05,
+      -0.993175205474181,
+      -0.11663194180450316,
+      1.8992073690665259
+    ],
+    [
+      0.0003142545261164832,
+      0.11663194772991085,
+      -0.9931751557569463,
+      6.049241522944876
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "iterations": 54,
+  "converged": true,
+  "last_max_step_mm": 9.979268544091823e-14,
+  "held_out_surface_distances": {
+    "high_to_standard_before": {
+      "samples": 512,
+      "median_mm": 0.2313274163718845,
+      "p95_mm": 0.6402531126321299,
+      "max_sample_mm": 0.8236479474100434
+    },
+    "high_to_standard_after": {
+      "samples": 512,
+      "median_mm": 0.10208045134354166,
+      "p95_mm": 0.44825903418454854,
+      "max_sample_mm": 0.9039526848081794
+    },
+    "standard_to_high_before": {
+      "samples": 512,
+      "median_mm": 0.27932619512913515,
+      "p95_mm": 0.7984176416841113,
+      "max_sample_mm": 0.8550256587745546
+    },
+    "standard_to_high_after": {
+      "samples": 512,
+      "median_mm": 0.09692815662419807,
+      "p95_mm": 0.12438688921467232,
+      "max_sample_mm": 0.15538580381531467
+    }
+  },
+  "caveat": "Distances use independent 512-point surface samples. Surfaces differ; maxima are not Hausdorff distances. No anatomical landmark validation.",
+  "triangles": 102342,
+  "scale_applied": 1.0,
+  "max_inverse_error_mm": 1.055112739472172e-06,
+  "output": "rat-skull-high-res-refined-aligned-r01.stl",
+  "output_sha256": "805bf0ac36f0a72016cd841c0a42ce593cd1af57e1d60a0d159d2845b20997c5"
+}

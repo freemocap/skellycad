@@ -1,0 +1,9 @@
+from pathlib import Path
+import FreeCAD as A,FreeCADGui as G,Mesh
+from PySide import QtCore
+root=Path(__file__).resolve().parents[4];out=root/'generated/eye-tracker/rat/print-r04'
+d=A.newDocument('RatR04PrintReview')
+for name,color in [('Skull',(.85,.75,.53)),('Sclera-and-bridge',(.95,.95,.95)),('Cornea',(.12,.15,.2)),('Baseplate',(.95,.7,.12))]:
+ ob=d.addObject('Mesh::Feature',name.replace('-',''));ob.Label=name;ob.Mesh=Mesh.Mesh(str(out/'anatomy'/(name+'.stl')));ob.ViewObject.ShapeColor=color
+G.activeDocument().activeView().viewAxonometric();G.activeDocument().activeView().fitAll();d.recompute();d.saveAs(str(out/'RAT-R04-anatomy-print.FCStd'));G.updateGui()
+QtCore.QTimer.singleShot(1000,lambda:G.activeDocument().activeView().saveImage(str(out/'anatomy-preview.png'),1400,1000,'White'))

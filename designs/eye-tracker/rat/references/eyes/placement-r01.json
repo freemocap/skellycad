@@ -1,0 +1,10 @@
+{
+  "units": "mm",
+  "status": "Provisional visual placement for manual review; not an anatomical measurement or fitted rotation center",
+  "frame": "Registered rat frame: +X rostral, +Y dorsal, Z lateral",
+  "eye_mesh": "stl/rat-eye-r01-C-oblate-cornea.stl",
+  "eyes": [
+    {"name": "EyePositiveZ", "center_mm": [13.0, -8.8, 8.5], "outward_axis": [0.32, 0.24, 0.916515139]},
+    {"name": "EyeNegativeZ", "center_mm": [13.0, -8.8, -8.5], "outward_axis": [0.32, 0.24, -0.916515139]}
+  ]
+}

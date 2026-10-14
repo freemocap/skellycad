@@ -1,0 +1,30 @@
+{
+  "revision": "rat-eye-r01",
+  "units": "mm",
+  "frame": "Z is the anatomical symmetry axis; +Z points out through the corneal apex. Origin is halfway between exterior axial endpoints, not a measured rotation center.",
+  "literature_inputs": {
+    "source": "[@hughes1979RatEye]",
+    "external_axial_length_mm": 6.291,
+    "nasotemporal_diameter_mm": 6.41,
+    "anterior_cornea_radius_mm": 2.965,
+    "cornea_base_radius_mm": 2.82,
+    "cornea_height_mm": 2.11,
+    "retina_front_depth_from_apex_mm": 5.981,
+    "outer_limiting_membrane_depth_from_apex_mm": 6.111,
+    "posterior_sclera_radius_mm_comparison_only": 3.23,
+    "locator": "Table 1 (p. 571): width, base radius, height, posterior curvature. Table 2 (p. 574): external axial endpoint, anterior radius and retinal endpoints."
+  },
+  "assumptions": [
+    "Rotational symmetry: repeat the measured nasotemporal diameter in both transverse axes.",
+    "Use the cornea base radius as a circular limbus radius and cornea height as apex-to-limbus-plane sag.",
+    "Close the posterior exterior with a spheroid; do not fit the reported posterior pole curvature.",
+    "Join cap and body position-continuously with a visible slope change; no invented smoothing fillet.",
+    "The local axis is not a calibrated visual axis; no skull pose or eye rotation center is inferred."
+  ],
+  "mesh": {"azimuth_segments": 192, "body_intervals": 128, "cap_intervals": 64},
+  "variants": [
+    {"id": "A-envelope", "construction": "single_spheroid"},
+    {"id": "B-spherical-cornea", "construction": "spherical_cap"},
+    {"id": "C-oblate-cornea", "construction": "oblate_cap", "suggested_start": true}
+  ]
+}

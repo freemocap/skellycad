@@ -1,0 +1,70 @@
+{
+  "units": "mm",
+  "source": "designs/eye-tracker/rat/targeted-r03/checkpoints/ET-RAT-MONO-TARGET-R03.FCStd",
+  "source_sha256": "96a39057a734f7a84cfa5ad5e3c774133cdf8e5ad1ec5f8677427eb262c428d1",
+  "camera_left_transform": [
+    [
+      0.23994888728763608,
+      0.9142286822715745,
+      0.32651255412526997,
+      -11.319462892442864
+    ],
+    [
+      0.6816685430212676,
+      0.080800047409418,
+      -0.7271859114379894,
+      23.014996877875046
+    ],
+    [
+      -0.6911964474334995,
+      0.3970607873495166,
+      -0.6038130523636396,
+      10.400909418906013
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "left_aim": {
+    "axis_miss_mm": 2.175583928816829e-15,
+    "forward_distance_mm": 19.885215140391892,
+    "angle_error_deg": 6.268565676440443e-15
+  },
+  "options": {
+    "A": {
+      "ribbon_chord_mm": {
+        "Right": 16.361579610219657,
+        "Left": 10.693353075485629
+      },
+      "bare_board_back_gap_mm": 2.0,
+      "closure": "Shared clip bonnet",
+      "status": "Concept; ribbon guides not fixed-length sheets; arms and closures not collision/strength validated"
+    },
+    "B": {
+      "ribbon_chord_mm": {
+        "Right": 16.361579610219657,
+        "Left": 10.539373520874253
+      },
+      "bare_board_back_gap_mm": 3.0,
+      "closure": "Shared through-bolt bonnet",
+      "status": "Concept; ribbon guides not fixed-length sheets; arms and closures not collision/strength validated"
+    },
+    "C": {
+      "ribbon_chord_mm": {
+        "Right": 16.361579610219657,
+        "Left": 10.47897840574227
+      },
+      "bare_board_back_gap_mm": 4.0,
+      "closure": "Independent covers",
+      "status": "Concept; ribbon guides not fixed-length sheets; arms and closures not collision/strength validated"
+    }
+  },
+  "native_documents": {
+    "binocular-A.FCStd": "04761bd36a501fd9728c80cd1dd57b07c9b4b2317a3c63086b8ef8db18b92894",
+    "binocular-B.FCStd": "5c0813c7146ed35b39c32ab450748f07eed2341994a76f167e5282e70c7263d4",
+    "binocular-C.FCStd": "2935efe0f6cb0b84b79b27d5dc51f29d94e2d81e86335f9aeea6567d5ec919a3"
+  }
+}

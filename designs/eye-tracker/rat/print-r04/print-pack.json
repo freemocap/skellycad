@@ -1,0 +1,32 @@
+{
+  "revision": "RAT R04",
+  "units": "mm",
+  "source_review": "designs/eye-tracker/rat/targeted-r03/review.json",
+  "status": "Mesh-validated print candidate; U1 project has not been sliced or physically printed",
+  "files": {
+    "anatomy/Baseplate.stl": "09ace651905b0f6b99d210104fcff3af236ed40819febc5061eb2cd5232d7834",
+    "anatomy/Cornea.stl": "a93065d98f4b03288d5d246e8cd55fcf9b1b3d8359a6d9ce193c41938a957e75",
+    "anatomy/rat-eyes-embedded-baseplate.stl": "9fbcceae5b7ff990abe92033ea3d59cd2f95fc8ff10d188950868b1ad2c61a56",
+    "anatomy/rat-eyes.stl": "d029479109054954df1314965b89b7a1a57d8ebb1694bf367241e17c0b928788",
+    "anatomy/RAT-R04-four-colors.3mf": "ba87ae9dfad8db62ae3bbea286132250b5a27ab34e571611e41df4e010566fd8",
+    "anatomy/RAT-R04-Snapmaker-U1.3mf": "558f41d81dcc609c6db3c45a4f09ceeecb754b65b011f7957c04a2bd7dfd1a19",
+    "anatomy/Sclera-and-bridge.stl": "ee500557f28ce5290cbd7c608c3298d39df42f02f2f886ed3f5aa50e0123bec5",
+    "anatomy/Skull.stl": "52342219bd8f5fa453aa10b6ba5b42153fccda8bd6caccc02c39622ec60540a4",
+    "hardware/RAT-R04-baseplate.stl": "8c987b10fb0bc7472015b3fe6fb8082cfc56f32d9197cc60dde3a7bfce3194e8",
+    "hardware/RAT-R04-cap.stl": "5c1a2c0659d69eaeb8b7d4daff3439b01fe19ec1a34b38c322384df3802eb85e",
+    "hardware/RAT-R04-carrier-and-holder.stl": "5320816738d00f12bd675c85a15cb851736680757dd60c70ab39447cd2c2ef93",
+    "hardware/RAT-R04-carrier.stl": "15e1e24d4183670336a40ff9d073ee0f7def30af234f963625d98a1de97d368f",
+    "hardware/RAT-R04-clip.stl": "222d192a5728cf70a91886b9ada5a0f94cef4f3e13ff90b28b04579d77100874",
+    "hardware/RAT-R04-holder.stl": "4ea1d36cd7c6c76c5702947c93c00aea0fe070b28841ee3f95b8a31c1b5898f1",
+    "README.md": "8e603437288cd5d168986e054d82249f7ff725724cfe21420b3091a83b1139b0",
+    "LICENSE-source.txt": "85027bb93ccf79b65e293ab8d7dc956397e6c316c727cae97e7aa29e89f49498",
+    "anatomy-validation.json": "fee8dfb45e3649481f21bfbd4ad6085aa98a72160cddc5e461d64d3f183bdd2f",
+    "hardware-validation.json": "0f2d538e0dc5a90dee9470f02b33fde5b23f48efd950130dd8dbaff91942954f",
+    "hardware-mesh-validation.json": "aa4fc8acd2181ee93b03a976ed01d359fab641be2bf131ea36c82e3cca9d9d10",
+    "RAT-R04-complete-assembly.FCStd": "d492519cb7e41dac75533c45192eabc2814e1bd5cbc19dec238aafabcccc4497",
+    "RAT-R04-anatomy-print.FCStd": "724723ba616c483fa212cda1fc3c92d8cf3fe4f24353b66434a65a0e81484b43",
+    "RAT-R04-hardware-print.FCStd": "3d07ea37f62b061df00b39d55dbcc3ea882a93f2447754ef15b0b474d20fb783",
+    "anatomy-preview.png": "79c2a7ee10866a398a149b6b9fbbb7a8b314610c8061c80617b8909a0e1df2dc",
+    "label-preview.png": "88a4799a6a4f339446749a9588d55b7e1f5eedc8815f2649247f97b6cfc1d3d1"
+  }
+}

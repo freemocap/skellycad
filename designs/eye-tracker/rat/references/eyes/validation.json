@@ -1,0 +1,112 @@
+{
+  "revision": "rat-eye-r01",
+  "units": "mm",
+  "parameters_sha256": "c84c0dd05ad98171d7eed92aea9be23ca0c50891db0005bb2d3bd089788c1bb8",
+  "generator_sha256": "d172a434e78a8a49e8c38701f83a2b81de462d5e10eb467629af9b4af5394a29",
+  "numpy_version": "2.5.3",
+  "trimesh_version": "4.12.2",
+  "validation_scope": "Exterior mesh topology, orientation, bounds and analytic volume; no anatomical fit claim.",
+  "variants": {
+    "A-envelope": {
+      "file": "rat-eye-r01-A-envelope.stl",
+      "sha256": "5e5d41d358bdb46e462823de458fbd031d61c22ea744eaefedc5cbb4703ebf79",
+      "bytes": 3667284,
+      "triangles": 73344,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_bodies": 1,
+      "euler_number": 2,
+      "bounds_mm": [
+        [
+          -3.2049999237060547,
+          -3.2049999237060547,
+          -3.1454999446868896
+        ],
+        [
+          3.2049999237060547,
+          3.2049999237060547,
+          3.1454999446868896
+        ]
+      ],
+      "volume_mm3": 135.3093402618972,
+      "relative_volume_error": 0.00024540244735782313,
+      "body_radial_semiaxis_mm": 3.205,
+      "body_axial_semiaxis_mm": 3.1455,
+      "body_center_z_mm": 0.0,
+      "limbus_z_mm": null,
+      "anterior_pole_radius_mm": 3.265625496741377,
+      "posterior_pole_radius_mm": 3.265625496741377,
+      "analytic_volume_mm3": 135.342553655796
+    },
+    "B-spherical-cornea": {
+      "file": "rat-eye-r01-B-spherical-cornea.stl",
+      "sha256": "fda82b8baec9d57b5c9035282b7e49de1b62cbae4bc04d616e7ff220e8002a79",
+      "bytes": 3686484,
+      "triangles": 73728,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_bodies": 1,
+      "euler_number": 2,
+      "bounds_mm": [
+        [
+          -3.2049999237060547,
+          -3.2049999237060547,
+          -3.1454999446868896
+        ],
+        [
+          3.2049999237060547,
+          3.2049999237060547,
+          3.1454999446868896
+        ]
+      ],
+      "volume_mm3": 132.70628953274982,
+      "relative_volume_error": 0.00025031832610045157,
+      "body_radial_semiaxis_mm": 3.205,
+      "body_axial_semiaxis_mm": 2.875447382502924,
+      "body_center_z_mm": -0.2700526174970763,
+      "limbus_z_mm": 1.0963738996171912,
+      "cornea_sag_mm": 2.049126100382809,
+      "cap_radial_semiaxis_mm": 2.965,
+      "cap_axial_semiaxis_mm": 2.965,
+      "cap_center_z_mm": 0.18050000000000033,
+      "anterior_pole_radius_mm": 2.965,
+      "posterior_pole_radius_mm": 3.5723223671228337,
+      "analytic_volume_mm3": 132.73951666636913
+    },
+    "C-oblate-cornea": {
+      "file": "rat-eye-r01-C-oblate-cornea.stl",
+      "sha256": "3fe0ef0310c6f44be4c8ea2b2259bd27c07da7580e9d09f9edebcecca15b5a84",
+      "bytes": 3686484,
+      "triangles": 73728,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_bodies": 1,
+      "euler_number": 2,
+      "bounds_mm": [
+        [
+          -3.2049999237060547,
+          -3.2049999237060547,
+          -3.1454999446868896
+        ],
+        [
+          3.2049999237060547,
+          3.2049999237060547,
+          3.1454999446868896
+        ]
+      ],
+      "volume_mm3": 132.52628919219111,
+      "relative_volume_error": 0.0002516849528938492,
+      "body_radial_semiaxis_mm": 3.205,
+      "body_axial_semiaxis_mm": 2.8341826727403845,
+      "body_center_z_mm": -0.3113173272596157,
+      "limbus_z_mm": 1.0355000000000003,
+      "cornea_sag_mm": 2.11,
+      "cap_radial_semiaxis_mm": 2.9297427871121955,
+      "cap_axial_semiaxis_mm": 2.8949048224741776,
+      "cap_center_z_mm": 0.2505951775258226,
+      "anterior_pole_radius_mm": 2.965,
+      "posterior_pole_radius_mm": 3.6243341330105348,
+      "analytic_volume_mm3": 132.55965246207666
+    }
+  }
+}

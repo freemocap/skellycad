@@ -1,0 +1,17 @@
+"""Open the selected Monocular rat without closing existing documents."""
+from pathlib import Path
+import runpy
+import FreeCAD as App
+import FreeCADGui as Gui
+
+HERE = Path(__file__).resolve().parent
+shared = runpy.run_path(str(HERE.parent / 'shared/model.py'))
+manifest, checkpoint = shared['load_manifest'](HERE / 'active-model.json')
+doc = next((d for d in App.listDocuments().values()
+            if d.FileName and Path(d.FileName).resolve() == checkpoint), None)
+if doc is None:
+    manifest, doc = shared['open_selected'](HERE / 'active-model.json')
+doc.Label = manifest['label']
+App.setActiveDocument(doc.Name)
+Gui.activeDocument().activeView().viewAxonometric()
+Gui.activeDocument().activeView().fitAll()

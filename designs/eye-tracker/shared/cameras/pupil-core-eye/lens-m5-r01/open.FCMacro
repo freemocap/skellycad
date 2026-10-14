@@ -1,0 +1,12 @@
+import FreeCAD as A, FreeCADGui as G
+from pathlib import Path
+out=Path('C:/Users/jonma/code-stuff/github/freemocap/other/skellycad/generated/eye-tracker/shared/lens-m5-r01')
+d=A.openDocument(str(out/'IADIY-M5-SCALED-6p3mm.FCStd'))
+d.ThreadedHolder.ViewObject.ShapeColor=(.25,.25,.28)
+d.ThreadedHolder.ViewObject.DisplayMode='Flat Lines'
+G.activeDocument().activeView().viewAxonometric()
+G.activeDocument().activeView().fitAll()
+G.updateGui()
+d.save()
+G.activeDocument().activeView().saveImage(str(out/'freecad-preview.png'),1200,900,'White')
+(out/'opened.txt').write_text('Scaled M5 holder active in FreeCAD')

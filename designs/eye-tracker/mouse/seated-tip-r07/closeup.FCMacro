@@ -1,0 +1,7 @@
+from pathlib import Path
+import FreeCAD as A,FreeCADGui as G,json
+from PySide import QtCore
+r=Path(__file__).resolve().parents[4];out=r/'generated/eye-tracker/mouse/seated-tip-r07'
+d=A.activeDocument();view=G.activeDocument().activeView();cfg=json.loads((r/'generated/eye-tracker/mouse/restored-arms-r05/validation.json').read_text())['arms']['UpperSupport'];c=A.Vector(*cfg['socket_center_mm']);n=A.Vector(*cfg['socket_axis']);center=c+n*5
+cam=view.getCameraNode();rotation=view.getCameraOrientation();pos=center+rotation.multVec(A.Vector(0,0,60));cam.position.setValue(pos.x,pos.y,pos.z);cam.height.setValue(13);cam.focalDistance.setValue(60);cam.nearDistance.setValue(.1);cam.farDistance.setValue(1000)
+G.updateGui();QtCore.QTimer.singleShot(1000,lambda:view.saveImage(str(out/'junction.png'),1200,900,'White'))

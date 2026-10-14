@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "revision": "ET-RAT-MONO-R01",
+  "label": "Monocular rat",
+  "species": "rat",
+  "units": "mm",
+  "anatomy": "anatomy.json",
+  "anatomy_placement": {
+    "translation_mm": [
+      0,
+      0,
+      0
+    ],
+    "rotation_xyzw": [
+      0,
+      0,
+      0,
+      1
+    ]
+  },
+  "baseplates": [
+    {
+      "id": "skull_mount",
+      "label": "Inherited mouse baseplate \u2014 rat fit unverified",
+      "placement": {
+        "translation_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      }
+    }
+  ],
+  "cameras": [
+    {
+      "id": "eye_primary",
+      "label": "Monocular eye camera \u2014 inherited R10 pose",
+      "role": "eye",
+      "camera": "pupil-core-eye-inherited",
+      "mount": "r10-monocular",
+      "baseplate": "skull_mount",
+      "placement": {
+        "translation_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      }
+    }
+  ],
+  "variant": "monocular",
+  "reference_mouse_manifest": "designs/eye-tracker/mouse/active-model.json"
+}

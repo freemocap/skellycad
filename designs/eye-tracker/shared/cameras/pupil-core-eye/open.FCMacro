@@ -1,0 +1,12 @@
+from pathlib import Path
+import sys
+import FreeCAD as App, FreeCADGui as Gui
+root = Path(__file__).resolve().parents[5]
+sys.path.insert(0, str(root / 'designs/eye-tracker'))
+from shared.camera import selected_model, checked_asset
+model = selected_model()
+doc = App.openDocument(str(checked_asset(model['native_checkpoint'])))
+App.setActiveDocument(doc.Name)
+Gui.activeDocument().activeView().viewAxonometric()
+Gui.activeDocument().activeView().fitAll()
+Gui.updateGui()

@@ -1,0 +1,25 @@
+{
+  "units": "mm",
+  "frame": "R10 hardware frame; provisional rat registration",
+  "mesh_checkpoint": {
+    "path": "designs/eye-tracker/rat/references/skull/anatomy-r01.FCStd",
+    "sha256": "e1d7d4a0c5668757fa5451891281047a638b2db12bb204ac2561644c76c186a9"
+  },
+  "meshes": [
+    "RatSkullAndMandible"
+  ],
+  "eye_target_mm": [
+    13,
+    -10,
+    9
+  ],
+  "eye_target_status": "Visual orbital-region estimate only; scan has no eyeballs or pupil landmarks. Review before changing arm geometry.",
+  "baseplate": {
+    "path": "designs/eye-tracker/mouse/inputs/baseplate-r10.brep",
+    "sha256": "9b1c7c957a718a84b2323f46af8790c93ed0b9e0266c71452ef281a3acd03403"
+  },
+  "eye_target_label": "Provisional rat orbital target \u2014 not measured",
+  "baseplate_status": "Inherited mouse baseplate, unchanged; rat seating and attachment not validated",
+  "source_attribution": "Rat skull + mandible by scienceminer, Thingiverse 469391. Source scan and registered reference: Creative Commons Attribution Share Alike (version unspecified by supplied LICENSE.txt). No mesh geometry edits; rigid registration only. See rat/references/skull/provenance.json and original README/LICENSE. Shared hardware retains its existing provenance.",
+  "source_url": "https://www.thingiverse.com/thing:469391"
+}

@@ -1,0 +1,17 @@
+Source asset: female_100months_403g.stl
+Credit: Marmoset Brain Connectome / Neuroscientific Apparatus contributors;
+Isabela Zimmermann Rollin and colleagues (2025).
+Paper: https://doi.org/10.1162/imag_a_00483
+Catalog: https://www.marmosetbrainconnectome.org/apparatus/ct.html?HID=CT
+Source: https://marmosetsa.blob.core.windows.net/$web/neuroscientific_apparatus/CT/CTsAcrossAgespan/female_100months_403g.stl
+
+License: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International.
+License link: https://creativecommons.org/licenses/by-nc-sa/4.0/
+The catalog states CC BY-NC-SA 4.0; paper section 2.2 describes these resource terms.
+Accessed 2026-10-14. This is an attribution notice, not the full legal code.
+
+The source STL is preserved unchanged. The SkellyCAD ET-MARMOSET-SKULL-PRINT-R01
+mesh is a modified derivative: neck and detached fragments removed, internal
+braincase filled, small gaps closed, surface resampled and mesh simplified.
+The modified mesh is distributed under the same CC BY-NC-SA 4.0 terms.
+No endorsement by the source authors is implied.

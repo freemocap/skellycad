@@ -1,0 +1,11 @@
+{
+  "family": "JST SH",
+  "part_number": "SM04B-SRSS-TB",
+  "pitch_mm": 1.0,
+  "positions": 4,
+  "entry": "horizontal",
+  "status": "Provisional user selection: 'The JST junction that we want is the SH version, I think'. Exact part and installation pose remain unverified.",
+  "asset": "study-r02/connector-candidates/JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal.step",
+  "sha256": "4b0f89a75d3758add0041ca9e5ded3a780c23ef4e3e99bcc398b41177dff5d0f",
+  "registration": "No scaling or rotation. Center X and minimum Y match the former envelope; source seating plane Z=0 meets PCB surface. Provisional registration, not a verified solder footprint."
+}

@@ -1,0 +1,16 @@
+import FreeCAD as A, FreeCADGui as G, Part
+from pathlib import Path
+out=Path('C:/Users/jonma/code-stuff/github/freemocap/other/skellycad/generated/eye-tracker/shared/camera-dummy-r04')
+d=A.openDocument(str(out/'CAMERA-DUMMY-R04.FCStd'))
+for name,color in [('Red_PLA_boards',(1,.12,.1)),('Black_PLA_lens',(.16,.16,.18)),('White_PLA_connector_LEDs',(.94,.94,.9)),('Yellow_TPU_ribbon',(1,.8,.02))]:
+ d.getObject(name).ViewObject.ShapeColor=color
+G.activeDocument().activeView().viewAxonometric();G.activeDocument().activeView().fitAll()
+d.recompute();d.save()
+s=d.getObject('Black_PLA_lens').Shape.copy();b=s.BoundBox;s.translate(A.Vector(-(b.XMin+b.XMax)/2,-(b.YMin+b.YMax)/2,0))
+l=A.newDocument('LensHolderR02');l.Label='LENS HOLDER - 6.3 mm square - measured approximation'
+f=l.addObject('PartDesign::Feature','LensHolder');f.Shape=s;f.Label='Black PLA lens housing'
+f.ViewObject.ShapeColor=(.18,.18,.20);f.ViewObject.LineColor=(.05,.05,.05)
+l.recompute();l.saveAs(str(out/'LENS-HOLDER-R02.FCStd'))
+G.activeDocument().activeView().viewAxonometric();G.activeDocument().activeView().fitAll();G.updateGui()
+G.activeDocument().activeView().saveImage(str(out/'lens-preview.png'),1200,900,'White')
+(out/'desktop-review-done.txt').write_text('Lens holder open and rendered')

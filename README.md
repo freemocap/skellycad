@@ -1,5 +1,7 @@
 # SkellyCAD
 
+**Preferred Pupil Labs eye camera:** [selected complete R08 module](designs/eye-tracker/shared/cameras/pupil-core-eye/README.md), including the notched lens, optical axis and flush TPU ribbon. Use it for new camera geometry; historical species checkpoints remain pinned.
+
 Reproducible CAD designs, reference anatomy, and tools for long-term development.
 
 - [Eye tracker](designs/eye-tracker/README.md): shared tooling and human, mouse,
@@ -9,6 +11,7 @@ Reproducible CAD designs, reference anatomy, and tools for long-term development
   with editable checkpoints and safe replay scripts.
 - [Development](docs/development.md): setup, validation, exports, and desktop review.
 - [Version control](docs/version-control.md): what to retain, ignore, and store with Git LFS.
+- [References](CITATIONS.md): citation conventions and evidence in `references.bib`.
 - [Migration record](docs/migration/README.md): retained files, exclusions,
   checksums, and restoring historical replay inputs.
 

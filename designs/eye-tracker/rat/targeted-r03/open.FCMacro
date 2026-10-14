@@ -1,0 +1,37 @@
+try:
+ from pathlib import Path
+ import FreeCAD as A,FreeCADGui as G
+ from PySide import QtCore
+ r=Path(__file__).resolve().parents[4];out=r/'generated/eye-tracker/rat/targeted-r03'
+ import shutil
+ review=out/'monocular-rat-targeted-r03-review-01.FCStd'
+ if not review.exists():shutil.copy2(out/'monocular-rat-targeted-r03.FCStd',review)
+ d=A.openDocument(str(review));A.setActiveDocument(d.Name)
+ for o in d.Objects:
+  if hasattr(o,'ViewObject'):o.Visibility=False
+ for name in ['SkullVariants','StandardSkull','RightEye','LeftEye','RightEyeSclera','LeftEyeSclera','RightEyeCornea','LeftEyeCornea','CameraAssembly','FinishedCarrier','eye_primary_Holder','eye_primary_Cap','eye_primary_Clip','skull_mount_Baseplate','MeasuredMainPCB','MeasuredSensorHead','RibbonCandidate','CameraOpticalAxis']:
+  d.getObject(name).Visibility=True
+ for parent in ['MeasuredMainPCB','MeasuredSensorHead']:
+  for o in d.getObject(parent).Group:
+   o.Visibility=True;o.ViewObject.ShapeColor=(.15,.5,.25) if 'pcb' in o.Name.lower() else (.18,.18,.2)
+ for name in ['FinishedCarrier','eye_primary_Holder','eye_primary_Cap','eye_primary_Clip','skull_mount_Baseplate']:
+  o=d.getObject(name);o.ViewObject.ShapeColor=(.68,.72,.78);o.ViewObject.DisplayMode='Flat Lines'
+ d.eye_primary_Cap.ViewObject.Transparency=65;d.RibbonCandidate.ViewObject.ShapeColor=(.86,.43,.09);d.RibbonCandidate.ViewObject.DisplayMode='Shaded';d.CameraOpticalAxis.ViewObject.LineColor=(1.,.05,.05);d.CameraOpticalAxis.ViewObject.LineWidth=3
+ d.StandardSkull.ViewObject.ShapeColor=(.85,.84,.78)
+ for side in ['Right','Left']:
+  for axis,color in [('X',(1.,.12,.12)),('Y',(.1,.75,.15)),('Z',(.12,.25,1.))]:
+   obj=d.getObject(side+'EyeAxis'+axis);obj.Visibility=True;obj.ViewObject.ShapeColor=color
+  d.getObject(side+'EyeOrigin').Visibility=True
+  d.getObject(side+'EyeAxes').Visibility=False
+ for side,cornea,sclera in [('Right',(.10,.56,.57),(.98,.94,.88)),('Left',(.25,.40,.76),(.88,.94,1.))]:
+  d.getObject(side+'EyeCornea').ViewObject.ShapeColor=cornea;d.getObject(side+'EyeSclera').ViewObject.ShapeColor=sclera
+ # Set leaf visibility last: enabling groups can re-enable hidden construction.
+ for name in ['HighResSkull','HighResRefined','UserAlignedLowPoly','RetainedPCBTray','RetainedSocket','UpperSupport','RearRibbonGuard','M4_nominal_reference']:
+  obj=d.getObject(name)
+  if obj:obj.Visibility=False
+ import json
+ (out/'visibility.json').write_text(json.dumps({o.Name:o.Visibility for o in d.Objects if hasattr(o,'ViewObject')},indent=2))
+ d.Label='Monocular rat R03 - aimed camera, fitted ribbon and arms';d.recompute();view=G.activeDocument().activeView();view.viewAxonometric();view.fitAll();G.updateGui();d.save();QtCore.QTimer.singleShot(1200,lambda:view.saveImage(str(out/'assembly.png'),1400,1000,'White'))
+except Exception:
+ import traceback
+ (Path(__file__).resolve().parents[4]/"generated/eye-tracker/rat/targeted-r03/gui-error.txt").write_text(traceback.format_exc())

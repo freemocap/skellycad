@@ -1,0 +1,9 @@
+from pathlib import Path
+import FreeCAD as A,FreeCADGui as G,Mesh
+from PySide import QtCore
+root=Path(__file__).resolve().parents[4];out=root/'generated/eye-tracker/rat/print-r04'
+d=A.newDocument('RatR04HardwarePrint')
+for name,file in [('Carrier','RAT-R04-carrier.stl'),('Holder','RAT-R04-holder.stl')]:
+ o=d.addObject('Mesh::Feature',name);o.Mesh=Mesh.Mesh(str(out/'hardware'/file));o.ViewObject.ShapeColor=(.72,.74,.78)
+d.recompute();d.saveAs(str(out/'RAT-R04-hardware-print.FCStd'));v=G.activeDocument().activeView();v.viewRight();v.fitAll();G.updateGui()
+QtCore.QTimer.singleShot(1000,lambda:v.saveImage(str(out/'label-preview.png'),1400,1000,'White'))

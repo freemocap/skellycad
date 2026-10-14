@@ -1,0 +1,9 @@
+import sys,importlib
+from pathlib import Path
+p=Path(__file__).resolve().parent
+sys.path.insert(0,str(p));sys.path.insert(0,str(p.parent/'study-r01'))
+import camera_study
+importlib.reload(camera_study)
+import camera_measured
+importlib.reload(camera_measured)
+camera_measured.build()

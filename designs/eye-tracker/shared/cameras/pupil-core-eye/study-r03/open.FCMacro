@@ -1,0 +1,7 @@
+from pathlib import Path
+import sys,runpy,importlib
+p=Path(__file__).resolve().parent
+sys.path.insert(0,str(p.parent/'study-r01'));sys.path.insert(0,str(p.parent/'study-r02'))
+import camera_study,camera_measured
+importlib.reload(camera_study);importlib.reload(camera_measured)
+runpy.run_path(str(p/'build.py'),run_name='__main__')

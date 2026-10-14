@@ -1,0 +1,53 @@
+{
+  "revision": "ET-RAT-MONO-R01",
+  "label": "Monocular rat",
+  "source_mouse_manifest": "designs/eye-tracker/mouse/active-model.json",
+  "source_mouse_sha256": "0bdd4c6cef0c4448a49fae67e398d1a34e8d1cd60c597a42ebff54f94af35a3e",
+  "native_sha256": "ad74a3f14aaa709880039c927690475f6119d074f73b0a550a3064383394762e",
+  "changes": [
+    "Replace mouse anatomy with supplied rat skull and mandible",
+    "Rigid visual registration only; assume source units mm at scale 1",
+    "Replace inherited eye target with explicitly provisional rat orbital estimate",
+    "Keep one eye camera and all five shared printed parts unchanged"
+  ],
+  "unresolved": [
+    "Confirm actual specimen scale",
+    "Register mounting surface and eye target",
+    "Revise arms and aim after camera dimensions are supplied",
+    "Design separate binocular back-to-back PCB holder"
+  ],
+  "inputs": [
+    {
+      "path": "designs/eye-tracker/rat/assembly.json",
+      "sha256": "773715806ef063ed9a53e593faab0ecdae36b4b8b3d9dd3b70e913174b6ff7c0"
+    },
+    {
+      "path": "designs/eye-tracker/rat/anatomy.json",
+      "sha256": "4c2e81b3042d54cb2575e426a3f241e960cce16ef2f96d000cd856d00a19358a"
+    },
+    {
+      "path": "designs/eye-tracker/rat/prepare_reference.py",
+      "sha256": "08d2e9804b429a95a01881fd7530865ffbed61da49432183cf72fc8ffd18e404"
+    },
+    {
+      "path": "designs/eye-tracker/rat/references/skull/provenance.json",
+      "sha256": "905230aea309f08118cf54f1ae2e2de926bb61e6d8de91577ccd67d1281083b7"
+    },
+    {
+      "path": "designs/eye-tracker/rat/references/skull/anatomy-r01.FCStd",
+      "sha256": "e1d7d4a0c5668757fa5451891281047a638b2db12bb204ac2561644c76c186a9"
+    },
+    {
+      "path": "designs/eye-tracker/shared/assembly.py",
+      "sha256": "3c677f11394aa9f9cf20dec87c59018f2a453ec7523dda3b4301e07dd55e790d"
+    },
+    {
+      "path": "designs/eye-tracker/shared/mounts/r10-monocular/mount.json",
+      "sha256": "9b0fe8461c5f92004fcf281819c2df3d10d2f2828d199839f5a1bda5349b9dc9"
+    },
+    {
+      "path": "designs/eye-tracker/shared/cameras/pupil-core-eye-inherited/camera.json",
+      "sha256": "32dcc268050e987a5eb385987f94cf24af61f4a924ef9ac154c569d938260dcf"
+    }
+  ]
+}

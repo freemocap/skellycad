@@ -1,0 +1,298 @@
+{
+  "revision": "ET-MARMOSET-SKULL-PRINT-R01",
+  "source": "designs\\eye-tracker\\marmoset\\references\\skull\\female_100months_403g.stl",
+  "source_sha256": "a77680b8dad5041ad0b0fd95f0a491abe6109adc3fc2ee702ca1a2202b081f6f",
+  "units": "mm assumed; original coordinates and scale 1.0 retained",
+  "selected_assembly": null,
+  "source_mesh": {
+    "triangles": 640726,
+    "vertices": 320365,
+    "components": 7,
+    "watertight": false,
+    "winding_consistent": true,
+    "volume_mm3": 6370.307646403932,
+    "bounds_mm": [
+      [
+        -15.5647,
+        1.00167,
+        -12.9625
+      ],
+      [
+        15.829,
+        34.1165,
+        37.6822
+      ]
+    ]
+  },
+  "removed_components": [
+    {
+      "rank": 1,
+      "triangles": 13376,
+      "vertices": 6684,
+      "components": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": 51.90486673820959,
+      "bounds_mm": [
+        [
+          -4.50608,
+          1.77427,
+          2.96704
+        ],
+        [
+          3.95151,
+          8.47593,
+          13.4447
+        ]
+      ]
+    },
+    {
+      "rank": 2,
+      "triangles": 276,
+      "vertices": 140,
+      "components": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": 0.5430735193325517,
+      "bounds_mm": [
+        [
+          -6.65617,
+          12.5313,
+          9.41101
+        ],
+        [
+          -5.59151,
+          13.7209,
+          10.7545
+        ]
+      ]
+    },
+    {
+      "rank": 3,
+      "triangles": 188,
+      "vertices": 96,
+      "components": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": 0.22937092161249614,
+      "bounds_mm": [
+        [
+          -2.55083,
+          1.00167,
+          5.67287
+        ],
+        [
+          -1.15409,
+          1.95969,
+          6.32715
+        ]
+      ]
+    },
+    {
+      "rank": 4,
+      "triangles": 188,
+      "vertices": 96,
+      "components": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": 0.20100488790026613,
+      "bounds_mm": [
+        [
+          -0.0727404,
+          1.82509,
+          5.02808
+        ],
+        [
+          0.454572,
+          3.43263,
+          5.94413
+        ]
+      ]
+    },
+    {
+      "rank": 5,
+      "triangles": 32,
+      "vertices": 18,
+      "components": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": -0.012695610151783407,
+      "bounds_mm": [
+        [
+          6.11513,
+          11.2995,
+          31.3314
+        ],
+        [
+          6.48605,
+          11.6262,
+          31.7039
+        ]
+      ]
+    },
+    {
+      "rank": 6,
+      "triangles": 8,
+      "vertices": 6,
+      "components": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": 0.0003867357468000079,
+      "bounds_mm": [
+        [
+          -3.6489,
+          13.6161,
+          12.4689
+        ],
+        [
+          -3.38188,
+          13.707,
+          12.5645
+        ]
+      ]
+    }
+  ],
+  "parameters": {
+    "voxel_pitch_mm": 0.15,
+    "closing_radius_mm": 0.3,
+    "gaussian_sigma_voxels": 1.0,
+    "isosurface_level": 0.43,
+    "preliminary_simplification_tolerance_mm": 0.08,
+    "target_triangles": 100000,
+    "decimation_aggression": 5,
+    "final_normal_offset_mm": 0.005,
+    "neck_cut": "Y < 18 and Z < 0",
+    "core_Z_mm": [
+      -8,
+      -4,
+      0,
+      10,
+      18,
+      22,
+      26,
+      30,
+      32
+    ],
+    "core_min_Y_mm": [
+      27,
+      21,
+      16,
+      16,
+      18,
+      22,
+      26,
+      29,
+      32
+    ]
+  },
+  "filled_core_voxel_volume_mm3": 8706.659624999998,
+  "voxel_components_before_largest": 2,
+  "discarded_surface_shells": 102,
+  "discarded_final_slivers": 479,
+  "discarded_final_sliver_volume_mm3": 0.878603632492555,
+  "output": {
+    "path": "generated\\eye-tracker\\marmoset\\skull-print-r01\\marmoset-skull-print-r01.stl",
+    "sha256": "0eb5aae59940b606bdc2481e2f01777085331293267bcea3ade42f1e642fa048",
+    "bytes": 4607984,
+    "triangles": 92158,
+    "vertices": 43341,
+    "components": 1,
+    "watertight": true,
+    "winding_consistent": true,
+    "volume_mm3": 10301.842060392139,
+    "bounds_mm": [
+      [
+        -15.708441734313965,
+        1.4716089963912964,
+        -8.148006439208984
+      ],
+      [
+        15.90439224243164,
+        34.15561294555664,
+        37.69457244873047
+      ]
+    ]
+  },
+  "packages": {
+    "numpy": "2.5.3",
+    "trimesh": "4.12.2",
+    "scipy": "1.18.1",
+    "scikit-image": "0.26.0",
+    "manifold3d": "3.5.4",
+    "matplotlib": "3.11.2",
+    "rtree": "1.4.1",
+    "fast-simplification": "0.2.0"
+  },
+  "status": "Geometry checks passed; no slicing, physical print or hardware fit validation.",
+  "surface_comparison": {
+    "dorsal": {
+      "samples": 1271,
+      "median_mm": 0.11119738646360229,
+      "p95_mm": 0.1745090891769693,
+      "max_mm": 0.4342793235205741
+    },
+    "right_side": {
+      "samples": 454,
+      "median_mm": 0.11670823172596087,
+      "p95_mm": 0.2789839719902659,
+      "max_mm": 0.9680264330635996
+    },
+    "left_side": {
+      "samples": 470,
+      "median_mm": 0.11822590469298223,
+      "p95_mm": 0.4822277304670979,
+      "max_mm": 0.8815963788511598
+    },
+    "face": {
+      "samples": 488,
+      "median_mm": 0.06799346942692022,
+      "p95_mm": 0.13286714563039412,
+      "max_mm": 0.3021526330340261
+    }
+  },
+  "probes": {
+    "braincase_mm": [
+      [
+        0,
+        25,
+        0
+      ],
+      [
+        0,
+        25,
+        5
+      ],
+      [
+        0,
+        25,
+        10
+      ],
+      [
+        0,
+        25,
+        15
+      ],
+      [
+        0,
+        25,
+        20
+      ]
+    ],
+    "braincase_all_solid": true,
+    "orbit_mm": [
+      [
+        -8,
+        22,
+        29
+      ],
+      [
+        8,
+        22,
+        29
+      ]
+    ],
+    "orbits_open": true,
+    "neck_removed": true
+  },
+  "surface_comparison_scope": "First-hit rays at 0.8 mm spacing in named exterior regions; not a Hausdorff bound or full-surface proof. Interior filling and neck cut deliberately excluded."
+}

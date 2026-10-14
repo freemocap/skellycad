@@ -1,0 +1,11 @@
+from pathlib import Path
+import FreeCAD as A,FreeCADGui as G
+from PySide import QtCore
+out=Path(__file__).resolve().parents[4]/'generated/eye-tracker/rat/binocular-study-r01'
+def capture(key,nextkey=None):
+ d=next(d for d in A.listDocuments().values() if d.FileName.replace('\\','/').endswith('binocular-'+key+'.FCStd'));A.setActiveDocument(d.Name);v=G.activeDocument().activeView();v.viewAxonometric();v.fitAll();G.updateGui()
+ def save():
+  v.saveImage(str(out/('concept-'+key+'.png')),1400,1000,'White')
+  if nextkey:QtCore.QTimer.singleShot(300,lambda:capture(nextkey))
+ QtCore.QTimer.singleShot(1200,save)
+capture('C','A')

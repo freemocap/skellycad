@@ -1,0 +1,86 @@
+"""Create a standalone eye and a skull placement study using the same eye model."""
+from pathlib import Path
+import json
+import hashlib
+import runpy
+import FreeCAD as App
+import FreeCADGui as Gui
+import Mesh
+
+here=Path(__file__).resolve().parent
+root=here.parents[4]
+out=root/'generated/eye-tracker/rat/eye-materials-r02'
+out.mkdir(parents=True,exist_ok=True)
+model=runpy.run_path(str(here/'eye_model.py'))
+definition=json.loads((here/'r02/eye-definition.json').read_text())
+source=json.loads((here/'r02/source-placement.json').read_text())
+shift=App.Vector(*definition['origin_in_r01_coordinates_mm'])
+
+
+def save_review(doc,filename,normal):
+    doc.recompute()
+    App.setActiveDocument(doc.Name)
+    view=Gui.activeDocument().activeView()
+    view.setCameraOrientation(App.Rotation(App.Vector(1,0,0),App.Vector(0,1,0),App.Vector(*normal),'ZYX').Q)
+    view.fitAll()
+    Gui.updateGui()
+    view.saveImage(str(out/(filename+'.png')),1500,1000,'White')
+    label=doc.Label
+    doc.saveAs(str(out/(filename+'.FCStd')))
+    doc.Label=label
+    doc.save()
+
+
+standalone=App.newDocument('RatEyeDefinitionR02')
+standalone.Label='Rat eye R02 — independent geometry and XYZ frame'
+canonical=model['create_eye'](standalone,'RatEye','Rat eye — centroid frame; Z forward, Y up')
+save_review(standalone,'rat-eye-definition-r02',(1,.65,1.8))
+
+doc=App.newDocument('RatEyePlacementR02')
+doc.Label='Rat skull + colored eyes — right-handed frames R02'
+prov=json.loads((here.parent/'skull/provenance.json').read_text())
+skull_path=root/prov['selected_mesh']['path']
+assert hashlib.sha256(skull_path.read_bytes()).hexdigest()==prov['selected_mesh']['sha256']
+skull=doc.addObject('Mesh::Feature','RatSkullAndMandible')
+skull.Label='Rat skull + mandible — scienceminer'
+skull.Mesh=Mesh.Mesh(str(skull_path))
+skull_state=source['objects']['RatSkullAndMandible']
+skull.Placement=App.Placement(App.Vector(*skull_state['translation']),App.Rotation(*skull_state['rotation_xyzw']))
+skull.ViewObject.ShapeColor=(.84,.81,.71)
+skull.addProperty('App::PropertyString','Attribution').Attribution=prov['source_url']+'; '+prov['license_as_supplied']
+# Original +X rostral/+Y dorsal frame implies +Z is anatomical right.
+# Transform those directions with any rigid adjustment of the skull since R01.
+registration=App.Rotation(App.Vector(1,0,0),90)
+delta=skull.Placement.Rotation.multiply(registration.inverted())
+up=delta.multVec(App.Vector(0,1,0))
+right=delta.multVec(App.Vector(0,0,1))
+reports=[]
+for old_name in ['EyePositiveZ','EyeNegativeZ']:
+    old=source['objects'][old_name]
+    old_rotation=App.Rotation(*old['rotation_xyzw'])
+    z=old_rotation.multVec(App.Vector(0,0,1))
+    side='Right' if z.dot(right)>0 else 'Left'
+    cornea=(.10,.56,.57) if side=='Right' else (.25,.40,.76)
+    sclera=(.98,.94,.88) if side=='Right' else (.88,.94,1.)
+    eye=model['create_eye'](doc,side+'Eye',side+' eye — '+('teal / warm white' if side=='Right' else 'blue / cool white'),cornea,sclera)
+    # Recenter the model without moving its envelope in the skull.
+    center=App.Vector(*old['translation'])+old_rotation.multVec(shift)
+    rotation=model['oriented_frame'](list(z),list(up))
+    eye.Placement=App.Placement(center,rotation)
+    x=rotation.multVec(App.Vector(1,0,0))
+    y=rotation.multVec(App.Vector(0,1,0))
+    zz=rotation.multVec(App.Vector(0,0,1))
+    determinant=x.cross(y).dot(zz)
+    assert abs(determinant-1)<1e-10 and y.dot(up)>0
+    assert max(abs(x.dot(y)),abs(y.dot(zz)),abs(x.dot(zz)))<1e-10
+    old_apex=App.Vector(*old['translation'])+old_rotation.multVec(App.Vector(0,0,6.291/2))
+    new_apex=eye.Placement.multVec(App.Vector(*definition['apex_mm']))
+    assert (new_apex-old_apex).Length<1e-9
+    eye.addProperty('App::PropertyString','Side').Side=side
+    eye.addProperty('App::PropertyString','PlacementStatus').PlacementStatus='Preserved R01 envelope position; centroid origin and dorsal roll defined in R02. Visual orbital placement only.'
+    reports.append(dict(side=side,center_mm=list(center),rotation_xyzw=list(rotation.Q),
+                        x_world=list(x),y_world=list(y),z_world=list(zz),determinant=determinant,
+                        preserved_apex_error_mm=(new_apex-old_apex).Length))
+save_review(doc,'rat-skull-eyes-placement-r02',(1,.8,1.2))
+(out/'frame-validation.json').write_text(json.dumps(dict(standalone_document=standalone.Name,
+    placement_document=doc.Name,origin_shift_mm=list(shift),eyes=reports),indent=2))

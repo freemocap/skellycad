@@ -1,0 +1,130 @@
+{
+  "revision": "ET-MOUSE-MONO-STEM-R06",
+  "status": "Print-test candidate; geometry validated, physical fit pending",
+  "units": "mm",
+  "native_checkpoint": "designs/eye-tracker/mouse/joined-arms-r06/checkpoints/ET-MOUSE-MONO-STEM-R06.FCStd",
+  "native_sha256": "ab45209c0169ea513f28176bf14c12f0ab871c784085bcced3d1658d54124a3c",
+  "parts": {
+    "carrier": "FinishedCarrier",
+    "holder": "eye_primary_Holder",
+    "cap": "eye_primary_Cap",
+    "clip": "eye_primary_Clip",
+    "baseplate": "skull_mount_Baseplate"
+  },
+  "print_groups": {
+    "carrier-and-holder": [
+      "FinishedCarrier",
+      "eye_primary_Holder"
+    ],
+    "matching-cap": [
+      "eye_primary_Cap"
+    ],
+    "camera-clip": [
+      "eye_primary_Clip"
+    ],
+    "baseplate": [
+      "skull_mount_Baseplate"
+    ]
+  },
+  "validation": {
+    "revision": "ET-MOUSE-MONO-STEM-R06-print-test",
+    "units": "mm",
+    "carrier_valid": true,
+    "carrier_solids": 1,
+    "detailed_bop_check_pass": true,
+    "checks": {
+      "RibbonCandidate": {
+        "added_overlap_mm3": 0.0,
+        "carrier_overlap_mm3": 0.0,
+        "carrier_clearance_mm": 0.08768001369665254
+      },
+      "eye_primary_Holder": {
+        "added_overlap_mm3": 0.0,
+        "carrier_overlap_mm3": 0.0,
+        "carrier_clearance_mm": 0.33316465223867253
+      },
+      "eye_primary_Clip": {
+        "added_overlap_mm3": 0.0,
+        "carrier_overlap_mm3": 0.0,
+        "carrier_clearance_mm": 0.8032716172896012
+      },
+      "eye_primary_Cap": {
+        "added_overlap_mm3": 0.0,
+        "carrier_overlap_mm3": 0.002218225533850559,
+        "carrier_clearance_mm": 0.0
+      },
+      "skull_mount_Baseplate": {
+        "added_overlap_mm3": 0.0,
+        "carrier_overlap_mm3": 0.0,
+        "carrier_clearance_mm": 0.0
+      }
+    },
+    "added_stem_bore_overlap_mm3": 0.0,
+    "junction_finishing": [
+      {
+        "joint": "upper_root",
+        "radius_mm": 0.35,
+        "volume_change_mm3": 0.041541893307339706
+      },
+      {
+        "joint": "rear_stem",
+        "radius_mm": 0.3,
+        "volume_change_mm3": 0.14043482267743457
+      },
+      {
+        "joint": "upper_stem",
+        "radius_mm": 0.3,
+        "volume_change_mm3": 0.07090492931502013
+      },
+      {
+        "joint": "rear_root",
+        "method": "chamfer",
+        "radius_or_size_mm": 0.2,
+        "edges_in_unblended": [
+          4,
+          10,
+          12
+        ],
+        "volume_change_mm3": 0.13293369221878493
+      }
+    ],
+    "native_file": "mouse-joined-arms-r06.FCStd",
+    "native_sha256": "ab45209c0169ea513f28176bf14c12f0ab871c784085bcced3d1658d54124a3c",
+    "print_exports": {
+      "carrier-and-holder": {
+        "file": "carrier-and-holder.stl",
+        "closed": true,
+        "self_intersections": false,
+        "facets": 30910,
+        "sha256": "c32374ecc9d3708c10aec1fb804f54b41e4f093930a5e5619bf67a26d0b61d2b"
+      },
+      "matching-cap": {
+        "file": "matching-cap.stl",
+        "closed": true,
+        "self_intersections": false,
+        "facets": 1918,
+        "sha256": "b4d493737e2286ded5ad664236c872b15d06d7a7e02f14d2a6bfb2825a325193"
+      },
+      "camera-clip": {
+        "file": "camera-clip.stl",
+        "closed": true,
+        "self_intersections": false,
+        "facets": 134,
+        "sha256": "663f7e4469f40626b812f2b4212b488fc373035ba044d96f7e90b5830cbac335"
+      },
+      "baseplate": {
+        "file": "baseplate.stl",
+        "closed": true,
+        "self_intersections": false,
+        "facets": 1190,
+        "sha256": "f417418367630378fbe4ead58f9511fe820c26f664daad69b3b76145af41d9db"
+      }
+    },
+    "status": "Geometry checked print-test candidate; physical strength and adjustment require testing.",
+    "cosmetic_cleanup": {
+      "removed_obsolete_mark": "raised B on rear tray",
+      "removed_volume_mm3": 4.548338713216708,
+      "rear_face_x_mm": 3.70677424482636
+    }
+  }
+}

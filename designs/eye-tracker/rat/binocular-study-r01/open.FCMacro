@@ -1,0 +1,17 @@
+from pathlib import Path
+import json
+import FreeCAD as A,FreeCADGui as G
+from PySide import QtCore
+out=Path(__file__).resolve().parents[4]/'generated/eye-tracker/rat/binocular-study-r01'
+docs=[]
+for key in ['A','B','C']:
+ d=A.openDocument(str(out/('binocular-'+key+'.FCStd')));d.Label='Binocular '+key+' - CONCEPT ONLY';colors=json.loads((out/('colors-'+key+'.json')).read_text())
+ for o in d.Objects:
+  if o.Name in colors:
+   o.Visibility=True
+   if hasattr(o.ViewObject,'ShapeColor'):o.ViewObject.ShapeColor=tuple(colors[o.Name])
+   if 'Guide' in o.Name or 'Axis' in o.Name:o.ViewObject.LineColor=tuple(colors[o.Name]);o.ViewObject.LineWidth=3
+   if 'Bonnet' in o.Name or 'Cover' in o.Name:o.ViewObject.Transparency=75
+ A.setActiveDocument(d.Name);v=G.activeDocument().activeView();v.viewAxonometric();v.fitAll();G.updateGui();d.save();v.saveImage(str(out/('concept-'+key+'.png')),1400,1000,'White');docs.append(d)
+A.setActiveDocument(docs[1].Name);G.activeDocument().activeView().fitAll()
+QtCore.QTimer.singleShot(1500,lambda:G.activeDocument().activeView().saveImage(str(out/'concept-B.png'),1400,1000,'White'))

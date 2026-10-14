@@ -1,0 +1,93 @@
+"""Review all aligned skull variants and transfer the independently framed eyes."""
+from pathlib import Path
+import json
+import hashlib
+import runpy
+import FreeCAD as App
+import FreeCADGui as Gui
+import Mesh
+import Part
+
+here=Path(__file__).resolve().parent
+root=here.parents[4]
+assets=here/'aligned-r01'
+alignment=json.loads((assets/'alignment.json').read_text())
+refinement=json.loads((assets/'high-res-refinement.json').read_text())
+source=json.loads((assets/'source-eye-placement.json').read_text())
+model=runpy.run_path(str(here.parent/'eyes/eye_model.py'))
+doc=App.newDocument('RatUserFrameR01')
+doc.Label='Rat skull — user frame, full-detail variants and eyes'
+variants=doc.addObject('App::DocumentObjectGroup','SkullVariants')
+variants.Label='Skull alternatives — show one at a time'
+options=[('StandardSkull','Standard — 110116 triangles (visible)',alignment['variants']['standard'],True),
+         ('HighResSkull','High_res — exact common transform, 102342 triangles',alignment['variants']['high-res'],False),
+         ('HighResRefined','High_res — optional overlap refinement, 102342 triangles',refinement,False)]
+for name,label,spec,visible in options:
+    path=assets/spec['output']
+    assert hashlib.sha256(path.read_bytes()).hexdigest()==spec['output_sha256']
+    o=doc.addObject('Mesh::Feature',name)
+    variants.addObject(o)
+    o.Label=label
+    o.Mesh=Mesh.Mesh(str(path))
+    o.ViewObject.ShapeColor=(.84,.82,.74)
+    o.ViewObject.Visibility=visible
+    o.addProperty('App::PropertyString','SourceSHA256').SourceSHA256=spec.get('source_sha256','')
+    o.addProperty('App::PropertyString','Attribution').Attribution=alignment['source_attribution']+'; '+alignment['source_license']
+    assert o.Mesh.CountFacets==spec['triangles']
+anchor=root/alignment['anchor']
+assert hashlib.sha256(anchor.read_bytes()).hexdigest()==alignment['anchor_sha256']
+low=doc.addObject('Mesh::Feature','UserAlignedLowPoly')
+variants.addObject(low)
+low.Label='User-aligned low poly — unchanged reference, 24550 triangles'
+low.Mesh=Mesh.Mesh(str(anchor))
+low.ViewObject.ShapeColor=(.8,.4,.15)
+low.ViewObject.Visibility=False
+
+matrix=App.Matrix(*[v for row in alignment['source_to_aligned'] for v in row])
+source_to_new=App.Placement(matrix)
+old_skull=source['objects']['RatSkullAndMandible']
+old_placement=App.Placement(App.Vector(*old_skull['translation']),App.Rotation(*old_skull['rotation_xyzw']))
+old_to_new=source_to_new.multiply(old_placement.inverse())
+reports=[]
+for side in ['Right','Left']:
+    spec=source['objects'][side+'Eye']
+    old=App.Placement(App.Vector(*spec['translation']),App.Rotation(*spec['rotation_xyzw']))
+    carried=old_to_new.multiply(old)
+    forward=carried.Rotation.multVec(App.Vector(0,0,1))
+    rotation=model['oriented_frame'](list(forward),(0,0,1))
+    eye=model['create_eye'](doc,side+'Eye',side+' eye — local Z corneal, local Y up',
+        (.1,.56,.57) if side=='Right' else (.25,.40,.76),
+        (.98,.94,.88) if side=='Right' else (.88,.94,1.))
+    eye.Placement=App.Placement(carried.Base,rotation)
+    assert (side=='Right' and carried.Base.y<0) or (side=='Left' and carried.Base.y>0)
+    x=rotation.multVec(App.Vector(1,0,0));y=rotation.multVec(App.Vector(0,1,0));z=rotation.multVec(App.Vector(0,0,1))
+    assert x.cross(y).dot(z)>1-1e-9 and y.z>0
+    reports.append(dict(side=side,center_mm=list(carried.Base),rotation_xyzw=list(rotation.Q),
+                        x_world=list(x),y_world=list(y),z_world=list(z),determinant=x.cross(y).dot(z)))
+
+world=doc.addObject('App::Part','SkullFrame')
+world.Label='World/skull frame — X nose, Y left, Z up'
+for name,direction,color in [('X',(1,0,0),(1.,.1,.1)),('Y',(0,1,0),(.1,.8,.1)),('Z',(0,0,1),(.1,.2,1.))]:
+    v=App.Vector(*direction)
+    arrow=doc.addObject('PartDesign::Feature','World'+name)
+    world.addObject(arrow)
+    arrow.Label='World +'+name+' — '+dict(X='nose / rostral',Y='animal left',Z='up / dorsal')[name]
+    arrow.Shape=Part.makeCylinder(.07,7,App.Vector(),v).fuse(Part.makeCone(.25,0.,.8,v*7,v))
+    arrow.ViewObject.ShapeColor=color
+doc.recompute()
+App.setActiveDocument(doc.Name)
+view=Gui.activeDocument().activeView()
+out=root/'generated/eye-tracker/rat/skull-aligned-r01'
+for name,normal in [('dorsal',(0,0,1)),('right',(0,-1,0)),('oblique',(1,-1,1))]:
+    up=App.Vector(1,0,0) if name=='dorsal' else App.Vector(0,0,1)
+    view.setCameraOrientation(App.Rotation(App.Vector(1,0,0),up,App.Vector(*normal),'ZYX').Q)
+    view.fitAll()
+    Gui.updateGui()
+    view.saveImage(str(out/(name+'.png')),1500,1000,'White')
+label=doc.Label
+doc.saveAs(str(out/'rat-skulls-and-eyes-user-frame-r01.FCStd'))
+doc.Label=label;doc.save()
+midpoint=(App.Vector(*reports[0]['center_mm'])+App.Vector(*reports[1]['center_mm']))*.5
+(out/'eye-placement.json').write_text(json.dumps(dict(document=doc.Name,
+    frame=alignment['frame'],eyes=reports,eye_midpoint_mm=list(midpoint),
+    note='User anchor origin retained; prior visual eye placement transferred. Local Y reoriented toward world +Z; no anatomical refit.'),indent=2))

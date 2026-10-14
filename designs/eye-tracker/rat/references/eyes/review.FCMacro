@@ -1,0 +1,51 @@
+"""Open a separate rat-eye comparison; preserve all existing documents."""
+from pathlib import Path
+import hashlib
+import json
+import FreeCAD as App
+import FreeCADGui as Gui
+import Mesh
+import Part
+
+here = Path(__file__).resolve().parent
+out = here.parents[4] / 'generated/eye-tracker/rat/eyes-r01'
+out.mkdir(parents=True, exist_ok=True)
+report = json.loads((here / 'validation.json').read_text(encoding='utf-8'))
+for entry in report['variants'].values():
+    path = here / 'stl' / entry['file']
+    assert hashlib.sha256(path.read_bytes()).hexdigest() == entry['sha256']
+
+doc = App.newDocument('RatEyeComparisonR01')
+doc.Label = 'Rat eye r01 — A / B / C comparison'
+colors = [(0.7, 0.7, 0.7), (0.90, 0.62, 0.0), (0.0, 0.45, 0.70)]
+summary = []
+for i, ((key, entry), color) in enumerate(zip(report['variants'].items(), colors)):
+    obj = doc.addObject('Mesh::Feature', 'Eye' + key[0])
+    obj.Label = key + (' — suggested start' if key.startswith('C') else '')
+    obj.Mesh = Mesh.Mesh(str(here / 'stl' / entry['file']))
+    obj.Placement.Base = App.Vector(i*10, 0, 0)
+    obj.ViewObject.ShapeColor = color
+    obj.addProperty('App::PropertyString', 'GeometrySource').GeometrySource = entry['file']
+    obj.addProperty('App::PropertyString', 'SourceSHA256').SourceSHA256 = entry['sha256']
+    obj.addProperty('App::PropertyString', 'CoordinateNote').CoordinateNote = (
+        'STL uses mm; +Z corneal apex; origin outer axial midpoint. X offset is display only.')
+    obj.addProperty('App::PropertyString', 'Evidence').Evidence = 'Hughes 1979; see references/eyes/README.md'
+    axis = doc.addObject('PartDesign::Feature', 'Axis' + key[0])
+    axis.Label = key[0] + ' axis — +Z toward cornea (display guide)'
+    axis.Shape = Part.makeLine(App.Vector(i*10, 0, -4.3), App.Vector(i*10, 0, 4.3))
+    axis.ViewObject.LineColor = (0.8, 0.15, 0.15)
+    axis.ViewObject.LineWidth = 2.
+    assert obj.Mesh.CountFacets == entry['triangles']
+    summary.append(dict(variant=key, triangles=obj.Mesh.CountFacets))
+doc.recompute()
+App.setActiveDocument(doc.Name)
+Gui.activeDocument().activeView().viewFront()
+Gui.activeDocument().activeView().fitAll()
+Gui.updateGui()
+path = out / 'rat-eye-r01-comparison.FCStd'
+doc.saveAs(str(path))
+doc.Label = 'Rat eye r01 — A / B / C comparison'
+doc.save()
+Gui.activeDocument().activeView().saveImage(str(out / 'freecad-comparison.png'), 1500, 800, 'White')
+(out / 'freecad-review.json').write_text(json.dumps(
+    dict(document=doc.Name, file=str(path), objects=summary), indent=2), encoding='utf-8')

@@ -1,0 +1,5 @@
+from pathlib import Path
+import FreeCAD as A,FreeCADGui as G
+from PySide import QtCore
+r=Path(__file__).resolve().parents[4];out=r/'generated/eye-tracker/rat/targeted-r02';d=A.openDocument(str(out/'monocular-rat-targeted-r02-review-01.FCStd'));A.setActiveDocument(d.Name);v=G.activeDocument().activeView()
+v.setCameraOrientation(A.Rotation(A.Vector(1,0,0),A.Vector(0,0,1),A.Vector(1,-2,1),'ZYX').Q);v.fitAll();G.updateGui();QtCore.QTimer.singleShot(1500,lambda:v.saveImage(str(out/'right-oblique.png'),1400,1000,'White'))

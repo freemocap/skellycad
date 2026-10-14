@@ -1,0 +1,104 @@
+{
+  "revision": "CAMERA-DUMMY-R08",
+  "units": "mm",
+  "sources": {
+    "designs/eye-tracker/shared/cameras/pupil-core-eye/study-r02/calibrated-scene.json": "d46a4bd64573688df40c6710c9c94195d5151175cacfda71cb9ec4f9798f393d",
+    "designs/eye-tracker/shared/cameras/pupil-core-eye/study-r02/measurements.json": "67a14e33df0d3c04fe1942aae7ea80c3de02ca8000d687c0863021bb55dd979d",
+    "designs/eye-tracker/shared/cameras/pupil-core-eye/study-r03/connector-selection.json": "2bba0c0a763c075a04fffd23d5b1f65b7727bff708ed4fb4c0c2aed54e4c2c19",
+    "designs/eye-tracker/shared/cameras/pupil-core-eye/study-r02/connector-candidates/JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal.step": "4b0f89a75d3758add0041ca9e5ded3a780c23ef4e3e99bcc398b41177dff5d0f",
+    "designs/eye-tracker/mouse/checkpoints/ET-MOUSE-MONO-R01.FCStd": "0bdd4c6cef0c4448a49fae67e398d1a34e8d1cd60c597a42ebff54f94af35a3e",
+    "designs/eye-tracker/rat/checkpoints/ET-RAT-MONO-R01.FCStd": "ad74a3f14aaa709880039c927690475f6119d074f73b0a550a3064383394762e",
+    "generated/eye-tracker/shared/lens-m5-r05/CompleteDummyLens.step": "79fc5fa8ac21b3b47e482d13d83353eb5cde0546b52f36ba18889845a226a1cd"
+  },
+  "parameters": {
+    "revision": "CAMERA-DUMMY-R08",
+    "units": "mm",
+    "board_thickness": 0.25,
+    "ribbon_thickness": 0.25,
+    "anchor_skin": null,
+    "sources": {
+      "designs/eye-tracker/shared/cameras/pupil-core-eye/study-r02/calibrated-scene.json": "d46a4bd64573688df40c6710c9c94195d5151175cacfda71cb9ec4f9798f393d",
+      "designs/eye-tracker/shared/cameras/pupil-core-eye/study-r02/measurements.json": "67a14e33df0d3c04fe1942aae7ea80c3de02ca8000d687c0863021bb55dd979d",
+      "designs/eye-tracker/shared/cameras/pupil-core-eye/study-r03/connector-selection.json": "2bba0c0a763c075a04fffd23d5b1f65b7727bff708ed4fb4c0c2aed54e4c2c19",
+      "designs/eye-tracker/shared/cameras/pupil-core-eye/study-r02/connector-candidates/JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal.step": "4b0f89a75d3758add0041ca9e5ded3a780c23ef4e3e99bcc398b41177dff5d0f",
+      "designs/eye-tracker/mouse/checkpoints/ET-MOUSE-MONO-R01.FCStd": "0bdd4c6cef0c4448a49fae67e398d1a34e8d1cd60c597a42ebff54f94af35a3e",
+      "designs/eye-tracker/rat/checkpoints/ET-RAT-MONO-R01.FCStd": "ad74a3f14aaa709880039c927690475f6119d074f73b0a550a3064383394762e",
+      "generated/eye-tracker/shared/lens-m5-r05/CompleteDummyLens.step": "79fc5fa8ac21b3b47e482d13d83353eb5cde0546b52f36ba18889845a226a1cd"
+    },
+    "physical_fit_verified": false,
+    "lens_holder": {
+      "accepted_revision": "lens-m5-r05",
+      "square_mm": 6.3,
+      "optical_normal": [
+        0,
+        0,
+        1
+      ],
+      "embedded_pin_clip_z_mm": -0.25
+    },
+    "lineage": "CAMERA-DUMMY-R07; align ribbon top and bottom with both PCB slabs"
+  },
+  "parts": {
+    "Red_PLA_boards": {
+      "solids": 2,
+      "volume_mm3": 90.86786379746972,
+      "mesh_closed": true,
+      "triangles": 992
+    },
+    "Black_PLA_lens": {
+      "solids": 1,
+      "volume_mm3": 115.38932268176721,
+      "mesh_closed": true,
+      "triangles": 5624
+    },
+    "White_PLA_connector_LEDs": {
+      "solids": 3,
+      "volume_mm3": 48.13017397542641,
+      "mesh_closed": true,
+      "triangles": 348
+    },
+    "Yellow_TPU_ribbon": {
+      "solids": 1,
+      "volume_mm3": 32.849999999999994,
+      "mesh_closed": true,
+      "triangles": 12
+    }
+  },
+  "overlaps_mm3": {
+    "Red_PLA_boards/Black_PLA_lens": 0.0,
+    "Red_PLA_boards/White_PLA_connector_LEDs": 0.0,
+    "Red_PLA_boards/Yellow_TPU_ribbon": 0.0,
+    "Black_PLA_lens/White_PLA_connector_LEDs": 0.0,
+    "Black_PLA_lens/Yellow_TPU_ribbon": 0.0,
+    "White_PLA_connector_LEDs/Yellow_TPU_ribbon": 0.0
+  },
+  "physical_fit_verified": false,
+  "stiffness_verified": false,
+  "optical_datum": {
+    "origin_mm": [
+      0.08845877647399902,
+      69.85286865234374,
+      1.8576923076925
+    ],
+    "sensor_center_mm": [
+      0.08845877647399902,
+      69.85286865234374,
+      0.25
+    ],
+    "direction": [
+      0,
+      0,
+      1
+    ],
+    "reference_only": true,
+    "origin_definition": "Accepted lens bounding-box center on its symmetry axis",
+    "sensor_plane_definition": "PCB top at lens center; hypothetical sensor"
+  },
+  "flat_substrate": {
+    "bottom_z_mm": 0.0,
+    "top_z_mm": 0.25,
+    "ribbon_thickness_mm": 0.25,
+    "coplanar_top_and_bottom": true
+  },
+  "passed": true
+}

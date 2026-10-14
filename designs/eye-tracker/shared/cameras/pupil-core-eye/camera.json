@@ -1,0 +1,26 @@
+{
+  "id": "pupil-core-eye",
+  "label": "Pupil Labs Core eye camera - selected complete R08 module",
+  "units": "mm",
+  "frame": "R08 flat print frame; substrate bottom Z=0, top Z=0.25; +Z outward through lens. Coordinates must be transformed together.",
+  "hardware_revision": null,
+  "limitations": [
+    "User-approved geometric mock-up, not manufacturer CAD or functional optics.",
+    "Common 0.25 mm substrate thickness is assumed; physical fit and stiffness remain unverified.",
+    "pcb_envelope fields retain the historical fit reference and its old frame for replay; use active-model.json for the complete camera."
+  ],
+  "pcb_envelope": {
+    "path": "designs/eye-tracker/shared/cameras/pupil-core-eye/pcb-envelope.brep",
+    "sha256": "b46f5b460c0c21c4d83dd598dbd1cfd91cdce71288e09a190d794e3c946574d4"
+  },
+  "pcb_envelope_size_mm": [
+    0.25,
+    9.2,
+    30.0
+  ],
+  "status": "Preferred shared geometry; species mounting interfaces require separate validation",
+  "study_entrypoint": "study-r03/open.FCMacro",
+  "measurements": "study-r02/measurements.json",
+  "connector_selection": "study-r03/connector-selection.json",
+  "active_model": "active-model.json"
+}

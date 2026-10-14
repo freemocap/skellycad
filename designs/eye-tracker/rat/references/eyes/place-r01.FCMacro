@@ -1,0 +1,54 @@
+"""Build a separate, editable skull/eyes placement study from preserved assets."""
+from pathlib import Path
+import hashlib
+import json
+import FreeCAD as App
+import FreeCADGui as Gui
+import Mesh
+
+here = Path(__file__).resolve().parent
+root = here.parents[4]
+rat = here.parents[1]
+config = json.loads((here/'placement-r01.json').read_text())
+prov = json.loads((rat/'references/skull/provenance.json').read_text())
+validation = json.loads((here/'validation.json').read_text())
+eye_path = here/config['eye_mesh']
+assert hashlib.sha256(eye_path.read_bytes()).hexdigest() == validation['variants']['C-oblate-cornea']['sha256']
+source = root/prov['selected_mesh']['path']
+assert hashlib.sha256(source.read_bytes()).hexdigest() == prov['selected_mesh']['sha256']
+doc = App.newDocument('RatEyePlacementR01')
+skull = doc.addObject('Mesh::Feature', 'RatSkullAndMandible')
+skull.Label = 'Rat skull + mandible — original reference'
+skull.Mesh = Mesh.Mesh(str(source))
+skull.Placement = App.Placement(App.Vector(*prov['registration']['translation_mm']),
+                                App.Rotation(App.Vector(1,0,0),90))
+skull.ViewObject.ShapeColor = (.86,.83,.72)
+skull.addProperty('App::PropertyString','Attribution').Attribution = prov['source_url']+'; scienceminer; CC BY-SA, version unspecified'
+report = []
+for spec in config['eyes']:
+    eye = doc.addObject('Mesh::Feature',spec['name'])
+    eye.Label = spec['name']+' — oblate cornea; adjust Placement'
+    eye.Mesh = Mesh.Mesh(str(eye_path))
+    direction = App.Vector(*spec['outward_axis'])
+    direction.normalize()
+    eye.Placement = App.Placement(App.Vector(*spec['center_mm']), App.Rotation(App.Vector(0,0,1),direction))
+    eye.ViewObject.ShapeColor = (.15,.55,.85)
+    eye.addProperty('App::PropertyString','PlacementStatus').PlacementStatus = config['status']
+    eye.addProperty('App::PropertyString','MeshSHA256').MeshSHA256 = validation['variants']['C-oblate-cornea']['sha256']
+    report.append(dict(name=eye.Name,center_mm=spec['center_mm'],outward_axis=list(direction),
+                       rotation_xyzw=list(eye.Placement.Rotation.Q), facets=eye.Mesh.CountFacets))
+doc.recompute()
+App.setActiveDocument(doc.Name)
+out = root/'generated/eye-tracker/rat/eye-placement-r01'
+out.mkdir(parents=True,exist_ok=True)
+view = Gui.activeDocument().activeView()
+for name, normal in [('dorsal',(0,1,0)),('lateral',(0,0,1)),('rostral',(1,0,0)),('oblique',(1,1,1))]:
+    up = App.Vector(1,0,0) if name == 'dorsal' else App.Vector(0,1,0)
+    view.setCameraOrientation(App.Rotation(App.Vector(1,0,0),up,App.Vector(*normal),'ZYX').Q)
+    view.fitAll()
+    Gui.updateGui()
+    view.saveImage(str(out/(name+'.png')),1400,1000,'White')
+doc.saveAs(str(out/'rat-skull-eyes-placement-r01.FCStd'))
+doc.Label = 'Rat skull + eyes — provisional placement R01'
+doc.save()
+(out/'placement-report.json').write_text(json.dumps(dict(document=doc.Name,eyes=report),indent=2))

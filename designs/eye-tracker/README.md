@@ -1,5 +1,7 @@
 # Eye tracker
 
+**Preferred Pupil Labs eye camera:** [selected complete R08 module](shared/cameras/pupil-core-eye/README.md), including the notched lens, optical axis and flush TPU ribbon. Use it for new camera geometry; historical species checkpoints remain pinned.
+
 Start with the **mouse monocular assembly**. It reproduces the Mouse Hats R10
 high-water mark using the shared hardware library. The selected checkpoint is
 `ET-MOUSE-MONO-R01`; the original R10 remains the comparison reference.
@@ -16,7 +18,9 @@ mouse, the R10 reference and the exploded shared-hardware view together.
 | [mouse/assembly.json](mouse/assembly.json) | The mouse recipe: one eye-camera instance, its camera/mount choice, placement and baseplate. |
 | [mouse/anatomy.json](mouse/anatomy.json) | Mouse skull/eyes, baseplate geometry and inherited anatomical target. |
 | [mouse/checkpoints/](mouse/checkpoints/) | Saved complete assemblies for opening, comparing and exporting. |
-| [rat](rat/README.md), [marmoset](marmoset/README.md), [human](human/README.md) | Reserved species folders; no anatomy or assembly has been supplied yet. |
+| [rat](rat/README.md) | Monocular rat: supplied skull/mandible with unchanged shared mouse hardware; scale, mounting and aim remain provisional. |
+| [marmoset](marmoset/README.md) | CT skull source and separate simplified print derivative; no complete assembly selected. |
+| [human](human/README.md) | Reserved species folder; no anatomy or assembly has been supplied yet. |
 
 ```mermaid
 flowchart LR
@@ -53,12 +57,17 @@ Tests cover equivalence to R10, unchanged anatomy/sightline, matched-part export
 and two independently placed camera instances. The two-camera test is a spatial
 fixture, not a rat design or physical-fit validation.
 
-## Next: rat
+## Rat: monocular first
 
-1. Add the rat skull/eye references with units and orientation.
-2. Register the mounting locations and eye targets.
-3. Place two instances of the existing camera/mount and inspect their clearances.
-4. Revise the mount's support route or internal aim where the rat geometry needs it.
+The first [Monocular rat](rat/README.md) checkpoint uses the supplied rat skull
+and mandible with the same shared hardware as the mouse. Its registration and
+eye-region target are provisional, and the scan's units need confirmation.
+Open `rat/open.FCMacro` in the existing FreeCAD window to inspect it.
+
+Next, confirm the anatomy and use the forthcoming camera sketches to replace
+the approximate PCB profile with measured camera geometry. Then revise the arms
+and sensor aim for the rat. A separate binocular variant will follow, with
+back-to-back PCBs and two eye cameras around a revised central holder.
 
 Rigid rotation/translation is implemented. Mirroring hardware, automatically
 aiming sensors, redesigning support curves and proving ribbon clearance are

@@ -124,10 +124,14 @@ def build_assembly(config_path, output_dir=None):
 
     doc = App.newDocument('EyeTrackerAssembly')
     doc.Label = config['label']
-    manifest = {'revision': config['revision'], 'status': 'Built assembly; application-specific validation required',
+    manifest = {'revision': config['revision'], 'label': config['label'], 'status': 'Built assembly; application-specific validation required',
                 'parts': {}, 'print_groups': {}, 'camera_instances': [],
                 'assembly_config': config_path.relative_to(ROOT).as_posix(), 'units': 'mm'}
     try:
+        if 'source_attribution' in anatomy:
+            doc.Comment = anatomy['source_attribution']
+            doc.License = 'Mixed assets; see anatomy source attribution'
+            doc.LicenseURL = anatomy.get('source_url', '')
         def group(name, label):
             obj = doc.addObject('App::DocumentObjectGroup', name)
             obj.Label = label
@@ -152,6 +156,7 @@ def build_assembly(config_path, output_dir=None):
             for name in anatomy['meshes']:
                 original = source.getObject(name)
                 obj = doc.addObject('Mesh::Feature', name)
+                obj.Label = original.Label
                 obj.Mesh = original.Mesh.copy()
                 obj.Placement = anatomy_pose.multiply(original.Placement)
                 obj.ViewObject.ShapeColor = original.ViewObject.ShapeColor
@@ -160,7 +165,9 @@ def build_assembly(config_path, output_dir=None):
             if existing is None:
                 App.closeDocument(source.Name)
         target = Part.makeSphere(.25, App.Vector(*anatomy['eye_target_mm']))
-        add(anatomy_group, 'EyeTarget', 'Inherited eye-surface target (approx.)', target, anatomy_pose, (1., .6, .1))
+        target_obj = add(anatomy_group, 'EyeTarget', anatomy.get('eye_target_label', 'Inherited eye-surface target (approx.)'),
+                         target, anatomy_pose, (1., .6, .1))
+        target_obj.addProperty('App::PropertyString', 'TargetStatus').TargetStatus = anatomy.get('eye_target_status', 'Unverified')
         bases = group('Baseplates', 'Animal mounting baseplates')
         for instance, pose in zip(config['baseplates'], base_poses):
             role = instance['id'] + '_Baseplate'
@@ -204,6 +211,9 @@ def build_assembly(config_path, output_dir=None):
             output_dir.mkdir(parents=True, exist_ok=True)
             native = output_dir / (config['revision'] + '.FCStd')
             doc.saveAs(str(native))
+            # Preserve the descriptive label in the file as well as the manifest.
+            doc.Label = config['label']
+            doc.save()
             manifest.update(native_checkpoint=native.relative_to(ROOT).as_posix(), native_sha256=hashlib.sha256(native.read_bytes()).hexdigest(),
                             print_directory=(output_dir / 'print').relative_to(ROOT).as_posix())
             (output_dir / 'manifest.json').write_text(json.dumps(manifest, indent=2) + '\n')

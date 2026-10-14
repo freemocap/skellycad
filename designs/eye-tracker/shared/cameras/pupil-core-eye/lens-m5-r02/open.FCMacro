@@ -1,0 +1,13 @@
+import FreeCAD as A, FreeCADGui as G, Part
+from pathlib import Path
+out=Path('C:/Users/jonma/code-stuff/github/freemocap/other/skellycad/generated/eye-tracker/shared/lens-m5-r02')
+d=A.newDocument('FakeCameraLens');d.Label='FAKE CAMERA LENS - 6.3 mm - black PLA'
+for name,color in [('Housing',(.18,.18,.2)),('RetainingRing',(.08,.08,.09)),('FakeLens',(.28,.31,.35))]:
+ s=Part.Shape();s.read(str(out/(name+'.step')))
+ o=d.addObject('Part::Feature',name);o.Shape=s;o.ViewObject.ShapeColor=color;o.ViewObject.Visibility=True;o.ViewObject.Transparency=0
+ o.addProperty('App::PropertyString','PrintMaterial').PrintMaterial='Black PLA'
+ if name=='FakeLens':o.ViewObject.ShapeMaterial.Shininess=90.0
+ d.recompute()
+G.activeDocument().activeView().viewAxonometric();G.activeDocument().activeView().fitAll();G.updateGui()
+d.saveAs(str(out/'FAKE-LENS-6p3mm.FCStd'))
+G.activeDocument().activeView().saveImage(str(out/'preview.png'),1200,900,'White')

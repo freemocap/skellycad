@@ -1,0 +1,321 @@
+{
+  "revision": "ET-RAT-SKULL-PRINT-R01",
+  "units": "mm assumed; scale unchanged",
+  "source": "designs\\eye-tracker\\rat\\references\\skull\\aligned-r01\\rat-skull-standard-aligned-r01.stl",
+  "source_sha256": "06216589919dd73774323e6c0ea934ed73d23e49015531a96a82c3f4ec515b1e",
+  "selected_assembly": "ET-RAT-MONO-R01",
+  "selected_checkpoint_sha256": "ad74a3f14aaa709880039c927690475f6119d074f73b0a550a3064383394762e",
+  "pitch_mm": 0.15,
+  "removed_fragments": 29,
+  "removed_fragment_volume_mm3": 6.9917098381908955,
+  "source_mesh": {
+    "triangles": 110116,
+    "components": 31,
+    "watertight": true,
+    "winding_consistent": true,
+    "volume_mm3": 2334.009399264785,
+    "bounds_mm": [
+      [
+        -23.583925247192383,
+        -11.68114948272705,
+        -18.078765869140625
+      ],
+      [
+        23.151874542236328,
+        11.762916564941406,
+        6.285220623016357
+      ]
+    ]
+  },
+  "outputs": {
+    "rat-skull-solid-r01": {
+      "triangles": 116044,
+      "components": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": 4500.522458050246,
+      "bounds_mm": [
+        [
+          -23.637224197387695,
+          -11.787129402160645,
+          -11.936396598815918
+        ],
+        [
+          23.166278839111328,
+          11.787224769592285,
+          6.386553764343262
+        ]
+      ],
+      "sha256": "2ea4812284d7856d906a8a55814e7d7288184678938dd817594894fc45a4caf3",
+      "net_voxel_addition_mm3": 2211.5362499999997
+    },
+    "rat-mandible-clean-r01": {
+      "triangles": 33868,
+      "components": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": 706.5886377744804,
+      "bounds_mm": [
+        [
+          -14.635769844055176,
+          -10.13722038269043,
+          -18.140958786010742
+        ],
+        [
+          15.678728103637695,
+          10.587128639221191,
+          -1.2886883020401
+        ]
+      ],
+      "sha256": "dfa20308b33281022a33dd561ef09a91ae2d78b17b184435d89114729f4df650",
+      "net_voxel_addition_mm3": 14.036624999999997
+    }
+  },
+  "status": "Geometry validated; not sliced or physically printed. No hardware fit established.",
+  "braincase_probes": {
+    "points_mm": [
+      [
+        -20,
+        -1,
+        1
+      ],
+      [
+        -20,
+        -1,
+        2
+      ],
+      [
+        -20,
+        -1,
+        3
+      ],
+      [
+        -20,
+        0,
+        1
+      ],
+      [
+        -20,
+        0,
+        2
+      ],
+      [
+        -20,
+        0,
+        3
+      ],
+      [
+        -20,
+        1,
+        1
+      ],
+      [
+        -20,
+        1,
+        2
+      ],
+      [
+        -20,
+        1,
+        3
+      ],
+      [
+        -15,
+        -1,
+        1
+      ],
+      [
+        -15,
+        -1,
+        2
+      ],
+      [
+        -15,
+        -1,
+        3
+      ],
+      [
+        -15,
+        0,
+        1
+      ],
+      [
+        -15,
+        0,
+        2
+      ],
+      [
+        -15,
+        0,
+        3
+      ],
+      [
+        -15,
+        1,
+        1
+      ],
+      [
+        -15,
+        1,
+        2
+      ],
+      [
+        -15,
+        1,
+        3
+      ],
+      [
+        -10,
+        -1,
+        1
+      ],
+      [
+        -10,
+        -1,
+        2
+      ],
+      [
+        -10,
+        -1,
+        3
+      ],
+      [
+        -10,
+        0,
+        1
+      ],
+      [
+        -10,
+        0,
+        2
+      ],
+      [
+        -10,
+        0,
+        3
+      ],
+      [
+        -10,
+        1,
+        1
+      ],
+      [
+        -10,
+        1,
+        2
+      ],
+      [
+        -10,
+        1,
+        3
+      ],
+      [
+        -5,
+        -1,
+        1
+      ],
+      [
+        -5,
+        -1,
+        2
+      ],
+      [
+        -5,
+        -1,
+        3
+      ],
+      [
+        -5,
+        0,
+        1
+      ],
+      [
+        -5,
+        0,
+        2
+      ],
+      [
+        -5,
+        0,
+        3
+      ],
+      [
+        -5,
+        1,
+        1
+      ],
+      [
+        -5,
+        1,
+        2
+      ],
+      [
+        -5,
+        1,
+        3
+      ],
+      [
+        0,
+        -1,
+        1
+      ],
+      [
+        0,
+        -1,
+        2
+      ],
+      [
+        0,
+        -1,
+        3
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        3
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        1,
+        3
+      ]
+    ],
+    "all_inside_solid": true
+  },
+  "orbit_center_probes": {
+    "points_mm": [
+      [
+        0.75,
+        -8.35,
+        0
+      ],
+      [
+        0.75,
+        8.35,
+        0
+      ]
+    ],
+    "both_outside_solid": true,
+    "scope": "Point checks only; eye/hardware surface clearance and physical fit not established."
+  }
+}

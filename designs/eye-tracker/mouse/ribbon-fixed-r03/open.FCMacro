@@ -1,0 +1,34 @@
+from pathlib import Path
+import json
+import FreeCAD as A,FreeCADGui as G
+root=Path(__file__).resolve().parents[4]
+out=root/'generated/eye-tracker/mouse/ribbon-fixed-r03'
+report=json.loads((out/'validation.json').read_text())
+assert report['ribbon_checks_pass'],'Refusing to show an invalid ribbon'
+d=A.openDocument(str(out/'mouse-fixed-cradle-r03-verified.FCStd'))
+A.setActiveDocument(d.Name)
+G.activeDocument().activeView().viewAxonometric()
+d.Label='Mouse fixed cradle R03 - only arms removed'
+for name in ['Camera_eye_primary','RetainedPCBTray','RetainedSocket','eye_primary_Holder','eye_primary_Clip','RibbonCandidate','eye_primary_Cap','CandidateOpticalAxis']:
+ d.getObject(name).Visibility=True
+d.getObject('RibbonCandidate').ViewObject.ShapeColor=(.85,.42,.08)
+d.getObject('RibbonCandidate').ViewObject.DisplayMode='Shaded'
+d.getObject('RibbonCandidate').ViewObject.LineWidth=1
+for name in ['Anatomy','Skull','Eye1','Eye2','EyeTarget','Baseplates','skull_mount_Baseplate']:
+ d.getObject(name).Visibility=True
+d.getObject('RetainedPCBTray').ViewObject.ShapeColor=(.7,.72,.75)
+d.getObject('eye_primary_Cap').ViewObject.Transparency=70
+d.getObject('eye_primary_Holder').ViewObject.Transparency=45
+d.getObject('eye_primary_Clip').ViewObject.Transparency=45
+d.getObject('RetainedSocket').ViewObject.ShapeColor=(.55,.63,.73)
+d.getObject('CandidateOpticalAxis').ViewObject.LineColor=(1.,.1,.1)
+for parent in ['MeasuredMainPCB','MeasuredSensorHead']:
+ d.getObject(parent).Visibility=True
+ for o in d.getObject(parent).Group:
+  if hasattr(o,'Shape'):
+   o.Visibility=True;o.ViewObject.ShapeColor=(.1,.5,.25) if 'pcb' in o.Name.lower() else (.2,.2,.2)
+d.recompute();G.updateGui();G.activeDocument().activeView().viewAxonometric();G.activeDocument().activeView().fitAll();G.updateGui()
+d.save();G.activeDocument().activeView().saveImage(str(out/'assembly.png'),1400,1000,'White')
+
+from PySide import QtCore
+QtCore.QTimer.singleShot(1500,lambda: G.activeDocument().activeView().saveImage(str(out/'assembly.png'),1400,1000,'White'))

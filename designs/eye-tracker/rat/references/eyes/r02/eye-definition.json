@@ -1,0 +1,86 @@
+{
+  "revision": "rat-eye-r02",
+  "units": "mm",
+  "source": "[@hughes1979RatEye]",
+  "geometry": "C-oblate-cornea r01, partitioned at its existing limbus; original exterior triangles retained",
+  "source_sha256": "3fe0ef0310c6f44be4c8ea2b2259bd27c07da7580e9d09f9edebcecca15b5a84",
+  "origin": "Analytic volume centroid of the complete uniform exterior envelope",
+  "origin_in_r01_coordinates_mm": [
+    0,
+    0,
+    -0.10540595722212907
+  ],
+  "axes": {
+    "z": "Anterior: outward through corneal apex",
+    "y": "Superior: chosen up direction orthogonal to Z",
+    "x": "Y cross Z; X cross Y = Z"
+  },
+  "symmetry": "Geometry is rotationally symmetric. The up direction fixes otherwise arbitrary roll.",
+  "apex_mm": [
+    0,
+    0,
+    3.250905957222129
+  ],
+  "posterior_pole_mm": [
+    0,
+    0,
+    -3.0400940427778713
+  ],
+  "limbus_z_mm": 1.1409059572221294,
+  "analytic_volume_mm3": 132.55965246207663,
+  "surfaces": {
+    "sclera": {
+      "radial_semiaxis_mm": 3.205,
+      "axial_semiaxis_mm": 2.8341826727403845,
+      "center_z_mm": -0.2059113700374866,
+      "retained_region": "z <= limbus_z_mm"
+    },
+    "cornea": {
+      "radial_semiaxis_mm": 2.9297427871121955,
+      "axial_semiaxis_mm": 2.8949048224741776,
+      "center_z_mm": 0.3560011347479517,
+      "retained_region": "z >= limbus_z_mm"
+    }
+  },
+  "whole_mesh": {
+    "path": "rat-eye-r02-whole.stl",
+    "sha256": "a3f2643eadf7b16511033cc4195fda24ae9b9cf0e161b23ed81712e9f33715e7"
+  },
+  "centered_mesh_centroid_mm": [
+    -3.574348607063479e-17,
+    0.0,
+    -2.253667520452615e-05
+  ],
+  "components": {
+    "sclera": {
+      "path": "rat-eye-r02-sclera.stl",
+      "sha256": "4ea8928b4dd04748acaf1477654e5100ce9dd68bd3274d21a84435d58bc90eeb",
+      "exterior_faces": 49344,
+      "closing_faces": 192,
+      "volume_mm3": 101.14075574610193,
+      "centroid_mm": [
+        -4.683524002554794e-17,
+        -9.367048005109588e-17,
+        -0.5898249225734511
+      ],
+      "watertight": true,
+      "connected_bodies": 1
+    },
+    "cornea": {
+      "path": "rat-eye-r02-cornea.stl",
+      "sha256": "17a7213dfce7129598c2c8b86bbf160beead4355afcbb4d887c77374bab57566",
+      "exterior_faces": 24384,
+      "closing_faces": 192,
+      "volume_mm3": 31.385533377813847,
+      "centroid_mm": [
+        7.54639329322743e-17,
+        0.0,
+        1.9006323297531582
+      ],
+      "watertight": true,
+      "connected_bodies": 1
+    }
+  },
+  "tissue_note": "Cornea and sclera are colored solid envelope regions, not anatomical wall-thickness models. Their shared planar closing disk is an internal CAD partition.",
+  "axes_note": "Axes are display guides, excluded from whole-eye and component STL geometry."
+}
