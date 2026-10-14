@@ -1,0 +1,175 @@
+{
+  "revision": "ET-MOUSE-GUARD-R13",
+  "species": "mouse",
+  "units": "mm",
+  "source_manifest": "designs/eye-tracker/mouse/compact-guard-r12/review.json",
+  "source": {
+    "path": "designs/eye-tracker/mouse/compact-guard-r12/checkpoints/ET-MOUSE-GUARD-R12.FCStd",
+    "sha256": "c3e88c722526d7f2acf7bcd876850131a83e2ff8e28bb70620fde1f79d4ba0a2"
+  },
+  "guard": {
+    "parameters": {
+      "units": "mm",
+      "socket_center_mm": [
+        4.6673514260725035,
+        5.140223325877184,
+        23.434462378219095
+      ],
+      "socket_axis": [
+        -0.06766810814747441,
+        0.31767937320295375,
+        0.9457805469458125
+      ],
+      "attachment_height_mm": 3.9,
+      "attachment_radius_mm": 2.65,
+      "width_mm": 3.0,
+      "thickness_mm": 1.8,
+      "sections": 41,
+      "rear": {
+        "root_mm": [
+          4.10677424482636,
+          7.86588286441313,
+          12.26
+        ],
+        "root_tangent": [
+          -1,
+          0,
+          0
+        ],
+        "bend_mm": [
+          -3.0,
+          3.0,
+          21.0
+        ],
+        "bend_tangent": [
+          0,
+          0,
+          1
+        ],
+        "root_handle_mm": 10.0,
+        "bend_handle_mm": 5.0,
+        "socket_handle_mm": 10.0,
+        "radial_direction": [
+          -0.9977078866781307,
+          -0.02154614839589256,
+          -0.06414621071864238
+        ],
+        "root_width_direction": [
+          0,
+          1,
+          0
+        ],
+        "root_width_mm": 2.6,
+        "root_thickness_mm": 2.0
+      },
+      "top": {
+        "root_mm": [
+          4.4969191206496975,
+          16.0918887142941,
+          17.3662968498585
+        ],
+        "root_tangent": [
+          0,
+          0,
+          1
+        ],
+        "bend_mm": [
+          7.5,
+          15.0,
+          24.5
+        ],
+        "bend_tangent": [
+          0,
+          -1,
+          0.3
+        ],
+        "root_handle_mm": 5.0,
+        "bend_handle_mm": 3.0,
+        "socket_handle_mm": 4.0,
+        "radial_direction": [
+          -0.0,
+          0.9479533634787529,
+          -0.318409203179367
+        ],
+        "root_width_direction": [
+          0,
+          1,
+          0
+        ],
+        "root_width_mm": 3.0,
+        "root_thickness_mm": 1.5802897516466756
+      },
+      "socket_width_mm": 3.0,
+      "socket_thickness_mm": 2.2,
+      "root_lead_mm": 0,
+      "embed_mm": 0.4,
+      "socket_lead_mm": 1.0,
+      "arm": {
+        "root_mm": [
+          4.49691912065,
+          8.2,
+          17.36629684986
+        ],
+        "root_tangent": [
+          -1,
+          0,
+          0
+        ],
+        "bend_mm": [
+          -3.0,
+          3.0,
+          21.0
+        ],
+        "bend_tangent": [
+          0,
+          0,
+          1
+        ],
+        "root_handle_mm": 23.0,
+        "bend_handle_mm": 5.0,
+        "socket_handle_mm": 23.0,
+        "radial_direction": [
+          -0.7054860123134058,
+          -0.6855396792036096,
+          0.17979108617376238
+        ],
+        "root_width_direction": [
+          0,
+          1,
+          0
+        ],
+        "root_width_mm": 2.6,
+        "root_thickness_mm": 1.58028975165
+      },
+      "plugward_flare_deg": 0,
+      "body_width_mm": 2.6,
+      "body_thickness_mm": 1.8,
+      "turn_exit_handle_mm": 9,
+      "root_curve_handle_mm": 8,
+      "turn_entry_handle_mm": 6
+    },
+    "outer_mm": [
+      -11.5,
+      0,
+      20
+    ]
+  },
+  "targeting_recipe": {
+    "mode": "fixed_anatomy_and_camera",
+    "change": "Immediate outward turn from PCB plate; remove straight lead and preserve socket terminal",
+    "preserve": [
+      "camera pose and optical axes",
+      "eye and skull geometry",
+      "ribbon route",
+      "upper arm",
+      "socket",
+      "holder",
+      "cap",
+      "clip",
+      "baseplate"
+    ]
+  },
+  "minimum_guard_ribbon_gap_mm": 0.75,
+  "physical_fit_verified": false,
+  "clearance_note": "Compact review route: at least 0.75 mm static guard clearance; motion range is not established."
+}

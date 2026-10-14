@@ -1,0 +1,21 @@
+{
+  "revision": "ET-MOUSE-ADULT-R11",
+  "species": "mouse",
+  "units": "mm",
+  "source_manifest": "designs/eye-tracker/mouse/eye-axis-review-r10/review.json",
+  "source": {
+    "path": "designs/eye-tracker/mouse/eye-axis-review-r10/checkpoints/ET-MOUSE-EYE-AXES-R10.FCStd",
+    "sha256": "407b3bd7baf4a28314c1815a9656ee902347528d40e90b950d98f1104e667b7b"
+  },
+  "anatomy_definition": "generated/eye-tracker/adult-eyes-r01/mouse-definition.json",
+  "targeting_recipe": {
+    "mode": "retain_existing_camera_and_eye_frames",
+    "eye_targets": [
+      "Eye1OpticalFrame",
+      "Eye2OpticalFrame"
+    ],
+    "eye_pose_change": false,
+    "skull_scale": 1.0,
+    "reason": "Eye shape correction only; skull scale and rest pose lack registered specimen evidence. Camera, ribbon and arm seating retained and checked separately."
+  }
+}

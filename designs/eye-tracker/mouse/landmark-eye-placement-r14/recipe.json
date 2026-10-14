@@ -1,0 +1,17 @@
+{
+  "revision": "ET-MOUSE-EYE-PLACEMENT-R14",
+  "species": "mouse",
+  "units": "mm",
+  "source": {
+    "path": "designs/eye-tracker/mouse/compact-guard-r13/checkpoints/ET-MOUSE-GUARD-R13.FCStd",
+    "sha256": "f6f4a2b9c7945100ebe43076df77bd0c66b44758579040ce37deb2b2691fd87f"
+  },
+  "placement": "designs/eye-tracker/mouse/landmark-eyes-r04/placement.json",
+  "targeting_recipe": {
+    "mode": "update_eye_anatomy_only",
+    "camera_and_ribbon_pose": "fixed",
+    "aim": "measure change; no automatic retargeting",
+    "landmarks": "user accepted named-landmarks-r03",
+    "shape_profile": "adult-eyes-r01"
+  }
+}

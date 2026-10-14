@@ -1,0 +1,124 @@
+{
+  "revision": "ET-MOUSE-GUARD-R12",
+  "units": "mm",
+  "status": "Compact front-edge lower guard; static clearance validated; motion and physical fit unverified",
+  "native_checkpoint": "designs/eye-tracker/mouse/compact-guard-r12/checkpoints/ET-MOUSE-GUARD-R12.FCStd",
+  "native_sha256": "c3e88c722526d7f2acf7bcd876850131a83e2ff8e28bb70620fde1f79d4ba0a2",
+  "source": {
+    "path": "designs/eye-tracker/mouse/adult-anatomy-r11/checkpoints/ET-MOUSE-ADULT-R11.FCStd",
+    "sha256": "0a2cb04a505a5eacd83d2afbbdaa611c70db078dffee635c8e5ce9c28dc7b61a"
+  },
+  "camera_manifest": "designs/eye-tracker/shared/cameras/pupil-core-eye/active-model.json",
+  "camera_manifest_sha256": "c167939feec847adc5196a279f941e7df36c52cffe8623c64a6c9c6bc868408c",
+  "recipe_sha256": "3d76f983bb9ad64ffd02278e33a8ef5642aeea6f6bd880eee09f88664764639a",
+  "parts": {
+    "carrier": "FinishedCarrier",
+    "holder": "eye_primary_Holder",
+    "cap": "eye_primary_Cap",
+    "clip": "eye_primary_Clip",
+    "baseplate": "skull_mount_Baseplate"
+  },
+  "new_interferences": {
+    "M4_lens/eye_primary_Holder": {
+      "overlap_mm3": 2.0416569152809965,
+      "previous_overlap_mm3": 0.0
+    }
+  },
+  "ribbon_interference": {
+    "FinishedCarrier": {
+      "overlap_mm3": 0.007190949938040101,
+      "previous_overlap_mm3": 0.0
+    },
+    "eye_primary_Holder": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "eye_primary_Cap": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "eye_primary_Clip": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "skull_mount_Baseplate": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "PCB": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "camera_pcb": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "JST_4pin": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "M4_lens": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "IR_LED": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "IR_LED_001": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    }
+  },
+  "physical_fit_verified": false,
+  "print_release": false,
+  "source_manifest": "designs/eye-tracker/mouse/adult-anatomy-r11/review.json",
+  "anatomy_audit": "designs/eye-tracker/shared/adult-eyes-r01/README.md",
+  "anatomy_definition": "designs/eye-tracker/shared/adult-eyes-r01/mouse-definition.json",
+  "geometry_validation": "validation.json",
+  "containment_validation": "containment.json",
+  "anatomy_interference": {
+    "Eye1": {
+      "frame_origin_world_mm": [
+        7.6612616226796515,
+        -5.009257002534198,
+        4.100958657440845
+      ],
+      "axis_world": [
+        -0.09699981730317818,
+        0.7984897693201415,
+        0.5941423429904799
+      ],
+      "apex_world_mm": [
+        7.49733193143728,
+        -3.6598092923831587,
+        5.105059217094756
+      ],
+      "frame_pose_preserved": true,
+      "hardware_surface_crossings": 0,
+      "skull_surface_crossings": 0
+    },
+    "Eye2": {
+      "frame_origin_world_mm": [
+        8.22709406549069,
+        -5.003929857461162,
+        -3.5779488342570276
+      ],
+      "axis_world": [
+        0.10037373802454619,
+        0.7990810465833096,
+        -0.5927854533524777
+      ],
+      "apex_world_mm": [
+        8.396725682752173,
+        -3.6534828887353687,
+        -4.579756250422715
+      ],
+      "frame_pose_preserved": true,
+      "hardware_surface_crossings": 0,
+      "skull_surface_crossings": 0
+    }
+  },
+  "guard_validation": "validation.json",
+  "guard_anatomy": "guard-anatomy.json"
+}

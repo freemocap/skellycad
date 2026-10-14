@@ -1,0 +1,22 @@
+from pathlib import Path
+import json,hashlib
+import FreeCAD as A,FreeCADGui as G,Part
+from PySide import QtWidgets
+S=Path(__file__).resolve().parent;R=S.parents[3];O=R/'generated/eye-tracker/mouse/named-landmarks-r03';O.mkdir(parents=True,exist_ok=True)
+m=json.loads((R/'designs/eye-tracker/mouse/landmark-review-r02/review.json').read_text());src=R/m['native_checkpoint'];assert hashlib.sha256(src.read_bytes()).hexdigest()==m['native_sha256']
+for panel in G.getMainWindow().findChildren(QtWidgets.QDialog,'SkellyLandmarkReviewR02'):panel.close()
+d=A.openDocument(str(src));d.Label='Mouse atlas - named reference landmarks R03'
+for name in ['EditableLandmarks','All45Landmarks','KeyLandmarks','AtlasSource','PreviousEyes','CandidateEyes','ConditionalSkullFrame']:d.getObject(name).Visibility=False
+d.ExistingSkull.Visibility=False;d.DetailedReference.Visibility=True;d.DetailedReference.ViewObject.Transparency=15
+names=d.addObject('App::DocumentObjectGroup','NamedReferences');names.Label='Named references - source positions unchanged'
+rows=json.loads((S/'labels.json').read_text());validation=[]
+for i,row in enumerate(rows):
+ original=d.getObject('ReviewLM'+row['source_id']).OriginalPosition;c=A.Vector(original);color=tuple(row['color']);o=d.addObject('Part::Feature','NamedLM'+row['source_id']);o.Label=row['display_name'];o.Shape=Part.makeSphere(.23,c);o.ViewObject.ShapeColor=color;names.addObject(o)
+ for key,value in [('SourceID',row['source_id']),('NameStatus',row['name_status'])]:o.addProperty('App::PropertyString',key,'Provenance');setattr(o,key,value)
+ o.addProperty('App::PropertyVector','SourcePosition','Provenance');o.SourcePosition=c;o.setEditorMode('SourcePosition',1)
+ if i<4:q=c+A.Vector(0,5+i*.7,2)
+ else:q=c+A.Vector(0,1+(i%2)*3,6 if i<6 else -6)
+ line=d.addObject('Part::Feature','NamedLeader'+row['source_id']);line.Shape=Part.makeLine(c,q);line.ViewObject.LineColor=color;line.ViewObject.LineWidth=2.;names.addObject(line)
+ t=d.addObject('App::Annotation','NamedLabel'+row['source_id']);t.LabelText=[row['display_name']+' *'];t.Position=q;t.ViewObject.TextColor=color;t.ViewObject.FontSize=15.;names.addObject(t)
+ validation.append({'source_id':row['source_id'],'display_name':row['display_name'],'position_mm':list(c),'source_position_preserved':True,'name_status':row['name_status']})
+d.recompute();v=G.activeDocument().activeView();v.viewAxonometric();v.fitAll();d.saveAs(str(O/'ET-MOUSE-NAMED-LANDMARKS-R03.FCStd'));(O/'validation.json').write_text(json.dumps(validation,indent=2))

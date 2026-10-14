@@ -1,0 +1,11 @@
+{
+  "revision": "ET-MOUSE-LANDMARK-REVIEW-R02",
+  "native_checkpoint": "designs/eye-tracker/mouse/landmark-review-r02/checkpoints/ET-MOUSE-LANDMARK-REVIEW-R02.FCStd",
+  "native_sha256": "4502757566c690dc89f52af260c37b66eeb24b0a611d375c7bc90f3d81c7b45e",
+  "source_study": "designs/eye-tracker/mouse/registered-eyes-study-r01/review.json",
+  "units": "mm",
+  "coordinate_frame": "Existing mouse assembly XYZ",
+  "editable_landmarks": 45,
+  "status": "Editable review proposals, not verified anatomy",
+  "camera_assembly_changed": false
+}

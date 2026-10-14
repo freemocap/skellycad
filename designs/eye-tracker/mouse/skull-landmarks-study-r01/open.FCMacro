@@ -1,0 +1,16 @@
+from pathlib import Path
+import FreeCAD as App,FreeCADGui as Gui
+ST=Path(__file__).resolve().parent
+path=ST/'checkpoints/ET-MOUSE-SKULL-LANDMARKS-STUDY-R01.FCStd'
+d=next((x for x in App.listDocuments().values() if x.FileName==str(path)),None)
+if d is None:d=App.openDocument(str(path))
+Gui.activeDocument().activeView().viewAxonometric()
+d.ExistingSkullStudy.Visibility=True;d.ExistingSkull.Visibility=True
+d.ExistingSkull.ViewObject.ShapeColor=(0.84,0.81,0.71)
+d.AtlasComparison.Visibility=False;d.AtlasSkull.ViewObject.ShapeColor=(0.1,0.7,0.75);d.AtlasSkull.ViewObject.Transparency=55
+d.TransferredLandmarks.Visibility=True
+for o in d.TransferredLandmarks.Group:
+ o.Visibility=True;o.ViewObject.PointSize=5.0;o.ViewObject.PointColor=(0.8,0.1,0.35)
+ if 'candidate' in o.AnatomicalName:o.ViewObject.PointSize=9.0
+Gui.activeDocument().activeView().fitAll()
+Gui.Selection.clearSelection()

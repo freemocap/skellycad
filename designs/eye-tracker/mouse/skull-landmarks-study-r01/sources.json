@@ -1,0 +1,28 @@
+{
+  "upstream_repository": "https://github.com/muratmaga/mouse_CT_atlas",
+  "git_tree_sha": "a611650a5e13b0de1abc285d55e5010fbe07cddb",
+  "retrieved": "2026-10-14",
+  "license": "GPL-3.0 as supplied by upstream repository; original license retained",
+  "files": [
+    {
+      "file": "LICENSE",
+      "url": "https://raw.githubusercontent.com/muratmaga/mouse_CT_atlas/a611650a5e13b0de1abc285d55e5010fbe07cddb/LICENSE",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "file": "45_LM-skull.mrk.json",
+      "url": "https://raw.githubusercontent.com/muratmaga/mouse_CT_atlas/a611650a5e13b0de1abc285d55e5010fbe07cddb/data/templates/45_LM-skull.mrk.json",
+      "sha256": "0a3e9930058e48578f7ff951233190fbf498a711914be84058d55ee7338543de"
+    },
+    {
+      "file": "35_mic_23strain_mus_template_UCHAR-label.nii.gz",
+      "url": "https://raw.githubusercontent.com/muratmaga/mouse_CT_atlas/a611650a5e13b0de1abc285d55e5010fbe07cddb/data/templates/35_mic_23strain_mus_template_UCHAR-label.nii.gz",
+      "sha256": "06f68b4612d9611d3645c58548106a375f57cef960947105c70bb5895a37c29f"
+    },
+    {
+      "file": "main.R",
+      "url": "https://raw.githubusercontent.com/muratmaga/mouse_CT_atlas/a611650a5e13b0de1abc285d55e5010fbe07cddb/src/main.R",
+      "sha256": "97af7934b16af1a036721648c0674cac29237c30a1bd0f9eea7d26f807d80395"
+    }
+  ]
+}

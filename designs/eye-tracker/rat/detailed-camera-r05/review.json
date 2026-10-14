@@ -1,0 +1,75 @@
+{
+  "revision": "ET-RAT-DETAILED-R05",
+  "units": "mm",
+  "status": "Detailed camera integrated; holder and ribbon interference retained for next fitting revision",
+  "native_checkpoint": "designs/eye-tracker/rat/detailed-camera-r05/checkpoints/ET-RAT-DETAILED-R05.FCStd",
+  "native_sha256": "4c2c4003e17bdbd8c289de6199d729e1631177db3eefa41c83933bf85b0a4bdb",
+  "source": {
+    "path": "designs/eye-tracker/rat/detailed-camera-r05/inputs/RAT-R04-complete-assembly.FCStd",
+    "sha256": "d492519cb7e41dac75533c45192eabc2814e1bd5cbc19dec238aafabcccc4497"
+  },
+  "camera_manifest": "designs/eye-tracker/shared/cameras/pupil-core-eye/active-model.json",
+  "camera_manifest_sha256": "c167939feec847adc5196a279f941e7df36c52cffe8623c64a6c9c6bc868408c",
+  "recipe_sha256": "86a507b386193b78ecd46255670f7dafc18a28f1f1e311f7eb762f927a813c88",
+  "parts": {
+    "carrier": "FinishedCarrier",
+    "holder": "eye_primary_Holder",
+    "cap": "eye_primary_Cap",
+    "clip": "eye_primary_Clip",
+    "baseplate": "skull_mount_Baseplate"
+  },
+  "new_interferences": {
+    "M4_lens/eye_primary_Holder": {
+      "overlap_mm3": 2.0416569152815898,
+      "previous_overlap_mm3": 0.0
+    }
+  },
+  "ribbon_interference": {
+    "FinishedCarrier": {
+      "overlap_mm3": 0.0017267192176595833,
+      "previous_overlap_mm3": 0.0
+    },
+    "eye_primary_Holder": {
+      "overlap_mm3": 1.402346507567477e-08,
+      "previous_overlap_mm3": 0.0
+    },
+    "eye_primary_Cap": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "eye_primary_Clip": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "skull_mount_Baseplate": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "PCB": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "camera_pcb": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "JST_4pin": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "M4_lens": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "IR_LED": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "IR_LED_001": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    }
+  },
+  "physical_fit_verified": false,
+  "print_release": false
+}

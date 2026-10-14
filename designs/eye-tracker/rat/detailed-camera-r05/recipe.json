@@ -1,0 +1,43 @@
+{
+  "revision": "ET-RAT-DETAILED-R05",
+  "species": "rat",
+  "units": "mm",
+  "source": {
+    "path": "designs/eye-tracker/rat/detailed-camera-r05/inputs/RAT-R04-complete-assembly.FCStd",
+    "sha256": "d492519cb7e41dac75533c45192eabc2814e1bd5cbc19dec238aafabcccc4497"
+  },
+  "source_review": "targeted-r03/review.json",
+  "selected_species_manifest": "designs/eye-tracker/rat/active-model.json",
+  "camera_manifest": "designs/eye-tracker/shared/cameras/pupil-core-eye/active-model.json",
+  "ribbon_parameters": [
+    4.188982206937715,
+    -2.1312908553677343,
+    -0.7423129371671859,
+    0.6891445471896371,
+    3.5000000000000004,
+    -0.5242053349632809,
+    0.18945116816712376,
+    2.5870575831103437,
+    3.5000000000000004,
+    -2.552156930168004,
+    -0.3158015559415285,
+    1.0927757629075988e-24
+  ],
+  "ribbon_surface_policy": "Three cylindrical zones re-solved at fixed endpoints for 0.25 mm ribbon clearance",
+  "preserve": "PCB poses, sensor optical-axis line, anatomy, carrier, holder, cap, clip, baseplate and arm seating",
+  "original_ribbon_parameters": [
+    4.133711197792906,
+    -2.074837834080464,
+    -0.7457938453195018,
+    0.7590187463217439,
+    5.921179914733067,
+    -0.5175118726427552,
+    0.14788469772685378,
+    1.7424908408497537,
+    3.5000003220461706,
+    -2.5996270029839588,
+    -0.3097007397932296,
+    3.48406712362982e-08
+  ],
+  "camera_manifest_sha256": "c167939feec847adc5196a279f941e7df36c52cffe8623c64a6c9c6bc868408c"
+}

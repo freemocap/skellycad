@@ -1,0 +1,78 @@
+{
+  "revision": "ET-MOUSE-EYE-AXES-R10",
+  "units": "mm",
+  "status": "Eye optical axes displayed; anatomy unchanged; source fitting limitations retained",
+  "native_checkpoint": "designs/eye-tracker/mouse/eye-axis-review-r10/checkpoints/ET-MOUSE-EYE-AXES-R10.FCStd",
+  "native_sha256": "407b3bd7baf4a28314c1815a9656ee902347528d40e90b950d98f1104e667b7b",
+  "source": {
+    "path": "designs/eye-tracker/mouse/detailed-camera-r09/checkpoints/ET-MOUSE-DETAILED-R09.FCStd",
+    "sha256": "8d2956df88830b042076fdfc1563b9ec5071007ddfc086978dcceeb3070c0ef5"
+  },
+  "camera_manifest": "designs/eye-tracker/shared/cameras/pupil-core-eye/active-model.json",
+  "camera_manifest_sha256": "c167939feec847adc5196a279f941e7df36c52cffe8623c64a6c9c6bc868408c",
+  "recipe_sha256": "df15ec2f6f160cf24d854502560e891b75c63f48b1dc89d6b5394d0821857162",
+  "parts": {
+    "carrier": "FinishedCarrier",
+    "holder": "eye_primary_Holder",
+    "cap": "eye_primary_Cap",
+    "clip": "eye_primary_Clip",
+    "baseplate": "skull_mount_Baseplate"
+  },
+  "new_interferences": {
+    "M4_lens/eye_primary_Holder": {
+      "overlap_mm3": 2.0416569152809965,
+      "previous_overlap_mm3": 0.0
+    }
+  },
+  "ribbon_interference": {
+    "FinishedCarrier": {
+      "overlap_mm3": 0.007190949938040101,
+      "previous_overlap_mm3": 0.0
+    },
+    "eye_primary_Holder": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "eye_primary_Cap": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "eye_primary_Clip": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "skull_mount_Baseplate": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "PCB": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "camera_pcb": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "JST_4pin": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "M4_lens": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "IR_LED": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "IR_LED_001": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    }
+  },
+  "physical_fit_verified": false,
+  "print_release": false,
+  "source_manifest": "designs/eye-tracker/mouse/detailed-camera-r09/review.json",
+  "anatomy_audit": "designs/eye-tracker/shared/eye-anatomy-audit-r01/README.md",
+  "axis_validation": "axis-validation.json"
+}

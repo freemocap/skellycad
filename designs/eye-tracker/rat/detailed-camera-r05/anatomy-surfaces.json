@@ -1,0 +1,17 @@
+{
+  "StandardSkull": {
+    "surface_crossings": 0
+  },
+  "RightEyeSclera": {
+    "surface_crossings": 0
+  },
+  "RightEyeCornea": {
+    "surface_crossings": 0
+  },
+  "LeftEyeSclera": {
+    "surface_crossings": 0
+  },
+  "LeftEyeCornea": {
+    "surface_crossings": 0
+  }
+}

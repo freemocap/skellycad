@@ -1,0 +1,17 @@
+{
+  "StandardSkull": {
+    "guard_surface_crossings": 0
+  },
+  "RightEyeSclera": {
+    "guard_surface_crossings": 0
+  },
+  "RightEyeCornea": {
+    "guard_surface_crossings": 0
+  },
+  "LeftEyeSclera": {
+    "guard_surface_crossings": 0
+  },
+  "LeftEyeCornea": {
+    "guard_surface_crossings": 0
+  }
+}

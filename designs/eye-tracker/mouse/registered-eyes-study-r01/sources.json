@@ -1,0 +1,29 @@
+{
+  "provider": "USC Biomedical Imaging Group / Dogdas et al. 2007",
+  "license": "CC BY-SA 4.0; preserved LICENSE-Digimouse.txt",
+  "retrieved": "2026-10-14",
+  "sources": [
+    "dogdas2007Digimouse",
+    "uscDigimouseDownloads"
+  ],
+  "files": [
+    {
+      "file": "atlas.zip",
+      "url": "https://neuroimage.usc.edu/mouse_atlas/atlas.zip",
+      "sha256": "6f7cbd8a7236a78c47a14c3259d387439c0dc0284b2a83fa955f8c49efe11761",
+      "bytes": 907411
+    },
+    {
+      "file": "cryo_data.zip",
+      "url": "https://neuroimage.usc.edu/mouse_atlas/cryo_data.zip",
+      "sha256": "c6b40136e06709ad7b5ce1b3496828b1a282b462ca2ec4a5610971af07c73090",
+      "bytes": 89109742
+    },
+    {
+      "file": "tesselated_atlas.zip",
+      "url": "https://neuroimage.usc.edu/mouse_atlas/tesselated_atlas.zip",
+      "sha256": "78c09b567497d80586a5403206494f9dea620940d61b87806f5b34f46cd6415d",
+      "bytes": 4163774
+    }
+  ]
+}

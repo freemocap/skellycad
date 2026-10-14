@@ -1,0 +1,8 @@
+{
+  "native_checkpoint": "designs/eye-tracker/mouse/landmark-eyes-r04/checkpoints/ET-MOUSE-LANDMARK-EYES-R04.FCStd",
+  "native_sha256": "74577ef9d5652badd43241910e4363717993dbfcc38796de3759d5199ca701d3",
+  "units": "mm",
+  "placement_recipe": "designs/eye-tracker/mouse/landmark-eyes-r04/placement.json",
+  "status": "review checkpoint; selected active-model unchanged",
+  "physical_fit_verified": false
+}

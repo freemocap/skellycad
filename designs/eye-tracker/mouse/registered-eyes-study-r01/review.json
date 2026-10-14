@@ -1,0 +1,18 @@
+{
+  "revision": "ET-MOUSE-REGISTERED-EYES-STUDY-R01",
+  "units": "mm",
+  "native_checkpoint": "designs/eye-tracker/mouse/registered-eyes-study-r01/checkpoints/ET-MOUSE-REGISTERED-EYES-STUDY-R01.FCStd",
+  "native_sha256": "ab1fe889d2af1da50bd3b8add36dcd7942f42cccec4ae80edb44fb63bcd9122d",
+  "comparison_assembly": "ET-MOUSE-GUARD-R13",
+  "comparison_assembly_sha256": "f6f4a2b9c7945100ebe43076df77bd0c66b44758579040ce37deb2b2691fd87f",
+  "status": "Exploratory skull registration and conditional eye-envelope study; not approved eye placement",
+  "complete_camera_assembly_changed": false,
+  "physical_fit_verified": false,
+  "sources": [
+    "dogdas2007Digimouse",
+    "uscDigimouseDownloads",
+    "maga2017MouseSkullAtlas",
+    "magaMouseCTAtlasRepository",
+    "oommenStahl2008MouseOrientation"
+  ]
+}

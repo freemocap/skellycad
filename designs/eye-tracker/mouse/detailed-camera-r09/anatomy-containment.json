@@ -1,0 +1,17 @@
+{
+  "Eye1-anatomy": {
+    "watertight": true,
+    "samples": 2000,
+    "camera_samples_inside": 0
+  },
+  "Eye2-anatomy": {
+    "watertight": true,
+    "samples": 2000,
+    "camera_samples_inside": 0
+  },
+  "Skull-anatomy": {
+    "watertight": true,
+    "samples": 2000,
+    "camera_samples_inside": 0
+  }
+}

@@ -1,0 +1,90 @@
+[
+  {
+    "source_id": "13",
+    "display_name": "Bregma",
+    "position_mm": [
+      3.3037602633634044,
+      -1.8680406082288936,
+      0.0013346838747612
+    ],
+    "source_position_preserved": true,
+    "name_status": "Tentative anatomical ID mapping"
+  },
+  {
+    "source_id": "16",
+    "display_name": "Lambda",
+    "position_mm": [
+      -1.2024643030894744,
+      -2.4236358131765243,
+      -0.12046445789899
+    ],
+    "source_position_preserved": true,
+    "name_status": "Tentative anatomical ID mapping"
+  },
+  {
+    "source_id": "51",
+    "display_name": "Nasion",
+    "position_mm": [
+      10.058211732156483,
+      -3.2579145934917033,
+      0.4323299850190754
+    ],
+    "source_position_preserved": true,
+    "name_status": "Tentative anatomical ID mapping"
+  },
+  {
+    "source_id": "1",
+    "display_name": "Nasal tip",
+    "position_mm": [
+      18.47453035094037,
+      -5.659672826460342,
+      0.8413342162997033
+    ],
+    "source_position_preserved": true,
+    "name_status": "Descriptive region; tentative nasale ID mapping"
+  },
+  {
+    "source_id": "9",
+    "display_name": "Right outer orbit reference",
+    "position_mm": [
+      8.574168338191079,
+      -6.601675050917516,
+      5.886035516264997
+    ],
+    "source_position_preserved": true,
+    "name_status": "Descriptive regional label; author landmark definition unverified"
+  },
+  {
+    "source_id": "11",
+    "display_name": "Right inner orbit reference",
+    "position_mm": [
+      6.3211564570314,
+      -2.6149963362758033,
+      3.255579639761873
+    ],
+    "source_position_preserved": true,
+    "name_status": "Descriptive regional label; author landmark definition unverified"
+  },
+  {
+    "source_id": "8",
+    "display_name": "Left outer orbit reference",
+    "position_mm": [
+      9.182931958109673,
+      -6.488943359087836,
+      -5.187087745146081
+    ],
+    "source_position_preserved": true,
+    "name_status": "Descriptive regional label; author landmark definition unverified"
+  },
+  {
+    "source_id": "10",
+    "display_name": "Left inner orbit reference",
+    "position_mm": [
+      6.545672338685026,
+      -2.5875372005095763,
+      -2.817683795180929
+    ],
+    "source_position_preserved": true,
+    "name_status": "Descriptive regional label; author landmark definition unverified"
+  }
+]

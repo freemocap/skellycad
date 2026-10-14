@@ -1,0 +1,74 @@
+{
+  "species": "rat",
+  "units": "mm",
+  "width_mm": 6.41,
+  "external_length_mm": 6.291,
+  "limbus_diameter_mm": 5.64,
+  "anterior_apical_radius_mm": 2.965,
+  "posterior_apical_radius_mm": 3.23,
+  "posterior_z_mm": -3.0400940427778713,
+  "equator_z_mm": -0.2059113700374866,
+  "limbus_z_mm": 1.1409059572221292,
+  "apex_z_mm": 3.250905957222129,
+  "limbus_squared_radius_derivative": -1.607819905213271,
+  "construction": "Piecewise cubic Hermite squared radius for sclera; spherical mouse cap / oblate rat cap. Position and tangent continuous at equator and limbus.",
+  "meshes": {
+    "sclera": {
+      "file": "rat-sclera.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": 98.61215911946186,
+      "bounds_mm": [
+        [
+          -3.205,
+          -3.205,
+          -3.0400940427778713
+        ],
+        [
+          3.205,
+          3.205,
+          1.1409059572221292
+        ]
+      ],
+      "faces": 98304
+    },
+    "cornea": {
+      "file": "rat-cornea.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": 31.38851258162241,
+      "bounds_mm": [
+        [
+          -2.82,
+          -2.82,
+          1.1409059572221292
+        ],
+        [
+          2.82,
+          2.82,
+          3.250905957222129
+        ]
+      ],
+      "faces": 73728
+    },
+    "whole": {
+      "file": "rat-whole.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": 130.00067170108426,
+      "bounds_mm": [
+        [
+          -3.205,
+          -3.205,
+          -3.0400940427778713
+        ],
+        [
+          3.205,
+          3.205,
+          3.250905957222129
+        ]
+      ],
+      "faces": 171648
+    }
+  }
+}

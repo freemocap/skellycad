@@ -1,0 +1,10 @@
+from pathlib import Path
+import json,hashlib,shutil
+import FreeCAD as A,FreeCADGui as G
+from PySide import QtWidgets
+S=Path(__file__).resolve().parent;R=S.parents[3];m=json.loads((S/'review.json').read_text());source=R/m['native_checkpoint'];assert hashlib.sha256(source.read_bytes()).hexdigest()==m['native_sha256'];p=R/'generated/eye-tracker/mouse/named-landmarks-r03'/source.name;p.parent.mkdir(parents=True,exist_ok=True)
+if not p.exists():shutil.copy2(source,p)
+for panel in G.getMainWindow().findChildren(QtWidgets.QDialog,'SkellyLandmarkReviewR02'):panel.close()
+d=next((d for d in A.listDocuments().values() if Path(d.FileName)==p),None)
+if d is None:d=A.openDocument(str(p))
+A.setActiveDocument(d.Name)

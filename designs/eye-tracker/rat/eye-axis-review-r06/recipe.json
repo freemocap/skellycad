@@ -1,0 +1,11 @@
+{
+  "revision": "ET-RAT-EYE-AXES-R06",
+  "species": "rat",
+  "units": "mm",
+  "source_manifest": "designs/eye-tracker/rat/detailed-camera-r05/review.json",
+  "source": {
+    "path": "designs/eye-tracker/rat/detailed-camera-r05/checkpoints/ET-RAT-DETAILED-R05.FCStd",
+    "sha256": "4c2c4003e17bdbd8c289de6199d729e1631177db3eefa41c83933bf85b0a4bdb"
+  },
+  "change": "Display existing geometric eye axes; no eye shape or skull placement change"
+}

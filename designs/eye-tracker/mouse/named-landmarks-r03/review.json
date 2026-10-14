@@ -1,0 +1,7 @@
+{
+  "native_checkpoint": "designs/eye-tracker/mouse/named-landmarks-r03/checkpoints/ET-MOUSE-NAMED-LANDMARKS-R03.FCStd",
+  "native_sha256": "a771f18aad77b0ff6d0eb70918e089004368e0fe2c6b4797130e5d916e5f818d",
+  "units": "mm",
+  "landmark_coordinates_changed": false,
+  "name_mapping": "interpretive; see labels.json"
+}

@@ -1,0 +1,23 @@
+from pathlib import Path
+import json,hashlib
+import FreeCAD as A,FreeCADGui as G,Part,Mesh
+R=Path(__file__).resolve().parents[4];S=Path(__file__).resolve().parent;O=R/'generated/eye-tracker/mouse/landmark-review-r02'
+source=json.loads((R/'designs/eye-tracker/mouse/registered-eyes-study-r01/review.json').read_text());src=R/source['native_checkpoint'];assert hashlib.sha256(src.read_bytes()).hexdigest()==source['native_sha256']
+a=json.loads((R/'designs/eye-tracker/mouse/active-model.json').read_text());assert hashlib.sha256((R/a['native_checkpoint']).read_bytes()).hexdigest()==a['native_sha256']
+d=A.openDocument(str(src));d.Label='Mouse landmark review R02 - editable proposals'
+for name in ['AtlasSource','PreviousEyes','CandidateEyes','KeyLandmarks','All45Landmarks','ConditionalSkullFrame']:d.getObject(name).Visibility=False
+d.ExistingSkull.Visibility=False
+ref=d.addObject('Mesh::Feature','DetailedReference');ref.Label='Detailed atlas reference - 180k faces';ref.Mesh=Mesh.Mesh(str(O/'detailed-reference.stl'));ref.ViewObject.ShapeColor=(.79,.78,.71);ref.ViewObject.DisplayMode='Shaded';ref.setEditorMode('Placement',1)
+g=d.addObject('App::DocumentObjectGroup','EditableLandmarks');g.Label='Editable landmark proposals (originals retained)'
+ls=json.loads((R/'designs/eye-tracker/mouse/skull-landmarks-study-r01/landmarks.json').read_text())['landmarks'];focus=['8','9','10','11','12','7','13','16','51']
+for row in ls:
+ lid=row['source_label'];v=A.Vector(*row['transferred_assembly_mm']);o=d.addObject('Part::Feature','ReviewLM'+lid);o.Label='LM '+lid+' - '+row['name'];o.Shape=Part.makeSphere(.12);o.Placement.Base=v;g.addObject(o)
+ for name,value in [('SourceID',lid),('ProposedName',row['name']),('NameEvidence',row['name_status']),('ReviewerNotes','')]:o.addProperty('App::PropertyString',name,'Review');setattr(o,name,value)
+ o.setEditorMode('SourceID',1);o.addProperty('App::PropertyVector','OriginalPosition','Review');o.OriginalPosition=v;o.setEditorMode('OriginalPosition',1)
+ o.addProperty('App::PropertyEnumeration','ReviewState','Review');o.ReviewState=['Unreviewed','Proposed correction','User confirmed'];o.ReviewState='Unreviewed'
+ t=d.addObject('App::Annotation','ReviewText'+lid);t.LabelText=['LM '+lid];t.Position=v+A.Vector(0,.35,.35);t.ViewObject.FontSize=12.;t.ViewObject.TextColor=(.75,.05,.25);g.addObject(t)
+ o.addProperty('App::PropertyLink','Annotation','Review');o.Annotation=t;o.setEditorMode('Annotation',1);o.ViewObject.ShapeColor=(.95,.15,.4);o.Visibility=lid in focus;t.Visibility=lid in focus
+meta=d.addObject('App::FeaturePython','ReviewMetadata');meta.addProperty('App::PropertyString','SourceStudyHash');meta.SourceStudyHash=source['native_sha256'];meta.addProperty('App::PropertyString','CoordinateFrame');meta.CoordinateFrame='Existing mouse assembly XYZ, millimetres';meta.addProperty('App::PropertyString','ReviewRevision');meta.ReviewRevision='landmark-review-r02'
+d.recompute();G.activeDocument().activeView().viewAxonometric();G.activeDocument().activeView().fitAll();d.saveAs(str(O/'ET-MOUSE-LANDMARK-REVIEW-R02.FCStd'))
+import runpy
+runpy.run_path(str(S/'panel.py'))

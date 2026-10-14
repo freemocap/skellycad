@@ -1,0 +1,16 @@
+{
+  "frame_orthonormal": true,
+  "frame_determinant": 0.9999999999999999,
+  "eyes": {
+    "Eye1": {
+      "axis_unit": true,
+      "mesh_watertight": true,
+      "positive_volume_mm3": 18.201302862137325
+    },
+    "Eye2": {
+      "axis_unit": true,
+      "mesh_watertight": true,
+      "positive_volume_mm3": 18.20130287208043
+    }
+  }
+}

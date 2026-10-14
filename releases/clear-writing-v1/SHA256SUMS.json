@@ -1,0 +1,15 @@
+{
+  "LICENSE": "6f1e622c82a380075843bb084a7ec3b1f1d12a4a02526d75e78b0924a860aa75",
+  "README.md": "17fa6cfa4793c502349d7c6289745dcf327a04ff235e67abada9742ef7f9ea64",
+  "references.bib": "8c08b39dd4d2998689d1481b527ddb7299762c31ecfb2ae50e160591d1fc3457",
+  "skills/asd-ste100/examples/before-after.md": "d7bf2b4a390f1997a18790b243dd4c0670018d0d4d5183ec8ed44cbbf282bc52",
+  "skills/asd-ste100/examples/linter-edge-cases.md": "b6cc08af876014453b0c72d26ee4bfaeed1e9a154b5046947392752911ce1774",
+  "skills/asd-ste100/LICENSE": "d3c674e8592076c9021a59b55177adbcba6fd7e1710082becb922522b22ec672",
+  "skills/asd-ste100/README.md": "45380a0fb7892b83bbb4fd0aa8b8ae67ea62f095da721d7893a8df4dd3a1cdb6",
+  "skills/asd-ste100/references/writing-rules.md": "4b92c86bf803f9f54e069767d34dc7356fbb95fb52a3f28476093917c608c102",
+  "skills/asd-ste100/scripts/ste-lint.py": "1b97b2d22ba50cde10654db56e1b98adf96d250dd3c8f693f8a81361b1084e85",
+  "skills/asd-ste100/SKILL.md": "42d0c104f05820a515ea9fbb435f923a9c38080b3a0002dc1e63b8c945371c79",
+  "skills/clear-technical-writing/agents/openai.yaml": "c74de2ec0503161b17044afe91f418f3b1ba608e3eeab025a7b0d656abcd6235",
+  "skills/clear-technical-writing/references/sources.md": "d4108476fece54a16509c3cfc553bd1213b3c0b0ae59a9de51a20cca2183cfd7",
+  "skills/clear-technical-writing/SKILL.md": "099f296e26d74fb43e37ddf6f7717bc291de378892875551a082df7d5c70c974"
+}

@@ -1,0 +1,5 @@
+from pathlib import Path
+import FreeCAD as A,FreeCADGui as G
+p=Path(__file__).resolve().parent/'checkpoints/ET-MOUSE-REGISTERED-EYES-STUDY-R01.FCStd'
+d=A.openDocument(str(p));A.setActiveDocument(d.Name)
+G.activeDocument().activeView().viewAxonometric();G.activeDocument().activeView().fitAll()

@@ -1,0 +1,224 @@
+{
+  "revision": "ET-MOUSE-DETAILED-R09",
+  "camera_checkpoint": "CAMERA-DUMMY-R08",
+  "units": "mm",
+  "source": {
+    "path": "designs/eye-tracker/mouse/inset-arm-r08/checkpoints/ET-MOUSE-MONO-STEM-R08.FCStd",
+    "sha256": "5472f84ddb34a32459956c42130b0cc4ba76c317f549d860a940ec22962f981d"
+  },
+  "endpoint_error_mm": 5.558184467512547e-06,
+  "surface_metric": {
+    "max_length_error": 6.106777306058575e-10,
+    "max_shear": 4.968736810884167e-10
+  },
+  "endpoint_frames_preserved": true,
+  "thickness_mm": 0.25,
+  "fixed_interfaces": {
+    "FinishedCarrier": {
+      "difference_mm3": 0.0
+    },
+    "eye_primary_Holder": {
+      "difference_mm3": 0.0
+    },
+    "eye_primary_Cap": {
+      "difference_mm3": 0.0
+    },
+    "eye_primary_Clip": {
+      "difference_mm3": 0.0
+    },
+    "skull_mount_Baseplate": {
+      "difference_mm3": 0.0
+    },
+    "RetainedPCBTray": {
+      "difference_mm3": 0.0
+    },
+    "RetainedSocket": {
+      "difference_mm3": 0.0
+    },
+    "UpperSupport": {
+      "difference_mm3": 0.0
+    },
+    "RearRibbonGuard": {
+      "difference_mm3": 0.0
+    }
+  },
+  "camera_interference": {
+    "PCB/FinishedCarrier": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "PCB/eye_primary_Holder": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "PCB/eye_primary_Cap": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "PCB/eye_primary_Clip": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "PCB/skull_mount_Baseplate": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "camera_pcb/FinishedCarrier": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "camera_pcb/eye_primary_Holder": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "camera_pcb/eye_primary_Cap": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "camera_pcb/eye_primary_Clip": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "camera_pcb/skull_mount_Baseplate": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "JST_4pin/FinishedCarrier": {
+      "overlap_mm3": 0.059028498812171065,
+      "previous_overlap_mm3": 0.059028498812171065
+    },
+    "JST_4pin/eye_primary_Holder": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "JST_4pin/eye_primary_Cap": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "JST_4pin/eye_primary_Clip": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "JST_4pin/skull_mount_Baseplate": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "M4_lens/FinishedCarrier": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "M4_lens/eye_primary_Holder": {
+      "overlap_mm3": 2.0416569152809965,
+      "previous_overlap_mm3": 0.0
+    },
+    "M4_lens/eye_primary_Cap": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "M4_lens/eye_primary_Clip": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "M4_lens/skull_mount_Baseplate": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "IR_LED/FinishedCarrier": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "IR_LED/eye_primary_Holder": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "IR_LED/eye_primary_Cap": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "IR_LED/eye_primary_Clip": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "IR_LED/skull_mount_Baseplate": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "IR_LED_001/FinishedCarrier": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "IR_LED_001/eye_primary_Holder": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "IR_LED_001/eye_primary_Cap": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "IR_LED_001/eye_primary_Clip": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "IR_LED_001/skull_mount_Baseplate": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    }
+  },
+  "ribbon_interference": {
+    "FinishedCarrier": {
+      "overlap_mm3": 0.007190949938040101,
+      "previous_overlap_mm3": 0.0
+    },
+    "eye_primary_Holder": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "eye_primary_Cap": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "eye_primary_Clip": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "skull_mount_Baseplate": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "PCB": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "camera_pcb": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "JST_4pin": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "M4_lens": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "IR_LED": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "IR_LED_001": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    }
+  },
+  "physical_fit_verified": false,
+  "new_interferences": {
+    "M4_lens/eye_primary_Holder": {
+      "overlap_mm3": 2.0416569152809965,
+      "previous_overlap_mm3": 0.0
+    }
+  },
+  "ribbon_clear": false,
+  "aim": {
+    "original_axis_line_preserved": true
+  }
+}

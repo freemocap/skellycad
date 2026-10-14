@@ -1,0 +1,82 @@
+[
+  {
+    "source_id": "13",
+    "display_name": "Bregma",
+    "color": [
+      0.9,
+      0.25,
+      0.15
+    ],
+    "name_status": "Tentative anatomical ID mapping"
+  },
+  {
+    "source_id": "16",
+    "display_name": "Lambda",
+    "color": [
+      0.95,
+      0.65,
+      0.1
+    ],
+    "name_status": "Tentative anatomical ID mapping"
+  },
+  {
+    "source_id": "51",
+    "display_name": "Nasion",
+    "color": [
+      0.7,
+      0.2,
+      0.8
+    ],
+    "name_status": "Tentative anatomical ID mapping"
+  },
+  {
+    "source_id": "1",
+    "display_name": "Nasal tip",
+    "color": [
+      0.1,
+      0.7,
+      0.55
+    ],
+    "name_status": "Descriptive region; tentative nasale ID mapping"
+  },
+  {
+    "source_id": "9",
+    "display_name": "Right outer orbit reference",
+    "color": [
+      0.1,
+      0.55,
+      0.95
+    ],
+    "name_status": "Descriptive regional label; author landmark definition unverified"
+  },
+  {
+    "source_id": "11",
+    "display_name": "Right inner orbit reference",
+    "color": [
+      0.1,
+      0.8,
+      0.9
+    ],
+    "name_status": "Descriptive regional label; author landmark definition unverified"
+  },
+  {
+    "source_id": "8",
+    "display_name": "Left outer orbit reference",
+    "color": [
+      0.85,
+      0.2,
+      0.5
+    ],
+    "name_status": "Descriptive regional label; author landmark definition unverified"
+  },
+  {
+    "source_id": "10",
+    "display_name": "Left inner orbit reference",
+    "color": [
+      0.65,
+      0.3,
+      0.85
+    ],
+    "name_status": "Descriptive regional label; author landmark definition unverified"
+  }
+]

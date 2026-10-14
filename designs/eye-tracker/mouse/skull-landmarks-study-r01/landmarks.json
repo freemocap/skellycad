@@ -1,0 +1,1043 @@
+{
+  "units": "mm",
+  "source_frame": "atlas LPS",
+  "target_frame": "Recovered R10 assembly XYZ",
+  "transformation": "proper similarity; 85% trimmed nearest-point ICP; no reflection or nonrigid deformation",
+  "landmarks": [
+    {
+      "id": "MAGA_LM_1",
+      "source_label": "1",
+      "name": "Nasale candidate",
+      "name_status": "tentative anatomical interpretation",
+      "atlas_lps_mm": [
+        -9.23677,
+        -24.8342,
+        10.068
+      ],
+      "transferred_assembly_mm": [
+        18.47453035094037,
+        -5.659672826460342,
+        0.8413342162997033
+      ],
+      "nearest_surface_mm": [
+        18.343937810928832,
+        -5.315673565180827,
+        0.7802250677819211
+      ],
+      "surface_distance_mm": 0.3729936075860896,
+      "status": "similarity-transferred estimate; not independently landmark-validated"
+    },
+    {
+      "id": "MAGA_LM_2",
+      "source_label": "2",
+      "name": "Atlas landmark 2",
+      "name_status": "source numeric ID; anatomical name unresolved",
+      "atlas_lps_mm": [
+        -7.96065,
+        -22.153,
+        10.2827
+      ],
+      "transferred_assembly_mm": [
+        15.721956815710946,
+        -5.011137122553036,
+        -0.6472003642720541
+      ],
+      "nearest_surface_mm": [
+        15.820010574730011,
+        -4.875137777946062,
+        -0.8644074785538978
+      ],
+      "surface_distance_mm": 0.2743889427180716,
+      "status": "similarity-transferred estimate; not independently landmark-validated"
+    },
+    {
+      "id": "MAGA_LM_3",
+      "source_label": "3",
+      "name": "Atlas landmark 3",
+      "name_status": "source numeric ID; anatomical name unresolved",
+      "atlas_lps_mm": [
+        -10.4616,
+        -22.0825,
+        10.4227
+      ],
+      "transferred_assembly_mm": [
+        15.533247045875257,
+        -4.936939995311773,
+        2.0350230251498154
+      ],
+      "nearest_surface_mm": [
+        15.631863149215452,
+        -4.822610946836465,
+        2.2572513361026565
+      ],
+      "surface_distance_mm": 0.2686665021029342,
+      "status": "similarity-transferred estimate; not independently landmark-validated"
+    },
+    {
+      "id": "MAGA_LM_4",
+      "source_label": "4",
+      "name": "Atlas landmark 4",
+      "name_status": "source numeric ID; anatomical name unresolved",
+      "atlas_lps_mm": [
+        -7.28884,
+        -18.6809,
+        11.252
+      ],
+      "transferred_assembly_mm": [
+        12.201168669222351,
+        -3.4692158852640045,
+        -1.495894131989612
+      ],
+      "nearest_surface_mm": [
+        12.229779803432118,
+        -3.4203190340081235,
+        -1.539957095080479
+      ],
+      "surface_distance_mm": 0.07177077246244558,
+      "status": "similarity-transferred estimate; not independently landmark-validated"
+    },
+    {
+      "id": "MAGA_LM_5",
+      "source_label": "5",
+      "name": "Atlas landmark 5",
+      "name_status": "source numeric ID; anatomical name unresolved",
+      "atlas_lps_mm": [
+        -11.0323,
+        -18.7836,
+        11.3579
+      ],
+      "transferred_assembly_mm": [
+        12.125675751793782,
+        -3.4976856122800957,
+        2.5247794870413536
+      ],
+      "nearest_surface_mm": [
+        12.137354107551968,
+        -3.4625509858362307,
+        2.551943097404845
+      ],
+      "surface_distance_mm": 0.04592044965529266,
+      "status": "similarity-transferred estimate; not independently landmark-validated"
+    },
+    {
+      "id": "MAGA_LM_6",
+      "source_label": "6",
+      "name": "Atlas landmark 6",
+      "name_status": "source numeric ID; anatomical name unresolved",
+      "atlas_lps_mm": [
+        -8.66784,
+        -17.3349,
+        11.8165
+      ],
+      "transferred_assembly_mm": [
+        10.775182573446788,
+        -2.72619416596849,
+        -0.060473373374412276
+      ],
+      "nearest_surface_mm": [
+        10.782268750677309,
+        -2.6811682042735145,
+        -0.05851639381495153
+      ],
+      "surface_distance_mm": 0.04562215364596355,
+      "status": "similarity-transferred estimate; not independently landmark-validated"
+    },
+    {
+      "id": "MAGA_LM_7",
+      "source_label": "7",
+      "name": "Atlas landmark 7",
+      "name_status": "source numeric ID; anatomical name unresolved",
+      "atlas_lps_mm": [
+        -9.85248,
+        -17.5675,
+        11.887
+      ],
+      "transferred_assembly_mm": [
+        10.96915111372444,
+        -2.7239970319981914,
+        1.2230743575512637
+      ],
+      "nearest_surface_mm": [
+        10.971991543605764,
+        -2.7062386397209712,
+        1.2224556998934468
+      ],
+      "surface_distance_mm": 0.01799475688860312,
+      "status": "similarity-transferred estimate; not independently landmark-validated"
+    },
+    {
+      "id": "MAGA_LM_8",
+      "source_label": "8",
+      "name": "Atlas landmark 8",
+      "name_status": "source numeric ID; anatomical name unresolved",
+      "atlas_lps_mm": [
+        -4.0843,
+        -16.1097,
+        7.97114
+      ],
+      "transferred_assembly_mm": [
+        9.182931958109673,
+        -6.488943359087836,
+        -5.187087745146081
+      ],
+      "nearest_surface_mm": [
+        9.180971153753056,
+        -6.484928510770447,
+        -5.189903905502546
+      ],
+      "surface_distance_mm": 0.005281526284123995,
+      "status": "similarity-transferred estimate; not independently landmark-validated"
+    },
+    {
+      "id": "MAGA_LM_9",
+      "source_label": "9",
+      "name": "Atlas landmark 9",
+      "name_status": "source numeric ID; anatomical name unresolved",
+      "atlas_lps_mm": [
+        -14.4135,
+        -16.0269,
+        8.18281
+      ],
+      "transferred_assembly_mm": [
+        8.574168338191079,
+        -6.601675050917516,
+        5.886035516264997
+      ],
+      "nearest_surface_mm": [
+        8.584313803732423,
+        -6.618817525956802,
+        5.865827736591386
+      ],
+      "surface_distance_mm": 0.028375152525763513,
+      "status": "similarity-transferred estimate; not independently landmark-validated"
+    },
+    {
+      "id": "MAGA_LM_10",
+      "source_label": "10",
+      "name": "Atlas landmark 10",
+      "name_status": "source numeric ID; anatomical name unresolved",
+      "atlas_lps_mm": [
+        -6.29512,
+        -13.3,
+        11.338
+      ],
+      "transferred_assembly_mm": [
+        6.545672338685026,
+        -2.5875372005095763,
+        -2.817683795180929
+      ],
+      "nearest_surface_mm": [
+        6.507395798249433,
+        -2.724472514349387,
+        -2.7291133369481955
+      ],
+      "surface_distance_mm": 0.16751447637646574,
+      "status": "similarity-transferred estimate; not independently landmark-validated"
+    },
+    {
+      "id": "MAGA_LM_11",
+      "source_label": "11",
+      "name": "Atlas landmark 11",
+      "name_status": "source numeric ID; anatomical name unresolved",
+      "atlas_lps_mm": [
+        -11.9543,
+        -13.3513,
+        11.499
+      ],
+      "transferred_assembly_mm": [
+        6.3211564570314,
+        -2.6149963362758033,
+        3.255579639761873
+      ],
+      "nearest_surface_mm": [
+        6.305658813878591,
+        -2.731796650458887,
+        3.173628880697403
+      ],
+      "surface_distance_mm": 0.14352148705960935,
+      "status": "similarity-transferred estimate; not independently landmark-validated"
+    },
+    {
+      "id": "MAGA_LM_12",
+      "source_label": "12",
+      "name": "Atlas landmark 12",
+      "name_status": "source numeric ID; anatomical name unresolved",
+      "atlas_lps_mm": [
+        -3.35004,
+        -12.6656,
+        6.66584
+      ],
+      "transferred_assembly_mm": [
+        5.379440121052003,
+        -7.368222599678398,
+        -6.193439811114883
+      ],
+      "nearest_surface_mm": [
+        5.318533873798065,
+        -7.540295290087398,
+        -5.931261646749836
+      ],
+      "surface_distance_mm": 0.3194620033884706,
+      "status": "similarity-transferred estimate; not independently landmark-validated"
+    },
+    {
+      "id": "MAGA_LM_13",
+      "source_label": "13",
+      "name": "Bregma candidate",
+      "name_status": "tentative anatomical interpretation",
+      "atlas_lps_mm": [
+        -9.04546,
+        -10.3396,
+        11.7106
+      ],
+      "transferred_assembly_mm": [
+        3.3037602633634044,
+        -1.8680406082288936,
+        0.001334683874761211
+      ],
+      "nearest_surface_mm": [
+        3.356080963113828,
+        -2.035536424292266,
+        0.041597447524146895
+      ],
+      "surface_distance_mm": 0.18003720214943159,
+      "status": "similarity-transferred estimate; not independently landmark-validated"
+    },
+    {
+      "id": "MAGA_LM_14",
+      "source_label": "14",
+      "name": "Atlas landmark 14",
+      "name_status": "source numeric ID; anatomical name unresolved",
+      "atlas_lps_mm": [
+        -15.1993,
+        -12.5024,
+        6.98388
+      ],
+      "transferred_assembly_mm": [
+        4.6190147830218535,
+        -7.407944639289459,
+        6.508964340498888
+      ],
+      "nearest_surface_mm": [
+        4.58009491397139,
+        -7.623755883703075,
+        6.182426118835086
+      ],
+      "surface_distance_mm": 0.39334013223877523,
+      "status": "similarity-transferred estimate; not independently landmark-validated"
+    },
+    {
+      "id": "MAGA_LM_15",
+      "source_label": "15",
+      "name": "Atlas landmark 15",
+      "name_status": "source numeric ID; anatomical name unresolved",
+      "atlas_lps_mm": [
+        -5.12167,
+        -6.17551,
+        9.10023
+      ],
+      "transferred_assembly_mm": [
+        -1.276461075232839,
+        -3.926296325745657,
+        -4.510537715148612
+      ],
+      "nearest_surface_mm": [
+        -1.2691944288401522,
+        -3.938336709078018,
+        -4.499814060571433
+      ],
+      "surface_distance_mm": 0.01768535405574893,
+      "status": "similarity-transferred estimate; not independently landmark-validated"
+    },
+    {
+      "id": "MAGA_LM_16",
+      "source_label": "16",
+      "name": "Lambda candidate",
+      "name_status": "tentative anatomical interpretation",
+      "atlas_lps_mm": [
+        -9.15679,
+        -6.24481,
+        10.6505
+      ],
+      "transferred_assembly_mm": [
+        -1.2024643030894744,
+        -2.4236358131765243,
+        -0.12046445789898996
+      ],
+      "nearest_surface_mm": [
+        -1.200315129912965,
+        -2.4485946977691593,
+        -0.11479083577186314
+      ],
+      "surface_distance_mm": 0.02568569355677438,
+      "status": "similarity-transferred estimate; not independently landmark-validated"
+    },
+    {
+      "id": "MAGA_LM_17",
+      "source_label": "17",
+      "name": "Atlas landmark 17",
+      "name_status": "source numeric ID; anatomical name unresolved",
+      "atlas_lps_mm": [
+        -13.2994,
+        -5.9891,
+        9.02419
+      ],
+      "transferred_assembly_mm": [
+        -1.9207294484016382,
+        -4.257681706225492,
+        4.240450910194891
+      ],
+      "nearest_surface_mm": [
+        -1.9249452870217354,
+        -4.252438137844144,
+        4.245570605121746
+      ],
+      "surface_distance_mm": 0.008454559762911765,
+      "status": "similarity-transferred estimate; not independently landmark-validated"
+    },
+    {
+      "id": "MAGA_LM_18",
+      "source_label": "18",
+      "name": "Atlas landmark 18",
+      "name_status": "source numeric ID; anatomical name unresolved",
+      "atlas_lps_mm": [
+        -5.77013,
+        -4.76269,
+        8.57476
+      ],
+      "transferred_assembly_mm": [
+        -2.885901419853588,
+        -4.3085054411003565,
+        -3.905313024267704
+      ],
+      "nearest_surface_mm": [
+        -2.732174833852042,
+        -4.421151072471096,
+        -3.7702336782340082
+      ],
+      "surface_distance_mm": 0.23359651374858753,
+      "status": "similarity-transferred estimate; not independently landmark-validated"
+    },
+    {
+      "id": "MAGA_LM_19",
+      "source_label": "19",
+      "name": "Posterior interparietal midline candidate",
+      "name_status": "tentative anatomical interpretation",
+      "atlas_lps_mm": [
+        -9.11638,
+        -3.24737,
+        9.16184
+      ],
+      "transferred_assembly_mm": [
+        -4.593529022093918,
+        -3.584226560759049,
+        -0.3691076289012738
+      ],
+      "nearest_surface_mm": [
+        -4.306369524630648,
+        -3.910594446604453,
+        -0.3556097796171429
+      ],
+      "surface_distance_mm": 0.4349238621067523,
+      "status": "similarity-transferred estimate; not independently landmark-validated"
+    },
+    {
+      "id": "MAGA_LM_20",
+      "source_label": "20",
+      "name": "Atlas landmark 20",
+      "name_status": "source numeric ID; anatomical name unresolved",
+      "atlas_lps_mm": [
+        -12.8307,
+        -4.58707,
+        8.26731
+      ],
+      "transferred_assembly_mm": [
+        -3.491327786776429,
+        -4.849744903045306,
+        3.639702631317933
+      ],
+      "nearest_surface_mm": [
+        -3.4410855030392753,
+        -4.8886008346404175,
+        3.5851873584226004
+      ],
+      "surface_distance_mm": 0.08370176505965199,
+      "status": "similarity-transferred estimate; not independently landmark-validated"
+    },
+    {
+      "id": "MAGA_LM_21",
+      "source_label": "21",
+      "name": "Opisthion candidate",
+      "name_status": "tentative anatomical interpretation",
+      "atlas_lps_mm": [
+        -9.18053,
+        -2.57708,
+        6.17855
+      ],
+      "transferred_assembly_mm": [
+        -5.723709527795739,
+        -6.665325687196437,
+        -0.4535925646146346
+      ],
+      "nearest_surface_mm": [
+        -5.5148403711885585,
+        -6.645200844961342,
+        -0.43264096673172736
+      ],
+      "surface_distance_mm": 0.21087983144584835,
+      "status": "similarity-transferred estimate; not independently landmark-validated"
+    },
+    {
+      "id": "MAGA_LM_22",
+      "source_label": "22",
+      "name": "Atlas landmark 22",
+      "name_status": "source numeric ID; anatomical name unresolved",
+      "atlas_lps_mm": [
+        -14.1801,
+        -6.78077,
+        5.91898
+      ],
+      "transferred_assembly_mm": [
+        -1.5571361480449024,
+        -7.701649528841284,
+        5.096783117561715
+      ],
+      "nearest_surface_mm": [
+        -1.5151849828601511,
+        -7.690518210876356,
+        5.042019694104413
+      ],
+      "surface_distance_mm": 0.0698773142640617,
+      "status": "similarity-transferred estimate; not independently landmark-validated"
+    },
+    {
+      "id": "MAGA_LM_24",
+      "source_label": "24",
+      "name": "Atlas landmark 24",
+      "name_status": "source numeric ID; anatomical name unresolved",
+      "atlas_lps_mm": [
+        -13.992,
+        -9.315,
+        7.109
+      ],
+      "transferred_assembly_mm": [
+        1.312204715235536,
+        -6.785845269576306,
+        5.06605023051247
+      ],
+      "nearest_surface_mm": [
+        1.2991507730068832,
+        -6.768067197604988,
+        5.047492123729218
+      ],
+      "surface_distance_mm": 0.028824791033153656,
+      "status": "similarity-transferred estimate; not independently landmark-validated"
+    },
+    {
+      "id": "MAGA_LM_25",
+      "source_label": "25",
+      "name": "Atlas landmark 25",
+      "name_status": "source numeric ID; anatomical name unresolved",
+      "atlas_lps_mm": [
+        -4.341,
+        -6.94704,
+        5.66387
+      ],
+      "transferred_assembly_mm": [
+        -0.8917701991316846,
+        -7.663442892729888,
+        -5.448878011919398
+      ],
+      "nearest_surface_mm": [
+        -0.8991698355126139,
+        -7.667182546401346,
+        -5.468785345875711
+      ],
+      "surface_distance_mm": 0.021564822591447357,
+      "status": "similarity-transferred estimate; not independently landmark-validated"
+    },
+    {
+      "id": "MAGA_LM_27",
+      "source_label": "27",
+      "name": "Atlas landmark 27",
+      "name_status": "source numeric ID; anatomical name unresolved",
+      "atlas_lps_mm": [
+        -4.53227,
+        -9.5276,
+        6.87966
+      ],
+      "transferred_assembly_mm": [
+        2.0101962188646,
+        -6.739579614539671,
+        -5.069800108330614
+      ],
+      "nearest_surface_mm": [
+        1.988466311294492,
+        -6.701644687363933,
+        -5.034376137245614
+      ],
+      "surface_distance_mm": 0.056268155383528105,
+      "status": "similarity-transferred estimate; not independently landmark-validated"
+    },
+    {
+      "id": "MAGA_LM_28",
+      "source_label": "28",
+      "name": "Atlas landmark 28",
+      "name_status": "source numeric ID; anatomical name unresolved",
+      "atlas_lps_mm": [
+        -9.27544,
+        -24.552,
+        7.38284
+      ],
+      "transferred_assembly_mm": [
+        17.799671216748198,
+        -8.47737126498846,
+        0.760398562878569
+      ],
+      "nearest_surface_mm": [
+        17.646800613706176,
+        -8.470598982388893,
+        0.7534245118268489
+      ],
+      "surface_distance_mm": 0.15317938005525342,
+      "status": "similarity-transferred estimate; not independently landmark-validated"
+    },
+    {
+      "id": "MAGA_LM_29",
+      "source_label": "29",
+      "name": "Atlas landmark 29",
+      "name_status": "source numeric ID; anatomical name unresolved",
+      "atlas_lps_mm": [
+        -9.30655,
+        -22.4989,
+        7.12799
+      ],
+      "transferred_assembly_mm": [
+        15.58000945407148,
+        -8.46081954397842,
+        0.6840524559699457
+      ],
+      "nearest_surface_mm": [
+        15.605249839701571,
+        -8.415124124593813,
+        0.6816382609175093
+      ],
+      "surface_distance_mm": 0.05225874814078582,
+      "status": "similarity-transferred estimate; not independently landmark-validated"
+    },
+    {
+      "id": "MAGA_LM_30",
+      "source_label": "30",
+      "name": "Atlas landmark 30",
+      "name_status": "source numeric ID; anatomical name unresolved",
+      "atlas_lps_mm": [
+        -9.54318,
+        -21.8794,
+        7.19855
+      ],
+      "transferred_assembly_mm": [
+        14.918620956055928,
+        -8.30667087475971,
+        0.910494981514292
+      ],
+      "nearest_surface_mm": [
+        14.941162151679496,
+        -8.156390312564026,
+        0.888862282189005
+      ],
+      "surface_distance_mm": 0.15349373457600515,
+      "status": "similarity-transferred estimate; not independently landmark-validated"
+    },
+    {
+      "id": "MAGA_LM_31",
+      "source_label": "31",
+      "name": "Atlas landmark 31",
+      "name_status": "source numeric ID; anatomical name unresolved",
+      "atlas_lps_mm": [
+        -8.98155,
+        -21.8733,
+        7.19855
+      ],
+      "transferred_assembly_mm": [
+        14.94204823212847,
+        -8.28680891690103,
+        0.3083684777450397
+      ],
+      "nearest_surface_mm": [
+        14.965520877163247,
+        -8.156462085482323,
+        0.31980414664847656
+      ],
+      "surface_distance_mm": 0.13293621045108278,
+      "status": "similarity-transferred estimate; not independently landmark-validated"
+    },
+    {
+      "id": "MAGA_LM_32",
+      "source_label": "32",
+      "name": "Atlas landmark 32",
+      "name_status": "source numeric ID; anatomical name unresolved",
+      "atlas_lps_mm": [
+        -10.3737,
+        -20.1438,
+        6.95966
+      ],
+      "transferred_assembly_mm": [
+        12.996128788341753,
+        -8.344835490484865,
+        1.706792716022278
+      ],
+      "nearest_surface_mm": [
+        12.98812205450091,
+        -8.118819265650266,
+        1.677731211886071
+      ],
+      "surface_distance_mm": 0.22801757102894651,
+      "status": "similarity-transferred estimate; not independently landmark-validated"
+    },
+    {
+      "id": "MAGA_LM_33",
+      "source_label": "33",
+      "name": "Atlas landmark 33",
+      "name_status": "source numeric ID; anatomical name unresolved",
+      "atlas_lps_mm": [
+        -8.18676,
+        -20.1411,
+        6.88104
+      ],
+      "transferred_assembly_mm": [
+        13.098818388835738,
+        -8.354078939105023,
+        -0.6400015015833169
+      ],
+      "nearest_surface_mm": [
+        13.075345681671212,
+        -8.122058760631743,
+        -0.6078464802412946
+      ],
+      "surface_distance_mm": 0.23541086762915134,
+      "status": "similarity-transferred estimate; not independently landmark-validated"
+    },
+    {
+      "id": "MAGA_LM_36",
+      "source_label": "36",
+      "name": "Atlas landmark 36",
+      "name_status": "source numeric ID; anatomical name unresolved",
+      "atlas_lps_mm": [
+        -11.0801,
+        -17.8744,
+        6.63409
+      ],
+      "transferred_assembly_mm": [
+        10.500737407200212,
+        -8.395942522154762,
+        2.3407419896621544
+      ],
+      "nearest_surface_mm": [
+        10.401203770286681,
+        -8.28868123399245,
+        2.298483557605612
+      ],
+      "surface_distance_mm": 0.15230792459800105,
+      "status": "similarity-transferred estimate; not independently landmark-validated"
+    },
+    {
+      "id": "MAGA_LM_37",
+      "source_label": "37",
+      "name": "Atlas landmark 37",
+      "name_status": "source numeric ID; anatomical name unresolved",
+      "atlas_lps_mm": [
+        -7.49376,
+        -17.8551,
+        6.52826
+      ],
+      "transferred_assembly_mm": [
+        10.656533318328904,
+        -8.384441348715477,
+        -1.507525858718914
+      ],
+      "nearest_surface_mm": [
+        10.547889394833154,
+        -8.314976563639286,
+        -1.4909683207013702
+      ],
+      "surface_distance_mm": 0.13001157849758666,
+      "status": "similarity-transferred estimate; not independently landmark-validated"
+    },
+    {
+      "id": "MAGA_LM_38",
+      "source_label": "38",
+      "name": "Atlas landmark 38",
+      "name_status": "source numeric ID; anatomical name unresolved",
+      "atlas_lps_mm": [
+        -9.74395,
+        -16.8384,
+        6.70465
+      ],
+      "transferred_assembly_mm": [
+        9.480338847096359,
+        -8.130012746706296,
+        0.8616679611730049
+      ],
+      "nearest_surface_mm": [
+        9.504175102208793,
+        -8.186758319103218,
+        0.8277934702970553
+      ],
+      "surface_distance_mm": 0.07025459541228703,
+      "status": "similarity-transferred estimate; not independently landmark-validated"
+    },
+    {
+      "id": "MAGA_LM_39",
+      "source_label": "39",
+      "name": "Atlas landmark 39",
+      "name_status": "source numeric ID; anatomical name unresolved",
+      "atlas_lps_mm": [
+        -8.86072,
+        -16.8736,
+        6.70465
+      ],
+      "transferred_assembly_mm": [
+        9.564799826134205,
+        -8.105075556073398,
+        -0.08307974668536566
+      ],
+      "nearest_surface_mm": [
+        9.594228294507923,
+        -8.182966175114881,
+        -0.05764614349515325
+      ],
+      "surface_distance_mm": 0.0870623423572185,
+      "status": "similarity-transferred estimate; not independently landmark-validated"
+    },
+    {
+      "id": "MAGA_LM_40",
+      "source_label": "40",
+      "name": "Atlas landmark 40",
+      "name_status": "source numeric ID; anatomical name unresolved",
+      "atlas_lps_mm": [
+        -9.93199,
+        -15.0368,
+        6.17496
+      ],
+      "transferred_assembly_mm": [
+        7.481527628397693,
+        -8.44646662505312,
+        0.954529156715882
+      ],
+      "nearest_surface_mm": [
+        7.583194793676384,
+        -8.672476891165218,
+        0.8182867614163477
+      ],
+      "surface_distance_mm": 0.28280530964043216,
+      "status": "similarity-transferred estimate; not independently landmark-validated"
+    },
+    {
+      "id": "MAGA_LM_41",
+      "source_label": "41",
+      "name": "Atlas landmark 41",
+      "name_status": "source numeric ID; anatomical name unresolved",
+      "atlas_lps_mm": [
+        -8.73635,
+        -15.1099,
+        6.03348
+      ],
+      "transferred_assembly_mm": [
+        7.603275858101572,
+        -8.566772218118729,
+        -0.3288846862216932
+      ],
+      "nearest_surface_mm": [
+        7.6420931225118345,
+        -8.657180038370146,
+        -0.278620252065305
+      ],
+      "surface_distance_mm": 0.11048469269528148,
+      "status": "similarity-transferred estimate; not independently landmark-validated"
+    },
+    {
+      "id": "MAGA_LM_42",
+      "source_label": "42",
+      "name": "Atlas landmark 42",
+      "name_status": "source numeric ID; anatomical name unresolved",
+      "atlas_lps_mm": [
+        -10.9141,
+        -14.2866,
+        5.71686
+      ],
+      "transferred_assembly_mm": [
+        6.568092904203079,
+        -8.86147509951564,
+        1.9520831265137737
+      ],
+      "nearest_surface_mm": [
+        6.462145881282674,
+        -8.890937305202513,
+        2.04603339376511
+      ],
+      "surface_distance_mm": 0.1446355625226031,
+      "status": "similarity-transferred estimate; not independently landmark-validated"
+    },
+    {
+      "id": "MAGA_LM_43",
+      "source_label": "43",
+      "name": "Atlas landmark 43",
+      "name_status": "source numeric ID; anatomical name unresolved",
+      "atlas_lps_mm": [
+        -7.77401,
+        -14.3179,
+        5.46991
+      ],
+      "transferred_assembly_mm": [
+        6.734321431944089,
+        -9.022290787387682,
+        -1.4212570161333353
+      ],
+      "nearest_surface_mm": [
+        6.679780698273654,
+        -9.079315469405605,
+        -1.4259941137593586
+      ],
+      "surface_distance_mm": 0.07905027566348545,
+      "status": "similarity-transferred estimate; not independently landmark-validated"
+    },
+    {
+      "id": "MAGA_LM_44",
+      "source_label": "44",
+      "name": "Atlas landmark 44",
+      "name_status": "source numeric ID; anatomical name unresolved",
+      "atlas_lps_mm": [
+        -9.42137,
+        -13.3911,
+        5.22273
+      ],
+      "transferred_assembly_mm": [
+        5.626998086729689,
+        -9.210634098593271,
+        0.2891580006150658
+      ],
+      "nearest_surface_mm": [
+        5.618435470938646,
+        -9.043029678254928,
+        0.2615401333717797
+      ],
+      "surface_distance_mm": 0.1700802948527684,
+      "status": "similarity-transferred estimate; not independently landmark-validated"
+    },
+    {
+      "id": "MAGA_LM_46",
+      "source_label": "46",
+      "name": "Atlas landmark 46",
+      "name_status": "source numeric ID; anatomical name unresolved",
+      "atlas_lps_mm": [
+        -10.0214,
+        -9.19056,
+        4.62323
+      ],
+      "transferred_assembly_mm": [
+        1.0462720703413666,
+        -9.27797997548091,
+        0.704570436612812
+      ],
+      "nearest_surface_mm": [
+        1.0427029407383157,
+        -9.32332789517085,
+        0.673831061384922
+      ],
+      "surface_distance_mm": 0.0549006529626891,
+      "status": "similarity-transferred estimate; not independently landmark-validated"
+    },
+    {
+      "id": "MAGA_LM_47",
+      "source_label": "47",
+      "name": "Atlas landmark 47",
+      "name_status": "source numeric ID; anatomical name unresolved",
+      "atlas_lps_mm": [
+        -8.58497,
+        -9.22882,
+        4.58795
+      ],
+      "transferred_assembly_mm": [
+        1.1585510881495704,
+        -9.272279565082844,
+        -0.8342554438648904
+      ],
+      "nearest_surface_mm": [
+        1.1570161038819802,
+        -9.298653015814983,
+        -0.8218538858676062
+      ],
+      "surface_distance_mm": 0.02918413474787839,
+      "status": "similarity-transferred estimate; not independently landmark-validated"
+    },
+    {
+      "id": "MAGA_LM_49",
+      "source_label": "49",
+      "name": "Atlas landmark 49",
+      "name_status": "source numeric ID; anatomical name unresolved",
+      "atlas_lps_mm": [
+        -6.94967,
+        -5.23763,
+        4.01418
+      ],
+      "transferred_assembly_mm": [
+        -3.0769931211938832,
+        -9.266054898225832,
+        -2.8030034106330266
+      ],
+      "nearest_surface_mm": [
+        -3.1874406414380054,
+        -9.185662654374363,
+        -2.723745365545038
+      ],
+      "surface_distance_mm": 0.15793481348556251,
+      "status": "similarity-transferred estimate; not independently landmark-validated"
+    },
+    {
+      "id": "MAGA_LM_50",
+      "source_label": "50",
+      "name": "Atlas landmark 50",
+      "name_status": "source numeric ID; anatomical name unresolved",
+      "atlas_lps_mm": [
+        -9.28187,
+        -5.82269,
+        3.67021
+      ],
+      "transferred_assembly_mm": [
+        -2.6269909047941313,
+        -9.793096807402737,
+        -0.2894765219782087
+      ],
+      "nearest_surface_mm": [
+        -2.7089064698167578,
+        -9.468169303952967,
+        -0.3133364824457407
+      ],
+      "surface_distance_mm": 0.3359424653189715,
+      "status": "similarity-transferred estimate; not independently landmark-validated"
+    },
+    {
+      "id": "MAGA_LM_51",
+      "source_label": "51",
+      "name": "Nasion candidate",
+      "name_status": "tentative anatomical interpretation",
+      "atlas_lps_mm": [
+        -9.17489,
+        -16.759,
+        11.2566
+      ],
+      "transferred_assembly_mm": [
+        10.058211732156483,
+        -3.2579145934917033,
+        0.4323299850190754
+      ],
+      "nearest_surface_mm": [
+        10.196344623715671,
+        -2.584415508959114,
+        0.42561632530768534
+      ],
+      "surface_distance_mm": 0.6875512968669747,
+      "status": "similarity-transferred estimate; not independently landmark-validated"
+    }
+  ]
+}

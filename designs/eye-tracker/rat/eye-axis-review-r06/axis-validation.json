@@ -1,0 +1,63 @@
+{
+  "units": "mm",
+  "species": "rat",
+  "eyes": {
+    "RightEye": {
+      "origin_world_mm": [
+        0.75,
+        -8.35,
+        0.0
+      ],
+      "outward_world": [
+        0.3199999999974098,
+        -0.9165151389925812,
+        0.23999999999805713
+      ],
+      "corneal_apex_world_mm": [
+        1.7902899063026607,
+        -11.329504525235249,
+        0.7802174297269949
+      ],
+      "posterior_pole_world_mm": [
+        -0.22283009368104434,
+        -5.563707785832921,
+        -0.7296225702607826
+      ],
+      "max_anatomy_motion_mm": 0.0,
+      "apex_line_residual_mm": 0.0,
+      "frame_object": "RightEye",
+      "axis_object": "RightEyeOpticalAxis",
+      "azimuth_from_skull_rostral_deg": -70.75342208684971,
+      "elevation_from_skull_XY_deg": 13.886540362514323
+    },
+    "LeftEye": {
+      "origin_world_mm": [
+        0.75,
+        8.35,
+        0.0
+      ],
+      "outward_world": [
+        0.3199999999974097,
+        0.9165151389925814,
+        0.23999999999805738
+      ],
+      "corneal_apex_world_mm": [
+        1.7902899063026605,
+        11.32950452523525,
+        0.7802174297269957
+      ],
+      "posterior_pole_world_mm": [
+        -0.222830093681044,
+        5.56370778583292,
+        -0.7296225702607834
+      ],
+      "max_anatomy_motion_mm": 0.0,
+      "apex_line_residual_mm": 0.0,
+      "frame_object": "LeftEye",
+      "axis_object": "LeftEyeOpticalAxis",
+      "azimuth_from_skull_rostral_deg": 70.75342208684972,
+      "elevation_from_skull_XY_deg": 13.886540362514337
+    }
+  },
+  "shape_and_pose_preserved": true
+}

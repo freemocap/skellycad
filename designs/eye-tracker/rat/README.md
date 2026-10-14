@@ -1,5 +1,7 @@
 # Monocular rat
 
+**Detailed camera review:** [detailed-camera-r05](detailed-camera-r05/README.md) replaces the simplified camera with the selected R08 geometry and optical datum. Holder and ribbon clearance issues are recorded for the next fit revision.
+
 **Binocular exploration: [concept study R01](binocular-study-r01/README.md).** Three back-to-back board and removable-cover options; not print designs.
 
 **Print pack: [RAT R04](print-r04/README.md).** Connected eyes, embedded-baseplate anatomy, four-color U1 project, and labeled matched camera hardware.
@@ -44,7 +46,7 @@ report and preview go to `generated/eye-tracker/rat/monocular-r01/`.
 [Rat skull + mandible](https://www.thingiverse.com/thing:469391) by **scienceminer**,
 supplied in `Rat skull + mandible - 469391.zip`. The creator describes a microCT
 scan processed with Mimics, Magics and 3-matics. The supplied license states
-**Creative Commons — Attribution — Share Alike**, without a version number.
+**Creative Commons â€” Attribution â€” Share Alike**, without a version number.
 Original files, README, license and archive remain unchanged under
 `references/skull/thingiverse-469391/`. Retain that attribution and license with
 the scan and derived reference geometry; this note does not relicense the scan.
@@ -55,7 +57,7 @@ variants fail that check. Nothing has been repaired, joined, simplified or
 removed. Watertightness does not establish anatomical accuracy or printability.
 
 STL and the supplied notes do not establish units. R01 assumes one coordinate
-unit is one millimetre: the source spans approximately 46.74 × 23.32 × 24.44 mm.
+unit is one millimetre: the source spans approximately 46.74 Ã— 23.32 Ã— 24.44 mm.
 Scale stays 1.0 and needs confirmation against a known specimen dimension.
 
 The registration maps source coordinates to the inherited hardware frame:
@@ -64,7 +66,7 @@ The registration maps source coordinates to the inherited hardware frame:
 assembly (x, y, z) = (source x + 12, -source z - 2, source y)
 ```
 
-This is a 90° rotation around X and translation of (12, -2, 0) mm. Rostral is
+This is a 90Â° rotation around X and translation of (12, -2, 0) mm. Rostral is
 approximately +X, dorsal +Y, and lateral Z. The posterior cranium is positioned
 below the inherited plate by visual comparison, not measured mounting landmarks.
 The target at (13, -10, 9) mm is a visual orbital-region estimate. Source hashes,
@@ -98,4 +100,12 @@ R01 assembly still contains its original provisional marker and no eyeball mesh.
 R01 contains one camera only. It does not implement the binocular holder or claim
 clearance through the skull, soft tissue, ribbon or full sensor/lens body.
 
-[Collection overview](../README.md) · [Shared hardware](../shared/README.md)
+[Collection overview](../README.md) Â· [Shared hardware](../shared/README.md)
+
+Eye-axis review: [ET-RAT-EYE-AXES-R06](eye-axis-review-r06/README.md) preserves the detailed camera assembly and adds both eye optical axes. The linked anatomical audit distinguishes measured shape parameters from estimated skull placement.
+
+Adult anatomy review: [ET-RAT-ADULT-R07](adult-anatomy-r07/README.md) updates both eye envelopes to representative adult dimensions and preserves the optical axes. Skull placement remains provisional.
+
+Compact lower guard: [ET-RAT-GUARD-R08](compact-guard-r08/README.md) moves the lower root to the front edge and tightens the loop around the ribbon.
+
+Compact lower guard: [ET-RAT-GUARD-R09](compact-guard-r09/README.md) removes the straight rise at the lower root and increases ball/holder clearance.

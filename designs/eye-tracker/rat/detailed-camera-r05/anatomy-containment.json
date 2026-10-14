@@ -1,0 +1,27 @@
+{
+  "LeftEyeCornea-anatomy": {
+    "watertight": true,
+    "samples": 2000,
+    "camera_samples_inside": 0
+  },
+  "LeftEyeSclera-anatomy": {
+    "watertight": true,
+    "samples": 2000,
+    "camera_samples_inside": 0
+  },
+  "RightEyeCornea-anatomy": {
+    "watertight": true,
+    "samples": 2000,
+    "camera_samples_inside": 0
+  },
+  "RightEyeSclera-anatomy": {
+    "watertight": true,
+    "samples": 2000,
+    "camera_samples_inside": 0
+  },
+  "StandardSkull-anatomy": {
+    "watertight": true,
+    "samples": 2000,
+    "camera_samples_inside": 0
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "revision": "ET-MOUSE-EYE-PLACEMENT-R14",
+  "units": "mm",
+  "source": {
+    "path": "designs/eye-tracker/mouse/compact-guard-r13/checkpoints/ET-MOUSE-GUARD-R13.FCStd",
+    "sha256": "f6f4a2b9c7945100ebe43076df77bd0c66b44758579040ce37deb2b2691fd87f"
+  },
+  "targeting_recipe": {
+    "mode": "update_eye_anatomy_only",
+    "camera_and_ribbon_pose": "fixed",
+    "aim": "measure change; no automatic retargeting",
+    "landmarks": "user accepted named-landmarks-r03",
+    "shape_profile": "adult-eyes-r01"
+  },
+  "eyes": {
+    "Eye1": {
+      "center_world_mm": [
+        7.737534314542989,
+        -4.551988922700623,
+        4.255893980446201
+      ],
+      "axis_world": [
+        0.08631408758252662,
+        0.5374849227697464,
+        0.8388443455611988
+      ],
+      "existing_skull_surface_crossings": 0,
+      "reference_atlas_surface_crossings": 0,
+      "hardware_surface_crossings": 0
+    },
+    "Eye2": {
+      "center_world_mm": [
+        7.970105528826422,
+        -4.741040423358816,
+        -4.078696342316636
+      ],
+      "axis_world": [
+        0.13023099184789838,
+        0.5465365956060316,
+        -0.8272470238240098
+      ],
+      "existing_skull_surface_crossings": 0,
+      "reference_atlas_surface_crossings": 0,
+      "hardware_surface_crossings": 0
+    }
+  },
+  "all_non_eye_shapes_and_poses_unchanged": true,
+  "camera_aim": {
+    "forward_mm": 14.9819656870452,
+    "eye_center_miss_mm": 2.4646793141387318,
+    "camera_pose_changed": false
+  }
+}

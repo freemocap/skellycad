@@ -1,0 +1,65 @@
+{
+  "units": "mm",
+  "revision": "ET-RAT-ADULT-R07",
+  "targeting": {
+    "mode": "retain_existing_camera_and_eye_frames",
+    "eye_targets": [
+      "RightEye",
+      "LeftEye"
+    ],
+    "eye_pose_change": false,
+    "skull_scale": 1.0,
+    "reason": "Eye shape correction only; skull scale and rest pose lack registered specimen evidence. Camera, ribbon and arm seating retained and checked separately."
+  },
+  "eyes": {
+    "RightEye": {
+      "frame_origin_world_mm": [
+        0.75,
+        -8.35,
+        0.0
+      ],
+      "axis_world": [
+        0.3199999999974098,
+        -0.9165151389925812,
+        0.23999999999805713
+      ],
+      "apex_world_mm": [
+        1.7902899063026607,
+        -11.329504525235249,
+        0.7802174297269949
+      ],
+      "frame_pose_preserved": true,
+      "hardware_surface_crossings": 0,
+      "skull_surface_crossings": 18,
+      "previous_skull_surface_crossings": 6
+    },
+    "LeftEye": {
+      "frame_origin_world_mm": [
+        0.75,
+        8.35,
+        0.0
+      ],
+      "axis_world": [
+        0.3199999999974097,
+        0.9165151389925814,
+        0.23999999999805738
+      ],
+      "apex_world_mm": [
+        1.7902899063026605,
+        11.32950452523525,
+        0.7802174297269957
+      ],
+      "frame_pose_preserved": true,
+      "hardware_surface_crossings": 0,
+      "skull_surface_crossings": 0,
+      "previous_skull_surface_crossings": 0
+    }
+  },
+  "non_eye_geometry_and_placements_unchanged": true,
+  "camera_aim_to_eye_frame": {
+    "eye_frame": "RightEye",
+    "forward_distance_mm": 19.277522832699354,
+    "miss_distance_mm": 5.722046012689935e-07,
+    "note": "Retained source aim; mouse source target was an inherited surface proxy, not globe center."
+  }
+}

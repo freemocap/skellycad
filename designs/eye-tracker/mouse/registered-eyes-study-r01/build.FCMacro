@@ -1,0 +1,52 @@
+from pathlib import Path
+import json,hashlib
+import FreeCAD as A,FreeCADGui as G,Mesh,Part
+ROOT=Path(__file__).resolve().parents[4];ST=Path(__file__).resolve().parent;OUT=ROOT/'generated/eye-tracker/mouse/registered-eyes-study-r01'
+r=json.loads((ST/'comparison.json').read_text());reg=json.loads((ST/'registration.json').read_text());ls=json.loads((ROOT/'designs/eye-tracker/mouse/skull-landmarks-study-r01/landmarks.json').read_text())['landmarks']
+path=ROOT/'designs/eye-tracker/mouse/references/skull/Skull.stl';assert hashlib.sha256(path.read_bytes()).hexdigest()==reg['existing_skull_sha256']
+d=A.newDocument('MouseRegisteredEyesStudyR01');d.Label='Mouse anatomy study R01 - conditional registered eyes'
+def group(name,label):
+ g=d.addObject('App::DocumentObjectGroup',name);g.Label=label;return g
+def mesh(name,path,color,trans=0,g=None):
+ o=d.addObject('Mesh::Feature',name);o.Mesh=Mesh.Mesh(str(path));o.ViewObject.ShapeColor=color;o.ViewObject.Transparency=trans;o.ViewObject.DisplayMode='Shaded'
+ if g:g.addObject(o)
+ return o
+def line(name,p,q,color,g=None):
+ o=d.addObject('Part::Feature',name);o.Shape=Part.makeLine(A.Vector(*p),A.Vector(*q));o.ViewObject.LineColor=color;o.ViewObject.LineWidth=3.;o.addProperty('App::PropertyBool','ExportForPrinting');o.ExportForPrinting=False
+ if g:g.addObject(o)
+ return o
+def label(name,text,pos,color,g):
+ o=d.addObject('App::Annotation',name);o.LabelText=[text];o.Position=A.Vector(*pos);o.ViewObject.TextColor=color;o.ViewObject.FontSize=11.;g.addObject(o);return o
+sk=mesh('ExistingSkull',path,(.78,.77,.71),65)
+source=group('AtlasSource','01 - matched Digimouse skull and eye labels (toggle)')
+mesh('TransferredAtlasSkull',OUT/'digimouse-head-registered.stl',(.1,.65,.75),65,source)
+for i in [1,2]:mesh(f'AtlasEyeRegion{i}',OUT/f'eye-{i}-registered.stl',(1.,.55,.05),0,source)
+source.Visibility=False
+old=group('PreviousEyes','02 - previous eye envelopes and axes (toggle)')
+proposed=group('CandidateEyes','03 - candidate adult eyes; centroid anchor NOT validated')
+for i,row in enumerate(r['eyes'],1):
+ c=A.Vector(*row['atlas_label_centroid_mm']);v=A.Vector(*row['candidate_axis_world']);oc=A.Vector(*row['old_center_mm']);ov=A.Vector(*row['old_axis_world'])
+ for region in ['sclera','cornea']:
+  mesh(f'CandidateEye{i}{region}',OUT/f'candidate-eye-{i}-{region}.stl',(.92,.84,.65) if region=='sclera' else (.1,.6,.7),45 if region=='sclera' else 15,proposed)
+ m=mesh(f'PreviousEye{i}',ROOT/'generated/eye-tracker/adult-eyes-r01/mouse-whole.stl',(.4,.4,.85),70,old);m.Placement=A.Placement(oc,A.Rotation(A.Vector(0,0,1),ov))
+ line(f'PreviousAxis{i}',oc-ov*2,oc+ov*5,(.3,.3,.85),old)
+ line(f'CandidateAxis{i}',c-v*2,c+v*5,(1.,.4,.0),proposed)
+old.Visibility=False
+keys=group('KeyLandmarks','04 - named candidates (question mark means unverified ID mapping)')
+allg=group('All45Landmarks','05 - all 45 numbered atlas landmarks (toggle)')
+for k,row in enumerate(ls):
+ c=A.Vector(*row['transferred_assembly_mm']);lid=row['source_label'];o=d.addObject('Part::Feature','LM'+lid);o.Shape=Part.Vertex(c);o.ViewObject.PointColor=(.75,.1,.4);o.ViewObject.PointSize=5.;allg.addObject(o)
+ o.addProperty('App::PropertyString','NameStatus');o.NameStatus=row['name_status'];o.Label=lid+' - '+row['name']
+ label('ID'+lid,lid,c+A.Vector(0,.25,.25),(.6,.0,.25),allg)
+ if 'candidate' in row['name'].lower():
+  # Fan leader labels away from the midline so labels remain separate in the overview.
+  idx=['1','51','13','16','19','21'].index(lid);q=c+A.Vector(0,3+(idx%2)*2,5+idx*.6)
+  line('Leader'+lid,c,q,(.6,.05,.3),keys);label('Name'+lid,row['name'].replace(' candidate','?')+' [LM '+lid+']',q,(.6,.05,.3),keys)
+allg.Visibility=False
+frame=group('ConditionalSkullFrame','06 - skull frame based on tentative bregma/lambda')
+b=next(A.Vector(*x['transferred_assembly_mm']) for x in ls if x['source_label']=='13');B=r['skull_basis_columns_X_forward_Y_left_Z_dorsal']
+for j,(name,color) in enumerate([('Forward',(.9,.1,.1)),('Left',(.1,.7,.1)),('Dorsal',(.1,.2,.9))]):
+ v=A.Vector(*[B[k][j] for k in range(3)]);line(name,b,b+v*4,color,frame)
+frame.Visibility=False
+d.addObject('App::FeaturePython','StudyStatus').addProperty('App::PropertyString','Status');d.StudyStatus.Status='Exploratory only: source label boundary and landmark names unresolved; camera assembly unchanged'
+d.recompute();v=G.activeDocument().activeView();v.viewAxonometric();v.fitAll();G.updateGui();d.saveAs(str(OUT/'ET-MOUSE-REGISTERED-EYES-STUDY-R01.FCStd'))

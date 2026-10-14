@@ -1,0 +1,43 @@
+{
+  "revision": "ET-MOUSE-DETAILED-R09",
+  "species": "mouse",
+  "units": "mm",
+  "source": {
+    "path": "designs/eye-tracker/mouse/inset-arm-r08/checkpoints/ET-MOUSE-MONO-STEM-R08.FCStd",
+    "sha256": "5472f84ddb34a32459956c42130b0cc4ba76c317f549d860a940ec22962f981d"
+  },
+  "source_review": "inset-arm-r08/print-test.json",
+  "selected_species_manifest": "designs/eye-tracker/mouse/active-model.json",
+  "camera_manifest": "designs/eye-tracker/shared/cameras/pupil-core-eye/active-model.json",
+  "ribbon_parameters": [
+    3.5000000000000004,
+    -1.81801113778005,
+    -0.6249151925983003,
+    0.4448037252258189,
+    3.500000000000106,
+    -0.40938014483995194,
+    0.672538601617243,
+    2.9999999999999996,
+    3.5000000000000004,
+    -2.85113350564109,
+    -0.32780811270705223,
+    4.11392922079439e-47
+  ],
+  "ribbon_surface_policy": "Three cylindrical zones re-solved at fixed endpoints for 0.25 mm ribbon clearance",
+  "preserve": "PCB poses, sensor optical-axis line, anatomy, carrier, holder, cap, clip, baseplate and arm seating",
+  "original_ribbon_parameters": [
+    3.5000000000000004,
+    -1.8067259359965318,
+    -0.6249630072369801,
+    0.4486931955661017,
+    4.682453426410438,
+    -0.4268925978303895,
+    0.599815756305122,
+    2.9999992817581154,
+    3.5000000000000004,
+    -2.8269655320589906,
+    -0.3288088863689542,
+    1.1038438571346695e-11
+  ],
+  "camera_manifest_sha256": "c167939feec847adc5196a279f941e7df36c52cffe8623c64a6c9c6bc868408c"
+}

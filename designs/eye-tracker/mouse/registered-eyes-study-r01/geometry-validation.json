@@ -1,0 +1,30 @@
+{
+  "native_reopen": true,
+  "frame_orthonormal": true,
+  "registration_no_reflection": true,
+  "all_numbered_landmarks": 45,
+  "candidate_checks": {
+    "Eye1": {
+      "sclera": {
+        "closed": true,
+        "skull_surface_crossings": 0
+      },
+      "cornea": {
+        "closed": true,
+        "skull_surface_crossings": 0
+      }
+    },
+    "Eye2": {
+      "sclera": {
+        "closed": true,
+        "skull_surface_crossings": 0
+      },
+      "cornea": {
+        "closed": true,
+        "skull_surface_crossings": 0
+      }
+    }
+  },
+  "physical_fit_verified": false,
+  "assembly_changed": false
+}

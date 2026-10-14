@@ -1,0 +1,9 @@
+from pathlib import Path
+import json,hashlib,shutil,runpy
+import FreeCAD as A,FreeCADGui as G
+S=Path(__file__).resolve().parent;R=S.parents[3];O=R/'generated/eye-tracker/mouse/landmark-review-r02';O.mkdir(parents=True,exist_ok=True)
+m=json.loads((S/'review.json').read_text());baseline=R/m['native_checkpoint'];assert hashlib.sha256(baseline.read_bytes()).hexdigest()==m['native_sha256'];working=O/baseline.name
+if not working.exists():shutil.copy2(baseline,working)
+d=next((d for d in A.listDocuments().values() if Path(d.FileName)==working),None)
+if d is None:d=A.openDocument(str(working))
+A.setActiveDocument(d.Name);runpy.run_path(str(S/'panel.py'))

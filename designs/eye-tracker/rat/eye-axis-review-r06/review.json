@@ -1,0 +1,78 @@
+{
+  "revision": "ET-RAT-EYE-AXES-R06",
+  "units": "mm",
+  "status": "Eye optical axes displayed; anatomy unchanged; source fitting limitations retained",
+  "native_checkpoint": "designs/eye-tracker/rat/eye-axis-review-r06/checkpoints/ET-RAT-EYE-AXES-R06.FCStd",
+  "native_sha256": "0665dc05ec0348ef0b44c33ac9360e5d5643cd72194174e86dfbf649ee7429bf",
+  "source": {
+    "path": "designs/eye-tracker/rat/detailed-camera-r05/checkpoints/ET-RAT-DETAILED-R05.FCStd",
+    "sha256": "4c2c4003e17bdbd8c289de6199d729e1631177db3eefa41c83933bf85b0a4bdb"
+  },
+  "camera_manifest": "designs/eye-tracker/shared/cameras/pupil-core-eye/active-model.json",
+  "camera_manifest_sha256": "c167939feec847adc5196a279f941e7df36c52cffe8623c64a6c9c6bc868408c",
+  "recipe_sha256": "bdbd2dcc5198db8cebdaf324132df6f842130f6eed579424becfed0f47f83591",
+  "parts": {
+    "carrier": "FinishedCarrier",
+    "holder": "eye_primary_Holder",
+    "cap": "eye_primary_Cap",
+    "clip": "eye_primary_Clip",
+    "baseplate": "skull_mount_Baseplate"
+  },
+  "new_interferences": {
+    "M4_lens/eye_primary_Holder": {
+      "overlap_mm3": 2.0416569152815898,
+      "previous_overlap_mm3": 0.0
+    }
+  },
+  "ribbon_interference": {
+    "FinishedCarrier": {
+      "overlap_mm3": 0.0017267192176595833,
+      "previous_overlap_mm3": 0.0
+    },
+    "eye_primary_Holder": {
+      "overlap_mm3": 1.402346507567477e-08,
+      "previous_overlap_mm3": 0.0
+    },
+    "eye_primary_Cap": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "eye_primary_Clip": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "skull_mount_Baseplate": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "PCB": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "camera_pcb": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "JST_4pin": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "M4_lens": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "IR_LED": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "IR_LED_001": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    }
+  },
+  "physical_fit_verified": false,
+  "print_release": false,
+  "source_manifest": "designs/eye-tracker/rat/detailed-camera-r05/review.json",
+  "anatomy_audit": "designs/eye-tracker/shared/eye-anatomy-audit-r01/README.md",
+  "axis_validation": "axis-validation.json"
+}

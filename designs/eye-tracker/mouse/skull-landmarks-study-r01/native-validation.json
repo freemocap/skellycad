@@ -1,0 +1,11 @@
+{
+  "native": "designs\\eye-tracker\\mouse\\skull-landmarks-study-r01\\checkpoints\\ET-MOUSE-SKULL-LANDMARKS-STUDY-R01.FCStd",
+  "sha256": "ee23cf16c672707b2f418258223aa1d05070522baef96731200fe778938c8e9c",
+  "reopen_passed": true,
+  "landmark_count": 45,
+  "existing_skull_facets_preserved": true,
+  "landmark_coordinate_max_tolerance_mm": 1e-10,
+  "hidden_gui_styles_saved": true,
+  "desktop_visual_review_completed": false,
+  "existing_skull_vertices_and_facets_preserved": true
+}

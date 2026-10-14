@@ -1,0 +1,8 @@
+{
+  "skull_surface_picking": true,
+  "original_coordinates_preserved": true,
+  "correction_export_count": 45,
+  "reset_to_original": true,
+  "test_corrections_written_only_under_generated": true,
+  "reference_facets": 180000
+}

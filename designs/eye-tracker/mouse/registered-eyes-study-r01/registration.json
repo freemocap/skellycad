@@ -1,0 +1,77 @@
+{
+  "units": "mm",
+  "source_active_sha256": "0bdd4c6cef0c4448a49fae67e398d1a34e8d1cd60c597a42ebff54f94af35a3e",
+  "existing_skull_sha256": "37473a2754e8c4ee4509b24926cad9d0d7920c4bd0c0b2e46110964ccf2ab0eb",
+  "matrix_source_index_mm_to_assembly": [
+    [
+      0.042848895614159346,
+      -0.9376730217144003,
+      -0.46254339200599626,
+      26.139865030076827
+    ],
+    [
+      0.09804520341185705,
+      -0.4572882470285585,
+      0.9361024036996657,
+      -9.004971482274627
+    ],
+    [
+      -1.0409439097412292,
+      -0.08166931169860152,
+      0.06913040788322931,
+      20.622877653200486
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "scale": 1.046428742435333,
+  "crop": "voxel axis 1 <260 and 120<=axis0<270; removes forelimbs, includes mandible/upper neck",
+  "method": "80 percent trimmed point ICP, proper similarity, 100 iterations",
+  "surface_median_mm": 0.20180297394564617,
+  "surface_p95_mm": 0.8644853632651379,
+  "eyes": [
+    {
+      "id": "eye-1",
+      "source_centroid_index_mm": [
+        15.319750639584736,
+        14.958378932250357,
+        10.69011112505271
+      ],
+      "transferred_centroid_mm": [
+        7.825590792012212,
+        -4.336195574936921,
+        4.193247757038648
+      ],
+      "source_volume_mm3": 2.4851249656676324,
+      "source_extents_mm": [
+        1.4999990463256836,
+        1.6000003814697266,
+        1.6000003814697266
+      ]
+    },
+    {
+      "id": "eye-2",
+      "source_centroid_index_mm": [
+        23.06121991444501,
+        15.455486537753217,
+        9.824920999339582
+      ],
+      "transferred_centroid_mm": [
+        8.091367785779287,
+        -4.614409667018846,
+        -3.965596919344655
+      ],
+      "source_volume_mm3": 3.0879165208343977,
+      "source_extents_mm": [
+        1.6000003814697266,
+        2.0000009536743164,
+        1.6999998092651367
+      ]
+    }
+  ],
+  "landmark_target_error_mm": null
+}

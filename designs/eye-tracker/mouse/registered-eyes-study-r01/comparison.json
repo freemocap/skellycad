@@ -1,0 +1,112 @@
+{
+  "units": "mm",
+  "bregma_id": "13, tentative",
+  "lambda_id": "16, tentative",
+  "skull_basis_columns_X_forward_Y_left_Z_dorsal": [
+    [
+      0.9921278211110711,
+      0.026614778961046668,
+      -0.1223684604718588
+    ],
+    [
+      0.12232445409136623,
+      0.0032814706309983984,
+      0.9924847403772749
+    ],
+    [
+      0.02681631049655186,
+      -0.9996403780817141,
+      -4.336808689942018e-19
+    ]
+  ],
+  "horizon_to_skull_rotation": [
+    [
+      0.8746197071393957,
+      0.0,
+      -0.48480962024633706
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.48480962024633706,
+      0.0,
+      0.8746197071393957
+    ]
+  ],
+  "nominal_head_pitch_deg": -29,
+  "horizon_eye_azimuth_deg": 64,
+  "horizon_eye_elevation_deg": 22,
+  "sources": [
+    "oommenStahl2008MouseOrientation"
+  ],
+  "eyes": [
+    {
+      "id": "Eye1",
+      "atlas_label_centroid_mm": [
+        7.825590792012212,
+        -4.336195574936921,
+        4.193247757038648
+      ],
+      "candidate_axis_world": [
+        0.08612327746415928,
+        0.5392811044965826,
+        0.8377103744205256
+      ],
+      "candidate_axis_skull_frame": [
+        0.17387686783343764,
+        -0.8333473283093413,
+        0.5246894941125811
+      ],
+      "old_center_mm": [
+        7.6612616226796515,
+        -5.009257002534198,
+        4.100958657440845
+      ],
+      "old_axis_world": [
+        -0.09699981730317818,
+        0.7984897693201415,
+        0.5941423429904799
+      ],
+      "centroid_displacement_from_old_mm": 0.6989513853748244,
+      "axis_difference_deg": 23.07746925494324,
+      "center_status": "atlas label centroid used only as a provisional envelope anchor; not a confirmed globe center",
+      "axis_status": "conditional on tentative bregma/lambda frame and spherical interpretation of published azimuth/elevation"
+    },
+    {
+      "id": "Eye2",
+      "atlas_label_centroid_mm": [
+        8.091367785779287,
+        -4.614409667018846,
+        -3.965596919344655
+      ],
+      "candidate_axis_world": [
+        0.1304819873456231,
+        0.5447503140631188,
+        -0.828384902268547
+      ],
+      "candidate_axis_skull_frame": [
+        0.17387686783343764,
+        0.8333473283093413,
+        0.5246894941125811
+      ],
+      "old_center_mm": [
+        8.22709406549069,
+        -5.003929857461162,
+        -3.5779488342570276
+      ],
+      "old_axis_world": [
+        0.10037373802454619,
+        0.7990810465833096,
+        -0.5927854533524777
+      ],
+      "centroid_displacement_from_old_mm": 0.566055332665121,
+      "axis_difference_deg": 20.04041481467926,
+      "center_status": "atlas label centroid used only as a provisional envelope anchor; not a confirmed globe center",
+      "axis_status": "conditional on tentative bregma/lambda frame and spherical interpretation of published azimuth/elevation"
+    }
+  ],
+  "approved_for_assembly": false
+}

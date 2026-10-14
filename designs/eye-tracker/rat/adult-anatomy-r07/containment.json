@@ -1,0 +1,38 @@
+{
+  "LeftEye-previous-world": {
+    "eye_watertight": true,
+    "surface_samples": 3000,
+    "eye_samples_inside_skull": 0,
+    "max_sampled_skull_penetration_mm": 0.0,
+    "eye_samples_inside_hardware": 0,
+    "skull_vertices_inside_eye": 0,
+    "max_skull_vertex_penetration_mm": 0.0
+  },
+  "LeftEye-world": {
+    "eye_watertight": true,
+    "surface_samples": 3000,
+    "eye_samples_inside_skull": 0,
+    "max_sampled_skull_penetration_mm": 0.0,
+    "eye_samples_inside_hardware": 0,
+    "skull_vertices_inside_eye": 0,
+    "max_skull_vertex_penetration_mm": 0.0
+  },
+  "RightEye-previous-world": {
+    "eye_watertight": true,
+    "surface_samples": 3000,
+    "eye_samples_inside_skull": 0,
+    "max_sampled_skull_penetration_mm": 0.0,
+    "eye_samples_inside_hardware": 0,
+    "skull_vertices_inside_eye": 0,
+    "max_skull_vertex_penetration_mm": 0.0
+  },
+  "RightEye-world": {
+    "eye_watertight": true,
+    "surface_samples": 3000,
+    "eye_samples_inside_skull": 0,
+    "max_sampled_skull_penetration_mm": 0.0,
+    "eye_samples_inside_hardware": 0,
+    "skull_vertices_inside_eye": 0,
+    "max_skull_vertex_penetration_mm": 0.0
+  }
+}

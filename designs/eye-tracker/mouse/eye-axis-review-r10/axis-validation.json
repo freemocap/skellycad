@@ -1,0 +1,59 @@
+{
+  "units": "mm",
+  "species": "mouse",
+  "eyes": {
+    "Eye1": {
+      "origin_world_mm": [
+        7.6612616226796515,
+        -5.009257002534198,
+        4.100958657440845
+      ],
+      "outward_world": [
+        -0.09699981730317814,
+        0.7984897693201415,
+        0.5941423429904799
+      ],
+      "corneal_apex_world_mm": [
+        7.5027857066741666,
+        -3.704704054578573,
+        5.071653805749917
+      ],
+      "posterior_pole_world_mm": [
+        7.783481386449572,
+        -6.015354062222257,
+        3.3523393422204983
+      ],
+      "max_anatomy_motion_mm": 6.652231733032693e-08,
+      "apex_line_residual_mm": 8.881784197001252e-16,
+      "frame_object": "Eye1OpticalFrame",
+      "axis_object": "Eye1OpticalAxis"
+    },
+    "Eye2": {
+      "origin_world_mm": [
+        8.22709406549069,
+        -5.003929857461162,
+        -3.5779488342570276
+      ],
+      "outward_world": [
+        0.10037373802454619,
+        0.7990810465833096,
+        -0.5927854533524777
+      ],
+      "corneal_apex_world_mm": [
+        8.391082209951406,
+        -3.6984108972040586,
+        -4.546427128198867
+      ],
+      "posterior_pole_world_mm": [
+        8.100623166495081,
+        -6.010771889258642,
+        -2.8310392274964142
+      ],
+      "max_anatomy_motion_mm": 6.533392218743718e-08,
+      "apex_line_residual_mm": 8.881784197001252e-16,
+      "frame_object": "Eye2OpticalFrame",
+      "axis_object": "Eye2OpticalAxis"
+    }
+  },
+  "shape_and_pose_preserved": true
+}

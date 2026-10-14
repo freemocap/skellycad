@@ -1,0 +1,21 @@
+{
+  "revision": "ET-RAT-ADULT-R07",
+  "species": "rat",
+  "units": "mm",
+  "source_manifest": "designs/eye-tracker/rat/eye-axis-review-r06/review.json",
+  "source": {
+    "path": "designs/eye-tracker/rat/eye-axis-review-r06/checkpoints/ET-RAT-EYE-AXES-R06.FCStd",
+    "sha256": "0665dc05ec0348ef0b44c33ac9360e5d5643cd72194174e86dfbf649ee7429bf"
+  },
+  "anatomy_definition": "generated/eye-tracker/adult-eyes-r01/rat-definition.json",
+  "targeting_recipe": {
+    "mode": "retain_existing_camera_and_eye_frames",
+    "eye_targets": [
+      "RightEye",
+      "LeftEye"
+    ],
+    "eye_pose_change": false,
+    "skull_scale": 1.0,
+    "reason": "Eye shape correction only; skull scale and rest pose lack registered specimen evidence. Camera, ribbon and arm seating retained and checked separately."
+  }
+}

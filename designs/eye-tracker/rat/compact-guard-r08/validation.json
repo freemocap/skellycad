@@ -1,0 +1,127 @@
+{
+  "revision": "ET-RAT-GUARD-R08",
+  "units": "mm",
+  "guard_clearance": {
+    "RibbonCandidate": {
+      "overlap_mm3": 0.0,
+      "gap_mm": 1.279999732971192
+    },
+    "eye_primary_Holder": {
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.40340533618187097
+    },
+    "eye_primary_Cap": {
+      "overlap_mm3": 0.0,
+      "gap_mm": 2.599999999998049
+    },
+    "eye_primary_Clip": {
+      "overlap_mm3": 0.0,
+      "gap_mm": 3.9390725712509567
+    },
+    "PCB": {
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.8662968498599959
+    },
+    "camera_pcb": {
+      "overlap_mm3": 0.0,
+      "gap_mm": 2.0291683898602346
+    },
+    "JST_4pin": {
+      "overlap_mm3": 0.0,
+      "gap_mm": 27.274880445039578
+    },
+    "M4_lens": {
+      "overlap_mm3": 0.0,
+      "gap_mm": 2.358252450850779
+    },
+    "UpperSupport": {
+      "overlap_mm3": 0.0,
+      "gap_mm": 2.27030397319649
+    }
+  },
+  "attachment": {
+    "RetainedPCBTray": {
+      "engagement_mm3": 1.6435013417092548
+    },
+    "RetainedSocket": {
+      "engagement_mm3": 4.656815391694654
+    }
+  },
+  "source": {
+    "path": "designs/eye-tracker/rat/adult-anatomy-r07/checkpoints/ET-RAT-ADULT-R07.FCStd",
+    "sha256": "9dedb5b1571d4c9b450e6dbcd5a6dc162189b38691bec916d458eade80b86ef7"
+  },
+  "targeting_recipe": {
+    "mode": "fixed_anatomy_and_camera",
+    "change": "Lower guard root moved from back face to front plate edge below ribbon",
+    "preserve": [
+      "camera pose and optical axes",
+      "eye and skull geometry",
+      "ribbon route",
+      "upper arm",
+      "socket",
+      "holder",
+      "cap",
+      "clip",
+      "baseplate"
+    ]
+  },
+  "carrier": {
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 1275.851360680205,
+    "previous_volume_mm3": 1330.2958981660297,
+    "old_guard_xmin_mm": -12.830606118237572,
+    "new_guard_xmin_mm": -12.10816116534663
+  },
+  "carrier_clearance": {
+    "RibbonCandidate": {
+      "overlap_mm3": 0.0017267192175559945,
+      "previous_overlap_mm3": 0.0017267192175554457
+    },
+    "eye_primary_Holder": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "eye_primary_Cap": {
+      "overlap_mm3": 0.002218225533841103,
+      "previous_overlap_mm3": 0.0022182255338411036
+    },
+    "eye_primary_Clip": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "PCB": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "camera_pcb": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "JST_4pin": {
+      "overlap_mm3": 0.05902849881217204,
+      "previous_overlap_mm3": 0.05902849881217204
+    },
+    "M4_lens": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    }
+  },
+  "fixed_interfaces": {
+    "RetainedPCBTray": {
+      "material_difference_mm3": 0.0
+    },
+    "RetainedSocket": {
+      "material_difference_mm3": 0.0
+    },
+    "UpperSupport": {
+      "material_difference_mm3": 0.0
+    }
+  },
+  "other_shapes_and_poses_preserved": true,
+  "carrier_mesh": {
+    "closed": true,
+    "self_intersections": false
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "revision": "ET-RAT-GUARD-R09",
+  "species": "rat",
+  "units": "mm",
+  "source_manifest": "designs/eye-tracker/rat/compact-guard-r08/review.json",
+  "source": {
+    "path": "designs/eye-tracker/rat/compact-guard-r08/checkpoints/ET-RAT-GUARD-R08.FCStd",
+    "sha256": "031484ca335dee56513c9ef56a65c86f2c22a1203eb1c73c60d56ede17f4f004"
+  },
+  "guard": {
+    "parameters": {
+      "units": "mm",
+      "socket_center_mm": [
+        4.810152946208322,
+        6.807159288708146,
+        27.470430731436505
+      ],
+      "socket_axis": [
+        -0.3263997972509688,
+        0.5149140652520016,
+        0.7926705985213433
+      ],
+      "attachment_height_mm": 3.9,
+      "attachment_radius_mm": 2.65,
+      "width_mm": 3.0,
+      "thickness_mm": 1.8,
+      "sections": 41,
+      "rear": {
+        "root_mm": [
+          4.10677424482636,
+          7.86588286441313,
+          12.26
+        ],
+        "root_tangent": [
+          -1,
+          0,
+          0
+        ],
+        "bend_mm": [
+          -3.0,
+          3.0,
+          21.0
+        ],
+        "bend_tangent": [
+          0,
+          0,
+          1
+        ],
+        "root_handle_mm": 10.0,
+        "bend_handle_mm": 5.0,
+        "socket_handle_mm": 10.0,
+        "radial_direction": [
+          -0.9977078866781307,
+          -0.02154614839589256,
+          -0.06414621071864238
+        ],
+        "root_width_direction": [
+          0,
+          1,
+          0
+        ],
+        "root_width_mm": 2.6,
+        "root_thickness_mm": 2.0
+      },
+      "top": {
+        "root_mm": [
+          4.4969191206496975,
+          16.0918887142941,
+          17.3662968498585
+        ],
+        "root_tangent": [
+          0,
+          0,
+          1
+        ],
+        "bend_mm": [
+          7.5,
+          15.0,
+          24.5
+        ],
+        "bend_tangent": [
+          0,
+          -1,
+          0.3
+        ],
+        "root_handle_mm": 5.0,
+        "bend_handle_mm": 3.0,
+        "socket_handle_mm": 4.0,
+        "radial_direction": [
+          -0.0,
+          0.9479533634787529,
+          -0.318409203179367
+        ],
+        "root_width_direction": [
+          0,
+          1,
+          0
+        ],
+        "root_width_mm": 3.0,
+        "root_thickness_mm": 1.5802897516466756
+      },
+      "socket_width_mm": 3.0,
+      "socket_thickness_mm": 2.2,
+      "root_lead_mm": 0,
+      "embed_mm": 0.4,
+      "socket_lead_mm": 1.0,
+      "arm": {
+        "root_mm": [
+          4.49691912065,
+          8.2,
+          17.36629684986
+        ],
+        "root_tangent": [
+          -1,
+          0,
+          0
+        ],
+        "bend_mm": [
+          -3.0,
+          3.0,
+          21.0
+        ],
+        "bend_tangent": [
+          0,
+          0,
+          1
+        ],
+        "root_handle_mm": 23.0,
+        "bend_handle_mm": 5.0,
+        "socket_handle_mm": 23.0,
+        "radial_direction": [
+          -0.5306360141636948,
+          -0.7938055406504545,
+          0.29715010365993066
+        ],
+        "root_width_direction": [
+          0,
+          1,
+          0
+        ],
+        "root_width_mm": 2.6,
+        "root_thickness_mm": 1.58028975165
+      },
+      "plugward_flare_deg": 0,
+      "body_width_mm": 2.6,
+      "body_thickness_mm": 1.8,
+      "turn_exit_handle_mm": 9,
+      "turn_entry_handle_mm": 6,
+      "root_curve_handle_mm": 8
+    },
+    "outer_mm": [
+      -11,
+      -0.8,
+      25
+    ]
+  },
+  "targeting_recipe": {
+    "mode": "fixed_anatomy_and_camera",
+    "change": "Immediate outward turn from PCB plate; remove straight lead and preserve socket terminal",
+    "preserve": [
+      "camera pose and optical axes",
+      "eye and skull geometry",
+      "ribbon route",
+      "upper arm",
+      "socket",
+      "holder",
+      "cap",
+      "clip",
+      "baseplate"
+    ]
+  },
+  "minimum_guard_ribbon_gap_mm": 1.0,
+  "physical_fit_verified": false
+}

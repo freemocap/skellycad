@@ -1,0 +1,11 @@
+{
+  "revision": "ET-MOUSE-EYE-AXES-R10",
+  "species": "mouse",
+  "units": "mm",
+  "source_manifest": "designs/eye-tracker/mouse/detailed-camera-r09/review.json",
+  "source": {
+    "path": "designs/eye-tracker/mouse/detailed-camera-r09/checkpoints/ET-MOUSE-DETAILED-R09.FCStd",
+    "sha256": "8d2956df88830b042076fdfc1563b9ec5071007ddfc086978dcceeb3070c0ef5"
+  },
+  "change": "Display existing geometric eye axes; no eye shape or skull placement change"
+}
