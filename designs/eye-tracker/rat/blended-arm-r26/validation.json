@@ -1,0 +1,61 @@
+{
+  "source": {
+    "revision": "ET-RAT-JOINED-ARM-R25",
+    "units": "mm",
+    "native_checkpoint": "designs/eye-tracker/rat/joined-arm-r25/checkpoints/ET-RAT-JOINED-ARM-R25.FCStd",
+    "native_sha256": "67b141909dca5e17fca6c3f16a2c86d249ee248263e8d3745a4abb091f8c1bc5",
+    "recipe": "recipe.json",
+    "status": "Leading-edge root with underside fillet; static checks passed; physical fit pending",
+    "physical_fit_verified": false,
+    "print_release": false
+  },
+  "units": "mm",
+  "poles_mm": [
+    [
+      4.5,
+      12.78,
+      16.8
+    ],
+    [
+      -7.5,
+      12.78,
+      34.8
+    ],
+    [
+      2.833395684201559,
+      1.4375598925674264,
+      41.97153771841164
+    ],
+    [
+      21.639814581722014,
+      7.999725404549052,
+      32.630414014897994
+    ]
+  ],
+  "arm_ribbon_gap_mm": 0.04076259833249723,
+  "checks": {
+    "RetainedPCBTray": 7.611758488683469,
+    "RetainedSocket": 6.05890349716973,
+    "eye_primary_Holder": 0.0,
+    "eye_primary_Clip": 0.0,
+    "eye_primary_Cap": 0.0,
+    "PCB": 0.0,
+    "JST_4pin": 0.0,
+    "camera_pcb": 0.0,
+    "M4_lens": 0.0,
+    "skull_mount_Baseplate": 0.0,
+    "RibbonCandidate": 0.0
+  },
+  "socket_fillet_radius_mm": 0.4,
+  "root_fillet_radius_mm": 0.5,
+  "finished_ribbon_overlap_mm3": 0.0,
+  "finished_ribbon_gap_mm": 0.10000000000000497,
+  "mesh_scope": {
+    "linear_deflection_mm": 0.04,
+    "angular_deflection_rad": 0.15,
+    "finished_carrier_closed": true,
+    "finished_carrier_self_intersections": 0,
+    "finer_experimental_mesh": "Local crossing triangles near curved seams; not released for printing",
+    "construction_arm_exported": false
+  }
+}

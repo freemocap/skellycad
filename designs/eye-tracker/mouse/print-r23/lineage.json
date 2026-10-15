@@ -1,0 +1,17 @@
+{
+  "revision": "MOUSE R23",
+  "parent_print_revision": "MOUSE R22",
+  "source_checkpoint": "designs/eye-tracker/mouse/raised-target-r19/checkpoints/ET-MOUSE-RAISED-TARGET-R19.FCStd",
+  "source_sha256": "05a11e2a9a0f8900cf22ad114194bc200bb6950e501fa8e4d8d163543ab0ea9c",
+  "change": "Add co-registered atlas mandibles with three permanent 1.2 mm print connections",
+  "units": "mm",
+  "hardware": "Byte-identical R22 meshes, renamed R23",
+  "parent_input_hashes": {
+    "skull-print-world.stl": "ae81503b0e33c51ff99e35e35b7db062f6f1d5e0d07fa55e664f73e0b2895023",
+    "baseplate-world.stl": "982f05960684789fdad087c3ff85e6edabcb493410f1c1d34f0dd3510014e8da",
+    "Eye1Sclera.stl": "6734974925f7f28e8c2bb0b86bc34ce4f690d076a66275c8a68e74313d1a3f7a",
+    "Eye1Cornea.stl": "1100877506f5fb887560d470e65a1b9f2f5ac80eac65136620601247ba0da41e",
+    "Eye2Sclera.stl": "7994e69f4c6ec52f3b60be1b493c9311796bb1f786a2d260ba0afa0181950ac9",
+    "Eye2Cornea.stl": "c9ad111f8139a1fc3bda3058607cd7b7d346d9fbf6caf2d89e3bb3430e3982f0"
+  }
+}

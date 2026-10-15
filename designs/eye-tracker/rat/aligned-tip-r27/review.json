@@ -1,0 +1,10 @@
+{
+  "revision": "ET-RAT-ALIGNED-TIP-R27",
+  "units": "mm",
+  "native_checkpoint": "designs/eye-tracker/rat/aligned-tip-r27/checkpoints/ET-RAT-ALIGNED-TIP-R27.FCStd",
+  "native_sha256": "320921e03d42a1bd8a16b3a11b7b6d6c1cd6817b4b6286475f1c9db59127be8d",
+  "recipe": "recipe.json",
+  "status": "Flat ribbon-facing taper with embedded socket tip; static checks passed; physical fit pending",
+  "physical_fit_verified": false,
+  "print_release": false
+}

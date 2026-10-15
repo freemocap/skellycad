@@ -1,0 +1,43 @@
+{
+  "fixed": {
+    "PCB": {
+      "difference_mm3": 0.0
+    },
+    "JST_4pin": {
+      "difference_mm3": 0.0
+    },
+    "eye_primary_Cap": {
+      "difference_mm3": 0.0
+    },
+    "skull_mount_Baseplate": {
+      "difference_mm3": 0.0
+    },
+    "RetainedPCBTray": {
+      "difference_mm3": 0.0
+    }
+  },
+  "moved_as_rigid_group": {
+    "camera_pcb": {
+      "difference_mm3": 0.0
+    },
+    "M4_lens": {
+      "difference_mm3": 0.0
+    },
+    "IR_LED": {
+      "difference_mm3": 0.0
+    },
+    "IR_LED_001": {
+      "difference_mm3": 0.0
+    },
+    "eye_primary_Holder": {
+      "difference_mm3": 0.0
+    },
+    "eye_primary_Clip": {
+      "difference_mm3": 0.0
+    },
+    "RetainedSocket": {
+      "difference_mm3": 0.0
+    }
+  },
+  "anatomy_unchanged": true
+}

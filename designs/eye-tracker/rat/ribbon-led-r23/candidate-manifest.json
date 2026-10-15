@@ -1,0 +1,58 @@
+{
+  "revision": "ET-RAT-RIBBON-LED-R23",
+  "status": "Complete rat review assembly; physical fit pending",
+  "parts": {
+    "skull_mount_Baseplate": "skull_mount_Baseplate",
+    "eye_primary_Holder": "eye_primary_Holder",
+    "eye_primary_Cap": "eye_primary_Cap",
+    "eye_primary_Clip": "eye_primary_Clip",
+    "eye_primary_Carrier": "FinishedCarrier"
+  },
+  "print_groups": {
+    "skull_mount-baseplate": [
+      "skull_mount_Baseplate"
+    ],
+    "eye_primary-carrier-and-holder": [
+      "eye_primary_Carrier",
+      "eye_primary_Holder"
+    ],
+    "eye_primary-matching-cap": [
+      "eye_primary_Cap"
+    ],
+    "eye_primary-camera-clip": [
+      "eye_primary_Clip"
+    ]
+  },
+  "camera_instances": [
+    {
+      "id": "eye_primary",
+      "role": "eye",
+      "camera": "pupil-core-eye-r08",
+      "mount": "raised-target-r19",
+      "objects": {
+        "Holder": "eye_primary_Holder",
+        "Cap": "eye_primary_Cap",
+        "Clip": "eye_primary_Clip",
+        "UpperCatch": "eye_primary_UpperCatch",
+        "UpperRail": "eye_primary_UpperRail",
+        "SideLedge": "eye_primary_SideLedge",
+        "Carrier": "FinishedCarrier",
+        "ApproxPCB": "camera_pcb",
+        "OpticalAxis": "DetailedOpticalAxis"
+      },
+      "baseplate_object": "skull_mount_Baseplate"
+    }
+  ],
+  "assembly_config": "designs/eye-tracker/mouse/raised-target-r19/recipe.json",
+  "units": "mm",
+  "native_checkpoint": "designs/eye-tracker/rat/ribbon-led-r23/checkpoints/ET-RAT-RIBBON-LED-R23.FCStd",
+  "native_sha256": "20a949b09b44012ca21de25065936dd7d0757fe9877794a40778b6547da68d40",
+  "print_directory": "generated/eye-tracker/rat/ribbon-led-r23/print",
+  "working_document": "designs/eye-tracker/mouse/raised-target-r19/checkpoints/ET-MOUSE-RAISED-TARGET-R19.FCStd",
+  "build_script": "designs/eye-tracker/rat/ribbon-led-r23/build.py",
+  "export_script": "designs/eye-tracker/mouse/export_print.py",
+  "lineage": "designs/eye-tracker/rat/ribbon-led-r23/recipe.json",
+  "baseline_revision": "ET-MOUSE-GUARD-R16",
+  "validation": "designs/eye-tracker/rat/ribbon-led-r23/validation.json",
+  "species": "rat"
+}

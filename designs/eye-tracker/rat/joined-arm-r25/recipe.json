@@ -1,0 +1,54 @@
+{
+  "source": {
+    "revision": "ET-RAT-SMOOTH-ARM-R24",
+    "units": "mm",
+    "native_checkpoint": "designs/eye-tracker/rat/smooth-arm-r24/checkpoints/ET-RAT-SMOOTH-ARM-R24.FCStd",
+    "native_sha256": "6c0ed87035eaf17c735e0e7ba14f9567f84bd01bc3ad7cd9b1b6410a5129aca7",
+    "recipe": "recipe.json",
+    "status": "Smooth single-arm review; static checks passed; physical fit and adjustment range pending",
+    "physical_fit_verified": false,
+    "print_release": false
+  },
+  "units": "mm",
+  "poles_mm": [
+    [
+      4.5,
+      12.78,
+      16.8
+    ],
+    [
+      -7.5,
+      12.78,
+      34.8
+    ],
+    [
+      2.581095988964087,
+      1.1537928431199331,
+      41.7352727708825
+    ],
+    [
+      21.387514886484542,
+      7.7159583551015585,
+      32.39414906736886
+    ]
+  ],
+  "root_width_mm": 6,
+  "tip_width_mm": 2.6,
+  "thickness_mm": 1.8,
+  "underside_fillet_radius_mm": 0.4,
+  "ribbon_exit_relief_box": {
+    "origin_mm": [
+      4.8,
+      10.53,
+      16.4
+    ],
+    "size_mm": [
+      1.4,
+      4.5,
+      3.2
+    ]
+  },
+  "fixed": "R24 camera, ribbon, holder, skull, eyes, baseplate and optical datum",
+  "selected_species_manifest": "designs/eye-tracker/rat/active-model.json",
+  "selected_checkpoint_note": "Historical R01 is not a geometry input; frozen R24 hash verified."
+}

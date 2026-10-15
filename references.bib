@@ -282,8 +282,8 @@
  author = {Maga, A. Murat}, title = {Mouse CT atlas: analytical pipeline for skull shape analysis in adult mice},
  url = {https://github.com/muratmaga/mouse_CT_atlas}, urldate = {2026-10-14},
  review = {source-code},
- claim = {Repository supplies a segmented skull template, LPS millimetric landmark coordinates and a GPL-3.0 license; main.R identifies skull segmentation label 1.},
- note = {Inspected README, license, main.R label assignments, paired template NIfTI and 45-point Markups JSON. Exact pinned tree and file hashes are retained in the study sources.json. Upstream registration scripts were inspected but not executed.}
+ claim = {Repository supplies a segmented skull template, LPS millimetric landmark coordinates and a GPL-3.0 license; main.R identifies skull label 1, right mandible label 2, left mandible label 21 and endocranial label 15.},
+ note = {Inspected README, license, main.R label assignments, paired template NIfTI and 45-point Markups JSON. Exact pinned tree and file hashes are retained in the study sources.json. Upstream registration scripts were inspected but not executed. Mouse print R23 review on 2026-10-15 checked the retained main.R assignments and both mandible segments in the retained NIfTI. It reuses the existing skull registration without new jaw articulation or claims of specimen-specific anatomical accuracy.}
 }
 
 
@@ -430,4 +430,23 @@
  review = {excerpt},
  claim = {A rat head-fixation plate distributed attachment across cranial plates while avoiding screw penetration of sutures and dural sinuses.},
  note = {Reviewed implant design, figure 1 description, cohort and postmortem results. Seven female Wistar rats, 250--400 g. Some screw tips penetrated brain: this is not a safe screw-depth specification or a validation of our design.}
+}
+
+@misc{nogaArticulatedHolders,
+  title = {Holding Systems},
+  author = {{Noga Engineering}},
+  url = {https://www.noga.com/holding-systems-1/},
+  urldate = {2026-10-15},
+  review = {excerpt},
+  claim = {Prior art for articulated links, swivel clamps and ball-and-socket end joints},
+  note = {Reviewed manufacturer mechanism description. Mechanism precedent only; no CAD downloaded, miniature dimensions or load ratings adopted. Central simultaneous locking is not implemented in the concept.}
+}
+@misc{smallrig3874DualBall,
+  title = {Magic Arm with Dual Ball Heads 3874},
+  author = {{SmallRig}},
+  url = {https://static.smallrig.com/mall/img/public/4z2o7pfzc8w-1751250626830_.pdf},
+  urldate = {2026-10-15},
+  review = {excerpt},
+  claim = {Prior art for a clampable double-ball camera support with relief notches},
+  note = {Reviewed indexed manufacturer PDF excerpt; direct PDF retrieval failed. Not a dimensional source or imported CAD asset.}
 }

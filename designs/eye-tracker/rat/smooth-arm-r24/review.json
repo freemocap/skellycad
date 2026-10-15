@@ -1,0 +1,10 @@
+{
+  "revision": "ET-RAT-SMOOTH-ARM-R24",
+  "units": "mm",
+  "native_checkpoint": "designs/eye-tracker/rat/smooth-arm-r24/checkpoints/ET-RAT-SMOOTH-ARM-R24.FCStd",
+  "native_sha256": "6c0ed87035eaf17c735e0e7ba14f9567f84bd01bc3ad7cd9b1b6410a5129aca7",
+  "recipe": "recipe.json",
+  "status": "Smooth single-arm review; static checks passed; physical fit and adjustment range pending",
+  "physical_fit_verified": false,
+  "print_release": false
+}

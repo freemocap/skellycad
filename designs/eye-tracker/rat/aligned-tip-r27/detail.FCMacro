@@ -1,0 +1,8 @@
+from pathlib import Path
+import FreeCAD as A,FreeCADGui as G,json
+R=Path(__file__).resolve().parents[4];O=R/'generated/eye-tracker/rat/aligned-tip-r27';d=A.ActiveDocument;v=G.activeDocument().activeView()
+sol=json.loads((R/'designs/eye-tracker/rat/oval-camera-r21/solution.json').read_text());M=A.Placement(A.Matrix(*sum(sol['mount_to_skull'],[])))
+focus=M.multVec(A.Vector(21.54,7.53,31.87))
+v.viewRear();cam=v.getCameraOrientation();forward=cam.multVec(A.Vector(0,0,-1));node=v.getCameraOrientation()
+c=v.getCameraNode();p=focus-forward*50;c.position.setValue(p.x,p.y,p.z);c.height.setValue(17);G.updateGui();v.saveImage(str(O/'socket-rear.png'),1400,1100,'White')
+v.viewAxonometric();v.fitAll();G.updateGui()

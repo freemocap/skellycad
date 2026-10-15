@@ -1,0 +1,14 @@
+from pathlib import Path
+import FreeCAD as A,FreeCADGui as G,Mesh,runpy,Part
+R=Path(__file__).resolve().parents[4];O=R/'generated/eye-tracker/rat/print-r27';find=runpy.run_path(str(R/'tools/cad/review_document.py'))['find_open_document']
+
+p=O/'RAT-R27-hardware-print.FCStd';d=find(A,p);A.setActiveDocument(d.Name);v=G.activeDocument().activeView();rot=A.Rotation(A.Vector(0,1,0),25).multiply(A.Rotation(A.Vector(0,0,1),A.Vector(0,1,0),A.Vector(-1,0,0),'ZXY'));c=v.getCameraNode();c.orientation.setValue(*rot.Q);pos=A.Vector(3.7,13.25,20.1157)+rot.multVec(A.Vector(0,0,60));c.position.setValue(pos.x,pos.y,pos.z);c.height.setValue(16);c.nearDistance.setValue(1);c.farDistance.setValue(200);c.focalDistance.setValue(60);G.updateGui();v.saveImage(str(O/'label-preview.png'),1600,1100,'White');d.save()
+
+p=O/'RAT-R27-clip-C01.FCStd';d=find(A,p) or A.openDocument(str(p));A.setActiveDocument(d.Name)
+for o in d.Objects:
+ if hasattr(o,'ViewObject'):o.ViewObject.Visibility=True;o.ViewObject.ShapeColor=(.95,.7,.15)
+v=G.activeDocument().activeView();v.viewAxonometric();v.fitAll();G.updateGui();v.saveImage(str(O/'clip-preview.png'),1200,900,'White')
+p=O/'RAT-R27-anatomy-print.FCStd';d=find(A,p) or A.newDocument('RatR27AnatomyPrint');A.setActiveDocument(d.Name)
+for name,color in [('Skull-and-bridge',(.88,.08,.06)),('Sclera',(.95,.95,.95)),('Cornea',(.08,.08,.08)),('Baseplate',(.98,.78,.05))]:
+ ob=d.getObject(name.replace('-','')) or d.addObject('Mesh::Feature',name.replace('-',''));ob.Label=name;ob.Mesh=Mesh.Mesh(str(O/'anatomy'/(name+'.stl')));ob.ViewObject.ShapeColor=color;ob.ViewObject.Visibility=True;ob.ViewObject.DisplayMode='Flat Lines' if name=='Baseplate' else 'Shaded'
+d.Label='RAT R27 - four-color printable skull';d.recompute();d.saveAs(str(p));v=G.activeDocument().activeView();v.viewAxonometric();v.fitAll();G.updateGui();v.saveImage(str(O/'anatomy-preview.png'),1600,1100,'White')

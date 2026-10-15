@@ -1,0 +1,17 @@
+import FreeCAD as A,FreeCADGui as G
+from pathlib import Path
+d=A.getDocument('RatArticulatedArmStudies');A.setActiveDocument(d.Name)
+for prefix in ['A','B']:
+ group=d.getObject(prefix+'Concept');box=A.BoundBox()
+ for o in group.Group:
+  if hasattr(o,'Shape'):box.add(o.Shape.BoundBox)
+ for o in group.Group:
+  if o.TypeId!='App::Annotation':continue
+  if o.Label.startswith(prefix+'  '):o.Position=A.Vector(box.XMin,box.YMin-7,0);o.ViewObject.FontSize=15
+  elif o.Label.startswith('CONCEPT'):o.Position=A.Vector(box.XMin,box.YMin-12,0);o.LabelText=['Concept only - ribbon / locking details unresolved'];o.ViewObject.FontSize=9
+  elif o.Label.startswith('1 '):
+   p=d.getObject(prefix+'Shoulder_hinge_cheeks').Shape.CenterOfMass if d.getObject(prefix+'Shoulder_hinge_cheeks') else None
+   o.Visibility=False
+  else:o.Visibility=False
+v=G.activeDocument().activeView();v.viewTop();v.fitAll();G.updateGui();d.recompute();d.save()
+v.saveImage(str(Path(__file__).resolve().parents[4]/'generated/eye-tracker/rat/articulated-study-r01/comparison.png'),1800,1000,'White')

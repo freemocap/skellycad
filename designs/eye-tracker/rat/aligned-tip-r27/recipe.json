@@ -1,0 +1,47 @@
+{
+  "source": {
+    "revision": "ET-RAT-BLENDED-ARM-R26",
+    "units": "mm",
+    "native_checkpoint": "designs/eye-tracker/rat/blended-arm-r26/checkpoints/ET-RAT-BLENDED-ARM-R26.FCStd",
+    "native_sha256": "3dc5e9b92a819b96f85406fc8111e7d41415ba241b683593ada1f93b4ee2a1df",
+    "recipe": "recipe.json",
+    "status": "Rounded arm with flared, filleted joins; native static checks passed; print validation and strength pending",
+    "physical_fit_verified": false,
+    "print_release": false
+  },
+  "units": "mm",
+  "poles_mm": [
+    [
+      4.5,
+      11.8,
+      16.8
+    ],
+    [
+      -7.5,
+      11.8,
+      34.8
+    ],
+    [
+      2.7358818423552584,
+      0.963138169110108,
+      41.206413493883254
+    ],
+    [
+      21.542300739875714,
+      7.525303681091733,
+      31.865289790369605
+    ]
+  ],
+  "profile": "Flat broad faces, 0.2 mm chamfered corners",
+  "root_width_mm": 4.4,
+  "tip_width_mm": 2.6,
+  "root_thickness_mm": 1.8,
+  "tip_thickness_mm": 1.6,
+  "terminal_axial_position_mm": 3.7,
+  "orientation": "Parallel transport with smooth distributed roll aligning terminal broad face to ribbon plane",
+  "root_fillet_mm": 0.4,
+  "socket_fillet_mm": 0.35,
+  "fixed": "R26 camera, ribbon, holder, skull, eyes, baseplate and optical datum",
+  "selected_species_manifest": "designs/eye-tracker/rat/active-model.json",
+  "selected_checkpoint_note": "Historical R01 is not a geometry input; frozen R26 hash verified."
+}

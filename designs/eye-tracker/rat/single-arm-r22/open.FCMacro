@@ -1,0 +1,35 @@
+# Reuse the live review instead of creating another owner of its save path.
+def _open_review():
+    from pathlib import Path
+    import runpy
+    import FreeCAD as App
+    root = Path(__file__).resolve().parents[4]
+    find_open = runpy.run_path(str(root / 'tools/cad/review_document.py'))['find_open_document']
+    if find_open(App, root / 'generated/eye-tracker/rat/single-arm-r22/ET-RAT-SINGLE-ARM-R22.FCStd'):
+        return
+    from pathlib import Path
+    import FreeCAD as A,FreeCADGui as G
+    R=Path(__file__).resolve().parents[4];O=R/'generated/eye-tracker/rat/single-arm-r22';d=A.openDocument(str(O/'ET-RAT-SINGLE-ARM-R22.FCStd'));A.setActiveDocument(d.Name)
+    for o in d.Objects:
+     if o.TypeId in ['App::Part','App::DocumentObjectGroup']:o.Visibility=True
+    for o in d.Objects:
+     if o.TypeId not in ['App::Part','App::DocumentObjectGroup']:o.Visibility=False
+    names=['FinishedCarrier','eye_primary_Holder','eye_primary_Clip','eye_primary_Cap','skull_mount_Baseplate','PCB','JST_4pin','RibbonCandidate','camera_pcb','M4_lens','IR_LED','IR_LED_001','DetailedOpticalAxis','RatDesignSkull','RatLeftSclera','RatLeftCornea','RatRightSclera','RatRightCornea','RatLeftOpticalAxis','RatRightOpticalAxis']
+    for name in names:
+     o=d.getObject(name);o.Visibility=True
+     if name=='RatDesignSkull':o.ViewObject.ShapeColor=(.85,.81,.65)
+     elif name.endswith('Sclera'):o.ViewObject.ShapeColor=(.95,.95,.93)
+     elif name.endswith('Cornea'):o.ViewObject.ShapeColor=(.1,.6,.85)
+     elif name in ['PCB','camera_pcb']:o.ViewObject.ShapeColor=(.9,.12,.1)
+     elif name=='RibbonCandidate':o.ViewObject.ShapeColor=(1.,.8,.02);o.ViewObject.DisplayMode='Shaded'
+     elif name=='M4_lens':o.ViewObject.ShapeColor=(.12,.12,.14)
+     elif name in ['JST_4pin','IR_LED','IR_LED_001']:o.ViewObject.ShapeColor=(.94,.94,.9)
+     elif 'OpticalAxis' in name:o.ViewObject.LineColor=(0.,.65,.95) if name=='DetailedOpticalAxis' else (.9,.15,.65);o.ViewObject.LineWidth=3
+    d.eye_primary_Holder.ViewObject.Transparency=45;d.eye_primary_Cap.ViewObject.Transparency=55
+    d.Label='Rat R22 - single tapered arm';d.recompute();G.activeDocument().activeView().viewRight();G.activeDocument().activeView().fitAll();d.save();G.updateGui()
+
+_open_review()
+
+from pathlib import Path
+G = __import__('FreeCADGui')
+G.activeDocument().activeView().saveImage(str(Path(__file__).resolve().parents[4]/'generated/eye-tracker/rat/single-arm-r22/review.png'),1600,1100,'White')

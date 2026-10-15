@@ -1,0 +1,46 @@
+{
+  "source": {
+    "revision": "ET-RAT-JOINED-ARM-R25",
+    "units": "mm",
+    "native_checkpoint": "designs/eye-tracker/rat/joined-arm-r25/checkpoints/ET-RAT-JOINED-ARM-R25.FCStd",
+    "native_sha256": "67b141909dca5e17fca6c3f16a2c86d249ee248263e8d3745a4abb091f8c1bc5",
+    "recipe": "recipe.json",
+    "status": "Leading-edge root with underside fillet; static checks passed; physical fit pending",
+    "physical_fit_verified": false,
+    "print_release": false
+  },
+  "units": "mm",
+  "poles_mm": [
+    [
+      4.5,
+      12.78,
+      16.8
+    ],
+    [
+      -7.5,
+      12.78,
+      34.8
+    ],
+    [
+      2.833395684201559,
+      1.4375598925674264,
+      41.97153771841164
+    ],
+    [
+      21.639814581722014,
+      7.999725404549052,
+      32.630414014897994
+    ]
+  ],
+  "profile": "oval",
+  "root_width_mm": 6,
+  "span_nominal_width_mm": 3.4,
+  "socket_width_mm": 4.8,
+  "span_thickness_mm": 1.8,
+  "socket_thickness_mm": 2.2,
+  "root_fillet_mm": 0.5,
+  "socket_shoulder_fillet_mm": 0.4,
+  "fixed": "R25 camera, ribbon, holder, skull, eyes, baseplate and optical datum",
+  "selected_species_manifest": "designs/eye-tracker/rat/active-model.json",
+  "selected_checkpoint_note": "Historical R01 is not a geometry input; frozen R25 hash verified."
+}

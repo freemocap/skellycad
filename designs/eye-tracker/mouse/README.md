@@ -90,3 +90,5 @@ Mouse print pack: [R20](print-r20/README.md) combines the detailed atlas skull, 
 Thinner eye bridge: [print R21](print-r21/README.md) reduces the R20 bridge diameter by 25%, from 3 mm to 2.25 mm, with the same skull material and matched hardware.
 
 Solid skull print: [R22](print-r22/README.md) fills the braincase and simplifies nasal interiors for printing, preserving the hollow anatomical reference and the R21 eye, bridge and baseplate arrangement.
+
+Connected jaw print: [R23](print-r23/README.md) adds both mandible segments from the same registered atlas to the R22 four-color Snapmaker U1 anatomy. Three small permanent connections join the jaw halves and skull. The eyes, baseplate and matched hardware are preserved; physical print strength remains untested.

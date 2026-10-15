@@ -1,0 +1,7 @@
+from pathlib import Path
+import FreeCAD as A,FreeCADGui as G
+d=A.activeDocument();assert 'NEUTRAL' in d.FileName.upper()
+v=G.activeDocument().activeView();v.viewTop();v.setCameraOrientation(A.Rotation(A.Vector(0,0,1),90).Q);v.fitAll();v.setAnimationEnabled(False) if hasattr(v,'setAnimationEnabled') else None
+v.setCameraType('Orthographic');v.fitAll();v.getCameraOrientation()
+G.updateGui();d.save()
+v.saveImage(str(Path(__file__).resolve().parents[4]/'generated/eye-tracker/rat/neutral-camera-r20/review.png'),1600,1100,'White')

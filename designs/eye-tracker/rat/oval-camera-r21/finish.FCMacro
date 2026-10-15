@@ -1,0 +1,5 @@
+from pathlib import Path
+import FreeCAD as A,FreeCADGui as G
+d=A.activeDocument();assert 'OVAL-R21' in d.FileName
+v=G.activeDocument().activeView();v.viewAxonometric();v.fitAll();G.updateGui();d.save()
+v.saveImage(str(Path(__file__).resolve().parents[4]/'generated/eye-tracker/rat/oval-camera-r21/axonometric.png'),1600,1100,'White')

@@ -1,0 +1,25 @@
+import FreeCAD as App
+import FreeCADGui as Gui
+from pathlib import Path
+import traceback
+
+def present():
+    out = Path(__file__).resolve().parents[4] / 'generated/eye-tracker/rat/articulated-study-r01'
+    try:
+        doc = App.getDocument('RatArticulatedArmStudies')
+        App.setActiveDocument(doc.Name)
+        for obj in doc.Objects:
+            if obj.TypeId == 'App::Annotation':
+                obj.ViewObject.Visibility = False
+        view = Gui.activeDocument().activeView()
+        view.viewTop()
+        view.fitAll()
+        Gui.updateGui()
+        doc.recompute()
+        doc.save()
+        view.saveImage(str(out / 'comparison.png'), 1800, 1000, 'White')
+        (out / 'presentation-status.txt').write_text('Presentation saved', encoding='utf-8')
+    except Exception:
+        (out / 'presentation-status.txt').write_text(traceback.format_exc(), encoding='utf-8')
+
+present()

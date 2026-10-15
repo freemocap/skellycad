@@ -129,3 +129,17 @@ Caudal baseplate study: [R17](bregma-baseplate-r17/README.md) places the top ros
 Complete caudal-mount camera review: [R18](targeted-r18/README.md) attaches matched camera hardware to R17, refits arms/ribbon, and aims at the R14 right-eye center on the R16 skull. Axis offset is 26.289 degrees; validation and inherited overlaps are documented.
 
 Tighter rear guard: [R19](compact-guard-r19/README.md) replaces the R18 rear loop with one continuous curve, preserving camera aim and interfaces. Static ribbon clearance is 1.144 mm.
+
+Neutral-axis camera review: [R20](neutral-camera-r20/README.md) moves the camera forward and down, aligns it with the estimated eye axis, and refits the ribbon and smooth arms. Static validation passes; physical fit remains unverified.
+
+Level camera and oval supports: [R21](oval-camera-r21/README.md) levels the camera PCB long edge and gives both arms parallel departures from the main PCB frame. Eye-center aim is retained; neutral-axis offset is 20.916 degrees.
+
+Ribbon-led single support: [R23](ribbon-led-r23/README.md) fixes the camera pose, fits a smooth ribbon, then derives a tapered support behind it. Static geometry checks pass; physical ribbon fit remains pending.
+
+Smooth single arm: [R24](smooth-arm-r24/README.md) removes the separate elbow and uses a broad, continuously tapered curve between the PCB tray and socket. Camera and ribbon remain fixed.
+
+Leading-edge arm root: [R25](joined-arm-r25/README.md) embeds and widens the arm attachment, adds an underside fillet and preserves ribbon exit clearance.
+
+Rounded arm and junctions: [R26](blended-arm-r26/README.md) adds a smooth oval section, flared attachments and native root/socket fillets. Native static checks pass; print validation and strength remain pending.
+
+Ribbon-facing socket taper: [R27](aligned-tip-r27/README.md) replaces the bulky terminal flare with a flat, narrowing section aligned with the ribbon and embedded in the collar.

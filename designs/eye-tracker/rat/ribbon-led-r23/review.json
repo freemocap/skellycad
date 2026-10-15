@@ -1,0 +1,10 @@
+{
+  "revision": "ET-RAT-RIBBON-LED-R23",
+  "units": "mm",
+  "native_checkpoint": "designs/eye-tracker/rat/ribbon-led-r23/checkpoints/ET-RAT-RIBBON-LED-R23.FCStd",
+  "native_sha256": "20a949b09b44012ca21de25065936dd7d0757fe9877794a40778b6547da68d40",
+  "recipe": "recipe.json",
+  "status": "Complete camera-fixed, ribbon-led single-arm review; geometric checks passed; physical ribbon fit pending",
+  "physical_fit_verified": false,
+  "print_release": false
+}

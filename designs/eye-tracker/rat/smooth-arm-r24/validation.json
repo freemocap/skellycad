@@ -1,0 +1,49 @@
+{
+  "source": {
+    "revision": "ET-RAT-RIBBON-LED-R23",
+    "units": "mm",
+    "native_checkpoint": "designs/eye-tracker/rat/ribbon-led-r23/checkpoints/ET-RAT-RIBBON-LED-R23.FCStd",
+    "native_sha256": "20a949b09b44012ca21de25065936dd7d0757fe9877794a40778b6547da68d40",
+    "recipe": "recipe.json",
+    "status": "Complete camera-fixed, ribbon-led single-arm review; geometric checks passed; physical ribbon fit pending",
+    "physical_fit_verified": false,
+    "print_release": false
+  },
+  "units": "mm",
+  "poles_mm": [
+    [
+      3.43706399647303,
+      12.78,
+      16.0
+    ],
+    [
+      -8.56293600352697,
+      12.78,
+      34.0
+    ],
+    [
+      2.581095988964087,
+      1.1537928431199331,
+      41.7352727708825
+    ],
+    [
+      21.387514886484542,
+      7.7159583551015585,
+      32.39414906736886
+    ]
+  ],
+  "arm_ribbon_gap_mm": 0.7412263315912364,
+  "checks": {
+    "RetainedPCBTray": 1.0035556392958422,
+    "RetainedSocket": 3.808958937298606,
+    "eye_primary_Holder": 0.0,
+    "eye_primary_Clip": 0.0,
+    "eye_primary_Cap": 0.0,
+    "PCB": 0.0,
+    "JST_4pin": 0.0,
+    "camera_pcb": 0.0,
+    "M4_lens": 0.0,
+    "skull_mount_Baseplate": 0.0,
+    "RibbonCandidate": 0.0
+  }
+}

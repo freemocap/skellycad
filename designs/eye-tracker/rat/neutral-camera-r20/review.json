@@ -1,0 +1,10 @@
+{
+  "revision": "ET-RAT-NEUTRAL-R20",
+  "units": "mm",
+  "native_checkpoint": "designs/eye-tracker/rat/neutral-camera-r20/checkpoints/ET-RAT-NEUTRAL-R20.FCStd",
+  "native_sha256": "df58b75617b0e1ca068d915e0bb557211465c06a67ec3e594e0b38bb92e92c1f",
+  "recipe": "recipe.json",
+  "status": "Complete neutral-axis-aligned review; static validation passed; physical fit pending",
+  "physical_fit_verified": false,
+  "print_release": false
+}

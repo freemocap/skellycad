@@ -1,0 +1,65 @@
+"""Side-by-side concept mock-ups, not printable or collision-validated hardware."""
+from pathlib import Path
+import json,hashlib,runpy
+import FreeCAD as A,FreeCADGui as G,Part,Mesh
+R=Path(__file__).resolve().parents[4];S=Path(__file__).resolve().parent;O=R/'generated/eye-tracker/rat/articulated-study-r01';O.mkdir(parents=True,exist_ok=True)
+out=O/'RAT-ARTICULATED-ARM-STUDIES.FCStd'
+find=runpy.run_path(str(R/'tools/cad/review_document.py'))['find_open_document']
+def build():
+ if find(A,out):return
+ m=json.loads((S.parent/'oval-camera-r21/review.json').read_text());src=R/m['native_checkpoint'];assert hashlib.sha256(src.read_bytes()).hexdigest()==m['native_sha256']
+ existing=find(A,src);source=existing or A.openDocument(str(src))
+ d=A.newDocument('RatArticulatedArmStudies');d.Label='Rat arm concepts - A hinge-hinge-ball / B hinge-ball-ball'
+ sol=json.loads((S.parent/'oval-camera-r21/solution.json').read_text());M=A.Placement(A.Matrix(*sum(sol['mount_to_skull'],[])))
+ p=json.loads((S.parent/'oval-camera-r21/arms.json').read_text())['UpperSupport'];camera=A.Vector(*p['socket_center_mm']);axis=A.Vector(*p['socket_axis'])
+ shoulder=A.Vector(4.5,12.8,18.5);elbow=A.Vector(10.5,12.8,30.)
+ # Display frame: local cable reach becomes screen X, PCB height becomes screen Y.
+ Q=A.Rotation(A.Vector(0,0,1),A.Vector(1,0,0),A.Vector(0,1,0),'ZXY')
+ def local(o):
+  sh=o.Shape.copy();sh.Placement=M.inverse().multiply(o.getGlobalPlacement());return sh
+ def rod(a,b,r=1.5):return Part.makeCylinder(r,(b-a).Length,a,b-a)
+ for index,(prefix,title) in enumerate([('A','A  HINGE - HINGE - BALL'),('B','B  HINGE - BALL - BALL')]):
+  offset=A.Vector(index*70,0,0);D=A.Placement(offset,Q)
+  group=d.addObject('App::DocumentObjectGroup',prefix+'Concept');group.Label=title
+  def feature(name,shape,color,trans=0):
+   o=d.addObject('Part::Feature',prefix+name);o.Label=name;o.Shape=shape;o.Placement=D.multiply(o.Placement);o.ViewObject.ShapeColor=color;o.ViewObject.LineColor=(.15,.18,.2);o.ViewObject.Transparency=trans;group.addObject(o);return o
+  def label(name,pos,color=(.15,.2,.25),size=12):
+   o=d.addObject('App::Annotation',prefix+'Label');o.Label=name;o.LabelText=[name];o.Position=D.multVec(pos);o.ViewObject.TextColor=color;o.ViewObject.FontSize=size;group.addObject(o)
+  for name in ['RetainedPCBTray','PCB','JST_4pin','camera_pcb','M4_lens','IR_LED','IR_LED_001','eye_primary_Holder','eye_primary_Clip','RetainedSocket']:
+   color=(.65,.69,.72) if name in ['RetainedPCBTray','eye_primary_Holder','eye_primary_Clip','RetainedSocket'] else ((.65,.15,.12) if 'pcb' in name.lower() else (.15,.17,.2))
+   feature(name,local(source.getObject(name)),color,65 if name=='RetainedSocket' else 0)
+  feature('Existing ribbon - reference route only',local(source.RibbonCandidate),(1.,.75,.06),55)
+  feature('Camera optical axis',local(source.DetailedOpticalAxis),(.1,.55,.9))
+  def hinge(pos,name):
+   # Double-cheek silhouette, pivot and accessible clamp head; no fitted clearances.
+   y=A.Vector(0,1,0)
+   cheeks=Part.makeCylinder(3.4,1.2,pos-y*3,y).fuse(Part.makeCylinder(3.4,1.2,pos+y*1.8,y))
+   feature(name+' cheeks',cheeks,(.2,.45,.75))
+   feature(name+' pivot',Part.makeCylinder(1.,7,pos-y*3.5,y),(.25,.27,.3))
+   feature(name+' clamp head',Part.makeCylinder(2.,1.2,pos-y*4.2,y),(.15,.22,.3))
+  hinge(shoulder,'Shoulder hinge')
+  feature('Frame attachment concept',rod(A.Vector(4.5,12.8,16.8),shoulder,2.2),(.25,.45,.7))
+  feature('Link 1',rod(shoulder,elbow,1.5),(.25,.55,.8))
+  if prefix=='A':
+   hinge(elbow,'Elbow hinge')
+  else:
+   socket=local(source.RetainedSocket);socket.translate(elbow-camera)
+   feature('Elbow socket - copied camera socket',socket,(.3,.55,.85),65)
+   feature('Elbow ball - schematic',Part.makeSphere(2.65,elbow),(.05,.65,.9))
+   feature('Elbow clamp concept',Part.makeCylinder(1.,7,elbow-A.Vector(0,3.5,0),A.Vector(0,1,0)),(.15,.22,.3))
+  feature('Link 2 - ball stem for B',rod(elbow,camera,1.5),(.25,.55,.8))
+  # Loose guide silhouettes show cable capture intent, not a solved moving route.
+  for k,t in enumerate([.35,.7]):
+   c=shoulder*(1-t)+elbow*t
+   ring=Part.makeCylinder(2.5,.7,c,A.Vector(0,1,0)).cut(Part.makeCylinder(1.9,.7,c,A.Vector(0,1,0)))
+   feature('Optional ribbon guide '+str(k+1),ring,(1.,.65,.1))
+  label(title,A.Vector(0,28,9),size=16)
+  label('1  Shoulder hinge',shoulder+A.Vector(0,6,-5))
+  label('2  '+('Elbow hinge' if prefix=='A' else 'Elbow ball + socket'),elbow+A.Vector(0,6,0))
+  label('3  Existing camera ball joint',camera+A.Vector(0,-11,0))
+  label('CONCEPT ONLY - ribbon route / clamp details unresolved',A.Vector(0,-14,8),(.55,.25,.12),10)
+ d.recompute();A.setActiveDocument(d.Name);v=G.activeDocument().activeView();v.viewTop();v.fitAll();d.saveAs(str(out));G.updateGui()
+ if not existing:A.closeDocument(source.Name)
+ A.setActiveDocument(d.Name)
+ (O/'lineage.json').write_text(json.dumps({'source':m,'units':'mm','concepts':['hinge-hinge-ball','hinge-ball-ball'],'shoulder_mount_mm':list(shoulder),'elbow_mount_mm':list(elbow),'camera_ball_mount_mm':list(camera),'physical_fit_verified':False,'ribbon_motion_validated':False},indent=2))
+build()

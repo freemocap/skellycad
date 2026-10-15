@@ -1,0 +1,43 @@
+{
+  "units": "mm",
+  "source": {
+    "revision": "ET-RAT-OVAL-R21",
+    "units": "mm",
+    "native_checkpoint": "designs/eye-tracker/rat/oval-camera-r21/checkpoints/ET-RAT-OVAL-R21.FCStd",
+    "native_sha256": "32059ddfa844999852db6143b067276bce35cf8e647ed3e529464271e5f855ce",
+    "recipe": "recipe.json",
+    "status": "Complete level-camera and oval-arm review; static validation passed; physical fit pending",
+    "physical_fit_verified": false,
+    "print_release": false
+  },
+  "selected_species_manifest": "designs/eye-tracker/rat/active-model.json",
+  "selected_checkpoint_note": "Historical R01 remains selected. Its recorded hash differs from disk; it was not used as geometry input. R21 frozen source hash was verified.",
+  "order": [
+    "Preserve R21 camera, sensor, holder and optical datum pose",
+    "Fit 32.85 mm smooth ribbon centerline between fixed endpoint frames",
+    "Transport and distribute ribbon frame twist",
+    "Offset single support 2.6 mm behind ribbon negative face",
+    "Join root and socket, add PCB exit relief, validate complete assembly"
+  ],
+  "ribbon": {
+    "width_mm": 4,
+    "thickness_mm": 0.25,
+    "centerline_length_mm": 32.85,
+    "objective": "Mean squared sampled centerline curvature with small control displacement penalty",
+    "minimum_sampled_centerline_radius_constraint_mm": 3.7,
+    "model_limit": "Geometric strip approximation; not a physical energy or inextensible sheet solution"
+  },
+  "arm": {
+    "root_width_mm": 4,
+    "tip_width_mm": 2.6,
+    "thickness_mm": 1.8,
+    "normal_offset_mm": 2.6
+  },
+  "fixed_camera_solution": "designs/eye-tracker/rat/oval-camera-r21/solution.json",
+  "validation": [
+    "validation.json",
+    "assembly-validation.json",
+    "interface-validation.json",
+    "containment.json"
+  ]
+}

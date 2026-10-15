@@ -1,0 +1,58 @@
+{
+  "revision": "ET-RAT-JOINED-ARM-R25",
+  "status": "Complete rat review assembly; physical fit pending",
+  "parts": {
+    "skull_mount_Baseplate": "skull_mount_Baseplate",
+    "eye_primary_Holder": "eye_primary_Holder",
+    "eye_primary_Cap": "eye_primary_Cap",
+    "eye_primary_Clip": "eye_primary_Clip",
+    "eye_primary_Carrier": "FinishedCarrier"
+  },
+  "print_groups": {
+    "skull_mount-baseplate": [
+      "skull_mount_Baseplate"
+    ],
+    "eye_primary-carrier-and-holder": [
+      "eye_primary_Carrier",
+      "eye_primary_Holder"
+    ],
+    "eye_primary-matching-cap": [
+      "eye_primary_Cap"
+    ],
+    "eye_primary-camera-clip": [
+      "eye_primary_Clip"
+    ]
+  },
+  "camera_instances": [
+    {
+      "id": "eye_primary",
+      "role": "eye",
+      "camera": "pupil-core-eye-r08",
+      "mount": "raised-target-r19",
+      "objects": {
+        "Holder": "eye_primary_Holder",
+        "Cap": "eye_primary_Cap",
+        "Clip": "eye_primary_Clip",
+        "UpperCatch": "eye_primary_UpperCatch",
+        "UpperRail": "eye_primary_UpperRail",
+        "SideLedge": "eye_primary_SideLedge",
+        "Carrier": "FinishedCarrier",
+        "ApproxPCB": "camera_pcb",
+        "OpticalAxis": "DetailedOpticalAxis"
+      },
+      "baseplate_object": "skull_mount_Baseplate"
+    }
+  ],
+  "assembly_config": "designs/eye-tracker/mouse/raised-target-r19/recipe.json",
+  "units": "mm",
+  "native_checkpoint": "designs/eye-tracker/rat/joined-arm-r25/checkpoints/ET-RAT-JOINED-ARM-R25.FCStd",
+  "native_sha256": "67b141909dca5e17fca6c3f16a2c86d249ee248263e8d3745a4abb091f8c1bc5",
+  "print_directory": "generated/eye-tracker/rat/joined-arm-r25/print",
+  "working_document": "designs/eye-tracker/mouse/raised-target-r19/checkpoints/ET-MOUSE-RAISED-TARGET-R19.FCStd",
+  "build_script": "designs/eye-tracker/rat/joined-arm-r25/build.py",
+  "export_script": "designs/eye-tracker/mouse/export_print.py",
+  "lineage": "designs/eye-tracker/rat/joined-arm-r25/recipe.json",
+  "baseline_revision": "ET-MOUSE-GUARD-R16",
+  "validation": "designs/eye-tracker/rat/joined-arm-r25/validation.json",
+  "species": "rat"
+}

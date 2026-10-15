@@ -1,0 +1,10 @@
+{
+  "revision": "ET-RAT-OVAL-R21",
+  "units": "mm",
+  "native_checkpoint": "designs/eye-tracker/rat/oval-camera-r21/checkpoints/ET-RAT-OVAL-R21.FCStd",
+  "native_sha256": "32059ddfa844999852db6143b067276bce35cf8e647ed3e529464271e5f855ce",
+  "recipe": "recipe.json",
+  "status": "Complete level-camera and oval-arm review; static validation passed; physical fit pending",
+  "physical_fit_verified": false,
+  "print_release": false
+}

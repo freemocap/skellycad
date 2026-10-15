@@ -1,0 +1,48 @@
+{
+  "revision": "ET-RAT-OVAL-R21",
+  "units": "mm",
+  "hardware_source": {
+    "revision": "ET-MOUSE-GUARD-R16",
+    "native_checkpoint": "designs/eye-tracker/mouse/compact-guard-r16/checkpoints/ET-MOUSE-GUARD-R16.FCStd",
+    "native_sha256": "dba2bd05f7549eec3e5caa02ef15fbfa72181b5109147c6615f79e0eec542738",
+    "source": {
+      "path": "designs/eye-tracker/mouse/nasal-camera-r15/checkpoints/ET-MOUSE-NASAL-R15.FCStd",
+      "sha256": "8368c1a743e055c62d63e5e02aa2ff1257d6b6ece7742ae2622bdb8c957dcd4a"
+    },
+    "units": "mm",
+    "status": "complete review assembly",
+    "physical_fit_verified": false
+  },
+  "accepted_mount": {
+    "native_checkpoint": "designs/eye-tracker/rat/bregma-baseplate-r17/checkpoints/ET-RAT-BREGMA-BASEPLATE-R17.FCStd",
+    "native_sha256": "4dc5d561888f1006ddb156111db1ceccdf789d751ab577545412f40ba9948c6a",
+    "units": "mm",
+    "anatomy_source": "designs/eye-tracker/rat/symmetric-design-r16/review.json",
+    "hardware_source": "designs/eye-tracker/rat/compact-guard-r09/review.json",
+    "placement": "placement.json",
+    "status": "Baseplate placement study, uncut contact stock, no camera integration or physical fit validation"
+  },
+  "anatomy_source": {
+    "native_checkpoint": "designs/eye-tracker/rat/symmetric-design-r16/checkpoints/ET-RAT-SYMMETRIC-DESIGN-R16.FCStd",
+    "native_sha256": "e4531571560d10cdf80f84b92f2ebdde8a6d2b5e5c0de786a45eeef3cb7d5986",
+    "parent_review": "designs/eye-tracker/rat/symmetry-review-r15/review.json",
+    "eye_source_review": "designs/eye-tracker/rat/registered-eyes-r14/review.json",
+    "units": "mm",
+    "validation": "validation.json",
+    "status": "Idealized symmetric design derivative for review; not print-ready or selected complete hardware assembly"
+  },
+  "eye_source": "designs/eye-tracker/rat/registered-eyes-r14/placement.json",
+  "selected_species_manifest": "designs/eye-tracker/rat/active-model.json",
+  "camera_manifest": "designs/eye-tracker/shared/cameras/pupil-core-eye/active-model.json",
+  "camera_manifest_sha256": "c167939feec847adc5196a279f941e7df36c52cffe8623c64a6c9c6bc868408c",
+  "solution": "solution.json",
+  "arms": "arms.json",
+  "skull_contact_policy": {
+    "skull_mount_Baseplate": "boolean_cut_stock"
+  },
+  "physical_fit_verified": false,
+  "previous_complete_review": "designs/eye-tracker/rat/neutral-camera-r20/review.json",
+  "targeting_intent": "Prioritize horizontal camera PCB long edge, retain eye-center aim, then minimize neutral eye-axis offset; fixed main board and baseplate",
+  "guard_style": "Paired supports with parallel +Z roots and smooth cubic centerlines",
+  "validation": "validation.json"
+}

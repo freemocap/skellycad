@@ -1,0 +1,33 @@
+{
+  "accepted_baseplate_difference_mm3": 0.0,
+  "actual_aim": {
+    "origin": [
+      12.966742928433902,
+      -21.205987957590487,
+      -2.6537761572908325
+    ],
+    "direction": [
+      -0.33036579353673434,
+      0.9076736655410893,
+      -0.2588183906604141
+    ],
+    "miss_mm": 1.1077984642285142e-05,
+    "forward_mm": 14.235449216151961,
+    "opposing_eye_axis_angle_deg": 4.4461855996568644e-05
+  },
+  "anatomy": {
+    "Skull": {
+      "surface_crossings": 0
+    },
+    "Left": {
+      "surface_crossings": 0
+    },
+    "Right": {
+      "surface_crossings": 0
+    }
+  },
+  "carrier_mesh": {
+    "closed": true,
+    "self_intersections": false
+  }
+}

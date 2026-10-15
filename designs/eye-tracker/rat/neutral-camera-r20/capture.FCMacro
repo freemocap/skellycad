@@ -1,0 +1,3 @@
+from pathlib import Path
+import FreeCADGui as G
+G.activeDocument().activeView().saveImage(str(Path(__file__).resolve().parents[4]/'generated/eye-tracker/rat/neutral-camera-r20/review.png'),1600,1100,'White')

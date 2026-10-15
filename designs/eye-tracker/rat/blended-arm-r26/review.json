@@ -1,0 +1,10 @@
+{
+  "revision": "ET-RAT-BLENDED-ARM-R26",
+  "units": "mm",
+  "native_checkpoint": "designs/eye-tracker/rat/blended-arm-r26/checkpoints/ET-RAT-BLENDED-ARM-R26.FCStd",
+  "native_sha256": "3dc5e9b92a819b96f85406fc8111e7d41415ba241b683593ada1f93b4ee2a1df",
+  "recipe": "recipe.json",
+  "status": "Rounded arm with flared, filleted joins; native static checks passed; print validation and strength pending",
+  "physical_fit_verified": false,
+  "print_release": false
+}

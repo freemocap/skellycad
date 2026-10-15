@@ -1,0 +1,5 @@
+from pathlib import Path
+import FreeCAD as A,FreeCADGui as G
+d=A.activeDocument();assert 'SINGLE-ARM-R22' in d.FileName
+v=G.activeDocument().activeView();v.viewAxonometric();v.fitAll();G.updateGui();d.save()
+v.saveImage(str(Path(__file__).resolve().parents[4]/'generated/eye-tracker/rat/single-arm-r22/axonometric.png'),1600,1100,'White')

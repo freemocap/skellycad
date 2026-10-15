@@ -1,0 +1,5 @@
+from pathlib import Path
+import json,sys,hashlib
+import FreeCAD as A
+R=Path.cwd();S=R/'designs/eye-tracker/rat/joined-arm-r25';O=R/'generated/eye-tracker/rat/joined-arm-r25';sys.path.insert(0,str(R/'designs/eye-tracker'));from shared.validation import validate_selected
+m=json.loads((R/'designs/eye-tracker/mouse/active-model.json').read_text());m['revision']='ET-RAT-JOINED-ARM-R25';m['species']='rat';m['status']='Complete rat review assembly; physical fit pending';m['native_checkpoint']='';m['native_sha256']='';m['build_script']='designs/eye-tracker/rat/joined-arm-r25/build.py';m['lineage']='designs/eye-tracker/rat/joined-arm-r25/recipe.json';m['validation']='designs/eye-tracker/rat/joined-arm-r25/validation.json';m['print_directory']='generated/eye-tracker/rat/joined-arm-r25/print';d=A.openDocument(str(O/'ET-RAT-JOINED-ARM-R25.FCStd'));validate_selected(d,m);(S/'candidate-manifest.json').write_text(json.dumps(m,indent=2));(O/'interface-validation.json').write_text(json.dumps({'matched_parts_pass':True}));print('matched parts PASS')

@@ -1,0 +1,22 @@
+{
+  "fixed_parts": {
+    "PCB": 0.0,
+    "JST_4pin": 0.0,
+    "eye_primary_Cap": 0.0,
+    "skull_mount_Baseplate": 0.0,
+    "RetainedPCBTray": 0.0,
+    "camera_pcb": 0.0,
+    "M4_lens": 0.0,
+    "IR_LED": 0.0,
+    "IR_LED_001": 0.0,
+    "eye_primary_Holder": 0.0,
+    "eye_primary_Clip": 0.0,
+    "RetainedSocket": 0.0,
+    "DetailedOpticalAxis": 0.0
+  },
+  "anatomy_crossings": {
+    "FinishedCarrier": 0,
+    "RibbonCandidate": 0
+  },
+  "anatomy_unchanged": true
+}

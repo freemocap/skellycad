@@ -1,0 +1,12 @@
+{
+  "Left": {
+    "samples": 1800,
+    "inside_eye": 0
+  },
+  "Right": {
+    "samples": 1800,
+    "inside_eye": 0
+  },
+  "skull_containment": "Not asserted: source-derived anatomical skull is open. Native mesh surface-crossing checks are recorded separately.",
+  "shared_camera_asset_hashes_verified": true
+}

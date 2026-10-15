@@ -1,0 +1,73 @@
+{
+  "source": {
+    "revision": "ET-RAT-OVAL-R21",
+    "units": "mm",
+    "native_checkpoint": "designs/eye-tracker/rat/oval-camera-r21/checkpoints/ET-RAT-OVAL-R21.FCStd",
+    "native_sha256": "32059ddfa844999852db6143b067276bce35cf8e647ed3e529464271e5f855ce",
+    "recipe": "recipe.json",
+    "status": "Complete level-camera and oval-arm review; static validation passed; physical fit pending",
+    "physical_fit_verified": false,
+    "print_release": false
+  },
+  "units": "mm",
+  "camera_pose": "unchanged from R21",
+  "centerline_length_mm": 32.850000000010546,
+  "minimum_centerline_radius_mm": 5.188960677930412,
+  "distributed_twist_deg": -153.99492903949317,
+  "arm_offset_mm": 2.6,
+  "route_model": "Smooth quintic centerline and distributed frame twist; geometric relaxed-route approximation, not an inextensible shell or physical energy simulation",
+  "checks": {
+    "ribbon_RetainedPCBTray": 0.00031187290222182127,
+    "ribbon_RetainedSocket": 0.0,
+    "ribbon_eye_primary_Holder": 4.031860345298228e-06,
+    "ribbon_eye_primary_Clip": 0.0,
+    "ribbon_eye_primary_Cap": 0.0,
+    "ribbon_PCB": 0.0,
+    "ribbon_JST_4pin": 0.0,
+    "ribbon_camera_pcb": 0.0,
+    "ribbon_M4_lens": 0.0,
+    "ribbon_skull_mount_Baseplate": 0.0,
+    "arm_RetainedPCBTray": 1.4470072673392347,
+    "arm_RetainedSocket": 3.4475817970628424,
+    "arm_eye_primary_Holder": 0.0,
+    "arm_eye_primary_Clip": 0.0,
+    "arm_eye_primary_Cap": 0.0,
+    "arm_PCB": 0.0,
+    "arm_JST_4pin": 0.0,
+    "arm_camera_pcb": 0.0,
+    "arm_M4_lens": 0.0,
+    "arm_skull_mount_Baseplate": 0.0
+  },
+  "arm_ribbon_overlap_mm3": 0.0,
+  "arm_ribbon_gap_mm": 1.0735455276791945,
+  "seating": {
+    "RetainedPCBTray": 1.4470072673392347,
+    "RetainedSocket": 3.4475817970628424
+  },
+  "finished_carrier_ribbon_overlap_mm3": 0.0,
+  "finished_carrier_ribbon_gap_mm": 0.09733180975966885,
+  "exit_relief_box_mm": {
+    "size": [
+      1,
+      4.5,
+      3.2
+    ],
+    "origin": [
+      5.18706399647303,
+      10.53,
+      16.4
+    ]
+  },
+  "optimization_variables_mm": [
+    17.500303057472845,
+    12.609426288894518,
+    2.124176464029087,
+    8.0,
+    1.1278710118479587,
+    -2.4705918900346453,
+    -2.3578717587678497,
+    8.0
+  ],
+  "physical_fit_verified": false,
+  "print_release": false
+}

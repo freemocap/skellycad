@@ -1,0 +1,58 @@
+{
+  "source": {
+    "revision": "ET-RAT-BLENDED-ARM-R26",
+    "units": "mm",
+    "native_checkpoint": "designs/eye-tracker/rat/blended-arm-r26/checkpoints/ET-RAT-BLENDED-ARM-R26.FCStd",
+    "native_sha256": "3dc5e9b92a819b96f85406fc8111e7d41415ba241b683593ada1f93b4ee2a1df",
+    "recipe": "recipe.json",
+    "status": "Rounded arm with flared, filleted joins; native static checks passed; print validation and strength pending",
+    "physical_fit_verified": false,
+    "print_release": false
+  },
+  "units": "mm",
+  "poles_mm": [
+    [
+      4.5,
+      11.8,
+      16.8
+    ],
+    [
+      -7.5,
+      11.8,
+      34.8
+    ],
+    [
+      2.7358818423552584,
+      0.963138169110108,
+      41.206413493883254
+    ],
+    [
+      21.542300739875714,
+      7.525303681091733,
+      31.865289790369605
+    ]
+  ],
+  "arm_ribbon_gap_mm": 0.03730096399307357,
+  "checks": {
+    "RetainedPCBTray": 6.262438707900097,
+    "RetainedSocket": 4.476116011086049,
+    "eye_primary_Holder": 0.0,
+    "eye_primary_Clip": 0.0,
+    "eye_primary_Cap": 0.0,
+    "PCB": 0.0,
+    "JST_4pin": 0.0,
+    "camera_pcb": 0.0,
+    "M4_lens": 0.0,
+    "skull_mount_Baseplate": 0.0,
+    "RibbonCandidate": 0.0
+  },
+  "root_fillet_mm": 0.4,
+  "socket_fillet_mm": 0.35,
+  "tip_width_mm": 2.6,
+  "tip_thickness_mm": 1.6,
+  "width_frame_rotation_deg": -72.99962350707825,
+  "finished_ribbon_overlap_mm3": 0.0,
+  "finished_ribbon_gap_mm": 0.10000000000000497,
+  "terminal_face_normal_error_deg": 0.006428325147491978,
+  "profile": "Flat broad faces with 0.2 mm corner chamfers"
+}

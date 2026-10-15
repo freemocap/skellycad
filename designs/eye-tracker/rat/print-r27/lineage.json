@@ -1,0 +1,25 @@
+{
+  "source": {
+    "revision": "ET-RAT-ALIGNED-TIP-R27",
+    "units": "mm",
+    "native_checkpoint": "designs/eye-tracker/rat/aligned-tip-r27/checkpoints/ET-RAT-ALIGNED-TIP-R27.FCStd",
+    "native_sha256": "320921e03d42a1bd8a16b3a11b7b6d6c1cd6817b4b6286475f1c9db59127be8d",
+    "recipe": "recipe.json",
+    "status": "Flat ribbon-facing taper with embedded socket tip; static checks passed; physical fit pending",
+    "physical_fit_verified": false,
+    "print_release": false
+  },
+  "units": "mm",
+  "anatomical_inputs": {
+    "RatDesignSkull.stl": "edbe3870b8c0dc2ebed7c38c3c288093cd46a701863413e3c065115aef9a798c",
+    "RatLeftCornea.stl": "abef8ce66e9a8b4c803f5882ce5385050d5e54c87fcbd7fee779c281fc92879f",
+    "RatLeftSclera.stl": "abb64ccd4d01252d1d6de3256721eacc0dafa634f9a50b94ad6cf8e61ec30d5a",
+    "RatRightCornea.stl": "f0344aa677d91c0b07dd0c385c23b0ba3ac39a74465cf4839a7c799047178ba7",
+    "RatRightSclera.stl": "a224829f597ac9a360fa78751e96e152dc33e5ee78012ac0f3936d84a2986d16"
+  },
+  "baseplate_input_sha256": "af394db856537af26c35bf83babb0ae0035ef22eff8916cda829d0434ce2db47",
+  "four_PLA_colors_confirmed_by_user": true,
+  "bridge_diameter_mm": 2.25,
+  "bridge_material": "skull",
+  "baseplate_pose": "unchanged R27, common print translation only"
+}
