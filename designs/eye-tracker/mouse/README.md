@@ -2,10 +2,9 @@
 
 **Detailed camera review:** [detailed-camera-r09](detailed-camera-r09/README.md) replaces the simplified camera with the selected R08 geometry and optical datum. Holder and ribbon clearance issues are recorded for the next fit revision.
 
-**Selected checkpoint: ET-MOUSE-MONO-R01.** This is the first mouse assembled
-from the shared hardware library. It reproduces the Mouse Hats **MH-T3-EYE-R10**
-geometry within the recorded CAD tolerances, with the same skull, eyes, baseplate,
-PCB retention, cap, ribbon-loop supports and holder pose.
+**Selected checkpoint: ET-MOUSE-RAISED-TARGET-R19.** The default complete assembly uses the surface-parallel raised R18 baseplate, anatomically placed eyes, detailed camera, refitted ribbon and compact supports. See [R19 validation and rebuild instructions](raised-target-r19/README.md). Physical fit remains pending.
+
+The historical R01 shared-library reconstruction and its R10 comparison remain replayable. The following original build/configuration notes describe that historical pipeline; use the selected manifest's build script for R19.
 
 ## Open and inspect
 
@@ -77,3 +76,17 @@ Registered eye study: [R01](registered-eyes-study-r01/README.md) compares matche
 Editable landmark review: [R02](landmark-review-r02/README.md) adds a detailed atlas reference and point-picking panel with separate correction snapshots.
 
 Landmark-based eye placement: [anatomy R04](landmark-eyes-r04/README.md) uses the user-accepted skull frame, tissue-estimated globe centers and nominal ambulatory gaze. [Complete assembly R14](landmark-eye-placement-r14/README.md) integrates both eyes while preserving R13 hardware.
+
+Nasal camera placement: [R15](nasal-camera-r15/README.md) moves the neutral ball joint toward the nose, aims at the R04 eye center, and rebuilds both supports and the ribbon.
+
+Compact back loop: [R16](compact-guard-r16/README.md) tightens the loop around the unchanged R15 ribbon and camera pose.
+
+Anatomical mount comparison: [R17 study](anatomical-mount-r17/README.md) measures R16 against the skull frame and shows a nearby landmark-aligned baseplate proposal; it is not a replacement complete assembly.
+
+Raised baseplate: [R18](skull-clearance-r18/README.md) aligns the mating face with the local skull surface and checks rear-hole clearance and reduced taper footprint.
+
+Mouse print pack: [R20](print-r20/README.md) combines the detailed atlas skull, R19 eyes and aligned baseplate in a four-material U1 project, plus the matched print-in-place carrier and holder STL.
+
+Thinner eye bridge: [print R21](print-r21/README.md) reduces the R20 bridge diameter by 25%, from 3 mm to 2.25 mm, with the same skull material and matched hardware.
+
+Solid skull print: [R22](print-r22/README.md) fills the braincase and simplifies nasal interiors for printing, preserving the hollow anatomical reference and the R21 eye, bridge and baseplate arrangement.

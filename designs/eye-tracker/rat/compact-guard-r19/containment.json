@@ -1,0 +1,10 @@
+{
+  "Left": {
+    "samples": 2400,
+    "inside_whole_eye": 0
+  },
+  "Right": {
+    "samples": 2400,
+    "inside_whole_eye": 0
+  }
+}

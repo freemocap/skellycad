@@ -1,0 +1,8 @@
+{
+  "native_checkpoint": "designs/eye-tracker/mouse/anatomical-mount-r17/checkpoints/ET-MOUSE-MOUNT-STUDY-R17.FCStd",
+  "native_sha256": "b5f9e64eb104172818f914ff5f2fcd7095cba2931c88432b357261924e2b3c03",
+  "units": "mm",
+  "status": "anatomical placement comparison only; R16 hardware remains unchanged",
+  "source_complete_assembly": "designs/eye-tracker/mouse/compact-guard-r16/review.json",
+  "source_anatomy": "designs/eye-tracker/mouse/landmark-eyes-r04/review.json"
+}

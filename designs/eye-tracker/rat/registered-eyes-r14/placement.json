@@ -1,0 +1,239 @@
+{
+  "units": "mm",
+  "skull_frame": "X anterior, Y left, Z superior; bregma origin",
+  "model": "Hughes exterior retained; interpolated sclera and oblate cornea",
+  "dimensions_mm": {
+    "width_mm": 6.41,
+    "external_length_mm": 6.291,
+    "limbus_diameter_mm": 5.64,
+    "anterior_apical_radius_mm": 2.965,
+    "posterior_apical_radius_mm": 3.23
+  },
+  "mesh_dimensions_verified": true,
+  "neutral_azimuth_deg": 70,
+  "neutral_elevation_deg": 15,
+  "gaze_basis": "Engineering neutral near inherited lateral-forward-up pose; not a measured universal rest gaze",
+  "center_basis": "Transformed prior orbital estimate, bilateral symmetry and minimal motion penalized against sampled bone intrusion; no paired soft tissue",
+  "seed_AP_absML_DV_mm": [
+    8.30613113613716,
+    8.347315693911183,
+    -6.428419675146673
+  ],
+  "fitted_AP_absML_DV_mm": [
+    8.263833250818816,
+    8.284849782773964,
+    -6.338181566207952
+  ],
+  "fit_success": true,
+  "position_uncertainty_sweep_mm": 0.5,
+  "angle_uncertainty_sweep_deg": 10,
+  "eyes": [
+    {
+      "side": "Left",
+      "center_mm": [
+        8.263833250818816,
+        8.284849782773964,
+        -6.338181566207952
+      ],
+      "axis": [
+        0.3303660895493522,
+        0.9076733711903686,
+        0.25881904510252074
+      ],
+      "pose": [
+        [
+          -0.9396926207859084,
+          -0.08852132690137689,
+          0.3303660895493522,
+          8.263833250818816
+        ],
+        [
+          0.3420201433256688,
+          -0.24321034680169396,
+          0.9076733711903686,
+          8.284849782773964
+        ],
+        [
+          0.0,
+          0.9659258262890683,
+          0.25881904510252074,
+          -6.338181566207952
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "corneal_apex_mm": [
+        9.337822339398985,
+        11.235610552388627,
+        -5.496785190641624
+      ],
+      "center_shift_from_previous_mm": 0.313725529154226,
+      "sample_count": 269906,
+      "max_radial_clearance_deficit_mm": 0.0,
+      "max_sampled_radial_penetration_mm": 0.0,
+      "samples_in_clearance_margin": 0,
+      "angular_sensitivity": [
+        {
+          "azimuth": 60,
+          "elevation": 15,
+          "max_radial_clearance_deficit_mm": 0.0
+        },
+        {
+          "azimuth": 80,
+          "elevation": 15,
+          "max_radial_clearance_deficit_mm": 0.0
+        },
+        {
+          "azimuth": 70,
+          "elevation": 5,
+          "max_radial_clearance_deficit_mm": 0.0
+        },
+        {
+          "azimuth": 70,
+          "elevation": 25,
+          "max_radial_clearance_deficit_mm": 0.0
+        }
+      ],
+      "position_sensitivity": [
+        {
+          "coordinate": "AP",
+          "shift_mm": -0.5,
+          "max_sampled_radial_penetration_mm": 0.0
+        },
+        {
+          "coordinate": "AP",
+          "shift_mm": 0.5,
+          "max_sampled_radial_penetration_mm": 0.0
+        },
+        {
+          "coordinate": "absML",
+          "shift_mm": -0.5,
+          "max_sampled_radial_penetration_mm": 0.0
+        },
+        {
+          "coordinate": "absML",
+          "shift_mm": 0.5,
+          "max_sampled_radial_penetration_mm": 0.0
+        },
+        {
+          "coordinate": "DV",
+          "shift_mm": -0.5,
+          "max_sampled_radial_penetration_mm": 0.0
+        },
+        {
+          "coordinate": "DV",
+          "shift_mm": 0.5,
+          "max_sampled_radial_penetration_mm": 0.0
+        }
+      ]
+    },
+    {
+      "side": "Right",
+      "center_mm": [
+        8.263833250818816,
+        -8.284849782773964,
+        -6.338181566207952
+      ],
+      "axis": [
+        0.3303660895493522,
+        -0.9076733711903686,
+        0.25881904510252074
+      ],
+      "pose": [
+        [
+          0.9396926207859084,
+          -0.08852132690137689,
+          0.3303660895493522,
+          8.263833250818816
+        ],
+        [
+          0.3420201433256688,
+          0.24321034680169396,
+          -0.9076733711903686,
+          -8.284849782773964
+        ],
+        [
+          -0.0,
+          0.9659258262890683,
+          0.25881904510252074,
+          -6.338181566207952
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "corneal_apex_mm": [
+        9.337822339398985,
+        -11.235610552388627,
+        -5.496785190641624
+      ],
+      "center_shift_from_previous_mm": 0.17853103048083496,
+      "sample_count": 344890,
+      "max_radial_clearance_deficit_mm": 0.03591392606032606,
+      "max_sampled_radial_penetration_mm": 0.0,
+      "samples_in_clearance_margin": 126,
+      "angular_sensitivity": [
+        {
+          "azimuth": 60,
+          "elevation": 15,
+          "max_radial_clearance_deficit_mm": 0.0377740619922875
+        },
+        {
+          "azimuth": 80,
+          "elevation": 15,
+          "max_radial_clearance_deficit_mm": 0.028106858507551902
+        },
+        {
+          "azimuth": 70,
+          "elevation": 5,
+          "max_radial_clearance_deficit_mm": 0.08893432427362313
+        },
+        {
+          "azimuth": 70,
+          "elevation": 25,
+          "max_radial_clearance_deficit_mm": 0.005865611040281049
+        }
+      ],
+      "position_sensitivity": [
+        {
+          "coordinate": "AP",
+          "shift_mm": -0.5,
+          "max_sampled_radial_penetration_mm": 0.0
+        },
+        {
+          "coordinate": "AP",
+          "shift_mm": 0.5,
+          "max_sampled_radial_penetration_mm": 0.15852908031707677
+        },
+        {
+          "coordinate": "absML",
+          "shift_mm": -0.5,
+          "max_sampled_radial_penetration_mm": 0.0
+        },
+        {
+          "coordinate": "absML",
+          "shift_mm": 0.5,
+          "max_sampled_radial_penetration_mm": 0.18941911959745558
+        },
+        {
+          "coordinate": "DV",
+          "shift_mm": -0.5,
+          "max_sampled_radial_penetration_mm": 0.3617140696280595
+        },
+        {
+          "coordinate": "DV",
+          "shift_mm": 0.5,
+          "max_sampled_radial_penetration_mm": 0.0
+        }
+      ]
+    }
+  ],
+  "validation_scope": "Closed positive eye meshes; partition volumes; extents and analytical corneal apical radius. Independent local skull triangle barycentric sampling (12 subdivisions), not continuous collision proof. Sensitivity ranges are chosen scenarios, not confidence intervals."
+}

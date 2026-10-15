@@ -1,0 +1,23 @@
+{
+  "selected_baseline": "ET-RAT-MONO-R01",
+  "latest_complete_review": "ET-RAT-GUARD-R09",
+  "source_hashes_verified": true,
+  "new_reference": "Ratlas-LH; adult male Lister hooded average; not a species median",
+  "frame": "X anterior, Y animal left, Z superior; bregma origin",
+  "review_mesh_faces": 180000,
+  "reference_extent_mm": [
+    42.07500076293945,
+    21.975001335144043,
+    16.61250066757202
+  ],
+  "current_skull_extent_mm": [
+    46.54607391357422,
+    23.29716682434082,
+    24.163532257080078
+  ],
+  "extents_not_homologous_landmark_distances": true,
+  "landmark_review_pending": true,
+  "eyes_registered": false,
+  "assembly_changed": false,
+  "source_notes": "Volume grid 0.075 mm; paper describes 0.15 mm effective atlas resolution. Sampling spacing is not anatomical accuracy."
+}

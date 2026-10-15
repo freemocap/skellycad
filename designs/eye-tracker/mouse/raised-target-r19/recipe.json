@@ -1,0 +1,42 @@
+{
+  "revision": "ET-MOUSE-RAISED-TARGET-R19",
+  "units": "mm",
+  "source_hardware": {
+    "revision": "ET-MOUSE-GUARD-R16",
+    "native_checkpoint": "designs/eye-tracker/mouse/compact-guard-r16/checkpoints/ET-MOUSE-GUARD-R16.FCStd",
+    "native_sha256": "dba2bd05f7549eec3e5caa02ef15fbfa72181b5109147c6615f79e0eec542738",
+    "source": {
+      "path": "designs/eye-tracker/mouse/nasal-camera-r15/checkpoints/ET-MOUSE-NASAL-R15.FCStd",
+      "sha256": "8368c1a743e055c62d63e5e02aa2ff1257d6b6ece7742ae2622bdb8c957dcd4a"
+    },
+    "units": "mm",
+    "status": "complete review assembly",
+    "physical_fit_verified": false
+  },
+  "accepted_mount": {
+    "native_checkpoint": "designs/eye-tracker/mouse/skull-clearance-r18/checkpoints/ET-MOUSE-BASEPLATE-R18.FCStd",
+    "native_sha256": "f586d970ea8044eb2394a838440ebe533c8037ae4c70b2f18963afa981051b34",
+    "units": "mm",
+    "source": "designs/eye-tracker/mouse/anatomical-mount-r17/review.json",
+    "status": "surface-parallel raised baseplate study; complete R16 unchanged",
+    "physical_fit_verified": false
+  },
+  "anatomy": "designs/eye-tracker/mouse/landmark-eyes-r04/placement.json",
+  "targeting_recipe": {
+    "eye": "Eye1OpticalFrame",
+    "camera_instances": 1,
+    "pose_policy": "Keep R15/R16 world-space lens pose and eye-center aim; rebuild supports and ribbon relative to R18 main mount",
+    "mount_to_skull": "solution.json",
+    "ribbon_bounds": "32.85 x 4 x 0.25 mm, three cylindrical zones, radius parameter >=3.75 mm",
+    "lower_loop_outer_mm": [
+      -8,
+      0,
+      20
+    ],
+    "skull_contact_policy": {
+      "skull_mount_Baseplate": "Boolean cut stock; accepted raised R18 placement"
+    }
+  },
+  "previous_selection": "previous-active-model.json",
+  "physical_fit_verified": false
+}

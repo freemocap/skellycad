@@ -1,0 +1,12 @@
+{
+  "revision": "ET-MOUSE-GUARD-R16",
+  "native_checkpoint": "designs/eye-tracker/mouse/compact-guard-r16/checkpoints/ET-MOUSE-GUARD-R16.FCStd",
+  "native_sha256": "dba2bd05f7549eec3e5caa02ef15fbfa72181b5109147c6615f79e0eec542738",
+  "source": {
+    "path": "designs/eye-tracker/mouse/nasal-camera-r15/checkpoints/ET-MOUSE-NASAL-R15.FCStd",
+    "sha256": "8368c1a743e055c62d63e5e02aa2ff1257d6b6ece7742ae2622bdb8c957dcd4a"
+  },
+  "units": "mm",
+  "status": "complete review assembly",
+  "physical_fit_verified": false
+}

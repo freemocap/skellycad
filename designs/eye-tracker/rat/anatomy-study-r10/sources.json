@@ -1,0 +1,22 @@
+{
+  "sources": [
+    "prior2021Ratlas",
+    "ratlasNITRC2021"
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "files": [
+    {
+      "file": "Ratlas-LH.nii.gz",
+      "url": "https://www.nitrc.org/frs/download.php/12249/Ratlas-LH.nii.gz",
+      "sha256": "43856d6ae6e479da64f9ab6f788156d41e371d4bfa52e0adf7daac5e600ed871",
+      "downloaded": "2026-10-14"
+    },
+    {
+      "file": "Ratlas-LH_Brain.nii.gz",
+      "url": "https://www.nitrc.org/frs/download.php/12250/Ratlas-LH_Brain.nii.gz",
+      "sha256": "4a1b9614800ba00588970d42a0118028cbdb6f0d0ef316b6e5db7338e04bd4cf",
+      "downloaded": "2026-10-14"
+    }
+  ]
+}

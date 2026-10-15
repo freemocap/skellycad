@@ -109,3 +109,23 @@ Adult anatomy review: [ET-RAT-ADULT-R07](adult-anatomy-r07/README.md) updates bo
 Compact lower guard: [ET-RAT-GUARD-R08](compact-guard-r08/README.md) moves the lower root to the front edge and tightens the loop around the ribbon.
 
 Compact lower guard: [ET-RAT-GUARD-R09](compact-guard-r09/README.md) removes the straight rise at the lower root and increases ball/holder clearance.
+
+Anatomical registration audit: [R10](anatomy-study-r10/README.md) imports the Ratlas-LH skull reference and named landmark candidates, with eye/scale evidence and a reusable species workflow. Candidate landmarks await review; existing complete assemblies remain unchanged.
+
+Corrected atlas surface: [R11](clean-reference-r11/README.md) removes display-smoothing spikes and preserves the user-accepted R10 landmark coordinates. Use R11 rather than the distorted R10 display for further anatomical comparison.
+
+Working-skull registration: [R12](skull-registration-r12/README.md) rigidly aligns the existing skull variants to the accepted atlas frame. Atlas is an optional overlay; alignment awaits visual confirmation.
+
+Outer-surface references: [R13](surface-landmarks-r13/README.md) checks cheek offsets, preserves atlas datums and adds labeled working-skull arch reference pairs.
+
+Registered eye review: [R14](registered-eyes-r14/README.md) retains the verified Hughes exterior, places both eyes in the accepted R13 skull frame, and defines estimated neutral optical axes with position and angle sensitivity checks. This is the anatomy target for the next camera-placement review.
+
+Symmetry review: [R15](symmetry-review-r15/README.md) adds nasal-tip and paired roof/arch surface references, compares the skull to its reflection, and records a candidate symmetry plane without changing the skull or eyes.
+
+Symmetric design derivative: [R16](symmetric-design-r16/README.md) applies the R15 rigid symmetry-plane correction, then mirrors the selected half to create an exact symmetric design surface. Original anatomy and the rigid-only alternative are retained. Eyes remain at the symmetric design targets and pass sampled bone checks.
+
+Caudal baseplate study: [R17](bregma-baseplate-r17/README.md) places the top rostral point over the bregma design reference and fits the mating-face orientation to the skull roof. Includes attachment evidence and clearance scope; complete camera assembly integration remains separate.
+
+Complete caudal-mount camera review: [R18](targeted-r18/README.md) attaches matched camera hardware to R17, refits arms/ribbon, and aims at the R14 right-eye center on the R16 skull. Axis offset is 26.289 degrees; validation and inherited overlaps are documented.
+
+Tighter rear guard: [R19](compact-guard-r19/README.md) replaces the R18 rear loop with one continuous curve, preserving camera aim and interfaces. Static ribbon clearance is 1.144 mm.

@@ -1,0 +1,12 @@
+from pathlib import Path
+import json,hashlib
+import FreeCAD as A,FreeCADGui as G,Mesh
+S=Path(__file__).resolve().parent;R=S.parents[3];O=R/'generated/eye-tracker/rat/skull-registration-r12';a=json.loads((S.parent/'clean-reference-r11/review.json').read_text());src=R/a['native_checkpoint'];assert hashlib.sha256(src.read_bytes()).hexdigest()==a['native_sha256'];d=A.openDocument(str(src));A.setActiveDocument(d.Name);d.Label='Rat R12 - existing skull aligned to anatomical reference'
+d.ExistingSkull.Mesh=Mesh.Mesh(str(O/'rat-skull-high-res-refined-atlas-frame-r12.stl'));d.ExistingSkull.Label='WORKING SKULL - existing refined mesh, rigidly registered';d.ExistingSkull.ViewObject.ShapeColor=(.85,.81,.7);d.ExistingSkull.ViewObject.DisplayMode='Shaded';d.ExistingSkull.Visibility=True
+d.RatlasSkull.Label='REFERENCE OVERLAY - atlas (Space to hide)';d.RatlasSkull.ViewObject.ShapeColor=(.1,.7,.85);d.RatlasSkull.ViewObject.Transparency=85;d.RatlasSkull.Visibility=True
+for f in O.glob('*atlas-frame-r12.stl'):
+ if 'refined' in f.name:continue
+ obj=d.addObject('Mesh::Feature','AlternativeSkull');obj.Label='Registered alternative - '+f.name;obj.Mesh=Mesh.Mesh(str(f));obj.Visibility=False
+for row in json.loads((S/'landmarks.json').read_text()):
+ obj=d.getObject(row['id']);obj.addProperty('App::PropertyLength','WorkingSurfaceGap');obj.WorkingSurfaceGap=row['surface_gap_mm']
+d.recompute();G.activeDocument().activeView().viewAxonometric();G.activeDocument().activeView().fitAll();d.saveAs(str(O/'ET-RAT-SKULL-REGISTRATION-R12.FCStd'));G.updateGui()

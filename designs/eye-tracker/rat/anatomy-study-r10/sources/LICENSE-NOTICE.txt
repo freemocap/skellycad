@@ -1,0 +1,5 @@
+Ratlas-LH v1.00, Prior et al., University of Nottingham and collaborators.
+NITRC resource declares Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International.
+https://creativecommons.org/licenses/by-nc-sa/4.0/
+https://www.nitrc.org/projects/ratlas-lham/
+Original volumes retained unchanged. Local mesh extraction, display decimation and candidate landmark annotations are SkellyCAD modifications.

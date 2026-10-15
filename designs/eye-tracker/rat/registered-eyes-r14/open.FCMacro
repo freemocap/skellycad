@@ -1,0 +1,20 @@
+from pathlib import Path
+import json,hashlib
+import FreeCAD as A,FreeCADGui as G,Part,Mesh
+S=Path(__file__).resolve().parent;R=S.parents[3];O=R/'generated/eye-tracker/rat/registered-eyes-r14';O.mkdir(parents=True,exist_ok=True)
+a=json.loads((S.parent/'surface-landmarks-r13/review.json').read_text());src=R/a['native_checkpoint'];assert hashlib.sha256(src.read_bytes()).hexdigest()==a['native_sha256']
+d=A.openDocument(str(src));A.setActiveDocument(d.Name);d.Label='Rat R14 - registered eyes and estimated neutral optical axes'
+p=json.loads((S/'placement.json').read_text())
+group=d.addObject('App::DocumentObjectGroup','RegisteredEyes');group.Label='Rat eyes - literature exterior, estimated orbital pose'
+for eye in p['eyes']:
+ side=eye['side'];color=(0.0,.65,.9) if side=='Left' else (.85,.15,.7)
+ for region in ['sclera','cornea']:
+  obj=d.addObject('Mesh::Feature',side+region.title());obj.Label=side+' '+region+' - Hughes exterior';obj.Mesh=Mesh.Mesh(str(O/(side+'-'+region+'.stl')));obj.ViewObject.ShapeColor=(.95,.95,.94) if region=='sclera' else color;group.addObject(obj)
+ center=A.Vector(*eye['center_mm']);axis=A.Vector(*eye['axis'])
+ obj=d.addObject('Part::Feature',side+'OpticalAxis');obj.Label=side+' eye optical axis - estimated neutral';obj.Shape=Part.makeCompound([Part.makeLine(center-axis*3.04,center+axis*8),Part.makeCone(.25,0,.8,center+axis*8,axis)])
+ obj.ViewObject.LineColor=color;obj.ViewObject.ShapeColor=color;obj.ViewObject.LineWidth=3
+ for name,value in [('EyeFrameOrigin',center),('OutwardOpticalDirection',axis),('CornealApex',A.Vector(*eye['corneal_apex_mm']))]:
+  obj.addProperty('App::PropertyVector',name,'Targeting');setattr(obj,name,value)
+ obj.addProperty('App::PropertyString','Evidence','Targeting');obj.Evidence='Engineering neutral: 70 degrees from anterior, 15 degrees above transverse plane; not a measured universal rest pose.';group.addObject(obj)
+ label=d.addObject('App::Annotation',side+'EyeLabel');label.LabelText=[side+' eye: estimated neutral axis'];label.Position=center+axis*9;label.ViewObject.TextColor=color;label.ViewObject.FontSize=15;group.addObject(label)
+d.recompute();G.activeDocument().activeView().viewTop();G.activeDocument().activeView().fitAll();d.saveAs(str(O/'ET-RAT-REGISTERED-EYES-R14.FCStd'));G.updateGui()

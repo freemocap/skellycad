@@ -1,0 +1,10 @@
+{
+  "revision": "ET-RAT-COMPACT-GUARD-R19",
+  "units": "mm",
+  "native_checkpoint": "designs/eye-tracker/rat/compact-guard-r19/checkpoints/ET-RAT-COMPACT-GUARD-R19.FCStd",
+  "native_sha256": "cdebc08d6e7355a63c97082cbf138cade9f0b53883a5b028f4bca215fae04c15",
+  "source_review": "designs/eye-tracker/rat/targeted-r18/review.json",
+  "status": "Complete review assembly; tighter rear guard; physical fit pending",
+  "physical_fit_verified": false,
+  "print_release": false
+}

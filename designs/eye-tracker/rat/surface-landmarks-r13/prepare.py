@@ -1,0 +1,10 @@
+from pathlib import Path
+import json,hashlib,numpy as np,trimesh
+R=Path.cwd();S=R/'designs/eye-tracker/rat/surface-landmarks-r13';P=S.parent/'skull-registration-r12';O=R/'generated/eye-tracker/rat/surface-landmarks-r13';O.mkdir(parents=True,exist_ok=True)
+a=json.loads((P/'review.json').read_text());assert hashlib.sha256((R/a['native_checkpoint']).read_bytes()).hexdigest()==a['native_sha256'];m=trimesh.load_mesh(R/'generated/eye-tracker/rat/skull-registration-r12/rat-skull-high-res-refined-atlas-frame-r12.stl');old=json.loads((P/'landmarks.json').read_text());rows=[];checks=[]
+for side,sign in [('left',1),('right',-1)]:
+ oldrow=next(r for r in old if r['id']==side+'zygion');p=np.array(oldrow['position_mm']);start=p.copy();start[1]=sign*30;direction=np.array([0,-sign,0]);hits,_,_=m.ray.intersects_location([start],[direction]);assert len(hits);q=hits[np.argmax(sign*hits[:,1])];checks.append({'side':side,'atlas_point_mm':p.tolist(),'nearest_surface_gap_mm':oldrow['surface_gap_mm'],'outer_surface_at_same_AP_DV_mm':q.tolist(),'lateral_outward_shift_mm':float(sign*(q[1]-p[1]))})
+ rows.append({'id':side+'CheekSurface','name':side.title()+' cheek - outer surface','position_mm':q.tolist(),'display_direction':[0,sign,0],'color':[.1,.6,1.],'status':'First surface hit from outside at original atlas cheek AP and DV; not a newly measured anatomical zygion'})
+ v=m.vertices;mask=(abs(v[:,0]-8)<.2)&(v[:,2]>-12)&(v[:,2]<-5)&(v[:,1]*sign>3);pts=v[mask];assert len(pts);q=pts[np.argmax(sign*pts[:,1])]
+ rows.append({'id':side+'AnteriorArch','name':side.title()+' arch reference - AP +8 mm','position_mm':q.tolist(),'display_direction':[0,sign,0],'color':[.7,.15,.8],'status':'Local geometric lateral maximum in AP 7.8 to 8.2 mm and DV -12 to -5 mm; not an author anatomical landmark'})
+(S/'landmarks.json').write_text(json.dumps(rows,indent=2));(S/'cheek-audit.json').write_text(json.dumps({'method':'Outside-in lateral ray, first triangle intersection; original AP and DV retained','checks':checks,'marker_radius_mm':.25,'marker_display_offset_mm':.65,'skull_registration_changed':False},indent=2));print(checks,rows)

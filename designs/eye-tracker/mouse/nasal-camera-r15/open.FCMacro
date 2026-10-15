@@ -1,0 +1,40 @@
+from pathlib import Path
+import FreeCAD as A,FreeCADGui as G
+root=Path(__file__).resolve().parents[4]
+out=root/'generated/eye-tracker/mouse/nasal-camera-r15'
+d=A.openDocument(str(out/'ET-MOUSE-NASAL-R15.FCStd'));A.setActiveDocument(d.Name)
+for name in ['MeasuredMainPCB','MeasuredSensorHead','CameraAssembly','Camera_eye_primary','Anatomy','Skull','Eye1','Eye2','Baseplates']:
+ o=d.getObject(name)
+ if o:o.Visibility=True
+for name in ['PCB','camera_pcb','JST_4pin','M4_lens','IR_LED','IR_LED_001','RibbonCandidate','DetailedOpticalAxis','FinishedCarrier','eye_primary_Holder','eye_primary_Cap','eye_primary_Clip','skull_mount_Baseplate']:
+ o=d.getObject(name);o.Visibility=True
+ if name in ['PCB','camera_pcb']:o.ViewObject.ShapeColor=(.9,.12,.10)
+ elif name=='RibbonCandidate':o.ViewObject.ShapeColor=(1.0,.8,.02);o.ViewObject.DisplayMode='Shaded'
+ elif name=='M4_lens':o.ViewObject.ShapeColor=(.12,.12,.14)
+ elif name in ['JST_4pin','IR_LED','IR_LED_001']:o.ViewObject.ShapeColor=(.94,.94,.9)
+for name in ['M4_nominal_reference','CandidateOpticalAxis','CameraOpticalAxis','eye_primary_OpticalAxis','eye_primary_ApproxPCB','RetainedPCBTray','RetainedSocket','UpperSupport','RearRibbonGuard','StemSupportedCarrier','eye_primary_LensDatum']:
+ o=d.getObject(name)
+ if o:o.Visibility=False
+d.DetailedOpticalAxis.ViewObject.LineColor=(0.0,.65,.95);d.DetailedOpticalAxis.ViewObject.LineWidth=3
+d.eye_primary_Holder.ViewObject.Transparency=50
+d.eye_primary_Cap.ViewObject.Transparency=65
+
+for name in ['Eye1OpticalFrame', 'Eye2OpticalFrame', 'Eye1', 'Eye2']:
+ o=d.getObject(name)
+ if o:o.Visibility=True
+
+for name,color in [('Eye1', (0.1, 0.85, 0.15)), ('Eye2', (0.95, 0.1, 0.65))]:
+ o=d.getObject(name+'OpticalAxis');o.Visibility=True;o.ViewObject.LineColor=color;o.ViewObject.LineWidth=4.0
+ old=d.getObject(name+'Axes')
+ if old:old.Visibility=False
+
+for name in ['Eye1', 'Eye2']:
+ for region in ['Sclera','Cornea']:
+  o=d.getObject(name+region)
+  if o:
+   o.Visibility=True;o.ViewObject.ShapeColor=(.92,.92,.87) if region=='Sclera' else (.12,.48,.65)
+   o.ViewObject.DisplayMode='Shaded'
+
+for name in ['Eye1','Eye2']:d.getObject(name).Visibility=False
+d.recompute();v=G.activeDocument().activeView();v.viewAxonometric();v.fitAll();G.updateGui();d.save()
+v.saveImage(str(out/'assembly.png'),1400,1000,'White')

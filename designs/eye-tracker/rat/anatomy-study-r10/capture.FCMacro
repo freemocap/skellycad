@@ -1,0 +1,3 @@
+from pathlib import Path
+import FreeCAD as A,FreeCADGui as G
+O=Path(__file__).resolve().parents[4]/'generated/eye-tracker/rat/anatomy-study-r10';d=A.getDocument('RatAnatomyR10');A.setActiveDocument(d.Name);G.activeDocument().activeView().saveImage(str(O/'landmark-review.png'),1600,1100,'White')

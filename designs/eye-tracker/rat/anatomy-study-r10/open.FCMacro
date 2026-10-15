@@ -1,0 +1,19 @@
+from pathlib import Path
+import json
+import FreeCAD as A,FreeCADGui as G,Mesh,Part
+S=Path(__file__).resolve().parent;R=S.parents[3];O=R/'generated/eye-tracker/rat/anatomy-study-r10';d=A.newDocument('RatAnatomyR10');d.Label='Rat R10 - atlas landmarks for review';A.setActiveDocument(d.Name)
+o=d.addObject('Mesh::Feature','RatlasSkull');o.Label='Ratlas-LH skull - extracted reference, native millimeters';o.Mesh=Mesh.Mesh(str(O/'ratlas-review.stl'));o.ViewObject.ShapeColor=(.8,.78,.69);o.ViewObject.DisplayMode='Shaded';o.addProperty('App::PropertyString','Evidence');o.Evidence='Prior 2021 Ratlas-LH, CC BY-NC-SA 4.0; threshold extraction is local, not author segmentation'
+g=d.addObject('App::DocumentObjectGroup','ReviewLandmarks');g.Label='Named landmarks - red source datum, amber estimates, blue extrema'
+for i,row in enumerate(json.loads((S/'landmarks.json').read_text())):
+ c=A.Vector(*row['position_mm']);color=tuple(row['color']);p=d.addObject('Part::Feature',row['id']);p.Label=row['name'];p.Shape=Part.makeSphere(.4,c);p.ViewObject.ShapeColor=color;p.addProperty('App::PropertyString','Evidence');p.Evidence=row['status'];g.addObject(p)
+ q=c+A.Vector(-2 if i<2 else 3,(-9 if i<3 else 5*(1 if i==3 else -1)),5+i*.5);line=d.addObject('Part::Feature',row['id']+'Leader');line.Shape=Part.makeLine(c,q);line.ViewObject.LineColor=color;g.addObject(line)
+ t=d.addObject('App::Annotation',row['id']+'Label');t.LabelText=[row['name']];t.Position=q;t.ViewObject.TextColor=color;t.ViewObject.FontSize=13;g.addObject(t)
+for name,vec,col in [('Anterior',(5,0,0),(1.,.2,.2)),('Left',(0,5,0),(.1,.7,.2)),('Superior',(0,0,5),(.2,.3,1.))]:
+ o=d.addObject('Part::Feature','Axis'+name);o.Label=name+' from bregma';o.Shape=Part.makeLine(A.Vector(),A.Vector(*vec));o.ViewObject.LineColor=col;o.ViewObject.LineWidth=3
+old=d.addObject('Mesh::Feature','ExistingSkull');old.Label='Existing rat skull - UNREGISTERED comparison (hidden)';old.Mesh=Mesh.Mesh(str(R/'designs/eye-tracker/rat/references/skull/aligned-r01/rat-skull-high-res-refined-aligned-r01.stl'));old.Visibility=False
+for name in ['low','high']:
+ o=d.addObject('Mesh::Feature','Threshold'+name.title());o.Label='Threshold sensitivity '+name+' (hidden)';o.Mesh=Mesh.Mesh(str(O/('ratlas-skull-'+name+'.stl')));o.Visibility=False
+d.recompute();G.activeDocument().activeView().viewAxonometric();G.activeDocument().activeView().fitAll();d.saveAs(str(O/'ET-RAT-ANATOMY-STUDY-R10.FCStd'));G.updateGui()
+
+import runpy
+runpy.run_path(str(S/'refine_view.FCMacro'))

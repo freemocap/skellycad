@@ -1,0 +1,120 @@
+{
+  "revision": "ET-MOUSE-GUARD-R16",
+  "units": "mm",
+  "guard_clearance": {
+    "RibbonCandidate": {
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.6893973975837244
+    },
+    "eye_primary_Holder": {
+      "overlap_mm3": 0.0,
+      "gap_mm": 1.0903009656830995
+    },
+    "eye_primary_Cap": {
+      "overlap_mm3": 0.0,
+      "gap_mm": 3.390144875823049
+    },
+    "eye_primary_Clip": {
+      "overlap_mm3": 0.0,
+      "gap_mm": 5.573526040228438
+    },
+    "PCB": {
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.7938060518406378
+    },
+    "camera_pcb": {
+      "overlap_mm3": 0.0,
+      "gap_mm": 2.6914984496957204
+    },
+    "JST_4pin": {
+      "overlap_mm3": 0.0,
+      "gap_mm": 26.50621656246245
+    },
+    "M4_lens": {
+      "overlap_mm3": 0.0,
+      "gap_mm": 2.681294104110733
+    },
+    "UpperSupport": {
+      "overlap_mm3": 0.0,
+      "gap_mm": 2.2703039731964916
+    }
+  },
+  "attachment": {
+    "RetainedPCBTray": {
+      "engagement_mm3": 2.4462071081469374
+    },
+    "RetainedSocket": {
+      "engagement_mm3": 4.65681539169452
+    }
+  },
+  "source": {
+    "path": "designs/eye-tracker/mouse/nasal-camera-r15/checkpoints/ET-MOUSE-NASAL-R15.FCStd",
+    "sha256": "8368c1a743e055c62d63e5e02aa2ff1257d6b6ece7742ae2622bdb8c957dcd4a"
+  },
+  "targeting_recipe": {
+    "mode": "fixed anatomy and camera",
+    "change": "Bring the back loop inward 4 mm at its outer control point",
+    "preserve": "R15 camera, neutral joint pose, ribbon, upper support and fixed interfaces"
+  },
+  "carrier": {
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 1236.1265236996296,
+    "previous_volume_mm3": 1267.817162477205,
+    "old_guard_xmin_mm": -13.254873672055945,
+    "new_guard_xmin_mm": -9.412186747134648
+  },
+  "carrier_clearance": {
+    "RibbonCandidate": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "eye_primary_Holder": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "eye_primary_Cap": {
+      "overlap_mm3": 0.002218225533850559,
+      "previous_overlap_mm3": 0.002218225533850559
+    },
+    "eye_primary_Clip": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "PCB": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "camera_pcb": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    },
+    "JST_4pin": {
+      "overlap_mm3": 0.059028498812171065,
+      "previous_overlap_mm3": 0.059028498812171065
+    },
+    "M4_lens": {
+      "overlap_mm3": 0.0,
+      "previous_overlap_mm3": 0.0
+    }
+  },
+  "fixed_interfaces": {
+    "RetainedPCBTray": {
+      "material_difference_mm3": 0.0
+    },
+    "RetainedSocket": {
+      "material_difference_mm3": 0.0
+    },
+    "UpperSupport": {
+      "material_difference_mm3": 0.0
+    }
+  },
+  "other_shapes_and_poses_preserved": true,
+  "carrier_mesh": {
+    "closed": true,
+    "self_intersections": false,
+    "export_withheld": false,
+    "linear_deflection_mm": 0.03,
+    "angular_deflection_rad": 0.12
+  }
+}

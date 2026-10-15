@@ -1,0 +1,9 @@
+from pathlib import Path
+import FreeCAD as A,FreeCADGui as G,Mesh
+O=Path(__file__).resolve().parents[4]/'generated/eye-tracker/rat/anatomy-study-r10';d=A.getDocument('RatAnatomyR10');A.setActiveDocument(d.Name);d.RatlasSkull.Mesh=Mesh.Mesh(str(O/'ratlas-review.stl'))
+for name in ['lambdaLabel','nasionLabel','bregmaLabel','leftzygionLabel','rightzygionLabel']:d.getObject(name).ViewObject.FontSize=17
+# Move labels into clear space around the silhouette.
+for name,pos in [('lambda',(-12,-10,5)),('bregma',(-2,-12,5)),('nasion',(12,-13,4)),('leftzygion',(3,17,1)),('rightzygion',(5,-19,-7))]:
+ import Part
+ q=A.Vector(*pos);d.getObject(name+'Label').Position=q;d.getObject(name+'Leader').Shape=Part.makeLine(d.getObject(name).Shape.CenterOfMass,q)
+d.recompute();G.activeDocument().activeView().fitAll();d.save();G.updateGui()

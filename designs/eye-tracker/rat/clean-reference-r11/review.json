@@ -1,0 +1,8 @@
+{
+  "native_checkpoint": "designs/eye-tracker/rat/clean-reference-r11/checkpoints/ET-RAT-CLEAN-REFERENCE-R11.FCStd",
+  "native_sha256": "10c64b12645faa2e5eb23f77951441a1a0892084dea3e5ee6ca14df6f599b2f9",
+  "parent": "anatomy-study-r10",
+  "landmarks": "User visually accepted 2026-10-14; positions unchanged",
+  "assembly_changed": false,
+  "validation": "validation.json"
+}

@@ -1,0 +1,4 @@
+from pathlib import Path
+import FreeCAD as A,FreeCADGui as G
+out=Path(__file__).resolve().parents[4]/'generated/eye-tracker/mouse/print-r21'
+d=A.getDocument('MouseR21PrintReview');A.setActiveDocument(d.Name);G.activeDocument().activeView().saveImage(str(out/'anatomy-preview.png'),1400,1000,'White')

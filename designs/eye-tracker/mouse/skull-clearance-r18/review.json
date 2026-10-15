@@ -1,0 +1,8 @@
+{
+  "native_checkpoint": "designs/eye-tracker/mouse/skull-clearance-r18/checkpoints/ET-MOUSE-BASEPLATE-R18.FCStd",
+  "native_sha256": "f586d970ea8044eb2394a838440ebe533c8037ae4c70b2f18963afa981051b34",
+  "units": "mm",
+  "source": "designs/eye-tracker/mouse/anatomical-mount-r17/review.json",
+  "status": "surface-parallel raised baseplate study; complete R16 unchanged",
+  "physical_fit_verified": false
+}

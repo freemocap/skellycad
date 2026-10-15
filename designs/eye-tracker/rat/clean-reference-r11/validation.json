@@ -1,0 +1,15 @@
+{
+  "method": "Gaussian smooth source intensity sigma 0.6 voxel; continuous-intensity marching cubes step 2; no mesh decimation or mesh smoothing",
+  "sigma_source_mm": 0.045,
+  "display_sampling_mm": 0.15,
+  "max_edge_mm": 0.25961170940386047,
+  "faces": 553754,
+  "watertight": true,
+  "landmark_coordinates_unchanged": true,
+  "status": "Anatomical display reference, not print export",
+  "old_display_max_edge_mm": 7.442293304,
+  "old_display_edges_above_2mm": 4480,
+  "unsmoothed_decimated_max_edge_mm": 2.67756361,
+  "new_edges_above_2mm": 0,
+  "sha256": "e7ad06e2e2488b937d6a86ec1d527fd26dbb2474263c51a7a5619bacd9f5b8c6"
+}

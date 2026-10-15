@@ -1,0 +1,9 @@
+{
+  "native_checkpoint": "designs/eye-tracker/rat/symmetry-review-r15/checkpoints/ET-RAT-SYMMETRY-REVIEW-R15.FCStd",
+  "native_sha256": "5721c763381b00b2dfc9ec5a6b11185735fc80d6d3f3e97868f2a3a23adc02a4",
+  "parent_review": "designs/eye-tracker/rat/registered-eyes-r14/review.json",
+  "units": "mm",
+  "skull_geometry_changed": false,
+  "eyes_moved": false,
+  "audit": "audit.json"
+}

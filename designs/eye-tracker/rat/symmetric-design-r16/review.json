@@ -1,0 +1,9 @@
+{
+  "native_checkpoint": "designs/eye-tracker/rat/symmetric-design-r16/checkpoints/ET-RAT-SYMMETRIC-DESIGN-R16.FCStd",
+  "native_sha256": "e4531571560d10cdf80f84b92f2ebdde8a6d2b5e5c0de786a45eeef3cb7d5986",
+  "parent_review": "designs/eye-tracker/rat/symmetry-review-r15/review.json",
+  "eye_source_review": "designs/eye-tracker/rat/registered-eyes-r14/review.json",
+  "units": "mm",
+  "validation": "validation.json",
+  "status": "Idealized symmetric design derivative for review; not print-ready or selected complete hardware assembly"
+}

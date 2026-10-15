@@ -1,0 +1,4 @@
+from pathlib import Path
+import FreeCADGui as G
+O=Path(__file__).resolve().parents[4]/'generated/eye-tracker/rat/registered-eyes-r14'
+G.activeDocument().activeView().saveImage(str(O/'review-top.png'),1600,1100,'White')

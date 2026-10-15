@@ -1,0 +1,42 @@
+# Reuse the live review instead of creating another owner of its save path.
+def _open_review():
+    from pathlib import Path
+    import runpy
+    import FreeCAD as App
+    root = Path(__file__).resolve().parents[4]
+    find_open = runpy.run_path(str(root / 'tools/cad/review_document.py'))['find_open_document']
+    if find_open(App, root / 'generated/eye-tracker/rat/symmetry-review-r15/ET-RAT-SYMMETRY-REVIEW-R15.FCStd'):
+        return
+    from pathlib import Path
+    import json,hashlib
+    import FreeCAD as A,FreeCADGui as G,Part,Mesh
+    S=Path(__file__).resolve().parent;R=S.parents[3];O=R/'generated/eye-tracker/rat/symmetry-review-r15'
+    a=json.loads((S.parent/'registered-eyes-r14/review.json').read_text());src=R/a['native_checkpoint'];assert hashlib.sha256(src.read_bytes()).hexdigest()==a['native_sha256']
+    d=A.openDocument(str(src));A.setActiveDocument(d.Name);d.Label='Rat R15 - nasal and paired surface symmetry review'
+    data=json.loads((S/'audit.json').read_text())
+    # Hide earlier annotation clutter while preserving all geometry and data.
+    for obj in d.Objects:
+     if obj.TypeId=='App::Annotation' or obj.Name.endswith('Leader'):obj.Visibility=False
+    group=d.addObject('App::DocumentObjectGroup','SymmetryReferences');group.Label='Symmetry surface references - geometric candidates'
+    for row in data['landmarks']:
+     p=A.Vector(*row['position_mm']);q=p+A.Vector(*row['label_offset_mm']);color=tuple(float(c) for c in row['color'])
+     mark=d.addObject('Part::Feature',row['id']+'R15');mark.Label=row['name'];mark.Shape=Part.makeSphere(.24,p);mark.ViewObject.ShapeColor=color;mark.addProperty('App::PropertyVector','SurfacePosition');mark.SurfacePosition=p;mark.addProperty('App::PropertyString','Evidence');mark.Evidence=row['evidence'];group.addObject(mark)
+     leader=d.addObject('Part::Feature',row['id']+'LeaderR15');leader.Shape=Part.makeLine(p,q);leader.ViewObject.LineColor=color;group.addObject(leader)
+     text=d.addObject('App::Annotation',row['id']+'LabelR15');text.LabelText=[row['name']];text.Position=q;text.ViewObject.TextColor=color;text.ViewObject.FontSize=13;group.addObject(text)
+    for pair in data['pairs']:
+     points=[A.Vector(*next(r['position_mm'] for r in data['landmarks'] if r['id']==id)) for id in pair['ids']]
+     line=d.addObject('Part::Feature',pair['ids'][0]+'Pair');line.Label='Pair connection: '+pair['ids'][0];line.Shape=Part.makeLine(*points);line.ViewObject.LineColor=(.4,.4,.4);line.ViewObject.DrawStyle='Dashed';group.addObject(line)
+    overlay=d.addObject('Mesh::Feature','MirroredSkull');overlay.Label='MIRROR about fitted plane - Space to compare';overlay.Mesh=Mesh.Mesh(str(O/'mirror-about-fitted-plane.stl'));overlay.ViewObject.ShapeColor=(.2,.8,1.);overlay.ViewObject.Transparency=65;overlay.Visibility=False
+    planes=d.addObject('App::DocumentObjectGroup','SymmetryPlanes');planes.Label='Current midline (red) and best-fit plane (green)'
+    fit=data['fits']['whole'];n=A.Vector(*fit['normal']);offset=fit['offset_mm']
+    for name,color,best in [('CurrentMidline',(.95,.15,.15),False),('FittedMidline',(.05,.7,.25),True)]:
+     pts=[]
+     for x,z in [(-16,2),(32,2),(32,-20),(-16,-20),(-16,2)]:
+      y=(offset-n.x*x-n.z*z)/n.y if best else 0;pts.append(A.Vector(x,y,z))
+     obj=d.addObject('Part::Feature',name);obj.Label=name+' - plane outline';obj.Shape=Part.makePolygon(pts);obj.ViewObject.LineColor=color;obj.ViewObject.LineWidth=2;planes.addObject(obj)
+     # Dorsal projection lines make the small yaw/offset visible from above.
+     line=d.addObject('Part::Feature',name+'Dorsal');line.Shape=Part.makeLine(pts[0],pts[1]);line.ViewObject.LineColor=color;line.ViewObject.LineWidth=3;planes.addObject(line);obj.Visibility=False
+    d.recompute();G.activeDocument().activeView().viewTop();G.activeDocument().activeView().fitAll();d.saveAs(str(O/'ET-RAT-SYMMETRY-REVIEW-R15.FCStd'));G.updateGui()
+    
+
+_open_review()

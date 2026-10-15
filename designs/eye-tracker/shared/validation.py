@@ -45,13 +45,19 @@ def compare_mouse_baseline(assembly):
             App.closeDocument(baseline.Name)
 
 
+def _world_shape(obj):
+    shape = obj.Shape.copy()
+    shape.Placement = obj.getGlobalPlacement()
+    return shape
+
+
 def validate_selected(doc, manifest):
     """Check complete matched parts before exporting a selected assembly."""
     for station in manifest['camera_instances']:
-        parts = {role: doc.getObject(name).Shape for role, name in station['objects'].items()}
+        parts = {role: _world_shape(doc.getObject(name)) for role, name in station['objects'].items()}
         carrier = parts['Carrier']
         for role in ('UpperCatch', 'UpperRail'):
             assert parts[role].cut(carrier).Volume < 1e-6, role
         for role in ('Holder', 'ApproxPCB', 'Clip'):
             assert carrier.common(parts[role]).Volume < 1e-6, role
-        assert carrier.common(doc.getObject(station['baseplate_object']).Shape).Volume < 1e-6
+        assert carrier.common(_world_shape(doc.getObject(station['baseplate_object']))).Volume < 1e-6

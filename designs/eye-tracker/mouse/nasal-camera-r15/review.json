@@ -1,0 +1,8 @@
+{
+  "native_checkpoint": "designs/eye-tracker/mouse/nasal-camera-r15/checkpoints/ET-MOUSE-NASAL-R15.FCStd",
+  "native_sha256": "8368c1a743e055c62d63e5e02aa2ff1257d6b6ece7742ae2622bdb8c957dcd4a",
+  "units": "mm",
+  "status": "complete review assembly; active selection unchanged",
+  "source_revision": "ET-MOUSE-EYE-PLACEMENT-R14",
+  "physical_fit_verified": false
+}

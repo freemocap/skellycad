@@ -1,0 +1,41 @@
+"""Preserve this repository's open work before user-requested tab cleanup."""
+import FreeCAD as App
+import FreeCADGui as Gui
+from pathlib import Path
+from datetime import datetime
+import json
+import zipfile
+import traceback
+
+root = Path(__file__).resolve().parents[2]
+folder = root / 'generated/session-recovery' / datetime.now().strftime('%Y%m%d-%H%M%S')
+folder.mkdir(parents=True, exist_ok=False)
+rows = []
+docs = []
+for name, doc in App.listDocuments().items():
+    if (doc.FileName and Path(doc.FileName).resolve().is_relative_to(root)) or name in {'R07TipReview', 'R07TipReview1', 'RatLabelReview'}:
+        docs.append(doc)
+try:
+    # Preserve every live version, including duplicate paths and view edits.
+    # Do not close anything until every backup has passed a ZIP integrity check.
+    for doc in docs:
+        row = dict(name=doc.Name, label=doc.Label, original_path=doc.FileName)
+        target = folder / (doc.Name + '.FCStd')
+        doc.saveAs(str(target))
+        with zipfile.ZipFile(target) as z:
+            assert 'Document.xml' in z.namelist()
+            assert z.testzip() is None
+        row['backup_path'] = str(target)
+        rows.append(row)
+        (folder / 'manifest.json').write_text(json.dumps(rows, indent=2), encoding='utf-8')
+    keep = [r['name'] for r in rows if 'targeted-r18' in r['original_path'].replace('\\', '/')]
+    for row in rows:
+        if row['name'] not in keep:
+            App.closeDocument(row['name'])
+    if keep:
+        App.setActiveDocument(keep[-1])
+    (folder / 'complete.json').write_text(json.dumps(dict(saved=len(rows), kept=keep,
+        remaining=list(App.listDocuments())), indent=2), encoding='utf-8')
+except Exception:
+    (folder / 'error.txt').write_text(traceback.format_exc(), encoding='utf-8')
+    raise

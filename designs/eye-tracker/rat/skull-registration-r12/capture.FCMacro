@@ -1,0 +1,6 @@
+from pathlib import Path
+import FreeCAD as A,FreeCADGui as G
+O=Path(__file__).resolve().parents[4]/'generated/eye-tracker/rat/skull-registration-r12'
+for d in A.listDocuments().values():
+ if d.FileName.replace('\\','/').endswith('ET-RAT-SKULL-REGISTRATION-R12.FCStd'):A.setActiveDocument(d.Name);break
+G.activeDocument().activeView().saveImage(str(O/'overlay.png'),1500,1050,'White');d.RatlasSkull.Visibility=False;d.recompute();d.save();G.updateGui()

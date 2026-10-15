@@ -1,0 +1,7 @@
+{
+  "parent_print_revision": "R20",
+  "source_checkpoint": "designs/eye-tracker/mouse/raised-target-r19/checkpoints/ET-MOUSE-RAISED-TARGET-R19.FCStd",
+  "source_sha256": "05a11e2a9a0f8900cf22ad114194bc200bb6950e501fa8e4d8d163543ab0ea9c",
+  "change": "Bridge diameter 3 mm to 2.25 mm; skull material retained",
+  "hardware": "Unchanged R20 geometry, renamed R21"
+}

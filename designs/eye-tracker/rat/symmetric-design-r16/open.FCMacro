@@ -1,0 +1,23 @@
+from pathlib import Path
+import json,hashlib
+import FreeCAD as A,FreeCADGui as G,Mesh,Part
+S=Path(__file__).resolve().parent;R=S.parents[3];O=R/'generated/eye-tracker/rat/symmetric-design-r16';v=json.loads((S/'validation.json').read_text())
+a=json.loads((S.parent/'registered-eyes-r14/review.json').read_text());src=R/a['native_checkpoint'];assert hashlib.sha256(src.read_bytes()).hexdigest()==a['native_sha256'];d=A.openDocument(str(src));A.setActiveDocument(d.Name);d.Label='Rat R16 - symmetric design skull with paired eyes'
+for obj in d.Objects:
+ if hasattr(obj,'ViewObject'):obj.Visibility=False
+for name in ['RegisteredEyes','LeftSclera','LeftCornea','RightSclera','RightCornea','LeftOpticalAxis','RightOpticalAxis']:
+ obj=d.getObject(name)
+ if obj:obj.Visibility=True
+for name,file,color,visible in [('RigidSkullR16','rat-skull-rigid-r16.stl',(.2,.7,.9),False),('SymmetricSkullR16','rat-skull-symmetric-r16.stl',(.85,.81,.65),True)]:
+ obj=d.addObject('Mesh::Feature',name);obj.Label=('RIGID ONLY - toggle for comparison' if not visible else 'SYMMETRIC DESIGN DERIVATIVE - not a measured specimen');obj.Mesh=Mesh.Mesh(str(O/file));obj.ViewObject.ShapeColor=color;obj.Visibility=visible
+ obj.addProperty('App::PropertyString','Provenance');obj.Provenance=v['method'] if visible else 'Rigid correction only; transform in validation.json'
+group=d.addObject('App::DocumentObjectGroup','DesignSurfaceReferences');group.Label='Recomputed symmetric surface references'
+for i,row in enumerate(v['landmarks']):
+ p=A.Vector(*row['point']);q=A.Vector(*row['label']);color=(.95,.4,.05) if 'nasal tip' in row['name'] else (.2,.6,.25)
+ mark=d.addObject('Part::Feature','SurfaceReference'+str(i));mark.Label=row['name'];mark.Shape=Part.makeSphere(.20,p);mark.ViewObject.ShapeColor=color;mark.addProperty('App::PropertyVector','SurfacePosition');mark.SurfacePosition=p;group.addObject(mark)
+ line=d.addObject('Part::Feature','ReferenceLeader'+str(i));line.Shape=Part.makeLine(p,q);line.ViewObject.LineColor=color;group.addObject(line)
+ text=d.addObject('App::Annotation','ReferenceLabel'+str(i));text.LabelText=[row['name']];text.Position=q;text.ViewObject.TextColor=color;text.ViewObject.FontSize=13;group.addObject(text)
+line=d.addObject('Part::Feature','DesignMidline');line.Label='Design symmetry midline Y=0';line.Shape=Part.makeLine(A.Vector(-16,0,2),A.Vector(32,0,2));line.ViewObject.LineColor=(.8,.15,.15);line.ViewObject.LineWidth=2
+# Atlas origin remains provenance, no longer mislabeled as the design origin.
+point=d.addObject('Part::Feature','TransformedAtlasOrigin');point.Label='Atlas bregma origin after rigid correction (reference only)';point.Shape=Part.makeSphere(.2,A.Vector(*v['atlas_origin_in_design_frame']));point.ViewObject.ShapeColor=(1.,0.,0.);point.Visibility=False
+d.recompute();G.activeDocument().activeView().viewTop();G.activeDocument().activeView().fitAll();d.saveAs(str(O/'ET-RAT-SYMMETRIC-DESIGN-R16.FCStd'));G.updateGui()

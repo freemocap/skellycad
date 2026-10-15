@@ -1,0 +1,7 @@
+from pathlib import Path
+import FreeCAD as A,FreeCADGui as G,Mesh
+root=Path(__file__).resolve().parents[4];out=root/'generated/eye-tracker/mouse/print-r22'
+d=A.newDocument('MouseR22PrintReview');A.setActiveDocument(d.Name)
+for name,color in [('Skull-and-bridge',(.85,.12,.12)),('Sclera',(.95,.95,.95)),('Cornea',(.08,.08,.08)),('Baseplate',(.95,.8,.12))]:
+ ob=d.addObject('Mesh::Feature',name.replace('-',''));ob.Label=name;ob.Mesh=Mesh.Mesh(str(out/'anatomy'/(name+'.stl')));ob.ViewObject.ShapeColor=color
+G.activeDocument().activeView().viewAxonometric();G.activeDocument().activeView().fitAll();d.recompute();d.saveAs(str(out/'MOUSE-R22-anatomy-print.FCStd'));G.updateGui()

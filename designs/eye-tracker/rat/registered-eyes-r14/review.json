@@ -1,0 +1,16 @@
+{
+  "native_checkpoint": "designs/eye-tracker/rat/registered-eyes-r14/checkpoints/ET-RAT-REGISTERED-EYES-R14.FCStd",
+  "native_sha256": "5a9495e51fc661f8e05590fc776eacbd2c366c92530c47074aa5c401a3a9cbf8",
+  "parent_review": "designs/eye-tracker/rat/surface-landmarks-r13/review.json",
+  "units": "mm",
+  "scope": "Anatomy review only; accepted registered skull preserved; bilateral eye surfaces and estimated neutral axes added",
+  "selected_assembly_changed": false,
+  "placement_record": "placement.json",
+  "sources": {
+    "designs/eye-tracker/rat/surface-landmarks-r13/review.json": "e727dd9aabdde9e34be51c386a0c323312419da927b721d2a6ca6ad314291659",
+    "generated/eye-tracker/rat/skull-registration-r12/rat-skull-high-res-refined-atlas-frame-r12.stl": "360509c5dbed266a6dec4012389421f2999ce9c8d3aec5276e59d941e9195b76",
+    "generated/eye-tracker/adult-eyes-r01/rat-whole.stl": "0105020db80e515ec8ac7d9f6048a77b6c6cfbc77256d90cf0e1f1f77f50fecd",
+    "generated/eye-tracker/adult-eyes-r01/rat-sclera.stl": "dc439cc8583fe755e269b2475eb5073914ccd6863de8e773315235241386320e",
+    "generated/eye-tracker/adult-eyes-r01/rat-cornea.stl": "20483b8bee02584239dacfd34d3793b65265a093d6820665167f160f6c42c999"
+  }
+}

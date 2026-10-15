@@ -1,0 +1,44 @@
+{
+  "PCB": {
+    "pose_error": 0.0
+  },
+  "JST_4pin": {
+    "pose_error": 0.0
+  },
+  "eye_primary_Cap": {
+    "pose_error": 0.0
+  },
+  "skull_mount_Baseplate": {
+    "pose_error": 0.0
+  },
+  "Eye1OpticalFrame": {
+    "pose_error": 0.0
+  },
+  "Eye2OpticalFrame": {
+    "pose_error": 0.0
+  },
+  "Skull": {
+    "pose_error": 0.0
+  },
+  "RetainedSocket": {
+    "common_rigid_delta_error": 1.1379786002407855e-15
+  },
+  "eye_primary_Holder": {
+    "common_rigid_delta_error": 6.661338147750939e-16
+  },
+  "eye_primary_Clip": {
+    "common_rigid_delta_error": 3.552713678800501e-15
+  },
+  "camera_pcb": {
+    "common_rigid_delta_error": 3.552713678800501e-15
+  },
+  "M4_lens": {
+    "common_rigid_delta_error": 3.552713678800501e-15
+  },
+  "IR_LED": {
+    "common_rigid_delta_error": 3.552713678800501e-15
+  },
+  "IR_LED_001": {
+    "common_rigid_delta_error": 3.552713678800501e-15
+  }
+}

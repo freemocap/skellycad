@@ -1,0 +1,12 @@
+{
+  "revision": "ET-RAT-ANATOMY-STUDY-R10",
+  "status": "Named atlas review; local landmark estimates awaiting visual review; no registered globes or mechanical rebuild yet",
+  "units": "mm",
+  "native_checkpoint": "designs/eye-tracker/rat/anatomy-study-r10/checkpoints/ET-RAT-ANATOMY-STUDY-R10.FCStd",
+  "native_sha256": "1e0c6565cec3acbe328f6ccfac5b4a7fb5ff9cb529c79ed9dc29c7fb6da02e02",
+  "sources": "sources.json",
+  "landmarks": "landmarks.json",
+  "extraction": "extraction.json",
+  "selected_assembly_changed": false,
+  "next_gate": "Review local lambda/nasion and cheek-arch candidates before fitting the old skull and eyes"
+}

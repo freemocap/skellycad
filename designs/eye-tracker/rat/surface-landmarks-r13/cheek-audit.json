@@ -1,0 +1,38 @@
+{
+  "method": "Outside-in lateral ray, first triangle intersection; original AP and DV retained",
+  "checks": [
+    {
+      "side": "left",
+      "atlas_point_mm": [
+        0.37500032782554626,
+        10.987500190734863,
+        -9.524998664855957
+      ],
+      "nearest_surface_gap_mm": 0.14456524234586152,
+      "outer_surface_at_same_AP_DV_mm": [
+        0.37500032782554626,
+        11.386788880978884,
+        -9.524998664855957
+      ],
+      "lateral_outward_shift_mm": 0.39928869024402047
+    },
+    {
+      "side": "right",
+      "atlas_point_mm": [
+        3.129243850708008e-07,
+        -10.98750114440918,
+        -9.749999046325684
+      ],
+      "nearest_surface_gap_mm": 0.02804817454238505,
+      "outer_surface_at_same_AP_DV_mm": [
+        3.129243850708008e-07,
+        -11.603605199509126,
+        -9.749999046325684
+      ],
+      "lateral_outward_shift_mm": 0.6161040550999459
+    }
+  ],
+  "marker_radius_mm": 0.25,
+  "marker_display_offset_mm": 0.65,
+  "skull_registration_changed": false
+}

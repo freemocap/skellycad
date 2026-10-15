@@ -1,0 +1,4 @@
+from pathlib import Path
+import json
+import FreeCAD as A,FreeCADGui as G
+R=Path(__file__).resolve().parents[4];p=json.loads((R/'designs/eye-tracker/mouse/landmark-eyes-r04/placement.json').read_text());B=p['skull_basis_columns'];ap=A.Vector(*[r[0] for r in B]);ml=A.Vector(*[r[1] for r in B]);dv=A.Vector(*[r[2] for r in B]);G.activeDocument().activeView().setCameraOrientation(A.Rotation(-ml,ap,dv,'ZXY').Q);G.activeDocument().activeView().fitAll();A.ActiveDocument.save()

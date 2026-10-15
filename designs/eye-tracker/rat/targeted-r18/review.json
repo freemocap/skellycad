@@ -1,0 +1,10 @@
+{
+  "revision": "ET-RAT-TARGETED-R18",
+  "units": "mm",
+  "native_checkpoint": "designs/eye-tracker/rat/targeted-r18/checkpoints/ET-RAT-TARGETED-R18.FCStd",
+  "native_sha256": "bcffdf5e3a5981d41e54dd22b2c7867f1e2e9a9d6b019a6b1b2ead63b11d0849",
+  "recipe": "recipe.json",
+  "status": "Complete rat review assembly; static validation passed with recorded inherited overlaps; physical fit pending",
+  "physical_fit_verified": false,
+  "print_release": false
+}

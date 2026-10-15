@@ -1,0 +1,17 @@
+{
+  "Skull": {
+    "guard_surface_crossings": 0
+  },
+  "Eye1Sclera": {
+    "guard_surface_crossings": 0
+  },
+  "Eye1Cornea": {
+    "guard_surface_crossings": 0
+  },
+  "Eye2Sclera": {
+    "guard_surface_crossings": 0
+  },
+  "Eye2Cornea": {
+    "guard_surface_crossings": 0
+  }
+}

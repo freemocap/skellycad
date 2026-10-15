@@ -1,0 +1,8 @@
+{
+  "native_checkpoint": "designs/eye-tracker/rat/skull-registration-r12/checkpoints/ET-RAT-SKULL-REGISTRATION-R12.FCStd",
+  "native_sha256": "7562620facba3ba6bfee16e9150d8754f6096e1634027cba12f5395310dbe847",
+  "status": "Working skull rigidly registered; awaiting user visual confirmation",
+  "atlas_role": "Hidden optional reference only",
+  "registration": "registration.json",
+  "assembly_changed": false
+}

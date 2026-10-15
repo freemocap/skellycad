@@ -1,0 +1,33 @@
+{
+  "revision": "MOUSE R20",
+  "units": "mm",
+  "source_checkpoint": "ET-MOUSE-RAISED-TARGET-R19",
+  "status": "Mesh-validated unsliced print candidate; physical fit untested",
+  "files": {
+    "anatomy/Baseplate.stl": "850c15e38dcc52f2cc87f87383c61fe06e2f9224049382d82f51b81135c9df71",
+    "anatomy/Cornea.stl": "bf40142dd9b142e04db29656eb12f3e4b8b5491909cd0d4c5f84f6723ee175cb",
+    "anatomy/mouse-eyes-embedded-baseplate.stl": "418aa1c7a8a7a57a54a1e4f077a36babc91f55c766a51aa589734e33aac25807",
+    "anatomy/mouse-eyes.stl": "268c223666e534a434d8a72dbc78e7f4e9822f4ecf7904593da410db673591bf",
+    "anatomy/MOUSE-R20-four-colors.3mf": "7d2f51a2dd190030086e152447c90c5307bd69b943196409f750e1db0c2eeee6",
+    "anatomy/MOUSE-R20-Snapmaker-U1.3mf": "dcd244a903fae14b84d53e0e26e0909e15980896b7c63845f8c315039eb60365",
+    "anatomy/Sclera.stl": "88909e2e0a4bfe0af5b210110b35e8a8ed76b763fd0ac3997bea0a2db5f70eb9",
+    "anatomy/Skull-and-bridge.stl": "fd8fa45a24a2171b6468bdd660cbb7fb4b46541cb2c633b4a10f67960c3f589c",
+    "hardware/MOUSE-R20-camera-clip.stl": "744babe3506d849d795592d2d2ab1cede87917c830aabf9c9b04452c4d461aa1",
+    "hardware/MOUSE-R20-carrier-and-holder.stl": "63f7ba791e4aa6f2c2217e3b736fa39134bb57847d5f8e67b530792600c4515b",
+    "source/35_mic_23strain_mus_template_UCHAR-label.nii.gz": "06f68b4612d9611d3645c58548106a375f57cef960947105c70bb5895a37c29f",
+    "source/atlas-registration.json": "a5478fe8e302412e1ad2937edab3d8ad52b3cc2e9a11f2392260b75ffb57e052",
+    "source/build_anatomy.py": "86346739fd168949a283c4da461a2f42e2f97d0f735f8b0957e53061e2f06281",
+    "source/export_cad.py": "4f0d1563b14f019636638d6033be0d641e411cdeabe30ff7f953efa77d6e5d5c",
+    "source/LICENSE": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+    "source/package.py": "d5a2f54c4e40edc0f13bfa9c3afdb91be34f4ede3c742ad89374aea0d2223f2d",
+    "source/prepare_skull.py": "8ccca4697cf36ad08b148b145948c88862d1c20a98d6acd65c0becc02f566f2d",
+    "source/R19-review.json": "0722463d3494ee52cb2ab8c57e8c20181a47abddf2a01a40823982c2cfa42cfa",
+    "README.md": "9bdc3a11049ecb55bab1edc659281917e3c1aa60011b42eaa0b31c3b3c4d019c",
+    "anatomy-validation.json": "aa6208f4d3222f5fc96a9145141e64556f7a25c7993b8315784129e6284006c0",
+    "hardware-validation.json": "7a0bb0a3332f7b1669c1b27669421e46f317779ed54509d01c9dcb4cf8ab06bf",
+    "hardware-mesh-validation.json": "4db8b89841c5836521c6c9e76a51d1ece4bc4bb38d02e848cbfbaf24624037f9",
+    "skull-derivative.json": "4cfb0c1a9f82cfabdcada9d77c8993e246a659cd017af335f2fdb1a3e80b0726",
+    "MOUSE-R20-anatomy-print.FCStd": "86e113369297813696bd267791b656ddfdc9da600a26f7da66270b4380c779da",
+    "anatomy-preview.png": "1e9db5db548e6c767d3db0d1b65bf0b9d21e367be1591e035f98e452f2cfb481"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "native_checkpoint": "designs/eye-tracker/rat/surface-landmarks-r13/checkpoints/ET-RAT-SURFACE-LANDMARKS-R13.FCStd",
+  "native_sha256": "7d5f5a2c70effb287d88f7af235e3dcb4dd5c4ddee05d63227bab76d6ae15b10",
+  "max_surface_reference_gap_mm": 1.7979101253009106e-15,
+  "registration_changed": false,
+  "atlas_landmarks_preserved": true,
+  "new_references": "Local outer-surface geometry; not author annotations"
+}

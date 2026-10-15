@@ -1,0 +1,332 @@
+{
+  "units": "mm",
+  "source_sha256": "360509c5dbed266a6dec4012389421f2999ce9c8d3aec5276e59d941e9195b76",
+  "method": "Area-sampled reflected-point nearest-neighbor fit; robust soft-L1 plane optimization; sampled distances, not homologous-landmark residuals",
+  "percentile_order": [
+    50,
+    90,
+    95
+  ],
+  "fits": {
+    "whole": {
+      "parameters": [
+        0.012508384476862361,
+        -0.024236788215202032,
+        0.18308494583793117
+      ],
+      "normal": [
+        0.012503734692431838,
+        0.999628266588773,
+        -0.02422777859124161
+      ],
+      "offset_mm": 0.18308494583793117,
+      "tilt_from_Y_deg": 1.562308814894099,
+      "success": true,
+      "before_mm": [
+        0.20633351044885134,
+        0.4376292091473486,
+        0.5564575453535807
+      ],
+      "after_mm": [
+        0.1710312384364493,
+        0.2994478136532663,
+        0.3430969292486328
+      ]
+    },
+    "dorsal": {
+      "parameters": [
+        0.00843177683010506,
+        -0.015278717052381976,
+        0.15374610109602888
+      ],
+      "normal": [
+        0.008430493241674272,
+        0.9998477677414083,
+        -0.015276391138776707
+      ],
+      "offset_mm": 0.15374610109602888,
+      "tilt_from_Y_deg": 0.9997616769511993,
+      "success": true,
+      "before_mm": [
+        0.17459300883046666,
+        0.309878605019524,
+        0.3545774599914421
+      ],
+      "after_mm": [
+        0.15619273948637635,
+        0.2870493846909932,
+        0.33035938946725585
+      ]
+    }
+  },
+  "pairs": [
+    {
+      "ids": [
+        "LeftNasalTip",
+        "RightNasalTip"
+      ],
+      "midpoint_mm": [
+        30.568275451660156,
+        -0.11292505264282227,
+        -7.808329105377197
+      ],
+      "midpoint_offset_from_current_plane_mm": -0.11292505264282227,
+      "reflected_pair_distance_current_mm": 0.23000976569301465
+    },
+    {
+      "ids": [
+        "LeftNasalRoof",
+        "RightNasalRoof"
+      ],
+      "midpoint_mm": [
+        22.0,
+        0.0,
+        -4.459036052217634
+      ],
+      "midpoint_offset_from_current_plane_mm": 0.0,
+      "reflected_pair_distance_current_mm": 0.5972831126828275
+    },
+    {
+      "ids": [
+        "LeftPosteriorRoof",
+        "RightPosteriorRoof"
+      ],
+      "midpoint_mm": [
+        -8.0,
+        0.0,
+        -0.798685053768871
+      ],
+      "midpoint_offset_from_current_plane_mm": 0.0,
+      "reflected_pair_distance_current_mm": 0.025260330504238482
+    },
+    {
+      "ids": [
+        "LeftFrontArch",
+        "RightFrontArch"
+      ],
+      "midpoint_mm": [
+        12.0,
+        -0.2757499626813331,
+        -10.0
+      ],
+      "midpoint_offset_from_current_plane_mm": -0.2757499626813331,
+      "reflected_pair_distance_current_mm": 0.5514999253626662
+    },
+    {
+      "ids": [
+        "LeftRearArch",
+        "RightRearArch"
+      ],
+      "midpoint_mm": [
+        -3.0,
+        0.04193533667099203,
+        -10.0
+      ],
+      "midpoint_offset_from_current_plane_mm": 0.04193533667099203,
+      "reflected_pair_distance_current_mm": 0.08387067334198406
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "LeftNasalTip",
+      "name": "Left nasal tip - surface extreme",
+      "position_mm": [
+        30.55791664123535,
+        0.30202680826187134,
+        -7.827479839324951
+      ],
+      "label_offset_mm": [
+        5,
+        5,
+        3
+      ],
+      "color": [
+        1,
+        0.45,
+        0.05
+      ],
+      "evidence": "Local geometric surface reference, not an author-labeled anatomical landmark"
+    },
+    {
+      "id": "RightNasalTip",
+      "name": "Right nasal tip - surface extreme",
+      "position_mm": [
+        30.57863426208496,
+        -0.5278769135475159,
+        -7.789178371429443
+      ],
+      "label_offset_mm": [
+        5,
+        -5,
+        3
+      ],
+      "color": [
+        1,
+        0.45,
+        0.05
+      ],
+      "evidence": "Local geometric surface reference, not an author-labeled anatomical landmark"
+    },
+    {
+      "id": "LeftNasalRoof",
+      "name": "Left nasal roof",
+      "position_mm": [
+        22.0,
+        2.0,
+        -4.757677608559048
+      ],
+      "label_offset_mm": [
+        0,
+        9,
+        4
+      ],
+      "color": [
+        0.2,
+        0.65,
+        0.2
+      ],
+      "evidence": "Local geometric surface reference, not an author-labeled anatomical landmark"
+    },
+    {
+      "id": "RightNasalRoof",
+      "name": "Right nasal roof",
+      "position_mm": [
+        22.0,
+        -2.0,
+        -4.16039449587622
+      ],
+      "label_offset_mm": [
+        0,
+        -9,
+        4
+      ],
+      "color": [
+        0.2,
+        0.65,
+        0.2
+      ],
+      "evidence": "Local geometric surface reference, not an author-labeled anatomical landmark"
+    },
+    {
+      "id": "LeftPosteriorRoof",
+      "name": "Left rear skull roof",
+      "position_mm": [
+        -8.0,
+        5.0,
+        -0.7860548885167518
+      ],
+      "label_offset_mm": [
+        0,
+        9,
+        4
+      ],
+      "color": [
+        0.2,
+        0.65,
+        0.2
+      ],
+      "evidence": "Local geometric surface reference, not an author-labeled anatomical landmark"
+    },
+    {
+      "id": "RightPosteriorRoof",
+      "name": "Right rear skull roof",
+      "position_mm": [
+        -8.0,
+        -5.0,
+        -0.8113152190209902
+      ],
+      "label_offset_mm": [
+        0,
+        -9,
+        4
+      ],
+      "color": [
+        0.2,
+        0.65,
+        0.2
+      ],
+      "evidence": "Local geometric surface reference, not an author-labeled anatomical landmark"
+    },
+    {
+      "id": "LeftFrontArch",
+      "name": "Left front arch section",
+      "position_mm": [
+        12.0,
+        2.5809504623704704,
+        -10.0
+      ],
+      "label_offset_mm": [
+        0,
+        9,
+        4
+      ],
+      "color": [
+        0.6,
+        0.25,
+        0.9
+      ],
+      "evidence": "Local geometric surface reference, not an author-labeled anatomical landmark"
+    },
+    {
+      "id": "RightFrontArch",
+      "name": "Right front arch section",
+      "position_mm": [
+        12.0,
+        -3.1324503877331367,
+        -10.0
+      ],
+      "label_offset_mm": [
+        0,
+        -9,
+        4
+      ],
+      "color": [
+        0.6,
+        0.25,
+        0.9
+      ],
+      "evidence": "Local geometric surface reference, not an author-labeled anatomical landmark"
+    },
+    {
+      "id": "LeftRearArch",
+      "name": "Left rear arch section",
+      "position_mm": [
+        -3.0,
+        9.365473030292357,
+        -10.0
+      ],
+      "label_offset_mm": [
+        0,
+        9,
+        4
+      ],
+      "color": [
+        0.6,
+        0.25,
+        0.9
+      ],
+      "evidence": "Local geometric surface reference, not an author-labeled anatomical landmark"
+    },
+    {
+      "id": "RightRearArch",
+      "name": "Right rear arch section",
+      "position_mm": [
+        -3.0,
+        -9.281602356950373,
+        -10.0
+      ],
+      "label_offset_mm": [
+        0,
+        -9,
+        4
+      ],
+      "color": [
+        0.6,
+        0.25,
+        0.9
+      ],
+      "evidence": "Local geometric surface reference, not an author-labeled anatomical landmark"
+    }
+  ],
+  "geometry_changed": false
+}

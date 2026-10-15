@@ -4,7 +4,7 @@
 
 Start with the **mouse monocular assembly**. It reproduces the Mouse Hats R10
 high-water mark using the shared hardware library. The selected checkpoint is
-`ET-MOUSE-MONO-R01`; the original R10 remains the comparison reference.
+`ET-MOUSE-RAISED-TARGET-R19`, with the raised anatomical baseplate and re-aimed camera. Historical R01/R10 reconstruction inputs remain available.
 
 Run `review.FCMacro` in the existing desktop FreeCAD session to open the selected
 mouse, the R10 reference and the exploded shared-hardware view together.

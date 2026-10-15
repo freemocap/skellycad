@@ -1,0 +1,21 @@
+{
+  "source": {
+    "path": "designs/eye-tracker/shared/cameras/pupil-core-eye/checkpoints/CAMERA-DUMMY-R08/CAMERA-DUMMY-R08-Snapmaker-U1.3mf",
+    "sha256": "5d627d84a24576768f376bd594c8e007dd0a23655f035043d686db6d1ff00671"
+  },
+  "geometry_unchanged": true,
+  "materials": [
+    "1 Red PLA - both PCBs",
+    "2 Black PLA - lens assembly",
+    "3 White PLA - JST connector and IR LEDs",
+    "4 Yellow TPU 95A HF - ribbon"
+  ],
+  "TPU_profile": "Snapmaker TPU 95A HF @U1 0.4 nozzle",
+  "layer_height_mm": 0.125,
+  "first_layer_height_mm": 0.125,
+  "substrate_mm": 0.25,
+  "sliced": false,
+  "physical_print_verified": false,
+  "project": "generated\\eye-tracker\\shared\\camera-u1-tpu95ahf-r01\\CAMERA-R08-U1-Red-Black-White-TPU95AHF.3mf",
+  "sha256": "cc6ef6b16bd332d6f51fbd1ca74f66498322000bf979e11c56aa3463e6b82682"
+}

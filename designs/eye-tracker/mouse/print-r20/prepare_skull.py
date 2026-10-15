@@ -1,0 +1,10 @@
+from pathlib import Path
+import sys,json,hashlib,numpy as np,trimesh,manifold3d as mf
+from scipy import ndimage as ndi
+from skimage.measure import marching_cubes
+R=Path.cwd();S=R/'designs/eye-tracker/mouse/print-r20';O=R/'generated/eye-tracker/mouse/print-r20';O.mkdir(parents=True,exist_ok=True);sys.path.insert(0,str(R/'generated/eye-tracker/mouse/skull-landmarks-study-r01/python-deps'));import nibabel as nib
+P=R/'designs/eye-tracker/mouse/skull-landmarks-study-r01';source=P/'sources/35_mic_23strain_mus_template_UCHAR-label.nii.gz';im=nib.load(source);a=np.asarray(im.dataobj)==1;labels,n=ndi.label(a);counts=np.bincount(labels.ravel());counts[0]=0;bone=labels==counts.argmax();print('source components',n,'kept voxels',bone.sum(),'removed',a.sum()-bone.sum(),flush=True)
+bone=ndi.binary_closing(np.pad(bone,2),iterations=1);v,f,_,_=marching_cubes(bone.astype(np.uint8),.5,allow_degenerate=False);v=nib.affines.apply_affine(im.affine,v-2)*[-1,-1,1];m=trimesh.Trimesh(v,f);m.fix_normals(multibody=False);m.invert() if m.volume<0 else None;print('marching',len(m.faces),m.is_volume,flush=True)
+x=mf.Manifold(mf.Mesh64(np.array(m.vertices,dtype=np.float64),np.array(m.faces,dtype=np.uint64)));print('manifold',x.status(),flush=True);assert x.status()==mf.Error.NoError;x=x.simplify(.01);z=x.to_mesh64();m=trimesh.Trimesh(np.array(z.vert_properties)[:,:3],np.array(z.tri_verts));T=np.array(json.loads((P/'validation.json').read_text())['matrix_atlas_lps_to_assembly']);m.apply_transform(T);m.export(O/'skull-print-world.stl');report={'source':source.relative_to(R).as_posix(),'source_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),'source_components':int(n),'removed_voxels':int(a.sum()-np.count_nonzero(labels==counts.argmax())),'morphology':'largest 6-connected bone component, one voxel binary closing','simplification_tolerance_source_mm':.01,'watertight':bool(m.is_watertight),'volume_mm3':float(m.volume),'faces':len(m.faces),'transform':T.tolist()};(O/'skull-derivative.json').write_text(json.dumps(report,indent=2));print(report,flush=True)
+
+

@@ -48,7 +48,12 @@ def export_selected(path, validate):
               'units': 'mm', 'linear_deflection_mm': .03, 'angular_deflection_rad': .15, 'files': {}}
     for label, roles in manifest['print_groups'].items():
         objects = [doc.getObject(manifest['parts'][role]) for role in roles]
-        shape = Part.makeCompound([o.Shape for o in objects]) if len(objects) > 1 else objects[0].Shape
+        shapes = []
+        for obj in objects:
+            placed = obj.Shape.copy()
+            placed.Placement = obj.getGlobalPlacement()
+            shapes.append(placed)
+        shape = Part.makeCompound(shapes) if len(shapes) > 1 else shapes[0]
         mesh = MeshPart.meshFromShape(Shape=shape, LinearDeflection=.03, AngularDeflection=.15, Relative=False)
         filename = f"{manifest['revision']}-{label}.stl"
         mesh.write(str(out / filename))

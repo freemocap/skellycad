@@ -1,0 +1,62 @@
+{
+  "units": "mm",
+  "source": "designs/eye-tracker/rat/references/skull/aligned-r01/rat-skull-high-res-refined-aligned-r01.stl",
+  "source_sha256": "805bf0ac36f0a72016cd841c0a42ce593cd1af57e1d60a0d159d2845b20997c5",
+  "method": "Rigid trimmed ICP on dorsal height envelopes, 0.5 mm XY bins, top 8 mm, 85 percent correspondences retained; nine translation seeds",
+  "scale": 1.0,
+  "source_to_atlas": [
+    [
+      0.9985326245303108,
+      -0.013255348420004063,
+      0.052506128089072165,
+      7.557231667739428
+    ],
+    [
+      0.012098931645115952,
+      0.9996785262169082,
+      0.02228138402066166,
+      0.0715098852753771
+    ],
+    [
+      -0.05278459625391422,
+      -0.02161342080961919,
+      0.9983719980243969,
+      -6.388831227956237
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "rotation_determinant": 1.0000000000000402,
+  "roof_nearest_vertex_mm": {
+    "median": 0.47140572876600656,
+    "p90": 1.2205926932934916,
+    "p95": 1.9110243785771874
+  },
+  "status": "Proposed geometric registration; awaiting user visual review; roof fit does not independently validate orbital anatomy",
+  "files": {
+    "rat-skull-high-res-atlas-frame-r12.stl": {
+      "source": "designs/eye-tracker/rat/references/skull/aligned-r01/rat-skull-high-res-aligned-r01.stl",
+      "source_sha256": "c96d8a73f3a0cae4de71227f251e6127db544fd95bcd07aa4c9664fcf427fb77",
+      "output_sha256": "371acff8d57703b622497bb550b117511bd3de3e0c49b4fecd99e509080ac146"
+    },
+    "rat-skull-high-res-refined-atlas-frame-r12.stl": {
+      "source": "designs/eye-tracker/rat/references/skull/aligned-r01/rat-skull-high-res-refined-aligned-r01.stl",
+      "source_sha256": "805bf0ac36f0a72016cd841c0a42ce593cd1af57e1d60a0d159d2845b20997c5",
+      "output_sha256": "360509c5dbed266a6dec4012389421f2999ce9c8d3aec5276e59d941e9195b76"
+    },
+    "rat-skull-low-poly-atlas-frame-r12.stl": {
+      "source": "designs/eye-tracker/rat/references/skull/aligned-r01/rat-skull-low-poly-aligned-r01.stl",
+      "source_sha256": "a8c7993dd66d5cdbb63fe65d0068971cb3ee4e6cdd4e4c303be37ba9e859528b",
+      "output_sha256": "47322ed8273945c6b8c8f93257ee944b21ef899a81f6c6b98402ca56bd8f5b15"
+    },
+    "rat-skull-standard-atlas-frame-r12.stl": {
+      "source": "designs/eye-tracker/rat/references/skull/aligned-r01/rat-skull-standard-aligned-r01.stl",
+      "source_sha256": "06216589919dd73774323e6c0ea934ed73d23e49015531a96a82c3f4ec515b1e",
+      "output_sha256": "7d4d2086dc45228a86acf4609a8f5db057223f8be30a1acd497ed599e2ad4e15"
+    }
+  }
+}

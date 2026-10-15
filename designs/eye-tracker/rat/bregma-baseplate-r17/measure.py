@@ -1,0 +1,3 @@
+from pathlib import Path
+import FreeCAD as A,Part,json,hashlib
+R=Path.cwd();S=R/'designs/eye-tracker/rat/bregma-baseplate-r17';a=json.loads((S.parent/'compact-guard-r09/review.json').read_text());p=R/a['native_checkpoint'];assert hashlib.sha256(p.read_bytes()).hexdigest()==a['native_sha256'];d=A.openDocument(str(p));o=d.skull_mount_Baseplate;s=o.Shape.copy();s.Placement=o.getGlobalPlacement();s.exportBrep(str(S/'source-baseplate.brep'));print('bounds',s.BoundBox);print('faces',[(i+1,round(f.Area,2),list(f.CenterOfMass),str(type(f.Surface)),list(f.normalAt(0,0))) for i,f in enumerate(s.Faces)]);print('verts',[list(v.Point) for v in s.Vertexes]);

@@ -1,0 +1,17 @@
+{
+  "Skull": {
+    "closed": true,
+    "samples": 2500,
+    "hardware_samples_inside": 0
+  },
+  "Eye1": {
+    "closed": true,
+    "samples": 2500,
+    "hardware_samples_inside": 0
+  },
+  "Eye2": {
+    "closed": true,
+    "samples": 2500,
+    "hardware_samples_inside": 0
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "native_checkpoint": "designs/eye-tracker/rat/bregma-baseplate-r17/checkpoints/ET-RAT-BREGMA-BASEPLATE-R17.FCStd",
+  "native_sha256": "4dc5d561888f1006ddb156111db1ceccdf789d751ab577545412f40ba9948c6a",
+  "units": "mm",
+  "anatomy_source": "designs/eye-tracker/rat/symmetric-design-r16/review.json",
+  "hardware_source": "designs/eye-tracker/rat/compact-guard-r09/review.json",
+  "placement": "placement.json",
+  "status": "Baseplate placement study, uncut contact stock, no camera integration or physical fit validation"
+}

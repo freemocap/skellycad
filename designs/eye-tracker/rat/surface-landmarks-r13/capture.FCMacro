@@ -1,0 +1,6 @@
+from pathlib import Path
+import FreeCAD as A,FreeCADGui as G
+O=Path(__file__).resolve().parents[4]/'generated/eye-tracker/rat/surface-landmarks-r13'
+for d in A.listDocuments().values():
+ if d.FileName.replace('\\','/').endswith('ET-RAT-SURFACE-LANDMARKS-R13.FCStd'):A.setActiveDocument(d.Name);break
+G.activeDocument().activeView().saveImage(str(O/'review.png'),1600,1100,'White')

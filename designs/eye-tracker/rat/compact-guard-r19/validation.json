@@ -1,0 +1,100 @@
+{
+  "selected_baseline_audit": {
+    "recorded": "ad74a3f14aaa709880039c927690475f6119d074f73b0a550a3064383394762e",
+    "actual": "9c81ed0189cfa4be9fec9e01cc48621c92a28be2dde8c5535c1e609df22c3bf7",
+    "used_as_geometry_input": false
+  },
+  "source": {
+    "revision": "ET-RAT-TARGETED-R18",
+    "units": "mm",
+    "native_checkpoint": "designs/eye-tracker/rat/targeted-r18/checkpoints/ET-RAT-TARGETED-R18.FCStd",
+    "native_sha256": "bcffdf5e3a5981d41e54dd22b2c7867f1e2e9a9d6b019a6b1b2ead63b11d0849",
+    "recipe": "recipe.json",
+    "status": "Complete rat review assembly; static validation passed with recorded inherited overlaps; physical fit pending",
+    "physical_fit_verified": false,
+    "print_release": false
+  },
+  "units": "mm",
+  "centerline": "single degree-5 Bezier",
+  "poles_mount_mm": [
+    [
+      4.09691912065,
+      8.2,
+      17.36629684986
+    ],
+    [
+      -1.90308087935,
+      8.2,
+      17.36629684986
+    ],
+    [
+      -9.0,
+      2.0,
+      17.5
+    ],
+    [
+      -9.0,
+      0.0,
+      30.0
+    ],
+    [
+      8.450963173686647,
+      0.11243485090336525,
+      31.00951483342314
+    ],
+    [
+      13.20095940790682,
+      1.5775950221994623,
+      30.470217654363417
+    ]
+  ],
+  "guard_valid": true,
+  "carrier_solids": 1,
+  "seating": {
+    "tray_overlap_mm3": 2.4454766794708513,
+    "socket_overlap_mm3": 4.656815391694524
+  },
+  "ribbon": {
+    "overlap_mm3": 0.0,
+    "gap_mm": 1.1439219358032606
+  },
+  "carrier_collisions": {
+    "eye_primary_Holder": {
+      "before_mm3": 0.0,
+      "after_mm3": 0.0
+    },
+    "eye_primary_Clip": {
+      "before_mm3": 0.0,
+      "after_mm3": 0.0
+    },
+    "eye_primary_Cap": {
+      "before_mm3": 0.0022182255338477424,
+      "after_mm3": 0.0022182255338477424
+    },
+    "PCB": {
+      "before_mm3": 0.0,
+      "after_mm3": 0.0
+    },
+    "JST_4pin": {
+      "before_mm3": 0.05902849881216933,
+      "after_mm3": 0.05902849881216933
+    },
+    "camera_pcb": {
+      "before_mm3": 0.0,
+      "after_mm3": 0.0
+    },
+    "M4_lens": {
+      "before_mm3": 0.0,
+      "after_mm3": 0.0
+    },
+    "skull_mount_Baseplate": {
+      "before_mm3": 0.0,
+      "after_mm3": 0.0
+    }
+  },
+  "carrier_mesh": {
+    "closed": true,
+    "self_intersections": false
+  },
+  "fixed_interfaces": "All other geometry and placements inherited unchanged from R18"
+}

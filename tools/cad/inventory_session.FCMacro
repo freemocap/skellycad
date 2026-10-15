@@ -1,0 +1,12 @@
+import FreeCAD as App
+import json
+from pathlib import Path
+
+root = Path(__file__).resolve().parents[2]
+out = root / 'generated/session-recovery'
+out.mkdir(parents=True, exist_ok=True)
+rows = []
+for name, doc in App.listDocuments().items():
+    rows.append(dict(name=name, label=doc.Label, path=doc.FileName,
+                     objects=len(doc.Objects)))
+(out / 'inventory.json').write_text(json.dumps(rows, indent=2), encoding='utf-8')

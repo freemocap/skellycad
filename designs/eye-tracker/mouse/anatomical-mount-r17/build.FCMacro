@@ -1,0 +1,11 @@
+from pathlib import Path
+import json,hashlib
+import FreeCAD as A,FreeCADGui as G,Part,Mesh
+R=Path(__file__).resolve().parents[4];S=R/'designs/eye-tracker/mouse/anatomical-mount-r17';O=R/'generated/eye-tracker/mouse/anatomical-mount-r17';O.mkdir(parents=True,exist_ok=True)
+m=json.loads((S.parent/'landmark-eyes-r04/review.json').read_text());src=R/m['native_checkpoint'];assert hashlib.sha256(src.read_bytes()).hexdigest()==m['native_sha256'];d=A.openDocument(str(src));p=json.loads((S/'placement.json').read_text());D=A.Placement(A.Matrix(*sum(p['delta'],[])));shape=Part.Shape();shape.read(str(S/'baseline-baseplate-world.brep'))
+for name,color,pose in [('ExistingBaseplate',(.65,.65,.65),A.Placement()),('AlignedBaseplate',(.15,.65,.95),D)]:
+ o=d.addObject('Part::Feature',name);sh=shape.copy();sh.Placement=pose.multiply(sh.Placement);o.Shape=sh;o.ViewObject.ShapeColor=color;o.ViewObject.Transparency=75 if name=='ExistingBaseplate' else 25
+ o.Label='R16 existing baseplate (gray)' if name=='ExistingBaseplate' else 'Candidate: midline aligned, datum AP -0.50 mm (blue)'
+c=A.Vector(*p['candidate_datum_world_mm']);e=json.loads((S.parent/'landmark-eyes-r04/placement.json').read_text());B=e['skull_basis_columns'];ap=A.Vector(*[row[0] for row in B]);ml=A.Vector(*[row[1] for row in B]);o=d.addObject('Part::Feature','MountDatum');o.Shape=Part.makeCompound([Part.makeSphere(.17,c),Part.makeLine(c-ap*6,c+ap*6),Part.makeLine(c-ml*5,c+ml*5)]);o.ViewObject.ShapeColor=(1.,.5,0.);o.ViewObject.LineColor=(1.,.5,0.);o.ViewObject.LineWidth=3.
+a=d.addObject('App::Annotation','MountDatumLabel');a.LabelText=['Mount datum: AP -0.50 mm, ML 0','Candidate alignment; contact surface not refitted'];a.Position=c+ml*7+ap*3;a.ViewObject.TextColor=(.1,.3,.7);a.ViewObject.FontSize=12.
+d.Label='Mouse mount anatomy comparison R17';d.recompute();G.activeDocument().activeView().viewTop();G.activeDocument().activeView().fitAll();d.saveAs(str(O/'ET-MOUSE-MOUNT-STUDY-R17.FCStd'))

@@ -1,0 +1,13 @@
+from pathlib import Path
+import json,hashlib
+import FreeCAD as A,FreeCADGui as G,Part
+S=Path(__file__).resolve().parent;R=S.parents[3];O=R/'generated/eye-tracker/rat/surface-landmarks-r13';a=json.loads((S.parent/'skull-registration-r12/review.json').read_text());src=R/a['native_checkpoint'];assert hashlib.sha256(src.read_bytes()).hexdigest()==a['native_sha256'];d=A.openDocument(str(src));A.setActiveDocument(d.Name);d.Label='Rat R13 - outer cheek and additional arch references';d.RatlasSkull.Visibility=False
+for side in ['left','right']:
+ for suffix in ['', 'Leader','Label']:d.getObject(side+'zygion'+suffix).Visibility=False
+refs=d.addObject('App::DocumentObjectGroup','WorkingSurfaceReferences');refs.Label='Working surface references - blue cheeks, purple forward arches'
+for row in json.loads((S/'landmarks.json').read_text()):
+ c=A.Vector(*row['position_mm']);direction=A.Vector(*row['display_direction']);display=c+direction*.65;color=tuple(row['color']);o=d.addObject('Part::Feature',row['id']);o.Label=row['name'];o.Shape=Part.makeSphere(.25,display);o.ViewObject.ShapeColor=color;o.addProperty('App::PropertyVector','SurfacePosition');o.SurfacePosition=c;o.addProperty('App::PropertyVector','DisplayOffset');o.DisplayOffset=direction*.65;o.addProperty('App::PropertyString','Evidence');o.Evidence=row['status'];refs.addObject(o)
+ q=display+direction*6+A.Vector(1,0,2 if 'Anterior' in row['id'] else -1);line=d.addObject('Part::Feature',row['id']+'Leader');line.Shape=Part.makePolygon([c,display,q]);line.ViewObject.LineColor=color;line.ViewObject.LineWidth=2;refs.addObject(line)
+ mark=d.addObject('Part::Feature',row['id']+'SurfaceDot');mark.Shape=Part.makeSphere(.1,c);mark.ViewObject.ShapeColor=color;refs.addObject(mark)
+ text=d.addObject('App::Annotation',row['id']+'Label');text.LabelText=[row['name']];text.Position=q;text.ViewObject.TextColor=color;text.ViewObject.FontSize=15;refs.addObject(text)
+d.recompute();G.activeDocument().activeView().viewTop();G.activeDocument().activeView().fitAll();d.saveAs(str(O/'ET-RAT-SURFACE-LANDMARKS-R13.FCStd'));G.updateGui()

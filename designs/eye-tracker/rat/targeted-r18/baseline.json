@@ -1,0 +1,57 @@
+{
+  "source": {
+    "revision": "ET-MOUSE-GUARD-R16",
+    "native_checkpoint": "designs/eye-tracker/mouse/compact-guard-r16/checkpoints/ET-MOUSE-GUARD-R16.FCStd",
+    "native_sha256": "dba2bd05f7549eec3e5caa02ef15fbfa72181b5109147c6615f79e0eec542738",
+    "source": {
+      "path": "designs/eye-tracker/mouse/nasal-camera-r15/checkpoints/ET-MOUSE-NASAL-R15.FCStd",
+      "sha256": "8368c1a743e055c62d63e5e02aa2ff1257d6b6ece7742ae2622bdb8c957dcd4a"
+    },
+    "units": "mm",
+    "status": "complete review assembly",
+    "physical_fit_verified": false
+  },
+  "mount_to_skull": [
+    [
+      0.9987492809747794,
+      -0.049998737507673766,
+      0.0,
+      -8.049419212271658
+    ],
+    [
+      0.0,
+      0.0,
+      -1.0,
+      -0.038537940320204
+    ],
+    [
+      0.049998737507673766,
+      0.9987492809747794,
+      0.0,
+      4.679401458578552
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "axis": {
+    "origin": [
+      7.183522761010583,
+      0.9698012264193376,
+      17.861851523507347
+    ],
+    "direction": [
+      0.037702457170945426,
+      -0.3757799659795631,
+      -0.9259416514509277
+    ]
+  },
+  "source_tip": [
+    8.30980613243576,
+    5.0,
+    -0.038537940320204
+  ]
+}

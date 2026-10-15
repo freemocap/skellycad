@@ -1,0 +1,112 @@
+[
+  {
+    "id": "bregma",
+    "name": "Bregma \u2014 atlas origin",
+    "position_mm": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "status": "Published atlas coordinate origin; not a new manually picked suture",
+    "color": [
+      0.95,
+      0.2,
+      0.2
+    ],
+    "user_review": "Visually accepted 2026-10-14; original coordinate and evidence status retained",
+    "existing_mesh_nearest_surface_mm": [
+      -0.001550455271056489,
+      0.024779778128418167,
+      -0.05363041029447305
+    ],
+    "surface_gap_mm": 0.05909874976676494
+  },
+  {
+    "id": "lambda",
+    "name": "Lambda \u2014 estimated",
+    "position_mm": [
+      -8.399999618530273,
+      0.07499931752681732,
+      -0.18749859929084778
+    ],
+    "status": "Local visual candidate; surface-snapped, not an author landmark; requires review",
+    "color": [
+      1.0,
+      0.65,
+      0.05
+    ],
+    "user_review": "Visually accepted 2026-10-14; original coordinate and evidence status retained",
+    "existing_mesh_nearest_surface_mm": [
+      -8.354859691616037,
+      0.1222564075970885,
+      -0.49276448177180954
+    ],
+    "surface_gap_mm": 0.3121828063340656
+  },
+  {
+    "id": "nasion",
+    "name": "Nasion \u2014 estimated",
+    "position_mm": [
+      9.000000953674316,
+      0.07499931752681732,
+      -1.5374985933303833
+    ],
+    "status": "Local visual candidate; surface-snapped, not an author landmark; requires review",
+    "color": [
+      1.0,
+      0.65,
+      0.05
+    ],
+    "user_review": "Visually accepted 2026-10-14; original coordinate and evidence status retained",
+    "existing_mesh_nearest_surface_mm": [
+      8.989881164925253,
+      0.03622598100490196,
+      -1.3070546651895782
+    ],
+    "surface_gap_mm": 0.23390208585288821
+  },
+  {
+    "id": "leftzygion",
+    "name": "Left cheek-arch lateral extreme",
+    "position_mm": [
+      0.37500032782554626,
+      10.987500190734863,
+      -9.524998664855957
+    ],
+    "status": "Geometric extremum within declared orbital-region crop; candidate zygion, not author annotation",
+    "color": [
+      0.15,
+      0.65,
+      1.0
+    ],
+    "user_review": "Visually accepted 2026-10-14; original coordinate and evidence status retained",
+    "existing_mesh_nearest_surface_mm": [
+      0.4289570162496825,
+      10.98577642970498,
+      -9.390891194084451
+    ],
+    "surface_gap_mm": 0.14456524234586152
+  },
+  {
+    "id": "rightzygion",
+    "name": "Right cheek-arch lateral extreme",
+    "position_mm": [
+      3.129243850708008e-07,
+      -10.98750114440918,
+      -9.749999046325684
+    ],
+    "status": "Geometric extremum within declared orbital-region crop; candidate zygion, not author annotation",
+    "color": [
+      0.15,
+      0.65,
+      1.0
+    ],
+    "user_review": "Visually accepted 2026-10-14; original coordinate and evidence status retained",
+    "existing_mesh_nearest_surface_mm": [
+      -0.005115659312393016,
+      -10.961331109485753,
+      -9.758697103312118
+    ],
+    "surface_gap_mm": 0.02804817454238505
+  }
+]

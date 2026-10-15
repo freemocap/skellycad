@@ -1,0 +1,104 @@
+{
+  "units": "mm",
+  "datum_AP_ML_mm": [
+    -0.5,
+    0
+  ],
+  "surface_fit_region_AP_mm": [
+    -3.5,
+    2.5
+  ],
+  "surface_fit_region_ML_mm": [
+    -2.5,
+    2.5
+  ],
+  "surface_fit_samples": 525,
+  "surface_plane_coefficients_in_skull": [
+    -0.11828913354055232,
+    -0.009311174217704069,
+    -0.027809961169230228
+  ],
+  "surface_fit_rms_mm": 0.1250065895302697,
+  "surface_normal_world": [
+    -0.004788932928189855,
+    0.9999807587840435,
+    -0.003943118448378755
+  ],
+  "rotation_from_R17_deg": 6.766794413805141,
+  "unlifted_transform": [
+    [
+      0.9996106501919697,
+      -0.004788932928189841,
+      -0.0274884365542387,
+      -0.08299917329886908
+    ],
+    [
+      0.004895478682665332,
+      0.9999807587840435,
+      0.003810032828758144,
+      -0.02313290913912236
+    ],
+    [
+      0.02746966165162352,
+      -0.003943118448378756,
+      0.9996148605866398,
+      -0.028198982096246408
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "desired_rear_hole_clearance_mm": 2.5,
+  "minimum_raise_mm": 0.75,
+  "transform": [
+    [
+      0.9996106501919697,
+      -0.004788932928189841,
+      -0.0274884365542387,
+      -0.08659087299501148
+    ],
+    [
+      0.004895478682665332,
+      0.9999807587840435,
+      0.003810032828758144,
+      0.7268526599489102
+    ],
+    [
+      0.02746966165162352,
+      -0.003943118448378756,
+      0.9996148605866398,
+      -0.031156320932530474
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "raise_along_surface_normal_mm": 0.75,
+  "rear_hole_sample_minimum_mm": 5.143031955568655,
+  "rear_hole_conservative_clearance_mm": 5.058031955568655,
+  "clearance_allowance_mm": 0.085,
+  "clearance_scope": "Entire existing 2.9 mm diameter rear hole wall; no protruding fastener length supplied",
+  "samples": 3162,
+  "footprint_comparison": {
+    "R17": {
+      "atlas_surface_area_inside_taper_mm2": 81.47367955608836,
+      "inside_triangle_count": 6377
+    },
+    "R18": {
+      "atlas_surface_area_inside_taper_mm2": 71.73615920083175,
+      "inside_triangle_count": 5622
+    }
+  },
+  "raised_datum_AP_ML_DV_mm": [
+    -0.41190115479500017,
+    0.006934734168131146,
+    4.1887062067226335
+  ],
+  "face_normal_alignment_error_deg": 8.537736462515939e-07
+}

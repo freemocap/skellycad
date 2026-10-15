@@ -1,0 +1,76 @@
+{
+  "units": "mm",
+  "transform": [
+    [
+      0.9987492809077292,
+      -0.005832229942364999,
+      -0.0496574148165271,
+      4.565493242265392
+    ],
+    [
+      0.0,
+      0.993173373805803,
+      -0.116647544179888,
+      -0.48803399597925645
+    ],
+    [
+      0.049998738847034506,
+      0.11650165087713696,
+      0.9919311929718415,
+      -2.867003764275845
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "rostral_tip_design_mm": [
+    0.0,
+    0.0,
+    10.088627679007763
+  ],
+  "bregma_design_proxy_mm": [
+    0.0,
+    0.0,
+    -0.05504192556372267
+  ],
+  "datum_basis": "R16 design midline at atlas-derived bregma AP=0, projected onto symmetric skull; not reidentified specimen suture",
+  "tip_definition": "Most rostral vertex of top mating face 5; aligned above bregma in dorsal projection",
+  "roof_fit_AP_mm": [
+    -11,
+    -2
+  ],
+  "roof_fit_ML_mm": [
+    -3,
+    3
+  ],
+  "roof_samples": 362,
+  "roof_slope_intercept": [
+    0.05006135019078561,
+    0.3261048261852897
+  ],
+  "roof_fit_rms_mm": 0.16127995361780328,
+  "plane_normal": [
+    -0.049998737507673766,
+    0.0,
+    0.9987492809747794
+  ],
+  "lower_face_center_below_fitted_plane_vertical_mm": 0.25,
+  "plate_bounds_mm": [
+    [
+      -11.477437588903454,
+      -5.04300006479534,
+      -0.3025145344302702
+    ],
+    [
+      0.1749956152798715,
+      5.043000253858854,
+      11.296851569036635
+    ]
+  ],
+  "scope": "Placement study only; inherited tapered base is uncut contact stock; camera assembly not reattached",
+  "rear_hole_wall_sampled_min_distance_mm": 6.976725508118843,
+  "rear_hole_scope": "5000 wall samples; excludes an unspecified protruding screw/head/tool envelope; not a certified continuous bound"
+}

@@ -1,0 +1,13 @@
+import FreeCAD as App
+import json
+from pathlib import Path
+
+root = Path(__file__).resolve().parents[2]
+doc = App.getDocument('ET_RAT_TARGETED_R18')
+assert len(App.listDocuments()) == 1
+assert 'session-recovery' in doc.FileName
+doc.Label = 'Rat R18 - caudal mount and eye-centered camera'
+doc.save()
+(root / 'generated/session-recovery/final-session.json').write_text(
+    json.dumps(dict(open_documents=list(App.listDocuments()), path=doc.FileName), indent=2),
+    encoding='utf-8')

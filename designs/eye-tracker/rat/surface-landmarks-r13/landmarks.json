@@ -1,0 +1,82 @@
+[
+  {
+    "id": "leftCheekSurface",
+    "name": "Left cheek - outer surface",
+    "position_mm": [
+      0.37500032782554626,
+      11.386788880978884,
+      -9.524998664855957
+    ],
+    "display_direction": [
+      0,
+      1,
+      0
+    ],
+    "color": [
+      0.1,
+      0.6,
+      1.0
+    ],
+    "status": "First surface hit from outside at original atlas cheek AP and DV; not a newly measured anatomical zygion"
+  },
+  {
+    "id": "leftAnteriorArch",
+    "name": "Left arch reference - AP +8 mm",
+    "position_mm": [
+      7.856935501098633,
+      10.62410831451416,
+      -10.55831241607666
+    ],
+    "display_direction": [
+      0,
+      1,
+      0
+    ],
+    "color": [
+      0.7,
+      0.15,
+      0.8
+    ],
+    "status": "Local geometric lateral maximum in AP 7.8 to 8.2 mm and DV -12 to -5 mm; not an author anatomical landmark"
+  },
+  {
+    "id": "rightCheekSurface",
+    "name": "Right cheek - outer surface",
+    "position_mm": [
+      3.129243850708008e-07,
+      -11.603605199509126,
+      -9.749999046325684
+    ],
+    "display_direction": [
+      0,
+      -1,
+      0
+    ],
+    "color": [
+      0.1,
+      0.6,
+      1.0
+    ],
+    "status": "First surface hit from outside at original atlas cheek AP and DV; not a newly measured anatomical zygion"
+  },
+  {
+    "id": "rightAnteriorArch",
+    "name": "Right arch reference - AP +8 mm",
+    "position_mm": [
+      7.981800079345703,
+      -11.007732391357422,
+      -9.809225082397461
+    ],
+    "display_direction": [
+      0,
+      -1,
+      0
+    ],
+    "color": [
+      0.7,
+      0.15,
+      0.8
+    ],
+    "status": "Local geometric lateral maximum in AP 7.8 to 8.2 mm and DV -12 to -5 mm; not an author anatomical landmark"
+  }
+]

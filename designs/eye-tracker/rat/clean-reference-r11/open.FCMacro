@@ -1,0 +1,7 @@
+from pathlib import Path
+import json,hashlib
+import FreeCAD as A,FreeCADGui as G,Mesh
+S=Path(__file__).resolve().parent;R=S.parents[3];O=R/'generated/eye-tracker/rat/clean-reference-r11';a=json.loads((S.parent/'anatomy-study-r10/review.json').read_text());src=R/a['native_checkpoint'];assert hashlib.sha256(src.read_bytes()).hexdigest()==a['native_sha256'];d=A.openDocument(str(src));A.setActiveDocument(d.Name);d.Label='Rat R11 - corrected atlas surface, accepted landmarks';d.RatlasSkull.Mesh=Mesh.Mesh(str(O/'ratlas-clean-reference.stl'))
+for row in json.loads((S/'landmarks.json').read_text()):
+ obj=d.getObject(row['id']);obj.addProperty('App::PropertyString','UserReview');obj.UserReview=row['user_review']
+d.recompute();G.activeDocument().activeView().viewAxonometric();G.activeDocument().activeView().fitAll();d.saveAs(str(O/'ET-RAT-CLEAN-REFERENCE-R11.FCStd'));G.updateGui()

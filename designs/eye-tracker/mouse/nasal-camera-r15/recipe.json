@@ -1,0 +1,42 @@
+{
+  "revision": "ET-MOUSE-NASAL-R15",
+  "units": "mm",
+  "source": {
+    "native_checkpoint": "designs/eye-tracker/mouse/landmark-eye-placement-r14/checkpoints/ET-MOUSE-EYE-PLACEMENT-R14.FCStd",
+    "native_sha256": "87968bc3ee0cc14f149bd4db04a45554c265cb7480565408990b4e4a2c0f848d",
+    "units": "mm",
+    "placement_recipe": "designs/eye-tracker/mouse/landmark-eyes-r04/placement.json",
+    "status": "review checkpoint; selected active-model unchanged",
+    "physical_fit_verified": false
+  },
+  "selected_species_manifest": "designs/eye-tracker/mouse/active-model.json",
+  "anatomy": "designs/eye-tracker/mouse/landmark-eyes-r04/placement.json",
+  "target_eye": "Eye1OpticalFrame",
+  "targeting_recipe": {
+    "camera_axis": "aim at eye center; seek opposing eye optical direction subject to fixed tray clearance",
+    "lens_nasal_displacement_mm": 2.985277,
+    "remaining_axis_angle_deg": 12.72390582085887,
+    "neutral_joint": "socket, holder, clip and sensor moved by one common rigid delta",
+    "fixed": [
+      "main PCB",
+      "connector",
+      "tray roots",
+      "cap",
+      "baseplate",
+      "skull",
+      "eyes"
+    ],
+    "ribbon": "fixed endpoint frames; 32.85 x 4 x 0.25 mm, three cylindrical zones, minimum radius parameter 3.75 mm",
+    "arms": "regenerate original rectangular upper support and compact lower guard; retain terminal thickness and engagement",
+    "lower_guard_outer_mm": [
+      -12,
+      0,
+      20
+    ],
+    "skull_contact_policy": {
+      "skull_mount_Baseplate": "inherited Boolean cut stock"
+    }
+  },
+  "solution_file": "solution.json",
+  "physical_fit_verified": false
+}

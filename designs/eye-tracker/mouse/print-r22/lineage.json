@@ -1,0 +1,7 @@
+{
+  "parent_print_revision": "R21",
+  "source_checkpoint": "designs/eye-tracker/mouse/raised-target-r19/checkpoints/ET-MOUSE-RAISED-TARGET-R19.FCStd",
+  "source_sha256": "05a11e2a9a0f8900cf22ad114194bc200bb6950e501fa8e4d8d163543ab0ea9c",
+  "change": "Print-only solid braincase and simplified internal cavities; 2.25 mm bridge retained",
+  "hardware": "Unchanged R21 geometry, renamed R22"
+}

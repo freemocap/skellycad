@@ -50,7 +50,17 @@ arm revision numbers do not override an active complete-assembly manifest.
 
 ## Desktop review and MCP
 
-Keep the running desktop FreeCAD window and its open-document history intact.
+Keep the running desktop FreeCAD window intact. Reuse an already-open document
+when its normalized absolute file path matches the requested review. Do not
+create multiple live documents that save to the same physical path. Build new
+revisions outside the review session where possible, then open the result once.
+Preserve existing tabs unless the user requests cleanup; do not accumulate
+duplicate tabs to preserve history. Frozen checkpoints provide that history.
+
+For user-requested session cleanup, first save each live version to a unique
+recovery filename and verify the saved document. Close a document only after its
+backup succeeds. Keep a manifest linking each recovery file to its original
+path; never overwrite an accepted checkpoint to clear an unsaved indicator.
 Send a native document or macro through `tools/cad/open_in_running.py`, using
 `--expected-pid` with a freshly verified desktop listener PID. This uses the
 existing native OpenFile pipe and never launches or closes FreeCAD. The mouse
@@ -105,3 +115,7 @@ change the desktop review session. Reports go to `generated/verification/shared/
 
 Camera profiles, mount presets and camera instances are described in
 [the eye-tracker overview](../designs/eye-tracker/README.md).
+
+## Species anatomy workflow
+
+For anatomy audits, landmark review, eye registration, anatomical mounting and print derivatives, follow [the species anatomy workflow](species-anatomy-workflow.md). It separates source evidence, user-reviewed candidate landmarks, camera fitting and physical print validation.

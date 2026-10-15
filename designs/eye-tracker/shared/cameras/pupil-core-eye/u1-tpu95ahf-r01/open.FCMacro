@@ -1,0 +1,11 @@
+from pathlib import Path
+import runpy,json,hashlib
+import FreeCAD as A,FreeCADGui as G
+R=Path(__file__).resolve().parents[6]
+S=Path(__file__).resolve().parent
+m=json.loads((S.parent/'active-model.json').read_text())
+src=R/m['native_checkpoint']['path']
+assert hashlib.sha256(src.read_bytes()).hexdigest()==m['native_checkpoint']['sha256']
+find=runpy.run_path(str(R/'tools/cad/review_document.py'))['find_open_document']
+d=find(A,src) or A.openDocument(str(src));A.setActiveDocument(d.Name)
+G.activeDocument().activeView().viewAxonometric();G.activeDocument().activeView().fitAll()
