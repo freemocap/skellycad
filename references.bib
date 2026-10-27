@@ -432,6 +432,46 @@
  note = {Reviewed implant design, figure 1 description, cohort and postmortem results. Seven female Wistar rats, 250--400 g. Some screw tips penetrated brain: this is not a safe screw-depth specification or a validation of our design.}
 }
 
+@misc{kicadIpcDevelopers,
+  title = {For Add-on Developers: KiCad IPC API},
+  author = {{KiCad developers}},
+  url = {https://dev-docs.kicad.org/en/apis-and-binding/ipc-api/for-addon-developers/},
+  urldate = {2026-10-27},
+  review = {excerpt},
+  claim = {KiCad 10 IPC requires a running GUI, supports PCB editor plugins rather than schematic editor plugins, and delegates exports to the CLI.},
+  note = {Reviewed API status, connection and Python bindings sections. Distinguish KiCad 10 capabilities from the documented KiCad 11 additions; live local IPC not yet tested.}
+}
+
+@misc{kicad10Cli,
+  title = {KiCad 10.0 Command-Line Interface},
+  author = {{KiCad Documentation Contributors}},
+  url = {https://docs.kicad.org/10.0/en/cli/cli.html},
+  urldate = {2026-10-27},
+  review = {excerpt},
+  claim = {KiCad provides CLI commands for schematic ERC, board DRC and exports including STEP.},
+  note = {Reviewed introduction and command listing and used installed 10.0.7 CLI for a bare-board STEP export. Circuit checks and component-bearing STEP export were not exercised.}
+}
+
+@misc{kicadLegacyPython,
+  title = {PCB Python Bindings},
+  author = {{KiCad developers}},
+  url = {https://dev-docs.kicad.org/en/apis-and-binding/pcbnew/},
+  urldate = {2026-10-27},
+  review = {excerpt},
+  claim = {Legacy pcbnew bindings support standalone board manipulation but are deprecated in favor of IPC.},
+  note = {Reviewed deprecation and introduction sections. Local bundled Python 10.0.7 successfully created, saved and reloaded a disposable outline-only board.}
+}
+
+@misc{kicad10GettingStarted,
+  title = {Getting Started in KiCad 10.0},
+  author = {{KiCad Documentation Contributors}},
+  url = {https://docs.kicad.org/10.0/en/getting_started_in_kicad/getting_started_in_kicad.html},
+  urldate = {2026-10-27},
+  review = {excerpt},
+  claim = {The introductory workflow progresses through schematic capture, footprint assignment, electrical checks, PCB placement and routing, design checks and fabrication outputs.},
+  note = {Reviewed introduction and tutorial outline to plan the local foundations sequence. This is a curriculum source, not evidence of learner completion or circuit validation.}
+}
+
 @misc{nogaArticulatedHolders,
   title = {Holding Systems},
   author = {{Noga Engineering}},

@@ -9,6 +9,8 @@ Reproducible CAD designs, reference anatomy, and tools for long-term development
 - [Mouse Hats](designs/mouse-hats/README.md): original design history and studies.
 - [CAD Foundations](designs/cad-foundations/README.md): completed learning course
   with editable checkpoints and safe replay scripts.
+- [KiCad Foundations](designs/kicad-foundations/README.md): planned circuit-to-board
+  walkthrough and [electronics integration](docs/kicad-integration.md).
 - [Development](docs/development.md): setup, validation, exports, and desktop review.
 - [Version control](docs/version-control.md): what to retain, ignore, and store with Git LFS.
 - [References](CITATIONS.md): citation conventions and evidence in `references.bib`.
