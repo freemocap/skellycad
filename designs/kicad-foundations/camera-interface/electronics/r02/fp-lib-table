@@ -1,0 +1,1 @@
+(fp_lib_table (version 7) (lib (name "CameraStudy")(type "KiCad")(uri "${KIPRJMOD}/CameraStudy.pretty")(options "")(descr "Pinned KiCad library footprint")))

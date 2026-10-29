@@ -1,0 +1,13 @@
+# Optional live PCB client environment; not required for schematic generation.
+attrs==26.1.0
+cffi==2.1.1
+jsonschema==4.26.0
+jsonschema-specifications==2025.9.1
+kicad-python==0.8.0
+protobuf==5.29.6
+pycparser==3.12
+pynng==0.9.0
+referencing==0.37.0
+rpds-py==2026.9.1
+sniffio==1.3.1
+typing-extensions==4.16.0

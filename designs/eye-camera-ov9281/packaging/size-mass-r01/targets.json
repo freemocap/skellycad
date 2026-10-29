@@ -1,0 +1,41 @@
+{
+  "module_mass_limit_g": 1.0,
+  "target_is_strictly_below_limit": true,
+  "tether_included": false,
+  "pupil_reported_mass_g": 0.7,
+  "pupil_mass_evidence": "User estimate; original weighing boundary unconfirmed",
+  "pupil_controller_mm": [
+    30.85,
+    9
+  ],
+  "pupil_free_flex_mm": [
+    32.85,
+    4
+  ],
+  "pupil_full_head_mm": [
+    15,
+    6
+  ],
+  "pupil_straight_outline_mm": 78.7,
+  "performance_targets": [
+    {
+      "width": 400,
+      "height": 400,
+      "fps": 120
+    },
+    {
+      "width": 192,
+      "height": 192,
+      "fps": 200
+    }
+  ],
+  "performance_source": "pupilCore200Hz",
+  "shutter": "Global",
+  "optics": "Near-IR imaging at approximately 10\u201320 mm working distance; filter and illumination wavelength require qualification",
+  "architecture": "Retain OV9281 + ESP32-P4 on the camera module for this study; no offloaded-controller mass accounting",
+  "limits": [
+    "Public Pupil modes are comparison goals, not demonstrated performance of this design.",
+    "No calibrated latency, image quality, power or temperature equivalence has been established.",
+    "Pupil print substrate thickness and cosmetic chip heights are not measured electronic package data."
+  ]
+}

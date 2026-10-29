@@ -1,0 +1,20 @@
+{
+  "sha256": {
+    "assembly.png": "04beee542d8c3cd3f490f4241dea83f46971b9fa0bc4aa4c6f5adbf0883fc35e",
+    "assembly.svg": "93a2e095837102c498cac9e458b34e24b3a54ac8f0d2637867b527d7a0c8b90e",
+    "controller-routing-validation.json": "cb7c0ca875a55009d6540e298c64952e3cd52c46f3c9b24100fb4681614f2205",
+    "copper-balance.json": "d4b782cd297c010228341b39e9a6d89d7263991501e2d96ce4425dd297aee525",
+    "final-checks.json": "9e9f2c8eab1b73c2b79c930982e999ea997ae9f61a0f83245c6ac0ece94e2ff6",
+    "findings.json": "b172b337a8f1a8546c0dc752f654231576fa849afe438db14afa7bd48671f312",
+    "flex-routing-validation.json": "e412e02064b09b2d175343966de635eda65472c3253d19edd3952beb3c6d267e",
+    "head-detail.png": "0243635ba72e8e0080800d6922f2c355b8707bc8a0deb60507e6c44f45c6df2f",
+    "head-routing-validation.json": "65bac6662d2da28c651b46135a3f442734a47a05c1e8f3d705538f40d67ec7d9",
+    "index.html": "6daac19e12bd24e9b21c186fb9d0ab31392c26a4d6a00f46efa0fcf24e29fcdc",
+    "mechanical-validation.json": "e5c06832c3bdc271f23751b81fe5a046fb47ca389e02c2d1004d272534d6df59",
+    "prior-working-review.md": "a1a5d111313baadb9d9c7485ecc8a6a24732e46582f1676b6019a935b80809fe",
+    "REPORT.md": "4b00e9f9d7d4961e508e6d3a934832a8e25fa47ed1fe142ad9393f5d1a7f06f5",
+    "shape-validation.json": "715cd736720961f60f5b1ea9936b2b572b058f25f4d6ca0598098770afab1e64",
+    "usb-routing-validation.json": "ad54f5d91cc4f3332143bed1d73b54acd671a82ec14b3eb01ef8bbe9c338c035",
+    "validation.json": "116ceb84535d42895185ebf7fafea7ef2b8e5e2b45fc43b05069a28e7f954c85"
+  }
+}

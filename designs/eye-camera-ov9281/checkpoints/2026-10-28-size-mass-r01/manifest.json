@@ -1,0 +1,40 @@
+{
+  "revision": "SIZE-MASS-R01",
+  "date": "2026-10-28",
+  "status": "Completed packaging study; not an electrical release or manufacturing approval",
+  "units": "mm and g",
+  "module_target_g": 1,
+  "external_tether_excluded": true,
+  "electrical_working_baseline": "R10 unchanged",
+  "selected_electrical_release": "R08 unchanged",
+  "source_directory": "designs/eye-camera-ov9281/packaging/size-mass-r01",
+  "assets_sha256": {
+    "compact-bottom.png": "4e2944151e1475ca3036099b747871e385108892a6076377715850ffc563847f",
+    "comparison-top.png": "e36c62c993c338d1ec5c49b26dce3592700094d1dc20c296110e48fdc449ccb2",
+    "component-budget.csv": "aa5b5be989d5edab18b1286e78adda1e0872db89a716342ec4bbc06da868e811",
+    "desktop-review.json": "ed37bc107ca2d0102449ea09b974206cc96ebbc75e2f4c4b3fb9a15a9369d42b",
+    "geometry-validation.json": "5dc6e35dc8649325ea5938f8fdee9314eb989d3ae225fd400bd0804de7dc0be1",
+    "mass-budget.json": "9899d187dfd1558a0ac11cb21c816c543d8c990e3179e930516b850233a9ba8b",
+    "MASS.md": "d1ca37f480f61133ac480dd8030779763e5483ddf79b4902cfa2d998ea4074e5",
+    "options.json": "17bd1cde8401c9d72b898d0c673281b308cd1a34d1f6fd761cfd15b6e7577ca4",
+    "OPTIONS.md": "555c18638ae26b2e220aece17e8dde7a42e37a7fc735e9f252612cb5d3fb53c8",
+    "OV9281-SIZE-MASS-R01.FCStd": "fe2f94cd06f8cad6d9af83355da191b532ebf84e48573ca890d21811f14b4054",
+    "packing.json": "556ace786e084cc8039835b4744b47ee3f6290796ad070cd37f39e245364cfbe",
+    "PACKING.md": "4ff32dd60e716c72ec259901ed321e785ccc4b1ee730a65748990e89fae917e7",
+    "RECOMMENDATION.md": "06a231b4064132deabcc8812e00f851ff28c1b33a9d4f4d858d1fdc168f9a998",
+    "source-hashes.json": "35a677654f9c01724150df76ed46d35b2990634936ea38a415e6afc8be13fdc3",
+    "study-validation.json": "98fcfaceae0e0628fbf9e3c8911af3343f9aef14e19035436da2ca5e16734bb5",
+    "TARGETS.md": "f8210791d61f6ea3819a954e21fbd2d2432e0064ef925a55344e68648c3c181d",
+    "tether-budget.json": "749bbb0cb0d1f2a8a378ddac514064fd5e9c7c7a78537a922a40d9a70e8379fe"
+  },
+  "source_recipes_sha256": {
+    "build_study.py": "4c04b1247f2526228cea553fe10f346dc23ab2e331a9e96cf7110b24061580e6",
+    "compare_options.py": "ee5d60fe3fff8da971e4be19b05efc6a81678d9dac82d58700462e0af0fac79a",
+    "extract_native.py": "b01ab4cad46dc5bf8b44d534d32a7a172109010bd51c295340cc952e8087171c",
+    "mass_budget.py": "846d2bd0a0dee97cbdbe9170a9ffd730af3f873501906a767f2c2ea94df1cde9",
+    "pack_candidates.py": "64d9cbaa59c44f16beeeba75a13d94ca5dd49567b460189ceb83e0c7f1d6b781",
+    "render_review.py": "e6bd5332486df39588626824e58ffbe1436ec410c48c26f79bc0476b19416a1a",
+    "validate_study.py": "6cc9f0f164643c40c2e62bed7d0a9c3c6ff92d32f02812c57525806886c561bc"
+  },
+  "validation": "Package accounting, two-sided packing, geometric clearance, source hashes, native ZIP, 122 references and eight bibliography tests passed; no hardware validation."
+}

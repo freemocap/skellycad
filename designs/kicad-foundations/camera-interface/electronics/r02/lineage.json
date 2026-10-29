@@ -1,0 +1,16 @@
+{
+  "revision": "R02-teaching-coupon",
+  "parent": "R01-logical-interface",
+  "units": "mm",
+  "parent_schematic_sha256": "6a1f00a56b654c645696def1f18c4043bea27654cf10fa20e259221c5c4bca65",
+  "board_dimensions_mm": [
+    30,
+    34,
+    1.6
+  ],
+  "trace_width_mm": 0.25,
+  "route_length_mm": 20,
+  "footprint_source": "KiCad 10.0.7 installed library",
+  "footprint_sha256": "9b45663f0141ad845b99b876b9e5d51dbbe414eb89cdbf9fc8960f6e7b517225",
+  "status": "Digital teaching artifact; not fabrication released; no impedance or cable validation"
+}

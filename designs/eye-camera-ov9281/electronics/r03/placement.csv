@@ -1,0 +1,100 @@
+reference,board,side,x_mm,y_mm,angle_deg,footprint,value
+U1,head,front,7.3325,6.043,0.0,Camera:OV9281,ImageSensor_OV9281
+Y1,head,back,7.085,3.525,180.0,Camera:Oscillator_SMD_TXC_7C_5x3.2x1.2mm,7C-24.000MBB-T
+L1,head,back,7.025,7.375,180.0,Camera:L_0805_2012Metric,MLP2012S3R3MT
+L2,head,back,7.025,9.375,180.0,Camera:L_0805_2012Metric,MLP2012S3R3MT
+L3,head,back,3.275,7.375,180.0,Camera:L_0805_2012Metric,MLP2012S3R3MT
+C10,head,back,10.275,7.175,180.0,Camera:C_0603_1608Metric,C_1u_0603
+C12,head,back,10.275,8.675,180.0,Camera:C_0603_1608Metric,C_1u_0603
+C13,head,back,3.525,5.675,180.0,Camera:C_0603_1608Metric,C_1u_0603
+C14,head,back,3.935,8.985,180.0,Camera:C_0402_1005Metric,C_100n_6V3_0402
+C15,head,back,10.435,5.735,180.0,Camera:C_0402_1005Metric,C_100n_6V3_0402
+C16,head,back,6.935,10.985,180.0,Camera:C_0402_1005Metric,C_100n_6V3_0402
+C17,head,back,9.935,9.985,180.0,Camera:C_0402_1005Metric,C_100n_6V3_0402
+C18,head,back,3.525,4.175,180.0,Camera:C_0603_1608Metric,C_1u_0603
+C19,head,back,10.775,4.425,180.0,Camera:C_0603_1608Metric,C_1u_0603
+C20,head,back,3.935,10.235,180.0,Camera:C_0402_1005Metric,C_100n_6V3_0402
+C21,head,back,9.525,11.425,180.0,Camera:C_0603_1608Metric,C_1u_0603
+C33,head,back,4.525,11.675,180.0,Camera:C_0603_1608Metric,C_1u_0603
+C7,head,back,3.525,2.675,180.0,Camera:C_0603_1608Metric,C_1u_0603
+C8,head,back,10.775,2.925,180.0,Camera:C_0603_1608Metric,C_1u_0603
+C9,head,back,6.935,12.235,180.0,Camera:C_0402_1005Metric,C_100n_6V3_0402
+R7,head,back,1.705,8.995,180.0,Camera:R_0402_1005Metric,R_0R_0402
+R8,head,back,12.205,9.995,180.0,Camera:R_0402_1005Metric,R_0R_0402
+R9,head,back,9.205,12.745,180.0,Camera:R_0402_1005Metric,R_0R_0402
+U101,controller,front,16.399999,10.875,0.0,Camera:ESP32-P4,ESP32-P4NRW16X / v3.x
+J101,controller,front,4.054999,11.925,90.0,Camera:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal,USB / JST 4-contact candidate
+U103,controller,front,26.075,8.15,0.0,Camera:SOT-23-5,TLV62569DBV / core
+L101,controller,front,26.025,11.875,0.0,Camera:L_0805_2012Metric,2.2u / Isat TBD
+Y101,controller,front,8.025,5.075,0.0,Camera:Crystal_SMD_2016-4Pin_2.0x1.6mm,40 MHz / CL TBD
+U102,controller,back,14.925,7.029999,180.0,Camera:SOIC-8_5.3x5.3mm_P1.27mm,W25Q32JVSS (4 MB candidate)
+U104,controller,back,4.075,4.15,180.0,Camera:SOT-23-5,TLV62569DBV / system
+L102,controller,back,4.025,7.875,180.0,Camera:L_0805_2012Metric,2.2u / Isat TBD
+U105,controller,front,4.775,6.58,0.0,Camera:SOT-666,USBLC6-2P6
+J103,controller,back,29.0,17.0,180.0,Camera:ProgrammingPads_5x1mm_P1.5mm,PROGRAM / RESET pads
+U5,controller,back,16.075,12.15,180.0,Camera:SOT-23-5,TLV73318PDBVT
+U6,controller,back,11.575,12.15,180.0,Camera:SOT-23-5,TLV73312PDBVT
+U7,controller,back,20.575,12.15,180.0,Camera:SOT-23-5,TLV73328PDBVT
+Q101,controller,back,21.705,8.225,180.0,Camera:SOT-23,BSS138
+Q102,controller,back,15.955,15.975,180.0,Camera:SOT-23,BSS138
+Q103,controller,back,20.205,15.975,180.0,Camera:SOT-23,BSS138 / reset asserted HIGH
+C1,controller,back,11.925,15.205,180.0,Camera:C_0805_2012Metric,C_4u7_0805
+C106,controller,back,15.925,2.705,180.0,Camera:C_0805_2012Metric,22u
+C109,controller,back,21.675,5.205,180.0,Camera:C_0805_2012Metric,22u
+C123,controller,back,8.175,8.955,180.0,Camera:C_0805_2012Metric,10u
+C124,controller,back,19.925,2.705,180.0,Camera:C_0805_2012Metric,10u
+C2,controller,back,11.925,2.705,180.0,Camera:C_0805_2012Metric,C_4u7_0805
+C3,controller,back,11.925,17.455,180.0,Camera:C_0805_2012Metric,C_4u7_0805
+C104,controller,back,8.775,7.175,180.0,Camera:C_0603_1608Metric,1u
+C105,controller,back,8.025,10.925,180.0,Camera:C_0603_1608Metric,4.7u
+C108,controller,back,24.275,10.925,180.0,Camera:C_0603_1608Metric,4.7u
+C125,controller,back,8.025,12.425,180.0,Camera:C_0603_1608Metric,1u
+C126,controller,back,8.775,5.675,180.0,Camera:C_0603_1608Metric,1u
+C127,controller,back,24.275,12.425,180.0,Camera:C_0603_1608Metric,1u
+C133,controller,back,8.025,13.925,180.0,Camera:C_0603_1608Metric,1u
+C136,controller,back,24.275,13.925,180.0,Camera:C_0603_1608Metric,4.7u
+C4,controller,back,8.525,15.425,180.0,Camera:C_0603_1608Metric,C_1u_0603
+C5,controller,back,25.275,9.425,180.0,Camera:C_0603_1608Metric,C_1u_0603
+C6,controller,back,8.525,4.175,180.0,Camera:C_0603_1608Metric,C_1u_0603
+R101,controller,back,15.955,18.495,180.0,Camera:R_0402_1005Metric,10k
+R102,controller,back,18.205,18.495,180.0,Camera:R_0402_1005Metric,10k
+R103,controller,back,23.455,15.245,180.0,Camera:R_0402_1005Metric,10k
+R104,controller,back,24.955,7.995,180.0,Camera:R_0402_1005Metric,10k
+R105,controller,back,22.955,3.495,180.0,Camera:R_0402_1005Metric,499k
+R106,controller,back,24.955,6.745,180.0,Camera:R_0402_1005Metric,499k
+R107,controller,back,20.455,18.495,180.0,Camera:R_0402_1005Metric,453k
+R108,controller,back,24.705,5.495,180.0,Camera:R_0402_1005Metric,100k
+R109,controller,back,8.705,16.745,180.0,Camera:R_0402_1005Metric,0
+R110,controller,back,8.705,2.745,180.0,Camera:R_0402_1005Metric,0
+R111,controller,back,22.955,2.245,180.0,Camera:R_0402_1005Metric,4.02k 1%
+R112,controller,back,5.455,10.745,180.0,Camera:R_0402_1005Metric,4.7k
+R113,controller,back,26.705,10.745,180.0,Camera:R_0402_1005Metric,4.7k
+R114,controller,back,5.455,11.995,180.0,Camera:R_0402_1005Metric,4.7k
+R115,controller,back,22.705,18.495,180.0,Camera:R_0402_1005Metric,4.7k
+R116,controller,back,8.705,17.995,180.0,Camera:R_0402_1005Metric,100k
+R117,controller,back,25.205,4.245,180.0,Camera:R_0402_1005Metric,10k
+R118,controller,back,26.705,11.995,180.0,Camera:R_0402_1005Metric,10k
+C101,controller,back,25.685,15.235,180.0,Camera:C_0402_1005Metric,CL_TBD
+C102,controller,back,5.435,13.235,180.0,Camera:C_0402_1005Metric,CL_TBD
+C103,controller,back,4.935,9.485,180.0,Camera:C_0402_1005Metric,100n
+C107,controller,back,26.685,13.235,180.0,Camera:C_0402_1005Metric,22p
+C110,controller,back,8.685,1.484999,180.0,Camera:C_0402_1005Metric,100n / U101.9
+C111,controller,back,5.935,15.235,180.0,Camera:C_0402_1005Metric,100n / U101.21
+C112,controller,back,27.185,7.985,180.0,Camera:C_0402_1005Metric,100n / U101.26
+C113,controller,back,25.185,2.985,180.0,Camera:C_0402_1005Metric,100n / U101.54
+C114,controller,back,27.185,6.735,180.0,Camera:C_0402_1005Metric,100n / U101.62
+C115,controller,back,27.685,9.485,180.0,Camera:C_0402_1005Metric,100n / U101.75
+C116,controller,back,6.435,16.735,180.0,Camera:C_0402_1005Metric,100n / U101.76
+C117,controller,back,26.935,5.485,180.0,Camera:C_0402_1005Metric,100n / U101.77
+C118,controller,back,24.935,18.235,180.0,Camera:C_0402_1005Metric,100n / U101.85
+C119,controller,back,25.185,1.734999,180.0,Camera:C_0402_1005Metric,100n / U101.91
+C120,controller,back,6.435,17.985,180.0,Camera:C_0402_1005Metric,100n / U101.96
+C121,controller,back,27.935,14.485,180.0,Camera:C_0402_1005Metric,100n / U101.101
+C122,controller,back,27.435,4.235,180.0,Camera:C_0402_1005Metric,100n / U101.102
+C128,controller,back,6.435,1.484999,180.0,Camera:C_0402_1005Metric,100n / U101.30
+C129,controller,back,3.185,10.735,180.0,Camera:C_0402_1005Metric,100n / U101.59
+C130,controller,back,28.935,10.735,180.0,Camera:C_0402_1005Metric,100n / U101.67
+C131,controller,back,3.185,11.985,180.0,Camera:C_0402_1005Metric,10n
+C132,controller,back,28.935,11.985,180.0,Camera:C_0402_1005Metric,100n
+C134,controller,back,3.685,14.485,180.0,Camera:C_0402_1005Metric,10n
+C135,controller,back,3.185,13.235,180.0,Camera:C_0402_1005Metric,100n

@@ -1,0 +1,18 @@
+{
+  "status": "complete",
+  "approved_tasks_completed": 5,
+  "native_review_opened_pid": 38596,
+  "native_review_saved": true,
+  "rendered_html_http_status": 200,
+  "computer_use": false,
+  "reference_checker": "122 references; 0 errors",
+  "bibliography_tests": "8 passed",
+  "subgram_target_verified": false,
+  "native_geometry_validation": true,
+  "hardware_validation": false,
+  "checkpoint": {
+    "path": "designs/eye-camera-ov9281/checkpoints/2026-10-28-size-mass-r01",
+    "native": "designs/eye-camera-ov9281/checkpoints/2026-10-28-size-mass-r01/OV9281-SIZE-MASS-R01.FCStd",
+    "manifest_sha256": "78b8d1e750877cb1c23a50b97e5bf50743f022b0fe7f423e10b8e0c10b74ed4f"
+  }
+}

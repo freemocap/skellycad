@@ -1,0 +1,13 @@
+"""Show the verified E01 complete assembly; preserve unrelated user work."""
+from pathlib import Path
+import json,hashlib
+import FreeCAD as App,FreeCADGui as Gui
+root=Path(r'C:/Users/jonma/code-stuff/github/freemocap/other/skellycad');out=root/'generated/three-board-e01'
+report=json.loads((out/'cad-validation.json').read_text());path=(out/report['native']).resolve()
+assert hashlib.sha256(path.read_bytes()).hexdigest()==report['sha256']
+for d in list(App.listDocuments().values()):
+    if d.FileName and 'generated/three-board-a01/' in d.FileName.replace('\\','/') and not Gui.getDocument(d.Name).Modified:App.closeDocument(d.Name)
+doc=next((d for d in App.listDocuments().values() if d.FileName and Path(d.FileName).resolve()==path),None)
+if doc is None:doc=App.openDocument(str(path))
+App.setActiveDocument(doc.Name);Gui.activeDocument().activeView().fitAll();Gui.getMainWindow().showMaximized();Gui.getMainWindow().raise_()
+(out/'desktop-review.json').write_text(json.dumps({'opened':True,'path':str(path),'document':doc.Name,'native_sha256':report['sha256'],'unrelated_documents_preserved':True},indent=2))

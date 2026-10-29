@@ -1,0 +1,138 @@
+{
+  "revision": "R10",
+  "rigid": {
+    "source": "pcbwayRigidStackups2026",
+    "catalog_entry": 21,
+    "copper_layers": 6,
+    "nominal_finished_mm": 0.61,
+    "finished_tolerance_mm": 0.1,
+    "copper_dielectric_mm": 0.541,
+    "copper_mm": [
+      0.035,
+      0.035,
+      0.035,
+      0.035,
+      0.035,
+      0.035
+    ],
+    "dielectric_mm": [
+      0.0705,
+      0.065,
+      0.06,
+      0.065,
+      0.0705
+    ],
+    "er": [
+      4.21,
+      4.6,
+      4.21,
+      4.6,
+      4.21
+    ],
+    "ground_layers": [
+      "In1.Cu",
+      "In4.Cu"
+    ],
+    "slow_signal_layers": [
+      "In2.Cu",
+      "In3.Cu"
+    ],
+    "high_speed_layers": [
+      "F.Cu",
+      "B.Cu"
+    ],
+    "controller_In1_ground_clearance_mm": 0.1
+  },
+  "flex": {
+    "source": "pcbwayFlexStackups2026",
+    "copper_layers": 2,
+    "copper_mm": [
+      0.024,
+      0.024
+    ],
+    "dielectric_mm": 0.065,
+    "coverlay_per_face_mm": 0.0275,
+    "finished_sum_mm": 0.168,
+    "connector_tip_mm": 0.3,
+    "connector_tip_tolerance_mm": 0.03
+  },
+  "geometry": {
+    "mipi_rigid": {
+      "width": 0.1,
+      "gap": 0.35,
+      "guard_gap": 0.35,
+      "zdiff_ohm": 98.09781492734679,
+      "delay_ps_mm": 5.986020414698937
+    },
+    "usb_rigid": {
+      "width": 0.1,
+      "gap": 0.15,
+      "guard_gap": 0.35,
+      "zdiff_ohm": 90.34197958071951,
+      "delay_ps_mm": 5.875003757216443
+    },
+    "mipi_flex": {
+      "width": 0.1,
+      "gap": 0.25,
+      "guard_gap": 0.35,
+      "zdiff_ohm": 99.67589760165053,
+      "delay_ps_mm": 5.717274001495297
+    },
+    "mipi_clock_guard": {
+      "width": 0.1,
+      "gap": 0.35,
+      "guard_gap": 0.101,
+      "guard_width": 0.1,
+      "zdiff_ohm": 94.72900910193,
+      "delay_ps_mm": 5.9434280395705885
+    },
+    "mipi_flex_clock_guard": {
+      "width": 0.1,
+      "gap": 0.25,
+      "guard_gap": 0.101,
+      "guard_width": 0.1,
+      "zdiff_ohm": 96.90206576671655,
+      "delay_ps_mm": 5.7189237752831055
+    },
+    "usb_local_guard": {
+      "width": 0.1,
+      "gap": 0.15,
+      "guard_gap": 0.101,
+      "minimum_guard_width": 0.1,
+      "finite_guard_ohm": 87.69878563220551,
+      "broad_guard_ohm": 87.6824891825671
+    }
+  },
+  "rules": {
+    "min_clearance_mm": 0.1,
+    "min_width_mm": 0.1,
+    "via_diameter_mm": 0.4,
+    "via_hole_mm": 0.2,
+    "mipi_pair_difference_mm": 0.254,
+    "mipi_pair_mean_spread_mm": 0.762,
+    "usb_copper_difference_mm": 0.05
+  },
+  "fabrication_authorized": false,
+  "source_hashes": [
+    {
+      "path": "generated/ov9281-r09-data1p-03/controller.kicad_pcb",
+      "sha256": "04a2292f27f72b89caadb42594b5ea744b81143c3679996aaac16bfe54855be5"
+    },
+    {
+      "path": "generated/ov9281-r09-data1p-03/head.kicad_pcb",
+      "sha256": "de2fef7248318620c9cbe298fba39089304b454c9af35ba16dd6d1384c957562"
+    },
+    {
+      "path": "generated/ov9281-r09-data1p-03/flex-study.kicad_pcb",
+      "sha256": "52b315d55f15e14173298e533959e040e248c0e830c1fcb76628598c7fd21c6f"
+    },
+    {
+      "path": "generated/ov9281-r09-data1p-03/camera.kicad_sch",
+      "sha256": "b307a594304676204d24e58bcce617ebf770879fbdfe65a5e94134018c0c2991"
+    },
+    {
+      "path": "generated/ov9281-r09-data1p-03/OV9281-P4-R09-assembly.kicad_pcb",
+      "sha256": "2ddd0f3a27f0cd638a023c4a2c58a16c8d00d1519afa46e6f4d82628ff785be1"
+    }
+  ]
+}

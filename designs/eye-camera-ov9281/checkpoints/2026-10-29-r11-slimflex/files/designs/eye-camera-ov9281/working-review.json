@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-29",
+  "selected_electrical_baseline": "OV9281-P4-R08",
+  "working_pcb_trial": "OV9281-P4-R11-SLIM-flex",
+  "working_mechanics": "OV9281-R11-MATCHED",
+  "fabrication_ready": false,
+  "physical_camera_demonstrated": false,
+  "files": [
+    {
+      "path": "generated/ov9281-r11-electronics/camera.kicad_pcb",
+      "sha256": "989a2008743212d3f9cea44e2643b0584b22613322b7a8450575f173e29f1fb7"
+    },
+    {
+      "path": "generated/ov9281-r11-electronics/camera.kicad_sch",
+      "sha256": "60dbecc5f72fd22305ba69d2739d26000d01b07bc1bc212291270733c07ff999"
+    },
+    {
+      "path": "generated/ov9281-r11-electronics/camera.kicad_pro",
+      "sha256": "166db66d2472e7c3a53a87074c8904e27110357c5c5e2fb49bcededd4029e53e"
+    },
+    {
+      "path": "generated/ov9281-r11-mechanics/OV9281-R11-MATCHED.FCStd",
+      "sha256": "cba97827bfa72f36fbca9075133d826c875242a75db0d79cb6767934eb36066c"
+    }
+  ],
+  "previous_snapshot": "checkpoints/2026-10-28-r10-matched/snapshot.json",
+  "snapshot": "checkpoints/2026-10-29-r11-slimflex/snapshot.json",
+  "review": "electronics/r11/index.html",
+  "automation": "KiCad CLI/Python and FreeCAD CLI/macros only; no computer use.",
+  "external_tether_excluded": true,
+  "estimated_nominal_mass_g": 1.3427721253065203,
+  "under_one_gram_demonstrated": false
+}

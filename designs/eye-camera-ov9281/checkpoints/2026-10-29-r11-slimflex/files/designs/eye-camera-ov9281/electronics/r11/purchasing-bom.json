@@ -1,0 +1,1221 @@
+{
+  "revision": "R11",
+  "checked_date": "2026-10-29",
+  "scope": "Supplier pages and indexed snippets reviewed; these are web-listed observations, not reserved inventory, quotes, manufacturer lifecycle confirmation or delivery commitments. Counts and prices can differ between indexed captures. USD excludes tax, shipping, duties, reeling, assembly and fabrication.",
+  "purchasable_line_count": 31,
+  "physical_package_count": 104,
+  "excluded_from_purchase": {
+    "R7": "Do not populate",
+    "J103": "Bare PCB programming lands, already in board fabrication"
+  },
+  "known_unit1_price_subtotal_usd": 24.4188,
+  "unpriced_mpns": [
+    "GRM188R61A475KE15D",
+    "GRM188R71C105KA12D",
+    "OV09281-H64A"
+  ],
+  "total_product_cost_usd": null,
+  "total_cost_note": "The subtotal sums observed single-unit list prices times fitted quantity, including unavailable parts. It is not a complete BOM price or checkout quote. Sensor and obsolete capacitors, PCB/HDI fabrication, assembly, stencil, optics, supports, adhesive, yield, tax and shipping are unpriced. Quantity breaks may reduce the known subtotal.",
+  "rows": [
+    {
+      "mpn": "AP1608F3C",
+      "manufacturer": "Kingbright",
+      "refs": [
+        "D201",
+        "D202"
+      ],
+      "footprint": "Camera:Kingbright_AP1608F3C_R09",
+      "value": "AP1608F3C",
+      "quantity": 2,
+      "primary_observation": {
+        "mpn": "AP1608F3C",
+        "supplier": "DigiKey",
+        "status": "Listed in stock",
+        "stock": 91,
+        "usd1": 0.45,
+        "usd10": 0.31,
+        "url": "https://www.digikey.com/en/products/detail/kingbright/AP1608F3C/25807456",
+        "key": "r11SupplyLed",
+        "note": "Cut-tape listing; another packaging page lists 2091."
+      },
+      "all_observations": [
+        {
+          "mpn": "AP1608F3C",
+          "supplier": "DigiKey",
+          "status": "Listed in stock",
+          "stock": 91,
+          "usd1": 0.45,
+          "usd10": 0.31,
+          "url": "https://www.digikey.com/en/products/detail/kingbright/AP1608F3C/25807456",
+          "key": "r11SupplyLed",
+          "note": "Cut-tape listing; another packaging page lists 2091."
+        }
+      ],
+      "extended_unit1_usd": 0.9
+    },
+    {
+      "mpn": "DFE252012F-2R2M=P2",
+      "manufacturer": "Murata",
+      "refs": [
+        "L101",
+        "L102"
+      ],
+      "footprint": "Camera:Murata_DFE252012F_R11",
+      "value": "2.2u / 3.3 A Isat",
+      "quantity": 2,
+      "primary_observation": {
+        "mpn": "DFE252012F-2R2M=P2",
+        "supplier": "DigiKey",
+        "status": "Listed in stock",
+        "stock": 150003,
+        "usd1": 0.25,
+        "usd10": 0.208,
+        "url": "https://www.digikey.com/en/products/detail/murata-electronics/DFE252012F-2R2M-P2/5812767",
+        "key": "r11SupplyBuckInductor"
+      },
+      "all_observations": [
+        {
+          "mpn": "DFE252012F-2R2M=P2",
+          "supplier": "DigiKey",
+          "status": "Listed in stock",
+          "stock": 150003,
+          "usd1": 0.25,
+          "usd10": 0.208,
+          "url": "https://www.digikey.com/en/products/detail/murata-electronics/DFE252012F-2R2M-P2/5812767",
+          "key": "r11SupplyBuckInductor"
+        }
+      ],
+      "extended_unit1_usd": 0.5
+    },
+    {
+      "mpn": "ECS-400-10-37B2-CKM-TR",
+      "manufacturer": "ECS",
+      "refs": [
+        "Y101"
+      ],
+      "footprint": "Camera:ECS_ECX1637B2_R11",
+      "value": "40 MHz / CL 10pF",
+      "quantity": 1,
+      "primary_observation": {
+        "mpn": "ECS-400-10-37B2-CKM-TR",
+        "supplier": "DigiKey",
+        "status": "Listed in stock",
+        "stock": 16681,
+        "usd1": 0.36,
+        "usd10": 0.311,
+        "url": "https://www.digikey.com/en/products/detail/ecs-inc/ECS-400-10-37B2-CKM-TR/14548910",
+        "key": "r11SupplyCrystal"
+      },
+      "all_observations": [
+        {
+          "mpn": "ECS-400-10-37B2-CKM-TR",
+          "supplier": "DigiKey",
+          "status": "Listed in stock",
+          "stock": 16681,
+          "usd1": 0.36,
+          "usd10": 0.311,
+          "url": "https://www.digikey.com/en/products/detail/ecs-inc/ECS-400-10-37B2-CKM-TR/14548910",
+          "key": "r11SupplyCrystal"
+        }
+      ],
+      "extended_unit1_usd": 0.36
+    },
+    {
+      "mpn": "ESP32-P4NRW16X",
+      "manufacturer": "Espressif",
+      "refs": [
+        "U101"
+      ],
+      "footprint": "Camera:ESP32-P4",
+      "value": "ESP32-P4NRW16X / v3.x",
+      "quantity": 1,
+      "primary_observation": {
+        "mpn": "ESP32-P4NRW16X",
+        "supplier": "Mouser",
+        "status": "Backorder",
+        "stock": 0,
+        "usd1": 7.98,
+        "usd10": 5.86,
+        "url": "https://www.mouser.com/en/ProductDetail/Espressif-Systems/ESP32-P4NRW16X?qs=bDnubaabCY8EDqwByBfPug%3D%3D",
+        "key": "r11SupplyP4",
+        "note": "Indexed page lists 1993 on order expected 2026-11-03, not a delivery commitment. Direct fetch 403."
+      },
+      "all_observations": [
+        {
+          "mpn": "ESP32-P4NRW16X",
+          "supplier": "Mouser",
+          "status": "Backorder",
+          "stock": 0,
+          "usd1": 7.98,
+          "usd10": 5.86,
+          "url": "https://www.mouser.com/en/ProductDetail/Espressif-Systems/ESP32-P4NRW16X?qs=bDnubaabCY8EDqwByBfPug%3D%3D",
+          "key": "r11SupplyP4",
+          "note": "Indexed page lists 1993 on order expected 2026-11-03, not a delivery commitment. Direct fetch 403."
+        }
+      ],
+      "extended_unit1_usd": 7.98
+    },
+    {
+      "mpn": "GRM1555C1H160JA01D",
+      "manufacturer": "Murata",
+      "refs": [
+        "C101",
+        "C102"
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "value": "16p",
+      "quantity": 2,
+      "primary_observation": {
+        "mpn": "GRM1555C1H160JA01D",
+        "supplier": "DigiKey",
+        "stock": 922016,
+        "usd1": 0.1,
+        "usd10": 0.047,
+        "status": "Listed stock; not recommended for new designs",
+        "note": "Indexed four months ago; live stock and lifecycle must be rechecked.",
+        "url": "https://www.digikey.com/en/products/detail/murata-electronics/GRM1555C1H160JA01D/3693833",
+        "key": "r11SupplyCap5"
+      },
+      "all_observations": [
+        {
+          "mpn": "GRM1555C1H160JA01D",
+          "supplier": "DigiKey",
+          "stock": 922016,
+          "usd1": 0.1,
+          "usd10": 0.047,
+          "status": "Listed stock; not recommended for new designs",
+          "note": "Indexed four months ago; live stock and lifecycle must be rechecked.",
+          "url": "https://www.digikey.com/en/products/detail/murata-electronics/GRM1555C1H160JA01D/3693833",
+          "key": "r11SupplyCap5"
+        }
+      ],
+      "extended_unit1_usd": 0.2
+    },
+    {
+      "mpn": "GRM1555C1H220JA01D",
+      "manufacturer": "Murata",
+      "refs": [
+        "C107"
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "value": "22p",
+      "quantity": 1,
+      "primary_observation": {
+        "mpn": "GRM1555C1H220JA01D",
+        "supplier": "DigiKey",
+        "stock": 881863,
+        "usd1": 0.1,
+        "usd10": 0.023,
+        "status": "Listed in stock",
+        "note": "Indexed counts vary; not reserved.",
+        "url": "https://www.digikey.com/en/products/detail/murata-electronics/GRM1555C1H220JA01D/3175200",
+        "key": "r11SupplyCap6"
+      },
+      "all_observations": [
+        {
+          "mpn": "GRM1555C1H220JA01D",
+          "supplier": "DigiKey",
+          "stock": 881863,
+          "usd1": 0.1,
+          "usd10": 0.023,
+          "status": "Listed in stock",
+          "note": "Indexed counts vary; not reserved.",
+          "url": "https://www.digikey.com/en/products/detail/murata-electronics/GRM1555C1H220JA01D/3175200",
+          "key": "r11SupplyCap6"
+        }
+      ],
+      "extended_unit1_usd": 0.1
+    },
+    {
+      "mpn": "GRM155R71C103KA01D",
+      "manufacturer": "Murata",
+      "refs": [
+        "C131",
+        "C134"
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "value": "10n",
+      "quantity": 2,
+      "primary_observation": {
+        "mpn": "GRM155R71C103KA01D",
+        "supplier": "DigiKey",
+        "stock": 4265407,
+        "usd1": 0.1,
+        "usd10": 0.022,
+        "status": "Listed in stock",
+        "note": "",
+        "url": "https://www.digikey.com/en/products/detail/murata-electronics/GRM155R71C103KA01D/587926",
+        "key": "r11SupplyCap7"
+      },
+      "all_observations": [
+        {
+          "mpn": "GRM155R71C103KA01D",
+          "supplier": "DigiKey",
+          "stock": 4265407,
+          "usd1": 0.1,
+          "usd10": 0.022,
+          "status": "Listed in stock",
+          "note": "",
+          "url": "https://www.digikey.com/en/products/detail/murata-electronics/GRM155R71C103KA01D/587926",
+          "key": "r11SupplyCap7"
+        }
+      ],
+      "extended_unit1_usd": 0.2
+    },
+    {
+      "mpn": "GRM155R71C104KA88D",
+      "manufacturer": "Murata",
+      "refs": [
+        "C9",
+        "C14",
+        "C15",
+        "C16",
+        "C17",
+        "C20",
+        "C103",
+        "C110",
+        "C111",
+        "C112",
+        "C113",
+        "C114",
+        "C115",
+        "C116",
+        "C117",
+        "C118",
+        "C119",
+        "C120",
+        "C121",
+        "C122",
+        "C128",
+        "C129",
+        "C130",
+        "C132",
+        "C135"
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "value": "100n",
+      "quantity": 25,
+      "primary_observation": {
+        "mpn": "GRM155R71C104KA88D",
+        "supplier": "DigiKey",
+        "stock": 0,
+        "usd1": 0.1,
+        "usd10": 0.025,
+        "status": "Backorder",
+        "note": "Listed incoming January 2027, not a commitment.",
+        "url": "https://www.digikey.com/en/products/detail/murata-electronics/GRM155R71C104KA88D/675947",
+        "key": "r11SupplyCap3"
+      },
+      "all_observations": [
+        {
+          "mpn": "GRM155R71C104KA88D",
+          "supplier": "DigiKey",
+          "stock": 0,
+          "usd1": 0.1,
+          "usd10": 0.025,
+          "status": "Backorder",
+          "note": "Listed incoming January 2027, not a commitment.",
+          "url": "https://www.digikey.com/en/products/detail/murata-electronics/GRM155R71C104KA88D/675947",
+          "key": "r11SupplyCap3"
+        }
+      ],
+      "extended_unit1_usd": 2.5
+    },
+    {
+      "mpn": "GRM188R61A475KE15D",
+      "manufacturer": "Murata",
+      "refs": [
+        "C1",
+        "C2",
+        "C3",
+        "C105",
+        "C108",
+        "C136"
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "value": "4.7u",
+      "quantity": 6,
+      "primary_observation": {
+        "mpn": "GRM188R61A475KE15D",
+        "supplier": "DigiKey",
+        "stock": null,
+        "usd1": null,
+        "usd10": null,
+        "status": "Obsolete listing",
+        "note": "Suggested GRM188R61A475KAAJD is not an approved substitute; DC-bias/case checks required.",
+        "url": "https://www.digikey.com/en/products/detail/murata-electronics/GRM188R61A475KE15D/5027562",
+        "key": "r11SupplyCap1"
+      },
+      "all_observations": [
+        {
+          "mpn": "GRM188R61A475KE15D",
+          "supplier": "DigiKey",
+          "stock": null,
+          "usd1": null,
+          "usd10": null,
+          "status": "Obsolete listing",
+          "note": "Suggested GRM188R61A475KAAJD is not an approved substitute; DC-bias/case checks required.",
+          "url": "https://www.digikey.com/en/products/detail/murata-electronics/GRM188R61A475KE15D/5027562",
+          "key": "r11SupplyCap1"
+        }
+      ],
+      "extended_unit1_usd": null
+    },
+    {
+      "mpn": "GRM188R71C105KA12D",
+      "manufacturer": "Murata",
+      "refs": [
+        "C4",
+        "C5",
+        "C6",
+        "C7",
+        "C8",
+        "C10",
+        "C12",
+        "C13",
+        "C18",
+        "C19",
+        "C21",
+        "C33",
+        "C104",
+        "C125",
+        "C126",
+        "C127",
+        "C133"
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "value": "1u",
+      "quantity": 17,
+      "primary_observation": {
+        "mpn": "GRM188R71C105KA12D",
+        "supplier": "DigiKey",
+        "stock": null,
+        "usd1": null,
+        "usd10": null,
+        "status": "Obsolete listing",
+        "note": "Suggested C1608X7R1C105K080AC is not an approved substitute; DC-bias/case checks required.",
+        "url": "https://www.digikey.com/en/products/detail/murata-electronics/GRM188R71C105KA12D/965914",
+        "key": "r11SupplyCap2"
+      },
+      "all_observations": [
+        {
+          "mpn": "GRM188R71C105KA12D",
+          "supplier": "DigiKey",
+          "stock": null,
+          "usd1": null,
+          "usd10": null,
+          "status": "Obsolete listing",
+          "note": "Suggested C1608X7R1C105K080AC is not an approved substitute; DC-bias/case checks required.",
+          "url": "https://www.digikey.com/en/products/detail/murata-electronics/GRM188R71C105KA12D/965914",
+          "key": "r11SupplyCap2"
+        }
+      ],
+      "extended_unit1_usd": null
+    },
+    {
+      "mpn": "GRM21BR61A226ME44L",
+      "manufacturer": "Murata",
+      "refs": [
+        "C106",
+        "C109",
+        "C123",
+        "C124"
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "value": "22u",
+      "quantity": 4,
+      "primary_observation": {
+        "mpn": "GRM21BR61A226ME44L",
+        "supplier": "DigiKey",
+        "stock": 0,
+        "usd1": 0.32,
+        "usd10": 0.187,
+        "status": "Backorder",
+        "note": "Listed incoming January 2027, not a commitment.",
+        "url": "https://www.digikey.com/en/products/detail/murata-electronics/GRM21BR61A226ME44L/4905527",
+        "key": "r11SupplyCap4"
+      },
+      "all_observations": [
+        {
+          "mpn": "GRM21BR61A226ME44L",
+          "supplier": "DigiKey",
+          "stock": 0,
+          "usd1": 0.32,
+          "usd10": 0.187,
+          "status": "Backorder",
+          "note": "Listed incoming January 2027, not a commitment.",
+          "url": "https://www.digikey.com/en/products/detail/murata-electronics/GRM21BR61A226ME44L/4905527",
+          "key": "r11SupplyCap4"
+        }
+      ],
+      "extended_unit1_usd": 1.28
+    },
+    {
+      "mpn": "MLP2012S3R3MT0S1",
+      "manufacturer": "TDK",
+      "refs": [
+        "L1",
+        "L2",
+        "L3"
+      ],
+      "footprint": "Camera:L_0805_2012Metric",
+      "value": "3.3u",
+      "quantity": 3,
+      "primary_observation": {
+        "mpn": "MLP2012S3R3MT0S1",
+        "supplier": "DigiKey",
+        "status": "Listed in stock",
+        "stock": 7122,
+        "usd1": 0.24,
+        "usd10": 0.196,
+        "url": "https://www.digikey.com/en/products/detail/tdk/MLP2012S3R3MT0S1/2465124",
+        "key": "r11SupplyFilterInductor"
+      },
+      "all_observations": [
+        {
+          "mpn": "MLP2012S3R3MT0S1",
+          "supplier": "DigiKey",
+          "status": "Listed in stock",
+          "stock": 7122,
+          "usd1": 0.24,
+          "usd10": 0.196,
+          "url": "https://www.digikey.com/en/products/detail/tdk/MLP2012S3R3MT0S1/2465124",
+          "key": "r11SupplyFilterInductor"
+        }
+      ],
+      "extended_unit1_usd": 0.72
+    },
+    {
+      "mpn": "OV09281-H64A",
+      "manufacturer": "OMNIVISION",
+      "refs": [
+        "U1"
+      ],
+      "footprint": "Camera:OV9281",
+      "value": "OV9281",
+      "quantity": 1,
+      "primary_observation": {
+        "mpn": "OV09281-H64A",
+        "supplier": "DigiKey",
+        "status": "Listed obsolete; no orderable stock shown",
+        "stock": null,
+        "usd1": null,
+        "url": "https://www.digikey.com/en/products/detail/omnivision-technologies-inc/OV09281-H64A/5800198",
+        "key": "r11SupplySensorDk",
+        "note": "LCSC also reports not available. Manufacturer lifecycle not independently confirmed."
+      },
+      "all_observations": [
+        {
+          "mpn": "OV09281-H64A",
+          "supplier": "DigiKey",
+          "status": "Listed obsolete; no orderable stock shown",
+          "stock": null,
+          "usd1": null,
+          "url": "https://www.digikey.com/en/products/detail/omnivision-technologies-inc/OV09281-H64A/5800198",
+          "key": "r11SupplySensorDk",
+          "note": "LCSC also reports not available. Manufacturer lifecycle not independently confirmed."
+        }
+      ],
+      "extended_unit1_usd": null
+    },
+    {
+      "mpn": "PMZB200UNEYL",
+      "manufacturer": "Nexperia",
+      "refs": [
+        "Q101",
+        "Q102",
+        "Q103",
+        "Q201"
+      ],
+      "footprint": "Package_TO_SOT_SMD:SOT-883",
+      "value": "PMZB200UNE",
+      "quantity": 4,
+      "primary_observation": {
+        "mpn": "PMZB200UNEYL",
+        "supplier": "DigiKey",
+        "status": "Backorder",
+        "stock": 0,
+        "usd1": 0.39,
+        "usd10": 0.237,
+        "url": "https://www.digikey.com/en/products/detail/nexperia-usa-inc/PMZB200UNEYL/5395629",
+        "key": "r11SupplyFet",
+        "note": "Listed receipt 2027-10-18 is not a usable short-term commitment; alternative sourcing is needed."
+      },
+      "all_observations": [
+        {
+          "mpn": "PMZB200UNEYL",
+          "supplier": "DigiKey",
+          "status": "Backorder",
+          "stock": 0,
+          "usd1": 0.39,
+          "usd10": 0.237,
+          "url": "https://www.digikey.com/en/products/detail/nexperia-usa-inc/PMZB200UNEYL/5395629",
+          "key": "r11SupplyFet",
+          "note": "Listed receipt 2027-10-18 is not a usable short-term commitment; alternative sourcing is needed."
+        }
+      ],
+      "extended_unit1_usd": 1.56
+    },
+    {
+      "mpn": "RC0402FR-07100KL",
+      "manufacturer": "Yageo",
+      "refs": [
+        "R108",
+        "R116",
+        "R204"
+      ],
+      "footprint": "Camera:R_0402_1005Metric",
+      "value": "100k",
+      "quantity": 3,
+      "primary_observation": {
+        "mpn": "RC0402FR-07100KL",
+        "supplier": "DigiKey",
+        "status": "Listed in stock",
+        "stock": 7920087,
+        "usd1": 0.1,
+        "usd10": 0.021,
+        "url": "https://www.digikey.com/en/products/detail/yageo/RC0402FR-07100KL/729473",
+        "key": "r11SupplyRa3"
+      },
+      "all_observations": [
+        {
+          "mpn": "RC0402FR-07100KL",
+          "supplier": "DigiKey",
+          "status": "Listed in stock",
+          "stock": 7920087,
+          "usd1": 0.1,
+          "usd10": 0.021,
+          "url": "https://www.digikey.com/en/products/detail/yageo/RC0402FR-07100KL/729473",
+          "key": "r11SupplyRa3"
+        }
+      ],
+      "extended_unit1_usd": 0.30000000000000004
+    },
+    {
+      "mpn": "RC0402FR-0710KL",
+      "manufacturer": "Yageo",
+      "refs": [
+        "R101",
+        "R102",
+        "R103",
+        "R104",
+        "R117",
+        "R118"
+      ],
+      "footprint": "Camera:R_0402_1005Metric",
+      "value": "10k",
+      "quantity": 6,
+      "primary_observation": {
+        "mpn": "RC0402FR-0710KL",
+        "supplier": "DigiKey",
+        "status": "Listed in stock",
+        "stock": 12681132,
+        "usd1": 0.1,
+        "usd10": 0.021,
+        "url": "https://www.digikey.com/en/products/detail/yageo/RC0402FR-0710KL/729470",
+        "key": "r11SupplyRa0"
+      },
+      "all_observations": [
+        {
+          "mpn": "RC0402FR-0710KL",
+          "supplier": "DigiKey",
+          "status": "Listed in stock",
+          "stock": 12681132,
+          "usd1": 0.1,
+          "usd10": 0.021,
+          "url": "https://www.digikey.com/en/products/detail/yageo/RC0402FR-0710KL/729470",
+          "key": "r11SupplyRa0"
+        }
+      ],
+      "extended_unit1_usd": 0.6000000000000001
+    },
+    {
+      "mpn": "RC0402FR-071KL",
+      "manufacturer": "Yageo",
+      "refs": [
+        "R201",
+        "R202"
+      ],
+      "footprint": "Camera:R_0402_1005Metric",
+      "value": "1k",
+      "quantity": 2,
+      "primary_observation": {
+        "mpn": "RC0402FR-071KL",
+        "supplier": "DigiKey",
+        "status": "Listed in stock",
+        "stock": 5989300,
+        "usd1": 0.1,
+        "usd10": 0.021,
+        "url": "https://www.digikey.com/en/products/detail/yageo/RC0402FR-071KL/726513",
+        "key": "r11SupplyRb2",
+        "note": ""
+      },
+      "all_observations": [
+        {
+          "mpn": "RC0402FR-071KL",
+          "supplier": "DigiKey",
+          "status": "Listed in stock",
+          "stock": 5989300,
+          "usd1": 0.1,
+          "usd10": 0.021,
+          "url": "https://www.digikey.com/en/products/detail/yageo/RC0402FR-071KL/726513",
+          "key": "r11SupplyRb2",
+          "note": ""
+        }
+      ],
+      "extended_unit1_usd": 0.2
+    },
+    {
+      "mpn": "RC0402FR-072K2L",
+      "manufacturer": "Yageo",
+      "refs": [
+        "R203"
+      ],
+      "footprint": "Camera:R_0402_1005Metric",
+      "value": "2.2k",
+      "quantity": 1,
+      "primary_observation": {
+        "mpn": "RC0402FR-072K2L",
+        "supplier": "DigiKey",
+        "status": "Listed in stock",
+        "stock": 578199,
+        "usd1": 0.11,
+        "usd10": 0.022,
+        "url": "https://www.digikey.com/en/products/detail/yageo/RC0402FR-072K2L/729500",
+        "key": "r11SupplyRb3",
+        "note": ""
+      },
+      "all_observations": [
+        {
+          "mpn": "RC0402FR-072K2L",
+          "supplier": "DigiKey",
+          "status": "Listed in stock",
+          "stock": 578199,
+          "usd1": 0.11,
+          "usd10": 0.022,
+          "url": "https://www.digikey.com/en/products/detail/yageo/RC0402FR-072K2L/729500",
+          "key": "r11SupplyRb3",
+          "note": ""
+        }
+      ],
+      "extended_unit1_usd": 0.11
+    },
+    {
+      "mpn": "RC0402FR-07453KL",
+      "manufacturer": "Yageo",
+      "refs": [
+        "R107"
+      ],
+      "footprint": "Camera:R_0402_1005Metric",
+      "value": "453k",
+      "quantity": 1,
+      "primary_observation": {
+        "mpn": "RC0402FR-07453KL",
+        "supplier": "DigiKey",
+        "status": "Listed in stock",
+        "stock": 59143,
+        "usd1": 0.1,
+        "usd10": 0.021,
+        "url": "https://www.digikey.com/en/products/detail/yageo/RC0402FR-07453KL/5281024",
+        "key": "r11SupplyRa2"
+      },
+      "all_observations": [
+        {
+          "mpn": "RC0402FR-07453KL",
+          "supplier": "DigiKey",
+          "status": "Listed in stock",
+          "stock": 59143,
+          "usd1": 0.1,
+          "usd10": 0.021,
+          "url": "https://www.digikey.com/en/products/detail/yageo/RC0402FR-07453KL/5281024",
+          "key": "r11SupplyRa2"
+        }
+      ],
+      "extended_unit1_usd": 0.1
+    },
+    {
+      "mpn": "RC0402FR-07499KL",
+      "manufacturer": "Yageo",
+      "refs": [
+        "R105",
+        "R106"
+      ],
+      "footprint": "Camera:R_0402_1005Metric",
+      "value": "499k",
+      "quantity": 2,
+      "primary_observation": {
+        "mpn": "RC0402FR-07499KL",
+        "supplier": "DigiKey",
+        "status": "Listed in stock",
+        "stock": 555483,
+        "usd1": 0.11,
+        "usd10": 0.022,
+        "url": "https://www.digikey.com/en/products/detail/yageo/RC0402FR-07499KL/726622",
+        "key": "r11SupplyRa1"
+      },
+      "all_observations": [
+        {
+          "mpn": "RC0402FR-07499KL",
+          "supplier": "DigiKey",
+          "status": "Listed in stock",
+          "stock": 555483,
+          "usd1": 0.11,
+          "usd10": 0.022,
+          "url": "https://www.digikey.com/en/products/detail/yageo/RC0402FR-07499KL/726622",
+          "key": "r11SupplyRa1"
+        }
+      ],
+      "extended_unit1_usd": 0.22
+    },
+    {
+      "mpn": "RC0402FR-074K02L",
+      "manufacturer": "Yageo",
+      "refs": [
+        "R111"
+      ],
+      "footprint": "Camera:R_0402_1005Metric",
+      "value": "4.02k",
+      "quantity": 1,
+      "primary_observation": {
+        "mpn": "RC0402FR-074K02L",
+        "supplier": "DigiKey",
+        "status": "Listed in stock",
+        "stock": 292215,
+        "usd1": 0.1,
+        "usd10": 0.021,
+        "url": "https://www.digikey.com/en/products/detail/yageo/RC0402FR-074K02L/2827594",
+        "key": "r11SupplyRb0",
+        "note": ""
+      },
+      "all_observations": [
+        {
+          "mpn": "RC0402FR-074K02L",
+          "supplier": "DigiKey",
+          "status": "Listed in stock",
+          "stock": 292215,
+          "usd1": 0.1,
+          "usd10": 0.021,
+          "url": "https://www.digikey.com/en/products/detail/yageo/RC0402FR-074K02L/2827594",
+          "key": "r11SupplyRb0",
+          "note": ""
+        }
+      ],
+      "extended_unit1_usd": 0.1
+    },
+    {
+      "mpn": "RC0402FR-074K7L",
+      "manufacturer": "Yageo",
+      "refs": [
+        "R112",
+        "R113",
+        "R114",
+        "R115"
+      ],
+      "footprint": "Camera:R_0402_1005Metric",
+      "value": "4.7k",
+      "quantity": 4,
+      "primary_observation": {
+        "mpn": "RC0402FR-074K7L",
+        "supplier": "DigiKey",
+        "status": "Listed in stock",
+        "stock": 982503,
+        "usd1": 0.1,
+        "usd10": 0.021,
+        "url": "https://www.digikey.com/en/products/detail/yageo/RC0402FR-074K7L/311-4.7KLRCT-ND/2827881",
+        "key": "r11SupplyRb1",
+        "note": "Newest indexed listing reports stock; an older URL reports backorder. Live confirmation required."
+      },
+      "all_observations": [
+        {
+          "mpn": "RC0402FR-074K7L",
+          "supplier": "DigiKey",
+          "status": "Listed in stock",
+          "stock": 982503,
+          "usd1": 0.1,
+          "usd10": 0.021,
+          "url": "https://www.digikey.com/en/products/detail/yageo/RC0402FR-074K7L/311-4.7KLRCT-ND/2827881",
+          "key": "r11SupplyRb1",
+          "note": "Newest indexed listing reports stock; an older URL reports backorder. Live confirmation required."
+        }
+      ],
+      "extended_unit1_usd": 0.4
+    },
+    {
+      "mpn": "RC0402JR-070RL",
+      "manufacturer": "Yageo",
+      "refs": [
+        "R8",
+        "R9",
+        "R109",
+        "R110"
+      ],
+      "footprint": "Camera:R_0402_1005Metric",
+      "value": "0",
+      "quantity": 4,
+      "primary_observation": {
+        "mpn": "RC0402JR-070RL",
+        "supplier": "DigiKey",
+        "stock": 865524,
+        "usd1": 0.1,
+        "usd10": 0.01,
+        "status": "Listed in stock",
+        "url": "https://www.digikey.com/en/products/detail/yageo/RC0402JR-070RL/726406",
+        "key": "r11SupplyR0"
+      },
+      "all_observations": [
+        {
+          "mpn": "RC0402JR-070RL",
+          "supplier": "DigiKey",
+          "stock": 865524,
+          "usd1": 0.1,
+          "usd10": 0.01,
+          "status": "Listed in stock",
+          "url": "https://www.digikey.com/en/products/detail/yageo/RC0402JR-070RL/726406",
+          "key": "r11SupplyR0"
+        }
+      ],
+      "extended_unit1_usd": 0.4
+    },
+    {
+      "mpn": "SM04B-SRSS-TB(LF)(SN)",
+      "manufacturer": "JST",
+      "refs": [
+        "J101"
+      ],
+      "footprint": "Camera:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal",
+      "value": "USB / JST SH / 1VBUS 2DM 3DP 4GND",
+      "quantity": 1,
+      "primary_observation": {
+        "mpn": "SM04B-SRSS-TB(LF)(SN)",
+        "supplier": "DigiKey",
+        "status": "Listed in stock",
+        "stock": 116723,
+        "usd1": 0.51,
+        "usd10": 0.433,
+        "url": "https://www.digikey.com/en/products/detail/jst-sales-america-inc/SM04B-SRSS-TB-LF-SN/455-1804-1-ND/926875",
+        "key": "r11SupplyJst",
+        "note": "Board connector only; external tether excluded."
+      },
+      "all_observations": [
+        {
+          "mpn": "SM04B-SRSS-TB(LF)(SN)",
+          "supplier": "DigiKey",
+          "status": "Listed in stock",
+          "stock": 116723,
+          "usd1": 0.51,
+          "usd10": 0.433,
+          "url": "https://www.digikey.com/en/products/detail/jst-sales-america-inc/SM04B-SRSS-TB-LF-SN/455-1804-1-ND/926875",
+          "key": "r11SupplyJst",
+          "note": "Board connector only; external tether excluded."
+        }
+      ],
+      "extended_unit1_usd": 0.51
+    },
+    {
+      "mpn": "TLV62569DRLR",
+      "manufacturer": "Texas Instruments",
+      "refs": [
+        "U103",
+        "U104"
+      ],
+      "footprint": "Camera:TI_DRL0006A_R11",
+      "value": "TLV62569DRLR",
+      "quantity": 2,
+      "primary_observation": {
+        "mpn": "TLV62569DRLR",
+        "supplier": "DigiKey",
+        "status": "Backorder",
+        "stock": 0,
+        "usd1": 0.25,
+        "usd10": 0.172,
+        "url": "https://www.digikey.com/en/products/detail/texas-instruments/TLV62569DRLR/7805188",
+        "key": "r11SupplyBuck",
+        "note": "Listed receipt 2026-11-23 is not guaranteed. DRLT small-reel option is a purchasing candidate, not substituted in native BOM."
+      },
+      "all_observations": [
+        {
+          "mpn": "TLV62569DRLR",
+          "supplier": "DigiKey",
+          "status": "Backorder",
+          "stock": 0,
+          "usd1": 0.25,
+          "usd10": 0.172,
+          "url": "https://www.digikey.com/en/products/detail/texas-instruments/TLV62569DRLR/7805188",
+          "key": "r11SupplyBuck",
+          "note": "Listed receipt 2026-11-23 is not guaranteed. DRLT small-reel option is a purchasing candidate, not substituted in native BOM."
+        }
+      ],
+      "extended_unit1_usd": 0.5
+    },
+    {
+      "mpn": "TLV73312PDQNR",
+      "manufacturer": "Texas Instruments",
+      "refs": [
+        "U6"
+      ],
+      "footprint": "Package_SON:Texas_X2SON-4_1x1mm_P0.65mm",
+      "value": "TLV73312PDQNR",
+      "quantity": 1,
+      "primary_observation": {
+        "mpn": "TLV73312PDQNR",
+        "supplier": "DigiKey",
+        "status": "Conflicting indexed stock; treat unavailable until checked",
+        "stock": null,
+        "usd1": 0.19,
+        "usd10": 0.128,
+        "url": "https://www.digikey.com/en/products/detail/texas-instruments/TLV73312PDQNR/5022372",
+        "key": "r11SupplyLdo12",
+        "note": "Exact product page shows zero; a category result showed 5820. Do not rely on the category count."
+      },
+      "all_observations": [
+        {
+          "mpn": "TLV73312PDQNR",
+          "supplier": "DigiKey",
+          "status": "Conflicting indexed stock; treat unavailable until checked",
+          "stock": null,
+          "usd1": 0.19,
+          "usd10": 0.128,
+          "url": "https://www.digikey.com/en/products/detail/texas-instruments/TLV73312PDQNR/5022372",
+          "key": "r11SupplyLdo12",
+          "note": "Exact product page shows zero; a category result showed 5820. Do not rely on the category count."
+        }
+      ],
+      "extended_unit1_usd": 0.19
+    },
+    {
+      "mpn": "TLV73318PDQNR",
+      "manufacturer": "Texas Instruments",
+      "refs": [
+        "U5"
+      ],
+      "footprint": "Package_SON:Texas_X2SON-4_1x1mm_P0.65mm",
+      "value": "TLV73318PDQNR",
+      "quantity": 1,
+      "primary_observation": {
+        "mpn": "TLV73318PDQNR",
+        "supplier": "DigiKey",
+        "status": "Backorder",
+        "stock": 0,
+        "usd1": 0.19,
+        "usd10": 0.128,
+        "url": "https://www.digikey.com/en/products/detail/texas-instruments/TLV73318PDQNR/5023922",
+        "key": "r11SupplyLdo18",
+        "note": "Listed receipt 2026-12-02, not guaranteed."
+      },
+      "all_observations": [
+        {
+          "mpn": "TLV73318PDQNR",
+          "supplier": "DigiKey",
+          "status": "Backorder",
+          "stock": 0,
+          "usd1": 0.19,
+          "usd10": 0.128,
+          "url": "https://www.digikey.com/en/products/detail/texas-instruments/TLV73318PDQNR/5023922",
+          "key": "r11SupplyLdo18",
+          "note": "Listed receipt 2026-12-02, not guaranteed."
+        }
+      ],
+      "extended_unit1_usd": 0.19
+    },
+    {
+      "mpn": "TLV73328PDQNR",
+      "manufacturer": "Texas Instruments",
+      "refs": [
+        "U7"
+      ],
+      "footprint": "Package_SON:Texas_X2SON-4_1x1mm_P0.65mm",
+      "value": "TLV73328PDQNR",
+      "quantity": 1,
+      "primary_observation": {
+        "mpn": "TLV73328PDQNR",
+        "supplier": "DigiKey",
+        "status": "Listed in stock",
+        "stock": 6792,
+        "usd1": 0.19,
+        "usd10": 0.128,
+        "url": "https://www.digikey.com/en/products/detail/texas-instruments/TLV73328PDQNR/5308307",
+        "key": "r11SupplyLdo28",
+        "note": "Indexed listing, not reserved inventory."
+      },
+      "all_observations": [
+        {
+          "mpn": "TLV73328PDQNR",
+          "supplier": "DigiKey",
+          "status": "Listed in stock",
+          "stock": 6792,
+          "usd1": 0.19,
+          "usd10": 0.128,
+          "url": "https://www.digikey.com/en/products/detail/texas-instruments/TLV73328PDQNR/5308307",
+          "key": "r11SupplyLdo28",
+          "note": "Indexed listing, not reserved inventory."
+        }
+      ],
+      "extended_unit1_usd": 0.19
+    },
+    {
+      "mpn": "USBLC6-2P6",
+      "manufacturer": "STMicroelectronics",
+      "refs": [
+        "U105"
+      ],
+      "footprint": "Camera:SOT-666",
+      "value": "USBLC6-2P6",
+      "quantity": 1,
+      "primary_observation": {
+        "mpn": "USBLC6-2P6",
+        "supplier": "DigiKey",
+        "status": "Listed in stock",
+        "stock": 41241,
+        "usd1": 0.65,
+        "usd10": 0.4,
+        "url": "https://www.digikey.com/en/products/detail/stmicroelectronics/USBLC6-2P6/1007464",
+        "key": "r11SupplyEsd",
+        "note": "STMicroelectronics part; same-number marketplace parts from other manufacturers are not accepted substitutes."
+      },
+      "all_observations": [
+        {
+          "mpn": "USBLC6-2P6",
+          "supplier": "DigiKey",
+          "status": "Listed in stock",
+          "stock": 41241,
+          "usd1": 0.65,
+          "usd10": 0.4,
+          "url": "https://www.digikey.com/en/products/detail/stmicroelectronics/USBLC6-2P6/1007464",
+          "key": "r11SupplyEsd",
+          "note": "STMicroelectronics part; same-number marketplace parts from other manufacturers are not accepted substitutes."
+        }
+      ],
+      "extended_unit1_usd": 0.65
+    },
+    {
+      "mpn": "W25Q32JVUUIQ TR",
+      "manufacturer": "Winbond",
+      "refs": [
+        "U102"
+      ],
+      "footprint": "Package_SON:Winbond_USON-8-2EP_3x4mm_P0.8mm_EP0.2x0.8mm",
+      "value": "W25Q32JVUUIQ / 4 MB",
+      "quantity": 1,
+      "primary_observation": {
+        "mpn": "W25Q32JVUUIQ TR",
+        "supplier": "LCSC",
+        "status": "Alternate listing reports stock; packaging confirmation required",
+        "stock": 3478,
+        "usd1": 2.5291,
+        "usd10": 2.2547,
+        "url": "https://www.lcsc.com/product-image/C2999380.html",
+        "key": "r11SupplyFlashLcsc",
+        "note": "Supplier labels base MPN W25Q32JVUUIQ without TR; exact same USON device, but packaging/traceability and lifecycle require checking."
+      },
+      "all_observations": [
+        {
+          "mpn": "W25Q32JVUUIQ TR",
+          "supplier": "DigiKey",
+          "status": "Listed obsolete; no orderable stock shown",
+          "stock": null,
+          "usd1": null,
+          "url": "https://www.digikey.com/en/products/detail/winbond-electronics/W25Q32JVUUIQ-TR/17291060",
+          "key": "r11SupplyFlash",
+          "note": "Exact USON ordering code needs an orderable source or qualified replacement before purchasing."
+        },
+        {
+          "mpn": "W25Q32JVUUIQ TR",
+          "supplier": "LCSC",
+          "status": "Alternate listing reports stock; packaging confirmation required",
+          "stock": 3478,
+          "usd1": 2.5291,
+          "usd10": 2.2547,
+          "url": "https://www.lcsc.com/product-image/C2999380.html",
+          "key": "r11SupplyFlashLcsc",
+          "note": "Supplier labels base MPN W25Q32JVUUIQ without TR; exact same USON device, but packaging/traceability and lifecycle require checking."
+        }
+      ],
+      "extended_unit1_usd": 2.5291
+    },
+    {
+      "mpn": "X1G004171003100",
+      "manufacturer": "Epson",
+      "refs": [
+        "Y1"
+      ],
+      "footprint": "Camera:Epson_SG210STF_2.5x2.0mm_R09",
+      "value": "SG-210STF 24.0000ML",
+      "quantity": 1,
+      "primary_observation": {
+        "mpn": "X1G004171003100",
+        "supplier": "LCSC",
+        "status": "Out of stock",
+        "stock": 0,
+        "usd1": 0.9297,
+        "url": "https://www.lcsc.com/product-detail/C22454141.html",
+        "key": "r11SupplyOscillator",
+        "note": "Reference price only; exact stocked clock source still required."
+      },
+      "all_observations": [
+        {
+          "mpn": "X1G004171003100",
+          "supplier": "LCSC",
+          "status": "Out of stock",
+          "stock": 0,
+          "usd1": 0.9297,
+          "url": "https://www.lcsc.com/product-detail/C22454141.html",
+          "key": "r11SupplyOscillator",
+          "note": "Reference price only; exact stocked clock source still required."
+        }
+      ],
+      "extended_unit1_usd": 0.9297
+    }
+  ],
+  "non_electronic_purchasing": [
+    {
+      "item": "C SLIM.flex six-layer circuit",
+      "quantity": 1,
+      "status": "Custom quotation required; no fabrication order authorized",
+      "usd": null
+    },
+    {
+      "item": "Windowed controller support",
+      "quantity": 1,
+      "status": "0.10 mm FR4 plus 0.05 mm adhesive; process/material unqualified",
+      "usd": null
+    },
+    {
+      "item": "Head ring support",
+      "quantity": 1,
+      "status": "0.10 mm FR4 plus 0.05 mm adhesive",
+      "usd": null
+    },
+    {
+      "item": "Compact optics holder",
+      "quantity": 1,
+      "status": "Native model supplied; lightweight polymer/process unqualified",
+      "usd": null
+    },
+    {
+      "item": "Close-focus lens and barrel",
+      "quantity": 1,
+      "status": "Provisional M6 envelope; no qualified part number",
+      "usd": null
+    },
+    {
+      "item": "Visible-blocking IR-pass filter",
+      "quantity": 1,
+      "status": "Provisional diameter 5.2 mm and thickness 0.2 mm; spectral specification unqualified",
+      "usd": null
+    },
+    {
+      "item": "Bonding and lens retention material",
+      "quantity": 1,
+      "status": "Provisional; included in mass allowance",
+      "usd": null
+    }
+  ],
+  "release_blockers": [
+    "No qualified stocked OV09281-H64A source established. DigiKey obsolete listing is not independent manufacturer lifecycle confirmation.",
+    "P4 and several regulators, FETs, oscillator and capacitors have backorder, unavailable or conflicting stock observations.",
+    "Two selected capacitor codes are listed obsolete and the 16 pF code is not recommended for new designs. Suggested substitutions require a controlled component update and DC-bias/package verification.",
+    "Flash is listed obsolete at DigiKey but available under its base code at LCSC; exact packaging, lifecycle and traceability remain unresolved.",
+    "Custom fabrication, assembly and close-focus IR optics have no verified quote."
+  ],
+  "component_source_sha256": "768d6c65164f19172ee9684eb64266113712d56688639c7c35a803746b90c471"
+}

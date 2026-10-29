@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>01 · A circuit is connectivity</title><link rel="stylesheet" href="../assets/course.css">
+<body><p class="eyebrow">SKELLYCAD / KICAD FOUNDATIONS / 01</p><h1>A circuit is connectivity.</h1>
+<p>Our first design has three parts. Before deciding where they sit on a board, we decide which pins connect.</p>
+<figure><img src="../assets/indicator-01.svg" alt="KiCad schematic: connector J1 pin 1 connects to resistor R1, then LED D1 anode; LED cathode returns to J1 pin 2."><figcaption>Actual KiCad export of our editable schematic. The wires specify connections; their drawn lengths do not specify physical wire lengths.</figcaption></figure>
+<h2>Trace one path</h2><p><strong>J1 pin 1 → R1 → D1 anode → D1 cathode → J1 pin 2.</strong> J1 connects an external supply. R1 limits the LED current. D1 emits light when operated with suitable forward current. The return connects back to the other supply terminal.</p>
+<p>A <strong>net</strong> is a set of electrically connected pins. We have three: <code>SUPPLY</code>, <code>LED_ANODE</code> and <code>RETURN</code>. The resistor and LED sit between nets; each is a component, not an uninterrupted wire.</p>
+<h2>One part, several representations</h2><table><thead><tr><th>Representation</th><th>Question it answers</th><th>Today</th></tr></thead><tbody>
+<tr><td>Schematic symbol</td><td>What does this part connect to?</td><td>Three symbols, connected</td></tr>
+<tr><td>Footprint</td><td>Where are its solder pads and holes?</td><td>Not selected yet</td></tr>
+<tr><td>PCB layout</td><td>Where do parts and copper go?</td><td>Not created yet</td></tr>
+<tr><td>3D model</td><td>What space does the part occupy?</td><td>Later, for FreeCAD fit checks</td></tr></tbody></table>
+<p>These distinctions follow <a href="https://docs.kicad.org/10.0/en/getting_started_in_kicad/getting_started_in_kicad.html#_basic_concepts_and_workflow">KiCad's basic concepts and workflow</a>. <!-- [@kicad10GettingStarted] --></p>
+<h2>Predict before changing anything</h2><p>If we remove the connection between R1 and D1, but leave both symbols in exactly the same places, what happens to the circuit?</p>
+<details><summary>Reveal the explanation</summary><p>The series path is broken. The LED has no complete current path through this circuit. Keeping the symbols in the same positions does not preserve their connection.</p></details>
+<p>Now consider moving the connector to the other side of the physical board while keeping the same pin connections. That is a layout change. It may require different copper routing and a different holder opening, but it need not change the circuit's connectivity.</p>
+<p class="note">The marked 330 Ω and assumed 5 V are illustrative. We have not selected an LED or checked its ratings. Zero electrical-rule violations is a connectivity check, not proof of a safe operating current.</p>
+<h2>Inspect the native design</h2><p>In KiCad, open <code>indicator-board/electronics/01-connected-schematic/indicator.kicad_pro</code>, then its schematic. Find J1, R1 and D1 and trace the three nets. No plugin or live API is needed for this lesson.</p>
+<p>Tell me what you think happens when the R1–D1 wire is removed, or ask about any unfamiliar term. We will make the next small change together.</p>
+<p><a href="../reference/representations.html">Quick reference: symbols, footprints and boards</a> · <a href="../indicator-board/electronics/01-connected-schematic/indicator.kicad_sch">Native schematic</a></p></body></html>

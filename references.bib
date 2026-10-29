@@ -193,8 +193,37 @@
  url = {https://www.iadiy.com/image/catalog/IADIY/products/optical-lenses/optical-lenses-datasheet/M5-board-lens-CL5P1.6.pdf},
  urldate = {2026-10-14},
  review = {excerpt},
- claim = {Page 2 provides 6.0 and 6.5 mm square holder drawings, heights, pin dimensions and M5 x 0.35 sectional thread callout.},
- note = {Visually inspected supplied PDF page 2. Reconstructed CAD uses approximated thread profile and pin arrangement; not manufacturer CAD. Table P3.5 conflicts with drawing and page 1 P0.35; use P0.35.}
+ claim = {Page 2 provides 6.0 and 6.5 mm square holder drawings, heights, pin dimensions and M5 x 0.35 sectional thread callout. Page 1 specifies a 3.6 mm image circle, default IR-cut filter and optional other filters.},
+ note = {Visually inspected supplied PDF page 2. Public PDF text for optical format and filtering rechecked 2026-10-27. Reconstructed CAD uses approximated thread profile and pin arrangement; not manufacturer CAD. Table P3.5 conflicts with drawing and page 1 P0.35; use P0.35.}
+}
+@misc{chuanganCh2021a,
+ author = {{Fuzhou ChuangAn Optics Co., Ltd.}},
+ title = {CH2021A M6 Lens, Rev1.0},
+ year = {2021},
+ url = {https://www.opticslens.com/uploads/CH2021A.pdf},
+ urldate = {2026-10-27},
+ review = {excerpt},
+ claim = {Public specification lists M6 x 0.35, 6 mm diameter by 2.65 mm body, 3.85 mm TTL, 3 mm EFL, F2.4, 4.8 mm maximum image circle, Non-IR filter configuration and 0.1 m minimum object distance.},
+ note = {Reviewed extracted single-page specification and dimension text. PDF screenshot fetch failed; no visual reconstruction performed. Mechanical rear clearance is 1.20 mm; optical BFL is 1.25 mm. Chief ray angle is below 28.4 degrees. Does not establish 940 nm image quality, 10-20 mm focus, stock or physical fit.}
+}
+@misc{chuanganCh2010ac,
+ author = {{Fuzhou ChuangAn Optics Co., Ltd.}},
+ title = {CH2010AC + 5205A Board Lens and Holder, Rev1.0},
+ year = {2019},
+ url = {https://www.opticslens.com/uploads/CH2010AC%2B5205A.pdf},
+ urldate = {2026-10-27},
+ review = {excerpt},
+ claim = {Lists M6.5 x 0.25, 4.15 mm lens body length, 5.68 mm TTL, 4.8 mm EFL, 4.6 mm maximum image circle, IR850 BN filter, 0.3 g weight and 0.1 m minimum object distance; dimension text includes a 10 mm square holder.},
+ note = {Reviewed extracted PDF text and corresponding manufacturer catalog entry describing BP850nm. No sample, spectral transmission curve, physical focus test or stock verification. Mass allocation between lens and holder is not explicitly established.}
+}
+@misc{chuanganMiniLensCatalog,
+ author = {{Fuzhou ChuangAn Optics Co., Ltd.}},
+ title = {M6 and M6.5 mount lenses product catalog},
+ url = {https://www.opticslens.com/m6-mount-lenses-product/},
+ urldate = {2026-10-27},
+ review = {excerpt},
+ claim = {Manufacturer catalog lists CH2021A and CH2010AC, public specification drawings and Request Quote procurement links.},
+ note = {Reviewed candidate rows and product-detail excerpts. Catalog pricing is not treated as a quotation, stock guarantee or confirmed direct checkout. No supplier contact or purchase.}
 }
 @article{oommenStahl2008MouseOrientation,
  author = {Oommen, B. S. and Stahl, J. S.},
@@ -432,6 +461,26 @@
  note = {Reviewed implant design, figure 1 description, cohort and postmortem results. Seven female Wistar rats, 250--400 g. Some screw tips penetrated brain: this is not a safe screw-depth specification or a validation of our design.}
 }
 
+@misc{microchipUsbInterface,
+  title = {USB Interface},
+  author = {{Microchip Technology}},
+  url = {https://onlinedocs.microchip.com/oxy/GUID-22527069-B4D6-49B9-BACC-3AF1C52EB48C-en-US-21/GUID-21AB4133-9257-492F-A530-A1E6CD3DCD9C.html},
+  urldate = {2026-10-27},
+  review = {excerpt},
+  claim = {USB uses a differential data pair D+ and D- and the power connections VBUS and GND.},
+  note = {Reviewed the indexed manufacturer interface description for the camera walkthrough. Does not establish the pin order of the project's provisional JST connector.}
+}
+
+@misc{kicadSchematicFormat,
+  title = {Schematic File Format},
+  author = {{KiCad developers}},
+  url = {https://dev-docs.kicad.org/en/file-formats/sexpr-schematic/},
+  urldate = {2026-10-27},
+  review = {excerpt},
+  claim = {Native KiCad schematic files use s-expressions with embedded library symbols, unique identifiers, wires, labels and symbol instances.},
+  note = {Reviewed header, library symbol, wire, label and symbol-instance format for the indicator lesson generator. Generated output independently parsed by KiCad 10.0.7 through netlist export, SVG export and ERC.}
+}
+
 @misc{kicadIpcDevelopers,
   title = {For Add-on Developers: KiCad IPC API},
   author = {{KiCad developers}},
@@ -489,4 +538,1281 @@
   review = {excerpt},
   claim = {Prior art for a clampable double-ball camera support with relief notches},
   note = {Reviewed indexed manufacturer PDF excerpt; direct PDF retrieval failed. Not a dimensional source or imported CAD asset.}
+}
+
+@misc{raspberryPiCameraPinout,
+  title = {Camera Module hardware},
+  author = {{Raspberry Pi}},
+  url = {https://www.raspberrypi.com/documentation/accessories/camera.html},
+  urldate = {2026-10-27},
+  review = {excerpt},
+  claim = {The 15-pin host camera interface pin assignments and module-dependent control signals},
+  note = {Reviewed connector pin table and signal descriptions; not a verification of a third-party module or cable}
+}
+
+@misc{arducamOv9281Guide,
+  title = {1MP OV9281},
+  author = {{Arducam}},
+  url = {https://docs.arducam.com/Raspberry-Pi-Camera/Native-camera/Global-Shutter/1MP-OV9281-OV9282/},
+  urldate = {2026-10-27},
+  review = {excerpt},
+  claim = {Candidate OV9281 module family has a documented Raspberry Pi software setup path},
+  note = {Reviewed overview, catalog and software setup. Catalog links contain inconsistent sensor descriptions; exact SKU, cable and required image mode remain unverified}
+}
+
+@misc{arducamB0224Selection,
+ title = {OV9281 NoIR camera B0224},
+ author = {{Arducam}},
+ url = {https://www.uctronics.com/arducam-ov9281-mipi-camera-module-1mp-global-shutter-mono-camera-130.html},
+ urldate = {2026-10-27},
+ review = {excerpt},
+ claim = {B0224 module identity, bundled cable, Pi support and optical limitations},
+ note = {Reviewed manufacturer-linked product listing specifications and package contents; vendor claims only, no hardware test. Lens replacement statements conflict with M12 title}
+}
+@misc{arducamGlobalShutterQuickstart,
+ title = {Global shutter camera quick start},
+ author = {{Arducam}},
+ url = {https://docs.arducam.com/Raspberry-Pi-Camera/Global-Shutter-Camera/quick-start/},
+ urldate = {2026-10-27},
+ review = {excerpt},
+ claim = {B0224 is listed with a 22-contact top-contact interface and no IR-cut filter},
+ note = {Reviewed native-camera table and supported platforms; some other catalog links misidentify products}
+}
+@misc{raspberryPiCameraSoftware,
+ title = {Camera Module software and installation},
+ author = {{Raspberry Pi}},
+ url = {https://www.raspberrypi.com/documentation/accessories/camera-software.html},
+ urldate = {2026-10-27},
+ review = {excerpt},
+ claim = {The list-cameras option reports detected cameras and available sensor modes},
+ note = {Reviewed list-cameras and mode options; no local camera connected or tested}
+}
+
+@misc{molex200528Series,
+ title = {200528 series chart},
+ author = {{Molex}},
+ url = {https://www.molex.com/en-us/products/series-chart/200528},
+ urldate = {2026-10-27},
+ review = {excerpt},
+ claim = {2005280150 is a 15-circuit, 1 mm pitch, bottom-contact connector with 1.9 mm height},
+ note = {Reviewed series table. No cable compatibility or high-speed performance was verified}
+}
+@misc{kicadFootprintsSource,
+ title = {KiCad footprint library},
+ author = {{KiCad Library Team}},
+ url = {https://gitlab.com/kicad/libraries/kicad-footprints},
+ urldate = {2026-10-27},
+ review = {source-code},
+ claim = {Pinned installed Molex 200528-0150 footprint supplies pad locations and courtyard for the R02 teaching board},
+ note = {Reviewed installed KiCad 10.0.7 footprint file and upstream license page. Exact file hash retained in R02 lineage. CC BY-SA 4.0 library with KiCad exception}
+}
+
+@misc{omnivisionOg0tcBrief,
+ title = {OG0TC1B product brief},
+ author = {{OMNIVISION}},
+ url = {https://www.ovt.com/wp-content/uploads/2026/07/OG0TC1B-PB-v1.1-WEB.pdf},
+ urldate = {2026-10-27},
+ review = {full-text},
+ claim = {Sensor package XY size, global shutter, resolution, nominal rails and one-lane D-PHY interface},
+ note = {One-page public brief v1.1; no land pattern, complete pinout or initialization register table}
+}
+@misc{omnivisionOc0tcBrief,
+ title = {OC0TC product brief},
+ author = {{OMNIVISION}},
+ url = {https://www.ovt.com/wp-content/uploads/2026/04/OC0TC-PB-v1.0-WEB.pdf},
+ urldate = {2026-10-27},
+ review = {full-text},
+ claim = {Integrated sensor and optics module alternative with 1.7 mm height and D-PHY option},
+ note = {One-page public brief v1.0; no close-focus or complete package-interface validation}
+}
+@misc{infineonCx3Datasheet,
+ title = {CYUSB306X EZ-USB CX3 MIPI CSI-2 to SuperSpeed USB bridge controller},
+ author = {{Infineon Technologies}},
+ url = {https://www.infineon.com/dgdl/Infineon-CYUSB306X_EZ-USB_TM_CX3_MIPI_CSI-2_to_SuperSpeed_USB_bridge_controller-DataSheet-v17_00-EN.pdf?fileId=8ac78c8c7d0d8da4017d0ecbbb354559},
+ urldate = {2026-10-27},
+ review = {excerpt},
+ claim = {Bridge candidate supports MIPI CSI-2 and USB 2.0; package is 10 by 10 by 1.7 mm},
+ note = {Reviewed features, boot options, pin excerpts and package outline description in revision P. No completed sensor compatibility or power design}
+}
+@misc{infineonCx3ApplicationNote,
+ title = {AN90369 How to interface a MIPI CSI-2 image sensor with EZ-USB CX3},
+ author = {{Infineon Technologies}},
+ url = {https://www.infineon.com/dgdl/Infineon-AN90369_How_to_Interface_a_MIPI_CSI-2_Image_Sensor_With_EZ-USB_CX3-ApplicationNotes-v05_00-EN.pdf?fileId=8ac78c8c7cdc391c017d073e56bf6257},
+ urldate = {2026-10-27},
+ review = {excerpt},
+ claim = {Reference firmware and sensor configuration workflow are available; external sensor clock is recommended for production},
+ note = {Reviewed interface, configuration, firmware and hardware setup excerpts from revision G. Examples do not establish OG0TC1B compatibility}
+}
+@misc{jstShCatalog,
+ title = {SH connector},
+ author = {{J.S.T. Mfg. Co., Ltd.}},
+ url = {https://www.jst-mfg.com/product/index.php?series=231},
+ urldate = {2026-10-28},
+ review = {excerpt},
+ claim = {SH family has 1 mm pitch and includes four-contact SM04B-SRSS-TB; the product table lists AWG 32, 30 and 28 conductors and 0.4 to 0.8 mm insulation outside diameter},
+ note = {Reviewed product profile and part listing; not a USB qualification or Pupil cable pinout source. Revisited product specification table 2026-10-28 for the R10 cable design basis; no USB high-speed channel qualification was established by that table.}
+}
+
+@misc{omnivisionOc0tcProduct,
+ title = {OC0TC CameraCubeChip},
+ author = {{OMNIVISION}},
+ url = {https://www.ovt.com/products/oc0tc/},
+ urldate = {2026-10-27},
+ review = {excerpt},
+ claim = {OC0TC integrates sensor and optics and lists a monochrome OC0TC1B-RAVA-001A 16-pin variant},
+ note = {Reviewed variant listing, package description and interface specifications. Full XY package drawing, pinout, focus and procurement availability were not established}
+}
+
+@misc{midopt940Bandpass,
+ title = {Bi940 Near-IR Interference Bandpass Filter},
+ author = {{Midwest Optical Systems}},
+ url = {https://midopt.com/filters/bi940/},
+ urldate = {2026-10-27},
+ review = {excerpt},
+ claim = {Matching a narrow near-infrared passband to 940 nm illumination can reduce interfering ambient light},
+ note = {Reviewed application description and transmission specifications as a filtering example, not a selected miniature component or evidence of OC0TC coating performance}
+}
+
+@misc{leopardOc0tcModule,
+ title = {LI-OC0TC1B-MIPI},
+ author = {{Leopard Imaging}},
+ url = {https://leopardimaging.com/product/robotics-cameras/cis-2-mipi-modules/mobile-modules/li-oc0tc1b/li-oc0tc1b-mipi/},
+ urldate = {2026-10-27},
+ review = {excerpt},
+ claim = {Assembled monochrome OC0TC module listed at USD 99 on backorder with 8-100 mm focus},
+ note = {Reviewed specifications and ordering status; USB receiver compatibility and delivered performance not established}
+}
+
+@misc{leopardOc0tcDatasheet,
+ title = {LI-OC0TC1B-MIPI Datasheet V0.2},
+ author = {{Leopard Imaging}},
+ url = {https://leopardimaging.com/wp-content/uploads/2026/08/LI-OC0TC1B-MIPI_Datasheet_V0.2.pdf},
+ urldate = {2026-10-27},
+ review = {excerpt},
+ claim = {Module connector pinout, external supply and IO voltages and 8-100 mm focus are published},
+ note = {Reviewed extracted specification and connector tables. Drawing dimensions and graphical timing not qualified. Focal length versus FOV requires clarification; no initialization or USB firmware reviewed}
+}
+
+@misc{leopardOv7251Head,
+ title = {LI-OV7251M-FF},
+ author = {{Leopard Imaging}},
+ url = {https://leopardimaging.com/product/robotics-cameras/cis-2-mipi-modules/mobile-modules/li-ov7251m-ff/li-ov7251m-ff/},
+ urldate = {2026-10-27},
+ review = {excerpt},
+ claim = {6 x 6 mm monochrome global-shutter head lists 8-15 cm focus and USB tester compatibility},
+ note = {Reviewed specification tables; NIR filtering and complete kit not qualified}
+}
+
+@misc{kltOv7251Ir940,
+ title = {KLT-USB1A-OV7251 V1.0 IR940},
+ author = {{Kai Lap Technologies}},
+ url = {https://kailaptech.com/product.aspx?id=1577&l1=1110},
+ urldate = {2026-10-27},
+ review = {excerpt},
+ claim = {Vendor lists USB 2.0 global-shutter camera with LEDs and advertised 940 nm filtering on 60 x 23.5 mm PCB},
+ note = {Reviewed product specifications; filter wording ambiguous and no spectral curve, focus range, frame rate, stock or exposure qualification established}
+}
+
+@misc{ffmpegDshow,
+ title = {FFmpeg Devices Documentation: DirectShow},
+ author = {{FFmpeg Developers}},
+ url = {https://ffmpeg.org/ffmpeg-devices.html#dshow},
+ urldate = {2026-10-27},
+ review = {excerpt},
+ claim = {DirectShow supports device and mode enumeration and named camera capture},
+ note = {Reviewed DirectShow options and local demuxer help; only synthetic host recording tested, no physical camera opened}
+}
+
+@misc{appleyeMira016Eye,
+ title = {Eye Tracking for AR VR and Smart Glasses},
+ author = {{Appleye}},
+ url = {https://appleye.co.il/use-cases/eye-tracking_ar-vr/},
+ urldate = {2026-10-27},
+ review = {excerpt},
+ claim = {Vendor describes a monochrome MIRA016 module with 940 nm bandpass and 16-36 mm focus},
+ note = {Reviewed application specifications; stock unverified, quoted generic prototype schedule is not a commitment; dimensions and FOV differ from product page}
+}
+
+@misc{appleyeMira016Product,
+ title = {AE-CCM-GS-MIRA016-M-74-WLO},
+ author = {{Appleye}},
+ url = {https://appleye.co.il/product/ae-ccm-gs-mira016-m-74-wlo-0-16-mp-global-shutter-mipi-compact-camera-module/},
+ urldate = {2026-10-27},
+ review = {excerpt},
+ claim = {Vendor offers a miniature fixed-focus monochrome global-shutter MIPI module with lens and pin-assignment customization},
+ note = {Reviewed product specifications; dimension and FOV disagreement with application page prevents geometry selection; no USB kit verified}
+}
+
+@misc{jlcThinPcbCapabilities,
+ title = {PCB Manufacturing and Assembly Capabilities},
+ author = {{JLCPCB}},
+ url = {https://jlcpcb.com/capabilities/pcb-capabilities/},
+ urldate = {2026-10-27},
+ review = {excerpt},
+ claim = {Manufacturer lists 0.4 and 0.6 mm FR4 thicknesses and 0.10 mm or finer 1 oz trace capabilities, supporting a candidate narrow sensor fan-out},
+ note = {Reviewed thickness, impedance, trace and hole capability excerpts; revisited the trace table for R07. Local 0.10 mm sensor escapes retain 0.15 mm clearance. The existing 0.20 mm package lands still require explicit process review against the minimum SMD pad entry. These are capability references, not approval of the camera stackup, land pattern or assembly}
+}
+
+@misc{epecFlexCapabilities,
+ title = {Technology Roadmap: Flex and Rigid-Flex PCB Specifications},
+ author = {{Epec Engineered Technologies}},
+ url = {https://www.epectec.com/flex/technology-roadmap.html},
+ urldate = {2026-10-28},
+ review = {excerpt},
+ claim = {Thin polyimide flex fabrication and local stiffener materials are available},
+ note = {Reviewed flex thickness, material and stiffener table; minimum capability does not specify our multilayer design Revisited the public capability table 2026-10-28; no supplier-approved stackup was obtained.}
+}
+
+@misc{omnivisionOv9281Brief,
+ title = {OV9281 product brief, version 1.4},
+ author = {{OMNIVISION}},
+ url = {https://www.ovt.com/wp-content/uploads/2024/05/OV9281-PB-v1.4-WEB.pdf},
+ urldate = {2026-10-27},
+ review = {full-text},
+ claim = {Monochrome global shutter, RAW8/10, two-lane MIPI, sensor frame rates and image area},
+ note = {Both pages reviewed; sensor specifications do not qualify a complete USB camera}
+}
+
+@misc{antmicroOv9281Board,
+ title = {OV9281 dual camera board},
+ author = {{Antmicro}},
+ url = {https://github.com/antmicro/ov9281-camera-board},
+ urldate = {2026-10-27},
+ review = {excerpt},
+ claim = {Published KiCad dual-sensor design with M12 mounting and two MIPI interfaces},
+ note = {README reviewed; full native design not yet imported or electrically audited}
+}
+
+@misc{antmicroOv9281License,
+ title = {OV9281 camera board license},
+ author = {{Antmicro}},
+ url = {https://raw.githubusercontent.com/antmicro/ov9281-camera-board/main/LICENSE},
+ urldate = {2026-10-27},
+ review = {excerpt},
+ claim = {Repository declares Apache-2.0 terms for hardware reuse},
+ note = {License header and grant reviewed; preserve notices for derivatives}
+}
+
+@misc{antmicroOv9281Schematic,
+ title = {OV9281 dual camera board schematic, revision 1.1.2 ea69666f},
+ author = {{Antmicro}},
+ url = {https://openhardware.antmicro.com/imported/boards/ov9281-dual-camera-board/doc/ov9281-dual-camera-board-main-ea69666f-schematic.pdf},
+ urldate = {2026-10-27},
+ review = {excerpt},
+ claim = {Sensor pins, three supply rails, local bias circuitry and 24 MHz clocks are published},
+ note = {Text extraction reviewed for architecture; not a net-by-net audit or visual connectivity verification}
+}
+
+@misc{espressifOv9281Driver,
+ title = {OV9281 sensor driver},
+ author = {{Espressif Systems}},
+ url = {https://raw.githubusercontent.com/espressif/esp-video-components/master/esp_cam_sensor/sensors/ov9281/ov9281.c},
+ urldate = {2026-10-27},
+ review = {source-code},
+ claim = {Apache-2.0 driver includes RAW8 640 x 400 at 100 fps mode and exposure/gain handling},
+ note = {Reviewed driver, address header and mode tables at commit 789cde3bd09296a13d4e70afe011366b60ac772c; local RAW8 bypass firmware compiled with ESP-IDF v5.5.6 but not run on hardware. SID-low uses 7-bit address 0x60. Mode-table header says 800 Mbps while metadata mipi_clk is 400 MHz; receiver timing remains unverified}
+}
+
+@misc{espP4Rev3Guide,
+ title = {ESP32-P4 Chip Revision v3.x User Guide v1.1},
+ author = {{Espressif Systems}},
+ year = {2026},
+ url = {https://documentation.espressif.com/esp32-p4-chip-revision-v3.x_user_guide_en.pdf},
+ urldate = {2026-10-27},
+ review = {excerpt},
+ claim = {Revision 3.x requires a matching firmware build using ESP-IDF 5.5.3 or later in the 5.5 series, or 6.0 or later},
+ note = {Section 2.1.2 and revision-specific circuit changes reviewed; local build targets v3.x, not older P4 silicon}
+}
+
+@misc{espIdfCameraController,
+ title = {ESP-IDF v5.5.6 CSI camera controller implementation},
+ author = {{Espressif Systems}},
+ url = {https://github.com/espressif/esp-idf/blob/880a203ae603d08a94d06aa01e0d6761958e5e9e/components/esp_driver_cam/csi/src/esp_cam_ctlr_csi.c},
+ urldate = {2026-10-27},
+ review = {source-code},
+ claim = {RAW8 input and output use the bridge bypass; queued capture and a separate backup buffer support application-owned snapshots},
+ note = {Allocation, receive, ISR completion, cache invalidation and color handling inspected locally at the pinned revision. Explicit application cache synchronization added because received_size is assigned after the driver's invalidation call. No DMA behavior demonstrated on hardware}
+}
+
+@misc{espTinyusbSerialExample,
+ title = {ESP-IDF v5.5.6 TinyUSB serial device example},
+ author = {{Espressif Systems}},
+ url = {https://github.com/espressif/esp-idf/blob/880a203ae603d08a94d06aa01e0d6761958e5e9e/examples/peripherals/usb/device/tusb_serial_device/main/tusb_serial_device_main.c},
+ urldate = {2026-10-27},
+ review = {source-code},
+ claim = {TinyUSB CDC initialization, receive callbacks and queued writes provide the public API basis for the snapshot transport},
+ note = {Example and installed esp_tinyusb 1.7.6 headers inspected; local implementation uses a bounded request queue and framed RAW8 protocol, not UVC; compilation does not prove USB throughput}
+}
+
+@misc{edmundBasicLensSelection,
+ title = {Basic Lens Selection},
+ author = {{Edmund Optics}},
+ url = {https://www.edmundoptics.com/knowledge-center/application-notes/imaging/basic-lens-selection/},
+ urldate = {2026-10-27},
+ review = {excerpt},
+ claim = {The thin-lens equation supports a first-order conjugate-distance estimate but does not qualify a compound imaging lens},
+ note = {Equations and stated limits for multi-element objectives reviewed. Local estimates use principal-plane distances, not mechanical clearance or verified working distance}
+}
+
+@misc{commonlandsCil829,
+ title = {CIL829 small 2.8 mm M8 lens},
+ author = {{Commonlands}},
+ url = {https://commonlands.com/products/3mm-m8-lens-cil829},
+ urldate = {2026-10-27},
+ review = {excerpt},
+ claim = {CIL829-F2.5-M08ANIR is an M8 x 0.35 no-filter variant; published EFL 2.8 mm, F-number 2.55, designed image circle 6.4 mm and M8 mass 1.4 g},
+ note = {Product table and variants reviewed. User subsequently supplied the mechanical drawing and STEP archive, recorded separately. No 940 nm close-focus MTF or 10-20 mm focus qualification established; candidate for bench evaluation only}
+}
+
+@misc{commonlandsCil829Drawing,
+ title = {CIL829-F2.5-M08ANIR small 2.8 mm M8 lens mechanical drawing, revision 2},
+ author = {{Commonlands LLC}},
+ year = {2024},
+ url = {https://docsend.com/view/t7pvpjeib84ujq39/d/pgbnbp8hxzu4apr7},
+ urldate = {2026-10-27},
+ review = {full-text},
+ claim = {Drawing specifies a 10 mm front diameter, M8 x 0.35 thread, 6.6 mm rear length, 3.1 mm rear-to-image distance, reference TTL 14.7 mm, and no filter},
+ note = {One-page user-supplied PDF visually inspected. Dated 2024-08-12, revision 2 updates the title block. Assumes 0.4 mm coverglass. This drawing does not establish close focus or spectral transmission at 940 nm}
+}
+
+@misc{commonlandsCil829Step,
+ title = {Supplier CIL829 M08ANIR STEP download},
+ author = {{Commonlands LLC}},
+ url = {https://docsend.com/view/t7pvpjeib84ujq39/d/862fegnuincc9tbi},
+ urldate = {2026-10-27},
+ review = {full-text},
+ claim = {The supplied archive contains valid lens geometry with a 10 mm front diameter and approximately 11.57 mm physical barrel length},
+ note = {User-supplied archive inspected in FreeCAD. Member filename says F3.0-M08ANIR; internal product and file header say F3.0-M08A650, dated 2023-04-18. Five valid solids and separate reference geometry; a 0.3 mm flat optical element is preserved without assigning it a filter function. Variant identity remains unresolved. Source hashes are in the optics review record}
+}
+
+@misc{espressifVideoUvc,
+ title = {ESP Video USB Video Class example},
+ author = {{Espressif Systems}},
+ url = {https://raw.githubusercontent.com/espressif/esp-video-components/master/esp_video/examples/uvc/README.md},
+ urldate = {2026-10-27},
+ review = {full-text},
+ claim = {ESP32-P4 example describes camera capture, JPEG/H264 encoding and USB video output},
+ note = {Example documentation reviewed; documented sensors differ from OV9281; dependency licensing and target performance not qualified}
+}
+
+@misc{pupilCore200Hz,
+ title = {200 Frames Per Second},
+ author = {{Pupil Labs}},
+ url = {https://pupil-labs.com/blog/200-frames-per-second},
+ urldate = {2026-10-27},
+ review = {excerpt},
+ claim = {Pupil eye camera provides global shutter at 400 x 400 120 fps or 192 x 192 200 fps},
+ note = {Product announcement reviewed; no component identity or circuit established}
+}
+
+@misc{ov9281DatasheetMirror,
+ title = {OV9281 CSP5 preliminary datasheet version 1.01},
+ author = {{OmniVision Technologies}},
+ url = {https://www.v-visiontech.com/web/userfiles/download/OV9281_CSP5_DS_1.01.pdf},
+ urldate = {2026-10-27},
+ review = {excerpt},
+ claim = {Front matter restricts redistribution; document is not openly licensed merely because publicly hosted},
+ note = {Secondary access through Vision Tech; front matter and mechanical/specification excerpts reviewed; no PDF vendored}
+}
+
+@misc{esp32P4Datasheet,
+ title = {ESP32-P4 series datasheet},
+ author = {{Espressif Systems}},
+ url = {https://documentation.espressif.com/esp32-p4_datasheet_en.html},
+ urldate = {2026-10-27},
+ review = {excerpt},
+ claim = {10 x 10 mm QFN104, in-package PSRAM, MIPI camera and USB interfaces},
+ note = {Overview and peripheral listings reviewed; exact order code and physical performance unqualified}
+}
+
+@misc{esp32P4HardwareGuide,
+ title = {ESP32-P4 schematic checklist},
+ author = {{Espressif Systems}},
+ url = {https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32p4/schematic-checklist-esp32p4.html},
+ urldate = {2026-10-27},
+ review = {excerpt},
+ claim = {External flash, crystal, DC-DC and passive circuitry required; revision-specific circuits for v3.0 and later},
+ note = {Overview, power, memory and revision differences reviewed; not a completed custom circuit audit}
+}
+
+@misc{espressifKicadLibrary,
+ title = {Official Espressif KiCad libraries},
+ author = {{Espressif Systems}},
+ url = {https://github.com/espressif/kicad-libraries},
+ urldate = {2026-10-27},
+ review = {excerpt},
+ claim = {Official ESP32-P4X symbol and ESP32-P4 footprint; CC-BY-SA-4.0 with design exception},
+ note = {Source-code inspection at dd76561812ab300351234ba6e0ec1295641796f0; selected assets preserved with license; local pins101/102 electrical-type correction recorded}
+}
+
+@misc{tiTlv62569,
+ title = {TLV62569 2-A synchronous buck converter datasheet},
+ author = {{Texas Instruments}},
+ url = {https://www.ti.com/lit/ds/symlink/tlv62569.pdf},
+ urldate = {2026-10-27},
+ review = {excerpt},
+ claim = {DBV and DRL pin mappings, 0.6 V feedback basis and 2.5-5.5 V input support power stages},
+ note = {Pin table, power-stage specifications and section 10 layout guidance reviewed. R04 groups input/output capacitors and inductors near regulators; ground returns, transient response, inductors and thermal performance remain unqualified. R11 reviewed DRL six-pin remap, 2.5 A typical peak limit, 900 microsecond soft start, inductor/capacitor selection and rendered DRL land drawing}
+}
+
+@misc{esp32P4PcbLayout,
+ title = {ESP32-P4 PCB layout design},
+ author = {{Espressif Systems}},
+ url = {https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32p4/pcb-layout-design-esp32p4.html},
+ urldate = {2026-10-28},
+ review = {excerpt},
+ claim = {Four-layer reference strategy, local decoupling, crystal separation, and USB/MIPI routing constraints guide R04 placement and R06 power and ground routing},
+ note = {Reviewed power, crystal, USB and MIPI sections, including layer-2 ground, layer-3 power and recommended power widths. R06 adds candidate planes and power copper; its 0.15 mm surface necks, supply topology and provisional stackups remain unqualified. USB 90 ohm and MIPI 100 ohm targets are constraints, not measured properties of trial copper Revisited 2026-10-28 for the interconnect audit: MIPI 100 ohm +/-10 percent, 10 mil intra-pair and 30 mil inter-pair length guidance; USB 90 ohm +/-10 percent; complete reference planes and ground-return vias. These are manufacturer layout recommendations, not measured performance.}
+}
+
+@misc{stUsblc6,
+ title = {USBLC6-2 very low capacitance ESD protection},
+ author = {{STMicroelectronics}},
+ url = {https://www.st.com/resource/en/datasheet/usblc6-2.pdf},
+ urldate = {2026-10-28},
+ review = {excerpt},
+ claim = {Pin mapping and USB 2.0 high-speed application support for draft data-line protection},
+ note = {Functional diagram and electrical/application specifications reviewed; board-level ESD not tested. Revisited functional pin mapping and USB high-speed application statement for the 2026-10-28 routing audit}
+}
+
+@misc{hiroseFh34Product,
+ title = {FH34SRJ-24S-0.5SH(99) product specifications},
+ author = {{Hirose Electric}},
+ url = {https://www.hirose.com/en/product/p/CL0580-1255-6-99},
+ urldate = {2026-10-27},
+ review = {excerpt},
+ claim = {R05 connector candidate has 24 contacts at 0.5 mm pitch, a 14 by 3.8 mm envelope, 1 mm height and top or bottom contact operation},
+ note = {Reviewed public dimensional and electrical specifications; listed MIPI capability does not qualify our assembled link. Stock and procurement were not verified}
+}
+
+@misc{hiroseFh34Drawing,
+ title = {FH34SRJ connector drawing EDC3-159714-05},
+ author = {{Hirose Electric}},
+ url = {https://www.hirose.com/en/product/p/CL0580-1255-6-99/documents?path=/api/v1/products/CL0580-1255-6-99/documents/drawing_2d/content?lang%3DEN},
+ urldate = {2026-10-27},
+ review = {excerpt},
+ claim = {R05 connector lands, signal stencil apertures, mounting tab locations and mating flex dimensions derive from the public drawing},
+ note = {Visually inspected sheets 1, 2 and 4 for geometry and pin orientation, sheets 5 and 6 for operation; sheet 3 packaging viewed incidentally. Local dimension transcription and nominal mating alignment are checked, but no physical connector or solder process is qualified. PDF retained only in ignored research output}
+}
+
+@misc{epsonSG210STF,
+ title = {SGxxxxCAN and SG-210STF crystal oscillator specifications},
+ author = {{Seiko Epson}},
+ url = {https://download.epsondevice.com/td/pdf/app/SG-210STF_en.pdf},
+ urldate = {2026-10-27},
+ review = {excerpt},
+ claim = {SG-210STF supports 24 MHz at 1.6-3.63 V; R09 uses the published pin assignment and recommended land pattern},
+ note = {Specification SGxxxxCAN E Ver3.0: ordering table, electrical supply range and page 23 package drawing reviewed. Page 23 visually inspected: 2.5 by 2.0 mm body, 1.1 by 0.9 mm lands at 1.7 by 1.3 mm pitch. Startup supply-rise requirement remains to be qualified}
+}
+
+@misc{kingbrightAP1608F3C,
+ title = {AP1608F3C infrared emitting diode},
+ author = {{Kingbright}},
+ url = {https://www.kingbrightusa.com/images/catalog/spec/AP1608F3C.pdf},
+ urldate = {2026-10-27},
+ review = {excerpt},
+ claim = {940 nm LED electrical ratings and 1608 package land pattern support the R09 illumination circuit},
+ note = {Revision 11A, 2024-11-14. Package and recommended lands visually inspected on page 1; optical and electrical tables reviewed. Optical output at the selected low current and eye exposure are not qualified}
+}
+
+@misc{nexperiaMMBT3904,
+ title = {MMBT3904 NPN switching transistor},
+ author = {{Nexperia}},
+ url = {https://assets.nexperia.com/documents/data-sheet/MMBT3904.pdf},
+ urldate = {2026-10-27},
+ review = {excerpt},
+ claim = {SOT23 pins 1 base, 2 emitter and 3 collector and saturation specifications support the R09 default-off LED switch},
+ note = {Pinning, package dimensions and table 7 saturation data reviewed. GPIO drive and low-current optical performance require measurement}
+}
+
+@misc{freerouting250,
+ title = {Freerouting v2.5.0 release},
+ author = {{Freerouting contributors}},
+ url = {https://github.com/freerouting/freerouting/releases/tag/v2.5.0},
+ urldate = {2026-10-27},
+ review = {excerpt},
+ claim = {Official local PCB autorouter release used for R09 routing trials},
+ note = {Release assets and SHA-256 digests checked; command-line documentation read. Native Windows CLI failed in serialization; standard Java release used locally with analytics disabled. Routing is subject to independent KiCad checks and does not establish signal integrity}
+}
+
+@misc{hiroseFh34Catalog,
+ title = {FH34 Series catalog},
+ author = {{Hirose Electric}},
+ year = {2025},
+ url = {https://www.hirose.com/en/product/series/FH34SRJ/documents?path=/api/v1/series/FH34SRJ/documents/product_series_catalog/content?lang%3DEN},
+ urldate = {2026-10-27},
+ review = {excerpt},
+ claim = {FH34 accepts a nominal 0.3 mm mating flex tip with 0.03 mm tolerance; that tip requirement does not prescribe the whole flex body thickness},
+ note = {Reviewed features and specification table on pages 2 through 4, including the reinforced mating tip and MIPI claim. No signal integrity measurement or vendor stackup qualification performed}
+}
+
+@misc{freecad114AutoSaver,
+  title = {FreeCAD 1.1.4 AutoSaver implementation},
+  author = {{FreeCAD contributors}},
+  url = {https://raw.githubusercontent.com/FreeCAD/FreeCAD/1.1.4/src/Gui/AutoSaver.cpp},
+  urldate = {2026-10-28},
+  review = {source-code},
+  claim = {Automatic saving writes transient recovery files rather than saving the working document path.},
+  note = {Reviewed saveDocument and timerEvent for the save-and-close policy.}
+}
+
+@misc{freecad114DocumentPreferences,
+  title = {FreeCAD 1.1.4 Document preference implementation},
+  author = {{FreeCAD contributors}},
+  url = {https://raw.githubusercontent.com/FreeCAD/FreeCAD/1.1.4/src/Gui/PreferencePages/DlgSettingsDocumentImp.cpp},
+  urldate = {2026-10-28},
+  review = {source-code},
+  claim = {Applying Document preferences updates the live recovery timer using a minute interval.},
+  note = {Reviewed saveSettings and loadSettings.}
+}
+
+@misc{freecad114DocumentPreferencesUi,
+  title = {FreeCAD 1.1.4 Document preference controls},
+  author = {{FreeCAD contributors}},
+  url = {https://raw.githubusercontent.com/FreeCAD/FreeCAD/1.1.4/src/Gui/PreferencePages/DlgSettingsDocument.ui},
+  urldate = {2026-10-28},
+  review = {source-code},
+  claim = {Document preferences use AutoSaveEnabled, AutoSaveTimeout in minutes, and RecoveryEnabled.},
+  note = {Reviewed recovery controls, parameter names, and preference paths.}
+}
+
+@misc{freecad114GuiPython,
+  title = {FreeCAD 1.1.4 GUI Python interface},
+  author = {{FreeCAD contributors}},
+  url = {https://raw.githubusercontent.com/FreeCAD/FreeCAD/1.1.4/src/Gui/ApplicationPy.cpp},
+  urldate = {2026-10-28},
+  review = {source-code},
+  claim = {showPreferencesByName opens a named preference page through the in-process Python API.},
+  note = {Reviewed exported preference API signatures for the recovery configuration macro.}
+}
+
+@misc{tiUsb20Layout2013,
+  title = {USB 2.0 Board Design and Layout Guidelines, SPRAAR7A},
+  author = {{Texas Instruments}},
+  year = {2013},
+  url = {https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/171/USB-2.0-Board-Design-and-Layout-Guidelines.pdf},
+  urldate = {2026-10-28},
+  review = {excerpt},
+  claim = {High-speed USB cable construction uses a shielded twisted pair with nominal 90 ohm differential impedance and 15 percent tolerance; continuous reference planes and short paths support board layout review},
+  note = {Reviewed sections 2.1 and 2.2 including cable guidance in section 2.2.7. TI-authored January 2013 revision hosted on the TI community site. Used for cable guidance; device-specific P4 board constraints take precedence. Not a USB compliance certificate or qualification of the four-contact JST transition}
+}
+
+@misc{pcbwayRigidStackups2026,
+  title = {Multi-layer laminated structure},
+  author = {{PCBWay}},
+  url = {https://www.pcbway.com/multi-layer-laminated-structure.html},
+  urldate = {2026-10-28},
+  review = {excerpt},
+  claim = {Published thin four- and six-layer through-hole constructions provide dielectric thickness and material inputs for R10},
+  note = {Reviewed 0.6 mm four-layer entries 35 and 36 and six-layer entries 21 to 23. Entry 21 is the selected design basis; selection is not a supplier-approved production order. Page retrieved as HTML because the web reader exceeded its size limit}
+}
+
+@misc{pcbwayFlexStackups2026,
+  title = {Stack-up for FPC},
+  author = {{PCBWay}},
+  url = {https://www.pcbway.com/pcb_prototype/Stack_up_for_FPC.html},
+  urldate = {2026-10-28},
+  review = {excerpt},
+  claim = {Two-layer polyimide constructions specify core, adhesive, coverlay and raw versus finished copper thickness},
+  note = {Reviewed thin and two-layer constructions, especially the nominal 0.15 mm option with 25 micrometre PI, 20 micrometre adhesive on each core face and 24 micrometre finished copper. The table total uses raw copper; R10 records the finished-copper sum separately}
+}
+
+@misc{pcbwayAdvancedCapabilities2026,
+  title = {Advanced High-quality PCB Capabilities},
+  author = {{PCBWay}},
+  url = {https://www.pcbway.com/advanced-pcb-capabilities.html},
+  urldate = {2026-10-28},
+  review = {excerpt},
+  claim = {Published advanced capability includes 3 mil retained annular rings, 0.15 mm mechanical finished holes and controlled impedance},
+  note = {Reviewed technical roadmap rows for thickness, trace spacing, holes, annular ring and impedance. The roadmap has historical column dates; this is a public process basis, not current order acceptance. R10 retains 0.4/0.2 mm vias and 0.1 mm minimum trace and clearance}
+}
+
+@misc{pcbwayFlexCapabilities2026,
+  title = {Flexible PCBs},
+  author = {{PCBWay}},
+  url = {https://www.pcbway.com/FPC-Rigid-Flex-PCB/Flex-PCB.html},
+  urldate = {2026-10-28},
+  review = {excerpt},
+  claim = {Published flex fabrication tables supply thickness tolerances and a seven-percent impedance-control capability above 50 ohms},
+  note = {Reviewed technology roadmap and process table. Connector-tip thickness is a separate assembly requirement; published capability is not a camera-cable qualification}
+}
+
+@misc{jlcImpedanceStackups2026,
+  title = {Controlled Impedance PCB Layer Stackup},
+  author = {{JLCPCB}},
+  url = {https://jlcpcb.com/impedance},
+  urldate = {2026-10-28},
+  review = {excerpt},
+  claim = {Solder-mask dielectric constant 3.8 is a published example used as an explicitly assumed sensitivity-model input},
+  note = {Reviewed initial material and mask table and four-layer options. R10 does not attribute this mask value to PCBWay or treat the two fabricators' constructions as interchangeable}
+}
+
+@misc{cdaCopperDensity2026,
+ title = {C11000 alloy physical properties},
+ author = {{Copper Development Association}},
+ url = {https://alloys.copper.org/alloy/C11000},
+ urldate = {2026-10-28},
+ review = {excerpt},
+ claim = {Specific gravity 8.91 supports the nominal copper mass calculation.},
+ note = {Search-index excerpt of the primary alloy table reviewed 2026-10-28; direct page fetch returned 403. Use a wider density interval and explicit geometry tolerances; PCB foil alloy not qualified.}
+}
+
+@misc{dupontKaptonDensity2026,
+ title = {Kapton HN physical properties data sheet},
+ author = {{DuPont}},
+ url = {https://www.dupont.com/content/dam/electronics/amer/us/en/electronics/public/documents/en/EI-10206-Kapton-HN-Data-Sheet.pdf},
+ urldate = {2026-10-28},
+ review = {excerpt},
+ claim = {Kapton HN nominal density is 1.42 g per cubic centimetre.},
+ note = {Manufacturer PDF search-index excerpt reviewed 2026-10-28; direct fetch returned 404. Generic polyimide density proxy only, not selection of this laminate or adhesive.}
+}
+
+@misc{civaFr4Density2026,
+ title = {FR-4 density},
+ author = {{Civa}},
+ url = {https://www.civa.no/en/Products/Laminate/FR-4/Density/},
+ urldate = {2026-10-28},
+ review = {excerpt},
+ claim = {PCB producer lists FR-4 density 1.7 to 1.9 g per cubic centimetre.},
+ note = {Density section reviewed 2026-10-28. Generic laminate range, not a certified density for the proposed stackup.}
+}
+
+@misc{pcbwayAssemblyCapabilities2026,
+ title = {PCB assembly capabilities},
+ author = {{PCBWay}},
+ url = {https://www.pcbway.com/pcb_prototype/PCB_assembly_Capabilities.html},
+ urldate = {2026-10-28},
+ review = {excerpt},
+ claim = {Manufacturer advertises assembly of 01005, 0201 and 0402 passive packages.},
+ note = {Capability table reviewed 2026-10-28. No assembly quote, yield guarantee or package-specific process approval obtained.}
+}
+
+@misc{wurthSlimFlex0302026,
+ title = {SLIM.flex FLEX6 6F 030 12 2V13 stackup},
+ author = {{Wuerth Elektronik}},
+ url = {https://www.we-online.com/files/pdf1/en_flex6_6f_030_12_2v13.pdf},
+ urldate = {2026-10-28},
+ review = {excerpt},
+ claim = {Published construction has a 0.303 mm six-layer component region and optional 0.202 mm four-layer or 0.166 mm two-layer flex regions.},
+ note = {All three pages extracted and reviewed 2026-10-28. Outer copper 25 um, inner copper 18 um; standard uses microvias only, no PTHs; adding PTHs changes outer copper to 35 um. Construction template is not project-specific impedance approval or a quotation.}
+}
+
+@misc{pcbwayHdi2026,
+ title = {HDI PCB manufacturing},
+ author = {{PCBWay}},
+ url = {https://www.pcbway.com/hdi-pcb.html},
+ urldate = {2026-10-28},
+ review = {excerpt},
+ claim = {HDI and microvias are available fabrication processes for dense layouts.},
+ note = {Manufacturer description excerpt reviewed 2026-10-28; no claim that the hypothetical 0.25 mm candidate is approved or priced.}
+}
+
+@misc{wurthSlimRules2023,
+ title = {Design Rules SLIM.flex xF and (xF)PTH},
+ author = {{Wuerth Elektronik}},
+ year = {2023},
+ url = {https://www.we-online.com/files/pdf1/design-rules-slimflex-cbt-en.pdf},
+ urldate = {2026-10-28},
+ review = {full-text},
+ claim = {Standard anylayer stacked and staggered microvia construction, feature limits, flex-to-install bending guidance, drying openings and stiffener construction.},
+ note = {All four pages reviewed as extracted text; document dated 12 July 2023. R11 uses standard microvia limits and separately identifies design choices and fabricator qualification gaps.}
+}
+
+@misc{winbondW25Q32JvK2026,
+ title = {W25Q32JV serial flash datasheet, revision K},
+ author = {{Winbond}},
+ url = {https://www.winbond.com/resource-files/W25Q32JV%20RevK%2004272026%20Plus.pdf},
+ urldate = {2026-10-28},
+ review = {excerpt},
+ claim = {3.3 V 4 MB flash, USON 4 by 3 mm package, pinout and grounded mechanical lands},
+ note = {Downloaded public manufacturer PDF with ordinary user-agent; reviewed pages 5-6, 60-67, 74 and 79-81. Package drawing rendered and inspected; PDF remains in generated cache, not vendored.}
+}
+
+@misc{tiTlv733R11,
+ title = {TLV733P low dropout regulator datasheet, revision C},
+ author = {{Texas Instruments}},
+ url = {https://www.ti.com/lit/ds/symlink/tlv733p.pdf},
+ urldate = {2026-10-28},
+ review = {excerpt},
+ claim = {300 mA 1 by 1 mm DQN regulator, remapped pins and grounded center thermal land},
+ note = {Reviewed pins, operating limits, thermal table, capacitor stability, layout, DQN package and orderable variants; rendered package land pattern. JEDEC thermal numbers are not thin-board qualification.}
+}
+
+@misc{nexperiaPmzb200R11,
+ title = {PMZB200UNE 30 V N-channel MOSFET datasheet},
+ author = {{Nexperia}},
+ url = {https://assets.nexperia.com/documents/data-sheet/PMZB200UNE.pdf},
+ urldate = {2026-10-28},
+ review = {excerpt},
+ claim = {DFN1006B pin mapping and operation at 1.5 V and 1.8 V gate drive support compact SCCB translation and reset},
+ note = {Manufacturer PDF reviewed through public distributor mirror https://xonstorage.z8.web.core.windows.net/pdf/nexperia_pmzb200uneyl_apr22_xonlink.pdf after manufacturer endpoint timeout. Pin table, electrical characteristics and page 10 land drawing inspected. PMZB200UNEYL order suffix retained.}
+}
+
+@misc{murataDfe252012R11,
+ title = {DFE252012F metal alloy power inductors},
+ author = {{Murata Manufacturing}},
+ url = {https://www.murata.com/~/media/webrenewal/products/inductor/chip/tokoproducts/wirewoundmetalalloychiptype/m_dfe252012f.ashx},
+ urldate = {2026-10-28},
+ review = {full-text},
+ claim = {2.2 uH part ratings, body dimensions and recommended land pattern},
+ note = {Single-page manufacturer catalog reviewed; 30 percent inductance-loss and 40 C temperature-rise criteria are distinct.}
+}
+
+@misc{murataDfeMass2025,
+ title = {DFE252012F-2R2M product search data sheet},
+ author = {{Murata Manufacturing}},
+ url = {https://static6.arrow.com/aropdfconversion/310dfb095cfaed8b1aea7719e99b497f7a8ab6ba/dfe252012f2r2m.pdf},
+ urldate = {2026-10-28},
+ review = {excerpt},
+ claim = {Manufacturer typical component mass of 0.0331 g and 2.2 uH ratings},
+ note = {Secondary access through Arrow; manufacturer document dated 2025-08-22, pages 1-2 reviewed. This is typical mass, not a measured production tolerance.}
+}
+
+@misc{ecs1637b2R11,
+ title = {ECX-1637B2 crystal specifications},
+ author = {{ECS Inc.}},
+ url = {https://ecsxtal.com/store/pdf/ECX-1637B2.pdf},
+ urldate = {2026-10-28},
+ review = {full-text},
+ claim = {2 by 1.6 mm crystal geometry, 40 MHz ESR, pin mapping and load-capacitance ordering code},
+ note = {Both pages extracted; selected option also cross-checked against manufacturer product page. Current PDF specifies 200 microwatt drive limit; older indexed extract said 100 microwatts, so use the stricter 100 microwatt prototype acceptance target.}
+}
+
+@misc{ecs400R11,
+ title = {ECS-400-10-37B2-CKM-TR product specifications},
+ author = {{ECS Inc.}},
+ url = {https://ecsxtal.com/products/crystals/surface-mount-crystals/ecs-400-10-37b2-ckm-tr/},
+ urldate = {2026-10-28},
+ review = {excerpt},
+ claim = {40 MHz, 10 pF load and 10 ppm tolerance of selected order code},
+ note = {Product-details table reviewed; minus 20 to plus 70 C selected operating range.}
+}
+
+@misc{tdkMlp2012R11,
+ title = {MLP2012 inductors for power circuits},
+ author = {{TDK}},
+ url = {https://product.tdk.com/en/system/files/dam/doc/product/inductor/inductor/smd/catalog/inductor_commercial_power_mlp2012_en.pdf},
+ urldate = {2026-10-28},
+ review = {excerpt},
+ claim = {MLP2012S3R3MT0S1 completes the existing Antmicro bias-inductor part code},
+ note = {Manufacturer PDF page 2 re-reviewed 2026-10-29: 3.3 uH, 0.19 ohm DCR with plus/minus 30 percent tolerance and 0.9 A rating. The maximum room-temperature DCR is therefore 0.247 ohm; the R11 power screen was corrected to include this tolerance. Preserves the existing reference topology.}
+}
+
+@misc{murataMlccList2025,
+ title = {Murata multilayer ceramic capacitor model part-number list},
+ author = {{Murata Manufacturing}},
+ url = {https://www.murata.com/-/media/webrenewal/tool/library/common-pdf/static-model/component-list-s-mlcc-2506.ashx?cvid=20250805040438000000&la=ko-kr},
+ urldate = {2026-10-28},
+ review = {excerpt},
+ claim = {Selected GRM capacitor family, nominal values, voltage ratings and package dimensions},
+ note = {Relevant 100 nF, 1 uF and 4.7 uF rows inspected. Model frequency range does not establish effective capacitance under DC bias or production tolerance.}
+}
+
+@misc{murata22u10v2025,
+ title = {GRM21BR61A226ME44 reference sheet},
+ author = {{Murata Manufacturing}},
+ url = {https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR61A226ME44-01A.pdf},
+ urldate = {2026-10-28},
+ review = {excerpt},
+ claim = {0805 22 uF 10 V X5R capacitor selection and 1.45 mm maximum height},
+ note = {Indexed manufacturer reference sheet reviewed; 20 percent capacitance tolerance. Bias and aging qualification remains explicit.}
+}
+
+@misc{yageoRc0402R11,
+ title = {RC0402FR-074K02L component specification},
+ author = {{Yageo}},
+ url = {https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-074K02L},
+ urldate = {2026-10-28},
+ review = {full-text},
+ claim = {0402 resistor dimensions and selected 4.02 kohm 1 percent MIPI reference resistor},
+ note = {Single-page manufacturer specification reviewed. Other RC values are specified in the purchasing table; no claim of independent incoming inspection.}
+}
+
+@misc{leopardOv9281Electrical2026,
+ title = {LI-OV9281-MIPI specification, revision 1.2},
+ author = {{Leopard Imaging}},
+ year = {2018},
+ url = {https://leopardimaging.com/wp-content/uploads/pdf/LI-OV9281-MIPI_SPEC.pdf},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {Published sensor supply ranges and typical rail currents support a conditional R11 DC-drop screen.},
+ note = {Reviewed DC-characteristics table on page 7: core 1.14 to 1.26 V; analog 2.6 to 3.0 V; IO 1.7 to 3.0 V; typical core/analog/IO currents 52/24/2.5 mA at 1280x800 at 120 fps. These are typical operating values, not guaranteed maxima. No module pinout or optics was adopted.}
+}
+
+@misc{espVideoCsiAdapterPinned2026,
+ title = {ESP Video CSI device adapter at pinned commit 789cde3},
+ author = {{Espressif Systems}},
+ url = {https://github.com/espressif/esp-video-components/blob/789cde3bd09296a13d4e70afe011366b60ac772c/esp_video/src/device/esp_video_csi_device.c},
+ urldate = {2026-10-29},
+ review = {source-code},
+ claim = {The higher-level CSI adapter divides mipi_clk by one million to populate lane_bit_rate_mbps.},
+ note = {Reviewed the pinned local source at line 188 together with the OV9281 mode metadata and mode-table header. For the selected OV9281 metadata this produces 400 Mbps, whereas the table header states 800 Mbps. The R11 direct receiver retains the explicitly configured 800 Mbps choice pending physical timing verification; this source review does not demonstrate camera capture.}
+}
+
+@misc{r11SupplySensorDk,
+ author = {{DigiKey}},
+ title = {OV09281-H64A supplier listing},
+ url = {https://www.digikey.com/en/products/detail/omnivision-technologies-inc/OV09281-H64A/5800198},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {Supplier-listed availability and indicative USD pricing for the R11 purchasing review.},
+ note = {Product-page or indexed stock and price fields reviewed. Indexed counts can differ between captures; this is not reserved inventory or a delivery commitment. LCSC also reports not available. Manufacturer lifecycle not independently confirmed.}
+}
+
+@misc{r11SupplyP4,
+ author = {{Mouser}},
+ title = {ESP32-P4NRW16X supplier listing},
+ url = {https://www.mouser.com/en/ProductDetail/Espressif-Systems/ESP32-P4NRW16X?qs=bDnubaabCY8EDqwByBfPug%3D%3D},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {Supplier-listed availability and indicative USD pricing for the R11 purchasing review.},
+ note = {Product-page or indexed stock and price fields reviewed. Indexed counts can differ between captures; this is not reserved inventory or a delivery commitment. Indexed page lists 1993 on order expected 2026-11-03, not a delivery commitment. Direct fetch 403.}
+}
+
+@misc{r11SupplyFlash,
+ author = {{DigiKey}},
+ title = {W25Q32JVUUIQ TR supplier listing},
+ url = {https://www.digikey.com/en/products/detail/winbond-electronics/W25Q32JVUUIQ-TR/17291060},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {Supplier-listed availability and indicative USD pricing for the R11 purchasing review.},
+ note = {Product-page or indexed stock and price fields reviewed. Indexed counts can differ between captures; this is not reserved inventory or a delivery commitment. Exact USON ordering code needs an orderable source or qualified replacement before purchasing.}
+}
+
+@misc{r11SupplyBuck,
+ author = {{DigiKey}},
+ title = {TLV62569DRLR supplier listing},
+ url = {https://www.digikey.com/en/products/detail/texas-instruments/TLV62569DRLR/7805188},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {Supplier-listed availability and indicative USD pricing for the R11 purchasing review.},
+ note = {Product-page or indexed stock and price fields reviewed. Indexed counts can differ between captures; this is not reserved inventory or a delivery commitment. Listed receipt 2026-11-23 is not guaranteed. DRLT small-reel option is a purchasing candidate, not substituted in native BOM.}
+}
+
+@misc{r11SupplyLdo18,
+ author = {{DigiKey}},
+ title = {TLV73318PDQNR supplier listing},
+ url = {https://www.digikey.com/en/products/detail/texas-instruments/TLV73318PDQNR/5023922},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {Supplier-listed availability and indicative USD pricing for the R11 purchasing review.},
+ note = {Product-page or indexed stock and price fields reviewed. Indexed counts can differ between captures; this is not reserved inventory or a delivery commitment. Listed receipt 2026-12-02, not guaranteed.}
+}
+
+@misc{r11SupplyLdo12,
+ author = {{DigiKey}},
+ title = {TLV73312PDQNR supplier listing},
+ url = {https://www.digikey.com/en/products/detail/texas-instruments/TLV73312PDQNR/5022372},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {Supplier-listed availability and indicative USD pricing for the R11 purchasing review.},
+ note = {Product-page or indexed stock and price fields reviewed. Indexed counts can differ between captures; this is not reserved inventory or a delivery commitment. Exact product page shows zero; a category result showed 5820. Do not rely on the category count.}
+}
+
+@misc{r11SupplyLdo28,
+ author = {{DigiKey}},
+ title = {TLV73328PDQNR supplier listing},
+ url = {https://www.digikey.com/en/products/detail/texas-instruments/TLV73328PDQNR/5308307},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {Supplier-listed availability and indicative USD pricing for the R11 purchasing review.},
+ note = {Product-page or indexed stock and price fields reviewed. Indexed counts can differ between captures; this is not reserved inventory or a delivery commitment. Indexed listing, not reserved inventory.}
+}
+
+@misc{r11SupplyFet,
+ author = {{DigiKey}},
+ title = {PMZB200UNEYL supplier listing},
+ url = {https://www.digikey.com/en/products/detail/nexperia-usa-inc/PMZB200UNEYL/5395629},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {Supplier-listed availability and indicative USD pricing for the R11 purchasing review.},
+ note = {Product-page or indexed stock and price fields reviewed. Indexed counts can differ between captures; this is not reserved inventory or a delivery commitment. Listed receipt 2027-10-18 is not a usable short-term commitment; alternative sourcing is needed.}
+}
+
+@misc{r11SupplyEsd,
+ author = {{DigiKey}},
+ title = {USBLC6-2P6 supplier listing},
+ url = {https://www.digikey.com/en/products/detail/stmicroelectronics/USBLC6-2P6/1007464},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {Supplier-listed availability and indicative USD pricing for the R11 purchasing review.},
+ note = {Product-page or indexed stock and price fields reviewed. Indexed counts can differ between captures; this is not reserved inventory or a delivery commitment. STMicroelectronics part; same-number marketplace parts from other manufacturers are not accepted substitutes.}
+}
+
+@misc{r11SupplyLed,
+ author = {{DigiKey}},
+ title = {AP1608F3C supplier listing},
+ url = {https://www.digikey.com/en/products/detail/kingbright/AP1608F3C/25807456},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {Supplier-listed availability and indicative USD pricing for the R11 purchasing review.},
+ note = {Product-page or indexed stock and price fields reviewed. Indexed counts can differ between captures; this is not reserved inventory or a delivery commitment. Cut-tape listing; another packaging page lists 2091.}
+}
+
+@misc{r11SupplyJst,
+ author = {{DigiKey}},
+ title = {SM04B-SRSS-TB(LF)(SN) supplier listing},
+ url = {https://www.digikey.com/en/products/detail/jst-sales-america-inc/SM04B-SRSS-TB-LF-SN/455-1804-1-ND/926875},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {Supplier-listed availability and indicative USD pricing for the R11 purchasing review.},
+ note = {Product-page or indexed stock and price fields reviewed. Indexed counts can differ between captures; this is not reserved inventory or a delivery commitment. Board connector only; external tether excluded.}
+}
+
+@misc{r11SupplyBuckInductor,
+ author = {{DigiKey}},
+ title = {DFE252012F-2R2M=P2 supplier listing},
+ url = {https://www.digikey.com/en/products/detail/murata-electronics/DFE252012F-2R2M-P2/5812767},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {Supplier-listed availability and indicative USD pricing for the R11 purchasing review.},
+ note = {Product-page or indexed stock and price fields reviewed. Indexed counts can differ between captures; this is not reserved inventory or a delivery commitment. }
+}
+
+@misc{r11SupplyFilterInductor,
+ author = {{DigiKey}},
+ title = {MLP2012S3R3MT0S1 supplier listing},
+ url = {https://www.digikey.com/en/products/detail/tdk/MLP2012S3R3MT0S1/2465124},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {Supplier-listed availability and indicative USD pricing for the R11 purchasing review.},
+ note = {Product-page or indexed stock and price fields reviewed. Indexed counts can differ between captures; this is not reserved inventory or a delivery commitment. }
+}
+
+@misc{r11SupplyCrystal,
+ author = {{DigiKey}},
+ title = {ECS-400-10-37B2-CKM-TR supplier listing},
+ url = {https://www.digikey.com/en/products/detail/ecs-inc/ECS-400-10-37B2-CKM-TR/14548910},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {Supplier-listed availability and indicative USD pricing for the R11 purchasing review.},
+ note = {Product-page or indexed stock and price fields reviewed. Indexed counts can differ between captures; this is not reserved inventory or a delivery commitment. }
+}
+
+@misc{r11SupplyOscillator,
+ author = {{LCSC}},
+ title = {X1G004171003100 supplier listing},
+ url = {https://www.lcsc.com/product-detail/C22454141.html},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {Supplier-listed availability and indicative USD pricing for the R11 purchasing review.},
+ note = {Product-page or indexed stock and price fields reviewed. Indexed counts can differ between captures; this is not reserved inventory or a delivery commitment. Reference price only; exact stocked clock source still required.}
+}
+
+@misc{r11SupplyFlashLcsc,
+ author = {{LCSC}},
+ title = {W25Q32JVUUIQ TR supplier listing},
+ url = {https://www.lcsc.com/product-image/C2999380.html},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {Supplier-listed availability and indicative USD pricing for the R11 purchasing review.},
+ note = {Product-page or indexed stock and price fields reviewed. Indexed counts can differ between captures; this is not reserved inventory or a delivery commitment. Supplier labels base MPN W25Q32JVUUIQ without TR; exact same USON device, but packaging/traceability and lifecycle require checking.}
+}
+
+@misc{r11SupplyCap1,
+ author = {{DigiKey}},
+ title = {GRM188R61A475KE15D supplier listing},
+ url = {https://www.digikey.com/en/products/detail/murata-electronics/GRM188R61A475KE15D/5027562},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {Supplier-listed availability and indicative USD pricing for the R11 purchasing review.},
+ note = {Product-page or indexed stock and price fields reviewed. Indexed counts can differ between captures; this is not reserved inventory or a delivery commitment. Suggested GRM188R61A475KAAJD is not an approved substitute; DC-bias/case checks required.}
+}
+
+@misc{r11SupplyCap2,
+ author = {{DigiKey}},
+ title = {GRM188R71C105KA12D supplier listing},
+ url = {https://www.digikey.com/en/products/detail/murata-electronics/GRM188R71C105KA12D/965914},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {Supplier-listed availability and indicative USD pricing for the R11 purchasing review.},
+ note = {Product-page or indexed stock and price fields reviewed. Indexed counts can differ between captures; this is not reserved inventory or a delivery commitment. Suggested C1608X7R1C105K080AC is not an approved substitute; DC-bias/case checks required.}
+}
+
+@misc{r11SupplyCap3,
+ author = {{DigiKey}},
+ title = {GRM155R71C104KA88D supplier listing},
+ url = {https://www.digikey.com/en/products/detail/murata-electronics/GRM155R71C104KA88D/675947},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {Supplier-listed availability and indicative USD pricing for the R11 purchasing review.},
+ note = {Product-page or indexed stock and price fields reviewed. Indexed counts can differ between captures; this is not reserved inventory or a delivery commitment. Listed incoming January 2027, not a commitment.}
+}
+
+@misc{r11SupplyCap4,
+ author = {{DigiKey}},
+ title = {GRM21BR61A226ME44L supplier listing},
+ url = {https://www.digikey.com/en/products/detail/murata-electronics/GRM21BR61A226ME44L/4905527},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {Supplier-listed availability and indicative USD pricing for the R11 purchasing review.},
+ note = {Product-page or indexed stock and price fields reviewed. Indexed counts can differ between captures; this is not reserved inventory or a delivery commitment. Listed incoming January 2027, not a commitment.}
+}
+
+@misc{r11SupplyCap5,
+ author = {{DigiKey}},
+ title = {GRM1555C1H160JA01D supplier listing},
+ url = {https://www.digikey.com/en/products/detail/murata-electronics/GRM1555C1H160JA01D/3693833},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {Supplier-listed availability and indicative USD pricing for the R11 purchasing review.},
+ note = {Product-page or indexed stock and price fields reviewed. Indexed counts can differ between captures; this is not reserved inventory or a delivery commitment. Indexed four months ago; live stock and lifecycle must be rechecked.}
+}
+
+@misc{r11SupplyCap6,
+ author = {{DigiKey}},
+ title = {GRM1555C1H220JA01D supplier listing},
+ url = {https://www.digikey.com/en/products/detail/murata-electronics/GRM1555C1H220JA01D/3175200},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {Supplier-listed availability and indicative USD pricing for the R11 purchasing review.},
+ note = {Product-page or indexed stock and price fields reviewed. Indexed counts can differ between captures; this is not reserved inventory or a delivery commitment. Indexed counts vary; not reserved.}
+}
+
+@misc{r11SupplyCap7,
+ author = {{DigiKey}},
+ title = {GRM155R71C103KA01D supplier listing},
+ url = {https://www.digikey.com/en/products/detail/murata-electronics/GRM155R71C103KA01D/587926},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {Supplier-listed availability and indicative USD pricing for the R11 purchasing review.},
+ note = {Product-page or indexed stock and price fields reviewed. Indexed counts can differ between captures; this is not reserved inventory or a delivery commitment. }
+}
+
+@misc{r11SupplyR0,
+ author = {{DigiKey}},
+ title = {RC0402JR-070RL supplier listing},
+ url = {https://www.digikey.com/en/products/detail/yageo/RC0402JR-070RL/726406},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {Supplier-listed availability and indicative USD pricing for the R11 purchasing review.},
+ note = {Product-page or indexed stock and price fields reviewed. Indexed counts can differ between captures; this is not reserved inventory or a delivery commitment. }
+}
+
+@misc{r11SupplyRa0,
+ author = {{DigiKey}},
+ title = {RC0402FR-0710KL supplier listing},
+ url = {https://www.digikey.com/en/products/detail/yageo/RC0402FR-0710KL/729470},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {Supplier-listed availability and indicative USD pricing for the R11 purchasing review.},
+ note = {Product-page or indexed stock and price fields reviewed. Indexed counts can differ between captures; this is not reserved inventory or a delivery commitment. }
+}
+
+@misc{r11SupplyRa1,
+ author = {{DigiKey}},
+ title = {RC0402FR-07499KL supplier listing},
+ url = {https://www.digikey.com/en/products/detail/yageo/RC0402FR-07499KL/726622},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {Supplier-listed availability and indicative USD pricing for the R11 purchasing review.},
+ note = {Product-page or indexed stock and price fields reviewed. Indexed counts can differ between captures; this is not reserved inventory or a delivery commitment. }
+}
+
+@misc{r11SupplyRa2,
+ author = {{DigiKey}},
+ title = {RC0402FR-07453KL supplier listing},
+ url = {https://www.digikey.com/en/products/detail/yageo/RC0402FR-07453KL/5281024},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {Supplier-listed availability and indicative USD pricing for the R11 purchasing review.},
+ note = {Product-page or indexed stock and price fields reviewed. Indexed counts can differ between captures; this is not reserved inventory or a delivery commitment. }
+}
+
+@misc{r11SupplyRa3,
+ author = {{DigiKey}},
+ title = {RC0402FR-07100KL supplier listing},
+ url = {https://www.digikey.com/en/products/detail/yageo/RC0402FR-07100KL/729473},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {Supplier-listed availability and indicative USD pricing for the R11 purchasing review.},
+ note = {Product-page or indexed stock and price fields reviewed. Indexed counts can differ between captures; this is not reserved inventory or a delivery commitment. }
+}
+
+@misc{r11SupplyRb0,
+ author = {{DigiKey}},
+ title = {RC0402FR-074K02L supplier listing},
+ url = {https://www.digikey.com/en/products/detail/yageo/RC0402FR-074K02L/2827594},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {Supplier-listed availability and indicative USD pricing for the R11 purchasing review.},
+ note = {Product-page or indexed stock and price fields reviewed. Indexed counts can differ between captures; this is not reserved inventory or a delivery commitment. }
+}
+
+@misc{r11SupplyRb1,
+ author = {{DigiKey}},
+ title = {RC0402FR-074K7L supplier listing},
+ url = {https://www.digikey.com/en/products/detail/yageo/RC0402FR-074K7L/311-4.7KLRCT-ND/2827881},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {Supplier-listed availability and indicative USD pricing for the R11 purchasing review.},
+ note = {Product-page or indexed stock and price fields reviewed. Indexed counts can differ between captures; this is not reserved inventory or a delivery commitment. Newest indexed listing reports stock; an older URL reports backorder. Live confirmation required.}
+}
+
+@misc{r11SupplyRb2,
+ author = {{DigiKey}},
+ title = {RC0402FR-071KL supplier listing},
+ url = {https://www.digikey.com/en/products/detail/yageo/RC0402FR-071KL/726513},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {Supplier-listed availability and indicative USD pricing for the R11 purchasing review.},
+ note = {Product-page or indexed stock and price fields reviewed. Indexed counts can differ between captures; this is not reserved inventory or a delivery commitment. }
+}
+
+@misc{r11SupplyRb3,
+ author = {{DigiKey}},
+ title = {RC0402FR-072K2L supplier listing},
+ url = {https://www.digikey.com/en/products/detail/yageo/RC0402FR-072K2L/729500},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {Supplier-listed availability and indicative USD pricing for the R11 purchasing review.},
+ note = {Product-page or indexed stock and price fields reviewed. Indexed counts can differ between captures; this is not reserved inventory or a delivery commitment. }
+}
+
+@misc{ti953A01,
+ title = {DS90UB953-Q1 datasheet Rev E},
+ author = {{Texas Instruments}},
+ url = {https://www.ti.com/lit/ds/symlink/ds90ub953-q1.pdf},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {CSI input 80-832 Mbps per lane, 1.8 V supply, 5 x 5 mm package, cable transport and remote control},
+ note = {A01 reviewed feature and interface excerpts. E01 additionally reviewed pin table, internal regulator bypass, LPF1 return to VDDPLL, straps, coupling, PDB timing and package land-pattern excerpts; implementation and hardware verification remain separate.}
+}
+
+@misc{ti954A01,
+ title = {DS90UB954-Q1 datasheet Rev C},
+ author = {{Texas Instruments}},
+ url = {https://www.ti.com/lit/ds/symlink/ds90ub954-q1.pdf},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {CSI packet data-type forwarding with DS90UB953, selectable output rates, STP support and 7 x 7 mm package},
+ note = {A01 reviewed features and sections 7.4.17-7.4.21. E01 additionally reviewed pin table, internal LDO option, MODE and IDX straps, reference clock, supply sequence and package land-pattern excerpts; RAW8 passthrough is distinct from DVP RAW modes.}
+}
+
+@misc{ti953SupplyA01,
+ title = {DS90UB953-Q1 product and ordering information},
+ author = {{Texas Instruments}},
+ url = {https://www.ti.com/product/DS90UB953-Q1},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {Active listing and 0.28 W typical serializer consumption},
+ note = {Public product page excerpts; typical consumption is not a worst-case thermal bound.}
+}
+
+@misc{ti953MouserA01,
+ title = {DS90UB953TRHBRQ1 distributor listing},
+ author = {{Mouser Electronics}},
+ url = {https://www.mouser.co.uk/en/ProductDetail/Texas-Instruments/DS90UB953TRHBRQ1?qs=OEYMhS7p3YaYEJNYA8uoIA%3D%3D},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {Indexed listing reported 258 in stock},
+ note = {Indexed excerpt reviewed 2026-10-29; direct page fetch failed. Regional inventory and delivery not confirmed or reserved.}
+}
+
+@misc{ti954LcscA01,
+ title = {DS90UB954TRGZRQ1 distributor listing},
+ author = {{LCSC}},
+ url = {https://www.lcsc.com/product-detail/C545240.html},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {Indexed listing reported 348 in stock},
+ note = {Listing and search excerpt reviewed 2026-10-29; not a reserved inventory or procurement qualification. Electrical data uses TI, not distributor summary.}
+}
+
+@misc{ov9281ArrowA01,
+ title = {OV09281-H64A distributor listing},
+ author = {{Arrow Electronics}},
+ url = {https://www.arrow.com/en/products/ov09281-h64a/omnivision-technologies.html},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {Active listing with no stock, conflicting with DigiKey obsolete status},
+ note = {Public page reviewed 2026-10-29; lifecycle conflict unresolved.}
+}
+
+@misc{ov9281ProductA01,
+ title = {OV9281 product page},
+ author = {{OMNIVISION}},
+ url = {https://www.ovt.com/products/ov9281/},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {Manufacturer lists sensor and volume production; not an inventory commitment},
+ note = {Public product description/specification excerpts reviewed; no order placed or manufacturer contacted.}
+}
+
+@misc{espUsbDeviceA01,
+ title = {ESP32-P4 USB device stack},
+ author = {{Espressif Systems}},
+ url = {https://docs.espressif.com/projects/esp-idf/en/latest/esp32p4/api-reference/peripherals/usb_device.html},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {One USB High-Speed and one Full-Speed controller; device stack supports camera or vendor-specific interfaces},
+ note = {Overview and features reviewed; no sustained throughput benchmark, not evidence of functioning A01 firmware.}
+}
+
+@misc{tiTps2553E01,
+ title = {TPS255xx precision adjustable current-limited power-distribution switches, Rev G},
+ author = {{Texas Instruments}},
+ url = {https://www.ti.com/lit/ds/symlink/tps2553.pdf},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {TPS2553 WSON pinout, active-high enable, current limit equations and reverse voltage protection},
+ note = {Pin table, electrical limits, current-limit equations and package excerpts reviewed; application transients remain untested}
+}
+@misc{murataFerritesE01,
+ title = {Murata ferrite bead component list 2602},
+ author = {{Murata Manufacturing}},
+ url = {https://www.murata.com/-/media/webrenewal/tool/library/common-pdf/static-model/component-list-fb-s-2602.ashx?cvid=20260515010000000000&la=en-sg},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {BLM18SG121TN1 nominal 120 ohm at 100 MHz, 25 milliohm maximum DCR, 3 A rating and 0603 size},
+ note = {Indexed manufacturer table excerpt reviewed; supply noise and impedance under bias require validation}
+}
+@misc{epson25E01,
+ title = {SG-210STF 25.0000ML distributor part listing},
+ author = {{DigiKey}},
+ url = {https://www.digikey.sg/en/products/detail/epson/SG-210STF-25-0000ML/4692679},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {25 MHz variant of the documented Epson oscillator family, 2.5 by 2 mm body},
+ note = {Indexed exact-part listing reviewed; not a reservation or verified delivery commitment}
+}
+
+@misc{tiTpd1E01B04E01,
+ author = {{Texas Instruments}},
+ title = {TPD1E01B04 ESD diode datasheet},
+ url = {https://www.ti.com/lit/ds/symlink/tpd1e01b04.pdf},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {DPY 1 by 0.6 mm bidirectional ESD diode, 0.20 pF typical and 0.23 pF maximum; pin and package excerpts reviewed},
+ note = {Limited technical excerpt review; complete system and software behavior remain untested}
+}
+
+@misc{espUvcBulkE01,
+ author = {{Espressif Systems}},
+ title = {USB Device UVC documentation},
+ url = {https://docs.espressif.com/projects/esp-iot-solution/en/latest/usb/usb_device/usb_device_uvc.html},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {Driver supports bulk and isochronous modes; documented input is JPEG, not proof of RAW8 host support},
+ note = {Limited technical excerpt review; complete system and software behavior remain untested}
+}
+
+@misc{usbIsoBudgetE01,
+ author = {{USB Implementers Forum}},
+ title = {Embedded USB2 Version 2.0 Supplement},
+ url = {https://www.usb.org/sites/default/files/Embedded%20USB2%20Version%202.0%20Supplement%20to%20the%20USB%202.0%20Specification_0.pdf},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {USB2 high-bandwidth isochronous limit of 3072 bytes per microframe; limit excerpt reviewed},
+ note = {Limited technical excerpt review; complete system and software behavior remain untested}
+}
+
+@misc{eightyTwentyProfile2020Enclosure,
+  title = {20-2020: 20mm X 20mm T-Slotted Profile - Four Open T-Slots},
+  author = {{80/20 Inc.}},
+  url = {https://8020.net/20-2020.html},
+  urldate = {2026-10-29},
+  review = {excerpt},
+  claim = {Nominal 20 by 20 mm metric profile with four open T-slots, 20-series fastener compatibility, and displayed pricing of USD 0.0131 per millimeter plus a USD 3.00 cut charge.},
+  note = {Reviewed product description and pricing excerpt for the enclosure R01 concept. CAD slot internals and connectors are illustrative rather than reproduced vendor geometry. Pricing is a dated reference, excludes hardware and delivery, and is not a confirmed cart quote.}
 }

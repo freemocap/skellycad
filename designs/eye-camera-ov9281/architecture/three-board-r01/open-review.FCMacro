@@ -1,0 +1,17 @@
+"""Open the verified A01 review; preserve all unrelated desktop documents."""
+from pathlib import Path
+import hashlib,json
+import FreeCAD as App
+import FreeCADGui as Gui
+root=Path(r'C:/Users/jonma/code-stuff/github/freemocap/other/skellycad')
+out=root/'generated/three-board-a01'
+report=json.loads((out/'cad-validation.json').read_text())
+path=(out/'THREE-BOARD-A01.FCStd').resolve()
+expected=next(v['sha256'] for v in report['variants'] if v['option']=='FR4')
+assert hashlib.sha256(path.read_bytes()).hexdigest()==expected
+doc=next((d for d in App.listDocuments().values() if d.FileName and Path(d.FileName).resolve()==path),None)
+if doc is None:doc=App.openDocument(str(path))
+App.setActiveDocument(doc.Name)
+Gui.activeDocument().activeView().viewAxonometric()
+Gui.activeDocument().activeView().fitAll()
+(out/'desktop-review.json').write_text(json.dumps({'opened':True,'path':str(path),'document':doc.Name,'native_sha256':expected,'unrelated_documents_preserved':True},indent=2))

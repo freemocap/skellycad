@@ -1,0 +1,86 @@
+{
+  "revision": "OV9281-P4-R06",
+  "units": "mm",
+  "status": "Power and return-path draft; not for fabrication",
+  "parent_sha256": {
+    "controller.kicad_pcb": "8ab19f5b48568f6ed815c50566e2aa117d4d48ca31760e6049228329859cddcb",
+    "head.kicad_pcb": "69fdd7be7135956287178fbe586a1bcbc29e8cb3dda3c5bd49fc2aeadf45db8f",
+    "flex-study.kicad_pcb": "a8d0a8f760107821052523ec8f090835b62c8b94bc868ca4e0e84fa794d5d209",
+    "camera.kicad_sch": "76b776682e36d0c54c405be53c132b6f491bbe708292ca7edee9031474bc4298",
+    "assembly-interconnect-study.kicad_pcb": "7f319c1cbc5fa10febdc41b13d2739e49864d5112aa35434d87bb6b05a09c479"
+  },
+  "pins": {
+    "17": "+1V2",
+    "11": "+1V8",
+    "19": "+2V8",
+    "21": "+3V3",
+    "5": "/CAM_L_CLK_N",
+    "6": "/CAM_L_CLK_P",
+    "2": "/CAM_L_D0_N",
+    "3": "/CAM_L_D0_P",
+    "8": "/CAM_L_D1_N",
+    "9": "/CAM_L_D1_P",
+    "15": "/CAM_NRST_1V8",
+    "22": "/LED_PWM",
+    "12": "/M1_CAM_SCL_1V8",
+    "13": "/M1_CAM_SDA_1V8",
+    "16": "/M1_VSYNC_1V8_M",
+    "1": "GND",
+    "10": "GND",
+    "14": "GND",
+    "18": "GND",
+    "20": "GND",
+    "23": "GND",
+    "24": "GND",
+    "4": "GND",
+    "7": "GND"
+  },
+  "connector": "FH34SRJ-24S-0.5SH(99)",
+  "head_attachment": "J201 solder lap; custom lands, assembly process unqualified",
+  "connector_xy": [
+    27.75,
+    8.25
+  ],
+  "connector_rotation_deg": 90,
+  "connector_height_mm": 1,
+  "connector_fpc_tip_thickness_mm": 0.3,
+  "connector_fpc_tip_thickness_tolerance_mm": 0.03,
+  "flex_body_thickness_mm": 0.1,
+  "flex_body_thickness_note": "Explicit 0.10 mm copper/dielectric assumption; coverlay, adhesive and supplier stackup pending",
+  "flex_size_mm": [
+    35.3,
+    12.5
+  ],
+  "flex_origin_in_controller_frame_mm": [
+    29.2,
+    2
+  ],
+  "head_transform": {
+    "rotation_deg": 270,
+    "translation_mm": [
+      76,
+      1.25
+    ]
+  },
+  "board_gap_mm": 30,
+  "flat_assembly_length_mm": 76,
+  "mating": "Bottom-contact mode; flex B.Cu faces rigid-board F.Cu. Pin n connects to pin n; no twist.",
+  "sources": [
+    "hiroseFh34Product",
+    "hiroseFh34Drawing",
+    "hiroseFh34Catalog"
+  ],
+  "limits": [
+    "Rigid-board routing incomplete",
+    "No impedance, power-drop, bend-life or solder-joint qualification",
+    "No mass estimate or physical mating test",
+    "Connector footprint and cable orientation require independent pre-fabrication review",
+    "Tip corner radius, coverlay, stiffener adhesive and fabrication tolerances not fully modeled",
+    "Optics and LED driver remain unfinished",
+    "Surface power necks still 0.15 mm and require current/impedance review",
+    "No via-in-pad; blocked dense-pad escapes remain reported",
+    "Stackups are explicit assumptions, not fabrication-approved",
+    "Flex solid plane changes stiffness and impedance; bending and loss unqualified",
+    "No fabricated or powered hardware"
+  ]
+}

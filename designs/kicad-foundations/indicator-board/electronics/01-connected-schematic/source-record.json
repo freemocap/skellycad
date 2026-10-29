@@ -1,0 +1,34 @@
+{
+  "stage": "01-connected-schematic",
+  "units": "mm",
+  "tested_kicad": "10.0.7",
+  "symbols": [
+    {
+      "library": "Device",
+      "symbol": "R",
+      "library_sha256": "beff265799f83e87b41fde2d56a384e48c191e66bfbb3b06e404501cfd3fc149"
+    },
+    {
+      "library": "Device",
+      "symbol": "LED",
+      "library_sha256": "beff265799f83e87b41fde2d56a384e48c191e66bfbb3b06e404501cfd3fc149"
+    },
+    {
+      "library": "Connector_Generic",
+      "symbol": "Conn_01x02",
+      "library_sha256": "1ae3b346fe1c4e874fecb72abc7df4e94a253780db183439dbfefc4e2ff3a0be"
+    }
+  ],
+  "schematic_sha256": "75f43aa96bd5bd34d728dca49b1c1533953ad66ac7af7f9c5c5845f263b0f865",
+  "assumptions": {
+    "supply_V": 5,
+    "resistance_ohm": 330,
+    "LED_part": "not selected"
+  },
+  "status": "Teaching circuit; no footprints, PCB, selected physical parts or powered test",
+  "sources": [
+    "kicadSchematicFormat",
+    "kicad10GettingStarted",
+    "kicadLibraryLicense"
+  ]
+}

@@ -1,0 +1,1742 @@
+{
+  "native": [
+    {
+      "components": 77,
+      "connected_pins_checked": 237,
+      "connectivity_errors": [],
+      "erc_violations": 0,
+      "scope": "Native schematic parsing and intended-pin net equivalence; not hardware validation."
+    },
+    {
+      "components": 119,
+      "connected_pins_checked": 358,
+      "connectivity_errors": [],
+      "erc_violations": 0,
+      "scope": "Native schematic parsing and intended-pin net equivalence; not hardware validation."
+    }
+  ],
+  "checks": [
+    {
+      "check": "head-interface/C7 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C7 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C8 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C8 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C9 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C9 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C10 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C10 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C12 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C12 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C13 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C13 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C14 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C14 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C15 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C15 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C16 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C16 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C17 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C17 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C18 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C18 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C19 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C19 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C20 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C20 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C21 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C21 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C33 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C33 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/D201 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/D201 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/D202 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/D202 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/L1 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/L1 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/L2 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/L2 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/L3 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/L3 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/Q201 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/Q201 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/R7 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/R7 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/R8 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/R8 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/R9 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/R9 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/R201 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/R201 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/R202 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/R202 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/R203 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/R203 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/R204 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/R204 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/U1 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/U1 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/Y1 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/Y1 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/R401 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/R401 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/R402 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/R402 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/R403 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/R403 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/R404 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/R404 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/U201 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/U201 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/FB401 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/FB401 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C401 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C401 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C402 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C402 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/FB402 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/FB402 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C403 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C403 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C404 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C404 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/FB403 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/FB403 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C405 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C405 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C406 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C406 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C407 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C407 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C408 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C408 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C409 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C409 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C410 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C410 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C411 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C411 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C412 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C412 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C413 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C413 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C414 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C414 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C415 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C415 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C416 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C416 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C417 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C417 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/R405 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/R405 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/R406 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/R406 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/R407 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/R407 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C418 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C418 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C419 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C419 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C420 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C420 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/U202 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/U202 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/L202 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/L202 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/R408 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/R408 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/R409 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/R409 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C421 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C421 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C422 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C422 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/U6 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/U6 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C423 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C423 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C424 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C424 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/U7 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/U7 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C425 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C425 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C426 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/C426 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/J201 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/J201 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/TP201 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/TP201 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/D203 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/D203 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "head-interface/D204 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "head-interface/D204 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C101 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C101 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C102 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C102 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C103 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C103 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C104 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C104 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C105 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C105 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C106 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C106 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C107 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C107 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C108 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C108 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C109 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C109 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C110 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C110 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C111 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C111 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C112 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C112 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C113 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C113 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C114 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C114 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C115 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C115 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C116 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C116 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C117 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C117 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C118 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C118 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C119 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C119 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C120 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C120 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C121 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C121 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C122 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C122 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C123 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C123 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C124 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C124 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C125 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C125 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C126 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C126 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C127 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C127 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C128 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C128 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C129 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C129 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C130 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C130 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C131 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C131 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C132 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C132 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C133 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C133 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C134 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C134 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C135 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C135 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C136 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C136 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/J101 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/J101 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/J103 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/J103 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/L101 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/L101 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/L102 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/L102 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/R101 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/R101 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/R102 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/R102 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/R103 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/R103 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/R104 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/R104 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/R105 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/R105 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/R106 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/R106 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/R107 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/R107 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/R108 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/R108 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/R109 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/R109 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/R110 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/R110 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/R111 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/R111 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/R113 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/R113 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/R115 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/R115 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/U101 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/U101 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/U102 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/U102 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/U103 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/U103 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/U104 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/U104 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/U105 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/U105 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/Y101 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/Y101 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/R601 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/R601 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/R602 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/R602 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C601 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C601 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/U301 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/U301 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/U302 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/U302 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/L302 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/L302 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/R603 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/R603 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/R604 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/R604 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C602 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C602 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C603 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C603 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/FB601 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/FB601 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/FB602 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/FB602 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/FB603 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/FB603 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C604 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C604 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C605 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C605 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C606 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C606 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C607 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C607 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C608 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C608 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C609 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C609 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C610 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C610 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C611 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C611 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C612 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C612 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C613 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C613 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C614 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C614 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C615 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C615 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C616 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C616 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C617 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C617 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C618 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C618 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C619 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C619 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C620 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C620 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C621 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C621 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C622 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C622 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C623 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C623 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C624 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C624 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/R605 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/R605 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/R606 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/R606 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/R607 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/R607 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/R608 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/R608 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C625 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C625 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C626 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C626 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/Y301 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/Y301 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C627 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C627 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/Q301 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/Q301 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/R609 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/R609 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/R610 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/R610 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/U303 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/U303 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/R611 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/R611 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/R612 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/R612 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C628 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C628 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/C629 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/C629 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/J301 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/J301 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/TP301 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/TP301 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/TP302 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/TP302 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/TP303 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/TP303 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/Q302 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/Q302 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/R613 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/R613 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/R614 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/R614 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/R615 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/R615 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/D301 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/D301 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "base/D302 footprint loads",
+      "pass": true
+    },
+    {
+      "check": "base/D302 symbol-pad set",
+      "pass": true
+    },
+    {
+      "check": "Sensor lanes and polarity preserved",
+      "pass": true
+    },
+    {
+      "check": "Serializer lane and polarity map",
+      "pass": true
+    },
+    {
+      "check": "Receiver lane and polarity map",
+      "pass": true
+    },
+    {
+      "check": "P4 dedicated CSI pins",
+      "pass": true
+    },
+    {
+      "check": "954 internal LDO mode and required ground",
+      "pass": true
+    },
+    {
+      "check": "TPS2553 WSON pin mapping, not SOT23",
+      "pass": true
+    },
+    {
+      "check": "LPF1 returns to VDDPLL",
+      "pass": true
+    },
+    {
+      "check": "SER_PLL_CAP independent required bypass",
+      "pass": true
+    },
+    {
+      "check": "SER_DRV_CAP independent required bypass",
+      "pass": true
+    },
+    {
+      "check": "SER_D_CAP independent required bypass",
+      "pass": true
+    },
+    {
+      "check": "RX_D_CAP independent internal bypass",
+      "pass": true
+    },
+    {
+      "check": "RX_CSI_CAP independent internal bypass",
+      "pass": true
+    },
+    {
+      "check": "RX_FPD0_CAP independent internal bypass",
+      "pass": true
+    },
+    {
+      "check": "RX_FPD1_CAP independent internal bypass",
+      "pass": true
+    },
+    {
+      "check": "Head I2C 1.8V, base I2C 3.3V",
+      "pass": true
+    },
+    {
+      "check": "Sensor SID low, alternative pullup DNP",
+      "pass": true
+    },
+    {
+      "check": "Both tether connectors agree on signal polarity",
+      "pass": true
+    },
+    {
+      "check": "Host VBUS isolated from base main power",
+      "pass": true
+    },
+    {
+      "check": "IR_GATE passive default low",
+      "pass": true
+    },
+    {
+      "check": "CAM_NRST_1V8 passive default low",
+      "pass": true
+    },
+    {
+      "check": "TETHER_EN passive default low",
+      "pass": true
+    },
+    {
+      "check": "RX_PDB passive default low",
+      "pass": true
+    },
+    {
+      "check": "head two 50V coupling capacitors",
+      "pass": true
+    },
+    {
+      "check": "head low-capacitance signal clamps",
+      "pass": true
+    },
+    {
+      "check": "head clean ERC",
+      "pass": true
+    },
+    {
+      "check": "base two 50V coupling capacitors",
+      "pass": true
+    },
+    {
+      "check": "base low-capacitance signal clamps",
+      "pass": true
+    },
+    {
+      "check": "base clean ERC",
+      "pass": true
+    }
+  ],
+  "models": {
+    "head_power_load_A": {
+      "nominal": 0.13,
+      "planning_high": 0.21
+    },
+    "tether_36AWG_resistance_ohm_per_m": 1.36,
+    "wire_resistance_scope": "20 C copper estimate; not a qualified cable",
+    "TPS2553_limit_mA_with_1pct_R": {
+      "min": 288.86194574165444,
+      "nominal": 328.712471638903,
+      "max": 374.53982405270324
+    },
+    "head_voltage_at_60cm_210mA_4_75V_input": 4.34428,
+    "RAW8_640x400_100fps_MBps": 25.6,
+    "RAW8_640x400_120fps_MBps": 30.72,
+    "USB_HS_iso_endpoint_payload_ceiling_MBps": 24.576,
+    "USB_transfer_candidate": "Bulk; RAW8 framing/host acceptance and achieved throughput unimplemented",
+    "local_flex_nets": [
+      "CAM_L_CLK_N",
+      "CAM_L_CLK_P",
+      "CAM_L_D0_N",
+      "CAM_L_D0_P",
+      "CAM_L_D1_N",
+      "CAM_L_D1_P",
+      "CAM_NRST_1V8",
+      "GND",
+      "H1V2",
+      "H1V8",
+      "H2V8",
+      "IR_A1",
+      "IR_A2",
+      "IR_K",
+      "M1_CAM_SCL_1V8",
+      "M1_CAM_SDA_1V8"
+    ],
+    "addresses_7bit": {
+      "receiver": 48,
+      "serializer": 24,
+      "sensor": 96
+    }
+  },
+  "hardware_tested": false
+}

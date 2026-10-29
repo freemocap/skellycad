@@ -1,0 +1,28 @@
+{
+  "board_sha256": "6349ebabca8b49a9778256751fabc85c8ed6b02e82e5bc13a31c5d1712b34716",
+  "fully_connected": true,
+  "native_unconnected_items": 0,
+  "native_errors": 0,
+  "native_warnings": 219,
+  "warning_review": "Item 5 pending",
+  "controller_mm": [
+    28,
+    14
+  ],
+  "head_mm": [
+    14,
+    14
+  ],
+  "free_flex_mm": [
+    32.85,
+    8
+  ],
+  "placement_count": 106,
+  "reserved_features": [
+    "optics keepout",
+    "windowed controller support",
+    "head support ring",
+    "programming access",
+    "JST cable exit"
+  ]
+}

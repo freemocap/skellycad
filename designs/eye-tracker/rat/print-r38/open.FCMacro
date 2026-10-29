@@ -1,0 +1,16 @@
+from pathlib import Path
+import json,zipfile,datetime
+import FreeCAD as A,FreeCADGui as G,Mesh
+from PySide import QtCore
+R=Path(__file__).resolve().parents[4];O=R/'generated/eye-tracker/rat/print-r38';recovery=O/'session-recovery'/datetime.datetime.now().strftime('%Y%m%d-%H%M%S');recovery.mkdir(parents=True,exist_ok=True)
+for d in list(A.listDocuments().values()):
+ if '/eye-tracker/rat/' in d.FileName.replace('\\','/').lower():
+  p=recovery/(d.Name+'.FCStd');d.saveAs(str(p))
+  with zipfile.ZipFile(p) as z:assert z.testzip() is None and 'Document.xml' in z.namelist()
+  A.closeDocument(d.Name)
+d=A.newDocument('RAT_R38_Printable_STL');o=d.addObject('Mesh::Feature','PrintableHardware');o.Mesh=Mesh.Mesh(str(O/'RAT-R38-all-hardware-arms-flat.stl'));o.ViewObject.ShapeColor=(.7,.73,.78);o.ViewObject.DisplayMode='Flat Lines';d.Label='RAT R38 - printable STL - arms along bed';d.recompute();p=O/'RAT-R38-STL-review.FCStd';d.saveAs(str(p));v=G.activeDocument().activeView();v.viewAxonometric();v.fitAll();G.getMainWindow().raise_();G.getMainWindow().activateWindow()
+def finish():
+ v.saveImage(str(O/'print-layout.png'),1600,1000,'White');d.save()
+ with zipfile.ZipFile(p) as z:assert z.testzip() is None and 'Document.xml' in z.namelist()
+ (O/'opened.json').write_text(json.dumps({'opened_stl':str(O/'RAT-R38-all-hardware-arms-flat.stl'),'saved_review':str(p),'saved_and_closed':len(list(recovery.glob('*.FCStd')))}))
+QtCore.QTimer.singleShot(1600,finish)

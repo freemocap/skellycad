@@ -1,0 +1,17 @@
+[
+  {
+    "Id": 16688,
+    "File": "C:/Users/jonma/code-stuff/github/freemocap/other/skellycad/generated/ov9281-r11-electronics/camera.kicad_pcb",
+    "Exe": "C:/Users/jonma/AppData/Local/Programs/KiCad/10.0/bin/pcbnew.exe"
+  },
+  {
+    "Id": 18028,
+    "File": "C:/Users/jonma/code-stuff/github/freemocap/other/skellycad/generated/ov9281-r11-electronics/camera.kicad_sch",
+    "Exe": "C:/Users/jonma/AppData/Local/Programs/KiCad/10.0/bin/eeschema.exe"
+  },
+  {
+    "Id": 38952,
+    "File": "C:/Users/jonma/code-stuff/github/freemocap/other/skellycad/designs/eye-camera-ov9281/electronics/r11/open-review.FCMacro",
+    "Exe": "C:/Users/jonma/code-stuff/github/freemocap/other/skellycad/.cad-tools/FreeCAD_1.1.4-Windows-x86_64-py311/bin/FreeCAD.exe"
+  }
+]

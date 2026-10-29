@@ -1,0 +1,10 @@
+{
+  "pass": true,
+  "neck_layers": [
+    3,
+    4
+  ],
+  "bend_radius_covers_published_upper_thickness": true,
+  "rounding_discrepancy_retained": true,
+  "manufacturing_approved": false
+}

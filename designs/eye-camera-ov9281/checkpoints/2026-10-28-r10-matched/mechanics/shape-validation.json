@@ -1,0 +1,9 @@
+{
+  "checked_shape_count": 126,
+  "invalid_shapes": [],
+  "invalid_objects": [],
+  "intentional_empty_datum_features": [
+    "PupilReference_SensorFrame"
+  ],
+  "valid_nonempty_feature_shapes": 125
+}

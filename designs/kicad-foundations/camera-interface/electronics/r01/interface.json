@@ -1,0 +1,26 @@
+{
+  "revision": "R01-logical-interface",
+  "units": "mm",
+  "source": "raspberryPiCameraPinout",
+  "host_reference": "Raspberry Pi 4, 15-pin CSI",
+  "camera_candidate": "Arducam OV9281 module; exact SKU and cable pending",
+  "pins": {
+    "1": "GND",
+    "2": "CAM_D0_N",
+    "3": "CAM_D0_P",
+    "4": "GND",
+    "5": "CAM_D1_N",
+    "6": "CAM_D1_P",
+    "7": "GND",
+    "8": "CAM_CLK_N",
+    "9": "CAM_CLK_P",
+    "10": "GND",
+    "11": "CAM_IO0",
+    "12": "CAM_IO1",
+    "13": "CAM_SCL",
+    "14": "CAM_SDA",
+    "15": "CAM_3V3"
+  },
+  "schematic_sha256": "6a1f00a56b654c645696def1f18c4043bea27654cf10fa20e259221c5c4bca65",
+  "status": "Logical teaching study only; no physical connector or video validation"
+}

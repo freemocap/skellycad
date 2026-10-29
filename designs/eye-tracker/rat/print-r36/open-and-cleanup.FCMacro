@@ -1,0 +1,26 @@
+from pathlib import Path
+import json,zipfile,datetime,shutil
+import FreeCAD as A,FreeCADGui as G
+R=Path(__file__).resolve().parents[4];O=R/'generated/eye-tracker/rat/print-r36'
+stamp=datetime.datetime.now().strftime('%Y%m%d-%H%M%S');backup=O/'session-recovery'/stamp;backup.mkdir(parents=True,exist_ok=True)
+report={'saved_and_closed':[],'preserved':[],'errors':[]}
+def verify(p):
+ with zipfile.ZipFile(p) as z:assert z.testzip() is None and 'Document.xml' in z.namelist()
+for d in list(A.listDocuments().values()):
+ original=d.FileName;path=original.replace('\\','/').lower()
+ if '/eye-tracker/rat/' not in path:
+  report['preserved'].append({'name':d.Name,'path':original});continue
+ try:
+  p=backup/(d.Name+'.FCStd');name=d.Name;d.saveAs(str(p));verify(p);A.closeDocument(name)
+  report['saved_and_closed'].append({'name':name,'original':original,'recovery':str(p)})
+ except Exception as e:report['errors'].append({'name':d.Name,'error':str(e)})
+source=O/'RAT-R36-arms-flat-print.FCStd';p=O/'RAT-R36-current-review.FCStd';shutil.copy2(source,p);verify(p)
+d=A.openDocument(str(p));A.setActiveDocument(d.Name)
+for o in d.Objects:
+ if hasattr(o,'Shape'):
+  o.ViewObject.Visibility=True;o.ViewObject.ShapeColor=(.82,.82,.85) if 'Clip' not in o.Name else (1.,.65,.2);o.ViewObject.DisplayMode='Flat Lines'
+v=G.activeDocument().activeView();v.viewAxonometric();v.fitAll();d.recompute();d.save();verify(p)
+G.getMainWindow().showNormal();G.getMainWindow().raise_();G.getMainWindow().activateWindow();G.updateGui()
+report['current_review']=str(p);report['remaining_documents']=[{'name':x.Name,'path':x.FileName} for x in A.listDocuments().values()]
+(O/'opened-and-cleaned.json').write_text(json.dumps(report,indent=2))
+v.saveImage(str(O/'current-review.png'),1400,1000,'White')

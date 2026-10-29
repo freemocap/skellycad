@@ -1,0 +1,7 @@
+(footprint "ProgrammingPads_5x1mm_P1.5mm" (version 20241229) (generator "pcbnew") (layer "F.Cu") (attr smd)
+(pad "1" smd circle (at 0.0 0) (size 1 1) (layers "F.Cu" "F.Mask"))
+(pad "2" smd circle (at 1.5 0) (size 1 1) (layers "F.Cu" "F.Mask"))
+(pad "3" smd circle (at 3.0 0) (size 1 1) (layers "F.Cu" "F.Mask"))
+(pad "4" smd circle (at 4.5 0) (size 1 1) (layers "F.Cu" "F.Mask"))
+(pad "5" smd circle (at 6.0 0) (size 1 1) (layers "F.Cu" "F.Mask"))
+)

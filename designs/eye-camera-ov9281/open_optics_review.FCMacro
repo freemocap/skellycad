@@ -1,0 +1,38 @@
+import FreeCAD as App, FreeCADGui as Gui
+from pathlib import Path
+import json, traceback
+root=Path(__file__).resolve().parents[2]
+folder=root/'generated/ov9281-optics-fit-01'
+try:
+    path=(folder/'OV9281-CIL829-FIT-STUDY.FCStd').resolve()
+    doc=next((d for d in App.listDocuments().values() if d.FileName and Path(d.FileName).resolve()==path),None)
+    if doc is None:doc=App.openDocument(str(path))
+    App.setActiveDocument(doc.Name)
+    for obj in doc.Objects:
+        obj.ViewObject.Visibility=obj.TypeId in ['PartDesign::Feature','App::Part']
+        if obj.Name.endswith('Substrate'):obj.ViewObject.ShapeColor=(.10,.32,.22)
+        if obj.Name.endswith('Copper'):obj.ViewObject.ShapeColor=(.82,.64,.30)
+        if obj.Name.startswith('LensSolid'):
+            obj.ViewObject.ShapeColor=(.10,.10,.12)
+            if obj.Name in ['LensSolid0','LensSolid2','LensSolid3']:
+                obj.ViewObject.ShapeColor=(.48,.67,.78);obj.ViewObject.Transparency=35
+            obj.ViewObject.LineColor=(.05,.05,.06)
+    doc.ThreadReference.ViewObject.Visibility=False
+    doc.ActiveAreaDatum.ViewObject.ShapeColor=(.0,.8,.8)
+    doc.OpticalAxis.ViewObject.LineColor=(1.,.3,.15)
+    doc.OpticalAxis.ViewObject.LineWidth=2
+    doc.recompute();Gui.activeDocument().activeView().viewAxonometric()
+    Gui.activeDocument().activeView().fitAll()
+    Gui.getMainWindow().showMaximized();Gui.updateGui()
+    Gui.activeDocument().activeView().saveImage(str(folder/'whole-assembly.png'),1600,900,'Current')
+    Gui.Selection.clearSelection()
+    doc.controller.ViewObject.Visibility=False;doc.flex_study.ViewObject.Visibility=False
+    Gui.activeDocument().activeView().fitAll()
+    doc.controller.ViewObject.Visibility=True;doc.flex_study.ViewObject.Visibility=True
+    Gui.updateGui()
+    doc.recompute();doc.save()
+    Gui.activeDocument().activeView().saveImage(str(folder/'lens-review.png'),1600,900,'Current')
+    (folder/'desktop-review.json').write_text(json.dumps({'document':doc.FileName,'visible':Gui.getMainWindow().isVisible(),'active_document':App.ActiveDocument.Name,
+        'objects':[{ 'name':o.Name,'visible':o.ViewObject.Visibility,'view_type':o.ViewObject.TypeId} for o in doc.Objects]},indent=2)+'\n')
+except Exception:
+    (folder/'desktop-error.txt').write_text(traceback.format_exc())

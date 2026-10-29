@@ -1,0 +1,182 @@
+{
+  "units": "mm",
+  "board_sha256": "989a2008743212d3f9cea44e2643b0584b22613322b7a8450575f173e29f1fb7",
+  "geometry_transfer_sha256": "4684632785b8cceb7274237e2cf2222dfdb8d4536dea2c30d4b0424465539e5d",
+  "native_path": "generated\\ov9281-r11-mechanics\\OV9281-R11-MATCHED.FCStd",
+  "native_sha256": "cba97827bfa72f36fbca9075133d826c875242a75db0d79cb6767934eb36066c",
+  "native_zip_verified": true,
+  "outline_mm": {
+    "controller": [
+      28,
+      14
+    ],
+    "head": [
+      14,
+      14
+    ],
+    "free_flex": [
+      32.85,
+      8
+    ],
+    "flat_length": 74.85
+  },
+  "component_body_envelopes": 104,
+  "copper": {
+    "controller/F.Cu": {
+      "volume_mm3": 2.480019130953511,
+      "native_area_mm2": 99.20076523814049,
+      "area_volume_agreement": true
+    },
+    "controller/In1.Cu": {
+      "volume_mm3": 1.8087526167169148,
+      "native_area_mm2": 100.486256267072,
+      "area_volume_agreement": true
+    },
+    "controller/In2.Cu": {
+      "volume_mm3": 0.3514714464088612,
+      "native_area_mm2": 19.526191467159,
+      "area_volume_agreement": true
+    },
+    "controller/In3.Cu": {
+      "volume_mm3": 6.526495463797996,
+      "native_area_mm2": 362.5830809341415,
+      "area_volume_agreement": true
+    },
+    "controller/In4.Cu": {
+      "volume_mm3": 6.140440686291594,
+      "native_area_mm2": 341.135592799316,
+      "area_volume_agreement": true
+    },
+    "controller/B.Cu": {
+      "volume_mm3": 1.8717785945255971,
+      "native_area_mm2": 74.8711437210525,
+      "area_volume_agreement": true
+    },
+    "flex/In2.Cu": {
+      "volume_mm3": 1.385622157271769,
+      "native_area_mm2": 76.979008737321,
+      "area_volume_agreement": true
+    },
+    "flex/In3.Cu": {
+      "volume_mm3": 4.287502255288165,
+      "native_area_mm2": 238.1945696354575,
+      "area_volume_agreement": true
+    },
+    "head/F.Cu": {
+      "volume_mm3": 0.20866391318652477,
+      "native_area_mm2": 8.346556527460999,
+      "area_volume_agreement": true
+    },
+    "head/In1.Cu": {
+      "volume_mm3": 0.09470888709929982,
+      "native_area_mm2": 5.26160483885,
+      "area_volume_agreement": true
+    },
+    "head/In2.Cu": {
+      "volume_mm3": 0.21902551906369394,
+      "native_area_mm2": 12.1680843924275,
+      "area_volume_agreement": true
+    },
+    "head/In3.Cu": {
+      "volume_mm3": 3.178445484842363,
+      "native_area_mm2": 176.580304316654,
+      "area_volume_agreement": true
+    },
+    "head/In4.Cu": {
+      "volume_mm3": 0.18473781741064246,
+      "native_area_mm2": 10.263212078369,
+      "area_volume_agreement": true
+    },
+    "head/B.Cu": {
+      "volume_mm3": 1.1249643083383234,
+      "native_area_mm2": 44.998572333533,
+      "area_volume_agreement": true
+    }
+  },
+  "support_volumes_mm3": {
+    "controller/adhesive": 4.000000000000002,
+    "controller/FR4": 8.000000000000004,
+    "head/adhesive": 1.0874999999999968,
+    "head/FR4": 2.1749999999999936
+  },
+  "optical_volumes_mm3": {
+    "Holder": 48.24133790587246,
+    "HolderBond": 1.0874999999999997,
+    "LensEnvelope": 74.92698478811656,
+    "FilterEnvelope": 4.247433267653403
+  },
+  "collisions": [],
+  "programming_access_collisions": [],
+  "optical_datum_mm": [
+    67.85,
+    7,
+    1.303
+  ],
+  "sensor_to_filter_gap_mm": 0.28,
+  "filter_to_lens_gap_mm": 0.35,
+  "lens_radial_space_mm": 0.025,
+  "focus_travel_geometry": [
+    {
+      "extension_mm": 0,
+      "axial_overlap_mm": 1.47,
+      "collision": false
+    },
+    {
+      "extension_mm": 0.5,
+      "axial_overlap_mm": 0.97,
+      "collision": false
+    },
+    {
+      "extension_mm": 1.0,
+      "axial_overlap_mm": 0.47,
+      "collision": false
+    }
+  ],
+  "bend": {
+    "angle_deg": 90,
+    "neutral_radius_mm": 2.5,
+    "inner_radius_mm": 2.417,
+    "inner_radius_at_upper_thickness_mm": 2.392,
+    "straight_before_mm": 10.0,
+    "arc_length_mm": 3.9269908169872414,
+    "straight_after_mm": 18.92300918301276,
+    "preserved_neutral_length_mm": 32.85,
+    "head_placement": {
+      "translation_mm": [
+        40.65150000000001,
+        0.0,
+        -39.275490816987244
+      ],
+      "quaternion": [
+        0.0,
+        0.7071067811865476,
+        0.0,
+        -0.7071067811865475
+      ]
+    },
+    "collisions": [],
+    "dynamic_flex_qualified": false
+  },
+  "pupil_revision": "CAMERA-DUMMY-R08",
+  "pupil_checkpoint_sha256": "2096c198eff2faf4fe826d94910f6b49a731f5408f350de9bd45ebf9dc9c26d0",
+  "physical_fit_verified": false,
+  "optics_qualified": false,
+  "manufacturing_ready": false,
+  "limitations": [
+    "Component bodies are conservative native fabrication-outline bounding prisms with selected maximum heights, not exact component CAD.",
+    "Board envelopes contain embedded copper; sum of displayed volumes is not module mass.",
+    "Optical XY uses U1 footprint datum; image-plane Z, filter coating, close focus and lens locking remain provisional.",
+    "The bent configuration preserves neck length and clears rigid parts; it does not model copper strain, adhesive stress, fatigue or assembly tolerances.",
+    "Pupil geometry and its photo chip envelopes are reference approximations, not reverse-engineered manufacturing drawings."
+  ],
+  "initial_build_native_sha256": "8184b72d599315eeba5162526185f77121296623c002bce87a09f7a4f87ed01e",
+  "independent_reload": {
+    "invalid_shapes": [],
+    "valid_solids": 7110,
+    "dimensions_checked": true,
+    "bent_head_controller_z_separation_mm": 18.271509183012757
+  },
+  "reference_alignment": "Pupil and R11 minimum X aligned, Pupil minimum Y=25 mm; global placement applied once",
+  "rendered_geometry_measurements_unchanged": true,
+  "geometry_measurements_count": 271
+}

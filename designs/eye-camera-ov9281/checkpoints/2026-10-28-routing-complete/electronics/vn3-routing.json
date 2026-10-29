@@ -1,0 +1,144 @@
+{
+  "source_head_sha256": "5bc683b929d2a3803eab8e70a1910468892f557125ea81fe21bf4ffcc24066eb",
+  "removed": [
+    {
+      "uuid": "bae3f3f5-bfe8-403f-bd62-d8005d15e053",
+      "net": "/M1_CAM_SCL_1V8",
+      "start": [
+        10.765,
+        7.507
+      ],
+      "end": [
+        11.665,
+        8.407
+      ]
+    },
+    {
+      "uuid": "f3fe8de5-714a-4c87-aba8-0e8e3ac1c420",
+      "net": "/M1_CAM_SCL_1V8",
+      "start": [
+        8.59,
+        7.507
+      ],
+      "end": [
+        10.765,
+        7.507
+      ]
+    },
+    {
+      "uuid": "2afd1823-f438-4b9e-ab8c-6cb4f1da34b6",
+      "net": "/M1_AVDD",
+      "start": [
+        9.325,
+        7.257
+      ],
+      "end": [
+        11.0734,
+        7.257
+      ]
+    }
+  ],
+  "front": {
+    "result": "routed",
+    "visited": 256,
+    "path_xy_mm": [
+      [
+        8.685,
+        6.757
+      ],
+      [
+        9.06,
+        7.007
+      ],
+      [
+        9.91,
+        7.007
+      ],
+      [
+        10.275,
+        7.175
+      ]
+    ],
+    "added_track_uuids": [
+      "a2dcc208-c863-40d9-bc7c-754fa884a8d8",
+      "d17469c9-1ac2-4f7e-a676-4cf3ba506b6c",
+      "478d9df0-2ca3-4c1c-9368-0978372e3c94"
+    ]
+  },
+  "back": {
+    "result": "routed",
+    "visited": 15,
+    "path_xy_mm": [
+      [
+        10.275,
+        7.175
+      ],
+      [
+        10.975,
+        7.175
+      ]
+    ],
+    "added_track_uuids": [
+      "bd213998-2a3c-474d-ad37-c05a97c378a1"
+    ]
+  },
+  "avdd_repair": {
+    "result": "routed",
+    "visited": 557,
+    "path_xy_mm": [
+      [
+        9.325,
+        7.257
+      ],
+      [
+        10.175,
+        7.532
+      ],
+      [
+        10.475,
+        7.532
+      ],
+      [
+        11.0734,
+        7.257
+      ]
+    ],
+    "added_track_uuids": [
+      "119fbb0e-1825-4a46-91ba-086a0724af96",
+      "cc63cefb-81c1-4e62-b465-34dd0c474bab",
+      "b4dcad71-455b-48e4-b9c9-0bae55f9feb7"
+    ]
+  },
+  "scl_repair": {
+    "result": "routed",
+    "visited": 826,
+    "path_xy_mm": [
+      [
+        8.59,
+        7.507
+      ],
+      [
+        9.44,
+        7.507
+      ],
+      [
+        10.665,
+        7.957
+      ],
+      [
+        11.165,
+        7.982
+      ],
+      [
+        11.665,
+        8.407
+      ]
+    ],
+    "added_track_uuids": [
+      "3c91cc0e-5242-450d-81ef-ccf73b542ee3",
+      "6aa14afa-73e7-44a5-9eec-bfe042bf038c",
+      "d17935a2-4c19-4cc1-a4cc-aa3f8c4f4dc0",
+      "87f02cd2-0a95-4572-b54c-098ca0439c5d"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+from pathlib import Path
+import FreeCAD as A,FreeCADGui as G,json,runpy,hashlib
+R=Path(__file__).resolve().parents[4];S=R/'designs/eye-tracker/rat/two-arm-r28';O=R/'generated/eye-tracker/rat/two-arm-r28';find=runpy.run_path(str(R/'tools/cad/review_document.py'))['find_open_document'];records=json.loads((S/'review-inputs.json').read_text())['inputs'];docs=[]
+for rec in records:
+ assert hashlib.sha256((R/rec['source_checkpoint']).read_bytes()).hexdigest()==rec['source_sha256']
+ p=R/rec['review_copy'];d=find(A,p) or A.openDocument(str(p));A.setActiveDocument(d.Name);d.Label=rec['label'];docs.append(d)
+ for ob in d.Objects:
+  if ob.TypeId in ['App::Part','App::DocumentObjectGroup']:ob.Visibility=True
+ if rec['label'].startswith('Rat'):
+  for ob in d.Objects:
+   if ob.TypeId not in ['App::Part','App::DocumentObjectGroup']:ob.Visibility=False
+ names=['FinishedCarrier','eye_primary_Holder','eye_primary_Clip','eye_primary_Cap','skull_mount_Baseplate','PCB','JST_4pin','RibbonCandidate','camera_pcb','M4_lens','IR_LED','IR_LED_001','DetailedOpticalAxis','RatDesignSkull','RatLeftSclera','RatLeftCornea','RatRightSclera','RatRightCornea','RatLeftOpticalAxis','RatRightOpticalAxis']
+ for n in names:
+  ob=d.getObject(n)
+  if not ob:continue
+  ob.Visibility=True
+  if n=='RatDesignSkull':ob.ViewObject.ShapeColor=(.85,.81,.65)
+  elif n.endswith('Sclera'):ob.ViewObject.ShapeColor=(.95,.95,.93)
+  elif n.endswith('Cornea'):ob.ViewObject.ShapeColor=(.1,.6,.85)
+  elif n in ['PCB','camera_pcb']:ob.ViewObject.ShapeColor=(.9,.12,.1)
+  elif n=='RibbonCandidate':ob.ViewObject.ShapeColor=(1.,.8,.02);ob.ViewObject.DisplayMode='Shaded'
+  elif n=='FinishedCarrier':ob.ViewObject.ShapeColor=(.62,.66,.7)
+  elif 'OpticalAxis' in n:ob.ViewObject.LineColor=(0.,.65,.95) if n=='DetailedOpticalAxis' else (.9,.15,.65);ob.ViewObject.LineWidth=3
+ for n in ['RetainedPCBTray','RetainedSocket','UpperSupport','RearRibbonGuard','StemSupportedCarrier','SingleTaperedArm','M4_nominal_reference','CandidateOpticalAxis','eye_primary_ApproxPCB']:
+  ob=d.getObject(n)
+  if ob:ob.Visibility=False
+ d.eye_primary_Holder.ViewObject.Transparency=30;d.eye_primary_Cap.ViewObject.Transparency=65
+ d.recompute();v=G.activeDocument().activeView();v.viewAxonometric();v.fitAll();G.updateGui();d.save();v.saveImage(str(O/(d.Name+'.png')),1400,1000,'White')
+A.setActiveDocument(docs[0].Name);G.updateGui();(O/'opened.json').write_text(json.dumps([{'name':d.Name,'label':d.Label,'file':d.FileName} for d in docs],indent=2))

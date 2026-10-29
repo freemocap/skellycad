@@ -1,0 +1,53 @@
+import FreeCAD as App, FreeCADGui as Gui
+import Part, json, hashlib, traceback
+from pathlib import Path
+root=Path(r'__REVIEW_DIRECTORY__')
+try:
+    destination=root/'OV9281-R06-PCB-REVIEW.FCStd'
+    existing=next((d for d in App.listDocuments().values() if d.FileName and Path(d.FileName).resolve()==destination.resolve()),None)
+    if existing:
+        App.setActiveDocument(existing.Name)
+        Gui.activeDocument().activeView().fitAll()
+    else:
+        assert not destination.exists(),'Preserve the existing saved review; open its FCStd directly.'
+        doc=App.newDocument('OV9281_R06_PCB_Review');doc.Label='OV9281 R06 - power copper and ground planes'
+        report={'status':'PCB copper geometry review; no component bodies, optics or qualified mating heights','boards':{}}
+        shapes={}
+        for name in ['controller','head','flex-study']:
+            shape=Part.Shape();shape.read(str(root/(name+'.step')))
+            assert shape.isValid() and shape.Solids,name
+            shapes[name]=shape
+        # Keep exposed flex copper slightly above rigid-board copper for viewing.
+        # This avoids claiming that the height is a connector/mechanical solution.
+        lift=shapes['controller'].BoundBox.ZMax-shapes['flex-study'].BoundBox.ZMin+.02
+        for name,label,offset,angle,color in [
+            ('controller','Controller - 32 x 20 mm',(0,0,0),0,(.12,.36,.25)),
+            ('head','OV9281 head - 14 x 14 mm',(76,-1.25,0),-90,(.12,.36,.25)),
+            ('flex-study','Flex - conductors and ground plane',(29.2,-2,lift),0,(.65,.38,.08))]:
+            path=root/(name+'.step');shape=shapes[name];solids=sorted(shape.Solids,key=lambda s:s.Volume,reverse=True)
+            group=doc.addObject('App::Part',name.replace('-','_'));group.Label=label
+            group.addProperty('App::PropertyString','SourceFile','Provenance');group.SourceFile=str(path)
+            group.addProperty('App::PropertyString','SourceSHA256','Provenance');group.SourceSHA256=hashlib.sha256(path.read_bytes()).hexdigest()
+            group.addProperty('App::PropertyString','ReviewLimit','Provenance');group.ReviewLimit='Actual STEP geometry; provisional flat placement. No fitted optics or component bodies.'
+            for suffix,body,tint in [('Substrate',solids[0],color),('Copper',Part.makeCompound(solids[1:]),(.85,.66,.28))]:
+                obj=doc.addObject('PartDesign::Feature',name.replace('-','_')+suffix);obj.Label=suffix+' - '+name
+                obj.Shape=body;group.addObject(obj);obj.ViewObject.ShapeColor=tint
+                obj.ViewObject.LineColor=(.12,.12,.12);obj.ViewObject.DisplayMode='Flat Lines'
+            group.Placement=App.Placement(App.Vector(*offset),App.Rotation(App.Vector(0,0,1),angle))
+            bb=shape.BoundBox
+            report['boards'][name]={'source_sha256':group.SourceSHA256,'valid':True,'solids':len(solids),
+                'export_bounds_mm':[bb.XMin,bb.YMin,bb.ZMin,bb.XMax,bb.YMax,bb.ZMax]}
+        doc.recompute()
+        for i in range(24):
+            head=doc.getObject('head').Placement.multVec(App.Vector(1.25+i*.5,-12.25,0))
+            flex=doc.getObject('flex_study').Placement.multVec(App.Vector(34.55,-(.5+i*.5),0))
+            assert abs(head.x-flex.x)<1e-6 and abs(head.y-flex.y)<1e-6
+        report['pin_xy_alignment_checks']=24;report['flex_review_lift_mm']=lift
+        Gui.activeDocument().activeView().viewAxonometric();Gui.activeDocument().activeView().fitAll()
+        Gui.getMainWindow().showMaximized();Gui.updateGui();Gui.activeDocument().activeView().fitAll()
+        doc.recompute();doc.saveAs(str(destination))
+        Gui.activeDocument().activeView().saveImage(str(root/'freecad-review.png'),1600,900,'Current')
+        report['document']=doc.FileName;report['visible']=Gui.getMainWindow().isVisible()
+        (root/'review-status.json').write_text(json.dumps(report,indent=2)+'\n')
+except Exception:
+    (root/'review-error.txt').write_text(traceback.format_exc())

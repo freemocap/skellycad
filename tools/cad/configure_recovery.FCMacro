@@ -1,0 +1,44 @@
+"""Apply two-minute recovery through FreeCAD's in-process preferences API.
+
+[@freecad114GuiPython; @freecad114DocumentPreferences; @freecad114DocumentPreferencesUi]
+"""
+import FreeCAD as App
+import FreeCADGui as Gui
+from PySide import QtCore, QtWidgets
+from pathlib import Path
+import json
+import traceback
+
+out = Path(__file__).resolve().parents[2] / 'generated/session-recovery/recovery-settings.json'
+
+def apply_recovery():
+    try:
+        controls = [w for w in QtWidgets.QApplication.allWidgets()
+                    if w.objectName() == 'prefAutoSaveTimeout']
+        assert len(controls) == 1, 'Document preferences control is not unique'
+        interval = controls[0]
+        dialog = interval.window()
+        enabled = dialog.findChild(QtWidgets.QCheckBox, 'prefAutoSaveEnabled')
+        recovery = dialog.findChild(QtWidgets.QCheckBox, 'prefRecovery')
+        assert enabled is not None and recovery is not None
+        enabled.setChecked(True)
+        recovery.setChecked(True)
+        interval.setValue(2)
+        boxes = dialog.findChildren(QtWidgets.QDialogButtonBox)
+        buttons = [box.button(QtWidgets.QDialogButtonBox.Ok) for box in boxes]
+        buttons = [button for button in buttons if button is not None]
+        assert len(buttons) == 1, 'Preferences OK button is not unique'
+        buttons[0].click()
+        App.saveParameter()
+        prefs = App.ParamGet('User parameter:BaseApp/Preferences/Document')
+        assert prefs.GetBool('AutoSaveEnabled') and prefs.GetInt('AutoSaveTimeout') == 2
+        out.write_text(json.dumps(dict(enabled=True, minutes=2, applied_in_running_session=True)), encoding='utf-8')
+    except Exception:
+        out.write_text(json.dumps(dict(error=traceback.format_exc())), encoding='utf-8')
+
+if any(w.objectName() == 'Gui__Dialog__DlgPreferences' and w.isVisible()
+       for w in QtWidgets.QApplication.topLevelWidgets()):
+    apply_recovery()
+else:
+    QtCore.QTimer.singleShot(1000, apply_recovery)
+    Gui.showPreferencesByName('General', 'Document')

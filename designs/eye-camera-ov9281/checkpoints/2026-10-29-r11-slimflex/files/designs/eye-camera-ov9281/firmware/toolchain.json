@@ -1,0 +1,22 @@
+{
+  "idf": {
+    "repository": "https://github.com/espressif/esp-idf.git",
+    "tag": "v5.5.6",
+    "commit": "880a203ae603d08a94d06aa01e0d6761958e5e9e"
+  },
+  "video": {
+    "repository": "https://github.com/espressif/esp-video-components.git",
+    "commit": "789cde3bd09296a13d4e70afe011366b60ac772c"
+  },
+  "compiler": "riscv32-esp-elf esp-14.2.0_20260121",
+  "python": "3.12",
+  "components": {
+    "espressif/esp_tinyusb": "1.7.6",
+    "espressif/tinyusb": "0.21.0~2",
+    "espressif/cmake_utilities": "0.5.3"
+  },
+  "target": "esp32p4",
+  "minimum_chip_revision": "3.0",
+  "camera_driver": "OV9281 RAW8 640x400 100fps",
+  "transport": "USB CDC bulk, one RAW8 snapshot per F command; sustained rate unqualified"
+}

@@ -1,0 +1,13 @@
+import FreeCAD as App, FreeCADGui as Gui
+from pathlib import Path
+import json,hashlib,os,traceback
+root=Path(r'C:/Users/jonma/code-stuff/github/freemocap/other/skellycad');out=root/'generated/ov9281-r11-mechanics';path=out/'OV9281-R11-MATCHED.FCStd'
+try:
+    expected=json.loads((out/'validation.json').read_text());digest=hashlib.sha256(path.read_bytes()).hexdigest();assert digest==expected['native_sha256']
+    existing=[d for d in App.listDocuments().values() if d.FileName and Path(d.FileName).resolve()==path.resolve()]
+    doc=existing[0] if existing else App.openDocument(str(path));assert doc.getObject('ReviewStatus').BoardSHA256==expected['board_sha256'];App.setActiveDocument(doc.Name)
+    Gui.activateWorkbench('PartWorkbench');Gui.activeDocument().activeView().viewAxonometric();Gui.activeDocument().activeView().fitAll()
+    Gui.getMainWindow().showNormal();Gui.getMainWindow().raise_();Gui.updateGui()
+    (out/'review-open.json').write_text(json.dumps({'pid':os.getpid(),'file':str(path),'native_sha256':digest,'board_sha256':expected['board_sha256'],'document':doc.Name,'opened':True,'computer_use':False,'source_file_modified':hashlib.sha256(path.read_bytes()).hexdigest()!=digest},indent=2)+'\n')
+except Exception:
+    (out/'review-open-error.txt').write_text(traceback.format_exc())

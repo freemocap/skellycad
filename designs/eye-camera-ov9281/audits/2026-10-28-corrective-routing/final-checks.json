@@ -1,0 +1,17 @@
+{
+  "bibliography_references": 116,
+  "bibliography_errors": 0,
+  "bibliography_tests_passed": 8,
+  "cross_section_tests_passed": 5,
+  "routing_spatial_tests_passed": 2,
+  "native_shape_validation": {
+    "checked_shape_count": 126,
+    "invalid_shapes": [],
+    "invalid_objects": [],
+    "intentional_empty_datum_features": [
+      "PupilReference_SensorFrame"
+    ],
+    "valid_nonempty_feature_shapes": 125
+  },
+  "scope": "R10 corrective routing; existing firmware and host software unchanged and not retested."
+}

@@ -1,0 +1,36 @@
+{
+  "status": "Logical harness allocation; connector and board partition not frozen",
+  "pins": {
+    "1": "GND",
+    "2": "CAM_L_D0_N",
+    "3": "CAM_L_D0_P",
+    "4": "GND",
+    "5": "CAM_L_CLK_N",
+    "6": "CAM_L_CLK_P",
+    "7": "GND",
+    "8": "CAM_L_D1_N",
+    "9": "CAM_L_D1_P",
+    "10": "GND",
+    "11": "+1V8",
+    "12": "M1_CAM_SCL_1V8",
+    "13": "M1_CAM_SDA_1V8",
+    "14": "GND",
+    "15": "CAM_NRST_1V8",
+    "16": "M1_VSYNC_1V8_M",
+    "17": "+1V2",
+    "18": "GND",
+    "19": "+2V8",
+    "20": "GND",
+    "21": "+3V3",
+    "22": "LED_PWM",
+    "23": "GND",
+    "24": "GND"
+  },
+  "usb_pins": {
+    "1": "VBUS",
+    "2": "D-",
+    "3": "D+",
+    "4": "GND"
+  },
+  "warning": "USB numbering is our proposed harness, not verified Pupil cable compatibility"
+}

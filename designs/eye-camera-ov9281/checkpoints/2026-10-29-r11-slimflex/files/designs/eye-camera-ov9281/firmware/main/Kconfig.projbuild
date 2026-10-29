@@ -1,0 +1,17 @@
+menu "Skelly eye camera"
+config SKELLY_SYNTHETIC
+    bool "Use synthetic pixels instead of the physical sensor"
+    default n
+    help
+        USB bring-up only. Every returned frame has its synthetic flag set.
+        Does not initialize the sensor or prove camera capture.
+endmenu
+
+config SKELLY_CSI_LANE_MBPS
+    int "CSI receiver lane bit rate (requires bench verification)"
+    range 400 800
+    default 800
+    help
+        Register-table header says 800 Mbps; driver metadata says 400 MHz.
+        Default follows the explicit bit-rate header. Change for measured
+        bring-up only; compilation cannot resolve this upstream discrepancy.

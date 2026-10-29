@@ -1,0 +1,112 @@
+{
+  "revision": "OV9281-P4-R10",
+  "fabrication_ready": false,
+  "source_checkpoint": "C:\\Users\\jonma\\code-stuff\\github\\freemocap\\other\\skellycad\\generated\\ov9281-r10-balanced-04",
+  "rigid_board_pad_net_checks": 471,
+  "assembled_pin_alignment_checks": 24,
+  "flex_contact_paths_verified": 24,
+  "schematic_erc_errors": 0,
+  "schematic_erc_warnings": 0,
+  "boards": {
+    "controller": {
+      "footprints": 77,
+      "unconnected_items": 0,
+      "violations_by_type": {},
+      "copper_layers": 6,
+      "native_thickness_mm": 0.541
+    },
+    "head": {
+      "footprints": 31,
+      "unconnected_items": 0,
+      "violations_by_type": {},
+      "copper_layers": 6,
+      "native_thickness_mm": 0.541
+    },
+    "flex-study": {
+      "footprints": 2,
+      "unconnected_items": 0,
+      "violations_by_type": {},
+      "copper_layers": 2,
+      "native_thickness_mm": 0.168
+    }
+  },
+  "inner_copper_retention": {
+    "controller": [
+      {
+        "layer": "In1.Cu",
+        "copper_union_area_mm2": 570.5766901064055,
+        "board_area_mm2": 640,
+        "retention_fraction": 0.8915260782912586,
+        "method": "Native polygon union with 1um inward copper approximation; circumscribed 64-sided drill removal."
+      },
+      {
+        "layer": "In2.Cu",
+        "copper_union_area_mm2": 504.5182710338925,
+        "board_area_mm2": 640,
+        "retention_fraction": 0.788309798490457,
+        "method": "Native polygon union with 1um inward copper approximation; circumscribed 64-sided drill removal."
+      },
+      {
+        "layer": "In3.Cu",
+        "copper_union_area_mm2": 516.672515930836,
+        "board_area_mm2": 640,
+        "retention_fraction": 0.8073008061419312,
+        "method": "Native polygon union with 1um inward copper approximation; circumscribed 64-sided drill removal."
+      },
+      {
+        "layer": "In4.Cu",
+        "copper_union_area_mm2": 561.508889898802,
+        "board_area_mm2": 640,
+        "retention_fraction": 0.877357640466878,
+        "method": "Native polygon union with 1um inward copper approximation; circumscribed 64-sided drill removal."
+      }
+    ],
+    "head": [
+      {
+        "layer": "In1.Cu",
+        "copper_union_area_mm2": 152.629859822807,
+        "board_area_mm2": 196,
+        "retention_fraction": 0.7787237746061582,
+        "method": "Native polygon union with 1um inward copper approximation; circumscribed 64-sided drill removal."
+      },
+      {
+        "layer": "In2.Cu",
+        "copper_union_area_mm2": 124.036520910068,
+        "board_area_mm2": 196,
+        "retention_fraction": 0.6328393923983061,
+        "method": "Native polygon union with 1um inward copper approximation; circumscribed 64-sided drill removal."
+      },
+      {
+        "layer": "In3.Cu",
+        "copper_union_area_mm2": 128.3058593087715,
+        "board_area_mm2": 196,
+        "retention_fraction": 0.6546217311672015,
+        "method": "Native polygon union with 1um inward copper approximation; circumscribed 64-sided drill removal."
+      },
+      {
+        "layer": "In4.Cu",
+        "copper_union_area_mm2": 152.629859822807,
+        "board_area_mm2": 196,
+        "retention_fraction": 0.7787237746061582,
+        "method": "Native polygon union with 1um inward copper approximation; circumscribed 64-sided drill removal."
+      }
+    ],
+    "flex-study": [
+      {
+        "layer": "F.Cu",
+        "copper_union_area_mm2": 416.984448891928,
+        "board_area_mm2": 441.24999999999994,
+        "retention_fraction": 0.9450072496134347,
+        "method": "Native polygon union with 1um inward copper approximation; circumscribed 64-sided drill removal."
+      }
+    ]
+  },
+  "sha256": {
+    "head.kicad_pcb": "8acbe182d47f21e00a38ad7f99bad70e1eace5433196948a0ba3e9e0f71ff7cb",
+    "controller.kicad_pcb": "de0f3dff1a932e2852bc63079b28c99ab9df04517b2e59d6920c2318159182c2",
+    "flex-study.kicad_pcb": "4cd8ef61c6a839926712e2afa47ddd25353aa8b46d2797274c93938d0b8933f0",
+    "camera.kicad_sch": "b307a594304676204d24e58bcce617ebf770879fbdfe65a5e94134018c0c2991",
+    "OV9281-P4-R10-assembly.kicad_pcb": "7139553bf9838d1c1303029886997e0dfbd478f245c6a845ab9783f6afe5530b"
+  },
+  "assembly_limit": "Composite overview only; mixed rigid/flex stackups remain authoritative in the three separate boards."
+}

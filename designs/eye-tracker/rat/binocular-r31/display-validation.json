@@ -1,0 +1,34 @@
+{
+  "saved": true,
+  "visible": [
+    "RatDesignSkull",
+    "RatLeftSclera",
+    "RatLeftCornea",
+    "RatRightSclera",
+    "RatRightCornea",
+    "Baseplate",
+    "RightCamera",
+    "RightCamera_Red_PLA_boards",
+    "RightCamera_Black_PLA_lens",
+    "RightCamera_White_PLA_connector_LEDs",
+    "RightCamera_Yellow_TPU_ribbon",
+    "RightCamera_OpticalAxis",
+    "Righteye_primary_Holder",
+    "Righteye_primary_Clip",
+    "LeftCamera",
+    "LeftCamera_Red_PLA_boards",
+    "LeftCamera_Black_PLA_lens",
+    "LeftCamera_White_PLA_connector_LEDs",
+    "LeftCamera_Yellow_TPU_ribbon",
+    "LeftCamera_OpticalAxis",
+    "Lefteye_primary_Holder",
+    "Lefteye_primary_Clip",
+    "FinishedCarrier"
+  ],
+  "views": [
+    "overview",
+    "top",
+    "front",
+    "rear"
+  ]
+}

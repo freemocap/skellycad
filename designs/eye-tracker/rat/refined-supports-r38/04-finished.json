@@ -1,0 +1,50 @@
+{
+  "RightUpperSupport-root": {
+    "radius_mm": 0.4,
+    "selected_seam_length_mm": 1.4357438066257417,
+    "added_volume_mm3": 0.0,
+    "removed_volume_mm3": 0.020156219867038205
+  },
+  "RightUpperSupport-socket": {
+    "radius_mm": 0.4,
+    "selected_seam_length_mm": 2.6207557664262993,
+    "added_volume_mm3": 0.07132984039604105,
+    "removed_volume_mm3": 0.0
+  },
+  "RightLowerSupport-root": {
+    "radius_mm": 0.4,
+    "selected_seam_length_mm": 2.24984648395227,
+    "added_volume_mm3": 0.017178405909148185,
+    "removed_volume_mm3": 0.0
+  },
+  "RightLowerSupport-socket": {
+    "radius_mm": 0.4,
+    "selected_seam_length_mm": 2.6204799694501792,
+    "added_volume_mm3": 0.08096896081451621,
+    "removed_volume_mm3": 0.0
+  },
+  "LeftUpperSupport-root": {
+    "radius_mm": 0.4,
+    "selected_seam_length_mm": 3.5600000000000307,
+    "added_volume_mm3": 0.0,
+    "removed_volume_mm3": 0.04549217784340139
+  },
+  "LeftUpperSupport-socket": {
+    "radius_mm": 0.4,
+    "selected_seam_length_mm": 2.619035351601974,
+    "added_volume_mm3": 0.07301946091016334,
+    "removed_volume_mm3": 0.0
+  },
+  "LeftLowerSupport-root": {
+    "radius_mm": 0.4,
+    "selected_seam_length_mm": 1.4000517926677074,
+    "added_volume_mm3": 0.022534144301476513,
+    "removed_volume_mm3": 0.0
+  },
+  "LeftLowerSupport-socket": {
+    "radius_mm": 0.4,
+    "selected_seam_length_mm": 2.622062698513615,
+    "added_volume_mm3": 0.0769554235111672,
+    "removed_volume_mm3": 0.0
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "pass": true,
+  "units": "g and mm",
+  "module_target_g": 1,
+  "external_tether_excluded": true,
+  "candidate_checks": [
+    {
+      "id": "A",
+      "physical_reference_count": 106,
+      "accounting_pass": true,
+      "nominal_below_one_gram": false
+    },
+    {
+      "id": "B",
+      "physical_reference_count": 105,
+      "accounting_pass": true,
+      "nominal_below_one_gram": false
+    },
+    {
+      "id": "C",
+      "physical_reference_count": 105,
+      "accounting_pass": true,
+      "nominal_below_one_gram": false
+    }
+  ],
+  "preserved_source_count": 17,
+  "source_hashes_unchanged": true,
+  "native_zip_verified": true,
+  "native_sha256": "fe2f94cd06f8cad6d9af83355da191b532ebf84e48573ca890d21811f14b4054",
+  "not_hardware_validation": true
+}

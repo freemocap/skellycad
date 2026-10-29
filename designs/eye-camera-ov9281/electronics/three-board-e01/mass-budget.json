@@ -1,0 +1,128 @@
+{
+  "status": "Engineering scenarios; no measured mass or fabricated board",
+  "cases": {
+    "low": {
+      "head_parts_g": {
+        "head_copper": 0.097396992,
+        "head_dielectric_coverlay": 0.08085593599999999,
+        "head_FR4_stiffener": 0.041440000000000005,
+        "head_adhesive": 0.01344,
+        "interface_copper": 0.14609548800000002,
+        "interface_dielectric_coverlay": 0.121283904,
+        "interface_FR4_stiffener": 0.06216000000000001,
+        "interface_adhesive": 0.020159999999999997,
+        "free_flex": 0.0472417,
+        "populated_packages": 0.21378,
+        "optics_holder_filter_retention": 0.08,
+        "solder_finish_mount_strain_relief": 0.035
+      },
+      "head_complete_g": 0.95885402,
+      "head_below_1g": true,
+      "base_parts_g": {
+        "PCB_copper": 0.333961056,
+        "PCB_dielectric": 0.5848190400000001,
+        "populated_packages": 0.48448,
+        "solder_finish": 0.025,
+        "enclosure_reservation": 1.2138623999999996,
+        "mount_and_local_strain_relief": 0.15
+      },
+      "base_electronics_g": 1.428260096,
+      "base_complete_backpack_g": 2.7921224959999997
+    },
+    "nominal": {
+      "head_parts_g": {
+        "head_copper": 0.146095488,
+        "head_dielectric_coverlay": 0.07309478400000001,
+        "head_FR4_stiffener": 0.041440000000000005,
+        "head_adhesive": 0.01344,
+        "interface_copper": 0.219143232,
+        "interface_dielectric_coverlay": 0.10964217600000001,
+        "interface_FR4_stiffener": 0.06216000000000001,
+        "interface_adhesive": 0.020159999999999997,
+        "free_flex": 0.054656800000000005,
+        "populated_packages": 0.35125,
+        "optics_holder_filter_retention": 0.15,
+        "solder_finish_mount_strain_relief": 0.065
+      },
+      "head_complete_g": 1.30608248,
+      "head_below_1g": false,
+      "base_parts_g": {
+        "PCB_copper": 0.5009415839999999,
+        "PCB_dielectric": 0.5501485600000001,
+        "populated_packages": 0.7251,
+        "solder_finish": 0.045,
+        "enclosure_reservation": 1.5173279999999993,
+        "mount_and_local_strain_relief": 0.3
+      },
+      "base_electronics_g": 1.821190144,
+      "base_complete_backpack_g": 3.6385181439999994
+    },
+    "high": {
+      "head_parts_g": {
+        "head_copper": 0.194793984,
+        "head_dielectric_coverlay": 0.06533363199999999,
+        "head_FR4_stiffener": 0.041440000000000005,
+        "head_adhesive": 0.01344,
+        "interface_copper": 0.29219097600000005,
+        "interface_dielectric_coverlay": 0.09800044799999999,
+        "interface_FR4_stiffener": 0.06216000000000001,
+        "interface_adhesive": 0.020159999999999997,
+        "free_flex": 0.0620719,
+        "populated_packages": 0.5552,
+        "optics_holder_filter_retention": 0.28,
+        "solder_finish_mount_strain_relief": 0.1
+      },
+      "head_complete_g": 1.7847909400000002,
+      "head_below_1g": false,
+      "base_parts_g": {
+        "PCB_copper": 0.667922112,
+        "PCB_dielectric": 0.5154780800000002,
+        "populated_packages": 1.0641,
+        "solder_finish": 0.08,
+        "enclosure_reservation": 1.9725263999999991,
+        "mount_and_local_strain_relief": 0.6
+      },
+      "base_electronics_g": 2.327500192,
+      "base_complete_backpack_g": 4.900026592
+    }
+  },
+  "tether": [
+    {
+      "length_m": 0.3,
+      "bare_4x36AWG_copper_g": 0.13544290916276114,
+      "complete_cable_scenario_g": [
+        0.18,
+        0.44999999999999996
+      ],
+      "excluded_from_head_target": true
+    },
+    {
+      "length_m": 0.6,
+      "bare_4x36AWG_copper_g": 0.2708858183255223,
+      "complete_cable_scenario_g": [
+        0.36,
+        0.8999999999999999
+      ],
+      "excluded_from_head_target": true
+    }
+  ],
+  "stack_basis": {
+    "component_regions_mm": 0.303,
+    "four_layer_copper_total_mm": 0.122,
+    "free_flex_mm": 0.166,
+    "free_flex_copper_total_mm": 0.036,
+    "FR4_stiffener_mm": 0.1,
+    "adhesive_mm": 0.05,
+    "base_four_layer_mm": 0.4,
+    "base_copper_total_mm": 0.106
+  },
+  "assumptions": [
+    "Retain conservative A01/C head stack and full-area backing. TI953 recommends at least four layers and dedicated ground.",
+    "Copper fill 40/60/80 percent; intervals are scenarios, not confidence bounds.",
+    "Package intervals inherited from R11 or explicitly estimated for new devices.",
+    "Optics, adhesive, enclosure and mounts are unqualified allocations.",
+    "Base complete mass includes housing and mounting allowance; external tether and bench power source excluded.",
+    "Backpack battery is not designed or included; intended input remains externally supplied regulated 5 V."
+  ],
+  "target_status": "Under-one-gram target is not met by the nominal conservative construction; reduce mass before design freeze."
+}

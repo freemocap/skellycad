@@ -1,0 +1,33 @@
+{
+  "source_complete_assembly": {
+    "revision": "ET-RAT-COMPACT-BINOCULAR-R32",
+    "units": "mm",
+    "native_checkpoint": "designs/eye-tracker/rat/compact-binocular-r32/checkpoints/ET-RAT-COMPACT-BINOCULAR-R32.FCStd",
+    "native_sha256": "b1bab67befa6205fbfc6f987b225f5ccacbd00731d4c3c57fa5e5d71ebe56363",
+    "source": "lowering.json",
+    "recipe": "recipe.json",
+    "ribbons": "ribbons.json",
+    "arms": "arms.json",
+    "validation": "validation.json",
+    "containment": "containment.json",
+    "comparison": "comparison.json",
+    "status": "Compact binocular review; rearward ordered protective arms; static validation passed; physical fit pending",
+    "physical_fit_verified": false,
+    "print_release": false,
+    "deferred": [
+      "skull Boolean cut",
+      "junction finishing",
+      "cap"
+    ]
+  },
+  "source_print_pack": "print-r32",
+  "inputs": {
+    "skull-print-world.stl": "12429e5d683ceba5eb8550ccb70c1abd8108ef05a1da103d1604c326fcb15e6d",
+    "baseplate-world.stl": "98537e0e0ea7293fd5f9bd7dd052c19fd8e9ac74808f4fa938bd1d3255744b94",
+    "RatLeftSclera.stl": "abb64ccd4d01252d1d6de3256721eacc0dafa634f9a50b94ad6cf8e61ec30d5a",
+    "RatRightSclera.stl": "a224829f597ac9a360fa78751e96e152dc33e5ee78012ac0f3936d84a2986d16",
+    "RatLeftCornea.stl": "abef8ce66e9a8b4c803f5882ce5385050d5e54c87fcbd7fee779c281fc92879f",
+    "RatRightCornea.stl": "f0344aa677d91c0b07dd0c385c23b0ba3ac39a74465cf4839a7c799047178ba7",
+    "LICENSE-source.txt": "85027bb93ccf79b65e293ab8d7dc956397e6c316c727cae97e7aa29e89f49498"
+  }
+}

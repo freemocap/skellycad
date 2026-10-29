@@ -1,0 +1,61 @@
+{
+  "status": "pass",
+  "scope": "Saved-file identity, baseline preservation, evidence consistency, complete BOM coverage and review opening; not physical qualification",
+  "baseline_inputs_verified": 19,
+  "baseline_selector_archived_before_update": true,
+  "pcb_sha256": "989a2008743212d3f9cea44e2643b0584b22613322b7a8450575f173e29f1fb7",
+  "cad_sha256": "cba97827bfa72f36fbca9075133d826c875242a75db0d79cb6767934eb36066c",
+  "schematic_pins_checked": 418,
+  "pcb_pad_instances_checked": 453,
+  "native_errors": 0,
+  "native_unconnected": 0,
+  "stack_warnings_individually_dispositioned": 199,
+  "fitted_packages_covered": 104,
+  "purchasing_lines": 31,
+  "mass_nominal_g": 1.3427721253065203,
+  "external_tether_excluded": true,
+  "under_one_gram_target_met": false,
+  "dvdd_twice_typical_stress_passes": false,
+  "firmware_variants_compiled": 2,
+  "physical_camera_demonstrated": false,
+  "fabrication_ready": false,
+  "native_review_opened": [
+    {
+      "Id": 16688,
+      "File": "C:/Users/jonma/code-stuff/github/freemocap/other/skellycad/generated/ov9281-r11-electronics/camera.kicad_pcb",
+      "MainWindowTitle": "camera \u00e2\u20ac\u201d PCB Editor",
+      "MainWindowHandle": 4202344,
+      "Responding": true
+    },
+    {
+      "Id": 18028,
+      "File": "C:/Users/jonma/code-stuff/github/freemocap/other/skellycad/generated/ov9281-r11-electronics/camera.kicad_sch",
+      "MainWindowTitle": "camera \u00e2\u20ac\u201d Schematic Editor",
+      "MainWindowHandle": 657578,
+      "Responding": true
+    },
+    {
+      "Id": 38952,
+      "File": "C:/Users/jonma/code-stuff/github/freemocap/other/skellycad/designs/eye-camera-ov9281/electronics/r11/open-review.FCMacro",
+      "MainWindowTitle": " OV9281-R11-MATCHED - FreeCAD 1.1.4",
+      "MainWindowHandle": 138110,
+      "Responding": true
+    }
+  ],
+  "freecad_review_opened": {
+    "pid": 38952,
+    "file": "C:\\Users\\jonma\\code-stuff\\github\\freemocap\\other\\skellycad\\generated\\ov9281-r11-mechanics\\OV9281-R11-MATCHED.FCStd",
+    "native_sha256": "cba97827bfa72f36fbca9075133d826c875242a75db0d79cb6767934eb36066c",
+    "board_sha256": "989a2008743212d3f9cea44e2643b0584b22613322b7a8450575f173e29f1fb7",
+    "document": "OV9281_R11_MATCHED",
+    "opened": true,
+    "computer_use": false,
+    "source_file_modified": false
+  },
+  "rendered_review_http_status": 200,
+  "local_html_links_checked": 11,
+  "render_image_visually_reviewed": true,
+  "bibliography": "168 references; 0 errors",
+  "bibliography_tests": "test_bad_dates_reviews_urls_and_dois (test_references.ReferencesTests.test_bad_dates_reviews_urls_and_dois) ... ok\ntest_duplicate_keys_and_fields_fail (test_references.ReferencesTests.test_duplicate_keys_and_fields_fail) ... ok\ntest_duplicate_sources (test_references.ReferencesTests.test_duplicate_sources) ... ok\ntest_grouped_citations_and_non_citations (test_references.ReferencesTests.test_grouped_citations_and_non_citations) ... ok\ntest_malformed_and_unsupported_syntax_fails (test_references.ReferencesTests.test_malformed_and_unsupported_syntax_fails) ... ok\ntest_nested_braces_escapes_comments_and_multiple_entries (test_references.ReferencesTests.test_nested_braces_escapes_comments_and_multiple_entries) ... ok\ntest_repository_check_reports_unknown_key_and_skips_dependency_directories (test_references.ReferencesTests.test_repository_check_reports_unknown_key_and_skips_dependency_directories) ... ok\ntest_required_metadata (test_references.ReferencesTests.test_required_metadata) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.002s\n\nOK\n",
+  "computer_use": false
+}

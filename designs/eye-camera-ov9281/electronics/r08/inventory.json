@@ -1,0 +1,1656 @@
+{
+  "revision": "OV9281-P4-R08",
+  "status": "Native review inventory; not an approved procurement BOM",
+  "missing_mpn_field_count": 71,
+  "note": "Some values contain candidate part numbers without structured MPN fields. Flex contacts and solder lands are board geometry, not separately purchased parts.",
+  "items": [
+    {
+      "board": "controller",
+      "reference": "C1",
+      "value": "C_4u7_0805",
+      "footprint": "C_0805_2012Metric",
+      "mpn_field": "0805X475K250CT",
+      "manufacturer_field": "Walsin",
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        25.75,
+        16.25
+      ],
+      "rotation_deg": -90.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "C101",
+      "value": "CL_TBD",
+      "footprint": "C_0402_1005Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        25.25,
+        15.0
+      ],
+      "rotation_deg": 180.0,
+      "side": "F.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "C102",
+      "value": "CL_TBD",
+      "footprint": "C_0402_1005Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        22.75,
+        18.0
+      ],
+      "rotation_deg": -90.0,
+      "side": "F.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "C103",
+      "value": "100n",
+      "footprint": "C_0402_1005Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        29.75,
+        2.5
+      ],
+      "rotation_deg": -90.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "C104",
+      "value": "1u",
+      "footprint": "C_0603_1608Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        22.5,
+        14.0
+      ],
+      "rotation_deg": 90.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "C105",
+      "value": "4.7u",
+      "footprint": "C_0603_1608Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        8.5,
+        13.25
+      ],
+      "rotation_deg": 90.0,
+      "side": "F.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "C106",
+      "value": "22u",
+      "footprint": "C_0805_2012Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        5.0,
+        18.0
+      ],
+      "rotation_deg": 0.0,
+      "side": "F.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "C107",
+      "value": "22p",
+      "footprint": "C_0402_1005Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        6.0,
+        9.75
+      ],
+      "rotation_deg": 0.0,
+      "side": "F.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "C108",
+      "value": "4.7u",
+      "footprint": "C_0603_1608Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        1.5,
+        14.25
+      ],
+      "rotation_deg": -90.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "C109",
+      "value": "22u",
+      "footprint": "C_0805_2012Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        8.0,
+        16.0
+      ],
+      "rotation_deg": 0.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "C110",
+      "value": "100n / U101.9",
+      "footprint": "C_0402_1005Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        21.75,
+        11.5
+      ],
+      "rotation_deg": 0.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "C111",
+      "value": "100n / U101.21",
+      "footprint": "C_0402_1005Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        21.75,
+        7.25
+      ],
+      "rotation_deg": 0.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "C112",
+      "value": "100n / U101.26",
+      "footprint": "C_0402_1005Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        21.75,
+        5.5
+      ],
+      "rotation_deg": 0.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "C113",
+      "value": "100n / U101.54",
+      "footprint": "C_0402_1005Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        12.0,
+        6.0
+      ],
+      "rotation_deg": 0.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "C114",
+      "value": "100n / U101.62",
+      "footprint": "C_0402_1005Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        12.0,
+        9.0
+      ],
+      "rotation_deg": 0.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "C115",
+      "value": "100n / U101.75",
+      "footprint": "C_0402_1005Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        12.0,
+        13.25
+      ],
+      "rotation_deg": 0.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "C116",
+      "value": "100n / U101.76",
+      "footprint": "C_0402_1005Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        12.0,
+        14.5
+      ],
+      "rotation_deg": 0.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "C117",
+      "value": "100n / U101.77",
+      "footprint": "C_0402_1005Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        10.25,
+        13.5
+      ],
+      "rotation_deg": 90.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "C118",
+      "value": "100n / U101.85",
+      "footprint": "C_0402_1005Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        14.25,
+        14.5
+      ],
+      "rotation_deg": 90.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "C119",
+      "value": "100n / U101.91",
+      "footprint": "C_0402_1005Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        16.25,
+        14.5
+      ],
+      "rotation_deg": 90.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "C120",
+      "value": "100n / U101.96",
+      "footprint": "C_0402_1005Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        18.0,
+        14.5
+      ],
+      "rotation_deg": 90.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "C121",
+      "value": "100n / U101.101",
+      "footprint": "C_0402_1005Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        19.75,
+        14.5
+      ],
+      "rotation_deg": 90.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "C122",
+      "value": "100n / U101.102",
+      "footprint": "C_0402_1005Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        21.0,
+        14.5
+      ],
+      "rotation_deg": 90.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "C123",
+      "value": "10u",
+      "footprint": "C_0805_2012Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        21.5,
+        2.75
+      ],
+      "rotation_deg": 90.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "C124",
+      "value": "10u",
+      "footprint": "C_0805_2012Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        6.25,
+        18.25
+      ],
+      "rotation_deg": 0.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "C125",
+      "value": "1u",
+      "footprint": "C_0603_1608Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        11.5,
+        16.0
+      ],
+      "rotation_deg": 0.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "C126",
+      "value": "1u",
+      "footprint": "C_0603_1608Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        14.25,
+        16.5
+      ],
+      "rotation_deg": 0.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "C127",
+      "value": "1u",
+      "footprint": "C_0603_1608Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        16.5,
+        17.0
+      ],
+      "rotation_deg": 90.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "C128",
+      "value": "100n / U101.30",
+      "footprint": "C_0402_1005Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        19.75,
+        4.75
+      ],
+      "rotation_deg": 90.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "C129",
+      "value": "100n / U101.59",
+      "footprint": "C_0402_1005Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        12.0,
+        7.75
+      ],
+      "rotation_deg": 0.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "C130",
+      "value": "100n / U101.67",
+      "footprint": "C_0402_1005Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        12.0,
+        10.5
+      ],
+      "rotation_deg": 0.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "C131",
+      "value": "10n",
+      "footprint": "C_0402_1005Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        14.25,
+        4.5
+      ],
+      "rotation_deg": 90.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "C132",
+      "value": "100n",
+      "footprint": "C_0402_1005Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        13.0,
+        4.25
+      ],
+      "rotation_deg": 90.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "C133",
+      "value": "1u",
+      "footprint": "C_0603_1608Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        9.5,
+        6.0
+      ],
+      "rotation_deg": 0.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "C134",
+      "value": "10n",
+      "footprint": "C_0402_1005Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        11.75,
+        4.25
+      ],
+      "rotation_deg": 90.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "C135",
+      "value": "100n",
+      "footprint": "C_0402_1005Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        10.5,
+        4.0
+      ],
+      "rotation_deg": 90.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "C136",
+      "value": "4.7u",
+      "footprint": "C_0603_1608Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        4.5,
+        15.5
+      ],
+      "rotation_deg": 0.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "C2",
+      "value": "C_4u7_0805",
+      "footprint": "C_0805_2012Metric",
+      "mpn_field": "0805X475K250CT",
+      "manufacturer_field": "Walsin",
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        18.5,
+        12.25
+      ],
+      "rotation_deg": 180.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "C3",
+      "value": "C_4u7_0805",
+      "footprint": "C_0805_2012Metric",
+      "mpn_field": "0805X475K250CT",
+      "manufacturer_field": "Walsin",
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        29.0,
+        17.0
+      ],
+      "rotation_deg": 0.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "C4",
+      "value": "C_1u_0603",
+      "footprint": "C_0603_1608Metric",
+      "mpn_field": "0603YD105KAT2A",
+      "manufacturer_field": "KYOCERA AVX",
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        19.0,
+        16.5
+      ],
+      "rotation_deg": 180.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "C5",
+      "value": "C_1u_0603",
+      "footprint": "C_0603_1608Metric",
+      "mpn_field": "0603YD105KAT2A",
+      "manufacturer_field": "KYOCERA AVX",
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        28.75,
+        15.0
+      ],
+      "rotation_deg": 0.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "C6",
+      "value": "C_1u_0603",
+      "footprint": "C_0603_1608Metric",
+      "mpn_field": "0603YD105KAT2A",
+      "manufacturer_field": "KYOCERA AVX",
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        21.5,
+        9.25
+      ],
+      "rotation_deg": -90.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "J101",
+      "value": "USB / JST 4-contact candidate",
+      "footprint": "JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        4.25,
+        4.75
+      ],
+      "rotation_deg": -90.0,
+      "side": "F.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "J102",
+      "value": "FH34SRJ-24S-0.5SH(99)",
+      "footprint": "Hirose_FH34SRJ_24S_0.5SH_R05",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        27.75,
+        8.25
+      ],
+      "rotation_deg": 90.0,
+      "side": "F.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "J103",
+      "value": "PROGRAM / RESET pads",
+      "footprint": "ProgrammingPads_5x1mm_P1.5mm",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        15.0,
+        18.0
+      ],
+      "rotation_deg": 180.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "L101",
+      "value": "2.2u / Isat TBD",
+      "footprint": "L_0805_2012Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        3.0,
+        16.0
+      ],
+      "rotation_deg": 0.0,
+      "side": "F.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "L102",
+      "value": "2.2u / Isat TBD",
+      "footprint": "L_0805_2012Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        7.0,
+        13.75
+      ],
+      "rotation_deg": 0.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "Q101",
+      "value": "BSS138",
+      "footprint": "SOT-23",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        15.0,
+        9.0
+      ],
+      "rotation_deg": 90.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "Q102",
+      "value": "BSS138",
+      "footprint": "SOT-23",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        17.0,
+        3.75
+      ],
+      "rotation_deg": 0.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "Q103",
+      "value": "BSS138 / reset asserted HIGH",
+      "footprint": "SOT-23",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        9.0,
+        10.25
+      ],
+      "rotation_deg": 90.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "R101",
+      "value": "10k",
+      "footprint": "R_0402_1005Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        30.25,
+        9.0
+      ],
+      "rotation_deg": 180.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "R102",
+      "value": "10k",
+      "footprint": "R_0402_1005Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        19.25,
+        18.0
+      ],
+      "rotation_deg": 0.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "R103",
+      "value": "10k",
+      "footprint": "R_0402_1005Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        7.25,
+        7.0
+      ],
+      "rotation_deg": 90.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "R104",
+      "value": "10k",
+      "footprint": "R_0402_1005Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        6.0,
+        7.75
+      ],
+      "rotation_deg": 90.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "R105",
+      "value": "499k",
+      "footprint": "R_0402_1005Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        8.5,
+        10.0
+      ],
+      "rotation_deg": 90.0,
+      "side": "F.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "R106",
+      "value": "499k",
+      "footprint": "R_0402_1005Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        9.75,
+        10.75
+      ],
+      "rotation_deg": 90.0,
+      "side": "F.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "R107",
+      "value": "453k",
+      "footprint": "R_0402_1005Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        2.0,
+        8.0
+      ],
+      "rotation_deg": 0.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "R108",
+      "value": "100k",
+      "footprint": "R_0402_1005Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        4.25,
+        8.0
+      ],
+      "rotation_deg": 0.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "R109",
+      "value": "0",
+      "footprint": "R_0402_1005Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        12.25,
+        2.0
+      ],
+      "rotation_deg": 0.0,
+      "side": "F.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "R110",
+      "value": "0",
+      "footprint": "R_0402_1005Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        12.25,
+        3.5
+      ],
+      "rotation_deg": 0.0,
+      "side": "F.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "R111",
+      "value": "4.02k 1%",
+      "footprint": "R_0402_1005Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        13.5,
+        2.5
+      ],
+      "rotation_deg": 0.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "R112",
+      "value": "4.7k",
+      "footprint": "R_0402_1005Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        15.0,
+        6.25
+      ],
+      "rotation_deg": 0.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "R113",
+      "value": "4.7k",
+      "footprint": "R_0402_1005Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        15.0,
+        11.75
+      ],
+      "rotation_deg": 0.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "R114",
+      "value": "4.7k",
+      "footprint": "R_0402_1005Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        17.0,
+        1.25
+      ],
+      "rotation_deg": 0.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "R115",
+      "value": "4.7k",
+      "footprint": "R_0402_1005Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        17.25,
+        6.25
+      ],
+      "rotation_deg": 0.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "R116",
+      "value": "100k",
+      "footprint": "R_0402_1005Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        9.0,
+        7.5
+      ],
+      "rotation_deg": 0.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "R117",
+      "value": "10k",
+      "footprint": "R_0402_1005Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        12.0,
+        11.75
+      ],
+      "rotation_deg": 0.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "R118",
+      "value": "10k",
+      "footprint": "R_0402_1005Metric",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        24.0,
+        14.25
+      ],
+      "rotation_deg": 90.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "U101",
+      "value": "ESP32-P4NRW16X / v3.x",
+      "footprint": "ESP32-P4",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        16.5,
+        10.0
+      ],
+      "rotation_deg": 180.0,
+      "side": "F.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "U102",
+      "value": "W25Q32JVSS (4 MB candidate)",
+      "footprint": "SOIC-8_5.3x5.3mm_P1.27mm",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        26.0,
+        5.5
+      ],
+      "rotation_deg": 90.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "U103",
+      "value": "TLV62569DBV / core",
+      "footprint": "SOT-23-5",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        5.5,
+        12.5
+      ],
+      "rotation_deg": 0.0,
+      "side": "F.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "U104",
+      "value": "TLV62569DBV / system",
+      "footprint": "SOT-23-5",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        4.0,
+        11.0
+      ],
+      "rotation_deg": 180.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "U105",
+      "value": "USBLC6-2P6",
+      "footprint": "SOT-666",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        9.25,
+        3.0
+      ],
+      "rotation_deg": 0.0,
+      "side": "F.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "U5",
+      "value": "TLV73318PDBVT",
+      "footprint": "SOT-23-5",
+      "mpn_field": "TLV73318PDBVT",
+      "manufacturer_field": "Texas Instruments",
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        27.0,
+        12.25
+      ],
+      "rotation_deg": 0.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "U6",
+      "value": "TLV73312PDBVT",
+      "footprint": "SOT-23-5",
+      "mpn_field": "TLV73312PDBVT",
+      "manufacturer_field": "Texas Instruments",
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        18.75,
+        9.0
+      ],
+      "rotation_deg": 90.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "U7",
+      "value": "TLV73328PDBVT",
+      "footprint": "SOT-23-5",
+      "mpn_field": "TLV73328PDBVT",
+      "manufacturer_field": "Texas Instruments",
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        22.5,
+        17.5
+      ],
+      "rotation_deg": 180.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "controller",
+      "reference": "Y101",
+      "value": "40 MHz / CL TBD",
+      "footprint": "Crystal_SMD_2016-4Pin_2.0x1.6mm",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        25.0,
+        17.0
+      ],
+      "rotation_deg": 180.0,
+      "side": "F.Cu"
+    },
+    {
+      "board": "head",
+      "reference": "C10",
+      "value": "C_1u_0603",
+      "footprint": "C_0603_1608Metric",
+      "mpn_field": "0603YD105KAT2A",
+      "manufacturer_field": "KYOCERA AVX",
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        10.275,
+        7.175
+      ],
+      "rotation_deg": 180.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "head",
+      "reference": "C12",
+      "value": "C_1u_0603",
+      "footprint": "C_0603_1608Metric",
+      "mpn_field": "0603YD105KAT2A",
+      "manufacturer_field": "KYOCERA AVX",
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        10.275,
+        8.675
+      ],
+      "rotation_deg": 180.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "head",
+      "reference": "C13",
+      "value": "C_1u_0603",
+      "footprint": "C_0603_1608Metric",
+      "mpn_field": "0603YD105KAT2A",
+      "manufacturer_field": "KYOCERA AVX",
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        3.525,
+        5.675
+      ],
+      "rotation_deg": 180.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "head",
+      "reference": "C14",
+      "value": "C_100n_6V3_0402",
+      "footprint": "C_0402_1005Metric",
+      "mpn_field": "0402X104K6R3CT",
+      "manufacturer_field": "Walsin",
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        3.935,
+        8.985
+      ],
+      "rotation_deg": 180.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "head",
+      "reference": "C15",
+      "value": "C_100n_6V3_0402",
+      "footprint": "C_0402_1005Metric",
+      "mpn_field": "0402X104K6R3CT",
+      "manufacturer_field": "Walsin",
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        10.435,
+        5.735
+      ],
+      "rotation_deg": 180.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "head",
+      "reference": "C16",
+      "value": "C_100n_6V3_0402",
+      "footprint": "C_0402_1005Metric",
+      "mpn_field": "0402X104K6R3CT",
+      "manufacturer_field": "Walsin",
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        6.935,
+        10.985
+      ],
+      "rotation_deg": 180.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "head",
+      "reference": "C17",
+      "value": "C_100n_6V3_0402",
+      "footprint": "C_0402_1005Metric",
+      "mpn_field": "0402X104K6R3CT",
+      "manufacturer_field": "Walsin",
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        9.935,
+        9.985
+      ],
+      "rotation_deg": 180.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "head",
+      "reference": "C18",
+      "value": "C_1u_0603",
+      "footprint": "C_0603_1608Metric",
+      "mpn_field": "0603YD105KAT2A",
+      "manufacturer_field": "KYOCERA AVX",
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        3.525,
+        4.175
+      ],
+      "rotation_deg": 180.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "head",
+      "reference": "C19",
+      "value": "C_1u_0603",
+      "footprint": "C_0603_1608Metric",
+      "mpn_field": "0603YD105KAT2A",
+      "manufacturer_field": "KYOCERA AVX",
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        10.775,
+        4.425
+      ],
+      "rotation_deg": 180.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "head",
+      "reference": "C20",
+      "value": "C_100n_6V3_0402",
+      "footprint": "C_0402_1005Metric",
+      "mpn_field": "0402X104K6R3CT",
+      "manufacturer_field": "Walsin",
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        3.935,
+        10.235
+      ],
+      "rotation_deg": 180.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "head",
+      "reference": "C21",
+      "value": "C_1u_0603",
+      "footprint": "C_0603_1608Metric",
+      "mpn_field": "0603YD105KAT2A",
+      "manufacturer_field": "KYOCERA AVX",
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        9.525,
+        11.425
+      ],
+      "rotation_deg": 180.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "head",
+      "reference": "C33",
+      "value": "C_1u_0603",
+      "footprint": "C_0603_1608Metric",
+      "mpn_field": "0603YD105KAT2A",
+      "manufacturer_field": "KYOCERA AVX",
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        4.525,
+        11.675
+      ],
+      "rotation_deg": 180.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "head",
+      "reference": "C7",
+      "value": "C_1u_0603",
+      "footprint": "C_0603_1608Metric",
+      "mpn_field": "0603YD105KAT2A",
+      "manufacturer_field": "KYOCERA AVX",
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        3.525,
+        2.675
+      ],
+      "rotation_deg": 180.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "head",
+      "reference": "C8",
+      "value": "C_1u_0603",
+      "footprint": "C_0603_1608Metric",
+      "mpn_field": "0603YD105KAT2A",
+      "manufacturer_field": "KYOCERA AVX",
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        10.775,
+        2.925
+      ],
+      "rotation_deg": 180.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "head",
+      "reference": "C9",
+      "value": "C_100n_6V3_0402",
+      "footprint": "C_0402_1005Metric",
+      "mpn_field": "0402X104K6R3CT",
+      "manufacturer_field": "Walsin",
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        6.935,
+        12.235
+      ],
+      "rotation_deg": 180.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "head",
+      "reference": "J201",
+      "value": "SOLDER FLEX / 24 contacts",
+      "footprint": "Flex_Solder_24_P0.5_R05",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        7.0,
+        12.25
+      ],
+      "rotation_deg": 0.0,
+      "side": "F.Cu"
+    },
+    {
+      "board": "head",
+      "reference": "L1",
+      "value": "MLP2012S3R3MT",
+      "footprint": "L_0805_2012Metric",
+      "mpn_field": "MLP2012S3R3MT",
+      "manufacturer_field": "TDK",
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        7.025,
+        7.375
+      ],
+      "rotation_deg": 180.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "head",
+      "reference": "L2",
+      "value": "MLP2012S3R3MT",
+      "footprint": "L_0805_2012Metric",
+      "mpn_field": "MLP2012S3R3MT",
+      "manufacturer_field": "TDK",
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        7.025,
+        9.375
+      ],
+      "rotation_deg": 180.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "head",
+      "reference": "L3",
+      "value": "MLP2012S3R3MT",
+      "footprint": "L_0805_2012Metric",
+      "mpn_field": "MLP2012S3R3MT",
+      "manufacturer_field": "TDK",
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        3.275,
+        7.375
+      ],
+      "rotation_deg": 180.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "head",
+      "reference": "R7",
+      "value": "R_0R_0402",
+      "footprint": "R_0402_1005Metric",
+      "mpn_field": "ERJ2GE0R00X",
+      "manufacturer_field": "Panasonic",
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        1.705,
+        8.995
+      ],
+      "rotation_deg": 180.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "head",
+      "reference": "R8",
+      "value": "R_0R_0402",
+      "footprint": "R_0402_1005Metric",
+      "mpn_field": "ERJ2GE0R00X",
+      "manufacturer_field": "Panasonic",
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        12.205,
+        9.995
+      ],
+      "rotation_deg": 180.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "head",
+      "reference": "R9",
+      "value": "R_0R_0402",
+      "footprint": "R_0402_1005Metric",
+      "mpn_field": "ERJ2GE0R00X",
+      "manufacturer_field": "Panasonic",
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        9.205,
+        12.745
+      ],
+      "rotation_deg": 180.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "head",
+      "reference": "U1",
+      "value": "ImageSensor_OV9281",
+      "footprint": "OV9281",
+      "mpn_field": "OV9281",
+      "manufacturer_field": "OmniVision",
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        7.3325,
+        6.043
+      ],
+      "rotation_deg": 0.0,
+      "side": "F.Cu"
+    },
+    {
+      "board": "head",
+      "reference": "Y1",
+      "value": "7C-24.000MBB-T",
+      "footprint": "Oscillator_SMD_TXC_7C_5x3.2x1.2mm",
+      "mpn_field": "7C-24.000MBB-T",
+      "manufacturer_field": "TXC",
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        7.085,
+        3.525
+      ],
+      "rotation_deg": 180.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "flex-study",
+      "reference": "J301",
+      "value": "FLEX CONTACTS / B.Cu",
+      "footprint": "Flex_Contacts_R05",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        0.75,
+        6.25
+      ],
+      "rotation_deg": 0.0,
+      "side": "B.Cu"
+    },
+    {
+      "board": "flex-study",
+      "reference": "J302",
+      "value": "FLEX CONTACTS / B.Cu",
+      "footprint": "Flex_Contacts_R05",
+      "mpn_field": null,
+      "manufacturer_field": null,
+      "dnp": false,
+      "excluded_from_bom": false,
+      "position_mm": [
+        34.55,
+        6.25
+      ],
+      "rotation_deg": 0.0,
+      "side": "B.Cu"
+    }
+  ]
+}

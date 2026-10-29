@@ -1,0 +1,347 @@
+{
+  "checked_date": "2026-10-29",
+  "scope": "Supplier pages and indexed snippets reviewed; these are web-listed observations, not reserved inventory, quotes, manufacturer lifecycle confirmation or delivery commitments. Counts and prices can differ between indexed captures. USD excludes tax, shipping, duties, reeling, assembly and fabrication.",
+  "offers": [
+    {
+      "mpn": "OV09281-H64A",
+      "supplier": "DigiKey",
+      "status": "Listed obsolete; no orderable stock shown",
+      "stock": null,
+      "usd1": null,
+      "url": "https://www.digikey.com/en/products/detail/omnivision-technologies-inc/OV09281-H64A/5800198",
+      "key": "r11SupplySensorDk",
+      "note": "LCSC also reports not available. Manufacturer lifecycle not independently confirmed."
+    },
+    {
+      "mpn": "ESP32-P4NRW16X",
+      "supplier": "Mouser",
+      "status": "Backorder",
+      "stock": 0,
+      "usd1": 7.98,
+      "usd10": 5.86,
+      "url": "https://www.mouser.com/en/ProductDetail/Espressif-Systems/ESP32-P4NRW16X?qs=bDnubaabCY8EDqwByBfPug%3D%3D",
+      "key": "r11SupplyP4",
+      "note": "Indexed page lists 1993 on order expected 2026-11-03, not a delivery commitment. Direct fetch 403."
+    },
+    {
+      "mpn": "W25Q32JVUUIQ TR",
+      "supplier": "DigiKey",
+      "status": "Listed obsolete; no orderable stock shown",
+      "stock": null,
+      "usd1": null,
+      "url": "https://www.digikey.com/en/products/detail/winbond-electronics/W25Q32JVUUIQ-TR/17291060",
+      "key": "r11SupplyFlash",
+      "note": "Exact USON ordering code needs an orderable source or qualified replacement before purchasing."
+    },
+    {
+      "mpn": "TLV62569DRLR",
+      "supplier": "DigiKey",
+      "status": "Backorder",
+      "stock": 0,
+      "usd1": 0.25,
+      "usd10": 0.172,
+      "url": "https://www.digikey.com/en/products/detail/texas-instruments/TLV62569DRLR/7805188",
+      "key": "r11SupplyBuck",
+      "note": "Listed receipt 2026-11-23 is not guaranteed. DRLT small-reel option is a purchasing candidate, not substituted in native BOM."
+    },
+    {
+      "mpn": "TLV73318PDQNR",
+      "supplier": "DigiKey",
+      "status": "Backorder",
+      "stock": 0,
+      "usd1": 0.19,
+      "usd10": 0.128,
+      "url": "https://www.digikey.com/en/products/detail/texas-instruments/TLV73318PDQNR/5023922",
+      "key": "r11SupplyLdo18",
+      "note": "Listed receipt 2026-12-02, not guaranteed."
+    },
+    {
+      "mpn": "TLV73312PDQNR",
+      "supplier": "DigiKey",
+      "status": "Conflicting indexed stock; treat unavailable until checked",
+      "stock": null,
+      "usd1": 0.19,
+      "usd10": 0.128,
+      "url": "https://www.digikey.com/en/products/detail/texas-instruments/TLV73312PDQNR/5022372",
+      "key": "r11SupplyLdo12",
+      "note": "Exact product page shows zero; a category result showed 5820. Do not rely on the category count."
+    },
+    {
+      "mpn": "TLV73328PDQNR",
+      "supplier": "DigiKey",
+      "status": "Listed in stock",
+      "stock": 6792,
+      "usd1": 0.19,
+      "usd10": 0.128,
+      "url": "https://www.digikey.com/en/products/detail/texas-instruments/TLV73328PDQNR/5308307",
+      "key": "r11SupplyLdo28",
+      "note": "Indexed listing, not reserved inventory."
+    },
+    {
+      "mpn": "PMZB200UNEYL",
+      "supplier": "DigiKey",
+      "status": "Backorder",
+      "stock": 0,
+      "usd1": 0.39,
+      "usd10": 0.237,
+      "url": "https://www.digikey.com/en/products/detail/nexperia-usa-inc/PMZB200UNEYL/5395629",
+      "key": "r11SupplyFet",
+      "note": "Listed receipt 2027-10-18 is not a usable short-term commitment; alternative sourcing is needed."
+    },
+    {
+      "mpn": "USBLC6-2P6",
+      "supplier": "DigiKey",
+      "status": "Listed in stock",
+      "stock": 41241,
+      "usd1": 0.65,
+      "usd10": 0.4,
+      "url": "https://www.digikey.com/en/products/detail/stmicroelectronics/USBLC6-2P6/1007464",
+      "key": "r11SupplyEsd",
+      "note": "STMicroelectronics part; same-number marketplace parts from other manufacturers are not accepted substitutes."
+    },
+    {
+      "mpn": "AP1608F3C",
+      "supplier": "DigiKey",
+      "status": "Listed in stock",
+      "stock": 91,
+      "usd1": 0.45,
+      "usd10": 0.31,
+      "url": "https://www.digikey.com/en/products/detail/kingbright/AP1608F3C/25807456",
+      "key": "r11SupplyLed",
+      "note": "Cut-tape listing; another packaging page lists 2091."
+    },
+    {
+      "mpn": "SM04B-SRSS-TB(LF)(SN)",
+      "supplier": "DigiKey",
+      "status": "Listed in stock",
+      "stock": 116723,
+      "usd1": 0.51,
+      "usd10": 0.433,
+      "url": "https://www.digikey.com/en/products/detail/jst-sales-america-inc/SM04B-SRSS-TB-LF-SN/455-1804-1-ND/926875",
+      "key": "r11SupplyJst",
+      "note": "Board connector only; external tether excluded."
+    },
+    {
+      "mpn": "DFE252012F-2R2M=P2",
+      "supplier": "DigiKey",
+      "status": "Listed in stock",
+      "stock": 150003,
+      "usd1": 0.25,
+      "usd10": 0.208,
+      "url": "https://www.digikey.com/en/products/detail/murata-electronics/DFE252012F-2R2M-P2/5812767",
+      "key": "r11SupplyBuckInductor"
+    },
+    {
+      "mpn": "MLP2012S3R3MT0S1",
+      "supplier": "DigiKey",
+      "status": "Listed in stock",
+      "stock": 7122,
+      "usd1": 0.24,
+      "usd10": 0.196,
+      "url": "https://www.digikey.com/en/products/detail/tdk/MLP2012S3R3MT0S1/2465124",
+      "key": "r11SupplyFilterInductor"
+    },
+    {
+      "mpn": "ECS-400-10-37B2-CKM-TR",
+      "supplier": "DigiKey",
+      "status": "Listed in stock",
+      "stock": 16681,
+      "usd1": 0.36,
+      "usd10": 0.311,
+      "url": "https://www.digikey.com/en/products/detail/ecs-inc/ECS-400-10-37B2-CKM-TR/14548910",
+      "key": "r11SupplyCrystal"
+    },
+    {
+      "mpn": "X1G004171003100",
+      "supplier": "LCSC",
+      "status": "Out of stock",
+      "stock": 0,
+      "usd1": 0.9297,
+      "url": "https://www.lcsc.com/product-detail/C22454141.html",
+      "key": "r11SupplyOscillator",
+      "note": "Reference price only; exact stocked clock source still required."
+    },
+    {
+      "mpn": "W25Q32JVUUIQ TR",
+      "supplier": "LCSC",
+      "status": "Alternate listing reports stock; packaging confirmation required",
+      "stock": 3478,
+      "usd1": 2.5291,
+      "usd10": 2.2547,
+      "url": "https://www.lcsc.com/product-image/C2999380.html",
+      "key": "r11SupplyFlashLcsc",
+      "note": "Supplier labels base MPN W25Q32JVUUIQ without TR; exact same USON device, but packaging/traceability and lifecycle require checking."
+    },
+    {
+      "mpn": "GRM188R61A475KE15D",
+      "supplier": "DigiKey",
+      "stock": null,
+      "usd1": null,
+      "usd10": null,
+      "status": "Obsolete listing",
+      "note": "Suggested GRM188R61A475KAAJD is not an approved substitute; DC-bias/case checks required.",
+      "url": "https://www.digikey.com/en/products/detail/murata-electronics/GRM188R61A475KE15D/5027562",
+      "key": "r11SupplyCap1"
+    },
+    {
+      "mpn": "GRM188R71C105KA12D",
+      "supplier": "DigiKey",
+      "stock": null,
+      "usd1": null,
+      "usd10": null,
+      "status": "Obsolete listing",
+      "note": "Suggested C1608X7R1C105K080AC is not an approved substitute; DC-bias/case checks required.",
+      "url": "https://www.digikey.com/en/products/detail/murata-electronics/GRM188R71C105KA12D/965914",
+      "key": "r11SupplyCap2"
+    },
+    {
+      "mpn": "GRM155R71C104KA88D",
+      "supplier": "DigiKey",
+      "stock": 0,
+      "usd1": 0.1,
+      "usd10": 0.025,
+      "status": "Backorder",
+      "note": "Listed incoming January 2027, not a commitment.",
+      "url": "https://www.digikey.com/en/products/detail/murata-electronics/GRM155R71C104KA88D/675947",
+      "key": "r11SupplyCap3"
+    },
+    {
+      "mpn": "GRM21BR61A226ME44L",
+      "supplier": "DigiKey",
+      "stock": 0,
+      "usd1": 0.32,
+      "usd10": 0.187,
+      "status": "Backorder",
+      "note": "Listed incoming January 2027, not a commitment.",
+      "url": "https://www.digikey.com/en/products/detail/murata-electronics/GRM21BR61A226ME44L/4905527",
+      "key": "r11SupplyCap4"
+    },
+    {
+      "mpn": "GRM1555C1H160JA01D",
+      "supplier": "DigiKey",
+      "stock": 922016,
+      "usd1": 0.1,
+      "usd10": 0.047,
+      "status": "Listed stock; not recommended for new designs",
+      "note": "Indexed four months ago; live stock and lifecycle must be rechecked.",
+      "url": "https://www.digikey.com/en/products/detail/murata-electronics/GRM1555C1H160JA01D/3693833",
+      "key": "r11SupplyCap5"
+    },
+    {
+      "mpn": "GRM1555C1H220JA01D",
+      "supplier": "DigiKey",
+      "stock": 881863,
+      "usd1": 0.1,
+      "usd10": 0.023,
+      "status": "Listed in stock",
+      "note": "Indexed counts vary; not reserved.",
+      "url": "https://www.digikey.com/en/products/detail/murata-electronics/GRM1555C1H220JA01D/3175200",
+      "key": "r11SupplyCap6"
+    },
+    {
+      "mpn": "GRM155R71C103KA01D",
+      "supplier": "DigiKey",
+      "stock": 4265407,
+      "usd1": 0.1,
+      "usd10": 0.022,
+      "status": "Listed in stock",
+      "note": "",
+      "url": "https://www.digikey.com/en/products/detail/murata-electronics/GRM155R71C103KA01D/587926",
+      "key": "r11SupplyCap7"
+    },
+    {
+      "mpn": "RC0402JR-070RL",
+      "supplier": "DigiKey",
+      "stock": 865524,
+      "usd1": 0.1,
+      "usd10": 0.01,
+      "status": "Listed in stock",
+      "url": "https://www.digikey.com/en/products/detail/yageo/RC0402JR-070RL/726406",
+      "key": "r11SupplyR0"
+    },
+    {
+      "mpn": "RC0402FR-0710KL",
+      "supplier": "DigiKey",
+      "status": "Listed in stock",
+      "stock": 12681132,
+      "usd1": 0.1,
+      "usd10": 0.021,
+      "url": "https://www.digikey.com/en/products/detail/yageo/RC0402FR-0710KL/729470",
+      "key": "r11SupplyRa0"
+    },
+    {
+      "mpn": "RC0402FR-07499KL",
+      "supplier": "DigiKey",
+      "status": "Listed in stock",
+      "stock": 555483,
+      "usd1": 0.11,
+      "usd10": 0.022,
+      "url": "https://www.digikey.com/en/products/detail/yageo/RC0402FR-07499KL/726622",
+      "key": "r11SupplyRa1"
+    },
+    {
+      "mpn": "RC0402FR-07453KL",
+      "supplier": "DigiKey",
+      "status": "Listed in stock",
+      "stock": 59143,
+      "usd1": 0.1,
+      "usd10": 0.021,
+      "url": "https://www.digikey.com/en/products/detail/yageo/RC0402FR-07453KL/5281024",
+      "key": "r11SupplyRa2"
+    },
+    {
+      "mpn": "RC0402FR-07100KL",
+      "supplier": "DigiKey",
+      "status": "Listed in stock",
+      "stock": 7920087,
+      "usd1": 0.1,
+      "usd10": 0.021,
+      "url": "https://www.digikey.com/en/products/detail/yageo/RC0402FR-07100KL/729473",
+      "key": "r11SupplyRa3"
+    },
+    {
+      "mpn": "RC0402FR-074K02L",
+      "supplier": "DigiKey",
+      "status": "Listed in stock",
+      "stock": 292215,
+      "usd1": 0.1,
+      "usd10": 0.021,
+      "url": "https://www.digikey.com/en/products/detail/yageo/RC0402FR-074K02L/2827594",
+      "key": "r11SupplyRb0",
+      "note": ""
+    },
+    {
+      "mpn": "RC0402FR-074K7L",
+      "supplier": "DigiKey",
+      "status": "Listed in stock",
+      "stock": 982503,
+      "usd1": 0.1,
+      "usd10": 0.021,
+      "url": "https://www.digikey.com/en/products/detail/yageo/RC0402FR-074K7L/311-4.7KLRCT-ND/2827881",
+      "key": "r11SupplyRb1",
+      "note": "Newest indexed listing reports stock; an older URL reports backorder. Live confirmation required."
+    },
+    {
+      "mpn": "RC0402FR-071KL",
+      "supplier": "DigiKey",
+      "status": "Listed in stock",
+      "stock": 5989300,
+      "usd1": 0.1,
+      "usd10": 0.021,
+      "url": "https://www.digikey.com/en/products/detail/yageo/RC0402FR-071KL/726513",
+      "key": "r11SupplyRb2",
+      "note": ""
+    },
+    {
+      "mpn": "RC0402FR-072K2L",
+      "supplier": "DigiKey",
+      "status": "Listed in stock",
+      "stock": 578199,
+      "usd1": 0.11,
+      "usd10": 0.022,
+      "url": "https://www.digikey.com/en/products/detail/yageo/RC0402FR-072K2L/729500",
+      "key": "r11SupplyRb3",
+      "note": ""
+    }
+  ]
+}

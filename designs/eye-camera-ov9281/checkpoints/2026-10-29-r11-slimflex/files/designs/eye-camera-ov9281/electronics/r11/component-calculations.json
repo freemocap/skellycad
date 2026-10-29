@@ -1,0 +1,57 @@
+{
+  "system_buck_nominal_V": 3.318,
+  "system_buck_tolerance_V": [
+    3.1988946534653464,
+    3.440367272727273
+  ],
+  "core_buck_startup_V": 1.2,
+  "core_buck_tolerance_before_P4_control_V": [
+    1.1643564356435643,
+    1.236363636363636
+  ],
+  "buck_inductor_ripple_A_at_1MHz_Lminus20pct": {
+    "system": 0.6937636363636365,
+    "core": 0.4603096179183136
+  },
+  "maximum_design_continuous_buck_load_A": 1.0,
+  "sensor_LDO_current_rating_A": 0.3,
+  "sensor_power_envelope_W": 0.2,
+  "sensor_LDO_individual_current_bounds_A": {
+    "1.2": 0.16666666666666669,
+    "1.8": 0.11111111111111112,
+    "2.8": 0.07142857142857144
+  },
+  "sensor_LDO_individual_dissipation_bounds_W": {
+    "1.2": 0.375,
+    "1.8": 0.18333333333333338,
+    "2.8": 0.046428571428571465
+  },
+  "sensor_envelope_note": "0.2 W is a screening assumption above the published 0.156 W active figure, not a vendor maximum; individual bounds cannot occur simultaneously.",
+  "crystal_load_pF": 10.0,
+  "crystal_stray_assumption_pF": 2,
+  "crystal_sensitivity_load_pF": [
+    9.1,
+    10.9
+  ],
+  "IR_nominal_current_per_LED_A": 0.0020160242961897337,
+  "IR_electrical_upper_bound_per_LED_A": 0.003484848484848485,
+  "IR_default": "GPIO5 low and 100 kohm gate pulldown; not an eye-safety qualification",
+  "IR_gate_on_V": 3.2289628180039136,
+  "IR_gate_RC_typ_s": 1.958e-07,
+  "flash_voltage_V": 3.3,
+  "flash_read_mode": "DIO, 40 MHz, 4 MB; do not program the 1.8 V flash eFuse",
+  "SCCB_clock_Hz": 100000,
+  "SCCB_pullup_ohm": 4700,
+  "SCCB_low_current_A": 0.0011347517730496454,
+  "SCCB_FET_drop_V_at_1p5V_gate": 0.0005560283687943263,
+  "SCCB_rise_time_s_for_200pF": 8.044266200000001e-07,
+  "qualification_required": [
+    "Capacitance under DC bias and temperature, buck load-step stability",
+    "USB startup/enumeration/suspend current and inrush",
+    "Sensor rail sequencing, rail noise and reset timing",
+    "Actual SLIM.flex thermal resistance and skin-facing temperature",
+    "Crystal startup, frequency and drive level",
+    "MIPI eye diagram and USB signal integrity",
+    "Close-focus IR optics and illuminator exposure"
+  ]
+}

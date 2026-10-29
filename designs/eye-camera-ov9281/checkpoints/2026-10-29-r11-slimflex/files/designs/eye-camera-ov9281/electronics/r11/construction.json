@@ -1,0 +1,113 @@
+{
+  "units": "mm",
+  "construction": "Wuerth FLEX6_6F_030_12_2V13, standard microvias only",
+  "component_region_finished_thickness": 0.303,
+  "flex_region_finished_thickness": 0.166,
+  "catalog_stack_sum_mm": 0.304,
+  "catalog_rounding_discrepancy_mm": 0.001,
+  "layers": [
+    {
+      "name": "F.Cu",
+      "physical": 1,
+      "copper_mm": 0.025,
+      "flex_present": false
+    },
+    {
+      "name": "In1.Cu",
+      "physical": 2,
+      "copper_mm": 0.018,
+      "flex_present": false
+    },
+    {
+      "name": "In2.Cu",
+      "physical": 3,
+      "copper_mm": 0.018,
+      "flex_present": true
+    },
+    {
+      "name": "In3.Cu",
+      "physical": 4,
+      "copper_mm": 0.018,
+      "flex_present": true
+    },
+    {
+      "name": "In4.Cu",
+      "physical": 5,
+      "copper_mm": 0.018,
+      "flex_present": false
+    },
+    {
+      "name": "B.Cu",
+      "physical": 6,
+      "copper_mm": 0.025,
+      "flex_present": false
+    }
+  ],
+  "dielectrics_mm": [
+    0.02,
+    0.02,
+    0.05,
+    0.02,
+    0.02
+  ],
+  "source_rules": {
+    "min_track": 0.075,
+    "min_clearance": 0.075,
+    "microvia_pad": 0.225,
+    "microvia_finished_hole": 0.07,
+    "standard_copper_edge": 0.3,
+    "laser_advanced_copper_edge": 0.1,
+    "soldermask_expansion": 0.04,
+    "min_mask_web": 0.07,
+    "standard_stiffener_fr4_range": [
+      0.1,
+      0.5
+    ],
+    "stiffener_adhesive": 0.05,
+    "two_layer_bend_radius_factor": 10
+  },
+  "design_rules": {
+    "min_track": 0.075,
+    "min_clearance": 0.075,
+    "microvia_pad": 0.25,
+    "microvia_finished_hole": 0.07,
+    "min_copper_edge": 0.3,
+    "adjacent_layer_spans_only": true,
+    "mechanically_drilled_through_vias_allowed": false,
+    "microvias_in_free_flex_allowed": false,
+    "components_in_free_flex_allowed": false,
+    "outer_four_layers_in_free_flex_allowed": false,
+    "transition_via_setback": 1,
+    "reference_via_search_radius": 0.7,
+    "stiffener_edge_clearance_to_courtyard": 0.1,
+    "bend_radius": 2.5,
+    "max_demonstrated_bend_angle_deg": 90,
+    "stiffener_fr4": 0.1,
+    "stiffener_adhesive": 0.05,
+    "mipi_target_ohms": 100,
+    "usb_target_ohms": 90,
+    "nominal_impedance_band_fraction": 0.1,
+    "high_speed_signal_layer": "In2.Cu",
+    "high_speed_reference_layer": "In3.Cu",
+    "high_speed_nonreference_copper_keepout": 0.3,
+    "flex_ground_drying_openings_mm": 0.3,
+    "drying_opening_pitch_mm": 1
+  },
+  "regional_layout": "One native board with controller/head six-layer regions and a central-layer-only free neck; validate region constraints separately from KiCad global stackup.",
+  "assumptions": [
+    "Permittivity and loss of exact supplier materials are not supplied by the reviewed PDFs; numerical impedance analysis must expose its chosen values and sensitivity.",
+    "Keep local high-speed reference corridors continuous and put drying openings elsewhere; fabricator must approve this compromise.",
+    "0.001 mm disagreement between the published total and rounded constituent sum is retained explicitly.",
+    "0.1 mm FR4 plus 0.05 mm adhesive support is a study choice within published ranges; bond strength, stiffness and thermal performance remain unqualified.",
+    "A 2.5 mm bend radius covers 10 times the upper 0.216 mm neck thickness from published +/-0.05 mm tolerance; repeated flexing is not qualified.",
+    "No manufacturer-specific acceptance, quote or production approval has been obtained."
+  ],
+  "sources": [
+    "wurthSlimFlex0302026",
+    "wurthSlimRules2023"
+  ],
+  "implementation_updates": {
+    "USB": "The controller USB main pair uses F.Cu with In1/In2 copper removed below it and In3.Cu as reference; physical dielectric/copper-slot separation is 0.126 mm. The short connector-to-ESD launch uses In2.Cu. CSI remains on In2.Cu.",
+    "controller_support": "10 x 10 mm support with two 4 x 2.5 mm windows for C123/C124; 0.1 mm FR4 plus 0.05 mm adhesive. The windows are an engineering support choice, not a tested stiffness claim."
+  }
+}

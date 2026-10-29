@@ -1,0 +1,49 @@
+{
+  "layout_revision": "R32 L02",
+  "units": "mm",
+  "geometry_changes": "Rigid clip rotation and plate placement only",
+  "main_mechanism_unchanged": true,
+  "clips": {
+    "Right": {
+      "rotation_quaternion": [
+        0.7071066002901586,
+        -0.0002817356428218065,
+        0.0,
+        0.7071069059563211
+      ],
+      "full_U_face_on_bed": true,
+      "contact_face_area_mm2": 22.451825229575352,
+      "height_mm": 3.5,
+      "footprint_mm": [
+        10.501789005243154,
+        4.504175927548717
+      ],
+      "volume_mm3": 72.44153152980878,
+      "geometry_volume_delta_mm3": -1.8474111129762605e-13
+    },
+    "Left": {
+      "rotation_quaternion": [
+        0.7071066002901583,
+        -0.0002817356428210993,
+        0.0,
+        0.7071069059563214
+      ],
+      "full_U_face_on_bed": true,
+      "contact_face_area_mm2": 22.451825229575352,
+      "height_mm": 3.5,
+      "footprint_mm": [
+        10.501789005243143,
+        4.504175927548697
+      ],
+      "volume_mm3": 72.4415315298088,
+      "geometry_volume_delta_mm3": -1.7053025658242404e-13
+    }
+  },
+  "source_manifest_sha256": "df873ceafa49edf7dc37e8c3083ed10ca71bde93455b4dc29f07b5fc73116f3a",
+  "all_hardware_shells": 5,
+  "layout_bounds_mm": [
+    98.78190313178743,
+    23.424251956571645,
+    36.60628961623165
+  ]
+}

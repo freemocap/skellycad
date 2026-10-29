@@ -1,0 +1,16 @@
+"""Open the verified compact binocular review in the existing desktop session."""
+from pathlib import Path
+import json,hashlib,runpy,shutil,zipfile
+import FreeCAD as A,FreeCADGui as G
+R=Path(__file__).resolve().parents[4];S=R/'designs/eye-tracker/rat/compact-binocular-r32';O=R/'generated/eye-tracker/rat/compact-binocular-r32';m=json.loads((S/'review.json').read_text());checkpoint=R/m['native_checkpoint'];assert hashlib.sha256(checkpoint.read_bytes()).hexdigest()==m['native_sha256'];O.mkdir(parents=True,exist_ok=True)
+find=runpy.run_path(str(R/'tools/cad/review_document.py'))['find_open_document'];p=O/'ET-RAT-COMPACT-BINOCULAR-R32.FCStd';d=find(A,p) or find(A,checkpoint)
+if d is None:
+ if not p.exists():shutil.copy2(checkpoint,p)
+ if hashlib.sha256(p.read_bytes()).hexdigest()!=m['native_sha256']:
+  p=O/'ET-RAT-COMPACT-BINOCULAR-R32-frozen-review.FCStd'
+  if not p.exists():shutil.copy2(checkpoint,p)
+  assert hashlib.sha256(p.read_bytes()).hexdigest()==m['native_sha256'];d=find(A,p)
+ d=d or A.openDocument(str(p))
+A.setActiveDocument(d.Name);v=G.activeDocument().activeView();v.viewAxonometric();v.fitAll();G.getMainWindow().showNormal();G.getMainWindow().raise_();G.getMainWindow().activateWindow();G.updateGui()
+with zipfile.ZipFile(d.FileName) as z:assert 'Document.xml' in z.namelist() and z.testzip() is None
+(O/'opened.json').write_text(json.dumps({'file':d.FileName,'document':d.Name,'revision':m['revision'],'frozen_checkpoint_verified':True,'existing_documents_preserved':True},indent=2))

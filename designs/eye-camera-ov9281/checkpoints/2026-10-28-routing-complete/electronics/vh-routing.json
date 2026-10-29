@@ -1,0 +1,141 @@
+{
+  "source_head_sha256": "04e9c5d9bb0e1a124afbd61945f9245fe63cd95b3df71f98fc97bd444502e97d",
+  "front": {
+    "result": "routed",
+    "visited": 3,
+    "path_xy_mm": [
+      [
+        9.325,
+        6.257
+      ],
+      [
+        9.005,
+        6.507
+      ]
+    ],
+    "added_track_uuids": [
+      "43ef2453-11a5-40b6-a561-94744eb522ac"
+    ]
+  },
+  "In1_VH_path": {
+    "result": "routed",
+    "visited": 5029,
+    "path_xy_mm": [
+      [
+        9.005,
+        6.507
+      ],
+      [
+        9.405,
+        9.807
+      ],
+      [
+        10.205,
+        10.807
+      ],
+      [
+        10.33,
+        10.932
+      ],
+      [
+        10.43,
+        10.982
+      ],
+      [
+        10.68,
+        10.957
+      ],
+      [
+        10.805,
+        10.832
+      ],
+      [
+        11.0276,
+        10.6073
+      ]
+    ],
+    "added_track_uuids": [
+      "9c012a29-819b-4084-923e-069cd38b66e0",
+      "f241e8e4-2468-41fd-8649-d8a7f99c8cef",
+      "d965082d-ecb8-4716-b5d2-97a7ae27e4a0",
+      "6d501240-63e9-4b09-99b2-29aec30b237f",
+      "6bfc3dc2-4c1a-456a-9a0f-b3fbaa4f6a6e",
+      "ac4d6b55-b0b4-4392-a83e-7c1c128d746e",
+      "e0e046fa-f333-4e26-b8b6-ad39130b4942"
+    ]
+  },
+  "SID_endpoint_changes": [
+    {
+      "uuid": "625d8478-e264-4b96-8115-23b228e0c884",
+      "from": [
+        10.6005,
+        5.9883
+      ],
+      "to": [
+        10.6005,
+        5.9383
+      ]
+    },
+    {
+      "uuid": "d33a3896-d929-47a4-a71f-555b5e6c4474",
+      "from": [
+        1.0105,
+        5.9883
+      ],
+      "to": [
+        1.0105,
+        5.9383
+      ]
+    },
+    {
+      "uuid": "d7f77d87-16a9-466b-a295-c88ed68aaed5",
+      "from": [
+        1.0105,
+        5.9883
+      ],
+      "to": [
+        1.0105,
+        5.9383
+      ]
+    },
+    {
+      "uuid": "d7f77d87-16a9-466b-a295-c88ed68aaed5",
+      "from": [
+        10.6005,
+        5.9883
+      ],
+      "to": [
+        10.6005,
+        5.9383
+      ]
+    }
+  ],
+  "VN1_repair": {
+    "result": "routed",
+    "visited": 4108,
+    "path_xy_mm": [
+      [
+        3.9492,
+        6.3457
+      ],
+      [
+        8.9242,
+        6.1457
+      ],
+      [
+        10.1242,
+        6.2207
+      ],
+      [
+        10.4476,
+        6.3457
+      ]
+    ],
+    "added_track_uuids": [
+      "3e37d014-bd94-4099-8a51-155dbbaa3ea9",
+      "add4d722-7ef3-4ce0-b583-5d4f246cb018",
+      "560445e8-7d68-453e-a2a6-ebcff60731ec"
+    ]
+  },
+  "limit": "Added In1 bias routing interrupts the ground pour; continuity is checked separately from return-path qualification."
+}

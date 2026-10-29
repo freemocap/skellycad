@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "filename": "controller.kicad_pro",
+    "version": 1
+  },
+  "net_settings": {
+    "classes": [
+      {
+        "name": "Default",
+        "clearance": 0.15,
+        "track_width": 0.15,
+        "via_diameter": 0.45,
+        "via_drill": 0.2
+      }
+    ]
+  },
+  "board": {
+    "design_settings": {
+      "rules": {
+        "min_clearance": 0.15,
+        "min_track_width": 0.15,
+        "min_via_diameter": 0.45,
+        "min_through_hole_diameter": 0.2
+      }
+    }
+  }
+}

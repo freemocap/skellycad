@@ -1,0 +1,44 @@
+{
+  "revision": "THREE-BOARD-E01",
+  "status": "Reviewed electrical draft and unrouted placement; not accepted for manufacture",
+  "assembly": "generated\\three-board-e01\\THREE-BOARD-E01.FCStd",
+  "assembly_sha256": "9f2f26d3c440efd7b59566d636d44d561e8a7af78cbc44cd6f9a453c4e918de9",
+  "source_placement_sha256": "0552c09e73ada28c713dfdc212bfc61c7f4698051681727e7cc999e1f7fe6e06",
+  "pcbs": [
+    {
+      "file": "generated\\three-board-e01\\head-interface\\camera.kicad_pcb",
+      "footprints": 77,
+      "tracks": 0,
+      "copper_layers": 4,
+      "sha256": "60f7a8db51fcbb1d47f5f9b74357d85ea81005e914a389bdd70400d5c32dff08",
+      "drc": {
+        "violations": {},
+        "unconnected_items": {
+          "unconnected_items": 190
+        },
+        "schematic_parity": {}
+      }
+    },
+    {
+      "file": "generated\\three-board-e01\\base\\camera.kicad_pcb",
+      "footprints": 119,
+      "tracks": 0,
+      "copper_layers": 4,
+      "sha256": "70a8b290a31dc1c531d823bb031cf90246d8b06ed258158d92f4490dbfff967c",
+      "drc": {
+        "violations": {},
+        "unconnected_items": {
+          "unconnected_items": 298
+        },
+        "schematic_parity": {}
+      }
+    }
+  ],
+  "preserved_baselines": [
+    "R11",
+    "THREE-BOARD-A01"
+  ],
+  "head_target_met": false,
+  "hardware_demonstrated": false,
+  "native_build_documents_closed": true
+}

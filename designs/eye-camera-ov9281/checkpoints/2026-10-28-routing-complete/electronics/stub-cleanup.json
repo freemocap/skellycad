@@ -1,0 +1,18 @@
+{
+  "before_sha256": "1a61f9530f05c241f63f1bc00151559948e34486cd94a4a14c9c79acf0d13005",
+  "after_sha256": "c91ff72190978a38a1b4b33efe25615ea790aae81d04d57f1cc82928f153f81b",
+  "removed": [
+    {
+      "uuid": "7c737540-3093-43c0-a7b4-56afd80aa1ac",
+      "net": "/CAM_L_D1_N",
+      "start": [
+        7.0214,
+        7.1406
+      ],
+      "end": [
+        7.405,
+        6.757
+      ]
+    }
+  ]
+}

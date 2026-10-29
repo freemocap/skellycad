@@ -1,0 +1,148 @@
+{
+  "results": {
+    "DVDD": {
+      "nominal_V": 1.2,
+      "LDO_low_V": 1.1832,
+      "sensor_minimum_V": 1.14,
+      "typical_current_A": 0.052,
+      "upstream_trace_R_ohm": 0.08608791564135457,
+      "filter_max_DCR_ohm": 0.247,
+      "return_allowance_ohm": 0.01,
+      "worst_total_series_R_ohm": 0.4604759135315538,
+      "loaded_low_at_typical_V": 1.1592552524963593,
+      "loaded_low_at_twice_typical_V": 1.1353105049927184,
+      "twice_typical_passes_DC_screen": false,
+      "DC_current_at_minimum_V_A": 0.09381598196675248,
+      "pad_paths": [
+        {
+          "pin": "A2",
+          "trace_R_ohm": 0.04164576295161477,
+          "centerline_mm": 3.7907252208427678
+        },
+        {
+          "pin": "B1",
+          "trace_R_ohm": 0.034195570382589746,
+          "centerline_mm": 2.978567600672889
+        },
+        {
+          "pin": "B3",
+          "trace_R_ohm": 0.04909595552063979,
+          "centerline_mm": 4.602882841012646
+        },
+        {
+          "pin": "C5",
+          "trace_R_ohm": 0.06694383171613291,
+          "centerline_mm": 5.977073511916798
+        },
+        {
+          "pin": "D8",
+          "trace_R_ohm": 0.09268524681960888,
+          "centerline_mm": 7.9708152017614635
+        },
+        {
+          "pin": "F2",
+          "trace_R_ohm": 0.10993780532117424,
+          "centerline_mm": 9.351600509986902
+        },
+        {
+          "pin": "F3",
+          "trace_R_ohm": 0.10178373124710016,
+          "centerline_mm": 8.711600509986901
+        },
+        {
+          "pin": "G1",
+          "trace_R_ohm": 0.11738799789019926,
+          "centerline_mm": 10.163758130156781
+        },
+        {
+          "pin": "G6",
+          "trace_R_ohm": 0.10918351163091122,
+          "centerline_mm": 9.519801359805683
+        },
+        {
+          "pin": "H5",
+          "trace_R_ohm": 0.10173331906188621,
+          "centerline_mm": 8.707643739635804
+        }
+      ]
+    },
+    "DOVDD": {
+      "nominal_V": 1.8,
+      "LDO_low_V": 1.7748,
+      "sensor_minimum_V": 1.7,
+      "typical_current_A": 0.0025,
+      "upstream_trace_R_ohm": 0.24719209901701078,
+      "filter_max_DCR_ohm": 0.247,
+      "return_allowance_ohm": 0.01,
+      "worst_total_series_R_ohm": 0.6263478988224561,
+      "loaded_low_at_typical_V": 1.7732341302529437,
+      "loaded_low_at_twice_typical_V": 1.7716682605058875,
+      "twice_typical_passes_DC_screen": true,
+      "DC_current_at_minimum_V_A": 0.11942244899460053,
+      "pad_paths": [
+        {
+          "pin": "B7",
+          "trace_R_ohm": 0.038357888751440423,
+          "centerline_mm": 3.953838458844688
+        },
+        {
+          "pin": "D3",
+          "trace_R_ohm": 0.1221557998054453,
+          "centerline_mm": 11.879632219868078
+        },
+        {
+          "pin": "H2",
+          "trace_R_ohm": 0.10245576952158789,
+          "centerline_mm": 9.73209984880804
+        },
+        {
+          "pin": "H6",
+          "trace_R_ohm": 0.07797204215459626,
+          "centerline_mm": 7.063088871301686
+        }
+      ]
+    },
+    "AVDD": {
+      "nominal_V": 2.8,
+      "LDO_low_V": 2.7607999999999997,
+      "sensor_minimum_V": 2.6,
+      "typical_current_A": 0.024,
+      "upstream_trace_R_ohm": 0.1503188372540711,
+      "filter_max_DCR_ohm": 0.247,
+      "return_allowance_ohm": 0.01,
+      "worst_total_series_R_ohm": 0.5842543668677568,
+      "loaded_low_at_typical_V": 2.7467778951951733,
+      "loaded_low_at_twice_typical_V": 2.7327557903903474,
+      "twice_typical_passes_DC_screen": true,
+      "DC_current_at_minimum_V_A": 0.27522258988334775,
+      "pad_paths": [
+        {
+          "pin": "B8",
+          "trace_R_ohm": 0.06110875787844434,
+          "centerline_mm": 6.062661179195402
+        },
+        {
+          "pin": "C1",
+          "trace_R_ohm": 0.17693552961368567,
+          "centerline_mm": 15.762062802661296
+        },
+        {
+          "pin": "G7",
+          "trace_R_ohm": 0.08608624742533713,
+          "centerline_mm": 8.78549797573168
+        },
+        {
+          "pin": "G8",
+          "trace_R_ohm": 0.08522265342299219,
+          "centerline_mm": 8.691356187685356
+        }
+      ]
+    }
+  },
+  "scope": "DC screening with full rail current assigned to its worst routed pad path. 1.4% LDO error, 0.247 ohm maximum inductor DCR (0.19 plus 30 percent) and 0.01 ohm return allowance. Published currents are typical at 1280x800/120 fps, not maximum ratings. The DVDD twice-typical stress case fails; loaded rail margin requires qualification or correction before fabrication. Temperature-dependent conductor resistance, regulator dynamics and rail sequencing remain unqualified. The 0.2 W selection envelope is a dissipation screen, not a guaranteed distribution of rail currents.",
+  "sources": [
+    "leopardOv9281Electrical2026",
+    "tiTlv733R11",
+    "tdkMlp2012R11"
+  ]
+}

@@ -1,0 +1,56 @@
+import FreeCAD as App, FreeCADGui as Gui
+from pathlib import Path
+from PySide import QtCore
+import json,os,hashlib,zipfile,traceback,sys
+root=Path(r'C:/Users/jonma/code-stuff/github/freemocap/other/skellycad');out=root/'generated/ov9281-r11-mechanics';path=out/'OV9281-R11-MATCHED.FCStd'
+def digest(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+def shapes():
+    with zipfile.ZipFile(path) as z:return {n:hashlib.sha256(z.read(n)).hexdigest() for n in z.namelist() if n.endswith('.brp')}
+try:
+    sys.path.insert(0,str(root/'designs/eye-camera-ov9281'));from verify_r11_native import measurements
+    doc=App.openDocument(str(path));App.setActiveDocument(doc.Name);before=measurements(doc)
+    vp=App.ParamGet('User parameter:BaseApp/Preferences/View');vp.SetBool('Simple',True);vp.SetBool('Gradient',False);vp.SetUnsigned('BackgroundColor',0xF5F7FAFF)
+    recovery=App.ParamGet('User parameter:BaseApp/Preferences/Document');recovery.SetBool('AutoSaveEnabled',True);recovery.SetInt('AutoSaveTime',2)
+    Gui.activateWorkbench('PartWorkbench')
+    for o in doc.Objects:
+        o.ViewObject.Visibility=bool(getattr(o,'ReviewVisible',o.TypeId=='App::Part'))
+        if hasattr(o,'StudyColor'):o.ViewObject.ShapeColor=tuple(o.StudyColor)
+        if hasattr(o.ViewObject,'LineColor'):o.ViewObject.LineColor=(.12,.15,.18);o.ViewObject.LineWidth=1
+        if o.TypeId=='App::Annotation':o.ViewObject.FontSize=13.;o.ViewObject.TextColor=(.15,.18,.22)
+        if o.Name.startswith('Board_'):o.ViewObject.Transparency=32
+        if o.Name=='Cu_flex_In2_Cu':o.ViewObject.Visibility=True
+        if o.Name in ['LensEnvelope','FilterEnvelope']:o.ViewObject.Transparency=35
+    flat=doc.getObject('FlatAssembly');bent=doc.getObject('BentAssembly');pupil=doc.getObject('PupilReference')
+    bent.ViewObject.Visibility=False;pupil.ViewObject.Visibility=False;flat.ViewObject.Visibility=True
+    view=Gui.activeDocument().activeView();view.viewTop();view.fitAll();images=[]
+    def show_part(group,enabled):
+        group.ViewObject.Visibility=enabled
+        for o in group.OutListRecursive:
+            if o.TypeId=='App::Part':o.ViewObject.Visibility=enabled
+            elif hasattr(o,'Shape') and not o.Shape.isNull():
+                visible=enabled and not any(s in o.Name for s in ['OpticalAxis','SensorFrame','Origin'])
+                if 'Cu_' in o.Name:visible=visible and o.Name.endswith(('F_Cu','B_Cu'))
+                o.ViewObject.Visibility=visible
+    def finish(phase=0):
+        try:
+            filename=['flat-top.png','flat-bottom.png','flat-iso.png','bent-iso.png','pupil-comparison.png'][phase]
+            view.redraw();Gui.updateGui();view.saveImage(str(out/filename),1800,1050,'Current');images.append(filename)
+            if phase==0:view.viewBottom();view.fitAll()
+            elif phase==1:view.viewAxonometric();view.fitAll()
+            elif phase==2:
+                flat.ViewObject.Visibility=False;show_part(bent,True);view.viewAxonometric();view.fitAll()
+            elif phase==3:
+                bent.ViewObject.Visibility=False;flat.ViewObject.Visibility=True;show_part(pupil,True);doc.getObject('PupilReferenceLabel').ViewObject.Visibility=True;view.viewTop();view.fitAll()
+            else:
+                pupil.ViewObject.Visibility=False;doc.getObject('PupilReferenceLabel').ViewObject.Visibility=False;bent.ViewObject.Visibility=False;flat.ViewObject.Visibility=True;view.viewAxonometric();view.fitAll();doc.recompute();after=measurements(doc)
+                (out/'render-measurements-before.json').write_text(json.dumps(before,indent=2));(out/'render-measurements-after.json').write_text(json.dumps(after,indent=2));assert before==after
+                doc.save();App.closeDocument(doc.Name)
+                with zipfile.ZipFile(path) as z:assert z.testzip() is None and 'Document.xml' in z.namelist()
+                report=json.loads((out/'validation.json').read_text());report['native_sha256']=digest(path);(out/'validation.json').write_text(json.dumps(report,indent=2)+'\n')
+                (out/'render-validation.json').write_text(json.dumps({'pid':os.getpid(),'native_sha256':digest(path),'geometry_measurements_unchanged':True,'images':images,'native_saved_and_closed':True,'computer_use':False},indent=2)+'\n');Gui.getMainWindow().close();return
+            QtCore.QTimer.singleShot(1500,lambda:finish(phase+1))
+        except Exception:
+            (out/'render-error.txt').write_text(traceback.format_exc());doc.saveAs(str(out/'render-diagnostic.FCStd'));App.closeDocument(doc.Name);Gui.getMainWindow().close()
+    QtCore.QTimer.singleShot(2500,finish)
+except Exception:
+    (out/'render-error.txt').write_text(traceback.format_exc());Gui.getMainWindow().close()

@@ -1,0 +1,25 @@
+pin,signal,voltage_or_type,source
+1,SDA,1.8V IO host pullup,leopardOc0tcDatasheet
+2,SCL,1.8V IO host pullup,leopardOc0tcDatasheet
+3,NC,leave unconnected,leopardOc0tcDatasheet
+4,MCP,MIPI clock positive,leopardOc0tcDatasheet
+5,MCN,MIPI clock negative,leopardOc0tcDatasheet
+6,GND,ground,leopardOc0tcDatasheet
+7,MDP,MIPI data positive,leopardOc0tcDatasheet
+8,MDN,MIPI data negative,leopardOc0tcDatasheet
+9,GND,ground,leopardOc0tcDatasheet
+10,STROBE,1.8V IO exposure output or SCCB ID select,leopardOc0tcDatasheet
+11,NC,leave unconnected,leopardOc0tcDatasheet
+12,GND,ground,leopardOc0tcDatasheet
+13,NC,leave unconnected,leopardOc0tcDatasheet
+14,NC,leave unconnected,leopardOc0tcDatasheet
+15,GND,ground,leopardOc0tcDatasheet
+16,FSIN,1.8V IO,leopardOc0tcDatasheet
+17,NC,leave unconnected,leopardOc0tcDatasheet
+18,DVDD1.1V,1.1V supply from host,leopardOc0tcDatasheet
+19,XCLK,1.8V clock from host,leopardOc0tcDatasheet
+20,NC,leave unconnected,leopardOc0tcDatasheet
+21,XSHUTDN,1.8V active low reset host pullup,leopardOc0tcDatasheet
+22,AVDD2.8V,2.8V supply from host,leopardOc0tcDatasheet
+23,NC,leave unconnected,leopardOc0tcDatasheet
+24,AGND,ground,leopardOc0tcDatasheet

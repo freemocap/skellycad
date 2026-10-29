@@ -1,0 +1,8 @@
+{
+  "native_footprints_accounted": 110,
+  "physical_packages_accounted": 106,
+  "unique_references": true,
+  "ordered_nonnegative_intervals": true,
+  "external_tether_excluded": true,
+  "all_14_copper_layers_measured": true
+}

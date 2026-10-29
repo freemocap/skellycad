@@ -1,0 +1,42 @@
+from pathlib import Path
+import json,runpy,hashlib,shutil
+import FreeCAD as A,FreeCADGui as G
+R=Path(__file__).resolve().parents[4];S=R/'designs/eye-tracker/rat/outer-arms-r29';O=R/'generated/eye-tracker/rat/outer-arms-r29';p=O/'ET-RAT-OUTER-ARMS-R29.FCStd';find=runpy.run_path(str(R/'tools/cad/review_document.py'))['find_open_document'];d=find(A,p) or A.openDocument(str(p));A.setActiveDocument(d.Name)
+for ob in d.Objects:
+ if ob.TypeId in ['App::Part','App::DocumentObjectGroup']:ob.Visibility=True
+ else:ob.Visibility=False
+for n in ['FinishedCarrier','eye_primary_Holder','eye_primary_Clip','eye_primary_Cap','skull_mount_Baseplate','PCB','JST_4pin','RibbonCandidate','camera_pcb','M4_lens','IR_LED','IR_LED_001','DetailedOpticalAxis','RatDesignSkull','RatLeftSclera','RatLeftCornea','RatRightSclera','RatRightCornea','RatLeftOpticalAxis','RatRightOpticalAxis']:
+ ob=d.getObject(n)
+ if not ob:continue
+ ob.Visibility=True
+ if n=='RatDesignSkull':ob.ViewObject.ShapeColor=(.85,.81,.65)
+ elif n.endswith('Sclera'):ob.ViewObject.ShapeColor=(.95,.95,.93)
+ elif n.endswith('Cornea'):ob.ViewObject.ShapeColor=(.1,.6,.85)
+ elif n in ['PCB','camera_pcb']:ob.ViewObject.ShapeColor=(.9,.12,.1)
+ elif n=='RibbonCandidate':ob.ViewObject.ShapeColor=(1.,.8,.02);ob.ViewObject.DisplayMode='Shaded'
+ elif n=='FinishedCarrier':ob.ViewObject.ShapeColor=(.62,.66,.7)
+ elif n=='eye_primary_Clip':ob.ViewObject.ShapeColor=(.95,.65,.15)
+ elif 'OpticalAxis' in n:ob.ViewObject.LineColor=(0.,.65,.95) if n=='DetailedOpticalAxis' else (.9,.15,.65);ob.ViewObject.LineWidth=3
+ elif n=='M4_lens':ob.ViewObject.ShapeColor=(.12,.12,.14)
+d.eye_primary_Holder.ViewObject.Transparency=30;d.eye_primary_Cap.ViewObject.Transparency=65;d.Label='Rat R29 - outer protective arms';d.recompute();v=G.activeDocument().activeView();v.viewAxonometric();v.fitAll();G.updateGui();d.save();v.saveImage(str(O/'R29-review.png'),1600,1100,'White')
+checkpoint=S/'checkpoints/ET-RAT-OUTER-ARMS-R29.FCStd';checkpoint.parent.mkdir(exist_ok=True)
+if not checkpoint.exists():
+ shutil.copy2(p,checkpoint);(S/'review.json').write_text(json.dumps({'revision':'ET-RAT-OUTER-ARMS-R29','units':'mm','native_checkpoint':checkpoint.relative_to(R).as_posix(),'native_sha256':hashlib.sha256(checkpoint.read_bytes()).hexdigest(),'recipe':'recipe.json','validation':'generated/eye-tracker/rat/outer-arms-r29/validation.json','status':'Outer protective paired supports around unchanged ribbon and camera; C01 clip retained; static checks passed; physical stiffness and full travel pending'},indent=2))
+(O/'r28-opened.json').write_text(json.dumps({'file':d.FileName,'label':d.Label,'visible':[ob.Name for ob in d.Objects if ob.Visibility]},indent=2))
+
+# Let the GUI build the scene graph before capturing a newly loaded document.
+from PySide import QtCore
+def _capture_loaded_view():
+ A.setActiveDocument(d.Name);view=G.activeDocument().activeView();view.viewAxonometric();view.fitAll();G.updateGui();view.saveImage(str(O/'R29-review.png'),1600,1100,'White')
+QtCore.QTimer.singleShot(1500,_capture_loaded_view)
+
+# Preserve and close superseded task-owned review documents; retain unrelated work.
+import zipfile,datetime
+recovery=O/'review-recovery';recovery.mkdir(exist_ok=True)
+for previous in list(A.listDocuments().values()):
+ if previous.Name==d.Name:continue
+ if '/generated/eye-tracker/rat/two-arm-r28/' not in previous.FileName.replace('\\','/'):continue
+ target=recovery/(previous.Name+'-'+datetime.datetime.now().strftime('%Y%m%d-%H%M%S')+'.FCStd');previous.saveAs(str(target))
+ with zipfile.ZipFile(target) as z:assert 'Document.xml' in z.namelist() and z.testzip() is None
+ A.closeDocument(previous.Name)
+A.setActiveDocument(d.Name)

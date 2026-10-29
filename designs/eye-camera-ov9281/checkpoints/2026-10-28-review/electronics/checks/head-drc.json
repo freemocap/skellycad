@@ -1,0 +1,565 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-28T07:42:02",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "head.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad G4 [/CAM_L_CLK_P] of U1 on F.Cu",
+                    "pos": {
+                        "x": 6.765,
+                        "y": 7.257
+                    },
+                    "uuid": "9f60eb82-7c41-403f-9820-f4f05ea0e300"
+                },
+                {
+                    "description": "Track [/CAM_L_CLK_P] on F.Cu, length 1.0574 mm",
+                    "pos": {
+                        "x": 3.75,
+                        "y": 12.25
+                    },
+                    "uuid": "a4ca0f37-8d4b-4961-9c98-cf0112dd4823"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad G5 [/CAM_L_D1_P] of U1 on F.Cu",
+                    "pos": {
+                        "x": 7.405,
+                        "y": 7.257
+                    },
+                    "uuid": "9f88c584-0366-4767-93ab-865e677dd373"
+                },
+                {
+                    "description": "Pad 9 [/CAM_L_D1_P] of J201 on F.Cu",
+                    "pos": {
+                        "x": 5.25,
+                        "y": 12.25
+                    },
+                    "uuid": "f11a0909-2427-42d3-a554-bc61a8fcd250"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad E4 [/M1_CAM_SCL_1V8] of U1 on F.Cu",
+                    "pos": {
+                        "x": 6.765,
+                        "y": 6.257
+                    },
+                    "uuid": "a0faaf31-1b21-4884-9e3f-3643dc5bd669"
+                },
+                {
+                    "description": "Track [/M1_CAM_SCL_1V8] on F.Cu, length 0.9211 mm",
+                    "pos": {
+                        "x": 6.75,
+                        "y": 13.1711
+                    },
+                    "uuid": "601b9376-7c69-4164-b913-c7bd47bdea88"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [/M1_DVDD] on F.Cu, length 0.7071 mm",
+                    "pos": {
+                        "x": 6.125,
+                        "y": 4.757
+                    },
+                    "uuid": "2e8baf4d-de89-4501-b3b7-9fe9857551a5"
+                },
+                {
+                    "description": "Pad C5 [/M1_DVDD] of U1 on F.Cu",
+                    "pos": {
+                        "x": 7.405,
+                        "y": 5.257
+                    },
+                    "uuid": "a9fc64eb-b324-46e2-a18b-33a265e6c95d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/M1_DOVDD] of C13 on B.Cu",
+                    "pos": {
+                        "x": 4.225,
+                        "y": 5.675
+                    },
+                    "uuid": "4dca834d-bfbc-4927-974a-868e723cac69"
+                },
+                {
+                    "description": "Pad D3 [/M1_DOVDD] of U1 on F.Cu",
+                    "pos": {
+                        "x": 6.125,
+                        "y": 5.757
+                    },
+                    "uuid": "73144942-15a7-49ac-9e3f-eaf9d5f862d1"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad B7 [/M1_DOVDD] of U1 on F.Cu",
+                    "pos": {
+                        "x": 8.685,
+                        "y": 4.757
+                    },
+                    "uuid": "83759041-e0fa-4f71-acc0-1bf0b69c85c6"
+                },
+                {
+                    "description": "Track [/M1_DOVDD] on In1.Cu, length 4.0246 mm",
+                    "pos": {
+                        "x": 7.3839,
+                        "y": 8.2835
+                    },
+                    "uuid": "a32151f0-0d11-4538-b3d7-19c08151ec47"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [/M1_VH] on B.Cu, length 0.0151 mm",
+                    "pos": {
+                        "x": 11.0276,
+                        "y": 10.6224
+                    },
+                    "uuid": "64b7cfa8-d041-4089-a738-2ff2f8d24b1e"
+                },
+                {
+                    "description": "Pad E8 [/M1_VH] of U1 on F.Cu",
+                    "pos": {
+                        "x": 9.325,
+                        "y": 6.257
+                    },
+                    "uuid": "01c17a86-f9bb-49c3-a641-c39f3ba5f4e7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad F7 [/M1_VN3] of U1 on F.Cu",
+                    "pos": {
+                        "x": 8.685,
+                        "y": 6.757
+                    },
+                    "uuid": "f8bbcdae-b66e-4654-b5b2-7f29f2faff10"
+                },
+                {
+                    "description": "Pad 1 [/M1_VN3] of C10 on B.Cu",
+                    "pos": {
+                        "x": 10.975,
+                        "y": 7.175
+                    },
+                    "uuid": "de71c106-0c7b-4713-bfac-cdab4b410140"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Clearance violation ( clearance 0.1000 mm; actual 0.0892 mm)",
+            "items": [
+                {
+                    "description": "Track [/M1_VN1] on F.Cu, length 1.6734 mm",
+                    "pos": {
+                        "x": 8.7742,
+                        "y": 5.9962
+                    },
+                    "uuid": "85a99a79-747a-4c5d-b6d6-d3b0c81946ce"
+                },
+                {
+                    "description": "Pad D8 [/M1_DVDD] of U1 on F.Cu",
+                    "pos": {
+                        "x": 9.325,
+                        "y": 5.757
+                    },
+                    "uuid": "ae185c46-ac77-4bf3-aa97-c8a4771ca3ed"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1000 mm; actual 0.0974 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [/M1_DOVDD] of C13 on B.Cu",
+                    "pos": {
+                        "x": 4.225,
+                        "y": 5.675
+                    },
+                    "uuid": "4dca834d-bfbc-4927-974a-868e723cac69"
+                },
+                {
+                    "description": "Track [GND] on B.Cu, length 2.1889 mm",
+                    "pos": {
+                        "x": 5.3779,
+                        "y": 5.0276
+                    },
+                    "uuid": "e1fc4a8f-41a1-48f3-879f-492dfcb661e1"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1000 mm; actual 0.0805 mm)",
+            "items": [
+                {
+                    "description": "Track [GND] on F.Cu, length 0.0586 mm",
+                    "pos": {
+                        "x": 6.602,
+                        "y": 6.42
+                    },
+                    "uuid": "9a425e8c-ff9c-444d-ac28-b710dff36bd9"
+                },
+                {
+                    "description": "Pad E4 [/M1_CAM_SCL_1V8] of U1 on F.Cu",
+                    "pos": {
+                        "x": 6.765,
+                        "y": 6.257
+                    },
+                    "uuid": "a0faaf31-1b21-4884-9e3f-3643dc5bd669"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1000 mm; actual 0.0805 mm)",
+            "items": [
+                {
+                    "description": "Track [GND] on F.Cu, length 0.1000 mm",
+                    "pos": {
+                        "x": 6.6727,
+                        "y": 6.4907
+                    },
+                    "uuid": "9ae9e97d-6461-49cf-9f7f-c99d4ba6fac9"
+                },
+                {
+                    "description": "Pad E4 [/M1_CAM_SCL_1V8] of U1 on F.Cu",
+                    "pos": {
+                        "x": 6.765,
+                        "y": 6.257
+                    },
+                    "uuid": "a0faaf31-1b21-4884-9e3f-3643dc5bd669"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4894 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 14.0,
+                        "y": 14.0
+                    },
+                    "uuid": "d39d73a4-b342-45bc-a1bb-2c9b7f3ffb54"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 5.75,
+                        "y": 13.3106
+                    },
+                    "uuid": "68e9e481-dd05-46c4-ad5f-8c40ce73ae3e"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4974 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 14.0,
+                        "y": 14.0
+                    },
+                    "uuid": "d39d73a4-b342-45bc-a1bb-2c9b7f3ffb54"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 2.3625,
+                        "y": 13.3026
+                    },
+                    "uuid": "8dc4c55c-e538-4bb5-b48d-e8ee3f11c190"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4808 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 14.0,
+                        "y": 14.0
+                    },
+                    "uuid": "d39d73a4-b342-45bc-a1bb-2c9b7f3ffb54"
+                },
+                {
+                    "description": "Via [/CAM_L_D1_P] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 4.7583,
+                        "y": 13.3192
+                    },
+                    "uuid": "d261febc-ad3f-42f4-93b3-263786f6c104"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3789 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 14.0,
+                        "y": 14.0
+                    },
+                    "uuid": "d39d73a4-b342-45bc-a1bb-2c9b7f3ffb54"
+                },
+                {
+                    "description": "Via [/M1_CAM_SCL_1V8] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 6.5,
+                        "y": 13.4211
+                    },
+                    "uuid": "beb50600-93ff-4cc1-954c-0f4a61438652"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4407 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 14.0,
+                        "y": 14.0
+                    },
+                    "uuid": "d39d73a4-b342-45bc-a1bb-2c9b7f3ffb54"
+                },
+                {
+                    "description": "Track [/M1_CAM_SDA_1V8] on F.Cu, length 0.5057 mm",
+                    "pos": {
+                        "x": 7.8072,
+                        "y": 13.5093
+                    },
+                    "uuid": "e7c3086d-3d7a-4daa-bfea-1b498e9418f9"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2907 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 14.0,
+                        "y": 14.0
+                    },
+                    "uuid": "d39d73a4-b342-45bc-a1bb-2c9b7f3ffb54"
+                },
+                {
+                    "description": "Via [/M1_CAM_SDA_1V8] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 7.8072,
+                        "y": 13.5093
+                    },
+                    "uuid": "912b63cc-11b2-462c-887d-0bc6a32db684"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4407 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 14.0,
+                        "y": 14.0
+                    },
+                    "uuid": "d39d73a4-b342-45bc-a1bb-2c9b7f3ffb54"
+                },
+                {
+                    "description": "Track [/M1_CAM_SDA_1V8] on In1.Cu, length 4.9499 mm",
+                    "pos": {
+                        "x": 7.8072,
+                        "y": 13.5093
+                    },
+                    "uuid": "057e1c9b-324f-4a45-86bb-6d1f0654f40d"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [/CAM_L_D0_P] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 2.4142,
+                        "y": 11.1841
+                    },
+                    "uuid": "adc7b259-9d29-48ca-901e-cf7b0a2b3375"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [/CAM_L_CLK_N] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 3.4126,
+                        "y": 9.602
+                    },
+                    "uuid": "102f543a-05c7-419a-9fed-32eb0815f26e"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [/CAM_L_CLK_P] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 3.75,
+                        "y": 11.1926
+                    },
+                    "uuid": "b7b6c5ab-4cb3-4c55-8597-056a7bed5d00"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [/CAM_L_D1_P] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 4.7583,
+                        "y": 13.3192
+                    },
+                    "uuid": "d261febc-ad3f-42f4-93b3-263786f6c104"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [/M1_CAM_SCL_1V8] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 6.5,
+                        "y": 13.4211
+                    },
+                    "uuid": "beb50600-93ff-4cc1-954c-0f4a61438652"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [/M1_VH] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 11.0276,
+                        "y": 10.6073
+                    },
+                    "uuid": "de4a69e9-5ec6-433b-be11-9cbd30f9c3f5"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        }
+    ]
+}

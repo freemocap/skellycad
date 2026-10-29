@@ -1,0 +1,171 @@
+{
+  "step_mm": 0.04,
+  "rho_ohm_m_assumed": 1.72e-08,
+  "results": {
+    "/P4_VDD_HP": {
+      "copper_cells": 59199,
+      "connected_cells": 59199,
+      "total_load_A": 1.0,
+      "source_current_A": 1.0000000000707154,
+      "matrix_residual_A": 6.581887812551201e-14,
+      "maximum_load_drop_V": 0.01439140718578342,
+      "loads": [
+        {
+          "reference": [
+            "U101",
+            "26"
+          ],
+          "current_A": 0.25,
+          "max_drop_V": 0.01207847126532233
+        },
+        {
+          "reference": [
+            "U101",
+            "54"
+          ],
+          "current_A": 0.25,
+          "max_drop_V": 0.011458294606050906
+        },
+        {
+          "reference": [
+            "U101",
+            "76"
+          ],
+          "current_A": 0.25,
+          "max_drop_V": 0.01439140718578342
+        },
+        {
+          "reference": [
+            "U101",
+            "91"
+          ],
+          "current_A": 0.25,
+          "max_drop_V": 0.013015621787688269
+        }
+      ]
+    },
+    "+3V3": {
+      "copper_cells": 215339,
+      "connected_cells": 215339,
+      "total_load_A": 1.0000000000000002,
+      "source_current_A": 1.0000000001068812,
+      "matrix_residual_A": 2.842170943040401e-14,
+      "maximum_load_drop_V": 0.00925664751919808,
+      "loads": [
+        {
+          "reference": [
+            "U103",
+            "3"
+          ],
+          "current_A": 0.5,
+          "max_drop_V": 0.00925664751919808
+        },
+        {
+          "reference": [
+            "U5",
+            "4"
+          ],
+          "current_A": 0.05,
+          "max_drop_V": 0.0011658626695933403
+        },
+        {
+          "reference": [
+            "U6",
+            "4"
+          ],
+          "current_A": 0.15,
+          "max_drop_V": 0.007224115496237215
+        },
+        {
+          "reference": [
+            "U7",
+            "4"
+          ],
+          "current_A": 0.05,
+          "max_drop_V": 0.0018604997038436757
+        },
+        {
+          "reference": [
+            "U101",
+            "9"
+          ],
+          "current_A": 0.025,
+          "max_drop_V": 0.0057866295263431095
+        },
+        {
+          "reference": [
+            "U101",
+            "21"
+          ],
+          "current_A": 0.025,
+          "max_drop_V": 0.006380340752605468
+        },
+        {
+          "reference": [
+            "U101",
+            "51"
+          ],
+          "current_A": 0.025,
+          "max_drop_V": 0.006635993373586001
+        },
+        {
+          "reference": [
+            "U101",
+            "62"
+          ],
+          "current_A": 0.025,
+          "max_drop_V": 0.006490664210098489
+        },
+        {
+          "reference": [
+            "U101",
+            "75"
+          ],
+          "current_A": 0.025,
+          "max_drop_V": 0.0013519737295013187
+        },
+        {
+          "reference": [
+            "U101",
+            "77"
+          ],
+          "current_A": 0.025,
+          "max_drop_V": 0.001350904521372009
+        },
+        {
+          "reference": [
+            "U101",
+            "85"
+          ],
+          "current_A": 0.025,
+          "max_drop_V": 0.001302660928401668
+        },
+        {
+          "reference": [
+            "U101",
+            "96"
+          ],
+          "current_A": 0.025,
+          "max_drop_V": 0.004309087572576745
+        },
+        {
+          "reference": [
+            "U101",
+            "101"
+          ],
+          "current_A": 0.025,
+          "max_drop_V": 0.004353050635703735
+        },
+        {
+          "reference": [
+            "U101",
+            "102"
+          ],
+          "current_A": 0.025,
+          "max_drop_V": 0.004364854832426856
+        }
+      ]
+    }
+  },
+  "scope": "DC conductor screening from saved native copper. Controller only; 1 A stress loading per rail, not a claim about actual consumption or USB bus-power compliance. Uniform copper thickness, filled solid copper vias and room-temperature resistivity assumed. Excludes return-path drop, device/package resistance, solder, regulator dynamics, heating and decoupling parasitics."
+}

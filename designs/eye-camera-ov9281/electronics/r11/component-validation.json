@@ -1,0 +1,17 @@
+{
+  "status": "pass",
+  "checks": [
+    "106 physical references have selected parts and pin maps",
+    "105 populated parts; R7 DNP",
+    "Regulator pin remaps recorded",
+    "Rail voltage, current, ripple and SCCB selection screens passed",
+    "Bibliography validation is recorded in the final R11 audit"
+  ],
+  "limitations": "Analytical component-selection screen; hardware qualifications listed in component-calculations.json",
+  "sha256": {
+    "components.json": "768d6c65164f19172ee9684eb64266113712d56688639c7c35a803746b90c471",
+    "component-calculations.json": "22ba7f7b3b32a2a4b210bab2cb4ad3450ad46cc104754d00a7c85bbfd1f44b8d",
+    "COMPONENTS.md": "8ed9e24531cd6518dc485c1a733bb14071d75424dc02558494a2f3cc24580842"
+  },
+  "correction": "2026-10-29: filter DCR corrected from nominal 0.19 to maximum 0.247 ohm. Native pin maps, parts and geometry unchanged; downstream sensor-power screen rerun."
+}

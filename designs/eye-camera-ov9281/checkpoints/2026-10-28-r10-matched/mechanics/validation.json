@@ -1,0 +1,116 @@
+{
+  "revision": "OV9281-R10-MATCHED-REVIEW",
+  "units": "mm",
+  "native_document": "C:\\Users\\jonma\\code-stuff\\github\\freemocap\\other\\skellycad\\generated\\ov9281-r10-mechanics-02\\OV9281-R10-MATCHED-REVIEW.FCStd",
+  "native_sha256": "e9bc688d264b13bd62bca5498918e29ba48d16a7ced393e6ef119a3018b35788",
+  "pcb_source": "C:\\Users\\jonma\\code-stuff\\github\\freemocap\\other\\skellycad\\generated\\ov9281-r10-review-02",
+  "pcb_native_sha256": {
+    "head.kicad_pcb": "8acbe182d47f21e00a38ad7f99bad70e1eace5433196948a0ba3e9e0f71ff7cb",
+    "controller.kicad_pcb": "de0f3dff1a932e2852bc63079b28c99ab9df04517b2e59d6920c2318159182c2",
+    "flex-study.kicad_pcb": "4cd8ef61c6a839926712e2afa47ddd25353aa8b46d2797274c93938d0b8933f0",
+    "camera.kicad_sch": "b307a594304676204d24e58bcce617ebf770879fbdfe65a5e94134018c0c2991",
+    "OV9281-P4-R10-assembly.kicad_pcb": "7139553bf9838d1c1303029886997e0dfbd478f245c6a845ab9783f6afe5530b"
+  },
+  "step_sha256": {
+    "controller": "3e453cdaf3165922ea467675014c24743bdb60b99edb3155fd636d0088c34e1f",
+    "head": "b6e5572f79531e81dfc2531fe96aa0af5bfdeae2a609f5094e3a9e7060194e19",
+    "flex-study": "a61835f761083048a4612e573374ae9d2a73f1ef23cad62137168cef2c8be7a5"
+  },
+  "step_bounds": {
+    "controller": {
+      "z_min_mm": -0.04,
+      "z_max_mm": 0.511,
+      "export_height_mm": 0.551,
+      "solid_count": 993
+    },
+    "head": {
+      "z_min_mm": -0.04,
+      "z_max_mm": 0.511,
+      "export_height_mm": 0.551,
+      "solid_count": 576
+    },
+    "flex-study": {
+      "z_min_mm": -0.029,
+      "z_max_mm": 0.089,
+      "export_height_mm": 0.118,
+      "solid_count": 92
+    }
+  },
+  "optical_xy_mm": [
+    7.3325,
+    -6.043
+  ],
+  "board_copper_top_z_mm": 0.511,
+  "prior_optics_native_sha256": "eb083101f5dbcc08ed4a5cf10d9a102355b4233b7ac3bcf49b5c052aa16768bb",
+  "pupil_checkpoint": "CAMERA-DUMMY-R08",
+  "pupil_native_sha256": "2096c198eff2faf4fe826d94910f6b49a731f5408f350de9bd45ebf9dc9c26d0",
+  "component_reservation_counts": {
+    "head": {
+      "F": 8,
+      "B": 22
+    },
+    "controller": {
+      "F": 17,
+      "B": 59
+    }
+  },
+  "assumptions": {
+    "image_plane_z_mm": 1.141,
+    "sensor_height_mm": 0.8,
+    "other_component_height_mm": 1,
+    "flex_lift_mm": 0.56,
+    "holder_outer_xy_mm": [
+      8,
+      8
+    ],
+    "holder_bore_mm": 6.05,
+    "lens_diameter_mm": 6,
+    "lens_length_mm": 2.65,
+    "filter_thickness_mm": 0.2,
+    "flex_span_thickness_mm": 0.168,
+    "flex_tip_thickness_mm": 0.3
+  },
+  "reliefs": {
+    "D202": {
+      "xy_margin_mm": 0.1,
+      "height_mm": 3.78
+    },
+    "Q201": {
+      "xy_margin_mm": 0.1,
+      "height_mm": 1.2
+    }
+  },
+  "holder_courtyard_collisions_mm3": {},
+  "focus_travel_geometry_checks": [
+    {
+      "travel_mm": 0,
+      "holder_overlap_mm3": 0.0,
+      "filter_overlap_mm3": 0.0
+    },
+    {
+      "travel_mm": 0.5,
+      "holder_overlap_mm3": 0.0,
+      "filter_overlap_mm3": 0.0
+    },
+    {
+      "travel_mm": 1.0,
+      "holder_overlap_mm3": 0.0,
+      "filter_overlap_mm3": 0.0
+    }
+  ],
+  "physical_fit_verified": false,
+  "optics_qualified": false,
+  "manufacturing_ready": false,
+  "limits": [
+    "Actual R10 STEP copper, with separately labeled component and construction envelopes.",
+    "Flat flex position verifies XY alignment only; connector engagement and solder height remain unqualified.",
+    "Component heights, sensor Z, filter and holder mounting remain assumptions; smooth bore is thread space only.",
+    "Lens travel checks clearance only, not 10\u201320 mm or infrared focus.",
+    "KiCad STEP mask thickness differs from the flex construction; separate coverlay/stiffener envelopes represent the intended 0.168/0.300 mm buildup."
+  ],
+  "desktop_review_saved": true,
+  "review_images": [
+    "assembly.png",
+    "head-detail.png"
+  ]
+}

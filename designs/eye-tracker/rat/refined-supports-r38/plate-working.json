@@ -1,0 +1,12 @@
+{
+  "units": "mm",
+  "old_support_thickness_mm": 1.2,
+  "new_support_thickness_mm": 1.8,
+  "increase_percent": 50,
+  "pcbs_and_retaining_features_shift_each_mm": 0.3,
+  "camera_heads_unchanged": true,
+  "skull_baseplate_unchanged": true,
+  "central_valid_single_solid": true,
+  "old_central_volume_mm3": 573.0133117390853,
+  "new_central_volume_mm3": 751.1699842895019
+}

@@ -1,0 +1,3666 @@
+{
+  "C101": {
+    "reference": "C101",
+    "region": "base",
+    "value": "16p",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM1555C1H160JA01D",
+    "pin_nets": {
+      "1": "P4_XTAL_P",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.55,
+    "mass_g": [
+      0.0007,
+      0.0012,
+      0.0018
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 50,
+    "dielectric": "C0G",
+    "source_ref": "C101"
+  },
+  "C102": {
+    "reference": "C102",
+    "region": "base",
+    "value": "16p",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM1555C1H160JA01D",
+    "pin_nets": {
+      "1": "P4_XTAL_N",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.55,
+    "mass_g": [
+      0.0007,
+      0.0012,
+      0.0018
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 50,
+    "dielectric": "C0G",
+    "source_ref": "C102"
+  },
+  "C103": {
+    "reference": "C103",
+    "region": "base",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM155R71C104KA88D",
+    "pin_nets": {
+      "1": "P4_FLASH_VDD",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.55,
+    "mass_g": [
+      0.0007,
+      0.0012,
+      0.0018
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 16,
+    "dielectric": "X7R",
+    "source_ref": "C103"
+  },
+  "C104": {
+    "reference": "C104",
+    "region": "base",
+    "value": "1u",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM188R71C105KA12D",
+    "pin_nets": {
+      "1": "P4_EN",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.9,
+    "mass_g": [
+      0.002,
+      0.0035,
+      0.006
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 16,
+    "dielectric": "X7R",
+    "source_ref": "C104"
+  },
+  "C105": {
+    "reference": "C105",
+    "region": "base",
+    "value": "4.7u",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM188R61A475KE15D",
+    "pin_nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.9,
+    "mass_g": [
+      0.002,
+      0.0035,
+      0.006
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 10,
+    "dielectric": "X5R",
+    "source_ref": "C105"
+  },
+  "C106": {
+    "reference": "C106",
+    "region": "base",
+    "value": "22u",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM21BR61A226ME44L",
+    "pin_nets": {
+      "1": "P4_VDD_HP",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 1.45,
+    "mass_g": [
+      0.004,
+      0.009,
+      0.016
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 10,
+    "dielectric": "X5R",
+    "source_ref": "C106"
+  },
+  "C107": {
+    "reference": "C107",
+    "region": "base",
+    "value": "22p",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM1555C1H220JA01D",
+    "pin_nets": {
+      "2": "P4_FB",
+      "1": "P4_VDD_HP"
+    },
+    "populated": true,
+    "height_max_mm": 0.55,
+    "mass_g": [
+      0.0007,
+      0.0012,
+      0.0018
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 50,
+    "dielectric": "C0G",
+    "source_ref": "C107"
+  },
+  "C108": {
+    "reference": "C108",
+    "region": "base",
+    "value": "4.7u",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM188R61A475KE15D",
+    "pin_nets": {
+      "1": "USB_VBUS",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.9,
+    "mass_g": [
+      0.002,
+      0.0035,
+      0.006
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 10,
+    "dielectric": "X5R",
+    "source_ref": "C108"
+  },
+  "C109": {
+    "reference": "C109",
+    "region": "base",
+    "value": "22u",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM21BR61A226ME44L",
+    "pin_nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 1.45,
+    "mass_g": [
+      0.004,
+      0.009,
+      0.016
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 10,
+    "dielectric": "X5R",
+    "source_ref": "C109"
+  },
+  "C110": {
+    "reference": "C110",
+    "region": "base",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM155R71C104KA88D",
+    "pin_nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.55,
+    "mass_g": [
+      0.0007,
+      0.0012,
+      0.0018
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 16,
+    "dielectric": "X7R",
+    "source_ref": "C110"
+  },
+  "C111": {
+    "reference": "C111",
+    "region": "base",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM155R71C104KA88D",
+    "pin_nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.55,
+    "mass_g": [
+      0.0007,
+      0.0012,
+      0.0018
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 16,
+    "dielectric": "X7R",
+    "source_ref": "C111"
+  },
+  "C112": {
+    "reference": "C112",
+    "region": "base",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM155R71C104KA88D",
+    "pin_nets": {
+      "1": "P4_VDD_HP",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.55,
+    "mass_g": [
+      0.0007,
+      0.0012,
+      0.0018
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 16,
+    "dielectric": "X7R",
+    "source_ref": "C112"
+  },
+  "C113": {
+    "reference": "C113",
+    "region": "base",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM155R71C104KA88D",
+    "pin_nets": {
+      "1": "P4_VDD_HP",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.55,
+    "mass_g": [
+      0.0007,
+      0.0012,
+      0.0018
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 16,
+    "dielectric": "X7R",
+    "source_ref": "C113"
+  },
+  "C114": {
+    "reference": "C114",
+    "region": "base",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM155R71C104KA88D",
+    "pin_nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.55,
+    "mass_g": [
+      0.0007,
+      0.0012,
+      0.0018
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 16,
+    "dielectric": "X7R",
+    "source_ref": "C114"
+  },
+  "C115": {
+    "reference": "C115",
+    "region": "base",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM155R71C104KA88D",
+    "pin_nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.55,
+    "mass_g": [
+      0.0007,
+      0.0012,
+      0.0018
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 16,
+    "dielectric": "X7R",
+    "source_ref": "C115"
+  },
+  "C116": {
+    "reference": "C116",
+    "region": "base",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM155R71C104KA88D",
+    "pin_nets": {
+      "1": "P4_VDD_HP",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.55,
+    "mass_g": [
+      0.0007,
+      0.0012,
+      0.0018
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 16,
+    "dielectric": "X7R",
+    "source_ref": "C116"
+  },
+  "C117": {
+    "reference": "C117",
+    "region": "base",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM155R71C104KA88D",
+    "pin_nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.55,
+    "mass_g": [
+      0.0007,
+      0.0012,
+      0.0018
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 16,
+    "dielectric": "X7R",
+    "source_ref": "C117"
+  },
+  "C118": {
+    "reference": "C118",
+    "region": "base",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM155R71C104KA88D",
+    "pin_nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.55,
+    "mass_g": [
+      0.0007,
+      0.0012,
+      0.0018
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 16,
+    "dielectric": "X7R",
+    "source_ref": "C118"
+  },
+  "C119": {
+    "reference": "C119",
+    "region": "base",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM155R71C104KA88D",
+    "pin_nets": {
+      "1": "P4_VDD_HP",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.55,
+    "mass_g": [
+      0.0007,
+      0.0012,
+      0.0018
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 16,
+    "dielectric": "X7R",
+    "source_ref": "C119"
+  },
+  "C120": {
+    "reference": "C120",
+    "region": "base",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM155R71C104KA88D",
+    "pin_nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.55,
+    "mass_g": [
+      0.0007,
+      0.0012,
+      0.0018
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 16,
+    "dielectric": "X7R",
+    "source_ref": "C120"
+  },
+  "C121": {
+    "reference": "C121",
+    "region": "base",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM155R71C104KA88D",
+    "pin_nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.55,
+    "mass_g": [
+      0.0007,
+      0.0012,
+      0.0018
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 16,
+    "dielectric": "X7R",
+    "source_ref": "C121"
+  },
+  "C122": {
+    "reference": "C122",
+    "region": "base",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM155R71C104KA88D",
+    "pin_nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.55,
+    "mass_g": [
+      0.0007,
+      0.0012,
+      0.0018
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 16,
+    "dielectric": "X7R",
+    "source_ref": "C122"
+  },
+  "C123": {
+    "reference": "C123",
+    "region": "base",
+    "value": "22u",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM21BR61A226ME44L",
+    "pin_nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 1.45,
+    "mass_g": [
+      0.004,
+      0.009,
+      0.016
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 10,
+    "dielectric": "X5R",
+    "change": "10 uF to 22 uF; retain 0805 for effective capacitance margin",
+    "source_ref": "C123"
+  },
+  "C124": {
+    "reference": "C124",
+    "region": "base",
+    "value": "22u",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM21BR61A226ME44L",
+    "pin_nets": {
+      "1": "P4_VDD_HP",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 1.45,
+    "mass_g": [
+      0.004,
+      0.009,
+      0.016
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 10,
+    "dielectric": "X5R",
+    "change": "10 uF to 22 uF; retain 0805 for effective capacitance margin",
+    "source_ref": "C124"
+  },
+  "C125": {
+    "reference": "C125",
+    "region": "base",
+    "value": "1u",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM188R71C105KA12D",
+    "pin_nets": {
+      "1": "P4_FLASH_VDD",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.9,
+    "mass_g": [
+      0.002,
+      0.0035,
+      0.006
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 16,
+    "dielectric": "X7R",
+    "source_ref": "C125"
+  },
+  "C126": {
+    "reference": "C126",
+    "region": "base",
+    "value": "1u",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM188R71C105KA12D",
+    "pin_nets": {
+      "1": "P4_PSRAM_VDD",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.9,
+    "mass_g": [
+      0.002,
+      0.0035,
+      0.006
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 16,
+    "dielectric": "X7R",
+    "source_ref": "C126"
+  },
+  "C127": {
+    "reference": "C127",
+    "region": "base",
+    "value": "1u",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM188R71C105KA12D",
+    "pin_nets": {
+      "1": "P4_LDO4_UNUSED",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.9,
+    "mass_g": [
+      0.002,
+      0.0035,
+      0.006
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 16,
+    "dielectric": "X7R",
+    "source_ref": "C127"
+  },
+  "C128": {
+    "reference": "C128",
+    "region": "base",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM155R71C104KA88D",
+    "pin_nets": {
+      "1": "P4_FLASH_VDD",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.55,
+    "mass_g": [
+      0.0007,
+      0.0012,
+      0.0018
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 16,
+    "dielectric": "X7R",
+    "source_ref": "C128"
+  },
+  "C129": {
+    "reference": "C129",
+    "region": "base",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM155R71C104KA88D",
+    "pin_nets": {
+      "1": "P4_PSRAM_VDD",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.55,
+    "mass_g": [
+      0.0007,
+      0.0012,
+      0.0018
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 16,
+    "dielectric": "X7R",
+    "source_ref": "C129"
+  },
+  "C130": {
+    "reference": "C130",
+    "region": "base",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM155R71C104KA88D",
+    "pin_nets": {
+      "1": "P4_PSRAM_VDD",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.55,
+    "mass_g": [
+      0.0007,
+      0.0012,
+      0.0018
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 16,
+    "dielectric": "X7R",
+    "source_ref": "C130"
+  },
+  "C131": {
+    "reference": "C131",
+    "region": "base",
+    "value": "10n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM155R71C103KA01D",
+    "pin_nets": {
+      "1": "P4_MIPI_2V5",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.55,
+    "mass_g": [
+      0.0007,
+      0.0012,
+      0.0018
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 16,
+    "dielectric": "X7R",
+    "source_ref": "C131"
+  },
+  "C132": {
+    "reference": "C132",
+    "region": "base",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM155R71C104KA88D",
+    "pin_nets": {
+      "1": "P4_MIPI_2V5",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.55,
+    "mass_g": [
+      0.0007,
+      0.0012,
+      0.0018
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 16,
+    "dielectric": "X7R",
+    "source_ref": "C132"
+  },
+  "C133": {
+    "reference": "C133",
+    "region": "base",
+    "value": "1u",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM188R71C105KA12D",
+    "pin_nets": {
+      "1": "P4_MIPI_2V5",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.9,
+    "mass_g": [
+      0.002,
+      0.0035,
+      0.006
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 16,
+    "dielectric": "X7R",
+    "source_ref": "C133"
+  },
+  "C134": {
+    "reference": "C134",
+    "region": "base",
+    "value": "10n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM155R71C103KA01D",
+    "pin_nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.55,
+    "mass_g": [
+      0.0007,
+      0.0012,
+      0.0018
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 16,
+    "dielectric": "X7R",
+    "source_ref": "C134"
+  },
+  "C135": {
+    "reference": "C135",
+    "region": "base",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM155R71C104KA88D",
+    "pin_nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.55,
+    "mass_g": [
+      0.0007,
+      0.0012,
+      0.0018
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 16,
+    "dielectric": "X7R",
+    "source_ref": "C135"
+  },
+  "C136": {
+    "reference": "C136",
+    "region": "base",
+    "value": "4.7u",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM188R61A475KE15D",
+    "pin_nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.9,
+    "mass_g": [
+      0.002,
+      0.0035,
+      0.006
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 10,
+    "dielectric": "X5R",
+    "source_ref": "C136"
+  },
+  "J101": {
+    "reference": "J101",
+    "region": "base",
+    "value": "USB / JST SH / 1VBUS 2DM 3DP 4GND",
+    "footprint": "Camera:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal",
+    "manufacturer": "JST",
+    "mpn": "SM04B-SRSS-TB(LF)(SN)",
+    "pin_nets": {
+      "2": "USB_DM",
+      "3": "USB_DP",
+      "1": "USB_VBUS",
+      "4": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 3.0,
+    "mass_g": [
+      0.025,
+      0.045,
+      0.075
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "jstShCatalog"
+    ],
+    "source_ref": "J101"
+  },
+  "J103": {
+    "reference": "J103",
+    "region": "base",
+    "value": "PROGRAM / RESET pads",
+    "footprint": "Camera:ProgrammingPads_5x1mm_P1.5mm",
+    "manufacturer": "PCB fabrication",
+    "mpn": "PCB programming lands",
+    "pin_nets": {
+      "4": "P4_BOOT",
+      "5": "P4_EN",
+      "3": "P4_UART_RX",
+      "2": "P4_UART_TX",
+      "1": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.0,
+    "mass_g": [
+      0,
+      0,
+      0
+    ],
+    "mass_evidence": "Copper included in board mass",
+    "sources": [],
+    "source_ref": "J103"
+  },
+  "L101": {
+    "reference": "L101",
+    "region": "base",
+    "value": "2.2u / 3.3 A Isat",
+    "footprint": "Camera:Murata_DFE252012F_R11",
+    "manufacturer": "Murata",
+    "mpn": "DFE252012F-2R2M=P2",
+    "pin_nets": {
+      "1": "P4_SW",
+      "2": "P4_VDD_HP"
+    },
+    "populated": true,
+    "height_max_mm": 1.2,
+    "mass_g": [
+      0.03,
+      0.0331,
+      0.037
+    ],
+    "mass_evidence": "Manufacturer typical 0.0331 g; bounds are engineering allowances",
+    "sources": [
+      "murataDfe252012R11",
+      "murataDfeMass2025"
+    ],
+    "inductance_H": 2.2e-06,
+    "rated_current_A": 2.3,
+    "saturation_current_A": 3.3,
+    "dcr_max_ohm": 0.082,
+    "source_ref": "L101"
+  },
+  "L102": {
+    "reference": "L102",
+    "region": "base",
+    "value": "2.2u / 3.3 A Isat",
+    "footprint": "Camera:Murata_DFE252012F_R11",
+    "manufacturer": "Murata",
+    "mpn": "DFE252012F-2R2M=P2",
+    "pin_nets": {
+      "2": "+3V3",
+      "1": "SYS_SW"
+    },
+    "populated": true,
+    "height_max_mm": 1.2,
+    "mass_g": [
+      0.03,
+      0.0331,
+      0.037
+    ],
+    "mass_evidence": "Manufacturer typical 0.0331 g; bounds are engineering allowances",
+    "sources": [
+      "murataDfe252012R11",
+      "murataDfeMass2025"
+    ],
+    "inductance_H": 2.2e-06,
+    "rated_current_A": 2.3,
+    "saturation_current_A": 3.3,
+    "dcr_max_ohm": 0.082,
+    "source_ref": "L102"
+  },
+  "R101": {
+    "reference": "R101",
+    "region": "base",
+    "value": "10k",
+    "footprint": "Camera:R_0402_1005Metric",
+    "manufacturer": "Yageo",
+    "mpn": "RC0402FR-0710KL",
+    "pin_nets": {
+      "2": "FLASH_CS",
+      "1": "P4_FLASH_VDD"
+    },
+    "populated": true,
+    "height_max_mm": 0.4,
+    "mass_g": [
+      0.0002,
+      0.00035,
+      0.0006
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "yageoRc0402R11"
+    ],
+    "rated_power_W": 0.063,
+    "source_ref": "R101"
+  },
+  "R102": {
+    "reference": "R102",
+    "region": "base",
+    "value": "10k",
+    "footprint": "Camera:R_0402_1005Metric",
+    "manufacturer": "Yageo",
+    "mpn": "RC0402FR-0710KL",
+    "pin_nets": {
+      "1": "+3V3",
+      "2": "P4_EN"
+    },
+    "populated": true,
+    "height_max_mm": 0.4,
+    "mass_g": [
+      0.0002,
+      0.00035,
+      0.0006
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "yageoRc0402R11"
+    ],
+    "rated_power_W": 0.063,
+    "source_ref": "R102"
+  },
+  "R103": {
+    "reference": "R103",
+    "region": "base",
+    "value": "10k",
+    "footprint": "Camera:R_0402_1005Metric",
+    "manufacturer": "Yageo",
+    "mpn": "RC0402FR-0710KL",
+    "pin_nets": {
+      "1": "+3V3",
+      "2": "P4_BOOT"
+    },
+    "populated": true,
+    "height_max_mm": 0.4,
+    "mass_g": [
+      0.0002,
+      0.00035,
+      0.0006
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "yageoRc0402R11"
+    ],
+    "rated_power_W": 0.063,
+    "source_ref": "R103"
+  },
+  "R104": {
+    "reference": "R104",
+    "region": "base",
+    "value": "10k",
+    "footprint": "Camera:R_0402_1005Metric",
+    "manufacturer": "Yageo",
+    "mpn": "RC0402FR-0710KL",
+    "pin_nets": {
+      "1": "+3V3",
+      "2": "P4_DOWNLOAD_ENABLE"
+    },
+    "populated": true,
+    "height_max_mm": 0.4,
+    "mass_g": [
+      0.0002,
+      0.00035,
+      0.0006
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "yageoRc0402R11"
+    ],
+    "rated_power_W": 0.063,
+    "source_ref": "R104"
+  },
+  "R105": {
+    "reference": "R105",
+    "region": "base",
+    "value": "499k",
+    "footprint": "Camera:R_0402_1005Metric",
+    "manufacturer": "Yageo",
+    "mpn": "RC0402FR-07499KL",
+    "pin_nets": {
+      "2": "P4_FB",
+      "1": "P4_VDD_HP"
+    },
+    "populated": true,
+    "height_max_mm": 0.4,
+    "mass_g": [
+      0.0002,
+      0.00035,
+      0.0006
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "yageoRc0402R11"
+    ],
+    "rated_power_W": 0.063,
+    "source_ref": "R105"
+  },
+  "R106": {
+    "reference": "R106",
+    "region": "base",
+    "value": "499k",
+    "footprint": "Camera:R_0402_1005Metric",
+    "manufacturer": "Yageo",
+    "mpn": "RC0402FR-07499KL",
+    "pin_nets": {
+      "1": "P4_FB",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.4,
+    "mass_g": [
+      0.0002,
+      0.00035,
+      0.0006
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "yageoRc0402R11"
+    ],
+    "rated_power_W": 0.063,
+    "source_ref": "R106"
+  },
+  "R107": {
+    "reference": "R107",
+    "region": "base",
+    "value": "453k",
+    "footprint": "Camera:R_0402_1005Metric",
+    "manufacturer": "Yageo",
+    "mpn": "RC0402FR-07453KL",
+    "pin_nets": {
+      "1": "+3V3",
+      "2": "SYS_FB"
+    },
+    "populated": true,
+    "height_max_mm": 0.4,
+    "mass_g": [
+      0.0002,
+      0.00035,
+      0.0006
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "yageoRc0402R11"
+    ],
+    "rated_power_W": 0.063,
+    "source_ref": "R107"
+  },
+  "R108": {
+    "reference": "R108",
+    "region": "base",
+    "value": "100k",
+    "footprint": "Camera:R_0402_1005Metric",
+    "manufacturer": "Yageo",
+    "mpn": "RC0402FR-07100KL",
+    "pin_nets": {
+      "1": "SYS_FB",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.4,
+    "mass_g": [
+      0.0002,
+      0.00035,
+      0.0006
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "yageoRc0402R11"
+    ],
+    "rated_power_W": 0.063,
+    "source_ref": "R108"
+  },
+  "R109": {
+    "reference": "R109",
+    "region": "base",
+    "value": "0",
+    "footprint": "Camera:R_0402_1005Metric",
+    "manufacturer": "Yageo",
+    "mpn": "RC0402JR-070RL",
+    "pin_nets": {
+      "1": "USB_DM",
+      "2": "USB_DM_CHIP"
+    },
+    "populated": true,
+    "height_max_mm": 0.4,
+    "mass_g": [
+      0.0002,
+      0.00035,
+      0.0006
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "yageoRc0402R11"
+    ],
+    "rated_power_W": 0.063,
+    "source_ref": "R109"
+  },
+  "R110": {
+    "reference": "R110",
+    "region": "base",
+    "value": "0",
+    "footprint": "Camera:R_0402_1005Metric",
+    "manufacturer": "Yageo",
+    "mpn": "RC0402JR-070RL",
+    "pin_nets": {
+      "1": "USB_DP",
+      "2": "USB_DP_CHIP"
+    },
+    "populated": true,
+    "height_max_mm": 0.4,
+    "mass_g": [
+      0.0002,
+      0.00035,
+      0.0006
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "yageoRc0402R11"
+    ],
+    "rated_power_W": 0.063,
+    "source_ref": "R110"
+  },
+  "R111": {
+    "reference": "R111",
+    "region": "base",
+    "value": "4.02k",
+    "footprint": "Camera:R_0402_1005Metric",
+    "manufacturer": "Yageo",
+    "mpn": "RC0402FR-074K02L",
+    "pin_nets": {
+      "1": "P4_CSI_REXT",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.4,
+    "mass_g": [
+      0.0002,
+      0.00035,
+      0.0006
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "yageoRc0402R11"
+    ],
+    "rated_power_W": 0.063,
+    "source_ref": "R111"
+  },
+  "R113": {
+    "reference": "R113",
+    "region": "base",
+    "value": "4.7k",
+    "footprint": "Camera:R_0402_1005Metric",
+    "manufacturer": "Yageo",
+    "mpn": "RC0402FR-074K7L",
+    "pin_nets": {
+      "1": "+3V3",
+      "2": "BASE_SCL"
+    },
+    "populated": true,
+    "height_max_mm": 0.4,
+    "mass_g": [
+      0.0002,
+      0.00035,
+      0.0006
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "yageoRc0402R11"
+    ],
+    "rated_power_W": 0.063,
+    "source_ref": "R113"
+  },
+  "R115": {
+    "reference": "R115",
+    "region": "base",
+    "value": "4.7k",
+    "footprint": "Camera:R_0402_1005Metric",
+    "manufacturer": "Yageo",
+    "mpn": "RC0402FR-074K7L",
+    "pin_nets": {
+      "1": "+3V3",
+      "2": "BASE_SDA"
+    },
+    "populated": true,
+    "height_max_mm": 0.4,
+    "mass_g": [
+      0.0002,
+      0.00035,
+      0.0006
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "yageoRc0402R11"
+    ],
+    "rated_power_W": 0.063,
+    "source_ref": "R115"
+  },
+  "U101": {
+    "reference": "U101",
+    "region": "base",
+    "value": "ESP32-P4NRW16X / v3.x",
+    "footprint": "Camera:ESP32-P4",
+    "manufacturer": "Espressif",
+    "mpn": "ESP32-P4NRW16X",
+    "pin_nets": {
+      "101": "+3V3",
+      "102": "+3V3",
+      "21": "+3V3",
+      "51": "+3V3",
+      "62": "+3V3",
+      "75": "+3V3",
+      "77": "+3V3",
+      "85": "+3V3",
+      "9": "+3V3",
+      "96": "+3V3",
+      "45": "CAM_L_CLK_N",
+      "44": "CAM_L_CLK_P",
+      "42": "CAM_L_D0_N",
+      "43": "CAM_L_D0_P",
+      "46": "CAM_L_D1_N",
+      "47": "CAM_L_D1_P",
+      "6": "RX_PDB",
+      "7": "BASE_SCL",
+      "8": "BASE_SDA",
+      "32": "FLASH_CLK",
+      "27": "FLASH_CS",
+      "33": "FLASH_D",
+      "31": "FLASH_HOLD",
+      "28": "FLASH_Q",
+      "29": "FLASH_WP",
+      "5": "TETHER_EN",
+      "66": "P4_BOOT",
+      "48": "P4_CSI_REXT",
+      "68": "P4_DOWNLOAD_ENABLE",
+      "103": "P4_EN",
+      "79": "P4_EN_DCDC",
+      "78": "P4_FB",
+      "30": "P4_FLASH_VDD",
+      "71": "P4_FLASH_VDD",
+      "74": "P4_LDO4_UNUSED",
+      "41": "P4_MIPI_2V5",
+      "73": "P4_MIPI_2V5",
+      "59": "P4_PSRAM_VDD",
+      "67": "P4_PSRAM_VDD",
+      "72": "P4_PSRAM_VDD",
+      "70": "P4_UART_RX",
+      "69": "P4_UART_TX",
+      "26": "P4_VDD_HP",
+      "54": "P4_VDD_HP",
+      "76": "P4_VDD_HP",
+      "91": "P4_VDD_HP",
+      "99": "P4_XTAL_N",
+      "100": "P4_XTAL_P",
+      "49": "USB_DM_CHIP",
+      "50": "USB_DP_CHIP",
+      "105": "GND",
+      "37": null,
+      "38": null,
+      "40": null,
+      "36": null,
+      "39": null,
+      "35": null,
+      "34": null,
+      "104": null,
+      "1": null,
+      "2": null,
+      "3": null,
+      "4": null,
+      "10": "RX_CLK_DISABLE",
+      "11": "RX_LOCK",
+      "12": "RX_PASS",
+      "13": "TETHER_FAULT_N",
+      "14": "RX_INT_N",
+      "15": null,
+      "16": null,
+      "17": "USB_PRESENT_N",
+      "18": null,
+      "19": null,
+      "20": null,
+      "22": null,
+      "23": null,
+      "24": null,
+      "25": null,
+      "52": null,
+      "53": null,
+      "55": null,
+      "56": null,
+      "57": null,
+      "58": null,
+      "60": null,
+      "61": null,
+      "63": null,
+      "64": null,
+      "65": null,
+      "80": null,
+      "81": null,
+      "82": null,
+      "83": null,
+      "84": null,
+      "86": null,
+      "87": null,
+      "88": null,
+      "89": null,
+      "90": null,
+      "92": null,
+      "93": null,
+      "94": null,
+      "95": null,
+      "97": null,
+      "98": null
+    },
+    "populated": true,
+    "height_max_mm": 1.0,
+    "mass_g": [
+      0.135,
+      0.18,
+      0.23
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "esp32P4Datasheet",
+      "esp32P4HardwareGuide",
+      "espressifKicadLibrary"
+    ],
+    "source_ref": "U101"
+  },
+  "U102": {
+    "reference": "U102",
+    "region": "base",
+    "value": "W25Q32JVUUIQ / 4 MB",
+    "footprint": "Package_SON:Winbond_USON-8-2EP_3x4mm_P0.8mm_EP0.2x0.8mm",
+    "manufacturer": "Winbond",
+    "mpn": "W25Q32JVUUIQ TR",
+    "pin_nets": {
+      "6": "FLASH_CLK",
+      "1": "FLASH_CS",
+      "5": "FLASH_D",
+      "7": "FLASH_HOLD",
+      "2": "FLASH_Q",
+      "3": "FLASH_WP",
+      "8": "P4_FLASH_VDD",
+      "4": "GND",
+      "9": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.6,
+    "mass_g": [
+      0.01,
+      0.017,
+      0.026
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "winbondW25Q32JvK2026"
+    ],
+    "source_ref": "U102"
+  },
+  "U103": {
+    "reference": "U103",
+    "region": "base",
+    "value": "TLV62569DRLR",
+    "footprint": "Camera:TI_DRL0006A_R11",
+    "manufacturer": "Texas Instruments",
+    "mpn": "TLV62569DRLR",
+    "pin_nets": {
+      "5": "P4_EN_DCDC",
+      "2": "GND",
+      "4": "P4_SW",
+      "3": "+3V3",
+      "1": "P4_FB",
+      "6": null
+    },
+    "populated": true,
+    "height_max_mm": 0.6,
+    "mass_g": [
+      0.0015,
+      0.0025,
+      0.004
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "tiTlv62569"
+    ],
+    "source_ref": "U103"
+  },
+  "U104": {
+    "reference": "U104",
+    "region": "base",
+    "value": "TLV62569DRLR",
+    "footprint": "Camera:TI_DRL0006A_R11",
+    "manufacturer": "Texas Instruments",
+    "mpn": "TLV62569DRLR",
+    "pin_nets": {
+      "5": "B5V",
+      "2": "GND",
+      "4": "SYS_SW",
+      "3": "B5V",
+      "1": "SYS_FB",
+      "6": null
+    },
+    "populated": true,
+    "height_max_mm": 0.6,
+    "mass_g": [
+      0.0015,
+      0.0025,
+      0.004
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "tiTlv62569"
+    ],
+    "source_ref": "U104"
+  },
+  "U105": {
+    "reference": "U105",
+    "region": "base",
+    "value": "USBLC6-2P6",
+    "footprint": "Camera:SOT-666",
+    "manufacturer": "STMicroelectronics",
+    "mpn": "USBLC6-2P6",
+    "pin_nets": {
+      "1": "USB_DM",
+      "6": "USB_DM",
+      "3": "USB_DP",
+      "4": "USB_DP",
+      "5": "USB_VBUS",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.7,
+    "mass_g": [
+      0.001,
+      0.002,
+      0.003
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "stUsblc6"
+    ],
+    "source_ref": "U105"
+  },
+  "Y101": {
+    "reference": "Y101",
+    "region": "base",
+    "value": "40 MHz / CL 10pF",
+    "footprint": "Camera:ECS_ECX1637B2_R11",
+    "manufacturer": "ECS",
+    "mpn": "ECS-400-10-37B2-CKM-TR",
+    "pin_nets": {
+      "3": "P4_XTAL_N",
+      "1": "P4_XTAL_P",
+      "2": "GND",
+      "4": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.5,
+    "mass_g": [
+      0.004,
+      0.008,
+      0.012
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "ecs1637b2R11",
+      "ecs400R11"
+    ],
+    "load_capacitance_pF": 10,
+    "esr_max_ohm": 40,
+    "source_ref": "Y101"
+  },
+  "R601": {
+    "reference": "R601",
+    "region": "base",
+    "value": "100k",
+    "footprint": "Camera:R_0402_1005Metric",
+    "manufacturer": "Yageo",
+    "mpn": "RC0402FR-07100KL",
+    "pin_nets": {
+      "1": "RX_PDB",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.4,
+    "mass_g": [
+      0.0002,
+      0.00035,
+      0.0006
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "yageoRc0402R11"
+    ],
+    "rated_power_W": 0.063,
+    "source_ref": "R102",
+    "tolerance_percent": 1
+  },
+  "R602": {
+    "reference": "R602",
+    "region": "base",
+    "value": "100k",
+    "footprint": "Camera:R_0402_1005Metric",
+    "manufacturer": "Yageo",
+    "mpn": "RC0402FR-07100KL",
+    "pin_nets": {
+      "1": "TETHER_EN",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.4,
+    "mass_g": [
+      0.0002,
+      0.00035,
+      0.0006
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "yageoRc0402R11"
+    ],
+    "rated_power_W": 0.063,
+    "source_ref": "R102",
+    "tolerance_percent": 1
+  },
+  "C601": {
+    "reference": "C601",
+    "region": "base",
+    "value": "4.7u",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM188R61A475KE15D",
+    "pin_nets": {
+      "1": "B5V",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.9,
+    "mass_g": [
+      0.002,
+      0.0035,
+      0.006
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 10,
+    "dielectric": "X5R",
+    "source_ref": "C105"
+  },
+  "U301": {
+    "reference": "U301",
+    "value": "DS90UB954-Q1 / internal LDOs",
+    "mpn": "DS90UB954TRGZRQ1",
+    "manufacturer": "See manufacturer part number",
+    "region": "base",
+    "pin_nets": {
+      "1": "BASE_SDA",
+      "2": "BASE_SCL",
+      "3": "RX_D_CAP",
+      "4": null,
+      "5": "RX_REFCLK",
+      "6": "GND",
+      "7": "+3V3",
+      "8": null,
+      "9": null,
+      "10": null,
+      "11": "CAM_L_CLK_N",
+      "12": "CAM_L_CLK_P",
+      "13": "CAM_L_D0_N",
+      "14": "CAM_L_D0_P",
+      "15": "CAM_L_D1_N",
+      "16": "CAM_L_D1_P",
+      "17": "RX_VDD18_CSI",
+      "18": null,
+      "19": null,
+      "20": "RX_CSI_CAP",
+      "21": null,
+      "22": null,
+      "23": null,
+      "24": null,
+      "25": "RX_INT_N",
+      "26": null,
+      "27": null,
+      "28": null,
+      "29": "+3V3",
+      "30": "RX_PDB",
+      "31": "RX_VDD18_FPD",
+      "32": null,
+      "33": null,
+      "34": "RX_FPD1_CAP",
+      "35": "RX_IDX",
+      "36": "RX_VDD18_P",
+      "37": "RX_MODE",
+      "38": null,
+      "39": null,
+      "40": "RX_VDD18_FPD",
+      "41": "RX_IN_P",
+      "42": "RX_IN_N",
+      "43": "RX_FPD0_CAP",
+      "44": "GND",
+      "45": "RX_VDD18_P",
+      "46": "GND",
+      "47": "RX_PASS",
+      "48": "RX_LOCK",
+      "49": "GND"
+    },
+    "pins": [
+      [
+        "1",
+        "SDA",
+        "bidirectional"
+      ],
+      [
+        "2",
+        "SCL",
+        "bidirectional"
+      ],
+      [
+        "3",
+        "VDD11_D",
+        "power_out"
+      ],
+      [
+        "4",
+        "XOUT",
+        "output"
+      ],
+      [
+        "5",
+        "XIN_REFCLK",
+        "input"
+      ],
+      [
+        "6",
+        "BISTEN",
+        "input"
+      ],
+      [
+        "7",
+        "VDDIO",
+        "power_in"
+      ],
+      [
+        "8",
+        "GPIO6",
+        "bidirectional"
+      ],
+      [
+        "9",
+        "GPIO5",
+        "bidirectional"
+      ],
+      [
+        "10",
+        "GPIO4",
+        "bidirectional"
+      ],
+      [
+        "11",
+        "CSI_CLK0N",
+        "output"
+      ],
+      [
+        "12",
+        "CSI_CLK0P",
+        "output"
+      ],
+      [
+        "13",
+        "CSI_D0N",
+        "output"
+      ],
+      [
+        "14",
+        "CSI_D0P",
+        "output"
+      ],
+      [
+        "15",
+        "CSI_D1N",
+        "output"
+      ],
+      [
+        "16",
+        "CSI_D1P",
+        "output"
+      ],
+      [
+        "17",
+        "VDD18_CSI",
+        "power_in"
+      ],
+      [
+        "18",
+        "CSI_CLK1N",
+        "output"
+      ],
+      [
+        "19",
+        "CSI_CLK1P",
+        "output"
+      ],
+      [
+        "20",
+        "VDD11_CSI",
+        "power_out"
+      ],
+      [
+        "21",
+        "CSI_D2N",
+        "output"
+      ],
+      [
+        "22",
+        "CSI_D2P",
+        "output"
+      ],
+      [
+        "23",
+        "CSI_D3N",
+        "output"
+      ],
+      [
+        "24",
+        "CSI_D3P",
+        "output"
+      ],
+      [
+        "25",
+        "GPIO3_INTB",
+        "bidirectional"
+      ],
+      [
+        "26",
+        "GPIO2",
+        "bidirectional"
+      ],
+      [
+        "27",
+        "GPIO1",
+        "bidirectional"
+      ],
+      [
+        "28",
+        "GPIO0",
+        "bidirectional"
+      ],
+      [
+        "29",
+        "VDDIO",
+        "power_in"
+      ],
+      [
+        "30",
+        "PDB",
+        "input"
+      ],
+      [
+        "31",
+        "VDD18_FPD1",
+        "power_in"
+      ],
+      [
+        "32",
+        "RIN1P",
+        "input"
+      ],
+      [
+        "33",
+        "RIN1N",
+        "input"
+      ],
+      [
+        "34",
+        "VDD11_FPD1",
+        "power_out"
+      ],
+      [
+        "35",
+        "IDX",
+        "input"
+      ],
+      [
+        "36",
+        "VDD18_P1",
+        "power_in"
+      ],
+      [
+        "37",
+        "MODE",
+        "input"
+      ],
+      [
+        "38",
+        "CMLOUTP",
+        "output"
+      ],
+      [
+        "39",
+        "CMLOUTN",
+        "output"
+      ],
+      [
+        "40",
+        "VDD18_FPD0",
+        "power_in"
+      ],
+      [
+        "41",
+        "RIN0P",
+        "bidirectional"
+      ],
+      [
+        "42",
+        "RIN0N",
+        "bidirectional"
+      ],
+      [
+        "43",
+        "VDD11_FPD0",
+        "power_out"
+      ],
+      [
+        "44",
+        "RES",
+        "input"
+      ],
+      [
+        "45",
+        "VDD18_P0",
+        "power_in"
+      ],
+      [
+        "46",
+        "VDD_SEL",
+        "input"
+      ],
+      [
+        "47",
+        "PASS",
+        "output"
+      ],
+      [
+        "48",
+        "LOCK",
+        "output"
+      ],
+      [
+        "49",
+        "EP",
+        "power_in"
+      ]
+    ],
+    "footprint": "Camera:TI_RGZ0048B_E01",
+    "body_mm": [
+      7,
+      7,
+      1
+    ],
+    "height_max_mm": 1,
+    "mass_g": [
+      0.06999999999999999,
+      0.1,
+      0.15000000000000002
+    ],
+    "populated": true,
+    "sources": [
+      "ti954A01"
+    ],
+    "mass_evidence": "Engineering package estimate; not weighed"
+  },
+  "U302": {
+    "reference": "U302",
+    "region": "base",
+    "value": "TLV62569DRLR",
+    "footprint": "Camera:TI_DRL0006A_R11",
+    "manufacturer": "Texas Instruments",
+    "mpn": "TLV62569DRLR",
+    "pin_nets": {
+      "1": "U302_FB",
+      "2": "GND",
+      "3": "B5V",
+      "4": "U302_SW",
+      "5": "B5V",
+      "6": null
+    },
+    "populated": true,
+    "height_max_mm": 0.6,
+    "mass_g": [
+      0.0015,
+      0.0025,
+      0.004
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "tiTlv62569"
+    ],
+    "source_ref": "U104"
+  },
+  "L302": {
+    "reference": "L302",
+    "region": "base",
+    "value": "2.2u / 3.3 A Isat",
+    "footprint": "Camera:Murata_DFE252012F_R11",
+    "manufacturer": "Murata",
+    "mpn": "DFE252012F-2R2M=P2",
+    "pin_nets": {
+      "1": "U302_SW",
+      "2": "RX1V8"
+    },
+    "populated": true,
+    "height_max_mm": 1.2,
+    "mass_g": [
+      0.03,
+      0.0331,
+      0.037
+    ],
+    "mass_evidence": "Manufacturer typical 0.0331 g; bounds are engineering allowances",
+    "sources": [
+      "murataDfe252012R11",
+      "murataDfeMass2025"
+    ],
+    "inductance_H": 2.2e-06,
+    "rated_current_A": 2.3,
+    "saturation_current_A": 3.3,
+    "dcr_max_ohm": 0.082,
+    "source_ref": "L102"
+  },
+  "R603": {
+    "reference": "R603",
+    "region": "base",
+    "value": "200k",
+    "footprint": "Camera:R_0402_1005Metric",
+    "manufacturer": "Yageo",
+    "mpn": "RC0402FR-07200KL",
+    "pin_nets": {
+      "1": "RX1V8",
+      "2": "U302_FB"
+    },
+    "populated": true,
+    "height_max_mm": 0.4,
+    "mass_g": [
+      0.0002,
+      0.00035,
+      0.0006
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "yageoRc0402R11"
+    ],
+    "rated_power_W": 0.063,
+    "source_ref": "R102",
+    "tolerance_percent": 1
+  },
+  "R604": {
+    "reference": "R604",
+    "region": "base",
+    "value": "100k",
+    "footprint": "Camera:R_0402_1005Metric",
+    "manufacturer": "Yageo",
+    "mpn": "RC0402FR-07100KL",
+    "pin_nets": {
+      "1": "U302_FB",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.4,
+    "mass_g": [
+      0.0002,
+      0.00035,
+      0.0006
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "yageoRc0402R11"
+    ],
+    "rated_power_W": 0.063,
+    "source_ref": "R102",
+    "tolerance_percent": 1
+  },
+  "C602": {
+    "reference": "C602",
+    "region": "base",
+    "value": "4.7u",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM188R61A475KE15D",
+    "pin_nets": {
+      "1": "B5V",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.9,
+    "mass_g": [
+      0.002,
+      0.0035,
+      0.006
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 10,
+    "dielectric": "X5R",
+    "source_ref": "C105"
+  },
+  "C603": {
+    "reference": "C603",
+    "region": "base",
+    "value": "22u",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM21BR61A226ME44L",
+    "pin_nets": {
+      "1": "RX1V8",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 1.45,
+    "mass_g": [
+      0.004,
+      0.009,
+      0.016
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 10,
+    "dielectric": "X5R",
+    "change": "10 uF to 22 uF; retain 0805 for effective capacitance margin",
+    "source_ref": "C123"
+  },
+  "FB601": {
+    "reference": "FB601",
+    "region": "base",
+    "value": "120R@100MHz",
+    "footprint": "Inductor_SMD:L_0603_1608Metric",
+    "manufacturer": "TDK",
+    "mpn": "BLM18SG121TN1D",
+    "pin_nets": {
+      "1": "RX1V8",
+      "2": "RX_VDD18_CSI"
+    },
+    "populated": true,
+    "height_max_mm": 0.95,
+    "mass_g": [
+      0.002,
+      0.003,
+      0.005
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataFerritesE01"
+    ],
+    "rated_current_A": 0.9,
+    "dcr_max_ohm": 0.247,
+    "source_ref": "L1"
+  },
+  "FB602": {
+    "reference": "FB602",
+    "region": "base",
+    "value": "120R@100MHz",
+    "footprint": "Inductor_SMD:L_0603_1608Metric",
+    "manufacturer": "TDK",
+    "mpn": "BLM18SG121TN1D",
+    "pin_nets": {
+      "1": "RX1V8",
+      "2": "RX_VDD18_FPD"
+    },
+    "populated": true,
+    "height_max_mm": 0.95,
+    "mass_g": [
+      0.002,
+      0.003,
+      0.005
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataFerritesE01"
+    ],
+    "rated_current_A": 0.9,
+    "dcr_max_ohm": 0.247,
+    "source_ref": "L1"
+  },
+  "FB603": {
+    "reference": "FB603",
+    "region": "base",
+    "value": "120R@100MHz",
+    "footprint": "Inductor_SMD:L_0603_1608Metric",
+    "manufacturer": "TDK",
+    "mpn": "BLM18SG121TN1D",
+    "pin_nets": {
+      "1": "RX1V8",
+      "2": "RX_VDD18_P"
+    },
+    "populated": true,
+    "height_max_mm": 0.95,
+    "mass_g": [
+      0.002,
+      0.003,
+      0.005
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataFerritesE01"
+    ],
+    "rated_current_A": 0.9,
+    "dcr_max_ohm": 0.247,
+    "source_ref": "L1"
+  },
+  "C604": {
+    "reference": "C604",
+    "region": "base",
+    "value": "1u",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM188R71C105KA12D",
+    "pin_nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.9,
+    "mass_g": [
+      0.002,
+      0.0035,
+      0.006
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 16,
+    "dielectric": "X7R",
+    "source_ref": "C12"
+  },
+  "C605": {
+    "reference": "C605",
+    "region": "base",
+    "value": "10n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM155R71C103KA01D",
+    "pin_nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.55,
+    "mass_g": [
+      0.0007,
+      0.0012,
+      0.0018
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 16,
+    "dielectric": "X7R",
+    "source_ref": "C131"
+  },
+  "C606": {
+    "reference": "C606",
+    "region": "base",
+    "value": "10u",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM21BR61A106KE19L",
+    "pin_nets": {
+      "1": "RX_VDD18_FPD",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 1.45,
+    "mass_g": [
+      0.004,
+      0.009,
+      0.016
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 10,
+    "dielectric": "X5R",
+    "change": "10 uF to 22 uF; retain 0805 for effective capacitance margin",
+    "source_ref": "C123"
+  },
+  "C607": {
+    "reference": "C607",
+    "region": "base",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM155R71C104KA88D",
+    "pin_nets": {
+      "1": "RX_VDD18_FPD",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.55,
+    "mass_g": [
+      0.0007,
+      0.0012,
+      0.0018
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 16,
+    "dielectric": "X7R",
+    "source_ref": "C9"
+  },
+  "C608": {
+    "reference": "C608",
+    "region": "base",
+    "value": "10n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM155R71C103KA01D",
+    "pin_nets": {
+      "1": "RX_VDD18_P",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.55,
+    "mass_g": [
+      0.0007,
+      0.0012,
+      0.0018
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 16,
+    "dielectric": "X7R",
+    "source_ref": "C131"
+  },
+  "C609": {
+    "reference": "C609",
+    "region": "base",
+    "value": "1u",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM188R71C105KA12D",
+    "pin_nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.9,
+    "mass_g": [
+      0.002,
+      0.0035,
+      0.006
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 16,
+    "dielectric": "X7R",
+    "source_ref": "C12"
+  },
+  "C610": {
+    "reference": "C610",
+    "region": "base",
+    "value": "10n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM155R71C103KA01D",
+    "pin_nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.55,
+    "mass_g": [
+      0.0007,
+      0.0012,
+      0.0018
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 16,
+    "dielectric": "X7R",
+    "source_ref": "C131"
+  },
+  "C611": {
+    "reference": "C611",
+    "region": "base",
+    "value": "10u",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM21BR61A106KE19L",
+    "pin_nets": {
+      "1": "RX_VDD18_FPD",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 1.45,
+    "mass_g": [
+      0.004,
+      0.009,
+      0.016
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 10,
+    "dielectric": "X5R",
+    "change": "10 uF to 22 uF; retain 0805 for effective capacitance margin",
+    "source_ref": "C123"
+  },
+  "C612": {
+    "reference": "C612",
+    "region": "base",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM155R71C104KA88D",
+    "pin_nets": {
+      "1": "RX_VDD18_FPD",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.55,
+    "mass_g": [
+      0.0007,
+      0.0012,
+      0.0018
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 16,
+    "dielectric": "X7R",
+    "source_ref": "C9"
+  },
+  "C613": {
+    "reference": "C613",
+    "region": "base",
+    "value": "10n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM155R71C103KA01D",
+    "pin_nets": {
+      "1": "RX_VDD18_P",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.55,
+    "mass_g": [
+      0.0007,
+      0.0012,
+      0.0018
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 16,
+    "dielectric": "X7R",
+    "source_ref": "C131"
+  },
+  "C614": {
+    "reference": "C614",
+    "region": "base",
+    "value": "10u",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM21BR61A106KE19L",
+    "pin_nets": {
+      "1": "RX_VDD18_P",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 1.45,
+    "mass_g": [
+      0.004,
+      0.009,
+      0.016
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 10,
+    "dielectric": "X5R",
+    "change": "10 uF to 22 uF; retain 0805 for effective capacitance margin",
+    "source_ref": "C123"
+  },
+  "C615": {
+    "reference": "C615",
+    "region": "base",
+    "value": "1u",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM188R71C105KA12D",
+    "pin_nets": {
+      "1": "RX_VDD18_CSI",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.9,
+    "mass_g": [
+      0.002,
+      0.0035,
+      0.006
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 16,
+    "dielectric": "X7R",
+    "source_ref": "C12"
+  },
+  "C616": {
+    "reference": "C616",
+    "region": "base",
+    "value": "10n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM155R71C103KA01D",
+    "pin_nets": {
+      "1": "RX_VDD18_CSI",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.55,
+    "mass_g": [
+      0.0007,
+      0.0012,
+      0.0018
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 16,
+    "dielectric": "X7R",
+    "source_ref": "C131"
+  },
+  "C617": {
+    "reference": "C617",
+    "region": "base",
+    "value": "4.7u",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM188R61A475KE15D",
+    "pin_nets": {
+      "1": "RX_D_CAP",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.9,
+    "mass_g": [
+      0.002,
+      0.0035,
+      0.006
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 10,
+    "dielectric": "X5R",
+    "source_ref": "C105"
+  },
+  "C618": {
+    "reference": "C618",
+    "region": "base",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM155R71C104KA88D",
+    "pin_nets": {
+      "1": "RX_D_CAP",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.55,
+    "mass_g": [
+      0.0007,
+      0.0012,
+      0.0018
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 16,
+    "dielectric": "X7R",
+    "source_ref": "C9"
+  },
+  "C619": {
+    "reference": "C619",
+    "region": "base",
+    "value": "4.7u",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM188R61A475KE15D",
+    "pin_nets": {
+      "1": "RX_CSI_CAP",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.9,
+    "mass_g": [
+      0.002,
+      0.0035,
+      0.006
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 10,
+    "dielectric": "X5R",
+    "source_ref": "C105"
+  },
+  "C620": {
+    "reference": "C620",
+    "region": "base",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM155R71C104KA88D",
+    "pin_nets": {
+      "1": "RX_CSI_CAP",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.55,
+    "mass_g": [
+      0.0007,
+      0.0012,
+      0.0018
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 16,
+    "dielectric": "X7R",
+    "source_ref": "C9"
+  },
+  "C621": {
+    "reference": "C621",
+    "region": "base",
+    "value": "4.7u",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM188R61A475KE15D",
+    "pin_nets": {
+      "1": "RX_FPD0_CAP",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.9,
+    "mass_g": [
+      0.002,
+      0.0035,
+      0.006
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 10,
+    "dielectric": "X5R",
+    "source_ref": "C105"
+  },
+  "C622": {
+    "reference": "C622",
+    "region": "base",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM155R71C104KA88D",
+    "pin_nets": {
+      "1": "RX_FPD0_CAP",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.55,
+    "mass_g": [
+      0.0007,
+      0.0012,
+      0.0018
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 16,
+    "dielectric": "X7R",
+    "source_ref": "C9"
+  },
+  "C623": {
+    "reference": "C623",
+    "region": "base",
+    "value": "4.7u",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM188R61A475KE15D",
+    "pin_nets": {
+      "1": "RX_FPD1_CAP",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.9,
+    "mass_g": [
+      0.002,
+      0.0035,
+      0.006
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 10,
+    "dielectric": "X5R",
+    "source_ref": "C105"
+  },
+  "C624": {
+    "reference": "C624",
+    "region": "base",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM155R71C104KA88D",
+    "pin_nets": {
+      "1": "RX_FPD1_CAP",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.55,
+    "mass_g": [
+      0.0007,
+      0.0012,
+      0.0018
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 16,
+    "dielectric": "X7R",
+    "source_ref": "C9"
+  },
+  "R605": {
+    "reference": "R605",
+    "region": "base",
+    "value": "10k",
+    "footprint": "Camera:R_0402_1005Metric",
+    "manufacturer": "Yageo",
+    "mpn": "RC0402FR-0710KL",
+    "pin_nets": {
+      "1": "RX_IDX",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.4,
+    "mass_g": [
+      0.0002,
+      0.00035,
+      0.0006
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "yageoRc0402R11"
+    ],
+    "rated_power_W": 0.063,
+    "source_ref": "R102",
+    "tolerance_percent": 1
+  },
+  "R606": {
+    "reference": "R606",
+    "region": "base",
+    "value": "78.7k",
+    "footprint": "Camera:R_0402_1005Metric",
+    "manufacturer": "Yageo",
+    "mpn": "RC0402FR-0778K7L",
+    "pin_nets": {
+      "1": "RX1V8",
+      "2": "RX_MODE"
+    },
+    "populated": true,
+    "height_max_mm": 0.4,
+    "mass_g": [
+      0.0002,
+      0.00035,
+      0.0006
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "yageoRc0402R11"
+    ],
+    "rated_power_W": 0.063,
+    "source_ref": "R102",
+    "tolerance_percent": 1
+  },
+  "R607": {
+    "reference": "R607",
+    "region": "base",
+    "value": "97.6k",
+    "footprint": "Camera:R_0402_1005Metric",
+    "manufacturer": "Yageo",
+    "mpn": "RC0402FR-0797K6L",
+    "pin_nets": {
+      "1": "RX_MODE",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.4,
+    "mass_g": [
+      0.0002,
+      0.00035,
+      0.0006
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "yageoRc0402R11"
+    ],
+    "rated_power_W": 0.063,
+    "source_ref": "R102",
+    "tolerance_percent": 1
+  },
+  "R608": {
+    "reference": "R608",
+    "region": "base",
+    "value": "4.7k",
+    "footprint": "Camera:R_0402_1005Metric",
+    "manufacturer": "Yageo",
+    "mpn": "RC0402FR-074K7L",
+    "pin_nets": {
+      "1": "+3V3",
+      "2": "RX_INT_N"
+    },
+    "populated": true,
+    "height_max_mm": 0.4,
+    "mass_g": [
+      0.0002,
+      0.00035,
+      0.0006
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "yageoRc0402R11"
+    ],
+    "rated_power_W": 0.063,
+    "source_ref": "R102",
+    "tolerance_percent": 1
+  },
+  "C625": {
+    "reference": "C625",
+    "region": "base",
+    "value": "100n/50V",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM155R71H104KE14D",
+    "pin_nets": {
+      "1": "LINK_P",
+      "2": "RX_IN_P"
+    },
+    "populated": true,
+    "height_max_mm": 0.55,
+    "mass_g": [
+      0.0007,
+      0.0012,
+      0.0018
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "ti953A01",
+      "murataMlccList2025"
+    ],
+    "rated_voltage_V": 50,
+    "dielectric": "X7R",
+    "source_ref": "C9"
+  },
+  "C626": {
+    "reference": "C626",
+    "region": "base",
+    "value": "100n/50V",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM155R71H104KE14D",
+    "pin_nets": {
+      "1": "LINK_N",
+      "2": "RX_IN_N"
+    },
+    "populated": true,
+    "height_max_mm": 0.55,
+    "mass_g": [
+      0.0007,
+      0.0012,
+      0.0018
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "ti953A01",
+      "murataMlccList2025"
+    ],
+    "rated_voltage_V": 50,
+    "dielectric": "X7R",
+    "source_ref": "C9"
+  },
+  "Y301": {
+    "reference": "Y301",
+    "region": "base",
+    "value": "SG-210STF 25.0000ML / 1.8V",
+    "footprint": "Camera:Epson_SG210STF_2.5x2.0mm_R09",
+    "manufacturer": "Epson",
+    "mpn": "SG-210STF 25.0000ML",
+    "pin_nets": {
+      "1": "RX_CLK_OE",
+      "2": "GND",
+      "3": "RX_REFCLK",
+      "4": "RX1V8"
+    },
+    "populated": true,
+    "height_max_mm": 0.8,
+    "mass_g": [
+      0.006,
+      0.01,
+      0.015
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "epsonSG210STF",
+      "epson25E01"
+    ],
+    "source_ref": "Y1"
+  },
+  "C627": {
+    "reference": "C627",
+    "region": "base",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM155R71C104KA88D",
+    "pin_nets": {
+      "1": "RX1V8",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.55,
+    "mass_g": [
+      0.0007,
+      0.0012,
+      0.0018
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 16,
+    "dielectric": "X7R",
+    "source_ref": "C9"
+  },
+  "Q301": {
+    "reference": "Q301",
+    "region": "base",
+    "value": "PMZB200UNE",
+    "footprint": "Package_TO_SOT_SMD:SOT-883",
+    "manufacturer": "Nexperia",
+    "mpn": "PMZB200UNEYL",
+    "pin_nets": {
+      "1": "RX_CLK_DISABLE",
+      "2": "GND",
+      "3": "RX_CLK_OE"
+    },
+    "populated": true,
+    "height_max_mm": 0.4,
+    "mass_g": [
+      0.0003,
+      0.0005,
+      0.0009
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "nexperiaPmzb200R11"
+    ],
+    "source_ref": "Q103"
+  },
+  "R609": {
+    "reference": "R609",
+    "region": "base",
+    "value": "10k",
+    "footprint": "Camera:R_0402_1005Metric",
+    "manufacturer": "Yageo",
+    "mpn": "RC0402FR-0710KL",
+    "pin_nets": {
+      "1": "+3V3",
+      "2": "RX_CLK_DISABLE"
+    },
+    "populated": true,
+    "height_max_mm": 0.4,
+    "mass_g": [
+      0.0002,
+      0.00035,
+      0.0006
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "yageoRc0402R11"
+    ],
+    "rated_power_W": 0.063,
+    "source_ref": "R102",
+    "tolerance_percent": 1
+  },
+  "R610": {
+    "reference": "R610",
+    "region": "base",
+    "value": "10k",
+    "footprint": "Camera:R_0402_1005Metric",
+    "manufacturer": "Yageo",
+    "mpn": "RC0402FR-0710KL",
+    "pin_nets": {
+      "1": "RX1V8",
+      "2": "RX_CLK_OE"
+    },
+    "populated": true,
+    "height_max_mm": 0.4,
+    "mass_g": [
+      0.0002,
+      0.00035,
+      0.0006
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "yageoRc0402R11"
+    ],
+    "rated_power_W": 0.063,
+    "source_ref": "R102",
+    "tolerance_percent": 1
+  },
+  "U303": {
+    "reference": "U303",
+    "value": "TPS2553 / current-limited head power",
+    "mpn": "TPS2553DRVR",
+    "manufacturer": "See manufacturer part number",
+    "region": "base",
+    "pin_nets": {
+      "1": "TETHER_5V",
+      "2": "TETHER_ILIM",
+      "3": "TETHER_FAULT_N",
+      "4": "TETHER_EN",
+      "5": "GND",
+      "6": "B5V",
+      "7": "GND"
+    },
+    "pins": [
+      [
+        "1",
+        "OUT",
+        "power_out"
+      ],
+      [
+        "2",
+        "ILIM",
+        "passive"
+      ],
+      [
+        "3",
+        "FAULT_N",
+        "open_collector"
+      ],
+      [
+        "4",
+        "EN",
+        "input"
+      ],
+      [
+        "5",
+        "GND",
+        "power_in"
+      ],
+      [
+        "6",
+        "IN",
+        "power_in"
+      ],
+      [
+        "7",
+        "EP",
+        "power_in"
+      ]
+    ],
+    "footprint": "Camera:TI_DRV0006A_E01",
+    "body_mm": [
+      2,
+      2,
+      0.8
+    ],
+    "height_max_mm": 0.8,
+    "mass_g": [
+      0.0042,
+      0.006,
+      0.009000000000000001
+    ],
+    "populated": true,
+    "sources": [
+      "tiTps2553E01"
+    ],
+    "mass_evidence": "Engineering package estimate; not weighed"
+  },
+  "R611": {
+    "reference": "R611",
+    "region": "base",
+    "value": "80.6k",
+    "footprint": "Camera:R_0402_1005Metric",
+    "manufacturer": "Yageo",
+    "mpn": "RC0402FR-0780K6L",
+    "pin_nets": {
+      "1": "TETHER_ILIM",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.4,
+    "mass_g": [
+      0.0002,
+      0.00035,
+      0.0006
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "yageoRc0402R11"
+    ],
+    "rated_power_W": 0.063,
+    "source_ref": "R102",
+    "tolerance_percent": 1
+  },
+  "R612": {
+    "reference": "R612",
+    "region": "base",
+    "value": "10k",
+    "footprint": "Camera:R_0402_1005Metric",
+    "manufacturer": "Yageo",
+    "mpn": "RC0402FR-0710KL",
+    "pin_nets": {
+      "1": "+3V3",
+      "2": "TETHER_FAULT_N"
+    },
+    "populated": true,
+    "height_max_mm": 0.4,
+    "mass_g": [
+      0.0002,
+      0.00035,
+      0.0006
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "yageoRc0402R11"
+    ],
+    "rated_power_W": 0.063,
+    "source_ref": "R102",
+    "tolerance_percent": 1
+  },
+  "C628": {
+    "reference": "C628",
+    "region": "base",
+    "value": "1u",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM188R71C105KA12D",
+    "pin_nets": {
+      "1": "B5V",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.9,
+    "mass_g": [
+      0.002,
+      0.0035,
+      0.006
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 16,
+    "dielectric": "X7R",
+    "source_ref": "C12"
+  },
+  "C629": {
+    "reference": "C629",
+    "region": "base",
+    "value": "1u",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "manufacturer": "Murata",
+    "mpn": "GRM188R71C105KA12D",
+    "pin_nets": {
+      "1": "TETHER_5V",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.9,
+    "mass_g": [
+      0.002,
+      0.0035,
+      0.006
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "murataMlccList2025",
+      "murata22u10v2025"
+    ],
+    "rated_voltage_V": 16,
+    "dielectric": "X7R",
+    "source_ref": "C12"
+  },
+  "J301": {
+    "reference": "J301",
+    "region": "base",
+    "value": "TETHER: 1=5V 2=N 3=P 4=GND; NOT USB",
+    "footprint": "Camera:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal",
+    "manufacturer": "JST",
+    "mpn": "SM04B-SRSS-TB(LF)(SN)",
+    "pin_nets": {
+      "1": "TETHER_5V",
+      "2": "LINK_N",
+      "3": "LINK_P",
+      "4": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 3.0,
+    "mass_g": [
+      0.025,
+      0.045,
+      0.075
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "jstShCatalog"
+    ],
+    "source_ref": "J101"
+  },
+  "TP301": {
+    "reference": "TP301",
+    "value": "Tether shield",
+    "mpn": "PCB solder land",
+    "manufacturer": "See manufacturer part number",
+    "region": "base",
+    "pin_nets": {
+      "1": "GND"
+    },
+    "pins": [
+      [
+        "1",
+        "Tether shield",
+        "passive"
+      ]
+    ],
+    "footprint": "TestPoint:TestPoint_Pad_1.0x1.0mm",
+    "body_mm": [
+      1,
+      1,
+      0.02
+    ],
+    "height_max_mm": 0.02,
+    "mass_g": [
+      0.0,
+      0,
+      0.0
+    ],
+    "populated": true,
+    "sources": [],
+    "mass_evidence": "Engineering package estimate; not weighed"
+  },
+  "TP302": {
+    "reference": "TP302",
+    "value": "REGULATED 5V INPUT",
+    "mpn": "PCB solder land",
+    "manufacturer": "See manufacturer part number",
+    "region": "base",
+    "pin_nets": {
+      "1": "B5V"
+    },
+    "pins": [
+      [
+        "1",
+        "REGULATED 5V INPUT",
+        "passive"
+      ]
+    ],
+    "footprint": "TestPoint:TestPoint_Pad_1.0x1.0mm",
+    "body_mm": [
+      1,
+      1,
+      0.02
+    ],
+    "height_max_mm": 0.02,
+    "mass_g": [
+      0.0,
+      0,
+      0.0
+    ],
+    "populated": true,
+    "sources": [],
+    "mass_evidence": "Engineering package estimate; not weighed"
+  },
+  "TP303": {
+    "reference": "TP303",
+    "value": "POWER RETURN",
+    "mpn": "PCB solder land",
+    "manufacturer": "See manufacturer part number",
+    "region": "base",
+    "pin_nets": {
+      "1": "GND"
+    },
+    "pins": [
+      [
+        "1",
+        "POWER RETURN",
+        "passive"
+      ]
+    ],
+    "footprint": "TestPoint:TestPoint_Pad_1.0x1.0mm",
+    "body_mm": [
+      1,
+      1,
+      0.02
+    ],
+    "height_max_mm": 0.02,
+    "mass_g": [
+      0.0,
+      0,
+      0.0
+    ],
+    "populated": true,
+    "sources": [],
+    "mass_evidence": "Engineering package estimate; not weighed"
+  },
+  "Q302": {
+    "reference": "Q302",
+    "region": "base",
+    "value": "PMZB200UNE",
+    "footprint": "Package_TO_SOT_SMD:SOT-883",
+    "manufacturer": "Nexperia",
+    "mpn": "PMZB200UNEYL",
+    "pin_nets": {
+      "1": "USB_VBUS_GATE",
+      "2": "GND",
+      "3": "USB_PRESENT_N"
+    },
+    "populated": true,
+    "height_max_mm": 0.4,
+    "mass_g": [
+      0.0003,
+      0.0005,
+      0.0009
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "nexperiaPmzb200R11"
+    ],
+    "source_ref": "Q103"
+  },
+  "R613": {
+    "reference": "R613",
+    "region": "base",
+    "value": "100k",
+    "footprint": "Camera:R_0402_1005Metric",
+    "manufacturer": "Yageo",
+    "mpn": "RC0402FR-07100KL",
+    "pin_nets": {
+      "1": "USB_VBUS",
+      "2": "USB_VBUS_GATE"
+    },
+    "populated": true,
+    "height_max_mm": 0.4,
+    "mass_g": [
+      0.0002,
+      0.00035,
+      0.0006
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "yageoRc0402R11"
+    ],
+    "rated_power_W": 0.063,
+    "source_ref": "R102",
+    "tolerance_percent": 1
+  },
+  "R614": {
+    "reference": "R614",
+    "region": "base",
+    "value": "100k",
+    "footprint": "Camera:R_0402_1005Metric",
+    "manufacturer": "Yageo",
+    "mpn": "RC0402FR-07100KL",
+    "pin_nets": {
+      "1": "USB_VBUS_GATE",
+      "2": "GND"
+    },
+    "populated": true,
+    "height_max_mm": 0.4,
+    "mass_g": [
+      0.0002,
+      0.00035,
+      0.0006
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "yageoRc0402R11"
+    ],
+    "rated_power_W": 0.063,
+    "source_ref": "R102",
+    "tolerance_percent": 1
+  },
+  "R615": {
+    "reference": "R615",
+    "region": "base",
+    "value": "10k",
+    "footprint": "Camera:R_0402_1005Metric",
+    "manufacturer": "Yageo",
+    "mpn": "RC0402FR-0710KL",
+    "pin_nets": {
+      "1": "+3V3",
+      "2": "USB_PRESENT_N"
+    },
+    "populated": true,
+    "height_max_mm": 0.4,
+    "mass_g": [
+      0.0002,
+      0.00035,
+      0.0006
+    ],
+    "mass_evidence": "Engineering interval; component not weighed",
+    "sources": [
+      "yageoRc0402R11"
+    ],
+    "rated_power_W": 0.063,
+    "source_ref": "R102",
+    "tolerance_percent": 1
+  },
+  "D301": {
+    "reference": "D301",
+    "value": "TPD1E01B04 / 0.20pF typ",
+    "mpn": "TPD1E01B04DPYR",
+    "manufacturer": "See manufacturer part number",
+    "region": "base",
+    "pin_nets": {
+      "1": "LINK_P",
+      "2": "GND"
+    },
+    "pins": [
+      [
+        "1",
+        "IO",
+        "passive"
+      ],
+      [
+        "2",
+        "IO_GND",
+        "passive"
+      ]
+    ],
+    "footprint": "Diode_SMD:D_0402_1005Metric",
+    "body_mm": [
+      1,
+      0.6,
+      0.4
+    ],
+    "height_max_mm": 0.4,
+    "mass_g": [
+      0.00049,
+      0.0007,
+      0.00105
+    ],
+    "populated": true,
+    "sources": [
+      "tiTpd1E01B04E01"
+    ],
+    "mass_evidence": "Engineering package estimate; not weighed"
+  },
+  "D302": {
+    "reference": "D302",
+    "value": "TPD1E01B04 / 0.20pF typ",
+    "mpn": "TPD1E01B04DPYR",
+    "manufacturer": "See manufacturer part number",
+    "region": "base",
+    "pin_nets": {
+      "1": "LINK_N",
+      "2": "GND"
+    },
+    "pins": [
+      [
+        "1",
+        "IO",
+        "passive"
+      ],
+      [
+        "2",
+        "IO_GND",
+        "passive"
+      ]
+    ],
+    "footprint": "Diode_SMD:D_0402_1005Metric",
+    "body_mm": [
+      1,
+      0.6,
+      0.4
+    ],
+    "height_max_mm": 0.4,
+    "mass_g": [
+      0.00049,
+      0.0007,
+      0.00105
+    ],
+    "populated": true,
+    "sources": [
+      "tiTpd1E01B04E01"
+    ],
+    "mass_evidence": "Engineering package estimate; not weighed"
+  }
+}

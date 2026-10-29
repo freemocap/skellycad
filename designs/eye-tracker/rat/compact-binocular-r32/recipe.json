@@ -1,0 +1,325 @@
+{
+  "revision": "ET-RAT-COMPACT-BINOCULAR-R32",
+  "units": "mm",
+  "source": {
+    "revision": "ET-RAT-BINOCULAR-R31",
+    "units": "mm",
+    "native_checkpoint": "designs/eye-tracker/rat/binocular-r31/checkpoints/ET-RAT-BINOCULAR-R31.FCStd",
+    "native_sha256": "e73906a7335191b2043e10ac43ebf354977d342e5da554b3da491961343b3506",
+    "source": "baseline.json",
+    "recipe": "recipe.json",
+    "ribbons": "ribbons.json",
+    "arms": "arms.json",
+    "validation": "validation.json",
+    "containment": "containment.json",
+    "status": "Uncapped binocular review candidate; static checks passed; physical fit unverified",
+    "physical_fit_verified": false,
+    "print_release": false,
+    "selected_species_manifest_unchanged": true,
+    "task_owned_documents_closed": true
+  },
+  "selected_species_manifest": "designs/eye-tracker/rat/active-model.json",
+  "selected_hash_mismatch": {
+    "revision": "ET-RAT-MONO-R01",
+    "label": "Monocular rat",
+    "status": "Selected review baseline: unchanged mouse hardware with provisional rat anatomy registration; scale, mounting and aiming unverified",
+    "parts": {
+      "skull_mount_Baseplate": "skull_mount_Baseplate",
+      "eye_primary_Holder": "eye_primary_Holder",
+      "eye_primary_Cap": "eye_primary_Cap",
+      "eye_primary_Clip": "eye_primary_Clip",
+      "eye_primary_Carrier": "eye_primary_Carrier"
+    },
+    "print_groups": {
+      "skull_mount-baseplate": [
+        "skull_mount_Baseplate"
+      ],
+      "eye_primary-carrier-and-holder": [
+        "eye_primary_Carrier",
+        "eye_primary_Holder"
+      ],
+      "eye_primary-matching-cap": [
+        "eye_primary_Cap"
+      ],
+      "eye_primary-camera-clip": [
+        "eye_primary_Clip"
+      ]
+    },
+    "camera_instances": [
+      {
+        "id": "eye_primary",
+        "role": "eye",
+        "camera": "pupil-core-eye-inherited",
+        "mount": "r10-monocular",
+        "objects": {
+          "Holder": "eye_primary_Holder",
+          "Cap": "eye_primary_Cap",
+          "Clip": "eye_primary_Clip",
+          "UpperCatch": "eye_primary_UpperCatch",
+          "UpperRail": "eye_primary_UpperRail",
+          "SideLedge": "eye_primary_SideLedge",
+          "Carrier": "eye_primary_Carrier",
+          "ApproxPCB": "eye_primary_ApproxPCB",
+          "LensDatum": "eye_primary_LensDatum",
+          "OpticalAxis": "eye_primary_OpticalAxis"
+        },
+        "baseplate_object": "skull_mount_Baseplate"
+      }
+    ],
+    "assembly_config": "designs/eye-tracker/rat/assembly.json",
+    "units": "mm",
+    "native_checkpoint": "designs/eye-tracker/rat/checkpoints/ET-RAT-MONO-R01.FCStd",
+    "native_sha256": "ad74a3f14aaa709880039c927690475f6119d074f73b0a550a3064383394762e",
+    "print_directory": "generated/eye-tracker/rat/monocular-r01/print",
+    "variant": "monocular",
+    "build_script": "designs/eye-tracker/rat/build.py",
+    "lineage": "designs/eye-tracker/rat/monocular-r01-lineage.json",
+    "validation": "designs/eye-tracker/rat/validation/monocular-r01.json",
+    "observed_sha256": "9c81ed0189cfa4be9fec9e01cc48621c92a28be2dde8c5535c1e609df22c3bf7",
+    "hash_matches": false
+  },
+  "mount_to_skull": [
+    [
+      0.9987492809747794,
+      -0.049998737507673766,
+      0.0,
+      -8.049419212271658
+    ],
+    [
+      0.0,
+      0.0,
+      -1.0,
+      -0.038537940320204
+    ],
+    [
+      0.049998737507673766,
+      0.9987492809747794,
+      0.0,
+      2.6794014585785524
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "board_back_gap_mm": 1.2,
+  "board_raise_mount_y_mm": -1.0,
+  "cap": "omitted",
+  "physical_fit_verified": false,
+  "print_release": false,
+  "sides": {
+    "Right": {
+      "board_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -1.4
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "head": [
+        [
+          -0.061493213063647634,
+          0.9759459551848875,
+          -0.20916041046375525,
+          14.736432191175368
+        ],
+        [
+          0.8705073636560142,
+          -0.050079430294469866,
+          -0.4896008379098603,
+          0.8530578585439832
+        ],
+        [
+          -0.48829859160944217,
+          -0.21218280613574486,
+          -0.8464885954415429,
+          27.597407736765597
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "head_delta": [
+        [
+          0.999834862886216,
+          0.01753251132072443,
+          -0.004781004506423362,
+          0.12524295544460173
+        ],
+        [
+          -0.017862625887704747,
+          0.9965462691329655,
+          -0.08109537640065212,
+          2.3820813676830364
+        ],
+        [
+          0.0033426865987812087,
+          0.08116738583911759,
+          0.9966948790489224,
+          0.02743243167206444
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "eye_target_mount_mm": [
+        15.841981401261702,
+        -9.821946589934369,
+        8.24631184245376
+      ],
+      "lens_mount_mm": [
+        19.97667374479814,
+        -0.143495340931308,
+        24.979736235257583
+      ],
+      "aim_miss_mm": 1.7763568394002505e-15,
+      "forward_mm": 19.768044700088822,
+      "rotation_determinant": 1.0,
+      "connector_access": "Outward from each PCB face; uncapped, no outer closure",
+      "aim": {
+        "axis_miss_mm": 1.7763568394002505e-15,
+        "forward_distance_mm": 19.768044700088822,
+        "angle_error_deg": 5.1485997401844816e-15
+      }
+    },
+    "Left": {
+      "board_transform": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          7.974127992946061
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          -0.077075880640408
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "head": [
+        [
+          0.061493213063647634,
+          0.9759459551848875,
+          -0.20916041046375525,
+          14.725552920307788
+        ],
+        [
+          -0.8705073636560142,
+          -0.050079430294469866,
+          -0.4896008379098603,
+          1.0070664869699562
+        ],
+        [
+          -0.48829859160944217,
+          0.21218280613574486,
+          0.8464885954415429,
+          -27.588094691251186
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "head_delta": [
+        [
+          0.9901601559947566,
+          0.11921631282239344,
+          -0.07328257799417749,
+          2.044253807779727
+        ],
+        [
+          0.11909400998546178,
+          -0.4429052339153738,
+          0.8886234132386739,
+          -24.783730836087937
+        ],
+        [
+          0.07348116946553204,
+          -0.8886070135483973,
+          -0.4527450642542404,
+          -15.342780144174554
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "eye_target_mount_mm": [
+        15.841981401261702,
+        -9.821946589934369,
+        -8.323387723094168
+      ],
+      "lens_mount_mm": [
+        19.97667374479814,
+        -0.143495340931308,
+        -25.05681211589799
+      ],
+      "aim_miss_mm": 1.7763568394002505e-15,
+      "forward_mm": 19.768044700088822,
+      "rotation_determinant": 1.0,
+      "connector_access": "Outward from each PCB face; uncapped, no outer closure",
+      "aim": {
+        "axis_miss_mm": 1.7763568394002505e-15,
+        "forward_distance_mm": 19.768044700088822,
+        "angle_error_deg": 5.1485997401844816e-15
+      }
+    }
+  },
+  "geometry_lineage_r30": {
+    "revision": "ET-RAT-SEPARATED-ARMS-R30",
+    "units": "mm",
+    "native_checkpoint": "designs/eye-tracker/rat/separated-arms-r30/checkpoints/ET-RAT-SEPARATED-ARMS-R30.FCStd",
+    "native_sha256": "d91f843e5961dda48b2b207c70a0e5160231d82d1ced3f4ac6b903de39e722eb",
+    "recipe": "recipe.json",
+    "validation": "generated/eye-tracker/rat/separated-arms-r30/validation.json",
+    "status": "Outer protective paired supports around unchanged ribbon and camera; C01 clip retained; static checks passed; physical stiffness and full travel pending",
+    "observed_sha256": "d91f843e5961dda48b2b207c70a0e5160231d82d1ced3f4ac6b903de39e722eb",
+    "hash_matches": true
+  },
+  "world_lowering_mm": 2.0,
+  "central_design": "One 1.2 mm windowed spine with retained opposing catches and short original stem interface"
+}

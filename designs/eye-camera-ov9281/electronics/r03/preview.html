@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OV9281 camera · R03 placement</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#111720;color:#e6edf5;font:17px/1.55 system-ui,sans-serif}main{max-width:1200px;margin:auto;padding:40px 24px 70px}h1{font-size:36px;line-height:1.2;margin:8px 0 18px}h2{font-size:23px;margin:32px 0 8px}p{max-width:900px;color:#c6d1df}.tag{color:#78d9ca;text-transform:uppercase;letter-spacing:.12em;font-size:13px}.metrics{display:flex;gap:14px;flex-wrap:wrap;margin:28px 0}.metric{background:#202b39;padding:16px 22px;border-radius:10px;flex:1;min-width:190px}.metric b{font-size:26px;display:block}.metric span{color:#c6d1df}figure{margin:16px 0;background:#080c12;border:1px solid #354153;border-radius:12px;padding:18px}img{width:100%;height:auto;display:block}figcaption{color:#aebfd2;font-size:14px;padding-top:12px}.note{border-left:3px solid #edbe75;padding:8px 18px;background:#24232a}a{color:#83dcd1}strong{color:#fff}
+</style><main>
+<div class="tag">OV9281 infrared camera · R03 · Physical placement draft</div>
+<h1>The circuit now has a place on two boards.</h1>
+<p>The large board handles power, camera data and USB. The small head holds the sensor, with supporting components underneath. These are actual component footprints; the connections still need copper routing.</p>
+<div class="metrics"><div class="metric"><b>32 × 20 mm</b><span>Controller · 76 footprints</span></div><div class="metric"><b>14 × 14 mm</b><span>Sensor head · 23 footprints</span></div><div class="metric"><b>30 mm</b><span>Illustrative flex gap</span></div></div>
+<h2>Front: controller on the left, sensor on the right</h2>
+<p>The large square pad array is the ESP32-P4. The USB JST sits at the controller’s left edge. On the head, the sensor sits inside a reserved lens area; adjacent boxes reserve room for infrared emitters.</p>
+<figure><img src="front.svg" alt="Front copper pads and component outlines of controller and sensor head"><figcaption>Red shapes are copper pads. Component outlines show package geometry; other outlined areas reserve space. The strip between boards is only an illustration of the proposed flex.</figcaption></figure>
+<h2>Back: the supporting electronics</h2>
+<p>Flash memory, regulators and many small resistors and capacitors occupy the controller’s back. The head’s back carries its oscillator and sensor support components.</p>
+<figure><img src="back.svg" alt="Back copper pads and component outlines shown through the boards from the front"><figcaption>Back-side geometry viewed through the board from the front, not mirrored. Opposite-side parts can overlap in this view; parts on the same side do not overlap.</figcaption></figure>
+<h2>What this draft establishes</h2>
+<p><strong>99 footprints fit within these provisional outlines, and 408 pad-net assignments match the source circuit.</strong> Both boards are provisionally 0.6 mm thick with four copper layers. The flattened length is 76 mm, so further reduction is needed to approach the original 60 mm goal.</p>
+<div class="note"><p><strong>Not ready to manufacture.</strong> There are no routed traces. The P4’s 0.15 mm pad gaps trigger 103 clearance violations under the current 0.20 mm rule; fabrication capability and escape routing need qualification. Optics, LEDs and the flex connector are reserved areas, not selected parts.</p></div>
+<h2>Next: turn the space study into a routable camera</h2>
+<p>Refine the P4 escape and power-component placement, choose the flex interface and close-focus infrared optics, then route the board and check the lens housing in FreeCAD. The current passive placement establishes space usage; it still needs electrical placement review.</p>
+<p><a href="README.md">Detailed design record</a> · <a href="validation.json">Validation results</a> · <a href="placement.csv">Component placement table</a></p>
+</main></html>

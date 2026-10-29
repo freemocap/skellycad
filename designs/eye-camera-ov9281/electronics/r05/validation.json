@@ -1,0 +1,60 @@
+{
+  "status": "Interface geometry and net correspondence checked; incomplete camera, not for manufacture",
+  "parent_native_files_unchanged": true,
+  "prior_placements_and_tracks_retained": true,
+  "rigid_board_pad_net_checks": 456,
+  "prior_copper_paths_verified": 22,
+  "flex_contact_paths_verified": 24,
+  "assembled_pin_alignment_checks": 24,
+  "schematic_erc_errors": 0,
+  "schematic_erc_warnings": 0,
+  "same_side_footprint_bounds_do_not_overlap": true,
+  "connector_bounds_mm": [
+    26.425,
+    0.975,
+    30.925,
+    15.525
+  ],
+  "connector_land_pattern_checks": "24 signal pads, two mounting pads, pitch, numbering and stencil dimensions",
+  "boards": {
+    "controller": {
+      "size_mm": [
+        32,
+        20
+      ],
+      "footprints": 77,
+      "violations_by_type": {
+        "track_dangling": 6
+      },
+      "unconnected_items": 195
+    },
+    "head": {
+      "size_mm": [
+        14,
+        14
+      ],
+      "footprints": 24,
+      "violations_by_type": {},
+      "unconnected_items": 93
+    },
+    "flex-study": {
+      "size_mm": [
+        35.3,
+        12.5
+      ],
+      "footprints": 2,
+      "violations_by_type": {},
+      "unconnected_items": 8
+    }
+  },
+  "flex_lane_trace_length_mm": 33.8,
+  "flex_lane_length_mismatch_mm": 0,
+  "limits": "Length equality is only on the straight flex; whole-link impedance/skew/return plane and physical mating unverified",
+  "sha256": {
+    "controller.kicad_pcb": "8ab19f5b48568f6ed815c50566e2aa117d4d48ca31760e6049228329859cddcb",
+    "head.kicad_pcb": "69fdd7be7135956287178fbe586a1bcbc29e8cb3dda3c5bd49fc2aeadf45db8f",
+    "flex-study.kicad_pcb": "a8d0a8f760107821052523ec8f090835b62c8b94bc868ca4e0e84fa794d5d209",
+    "camera.kicad_sch": "76b776682e36d0c54c405be53c132b6f491bbe708292ca7edee9031474bc4298",
+    "assembly-interconnect-study.kicad_pcb": "7f319c1cbc5fa10febdc41b13d2739e49864d5112aa35434d87bb6b05a09c479"
+  }
+}

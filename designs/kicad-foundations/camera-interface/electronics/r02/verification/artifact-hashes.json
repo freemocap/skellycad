@@ -1,0 +1,14 @@
+{
+  "electronics\\r02\\camera-interface.kicad_pcb": "76ff9912e4fc74c02e4548e5d9c687a647d6f3979881b394e19cf6069e869aea",
+  "electronics\\r02\\camera-interface.kicad_sch": "3e1b2dae15f5e60a718bc72a9755fefc3730e8275196e89ce472910473a9c201",
+  "electronics\\r02\\lineage.json": "acb1982dac87ad01101234eafde3baae695657e44d94dd3d8c9058d51f0ac319",
+  "electronics\\r02\\manufacturing-demo\\camera-interface-B_Cu.gbl": "c9cfca586293e464478a30a379d7c09b7497efd25d934929c157b0efafde8d0d",
+  "electronics\\r02\\manufacturing-demo\\camera-interface-F_Cu.gtl": "7e3ef4998e64f0948f3efecf29b75e2d2abbb0c3d862212523164ccd3483f68f",
+  "electronics\\r02\\manufacturing-demo\\camera-interface.drl": "621e06677938c43c0a2b85811fd21dcba648025a4c7430cce06aeedbd496ab43",
+  "electronics\\r02\\verification\\drc.json": "7f68ffa90a78888cb9ac925444ae5f8a7fa79e134702f0d583ecfd1a70da1ac9",
+  "electronics\\r02\\verification\\route-check.json": "51b014c88f6419d253d69f232bac1eb3ab9c62f24d8d5f0f039fc43931f862e6",
+  "mechanical\\r02\\board.step": "32bbd9848a1b71a94ea39447b7b8b693e5b0f8ebba27b40c3fcb52d2adc10faa",
+  "mechanical\\r02\\camera-interface-assembly.FCStd": "30b3c6201746265aef7c0573451010a2ae8a78cf9cc3b168243e09bb2f56849c",
+  "mechanical\\r02\\camera-interface-assembly.step": "14c70ef05f401a93a734bbcc03ae6faddb2fabec49a093d585174b7b6dbba314",
+  "mechanical\\r02\\validation.json": "8137d2a1596fca84cfb708bd6ffd48790d9363b11664d0e3453a18e22a8e0bff"
+}

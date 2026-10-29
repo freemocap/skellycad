@@ -1,0 +1,21 @@
+{
+  "designs/eye-tracker/shared/cameras/pupil-core-eye/active-model.json": "c167939feec847adc5196a279f941e7df36c52cffe8623c64a6c9c6bc868408c",
+  "designs/eye-tracker/shared/cameras/pupil-core-eye/study-r02/measurements.json": "67a14e33df0d3c04fe1942aae7ea80c3de02ca8000d687c0863021bb55dd979d",
+  "generated/eye-tracker/shared/camera-interlock-075-r04/validation.json": "e53dcc03b5a8673690f973e7e7800eb06d7d3418eed54657c7e848de9ded13c3",
+  "generated/eye-tracker/shared/camera-interlock-075-r04/CAMERA-INTERLOCK-075-R04.FCStd": "ca6b022ffb8993a1ec08c7ac06289c487d311bf6b3b299fd1773cd41a5e1e1a6",
+  "tools/cad/add_camera_board_chips_r04.py": "573797585da4721aace381934f5f24288f44ac8cff1ba5bcdbd89a244f2c0e42",
+  "designs/eye-camera-ov9281/working-review.json": "de3f190916a2b6e2a40a85f0493185a3173ed955adfff152c8b4a75ebf9afc5b",
+  "designs/eye-tracker/shared/cameras/pupil-core-eye/checkpoints/CAMERA-DUMMY-R08/CAMERA-DUMMY-R08.FCStd": "2096c198eff2faf4fe826d94910f6b49a731f5408f350de9bd45ebf9dc9c26d0",
+  "designs/eye-tracker/shared/cameras/pupil-core-eye/checkpoints/CAMERA-DUMMY-R08/Red_PLA_boards.brep": "f0877a696e93312f6ce073a0a982c155b51d1bb048d44cfc2196f15528737a25",
+  "designs/eye-tracker/shared/cameras/pupil-core-eye/checkpoints/CAMERA-DUMMY-R08/Black_PLA_lens.brep": "81900e1b88a54be1d725eed7989660da9b0af94fd9d689e396d2c514848d3657",
+  "designs/eye-tracker/shared/cameras/pupil-core-eye/checkpoints/CAMERA-DUMMY-R08/White_PLA_connector_LEDs.brep": "8a38a7da2eac8f0dbb2f7efec7763d07cc455d665182e6d7b3c8dd1f45ff2e7a",
+  "designs/eye-tracker/shared/cameras/pupil-core-eye/checkpoints/CAMERA-DUMMY-R08/Yellow_TPU_ribbon.brep": "1269b671a1e8a04be5b971d0112d3a206ce2ba4cbf64c6e5ef0a6b24fe28a3a8",
+  "generated/ov9281-r10-review-02/head.kicad_pcb": "8acbe182d47f21e00a38ad7f99bad70e1eace5433196948a0ba3e9e0f71ff7cb",
+  "generated/ov9281-r10-review-02/controller.kicad_pcb": "de0f3dff1a932e2852bc63079b28c99ab9df04517b2e59d6920c2318159182c2",
+  "generated/ov9281-r10-review-02/flex-study.kicad_pcb": "4cd8ef61c6a839926712e2afa47ddd25353aa8b46d2797274c93938d0b8933f0",
+  "generated/ov9281-r10-review-02/camera.kicad_sch": "b307a594304676204d24e58bcce617ebf770879fbdfe65a5e94134018c0c2991",
+  "generated/ov9281-r10-review-02/OV9281-P4-R10-assembly.kicad_pcb": "7139553bf9838d1c1303029886997e0dfbd478f245c6a845ab9783f6afe5530b",
+  "generated/ov9281-r10-mechanics-02/OV9281-R10-MATCHED-REVIEW.FCStd": "e9bc688d264b13bd62bca5498918e29ba48d16a7ced393e6ef119a3018b35788",
+  "designs/eye-camera-ov9281/packaging/selection-r01/decision.json": "c861ad7c486919cf453068d88aef467136ec67ff1436eb24ae9e7f42b09db553",
+  "designs/eye-camera-ov9281/packaging/size-mass-r01/packing.json": "556ace786e084cc8039835b4744b47ee3f6290796ad070cd37f39e245364cfbe"
+}

@@ -1,0 +1,187 @@
+{
+  "RightUpperSupport": {
+    "flare_scale": 0.6,
+    "root_width_mm": 3.96,
+    "root_thickness_mm": 2.22,
+    "tip_width_mm": 2.92,
+    "tip_thickness_mm": 2.16,
+    "section_edge_chamfer_mm": 0.2,
+    "poles_mm": [
+      [
+        3.1,
+        16.30585493132117,
+        16.508782396981754
+      ],
+      [
+        3.1,
+        20.5,
+        22.8
+      ],
+      [
+        14.702861811430981,
+        9.554566653133435,
+        32.6580665423424
+      ],
+      [
+        20.86605980086754,
+        7.932124111368519,
+        32.07268569052321
+      ]
+    ],
+    "root_handle_scale": 2.0,
+    "socket_handle_scale": 2.5,
+    "old_engagement_mm3": [
+      4.746016602410761,
+      1.2853538095338506
+    ],
+    "new_engagement_mm3": [
+      7.474062269747594,
+      2.594185378950993
+    ],
+    "arm_free_gap_mm": 4.223665909612591,
+    "ribbon_gap_mm": 0.5406127233394101,
+    "transition": "Continuous loft with smooth flared root and socket end, tangent-transported sections and chamfered longitudinal edges"
+  },
+  "RightLowerSupport": {
+    "flare_scale": 0.6,
+    "root_width_mm": 3.96,
+    "root_thickness_mm": 2.22,
+    "tip_width_mm": 2.92,
+    "tip_thickness_mm": 2.16,
+    "section_edge_chamfer_mm": 0.2,
+    "poles_mm": [
+      [
+        3.29414506867883,
+        7.0,
+        16.508782396981754
+      ],
+      [
+        -8.9,
+        7.0,
+        34.8
+      ],
+      [
+        10.805428413454466,
+        -4.111063699692271,
+        41.525876867798516
+      ],
+      [
+        21.585119305196358,
+        6.106202990081089,
+        32.951016771648575
+      ]
+    ],
+    "root_handle_scale": 1.0,
+    "socket_handle_scale": 1.0,
+    "old_engagement_mm3": [
+      4.301795203729724,
+      1.2714207596928426
+    ],
+    "new_engagement_mm3": [
+      8.040252779177859,
+      2.5953430627592926
+    ],
+    "arm_free_gap_mm": 3.2570883130089774,
+    "ribbon_gap_mm": 0.696078171481888,
+    "transition": "Continuous loft with smooth flared root and socket end, tangent-transported sections and chamfered longitudinal edges"
+  },
+  "LeftUpperSupport": {
+    "flare_scale": 0.6,
+    "root_width_mm": 3.96,
+    "root_thickness_mm": 2.22,
+    "tip_width_mm": 2.92,
+    "tip_thickness_mm": 2.16,
+    "section_edge_chamfer_mm": 0.2,
+    "poles_mm": [
+      [
+        3.0999999999999988,
+        16.5,
+        -16.527075880640414
+      ],
+      [
+        3.0999999999999988,
+        16.5,
+        -26.877075880640415
+      ],
+      [
+        14.70286181143098,
+        9.554566653133428,
+        -32.735142422982804
+      ],
+      [
+        20.866059800867546,
+        7.93212411136851,
+        -32.149761571163616
+      ]
+    ],
+    "root_handle_scale": 2.0,
+    "socket_handle_scale": 2.5,
+    "old_engagement_mm3": [
+      6.78565997634863,
+      1.2800467257902375
+    ],
+    "new_engagement_mm3": [
+      10.706865696127462,
+      2.5937335322859565
+    ],
+    "arm_free_gap_mm": 1.9472773812705175,
+    "ribbon_gap_mm": 0.7428576934442628,
+    "transition": "Continuous loft with smooth flared root and socket end, tangent-transported sections and chamfered longitudinal edges"
+  },
+  "LeftLowerSupport": {
+    "flare_scale": 0.6,
+    "root_width_mm": 3.96,
+    "root_thickness_mm": 2.22,
+    "tip_width_mm": 2.92,
+    "tip_thickness_mm": 2.16,
+    "section_edge_chamfer_mm": 0.2,
+    "poles_mm": [
+      [
+        3.1952579344415675,
+        7.047628967220782,
+        -16.54367311009492
+      ],
+      [
+        1.0999999999999996,
+        5.999999999999998,
+        -23.877075880640408
+      ],
+      [
+        -13.35776308725095,
+        9.645059711886894,
+        -29.894767064390308
+      ],
+      [
+        -5.0205136562145105,
+        -3.4966849254016816,
+        -37.60248492801907
+      ],
+      [
+        15.205302246818508,
+        0.059249234909088955,
+        -38.103009852051194
+      ],
+      [
+        21.585119305196365,
+        6.106202990081079,
+        -33.02809265228898
+      ]
+    ],
+    "root_handle_scale": 1.0,
+    "socket_handle_scale": 1.2,
+    "old_engagement_mm3": [
+      4.653784795569142,
+      1.2767316478883837
+    ],
+    "new_engagement_mm3": [
+      7.770298650726365,
+      2.5954006459023637
+    ],
+    "arm_free_gap_mm": 2.751437882912657,
+    "ribbon_gap_mm": 0.7462768396910663,
+    "transition": "Continuous loft with smooth flared root and socket end, tangent-transported sections and chamfered longitudinal edges",
+    "minimum_plan_caudal_offset_mm": 0.7187319134008843,
+    "finished_length_mm": 45.385984601745,
+    "mean_plan_distance_to_ribbon_mm": 4.007651594786878
+  }
+}

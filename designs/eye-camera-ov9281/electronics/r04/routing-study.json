@@ -1,0 +1,1955 @@
+{
+  "revision": "OV9281-P4-R04",
+  "status": "Functional placement and partial copper study; not for fabrication",
+  "units": "mm",
+  "controller_size_mm": [
+    32,
+    20
+  ],
+  "head_size_mm": [
+    14,
+    14
+  ],
+  "board_thickness_mm": 0.6,
+  "parent_sha256": {
+    "controller.kicad_pcb": "e65cff0a5d556e7a6b848c01c9e68f192f695ef5f8fe57b0815854b90560a025",
+    "head.kicad_pcb": "a5fd5c0779c16273e2d9bd1592ad36b9369cb8a4444285aa1df5a2c804100c70",
+    "camera.kicad_sch": "8e34f1ef7b889de6ac5bc20b2daa5af315c60a548270ee63e55dc27f1a183716"
+  },
+  "placements": {
+    "U101": {
+      "side": "front",
+      "xy": [
+        16.5,
+        10
+      ],
+      "angle": 180,
+      "bounds": [
+        10.875,
+        4.375,
+        22.9,
+        15.625
+      ]
+    },
+    "J101": {
+      "side": "front",
+      "xy": [
+        4.25,
+        4.75
+      ],
+      "angle": 270,
+      "bounds": [
+        0.9449999999999998,
+        0.8250000000000002,
+        7.555,
+        8.675
+      ]
+    },
+    "U105": {
+      "side": "front",
+      "xy": [
+        9.25,
+        3.0
+      ],
+      "angle": 0,
+      "bounds": [
+        7.725,
+        1.67,
+        10.775,
+        4.125
+      ]
+    },
+    "R109": {
+      "side": "front",
+      "xy": [
+        12.25,
+        2
+      ],
+      "angle": 0,
+      "bounds": [
+        11.295,
+        1.505,
+        13.205,
+        2.495
+      ]
+    },
+    "R110": {
+      "side": "front",
+      "xy": [
+        12.25,
+        3.5
+      ],
+      "angle": 0,
+      "bounds": [
+        11.295,
+        3.005,
+        13.205,
+        3.995
+      ]
+    },
+    "Y101": {
+      "side": "front",
+      "xy": [
+        25,
+        17
+      ],
+      "angle": 180,
+      "bounds": [
+        23.475,
+        15.675,
+        26.525,
+        18.325
+      ]
+    },
+    "C101": {
+      "side": "front",
+      "xy": [
+        25.25,
+        15.0
+      ],
+      "angle": 180,
+      "bounds": [
+        24.315,
+        14.515,
+        26.185,
+        15.485
+      ]
+    },
+    "C102": {
+      "side": "front",
+      "xy": [
+        22.75,
+        18.0
+      ],
+      "angle": 270,
+      "bounds": [
+        22.265,
+        17.065,
+        23.235,
+        18.935
+      ]
+    },
+    "U103": {
+      "side": "front",
+      "xy": [
+        5.5,
+        12.5
+      ],
+      "angle": 0,
+      "bounds": [
+        3.425,
+        10.6,
+        7.575,
+        14.225
+      ]
+    },
+    "L101": {
+      "side": "front",
+      "xy": [
+        3.0,
+        16.0
+      ],
+      "angle": 0,
+      "bounds": [
+        1.225,
+        15.125,
+        4.775,
+        16.875
+      ]
+    },
+    "C105": {
+      "side": "front",
+      "xy": [
+        8.5,
+        13.25
+      ],
+      "angle": 90,
+      "bounds": [
+        7.825,
+        11.975,
+        9.175,
+        14.525
+      ]
+    },
+    "C106": {
+      "side": "front",
+      "xy": [
+        5.0,
+        18.0
+      ],
+      "angle": 0,
+      "bounds": [
+        3.075,
+        17.045,
+        6.925,
+        18.955
+      ]
+    },
+    "R105": {
+      "side": "front",
+      "xy": [
+        8.5,
+        10.0
+      ],
+      "angle": 90,
+      "bounds": [
+        8.005,
+        9.045,
+        8.995,
+        10.955
+      ]
+    },
+    "R106": {
+      "side": "front",
+      "xy": [
+        9.75,
+        10.75
+      ],
+      "angle": 90,
+      "bounds": [
+        9.255,
+        9.795,
+        10.245,
+        11.705
+      ]
+    },
+    "C107": {
+      "side": "front",
+      "xy": [
+        6.0,
+        9.75
+      ],
+      "angle": 0,
+      "bounds": [
+        5.0649999999999995,
+        9.265,
+        6.9350000000000005,
+        10.235
+      ]
+    },
+    "U104": {
+      "side": "back",
+      "xy": [
+        4,
+        11
+      ],
+      "angle": 180,
+      "bounds": [
+        1.9249999999999998,
+        9.1,
+        6.075,
+        12.725
+      ]
+    },
+    "L102": {
+      "side": "back",
+      "xy": [
+        7.0,
+        13.75
+      ],
+      "angle": 0,
+      "bounds": [
+        5.225,
+        12.875,
+        8.775,
+        14.625
+      ]
+    },
+    "C108": {
+      "side": "back",
+      "xy": [
+        1.5,
+        14.25
+      ],
+      "angle": 270,
+      "bounds": [
+        0.825,
+        12.975,
+        2.175,
+        15.525
+      ]
+    },
+    "C109": {
+      "side": "back",
+      "xy": [
+        8.0,
+        16.0
+      ],
+      "angle": 0,
+      "bounds": [
+        6.075,
+        15.045,
+        9.925,
+        16.955
+      ]
+    },
+    "R107": {
+      "side": "back",
+      "xy": [
+        2.0,
+        8.0
+      ],
+      "angle": 0,
+      "bounds": [
+        1.045,
+        7.505,
+        2.955,
+        8.495
+      ]
+    },
+    "R108": {
+      "side": "back",
+      "xy": [
+        4.25,
+        8.0
+      ],
+      "angle": 0,
+      "bounds": [
+        3.295,
+        7.505,
+        5.205,
+        8.495
+      ]
+    },
+    "C110": {
+      "side": "back",
+      "xy": [
+        21.75,
+        11.5
+      ],
+      "angle": 0,
+      "bounds": [
+        20.815,
+        11.015,
+        22.685,
+        11.985
+      ]
+    },
+    "C111": {
+      "side": "back",
+      "xy": [
+        21.75,
+        7.25
+      ],
+      "angle": 0,
+      "bounds": [
+        20.815,
+        6.765,
+        22.685,
+        7.735
+      ]
+    },
+    "C112": {
+      "side": "back",
+      "xy": [
+        21.75,
+        5.5
+      ],
+      "angle": 0,
+      "bounds": [
+        20.815,
+        5.015,
+        22.685,
+        5.985
+      ]
+    },
+    "C128": {
+      "side": "back",
+      "xy": [
+        19.75,
+        4.75
+      ],
+      "angle": 90,
+      "bounds": [
+        19.265,
+        3.815,
+        20.235,
+        5.6850000000000005
+      ]
+    },
+    "C113": {
+      "side": "back",
+      "xy": [
+        12.0,
+        6.0
+      ],
+      "angle": 0,
+      "bounds": [
+        11.065,
+        5.515,
+        12.935,
+        6.485
+      ]
+    },
+    "C129": {
+      "side": "back",
+      "xy": [
+        12.0,
+        7.75
+      ],
+      "angle": 0,
+      "bounds": [
+        11.065,
+        7.265,
+        12.935,
+        8.235
+      ]
+    },
+    "C114": {
+      "side": "back",
+      "xy": [
+        12.0,
+        9.0
+      ],
+      "angle": 0,
+      "bounds": [
+        11.065,
+        8.515,
+        12.935,
+        9.485
+      ]
+    },
+    "C130": {
+      "side": "back",
+      "xy": [
+        12.0,
+        10.5
+      ],
+      "angle": 0,
+      "bounds": [
+        11.065,
+        10.015,
+        12.935,
+        10.985
+      ]
+    },
+    "C115": {
+      "side": "back",
+      "xy": [
+        12.0,
+        13.25
+      ],
+      "angle": 0,
+      "bounds": [
+        11.065,
+        12.765,
+        12.935,
+        13.735
+      ]
+    },
+    "C116": {
+      "side": "back",
+      "xy": [
+        12.0,
+        14.5
+      ],
+      "angle": 0,
+      "bounds": [
+        11.065,
+        14.015,
+        12.935,
+        14.985
+      ]
+    },
+    "C117": {
+      "side": "back",
+      "xy": [
+        10.25,
+        13.5
+      ],
+      "angle": 90,
+      "bounds": [
+        9.765,
+        12.565,
+        10.735,
+        14.435
+      ]
+    },
+    "C118": {
+      "side": "back",
+      "xy": [
+        14.25,
+        14.5
+      ],
+      "angle": 90,
+      "bounds": [
+        13.765,
+        13.565,
+        14.735,
+        15.435
+      ]
+    },
+    "C119": {
+      "side": "back",
+      "xy": [
+        16.25,
+        14.5
+      ],
+      "angle": 90,
+      "bounds": [
+        15.765,
+        13.565,
+        16.735,
+        15.435
+      ]
+    },
+    "C120": {
+      "side": "back",
+      "xy": [
+        18.0,
+        14.5
+      ],
+      "angle": 90,
+      "bounds": [
+        17.515,
+        13.565,
+        18.485,
+        15.435
+      ]
+    },
+    "C121": {
+      "side": "back",
+      "xy": [
+        19.75,
+        14.5
+      ],
+      "angle": 90,
+      "bounds": [
+        19.265,
+        13.565,
+        20.235,
+        15.435
+      ]
+    },
+    "C122": {
+      "side": "back",
+      "xy": [
+        21.0,
+        14.5
+      ],
+      "angle": 90,
+      "bounds": [
+        20.515,
+        13.565,
+        21.485,
+        15.435
+      ]
+    },
+    "U102": {
+      "side": "back",
+      "xy": [
+        26.0,
+        5.5
+      ],
+      "angle": 90,
+      "bounds": [
+        23.075,
+        0.8250000000000002,
+        29.03,
+        10.175
+      ]
+    },
+    "C103": {
+      "side": "back",
+      "xy": [
+        29.75,
+        2.5
+      ],
+      "angle": 270,
+      "bounds": [
+        29.265,
+        1.565,
+        30.235,
+        3.435
+      ]
+    },
+    "R101": {
+      "side": "back",
+      "xy": [
+        30.25,
+        9.0
+      ],
+      "angle": 180,
+      "bounds": [
+        29.295,
+        8.505,
+        31.205,
+        9.495
+      ]
+    },
+    "U5": {
+      "side": "back",
+      "xy": [
+        27.0,
+        12.25
+      ],
+      "angle": 0,
+      "bounds": [
+        24.925,
+        10.525,
+        29.075,
+        14.15
+      ]
+    },
+    "C1": {
+      "side": "back",
+      "xy": [
+        25.75,
+        16.25
+      ],
+      "angle": 270,
+      "bounds": [
+        24.795,
+        14.325,
+        26.705,
+        18.175
+      ]
+    },
+    "C5": {
+      "side": "back",
+      "xy": [
+        28.75,
+        15.0
+      ],
+      "angle": 0,
+      "bounds": [
+        27.475,
+        14.325,
+        30.025,
+        15.675
+      ]
+    },
+    "U6": {
+      "side": "back",
+      "xy": [
+        18.75,
+        9.0
+      ],
+      "angle": 90,
+      "bounds": [
+        17.025,
+        6.925,
+        20.65,
+        11.075
+      ]
+    },
+    "C2": {
+      "side": "back",
+      "xy": [
+        18.5,
+        12.25
+      ],
+      "angle": 180,
+      "bounds": [
+        16.575,
+        11.295,
+        20.425,
+        13.205
+      ]
+    },
+    "C6": {
+      "side": "back",
+      "xy": [
+        21.5,
+        9.25
+      ],
+      "angle": 270,
+      "bounds": [
+        20.825,
+        7.975,
+        22.175,
+        10.525
+      ]
+    },
+    "U7": {
+      "side": "back",
+      "xy": [
+        22.5,
+        17.5
+      ],
+      "angle": 180,
+      "bounds": [
+        20.425,
+        15.6,
+        24.575,
+        19.225
+      ]
+    },
+    "C3": {
+      "side": "back",
+      "xy": [
+        29.0,
+        17.0
+      ],
+      "angle": 0,
+      "bounds": [
+        27.075,
+        16.045,
+        30.925,
+        17.955
+      ]
+    },
+    "C4": {
+      "side": "back",
+      "xy": [
+        19.0,
+        16.5
+      ],
+      "angle": 180,
+      "bounds": [
+        17.725,
+        15.825,
+        20.275,
+        17.175
+      ]
+    },
+    "J103": {
+      "side": "back",
+      "xy": [
+        15.0,
+        18.0
+      ],
+      "angle": 180,
+      "bounds": [
+        8.5,
+        17.5,
+        15.5,
+        18.5
+      ]
+    },
+    "Q101": {
+      "side": "back",
+      "xy": [
+        15.0,
+        9.0
+      ],
+      "angle": 90,
+      "bounds": [
+        13.275,
+        7.045,
+        16.725,
+        10.955
+      ]
+    },
+    "R112": {
+      "side": "back",
+      "xy": [
+        15.0,
+        6.25
+      ],
+      "angle": 0,
+      "bounds": [
+        14.045,
+        5.755,
+        15.955,
+        6.745
+      ]
+    },
+    "R113": {
+      "side": "back",
+      "xy": [
+        15.0,
+        11.75
+      ],
+      "angle": 0,
+      "bounds": [
+        14.045,
+        11.255,
+        15.955,
+        12.245
+      ]
+    },
+    "Q102": {
+      "side": "back",
+      "xy": [
+        17.0,
+        3.75
+      ],
+      "angle": 0,
+      "bounds": [
+        15.045,
+        2.025,
+        18.955,
+        5.475
+      ]
+    },
+    "R114": {
+      "side": "back",
+      "xy": [
+        17.0,
+        1.25
+      ],
+      "angle": 0,
+      "bounds": [
+        16.045,
+        0.755,
+        17.955,
+        1.745
+      ]
+    },
+    "R115": {
+      "side": "back",
+      "xy": [
+        17.25,
+        6.25
+      ],
+      "angle": 0,
+      "bounds": [
+        16.295,
+        5.755,
+        18.205,
+        6.745
+      ]
+    },
+    "Q103": {
+      "side": "back",
+      "xy": [
+        9.0,
+        10.25
+      ],
+      "angle": 90,
+      "bounds": [
+        7.275,
+        8.295,
+        10.725,
+        12.205
+      ]
+    },
+    "R116": {
+      "side": "back",
+      "xy": [
+        9.0,
+        7.5
+      ],
+      "angle": 0,
+      "bounds": [
+        8.045,
+        7.005,
+        9.955,
+        7.995
+      ]
+    },
+    "R117": {
+      "side": "back",
+      "xy": [
+        12.0,
+        11.75
+      ],
+      "angle": 0,
+      "bounds": [
+        11.045,
+        11.255,
+        12.955,
+        12.245
+      ]
+    },
+    "C104": {
+      "side": "back",
+      "xy": [
+        22.5,
+        14.0
+      ],
+      "angle": 90,
+      "bounds": [
+        21.825,
+        12.725,
+        23.175,
+        15.275
+      ]
+    },
+    "C123": {
+      "side": "back",
+      "xy": [
+        21.5,
+        2.75
+      ],
+      "angle": 90,
+      "bounds": [
+        20.545,
+        0.825,
+        22.455,
+        4.675
+      ]
+    },
+    "C124": {
+      "side": "back",
+      "xy": [
+        6.25,
+        18.25
+      ],
+      "angle": 0,
+      "bounds": [
+        4.325,
+        17.295,
+        8.175,
+        19.205
+      ]
+    },
+    "C125": {
+      "side": "back",
+      "xy": [
+        11.5,
+        16.0
+      ],
+      "angle": 0,
+      "bounds": [
+        10.225,
+        15.325,
+        12.775,
+        16.675
+      ]
+    },
+    "C126": {
+      "side": "back",
+      "xy": [
+        14.25,
+        16.5
+      ],
+      "angle": 0,
+      "bounds": [
+        12.975,
+        15.825,
+        15.525,
+        17.175
+      ]
+    },
+    "C127": {
+      "side": "back",
+      "xy": [
+        16.5,
+        17.0
+      ],
+      "angle": 90,
+      "bounds": [
+        15.825,
+        15.725,
+        17.175,
+        18.275
+      ]
+    },
+    "C131": {
+      "side": "back",
+      "xy": [
+        14.25,
+        4.5
+      ],
+      "angle": 90,
+      "bounds": [
+        13.765,
+        3.565,
+        14.735,
+        5.4350000000000005
+      ]
+    },
+    "C132": {
+      "side": "back",
+      "xy": [
+        13.0,
+        4.25
+      ],
+      "angle": 90,
+      "bounds": [
+        12.515,
+        3.315,
+        13.485,
+        5.1850000000000005
+      ]
+    },
+    "C133": {
+      "side": "back",
+      "xy": [
+        9.5,
+        6.0
+      ],
+      "angle": 0,
+      "bounds": [
+        8.225,
+        5.325,
+        10.775,
+        6.675
+      ]
+    },
+    "C134": {
+      "side": "back",
+      "xy": [
+        11.75,
+        4.25
+      ],
+      "angle": 90,
+      "bounds": [
+        11.265,
+        3.315,
+        12.235,
+        5.1850000000000005
+      ]
+    },
+    "C135": {
+      "side": "back",
+      "xy": [
+        10.5,
+        4.0
+      ],
+      "angle": 90,
+      "bounds": [
+        10.015,
+        3.065,
+        10.985,
+        4.9350000000000005
+      ]
+    },
+    "C136": {
+      "side": "back",
+      "xy": [
+        4.5,
+        15.5
+      ],
+      "angle": 0,
+      "bounds": [
+        3.225,
+        14.825,
+        5.775,
+        16.175
+      ]
+    },
+    "R102": {
+      "side": "back",
+      "xy": [
+        19.25,
+        18.0
+      ],
+      "angle": 0,
+      "bounds": [
+        18.295,
+        17.505,
+        20.205,
+        18.495
+      ]
+    },
+    "R103": {
+      "side": "back",
+      "xy": [
+        7.25,
+        7.0
+      ],
+      "angle": 90,
+      "bounds": [
+        6.755,
+        6.045,
+        7.745,
+        7.955
+      ]
+    },
+    "R104": {
+      "side": "back",
+      "xy": [
+        6.0,
+        7.75
+      ],
+      "angle": 90,
+      "bounds": [
+        5.505,
+        6.795,
+        6.495,
+        8.705
+      ]
+    },
+    "R111": {
+      "side": "back",
+      "xy": [
+        13.5,
+        2.5
+      ],
+      "angle": 0,
+      "bounds": [
+        12.545,
+        2.005,
+        14.455,
+        2.995
+      ]
+    },
+    "R118": {
+      "side": "back",
+      "xy": [
+        24.0,
+        14.25
+      ],
+      "angle": 90,
+      "bounds": [
+        23.505,
+        13.295,
+        24.495,
+        15.205
+      ]
+    }
+  },
+  "decoupler_distances": [
+    {
+      "capacitor": "C128",
+      "p4_pin": "30",
+      "before_xy_mm": 15.538,
+      "after_xy_mm": 0.129,
+      "side": "back",
+      "note": "XY pad-centre distance; a ground/power via path is still required"
+    },
+    {
+      "capacitor": "C121",
+      "p4_pin": "101",
+      "before_xy_mm": 17.53,
+      "after_xy_mm": 0.129,
+      "side": "back",
+      "note": "XY pad-centre distance; a ground/power via path is still required"
+    },
+    {
+      "capacitor": "C120",
+      "p4_pin": "96",
+      "before_xy_mm": 14.36,
+      "after_xy_mm": 0.129,
+      "side": "back",
+      "note": "XY pad-centre distance; a ground/power via path is still required"
+    },
+    {
+      "capacitor": "C119",
+      "p4_pin": "91",
+      "before_xy_mm": 10.041,
+      "after_xy_mm": 0.129,
+      "side": "back",
+      "note": "XY pad-centre distance; a ground/power via path is still required"
+    },
+    {
+      "capacitor": "C114",
+      "p4_pin": "62",
+      "before_xy_mm": 8.344,
+      "after_xy_mm": 0.248,
+      "side": "back",
+      "note": "XY pad-centre distance; a ground/power via path is still required"
+    },
+    {
+      "capacitor": "C113",
+      "p4_pin": "54",
+      "before_xy_mm": 12.698,
+      "after_xy_mm": 0.108,
+      "side": "back",
+      "note": "XY pad-centre distance; a ground/power via path is still required"
+    },
+    {
+      "capacitor": "C111",
+      "p4_pin": "21",
+      "before_xy_mm": 5.397,
+      "after_xy_mm": 0.163,
+      "side": "back",
+      "note": "XY pad-centre distance; a ground/power via path is still required"
+    },
+    {
+      "capacitor": "C117",
+      "p4_pin": "77",
+      "before_xy_mm": 6.29,
+      "after_xy_mm": 1.376,
+      "side": "back",
+      "note": "XY pad-centre distance; a ground/power via path is still required"
+    },
+    {
+      "capacitor": "C116",
+      "p4_pin": "76",
+      "before_xy_mm": 17.237,
+      "after_xy_mm": 0.832,
+      "side": "back",
+      "note": "XY pad-centre distance; a ground/power via path is still required"
+    },
+    {
+      "capacitor": "C118",
+      "p4_pin": "85",
+      "before_xy_mm": 13.969,
+      "after_xy_mm": 0.108,
+      "side": "back",
+      "note": "XY pad-centre distance; a ground/power via path is still required"
+    },
+    {
+      "capacitor": "C129",
+      "p4_pin": "59",
+      "before_xy_mm": 17.775,
+      "after_xy_mm": 0.108,
+      "side": "back",
+      "note": "XY pad-centre distance; a ground/power via path is still required"
+    },
+    {
+      "capacitor": "C110",
+      "p4_pin": "9",
+      "before_xy_mm": 8.164,
+      "after_xy_mm": 0.129,
+      "side": "back",
+      "note": "XY pad-centre distance; a ground/power via path is still required"
+    },
+    {
+      "capacitor": "C130",
+      "p4_pin": "67",
+      "before_xy_mm": 8.149,
+      "after_xy_mm": 0.108,
+      "side": "back",
+      "note": "XY pad-centre distance; a ground/power via path is still required"
+    },
+    {
+      "capacitor": "C115",
+      "p4_pin": "75",
+      "before_xy_mm": 7.157,
+      "after_xy_mm": 0.129,
+      "side": "back",
+      "note": "XY pad-centre distance; a ground/power via path is still required"
+    },
+    {
+      "capacitor": "C122",
+      "p4_pin": "102",
+      "before_xy_mm": 15.292,
+      "after_xy_mm": 0.832,
+      "side": "back",
+      "note": "XY pad-centre distance; a ground/power via path is still required"
+    },
+    {
+      "capacitor": "C112",
+      "p4_pin": "26",
+      "before_xy_mm": 17.7,
+      "after_xy_mm": 0.163,
+      "side": "back",
+      "note": "XY pad-centre distance; a ground/power via path is still required"
+    }
+  ],
+  "routes": [
+    {
+      "label": "CSI pin 42 escape only",
+      "net": "/CAM_L_D0_N",
+      "layer": "F.Cu",
+      "width_mm": 0.15,
+      "length_mm": 1.0,
+      "points_mm": [
+        [
+          15.625,
+          5.125
+        ],
+        [
+          15.625,
+          4.125
+        ]
+      ]
+    },
+    {
+      "label": "CSI pin 43 escape only",
+      "net": "/CAM_L_D0_P",
+      "layer": "F.Cu",
+      "width_mm": 0.15,
+      "length_mm": 1.0,
+      "points_mm": [
+        [
+          15.275,
+          5.125
+        ],
+        [
+          15.275,
+          4.125
+        ]
+      ]
+    },
+    {
+      "label": "CSI pin 44 escape only",
+      "net": "/CAM_L_CLK_P",
+      "layer": "F.Cu",
+      "width_mm": 0.15,
+      "length_mm": 1.0,
+      "points_mm": [
+        [
+          14.925,
+          5.125
+        ],
+        [
+          14.925,
+          4.125
+        ]
+      ]
+    },
+    {
+      "label": "CSI pin 45 escape only",
+      "net": "/CAM_L_CLK_N",
+      "layer": "F.Cu",
+      "width_mm": 0.15,
+      "length_mm": 1.0,
+      "points_mm": [
+        [
+          14.575,
+          5.125
+        ],
+        [
+          14.575,
+          4.125
+        ]
+      ]
+    },
+    {
+      "label": "CSI pin 46 escape only",
+      "net": "/CAM_L_D1_N",
+      "layer": "F.Cu",
+      "width_mm": 0.15,
+      "length_mm": 1.0,
+      "points_mm": [
+        [
+          14.225,
+          5.125
+        ],
+        [
+          14.225,
+          4.125
+        ]
+      ]
+    },
+    {
+      "label": "CSI pin 47 escape only",
+      "net": "/CAM_L_D1_P",
+      "layer": "F.Cu",
+      "width_mm": 0.15,
+      "length_mm": 1.0,
+      "points_mm": [
+        [
+          13.875,
+          5.125
+        ],
+        [
+          13.875,
+          4.125
+        ]
+      ]
+    },
+    {
+      "label": "U105.1 to U105.6",
+      "net": "/USB_DM",
+      "layer": "F.Cu",
+      "width_mm": 0.15,
+      "length_mm": 1.725,
+      "points_mm": [
+        [
+          8.4,
+          2.4625
+        ],
+        [
+          8.4,
+          2.45
+        ],
+        [
+          10.100000000000001,
+          2.45
+        ],
+        [
+          10.1,
+          2.4625
+        ]
+      ]
+    },
+    {
+      "label": "U105.3 to U105.4",
+      "net": "/USB_DP",
+      "layer": "F.Cu",
+      "width_mm": 0.15,
+      "length_mm": 1.725,
+      "points_mm": [
+        [
+          8.4,
+          3.5375
+        ],
+        [
+          8.4,
+          3.5500000000000003
+        ],
+        [
+          10.100000000000001,
+          3.5500000000000003
+        ],
+        [
+          10.1,
+          3.5375
+        ]
+      ]
+    },
+    {
+      "label": "U101.49 to R109.2",
+      "net": "/USB_DM_CHIP",
+      "layer": "F.Cu",
+      "width_mm": 0.15,
+      "length_mm": 3.315,
+      "points_mm": [
+        [
+          13.175,
+          5.125
+        ],
+        [
+          13.175,
+          5.125
+        ],
+        [
+          13.175,
+          4.175
+        ],
+        [
+          13.275,
+          4.075
+        ],
+        [
+          13.275,
+          2.9250000000000003
+        ],
+        [
+          12.75,
+          2.0
+        ],
+        [
+          12.76,
+          2.0
+        ]
+      ]
+    },
+    {
+      "label": "U101.50 to R110.2",
+      "net": "/USB_DP_CHIP",
+      "layer": "F.Cu",
+      "width_mm": 0.15,
+      "length_mm": 1.647,
+      "points_mm": [
+        [
+          12.825,
+          5.125
+        ],
+        [
+          12.825000000000001,
+          5.125
+        ],
+        [
+          12.8,
+          3.6
+        ],
+        [
+          12.75,
+          3.5
+        ],
+        [
+          12.76,
+          3.5
+        ]
+      ]
+    },
+    {
+      "label": "R109.1 to U105.6",
+      "net": "/USB_DM",
+      "layer": "F.Cu",
+      "width_mm": 0.15,
+      "length_mm": 1.7328,
+      "points_mm": [
+        [
+          11.74,
+          2.0
+        ],
+        [
+          11.75,
+          2.0
+        ],
+        [
+          10.100000000000001,
+          2.45
+        ],
+        [
+          10.1,
+          2.4625
+        ]
+      ]
+    },
+    {
+      "label": "R110.1 to U105.4",
+      "net": "/USB_DP",
+      "layer": "F.Cu",
+      "width_mm": 0.15,
+      "length_mm": 1.6733,
+      "points_mm": [
+        [
+          11.74,
+          3.5
+        ],
+        [
+          11.75,
+          3.5
+        ],
+        [
+          10.100000000000001,
+          3.5500000000000003
+        ],
+        [
+          10.1,
+          3.5375
+        ]
+      ]
+    },
+    {
+      "label": "U105.1 to J101.2",
+      "net": "/USB_DM",
+      "layer": "F.Cu",
+      "width_mm": 0.15,
+      "length_mm": 3.0896,
+      "points_mm": [
+        [
+          8.4,
+          2.4625
+        ],
+        [
+          8.4,
+          2.45
+        ],
+        [
+          7.75,
+          2.6
+        ],
+        [
+          7.275,
+          3.8000000000000003
+        ],
+        [
+          6.25,
+          4.25
+        ],
+        [
+          6.25,
+          4.25
+        ]
+      ]
+    },
+    {
+      "label": "U105.3 to J101.3",
+      "net": "/USB_DP",
+      "layer": "F.Cu",
+      "width_mm": 0.15,
+      "length_mm": 2.8136,
+      "points_mm": [
+        [
+          8.4,
+          3.5375
+        ],
+        [
+          8.4,
+          3.5500000000000003
+        ],
+        [
+          7.275,
+          4.800000000000001
+        ],
+        [
+          6.25,
+          5.25
+        ],
+        [
+          6.25,
+          5.25
+        ]
+      ]
+    },
+    {
+      "label": "U103.3 to L101.1",
+      "net": "/P4_SW",
+      "layer": "F.Cu",
+      "width_mm": 0.4,
+      "length_mm": 3.5268,
+      "points_mm": [
+        [
+          4.3625,
+          13.45
+        ],
+        [
+          4.3500000000000005,
+          13.450000000000001
+        ],
+        [
+          1.9500000000000002,
+          16.0
+        ],
+        [
+          1.9375,
+          16.0
+        ]
+      ]
+    },
+    {
+      "label": "U103.4 to C105.1",
+      "net": "+3V3",
+      "layer": "F.Cu",
+      "width_mm": 0.3,
+      "length_mm": 1.9289,
+      "points_mm": [
+        [
+          6.6375,
+          13.45
+        ],
+        [
+          6.65,
+          13.450000000000001
+        ],
+        [
+          8.5,
+          13.950000000000001
+        ],
+        [
+          8.5,
+          13.95
+        ]
+      ]
+    },
+    {
+      "label": "L101.2 to C106.1",
+      "net": "/P4_VDD_HP",
+      "layer": "F.Cu",
+      "width_mm": 0.4,
+      "length_mm": 2.015,
+      "points_mm": [
+        [
+          4.0625,
+          16.0
+        ],
+        [
+          4.05,
+          16.0
+        ],
+        [
+          3.95,
+          18.0
+        ],
+        [
+          3.95,
+          18.0
+        ]
+      ]
+    },
+    {
+      "label": "U103.5 to R105.2",
+      "net": "/P4_FB",
+      "layer": "F.Cu",
+      "width_mm": 0.15,
+      "length_mm": 2.7915,
+      "points_mm": [
+        [
+          6.6375,
+          11.55
+        ],
+        [
+          6.65,
+          11.55
+        ],
+        [
+          7.925000000000001,
+          10.0
+        ],
+        [
+          8.5,
+          9.5
+        ],
+        [
+          8.5,
+          9.49
+        ]
+      ]
+    },
+    {
+      "label": "U103.5 to R106.1",
+      "net": "/P4_FB",
+      "layer": "F.Cu",
+      "width_mm": 0.15,
+      "length_mm": 3.137,
+      "points_mm": [
+        [
+          6.6375,
+          11.55
+        ],
+        [
+          6.65,
+          11.55
+        ],
+        [
+          9.75,
+          11.25
+        ],
+        [
+          9.75,
+          11.26
+        ]
+      ]
+    },
+    {
+      "label": "U104.3 to L102.1",
+      "net": "/SYS_SW",
+      "layer": "B.Cu",
+      "width_mm": 0.4,
+      "length_mm": 1.9948,
+      "points_mm": [
+        [
+          5.1375,
+          11.95
+        ],
+        [
+          5.15,
+          11.950000000000001
+        ],
+        [
+          5.95,
+          13.75
+        ],
+        [
+          5.9375,
+          13.75
+        ]
+      ]
+    },
+    {
+      "label": "U104.4 to C108.1",
+      "net": "/USB_VBUS",
+      "layer": "B.Cu",
+      "width_mm": 0.3,
+      "length_mm": 2.1059,
+      "points_mm": [
+        [
+          2.8625,
+          11.95
+        ],
+        [
+          2.85,
+          11.950000000000001
+        ],
+        [
+          1.5,
+          13.55
+        ],
+        [
+          1.5,
+          13.55
+        ]
+      ]
+    },
+    {
+      "label": "L102.2 to C109.1",
+      "net": "+3V3",
+      "layer": "B.Cu",
+      "width_mm": 0.4,
+      "length_mm": 2.517,
+      "points_mm": [
+        [
+          8.0625,
+          13.75
+        ],
+        [
+          8.05,
+          13.75
+        ],
+        [
+          6.95,
+          16.0
+        ],
+        [
+          6.95,
+          16.0
+        ]
+      ]
+    },
+    {
+      "label": "U104.5 to R107.2",
+      "net": "/SYS_FB",
+      "layer": "B.Cu",
+      "width_mm": 0.15,
+      "length_mm": 2.1022,
+      "points_mm": [
+        [
+          2.8625,
+          10.05
+        ],
+        [
+          2.85,
+          10.05
+        ],
+        [
+          2.5,
+          8.0
+        ],
+        [
+          2.51,
+          8.0
+        ]
+      ]
+    },
+    {
+      "label": "U104.5 to R108.1",
+      "net": "/SYS_FB",
+      "layer": "B.Cu",
+      "width_mm": 0.15,
+      "length_mm": 2.2614,
+      "points_mm": [
+        [
+          2.8625,
+          10.05
+        ],
+        [
+          2.85,
+          10.05
+        ],
+        [
+          3.75,
+          8.0
+        ],
+        [
+          3.74,
+          8.0
+        ]
+      ]
+    },
+    {
+      "label": "U101.100 to Y101.1",
+      "net": "/P4_XTAL_P",
+      "layer": "F.Cu",
+      "width_mm": 0.15,
+      "length_mm": 7.0663,
+      "points_mm": [
+        [
+          19.475,
+          14.875
+        ],
+        [
+          19.475,
+          14.875
+        ],
+        [
+          19.475,
+          15.450000000000001
+        ],
+        [
+          25.0,
+          15.8
+        ],
+        [
+          25.700000000000003,
+          16.45
+        ],
+        [
+          25.7,
+          16.45
+        ]
+      ]
+    },
+    {
+      "label": "U101.99 to Y101.3",
+      "net": "/P4_XTAL_N",
+      "layer": "F.Cu",
+      "width_mm": 0.15,
+      "length_mm": 6.5952,
+      "points_mm": [
+        [
+          19.125,
+          14.875
+        ],
+        [
+          19.125,
+          14.875
+        ],
+        [
+          19.125,
+          15.450000000000001
+        ],
+        [
+          19.175,
+          15.625
+        ],
+        [
+          20.925,
+          17.35
+        ],
+        [
+          24.3,
+          17.55
+        ],
+        [
+          24.3,
+          17.55
+        ]
+      ]
+    },
+    {
+      "label": "Y101.1 to C101.1",
+      "net": "/P4_XTAL_P",
+      "layer": "F.Cu",
+      "width_mm": 0.15,
+      "length_mm": 1.4552,
+      "points_mm": [
+        [
+          25.7,
+          16.45
+        ],
+        [
+          25.700000000000003,
+          16.45
+        ],
+        [
+          25.725,
+          15.0
+        ],
+        [
+          25.73,
+          15.0
+        ]
+      ]
+    },
+    {
+      "label": "Y101.3 to C102.1",
+      "net": "/P4_XTAL_N",
+      "layer": "F.Cu",
+      "width_mm": 0.15,
+      "length_mm": 1.5552,
+      "points_mm": [
+        [
+          24.3,
+          17.55
+        ],
+        [
+          24.3,
+          17.55
+        ],
+        [
+          22.75,
+          17.525000000000002
+        ],
+        [
+          22.75,
+          17.52
+        ]
+      ]
+    }
+  ],
+  "unrouted_requests": [],
+  "reservations": [
+    [
+      "flex interface budget",
+      [
+        27,
+        3,
+        31,
+        15
+      ]
+    ],
+    [
+      "CSI route corridor",
+      [
+        14,
+        0.75,
+        26.5,
+        3.6
+      ]
+    ]
+  ],
+  "sources": [
+    "esp32P4PcbLayout",
+    "tiTlv62569",
+    "jlcThinPcbCapabilities"
+  ],
+  "limits": [
+    "Partial copper only",
+    "USB paths not impedance or length qualified",
+    "CSI escapes end without a selected connector",
+    "No power/ground planes or decoupling vias yet",
+    "Optics, LEDs and flex remain unselected",
+    "No physical imaging test"
+  ]
+}

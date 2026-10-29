@@ -1,0 +1,45 @@
+{
+  "pairs": [
+    {
+      "pair": "D0",
+      "amplitude_mm": 0.44143489720542417,
+      "period_mm": 2.6,
+      "cycles": 10,
+      "flex_mean_mm": 35.60441794456512,
+      "rigid_mean_mm": 27.778178336712898,
+      "target_full_planar_mean_mm": 63.382596281277955
+    },
+    {
+      "pair": "CLK",
+      "amplitude_mm": 0.7591801729660448,
+      "period_mm": 2.6,
+      "cycles": 10,
+      "flex_mean_mm": 38.735506377276465,
+      "rigid_mean_mm": 24.647089904001476,
+      "target_full_planar_mean_mm": 63.382596281277955
+    },
+    {
+      "pair": "D1",
+      "amplitude_mm": 0,
+      "period_mm": 2.6,
+      "cycles": 10,
+      "flex_mean_mm": 33.80449595727364,
+      "rigid_mean_mm": 29.578100324004314,
+      "target_full_planar_mean_mm": 63.382596281277955
+    }
+  ],
+  "body_thickness_mm": 0.168,
+  "contact_side": "B.Cu",
+  "stiffened_end_regions_x_mm": [
+    [
+      0,
+      2.5
+    ],
+    [
+      32.8,
+      35.3
+    ]
+  ],
+  "ground_plane_inset_mm": 0.25,
+  "scope": "Planar matching; connector/package delay and assembled flex remain unqualified"
+}

@@ -1,0 +1,7 @@
+from pathlib import Path
+import FreeCAD as A,FreeCADGui as G,json
+from PySide import QtCore
+R=Path(__file__).resolve().parents[4];O=R/'generated/eye-tracker/rat/two-arm-r28';d=next(x for x in A.listDocuments().values() if x.FileName.replace('\\','/').endswith('/two-arm-r28/ET-RAT-TWO-ARM-R28.FCStd'));A.setActiveDocument(d.Name)
+def capture():
+ v=G.activeDocument().activeView();v.viewAxonometric();v.fitAll();G.updateGui();v.saveImage(str(O/'R28-review.png'),1600,1100,'White');(O/'display-debug.json').write_text(json.dumps({'camera':v.getCamera(),'objects':[{'name':o.Name,'type':o.TypeId,'parents':[x.Name for x in o.InList],'visibility':o.Visibility,'bbox':str(o.Shape.BoundBox) if hasattr(o,'Shape') else ''} for o in d.Objects if o.Name in ['FinishedCarrier','RatDesignSkull','RibbonCandidate']]},indent=2))
+QtCore.QTimer.singleShot(1500,capture)

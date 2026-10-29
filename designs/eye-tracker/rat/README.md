@@ -143,3 +143,11 @@ Leading-edge arm root: [R25](joined-arm-r25/README.md) embeds and widens the arm
 Rounded arm and junctions: [R26](blended-arm-r26/README.md) adds a smooth oval section, flared attachments and native root/socket fillets. Native static checks pass; print validation and strength remain pending.
 
 Ribbon-facing socket taper: [R27](aligned-tip-r27/README.md) replaces the bulky terminal flare with a flat, narrowing section aligned with the ribbon and embedded in the collar.
+
+Uncapped binocular review: [R31](binocular-r31/README.md) adds opposing PCB trays on a raised central carrier, two eye cameras, fitted ribbons and separated arm pairs. Static geometry checks pass; physical fit and cap design remain pending. R30 is the verified source; the historical species selection is unchanged.
+
+Compact binocular review: [R32](compact-binocular-r32/README.md) lowers the hardware 2 mm, replaces paired tray backs with a shared windowed spine, and reroutes both arm pairs rearward with corresponding upper/lower attachments. Carrier solid volume is reduced by 33%; static validation passes. Skull Boolean cutting, junction finishing and the cap remain deferred.
+
+R32 trial print pack: [print-r32](print-r32/README.md) updates the established four-color Snapmaker U1 skull project to the lowered R32 baseplate and includes a five-shell hardware STL with the binocular carrier, both matched holders and two detached clips. Exported meshes and inherited U1 settings are verified; files are unsliced.
+
+R32 print layout L02: [print-r32-l02](print-r32-l02/README.md) lays both clips on their broad U-shaped faces at Z=0, with their arms in XY. The all-hardware STL and ZIP are updated; the mechanism and U1 skull project are unchanged. The first layout remains preserved.

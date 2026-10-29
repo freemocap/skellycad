@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-28",
+  "status": "user-selected planning direction",
+  "candidate": "C",
+  "construction": "Published SLIM.flex construction with study-specific local supports",
+  "reason": "User prefers documented construction over the marginal size advantage of the unverified custom ultrathin rigid-flex target.",
+  "source_study": "designs/eye-camera-ov9281/packaging/size-mass-r01",
+  "source_checkpoint": "designs/eye-camera-ov9281/checkpoints/2026-10-28-size-mass-r01",
+  "source_manifest_sha256": "78b8d1e750877cb1c23a50b97e5bf50743f022b0fe7f423e10b8e0c10b74ed4f",
+  "units": "mm and g",
+  "controller_mm": [26, 12.5],
+  "head_mm": [12.5, 12.5],
+  "free_flex_mm": [32.85, 8],
+  "module_mass_nominal_g": 1.2695391924370472,
+  "module_target_g": 1,
+  "external_tether_excluded": true,
+  "subgram_target_verified": false,
+  "electrical_baseline_changed": false,
+  "manufacturing_approved": false,
+  "sources": ["wurthSlimFlex0302026"]
+}

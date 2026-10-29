@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\jonma\code-stuff\github\freemocap\other\skellycad\designs\kicad-foundations\camera-interface\electronics\r02\camera-interface.kicad_sch</source>
+    <date>2026-10-27T13:53:06</date>
+    <tool>Eeschema 10.0.7</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>camera-interface.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="J1">
+      <value>200528-0150</value>
+      <footprint>CameraStudy:Molex_200528-0150_1x15-1MP_P1.00mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">CameraStudy:Molex_200528-0150_1x15-1MP_P1.00mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SkellyCAD" part="CSI_15_Logical" description=""/>
+      <property name="Sheetname" value="camera-interface"/>
+      <property name="Sheetfile" value="camera-interface.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ceb838ba-cc88-591c-98c7-e31c7e8540f1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J2">
+      <value>200528-0150</value>
+      <footprint>CameraStudy:Molex_200528-0150_1x15-1MP_P1.00mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">CameraStudy:Molex_200528-0150_1x15-1MP_P1.00mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SkellyCAD" part="CSI_15_Logical" description=""/>
+      <property name="Sheetname" value="camera-interface"/>
+      <property name="Sheetfile" value="camera-interface.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>55e0a012-5ca1-538f-b337-d615003c59dc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="SkellyCAD" part="CSI_15_Logical">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">CSI_15_Logical</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="passive"/>
+        <pin num="2" name="CAM_D0_N" type="passive"/>
+        <pin num="3" name="CAM_D0_P" type="passive"/>
+        <pin num="4" name="GND" type="passive"/>
+        <pin num="5" name="CAM_D1_N" type="passive"/>
+        <pin num="6" name="CAM_D1_P" type="passive"/>
+        <pin num="7" name="GND" type="passive"/>
+        <pin num="8" name="CAM_CLK_N" type="passive"/>
+        <pin num="9" name="CAM_CLK_P" type="passive"/>
+        <pin num="10" name="GND" type="passive"/>
+        <pin num="11" name="CAM_IO0" type="passive"/>
+        <pin num="12" name="CAM_IO1" type="passive"/>
+        <pin num="13" name="CAM_SCL" type="passive"/>
+        <pin num="14" name="CAM_SDA" type="passive"/>
+        <pin num="15" name="CAM_3V3" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="SkellyCAD">
+      <uri>${KIPRJMOD}/SkellyCAD.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/CAM_3V3" class="Default">
+      <node ref="J1" pin="15" pinfunction="CAM_3V3_15" pintype="passive"/>
+      <node ref="J2" pin="15" pinfunction="CAM_3V3_15" pintype="passive"/>
+    </net>
+    <net code="2" name="/CAM_CLK_N" class="Default">
+      <node ref="J1" pin="8" pinfunction="CAM_CLK_N_8" pintype="passive"/>
+      <node ref="J2" pin="8" pinfunction="CAM_CLK_N_8" pintype="passive"/>
+    </net>
+    <net code="3" name="/CAM_CLK_P" class="Default">
+      <node ref="J1" pin="9" pinfunction="CAM_CLK_P_9" pintype="passive"/>
+      <node ref="J2" pin="9" pinfunction="CAM_CLK_P_9" pintype="passive"/>
+    </net>
+    <net code="4" name="/CAM_D0_N" class="Default">
+      <node ref="J1" pin="2" pinfunction="CAM_D0_N_2" pintype="passive"/>
+      <node ref="J2" pin="2" pinfunction="CAM_D0_N_2" pintype="passive"/>
+    </net>
+    <net code="5" name="/CAM_D0_P" class="Default">
+      <node ref="J1" pin="3" pinfunction="CAM_D0_P_3" pintype="passive"/>
+      <node ref="J2" pin="3" pinfunction="CAM_D0_P_3" pintype="passive"/>
+    </net>
+    <net code="6" name="/CAM_D1_N" class="Default">
+      <node ref="J1" pin="5" pinfunction="CAM_D1_N_5" pintype="passive"/>
+      <node ref="J2" pin="5" pinfunction="CAM_D1_N_5" pintype="passive"/>
+    </net>
+    <net code="7" name="/CAM_D1_P" class="Default">
+      <node ref="J1" pin="6" pinfunction="CAM_D1_P_6" pintype="passive"/>
+      <node ref="J2" pin="6" pinfunction="CAM_D1_P_6" pintype="passive"/>
+    </net>
+    <net code="8" name="/CAM_IO0" class="Default">
+      <node ref="J1" pin="11" pinfunction="CAM_IO0_11" pintype="passive"/>
+      <node ref="J2" pin="11" pinfunction="CAM_IO0_11" pintype="passive"/>
+    </net>
+    <net code="9" name="/CAM_IO1" class="Default">
+      <node ref="J1" pin="12" pinfunction="CAM_IO1_12" pintype="passive"/>
+      <node ref="J2" pin="12" pinfunction="CAM_IO1_12" pintype="passive"/>
+    </net>
+    <net code="10" name="/CAM_SCL" class="Default">
+      <node ref="J1" pin="13" pinfunction="CAM_SCL_13" pintype="passive"/>
+      <node ref="J2" pin="13" pinfunction="CAM_SCL_13" pintype="passive"/>
+    </net>
+    <net code="11" name="/CAM_SDA" class="Default">
+      <node ref="J1" pin="14" pinfunction="CAM_SDA_14" pintype="passive"/>
+      <node ref="J2" pin="14" pinfunction="CAM_SDA_14" pintype="passive"/>
+    </net>
+    <net code="12" name="/GND" class="Default">
+      <node ref="J1" pin="1" pinfunction="GND_1" pintype="passive"/>
+      <node ref="J1" pin="10" pinfunction="GND_10" pintype="passive"/>
+      <node ref="J1" pin="4" pinfunction="GND_4" pintype="passive"/>
+      <node ref="J1" pin="7" pinfunction="GND_7" pintype="passive"/>
+      <node ref="J2" pin="1" pinfunction="GND_1" pintype="passive"/>
+      <node ref="J2" pin="10" pinfunction="GND_10" pintype="passive"/>
+      <node ref="J2" pin="4" pinfunction="GND_4" pintype="passive"/>
+      <node ref="J2" pin="7" pinfunction="GND_7" pintype="passive"/>
+    </net>
+  </nets>
+</export>

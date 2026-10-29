@@ -1,0 +1,12 @@
+{
+  "before": "C:\\Users\\jonma\\code-stuff\\github\\freemocap\\other\\skellycad\\generated\\ov9281-r09-scl-02",
+  "after": "C:\\Users\\jonma\\code-stuff\\github\\freemocap\\other\\skellycad\\generated\\ov9281-r09-vh-01",
+  "completed_net": "/M1_VH",
+  "unconnected_before": 4,
+  "unconnected_after": 3,
+  "new_drc_issues": [],
+  "per_net_connectivity_regressions": [],
+  "native_rules_unchanged": true,
+  "native_hashes_verified": true,
+  "scope": "Connectivity and native design rules, not signal integrity or hardware operation."
+}

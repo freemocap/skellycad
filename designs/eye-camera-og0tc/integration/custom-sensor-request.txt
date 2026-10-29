@@ -1,0 +1,23 @@
+UNSENT: OG0TC1B custom infrared camera development package and sample request
+
+We are developing our own miniature monocular infrared USB camera around
+OG0TC1B. Please provide a sample quote with quantity and a firm ship date,
+and the documentation needed to implement a custom PCB:
+
+1. Full component pin/ball map, land pattern, package and optical datum drawing.
+2. Reference schematic, rails/IO levels, power sequencing, clock/reset and
+   decoupling requirements; assembly/reflow and lens-protection guidance.
+3. Initialization register table and one-lane D-PHY timing for 400 x 400 at
+   120 fps, preferably RAW8, with exposure/gain and frame synchronization control.
+4. Existing supported USB 2.0 High Speed receiver circuit and firmware, if any;
+   specifically identify demonstrated support rather than generic MIPI capability.
+5. Access and licensing terms for adapting the circuit/firmware to our PCB.
+
+Our assembly requires a short-flex camera head, 10-20 mm optical working distance,
+monochrome global shutter, visible-cut NIR-pass optics (940 nm baseline), nearby
+controlled IR LEDs, one thin controller PCB and four-wire USB output to a JST.
+We can design the carrier and mechanical parts. An available miniature lens/holder
+or a supported custom-focus sensor-head assembly would also be useful.
+
+Please distinguish available samples from backordered or planned products.
+No message has been sent and no purchase has been placed.

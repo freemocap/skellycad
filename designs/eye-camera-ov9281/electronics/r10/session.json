@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-28",
+  "approval": "Yes, I approved the plan. Please continue through them according to the linear checklist task skill guidance",
+  "source_selection": "../../routing-review.json",
+  "scope": "Complete corrective interconnect routing worklist; all 21 audit findings",
+  "tasks": [
+    {
+      "text": "Select manufacturable rigid and flex stackups, calculate the 100 ohm MIPI and 90 ohm USB geometry, and record tolerances, via limits and explicit matching budgets.",
+      "complete": true,
+      "evidence": [
+        "STACKUP.md",
+        "constraints.json",
+        "cross-sections.json"
+      ]
+    },
+    {
+      "text": "Restore uninterrupted reference-plane regions on both rigid boards by moving obstructing signal and power routes, preserving every net connection.",
+      "complete": true,
+      "evidence": [
+        "../../checkpoints/2026-10-28-r10-planes/plane-repair.json",
+        "../../checkpoints/2026-10-28-r10-planes/plane-coverage.json"
+      ]
+    },
+    {
+      "text": "Reroute all three sensor-head MIPI pairs with consistent pairing, compatible layers, matched transitions, ground-return vias and clock guarding.",
+      "complete": true,
+      "evidence": [
+        "HEAD-ROUTING.md",
+        "clock-guard-sections.json",
+        "../../checkpoints/2026-10-28-r10-head/head-routing-validation.json"
+      ]
+    },
+    {
+      "text": "Reroute all three controller MIPI pairs with consistent pairing, compatible layers, matched transitions, ground-return vias and clock guarding.",
+      "complete": true,
+      "evidence": [
+        "CONTROLLER-ROUTING.md",
+        "../../checkpoints/2026-10-28-r10-controller/controller-routing-validation.json"
+      ]
+    },
+    {
+      "text": "Revise flex pair geometry and both termination regions, then close the complete head-to-controller matching and spacing budgets.",
+      "complete": true,
+      "evidence": [
+        "FLEX-ROUTING.md",
+        "flex-clock-guard.json",
+        "../../checkpoints/2026-10-28-r10-flex/flex-routing-validation.json"
+      ]
+    },
+    {
+      "text": "Reroute the complete USB pair through the resistor and ESD region to J101, and define the matching cable, pin mapping and shield termination.",
+      "complete": true,
+      "evidence": [
+        "USB-ROUTING.md",
+        "usb-cable.json",
+        "../../checkpoints/2026-10-28-r10-usb/usb-routing-validation.json"
+      ]
+    },
+    {
+      "text": "Recheck the complete design and all audit findings, preserve the new checkpoint, and regenerate a matched KiCad/FreeCAD review.",
+      "complete": true,
+      "evidence": [
+        "../../audits/2026-10-28-corrective-routing/REPORT.md",
+        "../../audits/2026-10-28-corrective-routing/findings.json",
+        "../../checkpoints/2026-10-28-r10-matched/snapshot.json",
+        "../../working-review.json"
+      ]
+    }
+  ],
+  "current_working_directory": "generated/ov9281-r10-review-02",
+  "reopened_review": {
+    "kicad": [
+      "generated/ov9281-r10-review-02/head.kicad_pcb",
+      "generated/ov9281-r10-review-02/controller.kicad_pcb"
+    ],
+    "freecad": "generated/ov9281-r10-mechanics-02/OV9281-R10-MATCHED-REVIEW.FCStd",
+    "method": "Native application CLI; no computer use",
+    "saved_native_hashes_verified": true,
+    "note": "FreeCAD marks the restored document modified on opening; the exact saved native file and all geometry checks are preserved in the snapshot."
+  },
+  "status": "Complete: approved corrective routing phase; not fabrication-ready"
+}

@@ -1,0 +1,19 @@
+{
+  "board_revision": "R11",
+  "processor": "ESP32-P4NRW16X revision 3.x",
+  "gpio": {
+    "LED_GPIO": {"gpio": 5, "pad": "5", "net": "/LED_PWM", "default": "low"},
+    "RESET_ASSERT_GPIO": {"gpio": 6, "pad": "6", "net": "/CAM_RESET_ASSERT", "asserted": "high"},
+    "SCL_GPIO": {"gpio": 7, "pad": "7", "net": "/CAM_SCL_3V3"},
+    "SDA_GPIO": {"gpio": 8, "pad": "8", "net": "/CAM_SDA_3V3"}
+  },
+  "sccb_hz": 100000,
+  "sensor_address_7bit": 96,
+  "sensor_clock_hz": 24000000,
+  "sensor_clock_source": "Epson X1G004171003100, supplied by 1.8 V",
+  "flash": {"bytes": 4194304, "voltage": 3.3, "mode": "DIO", "frequency_mhz": 40},
+  "usb_connector": {"1": "/USB_VBUS", "2": "/USB_DM", "3": "/USB_DP", "4": "GND"},
+  "programming_pads": {"1": "GND", "2": "/P4_UART_TX", "3": "/P4_UART_RX", "4": "/P4_BOOT", "5": "/P4_EN"},
+  "capture": {"width": 640, "height": 400, "format": "RAW8", "sensor_mode_fps": 100, "transport": "USB CDC snapshot per request", "continuous_streaming": false, "uvc": false, "lane_mbps": 800, "lane_rate_verified_on_hardware": false},
+  "physical_camera_demonstrated": false
+}

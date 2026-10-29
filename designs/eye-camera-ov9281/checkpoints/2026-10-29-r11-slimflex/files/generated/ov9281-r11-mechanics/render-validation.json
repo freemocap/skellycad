@@ -1,0 +1,16 @@
+{
+  "pid": 23304,
+  "native_sha256": "cba97827bfa72f36fbca9075133d826c875242a75db0d79cb6767934eb36066c",
+  "geometry_measurements_unchanged": true,
+  "exact_bounds_without_triangulation": true,
+  "images": [
+    "flat-top.png",
+    "flat-bottom.png",
+    "flat-iso.png",
+    "bent-iso.png",
+    "pupil-comparison.png"
+  ],
+  "native_saved_and_closed": true,
+  "computer_use": false,
+  "note": "Native render saved separately on conservative check failure; exact analytic bounds verified identical before promotion. The initial check used viewport triangulation bounds."
+}

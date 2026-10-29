@@ -1,0 +1,51 @@
+{
+  "parent_board_sha256": "842190f0126a65c1c2d54d73feb9177dc7e6b46426053f63d3efe93b800c24f9",
+  "net": "/M1_DOVDD",
+  "from": "U1.D3",
+  "to": "C13.1",
+  "track_width_mm": 0.1,
+  "clearance_mm": 0.1,
+  "via_mm": [
+    0.4,
+    0.2
+  ],
+  "grid_step_mm": 0.025,
+  "visited_nodes": 492,
+  "path_xy_mm": [
+    [
+      6.445,
+      5.507
+    ],
+    [
+      4.57,
+      5.507
+    ],
+    [
+      4.545,
+      5.532
+    ],
+    [
+      4.52,
+      5.532
+    ],
+    [
+      4.495,
+      5.557
+    ],
+    [
+      4.225,
+      5.675
+    ]
+  ],
+  "added_tracks": [
+    "60f88b4b-70d6-4816-af05-bf8f5634f7d6",
+    "8616eaef-f952-4c9e-b16e-420e409762de",
+    "424a8f5a-d77a-48c9-810b-a6ca859ae4c4",
+    "20b41e05-730d-46c2-9a30-db32e620e13a",
+    "cdbb6cc1-0be7-48d5-828f-b197ec096457",
+    "a2f909b8-cd0b-4d81-88da-7d07b1f8b660"
+  ],
+  "added_via": "98fbce4b-c593-41ea-8481-c2c39fc1d0eb",
+  "native_drc_required": true,
+  "impedance_qualified": false
+}

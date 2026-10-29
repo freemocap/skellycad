@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-28",
+  "units": "mm",
+  "status": "Planning and baseline review only; no new arm geometry",
+  "inputs": [
+    {
+      "label": "Rat R27 - accepted single-arm baseline",
+      "source_manifest": "designs/eye-tracker/rat/aligned-tip-r27/review.json",
+      "source_checkpoint": "designs/eye-tracker/rat/aligned-tip-r27/checkpoints/ET-RAT-ALIGNED-TIP-R27.FCStd",
+      "source_sha256": "320921e03d42a1bd8a16b3a11b7b6d6c1cd6817b4b6286475f1c9db59127be8d",
+      "review_copy": "generated/eye-tracker/rat/two-arm-r28/ET-RAT-ALIGNED-TIP-R27.FCStd"
+    },
+    {
+      "label": "Mouse R19 - two-arm reference",
+      "source_manifest": "designs/eye-tracker/mouse/active-model.json",
+      "source_checkpoint": "designs/eye-tracker/mouse/raised-target-r19/checkpoints/ET-MOUSE-RAISED-TARGET-R19.FCStd",
+      "source_sha256": "05a11e2a9a0f8900cf22ad114194bc200bb6950e501fa8e4d8d163543ab0ea9c",
+      "review_copy": "generated/eye-tracker/rat/two-arm-r28/ET-MOUSE-RAISED-TARGET-R19.FCStd"
+    },
+    {
+      "label": "Rat R21 - earlier two-arm reference",
+      "source_manifest": "designs/eye-tracker/rat/oval-camera-r21/review.json",
+      "source_checkpoint": "designs/eye-tracker/rat/oval-camera-r21/checkpoints/ET-RAT-OVAL-R21.FCStd",
+      "source_sha256": "32059ddfa844999852db6143b067276bce35cf8e647ed3e529464271e5f855ce",
+      "review_copy": "generated/eye-tracker/rat/two-arm-r28/ET-RAT-OVAL-R21.FCStd"
+    }
+  ],
+  "historical_rat_selector": {
+    "revision": "ET-RAT-MONO-R01",
+    "expected_sha256": "ad74a3f14aaa709880039c927690475f6119d074f73b0a550a3064383394762e",
+    "actual_sha256": "9c81ed0189cfa4be9fec9e01cc48621c92a28be2dde8c5535c1e609df22c3bf7",
+    "matches": false
+  },
+  "physical_feedback": "User reports R27 gets the camera into position well but the single arm is too bouncy; requests two-arm support like mouse. Source of compliance has not been isolated."
+}

@@ -1,0 +1,12 @@
+{
+  "repository": "https://github.com/antmicro/ov9281-camera-board",
+  "commit": "ea69666fa06f66a0691e50eebff9356cc2a08e32",
+  "license": "Apache-2.0",
+  "files": {
+    "LICENSE": "fb2b23b5e5b3cb244991a8f239b91dfc362e2ecf51d06b7f0329f0ef88a52f47",
+    "ov9281-dual-camera-board.kicad_pcb": "e70c2d07eb15b65286ddf7b18747f4a201d3186579b78f5224b58518cf27c48d",
+    "ov9281-dual-camera-board.kicad_pro": "23dc835f3cb4cc5ba00c0a003d8be5ef109c50801f7064f739c3fbeb209e1aae",
+    "ov9281-dual-camera-board.kicad_sch": "2f4a70561dcf621c5a9482fd4c3b5a318a89fbd4cc3c3e85b7bd0207cfe5ee6b",
+    "README.md": "06f82312767aedf0f2cc6b168213d831a92c090225430f48c86e73c77ccdf9b4"
+  }
+}

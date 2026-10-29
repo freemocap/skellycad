@@ -1,0 +1,23 @@
+{
+  "units": "mm",
+  "cut_plane_mount_y_mm": 7.5,
+  "bridge_box_origin_mm": [
+    2,
+    5,
+    -2.5
+  ],
+  "bridge_box_size_mm": [
+    2.8,
+    7.5,
+    5.0
+  ],
+  "valid": true,
+  "solids": 1,
+  "stem_preserved_difference_mm3": 0.0,
+  "components": {
+    "RightPCB": 0.0,
+    "RightJST_4pin": 0.0,
+    "LeftPCB": 0.0,
+    "LeftJST_4pin": 0.0
+  }
+}

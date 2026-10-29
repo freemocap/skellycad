@@ -1,0 +1,294 @@
+{
+  "status": "Analytical scenarios only; no measured performance",
+  "modes": [
+    {
+      "width": 640,
+      "height": 400,
+      "fps": 100,
+      "frame_bytes": 256000,
+      "payload_MB_s": 25.6,
+      "payload_Mbps": 204.8,
+      "csi_packet_Mbps": 209.2864,
+      "planning_Mbps": 245.76,
+      "fits_2x800_Mbps_payload_screen": true,
+      "fits_USB480_absolute_ceiling": true,
+      "usb_qualification_MB_s": 35,
+      "four_capture_buffers_bytes": 1024000,
+      "usb_stage_bytes": 256000,
+      "two_spare_buffers_stall_ms": 20.0,
+      "frame_interval_ms": 10.0,
+      "memory_traffic_4x_MB_s": 102.4
+    },
+    {
+      "width": 640,
+      "height": 400,
+      "fps": 120,
+      "frame_bytes": 256000,
+      "payload_MB_s": 30.72,
+      "payload_Mbps": 245.76,
+      "csi_packet_Mbps": 251.14368,
+      "planning_Mbps": 294.912,
+      "fits_2x800_Mbps_payload_screen": true,
+      "fits_USB480_absolute_ceiling": true,
+      "usb_qualification_MB_s": 40,
+      "four_capture_buffers_bytes": 1024000,
+      "usb_stage_bytes": 256000,
+      "two_spare_buffers_stall_ms": 16.666666666666668,
+      "frame_interval_ms": 8.333333333333334,
+      "memory_traffic_4x_MB_s": 122.88
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "fps": 120,
+      "frame_bytes": 1024000,
+      "payload_MB_s": 122.88,
+      "payload_Mbps": 983.04,
+      "csi_packet_Mbps": 993.79968,
+      "planning_Mbps": 1179.648,
+      "fits_2x800_Mbps_payload_screen": true,
+      "fits_USB480_absolute_ceiling": false,
+      "usb_qualification_MB_s": null,
+      "four_capture_buffers_bytes": 4096000,
+      "usb_stage_bytes": 1024000,
+      "two_spare_buffers_stall_ms": 16.666666666666668,
+      "frame_interval_ms": 8.333333333333334,
+      "memory_traffic_4x_MB_s": 491.52
+    }
+  ],
+  "assumptions": {
+    "CSI_20percent": "Planning envelope, not a standards requirement or proof of sensor blanking",
+    "wire_ohm_per_m": 1.5,
+    "wire_note": "Chosen conservative copper-class 36 AWG scenario; actual stranded cable unselected",
+    "contact_loop_ohm": 0.2,
+    "buck_efficiency": 0.85,
+    "higher_load_W": 0.9,
+    "thermal": "No junction-to-ambient value predicts animal-contact surface temperature"
+  },
+  "local_power": {
+    "nominal_1V8_load_W": 0.4331000000000001,
+    "nominal_tether_delivered_W": 0.629529411764706,
+    "serializer_typical_W": 0.28,
+    "sensor_reported_active_W": 0.156,
+    "sensor_rail_typical_sum_W": 0.1341,
+    "unallocated_sensor_power_allowance_W": 0.022,
+    "rail_note": "1.8 V buck also supplies 1.2 V LDO input; 2.8 V analog LDO supplied from 5 V. Avoid 5-to-1.8 V linear conversion.",
+    "base_station_power_allocation_W": [
+      1.5,
+      3.0
+    ],
+    "system_source_allocation": "Separate regulated 5 V / 1 A bench supply candidate; product USB power contract and backfeed isolation unresolved"
+  },
+  "cable_cases": [
+    {
+      "length_m": 0.3,
+      "case": "nominal",
+      "supply_V": 5,
+      "load_W": 0.629529411764706,
+      "conductor_temperature_C": 20,
+      "loop_ohm": 1.0999999999999999,
+      "received_V": 4.857438789673832,
+      "current_A": 0.1296011002965161,
+      "drop_V": 0.14256121032616775,
+      "cable_contact_loss_W": 0.018476089717874383,
+      "clears_3V3_input_screen": true
+    },
+    {
+      "length_m": 0.3,
+      "case": "higher_load_screen",
+      "supply_V": 4.75,
+      "load_W": 0.9,
+      "conductor_temperature_C": 40,
+      "loop_ohm": 1.17074,
+      "received_V": 4.516718702350988,
+      "current_A": 0.19925969698567741,
+      "drop_V": 0.23328129764901195,
+      "cable_contact_loss_W": 0.04648356068196774,
+      "clears_3V3_input_screen": true
+    },
+    {
+      "length_m": 0.6,
+      "case": "nominal",
+      "supply_V": 5,
+      "load_W": 0.629529411764706,
+      "conductor_temperature_C": 20,
+      "loop_ohm": 1.9999999999999998,
+      "received_V": 4.734041444662697,
+      "current_A": 0.13297927766865172,
+      "drop_V": 0.2659585553373027,
+      "cable_contact_loss_W": 0.03536697657855274,
+      "clears_3V3_input_screen": true
+    },
+    {
+      "length_m": 0.6,
+      "case": "higher_load_screen",
+      "supply_V": 4.75,
+      "load_W": 0.9,
+      "conductor_temperature_C": 40,
+      "loop_ohm": 2.14148,
+      "received_V": 4.301990659032887,
+      "current_A": 0.2092054751700287,
+      "drop_V": 0.4480093409671131,
+      "cable_contact_loss_W": 0.09372600705763628,
+      "clears_3V3_input_screen": true
+    }
+  ],
+  "tether_mass": [
+    {
+      "length_m": 0.3,
+      "bare_four_copper_conductors_g": 0.13544290916276114,
+      "assembly_mass_scenario_g": [
+        0.18,
+        0.44999999999999996
+      ],
+      "note": "0.6-1.5 g/m is an assumption, not a cable specification"
+    },
+    {
+      "length_m": 0.6,
+      "bare_four_copper_conductors_g": 0.2708858183255223,
+      "assembly_mass_scenario_g": [
+        0.36,
+        0.8999999999999999
+      ],
+      "note": "0.6-1.5 g/m is an assumption, not a cable specification"
+    }
+  ],
+  "dvdd": {
+    "LDO_low_V": 1.1832,
+    "sensor_min_V": 1.14,
+    "one_way_supply_trace_mm": 25,
+    "trace_width_mm": 0.3,
+    "copper_um": 18,
+    "trace_ohm": 0.07981481481481484,
+    "filter_max_DCR_ohm": 0.247,
+    "assumed_return_ohm": 0.05,
+    "total_ohm": 0.3768148148148148,
+    "at_52mA_V": 1.1636056296296298,
+    "current_at_minimum_A": 0.11464517397287236,
+    "scope": "Simplified pre-route DC screen; actual load maximum, return, hot copper, transients and sequencing unresolved"
+  },
+  "mass": {
+    "FR4_100um": {
+      "low": {
+        "parts_g": {
+          "head_copper": 0.060873119999999996,
+          "head_dielectric_and_mask": 0.05053495999999999,
+          "interface_copper": 0.07826544,
+          "interface_dielectric_and_mask": 0.06497352,
+          "flex_copper": 0.017641799999999996,
+          "flex_dielectric_and_mask": 0.029599900000000005,
+          "backing": 0.0592,
+          "backing_adhesive": 0.0192,
+          "populated_packages": 0.15,
+          "optics_holder_filter_retention": 0.08,
+          "solder_finish_mount_strain_relief": 0.035
+        },
+        "total_g": 0.64528874
+      },
+      "nominal": {
+        "parts_g": {
+          "head_copper": 0.09130967999999999,
+          "head_dielectric_and_mask": 0.045684239999999994,
+          "interface_copper": 0.11739816,
+          "interface_dielectric_and_mask": 0.058736880000000005,
+          "flex_copper": 0.026462699999999992,
+          "flex_dielectric_and_mask": 0.0281941,
+          "backing": 0.0592,
+          "backing_adhesive": 0.0192,
+          "populated_packages": 0.21,
+          "optics_holder_filter_retention": 0.15,
+          "solder_finish_mount_strain_relief": 0.065
+        },
+        "total_g": 0.8711857599999999
+      },
+      "high": {
+        "parts_g": {
+          "head_copper": 0.12174623999999999,
+          "head_dielectric_and_mask": 0.04083352,
+          "interface_copper": 0.15653088,
+          "interface_dielectric_and_mask": 0.05250024,
+          "flex_copper": 0.03528359999999999,
+          "flex_dielectric_and_mask": 0.026788300000000004,
+          "backing": 0.0592,
+          "backing_adhesive": 0.0192,
+          "populated_packages": 0.3,
+          "optics_holder_filter_retention": 0.28,
+          "solder_finish_mount_strain_relief": 0.1
+        },
+        "total_g": 1.19208278
+      }
+    },
+    "steel_50um": {
+      "low": {
+        "parts_g": {
+          "head_copper": 0.060873119999999996,
+          "head_dielectric_and_mask": 0.05053495999999999,
+          "interface_copper": 0.07826544,
+          "interface_dielectric_and_mask": 0.06497352,
+          "flex_copper": 0.017641799999999996,
+          "flex_dielectric_and_mask": 0.029599900000000005,
+          "backing": 0.1264,
+          "backing_adhesive": 0.0096,
+          "populated_packages": 0.15,
+          "optics_holder_filter_retention": 0.08,
+          "solder_finish_mount_strain_relief": 0.035
+        },
+        "total_g": 0.70288874
+      },
+      "nominal": {
+        "parts_g": {
+          "head_copper": 0.09130967999999999,
+          "head_dielectric_and_mask": 0.045684239999999994,
+          "interface_copper": 0.11739816,
+          "interface_dielectric_and_mask": 0.058736880000000005,
+          "flex_copper": 0.026462699999999992,
+          "flex_dielectric_and_mask": 0.0281941,
+          "backing": 0.1264,
+          "backing_adhesive": 0.0096,
+          "populated_packages": 0.21,
+          "optics_holder_filter_retention": 0.15,
+          "solder_finish_mount_strain_relief": 0.065
+        },
+        "total_g": 0.92878576
+      },
+      "high": {
+        "parts_g": {
+          "head_copper": 0.12174623999999999,
+          "head_dielectric_and_mask": 0.04083352,
+          "interface_copper": 0.15653088,
+          "interface_dielectric_and_mask": 0.05250024,
+          "flex_copper": 0.03528359999999999,
+          "flex_dielectric_and_mask": 0.026788300000000004,
+          "backing": 0.1264,
+          "backing_adhesive": 0.0096,
+          "populated_packages": 0.3,
+          "optics_holder_filter_retention": 0.28,
+          "solder_finish_mount_strain_relief": 0.1
+        },
+        "total_g": 1.24968278
+      }
+    }
+  },
+  "package_nominal_allowance_g": {
+    "sensor": 0.035,
+    "serializer": 0.05,
+    "connector": 0.045,
+    "buck_inductor": 0.0331,
+    "regulators": 0.0045,
+    "oscillator": 0.008,
+    "two_LEDs": 0.005,
+    "remaining_passives_protection_filters": 0.0294
+  },
+  "base_station_mass_scenario_g": [
+    3,
+    7
+  ],
+  "limitations": [
+    "Mass intervals are independent scenarios, not confidence bounds.",
+    "Board stack retained from R11 for conservative comparison; new outline still needs fabricator review.",
+    "No cable insertion-loss or S-parameter model: DC passing is not a high-speed channel pass.",
+    "No thermal surface-temperature prediction; serializer is a substantial local heat source.",
+    "Base station mass includes PCB/packages/connectors only; backpack enclosure and mounts excluded.",
+    "No demonstrated frame rate, latency, focus, physical fit or eye-use qualification."
+  ]
+}

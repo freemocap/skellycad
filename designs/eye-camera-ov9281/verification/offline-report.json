@@ -1,0 +1,228 @@
+{
+  "revision": "OV9281-P4-R08",
+  "offline_checks_passed": true,
+  "fabrication_ready": false,
+  "physical_camera_demonstrated": false,
+  "native_file_hashes": {
+    "controller.kicad_pcb": "6c1f24a9c97fb3e40ec1e26a3c9183bad47cbadf9ef6613da48479b57a6db37a",
+    "head.kicad_pcb": "51d836b4c7f2e6c5092083ba5c675e903a5294d10bd9b7b537b79f4185320255",
+    "flex-study.kicad_pcb": "52b315d55f15e14173298e533959e040e248c0e830c1fcb76628598c7fd21c6f",
+    "camera.kicad_sch": "1d6c8f409e440566711d226b2c627872259f0dd5e2e54d546e4f3b3da15dc779",
+    "OV9281-P4-R08-assembly.kicad_pcb": "8f46f50012a6d5d85fe0db397b917e9db7b0dd6ec585422cac05881de59fc62b"
+  },
+  "firmware_gpio_bindings": {
+    "LED_GPIO": {
+      "gpio": 5,
+      "schematic_net": "/LED_PWM"
+    },
+    "RESET_ASSERT_GPIO": {
+      "gpio": 6,
+      "schematic_net": "/CAM_RESET_ASSERT"
+    },
+    "SCL_GPIO": {
+      "gpio": 7,
+      "schematic_net": "/CAM_SCL_3V3"
+    },
+    "SDA_GPIO": {
+      "gpio": 8,
+      "schematic_net": "/CAM_SDA_3V3"
+    }
+  },
+  "reset_inversion_and_sid_low_netlist_checks": true,
+  "builds": {
+    "sensor": {
+      "mode": "sensor",
+      "idf_commit": "880a203ae603d08a94d06aa01e0d6761958e5e9e",
+      "video_commit": "789cde3bd09296a13d4e70afe011366b60ac772c",
+      "binary_sha256": {
+        "skelly_eye_camera.bin": "b1b7e6960c8b08e54035ee9e212e93b9805aabc789d64d55f4ac727d911a141d"
+      },
+      "compiled": true,
+      "executed_on_hardware": false,
+      "source_sha256": {
+        "main\\camera_main.c": "902e3c09617030ccb8cc391c3e5339ea303de0f81ab9d0fddeb1100661915397",
+        "sdkconfig.defaults": "0a9d66d8c139fbb0dd66d169243751422862f67693601c915086f9cfcf4b8b47",
+        "main\\idf_component.yml": "64de619534bc4339b842902bff4e7d5366868d03ed54cca01bacd9c4e7adb325"
+      }
+    },
+    "synthetic": {
+      "mode": "synthetic",
+      "idf_commit": "880a203ae603d08a94d06aa01e0d6761958e5e9e",
+      "video_commit": "789cde3bd09296a13d4e70afe011366b60ac772c",
+      "binary_sha256": {
+        "skelly_eye_camera.bin": "f42d83abeb96f96900a0f10df6cac08bff8172f36af49ae1bca2b8767f3c0a1e"
+      },
+      "compiled": true,
+      "executed_on_hardware": false,
+      "source_sha256": {
+        "main\\camera_main.c": "902e3c09617030ccb8cc391c3e5339ea303de0f81ab9d0fddeb1100661915397",
+        "sdkconfig.defaults": "0a9d66d8c139fbb0dd66d169243751422862f67693601c915086f9cfcf4b8b47",
+        "main\\idf_component.yml": "64de619534bc4339b842902bff4e7d5366868d03ed54cca01bacd9c4e7adb325"
+      }
+    }
+  },
+  "host_test_output": "test_absurd_lengths_are_rejected_without_buffer_growth (test_camera_link.LinkTests.test_absurd_lengths_are_rejected_without_buffer_growth) ... ok\ntest_bad_flags_and_zero_dimensions (test_camera_link.LinkTests.test_bad_flags_and_zero_dimensions) ... ok\ntest_every_header_split (test_camera_link.LinkTests.test_every_header_split) ... ok\ntest_firmware_wire_layout_with_independent_fixture (test_camera_link.LinkTests.test_firmware_wire_layout_with_independent_fixture) ... ok\ntest_fragmented_multiple_full_frames (test_camera_link.LinkTests.test_fragmented_multiple_full_frames) ... ok\ntest_incomplete_frame_is_not_returned (test_camera_link.LinkTests.test_incomplete_frame_is_not_returned) ... ok\ntest_noise_corruption_and_following_frame (test_camera_link.LinkTests.test_noise_corruption_and_following_frame) ... ok\ntest_real_frame_is_not_marked_synthetic (test_camera_link.LinkTests.test_real_frame_is_not_marked_synthetic) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.010s\n\nOK\n",
+  "excluded_link_libraries_checked": [
+    "libesp_ipa.a",
+    "libesp_h264.a",
+    "libnet80211.a",
+    "libpp.a",
+    "libcoexist.a",
+    "libesp_wifi.a"
+  ],
+  "unconnected_items": {
+    "controller": 34,
+    "head": 23,
+    "flex-study": 0
+  },
+  "oscillator_selection_conflict": {
+    "reference": "Y1",
+    "value": "7C-24.000MBB-T",
+    "supply_net": "+1V8",
+    "description": "Oscillator, 24 MHz, 50 ppm, SMT, 5mm x 3.2mm, 3.3 V, 7C Series",
+    "status": "Unresolved 3.3 V part metadata versus 1.8 V supply; verify exact part and land pattern before assembly"
+  },
+  "analysis": {
+    "model": "Paraxial thin-lens sensitivity study; no ray tracing or qualification",
+    "lens_candidate": "CIL829-F2.5-M08ANIR; evaluation candidate only",
+    "focal_length_mm": 2.8,
+    "f_number": 2.55,
+    "sensor_diagonal_mm": 4.60391409563645,
+    "focus_cases": [
+      {
+        "object_principal_plane_distance_mm": 10,
+        "image_principal_plane_distance_mm": 3.888888888888889,
+        "ideal_full_array_fov_mm": [
+          10.018285714285714,
+          6.307714285714285
+        ],
+        "ideal_6um_blur_object_range_mm": [
+          9.86143675095847,
+          10.142512652267058
+        ]
+      },
+      {
+        "object_principal_plane_distance_mm": 15,
+        "image_principal_plane_distance_mm": 3.4426229508196724,
+        "ideal_full_array_fov_mm": [
+          16.97542857142857,
+          10.688071428571428
+        ],
+        "ideal_6um_blur_object_range_mm": [
+          14.651174959447642,
+          15.365840273658298
+        ]
+      },
+      {
+        "object_principal_plane_distance_mm": 20,
+        "image_principal_plane_distance_mm": 3.255813953488372,
+        "ideal_full_array_fov_mm": [
+          23.932571428571425,
+          15.06842857142857
+        ],
+        "ideal_6um_blur_object_range_mm": [
+          19.350475616919816,
+          20.694643149386817
+        ]
+      }
+    ],
+    "ideal_image_distance_adjustment_mm": 0.6330749354005167,
+    "equivalent_M8x0_35_turns": 1.8087855297157622,
+    "lens_mass_g_published": 1.4,
+    "user_reference_whole_camera_mass_g": 0.7,
+    "payloads": [
+      {
+        "width": 1280,
+        "height": 800,
+        "fps": 120,
+        "raw8_MB_s": 122.88,
+        "raw8_Mbit_s": 983.04
+      },
+      {
+        "width": 640,
+        "height": 400,
+        "fps": 100,
+        "raw8_MB_s": 25.6,
+        "raw8_Mbit_s": 204.8
+      },
+      {
+        "width": 400,
+        "height": 400,
+        "fps": 120,
+        "raw8_MB_s": 19.2,
+        "raw8_Mbit_s": 153.6
+      }
+    ],
+    "snapshot_buffer_bytes": 256000,
+    "application_plus_CSI_backup_bytes": 512000,
+    "limits": [
+      "Actual 640x400 mode binning/crop field of view is not qualified.",
+      "No compound lens prescription, 940 nm MTF, filter transmission or front-surface datum available.",
+      "Full-array FOV and blur estimates are ideal geometry, not a selected lens performance promise.",
+      "USB numbers exclude packet overhead and do not establish achievable rate.",
+      "The 1.4 g candidate lens alone exceeds the user reference whole-camera mass."
+    ]
+  },
+  "mechanical_review": {
+    "status": "PCB copper geometry review; no component bodies, optics or qualified mating heights",
+    "boards": {
+      "controller": {
+        "source_sha256": "f3fff200727946956f0dbb758a46f37b47a17f0fcf0261b0b96ee39ecb34f317",
+        "valid": true,
+        "solids": 899,
+        "export_bounds_mm": [
+          0.0,
+          -20.0,
+          -0.04,
+          32.0,
+          0.0,
+          0.57
+        ]
+      },
+      "head": {
+        "source_sha256": "8e9b5065769e7ec2471402df6736755dc0cc21bd618d11d575f73dcf1ba63e06",
+        "valid": true,
+        "solids": 361,
+        "export_bounds_mm": [
+          0.0,
+          -14.0,
+          -0.04,
+          14.0,
+          0.0,
+          0.57
+        ]
+      },
+      "flex-study": {
+        "source_sha256": "78d38d6134b908978ef40ca7e36dcfabdac38856c5274e146000a0426df7751e",
+        "valid": true,
+        "solids": 92,
+        "export_bounds_mm": [
+          0.0,
+          -12.5,
+          -0.023,
+          35.3,
+          0.0,
+          0.082
+        ]
+      }
+    },
+    "pin_xy_alignment_checks": 24,
+    "flex_review_lift_mm": 0.613,
+    "document": "C:\\Users\\jonma\\code-stuff\\github\\freemocap\\other\\skellycad\\generated\\ov9281-r08-desktop\\OV9281-R08-PCB-REVIEW.FCStd",
+    "visible": true,
+    "saved_document_sha256": "fb68595dbfaa9b13fcaaf472aad375a29d5485d710790cea4dd1560b2db50d93"
+  },
+  "remaining_computer_work": [
+    "Finish PCB routing including MIPI/USB constraints and flash.",
+    "Resolve Y1 voltage/land-pattern conflict; complete component and power-sequencing audit.",
+    "Complete illumination circuit and select lens, filter and mechanical interfaces.",
+    "Define manufacturer stackup, impedance and assembly constraints.",
+    "Resolve 400/800 Mbps receiver timing discrepancy; add exposure/gain controls and continuous transport."
+  ],
+  "hardware_required": [
+    "Power sequencing/current/thermal measurements.",
+    "Actual RAW8 frames, CSI timing, USB enumeration and throughput.",
+    "940 nm focus/field-of-view and LED optical exposure measurements.",
+    "Assembly fit, bending, mass and durability."
+  ]
+}

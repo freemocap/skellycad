@@ -1,0 +1,98 @@
+{
+  "revision": "OV9281-P4-R10",
+  "units": "mm",
+  "status": "Head, controller, flex and USB corrective routing checked; matched mechanical review pending; not for fabrication",
+  "parent_sha256": {
+    "head.kicad_pcb": "62d3845514cbe987a3f656fabfc61ad54a5fb1cc2d95188e9314250055a96f62",
+    "controller.kicad_pcb": "cb37a0a9e449ddcc7de96167fb38df3e7184a81157e8387936b6e15f24e79930",
+    "flex-study.kicad_pcb": "4cd8ef61c6a839926712e2afa47ddd25353aa8b46d2797274c93938d0b8933f0",
+    "camera.kicad_sch": "b307a594304676204d24e58bcce617ebf770879fbdfe65a5e94134018c0c2991"
+  },
+  "pins": {
+    "17": "+1V2",
+    "11": "+1V8",
+    "19": "+2V8",
+    "21": "+3V3",
+    "5": "/CAM_L_CLK_N",
+    "6": "/CAM_L_CLK_P",
+    "2": "/CAM_L_D0_N",
+    "3": "/CAM_L_D0_P",
+    "8": "/CAM_L_D1_N",
+    "9": "/CAM_L_D1_P",
+    "15": "/CAM_NRST_1V8",
+    "22": "/LED_PWM",
+    "12": "/M1_CAM_SCL_1V8",
+    "13": "/M1_CAM_SDA_1V8",
+    "16": "/M1_VSYNC_1V8_M",
+    "1": "GND",
+    "10": "GND",
+    "14": "GND",
+    "18": "GND",
+    "20": "GND",
+    "23": "GND",
+    "24": "GND",
+    "4": "GND",
+    "7": "GND"
+  },
+  "connector": "FH34SRJ-24S-0.5SH(99)",
+  "head_attachment": "J201 solder lap; custom lands, assembly process unqualified",
+  "connector_xy": [
+    27.75,
+    8.25
+  ],
+  "connector_rotation_deg": 90,
+  "connector_height_mm": 1,
+  "connector_fpc_tip_thickness_mm": 0.3,
+  "connector_fpc_tip_thickness_tolerance_mm": 0.03,
+  "flex_body_thickness_mm": 0.168,
+  "flex_body_thickness_note": "24um finished copper per face, 65um dielectric, 27.5um coverlay per face; supplier acceptance pending",
+  "flex_size_mm": [
+    35.3,
+    12.5
+  ],
+  "flex_origin_in_controller_frame_mm": [
+    29.2,
+    2
+  ],
+  "head_transform": {
+    "rotation_deg": 270,
+    "translation_mm": [
+      76,
+      1.25
+    ]
+  },
+  "board_gap_mm": 30,
+  "flat_assembly_length_mm": 76,
+  "mating": "Bottom-contact mode; flex B.Cu faces rigid-board F.Cu. Pin n connects to pin n; no twist.",
+  "sources": [
+    "hiroseFh34Product",
+    "hiroseFh34Drawing",
+    "hiroseFh34Catalog"
+  ],
+  "limits": [
+    "No fabricated or powered hardware",
+    "Controlled geometry and uniform cross-section calculations do not qualify the complete channel",
+    "Connector/contact, package and solder-joint travel excluded from planar matching",
+    "Stiffener construction, coverlay openings, bend radius and bend life unqualified",
+    "Connector footprint and cable orientation require independent pre-fabrication review",
+    "No physical mating, thermal or optical qualification",
+    "Matched assembly review pending"
+  ],
+  "stiffened_end_regions_x_mm": [
+    [
+      0,
+      2.5
+    ],
+    [
+      32.8,
+      35.3
+    ]
+  ],
+  "tip_stack_allocation": {
+    "body_mm": 0.168,
+    "removed_contact_side_coverlay_mm": 0.0275,
+    "opposite_side_stiffener_and_adhesive_allocation_mm": 0.1595,
+    "total_mm": 0.3,
+    "qualification": "Allocation only; stiffener materials, adhesive and thickness tolerances need supplier confirmation."
+  }
+}

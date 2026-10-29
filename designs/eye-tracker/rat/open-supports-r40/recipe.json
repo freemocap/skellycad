@@ -1,0 +1,888 @@
+{
+  "revision": "ET-RAT-OPEN-SUPPORTS-R40",
+  "units": "mm",
+  "source": {
+    "revision": "ET-RAT-BINOCULAR-R31",
+    "units": "mm",
+    "native_checkpoint": "designs/eye-tracker/rat/binocular-r31/checkpoints/ET-RAT-BINOCULAR-R31.FCStd",
+    "native_sha256": "e73906a7335191b2043e10ac43ebf354977d342e5da554b3da491961343b3506",
+    "source": "baseline.json",
+    "recipe": "recipe.json",
+    "ribbons": "ribbons.json",
+    "arms": "arms.json",
+    "validation": "validation.json",
+    "containment": "containment.json",
+    "status": "Uncapped binocular review candidate; static checks passed; physical fit unverified",
+    "physical_fit_verified": false,
+    "print_release": false,
+    "selected_species_manifest_unchanged": true,
+    "task_owned_documents_closed": true
+  },
+  "selected_species_manifest": "designs/eye-tracker/rat/active-model.json",
+  "selected_hash_mismatch": {
+    "revision": "ET-RAT-MONO-R01",
+    "label": "Monocular rat",
+    "status": "Selected review baseline: unchanged mouse hardware with provisional rat anatomy registration; scale, mounting and aiming unverified",
+    "parts": {
+      "skull_mount_Baseplate": "skull_mount_Baseplate",
+      "eye_primary_Holder": "eye_primary_Holder",
+      "eye_primary_Cap": "eye_primary_Cap",
+      "eye_primary_Clip": "eye_primary_Clip",
+      "eye_primary_Carrier": "eye_primary_Carrier"
+    },
+    "print_groups": {
+      "skull_mount-baseplate": [
+        "skull_mount_Baseplate"
+      ],
+      "eye_primary-carrier-and-holder": [
+        "eye_primary_Carrier",
+        "eye_primary_Holder"
+      ],
+      "eye_primary-matching-cap": [
+        "eye_primary_Cap"
+      ],
+      "eye_primary-camera-clip": [
+        "eye_primary_Clip"
+      ]
+    },
+    "camera_instances": [
+      {
+        "id": "eye_primary",
+        "role": "eye",
+        "camera": "pupil-core-eye-inherited",
+        "mount": "r10-monocular",
+        "objects": {
+          "Holder": "eye_primary_Holder",
+          "Cap": "eye_primary_Cap",
+          "Clip": "eye_primary_Clip",
+          "UpperCatch": "eye_primary_UpperCatch",
+          "UpperRail": "eye_primary_UpperRail",
+          "SideLedge": "eye_primary_SideLedge",
+          "Carrier": "eye_primary_Carrier",
+          "ApproxPCB": "eye_primary_ApproxPCB",
+          "LensDatum": "eye_primary_LensDatum",
+          "OpticalAxis": "eye_primary_OpticalAxis"
+        },
+        "baseplate_object": "skull_mount_Baseplate"
+      }
+    ],
+    "assembly_config": "designs/eye-tracker/rat/assembly.json",
+    "units": "mm",
+    "native_checkpoint": "designs/eye-tracker/rat/checkpoints/ET-RAT-MONO-R01.FCStd",
+    "native_sha256": "ad74a3f14aaa709880039c927690475f6119d074f73b0a550a3064383394762e",
+    "print_directory": "generated/eye-tracker/rat/monocular-r01/print",
+    "variant": "monocular",
+    "build_script": "designs/eye-tracker/rat/build.py",
+    "lineage": "designs/eye-tracker/rat/monocular-r01-lineage.json",
+    "validation": "designs/eye-tracker/rat/validation/monocular-r01.json",
+    "observed_sha256": "9c81ed0189cfa4be9fec9e01cc48621c92a28be2dde8c5535c1e609df22c3bf7",
+    "hash_matches": false
+  },
+  "mount_to_skull": [
+    [
+      0.9987492809747794,
+      -0.049998737507673766,
+      0.0,
+      0.9505807877283416
+    ],
+    [
+      0.0,
+      0.0,
+      -1.0,
+      -0.038537940320204
+    ],
+    [
+      0.049998737507673766,
+      0.9987492809747794,
+      0.0,
+      1.9592673514198164
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "board_back_gap_mm": 1.2,
+  "board_raise_mount_y_mm": -1.0,
+  "cap": "omitted",
+  "physical_fit_verified": false,
+  "print_release": false,
+  "sides": {
+    "Right": {
+      "board_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -1.0999999999999999
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "head": [
+        [
+          0.06682951913375634,
+          0.9898650006672334,
+          -0.12530401360853607,
+          4.9027224318390115
+        ],
+        [
+          0.7639932418304451,
+          -0.13154167126032207,
+          -0.6316732661427487,
+          10.588166063404769
+        ],
+        [
+          -0.6417539573775586,
+          -0.053516998945182505,
+          -0.7650410374706337,
+          31.083118803358246
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "head_delta": [
+        [
+          0.986284501641223,
+          0.0759486886102663,
+          -0.146542412020222,
+          -5.662453808915718
+        ],
+        [
+          -0.06011790168550789,
+          0.9921571093488556,
+          0.10959063949742337,
+          7.493637214329135
+        ],
+        [
+          0.15371636126078234,
+          -0.09927772694267047,
+          0.9831150559389479,
+          1.8473659602838666
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "eye_target_mount_mm": [
+        6.889243668682842,
+        -8.652724530635103,
+        8.24631184245376
+      ],
+      "lens_mount_mm": [
+        10.368740817412817,
+        8.887856851971296,
+        29.490308235967994
+      ],
+      "aim_miss_mm": 1.2492222606972657e-07,
+      "forward_mm": 27.768440330985523,
+      "rotation_determinant": 1.0,
+      "connector_access": "Outward from each PCB face; uncapped, no outer closure",
+      "aim": {
+        "axis_miss_mm": 1.2492222606972657e-07,
+        "forward_distance_mm": 27.768440330985523
+      },
+      "previous_head": [
+        [
+          -0.061493213063647634,
+          0.9759459551848875,
+          -0.20916041046375525,
+          14.736432191175368
+        ],
+        [
+          0.8705073636560142,
+          -0.050079430294469866,
+          -0.4896008379098603,
+          0.8530578585439832
+        ],
+        [
+          -0.48829859160944217,
+          -0.21218280613574486,
+          -0.8464885954415429,
+          27.597407736765597
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "head_delta_r38": [
+        [
+          0.9881538206403563,
+          0.06995266326988307,
+          -0.13659667512540627,
+          -5.949098870684578
+        ],
+        [
+          -0.04323692157843969,
+          0.9809170351422797,
+          0.1895582727820097,
+          5.157228097150665
+        ],
+        [
+          0.14725011160024748,
+          -0.1814067117532571,
+          0.9723214538230579,
+          2.234376327312301
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "Left": {
+      "board_transform": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          7.674127992946061
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          -0.077075880640408
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "head": [
+        [
+          0.06682949467805128,
+          -0.9898650021482923,
+          -0.12530401495178717,
+          16.22583619482463
+        ],
+        [
+          0.7639932480380788,
+          0.13154165299555867,
+          -0.6316732624382819,
+          9.083454640317857
+        ],
+        [
+          0.641753952534227,
+          -0.053517016444841414,
+          0.7650410403093025,
+          -30.548011077413186
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "head_delta": [
+        [
+          -0.9458727449766876,
+          0.17497082344248796,
+          0.27333122992831227,
+          22.461497517165355
+        ],
+        [
+          0.19664355003936745,
+          0.9789982081657336,
+          0.05379426211221786,
+          3.756288048117308
+        ],
+        [
+          -0.2581783579972981,
+          0.10463134975780881,
+          -0.9604146063600231,
+          -0.40392167220294795
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "eye_target_mount_mm": [
+        6.889243668682842,
+        -8.652724530635103,
+        -8.323387723094168
+      ],
+      "lens_mount_mm": [
+        10.368740817174286,
+        8.887856888154268,
+        -29.567384152450387
+      ],
+      "aim_miss_mm": 1.4904149774502434e-07,
+      "forward_mm": 27.768440381232054,
+      "rotation_determinant": 1.0,
+      "connector_access": "Outward from each PCB face; uncapped, no outer closure",
+      "aim": {
+        "axis_miss_mm": 1.4904149774502434e-07,
+        "forward_distance_mm": 27.768440381232054
+      },
+      "previous_head": [
+        [
+          0.061493213063647634,
+          0.9759459551848875,
+          -0.20916041046375525,
+          14.725552920307788
+        ],
+        [
+          -0.8705073636560142,
+          -0.050079430294469866,
+          -0.4896008379098603,
+          1.0070664869699562
+        ],
+        [
+          -0.48829859160944217,
+          0.21218280613574486,
+          0.8464885954415429,
+          -27.588094691251186
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "head_delta_r38": [
+        [
+          -0.9357365454704599,
+          0.0527452588632313,
+          -0.3487335016003773,
+          20.33106336790536
+        ],
+        [
+          0.30747898261071377,
+          -0.3623815206675957,
+          -0.8798501626591435,
+          -19.35279070659027
+        ],
+        [
+          -0.17278250120799288,
+          -0.930536174012645,
+          0.32287557375902326,
+          -18.159059514054377
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  },
+  "geometry_lineage_r30": {
+    "revision": "ET-RAT-SEPARATED-ARMS-R30",
+    "units": "mm",
+    "native_checkpoint": "designs/eye-tracker/rat/separated-arms-r30/checkpoints/ET-RAT-SEPARATED-ARMS-R30.FCStd",
+    "native_sha256": "d91f843e5961dda48b2b207c70a0e5160231d82d1ced3f4ac6b903de39e722eb",
+    "recipe": "recipe.json",
+    "validation": "generated/eye-tracker/rat/separated-arms-r30/validation.json",
+    "status": "Outer protective paired supports around unchanged ribbon and camera; C01 clip retained; static checks passed; physical stiffness and full travel pending",
+    "observed_sha256": "d91f843e5961dda48b2b207c70a0e5160231d82d1ced3f4ac6b903de39e722eb",
+    "hash_matches": true
+  },
+  "world_lowering_mm": 2.0,
+  "central_design": "One 1.2 mm windowed spine with retained opposing catches and short original stem interface",
+  "source_complete_assembly": {
+    "revision": "ET-RAT-FORWARD-MOUNT-R39",
+    "units": "mm",
+    "native_checkpoint": "generated\\eye-tracker\\rat\\forward-mount-r39\\ET-RAT-FORWARD-MOUNT-R39.FCStd",
+    "native_sha256": "d0e0cbf4dc0f0278d3bbc1974b851c4ec655abe9ec7ecbf64c430743a877dcff",
+    "source_complete_assembly": {
+      "revision": "ET-RAT-REFINED-SUPPORTS-R38",
+      "units": "mm",
+      "native_checkpoint": "generated\\eye-tracker\\rat\\refined-supports-r38\\ET-RAT-REFINED-SUPPORTS-R38.FCStd",
+      "native_sha256": "3859f6f6caf81d1bab3ecf31816e98a887448d8e543559bf567de8f7f7471c3d",
+      "source_complete_assembly": {
+        "revision": "ET-RAT-SYMMETRIC-BINOCULAR-R37",
+        "units": "mm",
+        "native_checkpoint": "generated\\eye-tracker\\rat\\symmetric-binocular-r37\\ET-RAT-SYMMETRIC-BINOCULAR-R37.FCStd",
+        "native_sha256": "66f1f7b6b42c183c1ee531d16e6f7fca4e1c368791c3af577c1827986d8e2d93",
+        "source_complete_assembly": {
+          "revision": "ET-RAT-COMPACT-BINOCULAR-R32",
+          "units": "mm",
+          "native_checkpoint": "designs/eye-tracker/rat/compact-binocular-r32/checkpoints/ET-RAT-COMPACT-BINOCULAR-R32.FCStd",
+          "native_sha256": "b1bab67befa6205fbfc6f987b225f5ccacbd00731d4c3c57fa5e5d71ebe56363",
+          "source": "lowering.json",
+          "recipe": "recipe.json",
+          "ribbons": "ribbons.json",
+          "arms": "arms.json",
+          "validation": "validation.json",
+          "containment": "containment.json",
+          "comparison": "comparison.json",
+          "status": "Compact binocular review; rearward ordered protective arms; static validation passed; physical fit pending",
+          "physical_fit_verified": false,
+          "print_release": false,
+          "deferred": [
+            "skull Boolean cut",
+            "junction finishing",
+            "cap"
+          ]
+        },
+        "print_details_from": {
+          "units": "mm",
+          "native_checkpoint": "generated\\eye-tracker\\rat\\labeled-spine-r36\\RAT-R36-labeled-spine-review.FCStd",
+          "native_sha256": "76dfb7515cc4f9ffefc051355575a34af8e89a06737f783866fa64efb3801837",
+          "parent_review": {
+            "units": "mm",
+            "native_checkpoint": "generated\\eye-tracker\\rat\\rounded-spine-r35\\RAT-R35-rounded-spine-review.FCStd",
+            "native_sha256": "5d76482aa76944df70e3d3ef52152521abb8cfdc3c8800f805d626f8eea1872b",
+            "parent_review": {
+              "units": "mm",
+              "source": "generated\\eye-tracker\\rat\\print-r32-l04\\RAT-R32-labeled-hardware.FCStd",
+              "source_sha256": "a7a0a740e62d3c5fad6c2970c28987ad63530a9ec3f672e1ae040f5ee824139f",
+              "native_checkpoint": "generated\\eye-tracker\\rat\\open-spine-r33\\RAT-R33-open-spine-review.FCStd",
+              "native_sha256": "05720b3168a232a8a0dcb3f690bd134805da591629cb606c0dd1993a44af5a18",
+              "parent_complete_assembly": {
+                "revision": "ET-RAT-COMPACT-BINOCULAR-R32",
+                "units": "mm",
+                "native_checkpoint": "designs/eye-tracker/rat/compact-binocular-r32/checkpoints/ET-RAT-COMPACT-BINOCULAR-R32.FCStd",
+                "native_sha256": "b1bab67befa6205fbfc6f987b225f5ccacbd00731d4c3c57fa5e5d71ebe56363",
+                "source": "lowering.json",
+                "recipe": "recipe.json",
+                "ribbons": "ribbons.json",
+                "arms": "arms.json",
+                "validation": "validation.json",
+                "containment": "containment.json",
+                "comparison": "comparison.json",
+                "status": "Compact binocular review; rearward ordered protective arms; static validation passed; physical fit pending",
+                "physical_fit_verified": false,
+                "print_release": false,
+                "deferred": [
+                  "skull Boolean cut",
+                  "junction finishing",
+                  "cap"
+                ]
+              },
+              "removed_volume_mm3": 42.604947197971796,
+              "through_windows": 2,
+              "carrier_valid": true,
+              "carrier_solids": 1,
+              "mesh_closed": true,
+              "mesh_self_intersections": false,
+              "holders_and_clips_unchanged": true,
+              "status": "Review only; inherited RAT R32 engraving remains pending relocation; no print export"
+            },
+            "unengraved_baseline_sha256": "4772a4c4b4c4e8e8703ecb95aa711f427cc42d4971e03fafa271b37d6e46aa24",
+            "window_corner_radius_mm": 1.0,
+            "window_height_mm": 5.5,
+            "window_width_mm": 11.5,
+            "label": null,
+            "functional_geometry_changed_for_text": false,
+            "through_windows": 2,
+            "valid_single_carrier": true,
+            "mesh_closed": true,
+            "mesh_self_intersections": false,
+            "holders_and_clips_unchanged": true,
+            "status": "Review; physical print pending"
+          },
+          "label": "RAT R36",
+          "height_mm": 1.6,
+          "depth_mm": 0.3,
+          "edge_and_window_margin_mm": 0.75,
+          "material_beneath_label_mm": 0.9,
+          "windows_unchanged_from_r35": true,
+          "only_change_is_text_engraving": true,
+          "mesh_closed": true,
+          "mesh_self_intersections": false
+        },
+        "validation": "validation.json",
+        "status": "Symmetric binocular complete assembly; static validation passed; physical fit pending"
+      },
+      "print_details_from": {
+        "units": "mm",
+        "native_checkpoint": "generated\\eye-tracker\\rat\\labeled-spine-r36\\RAT-R36-labeled-spine-review.FCStd",
+        "native_sha256": "76dfb7515cc4f9ffefc051355575a34af8e89a06737f783866fa64efb3801837",
+        "parent_review": {
+          "units": "mm",
+          "native_checkpoint": "generated\\eye-tracker\\rat\\rounded-spine-r35\\RAT-R35-rounded-spine-review.FCStd",
+          "native_sha256": "5d76482aa76944df70e3d3ef52152521abb8cfdc3c8800f805d626f8eea1872b",
+          "parent_review": {
+            "units": "mm",
+            "source": "generated\\eye-tracker\\rat\\print-r32-l04\\RAT-R32-labeled-hardware.FCStd",
+            "source_sha256": "a7a0a740e62d3c5fad6c2970c28987ad63530a9ec3f672e1ae040f5ee824139f",
+            "native_checkpoint": "generated\\eye-tracker\\rat\\open-spine-r33\\RAT-R33-open-spine-review.FCStd",
+            "native_sha256": "05720b3168a232a8a0dcb3f690bd134805da591629cb606c0dd1993a44af5a18",
+            "parent_complete_assembly": {
+              "revision": "ET-RAT-COMPACT-BINOCULAR-R32",
+              "units": "mm",
+              "native_checkpoint": "designs/eye-tracker/rat/compact-binocular-r32/checkpoints/ET-RAT-COMPACT-BINOCULAR-R32.FCStd",
+              "native_sha256": "b1bab67befa6205fbfc6f987b225f5ccacbd00731d4c3c57fa5e5d71ebe56363",
+              "source": "lowering.json",
+              "recipe": "recipe.json",
+              "ribbons": "ribbons.json",
+              "arms": "arms.json",
+              "validation": "validation.json",
+              "containment": "containment.json",
+              "comparison": "comparison.json",
+              "status": "Compact binocular review; rearward ordered protective arms; static validation passed; physical fit pending",
+              "physical_fit_verified": false,
+              "print_release": false,
+              "deferred": [
+                "skull Boolean cut",
+                "junction finishing",
+                "cap"
+              ]
+            },
+            "removed_volume_mm3": 42.604947197971796,
+            "through_windows": 2,
+            "carrier_valid": true,
+            "carrier_solids": 1,
+            "mesh_closed": true,
+            "mesh_self_intersections": false,
+            "holders_and_clips_unchanged": true,
+            "status": "Review only; inherited RAT R32 engraving remains pending relocation; no print export"
+          },
+          "unengraved_baseline_sha256": "4772a4c4b4c4e8e8703ecb95aa711f427cc42d4971e03fafa271b37d6e46aa24",
+          "window_corner_radius_mm": 1.0,
+          "window_height_mm": 5.5,
+          "window_width_mm": 11.5,
+          "label": null,
+          "functional_geometry_changed_for_text": false,
+          "through_windows": 2,
+          "valid_single_carrier": true,
+          "mesh_closed": true,
+          "mesh_self_intersections": false,
+          "holders_and_clips_unchanged": true,
+          "status": "Review; physical print pending"
+        },
+        "label": "RAT R36",
+        "height_mm": 1.6,
+        "depth_mm": 0.3,
+        "edge_and_window_margin_mm": 0.75,
+        "material_beneath_label_mm": 0.9,
+        "windows_unchanged_from_r35": true,
+        "only_change_is_text_engraving": true,
+        "mesh_closed": true,
+        "mesh_self_intersections": false
+      },
+      "validation": "validation.json",
+      "status": "Refined upper/lower routing, 1.8 mm PCB-support plate, flared and finished junctions; static validation passed; physical fit pending"
+    },
+    "physical_fit_verified": false,
+    "status": "Forward mount, cylindrical-bend ribbons; review candidate pending physical ribbon handling"
+  },
+  "print_detail_source": {
+    "units": "mm",
+    "native_checkpoint": "generated\\eye-tracker\\rat\\labeled-spine-r36\\RAT-R36-labeled-spine-review.FCStd",
+    "native_sha256": "76dfb7515cc4f9ffefc051355575a34af8e89a06737f783866fa64efb3801837",
+    "parent_review": {
+      "units": "mm",
+      "native_checkpoint": "generated\\eye-tracker\\rat\\rounded-spine-r35\\RAT-R35-rounded-spine-review.FCStd",
+      "native_sha256": "5d76482aa76944df70e3d3ef52152521abb8cfdc3c8800f805d626f8eea1872b",
+      "parent_review": {
+        "units": "mm",
+        "source": "generated\\eye-tracker\\rat\\print-r32-l04\\RAT-R32-labeled-hardware.FCStd",
+        "source_sha256": "a7a0a740e62d3c5fad6c2970c28987ad63530a9ec3f672e1ae040f5ee824139f",
+        "native_checkpoint": "generated\\eye-tracker\\rat\\open-spine-r33\\RAT-R33-open-spine-review.FCStd",
+        "native_sha256": "05720b3168a232a8a0dcb3f690bd134805da591629cb606c0dd1993a44af5a18",
+        "parent_complete_assembly": {
+          "revision": "ET-RAT-COMPACT-BINOCULAR-R32",
+          "units": "mm",
+          "native_checkpoint": "designs/eye-tracker/rat/compact-binocular-r32/checkpoints/ET-RAT-COMPACT-BINOCULAR-R32.FCStd",
+          "native_sha256": "b1bab67befa6205fbfc6f987b225f5ccacbd00731d4c3c57fa5e5d71ebe56363",
+          "source": "lowering.json",
+          "recipe": "recipe.json",
+          "ribbons": "ribbons.json",
+          "arms": "arms.json",
+          "validation": "validation.json",
+          "containment": "containment.json",
+          "comparison": "comparison.json",
+          "status": "Compact binocular review; rearward ordered protective arms; static validation passed; physical fit pending",
+          "physical_fit_verified": false,
+          "print_release": false,
+          "deferred": [
+            "skull Boolean cut",
+            "junction finishing",
+            "cap"
+          ]
+        },
+        "removed_volume_mm3": 42.604947197971796,
+        "through_windows": 2,
+        "carrier_valid": true,
+        "carrier_solids": 1,
+        "mesh_closed": true,
+        "mesh_self_intersections": false,
+        "holders_and_clips_unchanged": true,
+        "status": "Review only; inherited RAT R32 engraving remains pending relocation; no print export"
+      },
+      "unengraved_baseline_sha256": "4772a4c4b4c4e8e8703ecb95aa711f427cc42d4971e03fafa271b37d6e46aa24",
+      "window_corner_radius_mm": 1.0,
+      "window_height_mm": 5.5,
+      "window_width_mm": 11.5,
+      "label": null,
+      "functional_geometry_changed_for_text": false,
+      "through_windows": 2,
+      "valid_single_carrier": true,
+      "mesh_closed": true,
+      "mesh_self_intersections": false,
+      "holders_and_clips_unchanged": true,
+      "status": "Review; physical print pending"
+    },
+    "label": "RAT R36",
+    "height_mm": 1.6,
+    "depth_mm": 0.3,
+    "edge_and_window_margin_mm": 0.75,
+    "material_beneath_label_mm": 0.9,
+    "windows_unchanged_from_r35": true,
+    "only_change_is_text_engraving": true,
+    "mesh_closed": true,
+    "mesh_self_intersections": false
+  },
+  "symmetry_plane": "skull world Y=0",
+  "symmetry_policy": "Existing symmetric optical poses preserved. Printed head fixtures and support pair reflected exactly from Right, with identical bilateral PCB clearance pockets. No camera geometry reflected.",
+  "holder_clearance_mm": 0.15,
+  "pcb_support_thickness_mm": 1.8,
+  "main_pcb_outward_shift_each_mm": 0.3,
+  "forward_mount": {
+    "translation_world_mm": [
+      9.0,
+      0.0,
+      -0.7201341071587359
+    ],
+    "roof_height_before_mm": 0.39658334054292976,
+    "roof_height_after_mm": -0.32355076661580623,
+    "baseplate_geometry_unchanged": true,
+    "seating": "Provisional roof-height matched placement; preserve intentional Boolean-cut stock; physical seating unverified"
+  },
+  "pose_search": {
+    "candidate_count": 14,
+    "board_reversal": "Not selected: current board poses admit a collision-free developable-sheet route; avoid changing PCB interfaces unnecessarily",
+    "selected": {
+      "score": 1.3231776459377276,
+      "roll_sign": 1,
+      "parameters": [
+        4.316429241824255,
+        -1.7039159069261105,
+        -0.39848468431967543,
+        2.6275718080908987e-08,
+        3.944714089732466,
+        1.1597240402864417,
+        -0.040874371197778626,
+        1.147876283561368,
+        3.7500000003140657,
+        2.3133720798267468,
+        -0.287218739209656,
+        0.18693149950641852,
+        3.91477755334204,
+        -1.0848875561676408,
+        -0.41011362545467944,
+        0.0661096200464331,
+        5.833588945463182,
+        -1.0379616614680964,
+        -0.5854054079156319,
+        0.18824278159719654,
+        3.750000011357996,
+        3.565731046586689,
+        -0.1513310921025629,
+        1.5730031849406578
+      ],
+      "heads_world": [
+        [
+          [
+            0.02854723662681227,
+            0.9952038751711645,
+            -0.09356442767029316,
+            5.317776355654642
+          ],
+          [
+            0.6417539573775586,
+            0.053516998945182505,
+            0.7650410374706337,
+            -31.12165674367845
+          ],
+          [
+            0.7663790925326807,
+            -0.08188514925307316,
+            -0.6371482628561319,
+            12.779320526029393
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.028547211891320576,
+            -0.995203875737156,
+            -0.09356442919708287,
+            16.70196175629988
+          ],
+          [
+            -0.641753952534227,
+            0.053517016444841414,
+            -0.7650410403093025,
+            30.509473137092982
+          ],
+          [
+            0.7663790975097959,
+            0.08188513093710277,
+            -0.6371482592234593,
+            11.84263246695185
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      ],
+      "lens_world": [
+        [
+          10.861971601985747,
+          -29.528846176288198,
+          11.35443194214784
+        ],
+        [
+          10.861971599938412,
+          29.528846212130183,
+          11.354431978273633
+        ]
+      ],
+      "axis_miss_mm": [
+        1.249222251152103e-07,
+        1.4904149512358008e-07
+      ],
+      "symmetry_error_mm": 5.093046586216076e-08,
+      "roll_error": 2.569190703297695e-08,
+      "zone_end_mm": [
+        26.118347324634797,
+        32.400000041696416
+      ],
+      "carrier_ribbon_exit_relief_mm": 0.25,
+      "heads_mount": {
+        "Right": [
+          [
+            0.06682951913375634,
+            0.9898650006672334,
+            -0.12530401360853607,
+            4.9027224318390115
+          ],
+          [
+            0.7639932418304451,
+            -0.13154167126032207,
+            -0.6316732661427487,
+            10.588166063404769
+          ],
+          [
+            -0.6417539573775586,
+            -0.053516998945182505,
+            -0.7650410374706337,
+            31.083118803358246
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "Left": [
+          [
+            0.06682949467805128,
+            -0.9898650021482923,
+            -0.12530401495178717,
+            16.22583619482463
+          ],
+          [
+            0.7639932480380788,
+            0.13154165299555867,
+            -0.6316732624382819,
+            9.083454640317857
+          ],
+          [
+            0.641753952534227,
+            -0.053517016444841414,
+            0.7650410403093025,
+            -30.548011077413186
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "ribbon_metric": {
+        "Right": {
+          "max_length_error": 3.521056779476339e-10,
+          "max_shear": 3.4855179853465756e-10
+        },
+        "Left": {
+          "max_length_error": 6.145608466567865e-10,
+          "max_shear": 4.066428166416003e-10
+        }
+      }
+    }
+  },
+  "support_policy": {
+    "support_count_per_camera": 1,
+    "camera_pose_preserved_from": "R39",
+    "ribbon_routes_preserved_from": "R39",
+    "required_access": "No enclosing arm loops; camera-body and front access box empty of new supporting material",
+    "head_frame_keepout_mm": {
+      "x": [
+        -7.5,
+        7.5
+      ],
+      "y": [
+        -1.5,
+        17.5
+      ],
+      "z": [
+        -6.8,
+        8
+      ]
+    },
+    "root_width_mm": 4.96,
+    "root_thickness_mm": 2.72,
+    "tip_width_mm": 4.12,
+    "tip_thickness_mm": 2.66
+  }
+}

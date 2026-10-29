@@ -225,6 +225,13 @@ __marimo__/
 /generated/
 /.codex/config.toml
 *.FCBak
+*.kicad_prl
+*.lck
+/designs/eye-camera-ov9281/firmware/managed_components/
+/designs/eye-camera-ov9281/firmware/dependencies.lock
+*.kicad_sch~
+*.kicad_pcb~
+/designs/kicad-foundations/**/indicator-backups/
 
 # Local editor state and operating-system metadata.
 /.idea/

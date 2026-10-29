@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-28",
+  "scope": "Interconnect audit only; no corrective copper edits",
+  "source_hashes_verified": 5,
+  "findings": 21,
+  "native_geometry_preserved_boards": 3,
+  "mipi_board_paths": 18,
+  "usb_net_sections": 4,
+  "mipi_interface_checks": 24,
+  "usb_connector_pin_checks": 4,
+  "graph_tests_passed": 5,
+  "bibliography_references": 111,
+  "bibliography_errors": 0,
+  "bibliography_tests_passed": 8,
+  "html_local_links_exist": true,
+  "svg_xml_valid": 3,
+  "javascript_syntax": "passed",
+  "browser": {
+    "issue_board_combinations": 29,
+    "boards": 3,
+    "ground_toggle": "passed",
+    "layer_filter": "passed",
+    "page_errors": []
+  },
+  "desktop": {
+    "native_title": "AUDIT-head \u2014 PCB Editor",
+    "verification": "process title and command line; no desktop visual inspection",
+    "html_open": "queued in Codex; local HTTP contents verified"
+  },
+  "limits": [
+    "No corrective routing performed",
+    "No impedance or waveform simulation",
+    "No physical hardware tests",
+    "FreeCAD matched review remains the earlier copper revision"
+  ]
+}

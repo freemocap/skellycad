@@ -1,0 +1,19 @@
+{
+  "mode": "sensor",
+  "board_revision": "R11",
+  "idf_commit": "880a203ae603d08a94d06aa01e0d6761958e5e9e",
+  "video_commit": "789cde3bd09296a13d4e70afe011366b60ac772c",
+  "binary_sha256": {
+    "skelly_eye_camera.bin": "48603f052f36d9e05167268e8bc0be9c47b80b9b00fbb706d4def7fcb6c30e8a"
+  },
+  "compiled": true,
+  "executed_on_hardware": false,
+  "source_sha256": {
+    "main\\camera_main.c": "5d884f30aacb46de960e7b94637f9b7b5b60cadee2f368aae604797c12c83568",
+    "main\\Kconfig.projbuild": "38a124697f79759f05d0be0cbd4a13c99d919ed776e047f591e11dbcc2ab2c2d",
+    "sdkconfig.defaults": "2479dd6497de15748d263632d7f9c4b4c2cb19577e9ca8a3748e1d22c06649ba",
+    "main\\idf_component.yml": "64de619534bc4339b842902bff4e7d5366868d03ed54cca01bacd9c4e7adb325",
+    "board-contract.json": "d7c74d1b7ec7dd96d1d0423aa35106e39f6d803ce471fddab8177e51cf1cbdea",
+    "build.py": "e8ebce778b4b554f29d78d1e02cb303f9e257279f5667046cee4297812359081"
+  }
+}

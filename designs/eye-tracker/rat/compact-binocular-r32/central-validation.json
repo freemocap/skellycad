@@ -1,0 +1,20 @@
+{
+  "units": "mm",
+  "shared_spine_thickness_mm": 1.2,
+  "board_back_gap_mm": 1.2,
+  "board_drop_mount_y_mm": 5,
+  "old_central_volume_mm3": 1482.202866318738,
+  "new_central_volume_mm3": 616.0839284707042,
+  "volume_reduction_percent": 58.43457447894185,
+  "old_central_mount_y_max_mm": 22.592358662363694,
+  "new_central_mount_y_max_mm": 17.6,
+  "valid": true,
+  "solids": 1,
+  "intersections_mm3": {
+    "RightPCB": 0.0,
+    "RightJST_4pin": 0.0,
+    "LeftPCB": 0.0,
+    "LeftJST_4pin": 0.0,
+    "Baseplate": 0.0
+  }
+}

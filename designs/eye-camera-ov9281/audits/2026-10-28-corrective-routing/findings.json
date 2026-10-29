@@ -1,0 +1,184 @@
+{
+  "date": "2026-10-28",
+  "scope": "Approved corrective routing phase; all 21 original findings reviewed. Geometry repairs and documented nominal models, not hardware qualification.",
+  "source_findings_sha256": "c436d641f1faf0555d33f1e3a97ab46f0bb5383cc1ddc73e19dd511a608ed256",
+  "native_sha256": {
+    "head.kicad_pcb": "8acbe182d47f21e00a38ad7f99bad70e1eace5433196948a0ba3e9e0f71ff7cb",
+    "controller.kicad_pcb": "de0f3dff1a932e2852bc63079b28c99ab9df04517b2e59d6920c2318159182c2",
+    "flex-study.kicad_pcb": "4cd8ef61c6a839926712e2afa47ddd25353aa8b46d2797274c93938d0b8933f0",
+    "camera.kicad_sch": "b307a594304676204d24e58bcce617ebf770879fbdfe65a5e94134018c0c2991",
+    "OV9281-P4-R10-assembly.kicad_pcb": "7139553bf9838d1c1303029886997e0dfbd478f245c6a845ab9783f6afe5530b"
+  },
+  "mechanical_sha256": "e9bc688d264b13bd62bca5498918e29ba48d16a7ced393e6ef119a3018b35788",
+  "findings": [
+    {
+      "id": "M-CLK",
+      "original_title": "CLK length mismatch",
+      "original_detail": "P 56.180 mm; N 57.364 mm; difference 1.184 mm versus 0.254 mm geometric budget.",
+      "disposition": "Planar matching repaired",
+      "result": "Complete-link P/N difference 0.000001591 mm; budget 0.254 mm.",
+      "evidence": "flex-routing-validation.json"
+    },
+    {
+      "id": "M-D0",
+      "original_title": "D0 length mismatch",
+      "original_detail": "P 56.056 mm; N 58.270 mm; difference 2.214 mm versus 0.254 mm geometric budget.",
+      "disposition": "Planar matching repaired",
+      "result": "Complete-link P/N difference 0.000343493 mm; budget 0.254 mm.",
+      "evidence": "flex-routing-validation.json"
+    },
+    {
+      "id": "M-D1",
+      "original_title": "D1 length mismatch",
+      "original_detail": "P 71.236 mm; N 69.853 mm; difference 1.384 mm versus 0.254 mm geometric budget.",
+      "disposition": "Planar matching repaired",
+      "result": "Complete-link P/N difference 0.000000440 mm; budget 0.254 mm.",
+      "evidence": "flex-routing-validation.json"
+    },
+    {
+      "id": "M-SPREAD",
+      "original_title": "Inter-pair length spread",
+      "original_detail": "Pair-mean spread 13.772 mm versus 0.762 mm screening budget. This is geometry, not delay.",
+      "disposition": "Planar matching repaired",
+      "result": "Pair-mean spread 0.000000800 mm; budget 0.762 mm. Barrel/contact/package delay is excluded; electrical delay is not matched or qualified.",
+      "evidence": "flex-routing-validation.json"
+    },
+    {
+      "id": "L-head-D0",
+      "original_title": "Asymmetric layers: D0",
+      "original_detail": "P and N use different layer sets; rebuild them as a pair with a defined reference and transition geometry.",
+      "disposition": "Layer symmetry repaired",
+      "result": "Both members use F.Cu with no signal vias.",
+      "evidence": "head-routing-validation.json"
+    },
+    {
+      "id": "L-head-D1",
+      "original_title": "Asymmetric layers: D1",
+      "original_detail": "P and N use different layer sets; rebuild them as a pair with a defined reference and transition geometry.",
+      "disposition": "Layer symmetry repaired",
+      "result": "Both members use F/B with two matching through transitions each.",
+      "evidence": "head-routing-validation.json"
+    },
+    {
+      "id": "L-controller-D0",
+      "original_title": "Asymmetric layers: D0",
+      "original_detail": "P and N use different layer sets; rebuild them as a pair with a defined reference and transition geometry.",
+      "disposition": "Layer symmetry repaired",
+      "result": "Both members use F/B with two matching through transitions each.",
+      "evidence": "controller-routing-validation.json"
+    },
+    {
+      "id": "R-head",
+      "original_title": "MIPI reference-plane gaps",
+      "original_detail": "Orange overlays identify sampled gaps beneath the path; signal layers without an adjacent GND plane are included. Point coverage cannot certify a return-current corridor.",
+      "disposition": "Reference routing repaired",
+      "result": "Signal and power routes removed from In1/In4; reference gaps limited to the signal transitions themselves.",
+      "evidence": "head-routing-validation.json"
+    },
+    {
+      "id": "V-head",
+      "original_title": "Ground returns at MIPI vias",
+      "original_detail": "Each marked signal via has fewer than two ground vias within the 1 mm screening radius. The radius is a heuristic; actual return geometry needs review.",
+      "disposition": "Return transitions repaired",
+      "result": "Paired signal transitions have nearby ground-return stitches; native clearance checks pass.",
+      "evidence": "head-routing-validation.json"
+    },
+    {
+      "id": "Z-head",
+      "original_title": "Impedance not established",
+      "original_detail": "Saved material/thickness values are provisional. Width, pair spacing, masks, coverlay and transitions need a manufacturable stackup and impedance calculation.",
+      "disposition": "Nominal impedance design recorded",
+      "result": "Six-layer catalog construction, explicit outer pair geometry and finite clock guards; tolerance corners and nonuniform launches remain unqualified.",
+      "evidence": "../../electronics/r10/STACKUP.md"
+    },
+    {
+      "id": "G-head",
+      "original_title": "Clock guarding and spacing",
+      "original_detail": "No continuous same-layer ground pour guards the clock routes. Pair separation varies; complete guarding and aggressor-spacing review are required.",
+      "disposition": "Clock guard geometry repaired",
+      "result": "Finite 0.100 mm ground guards and 0.101 mm edge clearance, with grounded connections.",
+      "evidence": "head-routing-validation.json"
+    },
+    {
+      "id": "R-flex-study",
+      "original_title": "MIPI reference-plane gaps",
+      "original_detail": "Orange overlays identify sampled gaps beneath the path; signal layers without an adjacent GND plane are included. Point coverage cannot certify a return-current corridor.",
+      "disposition": "Reference routing repaired",
+      "result": "F.Cu ground backs all measured MIPI paths; the outer 0.25 mm finger tips remain an explicit termination discontinuity.",
+      "evidence": "flex-routing-validation.json"
+    },
+    {
+      "id": "Z-flex-study",
+      "original_title": "Impedance not established",
+      "original_detail": "Saved material/thickness values are provisional. Width, pair spacing, masks, coverlay and transitions need a manufacturable stackup and impedance calculation.",
+      "disposition": "Nominal impedance design recorded",
+      "result": "Two-layer PI construction, 0.100/0.250 mm pair geometry and a separate clock-guard model; bend and termination qualification remain pending.",
+      "evidence": "../../electronics/r10/FLEX-ROUTING.md"
+    },
+    {
+      "id": "R-controller",
+      "original_title": "MIPI reference-plane gaps",
+      "original_detail": "Orange overlays identify sampled gaps beneath the path; signal layers without an adjacent GND plane are included. Point coverage cannot certify a return-current corridor.",
+      "disposition": "Reference routing repaired",
+      "result": "Signal and power routes removed from In1/In4; reference gaps limited to the signal transitions themselves.",
+      "evidence": "controller-routing-validation.json"
+    },
+    {
+      "id": "V-controller",
+      "original_title": "Ground returns at MIPI vias",
+      "original_detail": "Each marked signal via has fewer than two ground vias within the 1 mm screening radius. The radius is a heuristic; actual return geometry needs review.",
+      "disposition": "Return transitions repaired",
+      "result": "Paired signal transitions have nearby ground-return stitches; native clearance checks pass.",
+      "evidence": "controller-routing-validation.json"
+    },
+    {
+      "id": "Z-controller",
+      "original_title": "Impedance not established",
+      "original_detail": "Saved material/thickness values are provisional. Width, pair spacing, masks, coverlay and transitions need a manufacturable stackup and impedance calculation.",
+      "disposition": "Nominal impedance design recorded",
+      "result": "Six-layer catalog construction and MIPI/USB cross-section models; manufacturing compensation and channel qualification remain pending.",
+      "evidence": "../../electronics/r10/STACKUP.md"
+    },
+    {
+      "id": "G-controller",
+      "original_title": "Clock guarding and spacing",
+      "original_detail": "No continuous same-layer ground pour guards the clock routes. Pair separation varies; complete guarding and aggressor-spacing review are required.",
+      "disposition": "Clock guard geometry repaired",
+      "result": "Finite 0.100 mm ground guards and 0.101 mm edge clearance, with grounded connections.",
+      "evidence": "controller-routing-validation.json"
+    },
+    {
+      "id": "U-LENGTH",
+      "original_title": "USB length mismatch",
+      "original_detail": "DP 12.481 mm; DM 10.102 mm; difference 2.379 mm. No numerical P4 USB skew limit was established.",
+      "disposition": "Planar matching repaired",
+      "result": "Complete U101-to-J101 P/N difference 0.000000509 mm; project target 0.050 mm.",
+      "evidence": "usb-routing-validation.json"
+    },
+    {
+      "id": "U-REF",
+      "original_title": "USB reference-plane gaps",
+      "original_detail": "Both USB conductors cross gaps in the saved In1 ground fill. Restore a continuous reference below the complete route.",
+      "disposition": "Reference routing repaired",
+      "result": "The sampled 0.450 mm reference corridor has no uncovered points.",
+      "evidence": "usb-routing-validation.json"
+    },
+    {
+      "id": "U-PAIR",
+      "original_title": "USB pair geometry",
+      "original_detail": "Connector-side nearest-mate spacing varies substantially; DP-to-DM median is 1.500 mm. Revisit R109/R110, U105 and J101 launch geometry together.",
+      "disposition": "Pair routing repaired",
+      "result": "Front-only paired routing, zero signal vias, all four ESD pads on the through paths, and 26 passing ground-guard probes; package launches remain nonuniform.",
+      "evidence": "usb-routing-validation.json"
+    },
+    {
+      "id": "U-CABLE",
+      "original_title": "Cable and shield boundary",
+      "original_detail": "J101 pin mapping is checked. The external cable, shield termination and channel performance remain unspecified; four contacts provide no dedicated shield connection.",
+      "disposition": "Prototype cable specified",
+      "result": "50 mm shielded 90-ohm data pair; pin 1 VBUS, 2 D\u00e2\u02c6\u2019, 3 D+, 4 GND; explicit shield/drain splice and matching targets. No USB or Pupil compatibility certification.",
+      "evidence": "../../electronics/r10/USB-ROUTING.md"
+    }
+  ],
+  "fabrication_ready": false
+}

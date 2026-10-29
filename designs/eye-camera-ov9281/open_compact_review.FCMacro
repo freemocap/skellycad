@@ -1,0 +1,41 @@
+import FreeCAD as App, FreeCADGui as Gui
+from pathlib import Path
+import hashlib, json, traceback
+root=Path(__file__).resolve().parents[2]
+manifest_path=root/'designs/eye-camera-ov9281/working-review.json'
+manifest=json.loads(manifest_path.read_text())
+selected=next(x for x in manifest['files'] if x['path'].endswith('.FCStd'))
+folder=(root/selected['path']).parent
+try:
+    record=json.loads((folder/'validation.json').read_text())
+    path=Path(record['native_document']).resolve()
+    assert hashlib.sha256(path.read_bytes()).hexdigest()==record['native_sha256'],'Native study hash mismatch'
+    doc=next((d for d in App.listDocuments().values() if d.FileName and Path(d.FileName).resolve()==path),None)
+    if doc is None:doc=App.openDocument(str(path))
+    App.setActiveDocument(doc.Name)
+    for obj in doc.Objects:
+        obj.ViewObject.Visibility=obj.TypeId in ['PartDesign::Feature','Part::Feature','App::Part']
+        if obj.Name.endswith('Substrate'):obj.ViewObject.ShapeColor=(.10,.34,.23)
+        if obj.Name.endswith('Copper'):obj.ViewObject.ShapeColor=(.85,.67,.27)
+        if obj.Name.startswith('Reserved_'):
+            obj.ViewObject.ShapeColor=(.95,.45,.12);obj.ViewObject.Transparency=60
+    doc.PupilReference.ViewObject.Visibility=False
+    doc.HolderStudy.ViewObject.ShapeColor=(.28,.32,.38);doc.HolderStudy.ViewObject.Transparency=50
+    doc.LensEnvelope.ViewObject.ShapeColor=(.12,.15,.20)
+    doc.ActiveArea.ViewObject.ShapeColor=(.0,.85,.85)
+    doc.FilterReservation.ViewObject.ShapeColor=(.65,.20,.80);doc.FilterReservation.ViewObject.Transparency=50
+    view=Gui.activeDocument().activeView();view.viewAxonometric();view.fitAll()
+    Gui.getMainWindow().showMaximized();Gui.updateGui()
+    view.saveImage(str(folder/'assembly.png'),1600,900,'Current')
+    doc.controller.ViewObject.Visibility=False;doc.flex_study.ViewObject.Visibility=False
+    view.fitAll();Gui.updateGui();view.saveImage(str(folder/'head.png'),1600,900,'Current')
+    doc.controller.ViewObject.Visibility=True;doc.flex_study.ViewObject.Visibility=True
+    doc.recompute();doc.save()
+    record['native_sha256']=hashlib.sha256(path.read_bytes()).hexdigest()
+    (folder/'validation.json').write_text(json.dumps(record,indent=2)+'\n')
+    selected['sha256']=record['native_sha256']
+    manifest_path.write_text(json.dumps(manifest,indent=2)+'\n')
+    (folder/'desktop-review.json').write_text(json.dumps({'document':doc.FileName,'active_document':doc.Name,
+        'visible':Gui.getMainWindow().isVisible(),'view':'Head close-up; full controller and flex remain visible outside view'},indent=2)+'\n')
+except Exception:
+    (folder/'desktop-error.txt').write_text(traceback.format_exc())

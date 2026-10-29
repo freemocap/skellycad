@@ -1,0 +1,81 @@
+{
+  "status": "pass",
+  "board_revision": "R11",
+  "board_contract_sha256": "d7c74d1b7ec7dd96d1d0423aa35106e39f6d803ce471fddab8177e51cf1cbdea",
+  "schematic_netlist_sha256": "f518547051f97f71cc9c5eb2d63c1f82fb883f6858dd3c37c44ddf60d9167812",
+  "gpio_bindings": {
+    "LED_GPIO": {
+      "gpio": 5,
+      "pad": "5",
+      "net": "/LED_PWM",
+      "default": "low"
+    },
+    "RESET_ASSERT_GPIO": {
+      "gpio": 6,
+      "pad": "6",
+      "net": "/CAM_RESET_ASSERT",
+      "asserted": "high"
+    },
+    "SCL_GPIO": {
+      "gpio": 7,
+      "pad": "7",
+      "net": "/CAM_SCL_3V3"
+    },
+    "SDA_GPIO": {
+      "gpio": 8,
+      "pad": "8",
+      "net": "/CAM_SDA_3V3"
+    }
+  },
+  "reset_inversion_sid_low_led_off_and_connector_checks": true,
+  "builds": {
+    "sensor": {
+      "build_report_sha256": "2269b0487521cd822476cff6e81dc0a7e495836b4d8558d9a1cde89cdf027d94",
+      "flash_file_sha256": {
+        "bootloader/bootloader.bin": "aa7c4a92be30af82d927ff2320e6d17e90dd65af1ea2f65add1c66067688ef0c",
+        "skelly_eye_camera.bin": "48603f052f36d9e05167268e8bc0be9c47b80b9b00fbb706d4def7fcb6c30e8a",
+        "partition_table/partition-table.bin": "7f00b6c042a89b15b0cac534f82ed988caf29278ff5700b0c511eb1b5bb7c820"
+      },
+      "flash_offsets": {
+        "0x2000": "bootloader/bootloader.bin",
+        "0x10000": "skelly_eye_camera.bin",
+        "0x8000": "partition_table/partition-table.bin"
+      },
+      "effective_config_sha256": "90aefebf0d069b0738c4c1bb24a0b604c3845799f7097074845d44e10310dcdf",
+      "compiled": true,
+      "executed_on_hardware": false
+    },
+    "synthetic": {
+      "build_report_sha256": "d1d1800c223b85678d612fb432bf06f992c126ee2f29f1156919d8b7ddc20cee",
+      "flash_file_sha256": {
+        "bootloader/bootloader.bin": "41cf6862eb69b6b7d6f733f62a8a994c563d2b7d5c08b647b950686d324c4a93",
+        "skelly_eye_camera.bin": "bf85f0bfe6c46109c71c2474db52da89a2fa6cc1b5c04aff619dd09e62f235a5",
+        "partition_table/partition-table.bin": "7f00b6c042a89b15b0cac534f82ed988caf29278ff5700b0c511eb1b5bb7c820"
+      },
+      "flash_offsets": {
+        "0x2000": "bootloader/bootloader.bin",
+        "0x10000": "skelly_eye_camera.bin",
+        "0x8000": "partition_table/partition-table.bin"
+      },
+      "effective_config_sha256": "1593a858166833198d55afaccd11756b279a61f0d91a8616b8a937c73341063b",
+      "compiled": true,
+      "executed_on_hardware": false
+    }
+  },
+  "host_tests": "test_absurd_lengths_are_rejected_without_buffer_growth (test_camera_link.LinkTests.test_absurd_lengths_are_rejected_without_buffer_growth) ... ok\ntest_bad_flags_and_zero_dimensions (test_camera_link.LinkTests.test_bad_flags_and_zero_dimensions) ... ok\ntest_control_acknowledgement_and_wire_units (test_camera_link.LinkTests.test_control_acknowledgement_and_wire_units) ... ok\ntest_control_input_bounds_and_simulation_refusal (test_camera_link.LinkTests.test_control_input_bounds_and_simulation_refusal) ... ok\ntest_control_rejection_and_wrong_echo_fail (test_camera_link.LinkTests.test_control_rejection_and_wrong_echo_fail) ... ok\ntest_every_header_split (test_camera_link.LinkTests.test_every_header_split) ... ok\ntest_firmware_wire_layout_with_independent_fixture (test_camera_link.LinkTests.test_firmware_wire_layout_with_independent_fixture) ... ok\ntest_fragmented_multiple_full_frames (test_camera_link.LinkTests.test_fragmented_multiple_full_frames) ... ok\ntest_incomplete_frame_is_not_returned (test_camera_link.LinkTests.test_incomplete_frame_is_not_returned) ... ok\ntest_noise_corruption_and_following_frame (test_camera_link.LinkTests.test_noise_corruption_and_following_frame) ... ok\ntest_real_frame_is_not_marked_synthetic (test_camera_link.LinkTests.test_real_frame_is_not_marked_synthetic) ... ok\ntest_recording_preserves_synthetic_evidence_and_target_provenance (test_camera_link.LinkTests.test_recording_preserves_synthetic_evidence_and_target_provenance) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 0.029s\n\nOK\n",
+  "host_source_sha256": {
+    "camera_link.py": "df503e625e30c2390b5801224cd7ab9440aa2078e4b1fb16eb0a23997c32e038",
+    "test_camera_link.py": "d5a0a88573501befca1598ad149bec3332f40cfd575a7a586903eb7b65e21089"
+  },
+  "recording_sha256": "119d3cc0ca06d200e74ea38f0e92ab5b097c00dd8e8a35e4fda20742c45ae2c2",
+  "synthetic_frames_verified": 3,
+  "physical_camera_demonstrated": false,
+  "uvc_implemented": false,
+  "continuous_streaming_implemented": false,
+  "remaining_hardware_checks": [
+    "Supply sequencing, current, inrush, USB descriptors and thermal behavior",
+    "Actual sensor clock, SCCB detection and 400 MHz clock / 800 Mbps DDR lane interpretation",
+    "Camera DMA/cache ownership under real transfers and USB interruptions",
+    "Exposure/gain behavior, throughput, close-focus IR image quality and IR exposure"
+  ]
+}

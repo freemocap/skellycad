@@ -1,0 +1,107 @@
+{
+  "recommendation": "Conditional architecture GO; manufacturing NO-GO",
+  "sensor": {
+    "mpn": "OV09281-H64A",
+    "status": "Retain as design reference; exact package procurement blocked",
+    "sources": [
+      "omnivisionOv9281Brief",
+      "ov9281ProductA01",
+      "ov9281ArrowA01",
+      "r11SupplySensorDk"
+    ]
+  },
+  "serializer": {
+    "mpn": "DS90UB953TRHBRQ1",
+    "body_mm": [
+      5,
+      5,
+      1
+    ],
+    "typical_W": 0.28,
+    "sources": [
+      "ti953A01",
+      "ti953SupplyA01",
+      "ti953MouserA01"
+    ]
+  },
+  "receiver": {
+    "mpn": "DS90UB954TRGZRQ1",
+    "body_mm": [
+      7,
+      7,
+      1
+    ],
+    "port_count_used": 1,
+    "sources": [
+      "ti954A01",
+      "ti954LcscA01"
+    ]
+  },
+  "processor": {
+    "mpn": "ESP32-P4NRW16X",
+    "body_mm": [
+      10,
+      10,
+      1.0
+    ],
+    "memory_MB": 16,
+    "sources": [
+      "esp32P4Datasheet",
+      "espP4Rev3Guide",
+      "espUsbDeviceA01"
+    ]
+  },
+  "link_contract": {
+    "sensor_data": "RAW8, CSI-2 VC0, two data lanes; 800 Mbps/lane provisional R11 setting",
+    "serializer_mode": "Synchronous clock from receiver backchannel; separate 24 MHz sensor clock retained initially",
+    "base_reference_MHz": 25,
+    "forward_line_Gbps": 4.0,
+    "tether": "100 ohm differential STP candidate, separate 5 V and return; AC coupling and termination per selected TI circuit",
+    "receiver_output": "CSI-2 two lanes at 800 Mbps/lane candidate; RAW8 type passthrough, VC0, single input enabled",
+    "control": "Base I2C through receiver/serializer to sensor SCCB; verify alias addresses and 1.8 V sensor-side logic",
+    "power": "Interface 5 V to 1.8 V buck; 1.8 to 1.2 V LDO; 5 to 2.8 V analog LDO; decoupling/filtering remain local",
+    "led": "Remote GPIO to local current-limit circuit, fail-off pull-down; not direct LED load on serializer GPIO",
+    "sources": [
+      "ti953A01",
+      "ti954A01",
+      "espressifOv9281Driver"
+    ]
+  },
+  "blockers": [
+    {
+      "id": "S1",
+      "issue": "Exact sensor supply/lifecycle conflict",
+      "gate": "before detailed production-oriented sensor layout/order"
+    },
+    {
+      "id": "S2",
+      "issue": "P4 exact revision and availability",
+      "gate": "before purchase and firmware target freeze"
+    },
+    {
+      "id": "L1",
+      "issue": "No qualified 36 AWG STP assembly or connector; no insertion-loss/channel data",
+      "gate": "before link signoff"
+    },
+    {
+      "id": "F1",
+      "issue": "R11 sensor lane-rate metadata conflict; SerDes init and continuous recording not implemented",
+      "gate": "before claiming live capture"
+    },
+    {
+      "id": "O1",
+      "issue": "10-20 mm IR optics/filter and mass unqualified",
+      "gate": "before optical assembly release"
+    },
+    {
+      "id": "T1",
+      "issue": "Head temperature and illumination exposure unmeasured",
+      "gate": "before any eye-adjacent use"
+    },
+    {
+      "id": "M1",
+      "issue": "Single-sided placement reserves are not routed or assembly-qualified",
+      "gate": "before manufacturing release"
+    }
+  ]
+}

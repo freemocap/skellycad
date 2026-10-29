@@ -1,0 +1,33 @@
+UNSENT DRAFT
+To: sales@leopardimaging.com
+Subject: Complete USB evaluation set for LI-OC0TC1B-MIPI, indoor NIR eye imaging
+
+Please quote one LI-OC0TC1B-MIPI camera with the exact supported USB receiver,
+interconnect, preloaded matching firmware and Windows recording software.
+We want a working camera-to-PC set, not only a MIPI module. Please identify
+whether such a set already exists, its part numbers, total price and delivery date.
+
+Our first target is monochrome 400 x 400 at 120 fps, manual exposure/gain,
+indoor 940 nm illumination and close-range eye imaging. Please confirm:
+
+- Demonstrated USB modes, output packing and recording support (UVC or SDK).
+  Please provide a sample clip and mode list. State USB 2.0 support separately
+  from USB 3.0; the eventual compact design targets a four-wire USB 2.0 harness.
+- Your stated 8-100 mm focusing range: wavelength, sharpness criterion and
+  representative images across that range. Clarify the 2.3 mm focal-length
+  entry alongside 70-degree horizontal FOV and the 0.88 mm active image width.
+- Factory visible-cut / 940 nm pass options, transmission curve and blocking.
+  No IR-cut lens. We prefer existing optics, not a new custom lens project.
+- Current mechanical drawing, mating connector, board/flex dimensions and
+  firmware/register initialization, clock and power-sequence documentation.
+- Supported 940 nm LED/driver option, synchronization and documented operating
+  conditions. If none, please state that explicitly.
+- Availability of reference schematics and firmware, and rights to modify and
+  redistribute a derived compact carrier/USB design. A module-only supply is
+  also useful; please distinguish the available support levels.
+
+If OC0TC USB support is unavailable, please propose your smallest existing
+monochrome global-shutter USB camera with close-range NIR optics. Please do
+not substitute the 80-150 mm OV7251 lens without stating the focus limitation.
+
+No recipient has been contacted and no order has been placed.

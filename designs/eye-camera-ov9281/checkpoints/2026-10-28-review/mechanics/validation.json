@@ -1,0 +1,83 @@
+{
+  "revision": "OV9281-COMPACT-OPTICS-R03",
+  "units": "mm",
+  "native_document": "C:\\Users\\jonma\\code-stuff\\github\\freemocap\\other\\skellycad\\generated\\ov9281-compact-optics-r03\\OV9281-COMPACT-OPTICS-R03.FCStd",
+  "native_sha256": "67630a3ae528c14ec0192a3c5bae084b60a5c3bda170eae64d43ef62fe574b41",
+  "pcb_source": "C:\\Users\\jonma\\code-stuff\\github\\freemocap\\other\\skellycad\\generated\\ov9281-r09-widened",
+  "pcb_native_sha256": {
+    "controller.kicad_pcb": "ffa36a036883bfbd98de179bcf2c21776abefd77ed03a146173effdb14a37013",
+    "head.kicad_pcb": "02f6773d0b9a18a7d77c06b5e62e894fe3cc0f2ee7e7a41a87d5e645567e3f81",
+    "flex-study.kicad_pcb": "52b315d55f15e14173298e533959e040e248c0e830c1fcb76628598c7fd21c6f",
+    "camera.kicad_sch": "b307a594304676204d24e58bcce617ebf770879fbdfe65a5e94134018c0c2991",
+    "OV9281-P4-R09-assembly.kicad_pcb": "1f30926bfaf81d8c064998704c647caa3da00eff3eb521f9c40744e18fa9b2c0"
+  },
+  "step_sha256": {
+    "controller": "068dbd72d3d69a17523a82e55b7d7e9f922f54a467733fae2147ed1988ecd2fd",
+    "head": "ef289a36fe30bb691dc4864bff86dcab1c4c7ae0dd47387db08723f55ba447cf",
+    "flex-study": "ca3729357154c4560a26379ddc1d12ff4fa9fc439820cfa8dc27c326f16798f5"
+  },
+  "pupil_checkpoint": "CAMERA-DUMMY-R08",
+  "pupil_native_sha256": "2096c198eff2faf4fe826d94910f6b49a731f5408f350de9bd45ebf9dc9c26d0",
+  "lens": "CH2021A dimension envelope only",
+  "lens_source": "chuanganCh2021a",
+  "optical_xy_mm": [
+    7.3325,
+    -6.043
+  ],
+  "board_copper_top_z_mm": 0.57,
+  "assumptions": {
+    "image_plane_z_mm": 1.2,
+    "sensor_reservation_height_mm": 0.8,
+    "other_front_component_height_mm": 1.0,
+    "holder_outer_xy_mm": [
+      8,
+      8
+    ],
+    "holder_top_z_mm": 4.3,
+    "holder_bore_diameter_mm": 6.05,
+    "filter_thickness_mm": 0.2
+  },
+  "initial_holder_courtyard_collisions_mm3": {
+    "D202": 0.26374612500000033,
+    "Q201": 2.6757937499999986
+  },
+  "reliefs": {
+    "D202": {
+      "xy_margin_mm": 0.1,
+      "height_mm": 3.78,
+      "full_height": true
+    },
+    "Q201": {
+      "xy_margin_mm": 0.1,
+      "height_mm": 1.2,
+      "full_height": false
+    }
+  },
+  "holder_courtyard_collisions_mm3": {},
+  "focus_travel_geometry_checks": [
+    {
+      "travel_mm": 0,
+      "lens_holder_overlap_mm3": 0.0,
+      "axial_overlap_with_bore_mm": 1.9
+    },
+    {
+      "travel_mm": 0.5,
+      "lens_holder_overlap_mm3": 0.0,
+      "axial_overlap_with_bore_mm": 1.4
+    },
+    {
+      "travel_mm": 1.0,
+      "lens_holder_overlap_mm3": 0.0,
+      "axial_overlap_with_bore_mm": 0.8999999999999999
+    }
+  ],
+  "physical_fit_verified": false,
+  "optics_qualified": false,
+  "manufacturing_ready": false,
+  "limits": [
+    "8 head connections and 26 DRC violations remain in source PCB trial.",
+    "Smooth bore represents thread space only; usable thread engagement and mounting are not designed.",
+    "Component reservations are not exact bodies; all courtyard collisions require resolution.",
+    "No 10-20 mm or 940 nm focus validation; filter part and sensor Z are unqualified."
+  ]
+}

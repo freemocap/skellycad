@@ -1,0 +1,9 @@
+{
+  "revision": "ET-RAT-SEPARATED-ARMS-R30",
+  "units": "mm",
+  "native_checkpoint": "designs/eye-tracker/rat/separated-arms-r30/checkpoints/ET-RAT-SEPARATED-ARMS-R30.FCStd",
+  "native_sha256": "d91f843e5961dda48b2b207c70a0e5160231d82d1ced3f4ac6b903de39e722eb",
+  "recipe": "recipe.json",
+  "validation": "generated/eye-tracker/rat/separated-arms-r30/validation.json",
+  "status": "Outer protective paired supports around unchanged ribbon and camera; C01 clip retained; static checks passed; physical stiffness and full travel pending"
+}

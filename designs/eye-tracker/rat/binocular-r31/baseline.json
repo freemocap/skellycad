@@ -1,0 +1,207 @@
+{
+  "selected": {
+    "revision": "ET-RAT-MONO-R01",
+    "label": "Monocular rat",
+    "status": "Selected review baseline: unchanged mouse hardware with provisional rat anatomy registration; scale, mounting and aiming unverified",
+    "parts": {
+      "skull_mount_Baseplate": "skull_mount_Baseplate",
+      "eye_primary_Holder": "eye_primary_Holder",
+      "eye_primary_Cap": "eye_primary_Cap",
+      "eye_primary_Clip": "eye_primary_Clip",
+      "eye_primary_Carrier": "eye_primary_Carrier"
+    },
+    "print_groups": {
+      "skull_mount-baseplate": [
+        "skull_mount_Baseplate"
+      ],
+      "eye_primary-carrier-and-holder": [
+        "eye_primary_Carrier",
+        "eye_primary_Holder"
+      ],
+      "eye_primary-matching-cap": [
+        "eye_primary_Cap"
+      ],
+      "eye_primary-camera-clip": [
+        "eye_primary_Clip"
+      ]
+    },
+    "camera_instances": [
+      {
+        "id": "eye_primary",
+        "role": "eye",
+        "camera": "pupil-core-eye-inherited",
+        "mount": "r10-monocular",
+        "objects": {
+          "Holder": "eye_primary_Holder",
+          "Cap": "eye_primary_Cap",
+          "Clip": "eye_primary_Clip",
+          "UpperCatch": "eye_primary_UpperCatch",
+          "UpperRail": "eye_primary_UpperRail",
+          "SideLedge": "eye_primary_SideLedge",
+          "Carrier": "eye_primary_Carrier",
+          "ApproxPCB": "eye_primary_ApproxPCB",
+          "LensDatum": "eye_primary_LensDatum",
+          "OpticalAxis": "eye_primary_OpticalAxis"
+        },
+        "baseplate_object": "skull_mount_Baseplate"
+      }
+    ],
+    "assembly_config": "designs/eye-tracker/rat/assembly.json",
+    "units": "mm",
+    "native_checkpoint": "designs/eye-tracker/rat/checkpoints/ET-RAT-MONO-R01.FCStd",
+    "native_sha256": "ad74a3f14aaa709880039c927690475f6119d074f73b0a550a3064383394762e",
+    "print_directory": "generated/eye-tracker/rat/monocular-r01/print",
+    "variant": "monocular",
+    "build_script": "designs/eye-tracker/rat/build.py",
+    "lineage": "designs/eye-tracker/rat/monocular-r01-lineage.json",
+    "validation": "designs/eye-tracker/rat/validation/monocular-r01.json",
+    "observed_sha256": "9c81ed0189cfa4be9fec9e01cc48621c92a28be2dde8c5535c1e609df22c3bf7",
+    "hash_matches": false
+  },
+  "source": {
+    "revision": "ET-RAT-SEPARATED-ARMS-R30",
+    "units": "mm",
+    "native_checkpoint": "designs/eye-tracker/rat/separated-arms-r30/checkpoints/ET-RAT-SEPARATED-ARMS-R30.FCStd",
+    "native_sha256": "d91f843e5961dda48b2b207c70a0e5160231d82d1ced3f4ac6b903de39e722eb",
+    "recipe": "recipe.json",
+    "validation": "generated/eye-tracker/rat/separated-arms-r30/validation.json",
+    "status": "Outer protective paired supports around unchanged ribbon and camera; C01 clip retained; static checks passed; physical stiffness and full travel pending",
+    "observed_sha256": "d91f843e5961dda48b2b207c70a0e5160231d82d1ced3f4ac6b903de39e722eb",
+    "hash_matches": true
+  },
+  "camera": {
+    "schema_version": 1,
+    "id": "pupil-core-eye",
+    "revision": "CAMERA-DUMMY-R08",
+    "status": "User-selected preferred shared camera geometry",
+    "selected_on": "2026-10-14",
+    "units": "mm",
+    "native_checkpoint": {
+      "path": "designs/eye-tracker/shared/cameras/pupil-core-eye/checkpoints/CAMERA-DUMMY-R08/CAMERA-DUMMY-R08.FCStd",
+      "sha256": "2096c198eff2faf4fe826d94910f6b49a731f5408f350de9bd45ebf9dc9c26d0"
+    },
+    "parts": {
+      "Red_PLA_boards": {
+        "path": "designs/eye-tracker/shared/cameras/pupil-core-eye/checkpoints/CAMERA-DUMMY-R08/Red_PLA_boards.brep",
+        "sha256": "f0877a696e93312f6ce073a0a982c155b51d1bb048d44cfc2196f15528737a25",
+        "material": "PLA",
+        "color_rgb": [
+          1.0,
+          0.12,
+          0.1
+        ],
+        "tool": 1
+      },
+      "Black_PLA_lens": {
+        "path": "designs/eye-tracker/shared/cameras/pupil-core-eye/checkpoints/CAMERA-DUMMY-R08/Black_PLA_lens.brep",
+        "sha256": "81900e1b88a54be1d725eed7989660da9b0af94fd9d689e396d2c514848d3657",
+        "material": "PLA",
+        "color_rgb": [
+          0.12,
+          0.12,
+          0.14
+        ],
+        "tool": 2
+      },
+      "White_PLA_connector_LEDs": {
+        "path": "designs/eye-tracker/shared/cameras/pupil-core-eye/checkpoints/CAMERA-DUMMY-R08/White_PLA_connector_LEDs.brep",
+        "sha256": "8a38a7da2eac8f0dbb2f7efec7763d07cc455d665182e6d7b3c8dd1f45ff2e7a",
+        "material": "PLA",
+        "color_rgb": [
+          0.94,
+          0.94,
+          0.9
+        ],
+        "tool": 3
+      },
+      "Yellow_TPU_ribbon": {
+        "path": "designs/eye-tracker/shared/cameras/pupil-core-eye/checkpoints/CAMERA-DUMMY-R08/Yellow_TPU_ribbon.brep",
+        "sha256": "1269b671a1e8a04be5b971d0112d3a206ce2ba4cbf64c6e5ef0a6b24fe28a3a8",
+        "material": "TPU",
+        "color_rgb": [
+          1.0,
+          0.8,
+          0.02
+        ],
+        "tool": 4
+      }
+    },
+    "optical_datum": {
+      "origin_mm": [
+        0.08845877647399902,
+        69.85286865234374,
+        1.8576923076925
+      ],
+      "sensor_center_mm": [
+        0.08845877647399902,
+        69.85286865234374,
+        0.25
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "reference_only": true,
+      "origin_definition": "Accepted lens bounding-box center on its symmetry axis",
+      "sensor_plane_definition": "PCB top at lens center; hypothetical sensor"
+    },
+    "frame": "R08 flat print frame; substrate bottom Z=0, top Z=0.25; +Z outward through lens. Coordinates must be transformed together.",
+    "substrate_thickness_mm": 0.25,
+    "lens_revision": "lens-m5-r05",
+    "lens_source": {
+      "path": "designs/eye-tracker/shared/cameras/pupil-core-eye/checkpoints/CAMERA-DUMMY-R08/lens-source.step",
+      "sha256": "79fc5fa8ac21b3b47e482d13d83353eb5cde0546b52f36ba18889845a226a1cd"
+    },
+    "exports": {
+      "CAMERA-DUMMY-R08.step": {
+        "path": "designs/eye-tracker/shared/cameras/pupil-core-eye/checkpoints/CAMERA-DUMMY-R08/CAMERA-DUMMY-R08.step",
+        "sha256": "8761a218ed438e33d84e839ee92efd5b0f215b035e0438accff428b52c6452fd"
+      },
+      "CAMERA-DUMMY-R08-Snapmaker-U1.3mf": {
+        "path": "designs/eye-tracker/shared/cameras/pupil-core-eye/checkpoints/CAMERA-DUMMY-R08/CAMERA-DUMMY-R08-Snapmaker-U1.3mf",
+        "sha256": "5d627d84a24576768f376bd594c8e007dd0a23655f035043d686db6d1ff00671"
+      },
+      "CAMERA-DUMMY-R08-four-materials.3mf": {
+        "path": "designs/eye-tracker/shared/cameras/pupil-core-eye/checkpoints/CAMERA-DUMMY-R08/CAMERA-DUMMY-R08-four-materials.3mf",
+        "sha256": "c8d27ae3aae9901e6f358964cfbbe31bec331a5ea111973dd91684999330c64b"
+      }
+    },
+    "validation": {
+      "geometry-validation.json": {
+        "path": "designs/eye-tracker/shared/cameras/pupil-core-eye/checkpoints/CAMERA-DUMMY-R08/geometry-validation.json",
+        "sha256": "57f77ad2548758a703ef14a2dd57caa943fa5e8e8218809e70acc1a1f0f56268"
+      },
+      "interface-validation.json": {
+        "path": "designs/eye-tracker/shared/cameras/pupil-core-eye/checkpoints/CAMERA-DUMMY-R08/interface-validation.json",
+        "sha256": "44efb47e6e5376e302e5a8c369ceba024e0e60b31d861fe6938581baff096d65"
+      },
+      "package-validation.json": {
+        "path": "designs/eye-tracker/shared/cameras/pupil-core-eye/checkpoints/CAMERA-DUMMY-R08/package-validation.json",
+        "sha256": "9d4d1bd950ca3f434bd4d7995328c399bfb85c918b945110995bfd530461e3ae"
+      },
+      "u1-project-validation.json": {
+        "path": "designs/eye-tracker/shared/cameras/pupil-core-eye/checkpoints/CAMERA-DUMMY-R08/u1-project-validation.json",
+        "sha256": "57229b026e5c5d80c96d44e001d0977a44e9d14bf910e74e35590c2145de9fcb"
+      },
+      "shared-import-validation.json": {
+        "path": "designs/eye-tracker/shared/cameras/pupil-core-eye/checkpoints/CAMERA-DUMMY-R08/shared-import-validation.json",
+        "sha256": "00c9e20a8208227c161f62fa35261f7d7a181c8526ef677e3b39c2d5681d5a1b"
+      }
+    },
+    "physical_fit_verified": false,
+    "stiffness_verified": false,
+    "functional_optics": false,
+    "mount_compatibility": []
+  },
+  "units": "mm",
+  "constraints": {
+    "cap": "deferred",
+    "configuration": "binocular",
+    "baseplate": "preserve R30 mating interface and anatomy placement",
+    "camera_handedness": "proper rotations only; no reflected physical camera geometry",
+    "supports": "retain R30 separated protective arm style",
+    "ribbon": "32.85 mm neutral length, 4 mm width; retain detailed model thickness and minimum bend limits",
+    "physical_fit_verified": false
+  }
+}

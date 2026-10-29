@@ -1,0 +1,65 @@
+{
+  "source": "generated\\eye-tracker\\shared\\camera-interlock-075-r02\\CAMERA-INTERLOCK-075-R02.FCStd",
+  "source_sha256": "c655fe1941141b1f7749fd3c4d418f71cd943dab6a6ad96145269b8ea5d4913c",
+  "JST_height_above_board_mm": 2.9600000000000004,
+  "chip_layout_xywhh_mm": [
+    [
+      -2.25,
+      22.0,
+      4.5,
+      6.0,
+      1.375
+    ],
+    [
+      -3.2,
+      12.8,
+      3.2,
+      4.3,
+      1.125
+    ],
+    [
+      0.8,
+      14.5,
+      2.6,
+      1.2,
+      1.0
+    ],
+    [
+      0.1,
+      7.7,
+      3.6,
+      2.3,
+      1.25
+    ],
+    [
+      -3.2,
+      7.5,
+      1.8,
+      1.1,
+      1.0
+    ],
+    [
+      1.2,
+      11.2,
+      1.5,
+      1.2,
+      1.0
+    ]
+  ],
+  "reference_photo": "codex-clipboard-926b0153-6802-4198-949a-ce155ceaf8a5.png",
+  "layout_basis": "Approximate visual proportions; not calibrated component measurements",
+  "chip_count": 6,
+  "chip_mesh_closed": true,
+  "self_intersections": false,
+  "material_overlaps_mm3": 0,
+  "board_contact_verified": true,
+  "unchanged": [
+    "boards",
+    "ribbon",
+    "three-tooth joints",
+    "JST",
+    "LEDs",
+    "lens"
+  ],
+  "physical_fit_verified": false
+}

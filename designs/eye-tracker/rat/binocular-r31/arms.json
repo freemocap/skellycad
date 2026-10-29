@@ -1,0 +1,206 @@
+{
+  "RightUpperSupport": {
+    "poles_mm": [
+      [
+        4.5,
+        21.5,
+        16.8
+      ],
+      [
+        -9.5,
+        21.5,
+        36.8
+      ],
+      [
+        -1.4963637548169295,
+        3.7761689776578016,
+        40.31529544503238
+      ],
+      [
+        20.69763198232177,
+        7.6057249435141,
+        32.023066895104215
+      ]
+    ],
+    "seating_mm3": {
+      "central": 5.046277389369179,
+      "socket": 1.2714000334848845
+    },
+    "ribbon_gap_mm": 1.231462437210147,
+    "checks_mm3": {
+      "RightPCB": 0.0,
+      "RightJST_4pin": 0.0,
+      "Rightcamera_pcb": 0.0,
+      "RightM4_lens": 0.0,
+      "RightIR_LED": 0.0,
+      "RightIR_LED_001": 0.0,
+      "Rightribbon": 0.0,
+      "Righteye_primary_Holder": 0.0,
+      "Righteye_primary_Clip": 0.0,
+      "LeftPCB": 0.0,
+      "LeftJST_4pin": 0.0,
+      "Leftcamera_pcb": 0.0,
+      "LeftM4_lens": 0.0,
+      "LeftIR_LED": 0.0,
+      "LeftIR_LED_001": 0.0,
+      "Leftribbon": 0.0,
+      "Lefteye_primary_Holder": 0.0,
+      "Lefteye_primary_Clip": 0.0
+    },
+    "free_span_gaps_mm": []
+  },
+  "RightLowerSupport": {
+    "poles_mm": [
+      [
+        4.5,
+        12.0,
+        16.8
+      ],
+      [
+        -9.5,
+        9.0,
+        36.8
+      ],
+      [
+        17.991411243564844,
+        -12.638047484714658,
+        46.833740316228834
+      ],
+      [
+        22.401886069632724,
+        6.170261146424494,
+        32.59312100931531
+      ]
+    ],
+    "seating_mm3": {
+      "central": 4.77866428276154,
+      "socket": 1.2715533051738261
+    },
+    "ribbon_gap_mm": 0.9443985352539893,
+    "checks_mm3": {
+      "RightPCB": 0.0,
+      "RightJST_4pin": 0.0,
+      "Rightcamera_pcb": 0.0,
+      "RightM4_lens": 0.0,
+      "RightIR_LED": 0.0,
+      "RightIR_LED_001": 0.0,
+      "Rightribbon": 0.0,
+      "Righteye_primary_Holder": 0.0,
+      "Righteye_primary_Clip": 0.0,
+      "LeftPCB": 0.0,
+      "LeftJST_4pin": 0.0,
+      "Leftcamera_pcb": 0.0,
+      "LeftM4_lens": 0.0,
+      "LeftIR_LED": 0.0,
+      "LeftIR_LED_001": 0.0,
+      "Leftribbon": 0.0,
+      "Lefteye_primary_Holder": 0.0,
+      "Lefteye_primary_Clip": 0.0
+    },
+    "free_span_gaps_mm": [
+      0.5596815730955607
+    ]
+  },
+  "LeftUpperSupport": {
+    "poles_mm": [
+      [
+        2.0741279929460603,
+        21.5,
+        -16.877075880640408
+      ],
+      [
+        16.07412799294606,
+        21.5,
+        -36.877075880640405
+      ],
+      [
+        -2.0646017463344286,
+        9.748504861670945,
+        -36.368973307399834
+      ],
+      [
+        21.079506689869056,
+        3.592117875477266,
+        -34.80399919595904
+      ]
+    ],
+    "seating_mm3": {
+      "central": 4.95581954050924,
+      "socket": 1.2721385890239114
+    },
+    "ribbon_gap_mm": 1.2481020200937993,
+    "checks_mm3": {
+      "RightPCB": 0.0,
+      "RightJST_4pin": 0.0,
+      "Rightcamera_pcb": 0.0,
+      "RightM4_lens": 0.0,
+      "RightIR_LED": 0.0,
+      "RightIR_LED_001": 0.0,
+      "Rightribbon": 0.0,
+      "Righteye_primary_Holder": 0.0,
+      "Righteye_primary_Clip": 0.0,
+      "LeftPCB": 0.0,
+      "LeftJST_4pin": 0.0,
+      "Leftcamera_pcb": 0.0,
+      "LeftM4_lens": 0.0,
+      "LeftIR_LED": 0.0,
+      "LeftIR_LED_001": 0.0,
+      "Leftribbon": 0.0,
+      "Lefteye_primary_Holder": 0.0,
+      "Lefteye_primary_Clip": 0.0
+    },
+    "free_span_gaps_mm": []
+  },
+  "LeftLowerSupport": {
+    "poles_mm": [
+      [
+        2.0741279929460603,
+        12.0,
+        -16.877075880640408
+      ],
+      [
+        16.07412799294606,
+        12.0,
+        -36.877075880640405
+      ],
+      [
+        14.475638381348974,
+        24.31368178804511,
+        -22.017455003680563
+      ],
+      [
+        22.525991567955437,
+        4.865878595274245,
+        -33.54892345076686
+      ]
+    ],
+    "seating_mm3": {
+      "central": 6.8004629739221665,
+      "socket": 1.2599885381068774
+    },
+    "ribbon_gap_mm": 1.2882373468234376,
+    "checks_mm3": {
+      "RightPCB": 0.0,
+      "RightJST_4pin": 0.0,
+      "Rightcamera_pcb": 0.0,
+      "RightM4_lens": 0.0,
+      "RightIR_LED": 0.0,
+      "RightIR_LED_001": 0.0,
+      "Rightribbon": 0.0,
+      "Righteye_primary_Holder": 0.0,
+      "Righteye_primary_Clip": 0.0,
+      "LeftPCB": 0.0,
+      "LeftJST_4pin": 0.0,
+      "Leftcamera_pcb": 0.0,
+      "LeftM4_lens": 0.0,
+      "LeftIR_LED": 0.0,
+      "LeftIR_LED_001": 0.0,
+      "Leftribbon": 0.0,
+      "Lefteye_primary_Holder": 0.0,
+      "Lefteye_primary_Clip": 0.0
+    },
+    "free_span_gaps_mm": [
+      0.5867876168469003
+    ]
+  }
+}

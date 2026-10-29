@@ -1,0 +1,33 @@
+{
+  "board_sha256": "989a2008743212d3f9cea44e2643b0584b22613322b7a8450575f173e29f1fb7",
+  "surfaces": {
+    "controller/F.Cu": {
+      "mask_opening_area_mm2": 100.66700829352,
+      "exposed_pad_area_mm2": 84.33021042148,
+      "paste_aperture_area_mm2": 70.608658966016
+    },
+    "head/F.Cu": {
+      "mask_opening_area_mm2": 6.9319098168319995,
+      "exposed_pad_area_mm2": 4.519348498176,
+      "paste_aperture_area_mm2": 6.968518520832
+    },
+    "controller/B.Cu": {
+      "mask_opening_area_mm2": 71.474162102242,
+      "exposed_pad_area_mm2": 58.748934968191996,
+      "paste_aperture_area_mm2": 55.172494663529996
+    },
+    "head/B.Cu": {
+      "mask_opening_area_mm2": 40.08651661868,
+      "exposed_pad_area_mm2": 33.609122605668,
+      "paste_aperture_area_mm2": 33.54285595044
+    }
+  },
+  "filled_laser_segments": 771,
+  "filled_via_volume_between_foils_mm3": 0.07585296922276225,
+  "scope": "Pad copper and paste/mask geometry, not solder-joint measurements. Filled via cylinders cover dielectric gaps only; land copper is already in layer areas. Coatings clipped to region rectangles; tiny tapered-edge differences retained as mass uncertainty.",
+  "filled_via_volume_by_region_mm3": {
+    "controller": 0.05191560399873505,
+    "head": 0.02393736522402736,
+    "flex": 0.0
+  }
+}

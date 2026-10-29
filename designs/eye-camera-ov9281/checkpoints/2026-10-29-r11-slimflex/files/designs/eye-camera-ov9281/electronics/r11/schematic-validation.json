@@ -1,0 +1,6091 @@
+{
+  "status": "pass",
+  "physical_references": 106,
+  "pin_assignments_checked": 418,
+  "baseline_signal_nodes_preserved": 343,
+  "erc_violations": 0,
+  "errors": [],
+  "footprints": {
+    "C1": {
+      "name": "C_0603_1608Metric",
+      "sha256": "d45eebd5cb9faace255d4ec95a0f9484efde898359507b02e2ba9bbb3ef6d857",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.775,
+            0.0
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.775,
+            0.0
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C2": {
+      "name": "C_0603_1608Metric",
+      "sha256": "d45eebd5cb9faace255d4ec95a0f9484efde898359507b02e2ba9bbb3ef6d857",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.775,
+            0.0
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.775,
+            0.0
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C3": {
+      "name": "C_0603_1608Metric",
+      "sha256": "d45eebd5cb9faace255d4ec95a0f9484efde898359507b02e2ba9bbb3ef6d857",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.775,
+            0.0
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.775,
+            0.0
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C4": {
+      "name": "C_0603_1608Metric",
+      "sha256": "d45eebd5cb9faace255d4ec95a0f9484efde898359507b02e2ba9bbb3ef6d857",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.775,
+            0.0
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.775,
+            0.0
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C5": {
+      "name": "C_0603_1608Metric",
+      "sha256": "d45eebd5cb9faace255d4ec95a0f9484efde898359507b02e2ba9bbb3ef6d857",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.775,
+            0.0
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.775,
+            0.0
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C6": {
+      "name": "C_0603_1608Metric",
+      "sha256": "d45eebd5cb9faace255d4ec95a0f9484efde898359507b02e2ba9bbb3ef6d857",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.775,
+            0.0
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.775,
+            0.0
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C7": {
+      "name": "C_0603_1608Metric",
+      "sha256": "d45eebd5cb9faace255d4ec95a0f9484efde898359507b02e2ba9bbb3ef6d857",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.775,
+            0.0
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.775,
+            0.0
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C8": {
+      "name": "C_0603_1608Metric",
+      "sha256": "d45eebd5cb9faace255d4ec95a0f9484efde898359507b02e2ba9bbb3ef6d857",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.775,
+            0.0
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.775,
+            0.0
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C9": {
+      "name": "C_0402_1005Metric",
+      "sha256": "3d8a1dc70b71dbc3a5786560f7f9d0cabe99f1182653b072cde5046e4e3f6fc4",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C10": {
+      "name": "C_0603_1608Metric",
+      "sha256": "d45eebd5cb9faace255d4ec95a0f9484efde898359507b02e2ba9bbb3ef6d857",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.775,
+            0.0
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.775,
+            0.0
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C12": {
+      "name": "C_0603_1608Metric",
+      "sha256": "d45eebd5cb9faace255d4ec95a0f9484efde898359507b02e2ba9bbb3ef6d857",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.775,
+            0.0
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.775,
+            0.0
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C13": {
+      "name": "C_0603_1608Metric",
+      "sha256": "d45eebd5cb9faace255d4ec95a0f9484efde898359507b02e2ba9bbb3ef6d857",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.775,
+            0.0
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.775,
+            0.0
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C14": {
+      "name": "C_0402_1005Metric",
+      "sha256": "3d8a1dc70b71dbc3a5786560f7f9d0cabe99f1182653b072cde5046e4e3f6fc4",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C15": {
+      "name": "C_0402_1005Metric",
+      "sha256": "3d8a1dc70b71dbc3a5786560f7f9d0cabe99f1182653b072cde5046e4e3f6fc4",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C16": {
+      "name": "C_0402_1005Metric",
+      "sha256": "3d8a1dc70b71dbc3a5786560f7f9d0cabe99f1182653b072cde5046e4e3f6fc4",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C17": {
+      "name": "C_0402_1005Metric",
+      "sha256": "3d8a1dc70b71dbc3a5786560f7f9d0cabe99f1182653b072cde5046e4e3f6fc4",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C18": {
+      "name": "C_0603_1608Metric",
+      "sha256": "d45eebd5cb9faace255d4ec95a0f9484efde898359507b02e2ba9bbb3ef6d857",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.775,
+            0.0
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.775,
+            0.0
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C19": {
+      "name": "C_0603_1608Metric",
+      "sha256": "d45eebd5cb9faace255d4ec95a0f9484efde898359507b02e2ba9bbb3ef6d857",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.775,
+            0.0
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.775,
+            0.0
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C20": {
+      "name": "C_0402_1005Metric",
+      "sha256": "3d8a1dc70b71dbc3a5786560f7f9d0cabe99f1182653b072cde5046e4e3f6fc4",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C21": {
+      "name": "C_0603_1608Metric",
+      "sha256": "d45eebd5cb9faace255d4ec95a0f9484efde898359507b02e2ba9bbb3ef6d857",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.775,
+            0.0
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.775,
+            0.0
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C33": {
+      "name": "C_0603_1608Metric",
+      "sha256": "d45eebd5cb9faace255d4ec95a0f9484efde898359507b02e2ba9bbb3ef6d857",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.775,
+            0.0
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.775,
+            0.0
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C101": {
+      "name": "C_0402_1005Metric",
+      "sha256": "3d8a1dc70b71dbc3a5786560f7f9d0cabe99f1182653b072cde5046e4e3f6fc4",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C102": {
+      "name": "C_0402_1005Metric",
+      "sha256": "3d8a1dc70b71dbc3a5786560f7f9d0cabe99f1182653b072cde5046e4e3f6fc4",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C103": {
+      "name": "C_0402_1005Metric",
+      "sha256": "3d8a1dc70b71dbc3a5786560f7f9d0cabe99f1182653b072cde5046e4e3f6fc4",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C104": {
+      "name": "C_0603_1608Metric",
+      "sha256": "d45eebd5cb9faace255d4ec95a0f9484efde898359507b02e2ba9bbb3ef6d857",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.775,
+            0.0
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.775,
+            0.0
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C105": {
+      "name": "C_0603_1608Metric",
+      "sha256": "d45eebd5cb9faace255d4ec95a0f9484efde898359507b02e2ba9bbb3ef6d857",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.775,
+            0.0
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.775,
+            0.0
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C106": {
+      "name": "C_0805_2012Metric",
+      "sha256": "e890bdf55fa18fc6df6878eb1b5251a991e1b93985509175eb269d3d002880b4",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.95,
+            0.0
+          ],
+          "size_mm": [
+            1.0,
+            1.45
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.95,
+            0.0
+          ],
+          "size_mm": [
+            1.0,
+            1.45
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C107": {
+      "name": "C_0402_1005Metric",
+      "sha256": "3d8a1dc70b71dbc3a5786560f7f9d0cabe99f1182653b072cde5046e4e3f6fc4",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C108": {
+      "name": "C_0603_1608Metric",
+      "sha256": "d45eebd5cb9faace255d4ec95a0f9484efde898359507b02e2ba9bbb3ef6d857",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.775,
+            0.0
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.775,
+            0.0
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C109": {
+      "name": "C_0805_2012Metric",
+      "sha256": "e890bdf55fa18fc6df6878eb1b5251a991e1b93985509175eb269d3d002880b4",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.95,
+            0.0
+          ],
+          "size_mm": [
+            1.0,
+            1.45
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.95,
+            0.0
+          ],
+          "size_mm": [
+            1.0,
+            1.45
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C110": {
+      "name": "C_0402_1005Metric",
+      "sha256": "3d8a1dc70b71dbc3a5786560f7f9d0cabe99f1182653b072cde5046e4e3f6fc4",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C111": {
+      "name": "C_0402_1005Metric",
+      "sha256": "3d8a1dc70b71dbc3a5786560f7f9d0cabe99f1182653b072cde5046e4e3f6fc4",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C112": {
+      "name": "C_0402_1005Metric",
+      "sha256": "3d8a1dc70b71dbc3a5786560f7f9d0cabe99f1182653b072cde5046e4e3f6fc4",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C113": {
+      "name": "C_0402_1005Metric",
+      "sha256": "3d8a1dc70b71dbc3a5786560f7f9d0cabe99f1182653b072cde5046e4e3f6fc4",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C114": {
+      "name": "C_0402_1005Metric",
+      "sha256": "3d8a1dc70b71dbc3a5786560f7f9d0cabe99f1182653b072cde5046e4e3f6fc4",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C115": {
+      "name": "C_0402_1005Metric",
+      "sha256": "3d8a1dc70b71dbc3a5786560f7f9d0cabe99f1182653b072cde5046e4e3f6fc4",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C116": {
+      "name": "C_0402_1005Metric",
+      "sha256": "3d8a1dc70b71dbc3a5786560f7f9d0cabe99f1182653b072cde5046e4e3f6fc4",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C117": {
+      "name": "C_0402_1005Metric",
+      "sha256": "3d8a1dc70b71dbc3a5786560f7f9d0cabe99f1182653b072cde5046e4e3f6fc4",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C118": {
+      "name": "C_0402_1005Metric",
+      "sha256": "3d8a1dc70b71dbc3a5786560f7f9d0cabe99f1182653b072cde5046e4e3f6fc4",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C119": {
+      "name": "C_0402_1005Metric",
+      "sha256": "3d8a1dc70b71dbc3a5786560f7f9d0cabe99f1182653b072cde5046e4e3f6fc4",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C120": {
+      "name": "C_0402_1005Metric",
+      "sha256": "3d8a1dc70b71dbc3a5786560f7f9d0cabe99f1182653b072cde5046e4e3f6fc4",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C121": {
+      "name": "C_0402_1005Metric",
+      "sha256": "3d8a1dc70b71dbc3a5786560f7f9d0cabe99f1182653b072cde5046e4e3f6fc4",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C122": {
+      "name": "C_0402_1005Metric",
+      "sha256": "3d8a1dc70b71dbc3a5786560f7f9d0cabe99f1182653b072cde5046e4e3f6fc4",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C123": {
+      "name": "C_0805_2012Metric",
+      "sha256": "e890bdf55fa18fc6df6878eb1b5251a991e1b93985509175eb269d3d002880b4",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.95,
+            0.0
+          ],
+          "size_mm": [
+            1.0,
+            1.45
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.95,
+            0.0
+          ],
+          "size_mm": [
+            1.0,
+            1.45
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C124": {
+      "name": "C_0805_2012Metric",
+      "sha256": "e890bdf55fa18fc6df6878eb1b5251a991e1b93985509175eb269d3d002880b4",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.95,
+            0.0
+          ],
+          "size_mm": [
+            1.0,
+            1.45
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.95,
+            0.0
+          ],
+          "size_mm": [
+            1.0,
+            1.45
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C125": {
+      "name": "C_0603_1608Metric",
+      "sha256": "d45eebd5cb9faace255d4ec95a0f9484efde898359507b02e2ba9bbb3ef6d857",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.775,
+            0.0
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.775,
+            0.0
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C126": {
+      "name": "C_0603_1608Metric",
+      "sha256": "d45eebd5cb9faace255d4ec95a0f9484efde898359507b02e2ba9bbb3ef6d857",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.775,
+            0.0
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.775,
+            0.0
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C127": {
+      "name": "C_0603_1608Metric",
+      "sha256": "d45eebd5cb9faace255d4ec95a0f9484efde898359507b02e2ba9bbb3ef6d857",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.775,
+            0.0
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.775,
+            0.0
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C128": {
+      "name": "C_0402_1005Metric",
+      "sha256": "3d8a1dc70b71dbc3a5786560f7f9d0cabe99f1182653b072cde5046e4e3f6fc4",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C129": {
+      "name": "C_0402_1005Metric",
+      "sha256": "3d8a1dc70b71dbc3a5786560f7f9d0cabe99f1182653b072cde5046e4e3f6fc4",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C130": {
+      "name": "C_0402_1005Metric",
+      "sha256": "3d8a1dc70b71dbc3a5786560f7f9d0cabe99f1182653b072cde5046e4e3f6fc4",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C131": {
+      "name": "C_0402_1005Metric",
+      "sha256": "3d8a1dc70b71dbc3a5786560f7f9d0cabe99f1182653b072cde5046e4e3f6fc4",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C132": {
+      "name": "C_0402_1005Metric",
+      "sha256": "3d8a1dc70b71dbc3a5786560f7f9d0cabe99f1182653b072cde5046e4e3f6fc4",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C133": {
+      "name": "C_0603_1608Metric",
+      "sha256": "d45eebd5cb9faace255d4ec95a0f9484efde898359507b02e2ba9bbb3ef6d857",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.775,
+            0.0
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.775,
+            0.0
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C134": {
+      "name": "C_0402_1005Metric",
+      "sha256": "3d8a1dc70b71dbc3a5786560f7f9d0cabe99f1182653b072cde5046e4e3f6fc4",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C135": {
+      "name": "C_0402_1005Metric",
+      "sha256": "3d8a1dc70b71dbc3a5786560f7f9d0cabe99f1182653b072cde5046e4e3f6fc4",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.48,
+            0.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "C136": {
+      "name": "C_0603_1608Metric",
+      "sha256": "d45eebd5cb9faace255d4ec95a0f9484efde898359507b02e2ba9bbb3ef6d857",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.775,
+            0.0
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.775,
+            0.0
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "D201": {
+      "name": "Kingbright_AP1608F3C_R09",
+      "sha256": "e6d4cc2e52a7172e26b103c1d70ee2a886f386edbb55d3381d5dc5e59224a9fd",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.825,
+            0.0
+          ],
+          "size_mm": [
+            0.8,
+            0.8
+          ],
+          "shape": 1
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.825,
+            0.0
+          ],
+          "size_mm": [
+            0.8,
+            0.8
+          ],
+          "shape": 1
+        }
+      ]
+    },
+    "D202": {
+      "name": "Kingbright_AP1608F3C_R09",
+      "sha256": "e6d4cc2e52a7172e26b103c1d70ee2a886f386edbb55d3381d5dc5e59224a9fd",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.825,
+            0.0
+          ],
+          "size_mm": [
+            0.8,
+            0.8
+          ],
+          "shape": 1
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.825,
+            0.0
+          ],
+          "size_mm": [
+            0.8,
+            0.8
+          ],
+          "shape": 1
+        }
+      ]
+    },
+    "J101": {
+      "name": "JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal",
+      "sha256": "a069a407f8dc31be24091af862cede7c081ddcd623c80d9326df418c09ac392a",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -1.5,
+            -2.0
+          ],
+          "size_mm": [
+            0.6,
+            1.55
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            -0.5,
+            -2.0
+          ],
+          "size_mm": [
+            0.6,
+            1.55
+          ],
+          "shape": 4
+        },
+        {
+          "number": "3",
+          "xy_mm": [
+            0.5,
+            -2.0
+          ],
+          "size_mm": [
+            0.6,
+            1.55
+          ],
+          "shape": 4
+        },
+        {
+          "number": "4",
+          "xy_mm": [
+            1.5,
+            -2.0
+          ],
+          "size_mm": [
+            0.6,
+            1.55
+          ],
+          "shape": 4
+        },
+        {
+          "number": "MP",
+          "xy_mm": [
+            -2.8,
+            1.875
+          ],
+          "size_mm": [
+            1.2,
+            1.8
+          ],
+          "shape": 4
+        },
+        {
+          "number": "MP",
+          "xy_mm": [
+            2.8,
+            1.875
+          ],
+          "size_mm": [
+            1.2,
+            1.8
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "J103": {
+      "name": "ProgrammingPads_5x1mm_P1.5mm",
+      "sha256": "16cbccd7d33b73757eff01e12713e1d635606dd724a1fe30d0b809890c373f3e",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            0.0,
+            0.0
+          ],
+          "size_mm": [
+            1.0,
+            1.0
+          ],
+          "shape": 0
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            1.5,
+            0.0
+          ],
+          "size_mm": [
+            1.0,
+            1.0
+          ],
+          "shape": 0
+        },
+        {
+          "number": "3",
+          "xy_mm": [
+            3.0,
+            0.0
+          ],
+          "size_mm": [
+            1.0,
+            1.0
+          ],
+          "shape": 0
+        },
+        {
+          "number": "4",
+          "xy_mm": [
+            4.5,
+            0.0
+          ],
+          "size_mm": [
+            1.0,
+            1.0
+          ],
+          "shape": 0
+        },
+        {
+          "number": "5",
+          "xy_mm": [
+            6.0,
+            0.0
+          ],
+          "size_mm": [
+            1.0,
+            1.0
+          ],
+          "shape": 0
+        }
+      ]
+    },
+    "L1": {
+      "name": "L_0805_2012Metric",
+      "sha256": "15dfbe449e081e5b3f763a98cb582b4a639ec3d0287bce64fc216072cb85d03e",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -1.0625,
+            0.0
+          ],
+          "size_mm": [
+            0.875,
+            1.2
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            1.0625,
+            0.0
+          ],
+          "size_mm": [
+            0.875,
+            1.2
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "L2": {
+      "name": "L_0805_2012Metric",
+      "sha256": "15dfbe449e081e5b3f763a98cb582b4a639ec3d0287bce64fc216072cb85d03e",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -1.0625,
+            0.0
+          ],
+          "size_mm": [
+            0.875,
+            1.2
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            1.0625,
+            0.0
+          ],
+          "size_mm": [
+            0.875,
+            1.2
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "L3": {
+      "name": "L_0805_2012Metric",
+      "sha256": "15dfbe449e081e5b3f763a98cb582b4a639ec3d0287bce64fc216072cb85d03e",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -1.0625,
+            0.0
+          ],
+          "size_mm": [
+            0.875,
+            1.2
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            1.0625,
+            0.0
+          ],
+          "size_mm": [
+            0.875,
+            1.2
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "L101": {
+      "name": "Murata_DFE252012F_R11",
+      "sha256": "585f9dacba3fadafad62f9193149e61353bd4f21cdc1852a653bf3643f79f698",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -1.0,
+            0.0
+          ],
+          "size_mm": [
+            0.8,
+            2.0
+          ],
+          "shape": 1
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            1.0,
+            0.0
+          ],
+          "size_mm": [
+            0.8,
+            2.0
+          ],
+          "shape": 1
+        }
+      ]
+    },
+    "L102": {
+      "name": "Murata_DFE252012F_R11",
+      "sha256": "585f9dacba3fadafad62f9193149e61353bd4f21cdc1852a653bf3643f79f698",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -1.0,
+            0.0
+          ],
+          "size_mm": [
+            0.8,
+            2.0
+          ],
+          "shape": 1
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            1.0,
+            0.0
+          ],
+          "size_mm": [
+            0.8,
+            2.0
+          ],
+          "shape": 1
+        }
+      ]
+    },
+    "Q101": {
+      "name": "SOT-883",
+      "sha256": "ac9a376f2fa78fd5786581d661de8e8dcb8fdecc03cd59c4fc9f6a76071a5aec",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.35,
+            -0.225
+          ],
+          "size_mm": [
+            0.4,
+            0.25
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            -0.35,
+            0.225
+          ],
+          "size_mm": [
+            0.4,
+            0.25
+          ],
+          "shape": 4
+        },
+        {
+          "number": "3",
+          "xy_mm": [
+            0.35,
+            0.0
+          ],
+          "size_mm": [
+            0.4,
+            0.7
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "Q102": {
+      "name": "SOT-883",
+      "sha256": "ac9a376f2fa78fd5786581d661de8e8dcb8fdecc03cd59c4fc9f6a76071a5aec",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.35,
+            -0.225
+          ],
+          "size_mm": [
+            0.4,
+            0.25
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            -0.35,
+            0.225
+          ],
+          "size_mm": [
+            0.4,
+            0.25
+          ],
+          "shape": 4
+        },
+        {
+          "number": "3",
+          "xy_mm": [
+            0.35,
+            0.0
+          ],
+          "size_mm": [
+            0.4,
+            0.7
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "Q103": {
+      "name": "SOT-883",
+      "sha256": "ac9a376f2fa78fd5786581d661de8e8dcb8fdecc03cd59c4fc9f6a76071a5aec",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.35,
+            -0.225
+          ],
+          "size_mm": [
+            0.4,
+            0.25
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            -0.35,
+            0.225
+          ],
+          "size_mm": [
+            0.4,
+            0.25
+          ],
+          "shape": 4
+        },
+        {
+          "number": "3",
+          "xy_mm": [
+            0.35,
+            0.0
+          ],
+          "size_mm": [
+            0.4,
+            0.7
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "Q201": {
+      "name": "SOT-883",
+      "sha256": "ac9a376f2fa78fd5786581d661de8e8dcb8fdecc03cd59c4fc9f6a76071a5aec",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.35,
+            -0.225
+          ],
+          "size_mm": [
+            0.4,
+            0.25
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            -0.35,
+            0.225
+          ],
+          "size_mm": [
+            0.4,
+            0.25
+          ],
+          "shape": 4
+        },
+        {
+          "number": "3",
+          "xy_mm": [
+            0.35,
+            0.0
+          ],
+          "size_mm": [
+            0.4,
+            0.7
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "R7": {
+      "name": "R_0402_1005Metric",
+      "sha256": "6ed88b70926af431471c0ccaf6a55485f8cedab01cce4d1d4f3298a6cb6cef2c",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "R8": {
+      "name": "R_0402_1005Metric",
+      "sha256": "6ed88b70926af431471c0ccaf6a55485f8cedab01cce4d1d4f3298a6cb6cef2c",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "R9": {
+      "name": "R_0402_1005Metric",
+      "sha256": "6ed88b70926af431471c0ccaf6a55485f8cedab01cce4d1d4f3298a6cb6cef2c",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "R101": {
+      "name": "R_0402_1005Metric",
+      "sha256": "6ed88b70926af431471c0ccaf6a55485f8cedab01cce4d1d4f3298a6cb6cef2c",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "R102": {
+      "name": "R_0402_1005Metric",
+      "sha256": "6ed88b70926af431471c0ccaf6a55485f8cedab01cce4d1d4f3298a6cb6cef2c",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "R103": {
+      "name": "R_0402_1005Metric",
+      "sha256": "6ed88b70926af431471c0ccaf6a55485f8cedab01cce4d1d4f3298a6cb6cef2c",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "R104": {
+      "name": "R_0402_1005Metric",
+      "sha256": "6ed88b70926af431471c0ccaf6a55485f8cedab01cce4d1d4f3298a6cb6cef2c",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "R105": {
+      "name": "R_0402_1005Metric",
+      "sha256": "6ed88b70926af431471c0ccaf6a55485f8cedab01cce4d1d4f3298a6cb6cef2c",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "R106": {
+      "name": "R_0402_1005Metric",
+      "sha256": "6ed88b70926af431471c0ccaf6a55485f8cedab01cce4d1d4f3298a6cb6cef2c",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "R107": {
+      "name": "R_0402_1005Metric",
+      "sha256": "6ed88b70926af431471c0ccaf6a55485f8cedab01cce4d1d4f3298a6cb6cef2c",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "R108": {
+      "name": "R_0402_1005Metric",
+      "sha256": "6ed88b70926af431471c0ccaf6a55485f8cedab01cce4d1d4f3298a6cb6cef2c",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "R109": {
+      "name": "R_0402_1005Metric",
+      "sha256": "6ed88b70926af431471c0ccaf6a55485f8cedab01cce4d1d4f3298a6cb6cef2c",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "R110": {
+      "name": "R_0402_1005Metric",
+      "sha256": "6ed88b70926af431471c0ccaf6a55485f8cedab01cce4d1d4f3298a6cb6cef2c",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "R111": {
+      "name": "R_0402_1005Metric",
+      "sha256": "6ed88b70926af431471c0ccaf6a55485f8cedab01cce4d1d4f3298a6cb6cef2c",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "R112": {
+      "name": "R_0402_1005Metric",
+      "sha256": "6ed88b70926af431471c0ccaf6a55485f8cedab01cce4d1d4f3298a6cb6cef2c",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "R113": {
+      "name": "R_0402_1005Metric",
+      "sha256": "6ed88b70926af431471c0ccaf6a55485f8cedab01cce4d1d4f3298a6cb6cef2c",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "R114": {
+      "name": "R_0402_1005Metric",
+      "sha256": "6ed88b70926af431471c0ccaf6a55485f8cedab01cce4d1d4f3298a6cb6cef2c",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "R115": {
+      "name": "R_0402_1005Metric",
+      "sha256": "6ed88b70926af431471c0ccaf6a55485f8cedab01cce4d1d4f3298a6cb6cef2c",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "R116": {
+      "name": "R_0402_1005Metric",
+      "sha256": "6ed88b70926af431471c0ccaf6a55485f8cedab01cce4d1d4f3298a6cb6cef2c",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "R117": {
+      "name": "R_0402_1005Metric",
+      "sha256": "6ed88b70926af431471c0ccaf6a55485f8cedab01cce4d1d4f3298a6cb6cef2c",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "R118": {
+      "name": "R_0402_1005Metric",
+      "sha256": "6ed88b70926af431471c0ccaf6a55485f8cedab01cce4d1d4f3298a6cb6cef2c",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "R201": {
+      "name": "R_0402_1005Metric",
+      "sha256": "6ed88b70926af431471c0ccaf6a55485f8cedab01cce4d1d4f3298a6cb6cef2c",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "R202": {
+      "name": "R_0402_1005Metric",
+      "sha256": "6ed88b70926af431471c0ccaf6a55485f8cedab01cce4d1d4f3298a6cb6cef2c",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "R203": {
+      "name": "R_0402_1005Metric",
+      "sha256": "6ed88b70926af431471c0ccaf6a55485f8cedab01cce4d1d4f3298a6cb6cef2c",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "R204": {
+      "name": "R_0402_1005Metric",
+      "sha256": "6ed88b70926af431471c0ccaf6a55485f8cedab01cce4d1d4f3298a6cb6cef2c",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.51,
+            0.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "U1": {
+      "name": "OV9281",
+      "sha256": "61adfc2c17d4a3cbe3693c812b57693c27e804bce50b9406c70aa32d97e23340",
+      "pads": [
+        {
+          "number": "A1",
+          "xy_mm": [
+            -2.4875,
+            -1.786
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "A2",
+          "xy_mm": [
+            -1.8475,
+            -1.786
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "A3",
+          "xy_mm": [
+            -1.2075,
+            -1.786
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "A4",
+          "xy_mm": [
+            -0.5675,
+            -1.786
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "A5",
+          "xy_mm": [
+            0.0725,
+            -1.786
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "A6",
+          "xy_mm": [
+            0.7125,
+            -1.786
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "A7",
+          "xy_mm": [
+            1.3525,
+            -1.786
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "A8",
+          "xy_mm": [
+            1.9925,
+            -1.786
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "B1",
+          "xy_mm": [
+            -2.4875,
+            -1.286
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "B2",
+          "xy_mm": [
+            -1.8475,
+            -1.286
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "B3",
+          "xy_mm": [
+            -1.2075,
+            -1.286
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "B4",
+          "xy_mm": [
+            -0.5675,
+            -1.286
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "B5",
+          "xy_mm": [
+            0.0725,
+            -1.286
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "B6",
+          "xy_mm": [
+            0.7125,
+            -1.286
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "B7",
+          "xy_mm": [
+            1.3525,
+            -1.286
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "B8",
+          "xy_mm": [
+            1.9925,
+            -1.286
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "C1",
+          "xy_mm": [
+            -2.4875,
+            -0.786
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "C2",
+          "xy_mm": [
+            -1.8475,
+            -0.786
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "C3",
+          "xy_mm": [
+            -1.2075,
+            -0.786
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "C4",
+          "xy_mm": [
+            -0.5675,
+            -0.786
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "C5",
+          "xy_mm": [
+            0.0725,
+            -0.786
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "C6",
+          "xy_mm": [
+            0.7125,
+            -0.786
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "C7",
+          "xy_mm": [
+            1.3525,
+            -0.786
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "C8",
+          "xy_mm": [
+            1.9925,
+            -0.786
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "D1",
+          "xy_mm": [
+            -2.4875,
+            -0.286
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "D2",
+          "xy_mm": [
+            -1.8475,
+            -0.286
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "D3",
+          "xy_mm": [
+            -1.2075,
+            -0.286
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "D4",
+          "xy_mm": [
+            -0.5675,
+            -0.286
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "D5",
+          "xy_mm": [
+            0.0725,
+            -0.286
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "D6",
+          "xy_mm": [
+            0.7125,
+            -0.286
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "D7",
+          "xy_mm": [
+            1.3525,
+            -0.286
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "D8",
+          "xy_mm": [
+            1.9925,
+            -0.286
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "E1",
+          "xy_mm": [
+            -2.4875,
+            0.214
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "E2",
+          "xy_mm": [
+            -1.8475,
+            0.214
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "E3",
+          "xy_mm": [
+            -1.2075,
+            0.214
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "E4",
+          "xy_mm": [
+            -0.5675,
+            0.214
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "E5",
+          "xy_mm": [
+            0.0725,
+            0.214
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "E6",
+          "xy_mm": [
+            0.7125,
+            0.214
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "E7",
+          "xy_mm": [
+            1.3525,
+            0.214
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "E8",
+          "xy_mm": [
+            1.9925,
+            0.214
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "F1",
+          "xy_mm": [
+            -2.4875,
+            0.714
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "F2",
+          "xy_mm": [
+            -1.8475,
+            0.714
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "F3",
+          "xy_mm": [
+            -1.2075,
+            0.714
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "F4",
+          "xy_mm": [
+            -0.5675,
+            0.714
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "F5",
+          "xy_mm": [
+            0.0725,
+            0.714
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "F6",
+          "xy_mm": [
+            0.7125,
+            0.714
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "F7",
+          "xy_mm": [
+            1.3525,
+            0.714
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "F8",
+          "xy_mm": [
+            1.9925,
+            0.714
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "G1",
+          "xy_mm": [
+            -2.4875,
+            1.214
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "G2",
+          "xy_mm": [
+            -1.8475,
+            1.214
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "G3",
+          "xy_mm": [
+            -1.2075,
+            1.214
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "G4",
+          "xy_mm": [
+            -0.5675,
+            1.214
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "G5",
+          "xy_mm": [
+            0.0725,
+            1.214
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "G6",
+          "xy_mm": [
+            0.7125,
+            1.214
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "G7",
+          "xy_mm": [
+            1.3525,
+            1.214
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "G8",
+          "xy_mm": [
+            1.9925,
+            1.214
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "H1",
+          "xy_mm": [
+            -2.4875,
+            1.714
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "H2",
+          "xy_mm": [
+            -1.8475,
+            1.714
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "H3",
+          "xy_mm": [
+            -1.2075,
+            1.714
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "H4",
+          "xy_mm": [
+            -0.5675,
+            1.714
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "H5",
+          "xy_mm": [
+            0.0725,
+            1.714
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "H6",
+          "xy_mm": [
+            0.7125,
+            1.714
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "H7",
+          "xy_mm": [
+            1.3525,
+            1.714
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        },
+        {
+          "number": "H8",
+          "xy_mm": [
+            1.9925,
+            1.714
+          ],
+          "size_mm": [
+            0.2,
+            0.2
+          ],
+          "shape": 0
+        }
+      ]
+    },
+    "U5": {
+      "name": "Texas_X2SON-4_1x1mm_P0.65mm",
+      "sha256": "afc70d9e4f94ed9245485a778afbfdee582ec40bd375d61ea5c57a18a6486c60",
+      "pads": [
+        {
+          "number": "",
+          "xy_mm": [
+            -0.43,
+            -0.325
+          ],
+          "size_mm": [
+            0.148492,
+            0.148492
+          ],
+          "shape": 6
+        },
+        {
+          "number": "",
+          "xy_mm": [
+            -0.43,
+            -0.325
+          ],
+          "size_mm": [
+            0.148492,
+            0.148492
+          ],
+          "shape": 6
+        },
+        {
+          "number": "",
+          "xy_mm": [
+            -0.43,
+            0.325
+          ],
+          "size_mm": [
+            0.148492,
+            0.148492
+          ],
+          "shape": 6
+        },
+        {
+          "number": "",
+          "xy_mm": [
+            -0.43,
+            0.325
+          ],
+          "size_mm": [
+            0.148492,
+            0.148492
+          ],
+          "shape": 6
+        },
+        {
+          "number": "",
+          "xy_mm": [
+            0.43,
+            -0.325
+          ],
+          "size_mm": [
+            0.148492,
+            0.148492
+          ],
+          "shape": 6
+        },
+        {
+          "number": "",
+          "xy_mm": [
+            0.43,
+            -0.325
+          ],
+          "size_mm": [
+            0.148492,
+            0.148492
+          ],
+          "shape": 6
+        },
+        {
+          "number": "",
+          "xy_mm": [
+            0.43,
+            0.325
+          ],
+          "size_mm": [
+            0.148492,
+            0.148492
+          ],
+          "shape": 6
+        },
+        {
+          "number": "",
+          "xy_mm": [
+            0.43,
+            0.325
+          ],
+          "size_mm": [
+            0.148492,
+            0.148492
+          ],
+          "shape": 6
+        },
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.43,
+            -0.325
+          ],
+          "size_mm": [
+            0.148492,
+            0.148492
+          ],
+          "shape": 6
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            -0.43,
+            0.325
+          ],
+          "size_mm": [
+            0.148492,
+            0.148492
+          ],
+          "shape": 6
+        },
+        {
+          "number": "3",
+          "xy_mm": [
+            0.43,
+            0.325
+          ],
+          "size_mm": [
+            0.148492,
+            0.148492
+          ],
+          "shape": 6
+        },
+        {
+          "number": "4",
+          "xy_mm": [
+            0.43,
+            -0.325
+          ],
+          "size_mm": [
+            0.148492,
+            0.148492
+          ],
+          "shape": 6
+        },
+        {
+          "number": "5",
+          "xy_mm": [
+            0.0,
+            0.0
+          ],
+          "size_mm": [
+            0.58,
+            0.58
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "U6": {
+      "name": "Texas_X2SON-4_1x1mm_P0.65mm",
+      "sha256": "afc70d9e4f94ed9245485a778afbfdee582ec40bd375d61ea5c57a18a6486c60",
+      "pads": [
+        {
+          "number": "",
+          "xy_mm": [
+            -0.43,
+            -0.325
+          ],
+          "size_mm": [
+            0.148492,
+            0.148492
+          ],
+          "shape": 6
+        },
+        {
+          "number": "",
+          "xy_mm": [
+            -0.43,
+            -0.325
+          ],
+          "size_mm": [
+            0.148492,
+            0.148492
+          ],
+          "shape": 6
+        },
+        {
+          "number": "",
+          "xy_mm": [
+            -0.43,
+            0.325
+          ],
+          "size_mm": [
+            0.148492,
+            0.148492
+          ],
+          "shape": 6
+        },
+        {
+          "number": "",
+          "xy_mm": [
+            -0.43,
+            0.325
+          ],
+          "size_mm": [
+            0.148492,
+            0.148492
+          ],
+          "shape": 6
+        },
+        {
+          "number": "",
+          "xy_mm": [
+            0.43,
+            -0.325
+          ],
+          "size_mm": [
+            0.148492,
+            0.148492
+          ],
+          "shape": 6
+        },
+        {
+          "number": "",
+          "xy_mm": [
+            0.43,
+            -0.325
+          ],
+          "size_mm": [
+            0.148492,
+            0.148492
+          ],
+          "shape": 6
+        },
+        {
+          "number": "",
+          "xy_mm": [
+            0.43,
+            0.325
+          ],
+          "size_mm": [
+            0.148492,
+            0.148492
+          ],
+          "shape": 6
+        },
+        {
+          "number": "",
+          "xy_mm": [
+            0.43,
+            0.325
+          ],
+          "size_mm": [
+            0.148492,
+            0.148492
+          ],
+          "shape": 6
+        },
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.43,
+            -0.325
+          ],
+          "size_mm": [
+            0.148492,
+            0.148492
+          ],
+          "shape": 6
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            -0.43,
+            0.325
+          ],
+          "size_mm": [
+            0.148492,
+            0.148492
+          ],
+          "shape": 6
+        },
+        {
+          "number": "3",
+          "xy_mm": [
+            0.43,
+            0.325
+          ],
+          "size_mm": [
+            0.148492,
+            0.148492
+          ],
+          "shape": 6
+        },
+        {
+          "number": "4",
+          "xy_mm": [
+            0.43,
+            -0.325
+          ],
+          "size_mm": [
+            0.148492,
+            0.148492
+          ],
+          "shape": 6
+        },
+        {
+          "number": "5",
+          "xy_mm": [
+            0.0,
+            0.0
+          ],
+          "size_mm": [
+            0.58,
+            0.58
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "U7": {
+      "name": "Texas_X2SON-4_1x1mm_P0.65mm",
+      "sha256": "afc70d9e4f94ed9245485a778afbfdee582ec40bd375d61ea5c57a18a6486c60",
+      "pads": [
+        {
+          "number": "",
+          "xy_mm": [
+            -0.43,
+            -0.325
+          ],
+          "size_mm": [
+            0.148492,
+            0.148492
+          ],
+          "shape": 6
+        },
+        {
+          "number": "",
+          "xy_mm": [
+            -0.43,
+            -0.325
+          ],
+          "size_mm": [
+            0.148492,
+            0.148492
+          ],
+          "shape": 6
+        },
+        {
+          "number": "",
+          "xy_mm": [
+            -0.43,
+            0.325
+          ],
+          "size_mm": [
+            0.148492,
+            0.148492
+          ],
+          "shape": 6
+        },
+        {
+          "number": "",
+          "xy_mm": [
+            -0.43,
+            0.325
+          ],
+          "size_mm": [
+            0.148492,
+            0.148492
+          ],
+          "shape": 6
+        },
+        {
+          "number": "",
+          "xy_mm": [
+            0.43,
+            -0.325
+          ],
+          "size_mm": [
+            0.148492,
+            0.148492
+          ],
+          "shape": 6
+        },
+        {
+          "number": "",
+          "xy_mm": [
+            0.43,
+            -0.325
+          ],
+          "size_mm": [
+            0.148492,
+            0.148492
+          ],
+          "shape": 6
+        },
+        {
+          "number": "",
+          "xy_mm": [
+            0.43,
+            0.325
+          ],
+          "size_mm": [
+            0.148492,
+            0.148492
+          ],
+          "shape": 6
+        },
+        {
+          "number": "",
+          "xy_mm": [
+            0.43,
+            0.325
+          ],
+          "size_mm": [
+            0.148492,
+            0.148492
+          ],
+          "shape": 6
+        },
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.43,
+            -0.325
+          ],
+          "size_mm": [
+            0.148492,
+            0.148492
+          ],
+          "shape": 6
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            -0.43,
+            0.325
+          ],
+          "size_mm": [
+            0.148492,
+            0.148492
+          ],
+          "shape": 6
+        },
+        {
+          "number": "3",
+          "xy_mm": [
+            0.43,
+            0.325
+          ],
+          "size_mm": [
+            0.148492,
+            0.148492
+          ],
+          "shape": 6
+        },
+        {
+          "number": "4",
+          "xy_mm": [
+            0.43,
+            -0.325
+          ],
+          "size_mm": [
+            0.148492,
+            0.148492
+          ],
+          "shape": 6
+        },
+        {
+          "number": "5",
+          "xy_mm": [
+            0.0,
+            0.0
+          ],
+          "size_mm": [
+            0.58,
+            0.58
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "U101": {
+      "name": "ESP32-P4",
+      "sha256": "63e9642f1b8e483e40f68dff5839a5f8f4c23ca45c180de5eed167bf348671d2",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -4.875,
+            -4.375
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            -4.875,
+            -4.025
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "3",
+          "xy_mm": [
+            -4.875,
+            -3.675
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "4",
+          "xy_mm": [
+            -4.875,
+            -3.325
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "5",
+          "xy_mm": [
+            -4.875,
+            -2.975
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "6",
+          "xy_mm": [
+            -4.875,
+            -2.625
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "7",
+          "xy_mm": [
+            -4.875,
+            -2.275
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "8",
+          "xy_mm": [
+            -4.875,
+            -1.925
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "9",
+          "xy_mm": [
+            -4.875,
+            -1.575
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "10",
+          "xy_mm": [
+            -4.875,
+            -1.225
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "11",
+          "xy_mm": [
+            -4.875,
+            -0.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "12",
+          "xy_mm": [
+            -4.875,
+            -0.525
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "13",
+          "xy_mm": [
+            -4.875,
+            -0.175
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "14",
+          "xy_mm": [
+            -4.875,
+            0.175
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "15",
+          "xy_mm": [
+            -4.875,
+            0.525
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "16",
+          "xy_mm": [
+            -4.875,
+            0.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "17",
+          "xy_mm": [
+            -4.875,
+            1.225
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "18",
+          "xy_mm": [
+            -4.875,
+            1.575
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "19",
+          "xy_mm": [
+            -4.875,
+            1.925
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "20",
+          "xy_mm": [
+            -4.875,
+            2.275
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "21",
+          "xy_mm": [
+            -4.875,
+            2.625
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "22",
+          "xy_mm": [
+            -4.875,
+            2.975
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "23",
+          "xy_mm": [
+            -4.875,
+            3.325
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "24",
+          "xy_mm": [
+            -4.875,
+            3.675
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "25",
+          "xy_mm": [
+            -4.875,
+            4.025
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "26",
+          "xy_mm": [
+            -4.875,
+            4.375
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "27",
+          "xy_mm": [
+            -4.375,
+            4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "28",
+          "xy_mm": [
+            -4.025,
+            4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "29",
+          "xy_mm": [
+            -3.675,
+            4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "30",
+          "xy_mm": [
+            -3.325,
+            4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "31",
+          "xy_mm": [
+            -2.975,
+            4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "32",
+          "xy_mm": [
+            -2.625,
+            4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "33",
+          "xy_mm": [
+            -2.275,
+            4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "34",
+          "xy_mm": [
+            -1.925,
+            4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "35",
+          "xy_mm": [
+            -1.575,
+            4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "36",
+          "xy_mm": [
+            -1.225,
+            4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "37",
+          "xy_mm": [
+            -0.875,
+            4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "38",
+          "xy_mm": [
+            -0.525,
+            4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "39",
+          "xy_mm": [
+            -0.175,
+            4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "40",
+          "xy_mm": [
+            0.175,
+            4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "41",
+          "xy_mm": [
+            0.525,
+            4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "42",
+          "xy_mm": [
+            0.875,
+            4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "43",
+          "xy_mm": [
+            1.225,
+            4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "44",
+          "xy_mm": [
+            1.575,
+            4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "45",
+          "xy_mm": [
+            1.925,
+            4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "46",
+          "xy_mm": [
+            2.275,
+            4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "47",
+          "xy_mm": [
+            2.625,
+            4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "48",
+          "xy_mm": [
+            2.975,
+            4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "49",
+          "xy_mm": [
+            3.325,
+            4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "50",
+          "xy_mm": [
+            3.675,
+            4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "51",
+          "xy_mm": [
+            4.025,
+            4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "52",
+          "xy_mm": [
+            4.375,
+            4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "53",
+          "xy_mm": [
+            4.875,
+            4.375
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "54",
+          "xy_mm": [
+            4.875,
+            4.025
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "55",
+          "xy_mm": [
+            4.875,
+            3.675
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "56",
+          "xy_mm": [
+            4.875,
+            3.325
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "57",
+          "xy_mm": [
+            4.875,
+            2.975
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "58",
+          "xy_mm": [
+            4.875,
+            2.625
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "59",
+          "xy_mm": [
+            4.875,
+            2.275
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "60",
+          "xy_mm": [
+            4.875,
+            1.925
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "61",
+          "xy_mm": [
+            4.875,
+            1.575
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "62",
+          "xy_mm": [
+            4.875,
+            1.225
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "63",
+          "xy_mm": [
+            4.875,
+            0.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "64",
+          "xy_mm": [
+            4.875,
+            0.525
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "65",
+          "xy_mm": [
+            4.875,
+            0.175
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "66",
+          "xy_mm": [
+            4.875,
+            -0.175
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "67",
+          "xy_mm": [
+            4.875,
+            -0.525
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "68",
+          "xy_mm": [
+            4.875,
+            -0.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "69",
+          "xy_mm": [
+            4.875,
+            -1.225
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "70",
+          "xy_mm": [
+            4.875,
+            -1.575
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "71",
+          "xy_mm": [
+            4.875,
+            -1.925
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "72",
+          "xy_mm": [
+            4.875,
+            -2.275
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "73",
+          "xy_mm": [
+            4.875,
+            -2.625
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "74",
+          "xy_mm": [
+            4.875,
+            -2.975
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "75",
+          "xy_mm": [
+            4.875,
+            -3.325
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "76",
+          "xy_mm": [
+            4.875,
+            -3.675
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "77",
+          "xy_mm": [
+            4.875,
+            -4.025
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "78",
+          "xy_mm": [
+            4.875,
+            -4.375
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "79",
+          "xy_mm": [
+            4.375,
+            -4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "80",
+          "xy_mm": [
+            4.025,
+            -4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "81",
+          "xy_mm": [
+            3.675,
+            -4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "82",
+          "xy_mm": [
+            3.325,
+            -4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "83",
+          "xy_mm": [
+            2.975,
+            -4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "84",
+          "xy_mm": [
+            2.625,
+            -4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "85",
+          "xy_mm": [
+            2.275,
+            -4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "86",
+          "xy_mm": [
+            1.925,
+            -4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "87",
+          "xy_mm": [
+            1.575,
+            -4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "88",
+          "xy_mm": [
+            1.225,
+            -4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "89",
+          "xy_mm": [
+            0.875,
+            -4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "90",
+          "xy_mm": [
+            0.525,
+            -4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "91",
+          "xy_mm": [
+            0.175,
+            -4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "92",
+          "xy_mm": [
+            -0.175,
+            -4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "93",
+          "xy_mm": [
+            -0.525,
+            -4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "94",
+          "xy_mm": [
+            -0.875,
+            -4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "95",
+          "xy_mm": [
+            -1.225,
+            -4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "96",
+          "xy_mm": [
+            -1.575,
+            -4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "97",
+          "xy_mm": [
+            -1.925,
+            -4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "98",
+          "xy_mm": [
+            -2.275,
+            -4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "99",
+          "xy_mm": [
+            -2.625,
+            -4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "100",
+          "xy_mm": [
+            -2.975,
+            -4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "101",
+          "xy_mm": [
+            -3.325,
+            -4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "102",
+          "xy_mm": [
+            -3.675,
+            -4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "103",
+          "xy_mm": [
+            -4.025,
+            -4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "104",
+          "xy_mm": [
+            -4.375,
+            -4.875
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "shape": 2
+        },
+        {
+          "number": "105",
+          "xy_mm": [
+            -2.7,
+            -2.7
+          ],
+          "size_mm": [
+            2.1,
+            2.1
+          ],
+          "shape": 1
+        },
+        {
+          "number": "105",
+          "xy_mm": [
+            -2.7,
+            0.0
+          ],
+          "size_mm": [
+            2.1,
+            2.1
+          ],
+          "shape": 1
+        },
+        {
+          "number": "105",
+          "xy_mm": [
+            -2.7,
+            2.7
+          ],
+          "size_mm": [
+            2.1,
+            2.1
+          ],
+          "shape": 1
+        },
+        {
+          "number": "105",
+          "xy_mm": [
+            0.0,
+            -2.7
+          ],
+          "size_mm": [
+            2.1,
+            2.1
+          ],
+          "shape": 1
+        },
+        {
+          "number": "105",
+          "xy_mm": [
+            0.0,
+            0.0
+          ],
+          "size_mm": [
+            2.1,
+            2.1
+          ],
+          "shape": 1
+        },
+        {
+          "number": "105",
+          "xy_mm": [
+            0.0,
+            2.7
+          ],
+          "size_mm": [
+            2.1,
+            2.1
+          ],
+          "shape": 1
+        },
+        {
+          "number": "105",
+          "xy_mm": [
+            2.7,
+            -2.7
+          ],
+          "size_mm": [
+            2.1,
+            2.1
+          ],
+          "shape": 1
+        },
+        {
+          "number": "105",
+          "xy_mm": [
+            2.7,
+            0.0
+          ],
+          "size_mm": [
+            2.1,
+            2.1
+          ],
+          "shape": 1
+        },
+        {
+          "number": "105",
+          "xy_mm": [
+            2.7,
+            2.7
+          ],
+          "size_mm": [
+            2.1,
+            2.1
+          ],
+          "shape": 1
+        }
+      ]
+    },
+    "U102": {
+      "name": "Winbond_USON-8-2EP_3x4mm_P0.8mm_EP0.2x0.8mm",
+      "sha256": "55180e8f8ae09853af725da3a76d46c2a595f6d2d6a9ac7bd963531cc16fbb38",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -1.35,
+            -1.2
+          ],
+          "size_mm": [
+            1.05,
+            0.3
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            -1.35,
+            -0.4
+          ],
+          "size_mm": [
+            1.05,
+            0.3
+          ],
+          "shape": 4
+        },
+        {
+          "number": "3",
+          "xy_mm": [
+            -1.35,
+            0.4
+          ],
+          "size_mm": [
+            1.05,
+            0.3
+          ],
+          "shape": 4
+        },
+        {
+          "number": "4",
+          "xy_mm": [
+            -1.35,
+            1.2
+          ],
+          "size_mm": [
+            1.05,
+            0.3
+          ],
+          "shape": 4
+        },
+        {
+          "number": "5",
+          "xy_mm": [
+            1.35,
+            1.2
+          ],
+          "size_mm": [
+            1.05,
+            0.3
+          ],
+          "shape": 4
+        },
+        {
+          "number": "6",
+          "xy_mm": [
+            1.35,
+            0.4
+          ],
+          "size_mm": [
+            1.05,
+            0.3
+          ],
+          "shape": 4
+        },
+        {
+          "number": "7",
+          "xy_mm": [
+            1.35,
+            -0.4
+          ],
+          "size_mm": [
+            1.05,
+            0.3
+          ],
+          "shape": 4
+        },
+        {
+          "number": "8",
+          "xy_mm": [
+            1.35,
+            -1.2
+          ],
+          "size_mm": [
+            1.05,
+            0.3
+          ],
+          "shape": 4
+        },
+        {
+          "number": "9",
+          "xy_mm": [
+            0.0,
+            -0.8
+          ],
+          "size_mm": [
+            0.2,
+            0.8
+          ],
+          "shape": 4
+        },
+        {
+          "number": "9",
+          "xy_mm": [
+            0.0,
+            0.8
+          ],
+          "size_mm": [
+            0.2,
+            0.8
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "U103": {
+      "name": "TI_DRL0006A_R11",
+      "sha256": "04efa690fde6f84dd4852488d655852888cfdd425fefe00f33360edf60986ae1",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.74,
+            -0.5
+          ],
+          "size_mm": [
+            0.67,
+            0.3
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            -0.74,
+            0.0
+          ],
+          "size_mm": [
+            0.67,
+            0.3
+          ],
+          "shape": 4
+        },
+        {
+          "number": "3",
+          "xy_mm": [
+            -0.74,
+            0.5
+          ],
+          "size_mm": [
+            0.67,
+            0.3
+          ],
+          "shape": 4
+        },
+        {
+          "number": "4",
+          "xy_mm": [
+            0.74,
+            0.5
+          ],
+          "size_mm": [
+            0.67,
+            0.3
+          ],
+          "shape": 4
+        },
+        {
+          "number": "5",
+          "xy_mm": [
+            0.74,
+            0.0
+          ],
+          "size_mm": [
+            0.67,
+            0.3
+          ],
+          "shape": 4
+        },
+        {
+          "number": "6",
+          "xy_mm": [
+            0.74,
+            -0.5
+          ],
+          "size_mm": [
+            0.67,
+            0.3
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "U104": {
+      "name": "TI_DRL0006A_R11",
+      "sha256": "04efa690fde6f84dd4852488d655852888cfdd425fefe00f33360edf60986ae1",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.74,
+            -0.5
+          ],
+          "size_mm": [
+            0.67,
+            0.3
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            -0.74,
+            0.0
+          ],
+          "size_mm": [
+            0.67,
+            0.3
+          ],
+          "shape": 4
+        },
+        {
+          "number": "3",
+          "xy_mm": [
+            -0.74,
+            0.5
+          ],
+          "size_mm": [
+            0.67,
+            0.3
+          ],
+          "shape": 4
+        },
+        {
+          "number": "4",
+          "xy_mm": [
+            0.74,
+            0.5
+          ],
+          "size_mm": [
+            0.67,
+            0.3
+          ],
+          "shape": 4
+        },
+        {
+          "number": "5",
+          "xy_mm": [
+            0.74,
+            0.0
+          ],
+          "size_mm": [
+            0.67,
+            0.3
+          ],
+          "shape": 4
+        },
+        {
+          "number": "6",
+          "xy_mm": [
+            0.74,
+            -0.5
+          ],
+          "size_mm": [
+            0.67,
+            0.3
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "U105": {
+      "name": "SOT-666",
+      "sha256": "49be652b5a07fdd6143cdd4566e366168b1768a96ab0414c94ecbf69263b031c",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.85,
+            -0.5375
+          ],
+          "size_mm": [
+            0.5,
+            0.375
+          ],
+          "shape": 4
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            -0.925,
+            0.0
+          ],
+          "size_mm": [
+            0.65,
+            0.3
+          ],
+          "shape": 4
+        },
+        {
+          "number": "3",
+          "xy_mm": [
+            -0.85,
+            0.5375
+          ],
+          "size_mm": [
+            0.5,
+            0.375
+          ],
+          "shape": 4
+        },
+        {
+          "number": "4",
+          "xy_mm": [
+            0.85,
+            0.5375
+          ],
+          "size_mm": [
+            0.5,
+            0.375
+          ],
+          "shape": 4
+        },
+        {
+          "number": "5",
+          "xy_mm": [
+            0.925,
+            0.0
+          ],
+          "size_mm": [
+            0.65,
+            0.3
+          ],
+          "shape": 4
+        },
+        {
+          "number": "6",
+          "xy_mm": [
+            0.85,
+            -0.5375
+          ],
+          "size_mm": [
+            0.5,
+            0.375
+          ],
+          "shape": 4
+        }
+      ]
+    },
+    "Y1": {
+      "name": "Epson_SG210STF_2.5x2.0mm_R09",
+      "sha256": "1047c93523b3e08b071c220ce1cfb0ab4bf67921ad49ef858dd8d025a563e507",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.85,
+            0.65
+          ],
+          "size_mm": [
+            1.1,
+            0.9
+          ],
+          "shape": 1
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.85,
+            0.65
+          ],
+          "size_mm": [
+            1.1,
+            0.9
+          ],
+          "shape": 1
+        },
+        {
+          "number": "3",
+          "xy_mm": [
+            0.85,
+            -0.65
+          ],
+          "size_mm": [
+            1.1,
+            0.9
+          ],
+          "shape": 1
+        },
+        {
+          "number": "4",
+          "xy_mm": [
+            -0.85,
+            -0.65
+          ],
+          "size_mm": [
+            1.1,
+            0.9
+          ],
+          "shape": 1
+        }
+      ]
+    },
+    "Y101": {
+      "name": "ECS_ECX1637B2_R11",
+      "sha256": "8d186b8cf831119b0e930d4aa4b50cb28c83ed4d099efac47f37bdbaf4e1ee40",
+      "pads": [
+        {
+          "number": "1",
+          "xy_mm": [
+            -0.675,
+            0.575
+          ],
+          "size_mm": [
+            0.85,
+            0.75
+          ],
+          "shape": 1
+        },
+        {
+          "number": "2",
+          "xy_mm": [
+            0.675,
+            0.575
+          ],
+          "size_mm": [
+            0.85,
+            0.75
+          ],
+          "shape": 1
+        },
+        {
+          "number": "3",
+          "xy_mm": [
+            0.675,
+            -0.575
+          ],
+          "size_mm": [
+            0.85,
+            0.75
+          ],
+          "shape": 1
+        },
+        {
+          "number": "4",
+          "xy_mm": [
+            -0.675,
+            -0.575
+          ],
+          "size_mm": [
+            0.85,
+            0.75
+          ],
+          "shape": 1
+        }
+      ]
+    }
+  },
+  "mechanical_pad_exceptions": {
+    "J101:MP": "Two unconnected solder mounting tabs; no signal pin assignment"
+  },
+  "review_scope": "Native pins and netlist checked. New land patterns compared with cited package drawings. Manufacturing tolerances and assembly process require prototype qualification.",
+  "sha256": {
+    "camera.kicad_sch": "60dbecc5f72fd22305ba69d2739d26000d01b07bc1bc212291270733c07ff999",
+    "Camera.kicad_sym": "5249882afc92f14b27f2391bdba32ef426f117d576ef43e77c0414abf3ea6b43",
+    "source-netlist.xml": "f518547051f97f71cc9c5eb2d63c1f82fb883f6858dd3c37c44ddf60d9167812"
+  }
+}

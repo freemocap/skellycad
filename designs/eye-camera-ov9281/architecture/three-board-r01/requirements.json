@@ -1,0 +1,101 @@
+{
+  "id": "THREE-BOARD-A01",
+  "units": {
+    "length": "mm",
+    "mass": "g",
+    "power": "W",
+    "rate": "frames/s"
+  },
+  "status": "Approved architecture study; no hardware demonstrated",
+  "baseline": "R11 preserved; working-review selector unchanged",
+  "head_mounted_mass": {
+    "target_g": 1.0,
+    "criterion": "strictly less than",
+    "includes": [
+      "camera head",
+      "interface board",
+      "local flex",
+      "sensor",
+      "serializer",
+      "local regulators and passives",
+      "lens and IR-pass filter",
+      "two IR LEDs",
+      "supports",
+      "adhesives",
+      "head-side tether connector",
+      "mount/strain relief allowance"
+    ],
+    "excludes": [
+      "external tether",
+      "base station"
+    ],
+    "note": "Track tether and backpack carried mass separately; all mass assumptions explicit"
+  },
+  "boards": {
+    "head": "OV9281, adjustable close-focus optics, axial IR LEDs, sensor decoupling",
+    "interface": "Serializer, local sensor/serializer supplies, protection, tether connector",
+    "base": "Deserializer, P4, memory, USB, host control and future auxiliary sensors"
+  },
+  "recording": {
+    "primary": {
+      "width": 640,
+      "height": 400,
+      "fps": 100,
+      "bits": 8
+    },
+    "stretch": {
+      "width": 640,
+      "height": 400,
+      "fps": 120,
+      "bits": 8
+    },
+    "sensor_ceiling_study": {
+      "width": 1280,
+      "height": 800,
+      "fps": 120,
+      "bits": 8
+    },
+    "first_camera_count": 1,
+    "streaming": "Uncompressed primary; compression optional at base; never assumed to meet throughput",
+    "timing": "Frame counter, exposure configuration and dropped-frame detection required; distinguish exposure timestamp from host arrival"
+  },
+  "optics": {
+    "working_distances_mm": [
+      10,
+      15,
+      20
+    ],
+    "band_candidate_nm": 940,
+    "visible_rejection": "Required; no IR-cut filter",
+    "focus": "Adjustable threaded holder preferred; actual lens remains provisional",
+    "sensor_image_area_mm": [
+      3.896,
+      2.453
+    ],
+    "crop": "No sensor crop silently substituted for full image-circle coverage",
+    "illumination": "Two LEDs opposite the lens along module long axis, default off; no eye-use qualification"
+  },
+  "tether": {
+    "lengths_m": [
+      0.3,
+      0.6
+    ],
+    "gauge_candidate_awg": 36,
+    "topology": "Two controlled-impedance signal conductors + supply + return, shield additional; compare micro-coax if superior",
+    "supply_candidate_V": 5,
+    "connector": "Small/light candidate envelope, exact connector and pin order NOT assigned; JST appearance is not protocol compatibility",
+    "qualification": "DC voltage drop, impedance/loss, bend/strain and shield termination must be validated"
+  },
+  "deployment": {
+    "mouse": "Base station fixed above enclosure; tether pull/torsion must be qualified",
+    "larger_animal": "Same electronics on backpack; backpack mass and heat reported separately"
+  },
+  "boundaries": [
+    "No animal mount/anatomy changes",
+    "No purchase or vendor contact",
+    "No fabrication release",
+    "No claim of physical fit or streaming",
+    "CLI/macros only",
+    "Public documentation required; preserve source/license provenance"
+  ]
+}

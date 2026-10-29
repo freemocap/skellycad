@@ -1,0 +1,64 @@
+{
+  "revision": "OC0TC-USB-CONCEPT-R02",
+  "units": "mm",
+  "status": "Architecture and packaging study; not a pin-complete or routed design",
+  "sensor": "OG0TC inside OC0TC",
+  "sensor_mode_target": {
+    "width": 400,
+    "height": 400,
+    "fps": 120,
+    "bits": 8
+  },
+  "interface_candidate": "1-lane MIPI D-PHY to CX3, then USB 2.0 High Speed",
+  "compatibility_status": "PHY family plausible; timing, registers, power sequencing and USB streaming unverified",
+  "bridge_candidate": "CYUSB3065-BZXI",
+  "bridge_package_mm": [
+    10,
+    10,
+    1.7
+  ],
+  "main_board_mm": [
+    20,
+    14,
+    0.8
+  ],
+  "flex_mm": [
+    30,
+    4,
+    0.15
+  ],
+  "head_board_mm": [
+    8,
+    8,
+    0.8
+  ],
+  "flat_length_mm": 58,
+  "requested_width_target_mm": 10,
+  "current_width_mm": 14,
+  "optics": "Integrated module optics; no separate barrel or holder; close focus pending",
+  "usb_connector_candidate": "JST SH SM04B-SRSS-TB",
+  "proposed_local_pinout": {
+    "1": "VBUS_5V",
+    "2": "USB_D_MINUS",
+    "3": "USB_D_PLUS",
+    "4": "GND"
+  },
+  "pinout_status": "New design convention, not the verified Pupil Labs cable pinout",
+  "required_documents": [
+    "OC0TC exact variant, full pinout and land pattern",
+    "complete XYZ mechanical drawing and optical datum",
+    "working distance, depth of field and 940 nm response",
+    "power sequencing and IO voltage",
+    "initialization and supported mode timing",
+    "existing receiver/USB reference design or evaluation kit"
+  ],
+  "parent_revision": "OG0TC-USB-CONCEPT-R01",
+  "module": "OC0TC",
+  "module_variant_candidate": "OC0TC1B-RAVA-001A (B&W)",
+  "module_height_mm": 1.7,
+  "module_xy_allowance_mm": [
+    3,
+    3
+  ],
+  "module_xy_status": "Design allowance only; actual XY dimensions absent from reviewed sources"
+}

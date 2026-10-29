@@ -1,0 +1,10 @@
+{
+  "revision": "OG0TC-USB-CONCEPT-R01",
+  "scope": "Native architecture and mechanical envelopes only",
+  "files": {
+    "electronics\\r01\\og0tc-usb.kicad_pcb": "722afa74b8f93c01fe59d44c2571eac6ec162a89c62058cf47a8a6eae4e69db2",
+    "electronics\\r01\\og0tc-usb.kicad_sch": "af3b8e7a14f88e38a3e3178193f18720c0dd3e7dba5d968026e50de89fcf8066",
+    "mechanical\\r01\\og0tc-usb-comparison.FCStd": "ca876283e9bb1452c6183e0b22882372b560ae3733e8a696ed56ba053fd80da3",
+    "mechanical\\r01\\og0tc-usb-envelope.step": "93da5affb0a5a77ad6c6d114d723a06c9471b005050c57e21e9bef9b52b05701"
+  }
+}

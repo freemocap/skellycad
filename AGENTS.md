@@ -5,6 +5,8 @@ add the source to references.bib, cite its key beside the supported claim, recor
 review scope and run the bibliography checker and its tests before handoff.
 
 Before CAD setup, builds, exports or desktop review, read docs/development.md.
+For every CAD task, follow its save-and-close policy: save work during the task
+and close finished task-owned documents before handoff.
 For eye-tracker work, read designs/eye-tracker/README.md and the species README.
 Use that design's active-model.json to select a complete assembly and verify its
 checkpoint hash before geometry changes or exports. Keep matched parts together.

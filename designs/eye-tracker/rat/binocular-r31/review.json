@@ -1,0 +1,17 @@
+{
+  "revision": "ET-RAT-BINOCULAR-R31",
+  "units": "mm",
+  "native_checkpoint": "designs/eye-tracker/rat/binocular-r31/checkpoints/ET-RAT-BINOCULAR-R31.FCStd",
+  "native_sha256": "e73906a7335191b2043e10ac43ebf354977d342e5da554b3da491961343b3506",
+  "source": "baseline.json",
+  "recipe": "recipe.json",
+  "ribbons": "ribbons.json",
+  "arms": "arms.json",
+  "validation": "validation.json",
+  "containment": "containment.json",
+  "status": "Uncapped binocular review candidate; static checks passed; physical fit unverified",
+  "physical_fit_verified": false,
+  "print_release": false,
+  "selected_species_manifest_unchanged": true,
+  "task_owned_documents_closed": true
+}

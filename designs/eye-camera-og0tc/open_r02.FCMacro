@@ -1,0 +1,8 @@
+from pathlib import Path
+import FreeCAD as App
+import FreeCADGui as Gui
+path=Path(__file__).resolve().parent/'mechanical/r02/oc0tc-usb-comparison.FCStd'
+doc=next((d for d in App.listDocuments().values() if d.FileName and Path(d.FileName).resolve()==path),None)
+if doc is None: doc=App.openDocument(str(path))
+App.setActiveDocument(doc.Name);Gui.setActiveDocument(doc.Name)
+Gui.activeDocument().activeView().viewAxonometric();Gui.activeDocument().activeView().fitAll()

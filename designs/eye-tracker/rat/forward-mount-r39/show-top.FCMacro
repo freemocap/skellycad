@@ -1,0 +1,9 @@
+from pathlib import Path
+import FreeCAD as A,FreeCADGui as G
+from PySide import QtCore
+R=Path(__file__).resolve().parents[4];O=R/'generated/eye-tracker/rat/forward-mount-r39'
+d=next(x for x in A.listDocuments().values() if x.FileName.replace('\\','/').endswith('/RAT-R39-current-complete-review.FCStd'))
+A.setActiveDocument(d.Name);v=G.activeDocument().activeView();v.viewTop();v.fitAll()
+def capture():
+ v.fitAll();G.updateGui();v.saveImage(str(O/'review-top.png'),1600,1200,'White');d.save()
+QtCore.QTimer.singleShot(1500,capture)

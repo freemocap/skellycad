@@ -1,0 +1,430 @@
+{
+  "units": "mm",
+  "passed": true,
+  "symmetry": {
+    "eye_primary_Holder_difference_mm3": 0.0,
+    "eye_primary_Clip_difference_mm3": 0.0,
+    "RetainedSocket_difference_mm3": 0.0,
+    "lens_world_mm_reflection_error": 0.0,
+    "axis_world_reflection_error": 0.0,
+    "proper_camera_rotation_determinants": [
+      1.0000000000000002,
+      1.0000000000000002
+    ]
+  },
+  "aim": {
+    "Right": {
+      "lens_world_mm": [
+        11.909443912498038,
+        -25.018274175577787,
+        3.5348940568427785
+      ],
+      "axis_world": [
+        -0.184419385780873,
+        0.8464885954415429,
+        -0.4994462412868971
+      ],
+      "miss_mm": 2.175583928816829e-15,
+      "stand_off_mm": 19.768044700088822,
+      "forward_mm": 19.768044700088822
+    },
+    "Left": {
+      "lens_world_mm": [
+        11.909443912498038,
+        25.018274175577787,
+        3.5348940568427785
+      ],
+      "axis_world": [
+        -0.184419385780873,
+        -0.8464885954415429,
+        -0.4994462412868971
+      ],
+      "miss_mm": 2.175583928816829e-15,
+      "stand_off_mm": 19.768044700088822,
+      "forward_mm": 19.768044700088822
+    }
+  },
+  "interferences": {
+    "RightM4_lens/Righteye_primary_Holder": {
+      "mm3": 1.913179165286029,
+      "inherited_mm3": 1.9131791652860057
+    },
+    "Righteye_primary_Holder/Righteye_primary_Clip": {
+      "mm3": 0.007941401239968136,
+      "inherited_mm3": 0.007941401239968136
+    },
+    "LeftM4_lens/Lefteye_primary_Holder": {
+      "mm3": 1.9131895322751113,
+      "inherited_mm3": 1.9131895322751233
+    },
+    "Lefteye_primary_Holder/Lefteye_primary_Clip": {
+      "mm3": 0.007941401497620137,
+      "inherited_mm3": 0.007941401497602573
+    }
+  },
+  "mesh_checks": {
+    "Carrier": {
+      "closed": true,
+      "self_intersections": false
+    },
+    "Baseplate": {
+      "closed": true,
+      "self_intersections": false
+    },
+    "RightPCB": {
+      "closed": true,
+      "self_intersections": false
+    },
+    "RightJST_4pin": {
+      "closed": true,
+      "self_intersections": false
+    },
+    "Rightcamera_pcb": {
+      "closed": true,
+      "self_intersections": false
+    },
+    "RightM4_lens": {
+      "closed": true,
+      "self_intersections": false
+    },
+    "RightIR_LED": {
+      "closed": true,
+      "self_intersections": false
+    },
+    "RightIR_LED_001": {
+      "closed": true,
+      "self_intersections": false
+    },
+    "Rightribbon": {
+      "closed": true,
+      "self_intersections": false
+    },
+    "Righteye_primary_Holder": {
+      "closed": true,
+      "self_intersections": false
+    },
+    "Righteye_primary_Clip": {
+      "closed": true,
+      "self_intersections": false
+    },
+    "LeftPCB": {
+      "closed": true,
+      "self_intersections": false
+    },
+    "LeftJST_4pin": {
+      "closed": true,
+      "self_intersections": false
+    },
+    "Leftcamera_pcb": {
+      "closed": true,
+      "self_intersections": false
+    },
+    "LeftM4_lens": {
+      "closed": true,
+      "self_intersections": false
+    },
+    "LeftIR_LED": {
+      "closed": true,
+      "self_intersections": false
+    },
+    "LeftIR_LED_001": {
+      "closed": true,
+      "self_intersections": false
+    },
+    "Leftribbon": {
+      "closed": true,
+      "self_intersections": false
+    },
+    "Lefteye_primary_Holder": {
+      "closed": true,
+      "self_intersections": false
+    },
+    "Lefteye_primary_Clip": {
+      "closed": true,
+      "self_intersections": false
+    }
+  },
+  "anatomy_crossings": {
+    "Carrier": 0,
+    "RightPCB": 0,
+    "RightJST_4pin": 0,
+    "Rightcamera_pcb": 0,
+    "RightM4_lens": 0,
+    "RightIR_LED": 0,
+    "RightIR_LED_001": 0,
+    "Rightribbon": 0,
+    "Righteye_primary_Holder": 0,
+    "Righteye_primary_Clip": 0,
+    "LeftPCB": 0,
+    "LeftJST_4pin": 0,
+    "Leftcamera_pcb": 0,
+    "LeftM4_lens": 0,
+    "LeftIR_LED": 0,
+    "LeftIR_LED_001": 0,
+    "Leftribbon": 0,
+    "Lefteye_primary_Holder": 0,
+    "Lefteye_primary_Clip": 0
+  },
+  "seating": {
+    "RightUpperSupport": {
+      "central_mm3": 7.474062269599089,
+      "socket_mm3": 2.594185379155865
+    },
+    "RightLowerSupport": {
+      "central_mm3": 8.0402527791794,
+      "socket_mm3": 2.595343062741816
+    },
+    "LeftUpperSupport": {
+      "central_mm3": 10.706865696153363,
+      "socket_mm3": 2.593733532297851
+    },
+    "LeftLowerSupport": {
+      "central_mm3": 7.770298650704132,
+      "socket_mm3": 2.5954006459019414
+    }
+  },
+  "physical_fit_verified": false,
+  "print_release": false,
+  "arm_routing_intentionally_independent": true,
+  "pcb_support_thickness_mm": 1.8,
+  "source_camera_heads_preserved": true,
+  "junctions": {
+    "RightUpperSupport": {
+      "flare_scale": 0.6,
+      "root_width_mm": 3.96,
+      "root_thickness_mm": 2.22,
+      "tip_width_mm": 2.92,
+      "tip_thickness_mm": 2.16,
+      "section_edge_chamfer_mm": 0.2,
+      "poles_mm": [
+        [
+          3.1,
+          16.30585493132117,
+          16.508782396981754
+        ],
+        [
+          3.1,
+          20.5,
+          22.8
+        ],
+        [
+          14.702861811430981,
+          9.554566653133435,
+          32.6580665423424
+        ],
+        [
+          20.86605980086754,
+          7.932124111368519,
+          32.07268569052321
+        ]
+      ],
+      "root_handle_scale": 2.0,
+      "socket_handle_scale": 2.5,
+      "old_engagement_mm3": [
+        4.746016602410761,
+        1.2853538095338506
+      ],
+      "new_engagement_mm3": [
+        7.474062269747594,
+        2.594185378950993
+      ],
+      "arm_free_gap_mm": 4.223665909612591,
+      "ribbon_gap_mm": 0.5406127233394101,
+      "transition": "Continuous loft with smooth flared root and socket end, tangent-transported sections and chamfered longitudinal edges"
+    },
+    "RightLowerSupport": {
+      "flare_scale": 0.6,
+      "root_width_mm": 3.96,
+      "root_thickness_mm": 2.22,
+      "tip_width_mm": 2.92,
+      "tip_thickness_mm": 2.16,
+      "section_edge_chamfer_mm": 0.2,
+      "poles_mm": [
+        [
+          3.29414506867883,
+          7.0,
+          16.508782396981754
+        ],
+        [
+          -8.9,
+          7.0,
+          34.8
+        ],
+        [
+          10.805428413454466,
+          -4.111063699692271,
+          41.525876867798516
+        ],
+        [
+          21.585119305196358,
+          6.106202990081089,
+          32.951016771648575
+        ]
+      ],
+      "root_handle_scale": 1.0,
+      "socket_handle_scale": 1.0,
+      "old_engagement_mm3": [
+        4.301795203729724,
+        1.2714207596928426
+      ],
+      "new_engagement_mm3": [
+        8.040252779177859,
+        2.5953430627592926
+      ],
+      "arm_free_gap_mm": 3.2570883130089774,
+      "ribbon_gap_mm": 0.696078171481888,
+      "transition": "Continuous loft with smooth flared root and socket end, tangent-transported sections and chamfered longitudinal edges"
+    },
+    "LeftUpperSupport": {
+      "flare_scale": 0.6,
+      "root_width_mm": 3.96,
+      "root_thickness_mm": 2.22,
+      "tip_width_mm": 2.92,
+      "tip_thickness_mm": 2.16,
+      "section_edge_chamfer_mm": 0.2,
+      "poles_mm": [
+        [
+          3.0999999999999988,
+          16.5,
+          -16.527075880640414
+        ],
+        [
+          3.0999999999999988,
+          16.5,
+          -26.877075880640415
+        ],
+        [
+          14.70286181143098,
+          9.554566653133428,
+          -32.735142422982804
+        ],
+        [
+          20.866059800867546,
+          7.93212411136851,
+          -32.149761571163616
+        ]
+      ],
+      "root_handle_scale": 2.0,
+      "socket_handle_scale": 2.5,
+      "old_engagement_mm3": [
+        6.78565997634863,
+        1.2800467257902375
+      ],
+      "new_engagement_mm3": [
+        10.706865696127462,
+        2.5937335322859565
+      ],
+      "arm_free_gap_mm": 1.9472773812705175,
+      "ribbon_gap_mm": 0.7428576934442628,
+      "transition": "Continuous loft with smooth flared root and socket end, tangent-transported sections and chamfered longitudinal edges"
+    },
+    "LeftLowerSupport": {
+      "flare_scale": 0.6,
+      "root_width_mm": 3.96,
+      "root_thickness_mm": 2.22,
+      "tip_width_mm": 2.92,
+      "tip_thickness_mm": 2.16,
+      "section_edge_chamfer_mm": 0.2,
+      "poles_mm": [
+        [
+          3.1952579344415675,
+          7.047628967220782,
+          -16.54367311009492
+        ],
+        [
+          1.0999999999999996,
+          5.999999999999998,
+          -23.877075880640408
+        ],
+        [
+          -13.35776308725095,
+          9.645059711886894,
+          -29.894767064390308
+        ],
+        [
+          -5.0205136562145105,
+          -3.4966849254016816,
+          -37.60248492801907
+        ],
+        [
+          15.205302246818508,
+          0.059249234909088955,
+          -38.103009852051194
+        ],
+        [
+          21.585119305196365,
+          6.106202990081079,
+          -33.02809265228898
+        ]
+      ],
+      "root_handle_scale": 1.0,
+      "socket_handle_scale": 1.2,
+      "old_engagement_mm3": [
+        4.653784795569142,
+        1.2767316478883837
+      ],
+      "new_engagement_mm3": [
+        7.770298650726365,
+        2.5954006459023637
+      ],
+      "arm_free_gap_mm": 2.751437882912657,
+      "ribbon_gap_mm": 0.7462768396910663,
+      "transition": "Continuous loft with smooth flared root and socket end, tangent-transported sections and chamfered longitudinal edges",
+      "minimum_plan_caudal_offset_mm": 0.7187319134008843,
+      "finished_length_mm": 45.385984601745,
+      "mean_plan_distance_to_ribbon_mm": 4.007651594786878
+    }
+  },
+  "finishing": {
+    "RightUpperSupport-root": {
+      "radius_mm": 0.4,
+      "selected_seam_length_mm": 1.4357438066257417,
+      "added_volume_mm3": 0.0,
+      "removed_volume_mm3": 0.020156219867038205
+    },
+    "RightUpperSupport-socket": {
+      "radius_mm": 0.4,
+      "selected_seam_length_mm": 2.6207557664262993,
+      "added_volume_mm3": 0.07132984039604105,
+      "removed_volume_mm3": 0.0
+    },
+    "RightLowerSupport-root": {
+      "radius_mm": 0.4,
+      "selected_seam_length_mm": 2.24984648395227,
+      "added_volume_mm3": 0.017178405909148185,
+      "removed_volume_mm3": 0.0
+    },
+    "RightLowerSupport-socket": {
+      "radius_mm": 0.4,
+      "selected_seam_length_mm": 2.6204799694501792,
+      "added_volume_mm3": 0.08096896081451621,
+      "removed_volume_mm3": 0.0
+    },
+    "LeftUpperSupport-root": {
+      "radius_mm": 0.4,
+      "selected_seam_length_mm": 3.5600000000000307,
+      "added_volume_mm3": 0.0,
+      "removed_volume_mm3": 0.04549217784340139
+    },
+    "LeftUpperSupport-socket": {
+      "radius_mm": 0.4,
+      "selected_seam_length_mm": 2.619035351601974,
+      "added_volume_mm3": 0.07301946091016334,
+      "removed_volume_mm3": 0.0
+    },
+    "LeftLowerSupport-root": {
+      "radius_mm": 0.4,
+      "selected_seam_length_mm": 1.4000517926677074,
+      "added_volume_mm3": 0.022534144301476513,
+      "removed_volume_mm3": 0.0
+    },
+    "LeftLowerSupport-socket": {
+      "radius_mm": 0.4,
+      "selected_seam_length_mm": 2.622062698513615,
+      "added_volume_mm3": 0.0769554235111672,
+      "removed_volume_mm3": 0.0
+    }
+  },
+  "anatomy_and_baseplate_unchanged": true,
+  "carrier_single_solid": true
+}

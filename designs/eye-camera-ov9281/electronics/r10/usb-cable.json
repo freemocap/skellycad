@@ -1,0 +1,52 @@
+{
+  "status": "Defined prototype assembly; not stocked-product selection or USB qualification",
+  "length_between_terminations_mm": 50,
+  "host": "USB 2.0 Type-A plug",
+  "camera_housing": "SHR-04V-S-B",
+  "board_header": "SM04B-SRSS-TB",
+  "wire_awg": 28,
+  "insulation_od_mm": [
+    0.4,
+    0.8
+  ],
+  "data_pair_impedance_ohm": 90,
+  "data_pair_impedance_tolerance_percent": 15,
+  "data_pair_untwist_max_mm": 3,
+  "data_conductor_length_difference_max_mm": 0.5,
+  "connections": [
+    {
+      "host_pin": 1,
+      "J101_pin": 1,
+      "net": "/USB_VBUS"
+    },
+    {
+      "host_pin": 2,
+      "J101_pin": 2,
+      "net": "/USB_DM"
+    },
+    {
+      "host_pin": 3,
+      "J101_pin": 3,
+      "net": "/USB_DP"
+    },
+    {
+      "host_pin": 4,
+      "J101_pin": 4,
+      "net": "GND"
+    }
+  ],
+  "shield": {
+    "host": "Bond to Type-A shell",
+    "camera": "Insulated drain-to-ground-wire splice before the single-wire J101 pin-4 crimp",
+    "drain_branch_max_mm": 3
+  },
+  "sources": [
+    "jstShCatalog",
+    "tiUsb20Layout2013"
+  ],
+  "limits": [
+    "Custom cable assembly and crimp process require supplier confirmation",
+    "JST transition and shield pigtail require SI/ESD/EMC testing",
+    "Pin map is project-specific; Pupil Labs compatibility is not assumed"
+  ]
+}

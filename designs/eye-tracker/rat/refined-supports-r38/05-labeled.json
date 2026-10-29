@@ -1,0 +1,7 @@
+{
+  "label": "RAT R38",
+  "height_mm": 1.6,
+  "depth_mm": 0.3,
+  "edge_and_window_margin_mm": 0.75,
+  "functional_geometry_outside_label_unchanged": true
+}

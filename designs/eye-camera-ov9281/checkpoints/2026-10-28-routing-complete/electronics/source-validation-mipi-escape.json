@@ -1,0 +1,1374 @@
+{
+  "revision": "OV9281-P4-R09",
+  "fabrication_ready": false,
+  "parent_native_files_unchanged": true,
+  "rigid_board_pad_net_checks": 471,
+  "assembled_pin_alignment_checks": 24,
+  "flex_contact_paths_verified": 24,
+  "schematic_erc_errors": 0,
+  "schematic_erc_warnings": 0,
+  "boards": {
+    "controller": {
+      "footprints": 77,
+      "vias": 87,
+      "unconnected_items": 0,
+      "violations_by_type": {},
+      "net_connectivity": {
+        "+1V2": {
+          "pads": 3,
+          "connected_pad_groups": [
+            3
+          ],
+          "complete_on_this_board": true
+        },
+        "+1V8": {
+          "pads": 8,
+          "connected_pad_groups": [
+            8
+          ],
+          "complete_on_this_board": true
+        },
+        "+2V8": {
+          "pads": 3,
+          "connected_pad_groups": [
+            3
+          ],
+          "complete_on_this_board": true
+        },
+        "+3V3": {
+          "pads": 44,
+          "connected_pad_groups": [
+            44
+          ],
+          "complete_on_this_board": true
+        },
+        "/CAM_L_CLK_N": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/CAM_L_CLK_P": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/CAM_L_D0_N": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/CAM_L_D0_P": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/CAM_L_D1_N": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/CAM_L_D1_P": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/CAM_NRST_1V8": {
+          "pads": 3,
+          "connected_pad_groups": [
+            3
+          ],
+          "complete_on_this_board": true
+        },
+        "/CAM_RESET_ASSERT": {
+          "pads": 3,
+          "connected_pad_groups": [
+            3
+          ],
+          "complete_on_this_board": true
+        },
+        "/CAM_SCL_3V3": {
+          "pads": 3,
+          "connected_pad_groups": [
+            3
+          ],
+          "complete_on_this_board": true
+        },
+        "/CAM_SDA_3V3": {
+          "pads": 3,
+          "connected_pad_groups": [
+            3
+          ],
+          "complete_on_this_board": true
+        },
+        "/FLASH_CLK": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/FLASH_CS": {
+          "pads": 3,
+          "connected_pad_groups": [
+            3
+          ],
+          "complete_on_this_board": true
+        },
+        "/FLASH_D": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/FLASH_HOLD": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/FLASH_Q": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/FLASH_WP": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/LED_PWM": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/M1_CAM_SCL_1V8": {
+          "pads": 3,
+          "connected_pad_groups": [
+            3
+          ],
+          "complete_on_this_board": true
+        },
+        "/M1_CAM_SDA_1V8": {
+          "pads": 3,
+          "connected_pad_groups": [
+            3
+          ],
+          "complete_on_this_board": true
+        },
+        "/M1_VSYNC_1V8_M": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/P4_BOOT": {
+          "pads": 3,
+          "connected_pad_groups": [
+            3
+          ],
+          "complete_on_this_board": true
+        },
+        "/P4_CSI_REXT": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/P4_DOWNLOAD_ENABLE": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/P4_EN": {
+          "pads": 4,
+          "connected_pad_groups": [
+            4
+          ],
+          "complete_on_this_board": true
+        },
+        "/P4_EN_DCDC": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/P4_FB": {
+          "pads": 5,
+          "connected_pad_groups": [
+            5
+          ],
+          "complete_on_this_board": true
+        },
+        "/P4_FLASH_VDD": {
+          "pads": 7,
+          "connected_pad_groups": [
+            7
+          ],
+          "complete_on_this_board": true
+        },
+        "/P4_LDO4_UNUSED": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/P4_MIPI_2V5": {
+          "pads": 5,
+          "connected_pad_groups": [
+            5
+          ],
+          "complete_on_this_board": true
+        },
+        "/P4_PSRAM_VDD": {
+          "pads": 6,
+          "connected_pad_groups": [
+            6
+          ],
+          "complete_on_this_board": true
+        },
+        "/P4_SW": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/P4_UART_RX": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/P4_UART_TX": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/P4_VDD_HP": {
+          "pads": 13,
+          "connected_pad_groups": [
+            13
+          ],
+          "complete_on_this_board": true
+        },
+        "/P4_XTAL_N": {
+          "pads": 3,
+          "connected_pad_groups": [
+            3
+          ],
+          "complete_on_this_board": true
+        },
+        "/P4_XTAL_P": {
+          "pads": 3,
+          "connected_pad_groups": [
+            3
+          ],
+          "complete_on_this_board": true
+        },
+        "/SYS_FB": {
+          "pads": 3,
+          "connected_pad_groups": [
+            3
+          ],
+          "complete_on_this_board": true
+        },
+        "/SYS_SW": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/USB_DM": {
+          "pads": 4,
+          "connected_pad_groups": [
+            4
+          ],
+          "complete_on_this_board": true
+        },
+        "/USB_DM_CHIP": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/USB_DP": {
+          "pads": 4,
+          "connected_pad_groups": [
+            4
+          ],
+          "complete_on_this_board": true
+        },
+        "/USB_DP_CHIP": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/USB_VBUS": {
+          "pads": 5,
+          "connected_pad_groups": [
+            5
+          ],
+          "complete_on_this_board": true
+        },
+        "GND": {
+          "pads": 75,
+          "connected_pad_groups": [
+            75
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-DSI_CLKN-Pad37)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-DSI_CLKP-Pad38)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-DSI_DATAN0-Pad40)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-DSI_DATAN1-Pad36)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-DSI_DATAP0-Pad39)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-DSI_DATAP1-Pad35)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-DSI_REXT-Pad34)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-GPIO0-Pad104)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-GPIO1-Pad1)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-GPIO10-Pad11)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-GPIO11-Pad12)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-GPIO12-Pad13)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-GPIO13-Pad14)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-GPIO14-Pad15)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-GPIO15-Pad16)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-GPIO16/ADC1_CHANNEL0-Pad17)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-GPIO17/ADC1_CHANNEL1-Pad18)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-GPIO18/ADC1_CHANNEL2-Pad19)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-GPIO19/ADC1_CHANNEL3-Pad20)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-GPIO2-Pad2)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-GPIO20/ADC1_CHANNEL4-Pad22)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-GPIO21/ADC1_CHANNEL5-Pad23)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-GPIO22/ADC1_CHANNEL6-Pad24)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-GPIO23/ADC1_CHANNEL7-Pad25)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-GPIO24/USB1P1_N0-Pad52)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-GPIO25/USB1P1_P0-Pad53)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-GPIO26/USB1P1_N1-Pad55)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-GPIO27/USB1P1_P1-Pad56)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-GPIO28-Pad57)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-GPIO29-Pad58)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-GPIO3-Pad3)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-GPIO30-Pad60)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-GPIO31-Pad61)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-GPIO32-Pad63)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-GPIO33-Pad64)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-GPIO34-Pad65)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-GPIO39-Pad80)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-GPIO4-Pad4)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-GPIO40-Pad81)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-GPIO41-Pad82)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-GPIO42-Pad83)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-GPIO43-Pad84)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-GPIO44-Pad86)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-GPIO45-Pad87)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-GPIO46-Pad88)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-GPIO47-Pad89)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-GPIO48-Pad90)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-GPIO49/ADC2_CHANNEL0-Pad92)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-GPIO50/ADC2_CHANNEL1-Pad93)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-GPIO51/ADC2_CHANNEL2-Pad94)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-GPIO52/ADC2_CHANNEL3-Pad95)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-GPIO53/ADC2_CHANNEL4-Pad97)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-GPIO54/ADC2_CHANNEL5-Pad98)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U101-GPIO9-Pad10)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U5-NC-Pad4)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U6-NC-Pad4)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U7-NC-Pad4)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        }
+      },
+      "highspeed_copper_inventory_not_delay_or_impedance": {
+        "/CAM_L_CLK_": {
+          "N": {
+            "copper_centerline_sum_mm": 16.516935427281297,
+            "vias": 2,
+            "layers": [
+              "F.Cu",
+              "In2.Cu"
+            ]
+          },
+          "P": {
+            "copper_centerline_sum_mm": 15.898142671479086,
+            "vias": 2,
+            "layers": [
+              "F.Cu",
+              "In2.Cu"
+            ]
+          },
+          "sum_difference_mm": 0.618792755802211
+        },
+        "/CAM_L_D0_": {
+          "N": {
+            "copper_centerline_sum_mm": 15.916177137466937,
+            "vias": 0,
+            "layers": [
+              "F.Cu"
+            ]
+          },
+          "P": {
+            "copper_centerline_sum_mm": 15.020519037573582,
+            "vias": 2,
+            "layers": [
+              "F.Cu",
+              "In2.Cu"
+            ]
+          },
+          "sum_difference_mm": 0.895658099893355
+        },
+        "/CAM_L_D1_": {
+          "N": {
+            "copper_centerline_sum_mm": 16.596026004387273,
+            "vias": 2,
+            "layers": [
+              "F.Cu",
+              "In2.Cu"
+            ]
+          },
+          "P": {
+            "copper_centerline_sum_mm": 18.800268289744395,
+            "vias": 2,
+            "layers": [
+              "F.Cu",
+              "In2.Cu"
+            ]
+          },
+          "sum_difference_mm": 2.2042422853571217
+        }
+      }
+    },
+    "head": {
+      "footprints": 31,
+      "vias": 57,
+      "unconnected_items": 2,
+      "violations_by_type": {
+        "track_dangling": 2
+      },
+      "net_connectivity": {
+        "+1V2": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "+1V8": {
+          "pads": 5,
+          "connected_pad_groups": [
+            5
+          ],
+          "complete_on_this_board": true
+        },
+        "+2V8": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "+3V3": {
+          "pads": 3,
+          "connected_pad_groups": [
+            3
+          ],
+          "complete_on_this_board": true
+        },
+        "/CAM_L_CLK_N": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/CAM_L_CLK_P": {
+          "pads": 2,
+          "connected_pad_groups": [
+            1,
+            1
+          ],
+          "complete_on_this_board": false
+        },
+        "/CAM_L_D0_N": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/CAM_L_D0_P": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/CAM_L_D1_N": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/CAM_L_D1_P": {
+          "pads": 2,
+          "connected_pad_groups": [
+            1,
+            1
+          ],
+          "complete_on_this_board": false
+        },
+        "/CAM_NRST_1V8": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/IR_A1": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/IR_A2": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/IR_BASE": {
+          "pads": 3,
+          "connected_pad_groups": [
+            3
+          ],
+          "complete_on_this_board": true
+        },
+        "/IR_K": {
+          "pads": 3,
+          "connected_pad_groups": [
+            3
+          ],
+          "complete_on_this_board": true
+        },
+        "/LED_PWM": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/M1_AVDD": {
+          "pads": 9,
+          "connected_pad_groups": [
+            9
+          ],
+          "complete_on_this_board": true
+        },
+        "/M1_CAM_SCL_1V8": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/M1_CAM_SDA_1V8": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/M1_DOVDD": {
+          "pads": 9,
+          "connected_pad_groups": [
+            9
+          ],
+          "complete_on_this_board": true
+        },
+        "/M1_DVDD": {
+          "pads": 14,
+          "connected_pad_groups": [
+            14
+          ],
+          "complete_on_this_board": true
+        },
+        "/M1_MCLK": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/M1_PVDD": {
+          "pads": 3,
+          "connected_pad_groups": [
+            3
+          ],
+          "complete_on_this_board": true
+        },
+        "/M1_SID": {
+          "pads": 3,
+          "connected_pad_groups": [
+            3
+          ],
+          "complete_on_this_board": true
+        },
+        "/M1_VH": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/M1_VN1": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/M1_VN2": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/M1_VN3": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/M1_VSYNC_1V8_M": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "GND": {
+          "pads": 42,
+          "connected_pad_groups": [
+            42
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U1-D8-PadB4)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U1-D9-PadC4)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U1-GPIO0-PadD4)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U1-GPIO1-PadC3)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U1-GPIO2-PadD6)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U1-HREF-PadD1)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U1-ILPWM-PadA6)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U1-PCLK-PadC2)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U1-PadA1)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U1-PadA8)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U1-PadH1)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U1-PadH8)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U1-STROBE-PadB6)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U1-TEST-PadC7)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        },
+        "unconnected-(U1-ULPM-PadC6)": {
+          "pads": 1,
+          "connected_pad_groups": [
+            1
+          ],
+          "complete_on_this_board": true
+        }
+      },
+      "highspeed_copper_inventory_not_delay_or_impedance": {
+        "/CAM_L_CLK_": {
+          "N": {
+            "copper_centerline_sum_mm": 7.047134506360588,
+            "vias": 0,
+            "layers": [
+              "F.Cu"
+            ]
+          },
+          "P": {
+            "copper_centerline_sum_mm": 1.0574,
+            "vias": 0,
+            "layers": [
+              "F.Cu"
+            ]
+          },
+          "sum_difference_mm": 5.989734506360588
+        },
+        "/CAM_L_D0_": {
+          "N": {
+            "copper_centerline_sum_mm": 8.553914151540772,
+            "vias": 2,
+            "layers": [
+              "F.Cu",
+              "In2.Cu"
+            ]
+          },
+          "P": {
+            "copper_centerline_sum_mm": 7.235178883758764,
+            "vias": 0,
+            "layers": [
+              "F.Cu"
+            ]
+          },
+          "sum_difference_mm": 1.3187352677820074
+        },
+        "/CAM_L_D1_": {
+          "N": {
+            "copper_centerline_sum_mm": 6.592737008100569,
+            "vias": 0,
+            "layers": [
+              "F.Cu"
+            ]
+          },
+          "P": {
+            "copper_centerline_sum_mm": 1.4496166511460424,
+            "vias": 0,
+            "layers": [
+              "F.Cu"
+            ]
+          },
+          "sum_difference_mm": 5.143120356954526
+        }
+      }
+    },
+    "flex-study": {
+      "footprints": 2,
+      "vias": 18,
+      "unconnected_items": 0,
+      "violations_by_type": {},
+      "net_connectivity": {
+        "+1V2": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "+1V8": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "+2V8": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "+3V3": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/CAM_L_CLK_N": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/CAM_L_CLK_P": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/CAM_L_D0_N": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/CAM_L_D0_P": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/CAM_L_D1_N": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/CAM_L_D1_P": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/CAM_NRST_1V8": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/LED_PWM": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/M1_CAM_SCL_1V8": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/M1_CAM_SDA_1V8": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "/M1_VSYNC_1V8_M": {
+          "pads": 2,
+          "connected_pad_groups": [
+            2
+          ],
+          "complete_on_this_board": true
+        },
+        "GND": {
+          "pads": 18,
+          "connected_pad_groups": [
+            18
+          ],
+          "complete_on_this_board": true
+        }
+      },
+      "highspeed_copper_inventory_not_delay_or_impedance": {
+        "/CAM_L_CLK_": {
+          "N": {
+            "copper_centerline_sum_mm": 33.8,
+            "vias": 0,
+            "layers": [
+              "B.Cu"
+            ]
+          },
+          "P": {
+            "copper_centerline_sum_mm": 33.8,
+            "vias": 0,
+            "layers": [
+              "B.Cu"
+            ]
+          },
+          "sum_difference_mm": 0.0
+        },
+        "/CAM_L_D0_": {
+          "N": {
+            "copper_centerline_sum_mm": 33.8,
+            "vias": 0,
+            "layers": [
+              "B.Cu"
+            ]
+          },
+          "P": {
+            "copper_centerline_sum_mm": 33.8,
+            "vias": 0,
+            "layers": [
+              "B.Cu"
+            ]
+          },
+          "sum_difference_mm": 0.0
+        },
+        "/CAM_L_D1_": {
+          "N": {
+            "copper_centerline_sum_mm": 33.8,
+            "vias": 0,
+            "layers": [
+              "B.Cu"
+            ]
+          },
+          "P": {
+            "copper_centerline_sum_mm": 33.8,
+            "vias": 0,
+            "layers": [
+              "B.Cu"
+            ]
+          },
+          "sum_difference_mm": 0.0
+        }
+      }
+    }
+  },
+  "sha256": {
+    "controller.kicad_pcb": "04a2292f27f72b89caadb42594b5ea744b81143c3679996aaac16bfe54855be5",
+    "head.kicad_pcb": "d9ac5b688f3c3a6d79844f1fcc0db2ded5b729c91e0d2825ed9faa15c70d8751",
+    "flex-study.kicad_pcb": "52b315d55f15e14173298e533959e040e248c0e830c1fcb76628598c7fd21c6f",
+    "camera.kicad_sch": "b307a594304676204d24e58bcce617ebf770879fbdfe65a5e94134018c0c2991",
+    "OV9281-P4-R09-assembly.kicad_pcb": "c82f9a624e0ffd735e544e72aa949f3dd88a1e833ab418449f9326e937326c3a"
+  }
+}

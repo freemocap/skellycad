@@ -1,0 +1,244 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-28T07:42:00",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "controller.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Clearance violation ( clearance 0.1000 mm; actual 0.0915 mm)",
+            "items": [
+                {
+                    "description": "Track [/CAM_L_D0_N] on F.Cu, length 0.0605 mm",
+                    "pos": {
+                        "x": 28.3429,
+                        "y": 2.3
+                    },
+                    "uuid": "4aa237f7-a3db-43c2-839e-20d2a5123d61"
+                },
+                {
+                    "description": "Pad 1 [GND] of J102 on F.Cu",
+                    "pos": {
+                        "x": 27.75,
+                        "y": 2.5
+                    },
+                    "uuid": "f8eb5518-542d-4979-ba01-a7e5b10f28db"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1000 mm; actual 0.0794 mm)",
+            "items": [
+                {
+                    "description": "Track [/CAM_L_D0_N] on F.Cu, length 0.1002 mm",
+                    "pos": {
+                        "x": 28.2335,
+                        "y": 2.2511
+                    },
+                    "uuid": "2c29b51a-a19f-4fab-b726-698c84c46c1b"
+                },
+                {
+                    "description": "Pad 1 [GND] of J102 on F.Cu",
+                    "pos": {
+                        "x": 27.75,
+                        "y": 2.5
+                    },
+                    "uuid": "f8eb5518-542d-4979-ba01-a7e5b10f28db"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1000 mm; actual 0.0790 mm)",
+            "items": [
+                {
+                    "description": "Track [/CAM_L_D0_N] on F.Cu, length 0.0692 mm",
+                    "pos": {
+                        "x": 28.2824,
+                        "y": 2.3
+                    },
+                    "uuid": "e629eadc-4a5c-475f-9f68-634ad63ca0ed"
+                },
+                {
+                    "description": "Pad 1 [GND] of J102 on F.Cu",
+                    "pos": {
+                        "x": 27.75,
+                        "y": 2.5
+                    },
+                    "uuid": "f8eb5518-542d-4979-ba01-a7e5b10f28db"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1000 mm; actual 0.0931 mm)",
+            "items": [
+                {
+                    "description": "Track [+3V3] on F.Cu, length 1.3502 mm",
+                    "pos": {
+                        "x": 14.225,
+                        "y": 14.3998
+                    },
+                    "uuid": "43d5fecf-ebc1-453f-875c-65788f399ab9"
+                },
+                {
+                    "description": "Via [/P4_LDO4_UNUSED] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 13.4848,
+                        "y": 14.0567
+                    },
+                    "uuid": "45fe2a0c-554f-4aff-8629-15c4c5a17c2e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3017 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "a306df83-e7f6-4527-aabf-46db071b4709"
+                },
+                {
+                    "description": "Track [+1V8] on B.Cu, length 0.9956 mm",
+                    "pos": {
+                        "x": 16.49,
+                        "y": 1.0557
+                    },
+                    "uuid": "26360c50-ce98-4532-a1cf-ed320007e9d2"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3604 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "a306df83-e7f6-4527-aabf-46db071b4709"
+                },
+                {
+                    "description": "Track [+1V8] on B.Cu, length 4.2568 mm",
+                    "pos": {
+                        "x": 17.3944,
+                        "y": 0.4104
+                    },
+                    "uuid": "508d490d-05d9-490a-ba86-09601ca1e8c8"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3017 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "a306df83-e7f6-4527-aabf-46db071b4709"
+                },
+                {
+                    "description": "Track [+1V8] on B.Cu, length 0.0830 mm",
+                    "pos": {
+                        "x": 17.3357,
+                        "y": 0.3517
+                    },
+                    "uuid": "bba24cde-b89b-49a4-bbca-763e8a50b757"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3604 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "a306df83-e7f6-4527-aabf-46db071b4709"
+                },
+                {
+                    "description": "Track [+1V8] on B.Cu, length 0.9058 mm",
+                    "pos": {
+                        "x": 21.6512,
+                        "y": 0.4104
+                    },
+                    "uuid": "c7d8dcd7-4632-4f82-b171-3b19f4d1879b"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3017 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "a306df83-e7f6-4527-aabf-46db071b4709"
+                },
+                {
+                    "description": "Track [+1V8] on B.Cu, length 0.1417 mm",
+                    "pos": {
+                        "x": 17.194,
+                        "y": 0.3517
+                    },
+                    "uuid": "e105f6ae-f9ee-4996-894b-07d52af6ca2b"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        }
+    ]
+}

@@ -1,0 +1,213 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-28T08:41:16",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "head.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad G4 [/CAM_L_CLK_P] of U1 on F.Cu",
+                    "pos": {
+                        "x": 6.765,
+                        "y": 7.257
+                    },
+                    "uuid": "9f60eb82-7c41-403f-9820-f4f05ea0e300"
+                },
+                {
+                    "description": "Track [/CAM_L_CLK_P] on F.Cu, length 1.0574 mm",
+                    "pos": {
+                        "x": 3.75,
+                        "y": 12.25
+                    },
+                    "uuid": "a4ca0f37-8d4b-4961-9c98-cf0112dd4823"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad G5 [/CAM_L_D1_P] of U1 on F.Cu",
+                    "pos": {
+                        "x": 7.405,
+                        "y": 7.257
+                    },
+                    "uuid": "9f88c584-0366-4767-93ab-865e677dd373"
+                },
+                {
+                    "description": "Pad 9 [/CAM_L_D1_P] of J201 on F.Cu",
+                    "pos": {
+                        "x": 5.25,
+                        "y": 12.25
+                    },
+                    "uuid": "f11a0909-2427-42d3-a554-bc61a8fcd250"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad E4 [/M1_CAM_SCL_1V8] of U1 on F.Cu",
+                    "pos": {
+                        "x": 6.765,
+                        "y": 6.257
+                    },
+                    "uuid": "a0faaf31-1b21-4884-9e3f-3643dc5bd669"
+                },
+                {
+                    "description": "Pad 12 [/M1_CAM_SCL_1V8] of J201 on F.Cu",
+                    "pos": {
+                        "x": 6.75,
+                        "y": 12.25
+                    },
+                    "uuid": "0fc8473e-87e5-48e8-ab9f-af01d1d96b62"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [/M1_VH] on B.Cu, length 0.0151 mm",
+                    "pos": {
+                        "x": 11.0276,
+                        "y": 10.6224
+                    },
+                    "uuid": "64b7cfa8-d041-4089-a738-2ff2f8d24b1e"
+                },
+                {
+                    "description": "Pad E8 [/M1_VH] of U1 on F.Cu",
+                    "pos": {
+                        "x": 9.325,
+                        "y": 6.257
+                    },
+                    "uuid": "01c17a86-f9bb-49c3-a641-c39f3ba5f4e7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad F7 [/M1_VN3] of U1 on F.Cu",
+                    "pos": {
+                        "x": 8.685,
+                        "y": 6.757
+                    },
+                    "uuid": "f8bbcdae-b66e-4654-b5b2-7f29f2faff10"
+                },
+                {
+                    "description": "Pad 1 [/M1_VN3] of C10 on B.Cu",
+                    "pos": {
+                        "x": 10.975,
+                        "y": 7.175
+                    },
+                    "uuid": "de71c106-0c7b-4713-bfac-cdab4b410140"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [/CAM_L_CLK_P] on F.Cu, length 1.0574 mm",
+                    "pos": {
+                        "x": 3.75,
+                        "y": 12.25
+                    },
+                    "uuid": "a4ca0f37-8d4b-4961-9c98-cf0112dd4823"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [/CAM_L_D1_P] on F.Cu, length 0.2237 mm",
+                    "pos": {
+                        "x": 4.9258,
+                        "y": 13.1517
+                    },
+                    "uuid": "2781640a-3bc0-49b4-9103-b16335d29819"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [/M1_CAM_SCL_1V8] on F.Cu, length 0.2813 mm",
+                    "pos": {
+                        "x": 6.5,
+                        "y": 13.3
+                    },
+                    "uuid": "c5bd9e2c-6e7a-44cc-9876-9809d2d05139"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [/M1_VH] on B.Cu, length 0.0151 mm",
+                    "pos": {
+                        "x": 11.0276,
+                        "y": 10.6224
+                    },
+                    "uuid": "64b7cfa8-d041-4089-a738-2ff2f8d24b1e"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        }
+    ]
+}

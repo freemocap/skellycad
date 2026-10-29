@@ -1,0 +1,284 @@
+(footprint "Spacer_Drill3mm_H3mm_9774030243R"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "MP4"
+		(at -2.25 -3 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "1fa3d60d-ef52-4e98-a240-53e1fe58d167")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
+	(property "Value" "Spacer_H3mm_9774030243R"
+		(at -2.25 3.75 0)
+		(layer "F.Fab")
+		(uuid "f3ee8dd9-c972-4a9c-9169-9797f14fc230")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
+	(property "Datasheet" "https://www.we-online.com/components/products/datasheet/9774030243R.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6f39bb76-4721-47fc-a3d3-07dccdc78876")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Spacer, SMT, Non Stop, Steel, Swage Round, 4.35 mm x 3 mm, M2 Thread, WA-SMSI Series"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8a20faf0-9e37-415d-9d4d-b496fac35c9f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Author" "Antmicro"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "800b1c0e-67d5-4fae-9d8f-83e045a6e223")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "License" "Apache-2.0"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "04be13fa-dfb9-4f5e-9bb5-c52c67c33b98")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN" "9774030243R"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "dcdf9148-4261-4f9c-8ce1-d24394fb3875")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer" "Würth Elektronik"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "eff01277-0003-4403-a9e0-d6f7f4f8ae6c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(sheetname "/")
+	(sheetfile "ov9281-dual-camera-board.kicad_sch")
+	(solder_paste_margin_ratio -1)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_circle
+		(center 0 0)
+		(end 2.9 0)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "aabda2e8-4842-4098-9fa7-72ea0c9e9e95")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 2.25 0)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "User.5")
+		(uuid "592bb808-0ca2-4386-b848-d644c9f27dad")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 0.8 0)
+		(stroke
+			(width 0.02)
+			(type default)
+		)
+		(fill no)
+		(layer "User.9")
+		(uuid "78fbea8c-44e5-4311-aa2a-e569dea321b8")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 2.2 0)
+		(stroke
+			(width 0.02)
+			(type default)
+		)
+		(fill no)
+		(layer "User.9")
+		(uuid "a5bbfe20-d8f0-4cfa-aa4d-9ebfabafe86a")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -2.25 5.5 0)
+		(layer "F.Fab")
+		(uuid "dfc7a792-3b40-49d2-9f12-b1f480e906fc")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "Author: Antmicro"
+		(at -2.2 6.75 0)
+		(layer "F.Fab")
+		(uuid "c59c6569-2f01-4d0a-8ec4-5ce82e793d52")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "License: Apache-2.0"
+		(at -2.2 8 0)
+		(layer "F.Fab")
+		(uuid "0bba29d5-6e4a-4655-b261-bedac62a5ed7")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
+	(pad "" smd custom
+		(at -1.9 -0.8 180)
+		(size 0.001 0.001)
+		(layers "F.Paste")
+		(thermal_bridge_angle 90)
+		(options
+			(clearance outline)
+			(anchor circle)
+		)
+		(primitives
+			(gr_arc
+				(start 0 0)
+				(mid -0.450776 0.666202)
+				(end -1.122183 1.109188)
+				(width 1)
+			)
+		)
+		(uuid "785dd338-f47c-4f34-9b3c-b2c49242af0b")
+	)
+	(pad "" smd custom
+		(at -0.8 1.9 270)
+		(size 0.001 0.001)
+		(layers "F.Paste")
+		(thermal_bridge_angle 90)
+		(options
+			(clearance outline)
+			(anchor circle)
+		)
+		(primitives
+			(gr_arc
+				(start 0 0)
+				(mid -0.450776 0.666202)
+				(end -1.122183 1.109188)
+				(width 1)
+			)
+		)
+		(uuid "e2eacb36-9978-46b1-bbda-ffaf0d668ecd")
+	)
+	(pad "" smd custom
+		(at 0.8 -1.9 90)
+		(size 0.001 0.001)
+		(layers "F.Paste")
+		(thermal_bridge_angle 90)
+		(options
+			(clearance outline)
+			(anchor circle)
+		)
+		(primitives
+			(gr_arc
+				(start 0 0)
+				(mid -0.450776 0.666202)
+				(end -1.122183 1.109188)
+				(width 1)
+			)
+		)
+		(uuid "c4e61216-8796-4a43-b4e1-2a3dbf23766b")
+	)
+	(pad "" smd custom
+		(at 1.9 0.8)
+		(size 0.001 0.001)
+		(layers "F.Paste")
+		(thermal_bridge_angle 90)
+		(options
+			(clearance outline)
+			(anchor circle)
+		)
+		(primitives
+			(gr_arc
+				(start 0 0)
+				(mid -0.450776 0.666202)
+				(end -1.122183 1.109188)
+				(width 1)
+			)
+		)
+		(uuid "343fbfe6-0e18-44d2-b5d2-5cf9e51eb49d")
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 5.3 5.3)
+		(drill 3)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "47db07ca-5427-42be-bc4d-fb2c89e66aad")
+	)
+	(embedded_fonts no)
+	(model "${ANT3DMDL}/9774030243R.step"
+		(offset
+			(xyz 0 0 -1.5)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

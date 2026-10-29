@@ -1,0 +1,28 @@
+{
+  "approval": "Approved. Go ahead and work through all five items using the linear checklist skill. Keep the under-one-gram target in mind, NOT including the tether, and use the CLI and macros, not computer use.",
+  "mass_boundary": "Complete camera module including controller, sensor head, inter-board flex, optics, emitters, board-mounted connectors, solder and module-side retention; external tether and its cable-side plug excluded and reported separately. External mounting apparatus excluded and reported separately if added.",
+  "tasks": [
+    {
+      "text": "Establish the Pupil comparison geometry and performance targets, locate the electronics-envelope reference, and define the under-one-gram mass boundary.",
+      "complete": true
+    },
+    {
+      "text": "Build a component-by-component mass and space budget for R10, including optics, board materials, connectors, strain relief and tether mass versus length, with uncertainty recorded.",
+      "complete": true
+    },
+    {
+      "text": "Compare cost-conscious and premium compact constructions, including thin rigid boards, locally stiffened flex and rigid-flex, and identify the changes with the greatest size and mass benefit.",
+      "complete": true
+    },
+    {
+      "text": "Create dimensioned packaging studies beside the Pupil reference, checking component packing, lens support and tether routing without replacing the verified R10 circuit.",
+      "complete": true
+    },
+    {
+      "text": "Save a recommendation showing achievable size and estimated mass ranges, cost assumptions, remaining uncertainties and the constraints for the subsequent electrical revision.",
+      "complete": true
+    }
+  ],
+  "current_item": null,
+  "status": "complete"
+}

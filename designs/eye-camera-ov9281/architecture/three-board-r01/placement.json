@@ -1,0 +1,1787 @@
+{
+  "revision": "THREE-BOARD-A01",
+  "units": "mm",
+  "kind": "Architecture placement only; not pin-complete or routed",
+  "boards": {
+    "head": {
+      "origin": [
+        0,
+        0
+      ],
+      "size": [
+        14,
+        10
+      ],
+      "thickness": 0.303
+    },
+    "interface": {
+      "origin": [
+        39,
+        0
+      ],
+      "size": [
+        18,
+        10
+      ],
+      "thickness": 0.303
+    },
+    "base": {
+      "origin": [
+        77,
+        0
+      ],
+      "size": [
+        40,
+        30
+      ],
+      "thickness": 0.8
+    }
+  },
+  "parts": [
+    {
+      "board": "head",
+      "ref": "SENSOR",
+      "kind": "sensor",
+      "center": [
+        7,
+        5
+      ],
+      "body": [
+        5.24,
+        4.46,
+        0.8
+      ],
+      "mpn": "OV09281-H64A",
+      "evidence": "Package XY from R11; Z envelope; optical image plane provisional",
+      "side": "F"
+    },
+    {
+      "board": "head",
+      "ref": "IR1",
+      "kind": "LED",
+      "center": [
+        1,
+        5
+      ],
+      "body": [
+        1.6,
+        0.8,
+        1.1
+      ],
+      "mpn": "AP1608F3C",
+      "evidence": "R11 candidate; illumination unqualified",
+      "side": "F"
+    },
+    {
+      "board": "head",
+      "ref": "IR2",
+      "kind": "LED",
+      "center": [
+        13,
+        5
+      ],
+      "body": [
+        1.6,
+        0.8,
+        1.1
+      ],
+      "mpn": "AP1608F3C",
+      "evidence": "R11 candidate; illumination unqualified",
+      "side": "F"
+    },
+    {
+      "board": "head",
+      "ref": "CLK24",
+      "kind": "clock",
+      "center": [
+        1.5,
+        1.9
+      ],
+      "body": [
+        2.5,
+        2,
+        0.8
+      ],
+      "mpn": "SG-210STF candidate",
+      "evidence": "R11 24 MHz oscillator envelope",
+      "side": "F"
+    },
+    {
+      "board": "head",
+      "ref": "HC1",
+      "kind": "capacitor",
+      "center": [
+        1.15,
+        0.4
+      ],
+      "body": [
+        1,
+        0.5,
+        0.55
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "head",
+      "ref": "HC2",
+      "kind": "capacitor",
+      "center": [
+        2.45,
+        0.4
+      ],
+      "body": [
+        1,
+        0.5,
+        0.55
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "head",
+      "ref": "HC3",
+      "kind": "capacitor",
+      "center": [
+        3.75,
+        0.4
+      ],
+      "body": [
+        1,
+        0.5,
+        0.55
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "head",
+      "ref": "HC4",
+      "kind": "capacitor",
+      "center": [
+        5.050000000000001,
+        0.4
+      ],
+      "body": [
+        1,
+        0.5,
+        0.55
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "head",
+      "ref": "HC5",
+      "kind": "capacitor",
+      "center": [
+        6.35,
+        0.4
+      ],
+      "body": [
+        1,
+        0.5,
+        0.55
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "head",
+      "ref": "HC6",
+      "kind": "capacitor",
+      "center": [
+        7.65,
+        0.4
+      ],
+      "body": [
+        1,
+        0.5,
+        0.55
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "head",
+      "ref": "HC7",
+      "kind": "capacitor",
+      "center": [
+        8.950000000000001,
+        0.4
+      ],
+      "body": [
+        1,
+        0.5,
+        0.55
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "head",
+      "ref": "HC8",
+      "kind": "capacitor",
+      "center": [
+        10.25,
+        0.4
+      ],
+      "body": [
+        1,
+        0.5,
+        0.55
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "head",
+      "ref": "HC9",
+      "kind": "capacitor",
+      "center": [
+        11.55,
+        0.4
+      ],
+      "body": [
+        1,
+        0.5,
+        0.55
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "head",
+      "ref": "HC10",
+      "kind": "capacitor",
+      "center": [
+        12.850000000000001,
+        0.4
+      ],
+      "body": [
+        1,
+        0.5,
+        0.55
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "head",
+      "ref": "HC11",
+      "kind": "capacitor",
+      "center": [
+        1.15,
+        9.6
+      ],
+      "body": [
+        1,
+        0.5,
+        0.55
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "head",
+      "ref": "HC12",
+      "kind": "capacitor",
+      "center": [
+        2.45,
+        9.6
+      ],
+      "body": [
+        1,
+        0.5,
+        0.55
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "head",
+      "ref": "HC13",
+      "kind": "capacitor",
+      "center": [
+        3.75,
+        9.6
+      ],
+      "body": [
+        1,
+        0.5,
+        0.55
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "head",
+      "ref": "HC14",
+      "kind": "capacitor",
+      "center": [
+        5.050000000000001,
+        9.6
+      ],
+      "body": [
+        1,
+        0.5,
+        0.55
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "head",
+      "ref": "HC15",
+      "kind": "capacitor",
+      "center": [
+        6.35,
+        9.6
+      ],
+      "body": [
+        1,
+        0.5,
+        0.55
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "head",
+      "ref": "HC16",
+      "kind": "capacitor",
+      "center": [
+        7.65,
+        9.6
+      ],
+      "body": [
+        1,
+        0.5,
+        0.55
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "head",
+      "ref": "HC17",
+      "kind": "capacitor",
+      "center": [
+        8.950000000000001,
+        9.6
+      ],
+      "body": [
+        1,
+        0.5,
+        0.55
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "head",
+      "ref": "HC18",
+      "kind": "capacitor",
+      "center": [
+        10.25,
+        9.6
+      ],
+      "body": [
+        1,
+        0.5,
+        0.55
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "head",
+      "ref": "HC19",
+      "kind": "capacitor",
+      "center": [
+        11.55,
+        9.6
+      ],
+      "body": [
+        1,
+        0.5,
+        0.55
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "head",
+      "ref": "HC20",
+      "kind": "capacitor",
+      "center": [
+        12.850000000000001,
+        9.6
+      ],
+      "body": [
+        1,
+        0.5,
+        0.55
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "head",
+      "ref": "HR1",
+      "kind": "resistor",
+      "center": [
+        12.6,
+        1.4
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.3
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "head",
+      "ref": "HR2",
+      "kind": "resistor",
+      "center": [
+        12.6,
+        2.0999999999999996
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.3
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "head",
+      "ref": "HR3",
+      "kind": "resistor",
+      "center": [
+        12.6,
+        2.8
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.3
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "head",
+      "ref": "HR4",
+      "kind": "resistor",
+      "center": [
+        12.6,
+        3.4999999999999996
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.3
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "interface",
+      "ref": "SER",
+      "kind": "serializer",
+      "center": [
+        6,
+        5
+      ],
+      "body": [
+        5,
+        5,
+        1
+      ],
+      "mpn": "DS90UB953TRHBRQ1",
+      "evidence": "TI 5 x 5 mm package; height envelope",
+      "side": "F"
+    },
+    {
+      "board": "interface",
+      "ref": "J_TETHER",
+      "kind": "connector",
+      "center": [
+        15,
+        5
+      ],
+      "body": [
+        5.6,
+        4.5,
+        3
+      ],
+      "mpn": "TBD",
+      "evidence": "Connector body reserve only; no selected pinout or rated channel",
+      "side": "F"
+    },
+    {
+      "board": "interface",
+      "ref": "BUCK18",
+      "kind": "regulator",
+      "center": [
+        2,
+        2
+      ],
+      "body": [
+        1.6,
+        1.2,
+        0.6
+      ],
+      "mpn": "TLV62569DRLR",
+      "evidence": "R11 package retained as power candidate",
+      "side": "F"
+    },
+    {
+      "board": "interface",
+      "ref": "L_BUCK",
+      "kind": "inductor",
+      "center": [
+        10.5,
+        2
+      ],
+      "body": [
+        2.5,
+        2,
+        1.2
+      ],
+      "mpn": "DFE252012F-2R2M=P2",
+      "evidence": "R11 package candidate",
+      "side": "F"
+    },
+    {
+      "board": "interface",
+      "ref": "LDO12",
+      "kind": "regulator",
+      "center": [
+        10.4,
+        7.1
+      ],
+      "body": [
+        1,
+        1,
+        0.6
+      ],
+      "mpn": "TLV73312PDQNR",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "interface",
+      "ref": "LDO28",
+      "kind": "regulator",
+      "center": [
+        10.4,
+        8.5
+      ],
+      "body": [
+        1,
+        1,
+        0.6
+      ],
+      "mpn": "TLV73328PDQNR",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "interface",
+      "ref": "FILTER1",
+      "kind": "inductor",
+      "center": [
+        1.5,
+        4.0
+      ],
+      "body": [
+        2,
+        1.25,
+        0.7
+      ],
+      "mpn": "MLP2012S3R3MT0S1",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "interface",
+      "ref": "FILTER2",
+      "kind": "inductor",
+      "center": [
+        1.5,
+        5.7
+      ],
+      "body": [
+        2,
+        1.25,
+        0.7
+      ],
+      "mpn": "MLP2012S3R3MT0S1",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "interface",
+      "ref": "FILTER3",
+      "kind": "inductor",
+      "center": [
+        1.5,
+        7.4
+      ],
+      "body": [
+        2,
+        1.25,
+        0.7
+      ],
+      "mpn": "MLP2012S3R3MT0S1",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "interface",
+      "ref": "IC1",
+      "kind": "capacitor",
+      "center": [
+        2.8,
+        0.5
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.35
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "interface",
+      "ref": "IC2",
+      "kind": "capacitor",
+      "center": [
+        3.9,
+        0.5
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.35
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "interface",
+      "ref": "IC3",
+      "kind": "capacitor",
+      "center": [
+        5.0,
+        0.5
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.35
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "interface",
+      "ref": "IC4",
+      "kind": "capacitor",
+      "center": [
+        6.1,
+        0.5
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.35
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "interface",
+      "ref": "IC5",
+      "kind": "capacitor",
+      "center": [
+        7.2,
+        0.5
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.35
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "interface",
+      "ref": "IC6",
+      "kind": "capacitor",
+      "center": [
+        8.3,
+        0.5
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.35
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "interface",
+      "ref": "IC7",
+      "kind": "capacitor",
+      "center": [
+        9.4,
+        0.5
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.35
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "interface",
+      "ref": "IC8",
+      "kind": "capacitor",
+      "center": [
+        10.5,
+        0.5
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.35
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "interface",
+      "ref": "IC9",
+      "kind": "capacitor",
+      "center": [
+        11.600000000000001,
+        0.5
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.35
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "interface",
+      "ref": "IC10",
+      "kind": "capacitor",
+      "center": [
+        12.7,
+        0.5
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.35
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "interface",
+      "ref": "IC11",
+      "kind": "capacitor",
+      "center": [
+        13.8,
+        0.5
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.35
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "interface",
+      "ref": "IC12",
+      "kind": "capacitor",
+      "center": [
+        14.900000000000002,
+        0.5
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.35
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "interface",
+      "ref": "IC13",
+      "kind": "capacitor",
+      "center": [
+        16.0,
+        0.5
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.35
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "interface",
+      "ref": "IC14",
+      "kind": "capacitor",
+      "center": [
+        2.8,
+        9.5
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.35
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "interface",
+      "ref": "IC15",
+      "kind": "capacitor",
+      "center": [
+        3.9,
+        9.5
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.35
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "interface",
+      "ref": "IC16",
+      "kind": "capacitor",
+      "center": [
+        5.0,
+        9.5
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.35
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "interface",
+      "ref": "IC17",
+      "kind": "capacitor",
+      "center": [
+        6.1,
+        9.5
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.35
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "interface",
+      "ref": "IC18",
+      "kind": "capacitor",
+      "center": [
+        7.2,
+        9.5
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.35
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "interface",
+      "ref": "IC19",
+      "kind": "capacitor",
+      "center": [
+        8.3,
+        9.5
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.35
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "interface",
+      "ref": "IC20",
+      "kind": "capacitor",
+      "center": [
+        9.4,
+        9.5
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.35
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "interface",
+      "ref": "IC21",
+      "kind": "capacitor",
+      "center": [
+        10.5,
+        9.5
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.35
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "interface",
+      "ref": "IC22",
+      "kind": "capacitor",
+      "center": [
+        11.600000000000001,
+        9.5
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.35
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "interface",
+      "ref": "IC23",
+      "kind": "capacitor",
+      "center": [
+        12.7,
+        9.5
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.35
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "interface",
+      "ref": "IC24",
+      "kind": "capacitor",
+      "center": [
+        13.8,
+        9.5
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.35
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "interface",
+      "ref": "IC25",
+      "kind": "capacitor",
+      "center": [
+        14.900000000000002,
+        9.5
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.35
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "interface",
+      "ref": "IC26",
+      "kind": "capacitor",
+      "center": [
+        16.0,
+        9.5
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.35
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "interface",
+      "ref": "IR1",
+      "kind": "resistor",
+      "center": [
+        11.2,
+        3.5
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.3
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "interface",
+      "ref": "IR2",
+      "kind": "resistor",
+      "center": [
+        11.2,
+        4.2
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.3
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "interface",
+      "ref": "IR3",
+      "kind": "resistor",
+      "center": [
+        11.2,
+        4.9
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.3
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "interface",
+      "ref": "IR4",
+      "kind": "resistor",
+      "center": [
+        11.2,
+        5.6
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.3
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "interface",
+      "ref": "LED_DRIVER",
+      "kind": "transistor",
+      "center": [
+        10.2,
+        5
+      ],
+      "body": [
+        1,
+        0.6,
+        0.5
+      ],
+      "mpn": "PMZB200UNEYL",
+      "evidence": "Drive and stock need qualification",
+      "side": "F"
+    },
+    {
+      "board": "base",
+      "ref": "RX",
+      "kind": "receiver",
+      "center": [
+        8,
+        15
+      ],
+      "body": [
+        7,
+        7,
+        1
+      ],
+      "mpn": "DS90UB954TRGZRQ1",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "base",
+      "ref": "P4",
+      "kind": "processor",
+      "center": [
+        23,
+        15
+      ],
+      "body": [
+        10,
+        10,
+        1
+      ],
+      "mpn": "ESP32-P4NRW16X",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "base",
+      "ref": "FLASH",
+      "kind": "memory",
+      "center": [
+        23,
+        6
+      ],
+      "body": [
+        4,
+        3,
+        0.8
+      ],
+      "mpn": "W25Q32JV",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "base",
+      "ref": "USB",
+      "kind": "connector",
+      "center": [
+        36,
+        15
+      ],
+      "body": [
+        7,
+        9,
+        3.3
+      ],
+      "mpn": "USB connector TBD",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "base",
+      "ref": "LINK_IN",
+      "kind": "connector",
+      "center": [
+        3.2,
+        5
+      ],
+      "body": [
+        5.6,
+        4.5,
+        3
+      ],
+      "mpn": "Tether connector TBD",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "base",
+      "ref": "POWER",
+      "kind": "connector",
+      "center": [
+        35,
+        26
+      ],
+      "body": [
+        6,
+        5,
+        3
+      ],
+      "mpn": "Bench power input TBD",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "base",
+      "ref": "BASE_POWER",
+      "kind": "power-reserve",
+      "center": [
+        9,
+        25
+      ],
+      "body": [
+        12,
+        6,
+        1.6
+      ],
+      "mpn": "Regulators/inductors reserve",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "base",
+      "ref": "CLK25",
+      "kind": "clock",
+      "center": [
+        9,
+        6
+      ],
+      "body": [
+        3.2,
+        2.5,
+        1
+      ],
+      "mpn": "25 MHz reference TBD",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "base",
+      "ref": "CLK40",
+      "kind": "clock",
+      "center": [
+        22,
+        24
+      ],
+      "body": [
+        2,
+        1.6,
+        0.5
+      ],
+      "mpn": "40 MHz crystal",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "base",
+      "ref": "BC1",
+      "kind": "capacitor",
+      "center": [
+        16.0,
+        3
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.35
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "base",
+      "ref": "BC2",
+      "kind": "capacitor",
+      "center": [
+        16.95,
+        3
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.35
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "base",
+      "ref": "BC3",
+      "kind": "capacitor",
+      "center": [
+        17.9,
+        3
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.35
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "base",
+      "ref": "BC4",
+      "kind": "capacitor",
+      "center": [
+        18.85,
+        3
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.35
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "base",
+      "ref": "BC5",
+      "kind": "capacitor",
+      "center": [
+        19.8,
+        3
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.35
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "base",
+      "ref": "BC6",
+      "kind": "capacitor",
+      "center": [
+        20.75,
+        3
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.35
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "base",
+      "ref": "BC7",
+      "kind": "capacitor",
+      "center": [
+        21.7,
+        3
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.35
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "base",
+      "ref": "BC8",
+      "kind": "capacitor",
+      "center": [
+        22.65,
+        3
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.35
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "base",
+      "ref": "BC9",
+      "kind": "capacitor",
+      "center": [
+        23.6,
+        3
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.35
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "base",
+      "ref": "BC10",
+      "kind": "capacitor",
+      "center": [
+        24.549999999999997,
+        3
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.35
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "base",
+      "ref": "BC11",
+      "kind": "capacitor",
+      "center": [
+        25.5,
+        3
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.35
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "base",
+      "ref": "BC12",
+      "kind": "capacitor",
+      "center": [
+        26.45,
+        3
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.35
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "base",
+      "ref": "BD1",
+      "kind": "capacitor",
+      "center": [
+        16.0,
+        28
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.35
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "base",
+      "ref": "BD2",
+      "kind": "capacitor",
+      "center": [
+        16.95,
+        28
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.35
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "base",
+      "ref": "BD3",
+      "kind": "capacitor",
+      "center": [
+        17.9,
+        28
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.35
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "base",
+      "ref": "BD4",
+      "kind": "capacitor",
+      "center": [
+        18.85,
+        28
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.35
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "base",
+      "ref": "BD5",
+      "kind": "capacitor",
+      "center": [
+        19.8,
+        28
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.35
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "base",
+      "ref": "BD6",
+      "kind": "capacitor",
+      "center": [
+        20.75,
+        28
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.35
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "base",
+      "ref": "BD7",
+      "kind": "capacitor",
+      "center": [
+        21.7,
+        28
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.35
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "base",
+      "ref": "BD8",
+      "kind": "capacitor",
+      "center": [
+        22.65,
+        28
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.35
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "base",
+      "ref": "BD9",
+      "kind": "capacitor",
+      "center": [
+        23.6,
+        28
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.35
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    },
+    {
+      "board": "base",
+      "ref": "BD10",
+      "kind": "capacitor",
+      "center": [
+        24.549999999999997,
+        28
+      ],
+      "body": [
+        0.6,
+        0.3,
+        0.35
+      ],
+      "mpn": "",
+      "evidence": "Engineering reserve; exact part/land pattern unresolved",
+      "side": "F"
+    }
+  ],
+  "flex": {
+    "origin": [
+      14,
+      2.25
+    ],
+    "size": [
+      25,
+      5.5
+    ],
+    "thickness": 0.166
+  },
+  "optics": {
+    "holder_outer": [
+      8,
+      8
+    ],
+    "holder_inner": [
+      6,
+      6
+    ],
+    "holder_height": 1.4,
+    "barrel_diameter": 6,
+    "barrel_height": 2.5,
+    "barrel_bottom_above_board": 1.4,
+    "status": "Provisional space reservation, not a selected lens"
+  },
+  "supports": {
+    "FR4": {
+      "thickness": 0.1,
+      "adhesive": 0.05
+    },
+    "steel": {
+      "thickness": 0.05,
+      "adhesive": 0.025
+    }
+  },
+  "limits": [
+    "Passive counts and packages reserve layout area; no pin mapping or complete procurement BOM.",
+    "All head/interface components on front; no pad, courtyard or routing clearance proof.",
+    "Base offset in scene is for viewing, not tether length. Tether shown schematically only.",
+    "Optics and species mount fit are unverified. Body collision checks do not establish manufacturability."
+  ],
+  "checks": [
+    {
+      "board": "head",
+      "body_count": 28,
+      "body_rectangles_fit": true,
+      "body_overlaps": 0
+    },
+    {
+      "board": "interface",
+      "body_count": 40,
+      "body_rectangles_fit": true,
+      "body_overlaps": 0
+    },
+    {
+      "board": "base",
+      "body_count": 31,
+      "body_rectangles_fit": true,
+      "body_overlaps": 0
+    }
+  ]
+}

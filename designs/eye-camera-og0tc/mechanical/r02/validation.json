@@ -1,0 +1,20 @@
+{
+  "revision": "OC0TC-USB-CONCEPT-R02",
+  "units": "mm",
+  "envelope_mm": [
+    58.0,
+    14.0,
+    4.6
+  ],
+  "all_new_solids_valid": true,
+  "reference_checkpoint": "CAMERA-DUMMY-R08",
+  "reference_hashes_verified": true,
+  "full_pinout_available": false,
+  "routed": false,
+  "physical_fit_verified": false,
+  "optics_verified": false,
+  "bridge_sensor_compatibility_verified": false,
+  "separate_lens_parts": false,
+  "module_xy_verified": false,
+  "module_height_mm": 1.7
+}

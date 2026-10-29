@@ -1,0 +1,22 @@
+from pathlib import Path
+import json,zipfile,runpy
+import FreeCAD as A,FreeCADGui as G
+R=Path(__file__).resolve().parents[4]
+O=R/'generated/eye-tracker/rat/rounded-spine-r34'
+p=O/'RAT-R34-rounded-spine-review.FCStd'
+with zipfile.ZipFile(p) as z:assert z.testzip() is None and 'Document.xml' in z.namelist()
+find=runpy.run_path(str(R/'tools/cad/review_document.py'))['find_open_document']
+d=find(A,p) or A.openDocument(str(p))
+A.setActiveDocument(d.Name)
+for o in d.Objects:
+ if hasattr(o,'Shape'):
+  o.ViewObject.Visibility=True
+  o.ViewObject.ShapeColor=(.82,.82,.85)
+  o.ViewObject.DisplayMode='Flat Lines'
+v=G.activeDocument().activeView();v.viewAxonometric();v.fitAll()
+d.recompute()
+with zipfile.ZipFile(p) as z:assert z.testzip() is None and 'Document.xml' in z.namelist()
+G.getMainWindow().showNormal();G.getMainWindow().raise_();G.getMainWindow().activateWindow();G.updateGui()
+(O/'opened.json').write_text(json.dumps({'file':str(p),'document':d.Name,'status':'Inspection only; not ready to print'},indent=2))
+
+

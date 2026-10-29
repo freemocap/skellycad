@@ -1,0 +1,190 @@
+{
+  "source": "generated\\ov9281-r10-head-17",
+  "scope": "Verified sensor-head routing; controller/flex correction and matched mechanical regeneration pending",
+  "files": [
+    {
+      "path": "camera.kicad_pro",
+      "sha256": "346db1512d61c8f6f61fc001c35bf15c0339127c49eb341d81c245b833eaa012"
+    },
+    {
+      "path": "camera.kicad_sch",
+      "sha256": "b307a594304676204d24e58bcce617ebf770879fbdfe65a5e94134018c0c2991"
+    },
+    {
+      "path": "Camera.kicad_sym",
+      "sha256": "b4d523927864062d4ccccf58338458f30c74e3ad686b67ebeaacef4e24dd5d1f"
+    },
+    {
+      "path": "controller.kicad_pcb",
+      "sha256": "aef4fbc9b6a073ed306b9fc2b6f51fd64e377c0ca6a6a66ceb607edf24bffe96"
+    },
+    {
+      "path": "controller.kicad_pro",
+      "sha256": "b51f93a8b73dd256b421ffa8efb11dfb87dd61a3dc8e8d02b3b3e962918f699b"
+    },
+    {
+      "path": "flex-study.kicad_dru",
+      "sha256": "b36d86e95f267253fc493fac4a5f355e722dd17651caa4bf76fc949216302156"
+    },
+    {
+      "path": "flex-study.kicad_pcb",
+      "sha256": "52b315d55f15e14173298e533959e040e248c0e830c1fcb76628598c7fd21c6f"
+    },
+    {
+      "path": "flex-study.kicad_pro",
+      "sha256": "557db5ebeed2584bf2be41d86a66f413f289d7e29fe9f30900e167bcf0f59aa3"
+    },
+    {
+      "path": "fp-lib-table",
+      "sha256": "f681b3782bfd1dcb93df8381c392c4ddc5f22bc1f2492662a8a70ed040bd33c2"
+    },
+    {
+      "path": "head-routing-validation.json",
+      "sha256": "958896b3940b8f820cbfaaee85efa4c9ad5095fdccf0ab17110521139bc10c5b"
+    },
+    {
+      "path": "head.kicad_pcb",
+      "sha256": "62d3845514cbe987a3f656fabfc61ad54a5fb1cc2d95188e9314250055a96f62"
+    },
+    {
+      "path": "head.kicad_pro",
+      "sha256": "ee676d1149c8ac184b0f6981696f435bc9780574493345588b4d55c582d6ff99"
+    },
+    {
+      "path": "interface.json",
+      "sha256": "4b17047c3bc852adf0e175e80805fe278a58ace2eb3b72177f36ba55c36a7385"
+    },
+    {
+      "path": "LICENSE-Antmicro",
+      "sha256": "fb2b23b5e5b3cb244991a8f239b91dfc362e2ecf51d06b7f0329f0ef88a52f47"
+    },
+    {
+      "path": "LICENSE-Espressif-library.md",
+      "sha256": "39a3698b6ce587d02de3f833b3701542132b762e73f1e70faffe67d9674c265b"
+    },
+    {
+      "path": "source-netlist.xml",
+      "sha256": "2eee44bcd19e66bad18e2ac34345f9eccdc1e264684a6565be0d57bec098c357"
+    },
+    {
+      "path": "sym-lib-table",
+      "sha256": "a53f3288550e94cf031f9e573943f39049539cadd505035da8d41b434208578d"
+    },
+    {
+      "path": "Camera.pretty/antmicro-logo_scaled_20mm.kicad_mod",
+      "sha256": "d9ef28d7ea51421e219bf3862fa7caaa995a0c06b3b2a8946f97a6f12333d90a"
+    },
+    {
+      "path": "Camera.pretty/Camera_Lens_20mm.kicad_mod",
+      "sha256": "676468124bf0a078edc38d9bfe87ca62e14c127183e02faae897165fb5749c1c"
+    },
+    {
+      "path": "Camera.pretty/Conn_FFC_WE_68715014x22_ALT.kicad_mod",
+      "sha256": "e08799ab5c76a638e5e11a18bcce1e8c34f61baffc589474dd58578f662318e6"
+    },
+    {
+      "path": "Camera.pretty/Crystal_SMD_2016-4Pin_2.0x1.6mm.kicad_mod",
+      "sha256": "2e2c4a00ddab45537abaa0c440b3b582366ca0fd5ad2967dae50baa80fedb130"
+    },
+    {
+      "path": "Camera.pretty/C_0402_1005Metric.kicad_mod",
+      "sha256": "3d8a1dc70b71dbc3a5786560f7f9d0cabe99f1182653b072cde5046e4e3f6fc4"
+    },
+    {
+      "path": "Camera.pretty/C_0603_1608Metric.kicad_mod",
+      "sha256": "6e39821ca6e9ccb2edcc9626ad73427cc12eda5526ed080b758e0f2fff1b7439"
+    },
+    {
+      "path": "Camera.pretty/C_0805_2012Metric.kicad_mod",
+      "sha256": "8ccddff7bc85b8a2ed7ecd380672dd67b51ba720c2c156978ce67e54aa657e09"
+    },
+    {
+      "path": "Camera.pretty/DHVQFN-14-1EP_2.5x3mm.kicad_mod",
+      "sha256": "6c75ce90c48939cf503860bef1c5dca6449c3c3e2f0ea7616ee637f208fe8de0"
+    },
+    {
+      "path": "Camera.pretty/Epson_SG210STF_2.5x2.0mm_R09.kicad_mod",
+      "sha256": "1047c93523b3e08b071c220ce1cfb0ab4bf67921ad49ef858dd8d025a563e507"
+    },
+    {
+      "path": "Camera.pretty/ESP32-P4.kicad_mod",
+      "sha256": "4ce6d922bf41161c3ab8107e5302a745023371feaff65479486ef6c5ea93d83a"
+    },
+    {
+      "path": "Camera.pretty/Fiducial_1mm_Mask3mm.kicad_mod",
+      "sha256": "7b48b4ea06f5f87e6557bd5741de4fa16e70d8e7d3d8d07547e8c017edfe759f"
+    },
+    {
+      "path": "Camera.pretty/Flex_Contacts_R05.kicad_mod",
+      "sha256": "b11faa6c31d6c8bcab712926b987953fd9f1d2c7c79476f7a1eb2edaf25dcedd"
+    },
+    {
+      "path": "Camera.pretty/Flex_Solder_24_P0.5_R05.kicad_mod",
+      "sha256": "0b288c91ae7d3dee7f0d577ca24c419fee43013a5ad63eb0145804e214bea401"
+    },
+    {
+      "path": "Camera.pretty/Hirose_FH34SRJ_24S_0.5SH_R05.kicad_mod",
+      "sha256": "5dd0f96ece5fad843f6ead7200e8d439ce893a34c7efaa79cb9ae9be41bb7bb0"
+    },
+    {
+      "path": "Camera.pretty/JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal.kicad_mod",
+      "sha256": "a069a407f8dc31be24091af862cede7c081ddcd623c80d9326df418c09ac392a"
+    },
+    {
+      "path": "Camera.pretty/Kingbright_AP1608F3C_R09.kicad_mod",
+      "sha256": "e6d4cc2e52a7172e26b103c1d70ee2a886f386edbb55d3381d5dc5e59224a9fd"
+    },
+    {
+      "path": "Camera.pretty/L_0805_2012Metric.kicad_mod",
+      "sha256": "15dfbe449e081e5b3f763a98cb582b4a639ec3d0287bce64fc216072cb85d03e"
+    },
+    {
+      "path": "Camera.pretty/Oscillator_SMD_TXC_7C_5x3.2x1.2mm.kicad_mod",
+      "sha256": "785aa20a3665ebd44612f5a245bf59872b4bbe2a4d6440aa013b0f55900b31f2"
+    },
+    {
+      "path": "Camera.pretty/oshw-logo.kicad_mod",
+      "sha256": "0bbba81af2d78fbb26ef576aa9c2d684112172aa76a65950ad3588cc70f58bf6"
+    },
+    {
+      "path": "Camera.pretty/OV9281.kicad_mod",
+      "sha256": "61adfc2c17d4a3cbe3693c812b57693c27e804bce50b9406c70aa32d97e23340"
+    },
+    {
+      "path": "Camera.pretty/ProgrammingPads_5x1mm_P1.5mm.kicad_mod",
+      "sha256": "16cbccd7d33b73757eff01e12713e1d635606dd724a1fe30d0b809890c373f3e"
+    },
+    {
+      "path": "Camera.pretty/R_0402_1005Metric.kicad_mod",
+      "sha256": "6ed88b70926af431471c0ccaf6a55485f8cedab01cce4d1d4f3298a6cb6cef2c"
+    },
+    {
+      "path": "Camera.pretty/SOIC-8_5.3x5.3mm_P1.27mm.kicad_mod",
+      "sha256": "728e44941d9abc0835ce409dc25dd239ac6c9d7b63e6892491dd71bda43e6878"
+    },
+    {
+      "path": "Camera.pretty/SOT-23-3.kicad_mod",
+      "sha256": "8c4d24d06ec18edcb8c8e2e6622a83a726aee029963ed6e18cd784953ff1c3ee"
+    },
+    {
+      "path": "Camera.pretty/SOT-23-5.kicad_mod",
+      "sha256": "684a94089f59798a46492dac8dd0242edfa4d915e76a210abdca369e4faa4f9b"
+    },
+    {
+      "path": "Camera.pretty/SOT-23.kicad_mod",
+      "sha256": "7fb2859c6463f3a37966a1a20c31d8bfe7d4e8459d00bb165d5a7488270816c5"
+    },
+    {
+      "path": "Camera.pretty/SOT-666.kicad_mod",
+      "sha256": "49be652b5a07fdd6143cdd4566e366168b1768a96ab0414c94ecbf69263b031c"
+    },
+    {
+      "path": "Camera.pretty/Spacer_Drill3mm_H3mm_9774030243R.kicad_mod",
+      "sha256": "8c5326b4dcce6bedae4f20e6bcfc5f46576a38907204a9f9b29a4ccd115af5f8"
+    },
+    {
+      "path": "checks/head-drc.json",
+      "sha256": "14d6d3b9eeb221a37e11af9a4df5feb211477fe583d312c19fabf3bf1bfc3c98"
+    }
+  ]
+}

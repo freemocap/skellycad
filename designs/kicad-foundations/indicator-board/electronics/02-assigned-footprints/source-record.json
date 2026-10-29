@@ -1,0 +1,40 @@
+{
+  "stage": "02-assigned-footprints",
+  "parent": "01-connected-schematic",
+  "parent_sha256": "75f43aa96bd5bd34d728dca49b1c1533953ad66ac7af7f9c5c5845f263b0f865",
+  "schematic_sha256": "9bdbb827da49c90cd11136efb6372dfbaa1b6f74868846b7fbbabaf40287ce68",
+  "units": "mm",
+  "assignments": {
+    "R1": {
+      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "model": "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal.step",
+      "footprint_sha256": "075301a51b09edb0100d1a4efd026817f42db65a17b4e9e8a1c8776e69aa812d",
+      "model_sha256": "46710ac36957e4073ef7e80153823ef7db1ea12932074cb71f43bc4b476a74dc"
+    },
+    "D1": {
+      "footprint": "LED_THT:LED_D5.0mm",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "model": "${KICAD10_3DMODEL_DIR}/LED_THT.3dshapes/LED_D5.0mm.step",
+      "footprint_sha256": "d80146b8f18b09afdd0f25858f2881b2215f8e1b0ad87a09570e918ff463cad0",
+      "model_sha256": "7cc5086e6ee1fb4853d1fb74675a61a436c8811204094823b31f04ce788e5d40"
+    },
+    "J1": {
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "model": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step",
+      "footprint_sha256": "e5c0d699660a4479fa2414cc5be1835c6f52a38630dd85a2d18aab4dcd3ff8e5",
+      "model_sha256": "ea4d0799007ebdd3945072bf255d673d2fe87eb05fda85fd8d7993ad9397da41"
+    }
+  },
+  "status": "Teaching packages; physical part selection and PCB layout pending"
+}

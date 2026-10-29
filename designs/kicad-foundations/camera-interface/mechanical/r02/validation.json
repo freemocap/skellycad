@@ -1,0 +1,19 @@
+{
+  "units": "mm",
+  "source_step_sha256": "32bbd9848a1b71a94ea39447b7b8b693e5b0f8ebba27b40c3fcb52d2adc10faa",
+  "board_bbox_mm": [
+    30.0,
+    34.0,
+    1.51
+  ],
+  "native_geometry_valid": true,
+  "board_tray_intersection_mm3": 0.0,
+  "envelope_tray_intersections_mm3": {
+    "ConnectorEnvelope1": 0.0,
+    "RibbonEnvelope1": 0.0,
+    "ConnectorEnvelope2": 0.0,
+    "RibbonEnvelope2": 0.0
+  },
+  "physical_fit_tested": false,
+  "camera_optics_included": false
+}

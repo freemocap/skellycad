@@ -1,0 +1,23 @@
+[
+  {
+    "Id": 16688,
+    "File": "C:/Users/jonma/code-stuff/github/freemocap/other/skellycad/generated/ov9281-r11-electronics/camera.kicad_pcb",
+    "MainWindowTitle": "camera — PCB Editor",
+    "MainWindowHandle": 4202344,
+    "Responding": true
+  },
+  {
+    "Id": 18028,
+    "File": "C:/Users/jonma/code-stuff/github/freemocap/other/skellycad/generated/ov9281-r11-electronics/camera.kicad_sch",
+    "MainWindowTitle": "camera — Schematic Editor",
+    "MainWindowHandle": 657578,
+    "Responding": true
+  },
+  {
+    "Id": 38952,
+    "File": "C:/Users/jonma/code-stuff/github/freemocap/other/skellycad/designs/eye-camera-ov9281/electronics/r11/open-review.FCMacro",
+    "MainWindowTitle": " OV9281-R11-MATCHED - FreeCAD 1.1.4",
+    "MainWindowHandle": 138110,
+    "Responding": true
+  }
+]

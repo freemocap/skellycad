@@ -1,0 +1,9 @@
+{
+  "revision": "ET-RAT-OUTER-ARMS-R29",
+  "units": "mm",
+  "native_checkpoint": "designs/eye-tracker/rat/outer-arms-r29/checkpoints/ET-RAT-OUTER-ARMS-R29.FCStd",
+  "native_sha256": "6c6c6b2f53ac39ce937e549a9f01d5b021cd139fb505c09098bdb9421ba4649d",
+  "recipe": "recipe.json",
+  "validation": "generated/eye-tracker/rat/outer-arms-r29/validation.json",
+  "status": "Outer protective paired supports around unchanged ribbon and camera; C01 clip retained; static checks passed; physical stiffness and full travel pending"
+}

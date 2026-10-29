@@ -1,0 +1,69 @@
+{
+  "excluded_from_module_target": true,
+  "cable_side_plug_extra_g": [
+    0.02,
+    0.1
+  ],
+  "rows": [
+    {
+      "awg": 28,
+      "assumed_insulated_wire_od_mm": 0.5,
+      "four_conductor_copper_g_per_cm": 0.02885968345059308,
+      "complete_cable_g_per_cm": [
+        0.033474643372940954,
+        0.044092564031998724,
+        0.06144243700505494
+      ],
+      "mass_5_10_20_cm_nominal_g": [
+        0.22046282015999363,
+        0.44092564031998727,
+        0.8818512806399745
+      ],
+      "power_loop_ohm_at_20cm": 0.08496392568538756,
+      "voltage_drop_at_0_5A_20cm_V": 0.04248196284269378,
+      "termination_limit": "Within reviewed SH AWG range; exact crimp and insulation compatibility unqualified."
+    },
+    {
+      "awg": 32,
+      "assumed_insulated_wire_od_mm": 0.38,
+      "four_conductor_copper_g_per_cm": 0.011414668171647567,
+      "complete_cable_g_per_cm": [
+        0.014670020424525778,
+        0.021255094960006573,
+        0.03228377721380341
+      ],
+      "mass_5_10_20_cm_nominal_g": [
+        0.10627547480003287,
+        0.21255094960006574,
+        0.4251018992001315
+      ],
+      "power_loop_ohm_at_20cm": 0.2148141289021877,
+      "voltage_drop_at_0_5A_20cm_V": 0.10740706445109385,
+      "termination_limit": "Within reviewed SH AWG range; exact crimp and insulation compatibility unqualified."
+    },
+    {
+      "awg": 36,
+      "assumed_insulated_wire_od_mm": 0.28,
+      "four_conductor_copper_g_per_cm": 0.004514763638758705,
+      "complete_cable_g_per_cm": [
+        0.006471064800075605,
+        0.011156537992354106,
+        0.019076008013035238
+      ],
+      "mass_5_10_20_cm_nominal_g": [
+        0.055782689961770535,
+        0.11156537992354107,
+        0.22313075984708214
+      ],
+      "power_loop_ohm_at_20cm": 0.5431141464305238,
+      "voltage_drop_at_0_5A_20cm_V": 0.2715570732152619,
+      "termination_limit": "AWG36 is outside the reviewed SH contact wire range; would need a different termination."
+    }
+  ],
+  "limits": [
+    "Wire diameters use the AWG geometric definition; insulation OD, braid and jacket mass are assumptions.",
+    "No impedance, ampacity, USB compliance, bend radius or cable stiffness qualification.",
+    "The 0.5 A load is a comparison scenario, not a measured camera current.",
+    "Bare conductor mass is not complete cable mass; strand construction and strain relief determine mechanical loading."
+  ]
+}

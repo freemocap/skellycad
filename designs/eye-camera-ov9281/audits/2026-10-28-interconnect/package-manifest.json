@@ -1,0 +1,171 @@
+{
+  "date": "2026-10-28",
+  "source_selection": "../../routing-review.json",
+  "source_files": [
+    {
+      "path": "generated/ov9281-r09-data1p-03/controller.kicad_pcb",
+      "sha256": "04a2292f27f72b89caadb42594b5ea744b81143c3679996aaac16bfe54855be5"
+    },
+    {
+      "path": "generated/ov9281-r09-data1p-03/head.kicad_pcb",
+      "sha256": "de2fef7248318620c9cbe298fba39089304b454c9af35ba16dd6d1384c957562"
+    },
+    {
+      "path": "generated/ov9281-r09-data1p-03/flex-study.kicad_pcb",
+      "sha256": "52b315d55f15e14173298e533959e040e248c0e830c1fcb76628598c7fd21c6f"
+    },
+    {
+      "path": "generated/ov9281-r09-data1p-03/camera.kicad_sch",
+      "sha256": "b307a594304676204d24e58bcce617ebf770879fbdfe65a5e94134018c0c2991"
+    },
+    {
+      "path": "generated/ov9281-r09-data1p-03/OV9281-P4-R09-assembly.kicad_pcb",
+      "sha256": "2ddd0f3a27f0cd638a023c4a2c58a16c8d00d1519afa46e6f4d82628ff785be1"
+    }
+  ],
+  "files": [
+    {
+      "path": "board-geometry.json",
+      "bytes": 496286,
+      "sha256": "adbf8f6369463d14a17943a15d67d26baf1d1017eb3c07d7f9c54ab6d5e06a9f"
+    },
+    {
+      "path": "browser-validation.json",
+      "bytes": 130,
+      "sha256": "10777dedf6ab1c9ec96f5372d80c395527e87a7f81d25b9b2800eecfa80a5a2b"
+    },
+    {
+      "path": "controller-map.svg",
+      "bytes": 290721,
+      "sha256": "c07c73d8e75c395b4e272427f42d7677a1333e3ce7a2ee8471c9186b19c3e74f"
+    },
+    {
+      "path": "CORRECTIVE-CHECKLIST.md",
+      "bytes": 4085,
+      "sha256": "e3c4a93c04891db8b4b39d21b69aefbb60cd5754e18acfa65865917d2b8e30a8"
+    },
+    {
+      "path": "findings.json",
+      "bytes": 86517,
+      "sha256": "c436d641f1faf0555d33f1e3a97ab46f0bb5383cc1ddc73e19dd511a608ed256"
+    },
+    {
+      "path": "flex-study-map.svg",
+      "bytes": 16992,
+      "sha256": "ee14b2d42477f03c95c7156cc399e028b03816a6188ea8b9a0780b943cc45546"
+    },
+    {
+      "path": "head-map.svg",
+      "bytes": 163863,
+      "sha256": "93c4b4b0bdd4e0648c69ee4f44a1462f26d43b297efcb973bdf5d1efa190db03"
+    },
+    {
+      "path": "head-preview.png",
+      "bytes": 210144,
+      "sha256": "d47cb9dd00ec137af60b0ee6afe5685346aee45d3ebdee63ea775bf3fa173941"
+    },
+    {
+      "path": "index.html",
+      "bytes": 532121,
+      "sha256": "9c6ac5314a86edea613af445724634b3a06060a0f2398cfd700ea854fe59ff50"
+    },
+    {
+      "path": "mipi.json",
+      "bytes": 299313,
+      "sha256": "680d2e0fb987df4808da716c2a7f77f0b00429b96dcc8f1f1162789e820154cd"
+    },
+    {
+      "path": "MIPI.md",
+      "bytes": 4402,
+      "sha256": "2b130fe54a19c2fba8240e92f3d8be0152c8667c33ff7b27428a70558a70eac8"
+    },
+    {
+      "path": "native/AUDIT-controller.kicad_pcb",
+      "bytes": 2576758,
+      "sha256": "88a5c006d75f769124f7787f5f33322746e47fa4e58aca3fa8084648bab2e35d"
+    },
+    {
+      "path": "native/AUDIT-controller.kicad_pro",
+      "bytes": 9920,
+      "sha256": "b51f93a8b73dd256b421ffa8efb11dfb87dd61a3dc8e8d02b3b3e962918f699b"
+    },
+    {
+      "path": "native/AUDIT-flex-study.kicad_dru",
+      "bytes": 213,
+      "sha256": "b36d86e95f267253fc493fac4a5f355e722dd17651caa4bf76fc949216302156"
+    },
+    {
+      "path": "native/AUDIT-flex-study.kicad_pcb",
+      "bytes": 27729,
+      "sha256": "93390628a25c406f8aebabfc4ad84863916335eb468307084e0da47ea5cbfac7"
+    },
+    {
+      "path": "native/AUDIT-flex-study.kicad_pro",
+      "bytes": 9926,
+      "sha256": "557db5ebeed2584bf2be41d86a66f413f289d7e29fe9f30900e167bcf0f59aa3"
+    },
+    {
+      "path": "native/AUDIT-head.kicad_pcb",
+      "bytes": 1241292,
+      "sha256": "691374c9450af7d4863700aa8dc4594510aaedc9df662b049dc98423dcf06881"
+    },
+    {
+      "path": "native/AUDIT-head.kicad_pro",
+      "bytes": 9914,
+      "sha256": "ee676d1149c8ac184b0f6981696f435bc9780574493345588b4d55c582d6ff99"
+    },
+    {
+      "path": "native-review.json",
+      "bytes": 578,
+      "sha256": "3b62079ecd94b8c43e8be3645a478b372976309d3cebbcb3f2b59a003881d8f8"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 5101,
+      "sha256": "a67ad28806c059abd1b0b03dbc97b52e7a99f08dfd4990cdda8c23fb1edc29ac"
+    },
+    {
+      "path": "requirements.json",
+      "bytes": 1366,
+      "sha256": "2263e47928cadfc07590452d357ac31070d3f13309cb3bd8633f84b40c0f523c"
+    },
+    {
+      "path": "requirements.md",
+      "bytes": 5723,
+      "sha256": "ebdb122e8d7ceb2ddcb0bdeb5974dd87eaeb825618f708aabcd43ada2c4562d0"
+    },
+    {
+      "path": "usb.json",
+      "bytes": 40119,
+      "sha256": "6b159867ac355a6aed552521ed8183134f060586978dfaecbcf1a90d5ae616fe"
+    },
+    {
+      "path": "USB.md",
+      "bytes": 3943,
+      "sha256": "a0a96be28486c78e578340467d3bcd059e8376d1ceab121c2709a88d279d1a61"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 1123,
+      "sha256": "0ae1bc17f97abc4bedd6fd21aa646c3762a8c3e290a0185365e08269bfb23e37"
+    }
+  ],
+  "audit_tools": [
+    {
+      "path": "designs/eye-camera-ov9281/audit_interconnect.py",
+      "sha256": "95999f2cf7318135db56a3af9313067447e785cc736d9aba72009267cfeaf4f8"
+    },
+    {
+      "path": "designs/eye-camera-ov9281/interconnect_graph.py",
+      "sha256": "d29fce0c2a494374adf16fb52e22a46cd98dd6723011a94f8c7779c332530b71"
+    },
+    {
+      "path": "designs/eye-camera-ov9281/test_interconnect_graph.py",
+      "sha256": "85a36cad05f03dac2f5f708389cd5d257b11d459170efcffe39840cf17dbffe4"
+    },
+    {
+      "path": "designs/eye-camera-ov9281/build_interconnect_review.py",
+      "sha256": "486b451af8eb5c45bf7cb4931b6a191459b71ab0ba8cbc69d40ddf50ff986277"
+    }
+  ]
+}

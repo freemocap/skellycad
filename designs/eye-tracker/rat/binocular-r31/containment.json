@@ -1,0 +1,196 @@
+{
+  "passed": true,
+  "parts": {
+    "Carrier": {
+      "Left": {
+        "samples": 2000,
+        "inside_eye": 0
+      },
+      "Right": {
+        "samples": 2000,
+        "inside_eye": 0
+      }
+    },
+    "Leftcamera_pcb": {
+      "Left": {
+        "samples": 2000,
+        "inside_eye": 0
+      },
+      "Right": {
+        "samples": 2000,
+        "inside_eye": 0
+      }
+    },
+    "Lefteye_primary_Clip": {
+      "Left": {
+        "samples": 2000,
+        "inside_eye": 0
+      },
+      "Right": {
+        "samples": 2000,
+        "inside_eye": 0
+      }
+    },
+    "Lefteye_primary_Holder": {
+      "Left": {
+        "samples": 2000,
+        "inside_eye": 0
+      },
+      "Right": {
+        "samples": 2000,
+        "inside_eye": 0
+      }
+    },
+    "LeftIR_LED": {
+      "Left": {
+        "samples": 2000,
+        "inside_eye": 0
+      },
+      "Right": {
+        "samples": 2000,
+        "inside_eye": 0
+      }
+    },
+    "LeftIR_LED_001": {
+      "Left": {
+        "samples": 2000,
+        "inside_eye": 0
+      },
+      "Right": {
+        "samples": 2000,
+        "inside_eye": 0
+      }
+    },
+    "LeftJST_4pin": {
+      "Left": {
+        "samples": 2000,
+        "inside_eye": 0
+      },
+      "Right": {
+        "samples": 2000,
+        "inside_eye": 0
+      }
+    },
+    "LeftM4_lens": {
+      "Left": {
+        "samples": 2000,
+        "inside_eye": 0
+      },
+      "Right": {
+        "samples": 2000,
+        "inside_eye": 0
+      }
+    },
+    "LeftPCB": {
+      "Left": {
+        "samples": 2000,
+        "inside_eye": 0
+      },
+      "Right": {
+        "samples": 2000,
+        "inside_eye": 0
+      }
+    },
+    "Leftribbon": {
+      "Left": {
+        "samples": 2000,
+        "inside_eye": 0
+      },
+      "Right": {
+        "samples": 2000,
+        "inside_eye": 0
+      }
+    },
+    "Rightcamera_pcb": {
+      "Left": {
+        "samples": 2000,
+        "inside_eye": 0
+      },
+      "Right": {
+        "samples": 2000,
+        "inside_eye": 0
+      }
+    },
+    "Righteye_primary_Clip": {
+      "Left": {
+        "samples": 2000,
+        "inside_eye": 0
+      },
+      "Right": {
+        "samples": 2000,
+        "inside_eye": 0
+      }
+    },
+    "Righteye_primary_Holder": {
+      "Left": {
+        "samples": 2000,
+        "inside_eye": 0
+      },
+      "Right": {
+        "samples": 2000,
+        "inside_eye": 0
+      }
+    },
+    "RightIR_LED": {
+      "Left": {
+        "samples": 2000,
+        "inside_eye": 0
+      },
+      "Right": {
+        "samples": 2000,
+        "inside_eye": 0
+      }
+    },
+    "RightIR_LED_001": {
+      "Left": {
+        "samples": 2000,
+        "inside_eye": 0
+      },
+      "Right": {
+        "samples": 2000,
+        "inside_eye": 0
+      }
+    },
+    "RightJST_4pin": {
+      "Left": {
+        "samples": 2000,
+        "inside_eye": 0
+      },
+      "Right": {
+        "samples": 2000,
+        "inside_eye": 0
+      }
+    },
+    "RightM4_lens": {
+      "Left": {
+        "samples": 2000,
+        "inside_eye": 0
+      },
+      "Right": {
+        "samples": 2000,
+        "inside_eye": 0
+      }
+    },
+    "RightPCB": {
+      "Left": {
+        "samples": 2000,
+        "inside_eye": 0
+      },
+      "Right": {
+        "samples": 2000,
+        "inside_eye": 0
+      }
+    },
+    "Rightribbon": {
+      "Left": {
+        "samples": 2000,
+        "inside_eye": 0
+      },
+      "Right": {
+        "samples": 2000,
+        "inside_eye": 0
+      }
+    }
+  },
+  "scope": "Sampled eye containment; skull crossings are checked natively. Skull volume containment is not asserted for the open source skull mesh. Physical fit and adjustment travel untested."
+}

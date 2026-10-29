@@ -1,0 +1,77 @@
+{
+  "revision": "IR-REQUIREMENTS-R02",
+  "applies_to": "OC0TC-USB-CONCEPT-R02 and subsequent revisions",
+  "application": "Indoor active near-infrared eye imaging",
+  "required": [
+    "Monochrome global shutter",
+    "Visible-light suppression plus transmission at illumination wavelengths",
+    "Factory-integrated optics and filter preferred",
+    "Nearby IR LED illumination with a controlled driver",
+    "Close-focus performance at the intended eye distance"
+  ],
+  "requested_spectral_region_nm": [
+    800,
+    1000
+  ],
+  "baseline_proposal": {
+    "led_center_nm": 940,
+    "filter": "Factory-integrated NIR passband matched to LED emission",
+    "status": "Proposed baseline; passband width and blocking requirements not yet quantified",
+    "broadband_note": "Do not equate a narrow 940 nm passband with transmission across all 800-1000 nm. Retain broader range requirement for review if multi-wavelength operation is needed."
+  },
+  "module_qualification": {
+    "candidate": "OC0TC1B-RAVA-001A",
+    "status": "Not yet IR-qualified for this application",
+    "published": "940 nm lens coating claimed to suppress outdoor sunlight",
+    "not_established": [
+      "Transmission versus wavelength",
+      "Visible blocking magnitude",
+      "Passband width and tolerances",
+      "Angular behavior over field of view",
+      "Transmission at 850 nm",
+      "Close-focus performance"
+    ]
+  },
+  "illumination": {
+    "placement": "Associated with each camera head; existing CAD LED blocks remain allowances",
+    "driver": "Adjustable current limit, hardware default-off enable, provision for exposure synchronization",
+    "led_part": null,
+    "current_mA": null,
+    "duty_cycle": null,
+    "qualification": "Determine output, distance, duty cycle, thermal load and eye exposure before operation; no eye-safety claim"
+  },
+  "procurement_priority": [
+    "In-stock exact configured module or firm dated sample-build quote",
+    "Verified 10-20 mm NIR optics and supported USB firmware",
+    "Supplier existing circuit adapted to thin single board and four-wire USB",
+    "Do not rely on undated backorder or generic MIPI-to-USB compatibility"
+  ],
+  "sources": [
+    "omnivisionOc0tcBrief",
+    "omnivisionOc0tcProduct",
+    "midopt940Bandpass"
+  ],
+  "working_distance_mm": {
+    "minimum": 10,
+    "maximum": 20,
+    "datum": "front optical surface to target; confirm vendor datum",
+    "acceptance": "usable pupil and glint detail throughout required interval; not just focus at one position"
+  },
+  "packaging": {
+    "camera_head": "miniature assembled optics/sensor, short flex, low-profile snap connector preferred",
+    "usb_board": "one physical board; no stacked evaluation boards in wearable assembly",
+    "rigid_thickness_target_mm": [
+      0.4,
+      0.6
+    ],
+    "flex_thickness_target_mm": [
+      0.1,
+      0.2
+    ],
+    "thickness_status": "engineering targets; exact layer count, impedance, assembly and stiffeners require fabricator approval",
+    "host_interface": "USB 2.0 High Speed via four-contact JST: 5V, D-, D+, GND; connector pinout to be verified",
+    "mass_g": null,
+    "mass_status": "minimize and report assembled mass; no invented mass limit",
+    "flex_length": "shortest compatible with mounting geometry; no long evaluation tail as default"
+  }
+}

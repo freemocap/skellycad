@@ -1,0 +1,21 @@
+{
+  "revision": "ET-RAT-COMPACT-BINOCULAR-R32",
+  "units": "mm",
+  "native_checkpoint": "designs/eye-tracker/rat/compact-binocular-r32/checkpoints/ET-RAT-COMPACT-BINOCULAR-R32.FCStd",
+  "native_sha256": "b1bab67befa6205fbfc6f987b225f5ccacbd00731d4c3c57fa5e5d71ebe56363",
+  "source": "lowering.json",
+  "recipe": "recipe.json",
+  "ribbons": "ribbons.json",
+  "arms": "arms.json",
+  "validation": "validation.json",
+  "containment": "containment.json",
+  "comparison": "comparison.json",
+  "status": "Compact binocular review; rearward ordered protective arms; static validation passed; physical fit pending",
+  "physical_fit_verified": false,
+  "print_release": false,
+  "deferred": [
+    "skull Boolean cut",
+    "junction finishing",
+    "cap"
+  ]
+}

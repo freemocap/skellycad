@@ -1,0 +1,2482 @@
+{
+  "units": "mm",
+  "controller_mm": [
+    28,
+    14
+  ],
+  "head_mm": [
+    14,
+    14
+  ],
+  "free_flex_mm": [
+    32.85,
+    8
+  ],
+  "head_origin_mm": [
+    60.85,
+    0
+  ],
+  "outline_mm": [
+    [
+      0,
+      0
+    ],
+    [
+      27,
+      0
+    ],
+    [
+      28,
+      3
+    ],
+    [
+      60.85,
+      3
+    ],
+    [
+      61.85,
+      0
+    ],
+    [
+      74.85,
+      0
+    ],
+    [
+      74.85,
+      14
+    ],
+    [
+      61.85,
+      14
+    ],
+    [
+      60.85,
+      11
+    ],
+    [
+      28,
+      11
+    ],
+    [
+      27,
+      14
+    ],
+    [
+      0,
+      14
+    ]
+  ],
+  "reason_for_growth": "Physical decoupling, support exclusions and transition space require more room than the packing-only C study. Dimensions remain within the approved ceilings.",
+  "stiffeners": {
+    "controller": [
+      9,
+      2,
+      19,
+      12
+    ],
+    "controller_windows": [
+      [
+        12,
+        4,
+        16,
+        6.5
+      ],
+      [
+        12,
+        7.5,
+        16,
+        10
+      ]
+    ],
+    "head_outer": [
+      63.85,
+      3,
+      71.85,
+      11
+    ],
+    "head_inner": [
+      64.6,
+      3.75,
+      71.1,
+      10.25
+    ]
+  },
+  "optical_datum_mm": [
+    67.85,
+    7
+  ],
+  "placements": {
+    "U101": {
+      "region": "controller",
+      "side": "F",
+      "xy_mm": [
+        14,
+        7
+      ],
+      "rotation_deg": 90,
+      "courtyard_mm": [
+        8.375,
+        1.375,
+        19.625,
+        12.625
+      ],
+      "target_mm": [
+        14,
+        7
+      ],
+      "target_pin": null,
+      "target_distance_mm": 0.0
+    },
+    "J101": {
+      "region": "controller",
+      "side": "F",
+      "xy_mm": [
+        3.65,
+        7
+      ],
+      "rotation_deg": 270,
+      "courtyard_mm": [
+        0.34499999999999975,
+        3.075,
+        6.955,
+        10.925
+      ],
+      "target_mm": [
+        3.65,
+        7
+      ],
+      "target_pin": null,
+      "target_distance_mm": 0.0
+    },
+    "U1": {
+      "region": "head",
+      "side": "F",
+      "xy_mm": [
+        67.85,
+        7
+      ],
+      "rotation_deg": 0,
+      "courtyard_mm": [
+        64.70949999999999,
+        4.457,
+        70.49549999999999,
+        9.471
+      ],
+      "target_mm": [
+        67.85,
+        7
+      ],
+      "target_pin": null,
+      "target_distance_mm": 0.0
+    },
+    "Y101": {
+      "region": "controller",
+      "side": "F",
+      "xy_mm": [
+        6.9,
+        12.25
+      ],
+      "rotation_deg": 0,
+      "courtyard_mm": [
+        5.525,
+        11.025,
+        8.275,
+        13.475
+      ],
+      "target_mm": [
+        6.9,
+        12.25
+      ],
+      "target_pin": null,
+      "target_distance_mm": 0.0
+    },
+    "U105": {
+      "region": "controller",
+      "side": "F",
+      "xy_mm": [
+        5.0,
+        1.8
+      ],
+      "rotation_deg": 0,
+      "courtyard_mm": [
+        3.475,
+        0.675,
+        6.525,
+        2.925
+      ],
+      "target_mm": [
+        5,
+        1.9
+      ],
+      "target_pin": null,
+      "target_distance_mm": 0.09999999999999987
+    },
+    "R109": {
+      "region": "controller",
+      "side": "F",
+      "xy_mm": [
+        7.55,
+        2.0
+      ],
+      "rotation_deg": 90,
+      "courtyard_mm": [
+        7.055,
+        1.045,
+        8.045,
+        2.955
+      ],
+      "target_mm": [
+        7.55,
+        2.0
+      ],
+      "target_pin": null,
+      "target_distance_mm": 0.0
+    },
+    "R110": {
+      "region": "controller",
+      "side": "F",
+      "xy_mm": [
+        7.55,
+        4.2
+      ],
+      "rotation_deg": 90,
+      "courtyard_mm": [
+        7.055,
+        3.245,
+        8.045,
+        5.155
+      ],
+      "target_mm": [
+        7.55,
+        4.2
+      ],
+      "target_pin": null,
+      "target_distance_mm": 0.0
+    },
+    "C123": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        14,
+        5.3
+      ],
+      "rotation_deg": 0,
+      "courtyard_mm": [
+        12.275,
+        4.295,
+        15.725,
+        6.305
+      ],
+      "target_mm": [
+        14,
+        5.3
+      ],
+      "target_pin": null,
+      "target_distance_mm": 0.0
+    },
+    "C124": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        14,
+        8.7
+      ],
+      "rotation_deg": 0,
+      "courtyard_mm": [
+        12.275,
+        7.694999999999999,
+        15.725,
+        9.704999999999998
+      ],
+      "target_mm": [
+        14,
+        8.7
+      ],
+      "target_pin": null,
+      "target_distance_mm": 0.0
+    },
+    "U103": {
+      "region": "controller",
+      "side": "F",
+      "xy_mm": [
+        24.7,
+        11
+      ],
+      "rotation_deg": 270,
+      "courtyard_mm": [
+        23.575,
+        9.65,
+        25.825,
+        12.35
+      ],
+      "target_mm": [
+        24.7,
+        11
+      ],
+      "target_pin": null,
+      "target_distance_mm": 0.0
+    },
+    "L101": {
+      "region": "controller",
+      "side": "F",
+      "xy_mm": [
+        22,
+        11
+      ],
+      "rotation_deg": 90,
+      "courtyard_mm": [
+        20.675,
+        9.325,
+        23.325,
+        12.675
+      ],
+      "target_mm": [
+        22,
+        11
+      ],
+      "target_pin": null,
+      "target_distance_mm": 0.0
+    },
+    "C105": {
+      "region": "controller",
+      "side": "F",
+      "xy_mm": [
+        25.4,
+        8.7
+      ],
+      "rotation_deg": 0,
+      "courtyard_mm": [
+        23.895,
+        7.944999999999999,
+        26.904999999999998,
+        9.455
+      ],
+      "target_mm": [
+        25.4,
+        8.7
+      ],
+      "target_pin": null,
+      "target_distance_mm": 0.0
+    },
+    "C106": {
+      "region": "controller",
+      "side": "F",
+      "xy_mm": [
+        22,
+        8.2
+      ],
+      "rotation_deg": 0,
+      "courtyard_mm": [
+        20.275,
+        7.194999999999999,
+        23.725,
+        9.204999999999998
+      ],
+      "target_mm": [
+        22,
+        8.2
+      ],
+      "target_pin": null,
+      "target_distance_mm": 0.0
+    },
+    "R105": {
+      "region": "controller",
+      "side": "F",
+      "xy_mm": [
+        25,
+        13.2
+      ],
+      "rotation_deg": 0,
+      "courtyard_mm": [
+        24.045,
+        12.705,
+        25.955,
+        13.694999999999999
+      ],
+      "target_mm": [
+        25,
+        13.2
+      ],
+      "target_pin": null,
+      "target_distance_mm": 0.0
+    },
+    "R106": {
+      "region": "controller",
+      "side": "F",
+      "xy_mm": [
+        26.7,
+        11.2
+      ],
+      "rotation_deg": 90,
+      "courtyard_mm": [
+        26.205,
+        10.245,
+        27.195,
+        12.155
+      ],
+      "target_mm": [
+        26.7,
+        11.2
+      ],
+      "target_pin": null,
+      "target_distance_mm": 0.0
+    },
+    "C107": {
+      "region": "controller",
+      "side": "F",
+      "xy_mm": [
+        22.9,
+        13.225
+      ],
+      "rotation_deg": 0,
+      "courtyard_mm": [
+        21.965,
+        12.74,
+        23.834999999999997,
+        13.709999999999999
+      ],
+      "target_mm": [
+        22.9,
+        13.225
+      ],
+      "target_pin": null,
+      "target_distance_mm": 0.0
+    },
+    "U104": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        5.3,
+        6.5
+      ],
+      "rotation_deg": 180,
+      "courtyard_mm": [
+        3.9499999999999997,
+        5.375,
+        6.65,
+        7.625
+      ],
+      "target_mm": [
+        5.3,
+        6.5
+      ],
+      "target_pin": null,
+      "target_distance_mm": 0.0
+    },
+    "L102": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        2.1,
+        6.5
+      ],
+      "rotation_deg": 180,
+      "courtyard_mm": [
+        0.42500000000000004,
+        5.175,
+        3.7750000000000004,
+        7.825
+      ],
+      "target_mm": [
+        2.1,
+        6.5
+      ],
+      "target_pin": null,
+      "target_distance_mm": 0.0
+    },
+    "C108": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        5.4,
+        9
+      ],
+      "rotation_deg": 180,
+      "courtyard_mm": [
+        3.8950000000000005,
+        8.245,
+        6.905,
+        9.755
+      ],
+      "target_mm": [
+        5.4,
+        9
+      ],
+      "target_pin": null,
+      "target_distance_mm": 0.0
+    },
+    "C109": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        2.1,
+        9
+      ],
+      "rotation_deg": 0,
+      "courtyard_mm": [
+        0.375,
+        7.995,
+        3.825,
+        10.004999999999999
+      ],
+      "target_mm": [
+        2.1,
+        9
+      ],
+      "target_pin": null,
+      "target_distance_mm": 0.0
+    },
+    "R107": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        5.4,
+        4.5
+      ],
+      "rotation_deg": 0,
+      "courtyard_mm": [
+        4.445,
+        4.005,
+        6.355,
+        4.995
+      ],
+      "target_mm": [
+        5.4,
+        4.5
+      ],
+      "target_pin": null,
+      "target_distance_mm": 0.0
+    },
+    "R108": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        5.4,
+        3.3
+      ],
+      "rotation_deg": 0,
+      "courtyard_mm": [
+        4.445,
+        2.8049999999999997,
+        6.355,
+        3.795
+      ],
+      "target_mm": [
+        5.4,
+        3.3
+      ],
+      "target_pin": null,
+      "target_distance_mm": 0.0
+    },
+    "U5": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        1.3,
+        1.5
+      ],
+      "rotation_deg": 0,
+      "courtyard_mm": [
+        0.365,
+        0.725,
+        2.2350000000000003,
+        2.275
+      ],
+      "target_mm": [
+        1.3,
+        1.5
+      ],
+      "target_pin": null,
+      "target_distance_mm": 0.0
+    },
+    "C1": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        4,
+        1.1
+      ],
+      "rotation_deg": 0,
+      "courtyard_mm": [
+        2.495,
+        0.3450000000000001,
+        5.505,
+        1.855
+      ],
+      "target_mm": [
+        4,
+        1.1
+      ],
+      "target_pin": null,
+      "target_distance_mm": 0.0
+    },
+    "C5": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        1.8,
+        3.5
+      ],
+      "rotation_deg": 0,
+      "courtyard_mm": [
+        0.29500000000000015,
+        2.745,
+        3.3049999999999997,
+        4.255
+      ],
+      "target_mm": [
+        1.8,
+        3.5
+      ],
+      "target_pin": null,
+      "target_distance_mm": 0.0
+    },
+    "U6": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        23.5,
+        5
+      ],
+      "rotation_deg": 0,
+      "courtyard_mm": [
+        22.565,
+        4.225,
+        24.435,
+        5.775
+      ],
+      "target_mm": [
+        23.5,
+        5
+      ],
+      "target_pin": null,
+      "target_distance_mm": 0.0
+    },
+    "C2": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        26,
+        5
+      ],
+      "rotation_deg": 90,
+      "courtyard_mm": [
+        25.245,
+        3.495,
+        26.755,
+        6.505
+      ],
+      "target_mm": [
+        26,
+        5
+      ],
+      "target_pin": null,
+      "target_distance_mm": 0.0
+    },
+    "C6": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        21.5,
+        5
+      ],
+      "rotation_deg": 90,
+      "courtyard_mm": [
+        20.745,
+        3.495,
+        22.255,
+        6.505
+      ],
+      "target_mm": [
+        21.5,
+        5
+      ],
+      "target_pin": null,
+      "target_distance_mm": 0.0
+    },
+    "U7": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        23.5,
+        2
+      ],
+      "rotation_deg": 0,
+      "courtyard_mm": [
+        22.565,
+        1.225,
+        24.435,
+        2.775
+      ],
+      "target_mm": [
+        23.5,
+        2
+      ],
+      "target_pin": null,
+      "target_distance_mm": 0.0
+    },
+    "C3": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        26,
+        1.9
+      ],
+      "rotation_deg": 90,
+      "courtyard_mm": [
+        25.245,
+        0.395,
+        26.755,
+        3.405
+      ],
+      "target_mm": [
+        26,
+        1.9
+      ],
+      "target_pin": null,
+      "target_distance_mm": 0.0
+    },
+    "C4": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        21.5,
+        1.9
+      ],
+      "rotation_deg": 90,
+      "courtyard_mm": [
+        20.745,
+        0.395,
+        22.255,
+        3.405
+      ],
+      "target_mm": [
+        21.5,
+        1.9
+      ],
+      "target_pin": null,
+      "target_distance_mm": 0.0
+    },
+    "U102": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        23,
+        10
+      ],
+      "rotation_deg": 90,
+      "courtyard_mm": [
+        20.725,
+        7.845000000000001,
+        25.275,
+        12.155
+      ],
+      "target_mm": [
+        23,
+        10
+      ],
+      "target_pin": null,
+      "target_distance_mm": 0.0
+    },
+    "C103": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        23.700000000000003,
+        7.300000000000001
+      ],
+      "rotation_deg": 180,
+      "courtyard_mm": [
+        22.765000000000004,
+        6.815,
+        24.635,
+        7.785000000000001
+      ],
+      "target_mm": [
+        24.2,
+        8.65
+      ],
+      "target_pin": "1",
+      "target_distance_mm": 1.3501481400201976
+    },
+    "R101": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        24.700000000000003,
+        12.8
+      ],
+      "rotation_deg": 180,
+      "courtyard_mm": [
+        23.745000000000005,
+        12.305000000000001,
+        25.655,
+        13.295
+      ],
+      "target_mm": [
+        24.2,
+        11.35
+      ],
+      "target_pin": "2",
+      "target_distance_mm": 1.4500344823486104
+    },
+    "C112": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        17.900000000000002,
+        12.600000000000001
+      ],
+      "rotation_deg": 180,
+      "courtyard_mm": [
+        16.965000000000003,
+        12.115000000000002,
+        18.835,
+        13.085
+      ],
+      "target_mm": [
+        18.375,
+        11.875
+      ],
+      "target_pin": "1",
+      "target_distance_mm": 0.7250172411743062
+    },
+    "C122": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        8.4,
+        10.200000000000001
+      ],
+      "rotation_deg": 90,
+      "courtyard_mm": [
+        7.915,
+        9.265,
+        8.885,
+        11.135000000000002
+      ],
+      "target_mm": [
+        9.125,
+        10.675
+      ],
+      "target_pin": "1",
+      "target_distance_mm": 0.7250172411743044
+    },
+    "C115": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        10.200000000000001,
+        1.4000000000000001
+      ],
+      "rotation_deg": 180,
+      "courtyard_mm": [
+        9.265,
+        0.9150000000000001,
+        11.135000000000002,
+        1.8850000000000002
+      ],
+      "target_mm": [
+        10.675,
+        2.125
+      ],
+      "target_pin": "1",
+      "target_distance_mm": 0.7250172411743047
+    },
+    "C130": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        13.0,
+        1.4000000000000001
+      ],
+      "rotation_deg": 180,
+      "courtyard_mm": [
+        12.065,
+        0.9150000000000001,
+        13.935,
+        1.8850000000000002
+      ],
+      "target_mm": [
+        13.475,
+        2.125
+      ],
+      "target_pin": "1",
+      "target_distance_mm": 0.7250172411743047
+    },
+    "C110": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        12.9,
+        12.600000000000001
+      ],
+      "rotation_deg": 0,
+      "courtyard_mm": [
+        11.965,
+        12.115000000000002,
+        13.835,
+        13.085
+      ],
+      "target_mm": [
+        12.425,
+        11.875
+      ],
+      "target_pin": "1",
+      "target_distance_mm": 0.7250172411743062
+    },
+    "C129": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        15.8,
+        1.4000000000000001
+      ],
+      "rotation_deg": 180,
+      "courtyard_mm": [
+        14.865,
+        0.9150000000000001,
+        16.735,
+        1.8850000000000002
+      ],
+      "target_mm": [
+        16.275,
+        2.125
+      ],
+      "target_pin": "1",
+      "target_distance_mm": 0.7250172411743047
+    },
+    "C118": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        8.4,
+        5.2
+      ],
+      "rotation_deg": 270,
+      "courtyard_mm": [
+        7.915,
+        4.265000000000001,
+        8.885,
+        6.135
+      ],
+      "target_mm": [
+        9.125,
+        4.725
+      ],
+      "target_pin": "1",
+      "target_distance_mm": 0.7250172411743043
+    },
+    "C116": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        8.200000000000001,
+        1.4000000000000001
+      ],
+      "rotation_deg": 180,
+      "courtyard_mm": [
+        7.265000000000001,
+        0.9150000000000001,
+        9.135000000000002,
+        1.8850000000000002
+      ],
+      "target_mm": [
+        10.325,
+        2.125
+      ],
+      "target_pin": "1",
+      "target_distance_mm": 1.7976790592316507
+    },
+    "C117": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        8.4,
+        2.9000000000000004
+      ],
+      "rotation_deg": 270,
+      "courtyard_mm": [
+        7.915,
+        1.9650000000000003,
+        8.885,
+        3.8350000000000004
+      ],
+      "target_mm": [
+        9.975,
+        2.125
+      ],
+      "target_pin": "1",
+      "target_distance_mm": 1.6023888416985428
+    },
+    "C111": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        15.9,
+        12.600000000000001
+      ],
+      "rotation_deg": 180,
+      "courtyard_mm": [
+        14.965,
+        12.115000000000002,
+        16.835,
+        13.085
+      ],
+      "target_mm": [
+        16.625,
+        11.875
+      ],
+      "target_pin": "1",
+      "target_distance_mm": 0.7652777273643879
+    },
+    "C113": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        18.5,
+        1.4000000000000001
+      ],
+      "rotation_deg": 0,
+      "courtyard_mm": [
+        17.565,
+        0.9150000000000001,
+        19.435,
+        1.8850000000000002
+      ],
+      "target_mm": [
+        18.025,
+        2.125
+      ],
+      "target_pin": "1",
+      "target_distance_mm": 0.7250172411743045
+    },
+    "C114": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        19.6,
+        2.9000000000000004
+      ],
+      "rotation_deg": 270,
+      "courtyard_mm": [
+        19.115000000000002,
+        1.9650000000000003,
+        20.085,
+        3.8350000000000004
+      ],
+      "target_mm": [
+        15.225,
+        2.125
+      ],
+      "target_pin": "1",
+      "target_distance_mm": 4.384934435085662
+    },
+    "C119": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        8.4,
+        7.300000000000001
+      ],
+      "rotation_deg": 270,
+      "courtyard_mm": [
+        7.915,
+        6.365,
+        8.885,
+        8.235000000000001
+      ],
+      "target_mm": [
+        9.125,
+        6.825
+      ],
+      "target_pin": "1",
+      "target_distance_mm": 0.7250172411743044
+    },
+    "C120": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        7.300000000000001,
+        7.2
+      ],
+      "rotation_deg": 90,
+      "courtyard_mm": [
+        6.815,
+        6.265000000000001,
+        7.785000000000001,
+        8.135
+      ],
+      "target_mm": [
+        9.125,
+        8.575
+      ],
+      "target_pin": "1",
+      "target_distance_mm": 2.0326460587126323
+    },
+    "C121": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        6.9,
+        10.3
+      ],
+      "rotation_deg": 180,
+      "courtyard_mm": [
+        5.965,
+        9.815000000000001,
+        7.835000000000001,
+        10.785
+      ],
+      "target_mm": [
+        9.125,
+        10.325
+      ],
+      "target_pin": "1",
+      "target_distance_mm": 1.7451790739061699
+    },
+    "C128": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        19.6,
+        10.8
+      ],
+      "rotation_deg": 270,
+      "courtyard_mm": [
+        19.115000000000002,
+        9.865,
+        20.085,
+        11.735000000000001
+      ],
+      "target_mm": [
+        18.875,
+        10.325
+      ],
+      "target_pin": "1",
+      "target_distance_mm": 0.7250172411743061
+    },
+    "C125": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        19.900000000000002,
+        5.4
+      ],
+      "rotation_deg": 270,
+      "courtyard_mm": [
+        19.145000000000003,
+        3.8950000000000005,
+        20.655,
+        6.905
+      ],
+      "target_mm": [
+        12.075,
+        2.125
+      ],
+      "target_pin": "1",
+      "target_distance_mm": 8.214659153002032
+    },
+    "C126": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        10.4,
+        12.9
+      ],
+      "rotation_deg": 180,
+      "courtyard_mm": [
+        8.895,
+        12.145,
+        11.905000000000001,
+        13.655000000000001
+      ],
+      "target_mm": [
+        11.725,
+        2.125
+      ],
+      "target_pin": "1",
+      "target_distance_mm": 10.789027991436486
+    },
+    "C127": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        26.1,
+        8.1
+      ],
+      "rotation_deg": 270,
+      "courtyard_mm": [
+        25.345000000000002,
+        6.595,
+        26.855,
+        9.605
+      ],
+      "target_mm": [
+        11.025,
+        2.125
+      ],
+      "target_pin": "1",
+      "target_distance_mm": 15.946649334578096
+    },
+    "C131": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        19.6,
+        7.9
+      ],
+      "rotation_deg": 270,
+      "courtyard_mm": [
+        19.115000000000002,
+        6.965,
+        20.085,
+        8.835
+      ],
+      "target_mm": [
+        18.875,
+        6.475
+      ],
+      "target_pin": "1",
+      "target_distance_mm": 1.191070946669426
+    },
+    "C132": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        21.700000000000003,
+        7.1000000000000005
+      ],
+      "rotation_deg": 0,
+      "courtyard_mm": [
+        20.765000000000004,
+        6.615,
+        22.635,
+        7.585000000000001
+      ],
+      "target_mm": [
+        18.875,
+        6.475
+      ],
+      "target_pin": "1",
+      "target_distance_mm": 2.4268601113372834
+    },
+    "C133": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        26.5,
+        11.200000000000001
+      ],
+      "rotation_deg": 270,
+      "courtyard_mm": [
+        25.745,
+        9.695,
+        27.255,
+        12.705000000000002
+      ],
+      "target_mm": [
+        11.375,
+        2.125
+      ],
+      "target_pin": "1",
+      "target_distance_mm": 17.252699064204418
+    },
+    "C134": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        23.3,
+        3.4000000000000004
+      ],
+      "rotation_deg": 0,
+      "courtyard_mm": [
+        22.365000000000002,
+        2.9150000000000005,
+        24.235,
+        3.8850000000000002
+      ],
+      "target_mm": [
+        18.875,
+        2.975
+      ],
+      "target_pin": "1",
+      "target_distance_mm": 3.967826861142003
+    },
+    "C135": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        19.6,
+        12.8
+      ],
+      "rotation_deg": 270,
+      "courtyard_mm": [
+        19.115000000000002,
+        11.865,
+        20.085,
+        13.735000000000001
+      ],
+      "target_mm": [
+        18.875,
+        2.975
+      ],
+      "target_pin": "1",
+      "target_distance_mm": 9.373081136958115
+    },
+    "C136": {
+      "region": "controller",
+      "side": "F",
+      "xy_mm": [
+        1.9000000000000001,
+        2.1
+      ],
+      "rotation_deg": 180,
+      "courtyard_mm": [
+        0.39500000000000024,
+        1.3450000000000002,
+        3.4050000000000002,
+        2.855
+      ],
+      "target_mm": [
+        9.975,
+        2.125
+      ],
+      "target_pin": "1",
+      "target_distance_mm": 7.300042808093661
+    },
+    "C101": {
+      "region": "controller",
+      "side": "F",
+      "xy_mm": [
+        4.5,
+        12.8
+      ],
+      "rotation_deg": 180,
+      "courtyard_mm": [
+        3.565,
+        12.315000000000001,
+        5.4350000000000005,
+        13.285
+      ],
+      "target_mm": [
+        6.225,
+        12.825
+      ],
+      "target_pin": "1",
+      "target_distance_mm": 1.2452509787187471
+    },
+    "C102": {
+      "region": "controller",
+      "side": "F",
+      "xy_mm": [
+        7.6000000000000005,
+        10.0
+      ],
+      "rotation_deg": 90,
+      "courtyard_mm": [
+        7.115,
+        9.065,
+        8.085,
+        10.935
+      ],
+      "target_mm": [
+        7.575,
+        11.675
+      ],
+      "target_pin": "1",
+      "target_distance_mm": 1.1952614776692172
+    },
+    "J103": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        1.2,
+        12.6
+      ],
+      "rotation_deg": 0,
+      "courtyard_mm": [
+        0.7,
+        12.1,
+        7.7,
+        13.1
+      ],
+      "target_mm": [
+        1.2,
+        12.6
+      ],
+      "target_pin": null,
+      "target_distance_mm": 0.0
+    },
+    "D201": {
+      "region": "head",
+      "side": "F",
+      "xy_mm": [
+        63.85,
+        1.4000000000000001
+      ],
+      "rotation_deg": 0,
+      "courtyard_mm": [
+        62.35,
+        0.6750000000000002,
+        65.35,
+        2.125
+      ],
+      "target_mm": [
+        63.85,
+        1.4
+      ],
+      "target_pin": null,
+      "target_distance_mm": 2.220446049250313e-16
+    },
+    "D202": {
+      "region": "head",
+      "side": "F",
+      "xy_mm": [
+        71.85,
+        1.4000000000000001
+      ],
+      "rotation_deg": 0,
+      "courtyard_mm": [
+        70.35,
+        0.6750000000000002,
+        73.35,
+        2.125
+      ],
+      "target_mm": [
+        71.85,
+        1.4
+      ],
+      "target_pin": null,
+      "target_distance_mm": 2.220446049250313e-16
+    },
+    "Q201": {
+      "region": "head",
+      "side": "B",
+      "xy_mm": [
+        67.85,
+        8.6
+      ],
+      "rotation_deg": 0,
+      "courtyard_mm": [
+        67.125,
+        8.075,
+        68.57499999999999,
+        9.125
+      ],
+      "target_mm": [
+        67.85,
+        8.6
+      ],
+      "target_pin": null,
+      "target_distance_mm": 0.0
+    },
+    "Y1": {
+      "region": "head",
+      "side": "B",
+      "xy_mm": [
+        67.85,
+        5.300000000000001
+      ],
+      "rotation_deg": 0,
+      "courtyard_mm": [
+        66.175,
+        3.9250000000000007,
+        69.52499999999999,
+        6.675000000000001
+      ],
+      "target_mm": [
+        67.85,
+        5.3
+      ],
+      "target_pin": null,
+      "target_distance_mm": 8.881784197001252e-16
+    },
+    "Q101": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        20.1,
+        1.1
+      ],
+      "rotation_deg": 90,
+      "courtyard_mm": [
+        19.575000000000003,
+        0.3750000000000001,
+        20.625,
+        1.8250000000000002
+      ],
+      "target_mm": [
+        23,
+        3
+      ],
+      "target_pin": null,
+      "target_distance_mm": 3.466987164671942
+    },
+    "Q102": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        22.900000000000002,
+        12.8
+      ],
+      "rotation_deg": 0,
+      "courtyard_mm": [
+        22.175,
+        12.275,
+        23.625000000000004,
+        13.325000000000001
+      ],
+      "target_mm": [
+        23,
+        5
+      ],
+      "target_pin": null,
+      "target_distance_mm": 7.800640999302558
+    },
+    "Q103": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        21.3,
+        12.8
+      ],
+      "rotation_deg": 0,
+      "courtyard_mm": [
+        20.575,
+        12.275,
+        22.025000000000002,
+        13.325000000000001
+      ],
+      "target_mm": [
+        23,
+        7
+      ],
+      "target_pin": null,
+      "target_distance_mm": 6.044005294504631
+    },
+    "L1": {
+      "region": "head",
+      "side": "B",
+      "xy_mm": [
+        62.85,
+        5.2
+      ],
+      "rotation_deg": 90,
+      "courtyard_mm": [
+        61.975,
+        3.4250000000000003,
+        63.725,
+        6.975
+      ],
+      "target_mm": [
+        66.0025,
+        5.214
+      ],
+      "target_pin": null,
+      "target_distance_mm": 3.152531086286062
+    },
+    "L2": {
+      "region": "head",
+      "side": "B",
+      "xy_mm": [
+        72.85,
+        5.7
+      ],
+      "rotation_deg": 90,
+      "courtyard_mm": [
+        71.975,
+        3.9250000000000003,
+        73.725,
+        7.475
+      ],
+      "target_mm": [
+        69.2025,
+        5.714
+      ],
+      "target_pin": null,
+      "target_distance_mm": 3.6475268676186547
+    },
+    "L3": {
+      "region": "head",
+      "side": "B",
+      "xy_mm": [
+        69.85,
+        2.0
+      ],
+      "rotation_deg": 0,
+      "courtyard_mm": [
+        68.07499999999999,
+        1.125,
+        71.625,
+        2.875
+      ],
+      "target_mm": [
+        69.8425,
+        5.714
+      ],
+      "target_pin": null,
+      "target_distance_mm": 3.7140075726901802
+    },
+    "C33": {
+      "region": "head",
+      "side": "B",
+      "xy_mm": [
+        66.25,
+        8.3
+      ],
+      "rotation_deg": 90,
+      "courtyard_mm": [
+        65.495,
+        6.795000000000001,
+        67.005,
+        9.805
+      ],
+      "target_mm": [
+        67.85,
+        7
+      ],
+      "target_pin": null,
+      "target_distance_mm": 2.0615528128088263
+    },
+    "C104": {
+      "region": "controller",
+      "side": "F",
+      "xy_mm": [
+        2.0,
+        11.8
+      ],
+      "rotation_deg": 0,
+      "courtyard_mm": [
+        0.4950000000000001,
+        11.045,
+        3.505,
+        12.555000000000001
+      ],
+      "target_mm": [
+        9.125,
+        11.025
+      ],
+      "target_pin": null,
+      "target_distance_mm": 7.167025184830872
+    },
+    "C8": {
+      "region": "head",
+      "side": "B",
+      "xy_mm": [
+        69.45,
+        8.3
+      ],
+      "rotation_deg": 90,
+      "courtyard_mm": [
+        68.69500000000001,
+        6.795000000000001,
+        70.205,
+        9.805
+      ],
+      "target_mm": [
+        69.2025,
+        7.214
+      ],
+      "target_pin": null,
+      "target_distance_mm": 1.113845702958898
+    },
+    "C21": {
+      "region": "head",
+      "side": "B",
+      "xy_mm": [
+        72.75,
+        9.1
+      ],
+      "rotation_deg": 90,
+      "courtyard_mm": [
+        71.995,
+        7.595,
+        73.505,
+        10.605
+      ],
+      "target_mm": [
+        69.8425,
+        7.214
+      ],
+      "target_pin": null,
+      "target_distance_mm": 3.4656243665463786
+    },
+    "C10": {
+      "region": "head",
+      "side": "B",
+      "xy_mm": [
+        69.25,
+        11.9
+      ],
+      "rotation_deg": 0,
+      "courtyard_mm": [
+        67.745,
+        11.145,
+        70.755,
+        12.655000000000001
+      ],
+      "target_mm": [
+        69.2025,
+        7.714
+      ],
+      "target_pin": null,
+      "target_distance_mm": 4.18626949084743
+    },
+    "C7": {
+      "region": "head",
+      "side": "B",
+      "xy_mm": [
+        66.45,
+        2.1
+      ],
+      "rotation_deg": 0,
+      "courtyard_mm": [
+        64.94500000000001,
+        1.3450000000000002,
+        67.955,
+        2.855
+      ],
+      "target_mm": [
+        69.2025,
+        6.714
+      ],
+      "target_pin": null,
+      "target_distance_mm": 5.372639225743712
+    },
+    "C18": {
+      "region": "head",
+      "side": "B",
+      "xy_mm": [
+        72.75,
+        2.3000000000000003
+      ],
+      "rotation_deg": 90,
+      "courtyard_mm": [
+        71.995,
+        0.7950000000000004,
+        73.505,
+        3.805
+      ],
+      "target_mm": [
+        69.8425,
+        5.714
+      ],
+      "target_pin": null,
+      "target_distance_mm": 4.48430064224066
+    },
+    "C13": {
+      "region": "head",
+      "side": "B",
+      "xy_mm": [
+        62.95,
+        8.6
+      ],
+      "rotation_deg": 90,
+      "courtyard_mm": [
+        62.195,
+        7.095,
+        63.705000000000005,
+        10.105
+      ],
+      "target_mm": [
+        69.2025,
+        5.714
+      ],
+      "target_pin": null,
+      "target_distance_mm": 6.886417954931284
+    },
+    "C19": {
+      "region": "head",
+      "side": "B",
+      "xy_mm": [
+        72.35,
+        11.9
+      ],
+      "rotation_deg": 0,
+      "courtyard_mm": [
+        70.845,
+        11.145,
+        73.85499999999999,
+        12.655000000000001
+      ],
+      "target_mm": [
+        69.8425,
+        5.714
+      ],
+      "target_pin": null,
+      "target_distance_mm": 6.674889680736301
+    },
+    "C12": {
+      "region": "head",
+      "side": "B",
+      "xy_mm": [
+        62.95,
+        1.8
+      ],
+      "rotation_deg": 90,
+      "courtyard_mm": [
+        62.195,
+        0.29500000000000015,
+        63.705000000000005,
+        3.3049999999999997
+      ],
+      "target_mm": [
+        66.0025,
+        5.214
+      ],
+      "target_pin": null,
+      "target_distance_mm": 4.579645428414734
+    },
+    "R202": {
+      "region": "head",
+      "side": "B",
+      "xy_mm": [
+        70.45,
+        4.9
+      ],
+      "rotation_deg": 90,
+      "courtyard_mm": [
+        69.955,
+        3.9450000000000003,
+        70.94500000000001,
+        5.855
+      ],
+      "target_mm": [
+        72.675,
+        1.4
+      ],
+      "target_pin": null,
+      "target_distance_mm": 4.147363620422012
+    },
+    "R115": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        7.300000000000001,
+        5.2
+      ],
+      "rotation_deg": 90,
+      "courtyard_mm": [
+        6.805000000000001,
+        4.245,
+        7.795000000000001,
+        6.155
+      ],
+      "target_mm": [
+        22.55,
+        12.575
+      ],
+      "target_pin": null,
+      "target_distance_mm": 16.939690817721555
+    },
+    "R111": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        7.300000000000001,
+        3.2
+      ],
+      "rotation_deg": 90,
+      "courtyard_mm": [
+        6.805000000000001,
+        2.245,
+        7.795000000000001,
+        4.155
+      ],
+      "target_mm": [
+        18.875,
+        4.025
+      ],
+      "target_pin": null,
+      "target_distance_mm": 11.604363403478882
+    },
+    "R7": {
+      "region": "head",
+      "side": "B",
+      "xy_mm": [
+        65.55,
+        5.7
+      ],
+      "rotation_deg": 90,
+      "courtyard_mm": [
+        65.05499999999999,
+        4.745,
+        66.045,
+        6.655
+      ],
+      "target_mm": [
+        69.2025,
+        5.714
+      ],
+      "target_pin": null,
+      "target_distance_mm": 3.6525268308391694
+    },
+    "R104": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        6.2,
+        1.7000000000000002
+      ],
+      "rotation_deg": 90,
+      "courtyard_mm": [
+        5.705,
+        0.7450000000000002,
+        6.695,
+        2.6550000000000002
+      ],
+      "target_mm": [
+        13.125,
+        2.125
+      ],
+      "target_pin": null,
+      "target_distance_mm": 6.938029259090797
+    },
+    "R204": {
+      "region": "head",
+      "side": "B",
+      "xy_mm": [
+        66.65,
+        11.600000000000001
+      ],
+      "rotation_deg": 0,
+      "courtyard_mm": [
+        65.69500000000001,
+        11.105000000000002,
+        67.605,
+        12.095
+      ],
+      "target_mm": [
+        67.5,
+        8.825
+      ],
+      "target_pin": null,
+      "target_distance_mm": 2.902262048816406
+    },
+    "R203": {
+      "region": "head",
+      "side": "B",
+      "xy_mm": [
+        66.65,
+        12.700000000000001
+      ],
+      "rotation_deg": 0,
+      "courtyard_mm": [
+        65.69500000000001,
+        12.205000000000002,
+        67.605,
+        13.195
+      ],
+      "target_mm": [
+        67.5,
+        8.825
+      ],
+      "target_pin": null,
+      "target_distance_mm": 3.967130575113454
+    },
+    "R113": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        4.9,
+        10.4
+      ],
+      "rotation_deg": 0,
+      "courtyard_mm": [
+        3.9450000000000003,
+        9.905000000000001,
+        5.855,
+        10.895
+      ],
+      "target_mm": [
+        19.875,
+        1.45
+      ],
+      "target_pin": null,
+      "target_distance_mm": 17.44571938900772
+    },
+    "R112": {
+      "region": "controller",
+      "side": "B",
+      "xy_mm": [
+        2.9000000000000004,
+        10.600000000000001
+      ],
+      "rotation_deg": 0,
+      "courtyard_mm": [
+        1.9450000000000003,
+        10.105000000000002,
+        3.8550000000000004,
+        11.095
+      ],
+      "target_mm": [
+        20.1,
+        0.75
+      ],
+      "target_pin": null,
+      "target_distance_mm": 19.820759319461
+    },
+    "R102": {
+      "region": "controller",
+      "side": "F",
+      "xy_mm": [
+        9.3,
+        13.200000000000001
+      ],
+      "rotation_deg": 0,
+      "courtyard_mm": [
+        8.345,
+        12.705000000000002,
+        10.255,
+        13.695
+      ],
+      "target_mm": [
+        9.125,
+        11.025
+      ],
+      "target_pin": null,
+      "target_distance_mm": 2.18202887240293
+    },
+    "R118": {
+      "region": "controller",
+      "side": "F",
+      "xy_mm": [
+        24.8,
+        7.300000000000001
+      ],
+      "rotation_deg": 0,
+      "courtyard_mm": [
+        23.845000000000002,
+        6.805000000000001,
+        25.755,
+        7.795000000000001
+      ],
+      "target_mm": [
+        23,
+        7
+      ],
+      "target_pin": null,
+      "target_distance_mm": 1.8248287590894667
+    },
+    "R201": {
+      "region": "head",
+      "side": "B",
+      "xy_mm": [
+        64.35,
+        1.4000000000000001
+      ],
+      "rotation_deg": 90,
+      "courtyard_mm": [
+        63.855,
+        0.4450000000000002,
+        64.845,
+        2.355
+      ],
+      "target_mm": [
+        64.675,
+        1.4
+      ],
+      "target_pin": null,
+      "target_distance_mm": 0.32500000000000284
+    },
+    "R117": {
+      "region": "controller",
+      "side": "F",
+      "xy_mm": [
+        19.6,
+        13.200000000000001
+      ],
+      "rotation_deg": 0,
+      "courtyard_mm": [
+        18.645000000000003,
+        12.705000000000002,
+        20.555,
+        13.695
+      ],
+      "target_mm": [
+        21.65,
+        12.8
+      ],
+      "target_pin": null,
+      "target_distance_mm": 2.0886598574205393
+    },
+    "R103": {
+      "region": "controller",
+      "side": "F",
+      "xy_mm": [
+        20.200000000000003,
+        2.4000000000000004
+      ],
+      "rotation_deg": 90,
+      "courtyard_mm": [
+        19.705000000000002,
+        1.4450000000000003,
+        20.695000000000004,
+        3.3550000000000004
+      ],
+      "target_mm": [
+        13.825,
+        2.125
+      ],
+      "target_pin": null,
+      "target_distance_mm": 6.380928615805073
+    },
+    "R9": {
+      "region": "head",
+      "side": "B",
+      "xy_mm": [
+        64.65,
+        11.600000000000001
+      ],
+      "rotation_deg": 0,
+      "courtyard_mm": [
+        63.69500000000001,
+        11.105000000000002,
+        65.605,
+        12.095
+      ],
+      "target_mm": [
+        69.8425,
+        5.714
+      ],
+      "target_pin": null,
+      "target_distance_mm": 7.849016005207274
+    },
+    "R8": {
+      "region": "head",
+      "side": "B",
+      "xy_mm": [
+        63.050000000000004,
+        11.200000000000001
+      ],
+      "rotation_deg": 90,
+      "courtyard_mm": [
+        62.55500000000001,
+        10.245000000000001,
+        63.545,
+        12.155000000000001
+      ],
+      "target_mm": [
+        65.3625,
+        7.214
+      ],
+      "target_pin": null,
+      "target_distance_mm": 4.608237434204098
+    },
+    "R114": {
+      "region": "controller",
+      "side": "F",
+      "xy_mm": [
+        17.6,
+        13.200000000000001
+      ],
+      "rotation_deg": 0,
+      "courtyard_mm": [
+        16.645000000000003,
+        12.705000000000002,
+        18.555,
+        13.695
+      ],
+      "target_mm": [
+        23.25,
+        12.8
+      ],
+      "target_pin": null,
+      "target_distance_mm": 5.66414159427534
+    },
+    "R116": {
+      "region": "controller",
+      "side": "F",
+      "xy_mm": [
+        15.600000000000001,
+        13.200000000000001
+      ],
+      "rotation_deg": 0,
+      "courtyard_mm": [
+        14.645000000000001,
+        12.705000000000002,
+        16.555,
+        13.695
+      ],
+      "target_mm": [
+        20.95,
+        13.025
+      ],
+      "target_pin": null,
+      "target_distance_mm": 5.352861384343889
+    },
+    "C20": {
+      "region": "head",
+      "side": "B",
+      "xy_mm": [
+        74.05,
+        8.5
+      ],
+      "rotation_deg": 90,
+      "courtyard_mm": [
+        73.565,
+        7.5649999999999995,
+        74.535,
+        9.435
+      ],
+      "target_mm": [
+        69.8425,
+        5.714
+      ],
+      "target_pin": null,
+      "target_distance_mm": 5.046271123314716
+    },
+    "C9": {
+      "region": "head",
+      "side": "B",
+      "xy_mm": [
+        66.05,
+        0.8
+      ],
+      "rotation_deg": 0,
+      "courtyard_mm": [
+        65.115,
+        0.31500000000000006,
+        66.985,
+        1.2850000000000001
+      ],
+      "target_mm": [
+        66.0025,
+        5.214
+      ],
+      "target_pin": null,
+      "target_distance_mm": 4.414255571441237
+    },
+    "C17": {
+      "region": "head",
+      "side": "B",
+      "xy_mm": [
+        61.65,
+        8.0
+      ],
+      "rotation_deg": 90,
+      "courtyard_mm": [
+        61.165,
+        7.0649999999999995,
+        62.135,
+        8.935
+      ],
+      "target_mm": [
+        67.9225,
+        6.714
+      ],
+      "target_pin": null,
+      "target_distance_mm": 6.402972141904102
+    },
+    "C15": {
+      "region": "head",
+      "side": "B",
+      "xy_mm": [
+        74.05,
+        2.9000000000000004
+      ],
+      "rotation_deg": 90,
+      "courtyard_mm": [
+        73.565,
+        1.9650000000000003,
+        74.535,
+        3.8350000000000004
+      ],
+      "target_mm": [
+        69.2025,
+        5.714
+      ],
+      "target_pin": null,
+      "target_distance_mm": 5.605073795232313
+    },
+    "C14": {
+      "region": "head",
+      "side": "B",
+      "xy_mm": [
+        64.65,
+        12.700000000000001
+      ],
+      "rotation_deg": 0,
+      "courtyard_mm": [
+        63.715,
+        12.215000000000002,
+        65.58500000000001,
+        13.185
+      ],
+      "target_mm": [
+        66.0025,
+        5.214
+      ],
+      "target_pin": null,
+      "target_distance_mm": 7.607197397859476
+    },
+    "C16": {
+      "region": "head",
+      "side": "B",
+      "xy_mm": [
+        69.25,
+        13.200000000000001
+      ],
+      "rotation_deg": 0,
+      "courtyard_mm": [
+        68.315,
+        12.715000000000002,
+        70.185,
+        13.685
+      ],
+      "target_mm": [
+        69.2025,
+        5.714
+      ],
+      "target_pin": null,
+      "target_distance_mm": 7.486150696452751
+    }
+  },
+  "reservations": {
+    "controller_F": [
+      {
+        "name": "CSI corridor",
+        "bounds_mm": [
+          19.7,
+          3.8,
+          27.3,
+          6.7
+        ]
+      },
+      {
+        "name": "USB right corridor",
+        "bounds_mm": [
+          20.9,
+          0.35,
+          22.0,
+          3.8
+        ]
+      }
+    ],
+    "controller_B": [
+      {
+        "name": "P4 stiffener west",
+        "bounds_mm": [
+          9,
+          2,
+          12,
+          12
+        ]
+      },
+      {
+        "name": "P4 stiffener east",
+        "bounds_mm": [
+          16,
+          2,
+          19,
+          12
+        ]
+      },
+      {
+        "name": "P4 stiffener north",
+        "bounds_mm": [
+          12,
+          2,
+          16,
+          4
+        ]
+      },
+      {
+        "name": "P4 stiffener middle",
+        "bounds_mm": [
+          12,
+          6.5,
+          16,
+          7.5
+        ]
+      },
+      {
+        "name": "P4 stiffener south",
+        "bounds_mm": [
+          12,
+          10,
+          16,
+          12
+        ]
+      },
+      {
+        "name": "programming access",
+        "bounds_mm": [
+          0.5,
+          11.45,
+          8.3,
+          13.7
+        ]
+      }
+    ],
+    "head_F": [
+      {
+        "name": "optics",
+        "bounds_mm": [
+          63.85,
+          3,
+          71.85,
+          11
+        ]
+      },
+      {
+        "name": "CSI lower corridor",
+        "bounds_mm": [
+          61.65,
+          11.2,
+          72.85,
+          13.5
+        ]
+      },
+      {
+        "name": "CSI left corridor",
+        "bounds_mm": [
+          61.65,
+          3,
+          63.95,
+          11.2
+        ]
+      }
+    ],
+    "head_B": [
+      {
+        "name": "stiffener north",
+        "bounds_mm": [
+          63.85,
+          3,
+          71.85,
+          3.75
+        ]
+      },
+      {
+        "name": "stiffener south",
+        "bounds_mm": [
+          63.85,
+          10.25,
+          71.85,
+          11
+        ]
+      },
+      {
+        "name": "stiffener west",
+        "bounds_mm": [
+          63.85,
+          3.75,
+          64.6,
+          10.25
+        ]
+      },
+      {
+        "name": "stiffener east",
+        "bounds_mm": [
+          71.1,
+          3.75,
+          71.85,
+          10.25
+        ]
+      }
+    ]
+  },
+  "mass_excludes_external_tether": true
+}

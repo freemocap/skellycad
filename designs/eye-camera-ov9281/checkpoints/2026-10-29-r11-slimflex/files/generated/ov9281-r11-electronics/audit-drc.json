@@ -1,0 +1,4614 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-29T01:14:15",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "camera.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 25.31,
+                        "y": 7.3
+                    },
+                    "uuid": "03cd34e6-94d9-4f52-b13e-5a056ea1934e"
+                },
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 25.31,
+                        "y": 7.3
+                    },
+                    "uuid": "4cf56478-132c-4846-b942-6c3536736b4d"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 25.31,
+                        "y": 7.3
+                    },
+                    "uuid": "03cd34e6-94d9-4f52-b13e-5a056ea1934e"
+                },
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 25.31,
+                        "y": 7.3
+                    },
+                    "uuid": "67879729-3390-4d42-b2e4-1241208dd9f3"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 24.7,
+                        "y": 10.26
+                    },
+                    "uuid": "04907bdb-28a0-407f-9bf6-a15c279b017a"
+                },
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 24.7,
+                        "y": 10.26
+                    },
+                    "uuid": "f1a3c630-fe9e-4318-8419-3495b1740e91"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 24.7,
+                        "y": 10.26
+                    },
+                    "uuid": "04907bdb-28a0-407f-9bf6-a15c279b017a"
+                },
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 24.7,
+                        "y": 10.26
+                    },
+                    "uuid": "825ade1b-28ea-48a5-a383-811aa0bd816a"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 67.9225,
+                        "y": 7.214
+                    },
+                    "uuid": "0f13accc-fef7-4588-8ee2-faf976499372"
+                },
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 67.9225,
+                        "y": 7.214
+                    },
+                    "uuid": "785720b6-d718-4faf-bd5a-b019270dcb69"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 67.9225,
+                        "y": 7.214
+                    },
+                    "uuid": "0f13accc-fef7-4588-8ee2-faf976499372"
+                },
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 67.9225,
+                        "y": 7.214
+                    },
+                    "uuid": "7cde0908-db6d-4df5-956d-51834cbad216"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 14.0,
+                        "y": 4.3
+                    },
+                    "uuid": "12e8ce57-fe01-4a80-8ec1-67132ccda43a"
+                },
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 14.0,
+                        "y": 4.3
+                    },
+                    "uuid": "86badb11-8451-428b-b57a-9673daf85919"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 14.0,
+                        "y": 4.3
+                    },
+                    "uuid": "12e8ce57-fe01-4a80-8ec1-67132ccda43a"
+                },
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 14.0,
+                        "y": 4.3
+                    },
+                    "uuid": "85f6eed5-3ec8-4992-8ac6-9f11a582bd14"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 11.5,
+                        "y": 7.5
+                    },
+                    "uuid": "15351d3f-9eeb-4e0c-b889-7e75ea6b03de"
+                },
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 11.5,
+                        "y": 7.5
+                    },
+                    "uuid": "59387084-eb58-48a8-87af-cfd64dbb6aab"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 11.5,
+                        "y": 7.5
+                    },
+                    "uuid": "15351d3f-9eeb-4e0c-b889-7e75ea6b03de"
+                },
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 11.5,
+                        "y": 7.5
+                    },
+                    "uuid": "9c926e7a-1d2c-4b25-9b52-ed6ed012b055"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 14.5,
+                        "y": 4.5
+                    },
+                    "uuid": "19848948-6bd5-4f23-ac88-92dcb678d06c"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 14.5,
+                        "y": 4.5
+                    },
+                    "uuid": "27d3a329-6fc6-4e5d-8a81-3c504a17c089"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 14.5,
+                        "y": 4.5
+                    },
+                    "uuid": "27d3a329-6fc6-4e5d-8a81-3c504a17c089"
+                },
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 14.5,
+                        "y": 4.5
+                    },
+                    "uuid": "8a7d7d0f-5cd9-4b52-bbb4-a0ab4a33035b"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 22.95,
+                        "y": 8.199999
+                    },
+                    "uuid": "299c9d9c-67e1-4257-a6d0-af19c5054612"
+                },
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 22.95,
+                        "y": 8.199999
+                    },
+                    "uuid": "71483d6d-959e-4d15-aceb-dc0943b2b26e"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 22.95,
+                        "y": 8.199999
+                    },
+                    "uuid": "299c9d9c-67e1-4257-a6d0-af19c5054612"
+                },
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 22.95,
+                        "y": 8.199999
+                    },
+                    "uuid": "6249200f-de7d-4d1f-99e4-f3cd624ba185"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 3.875,
+                        "y": 1.8
+                    },
+                    "uuid": "12e75ad4-7e1a-4b22-88d3-f5e07cf1883b"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 3.875,
+                        "y": 1.8
+                    },
+                    "uuid": "3e4d92a2-185a-4f37-b973-5c9c36248114"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 3.875,
+                        "y": 1.8
+                    },
+                    "uuid": "145faf04-cdb0-4990-9685-4b933bd0e79d"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 3.875,
+                        "y": 1.8
+                    },
+                    "uuid": "3e4d92a2-185a-4f37-b973-5c9c36248114"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 16.7,
+                        "y": 4.3
+                    },
+                    "uuid": "48db733f-c13a-4649-8b83-ecaa5086d6e4"
+                },
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 16.7,
+                        "y": 4.3
+                    },
+                    "uuid": "fd624eec-d7b3-40e2-b141-2f6a611ff918"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 16.7,
+                        "y": 4.3
+                    },
+                    "uuid": "48db733f-c13a-4649-8b83-ecaa5086d6e4"
+                },
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 16.7,
+                        "y": 4.3
+                    },
+                    "uuid": "7089ac03-0918-4fa0-a48f-bb41562b37d7"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 13.0,
+                        "y": 6.0
+                    },
+                    "uuid": "4a7e4434-4023-4d80-86a2-67d24d10133a"
+                },
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 13.0,
+                        "y": 6.0
+                    },
+                    "uuid": "e3b26d85-982e-4771-b4d0-072bdde689fa"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 13.0,
+                        "y": 6.0
+                    },
+                    "uuid": "4a7e4434-4023-4d80-86a2-67d24d10133a"
+                },
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 13.0,
+                        "y": 6.0
+                    },
+                    "uuid": "d7cb2292-68cd-4d53-bc37-17a0cd3c653c"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 13.0,
+                        "y": 7.5
+                    },
+                    "uuid": "4cc411a8-06a2-4086-bc87-2c027ad8d2af"
+                },
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 13.0,
+                        "y": 7.5
+                    },
+                    "uuid": "67189bc5-f42d-43b4-add2-ddf02293eb29"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 13.0,
+                        "y": 7.5
+                    },
+                    "uuid": "4cc411a8-06a2-4086-bc87-2c027ad8d2af"
+                },
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 13.0,
+                        "y": 7.5
+                    },
+                    "uuid": "80f66e3d-b993-495d-9441-71ba1adb8809"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 1.125,
+                        "y": 2.1
+                    },
+                    "uuid": "5047d648-5705-4210-aaf3-807e0ebca4d8"
+                },
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 1.125,
+                        "y": 2.1
+                    },
+                    "uuid": "a085529f-94b5-4bfb-af0d-8d2672cf8cb6"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 1.125,
+                        "y": 2.1
+                    },
+                    "uuid": "5047d648-5705-4210-aaf3-807e0ebca4d8"
+                },
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 1.125,
+                        "y": 2.1
+                    },
+                    "uuid": "fb377f48-2164-46c6-b986-57a29c17c45d"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 65.3625,
+                        "y": 7.714
+                    },
+                    "uuid": "516cf81b-19e7-418c-a6d5-f990a82e68b3"
+                },
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 65.3625,
+                        "y": 7.714
+                    },
+                    "uuid": "c2e3fbfc-3028-49c9-95cf-916da96c9075"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 65.3625,
+                        "y": 7.714
+                    },
+                    "uuid": "516cf81b-19e7-418c-a6d5-f990a82e68b3"
+                },
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 65.3625,
+                        "y": 7.714
+                    },
+                    "uuid": "9235d930-910a-4a4a-a6c4-8e70e59a7c76"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 11.5,
+                        "y": 9.0
+                    },
+                    "uuid": "23540ba9-9519-4712-a426-4c1962e81891"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 11.5,
+                        "y": 9.0
+                    },
+                    "uuid": "5265e3d3-f657-45e1-bd9a-4a96b6a5a8c0"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 11.5,
+                        "y": 9.0
+                    },
+                    "uuid": "5265e3d3-f657-45e1-bd9a-4a96b6a5a8c0"
+                },
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 11.5,
+                        "y": 9.0
+                    },
+                    "uuid": "a0d7edbb-071e-41e3-9634-cacdd293d44c"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 16.0,
+                        "y": 7.5
+                    },
+                    "uuid": "034236af-1626-44e4-924e-c6cd0e76fc9e"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 16.0,
+                        "y": 7.5
+                    },
+                    "uuid": "545013f1-f953-4e9c-b4af-a09fcbb57b33"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 16.0,
+                        "y": 7.5
+                    },
+                    "uuid": "545013f1-f953-4e9c-b4af-a09fcbb57b33"
+                },
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 16.0,
+                        "y": 7.5
+                    },
+                    "uuid": "e710fc2f-5476-4dcb-bb97-2106e3ccdd3b"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 7.575,
+                        "y": 12.825
+                    },
+                    "uuid": "1a32dff1-9f2a-42c2-add2-fe104d59836f"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 7.575,
+                        "y": 12.825
+                    },
+                    "uuid": "5668998c-1b3e-42c1-9481-dae3fe296557"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 7.575,
+                        "y": 12.825
+                    },
+                    "uuid": "5668998c-1b3e-42c1-9481-dae3fe296557"
+                },
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 7.575,
+                        "y": 12.825
+                    },
+                    "uuid": "b3c67a4d-c54b-474f-83ba-36a964e687ad"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 11.3,
+                        "y": 4.3
+                    },
+                    "uuid": "5add41cd-f84b-4440-99eb-e2217fc6657b"
+                },
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 11.3,
+                        "y": 4.3
+                    },
+                    "uuid": "65eec6f1-aaf4-48e9-96e0-b8ed6b842285"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 11.3,
+                        "y": 4.3
+                    },
+                    "uuid": "01cd0017-547e-402c-a590-52f3244b0000"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 11.3,
+                        "y": 4.3
+                    },
+                    "uuid": "5add41cd-f84b-4440-99eb-e2217fc6657b"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 5.65,
+                        "y": 8.5
+                    },
+                    "uuid": "3fbf4caa-c449-4487-9410-6dd7eddb792f"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 5.65,
+                        "y": 8.5
+                    },
+                    "uuid": "5bb8f4c3-7369-4976-a139-d6cd0a3012bc"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 5.65,
+                        "y": 8.5
+                    },
+                    "uuid": "14531789-7a23-4c50-8930-e3660a6e6293"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 5.65,
+                        "y": 8.5
+                    },
+                    "uuid": "5bb8f4c3-7369-4976-a139-d6cd0a3012bc"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 68.5625,
+                        "y": 7.514
+                    },
+                    "uuid": "62ed724b-c315-407a-ac37-561fb7fe622c"
+                },
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 68.5625,
+                        "y": 7.514
+                    },
+                    "uuid": "f4f085a3-8ae6-4e64-a78e-1b817d153450"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 68.5625,
+                        "y": 7.514
+                    },
+                    "uuid": "3f051c0c-f9d5-4c94-9187-54ada3583f35"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 68.5625,
+                        "y": 7.514
+                    },
+                    "uuid": "62ed724b-c315-407a-ac37-561fb7fe622c"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 66.6425,
+                        "y": 5.214
+                    },
+                    "uuid": "67460a36-a2f4-44f1-9bbe-22de72b75fab"
+                },
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 66.6425,
+                        "y": 5.214
+                    },
+                    "uuid": "bc02f544-5119-4a76-ab30-a6c3677828d5"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 66.6425,
+                        "y": 5.214
+                    },
+                    "uuid": "67460a36-a2f4-44f1-9bbe-22de72b75fab"
+                },
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 66.6425,
+                        "y": 5.214
+                    },
+                    "uuid": "b4d9a716-acf3-4849-9af4-2f496bab798d"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 18.25,
+                        "y": 5.25
+                    },
+                    "uuid": "08afbbd9-467a-417f-a59e-47e0dfe9f7a0"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 18.25,
+                        "y": 5.25
+                    },
+                    "uuid": "67c2a3a6-0c4d-4610-b7ae-d07a760484f8"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 18.25,
+                        "y": 5.25
+                    },
+                    "uuid": "67c2a3a6-0c4d-4610-b7ae-d07a760484f8"
+                },
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 18.25,
+                        "y": 5.25
+                    },
+                    "uuid": "c3d73555-f48b-4ce4-bd59-280346379395"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 26.7,
+                        "y": 10.69
+                    },
+                    "uuid": "706ad39c-58d9-4750-ae08-2b3272326896"
+                },
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 26.7,
+                        "y": 10.69
+                    },
+                    "uuid": "b8d32d13-cc7d-454a-aff0-a993fa932800"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 26.7,
+                        "y": 10.69
+                    },
+                    "uuid": "706ad39c-58d9-4750-ae08-2b3272326896"
+                },
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 26.7,
+                        "y": 10.69
+                    },
+                    "uuid": "d8137831-7094-4442-827b-3ac63d372aeb"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 66.9325,
+                        "y": 8.064
+                    },
+                    "uuid": "119dcd33-6714-469f-a27f-0c7dcabc4f5d"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 66.9325,
+                        "y": 8.064
+                    },
+                    "uuid": "764aea97-9a4d-4ede-8a84-8b1e8e08ae91"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 66.9325,
+                        "y": 8.064
+                    },
+                    "uuid": "764aea97-9a4d-4ede-8a84-8b1e8e08ae91"
+                },
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 66.9325,
+                        "y": 8.064
+                    },
+                    "uuid": "ef43016d-2423-4203-b2b4-02f2f68ca347"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 14.0,
+                        "y": 9.7
+                    },
+                    "uuid": "4f9d566f-5444-48af-b2f3-bf1a2371894a"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 14.0,
+                        "y": 9.7
+                    },
+                    "uuid": "77e2e125-bf8b-40fb-97d1-4d5bde8170b0"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 14.0,
+                        "y": 9.7
+                    },
+                    "uuid": "5410813b-4962-4bfd-8556-6821f221d803"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 14.0,
+                        "y": 9.7
+                    },
+                    "uuid": "77e2e125-bf8b-40fb-97d1-4d5bde8170b0"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 68.5625,
+                        "y": 7.214
+                    },
+                    "uuid": "782488ff-7252-4257-9725-eb74e49da22f"
+                },
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 68.5625,
+                        "y": 7.214
+                    },
+                    "uuid": "7b8c897c-bca8-4eed-8416-0454d145afe8"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 68.5625,
+                        "y": 7.214
+                    },
+                    "uuid": "6a787c0b-2e0a-41cf-96cf-d2a1976c3de5"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 68.5625,
+                        "y": 7.214
+                    },
+                    "uuid": "782488ff-7252-4257-9725-eb74e49da22f"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 16.7,
+                        "y": 7.0
+                    },
+                    "uuid": "7996d2f8-e043-4dc5-b444-3c24db737256"
+                },
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 16.7,
+                        "y": 7.0
+                    },
+                    "uuid": "98f14f1d-07b8-4309-b193-a4922a58e913"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 16.7,
+                        "y": 7.0
+                    },
+                    "uuid": "7996d2f8-e043-4dc5-b444-3c24db737256"
+                },
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 16.7,
+                        "y": 7.0
+                    },
+                    "uuid": "a418d27b-07c5-4fa1-978e-e6f5dc76a130"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 69.2025,
+                        "y": 5.214
+                    },
+                    "uuid": "75eedc76-5473-431f-b0e3-ff72898cef56"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 69.2025,
+                        "y": 5.214
+                    },
+                    "uuid": "7cf192f4-5436-482c-b557-1167396ad5f9"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 69.2025,
+                        "y": 5.214
+                    },
+                    "uuid": "0ea8737b-2b6d-49c8-9c2f-1ec22701c40e"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 69.2025,
+                        "y": 5.214
+                    },
+                    "uuid": "7cf192f4-5436-482c-b557-1167396ad5f9"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 4.019999,
+                        "y": 12.8
+                    },
+                    "uuid": "7f22b3fc-0e37-4263-b137-d742b26d40f3"
+                },
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 4.019999,
+                        "y": 12.8
+                    },
+                    "uuid": "8e92cca1-1ff2-4fb6-b5bb-727d3ba26157"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 4.019999,
+                        "y": 12.8
+                    },
+                    "uuid": "1497bcb2-9c7a-40e7-b81e-0a80855c6d2a"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 4.019999,
+                        "y": 12.8
+                    },
+                    "uuid": "7f22b3fc-0e37-4263-b137-d742b26d40f3"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 11.5,
+                        "y": 4.5
+                    },
+                    "uuid": "0d68c5ba-f286-4f62-adad-ff0c85a29e34"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 11.5,
+                        "y": 4.5
+                    },
+                    "uuid": "7f7f04f1-d524-4b2f-8b41-9cb94789fecc"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 11.5,
+                        "y": 4.5
+                    },
+                    "uuid": "7f7f04f1-d524-4b2f-8b41-9cb94789fecc"
+                },
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 11.5,
+                        "y": 4.5
+                    },
+                    "uuid": "da3ed8c2-acbe-4265-8b24-8b2e2c92602c"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 13.0,
+                        "y": 9.0
+                    },
+                    "uuid": "8771e612-96c3-4736-a00f-1c203df83592"
+                },
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 13.0,
+                        "y": 9.0
+                    },
+                    "uuid": "c47bfffb-471f-4689-b43a-654563706043"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 13.0,
+                        "y": 9.0
+                    },
+                    "uuid": "8771e612-96c3-4736-a00f-1c203df83592"
+                },
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 13.0,
+                        "y": 9.0
+                    },
+                    "uuid": "8d9aee32-f40a-4c09-a28a-9dee5b44ec91"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 26.175,
+                        "y": 8.7
+                    },
+                    "uuid": "8fa5a71a-6dd7-4c6d-a36c-22573bb1debb"
+                },
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 26.175,
+                        "y": 8.7
+                    },
+                    "uuid": "b349d5b1-b18d-41d4-bc17-d01d74b46da0"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 26.175,
+                        "y": 8.7
+                    },
+                    "uuid": "8fa5a71a-6dd7-4c6d-a36c-22573bb1debb"
+                },
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 26.175,
+                        "y": 8.7
+                    },
+                    "uuid": "ebe6d6fb-347c-48b0-86d5-5b2224e5ec14"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 65.6525,
+                        "y": 7.064
+                    },
+                    "uuid": "92a037a4-0dbd-40e5-9b95-2bf14b4134e4"
+                },
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 65.6525,
+                        "y": 7.064
+                    },
+                    "uuid": "f84b77aa-2574-470f-9614-1366f807a3a6"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 65.6525,
+                        "y": 7.064
+                    },
+                    "uuid": "401a3415-4b31-499a-89af-3fe92220c559"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 65.6525,
+                        "y": 7.064
+                    },
+                    "uuid": "92a037a4-0dbd-40e5-9b95-2bf14b4134e4"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 66.6425,
+                        "y": 7.214
+                    },
+                    "uuid": "5c21d4b4-664f-4c3d-8a87-dc3294d0ac8a"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 66.6425,
+                        "y": 7.214
+                    },
+                    "uuid": "9852a59f-8ce8-4555-982f-2a39dc43c626"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 66.6425,
+                        "y": 7.214
+                    },
+                    "uuid": "9852a59f-8ce8-4555-982f-2a39dc43c626"
+                },
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 66.6425,
+                        "y": 7.214
+                    },
+                    "uuid": "a122d7eb-d440-4fd3-aa14-b2632e7c1715"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 16.0,
+                        "y": 6.0
+                    },
+                    "uuid": "11f0711d-cfd7-491e-87e9-56ed0fbf019d"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 16.0,
+                        "y": 6.0
+                    },
+                    "uuid": "9941e2e4-0918-4939-b096-0ed2b8acea94"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 16.0,
+                        "y": 6.0
+                    },
+                    "uuid": "929a0f87-959b-4ae5-b7c8-35c757baa3b5"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 16.0,
+                        "y": 6.0
+                    },
+                    "uuid": "9941e2e4-0918-4939-b096-0ed2b8acea94"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 16.7,
+                        "y": 9.7
+                    },
+                    "uuid": "36e810cf-621e-4a77-a2aa-20230c04120b"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 16.7,
+                        "y": 9.7
+                    },
+                    "uuid": "9a82bc2c-ba1a-4398-94bd-c2106465f355"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 16.7,
+                        "y": 9.7
+                    },
+                    "uuid": "961ef2a0-9f07-4a85-902c-b2d8fd9e7334"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 16.7,
+                        "y": 9.7
+                    },
+                    "uuid": "9a82bc2c-ba1a-4398-94bd-c2106465f355"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 70.0425,
+                        "y": 7.514
+                    },
+                    "uuid": "9b0f6ae3-bc3c-48dd-940b-07f1a4c8f625"
+                },
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 70.0425,
+                        "y": 7.514
+                    },
+                    "uuid": "a2fb9a52-f58b-48bd-85ed-c541c61c04a3"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 70.0425,
+                        "y": 7.514
+                    },
+                    "uuid": "868b27b0-721b-4f4f-bc56-e9719dfbda4a"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 70.0425,
+                        "y": 7.514
+                    },
+                    "uuid": "9b0f6ae3-bc3c-48dd-940b-07f1a4c8f625"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 11.3,
+                        "y": 7.0
+                    },
+                    "uuid": "5040f8fe-de73-44eb-8cc5-e3af95a26dc7"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 11.3,
+                        "y": 7.0
+                    },
+                    "uuid": "9cdcbfa4-980b-4836-b4c4-ed41f6c48ecb"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 11.3,
+                        "y": 7.0
+                    },
+                    "uuid": "22de79be-a65b-4d40-ae6d-30c9f76d6d8d"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 11.3,
+                        "y": 7.0
+                    },
+                    "uuid": "9cdcbfa4-980b-4836-b4c4-ed41f6c48ecb"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 14.5,
+                        "y": 6.0
+                    },
+                    "uuid": "87f6131b-5fa2-4b9d-8adc-d81bae6612f3"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 14.5,
+                        "y": 6.0
+                    },
+                    "uuid": "a035011d-fb6d-4ddf-99ae-1f5192778cae"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 14.5,
+                        "y": 6.0
+                    },
+                    "uuid": "27bd3094-284c-4866-bffe-714471dd538f"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 14.5,
+                        "y": 6.0
+                    },
+                    "uuid": "a035011d-fb6d-4ddf-99ae-1f5192778cae"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 14.0,
+                        "y": 7.0
+                    },
+                    "uuid": "a5f8387e-86d4-47df-9681-df0a4cbb861f"
+                },
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 14.0,
+                        "y": 7.0
+                    },
+                    "uuid": "f0df2def-53ea-484f-820f-82c4d6fd26d3"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 14.0,
+                        "y": 7.0
+                    },
+                    "uuid": "70a25256-f988-4d56-b4e8-559419cfddd5"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 14.0,
+                        "y": 7.0
+                    },
+                    "uuid": "a5f8387e-86d4-47df-9681-df0a4cbb861f"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 18.25,
+                        "y": 5.95
+                    },
+                    "uuid": "a77d8feb-8c3c-4c48-8006-20b05b9bc9e7"
+                },
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 18.25,
+                        "y": 5.95
+                    },
+                    "uuid": "dab7ccf4-3d61-426f-b02d-75487e7f2d74"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 18.25,
+                        "y": 5.95
+                    },
+                    "uuid": "a77d8feb-8c3c-4c48-8006-20b05b9bc9e7"
+                },
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 18.25,
+                        "y": 5.95
+                    },
+                    "uuid": "f599d0ea-ae80-4dea-9071-c2ee518c7f0c"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 66.0025,
+                        "y": 8.214
+                    },
+                    "uuid": "750a9414-cc25-4803-9371-482303c6b8ef"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 66.0025,
+                        "y": 8.214
+                    },
+                    "uuid": "b1417e2d-8093-43bc-ae27-e9052167d959"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 66.0025,
+                        "y": 8.214
+                    },
+                    "uuid": "0d3a8b51-4e55-49ef-a85d-016f6ec2ea59"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 66.0025,
+                        "y": 8.214
+                    },
+                    "uuid": "b1417e2d-8093-43bc-ae27-e9052167d959"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 2.775,
+                        "y": 11.8
+                    },
+                    "uuid": "310e963b-17bf-4208-9c9d-6bef58688971"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 2.775,
+                        "y": 11.8
+                    },
+                    "uuid": "b1ecf45b-de39-42fe-9390-1ad9b44566ed"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 2.775,
+                        "y": 11.8
+                    },
+                    "uuid": "0051bf45-b336-4396-8614-9cdeb96183c0"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 2.775,
+                        "y": 11.8
+                    },
+                    "uuid": "b1ecf45b-de39-42fe-9390-1ad9b44566ed"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 69.8425,
+                        "y": 6.214
+                    },
+                    "uuid": "b74a122c-f204-40f9-b141-3bcafc3f5a08"
+                },
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 69.8425,
+                        "y": 6.214
+                    },
+                    "uuid": "cdc65e5f-c3a7-423e-a02e-8237a87e578c"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 69.8425,
+                        "y": 6.214
+                    },
+                    "uuid": "65fa29ab-7b02-462c-abe5-a73eb1370538"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 69.8425,
+                        "y": 6.214
+                    },
+                    "uuid": "b74a122c-f204-40f9-b141-3bcafc3f5a08"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 6.225,
+                        "y": 11.675
+                    },
+                    "uuid": "c17c7873-b63b-4654-8734-bee27ed65a9c"
+                },
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 6.225,
+                        "y": 11.675
+                    },
+                    "uuid": "fcd6a267-2a36-4c05-8f3e-2b14cbe3e1fd"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 6.225,
+                        "y": 11.675
+                    },
+                    "uuid": "c17c7873-b63b-4654-8734-bee27ed65a9c"
+                },
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 6.225,
+                        "y": 11.675
+                    },
+                    "uuid": "f735b040-097f-41e6-bd20-6f7d5b7691f7"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 11.5,
+                        "y": 6.0
+                    },
+                    "uuid": "b9ef25c2-b37d-4e64-9931-90b290971dd4"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 11.5,
+                        "y": 6.0
+                    },
+                    "uuid": "c3d9fd84-4a16-47e5-85d0-a36ccead7c14"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 11.5,
+                        "y": 6.0
+                    },
+                    "uuid": "5372e2cf-0091-4006-ab8f-7817184d6666"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 11.5,
+                        "y": 6.0
+                    },
+                    "uuid": "c3d9fd84-4a16-47e5-85d0-a36ccead7c14"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 16.0,
+                        "y": 9.0
+                    },
+                    "uuid": "da585a9a-dd2a-439f-9599-85cb6b3f54b4"
+                },
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 16.0,
+                        "y": 9.0
+                    },
+                    "uuid": "de0b10e0-caa4-41ee-a55c-5d1f25d48e34"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 16.0,
+                        "y": 9.0
+                    },
+                    "uuid": "012bd221-993e-4bbd-b4c3-631f645b559e"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 16.0,
+                        "y": 9.0
+                    },
+                    "uuid": "da585a9a-dd2a-439f-9599-85cb6b3f54b4"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 18.25,
+                        "y": 4.55
+                    },
+                    "uuid": "6d714a74-165a-4157-a8c8-63f60c9c860c"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 18.25,
+                        "y": 4.55
+                    },
+                    "uuid": "de3bdb22-4ca2-47a3-8130-a18af62e26e7"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 18.25,
+                        "y": 4.55
+                    },
+                    "uuid": "725a4924-f992-41e6-9086-de6ef018f17f"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 18.25,
+                        "y": 4.55
+                    },
+                    "uuid": "de3bdb22-4ca2-47a3-8130-a18af62e26e7"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 7.6,
+                        "y": 9.52
+                    },
+                    "uuid": "96a69569-4e7c-4910-aedf-dd54d91ef293"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 7.6,
+                        "y": 9.52
+                    },
+                    "uuid": "ec880837-264d-44de-b4cf-caf57b851243"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 7.6,
+                        "y": 9.52
+                    },
+                    "uuid": "c6326fff-ddba-40d4-b50a-ab2a2d0726ff"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 7.6,
+                        "y": 9.52
+                    },
+                    "uuid": "ec880837-264d-44de-b4cf-caf57b851243"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 11.3,
+                        "y": 9.7
+                    },
+                    "uuid": "f03c0dd9-d311-40d8-b567-647012aebf46"
+                },
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 11.3,
+                        "y": 9.7
+                    },
+                    "uuid": "f1f5e8eb-5d84-49c0-bf09-d35b7a56da32"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 11.3,
+                        "y": 9.7
+                    },
+                    "uuid": "4ab540f6-ebc2-48b3-9be5-bc7d4a527510"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 11.3,
+                        "y": 9.7
+                    },
+                    "uuid": "f03c0dd9-d311-40d8-b567-647012aebf46"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 14.5,
+                        "y": 9.0
+                    },
+                    "uuid": "3216d80d-ee31-4f6f-814f-8d74cad4ffc7"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 14.5,
+                        "y": 9.0
+                    },
+                    "uuid": "f4d0066c-bdb8-4d76-b063-026939ed0f67"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 14.5,
+                        "y": 9.0
+                    },
+                    "uuid": "8a7b60c9-579d-4a46-bb95-39a52efbc69f"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 14.5,
+                        "y": 9.0
+                    },
+                    "uuid": "f4d0066c-bdb8-4d76-b063-026939ed0f67"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 13.0,
+                        "y": 4.5
+                    },
+                    "uuid": "99ddc8d6-4a63-4ee1-9b79-6df27d38dfa3"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 13.0,
+                        "y": 4.5
+                    },
+                    "uuid": "f55bcbb2-1833-451b-a96f-d9c0e0318559"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 13.0,
+                        "y": 4.5
+                    },
+                    "uuid": "718eb6de-d09d-4a65-be18-8eee1f88dfba"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 13.0,
+                        "y": 4.5
+                    },
+                    "uuid": "f55bcbb2-1833-451b-a96f-d9c0e0318559"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 69.2025,
+                        "y": 8.714
+                    },
+                    "uuid": "6b79e1f2-5036-4f88-8335-81d7bb940895"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 69.2025,
+                        "y": 8.714
+                    },
+                    "uuid": "f9cc7827-4288-471b-8507-7a6b84d8ac5e"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 69.2025,
+                        "y": 8.714
+                    },
+                    "uuid": "b166d6aa-a4b9-4eb2-850b-956763e7f3fd"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 69.2025,
+                        "y": 8.714
+                    },
+                    "uuid": "f9cc7827-4288-471b-8507-7a6b84d8ac5e"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 14.5,
+                        "y": 7.5
+                    },
+                    "uuid": "23de77be-991e-4a5b-ad0d-2c72844236de"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 14.5,
+                        "y": 7.5
+                    },
+                    "uuid": "f9eacd4f-0577-44b4-b015-6d75bb973f1e"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 14.5,
+                        "y": 7.5
+                    },
+                    "uuid": "771a415c-f9c7-4f8b-aa20-17fd60926001"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 14.5,
+                        "y": 7.5
+                    },
+                    "uuid": "f9eacd4f-0577-44b4-b015-6d75bb973f1e"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 65.6525,
+                        "y": 6.064
+                    },
+                    "uuid": "52d8da15-578d-4748-982b-6864d3e3d711"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 65.6525,
+                        "y": 6.064
+                    },
+                    "uuid": "fb8a90a5-bc25-4b44-820b-b886810d7f5c"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 65.6525,
+                        "y": 6.064
+                    },
+                    "uuid": "2efc97a0-7791-430b-a0ee-cff5253399f2"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 65.6525,
+                        "y": 6.064
+                    },
+                    "uuid": "fb8a90a5-bc25-4b44-820b-b886810d7f5c"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 16.0,
+                        "y": 4.5
+                    },
+                    "uuid": "65ae853d-a6ec-4d21-9356-c7937f8f1bc0"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 16.0,
+                        "y": 4.5
+                    },
+                    "uuid": "feeca426-7b85-4f37-a28a-394bc79c2fc1"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 16.0,
+                        "y": 4.5
+                    },
+                    "uuid": "2c9bc218-8811-4769-8ce7-d28c4a14eb21"
+                },
+                {
+                    "description": "Buried via [GND] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 16.0,
+                        "y": 4.5
+                    },
+                    "uuid": "feeca426-7b85-4f37-a28a-394bc79c2fc1"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 21.5,
+                        "y": 1.125
+                    },
+                    "uuid": "09ad0e84-39b8-4eed-ab57-4c3b5862e225"
+                },
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 21.5,
+                        "y": 1.125
+                    },
+                    "uuid": "e795aa9c-5c02-458e-b98a-b5ea8afde057"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 14.95,
+                        "y": 5.3
+                    },
+                    "uuid": "0a3d427a-e07d-4228-8ceb-0512be35b056"
+                },
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 14.95,
+                        "y": 5.3
+                    },
+                    "uuid": "19e9cd87-b306-4665-a504-ba53b63ebc44"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 6.42,
+                        "y": 10.3
+                    },
+                    "uuid": "0bb14e29-78cd-4b6b-86ed-97f07ec4acce"
+                },
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 6.42,
+                        "y": 10.3
+                    },
+                    "uuid": "0fa9d0e7-77e8-40b6-a99a-a1c48e5e9cc4"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 73.125,
+                        "y": 11.9
+                    },
+                    "uuid": "0ace2604-dcbb-4bae-a3eb-55c4f3b8c22e"
+                },
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 73.125,
+                        "y": 11.9
+                    },
+                    "uuid": "0f07df02-75f5-46c7-971b-4a289fc376d8"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 67.225,
+                        "y": 2.1
+                    },
+                    "uuid": "179fda15-54b8-4bec-925b-f15d711c6dbe"
+                },
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 67.225,
+                        "y": 2.1
+                    },
+                    "uuid": "6fcd688e-2045-40e0-8a69-ee17b9c01174"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 22.2,
+                        "y": 10.0
+                    },
+                    "uuid": "24e60a65-804b-4d42-8811-643e0d7a453d"
+                },
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 22.2,
+                        "y": 10.0
+                    },
+                    "uuid": "8ccbda4c-42ce-429c-ba14-b4b17712c7da"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 23.07,
+                        "y": 4.675
+                    },
+                    "uuid": "282567f2-2afc-4b3b-abab-e87a1f89005c"
+                },
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 23.07,
+                        "y": 4.675
+                    },
+                    "uuid": "3b7068b0-bf4f-4cfc-8785-6da816b2ed70"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 67.16,
+                        "y": 11.6
+                    },
+                    "uuid": "2b0b1fc7-401f-4375-a668-3d2fe8d02014"
+                },
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 67.16,
+                        "y": 11.6
+                    },
+                    "uuid": "6a344289-e999-46cc-bff5-84480057f2f1"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 62.95,
+                        "y": 1.024999
+                    },
+                    "uuid": "275c0244-c978-4ec9-b993-2d7d51ecb6c1"
+                },
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 62.95,
+                        "y": 1.024999
+                    },
+                    "uuid": "2f893d0b-deef-41e2-8aa3-ad4deb496f77"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 19.6,
+                        "y": 3.38
+                    },
+                    "uuid": "3c03a578-29b1-4e2f-8619-85fbea984b17"
+                },
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 19.6,
+                        "y": 3.38
+                    },
+                    "uuid": "62203745-599d-4c49-ab66-dc36b826524f"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 23.22,
+                        "y": 7.3
+                    },
+                    "uuid": "3c6c371c-e4e1-4d72-9a57-059877c6d2ae"
+                },
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 23.22,
+                        "y": 7.3
+                    },
+                    "uuid": "729d64da-c4e9-4590-b29c-d4e5deae8ca6"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 12.52,
+                        "y": 1.4
+                    },
+                    "uuid": "43ce7941-f61b-4da3-b7ba-d9f4f5079f1c"
+                },
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 12.52,
+                        "y": 1.4
+                    },
+                    "uuid": "90cbee90-5b78-48d0-beee-1c25de684f61"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 26.0,
+                        "y": 4.225
+                    },
+                    "uuid": "4c27381d-ea24-4181-89ff-f28cb5a43d23"
+                },
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 26.0,
+                        "y": 4.225
+                    },
+                    "uuid": "e3ef1f91-676c-493b-8a57-4871d85afe48"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 2.575,
+                        "y": 3.5
+                    },
+                    "uuid": "4f382e2c-97fa-4805-b93e-2c8124f816b1"
+                },
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 2.575,
+                        "y": 3.5
+                    },
+                    "uuid": "72ea6341-b452-41fe-a4bd-96dde2d1da42"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 70.025,
+                        "y": 11.9
+                    },
+                    "uuid": "502ebf0c-502c-4901-aacd-2e3271bdd2b4"
+                },
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 70.025,
+                        "y": 11.9
+                    },
+                    "uuid": "b959bf21-6803-4278-86d5-adcdb1f5a773"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 1.2,
+                        "y": 12.6
+                    },
+                    "uuid": "3f840433-b848-4c9e-9fc9-f84bdeee6270"
+                },
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 1.2,
+                        "y": 12.6
+                    },
+                    "uuid": "5219cbd9-3ef7-4da0-be36-8dd15f9ceb49"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 63.05,
+                        "y": 10.69
+                    },
+                    "uuid": "525fb16a-daed-4fe1-9688-6edc7d398c46"
+                },
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 63.05,
+                        "y": 10.69
+                    },
+                    "uuid": "c56cca98-a52c-4e4a-aa13-58d501923b7f"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 19.6,
+                        "y": 8.38
+                    },
+                    "uuid": "287e3b6a-1145-443c-bab4-d2e4ef50f826"
+                },
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 19.6,
+                        "y": 8.38
+                    },
+                    "uuid": "5bc6e7e4-5997-4dc9-8dcb-943a4b8dafbc"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 69.45,
+                        "y": 7.525
+                    },
+                    "uuid": "5db05982-772d-402f-be31-61f281cd96ba"
+                },
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 69.45,
+                        "y": 7.525
+                    },
+                    "uuid": "ac471c88-16e6-4d11-b001-f7f54ffd3575"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 8.4,
+                        "y": 7.78
+                    },
+                    "uuid": "5ed28645-2156-4ea2-9858-e5e1830b2c97"
+                },
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 8.4,
+                        "y": 7.78
+                    },
+                    "uuid": "8e411fc7-d18c-4799-9e1e-5364b274d991"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 5.91,
+                        "y": 3.3
+                    },
+                    "uuid": "4afe2e09-2a1d-4e15-ad27-97582fa56cb3"
+                },
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 5.91,
+                        "y": 3.3
+                    },
+                    "uuid": "5f24e902-bec1-41c0-9f8e-0a9299a696d8"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 26.0,
+                        "y": 1.125
+                    },
+                    "uuid": "2a42dd7e-8390-4da3-a460-4802ceee4f0d"
+                },
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 26.0,
+                        "y": 1.125
+                    },
+                    "uuid": "61022bd0-3cee-42fe-8fde-7e01234ede50"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 19.8,
+                        "y": 13.479999
+                    },
+                    "uuid": "633ca414-2d2b-4cdf-8cfb-1b7d440ae27b"
+                },
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 19.8,
+                        "y": 13.479999
+                    },
+                    "uuid": "963dbfd0-7ada-4f94-a034-f40429d91edf"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 0.87,
+                        "y": 1.175
+                    },
+                    "uuid": "63b3f3c7-9d87-479b-bc24-1349f038ec41"
+                },
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 0.87,
+                        "y": 1.175
+                    },
+                    "uuid": "eead0c92-c08a-4794-bd9e-d265fe77836f"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 72.75,
+                        "y": 8.324999
+                    },
+                    "uuid": "64542488-41f6-42a9-b843-27bf12ae9a89"
+                },
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 72.75,
+                        "y": 8.324999
+                    },
+                    "uuid": "69618f9e-a75f-46f6-b0bd-3e7dab38bb59"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 17.42,
+                        "y": 12.6
+                    },
+                    "uuid": "6518197b-c6d2-4dbb-8ee0-68c13575a8ef"
+                },
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 17.42,
+                        "y": 12.6
+                    },
+                    "uuid": "b2f9715f-762f-4667-9925-8a1d74099420"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 22.18,
+                        "y": 7.1
+                    },
+                    "uuid": "662bd794-8ead-45f1-ac41-eccb42f7b383"
+                },
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 22.18,
+                        "y": 7.1
+                    },
+                    "uuid": "e1e73c3d-2dff-48ef-9bdc-3315446b8e64"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 66.53,
+                        "y": 0.8
+                    },
+                    "uuid": "6768849f-6e22-4e6e-a2da-8e0d16194b71"
+                },
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 66.53,
+                        "y": 0.8
+                    },
+                    "uuid": "b8d5b19c-1597-4959-9bff-3254b29425c7"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 8.4,
+                        "y": 3.38
+                    },
+                    "uuid": "6bf05935-e4c9-4e19-aea7-5947717e174c"
+                },
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 8.4,
+                        "y": 3.38
+                    },
+                    "uuid": "70e982da-fa71-4921-9c17-5576da423a9f"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 15.32,
+                        "y": 1.4
+                    },
+                    "uuid": "6f586161-6c75-474f-b78b-d20493e4ad41"
+                },
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 15.32,
+                        "y": 1.4
+                    },
+                    "uuid": "735644a9-3d3f-4788-92c8-bc6765d016fc"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 23.3,
+                        "y": 5.0
+                    },
+                    "uuid": "74263569-2c3e-453a-abf1-b25f088e49d1"
+                },
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 23.3,
+                        "y": 5.0
+                    },
+                    "uuid": "a69f0e73-69fa-41a9-bbaf-9e2011c1ce87"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 9.625,
+                        "y": 12.9
+                    },
+                    "uuid": "78103bb5-b36d-4529-a6b7-e2b4676285fa"
+                },
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 9.625,
+                        "y": 12.9
+                    },
+                    "uuid": "a4692780-44d5-48cc-aae3-5b35f19b8ad2"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 63.3,
+                        "y": 8.175
+                    },
+                    "uuid": "81bf9efc-329e-4f91-a1db-e4dc7ee04b5c"
+                },
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 63.3,
+                        "y": 8.175
+                    },
+                    "uuid": "a8bb7ad0-805d-4ec3-9954-66ae646b552f"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 66.25,
+                        "y": 7.525
+                    },
+                    "uuid": "8249faef-99a0-47ea-bd87-dc67b148fc4f"
+                },
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 66.25,
+                        "y": 7.525
+                    },
+                    "uuid": "8d077c99-4cff-4c62-9d8f-f2ea74fcda16"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 19.6,
+                        "y": 11.28
+                    },
+                    "uuid": "82c3255f-2c64-4527-93f7-737aa7a388fa"
+                },
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 19.6,
+                        "y": 11.28
+                    },
+                    "uuid": "e5f8804e-fcfb-489e-a010-33d0eff56edd"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 23.43,
+                        "y": 3.4
+                    },
+                    "uuid": "5560e5c9-153c-467c-a200-5c70b86933e2"
+                },
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 23.43,
+                        "y": 3.4
+                    },
+                    "uuid": "82d0ac30-daed-4124-9c5d-111aa0fa2a24"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 1.3,
+                        "y": 1.5
+                    },
+                    "uuid": "8714861d-3158-4dcc-a2d4-b5f9dd5b56c2"
+                },
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 1.3,
+                        "y": 1.5
+                    },
+                    "uuid": "9affad4e-e2b1-4ace-b3c1-7e1332628cd8"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 21.8,
+                        "y": 11.35
+                    },
+                    "uuid": "5077a27b-bc37-49ae-8250-9eed8a4a65d9"
+                },
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 21.8,
+                        "y": 11.35
+                    },
+                    "uuid": "89fe4a86-5817-476f-9e3e-133f3333d679"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 21.5,
+                        "y": 4.225
+                    },
+                    "uuid": "8e82d4dd-36cb-4c96-aad4-edf0ee400988"
+                },
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 21.5,
+                        "y": 4.225
+                    },
+                    "uuid": "aab5131c-8ba1-427c-89df-a18deccb2b61"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 69.73,
+                        "y": 13.2
+                    },
+                    "uuid": "030fe37d-b9af-44a1-b315-abe4cf5ab8b3"
+                },
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 69.73,
+                        "y": 13.2
+                    },
+                    "uuid": "92d8f5c6-b7d3-4426-8937-b1179524e746"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 7.3,
+                        "y": 2.69
+                    },
+                    "uuid": "9596f018-6b07-4823-b98e-eec44a1cf490"
+                },
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 7.3,
+                        "y": 2.69
+                    },
+                    "uuid": "b576ce07-d7d6-444c-b53a-ed3d8b8e7c5f"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 25.9,
+                        "y": 9.075
+                    },
+                    "uuid": "95d8c43d-204e-4c44-b622-9f1071f5ef4e"
+                },
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 25.9,
+                        "y": 9.075
+                    },
+                    "uuid": "e62f24b0-f792-4c23-bddc-5970a3fcccde"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 13.38,
+                        "y": 12.6
+                    },
+                    "uuid": "764e5eb6-16fa-4ee1-b4cd-af1f1e90aaac"
+                },
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 13.38,
+                        "y": 12.6
+                    },
+                    "uuid": "95e34351-46f5-42b0-b0fb-3a1c0c66bc46"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 23.5,
+                        "y": 2.0
+                    },
+                    "uuid": "9796a184-e869-4a27-9e7b-0598bcff7fd9"
+                },
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 23.5,
+                        "y": 2.0
+                    },
+                    "uuid": "989475bc-0562-4fc3-ab0c-e4f5af594768"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 20.95,
+                        "y": 12.575
+                    },
+                    "uuid": "44d4d284-749b-4720-9598-b8633573a3b4"
+                },
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 20.95,
+                        "y": 12.575
+                    },
+                    "uuid": "a31539f5-e861-4c43-8640-cc1ced1e33ee"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 74.05,
+                        "y": 2.42
+                    },
+                    "uuid": "a4c9a27f-dfef-4ffe-91b7-17adf289d040"
+                },
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 74.05,
+                        "y": 2.42
+                    },
+                    "uuid": "c28212e5-fd01-48d2-9336-aa11d6abe42d"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 8.4,
+                        "y": 5.68
+                    },
+                    "uuid": "9aeb1505-9c07-42e4-acb0-7e41b82fb929"
+                },
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 8.4,
+                        "y": 5.68
+                    },
+                    "uuid": "a7a7455f-5a8d-4429-a7a9-341200838a70"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 65.129999,
+                        "y": 12.7
+                    },
+                    "uuid": "abf3c459-abf9-4656-9591-1149e9bdda92"
+                },
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 65.129999,
+                        "y": 12.7
+                    },
+                    "uuid": "ced41a35-bc55-4485-9e0d-3a7dcb021272"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 14.95,
+                        "y": 8.7
+                    },
+                    "uuid": "b005ec29-b9cb-4be4-bbeb-d9fea983d4e9"
+                },
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 14.95,
+                        "y": 8.7
+                    },
+                    "uuid": "b15f451a-7698-4de9-804c-f40fd44f6dc9"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 18.98,
+                        "y": 1.2
+                    },
+                    "uuid": "b616dcf7-1ccb-48ae-9d6a-ca62fa98ff79"
+                },
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 18.98,
+                        "y": 1.2
+                    },
+                    "uuid": "bb4acd9b-0c5e-4edf-877c-2ad96b452182"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 68.7,
+                        "y": 4.65
+                    },
+                    "uuid": "09be4e39-881d-4e07-a202-5fc8e6dbbaa2"
+                },
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 68.7,
+                        "y": 4.65
+                    },
+                    "uuid": "bc4ce3f1-cbe9-4471-95fa-762d8d04beca"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 23.07,
+                        "y": 1.675
+                    },
+                    "uuid": "1fe7438b-496e-433a-b820-f0f7e6c11295"
+                },
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 23.07,
+                        "y": 1.675
+                    },
+                    "uuid": "bee1476c-7f36-4158-9081-b0c3393094a4"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 15.42,
+                        "y": 12.6
+                    },
+                    "uuid": "c2c8afa8-9f0a-4fbe-bb8e-2ea16491e538"
+                },
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 15.42,
+                        "y": 12.6
+                    },
+                    "uuid": "fb927d4b-4136-4d6d-88cb-f0839ed51445"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 9.72,
+                        "y": 1.4
+                    },
+                    "uuid": "c430729a-095d-4bd8-a400-3d00881dfe00"
+                },
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 9.72,
+                        "y": 1.4
+                    },
+                    "uuid": "f8c13dae-3985-40df-8d3e-896e17941747"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 7.3,
+                        "y": 6.72
+                    },
+                    "uuid": "cbac426b-bc2d-4ad0-85ba-3ca778c8126a"
+                },
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 7.3,
+                        "y": 6.72
+                    },
+                    "uuid": "e3c96fea-08b1-471b-aa22-f73f38618ded"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 3.05,
+                        "y": 9.0
+                    },
+                    "uuid": "ae5bb669-cdd0-4551-b150-89c3e94b2134"
+                },
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 3.05,
+                        "y": 9.0
+                    },
+                    "uuid": "cd3b33af-3eda-46e2-9562-32ab5e3b4a42"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 4.625,
+                        "y": 9.0
+                    },
+                    "uuid": "ce32c387-5d9d-46ed-b4f3-7cd8e1367c7a"
+                },
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 4.625,
+                        "y": 9.0
+                    },
+                    "uuid": "fde5f795-b90f-4b8c-8daa-d91309db7146"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 67.5,
+                        "y": 8.375
+                    },
+                    "uuid": "a91629b0-dcbf-43eb-95ab-c229bfa62884"
+                },
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 67.5,
+                        "y": 8.375
+                    },
+                    "uuid": "df30d0bb-a6cc-4ed6-8a27-a05101bb3d6a"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 72.75,
+                        "y": 1.525
+                    },
+                    "uuid": "e5a66cab-f66b-4038-8754-1665627dfd14"
+                },
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 72.75,
+                        "y": 1.525
+                    },
+                    "uuid": "fea136ce-d6a3-42ab-8664-0efac6fa04c0"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 74.05,
+                        "y": 8.02
+                    },
+                    "uuid": "00799125-1569-4a96-8cc2-3efc92e7c51d"
+                },
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 74.05,
+                        "y": 8.02
+                    },
+                    "uuid": "e7c42307-e831-40bf-9c98-47914ffcf3b1"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 4.775,
+                        "y": 1.1
+                    },
+                    "uuid": "9285a248-8187-4b4d-9653-daeeecc41efa"
+                },
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 4.775,
+                        "y": 1.1
+                    },
+                    "uuid": "e7c6dc54-0561-42ac-b907-f4161122cbd3"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 23.8,
+                        "y": 10.0
+                    },
+                    "uuid": "83dda7dc-1cd7-45aa-aaaf-9f0cd49c71e4"
+                },
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 23.8,
+                        "y": 10.0
+                    },
+                    "uuid": "f3634067-9e9f-45b4-a20a-a94f9a7efcbc"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 19.9,
+                        "y": 6.175
+                    },
+                    "uuid": "78767a2d-1080-4ba0-805d-942c948bfd5f"
+                },
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 19.9,
+                        "y": 6.175
+                    },
+                    "uuid": "f495d7c2-c087-45b4-ad97-2467e091cd89"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 26.5,
+                        "y": 11.975
+                    },
+                    "uuid": "6881a318-1454-47fd-8d21-487241534dba"
+                },
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 26.5,
+                        "y": 11.975
+                    },
+                    "uuid": "f749469e-fe97-4931-81a3-4ab1673bfc74"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 6.04,
+                        "y": 6.5
+                    },
+                    "uuid": "242dd763-538b-4ab2-8154-4cdeee067c01"
+                },
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 6.04,
+                        "y": 6.5
+                    },
+                    "uuid": "f9b93f44-b714-4886-ac83-5dfd5745fcc3"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 7.72,
+                        "y": 1.4
+                    },
+                    "uuid": "f6a6a10f-5c6e-446a-a539-1ed9868c213c"
+                },
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 7.72,
+                        "y": 1.4
+                    },
+                    "uuid": "fa4e45a7-7c30-4078-a1a4-0ea1686fb13f"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [GND] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 8.4,
+                        "y": 9.72
+                    },
+                    "uuid": "0e06c781-7ced-44a4-80aa-b956095cb5a1"
+                },
+                {
+                    "description": "Buried via [GND] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 8.4,
+                        "y": 9.72
+                    },
+                    "uuid": "fc397a27-bf9c-4c0d-99a6-a7c14fedf4b4"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [/P4_VDD_HP] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 18.38,
+                        "y": 12.6
+                    },
+                    "uuid": "3d46e2e0-dbd6-4c3d-87a9-7863be47cb21"
+                },
+                {
+                    "description": "Buried via [/P4_VDD_HP] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 18.38,
+                        "y": 12.6
+                    },
+                    "uuid": "83a38c73-00a4-437e-913b-fa81cda208dd"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [/P4_VDD_HP] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 12.85,
+                        "y": 8.5
+                    },
+                    "uuid": "84ee9c3e-7aef-4934-b4aa-29b43375d063"
+                },
+                {
+                    "description": "Buried via [/P4_VDD_HP] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 12.85,
+                        "y": 8.5
+                    },
+                    "uuid": "ea8ff870-d3c9-468a-b90b-3189bb952d33"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [/P4_VDD_HP] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 8.6,
+                        "y": 7.02
+                    },
+                    "uuid": "40ab7b52-ab0c-49fe-a3c5-3afdf45890d8"
+                },
+                {
+                    "description": "Buried via [/P4_VDD_HP] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 8.6,
+                        "y": 7.02
+                    },
+                    "uuid": "9d7e63dc-38e8-4dc9-96ce-7fbc50f6dbdb"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [/P4_VDD_HP] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 18.02,
+                        "y": 1.9
+                    },
+                    "uuid": "aeb1d574-31ab-42bb-9ab7-93c42a5d6c09"
+                },
+                {
+                    "description": "Buried via [/P4_VDD_HP] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 18.02,
+                        "y": 1.9
+                    },
+                    "uuid": "c9ecd62b-13ab-4a7b-8b34-c62de07c05c7"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [/P4_VDD_HP] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 22.4,
+                        "y": 13.3
+                    },
+                    "uuid": "cd1357dc-ee05-4ea8-93ff-684ef4515e4f"
+                },
+                {
+                    "description": "Micro via [/P4_VDD_HP] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 22.4,
+                        "y": 13.3
+                    },
+                    "uuid": "faec83c3-4cfa-4d2d-9d1c-48f79dcc97fb"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [/P4_VDD_HP] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 8.68,
+                        "y": 1.599999
+                    },
+                    "uuid": "027c3eb4-ff8e-4be5-8db5-cf70d35b6912"
+                },
+                {
+                    "description": "Buried via [/P4_VDD_HP] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 8.68,
+                        "y": 1.599999
+                    },
+                    "uuid": "e8c0397f-b3e8-4f4c-8882-945d2ce72bda"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [/P4_VDD_HP] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 8.68,
+                        "y": 1.599999
+                    },
+                    "uuid": "027c3eb4-ff8e-4be5-8db5-cf70d35b6912"
+                },
+                {
+                    "description": "Buried via [/P4_VDD_HP] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 8.68,
+                        "y": 1.599999
+                    },
+                    "uuid": "b687c462-3fad-441e-b2fc-e1ce370f0efe"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [/P4_VDD_HP] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 18.38,
+                        "y": 12.6
+                    },
+                    "uuid": "3d46e2e0-dbd6-4c3d-87a9-7863be47cb21"
+                },
+                {
+                    "description": "Buried via [/P4_VDD_HP] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 18.38,
+                        "y": 12.6
+                    },
+                    "uuid": "84e18486-b4fd-480b-a6c7-7c473ef8eadf"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [/P4_VDD_HP] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 8.6,
+                        "y": 7.02
+                    },
+                    "uuid": "40ab7b52-ab0c-49fe-a3c5-3afdf45890d8"
+                },
+                {
+                    "description": "Buried via [/P4_VDD_HP] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 8.6,
+                        "y": 7.02
+                    },
+                    "uuid": "554b1bc6-d939-4313-8ad7-4f5f6063c3b1"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [/P4_VDD_HP] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 18.02,
+                        "y": 1.9
+                    },
+                    "uuid": "11627586-a08c-4167-b2cc-91535ba414e7"
+                },
+                {
+                    "description": "Buried via [/P4_VDD_HP] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 18.02,
+                        "y": 1.9
+                    },
+                    "uuid": "c9ecd62b-13ab-4a7b-8b34-c62de07c05c7"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [/P4_VDD_HP] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 12.85,
+                        "y": 8.5
+                    },
+                    "uuid": "d5ba0778-f0f5-4bcf-a622-caaae49a94a9"
+                },
+                {
+                    "description": "Buried via [/P4_VDD_HP] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 12.85,
+                        "y": 8.5
+                    },
+                    "uuid": "ea8ff870-d3c9-468a-b90b-3189bb952d33"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [/P4_VDD_HP] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 18.02,
+                        "y": 1.9
+                    },
+                    "uuid": "11627586-a08c-4167-b2cc-91535ba414e7"
+                },
+                {
+                    "description": "Micro via [/P4_VDD_HP] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 18.02,
+                        "y": 1.9
+                    },
+                    "uuid": "5a55f07d-1415-45e1-93d4-4f7f8ee71551"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [/P4_VDD_HP] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 8.6,
+                        "y": 7.02
+                    },
+                    "uuid": "38f62a58-69c4-46e9-b1c3-ba5a3180dbe6"
+                },
+                {
+                    "description": "Buried via [/P4_VDD_HP] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 8.6,
+                        "y": 7.02
+                    },
+                    "uuid": "554b1bc6-d939-4313-8ad7-4f5f6063c3b1"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [/P4_VDD_HP] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 18.38,
+                        "y": 12.6
+                    },
+                    "uuid": "84e18486-b4fd-480b-a6c7-7c473ef8eadf"
+                },
+                {
+                    "description": "Micro via [/P4_VDD_HP] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 18.38,
+                        "y": 12.6
+                    },
+                    "uuid": "d7e4b676-a573-4bc4-88c9-a0c347950a71"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [/P4_VDD_HP] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 8.68,
+                        "y": 1.599999
+                    },
+                    "uuid": "8c7a641e-2a6e-4b95-ba68-96d4209b9a42"
+                },
+                {
+                    "description": "Buried via [/P4_VDD_HP] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 8.68,
+                        "y": 1.599999
+                    },
+                    "uuid": "b687c462-3fad-441e-b2fc-e1ce370f0efe"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [/P4_VDD_HP] on In3.Cu - In4.Cu",
+                    "pos": {
+                        "x": 12.85,
+                        "y": 8.5
+                    },
+                    "uuid": "d5ba0778-f0f5-4bcf-a622-caaae49a94a9"
+                },
+                {
+                    "description": "Micro via [/P4_VDD_HP] on In4.Cu - B.Cu",
+                    "pos": {
+                        "x": 12.85,
+                        "y": 8.5
+                    },
+                    "uuid": "d6d14d30-5e39-48c3-9c81-3ed6994eecd2"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [/IR_K] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 70.9,
+                        "y": 1.7
+                    },
+                    "uuid": "30723b07-85bd-4d87-bd9e-898a0e2af36b"
+                },
+                {
+                    "description": "Buried via [/IR_K] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 70.9,
+                        "y": 1.7
+                    },
+                    "uuid": "606ab847-831d-4b93-bb0c-4b44658d5e8b"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [/IR_A2] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 70.75,
+                        "y": 3.7
+                    },
+                    "uuid": "c5e82481-c558-4be3-8917-65601e35cb0a"
+                },
+                {
+                    "description": "Micro via [/IR_A2] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 70.75,
+                        "y": 3.7
+                    },
+                    "uuid": "eb7c9c3e-afb9-47bc-bbbf-ab9ad3a0d422"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [/IR_A2] on In2.Cu - In3.Cu",
+                    "pos": {
+                        "x": 70.75,
+                        "y": 3.7
+                    },
+                    "uuid": "4053993a-b401-4cf5-a635-2afd03bc66e9"
+                },
+                {
+                    "description": "Buried via [/IR_A2] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 70.75,
+                        "y": 3.7
+                    },
+                    "uuid": "c5e82481-c558-4be3-8917-65601e35cb0a"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [/USB_DM] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 5.65,
+                        "y": 6.5
+                    },
+                    "uuid": "17525626-81d2-47d6-8780-4a73f9be84e0"
+                },
+                {
+                    "description": "Micro via [/USB_DM] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 5.65,
+                        "y": 6.5
+                    },
+                    "uuid": "97191e8c-035a-4e9b-bcb3-cdf09c3fba42"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [/USB_DM] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 4.15,
+                        "y": 1.2625
+                    },
+                    "uuid": "0451eb51-3e82-4f7a-b801-f6ee4161d579"
+                },
+                {
+                    "description": "Buried via [/USB_DM] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 4.15,
+                        "y": 1.2625
+                    },
+                    "uuid": "b0c710b0-171c-4d4e-9246-06ac4165d0c8"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Buried via [/USB_DP] on In1.Cu - In2.Cu",
+                    "pos": {
+                        "x": 4.15,
+                        "y": 2.3375
+                    },
+                    "uuid": "301c886d-4b24-4df3-92dc-0ca063a707c6"
+                },
+                {
+                    "description": "Micro via [/USB_DP] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 4.15,
+                        "y": 2.3375
+                    },
+                    "uuid": "63d1d50c-3cb8-419e-88e8-0d20e00a8352"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        }
+    ]
+}

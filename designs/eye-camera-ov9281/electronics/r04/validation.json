@@ -1,0 +1,54 @@
+{
+  "status": "Partial-routing geometry passes; not a fabrication release",
+  "footprints": 99,
+  "pad_net_checks": 408,
+  "native_copper_paths_verified": 22,
+  "csi_unterminated_escapes": 6,
+  "schematic_erc_errors": 0,
+  "schematic_erc_warnings": 0,
+  "same_side_footprint_bounds_do_not_overlap": true,
+  "boards": {
+    "controller": {
+      "dimensions_mm": [
+        32,
+        20
+      ],
+      "footprints_by_side": {
+        "front": 15,
+        "back": 61
+      },
+      "violations_by_type": {
+        "track_dangling": 6
+      },
+      "unconnected_items": 171
+    },
+    "head": {
+      "dimensions_mm": [
+        14,
+        14
+      ],
+      "footprints_by_side": {
+        "front": 1,
+        "back": 22
+      },
+      "violations_by_type": {},
+      "unconnected_items": 71
+    }
+  },
+  "decoupler_pad_xy_median_mm": {
+    "before": 13.3335,
+    "after": 0.129
+  },
+  "usb_copper_length_mm": {
+    "DM": 9.8624,
+    "DP": 7.8589
+  },
+  "usb_copper_length_difference_mm": 2.0035,
+  "usb_length_note": "Summed trial copper only; not impedance-qualified or tuned; excludes resistor/package electrical delay",
+  "sha256": {
+    "controller.kicad_pcb": "e40e4ac543fba17af50262d3f1a4e6dc49238e78a18d243f92178d4dbfc6f157",
+    "head.kicad_pcb": "a5fd5c0779c16273e2d9bd1592ad36b9369cb8a4444285aa1df5a2c804100c70",
+    "camera.kicad_sch": "8e34f1ef7b889de6ac5bc20b2daa5af315c60a548270ee63e55dc27f1a183716",
+    "assembly-routing-study.kicad_pcb": "12d8174597bcd80b8d904fb59826abbdfeb9436058921335e60bd519c202a3c2"
+  }
+}

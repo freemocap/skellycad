@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Our infrared camera — where we are</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#111923;color:#eef3f8;font:17px/1.6 system-ui,sans-serif}main{max-width:1050px;margin:auto;padding:28px 24px 60px}h1{font-size:32px;line-height:1.2;margin:12px 0}h2{font-size:22px;margin:28px 0 10px}p{color:#ccd7e3;margin:10px 0}.status{display:inline-block;background:#453725;color:#ffdda4;padding:5px 12px;border-radius:20px;font-size:14px}.flow{display:grid;grid-template-columns:1fr 1.7fr .9fr 1.3fr;gap:12px;margin:24px 0}.block{border:1px solid #536377;border-radius:10px;padding:16px;background:#202c3b}.block strong{display:block;color:#8fe3d0;font-size:18px}.block small{display:block;color:#c3cfdb;margin-top:8px}.flex{display:flex;flex-direction:column;justify-content:center;text-align:center;border-top:2px dashed #d5b070;border-bottom:2px dashed #d5b070;padding:12px 0}.label{font-size:12px;letter-spacing:.06em;color:#adbed0;text-transform:uppercase}.highlight{border-left:3px solid #e9be78;background:#262b34;padding:12px 18px}.stages{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.stage{background:#202c3b;padding:16px;border-radius:8px}.stage b{display:block;margin:5px 0}.stage p{font-size:15px}.now{outline:2px solid #e9be78}.muted{color:#aabacc;font-size:14px}details{margin-top:24px;background:#1b2736;padding:16px;border-radius:10px}summary{cursor:pointer;font-weight:600}figure{margin:16px 0 0;background:#080c12;padding:12px;border-radius:8px}img{display:block;width:100%;height:auto}figcaption{font-size:14px;color:#bccbdc;padding-top:10px}a{color:#8ce0ce}@media(max-width:700px){.flow,.stages{grid-template-columns:1fr}.flex{border:0;border-left:2px dashed #d5b070;margin-left:16px;text-align:left;padding-left:16px}h1{font-size:28px}}
+</style><main>
+<span class="status">Board design in progress · not ready to manufacture</span>
+<h1>We are designing one infrared USB camera.</h1>
+<p>We have editable circuit and PCB files. <strong>We do not yet have a complete, working camera design.</strong> The screen you saw was a close-up of one unfinished board.</p>
+<h2>The whole device</h2>
+<div class="flow" aria-label="Computer connects through four-wire USB to controller, then short flex to sensor head">
+<div class="block"><span class="label">Outside the camera</span><strong>Computer / USB hub</strong><small>Connects to the controller through four wires: power, ground and USB data.</small></div>
+<div class="block"><span class="label">Larger board · 32 × 20 mm draft</span><strong>Controller</strong><small>The ESP32-P4 receives the images. Flash, power circuits and USB parts support it. The four-contact JST goes here.</small></div>
+<div class="flex"><b>Short flex</b><span>~30 mm planned</span><small>Not designed yet</small></div>
+<div class="block"><span class="label">Small board · 14 × 14 mm draft</span><strong>Sensor head</strong><small>OV9281 image sensor, with a lens, IR filter and illumination still to be selected and integrated.</small></div>
+</div>
+<p class="muted">This diagram explains the parts; it is not a finished mechanical drawing. Both boards together are one camera. Their dimensions are provisional, and the current flattened layout is about 76 mm long.</p>
+<h2>Why the PCB picture looks spread out</h2>
+<p>It is a flat view of <strong>solder pads and component outlines</strong>, not a photograph of assembled electronics. Most controller components sit on the other side of the board. Blank outlined areas reserve space for wiring and a connector. Much of the copper wiring is still absent.</p>
+<p>The two boards are separated in the overall picture to leave room for the proposed flex. That gap is deliberate; the flex itself is still missing. Front and back views are two sides of the same board, not extra boards.</p>
+<h2>Where we are in the process</h2>
+<div class="stages">
+<div class="stage"><span class="label">Draft exists</span><b>Circuit</b><p>Parts and their intended electrical connections are recorded. Basic schematic checks pass, but the circuit is not hardware-tested.</p></div>
+<div class="stage now"><span class="label">We are here</span><b>Physical board design</b><p>Parts have positions. Some copper connections exist. The remaining wiring, power planes, flex interface and component choices are unfinished.</p></div>
+<div class="stage"><span class="label">Still ahead</span><b>Build and prove the camera</b><p>Finish and review the PCB, integrate the optics and LEDs, fabricate and assemble it, then run firmware and record infrared images.</p></div>
+</div>
+<div class="highlight"><p><strong>The next useful milestone is a complete, reviewed PCB design that can be sent for fabrication.</strong> The current R04 files cannot be sent off to produce a working camera. A complete camera also needs the optics, illumination and verified firmware.</p></div>
+<details><summary>Show the actual saved board draft</summary>
+<figure><img src="assembly-front.svg" alt="Actual R04 PCB view: controller on the left, illustrative flex gap in the middle, sensor head on the right"><figcaption>Actual KiCad geometry, front side: controller on the left; sensor head on the right. The connecting rectangle represents the planned flex, not manufactured copper. Red shapes are pads and the few routed traces.</figcaption></figure>
+<p class="muted">The board files are saved. You do not need FreeCAD or KiCad open to understand this overview. For detailed inspection, the <a href="layout-review.html">previous front/back comparison</a> and <a href="README.md">design record</a> remain available.</p>
+</details>
+</main></html>

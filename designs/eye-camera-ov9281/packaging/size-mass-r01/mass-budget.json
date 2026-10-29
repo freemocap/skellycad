@@ -1,0 +1,868 @@
+{
+  "module_mass_excludes_tether": true,
+  "estimates_are_not_statistical_confidence_bounds": true,
+  "totals": {
+    "low_g": 2.1792193057399394,
+    "nominal_g": 2.949276216676483,
+    "high_g": 3.924654072585747
+  },
+  "parts": [
+    {
+      "name": "controller copper sheets",
+      "low_g": 0.7249583958486482,
+      "nominal_g": 0.9061979948108102,
+      "high_g": 1.087437593772972,
+      "basis": "Native layer polygon union; nominal copper density 8.91 g/cm3; +/-20% screening allowance for thickness and geometry, not a supplier tolerance."
+    },
+    {
+      "name": "controller laminate and resin fill",
+      "low_g": 0.3188748656482687,
+      "nominal_g": 0.3967549667133975,
+      "high_g": 0.48422339073407833,
+      "basis": "0.331 mm nominal dielectric; 1.7-1.9 g/cm3 laminate; +/-15% thickness scenario. Inner etched regions add resin. Drill subtraction is an approximation."
+    },
+    {
+      "name": "controller barrels and surface finish",
+      "low_g": 0.005969897725789727,
+      "nominal_g": 0.011528425322556754,
+      "high_g": 0.019939795451579454,
+      "basis": "25um nominal via plating assumption; small finish allowance; annular lands already counted in copper sheets."
+    },
+    {
+      "name": "controller mask and markings",
+      "low_g": 0.005632000000000001,
+      "nominal_g": 0.011519999999999999,
+      "high_g": 0.024,
+      "basis": "Total equivalent coating thickness 8-25um, density 1.1-1.5 g/cm3: engineering allowance."
+    },
+    {
+      "name": "head copper sheets",
+      "low_g": 0.1757629798692428,
+      "nominal_g": 0.21970372483655348,
+      "high_g": 0.2636444698038642,
+      "basis": "Native layer polygon union; nominal copper density 8.91 g/cm3; +/-20% screening allowance for thickness and geometry, not a supplier tolerance."
+    },
+    {
+      "name": "head laminate and resin fill",
+      "low_g": 0.10057553422692153,
+      "nominal_g": 0.1250803227673823,
+      "high_g": 0.15363994975711617,
+      "basis": "0.331 mm nominal dielectric; 1.7-1.9 g/cm3 laminate; +/-15% thickness scenario. Inner etched regions add resin. Drill subtraction is an approximation."
+    },
+    {
+      "name": "head barrels and surface finish",
+      "low_g": 0.003893411560297648,
+      "nominal_g": 0.008562016514710925,
+      "high_g": 0.015786823120595296,
+      "basis": "25um nominal via plating assumption; small finish allowance; annular lands already counted in copper sheets."
+    },
+    {
+      "name": "head mask and markings",
+      "low_g": 0.0017248,
+      "nominal_g": 0.0035279999999999995,
+      "high_g": 0.007350000000000001,
+      "basis": "Total equivalent coating thickness 8-25um, density 1.1-1.5 g/cm3: engineering allowance."
+    },
+    {
+      "name": "flex-study copper sheets",
+      "low_g": 0.09332014855747314,
+      "nominal_g": 0.11665018569684142,
+      "high_g": 0.1399802228362097,
+      "basis": "Native layer polygon union; nominal copper density 8.91 g/cm3; +/-20% screening allowance for thickness and geometry, not a supplier tolerance."
+    },
+    {
+      "name": "flex polymer and adhesive",
+      "low_g": 0.059615,
+      "nominal_g": 0.06633125000000001,
+      "high_g": 0.07684687500000001,
+      "basis": "Generic PI density anchored to Kapton HN; adhesive interval assumed. Subtract contact-side tip coverlay volume as an adhesive-equivalent approximation."
+    },
+    {
+      "name": "flex tip stiffeners",
+      "low_g": 0.0119625,
+      "nominal_g": 0.014953125000000001,
+      "high_g": 0.018940625,
+      "basis": "Existing 0.1595 mm stiffener/adhesive allocation; material unselected."
+    },
+    {
+      "name": "controller/L101 2.2u / Isat TBD",
+      "low_g": 0.006,
+      "nominal_g": 0.011,
+      "high_g": 0.018,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/R110 0",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/R115 4.7k",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/C101 CL_TBD",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/C106 22u",
+      "low_g": 0.004,
+      "nominal_g": 0.009,
+      "high_g": 0.016,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/U105 USBLC6-2P6",
+      "low_g": 0.001,
+      "nominal_g": 0.002,
+      "high_g": 0.003,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/C107 22p",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/J101 USB / JST 4-contact candidate",
+      "low_g": 0.025,
+      "nominal_g": 0.045,
+      "high_g": 0.075,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/Y101 40 MHz / CL TBD",
+      "low_g": 0.004,
+      "nominal_g": 0.008,
+      "high_g": 0.012,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/C105 4.7u",
+      "low_g": 0.002,
+      "nominal_g": 0.0035,
+      "high_g": 0.006,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/J102 FH34SRJ-24S-0.5SH(99)",
+      "low_g": 0.04,
+      "nominal_g": 0.075,
+      "high_g": 0.12,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/U101 ESP32-P4NRW16X / v3.x",
+      "low_g": 0.135,
+      "nominal_g": 0.18,
+      "high_g": 0.23,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/R106 499k",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/R109 0",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/U103 TLV62569DBV / core",
+      "low_g": 0.009,
+      "nominal_g": 0.012,
+      "high_g": 0.018,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/C102 CL_TBD",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/R105 499k",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/C108 4.7u",
+      "low_g": 0.002,
+      "nominal_g": 0.0035,
+      "high_g": 0.006,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/C1 C_4u7_0805",
+      "low_g": 0.004,
+      "nominal_g": 0.009,
+      "high_g": 0.016,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/C126 1u",
+      "low_g": 0.002,
+      "nominal_g": 0.0035,
+      "high_g": 0.006,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/Q102 BSS138",
+      "low_g": 0.006,
+      "nominal_g": 0.009,
+      "high_g": 0.014,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/C112 100n / U101.26",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/C124 10u",
+      "low_g": 0.004,
+      "nominal_g": 0.009,
+      "high_g": 0.016,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/C122 100n / U101.102",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/U6 TLV73312PDBVT",
+      "low_g": 0.009,
+      "nominal_g": 0.012,
+      "high_g": 0.018,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/C115 100n / U101.75",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/C131 10n",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/C127 1u",
+      "low_g": 0.002,
+      "nominal_g": 0.0035,
+      "high_g": 0.006,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/C104 1u",
+      "low_g": 0.002,
+      "nominal_g": 0.0035,
+      "high_g": 0.006,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/C130 100n / U101.67",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/R118 10k",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/Q101 BSS138",
+      "low_g": 0.006,
+      "nominal_g": 0.009,
+      "high_g": 0.014,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/C123 10u",
+      "low_g": 0.004,
+      "nominal_g": 0.009,
+      "high_g": 0.016,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/C110 100n / U101.9",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/C132 100n",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/C129 100n / U101.59",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/R111 4.02k 1%",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/Q103 BSS138 / reset asserted HIGH",
+      "low_g": 0.006,
+      "nominal_g": 0.009,
+      "high_g": 0.014,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/C118 100n / U101.85",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/C116 100n / U101.76",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/C5 C_1u_0603",
+      "low_g": 0.002,
+      "nominal_g": 0.0035,
+      "high_g": 0.006,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/C133 1u",
+      "low_g": 0.002,
+      "nominal_g": 0.0035,
+      "high_g": 0.006,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/C117 100n / U101.77",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/C103 100n",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/U5 TLV73318PDBVT",
+      "low_g": 0.009,
+      "nominal_g": 0.012,
+      "high_g": 0.018,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/U104 TLV62569DBV / system",
+      "low_g": 0.009,
+      "nominal_g": 0.012,
+      "high_g": 0.018,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/L102 2.2u / Isat TBD",
+      "low_g": 0.006,
+      "nominal_g": 0.011,
+      "high_g": 0.018,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/U7 TLV73328PDBVT",
+      "low_g": 0.009,
+      "nominal_g": 0.012,
+      "high_g": 0.018,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/C111 100n / U101.21",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/R112 4.7k",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/C136 4.7u",
+      "low_g": 0.002,
+      "nominal_g": 0.0035,
+      "high_g": 0.006,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/R113 4.7k",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/R117 10k",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/R108 100k",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/C3 C_4u7_0805",
+      "low_g": 0.004,
+      "nominal_g": 0.009,
+      "high_g": 0.016,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/U102 W25Q32JVSS (4 MB candidate)",
+      "low_g": 0.07,
+      "nominal_g": 0.11,
+      "high_g": 0.15,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/R101 10k",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/C113 100n / U101.54",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/C6 C_1u_0603",
+      "low_g": 0.002,
+      "nominal_g": 0.0035,
+      "high_g": 0.006,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/C114 100n / U101.62",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/C109 22u",
+      "low_g": 0.004,
+      "nominal_g": 0.009,
+      "high_g": 0.016,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/C119 100n / U101.91",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/R103 10k",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/R116 100k",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/C120 100n / U101.96",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/R104 10k",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/C121 100n / U101.101",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/C135 100n",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/C4 C_1u_0603",
+      "low_g": 0.002,
+      "nominal_g": 0.0035,
+      "high_g": 0.006,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/C128 100n / U101.30",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/R114 4.7k",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/R102 10k",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/R107 453k",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/C134 10n",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/C125 1u",
+      "low_g": 0.002,
+      "nominal_g": 0.0035,
+      "high_g": 0.006,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "controller/C2 C_4u7_0805",
+      "low_g": 0.004,
+      "nominal_g": 0.009,
+      "high_g": 0.016,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "head/D201 AP1608F3C",
+      "low_g": 0.0015,
+      "nominal_g": 0.0025,
+      "high_g": 0.004,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "head/D202 AP1608F3C",
+      "low_g": 0.0015,
+      "nominal_g": 0.0025,
+      "high_g": 0.004,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "head/R201 1k 1%",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "head/Q201 MMBT3904,215",
+      "low_g": 0.006,
+      "nominal_g": 0.009,
+      "high_g": 0.014,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "head/R203 2.2k 1%",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "head/R204 100k 1%",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "head/U1 ImageSensor_OV9281",
+      "low_g": 0.02,
+      "nominal_g": 0.035,
+      "high_g": 0.055,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "head/R202 1k 1%",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "head/L1 MLP2012S3R3MT",
+      "low_g": 0.006,
+      "nominal_g": 0.011,
+      "high_g": 0.018,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "head/C15 C_100n_6V3_0402",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "head/C21 C_1u_0603",
+      "low_g": 0.002,
+      "nominal_g": 0.0035,
+      "high_g": 0.006,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "head/L3 MLP2012S3R3MT",
+      "low_g": 0.006,
+      "nominal_g": 0.011,
+      "high_g": 0.018,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "head/L2 MLP2012S3R3MT",
+      "low_g": 0.006,
+      "nominal_g": 0.011,
+      "high_g": 0.018,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "head/C33 C_1u_0603",
+      "low_g": 0.002,
+      "nominal_g": 0.0035,
+      "high_g": 0.006,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "head/C19 C_1u_0603",
+      "low_g": 0.002,
+      "nominal_g": 0.0035,
+      "high_g": 0.006,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "head/C16 C_100n_6V3_0402",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "head/R8 R_0R_0402",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "head/C14 C_100n_6V3_0402",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "head/C20 C_100n_6V3_0402",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "head/R7 R_0R_0402",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "head/C9 C_100n_6V3_0402",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "head/R9 R_0R_0402",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "head/Y1 SG-210STF 24.0000ML",
+      "low_g": 0.006,
+      "nominal_g": 0.01,
+      "high_g": 0.015,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "head/C10 C_1u_0603",
+      "low_g": 0.002,
+      "nominal_g": 0.0035,
+      "high_g": 0.006,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "head/C17 C_100n_6V3_0402",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "head/C7 C_1u_0603",
+      "low_g": 0.002,
+      "nominal_g": 0.0035,
+      "high_g": 0.006,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "head/C18 C_1u_0603",
+      "low_g": 0.002,
+      "nominal_g": 0.0035,
+      "high_g": 0.006,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "head/C8 C_1u_0603",
+      "low_g": 0.002,
+      "nominal_g": 0.0035,
+      "high_g": 0.006,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "head/C13 C_1u_0603",
+      "low_g": 0.002,
+      "nominal_g": 0.0035,
+      "high_g": 0.006,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "head/C12 C_1u_0603",
+      "low_g": 0.002,
+      "nominal_g": 0.0035,
+      "high_g": 0.006,
+      "basis": "Package-class estimate; see component-budget.csv."
+    },
+    {
+      "name": "lens assembly",
+      "low_g": 0.04,
+      "nominal_g": 0.085,
+      "high_g": 0.15,
+      "basis": "CH2021A 4P lens, 6x2.65mm envelope; supplier weight field is blank. Chosen broad estimate, not density times a solid lens cylinder."
+    },
+    {
+      "name": "holder",
+      "low_g": 0.10858541911445997,
+      "nominal_g": 0.12409762184509711,
+      "high_g": 0.15512202730637142,
+      "basis": "Actual current CAD volume; assumed lightweight polymer 1.05-1.50 g/cm3; thread and attachment unresolved."
+    },
+    {
+      "name": "filter",
+      "low_g": 0.00934435318883748,
+      "nominal_g": 0.0106185831691335,
+      "high_g": 0.0127422998029602,
+      "basis": "Current 5.2x0.2mm reserved disk; assumed glass density, part unselected."
+    },
+    {
+      "name": "solder",
+      "low_g": 0.012,
+      "nominal_g": 0.025,
+      "high_g": 0.05,
+      "basis": "Assembly-wide allowance; not CAD solder volume."
+    },
+    {
+      "name": "adhesive and module-side retention",
+      "low_g": 0.01,
+      "nominal_g": 0.025,
+      "high_g": 0.06,
+      "basis": "Allowance; no external tether, cable-side plug or external mount included."
+    }
+  ],
+  "package_mass_evidence": "All component intervals are engineering screening assumptions; exact part weights remain unresolved. Installed footprint count is retained; no circuit simplification assumed.",
+  "source_geometry": "native-geometry.json",
+  "copper_nominal_g": 1.2425519053442051
+}

@@ -1,0 +1,60 @@
+"""Archive repository tabs, keeping the active review; run for requested cleanup."""
+import FreeCAD as App
+from pathlib import Path
+from datetime import datetime
+import hashlib
+import json
+import traceback
+import zipfile
+
+root = Path(__file__).resolve().parents[2]
+folder = root / 'generated/session-recovery' / datetime.now().strftime('%Y%m%d-%H%M%S-%f')
+folder.mkdir(parents=True, exist_ok=False)
+active = App.ActiveDocument.Name if App.ActiveDocument else None
+rows = []
+try:
+    docs = [doc for doc in App.listDocuments().values()
+            if doc.FileName and Path(doc.FileName).resolve().is_relative_to(root)]
+    for doc in docs:
+        target = folder / (doc.Name + '.FCStd')
+        row = dict(name=doc.Name, label=doc.Label, original_path=doc.FileName,
+                   backup_path=str(target), verified=False)
+        rows.append(row)
+        (folder / 'manifest.json').write_text(json.dumps(rows, indent=2), encoding='utf-8')
+        doc.saveAs(str(target))
+        with zipfile.ZipFile(target) as archive:
+            assert 'Document.xml' in archive.namelist()
+            assert archive.testzip() is None
+        row.update(verified=True, sha256=hashlib.sha256(target.read_bytes()).hexdigest())
+        (folder / 'manifest.json').write_text(json.dumps(rows, indent=2), encoding='utf-8')
+    # All versions must be verified before closing any document.
+    for row in rows:
+        if row['name'] != active:
+            App.closeDocument(row['name'])
+    if active in App.listDocuments():
+        App.setActiveDocument(active)
+        if any(row['name'] == active for row in rows):
+            doc = App.getDocument(active)
+            doc.save()
+            target = Path(doc.FileName)
+            with zipfile.ZipFile(target) as archive:
+                assert 'Document.xml' in archive.namelist()
+                assert archive.testzip() is None
+            for row in rows:
+                if row['name'] == active:
+                    row['sha256'] = hashlib.sha256(target.read_bytes()).hexdigest()
+            (folder / 'manifest.json').write_text(json.dumps(rows, indent=2), encoding='utf-8')
+    # [@freecad114DocumentPreferencesUi] Settings persist for subsequent starts.
+    prefs = App.ParamGet('User parameter:BaseApp/Preferences/Document')
+    prefs.SetBool('AutoSaveEnabled', True)
+    prefs.SetInt('AutoSaveTimeout', 2)
+    prefs.SetBool('RecoveryEnabled', True)
+    App.saveParameter()
+    (folder / 'complete.json').write_text(json.dumps(dict(
+        saved=len(rows), remaining=list(App.listDocuments()), active=active,
+        recovery_enabled=prefs.GetBool('AutoSaveEnabled'),
+        recovery_minutes=prefs.GetInt('AutoSaveTimeout'),
+        live_timer_requires_preferences_apply=True), indent=2), encoding='utf-8')
+except Exception:
+    (folder / 'error.txt').write_text(traceback.format_exc(), encoding='utf-8')
+    raise

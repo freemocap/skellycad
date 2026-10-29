@@ -1,0 +1,12 @@
+{
+  "before": "C:\\Users\\jonma\\code-stuff\\github\\freemocap\\other\\skellycad\\generated\\ov9281-r09-vn3-01",
+  "after": "C:\\Users\\jonma\\code-stuff\\github\\freemocap\\other\\skellycad\\generated\\ov9281-r09-clock-01",
+  "completed_net": "/CAM_L_CLK_P",
+  "unconnected_before": 2,
+  "unconnected_after": 1,
+  "new_drc_issues": [],
+  "per_net_connectivity_regressions": [],
+  "native_rules_unchanged": true,
+  "native_hashes_verified": true,
+  "scope": "Connectivity and native design rules, not signal integrity or hardware operation."
+}

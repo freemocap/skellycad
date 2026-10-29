@@ -1,0 +1,235 @@
+{
+  "passed": true,
+  "units": "mm",
+  "physical_fit_verified": false,
+  "print_release": false,
+  "aim": {
+    "Right": {
+      "eye_center_world_mm": [
+        8.263833250818816,
+        -8.284849782773964,
+        -6.338181566207952
+      ],
+      "target_world_mm": [
+        8.26383325081882,
+        -8.284849782773962,
+        -6.338181566207955
+      ],
+      "miss_mm": 0.00016018431234707045,
+      "forward_mm": 20.839095319405153
+    },
+    "Left": {
+      "eye_center_world_mm": [
+        8.263833250818816,
+        8.284849782773964,
+        -6.338181566207952
+      ],
+      "target_world_mm": [
+        8.26383325081882,
+        8.284849782773966,
+        -6.338181566207951
+      ],
+      "miss_mm": 0.00016018431234707045,
+      "forward_mm": 20.839095319405153
+    }
+  },
+  "interfaces": {
+    "Rightsocket_difference_mm3": 0.0,
+    "Righteye_primary_Holder_difference_mm3": 0.0,
+    "Righteye_primary_Clip_difference_mm3": 0.0,
+    "Leftsocket_difference_mm3": 0.0,
+    "Lefteye_primary_Holder_difference_mm3": 0.0,
+    "Lefteye_primary_Clip_difference_mm3": 0.0,
+    "baseplate_difference_mm3": 0.0
+  },
+  "interferences": {
+    "RightM4_lens/Righteye_primary_Holder": {
+      "overlap_mm3": 2.0416569152810125,
+      "inherited_mm3": 2.0416569152815267
+    },
+    "Righteye_primary_Holder/Righteye_primary_Clip": {
+      "overlap_mm3": 0.007941399825761124,
+      "inherited_mm3": 0.00794139982471527
+    },
+    "LeftM4_lens/Lefteye_primary_Holder": {
+      "overlap_mm3": 2.0416569152814295,
+      "inherited_mm3": 2.0416569152815267
+    },
+    "Lefteye_primary_Holder/Lefteye_primary_Clip": {
+      "overlap_mm3": 0.00794139982567109,
+      "inherited_mm3": 0.00794139982471527
+    }
+  },
+  "anatomy_crossings": {
+    "Carrier": 0,
+    "RightPCB": 0,
+    "RightJST_4pin": 0,
+    "Rightcamera_pcb": 0,
+    "RightM4_lens": 0,
+    "RightIR_LED": 0,
+    "RightIR_LED_001": 0,
+    "Rightribbon": 0,
+    "Righteye_primary_Holder": 0,
+    "Righteye_primary_Clip": 0,
+    "LeftPCB": 0,
+    "LeftJST_4pin": 0,
+    "Leftcamera_pcb": 0,
+    "LeftM4_lens": 0,
+    "LeftIR_LED": 0,
+    "LeftIR_LED_001": 0,
+    "Leftribbon": 0,
+    "Lefteye_primary_Holder": 0,
+    "Lefteye_primary_Clip": 0
+  },
+  "mesh_checks": {
+    "Carrier": {
+      "closed": true,
+      "self_intersections": false,
+      "linear_deflection_mm": 0.04,
+      "angular_deflection_rad": 0.15
+    },
+    "Baseplate": {
+      "closed": true,
+      "self_intersections": false,
+      "linear_deflection_mm": 0.04,
+      "angular_deflection_rad": 0.15
+    },
+    "RightPCB": {
+      "closed": true,
+      "self_intersections": false,
+      "linear_deflection_mm": 0.04,
+      "angular_deflection_rad": 0.15
+    },
+    "RightJST_4pin": {
+      "closed": true,
+      "self_intersections": false,
+      "linear_deflection_mm": 0.04,
+      "angular_deflection_rad": 0.15
+    },
+    "Rightcamera_pcb": {
+      "closed": true,
+      "self_intersections": false,
+      "linear_deflection_mm": 0.04,
+      "angular_deflection_rad": 0.15
+    },
+    "RightM4_lens": {
+      "closed": true,
+      "self_intersections": false,
+      "linear_deflection_mm": 0.04,
+      "angular_deflection_rad": 0.15
+    },
+    "RightIR_LED": {
+      "closed": true,
+      "self_intersections": false,
+      "linear_deflection_mm": 0.04,
+      "angular_deflection_rad": 0.15
+    },
+    "RightIR_LED_001": {
+      "closed": true,
+      "self_intersections": false,
+      "linear_deflection_mm": 0.04,
+      "angular_deflection_rad": 0.15
+    },
+    "Rightribbon": {
+      "closed": true,
+      "self_intersections": false,
+      "linear_deflection_mm": 0.04,
+      "angular_deflection_rad": 0.15
+    },
+    "Righteye_primary_Holder": {
+      "closed": true,
+      "self_intersections": false,
+      "linear_deflection_mm": 0.04,
+      "angular_deflection_rad": 0.15
+    },
+    "Righteye_primary_Clip": {
+      "closed": true,
+      "self_intersections": false,
+      "linear_deflection_mm": 0.04,
+      "angular_deflection_rad": 0.15
+    },
+    "LeftPCB": {
+      "closed": true,
+      "self_intersections": false,
+      "linear_deflection_mm": 0.04,
+      "angular_deflection_rad": 0.15
+    },
+    "LeftJST_4pin": {
+      "closed": true,
+      "self_intersections": false,
+      "linear_deflection_mm": 0.04,
+      "angular_deflection_rad": 0.15
+    },
+    "Leftcamera_pcb": {
+      "closed": true,
+      "self_intersections": false,
+      "linear_deflection_mm": 0.04,
+      "angular_deflection_rad": 0.15
+    },
+    "LeftM4_lens": {
+      "closed": true,
+      "self_intersections": false,
+      "linear_deflection_mm": 0.04,
+      "angular_deflection_rad": 0.15
+    },
+    "LeftIR_LED": {
+      "closed": true,
+      "self_intersections": false,
+      "linear_deflection_mm": 0.04,
+      "angular_deflection_rad": 0.15
+    },
+    "LeftIR_LED_001": {
+      "closed": true,
+      "self_intersections": false,
+      "linear_deflection_mm": 0.04,
+      "angular_deflection_rad": 0.15
+    },
+    "Leftribbon": {
+      "closed": true,
+      "self_intersections": false,
+      "linear_deflection_mm": 0.04,
+      "angular_deflection_rad": 0.15
+    },
+    "Lefteye_primary_Holder": {
+      "closed": true,
+      "self_intersections": false,
+      "linear_deflection_mm": 0.04,
+      "angular_deflection_rad": 0.15
+    },
+    "Lefteye_primary_Clip": {
+      "closed": true,
+      "self_intersections": false,
+      "linear_deflection_mm": 0.04,
+      "angular_deflection_rad": 0.15
+    }
+  },
+  "arm_pairs": {
+    "RightUpperSupport/RightLowerSupport": {
+      "overlap_mm3": 0.0,
+      "free_gap_mm": 0.5596815730955605
+    },
+    "RightUpperSupport/LeftUpperSupport": {
+      "overlap_mm3": 0.0,
+      "free_gap_mm": 32.658700262813745
+    },
+    "RightUpperSupport/LeftLowerSupport": {
+      "overlap_mm3": 0.0,
+      "free_gap_mm": 33.53352939034213
+    },
+    "RightLowerSupport/LeftUpperSupport": {
+      "overlap_mm3": 0.0,
+      "free_gap_mm": 33.58332881735286
+    },
+    "RightLowerSupport/LeftLowerSupport": {
+      "overlap_mm3": 0.0,
+      "free_gap_mm": 32.53164616281828
+    },
+    "LeftUpperSupport/LeftLowerSupport": {
+      "overlap_mm3": 0.0,
+      "free_gap_mm": 0.5867876168469112
+    }
+  },
+  "anatomy_unchanged": true,
+  "carrier_single_solid": true,
+  "source_hash_unchanged": true
+}

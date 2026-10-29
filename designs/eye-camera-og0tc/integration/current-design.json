@@ -1,0 +1,9 @@
+{
+  "revision": "OC0TC-USB-CONCEPT-R02",
+  "design": "r02/design.json",
+  "status": "Architecture and packaging study; not a pin-complete or routed design",
+  "infrared_requirements": "infrared-requirements.json",
+  "hardware_build_plan": "custom-camera-build.md",
+  "module_connector_transcription": "li-oc0tc1b-connector.csv",
+  "implementation_direction": "Custom OG0TC1B sensor camera; R02 remains preserved concept geometry"
+}

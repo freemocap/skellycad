@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-28",
+  "working_pcb_trial": "OV9281-P4-R09-data1p-03",
+  "fabrication_ready": false,
+  "scope": "PCB connectivity and native design rules only",
+  "snapshot": "checkpoints/2026-10-28-routing-complete/snapshot.json",
+  "selected_electrical_baseline": "OV9281-P4-R08",
+  "previous_matched_review": "working-review.json",
+  "mechanical_copper_updated": false,
+  "files": [
+    {
+      "path": "generated/ov9281-r09-data1p-03/controller.kicad_pcb",
+      "sha256": "04a2292f27f72b89caadb42594b5ea744b81143c3679996aaac16bfe54855be5"
+    },
+    {
+      "path": "generated/ov9281-r09-data1p-03/head.kicad_pcb",
+      "sha256": "de2fef7248318620c9cbe298fba39089304b454c9af35ba16dd6d1384c957562"
+    },
+    {
+      "path": "generated/ov9281-r09-data1p-03/flex-study.kicad_pcb",
+      "sha256": "52b315d55f15e14173298e533959e040e248c0e830c1fcb76628598c7fd21c6f"
+    },
+    {
+      "path": "generated/ov9281-r09-data1p-03/camera.kicad_sch",
+      "sha256": "b307a594304676204d24e58bcce617ebf770879fbdfe65a5e94134018c0c2991"
+    },
+    {
+      "path": "generated/ov9281-r09-data1p-03/OV9281-P4-R09-assembly.kicad_pcb",
+      "sha256": "2ddd0f3a27f0cd638a023c4a2c58a16c8d00d1519afa46e6f4d82628ff785be1"
+    }
+  ],
+  "approved_checklist": [
+    {
+      "text": "Connect U1.E4 (SCL) and verify it without introducing connectivity or DRC regressions.",
+      "complete": true,
+      "net": "/M1_CAM_SCL_1V8"
+    },
+    {
+      "text": "Connect U1.E8 (VH) and verify it without introducing connectivity or DRC regressions.",
+      "complete": true,
+      "net": "/M1_VH"
+    },
+    {
+      "text": "Connect U1.F7 (VN3) and verify it without introducing connectivity or DRC regressions.",
+      "complete": true,
+      "net": "/M1_VN3"
+    },
+    {
+      "text": "Connect U1.G4 (MIPI clock P) and verify it without introducing connectivity or DRC regressions.",
+      "complete": true,
+      "net": "/CAM_L_CLK_P"
+    },
+    {
+      "text": "Connect U1.G5 (MIPI data 1 P), verify the combined result, and save and open the checked PCB.",
+      "complete": true,
+      "net": "/CAM_L_D1_P"
+    }
+  ],
+  "desktop_verification": {
+    "method": "Direct process launch and command-line inspection",
+    "pid": 1348,
+    "title": "head \u2014 PCB Editor",
+    "visual_inspection": false
+  },
+  "limits": [
+    "MIPI differential impedance, skew and return paths unqualified",
+    "New In1 signal routes interrupt the ground pour; explicit tracks restore DC connectivity only",
+    "No hardware operation demonstrated"
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "source": "C:\\Users\\jonma\\code-stuff\\github\\freemocap\\other\\skellycad\\generated\\ov9281-r09-clearance-06",
+  "source_head_sha256": "889006ee7909373d4408af24bc79eb51c919369dd1fd70ab0327fff57fe753b7",
+  "removed": {
+    "uuid": "d90cdf89-2192-4f9f-8054-d8dd4a8faa4e",
+    "net": "/M1_DVDD",
+    "start": [
+      9.0593,
+      5.4913
+    ],
+    "end": [
+      9.0593,
+      4.1567
+    ]
+  },
+  "dovdd": {
+    "result": "routed",
+    "visited": 1155,
+    "path_xy_mm": [
+      [
+        8.685,
+        4.757
+      ],
+      [
+        9.235,
+        4.507
+      ],
+      [
+        9.485,
+        4.507
+      ],
+      [
+        10.8088,
+        5.0325
+      ]
+    ],
+    "added_track_uuids": [
+      "3bc8e0ca-39f6-446d-bce1-a9aed2e63012",
+      "623d3b1f-abe5-4919-81f9-7e67494d2d37",
+      "c0803e55-f776-4587-be7b-61ecf2c9d6d9"
+    ]
+  },
+  "dvdd_escape": {
+    "result": "routed",
+    "visited": 3,
+    "path_xy_mm": [
+      [
+        9.325,
+        5.757
+      ],
+      [
+        9.005,
+        5.507
+      ]
+    ],
+    "added_track_uuids": [
+      "d4ba3c4a-4e34-4273-9ef9-c639cdf99d45"
+    ]
+  },
+  "dvdd_back": {
+    "result": "routed",
+    "visited": 536,
+    "path_xy_mm": [
+      [
+        9.005,
+        5.507
+      ],
+      [
+        9.2401,
+        3.5747
+      ]
+    ],
+    "added_track_uuids": [
+      "57ee3f4b-8872-4baa-a355-34a57bf83638"
+    ]
+  },
+  "new_via": "d2bb44a6-3785-42b4-af55-74730ceb4eec",
+  "ground_bridge": {
+    "result": "routed",
+    "visited": 1410,
+    "path_xy_mm": [
+      [
+        8.806,
+        3.8503
+      ],
+      [
+        8.631,
+        5.5253
+      ],
+      [
+        8.681,
+        5.6753
+      ],
+      [
+        8.781,
+        5.8003
+      ],
+      [
+        9.575,
+        6.115
+      ]
+    ],
+    "added_track_uuids": [
+      "1b9ac757-0ce9-47dc-baae-a5618ec94b53",
+      "9807aaac-d93c-4806-bcb8-e065f41bbc96",
+      "7faa5a87-49fa-4527-9d01-81c65ed1f3f4",
+      "88027baf-e89f-498f-b187-f88b50c80d61"
+    ]
+  },
+  "pruned_dvdd_stubs": [
+    {
+      "uuid": "86686a0a-9214-4475-ba29-e4007586a929",
+      "start": [
+        9.0593,
+        4.1567
+      ],
+      "end": [
+        9.2401,
+        3.9759
+      ]
+    },
+    {
+      "uuid": "5e4bc298-6118-4d07-a311-91bccc93720d",
+      "start": [
+        9.2401,
+        3.9759
+      ],
+      "end": [
+        9.2401,
+        3.5747
+      ]
+    }
+  ],
+  "requires_native_drc": true,
+  "verification": {
+    "native_unconnected_before": 6,
+    "native_unconnected_after": 5,
+    "unchanged_native_project_rules": true,
+    "per_net_pad_connectivity_regressions": []
+  }
+}

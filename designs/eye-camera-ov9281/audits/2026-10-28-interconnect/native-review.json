@@ -1,0 +1,17 @@
+[
+  {
+    "path": "native/AUDIT-head.kicad_pcb",
+    "sha256": "691374c9450af7d4863700aa8dc4594510aaedc9df662b049dc98423dcf06881",
+    "copper_pads_zones_outline_unchanged": true
+  },
+  {
+    "path": "native/AUDIT-flex-study.kicad_pcb",
+    "sha256": "93390628a25c406f8aebabfc4ad84863916335eb468307084e0da47ea5cbfac7",
+    "copper_pads_zones_outline_unchanged": true
+  },
+  {
+    "path": "native/AUDIT-controller.kicad_pcb",
+    "sha256": "88a5c006d75f769124f7787f5f33322746e47fa4e58aca3fa8084648bab2e35d",
+    "copper_pads_zones_outline_unchanged": true
+  }
+]

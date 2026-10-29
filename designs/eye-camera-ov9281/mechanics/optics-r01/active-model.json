@@ -1,0 +1,8 @@
+{
+  "revision": "OV9281-CIL829-FIT-STUDY-01",
+  "native_checkpoint": "generated/ov9281-optics-fit-01/OV9281-CIL829-FIT-STUDY.FCStd",
+  "native_sha256": "00df5842c2e018e23a755f2b95318b376458a743067eb7c1faf4a301afe2c0e7",
+  "units": "mm",
+  "status": "Mechanical lens fit study; optical variant and sensor Z unqualified",
+  "validation": "validation.json"
+}

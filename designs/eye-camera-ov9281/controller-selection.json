@@ -1,0 +1,35 @@
+{
+  "revision": "OV9281-P4-R08",
+  "sensor": "OV9281",
+  "controller": "ESP32-P4",
+  "decision": "User-selected first implementation, 2026-10-27",
+  "package_xy_mm": [
+    10,
+    10
+  ],
+  "chip_revision_requirement": "v3.0 or later reference circuit; order code not yet selected",
+  "board_size_mm": [
+    32,
+    20
+  ],
+  "board_thickness_target_mm": [
+    0.4,
+    0.6
+  ],
+  "interface": "electronics/r08/interface.json",
+  "external_usb_connector": "Candidate JST SH four-contact: 1 VBUS, 2 D-, 3 D+, 4 GND; cable compatibility unverified",
+  "status": "R08 checked draft: 57 unconnected items; compiled snapshot firmware; optics and illumination unfinished; not for fabrication",
+  "controller_variant_design_basis": "ESP32-P4NRW16X, v3.x",
+  "schematic": "electronics/r08/camera.kicad_sch",
+  "placement": "electronics/r08/OV9281-P4-R08-assembly.kicad_pcb",
+  "controller_board": "electronics/r08/controller.kicad_pcb",
+  "validation": "electronics/r08/validation.json",
+  "head_size_mm": [
+    14,
+    14
+  ],
+  "head_board": "electronics/r08/head.kicad_pcb",
+  "flex_study": "electronics/r08/flex-study.kicad_pcb",
+  "firmware": "firmware/README.md",
+  "completion_record": "STATUS.md"
+}

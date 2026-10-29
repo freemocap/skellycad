@@ -1,0 +1,35 @@
+"""Render the saved engineering status beside actual native KiCad SVG exports."""
+from pathlib import Path
+import json
+ROOT=Path(__file__).resolve().parent
+
+def main():
+    evidence=json.loads((ROOT/'verification/offline-report.json').read_text())
+    assert evidence['revision']=='OV9281-P4-R08'
+    html='''<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OV9281 R08 — native design and capture software</title><style>
+*{box-sizing:border-box}body{margin:0;background:#111923;color:#edf4fa;font:16px/1.6 system-ui,sans-serif}main{max-width:1100px;margin:auto;padding:26px 24px 55px}h1{font-size:30px;line-height:1.2}h2{font-size:21px;margin-top:28px}p{color:#c6d4e2}.status{display:inline-block;background:#453725;color:#ffdda4;padding:5px 12px;border-radius:20px;font-size:14px}.native{background:#080b10;border:1px solid #344454;border-radius:10px;padding:14px;margin:18px 0}.native img{display:block;width:100%;height:320px;object-fit:contain}select{font:inherit;background:#223143;color:#fff;border:1px solid #60778c;border-radius:5px;padding:6px;max-width:100%}.caption{font-size:14px;color:#b3c4d5}.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.facts div{padding:14px;background:#202d3c;border-radius:9px}.facts strong{color:#95e5ce;font-size:24px}.facts p{margin:4px 0;font-size:15px}a{color:#95e5ce}table{border-collapse:collapse;width:100%}td,th{text-align:left;border-bottom:1px solid #405365;padding:8px}code{font-size:14px}details{background:#1b2736;border-radius:9px;padding:14px;margin-top:18px}summary{cursor:pointer;font-weight:600}@media(max-width:680px){.facts{grid-template-columns:1fr}.native img{height:240px}main{padding:20px 14px}}
+</style><main><span class="status">R08 · engineering checkpoint · camera unfinished</span>
+<h1>Real PCB work. Compiled capture software.</h1>
+<p>The controller, flex and sensor head below are the actual saved KiCad copper. The firmware and host recorder now exist too. <strong>This is not yet a functioning camera or a board ready to order.</strong></p>
+<label for="view">Inspect native copper:</label>
+<select id="view"><option value="assembly-interconnect-study">Whole assembly</option><option value="head">Sensor head</option><option value="controller">Controller — outer layers</option><option value="controller-ground">Controller — ground plane</option><option value="controller-power">Controller — internal power</option><option value="flex-study">Flex</option></select>
+<div class="native"><img id="copper" src="assembly-interconnect-study.svg" alt="Actual R08 KiCad assembly copper"></div>
+<p class="caption" id="caption">Controller left, flex center, head right. Three separate boards in a flat inspection view. The native FreeCAD model contains substrates and copper; component bodies and optics are absent.</p>
+<div class="facts"><div><strong>16 added paths</strong><p>Nine fewer missing connections. R07 placements and copper preserved.</p></div><div><strong>2 compiled variants</strong><p>Real-sensor code and a synthetic-pattern mode. Neither has run on hardware.</p></div><div><strong>8 host tests pass</strong><p>Framing, corruption recovery and CRC validation. Synthetic recording works.</p></div></div>
+<h2>What works on the computer</h2><p>Both ESP32-P4 firmware builds succeed. The host software decodes grayscale packets and saves PGM images with timestamps and provenance. The sensor variant requests one RAW8 snapshot at a time; it does not yet stream 120 fps or appear as a UVC webcam.</p>
+<p>Software loopback uses generated patterns, not an emulated camera or a real eye image. No hardware has been flashed, powered or tested.</p>
+<h2>What still stops this from being a camera</h2>
+<table><thead><tr><th>Area</th><th>Current state</th></tr></thead><tbody>
+<tr><td>PCB routing</td><td>34 controller + 23 head unconnected items; flex zero. Six open tracks and seven incomplete vias remain.</td></tr>
+<tr><td>Component audit</td><td>Y1's inherited 3.3 V oscillator description conflicts with its 1.8 V supply. Resolve exact part and land pattern.</td></tr>
+<tr><td>Optics and IR</td><td>Lens, visible-blocking filter, adjustable housing and LED driver are unfinished.</td></tr>
+<tr><td>Capture</td><td>Compiled RAW8 snapshot code; sensor timing, USB throughput and real images unverified.</td></tr>
+<tr><td>Physical proof</td><td>No measured focus, heat, current, mass, exposure or assembly fit.</td></tr></tbody></table>
+<p><strong>There is more design work to do without hardware.</strong> A clean software build cannot replace finishing the circuit, routing, optics and mechanics.</p>
+<details><summary>Saved evidence and dimensions</summary><p>Controller: 32 × 20 × 0.6 mm. Head: 14 × 14 × 0.6 mm. Flex: 35.3 × 12.5 × 0.1 mm. Flat envelope: 76 mm. This is larger than the Pupil reference; it is not a final weight-optimized assembly.</p><p>Native checks cover 456 pad nets, 24 flex paths and flat XY alignment. R7 is absent and R8 populated for sensor address 0x60. The inventory lists 103 footprints. No manufacturer stackup or impedance qualification is claimed.</p><p><a href="validation.json">Native CAD checks</a> · <a href="routing-r08.json">Added copper</a> · <a href="inventory.json">Component inventory</a> · <a href="../../verification/offline-report.json">Firmware and offline evidence</a> · <a href="../../STATUS.md">Complete status record</a> · <a href="../../firmware/README.md">Build and recording instructions</a></p></details>
+</main><script>const sel=document.querySelector('#view'),img=document.querySelector('#copper'),cap=document.querySelector('#caption');const captions={'assembly-interconnect-study':'Controller left, flex center, head right. Actual saved copper, not a single manufacturing board.','head':'14 × 14 mm head: 23 unconnected items remain. Lens, filter and illumination assembly are not present.','controller':'32 × 20 mm controller: 34 unconnected items remain. These are real pads and tracks, not functional proof.','controller-ground':'Internal ground plane. All 75 controller ground pads connect; high-frequency return paths remain unqualified.','controller-power':'Internal supplies. Some connections remain missing; inspect the native per-net report.','flex-study':'All 24 flex paths connect and align in XY. Impedance, mating height and bending remain unqualified.'};sel.addEventListener('change',()=>{img.src=sel.value+'.svg';img.alt='Actual R08 copper — '+sel.options[sel.selectedIndex].text;cap.textContent=captions[sel.value]});</script></html>'''
+    (ROOT/'electronics/r08/overview.html').write_text(html,encoding='utf-8')
+    print(ROOT/'electronics/r08/overview.html')
+
+if __name__=='__main__':main()

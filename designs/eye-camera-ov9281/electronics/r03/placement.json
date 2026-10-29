@@ -1,0 +1,1946 @@
+{
+  "revision": "OV9281-P4-PLACEMENT-R03",
+  "units": "mm",
+  "source_schematic_sha256": "0c9da8e817c9bcac5ff6e6c79a0af49130e64d2d23e746a23cbbf165a30eb010",
+  "board_specs": {
+    "controller": {
+      "size": [
+        32,
+        20
+      ],
+      "thickness": 0.6,
+      "origin": [
+        50,
+        50
+      ],
+      "reserved": [
+        {
+          "name": "FLEX CONNECTOR TBD",
+          "side": "front",
+          "rect": [
+            19,
+            0.5,
+            31,
+            4.5
+          ]
+        }
+      ]
+    },
+    "head": {
+      "size": [
+        14,
+        14
+      ],
+      "thickness": 0.6,
+      "origin": [
+        112,
+        53
+      ],
+      "reserved": [
+        {
+          "name": "LENS/HOLDER BUDGET - TBD",
+          "side": "front",
+          "rect": [
+            3,
+            2,
+            11,
+            10
+          ]
+        },
+        {
+          "name": "IR LED TBD",
+          "side": "front",
+          "rect": [
+            0.5,
+            4.5,
+            2.5,
+            6.5
+          ]
+        },
+        {
+          "name": "IR LED TBD",
+          "side": "front",
+          "rect": [
+            11.5,
+            4.5,
+            13.5,
+            6.5
+          ]
+        },
+        {
+          "name": "FLEX EXIT TBD",
+          "side": "front",
+          "rect": [
+            3,
+            12.2,
+            11,
+            13.2
+          ]
+        }
+      ]
+    }
+  },
+  "placements": [
+    {
+      "reference": "U1",
+      "board": "head",
+      "side": "front",
+      "value": "ImageSensor_OV9281",
+      "footprint": "Camera:OV9281",
+      "anchor_mm": [
+        7.3325,
+        6.043
+      ],
+      "angle_deg": 0.0,
+      "bounds_mm": [
+        4.0,
+        3.5,
+        9.978,
+        8.514
+      ]
+    },
+    {
+      "reference": "Y1",
+      "board": "head",
+      "side": "back",
+      "value": "7C-24.000MBB-T",
+      "footprint": "Camera:Oscillator_SMD_TXC_7C_5x3.2x1.2mm",
+      "anchor_mm": [
+        7.085,
+        3.525
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        5.0,
+        0.75,
+        9.15,
+        6.3
+      ]
+    },
+    {
+      "reference": "L1",
+      "board": "head",
+      "side": "back",
+      "value": "MLP2012S3R3MT",
+      "footprint": "Camera:L_0805_2012Metric",
+      "anchor_mm": [
+        7.025,
+        7.375
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        5.25,
+        6.5,
+        8.8,
+        8.25
+      ]
+    },
+    {
+      "reference": "L2",
+      "board": "head",
+      "side": "back",
+      "value": "MLP2012S3R3MT",
+      "footprint": "Camera:L_0805_2012Metric",
+      "anchor_mm": [
+        7.025,
+        9.375
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        5.25,
+        8.5,
+        8.8,
+        10.25
+      ]
+    },
+    {
+      "reference": "L3",
+      "board": "head",
+      "side": "back",
+      "value": "MLP2012S3R3MT",
+      "footprint": "Camera:L_0805_2012Metric",
+      "anchor_mm": [
+        3.275,
+        7.375
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        1.5,
+        6.5,
+        5.05,
+        8.25
+      ]
+    },
+    {
+      "reference": "C10",
+      "board": "head",
+      "side": "back",
+      "value": "C_1u_0603",
+      "footprint": "Camera:C_0603_1608Metric",
+      "anchor_mm": [
+        10.275,
+        7.175
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        9.0,
+        6.5,
+        11.55,
+        7.85
+      ]
+    },
+    {
+      "reference": "C12",
+      "board": "head",
+      "side": "back",
+      "value": "C_1u_0603",
+      "footprint": "Camera:C_0603_1608Metric",
+      "anchor_mm": [
+        10.275,
+        8.675
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        9.0,
+        8.0,
+        11.55,
+        9.35
+      ]
+    },
+    {
+      "reference": "C13",
+      "board": "head",
+      "side": "back",
+      "value": "C_1u_0603",
+      "footprint": "Camera:C_0603_1608Metric",
+      "anchor_mm": [
+        3.525,
+        5.675
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        2.25,
+        5.0,
+        4.8,
+        6.35
+      ]
+    },
+    {
+      "reference": "C14",
+      "board": "head",
+      "side": "back",
+      "value": "C_100n_6V3_0402",
+      "footprint": "Camera:C_0402_1005Metric",
+      "anchor_mm": [
+        3.935,
+        8.985
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        3.0,
+        8.5,
+        4.87,
+        9.47
+      ]
+    },
+    {
+      "reference": "C15",
+      "board": "head",
+      "side": "back",
+      "value": "C_100n_6V3_0402",
+      "footprint": "Camera:C_0402_1005Metric",
+      "anchor_mm": [
+        10.435,
+        5.735
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        9.5,
+        5.25,
+        11.37,
+        6.22
+      ]
+    },
+    {
+      "reference": "C16",
+      "board": "head",
+      "side": "back",
+      "value": "C_100n_6V3_0402",
+      "footprint": "Camera:C_0402_1005Metric",
+      "anchor_mm": [
+        6.935,
+        10.985
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        6.0,
+        10.5,
+        7.87,
+        11.47
+      ]
+    },
+    {
+      "reference": "C17",
+      "board": "head",
+      "side": "back",
+      "value": "C_100n_6V3_0402",
+      "footprint": "Camera:C_0402_1005Metric",
+      "anchor_mm": [
+        9.935,
+        9.985
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        9.0,
+        9.5,
+        10.87,
+        10.47
+      ]
+    },
+    {
+      "reference": "C18",
+      "board": "head",
+      "side": "back",
+      "value": "C_1u_0603",
+      "footprint": "Camera:C_0603_1608Metric",
+      "anchor_mm": [
+        3.525,
+        4.175
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        2.25,
+        3.5,
+        4.8,
+        4.85
+      ]
+    },
+    {
+      "reference": "C19",
+      "board": "head",
+      "side": "back",
+      "value": "C_1u_0603",
+      "footprint": "Camera:C_0603_1608Metric",
+      "anchor_mm": [
+        10.775,
+        4.425
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        9.5,
+        3.75,
+        12.05,
+        5.1
+      ]
+    },
+    {
+      "reference": "C20",
+      "board": "head",
+      "side": "back",
+      "value": "C_100n_6V3_0402",
+      "footprint": "Camera:C_0402_1005Metric",
+      "anchor_mm": [
+        3.935,
+        10.235
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        3.0,
+        9.75,
+        4.87,
+        10.72
+      ]
+    },
+    {
+      "reference": "C21",
+      "board": "head",
+      "side": "back",
+      "value": "C_1u_0603",
+      "footprint": "Camera:C_0603_1608Metric",
+      "anchor_mm": [
+        9.525,
+        11.425
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        8.25,
+        10.75,
+        10.8,
+        12.1
+      ]
+    },
+    {
+      "reference": "C33",
+      "board": "head",
+      "side": "back",
+      "value": "C_1u_0603",
+      "footprint": "Camera:C_0603_1608Metric",
+      "anchor_mm": [
+        4.525,
+        11.675
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        3.25,
+        11.0,
+        5.8,
+        12.35
+      ]
+    },
+    {
+      "reference": "C7",
+      "board": "head",
+      "side": "back",
+      "value": "C_1u_0603",
+      "footprint": "Camera:C_0603_1608Metric",
+      "anchor_mm": [
+        3.525,
+        2.675
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        2.25,
+        2.0,
+        4.8,
+        3.35
+      ]
+    },
+    {
+      "reference": "C8",
+      "board": "head",
+      "side": "back",
+      "value": "C_1u_0603",
+      "footprint": "Camera:C_0603_1608Metric",
+      "anchor_mm": [
+        10.775,
+        2.925
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        9.5,
+        2.25,
+        12.05,
+        3.6
+      ]
+    },
+    {
+      "reference": "C9",
+      "board": "head",
+      "side": "back",
+      "value": "C_100n_6V3_0402",
+      "footprint": "Camera:C_0402_1005Metric",
+      "anchor_mm": [
+        6.935,
+        12.235
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        6.0,
+        11.75,
+        7.87,
+        12.72
+      ]
+    },
+    {
+      "reference": "R7",
+      "board": "head",
+      "side": "back",
+      "value": "R_0R_0402",
+      "footprint": "Camera:R_0402_1005Metric",
+      "anchor_mm": [
+        1.705,
+        8.995
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        0.75,
+        8.5,
+        2.66,
+        9.49
+      ]
+    },
+    {
+      "reference": "R8",
+      "board": "head",
+      "side": "back",
+      "value": "R_0R_0402",
+      "footprint": "Camera:R_0402_1005Metric",
+      "anchor_mm": [
+        12.205,
+        9.995
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        11.25,
+        9.5,
+        13.16,
+        10.49
+      ]
+    },
+    {
+      "reference": "R9",
+      "board": "head",
+      "side": "back",
+      "value": "R_0R_0402",
+      "footprint": "Camera:R_0402_1005Metric",
+      "anchor_mm": [
+        9.205,
+        12.745
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        8.25,
+        12.25,
+        10.16,
+        13.24
+      ]
+    },
+    {
+      "reference": "U101",
+      "board": "controller",
+      "side": "front",
+      "value": "ESP32-P4NRW16X / v3.x",
+      "footprint": "Camera:ESP32-P4",
+      "anchor_mm": [
+        16.399999,
+        10.875
+      ],
+      "angle_deg": 0.0,
+      "bounds_mm": [
+        9.999999,
+        5.25,
+        22.024999,
+        16.5
+      ]
+    },
+    {
+      "reference": "J101",
+      "board": "controller",
+      "side": "front",
+      "value": "USB / JST 4-contact candidate",
+      "footprint": "Camera:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal",
+      "anchor_mm": [
+        4.054999,
+        11.925
+      ],
+      "angle_deg": 90.0,
+      "bounds_mm": [
+        0.749999,
+        8.0,
+        7.359999,
+        15.85
+      ]
+    },
+    {
+      "reference": "U103",
+      "board": "controller",
+      "side": "front",
+      "value": "TLV62569DBV / core",
+      "footprint": "Camera:SOT-23-5",
+      "anchor_mm": [
+        26.075,
+        8.15
+      ],
+      "angle_deg": 0.0,
+      "bounds_mm": [
+        24.0,
+        6.25,
+        28.15,
+        9.875
+      ]
+    },
+    {
+      "reference": "L101",
+      "board": "controller",
+      "side": "front",
+      "value": "2.2u / Isat TBD",
+      "footprint": "Camera:L_0805_2012Metric",
+      "anchor_mm": [
+        26.025,
+        11.875
+      ],
+      "angle_deg": 0.0,
+      "bounds_mm": [
+        24.25,
+        11.0,
+        27.8,
+        12.75
+      ]
+    },
+    {
+      "reference": "Y101",
+      "board": "controller",
+      "side": "front",
+      "value": "40 MHz / CL TBD",
+      "footprint": "Camera:Crystal_SMD_2016-4Pin_2.0x1.6mm",
+      "anchor_mm": [
+        8.025,
+        5.075
+      ],
+      "angle_deg": 0.0,
+      "bounds_mm": [
+        6.5,
+        3.75,
+        9.55,
+        6.4
+      ]
+    },
+    {
+      "reference": "U102",
+      "board": "controller",
+      "side": "back",
+      "value": "W25Q32JVSS (4 MB candidate)",
+      "footprint": "Camera:SOIC-8_5.3x5.3mm_P1.27mm",
+      "anchor_mm": [
+        14.925,
+        7.029999
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        10.25,
+        3.999999,
+        19.6,
+        9.954999
+      ]
+    },
+    {
+      "reference": "U104",
+      "board": "controller",
+      "side": "back",
+      "value": "TLV62569DBV / system",
+      "footprint": "Camera:SOT-23-5",
+      "anchor_mm": [
+        4.075,
+        4.15
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        2.0,
+        2.25,
+        6.15,
+        5.875
+      ]
+    },
+    {
+      "reference": "L102",
+      "board": "controller",
+      "side": "back",
+      "value": "2.2u / Isat TBD",
+      "footprint": "Camera:L_0805_2012Metric",
+      "anchor_mm": [
+        4.025,
+        7.875
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        2.25,
+        7.0,
+        5.8,
+        8.75
+      ]
+    },
+    {
+      "reference": "U105",
+      "board": "controller",
+      "side": "front",
+      "value": "USBLC6-2P6",
+      "footprint": "Camera:SOT-666",
+      "anchor_mm": [
+        4.775,
+        6.58
+      ],
+      "angle_deg": 0.0,
+      "bounds_mm": [
+        3.25,
+        5.25,
+        6.3,
+        7.705
+      ]
+    },
+    {
+      "reference": "J103",
+      "board": "controller",
+      "side": "back",
+      "value": "PROGRAM / RESET pads",
+      "footprint": "Camera:ProgrammingPads_5x1mm_P1.5mm",
+      "anchor_mm": [
+        29.0,
+        17.0
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        22.5,
+        16.5,
+        29.5,
+        17.5
+      ]
+    },
+    {
+      "reference": "U5",
+      "board": "controller",
+      "side": "back",
+      "value": "TLV73318PDBVT",
+      "footprint": "Camera:SOT-23-5",
+      "anchor_mm": [
+        16.075,
+        12.15
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        14.0,
+        10.25,
+        18.15,
+        13.875
+      ]
+    },
+    {
+      "reference": "U6",
+      "board": "controller",
+      "side": "back",
+      "value": "TLV73312PDBVT",
+      "footprint": "Camera:SOT-23-5",
+      "anchor_mm": [
+        11.575,
+        12.15
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        9.5,
+        10.25,
+        13.65,
+        13.875
+      ]
+    },
+    {
+      "reference": "U7",
+      "board": "controller",
+      "side": "back",
+      "value": "TLV73328PDBVT",
+      "footprint": "Camera:SOT-23-5",
+      "anchor_mm": [
+        20.575,
+        12.15
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        18.5,
+        10.25,
+        22.65,
+        13.875
+      ]
+    },
+    {
+      "reference": "Q101",
+      "board": "controller",
+      "side": "back",
+      "value": "BSS138",
+      "footprint": "Camera:SOT-23",
+      "anchor_mm": [
+        21.705,
+        8.225
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        19.75,
+        6.5,
+        23.66,
+        9.95
+      ]
+    },
+    {
+      "reference": "Q102",
+      "board": "controller",
+      "side": "back",
+      "value": "BSS138",
+      "footprint": "Camera:SOT-23",
+      "anchor_mm": [
+        15.955,
+        15.975
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        14.0,
+        14.25,
+        17.91,
+        17.7
+      ]
+    },
+    {
+      "reference": "Q103",
+      "board": "controller",
+      "side": "back",
+      "value": "BSS138 / reset asserted HIGH",
+      "footprint": "Camera:SOT-23",
+      "anchor_mm": [
+        20.205,
+        15.975
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        18.25,
+        14.25,
+        22.16,
+        17.7
+      ]
+    },
+    {
+      "reference": "C1",
+      "board": "controller",
+      "side": "back",
+      "value": "C_4u7_0805",
+      "footprint": "Camera:C_0805_2012Metric",
+      "anchor_mm": [
+        11.925,
+        15.205
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        10.0,
+        14.25,
+        13.85,
+        16.16
+      ]
+    },
+    {
+      "reference": "C106",
+      "board": "controller",
+      "side": "back",
+      "value": "22u",
+      "footprint": "Camera:C_0805_2012Metric",
+      "anchor_mm": [
+        15.925,
+        2.705
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        14.0,
+        1.75,
+        17.85,
+        3.66
+      ]
+    },
+    {
+      "reference": "C109",
+      "board": "controller",
+      "side": "back",
+      "value": "22u",
+      "footprint": "Camera:C_0805_2012Metric",
+      "anchor_mm": [
+        21.675,
+        5.205
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        19.75,
+        4.25,
+        23.6,
+        6.16
+      ]
+    },
+    {
+      "reference": "C123",
+      "board": "controller",
+      "side": "back",
+      "value": "10u",
+      "footprint": "Camera:C_0805_2012Metric",
+      "anchor_mm": [
+        8.175,
+        8.955
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        6.25,
+        8.0,
+        10.1,
+        9.91
+      ]
+    },
+    {
+      "reference": "C124",
+      "board": "controller",
+      "side": "back",
+      "value": "10u",
+      "footprint": "Camera:C_0805_2012Metric",
+      "anchor_mm": [
+        19.925,
+        2.705
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        18.0,
+        1.75,
+        21.85,
+        3.66
+      ]
+    },
+    {
+      "reference": "C2",
+      "board": "controller",
+      "side": "back",
+      "value": "C_4u7_0805",
+      "footprint": "Camera:C_0805_2012Metric",
+      "anchor_mm": [
+        11.925,
+        2.705
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        10.0,
+        1.75,
+        13.85,
+        3.66
+      ]
+    },
+    {
+      "reference": "C3",
+      "board": "controller",
+      "side": "back",
+      "value": "C_4u7_0805",
+      "footprint": "Camera:C_0805_2012Metric",
+      "anchor_mm": [
+        11.925,
+        17.455
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        10.0,
+        16.5,
+        13.85,
+        18.41
+      ]
+    },
+    {
+      "reference": "C104",
+      "board": "controller",
+      "side": "back",
+      "value": "1u",
+      "footprint": "Camera:C_0603_1608Metric",
+      "anchor_mm": [
+        8.775,
+        7.175
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        7.5,
+        6.5,
+        10.05,
+        7.85
+      ]
+    },
+    {
+      "reference": "C105",
+      "board": "controller",
+      "side": "back",
+      "value": "4.7u",
+      "footprint": "Camera:C_0603_1608Metric",
+      "anchor_mm": [
+        8.025,
+        10.925
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        6.75,
+        10.25,
+        9.3,
+        11.6
+      ]
+    },
+    {
+      "reference": "C108",
+      "board": "controller",
+      "side": "back",
+      "value": "4.7u",
+      "footprint": "Camera:C_0603_1608Metric",
+      "anchor_mm": [
+        24.275,
+        10.925
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        23.0,
+        10.25,
+        25.55,
+        11.6
+      ]
+    },
+    {
+      "reference": "C125",
+      "board": "controller",
+      "side": "back",
+      "value": "1u",
+      "footprint": "Camera:C_0603_1608Metric",
+      "anchor_mm": [
+        8.025,
+        12.425
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        6.75,
+        11.75,
+        9.3,
+        13.1
+      ]
+    },
+    {
+      "reference": "C126",
+      "board": "controller",
+      "side": "back",
+      "value": "1u",
+      "footprint": "Camera:C_0603_1608Metric",
+      "anchor_mm": [
+        8.775,
+        5.675
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        7.5,
+        5.0,
+        10.05,
+        6.35
+      ]
+    },
+    {
+      "reference": "C127",
+      "board": "controller",
+      "side": "back",
+      "value": "1u",
+      "footprint": "Camera:C_0603_1608Metric",
+      "anchor_mm": [
+        24.275,
+        12.425
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        23.0,
+        11.75,
+        25.55,
+        13.1
+      ]
+    },
+    {
+      "reference": "C133",
+      "board": "controller",
+      "side": "back",
+      "value": "1u",
+      "footprint": "Camera:C_0603_1608Metric",
+      "anchor_mm": [
+        8.025,
+        13.925
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        6.75,
+        13.25,
+        9.3,
+        14.6
+      ]
+    },
+    {
+      "reference": "C136",
+      "board": "controller",
+      "side": "back",
+      "value": "4.7u",
+      "footprint": "Camera:C_0603_1608Metric",
+      "anchor_mm": [
+        24.275,
+        13.925
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        23.0,
+        13.25,
+        25.55,
+        14.6
+      ]
+    },
+    {
+      "reference": "C4",
+      "board": "controller",
+      "side": "back",
+      "value": "C_1u_0603",
+      "footprint": "Camera:C_0603_1608Metric",
+      "anchor_mm": [
+        8.525,
+        15.425
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        7.25,
+        14.75,
+        9.8,
+        16.1
+      ]
+    },
+    {
+      "reference": "C5",
+      "board": "controller",
+      "side": "back",
+      "value": "C_1u_0603",
+      "footprint": "Camera:C_0603_1608Metric",
+      "anchor_mm": [
+        25.275,
+        9.425
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        24.0,
+        8.75,
+        26.55,
+        10.1
+      ]
+    },
+    {
+      "reference": "C6",
+      "board": "controller",
+      "side": "back",
+      "value": "C_1u_0603",
+      "footprint": "Camera:C_0603_1608Metric",
+      "anchor_mm": [
+        8.525,
+        4.175
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        7.25,
+        3.5,
+        9.8,
+        4.85
+      ]
+    },
+    {
+      "reference": "R101",
+      "board": "controller",
+      "side": "back",
+      "value": "10k",
+      "footprint": "Camera:R_0402_1005Metric",
+      "anchor_mm": [
+        15.955,
+        18.495
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        15.0,
+        18.0,
+        16.91,
+        18.99
+      ]
+    },
+    {
+      "reference": "R102",
+      "board": "controller",
+      "side": "back",
+      "value": "10k",
+      "footprint": "Camera:R_0402_1005Metric",
+      "anchor_mm": [
+        18.205,
+        18.495
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        17.25,
+        18.0,
+        19.16,
+        18.99
+      ]
+    },
+    {
+      "reference": "R103",
+      "board": "controller",
+      "side": "back",
+      "value": "10k",
+      "footprint": "Camera:R_0402_1005Metric",
+      "anchor_mm": [
+        23.455,
+        15.245
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        22.5,
+        14.75,
+        24.41,
+        15.74
+      ]
+    },
+    {
+      "reference": "R104",
+      "board": "controller",
+      "side": "back",
+      "value": "10k",
+      "footprint": "Camera:R_0402_1005Metric",
+      "anchor_mm": [
+        24.955,
+        7.995
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        24.0,
+        7.5,
+        25.91,
+        8.49
+      ]
+    },
+    {
+      "reference": "R105",
+      "board": "controller",
+      "side": "back",
+      "value": "499k",
+      "footprint": "Camera:R_0402_1005Metric",
+      "anchor_mm": [
+        22.955,
+        3.495
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        22.0,
+        3.0,
+        23.91,
+        3.99
+      ]
+    },
+    {
+      "reference": "R106",
+      "board": "controller",
+      "side": "back",
+      "value": "499k",
+      "footprint": "Camera:R_0402_1005Metric",
+      "anchor_mm": [
+        24.955,
+        6.745
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        24.0,
+        6.25,
+        25.91,
+        7.24
+      ]
+    },
+    {
+      "reference": "R107",
+      "board": "controller",
+      "side": "back",
+      "value": "453k",
+      "footprint": "Camera:R_0402_1005Metric",
+      "anchor_mm": [
+        20.455,
+        18.495
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        19.5,
+        18.0,
+        21.41,
+        18.99
+      ]
+    },
+    {
+      "reference": "R108",
+      "board": "controller",
+      "side": "back",
+      "value": "100k",
+      "footprint": "Camera:R_0402_1005Metric",
+      "anchor_mm": [
+        24.705,
+        5.495
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        23.75,
+        5.0,
+        25.66,
+        5.99
+      ]
+    },
+    {
+      "reference": "R109",
+      "board": "controller",
+      "side": "back",
+      "value": "0",
+      "footprint": "Camera:R_0402_1005Metric",
+      "anchor_mm": [
+        8.705,
+        16.745
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        7.75,
+        16.25,
+        9.66,
+        17.24
+      ]
+    },
+    {
+      "reference": "R110",
+      "board": "controller",
+      "side": "back",
+      "value": "0",
+      "footprint": "Camera:R_0402_1005Metric",
+      "anchor_mm": [
+        8.705,
+        2.745
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        7.75,
+        2.25,
+        9.66,
+        3.24
+      ]
+    },
+    {
+      "reference": "R111",
+      "board": "controller",
+      "side": "back",
+      "value": "4.02k 1%",
+      "footprint": "Camera:R_0402_1005Metric",
+      "anchor_mm": [
+        22.955,
+        2.245
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        22.0,
+        1.75,
+        23.91,
+        2.74
+      ]
+    },
+    {
+      "reference": "R112",
+      "board": "controller",
+      "side": "back",
+      "value": "4.7k",
+      "footprint": "Camera:R_0402_1005Metric",
+      "anchor_mm": [
+        5.455,
+        10.745
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        4.5,
+        10.25,
+        6.41,
+        11.24
+      ]
+    },
+    {
+      "reference": "R113",
+      "board": "controller",
+      "side": "back",
+      "value": "4.7k",
+      "footprint": "Camera:R_0402_1005Metric",
+      "anchor_mm": [
+        26.705,
+        10.745
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        25.75,
+        10.25,
+        27.66,
+        11.24
+      ]
+    },
+    {
+      "reference": "R114",
+      "board": "controller",
+      "side": "back",
+      "value": "4.7k",
+      "footprint": "Camera:R_0402_1005Metric",
+      "anchor_mm": [
+        5.455,
+        11.995
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        4.5,
+        11.5,
+        6.41,
+        12.49
+      ]
+    },
+    {
+      "reference": "R115",
+      "board": "controller",
+      "side": "back",
+      "value": "4.7k",
+      "footprint": "Camera:R_0402_1005Metric",
+      "anchor_mm": [
+        22.705,
+        18.495
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        21.75,
+        18.0,
+        23.66,
+        18.99
+      ]
+    },
+    {
+      "reference": "R116",
+      "board": "controller",
+      "side": "back",
+      "value": "100k",
+      "footprint": "Camera:R_0402_1005Metric",
+      "anchor_mm": [
+        8.705,
+        17.995
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        7.75,
+        17.5,
+        9.66,
+        18.49
+      ]
+    },
+    {
+      "reference": "R117",
+      "board": "controller",
+      "side": "back",
+      "value": "10k",
+      "footprint": "Camera:R_0402_1005Metric",
+      "anchor_mm": [
+        25.205,
+        4.245
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        24.25,
+        3.75,
+        26.16,
+        4.74
+      ]
+    },
+    {
+      "reference": "R118",
+      "board": "controller",
+      "side": "back",
+      "value": "10k",
+      "footprint": "Camera:R_0402_1005Metric",
+      "anchor_mm": [
+        26.705,
+        11.995
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        25.75,
+        11.5,
+        27.66,
+        12.49
+      ]
+    },
+    {
+      "reference": "C101",
+      "board": "controller",
+      "side": "back",
+      "value": "CL_TBD",
+      "footprint": "Camera:C_0402_1005Metric",
+      "anchor_mm": [
+        25.685,
+        15.235
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        24.75,
+        14.75,
+        26.62,
+        15.72
+      ]
+    },
+    {
+      "reference": "C102",
+      "board": "controller",
+      "side": "back",
+      "value": "CL_TBD",
+      "footprint": "Camera:C_0402_1005Metric",
+      "anchor_mm": [
+        5.435,
+        13.235
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        4.5,
+        12.75,
+        6.37,
+        13.72
+      ]
+    },
+    {
+      "reference": "C103",
+      "board": "controller",
+      "side": "back",
+      "value": "100n",
+      "footprint": "Camera:C_0402_1005Metric",
+      "anchor_mm": [
+        4.935,
+        9.485
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        4.0,
+        9.0,
+        5.87,
+        9.97
+      ]
+    },
+    {
+      "reference": "C107",
+      "board": "controller",
+      "side": "back",
+      "value": "22p",
+      "footprint": "Camera:C_0402_1005Metric",
+      "anchor_mm": [
+        26.685,
+        13.235
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        25.75,
+        12.75,
+        27.62,
+        13.72
+      ]
+    },
+    {
+      "reference": "C110",
+      "board": "controller",
+      "side": "back",
+      "value": "100n / U101.9",
+      "footprint": "Camera:C_0402_1005Metric",
+      "anchor_mm": [
+        8.685,
+        1.484999
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        7.75,
+        0.999999,
+        9.62,
+        1.969999
+      ]
+    },
+    {
+      "reference": "C111",
+      "board": "controller",
+      "side": "back",
+      "value": "100n / U101.21",
+      "footprint": "Camera:C_0402_1005Metric",
+      "anchor_mm": [
+        5.935,
+        15.235
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        5.0,
+        14.75,
+        6.87,
+        15.72
+      ]
+    },
+    {
+      "reference": "C112",
+      "board": "controller",
+      "side": "back",
+      "value": "100n / U101.26",
+      "footprint": "Camera:C_0402_1005Metric",
+      "anchor_mm": [
+        27.185,
+        7.985
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        26.25,
+        7.5,
+        28.12,
+        8.47
+      ]
+    },
+    {
+      "reference": "C113",
+      "board": "controller",
+      "side": "back",
+      "value": "100n / U101.54",
+      "footprint": "Camera:C_0402_1005Metric",
+      "anchor_mm": [
+        25.185,
+        2.985
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        24.25,
+        2.5,
+        26.12,
+        3.47
+      ]
+    },
+    {
+      "reference": "C114",
+      "board": "controller",
+      "side": "back",
+      "value": "100n / U101.62",
+      "footprint": "Camera:C_0402_1005Metric",
+      "anchor_mm": [
+        27.185,
+        6.735
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        26.25,
+        6.25,
+        28.12,
+        7.22
+      ]
+    },
+    {
+      "reference": "C115",
+      "board": "controller",
+      "side": "back",
+      "value": "100n / U101.75",
+      "footprint": "Camera:C_0402_1005Metric",
+      "anchor_mm": [
+        27.685,
+        9.485
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        26.75,
+        9.0,
+        28.62,
+        9.97
+      ]
+    },
+    {
+      "reference": "C116",
+      "board": "controller",
+      "side": "back",
+      "value": "100n / U101.76",
+      "footprint": "Camera:C_0402_1005Metric",
+      "anchor_mm": [
+        6.435,
+        16.735
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        5.5,
+        16.25,
+        7.37,
+        17.22
+      ]
+    },
+    {
+      "reference": "C117",
+      "board": "controller",
+      "side": "back",
+      "value": "100n / U101.77",
+      "footprint": "Camera:C_0402_1005Metric",
+      "anchor_mm": [
+        26.935,
+        5.485
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        26.0,
+        5.0,
+        27.87,
+        5.97
+      ]
+    },
+    {
+      "reference": "C118",
+      "board": "controller",
+      "side": "back",
+      "value": "100n / U101.85",
+      "footprint": "Camera:C_0402_1005Metric",
+      "anchor_mm": [
+        24.935,
+        18.235
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        24.0,
+        17.75,
+        25.87,
+        18.72
+      ]
+    },
+    {
+      "reference": "C119",
+      "board": "controller",
+      "side": "back",
+      "value": "100n / U101.91",
+      "footprint": "Camera:C_0402_1005Metric",
+      "anchor_mm": [
+        25.185,
+        1.734999
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        24.25,
+        1.249999,
+        26.12,
+        2.219999
+      ]
+    },
+    {
+      "reference": "C120",
+      "board": "controller",
+      "side": "back",
+      "value": "100n / U101.96",
+      "footprint": "Camera:C_0402_1005Metric",
+      "anchor_mm": [
+        6.435,
+        17.985
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        5.5,
+        17.5,
+        7.37,
+        18.47
+      ]
+    },
+    {
+      "reference": "C121",
+      "board": "controller",
+      "side": "back",
+      "value": "100n / U101.101",
+      "footprint": "Camera:C_0402_1005Metric",
+      "anchor_mm": [
+        27.935,
+        14.485
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        27.0,
+        14.0,
+        28.87,
+        14.97
+      ]
+    },
+    {
+      "reference": "C122",
+      "board": "controller",
+      "side": "back",
+      "value": "100n / U101.102",
+      "footprint": "Camera:C_0402_1005Metric",
+      "anchor_mm": [
+        27.435,
+        4.235
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        26.5,
+        3.75,
+        28.37,
+        4.72
+      ]
+    },
+    {
+      "reference": "C128",
+      "board": "controller",
+      "side": "back",
+      "value": "100n / U101.30",
+      "footprint": "Camera:C_0402_1005Metric",
+      "anchor_mm": [
+        6.435,
+        1.484999
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        5.5,
+        0.999999,
+        7.37,
+        1.969999
+      ]
+    },
+    {
+      "reference": "C129",
+      "board": "controller",
+      "side": "back",
+      "value": "100n / U101.59",
+      "footprint": "Camera:C_0402_1005Metric",
+      "anchor_mm": [
+        3.185,
+        10.735
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        2.25,
+        10.25,
+        4.12,
+        11.22
+      ]
+    },
+    {
+      "reference": "C130",
+      "board": "controller",
+      "side": "back",
+      "value": "100n / U101.67",
+      "footprint": "Camera:C_0402_1005Metric",
+      "anchor_mm": [
+        28.935,
+        10.735
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        28.0,
+        10.25,
+        29.87,
+        11.22
+      ]
+    },
+    {
+      "reference": "C131",
+      "board": "controller",
+      "side": "back",
+      "value": "10n",
+      "footprint": "Camera:C_0402_1005Metric",
+      "anchor_mm": [
+        3.185,
+        11.985
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        2.25,
+        11.5,
+        4.12,
+        12.47
+      ]
+    },
+    {
+      "reference": "C132",
+      "board": "controller",
+      "side": "back",
+      "value": "100n",
+      "footprint": "Camera:C_0402_1005Metric",
+      "anchor_mm": [
+        28.935,
+        11.985
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        28.0,
+        11.5,
+        29.87,
+        12.47
+      ]
+    },
+    {
+      "reference": "C134",
+      "board": "controller",
+      "side": "back",
+      "value": "10n",
+      "footprint": "Camera:C_0402_1005Metric",
+      "anchor_mm": [
+        3.685,
+        14.485
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        2.75,
+        14.0,
+        4.62,
+        14.97
+      ]
+    },
+    {
+      "reference": "C135",
+      "board": "controller",
+      "side": "back",
+      "value": "100n",
+      "footprint": "Camera:C_0402_1005Metric",
+      "anchor_mm": [
+        3.185,
+        13.235
+      ],
+      "angle_deg": 180.0,
+      "bounds_mm": [
+        2.25,
+        12.75,
+        4.12,
+        13.72
+      ]
+    }
+  ],
+  "excluded_logical_symbols": {
+    "J102": "Logical flex interface; exact connector and flex not selected",
+    "J104": "LED interface placeholder; current driver and emitter not selected"
+  },
+  "footprint_overrides": {
+    "C104": {
+      "before": "Camera:C_0402_1005Metric",
+      "after": "Camera:C_0603_1608Metric",
+      "reason": "Conservative placement allowance; effective capacitance and exact MPN pending"
+    },
+    "C105": {
+      "before": "Camera:C_0402_1005Metric",
+      "after": "Camera:C_0603_1608Metric",
+      "reason": "Conservative placement allowance; effective capacitance and exact MPN pending"
+    },
+    "C106": {
+      "before": "Camera:C_0402_1005Metric",
+      "after": "Camera:C_0805_2012Metric",
+      "reason": "Conservative placement allowance; effective capacitance and exact MPN pending"
+    },
+    "C108": {
+      "before": "Camera:C_0402_1005Metric",
+      "after": "Camera:C_0603_1608Metric",
+      "reason": "Conservative placement allowance; effective capacitance and exact MPN pending"
+    },
+    "C109": {
+      "before": "Camera:C_0402_1005Metric",
+      "after": "Camera:C_0805_2012Metric",
+      "reason": "Conservative placement allowance; effective capacitance and exact MPN pending"
+    },
+    "C123": {
+      "before": "Camera:C_0402_1005Metric",
+      "after": "Camera:C_0805_2012Metric",
+      "reason": "Conservative placement allowance; effective capacitance and exact MPN pending"
+    },
+    "C124": {
+      "before": "Camera:C_0402_1005Metric",
+      "after": "Camera:C_0805_2012Metric",
+      "reason": "Conservative placement allowance; effective capacitance and exact MPN pending"
+    },
+    "C125": {
+      "before": "Camera:C_0402_1005Metric",
+      "after": "Camera:C_0603_1608Metric",
+      "reason": "Conservative placement allowance; effective capacitance and exact MPN pending"
+    },
+    "C126": {
+      "before": "Camera:C_0402_1005Metric",
+      "after": "Camera:C_0603_1608Metric",
+      "reason": "Conservative placement allowance; effective capacitance and exact MPN pending"
+    },
+    "C127": {
+      "before": "Camera:C_0402_1005Metric",
+      "after": "Camera:C_0603_1608Metric",
+      "reason": "Conservative placement allowance; effective capacitance and exact MPN pending"
+    },
+    "C133": {
+      "before": "Camera:C_0402_1005Metric",
+      "after": "Camera:C_0603_1608Metric",
+      "reason": "Conservative placement allowance; effective capacitance and exact MPN pending"
+    },
+    "C136": {
+      "before": "Camera:C_0402_1005Metric",
+      "after": "Camera:C_0603_1608Metric",
+      "reason": "Conservative placement allowance; effective capacitance and exact MPN pending"
+    },
+    "J103": {
+      "before": "",
+      "after": "Camera:ProgrammingPads_5x1mm_P1.5mm",
+      "reason": "Custom five PCB test pads; not a packaged connector"
+    }
+  },
+  "status": "Unrouted placement study. Neither production dimensions nor fit-qualified assembly.",
+  "limitations": [
+    "Optics, LEDs and flex represented only by reservations",
+    "Provisional passive footprints and BOM",
+    "No impedance stackup or routing",
+    "No solder assembly, power or thermal test",
+    "3D component models incomplete"
+  ]
+}

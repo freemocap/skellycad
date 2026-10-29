@@ -1,0 +1,44 @@
+{
+  "transport": "software loopback",
+  "requested_frames": 3,
+  "frames": [
+    {
+      "file": "00000.pgm",
+      "sequence": 0,
+      "timestamp_us": 0,
+      "synthetic": true,
+      "crc32": "31197a75",
+      "width": 640,
+      "height": 400
+    },
+    {
+      "file": "00001.pgm",
+      "sequence": 1,
+      "timestamp_us": 1000000,
+      "synthetic": true,
+      "crc32": "23dc14a7",
+      "width": 640,
+      "height": 400
+    },
+    {
+      "file": "00002.pgm",
+      "sequence": 2,
+      "timestamp_us": 2000000,
+      "synthetic": true,
+      "crc32": "e975d6ec",
+      "width": 640,
+      "height": 400
+    }
+  ],
+  "rejected_packets": 0,
+  "requested_controls": {
+    "exposure_lines": null,
+    "gain_index": null
+  },
+  "software_target": {
+    "board_revision": "R11",
+    "contract_sha256": "d7c74d1b7ec7dd96d1d0423aa35106e39f6d803ce471fddab8177e51cf1cbdea",
+    "device_identity_verified": false
+  },
+  "physical_capture_demonstrated": false
+}

@@ -1,0 +1,102 @@
+reference,value,footprint,status
+C1,C_4u7_0805,Camera:C_0805_2012Metric,Draft; procurement and assembly not released
+C2,C_4u7_0805,Camera:C_0805_2012Metric,Draft; procurement and assembly not released
+C3,C_4u7_0805,Camera:C_0805_2012Metric,Draft; procurement and assembly not released
+C4,C_1u_0603,Camera:C_0603_1608Metric,Draft; procurement and assembly not released
+C5,C_1u_0603,Camera:C_0603_1608Metric,Draft; procurement and assembly not released
+C6,C_1u_0603,Camera:C_0603_1608Metric,Draft; procurement and assembly not released
+C7,C_1u_0603,Camera:C_0603_1608Metric,Draft; procurement and assembly not released
+C8,C_1u_0603,Camera:C_0603_1608Metric,Draft; procurement and assembly not released
+C9,C_100n_6V3_0402,Camera:C_0402_1005Metric,Draft; procurement and assembly not released
+C10,C_1u_0603,Camera:C_0603_1608Metric,Draft; procurement and assembly not released
+C12,C_1u_0603,Camera:C_0603_1608Metric,Draft; procurement and assembly not released
+C13,C_1u_0603,Camera:C_0603_1608Metric,Draft; procurement and assembly not released
+C14,C_100n_6V3_0402,Camera:C_0402_1005Metric,Draft; procurement and assembly not released
+C15,C_100n_6V3_0402,Camera:C_0402_1005Metric,Draft; procurement and assembly not released
+C16,C_100n_6V3_0402,Camera:C_0402_1005Metric,Draft; procurement and assembly not released
+C17,C_100n_6V3_0402,Camera:C_0402_1005Metric,Draft; procurement and assembly not released
+C18,C_1u_0603,Camera:C_0603_1608Metric,Draft; procurement and assembly not released
+C19,C_1u_0603,Camera:C_0603_1608Metric,Draft; procurement and assembly not released
+C20,C_100n_6V3_0402,Camera:C_0402_1005Metric,Draft; procurement and assembly not released
+C21,C_1u_0603,Camera:C_0603_1608Metric,Draft; procurement and assembly not released
+C33,C_1u_0603,Camera:C_0603_1608Metric,Draft; procurement and assembly not released
+C101,CL_TBD,Camera:C_0402_1005Metric,Draft; procurement and assembly not released
+C102,CL_TBD,Camera:C_0402_1005Metric,Draft; procurement and assembly not released
+C103,100n,Camera:C_0402_1005Metric,Draft; procurement and assembly not released
+C104,1u,Camera:C_0402_1005Metric,Draft; procurement and assembly not released
+C105,4.7u,Camera:C_0402_1005Metric,Draft; procurement and assembly not released
+C106,22u,Camera:C_0402_1005Metric,Draft; procurement and assembly not released
+C107,22p,Camera:C_0402_1005Metric,Draft; procurement and assembly not released
+C108,4.7u,Camera:C_0402_1005Metric,Draft; procurement and assembly not released
+C109,22u,Camera:C_0402_1005Metric,Draft; procurement and assembly not released
+C110,100n / U101.9,Camera:C_0402_1005Metric,Draft; procurement and assembly not released
+C111,100n / U101.21,Camera:C_0402_1005Metric,Draft; procurement and assembly not released
+C112,100n / U101.26,Camera:C_0402_1005Metric,Draft; procurement and assembly not released
+C113,100n / U101.54,Camera:C_0402_1005Metric,Draft; procurement and assembly not released
+C114,100n / U101.62,Camera:C_0402_1005Metric,Draft; procurement and assembly not released
+C115,100n / U101.75,Camera:C_0402_1005Metric,Draft; procurement and assembly not released
+C116,100n / U101.76,Camera:C_0402_1005Metric,Draft; procurement and assembly not released
+C117,100n / U101.77,Camera:C_0402_1005Metric,Draft; procurement and assembly not released
+C118,100n / U101.85,Camera:C_0402_1005Metric,Draft; procurement and assembly not released
+C119,100n / U101.91,Camera:C_0402_1005Metric,Draft; procurement and assembly not released
+C120,100n / U101.96,Camera:C_0402_1005Metric,Draft; procurement and assembly not released
+C121,100n / U101.101,Camera:C_0402_1005Metric,Draft; procurement and assembly not released
+C122,100n / U101.102,Camera:C_0402_1005Metric,Draft; procurement and assembly not released
+C123,10u,Camera:C_0402_1005Metric,Draft; procurement and assembly not released
+C124,10u,Camera:C_0402_1005Metric,Draft; procurement and assembly not released
+C125,1u,Camera:C_0402_1005Metric,Draft; procurement and assembly not released
+C126,1u,Camera:C_0402_1005Metric,Draft; procurement and assembly not released
+C127,1u,Camera:C_0402_1005Metric,Draft; procurement and assembly not released
+C128,100n / U101.30,Camera:C_0402_1005Metric,Draft; procurement and assembly not released
+C129,100n / U101.59,Camera:C_0402_1005Metric,Draft; procurement and assembly not released
+C130,100n / U101.67,Camera:C_0402_1005Metric,Draft; procurement and assembly not released
+C131,10n,Camera:C_0402_1005Metric,Draft; procurement and assembly not released
+C132,100n,Camera:C_0402_1005Metric,Draft; procurement and assembly not released
+C133,1u,Camera:C_0402_1005Metric,Draft; procurement and assembly not released
+C134,10n,Camera:C_0402_1005Metric,Draft; procurement and assembly not released
+C135,100n,Camera:C_0402_1005Metric,Draft; procurement and assembly not released
+C136,4.7u,Camera:C_0402_1005Metric,Draft; procurement and assembly not released
+J101,USB / JST 4-contact candidate,Camera:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal,Draft; procurement and assembly not released
+J102,HEAD HARNESS / logical only,,Draft; procurement and assembly not released
+J103,PROGRAM / RESET pads,,Draft; procurement and assembly not released
+J104,LED DRIVER RESERVED,,Draft; procurement and assembly not released
+L1,MLP2012S3R3MT,Camera:L_0805_2012Metric,Draft; procurement and assembly not released
+L2,MLP2012S3R3MT,Camera:L_0805_2012Metric,Draft; procurement and assembly not released
+L3,MLP2012S3R3MT,Camera:L_0805_2012Metric,Draft; procurement and assembly not released
+L101,2.2u / Isat TBD,Camera:L_0805_2012Metric,Draft; procurement and assembly not released
+L102,2.2u / Isat TBD,Camera:L_0805_2012Metric,Draft; procurement and assembly not released
+Q101,BSS138,Camera:SOT-23,Draft; procurement and assembly not released
+Q102,BSS138,Camera:SOT-23,Draft; procurement and assembly not released
+Q103,BSS138 / reset asserted HIGH,Camera:SOT-23,Draft; procurement and assembly not released
+R7,R_0R_0402,Camera:R_0402_1005Metric,Draft; procurement and assembly not released
+R8,R_0R_0402,Camera:R_0402_1005Metric,Draft; procurement and assembly not released
+R9,R_0R_0402,Camera:R_0402_1005Metric,Draft; procurement and assembly not released
+R101,10k,Camera:R_0402_1005Metric,Draft; procurement and assembly not released
+R102,10k,Camera:R_0402_1005Metric,Draft; procurement and assembly not released
+R103,10k,Camera:R_0402_1005Metric,Draft; procurement and assembly not released
+R104,10k,Camera:R_0402_1005Metric,Draft; procurement and assembly not released
+R105,499k,Camera:R_0402_1005Metric,Draft; procurement and assembly not released
+R106,499k,Camera:R_0402_1005Metric,Draft; procurement and assembly not released
+R107,453k,Camera:R_0402_1005Metric,Draft; procurement and assembly not released
+R108,100k,Camera:R_0402_1005Metric,Draft; procurement and assembly not released
+R109,0,Camera:R_0402_1005Metric,Draft; procurement and assembly not released
+R110,0,Camera:R_0402_1005Metric,Draft; procurement and assembly not released
+R111,4.02k 1%,Camera:R_0402_1005Metric,Draft; procurement and assembly not released
+R112,4.7k,Camera:R_0402_1005Metric,Draft; procurement and assembly not released
+R113,4.7k,Camera:R_0402_1005Metric,Draft; procurement and assembly not released
+R114,4.7k,Camera:R_0402_1005Metric,Draft; procurement and assembly not released
+R115,4.7k,Camera:R_0402_1005Metric,Draft; procurement and assembly not released
+R116,100k,Camera:R_0402_1005Metric,Draft; procurement and assembly not released
+R117,10k,Camera:R_0402_1005Metric,Draft; procurement and assembly not released
+R118,10k,Camera:R_0402_1005Metric,Draft; procurement and assembly not released
+U1,ImageSensor_OV9281,Camera:OV9281,Draft; procurement and assembly not released
+U5,TLV73318PDBVT,Camera:SOT-23-5,Draft; procurement and assembly not released
+U6,TLV73312PDBVT,Camera:SOT-23-5,Draft; procurement and assembly not released
+U7,TLV73328PDBVT,Camera:SOT-23-5,Draft; procurement and assembly not released
+U101,ESP32-P4NRW16X / v3.x,Camera:ESP32-P4,Draft; procurement and assembly not released
+U102,W25Q32JVSS (4 MB candidate),Camera:SOIC-8_5.3x5.3mm_P1.27mm,Draft; procurement and assembly not released
+U103,TLV62569DBV / core,Camera:SOT-23-5,Draft; procurement and assembly not released
+U104,TLV62569DBV / system,Camera:SOT-23-5,Draft; procurement and assembly not released
+U105,USBLC6-2P6,Camera:SOT-666,Draft; procurement and assembly not released
+Y1,7C-24.000MBB-T,Camera:Oscillator_SMD_TXC_7C_5x3.2x1.2mm,Draft; procurement and assembly not released
+Y101,40 MHz / CL TBD,Camera:Crystal_SMD_2016-4Pin_2.0x1.6mm,Draft; procurement and assembly not released

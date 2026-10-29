@@ -1,0 +1,62 @@
+{
+  "parent_sha256": "9cffb49f2a1527641a5c4c15c814817daf23628ae7878464b827321288575f17",
+  "routes": {
+    "B7": {
+      "net": "/M1_DOVDD",
+      "result": "no path found on 0.025 mm grid",
+      "visited": 195
+    },
+    "C5": {
+      "net": "/M1_DVDD",
+      "result": "routed",
+      "visited": 310,
+      "path_xy_mm": [
+        [
+          7.405,
+          5.257
+        ],
+        [
+          6.855,
+          5.007
+        ],
+        [
+          6.655,
+          5.007
+        ],
+        [
+          6.125,
+          4.757
+        ]
+      ],
+      "added_track_uuids": [
+        "bd31ffef-51ab-433a-9bf2-1bbb94680cbc",
+        "845d0407-6a3a-4c32-be59-2a6d8e1f521f",
+        "7a85d887-d6f0-4928-b3d3-f10bcf9260f1"
+      ]
+    },
+    "E4": {
+      "net": "/M1_CAM_SCL_1V8",
+      "result": "no path found on 0.025 mm grid",
+      "visited": 919
+    },
+    "E8": {
+      "net": "/M1_VH",
+      "result": "no existing front-layer destination"
+    },
+    "F7": {
+      "net": "/M1_VN3",
+      "result": "no existing front-layer destination"
+    },
+    "G4": {
+      "net": "/CAM_L_CLK_P",
+      "result": "no path found on 0.025 mm grid",
+      "visited": 135
+    },
+    "G5": {
+      "net": "/CAM_L_D1_P",
+      "result": "no path found on 0.025 mm grid",
+      "visited": 522
+    }
+  },
+  "requires_native_drc": true
+}

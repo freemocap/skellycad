@@ -1,0 +1,15 @@
+{
+  "status": "pass",
+  "preserved_files": 2860,
+  "preservation_changes": [],
+  "schematic_components": 196,
+  "checked_pin_connections": 595,
+  "electrical_contract_checks": 420,
+  "erc_violations": 0,
+  "placement_drc_violations": 0,
+  "unrouted_connections": 488,
+  "cad_saved_reloaded_verified": true,
+  "head_target_met": false,
+  "manufacture_ready": false,
+  "hardware_demonstrated": false
+}

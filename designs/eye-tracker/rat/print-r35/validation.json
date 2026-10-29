@@ -1,0 +1,100 @@
+{
+  "units": "mm",
+  "source_review": {
+    "units": "mm",
+    "native_checkpoint": "generated\\eye-tracker\\rat\\rounded-spine-r35\\RAT-R35-rounded-spine-review.FCStd",
+    "native_sha256": "5d76482aa76944df70e3d3ef52152521abb8cfdc3c8800f805d626f8eea1872b",
+    "parent_review": {
+      "units": "mm",
+      "source": "generated\\eye-tracker\\rat\\print-r32-l04\\RAT-R32-labeled-hardware.FCStd",
+      "source_sha256": "a7a0a740e62d3c5fad6c2970c28987ad63530a9ec3f672e1ae040f5ee824139f",
+      "native_checkpoint": "generated\\eye-tracker\\rat\\open-spine-r33\\RAT-R33-open-spine-review.FCStd",
+      "native_sha256": "05720b3168a232a8a0dcb3f690bd134805da591629cb606c0dd1993a44af5a18",
+      "parent_complete_assembly": {
+        "revision": "ET-RAT-COMPACT-BINOCULAR-R32",
+        "units": "mm",
+        "native_checkpoint": "designs/eye-tracker/rat/compact-binocular-r32/checkpoints/ET-RAT-COMPACT-BINOCULAR-R32.FCStd",
+        "native_sha256": "b1bab67befa6205fbfc6f987b225f5ccacbd00731d4c3c57fa5e5d71ebe56363",
+        "source": "lowering.json",
+        "recipe": "recipe.json",
+        "ribbons": "ribbons.json",
+        "arms": "arms.json",
+        "validation": "validation.json",
+        "containment": "containment.json",
+        "comparison": "comparison.json",
+        "status": "Compact binocular review; rearward ordered protective arms; static validation passed; physical fit pending",
+        "physical_fit_verified": false,
+        "print_release": false,
+        "deferred": [
+          "skull Boolean cut",
+          "junction finishing",
+          "cap"
+        ]
+      },
+      "removed_volume_mm3": 42.604947197971796,
+      "through_windows": 2,
+      "carrier_valid": true,
+      "carrier_solids": 1,
+      "mesh_closed": true,
+      "mesh_self_intersections": false,
+      "holders_and_clips_unchanged": true,
+      "status": "Review only; inherited RAT R32 engraving remains pending relocation; no print export"
+    },
+    "unengraved_baseline_sha256": "4772a4c4b4c4e8e8703ecb95aa711f427cc42d4971e03fafa271b37d6e46aa24",
+    "window_corner_radius_mm": 1.0,
+    "window_height_mm": 5.5,
+    "window_width_mm": 11.5,
+    "label": null,
+    "functional_geometry_changed_for_text": false,
+    "through_windows": 2,
+    "valid_single_carrier": true,
+    "mesh_closed": true,
+    "mesh_self_intersections": false,
+    "holders_and_clips_unchanged": true,
+    "status": "Review; physical print pending"
+  },
+  "rotation_about_previous_print_x_degrees": 90,
+  "matched_part_positions_preserved": true,
+  "flat_clip_orientation_preserved": true,
+  "before_mechanism_height_mm": 36.437322653978526,
+  "after_mechanism_height_mm": 23.424251956571645,
+  "layout_dimensions_mm": [
+    98.7819031317874,
+    36.437322653978526,
+    23.424251956571645
+  ],
+  "arm_inclinations": {
+    "RightUpperSupport": {
+      "before_mean_degrees_above_bed": 52.9039092344285,
+      "after_mean_degrees_above_bed": 11.650754649726023
+    },
+    "RightLowerSupport": {
+      "before_mean_degrees_above_bed": 40.269426779492846,
+      "after_mean_degrees_above_bed": 19.190714085180705
+    },
+    "LeftUpperSupport": {
+      "before_mean_degrees_above_bed": 37.91704931526032,
+      "after_mean_degrees_above_bed": 9.411911576582428
+    },
+    "LeftLowerSupport": {
+      "before_mean_degrees_above_bed": 34.11659068483811,
+      "after_mean_degrees_above_bed": 9.97305704304375
+    }
+  },
+  "files": {
+    "RAT-R35-all-hardware-arms-flat.stl": {
+      "sha256": "d8886c55b26b4b2d98e5b77f3ecdcd74b09718b3ea5b10472e5988fb06306fe6",
+      "closed": true,
+      "self_intersections": false,
+      "shells": 5
+    },
+    "RAT-R35-carrier-and-two-holders-arms-flat.stl": {
+      "sha256": "a1b0bfcf1a5fd88df02c201d83ea045b07d177861c258ccc27646239421effc6",
+      "closed": true,
+      "self_intersections": false,
+      "shells": 3
+    }
+  },
+  "native_sha256": "b02c09a4a316eddf50c6d0c2b087f15fdd62b3e5ca74304e49fde7cdfaf22fad",
+  "physical_strength_verified": false
+}

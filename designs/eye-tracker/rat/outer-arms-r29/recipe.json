@@ -1,0 +1,106 @@
+{
+  "source": {
+    "revision": "ET-RAT-TWO-ARM-R28",
+    "units": "mm",
+    "native_checkpoint": "designs/eye-tracker/rat/two-arm-r28/checkpoints/ET-RAT-TWO-ARM-R28.FCStd",
+    "native_sha256": "bc92ee921590c60b9e40ec01959da73eef18ccc62c63093af4d568d0df84b8dd",
+    "recipe": "recipe.json",
+    "validation": "generated/eye-tracker/rat/two-arm-r28/validation.json",
+    "status": "Paired R21 supports around unchanged R27 ribbon and camera; C01 clip retained; static checks passed; physical stiffness and full travel pending"
+  },
+  "units": "mm",
+  "arms": {
+    "UpperSupport": {
+      "poles_mm": [
+        [
+          4.5,
+          17.5,
+          16.8
+        ],
+        [
+          -9.5,
+          17.5,
+          36.8
+        ],
+        [
+          11.950929783634665,
+          -9.560029387447033,
+          46.21561611867182
+        ],
+        [
+          22.18493146849386,
+          6.941385619005386,
+          32.10999623512448
+        ]
+      ],
+      "gap_mm": 1.2305052152406601,
+      "intersections_mm3": {
+        "RetainedPCBTray": 4.1303922397098125,
+        "RetainedSocket": 5.050175645063502,
+        "RibbonCandidate": 0.0,
+        "eye_primary_Holder": 0.0,
+        "eye_primary_Clip": 0.0,
+        "camera_pcb": 0.0,
+        "M4_lens": 0.0,
+        "PCB": 0.0,
+        "JST_4pin": 0.0,
+        "eye_primary_Cap": 0.0,
+        "skull_mount_Baseplate": 0.0
+      }
+    },
+    "RearRibbonGuard": {
+      "poles_mm": [
+        [
+          4.5,
+          8.0,
+          16.8
+        ],
+        [
+          -9.5,
+          8.0,
+          36.8
+        ],
+        [
+          -0.7565638969123079,
+          3.903820843186345,
+          40.03888782670145
+        ],
+        [
+          21.43743184022639,
+          7.733376809042643,
+          31.746659276773276
+        ]
+      ],
+      "gap_mm": 1.3049907857425784,
+      "intersections_mm3": {
+        "RetainedPCBTray": 4.163767000008674,
+        "RetainedSocket": 5.060854386152691,
+        "RibbonCandidate": 0.0,
+        "eye_primary_Holder": 0.0,
+        "eye_primary_Clip": 0.0,
+        "camera_pcb": 0.0,
+        "M4_lens": 0.0,
+        "PCB": 0.0,
+        "JST_4pin": 0.0,
+        "eye_primary_Cap": 0.0,
+        "skull_mount_Baseplate": 0.0
+      }
+    }
+  },
+  "fixed": "R28 camera, ribbon, anatomy, baseplate, C01 clip, optical axes",
+  "outside_route": "R27 protective rearward route, split into two separated roots and collar attachments",
+  "finished_checks": {
+    "RibbonCandidate": 0.0,
+    "eye_primary_Holder": 0.0,
+    "eye_primary_Clip": 0.0,
+    "camera_pcb": 0.0,
+    "M4_lens": 0.0,
+    "PCB": 0.0,
+    "JST_4pin": 0.0590284988121698,
+    "eye_primary_Cap": 0.0022182255338445748,
+    "skull_mount_Baseplate": 0.0
+  },
+  "skull_crossings": 0,
+  "carrier_single_valid_solid": true,
+  "mesh_closed_no_self_intersections": true
+}

@@ -1,0 +1,9 @@
+{
+  "revision": "ET-RAT-TWO-ARM-R28",
+  "units": "mm",
+  "native_checkpoint": "designs/eye-tracker/rat/two-arm-r28/checkpoints/ET-RAT-TWO-ARM-R28.FCStd",
+  "native_sha256": "bc92ee921590c60b9e40ec01959da73eef18ccc62c63093af4d568d0df84b8dd",
+  "recipe": "recipe.json",
+  "validation": "generated/eye-tracker/rat/two-arm-r28/validation.json",
+  "status": "Paired R21 supports around unchanged R27 ribbon and camera; C01 clip retained; static checks passed; physical stiffness and full travel pending"
+}

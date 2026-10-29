@@ -1,0 +1,3264 @@
+{
+  "boards": {
+    "controller": {
+      "area_mm2": 640,
+      "layers": [
+        {
+          "layer": "F.Cu",
+          "copper_union_area_mm2": 400.588229608847,
+          "board_area_mm2": 640,
+          "retention_fraction": 0.6259191087638234,
+          "method": "Native polygon union with 1um inward copper approximation; circumscribed 64-sided drill removal."
+        },
+        {
+          "layer": "In1.Cu",
+          "copper_union_area_mm2": 570.5766901064055,
+          "board_area_mm2": 640,
+          "retention_fraction": 0.8915260782912586,
+          "method": "Native polygon union with 1um inward copper approximation; circumscribed 64-sided drill removal."
+        },
+        {
+          "layer": "In2.Cu",
+          "copper_union_area_mm2": 504.5182710338925,
+          "board_area_mm2": 640,
+          "retention_fraction": 0.788309798490457,
+          "method": "Native polygon union with 1um inward copper approximation; circumscribed 64-sided drill removal."
+        },
+        {
+          "layer": "In3.Cu",
+          "copper_union_area_mm2": 516.672515930836,
+          "board_area_mm2": 640,
+          "retention_fraction": 0.8073008061419312,
+          "method": "Native polygon union with 1um inward copper approximation; circumscribed 64-sided drill removal."
+        },
+        {
+          "layer": "In4.Cu",
+          "copper_union_area_mm2": 561.508889898802,
+          "board_area_mm2": 640,
+          "retention_fraction": 0.877357640466878,
+          "method": "Native polygon union with 1um inward copper approximation; circumscribed 64-sided drill removal."
+        },
+        {
+          "layer": "B.Cu",
+          "copper_union_area_mm2": 352.013212659024,
+          "board_area_mm2": 640,
+          "retention_fraction": 0.550020644779725,
+          "method": "Native polygon union with 1um inward copper approximation; circumscribed 64-sided drill removal."
+        }
+      ],
+      "vias": [
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        }
+      ],
+      "footprint_counts": {
+        "L_0805_2012Metric": 2,
+        "R_0402_1005Metric": 18,
+        "C_0402_1005Metric": 24,
+        "C_0805_2012Metric": 7,
+        "SOT-666": 1,
+        "JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal": 1,
+        "Crystal_SMD_2016-4Pin_2.0x1.6mm": 1,
+        "C_0603_1608Metric": 11,
+        "Hirose_FH34SRJ_24S_0.5SH_R05": 1,
+        "ESP32-P4": 1,
+        "SOT-23-5": 5,
+        "SOT-23": 3,
+        "SOIC-8_5.3x5.3mm_P1.27mm": 1,
+        "ProgrammingPads_5x1mm_P1.5mm": 1
+      }
+    },
+    "head": {
+      "area_mm2": 196,
+      "layers": [
+        {
+          "layer": "F.Cu",
+          "copper_union_area_mm2": 60.363887611228,
+          "board_area_mm2": 196,
+          "retention_fraction": 0.30797901842463266,
+          "method": "Native polygon union with 1um inward copper approximation; circumscribed 64-sided drill removal."
+        },
+        {
+          "layer": "In1.Cu",
+          "copper_union_area_mm2": 152.629859822807,
+          "board_area_mm2": 196,
+          "retention_fraction": 0.7787237746061582,
+          "method": "Native polygon union with 1um inward copper approximation; circumscribed 64-sided drill removal."
+        },
+        {
+          "layer": "In2.Cu",
+          "copper_union_area_mm2": 124.036520910068,
+          "board_area_mm2": 196,
+          "retention_fraction": 0.6328393923983061,
+          "method": "Native polygon union with 1um inward copper approximation; circumscribed 64-sided drill removal."
+        },
+        {
+          "layer": "In3.Cu",
+          "copper_union_area_mm2": 128.3058593087715,
+          "board_area_mm2": 196,
+          "retention_fraction": 0.6546217311672015,
+          "method": "Native polygon union with 1um inward copper approximation; circumscribed 64-sided drill removal."
+        },
+        {
+          "layer": "In4.Cu",
+          "copper_union_area_mm2": 152.629859822807,
+          "board_area_mm2": 196,
+          "retention_fraction": 0.7787237746061582,
+          "method": "Native polygon union with 1um inward copper approximation; circumscribed 64-sided drill removal."
+        },
+        {
+          "layer": "B.Cu",
+          "copper_union_area_mm2": 86.5513280175155,
+          "board_area_mm2": 196,
+          "retention_fraction": 0.4415884082526301,
+          "method": "Native polygon union with 1um inward copper approximation; circumscribed 64-sided drill removal."
+        }
+      ],
+      "vias": [
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        }
+      ],
+      "footprint_counts": {
+        "Kingbright_AP1608F3C_R09": 2,
+        "R_0402_1005Metric": 7,
+        "Flex_Solder_24_P0.5_R05": 1,
+        "SOT-23": 1,
+        "OV9281": 1,
+        "L_0805_2012Metric": 3,
+        "C_0402_1005Metric": 6,
+        "C_0603_1608Metric": 9,
+        "Epson_SG210STF_2.5x2.0mm_R09": 1
+      }
+    },
+    "flex-study": {
+      "area_mm2": 441.25,
+      "layers": [
+        {
+          "layer": "F.Cu",
+          "copper_union_area_mm2": 416.984448891928,
+          "board_area_mm2": 441.25,
+          "retention_fraction": 0.9450072496134346,
+          "method": "Native polygon union with 1um inward copper approximation; circumscribed 64-sided drill removal."
+        },
+        {
+          "layer": "B.Cu",
+          "copper_union_area_mm2": 128.5177288897845,
+          "board_area_mm2": 441.25,
+          "retention_fraction": 0.2912583090986618,
+          "method": "Native polygon union with 1um inward copper approximation; circumscribed 64-sided drill removal."
+        }
+      ],
+      "vias": [
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        },
+        {
+          "drill_mm": 0.2
+        }
+      ],
+      "footprint_counts": {
+        "Flex_Contacts_R05": 2
+      }
+    }
+  },
+  "components": [
+    {
+      "board": "controller",
+      "reference": "L101",
+      "value": "2.2u / Isat TBD",
+      "footprint": "L_0805_2012Metric",
+      "courtyard": {
+        "reference": "L101",
+        "value": "2.2u / Isat TBD",
+        "side": "F",
+        "xy_mm": [
+          3.0,
+          -16.0
+        ],
+        "angle_deg": 0.0,
+        "bounds_xy_mm": [
+          1.25,
+          -16.85,
+          4.75,
+          -15.15
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "R110",
+      "value": "0",
+      "footprint": "R_0402_1005Metric",
+      "courtyard": {
+        "reference": "R110",
+        "value": "0",
+        "side": "F",
+        "xy_mm": [
+          11.7,
+          -3.4
+        ],
+        "angle_deg": 0.0,
+        "bounds_xy_mm": [
+          10.77,
+          -3.87,
+          12.63,
+          -2.93
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "R115",
+      "value": "4.7k",
+      "footprint": "R_0402_1005Metric",
+      "courtyard": {
+        "reference": "R115",
+        "value": "4.7k",
+        "side": "F",
+        "xy_mm": [
+          24.0,
+          -12.0
+        ],
+        "angle_deg": 0.0,
+        "bounds_xy_mm": [
+          23.07,
+          -12.47,
+          24.93,
+          -11.53
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "C101",
+      "value": "CL_TBD",
+      "footprint": "C_0402_1005Metric",
+      "courtyard": {
+        "reference": "C101",
+        "value": "CL_TBD",
+        "side": "F",
+        "xy_mm": [
+          25.25,
+          -15.0
+        ],
+        "angle_deg": 180.0,
+        "bounds_xy_mm": [
+          24.34,
+          -15.46,
+          26.16,
+          -14.54
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "C106",
+      "value": "22u",
+      "footprint": "C_0805_2012Metric",
+      "courtyard": {
+        "reference": "C106",
+        "value": "22u",
+        "side": "F",
+        "xy_mm": [
+          5.0,
+          -18.0
+        ],
+        "angle_deg": 0.0,
+        "bounds_xy_mm": [
+          3.1,
+          -18.93,
+          6.9,
+          -17.07
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "U105",
+      "value": "USBLC6-2P6",
+      "footprint": "SOT-666",
+      "courtyard": {
+        "reference": "U105",
+        "value": "USBLC6-2P6",
+        "side": "F",
+        "xy_mm": [
+          9.25,
+          -3.0
+        ],
+        "angle_deg": 0.0,
+        "bounds_xy_mm": [
+          7.75,
+          -4.1,
+          10.75,
+          -1.9
+        ]
+      },
+      "pad_count": 6
+    },
+    {
+      "board": "controller",
+      "reference": "C107",
+      "value": "22p",
+      "footprint": "C_0402_1005Metric",
+      "courtyard": {
+        "reference": "C107",
+        "value": "22p",
+        "side": "F",
+        "xy_mm": [
+          6.0,
+          -9.75
+        ],
+        "angle_deg": 0.0,
+        "bounds_xy_mm": [
+          5.09,
+          -10.21,
+          6.91,
+          -9.29
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "J101",
+      "value": "USB / JST 4-contact candidate",
+      "footprint": "JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal",
+      "courtyard": {
+        "reference": "J101",
+        "value": "USB / JST 4-contact candidate",
+        "side": "F",
+        "xy_mm": [
+          4.25,
+          -4.75
+        ],
+        "angle_deg": -90.0,
+        "bounds_xy_mm": [
+          0.97,
+          -8.65,
+          7.53,
+          -0.85
+        ]
+      },
+      "pad_count": 6
+    },
+    {
+      "board": "controller",
+      "reference": "Y101",
+      "value": "40 MHz / CL TBD",
+      "footprint": "Crystal_SMD_2016-4Pin_2.0x1.6mm",
+      "courtyard": {
+        "reference": "Y101",
+        "value": "40 MHz / CL TBD",
+        "side": "F",
+        "xy_mm": [
+          25.0,
+          -17.0
+        ],
+        "angle_deg": 180.0,
+        "bounds_xy_mm": [
+          23.5,
+          -18.3,
+          26.5,
+          -15.7
+        ]
+      },
+      "pad_count": 4
+    },
+    {
+      "board": "controller",
+      "reference": "C105",
+      "value": "4.7u",
+      "footprint": "C_0603_1608Metric",
+      "courtyard": {
+        "reference": "C105",
+        "value": "4.7u",
+        "side": "F",
+        "xy_mm": [
+          8.5,
+          -13.25
+        ],
+        "angle_deg": 90.0,
+        "bounds_xy_mm": [
+          7.85,
+          -14.5,
+          9.15,
+          -12.0
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "J102",
+      "value": "FH34SRJ-24S-0.5SH(99)",
+      "footprint": "Hirose_FH34SRJ_24S_0.5SH_R05",
+      "courtyard": {
+        "reference": "J102",
+        "value": "FH34SRJ-24S-0.5SH(99)",
+        "side": "F",
+        "xy_mm": [
+          27.75,
+          -8.25
+        ],
+        "angle_deg": 90.0,
+        "bounds_xy_mm": [
+          26.45,
+          -15.5,
+          30.9,
+          -1.0
+        ]
+      },
+      "pad_count": 26
+    },
+    {
+      "board": "controller",
+      "reference": "U101",
+      "value": "ESP32-P4NRW16X / v3.x",
+      "footprint": "ESP32-P4",
+      "courtyard": {
+        "reference": "U101",
+        "value": "ESP32-P4NRW16X / v3.x",
+        "side": "F",
+        "xy_mm": [
+          16.5,
+          -10.0
+        ],
+        "angle_deg": 180.0,
+        "bounds_xy_mm": [
+          10.9,
+          -15.6,
+          22.1,
+          -4.4
+        ]
+      },
+      "pad_count": 113
+    },
+    {
+      "board": "controller",
+      "reference": "R106",
+      "value": "499k",
+      "footprint": "R_0402_1005Metric",
+      "courtyard": {
+        "reference": "R106",
+        "value": "499k",
+        "side": "F",
+        "xy_mm": [
+          9.75,
+          -10.75
+        ],
+        "angle_deg": 90.0,
+        "bounds_xy_mm": [
+          9.28,
+          -11.68,
+          10.22,
+          -9.82
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "R109",
+      "value": "0",
+      "footprint": "R_0402_1005Metric",
+      "courtyard": {
+        "reference": "R109",
+        "value": "0",
+        "side": "F",
+        "xy_mm": [
+          11.7,
+          -2.4
+        ],
+        "angle_deg": 0.0,
+        "bounds_xy_mm": [
+          10.77,
+          -2.87,
+          12.63,
+          -1.93
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "U103",
+      "value": "TLV62569DBV / core",
+      "footprint": "SOT-23-5",
+      "courtyard": {
+        "reference": "U103",
+        "value": "TLV62569DBV / core",
+        "side": "F",
+        "xy_mm": [
+          5.5,
+          -12.5
+        ],
+        "angle_deg": 0.0,
+        "bounds_xy_mm": [
+          3.45,
+          -14.2,
+          7.55,
+          -10.8
+        ]
+      },
+      "pad_count": 5
+    },
+    {
+      "board": "controller",
+      "reference": "C102",
+      "value": "CL_TBD",
+      "footprint": "C_0402_1005Metric",
+      "courtyard": {
+        "reference": "C102",
+        "value": "CL_TBD",
+        "side": "F",
+        "xy_mm": [
+          22.75,
+          -18.0
+        ],
+        "angle_deg": -90.0,
+        "bounds_xy_mm": [
+          22.29,
+          -18.91,
+          23.21,
+          -17.09
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "R105",
+      "value": "499k",
+      "footprint": "R_0402_1005Metric",
+      "courtyard": {
+        "reference": "R105",
+        "value": "499k",
+        "side": "F",
+        "xy_mm": [
+          8.5,
+          -10.0
+        ],
+        "angle_deg": 90.0,
+        "bounds_xy_mm": [
+          8.03,
+          -10.93,
+          8.97,
+          -9.07
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "C108",
+      "value": "4.7u",
+      "footprint": "C_0603_1608Metric",
+      "courtyard": {
+        "reference": "C108",
+        "value": "4.7u",
+        "side": "B",
+        "xy_mm": [
+          1.5,
+          -14.25
+        ],
+        "angle_deg": -90.0,
+        "bounds_xy_mm": [
+          0.85,
+          -15.5,
+          2.15,
+          -13.0
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "C1",
+      "value": "C_4u7_0805",
+      "footprint": "C_0805_2012Metric",
+      "courtyard": {
+        "reference": "C1",
+        "value": "C_4u7_0805",
+        "side": "B",
+        "xy_mm": [
+          25.75,
+          -16.25
+        ],
+        "angle_deg": -90.0,
+        "bounds_xy_mm": [
+          24.82,
+          -18.15,
+          26.68,
+          -14.35
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "C126",
+      "value": "1u",
+      "footprint": "C_0603_1608Metric",
+      "courtyard": {
+        "reference": "C126",
+        "value": "1u",
+        "side": "B",
+        "xy_mm": [
+          14.25,
+          -16.5
+        ],
+        "angle_deg": 0.0,
+        "bounds_xy_mm": [
+          13.0,
+          -17.15,
+          15.5,
+          -15.85
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "Q102",
+      "value": "BSS138",
+      "footprint": "SOT-23",
+      "courtyard": {
+        "reference": "Q102",
+        "value": "BSS138",
+        "side": "B",
+        "xy_mm": [
+          4.5,
+          -2.5
+        ],
+        "angle_deg": 0.0,
+        "bounds_xy_mm": [
+          2.57,
+          -4.2,
+          6.43,
+          -0.8
+        ]
+      },
+      "pad_count": 3
+    },
+    {
+      "board": "controller",
+      "reference": "C112",
+      "value": "100n / U101.26",
+      "footprint": "C_0402_1005Metric",
+      "courtyard": {
+        "reference": "C112",
+        "value": "100n / U101.26",
+        "side": "B",
+        "xy_mm": [
+          21.75,
+          -5.5
+        ],
+        "angle_deg": 0.0,
+        "bounds_xy_mm": [
+          20.84,
+          -5.96,
+          22.66,
+          -5.04
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "C124",
+      "value": "10u",
+      "footprint": "C_0805_2012Metric",
+      "courtyard": {
+        "reference": "C124",
+        "value": "10u",
+        "side": "B",
+        "xy_mm": [
+          6.25,
+          -18.25
+        ],
+        "angle_deg": 0.0,
+        "bounds_xy_mm": [
+          4.35,
+          -19.18,
+          8.15,
+          -17.32
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "C122",
+      "value": "100n / U101.102",
+      "footprint": "C_0402_1005Metric",
+      "courtyard": {
+        "reference": "C122",
+        "value": "100n / U101.102",
+        "side": "B",
+        "xy_mm": [
+          21.0,
+          -14.5
+        ],
+        "angle_deg": 90.0,
+        "bounds_xy_mm": [
+          20.54,
+          -15.41,
+          21.46,
+          -13.59
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "U6",
+      "value": "TLV73312PDBVT",
+      "footprint": "SOT-23-5",
+      "courtyard": {
+        "reference": "U6",
+        "value": "TLV73312PDBVT",
+        "side": "B",
+        "xy_mm": [
+          18.75,
+          -9.0
+        ],
+        "angle_deg": 90.0,
+        "bounds_xy_mm": [
+          17.05,
+          -11.05,
+          20.45,
+          -6.95
+        ]
+      },
+      "pad_count": 5
+    },
+    {
+      "board": "controller",
+      "reference": "C115",
+      "value": "100n / U101.75",
+      "footprint": "C_0402_1005Metric",
+      "courtyard": {
+        "reference": "C115",
+        "value": "100n / U101.75",
+        "side": "B",
+        "xy_mm": [
+          12.0,
+          -13.25
+        ],
+        "angle_deg": 0.0,
+        "bounds_xy_mm": [
+          11.09,
+          -13.71,
+          12.91,
+          -12.79
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "C131",
+      "value": "10n",
+      "footprint": "C_0402_1005Metric",
+      "courtyard": {
+        "reference": "C131",
+        "value": "10n",
+        "side": "B",
+        "xy_mm": [
+          16.5,
+          -2.75
+        ],
+        "angle_deg": 180.0,
+        "bounds_xy_mm": [
+          15.59,
+          -3.21,
+          17.41,
+          -2.29
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "C127",
+      "value": "1u",
+      "footprint": "C_0603_1608Metric",
+      "courtyard": {
+        "reference": "C127",
+        "value": "1u",
+        "side": "B",
+        "xy_mm": [
+          16.5,
+          -17.0
+        ],
+        "angle_deg": 90.0,
+        "bounds_xy_mm": [
+          15.85,
+          -18.25,
+          17.15,
+          -15.75
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "C104",
+      "value": "1u",
+      "footprint": "C_0603_1608Metric",
+      "courtyard": {
+        "reference": "C104",
+        "value": "1u",
+        "side": "B",
+        "xy_mm": [
+          22.5,
+          -14.0
+        ],
+        "angle_deg": 90.0,
+        "bounds_xy_mm": [
+          21.85,
+          -15.25,
+          23.15,
+          -12.75
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "C130",
+      "value": "100n / U101.67",
+      "footprint": "C_0402_1005Metric",
+      "courtyard": {
+        "reference": "C130",
+        "value": "100n / U101.67",
+        "side": "B",
+        "xy_mm": [
+          12.0,
+          -10.5
+        ],
+        "angle_deg": 0.0,
+        "bounds_xy_mm": [
+          11.09,
+          -10.96,
+          12.91,
+          -10.04
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "R118",
+      "value": "10k",
+      "footprint": "R_0402_1005Metric",
+      "courtyard": {
+        "reference": "R118",
+        "value": "10k",
+        "side": "B",
+        "xy_mm": [
+          24.0,
+          -14.25
+        ],
+        "angle_deg": 90.0,
+        "bounds_xy_mm": [
+          23.53,
+          -15.18,
+          24.47,
+          -13.32
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "Q101",
+      "value": "BSS138",
+      "footprint": "SOT-23",
+      "courtyard": {
+        "reference": "Q101",
+        "value": "BSS138",
+        "side": "B",
+        "xy_mm": [
+          15.0,
+          -9.0
+        ],
+        "angle_deg": 90.0,
+        "bounds_xy_mm": [
+          13.3,
+          -10.93,
+          16.7,
+          -7.07
+        ]
+      },
+      "pad_count": 3
+    },
+    {
+      "board": "controller",
+      "reference": "C123",
+      "value": "10u",
+      "footprint": "C_0805_2012Metric",
+      "courtyard": {
+        "reference": "C123",
+        "value": "10u",
+        "side": "B",
+        "xy_mm": [
+          21.5,
+          -2.75
+        ],
+        "angle_deg": 90.0,
+        "bounds_xy_mm": [
+          20.57,
+          -4.65,
+          22.43,
+          -0.85
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "C110",
+      "value": "100n / U101.9",
+      "footprint": "C_0402_1005Metric",
+      "courtyard": {
+        "reference": "C110",
+        "value": "100n / U101.9",
+        "side": "B",
+        "xy_mm": [
+          21.75,
+          -11.5
+        ],
+        "angle_deg": 0.0,
+        "bounds_xy_mm": [
+          20.84,
+          -11.96,
+          22.66,
+          -11.04
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "C132",
+      "value": "100n",
+      "footprint": "C_0402_1005Metric",
+      "courtyard": {
+        "reference": "C132",
+        "value": "100n",
+        "side": "B",
+        "xy_mm": [
+          12.75,
+          -4.25
+        ],
+        "angle_deg": 90.0,
+        "bounds_xy_mm": [
+          12.29,
+          -5.16,
+          13.21,
+          -3.34
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "C129",
+      "value": "100n / U101.59",
+      "footprint": "C_0402_1005Metric",
+      "courtyard": {
+        "reference": "C129",
+        "value": "100n / U101.59",
+        "side": "B",
+        "xy_mm": [
+          12.0,
+          -7.75
+        ],
+        "angle_deg": 0.0,
+        "bounds_xy_mm": [
+          11.09,
+          -8.21,
+          12.91,
+          -7.29
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "R111",
+      "value": "4.02k 1%",
+      "footprint": "R_0402_1005Metric",
+      "courtyard": {
+        "reference": "R111",
+        "value": "4.02k 1%",
+        "side": "B",
+        "xy_mm": [
+          13.5,
+          -2.5
+        ],
+        "angle_deg": 0.0,
+        "bounds_xy_mm": [
+          12.57,
+          -2.97,
+          14.43,
+          -2.03
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "Q103",
+      "value": "BSS138 / reset asserted HIGH",
+      "footprint": "SOT-23",
+      "courtyard": {
+        "reference": "Q103",
+        "value": "BSS138 / reset asserted HIGH",
+        "side": "B",
+        "xy_mm": [
+          9.0,
+          -10.25
+        ],
+        "angle_deg": 90.0,
+        "bounds_xy_mm": [
+          7.3,
+          -12.18,
+          10.7,
+          -8.32
+        ]
+      },
+      "pad_count": 3
+    },
+    {
+      "board": "controller",
+      "reference": "C118",
+      "value": "100n / U101.85",
+      "footprint": "C_0402_1005Metric",
+      "courtyard": {
+        "reference": "C118",
+        "value": "100n / U101.85",
+        "side": "B",
+        "xy_mm": [
+          14.25,
+          -14.5
+        ],
+        "angle_deg": 90.0,
+        "bounds_xy_mm": [
+          13.79,
+          -15.41,
+          14.71,
+          -13.59
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "C116",
+      "value": "100n / U101.76",
+      "footprint": "C_0402_1005Metric",
+      "courtyard": {
+        "reference": "C116",
+        "value": "100n / U101.76",
+        "side": "B",
+        "xy_mm": [
+          12.0,
+          -14.5
+        ],
+        "angle_deg": 0.0,
+        "bounds_xy_mm": [
+          11.09,
+          -14.96,
+          12.91,
+          -14.04
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "C5",
+      "value": "C_1u_0603",
+      "footprint": "C_0603_1608Metric",
+      "courtyard": {
+        "reference": "C5",
+        "value": "C_1u_0603",
+        "side": "B",
+        "xy_mm": [
+          28.75,
+          -15.0
+        ],
+        "angle_deg": 0.0,
+        "bounds_xy_mm": [
+          27.5,
+          -15.65,
+          30.0,
+          -14.35
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "C133",
+      "value": "1u",
+      "footprint": "C_0603_1608Metric",
+      "courtyard": {
+        "reference": "C133",
+        "value": "1u",
+        "side": "B",
+        "xy_mm": [
+          9.5,
+          -6.0
+        ],
+        "angle_deg": 0.0,
+        "bounds_xy_mm": [
+          8.25,
+          -6.65,
+          10.75,
+          -5.35
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "C117",
+      "value": "100n / U101.77",
+      "footprint": "C_0402_1005Metric",
+      "courtyard": {
+        "reference": "C117",
+        "value": "100n / U101.77",
+        "side": "B",
+        "xy_mm": [
+          10.25,
+          -13.5
+        ],
+        "angle_deg": 90.0,
+        "bounds_xy_mm": [
+          9.79,
+          -14.41,
+          10.71,
+          -12.59
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "C103",
+      "value": "100n",
+      "footprint": "C_0402_1005Metric",
+      "courtyard": {
+        "reference": "C103",
+        "value": "100n",
+        "side": "B",
+        "xy_mm": [
+          29.75,
+          -2.5
+        ],
+        "angle_deg": -90.0,
+        "bounds_xy_mm": [
+          29.29,
+          -3.41,
+          30.21,
+          -1.59
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "U5",
+      "value": "TLV73318PDBVT",
+      "footprint": "SOT-23-5",
+      "courtyard": {
+        "reference": "U5",
+        "value": "TLV73318PDBVT",
+        "side": "B",
+        "xy_mm": [
+          27.0,
+          -12.25
+        ],
+        "angle_deg": 0.0,
+        "bounds_xy_mm": [
+          24.95,
+          -13.95,
+          29.05,
+          -10.55
+        ]
+      },
+      "pad_count": 5
+    },
+    {
+      "board": "controller",
+      "reference": "U104",
+      "value": "TLV62569DBV / system",
+      "footprint": "SOT-23-5",
+      "courtyard": {
+        "reference": "U104",
+        "value": "TLV62569DBV / system",
+        "side": "B",
+        "xy_mm": [
+          4.0,
+          -11.0
+        ],
+        "angle_deg": 180.0,
+        "bounds_xy_mm": [
+          1.95,
+          -12.7,
+          6.05,
+          -9.3
+        ]
+      },
+      "pad_count": 5
+    },
+    {
+      "board": "controller",
+      "reference": "L102",
+      "value": "2.2u / Isat TBD",
+      "footprint": "L_0805_2012Metric",
+      "courtyard": {
+        "reference": "L102",
+        "value": "2.2u / Isat TBD",
+        "side": "B",
+        "xy_mm": [
+          7.0,
+          -13.75
+        ],
+        "angle_deg": 0.0,
+        "bounds_xy_mm": [
+          5.25,
+          -14.6,
+          8.75,
+          -12.9
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "U7",
+      "value": "TLV73328PDBVT",
+      "footprint": "SOT-23-5",
+      "courtyard": {
+        "reference": "U7",
+        "value": "TLV73328PDBVT",
+        "side": "B",
+        "xy_mm": [
+          22.5,
+          -17.5
+        ],
+        "angle_deg": 180.0,
+        "bounds_xy_mm": [
+          20.45,
+          -19.2,
+          24.55,
+          -15.8
+        ]
+      },
+      "pad_count": 5
+    },
+    {
+      "board": "controller",
+      "reference": "C111",
+      "value": "100n / U101.21",
+      "footprint": "C_0402_1005Metric",
+      "courtyard": {
+        "reference": "C111",
+        "value": "100n / U101.21",
+        "side": "B",
+        "xy_mm": [
+          21.75,
+          -7.25
+        ],
+        "angle_deg": 0.0,
+        "bounds_xy_mm": [
+          20.84,
+          -7.71,
+          22.66,
+          -6.79
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "R112",
+      "value": "4.7k",
+      "footprint": "R_0402_1005Metric",
+      "courtyard": {
+        "reference": "R112",
+        "value": "4.7k",
+        "side": "B",
+        "xy_mm": [
+          24.0,
+          -11.0
+        ],
+        "angle_deg": 0.0,
+        "bounds_xy_mm": [
+          23.07,
+          -11.47,
+          24.93,
+          -10.53
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "C136",
+      "value": "4.7u",
+      "footprint": "C_0603_1608Metric",
+      "courtyard": {
+        "reference": "C136",
+        "value": "4.7u",
+        "side": "B",
+        "xy_mm": [
+          4.5,
+          -15.5
+        ],
+        "angle_deg": 0.0,
+        "bounds_xy_mm": [
+          3.25,
+          -16.15,
+          5.75,
+          -14.85
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "R113",
+      "value": "4.7k",
+      "footprint": "R_0402_1005Metric",
+      "courtyard": {
+        "reference": "R113",
+        "value": "4.7k",
+        "side": "B",
+        "xy_mm": [
+          15.0,
+          -11.75
+        ],
+        "angle_deg": 0.0,
+        "bounds_xy_mm": [
+          14.07,
+          -12.22,
+          15.93,
+          -11.28
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "R117",
+      "value": "10k",
+      "footprint": "R_0402_1005Metric",
+      "courtyard": {
+        "reference": "R117",
+        "value": "10k",
+        "side": "B",
+        "xy_mm": [
+          12.0,
+          -11.75
+        ],
+        "angle_deg": 0.0,
+        "bounds_xy_mm": [
+          11.07,
+          -12.22,
+          12.93,
+          -11.28
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "R108",
+      "value": "100k",
+      "footprint": "R_0402_1005Metric",
+      "courtyard": {
+        "reference": "R108",
+        "value": "100k",
+        "side": "B",
+        "xy_mm": [
+          4.25,
+          -8.0
+        ],
+        "angle_deg": 0.0,
+        "bounds_xy_mm": [
+          3.32,
+          -8.47,
+          5.18,
+          -7.53
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "C3",
+      "value": "C_4u7_0805",
+      "footprint": "C_0805_2012Metric",
+      "courtyard": {
+        "reference": "C3",
+        "value": "C_4u7_0805",
+        "side": "B",
+        "xy_mm": [
+          29.0,
+          -17.0
+        ],
+        "angle_deg": 0.0,
+        "bounds_xy_mm": [
+          27.1,
+          -17.93,
+          30.9,
+          -16.07
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "U102",
+      "value": "W25Q32JVSS (4 MB candidate)",
+      "footprint": "SOIC-8_5.3x5.3mm_P1.27mm",
+      "courtyard": {
+        "reference": "U102",
+        "value": "W25Q32JVSS (4 MB candidate)",
+        "side": "B",
+        "xy_mm": [
+          26.0,
+          -5.5
+        ],
+        "angle_deg": 90.0,
+        "bounds_xy_mm": [
+          23.1,
+          -10.15,
+          28.9,
+          -0.85
+        ]
+      },
+      "pad_count": 8
+    },
+    {
+      "board": "controller",
+      "reference": "R101",
+      "value": "10k",
+      "footprint": "R_0402_1005Metric",
+      "courtyard": {
+        "reference": "R101",
+        "value": "10k",
+        "side": "B",
+        "xy_mm": [
+          30.25,
+          -9.0
+        ],
+        "angle_deg": 180.0,
+        "bounds_xy_mm": [
+          29.32,
+          -9.47,
+          31.18,
+          -8.53
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "C113",
+      "value": "100n / U101.54",
+      "footprint": "C_0402_1005Metric",
+      "courtyard": {
+        "reference": "C113",
+        "value": "100n / U101.54",
+        "side": "B",
+        "xy_mm": [
+          12.0,
+          -6.0
+        ],
+        "angle_deg": 0.0,
+        "bounds_xy_mm": [
+          11.09,
+          -6.46,
+          12.91,
+          -5.54
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "C6",
+      "value": "C_1u_0603",
+      "footprint": "C_0603_1608Metric",
+      "courtyard": {
+        "reference": "C6",
+        "value": "C_1u_0603",
+        "side": "B",
+        "xy_mm": [
+          21.5,
+          -9.25
+        ],
+        "angle_deg": -90.0,
+        "bounds_xy_mm": [
+          20.85,
+          -10.5,
+          22.15,
+          -8.0
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "J103",
+      "value": "PROGRAM / RESET pads",
+      "footprint": "ProgrammingPads_5x1mm_P1.5mm",
+      "courtyard": null,
+      "pad_count": 5
+    },
+    {
+      "board": "controller",
+      "reference": "C114",
+      "value": "100n / U101.62",
+      "footprint": "C_0402_1005Metric",
+      "courtyard": {
+        "reference": "C114",
+        "value": "100n / U101.62",
+        "side": "B",
+        "xy_mm": [
+          12.0,
+          -9.0
+        ],
+        "angle_deg": 0.0,
+        "bounds_xy_mm": [
+          11.09,
+          -9.46,
+          12.91,
+          -8.54
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "C109",
+      "value": "22u",
+      "footprint": "C_0805_2012Metric",
+      "courtyard": {
+        "reference": "C109",
+        "value": "22u",
+        "side": "B",
+        "xy_mm": [
+          8.0,
+          -16.0
+        ],
+        "angle_deg": 0.0,
+        "bounds_xy_mm": [
+          6.1,
+          -16.93,
+          9.9,
+          -15.07
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "C119",
+      "value": "100n / U101.91",
+      "footprint": "C_0402_1005Metric",
+      "courtyard": {
+        "reference": "C119",
+        "value": "100n / U101.91",
+        "side": "B",
+        "xy_mm": [
+          16.25,
+          -14.5
+        ],
+        "angle_deg": 90.0,
+        "bounds_xy_mm": [
+          15.79,
+          -15.41,
+          16.71,
+          -13.59
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "R103",
+      "value": "10k",
+      "footprint": "R_0402_1005Metric",
+      "courtyard": {
+        "reference": "R103",
+        "value": "10k",
+        "side": "B",
+        "xy_mm": [
+          7.25,
+          -7.0
+        ],
+        "angle_deg": 90.0,
+        "bounds_xy_mm": [
+          6.78,
+          -7.93,
+          7.72,
+          -6.07
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "R116",
+      "value": "100k",
+      "footprint": "R_0402_1005Metric",
+      "courtyard": {
+        "reference": "R116",
+        "value": "100k",
+        "side": "B",
+        "xy_mm": [
+          9.0,
+          -7.5
+        ],
+        "angle_deg": 0.0,
+        "bounds_xy_mm": [
+          8.07,
+          -7.97,
+          9.93,
+          -7.03
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "C120",
+      "value": "100n / U101.96",
+      "footprint": "C_0402_1005Metric",
+      "courtyard": {
+        "reference": "C120",
+        "value": "100n / U101.96",
+        "side": "B",
+        "xy_mm": [
+          18.0,
+          -14.5
+        ],
+        "angle_deg": 90.0,
+        "bounds_xy_mm": [
+          17.54,
+          -15.41,
+          18.46,
+          -13.59
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "R104",
+      "value": "10k",
+      "footprint": "R_0402_1005Metric",
+      "courtyard": {
+        "reference": "R104",
+        "value": "10k",
+        "side": "B",
+        "xy_mm": [
+          6.0,
+          -7.75
+        ],
+        "angle_deg": 90.0,
+        "bounds_xy_mm": [
+          5.53,
+          -8.68,
+          6.47,
+          -6.82
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "C121",
+      "value": "100n / U101.101",
+      "footprint": "C_0402_1005Metric",
+      "courtyard": {
+        "reference": "C121",
+        "value": "100n / U101.101",
+        "side": "B",
+        "xy_mm": [
+          19.75,
+          -14.5
+        ],
+        "angle_deg": 90.0,
+        "bounds_xy_mm": [
+          19.29,
+          -15.41,
+          20.21,
+          -13.59
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "C135",
+      "value": "100n",
+      "footprint": "C_0402_1005Metric",
+      "courtyard": {
+        "reference": "C135",
+        "value": "100n",
+        "side": "B",
+        "xy_mm": [
+          10.5,
+          -4.0
+        ],
+        "angle_deg": 90.0,
+        "bounds_xy_mm": [
+          10.04,
+          -4.91,
+          10.96,
+          -3.09
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "C4",
+      "value": "C_1u_0603",
+      "footprint": "C_0603_1608Metric",
+      "courtyard": {
+        "reference": "C4",
+        "value": "C_1u_0603",
+        "side": "B",
+        "xy_mm": [
+          19.0,
+          -16.5
+        ],
+        "angle_deg": 180.0,
+        "bounds_xy_mm": [
+          17.75,
+          -17.15,
+          20.25,
+          -15.85
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "C128",
+      "value": "100n / U101.30",
+      "footprint": "C_0402_1005Metric",
+      "courtyard": {
+        "reference": "C128",
+        "value": "100n / U101.30",
+        "side": "B",
+        "xy_mm": [
+          19.75,
+          -4.75
+        ],
+        "angle_deg": 90.0,
+        "bounds_xy_mm": [
+          19.29,
+          -5.66,
+          20.21,
+          -3.84
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "R114",
+      "value": "4.7k",
+      "footprint": "R_0402_1005Metric",
+      "courtyard": {
+        "reference": "R114",
+        "value": "4.7k",
+        "side": "B",
+        "xy_mm": [
+          17.0,
+          -1.25
+        ],
+        "angle_deg": 0.0,
+        "bounds_xy_mm": [
+          16.07,
+          -1.72,
+          17.93,
+          -0.78
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "R102",
+      "value": "10k",
+      "footprint": "R_0402_1005Metric",
+      "courtyard": {
+        "reference": "R102",
+        "value": "10k",
+        "side": "B",
+        "xy_mm": [
+          19.25,
+          -18.0
+        ],
+        "angle_deg": 0.0,
+        "bounds_xy_mm": [
+          18.32,
+          -18.47,
+          20.18,
+          -17.53
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "R107",
+      "value": "453k",
+      "footprint": "R_0402_1005Metric",
+      "courtyard": {
+        "reference": "R107",
+        "value": "453k",
+        "side": "B",
+        "xy_mm": [
+          2.0,
+          -8.0
+        ],
+        "angle_deg": 0.0,
+        "bounds_xy_mm": [
+          1.07,
+          -8.47,
+          2.93,
+          -7.53
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "C134",
+      "value": "10n",
+      "footprint": "C_0402_1005Metric",
+      "courtyard": {
+        "reference": "C134",
+        "value": "10n",
+        "side": "B",
+        "xy_mm": [
+          11.75,
+          -4.25
+        ],
+        "angle_deg": 90.0,
+        "bounds_xy_mm": [
+          11.29,
+          -5.16,
+          12.21,
+          -3.34
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "C125",
+      "value": "1u",
+      "footprint": "C_0603_1608Metric",
+      "courtyard": {
+        "reference": "C125",
+        "value": "1u",
+        "side": "B",
+        "xy_mm": [
+          11.5,
+          -16.0
+        ],
+        "angle_deg": 0.0,
+        "bounds_xy_mm": [
+          10.25,
+          -16.65,
+          12.75,
+          -15.35
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "controller",
+      "reference": "C2",
+      "value": "C_4u7_0805",
+      "footprint": "C_0805_2012Metric",
+      "courtyard": {
+        "reference": "C2",
+        "value": "C_4u7_0805",
+        "side": "B",
+        "xy_mm": [
+          18.5,
+          -12.25
+        ],
+        "angle_deg": 180.0,
+        "bounds_xy_mm": [
+          16.6,
+          -13.18,
+          20.4,
+          -11.32
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "head",
+      "reference": "D201",
+      "value": "AP1608F3C",
+      "footprint": "Kingbright_AP1608F3C_R09",
+      "courtyard": {
+        "reference": "D201",
+        "value": "AP1608F3C",
+        "side": "F",
+        "xy_mm": [
+          1.8,
+          -1.8
+        ],
+        "angle_deg": 0.0,
+        "bounds_xy_mm": [
+          0.325,
+          -2.5,
+          3.275,
+          -1.1
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "head",
+      "reference": "D202",
+      "value": "AP1608F3C",
+      "footprint": "Kingbright_AP1608F3C_R09",
+      "courtyard": {
+        "reference": "D202",
+        "value": "AP1608F3C",
+        "side": "F",
+        "xy_mm": [
+          12.2,
+          -1.8
+        ],
+        "angle_deg": 180.0,
+        "bounds_xy_mm": [
+          10.725,
+          -2.5,
+          13.675,
+          -1.1
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "head",
+      "reference": "R201",
+      "value": "1k 1%",
+      "footprint": "R_0402_1005Metric",
+      "courtyard": {
+        "reference": "R201",
+        "value": "1k 1%",
+        "side": "F",
+        "xy_mm": [
+          1.8,
+          -3.7
+        ],
+        "angle_deg": 90.0,
+        "bounds_xy_mm": [
+          1.33,
+          -4.63,
+          2.27,
+          -2.77
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "head",
+      "reference": "J201",
+      "value": "SOLDER FLEX / 24 contacts",
+      "footprint": "Flex_Solder_24_P0.5_R05",
+      "courtyard": {
+        "reference": "J201",
+        "value": "SOLDER FLEX / 24 contacts",
+        "side": "F",
+        "xy_mm": [
+          7.0,
+          -12.25
+        ],
+        "angle_deg": 0.0,
+        "bounds_xy_mm": [
+          1.0,
+          -13.2,
+          13.0,
+          -11.3
+        ]
+      },
+      "pad_count": 24
+    },
+    {
+      "board": "head",
+      "reference": "Q201",
+      "value": "MMBT3904,215",
+      "footprint": "SOT-23",
+      "courtyard": {
+        "reference": "Q201",
+        "value": "MMBT3904,215",
+        "side": "F",
+        "xy_mm": [
+          12.0,
+          -8.5
+        ],
+        "angle_deg": 90.0,
+        "bounds_xy_mm": [
+          10.3,
+          -10.43,
+          13.7,
+          -6.57
+        ]
+      },
+      "pad_count": 3
+    },
+    {
+      "board": "head",
+      "reference": "R203",
+      "value": "2.2k 1%",
+      "footprint": "R_0402_1005Metric",
+      "courtyard": {
+        "reference": "R203",
+        "value": "2.2k 1%",
+        "side": "F",
+        "xy_mm": [
+          1.8,
+          -6.5
+        ],
+        "angle_deg": 90.0,
+        "bounds_xy_mm": [
+          1.33,
+          -7.43,
+          2.27,
+          -5.57
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "head",
+      "reference": "R204",
+      "value": "100k 1%",
+      "footprint": "R_0402_1005Metric",
+      "courtyard": {
+        "reference": "R204",
+        "value": "100k 1%",
+        "side": "F",
+        "xy_mm": [
+          1.8,
+          -8.75
+        ],
+        "angle_deg": 90.0,
+        "bounds_xy_mm": [
+          1.33,
+          -9.68,
+          2.27,
+          -7.82
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "head",
+      "reference": "U1",
+      "value": "ImageSensor_OV9281",
+      "footprint": "OV9281",
+      "courtyard": {
+        "reference": "U1",
+        "value": "ImageSensor_OV9281",
+        "side": "F",
+        "xy_mm": [
+          7.3325,
+          -6.043
+        ],
+        "angle_deg": 0.0,
+        "bounds_xy_mm": [
+          4.217,
+          -8.489,
+          9.953,
+          -3.525
+        ]
+      },
+      "pad_count": 64
+    },
+    {
+      "board": "head",
+      "reference": "R202",
+      "value": "1k 1%",
+      "footprint": "R_0402_1005Metric",
+      "courtyard": {
+        "reference": "R202",
+        "value": "1k 1%",
+        "side": "F",
+        "xy_mm": [
+          12.2,
+          -3.7
+        ],
+        "angle_deg": 90.0,
+        "bounds_xy_mm": [
+          11.73,
+          -4.63,
+          12.67,
+          -2.77
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "head",
+      "reference": "L1",
+      "value": "MLP2012S3R3MT",
+      "footprint": "L_0805_2012Metric",
+      "courtyard": {
+        "reference": "L1",
+        "value": "MLP2012S3R3MT",
+        "side": "B",
+        "xy_mm": [
+          3.3,
+          -1.1
+        ],
+        "angle_deg": 180.0,
+        "bounds_xy_mm": [
+          1.55,
+          -1.95,
+          5.05,
+          -0.25
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "head",
+      "reference": "C15",
+      "value": "C_100n_6V3_0402",
+      "footprint": "C_0402_1005Metric",
+      "courtyard": {
+        "reference": "C15",
+        "value": "C_100n_6V3_0402",
+        "side": "B",
+        "xy_mm": [
+          10.435,
+          -5.735
+        ],
+        "angle_deg": 180.0,
+        "bounds_xy_mm": [
+          9.525,
+          -6.195,
+          11.345,
+          -5.275
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "head",
+      "reference": "C21",
+      "value": "C_1u_0603",
+      "footprint": "C_0603_1608Metric",
+      "courtyard": {
+        "reference": "C21",
+        "value": "C_1u_0603",
+        "side": "B",
+        "xy_mm": [
+          9.525,
+          -11.425
+        ],
+        "angle_deg": 180.0,
+        "bounds_xy_mm": [
+          8.275,
+          -12.075,
+          10.775,
+          -10.775
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "head",
+      "reference": "L3",
+      "value": "MLP2012S3R3MT",
+      "footprint": "L_0805_2012Metric",
+      "courtyard": {
+        "reference": "L3",
+        "value": "MLP2012S3R3MT",
+        "side": "B",
+        "xy_mm": [
+          3.275,
+          -7.375
+        ],
+        "angle_deg": 180.0,
+        "bounds_xy_mm": [
+          1.525,
+          -8.225,
+          5.025,
+          -6.525
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "head",
+      "reference": "L2",
+      "value": "MLP2012S3R3MT",
+      "footprint": "L_0805_2012Metric",
+      "courtyard": {
+        "reference": "L2",
+        "value": "MLP2012S3R3MT",
+        "side": "B",
+        "xy_mm": [
+          11.5,
+          -1.2
+        ],
+        "angle_deg": 180.0,
+        "bounds_xy_mm": [
+          9.75,
+          -2.05,
+          13.25,
+          -0.35
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "head",
+      "reference": "C33",
+      "value": "C_1u_0603",
+      "footprint": "C_0603_1608Metric",
+      "courtyard": {
+        "reference": "C33",
+        "value": "C_1u_0603",
+        "side": "B",
+        "xy_mm": [
+          7.085,
+          -1.3
+        ],
+        "angle_deg": 180.0,
+        "bounds_xy_mm": [
+          5.835,
+          -1.95,
+          8.335,
+          -0.65
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "head",
+      "reference": "C19",
+      "value": "C_1u_0603",
+      "footprint": "C_0603_1608Metric",
+      "courtyard": {
+        "reference": "C19",
+        "value": "C_1u_0603",
+        "side": "B",
+        "xy_mm": [
+          10.775,
+          -4.425
+        ],
+        "angle_deg": 180.0,
+        "bounds_xy_mm": [
+          9.525,
+          -5.075,
+          12.025,
+          -3.775
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "head",
+      "reference": "C16",
+      "value": "C_100n_6V3_0402",
+      "footprint": "C_0402_1005Metric",
+      "courtyard": {
+        "reference": "C16",
+        "value": "C_100n_6V3_0402",
+        "side": "B",
+        "xy_mm": [
+          6.935,
+          -10.985
+        ],
+        "angle_deg": 180.0,
+        "bounds_xy_mm": [
+          6.025,
+          -11.445,
+          7.845,
+          -10.525
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "head",
+      "reference": "R8",
+      "value": "R_0R_0402",
+      "footprint": "R_0402_1005Metric",
+      "courtyard": {
+        "reference": "R8",
+        "value": "R_0R_0402",
+        "side": "B",
+        "xy_mm": [
+          12.205,
+          -9.995
+        ],
+        "angle_deg": 180.0,
+        "bounds_xy_mm": [
+          11.275,
+          -10.465,
+          13.135,
+          -9.525
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "head",
+      "reference": "C14",
+      "value": "C_100n_6V3_0402",
+      "footprint": "C_0402_1005Metric",
+      "courtyard": {
+        "reference": "C14",
+        "value": "C_100n_6V3_0402",
+        "side": "B",
+        "xy_mm": [
+          3.935,
+          -8.985
+        ],
+        "angle_deg": 180.0,
+        "bounds_xy_mm": [
+          3.025,
+          -9.445,
+          4.845,
+          -8.525
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "head",
+      "reference": "C20",
+      "value": "C_100n_6V3_0402",
+      "footprint": "C_0402_1005Metric",
+      "courtyard": {
+        "reference": "C20",
+        "value": "C_100n_6V3_0402",
+        "side": "B",
+        "xy_mm": [
+          2.2,
+          -10.1
+        ],
+        "angle_deg": 180.0,
+        "bounds_xy_mm": [
+          1.29,
+          -10.56,
+          3.11,
+          -9.64
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "head",
+      "reference": "R7",
+      "value": "R_0R_0402",
+      "footprint": "R_0402_1005Metric",
+      "courtyard": {
+        "reference": "R7",
+        "value": "R_0R_0402",
+        "side": "B",
+        "xy_mm": [
+          1.705,
+          -8.995
+        ],
+        "angle_deg": 180.0,
+        "bounds_xy_mm": [
+          0.775,
+          -9.465,
+          2.635,
+          -8.525
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "head",
+      "reference": "C9",
+      "value": "C_100n_6V3_0402",
+      "footprint": "C_0402_1005Metric",
+      "courtyard": {
+        "reference": "C9",
+        "value": "C_100n_6V3_0402",
+        "side": "B",
+        "xy_mm": [
+          6.935,
+          -12.235
+        ],
+        "angle_deg": 180.0,
+        "bounds_xy_mm": [
+          6.025,
+          -12.695,
+          7.845,
+          -11.775
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "head",
+      "reference": "R9",
+      "value": "R_0R_0402",
+      "footprint": "R_0402_1005Metric",
+      "courtyard": {
+        "reference": "R9",
+        "value": "R_0R_0402",
+        "side": "B",
+        "xy_mm": [
+          12.3,
+          -12.4
+        ],
+        "angle_deg": 180.0,
+        "bounds_xy_mm": [
+          11.37,
+          -12.87,
+          13.23,
+          -11.93
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "head",
+      "reference": "Y1",
+      "value": "SG-210STF 24.0000ML",
+      "footprint": "Epson_SG210STF_2.5x2.0mm_R09",
+      "courtyard": {
+        "reference": "Y1",
+        "value": "SG-210STF 24.0000ML",
+        "side": "B",
+        "xy_mm": [
+          7.085,
+          -3.525
+        ],
+        "angle_deg": 180.0,
+        "bounds_xy_mm": [
+          5.435,
+          -4.875,
+          8.735,
+          -2.175
+        ]
+      },
+      "pad_count": 4
+    },
+    {
+      "board": "head",
+      "reference": "C10",
+      "value": "C_1u_0603",
+      "footprint": "C_0603_1608Metric",
+      "courtyard": {
+        "reference": "C10",
+        "value": "C_1u_0603",
+        "side": "B",
+        "xy_mm": [
+          10.275,
+          -7.175
+        ],
+        "angle_deg": 180.0,
+        "bounds_xy_mm": [
+          9.025,
+          -7.825,
+          11.525,
+          -6.525
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "head",
+      "reference": "C17",
+      "value": "C_100n_6V3_0402",
+      "footprint": "C_0402_1005Metric",
+      "courtyard": {
+        "reference": "C17",
+        "value": "C_100n_6V3_0402",
+        "side": "B",
+        "xy_mm": [
+          9.935,
+          -9.985
+        ],
+        "angle_deg": 180.0,
+        "bounds_xy_mm": [
+          9.025,
+          -10.445,
+          10.845,
+          -9.525
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "head",
+      "reference": "C7",
+      "value": "C_1u_0603",
+      "footprint": "C_0603_1608Metric",
+      "courtyard": {
+        "reference": "C7",
+        "value": "C_1u_0603",
+        "side": "B",
+        "xy_mm": [
+          3.525,
+          -2.675
+        ],
+        "angle_deg": 180.0,
+        "bounds_xy_mm": [
+          2.275,
+          -3.325,
+          4.775,
+          -2.025
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "head",
+      "reference": "C18",
+      "value": "C_1u_0603",
+      "footprint": "C_0603_1608Metric",
+      "courtyard": {
+        "reference": "C18",
+        "value": "C_1u_0603",
+        "side": "B",
+        "xy_mm": [
+          3.525,
+          -4.175
+        ],
+        "angle_deg": 180.0,
+        "bounds_xy_mm": [
+          2.275,
+          -4.825,
+          4.775,
+          -3.525
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "head",
+      "reference": "C8",
+      "value": "C_1u_0603",
+      "footprint": "C_0603_1608Metric",
+      "courtyard": {
+        "reference": "C8",
+        "value": "C_1u_0603",
+        "side": "B",
+        "xy_mm": [
+          10.775,
+          -2.925
+        ],
+        "angle_deg": 180.0,
+        "bounds_xy_mm": [
+          9.525,
+          -3.575,
+          12.025,
+          -2.275
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "head",
+      "reference": "C13",
+      "value": "C_1u_0603",
+      "footprint": "C_0603_1608Metric",
+      "courtyard": {
+        "reference": "C13",
+        "value": "C_1u_0603",
+        "side": "B",
+        "xy_mm": [
+          3.525,
+          -5.675
+        ],
+        "angle_deg": 180.0,
+        "bounds_xy_mm": [
+          2.275,
+          -6.325,
+          4.775,
+          -5.025
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "head",
+      "reference": "C12",
+      "value": "C_1u_0603",
+      "footprint": "C_0603_1608Metric",
+      "courtyard": {
+        "reference": "C12",
+        "value": "C_1u_0603",
+        "side": "B",
+        "xy_mm": [
+          10.275,
+          -8.675
+        ],
+        "angle_deg": 180.0,
+        "bounds_xy_mm": [
+          9.025,
+          -9.325,
+          11.525,
+          -8.025
+        ]
+      },
+      "pad_count": 2
+    },
+    {
+      "board": "flex-study",
+      "reference": "J301",
+      "value": "FLEX CONTACTS / B.Cu",
+      "footprint": "Flex_Contacts_R05",
+      "courtyard": null,
+      "pad_count": 24
+    },
+    {
+      "board": "flex-study",
+      "reference": "J302",
+      "value": "FLEX CONTACTS / B.Cu",
+      "footprint": "Flex_Contacts_R05",
+      "courtyard": null,
+      "pad_count": 24
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+import FreeCAD as App, FreeCADGui as Gui
+from pathlib import Path
+import os,json,hashlib,zipfile,traceback
+from PySide import QtCore
+root=Path(r'C:/Users/jonma/code-stuff/github/freemocap/other/skellycad')
+out=root/'generated/ov9281-size-mass-r01'
+path=out/'OV9281-SIZE-MASS-R01.FCStd'
+try:
+    vp=App.ParamGet('User parameter:BaseApp/Preferences/View')
+    vp.SetBool('Simple',True);vp.SetBool('Gradient',False);vp.SetUnsigned('BackgroundColor',0xF5F7FAFF)
+    doc=next((d for d in App.listDocuments().values() if d.FileName and Path(d.FileName).resolve()==path.resolve()),None)
+    if doc is None:doc=App.openDocument(str(path))
+    App.setActiveDocument(doc.Name)
+    for o in doc.Objects:
+        o.ViewObject.Visibility=o.TypeId in ['App::Part','Part::Feature','PartDesign::Feature']
+        if o.TypeId in ['Part::Feature','PartDesign::Feature']:
+            if hasattr(o,'StudyColor'):o.ViewObject.ShapeColor=tuple(o.StudyColor)
+            o.ViewObject.LineColor=(.12,.15,.18);o.ViewObject.LineWidth=1
+            if o.Shape.isNull() or 'OpticalAxis' in o.Name or 'SensorFrame' in o.Name:o.ViewObject.Visibility=False
+    view=Gui.activeDocument().activeView();view.viewTop();view.fitAll();Gui.getMainWindow().showMaximized()
+    hidden=[]
+    def finish(phase=0):
+        try:
+            if phase==0:
+                view.redraw();Gui.updateGui();view.saveImage(str(out/'comparison-top.png'),1700,2200,'Current')
+                view.viewAxonometric();view.fitAll();QtCore.QTimer.singleShot(1500,lambda:finish(1));return
+            if phase==1:
+                view.redraw();Gui.updateGui();view.saveImage(str(out/'comparison-iso.png'),1900,1600,'Current')
+                for o in doc.Objects:
+                    if o.TypeId=='App::Part' and o.Name not in ['CandidateB','CandidateC'] and o.ViewObject.Visibility:
+                        hidden.append(o);o.ViewObject.Visibility=False
+                view.viewBottom();view.fitAll();QtCore.QTimer.singleShot(1500,lambda:finish(2));return
+            view.redraw();Gui.updateGui();view.saveImage(str(out/'compact-bottom.png'),1700,1100,'Current')
+            for o in hidden:o.ViewObject.Visibility=True
+            view.viewTop();view.fitAll();doc.recompute();doc.save()
+            with zipfile.ZipFile(path) as z:assert 'Document.xml' in z.namelist() and z.testzip() is None
+            report={'pid':os.getpid(),'native_path':str(path),'native_sha256':hashlib.sha256(path.read_bytes()).hexdigest(),'zip_verified':True,'current_review_saved':True,'images':['comparison-top.png','comparison-iso.png','compact-bottom.png'],'computer_use':False}
+            (out/'desktop-review.json').write_text(json.dumps(report,indent=2))
+            Gui.getMainWindow().raise_();Gui.getMainWindow().activateWindow()
+        except Exception:(out/'review-error.txt').write_text(traceback.format_exc())
+    QtCore.QTimer.singleShot(2500,finish)
+except Exception:(out/'review-error.txt').write_text(traceback.format_exc())

@@ -1,0 +1,12 @@
+{
+  "checked_shape_count": 126,
+  "invalid_shapes": [
+    {
+      "name": "PupilReference_SensorFrame",
+      "label": "PupilReference_SensorFrame",
+      "null": true,
+      "type": "Part::Feature"
+    }
+  ],
+  "invalid_objects": []
+}

@@ -1,0 +1,1019 @@
+{
+  "revision": "R11",
+  "target_g": 1.0,
+  "external_tether_excluded": true,
+  "included": "Controller, head, integrated flex, all populated packages, board connector, IR LEDs, copper, polymer, solder, finish, supports, adhesive, optics and retention",
+  "excluded": "External tether only; Pupil comparison and duplicate bent view are reference geometry, not additional parts",
+  "measured": false,
+  "interval_is_statistical": false,
+  "nominal_target_met": false,
+  "totals": {
+    "low_g": 0.9216181471800731,
+    "nominal_g": 1.3427721253065203,
+    "high_g": 1.9267838793664882
+  },
+  "nominal_groups_g": {
+    "packages": 0.5720999999999999,
+    "copper": 0.2667518676089816,
+    "polymers_and_mask": 0.2503736223534059,
+    "solder_and_finish": 0.07131344668795253,
+    "supports_and_optics": 0.18223318865618046
+  },
+  "geometry": {
+    "region_areas_mm2": {
+      "controller": 389.0,
+      "head": 193.0,
+      "flex": 262.8
+    },
+    "copper_volume_mm3": 29.86262824390649,
+    "polymer_equivalent_volume_mm3": 160.35031878687073,
+    "mask_area_mm2": 944.840403168726,
+    "finish_area_mm2": 181.20761649351599,
+    "paste_area_mm2": 166.292528100818
+  },
+  "parts": [
+    {
+      "name": "controller copper foils",
+      "region": "controller",
+      "low_g": 0.14345860516977868,
+      "nominal_g": 0.1708845149816481,
+      "high_g": 0.19850221437262155,
+      "basis": "Native polygon union \u00d7 layer thickness; copper thickness \u00b115% screening, density 8.8/8.91/9.0 g/cm3. Not a supplier tolerance."
+    },
+    {
+      "name": "controller PI, adhesive and etched-slot fill",
+      "region": "controller",
+      "low_g": 0.06894748567490265,
+      "nominal_g": 0.1118919196095563,
+      "high_g": 0.1765055633277508,
+      "basis": "0.130 mm dielectric/coverlay sum plus etched-copper slots. Effective polymer density 1.25/1.42/1.60; volume factors 0.7/1/1.4 are screening assumptions, not certified material limits."
+    },
+    {
+      "name": "head copper foils",
+      "region": "head",
+      "low_g": 0.03747888350253099,
+      "nominal_g": 0.04464396417213248,
+      "high_g": 0.05185915030096197,
+      "basis": "Native polygon union \u00d7 layer thickness; copper thickness \u00b115% screening, density 8.8/8.91/9.0 g/cm3. Not a supplier tolerance."
+    },
+    {
+      "name": "head PI, adhesive and etched-slot fill",
+      "region": "head",
+      "low_g": 0.03815132712298049,
+      "nominal_g": 0.061914153731008344,
+      "high_g": 0.09766739743483006,
+      "basis": "0.130 mm dielectric/coverlay sum plus etched-copper slots. Effective polymer density 1.25/1.42/1.60; volume factors 0.7/1/1.4 are screening assumptions, not certified material limits."
+    },
+    {
+      "name": "flex copper foils",
+      "region": "flex",
+      "low_g": 0.04243497059211089,
+      "nominal_g": 0.05054753849942621,
+      "high_g": 0.05871683765084862,
+      "basis": "Native polygon union \u00d7 layer thickness; copper thickness \u00b115% screening, density 8.8/8.91/9.0 g/cm3. Not a supplier tolerance."
+    },
+    {
+      "name": "flex PI, adhesive and etched-slot fill",
+      "region": "flex",
+      "low_g": 0.03320771614062874,
+      "nominal_g": 0.053891379336791785,
+      "high_g": 0.08501175332000957,
+      "basis": "0.130 mm dielectric/coverlay sum plus etched-copper slots. Effective polymer density 1.25/1.42/1.60; volume factors 0.7/1/1.4 are screening assumptions, not certified material limits."
+    },
+    {
+      "name": "Component-region solder mask",
+      "region": "complete module",
+      "low_g": 0.015589866652283981,
+      "nominal_g": 0.02267616967604942,
+      "high_g": 0.042517818142592666,
+      "basis": "Region area minus native mask openings; per-face thickness 15/20/30 um and density 1.1/1.2/1.5 g/cm3 assumed."
+    },
+    {
+      "name": "Filled laser-via copper",
+      "region": "complete module",
+      "low_g": 0.0003337530645801539,
+      "nominal_g": 0.0006758499557748117,
+      "high_g": 0.0010240150845072904,
+      "basis": "Filled 70 um cylinders in dielectric gaps only; \u00b150% via-volume screening. Copper lands already counted."
+    },
+    {
+      "name": "Exposed-pad surface finish",
+      "region": "complete module",
+      "low_g": 0.004348982795844384,
+      "nominal_g": 0.009785211290649864,
+      "high_g": 0.016308685484416437,
+      "basis": "Effective finish thickness 3/6/9 um and density 8/9/10 g/cm3 assumed; actual finish stack and exposed via caps require fabrication data."
+    },
+    {
+      "name": "Reflowed solder",
+      "region": "complete module",
+      "low_g": 0.03831379847442847,
+      "nominal_g": 0.06152823539730267,
+      "high_g": 0.0909952713767676,
+      "basis": "Native stencil apertures \u00d7 80/100/120 um stencil \u00d7 40/50/60% metal volume \u00d7 7.2/7.4/7.6 g/cm3. Stencil and solder alloy not selected; DNP aperture retained conservatively."
+    },
+    {
+      "name": "C1 GRM188R61A475KE15D",
+      "region": "controller",
+      "low_g": 0.002,
+      "nominal_g": 0.0035,
+      "high_g": 0.006,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C2 GRM188R61A475KE15D",
+      "region": "controller",
+      "low_g": 0.002,
+      "nominal_g": 0.0035,
+      "high_g": 0.006,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C3 GRM188R61A475KE15D",
+      "region": "controller",
+      "low_g": 0.002,
+      "nominal_g": 0.0035,
+      "high_g": 0.006,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C4 GRM188R71C105KA12D",
+      "region": "controller",
+      "low_g": 0.002,
+      "nominal_g": 0.0035,
+      "high_g": 0.006,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C5 GRM188R71C105KA12D",
+      "region": "controller",
+      "low_g": 0.002,
+      "nominal_g": 0.0035,
+      "high_g": 0.006,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C6 GRM188R71C105KA12D",
+      "region": "controller",
+      "low_g": 0.002,
+      "nominal_g": 0.0035,
+      "high_g": 0.006,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C7 GRM188R71C105KA12D",
+      "region": "head",
+      "low_g": 0.002,
+      "nominal_g": 0.0035,
+      "high_g": 0.006,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C8 GRM188R71C105KA12D",
+      "region": "head",
+      "low_g": 0.002,
+      "nominal_g": 0.0035,
+      "high_g": 0.006,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C9 GRM155R71C104KA88D",
+      "region": "head",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C10 GRM188R71C105KA12D",
+      "region": "head",
+      "low_g": 0.002,
+      "nominal_g": 0.0035,
+      "high_g": 0.006,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C12 GRM188R71C105KA12D",
+      "region": "head",
+      "low_g": 0.002,
+      "nominal_g": 0.0035,
+      "high_g": 0.006,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C13 GRM188R71C105KA12D",
+      "region": "head",
+      "low_g": 0.002,
+      "nominal_g": 0.0035,
+      "high_g": 0.006,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C14 GRM155R71C104KA88D",
+      "region": "head",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C15 GRM155R71C104KA88D",
+      "region": "head",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C16 GRM155R71C104KA88D",
+      "region": "head",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C17 GRM155R71C104KA88D",
+      "region": "head",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C18 GRM188R71C105KA12D",
+      "region": "head",
+      "low_g": 0.002,
+      "nominal_g": 0.0035,
+      "high_g": 0.006,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C19 GRM188R71C105KA12D",
+      "region": "head",
+      "low_g": 0.002,
+      "nominal_g": 0.0035,
+      "high_g": 0.006,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C20 GRM155R71C104KA88D",
+      "region": "head",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C21 GRM188R71C105KA12D",
+      "region": "head",
+      "low_g": 0.002,
+      "nominal_g": 0.0035,
+      "high_g": 0.006,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C33 GRM188R71C105KA12D",
+      "region": "head",
+      "low_g": 0.002,
+      "nominal_g": 0.0035,
+      "high_g": 0.006,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C101 GRM1555C1H160JA01D",
+      "region": "controller",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C102 GRM1555C1H160JA01D",
+      "region": "controller",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C103 GRM155R71C104KA88D",
+      "region": "controller",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C104 GRM188R71C105KA12D",
+      "region": "controller",
+      "low_g": 0.002,
+      "nominal_g": 0.0035,
+      "high_g": 0.006,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C105 GRM188R61A475KE15D",
+      "region": "controller",
+      "low_g": 0.002,
+      "nominal_g": 0.0035,
+      "high_g": 0.006,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C106 GRM21BR61A226ME44L",
+      "region": "controller",
+      "low_g": 0.004,
+      "nominal_g": 0.009,
+      "high_g": 0.016,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C107 GRM1555C1H220JA01D",
+      "region": "controller",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C108 GRM188R61A475KE15D",
+      "region": "controller",
+      "low_g": 0.002,
+      "nominal_g": 0.0035,
+      "high_g": 0.006,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C109 GRM21BR61A226ME44L",
+      "region": "controller",
+      "low_g": 0.004,
+      "nominal_g": 0.009,
+      "high_g": 0.016,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C110 GRM155R71C104KA88D",
+      "region": "controller",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C111 GRM155R71C104KA88D",
+      "region": "controller",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C112 GRM155R71C104KA88D",
+      "region": "controller",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C113 GRM155R71C104KA88D",
+      "region": "controller",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C114 GRM155R71C104KA88D",
+      "region": "controller",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C115 GRM155R71C104KA88D",
+      "region": "controller",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C116 GRM155R71C104KA88D",
+      "region": "controller",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C117 GRM155R71C104KA88D",
+      "region": "controller",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C118 GRM155R71C104KA88D",
+      "region": "controller",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C119 GRM155R71C104KA88D",
+      "region": "controller",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C120 GRM155R71C104KA88D",
+      "region": "controller",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C121 GRM155R71C104KA88D",
+      "region": "controller",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C122 GRM155R71C104KA88D",
+      "region": "controller",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C123 GRM21BR61A226ME44L",
+      "region": "controller",
+      "low_g": 0.004,
+      "nominal_g": 0.009,
+      "high_g": 0.016,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C124 GRM21BR61A226ME44L",
+      "region": "controller",
+      "low_g": 0.004,
+      "nominal_g": 0.009,
+      "high_g": 0.016,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C125 GRM188R71C105KA12D",
+      "region": "controller",
+      "low_g": 0.002,
+      "nominal_g": 0.0035,
+      "high_g": 0.006,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C126 GRM188R71C105KA12D",
+      "region": "controller",
+      "low_g": 0.002,
+      "nominal_g": 0.0035,
+      "high_g": 0.006,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C127 GRM188R71C105KA12D",
+      "region": "controller",
+      "low_g": 0.002,
+      "nominal_g": 0.0035,
+      "high_g": 0.006,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C128 GRM155R71C104KA88D",
+      "region": "controller",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C129 GRM155R71C104KA88D",
+      "region": "controller",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C130 GRM155R71C104KA88D",
+      "region": "controller",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C131 GRM155R71C103KA01D",
+      "region": "controller",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C132 GRM155R71C104KA88D",
+      "region": "controller",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C133 GRM188R71C105KA12D",
+      "region": "controller",
+      "low_g": 0.002,
+      "nominal_g": 0.0035,
+      "high_g": 0.006,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C134 GRM155R71C103KA01D",
+      "region": "controller",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C135 GRM155R71C104KA88D",
+      "region": "controller",
+      "low_g": 0.0007,
+      "nominal_g": 0.0012,
+      "high_g": 0.0018,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "C136 GRM188R61A475KE15D",
+      "region": "controller",
+      "low_g": 0.002,
+      "nominal_g": 0.0035,
+      "high_g": 0.006,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "D201 AP1608F3C",
+      "region": "head",
+      "low_g": 0.0015,
+      "nominal_g": 0.0025,
+      "high_g": 0.004,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "D202 AP1608F3C",
+      "region": "head",
+      "low_g": 0.0015,
+      "nominal_g": 0.0025,
+      "high_g": 0.004,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "J101 SM04B-SRSS-TB(LF)(SN)",
+      "region": "controller",
+      "low_g": 0.025,
+      "nominal_g": 0.045,
+      "high_g": 0.075,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "J103 PCB programming lands",
+      "region": "controller",
+      "low_g": 0,
+      "nominal_g": 0,
+      "high_g": 0,
+      "basis": "Copper included in board mass"
+    },
+    {
+      "name": "L1 MLP2012S3R3MT0S1",
+      "region": "head",
+      "low_g": 0.006,
+      "nominal_g": 0.011,
+      "high_g": 0.018,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "L2 MLP2012S3R3MT0S1",
+      "region": "head",
+      "low_g": 0.006,
+      "nominal_g": 0.011,
+      "high_g": 0.018,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "L3 MLP2012S3R3MT0S1",
+      "region": "head",
+      "low_g": 0.006,
+      "nominal_g": 0.011,
+      "high_g": 0.018,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "L101 DFE252012F-2R2M=P2",
+      "region": "controller",
+      "low_g": 0.03,
+      "nominal_g": 0.0331,
+      "high_g": 0.037,
+      "basis": "Manufacturer typical 0.0331 g; bounds are engineering allowances"
+    },
+    {
+      "name": "L102 DFE252012F-2R2M=P2",
+      "region": "controller",
+      "low_g": 0.03,
+      "nominal_g": 0.0331,
+      "high_g": 0.037,
+      "basis": "Manufacturer typical 0.0331 g; bounds are engineering allowances"
+    },
+    {
+      "name": "Q101 PMZB200UNEYL",
+      "region": "controller",
+      "low_g": 0.0003,
+      "nominal_g": 0.0005,
+      "high_g": 0.0009,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "Q102 PMZB200UNEYL",
+      "region": "controller",
+      "low_g": 0.0003,
+      "nominal_g": 0.0005,
+      "high_g": 0.0009,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "Q103 PMZB200UNEYL",
+      "region": "controller",
+      "low_g": 0.0003,
+      "nominal_g": 0.0005,
+      "high_g": 0.0009,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "Q201 PMZB200UNEYL",
+      "region": "head",
+      "low_g": 0.0003,
+      "nominal_g": 0.0005,
+      "high_g": 0.0009,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "R8 RC0402JR-070RL",
+      "region": "head",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "R9 RC0402JR-070RL",
+      "region": "head",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "R101 RC0402FR-0710KL",
+      "region": "controller",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "R102 RC0402FR-0710KL",
+      "region": "controller",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "R103 RC0402FR-0710KL",
+      "region": "controller",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "R104 RC0402FR-0710KL",
+      "region": "controller",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "R105 RC0402FR-07499KL",
+      "region": "controller",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "R106 RC0402FR-07499KL",
+      "region": "controller",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "R107 RC0402FR-07453KL",
+      "region": "controller",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "R108 RC0402FR-07100KL",
+      "region": "controller",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "R109 RC0402JR-070RL",
+      "region": "controller",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "R110 RC0402JR-070RL",
+      "region": "controller",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "R111 RC0402FR-074K02L",
+      "region": "controller",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "R112 RC0402FR-074K7L",
+      "region": "controller",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "R113 RC0402FR-074K7L",
+      "region": "controller",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "R114 RC0402FR-074K7L",
+      "region": "controller",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "R115 RC0402FR-074K7L",
+      "region": "controller",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "R116 RC0402FR-07100KL",
+      "region": "controller",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "R117 RC0402FR-0710KL",
+      "region": "controller",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "R118 RC0402FR-0710KL",
+      "region": "controller",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "R201 RC0402FR-071KL",
+      "region": "head",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "R202 RC0402FR-071KL",
+      "region": "head",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "R203 RC0402FR-072K2L",
+      "region": "head",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "R204 RC0402FR-07100KL",
+      "region": "head",
+      "low_g": 0.0002,
+      "nominal_g": 0.00035,
+      "high_g": 0.0006,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "U1 OV09281-H64A",
+      "region": "head",
+      "low_g": 0.02,
+      "nominal_g": 0.035,
+      "high_g": 0.055,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "U5 TLV73318PDQNR",
+      "region": "controller",
+      "low_g": 0.0005,
+      "nominal_g": 0.001,
+      "high_g": 0.0016,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "U6 TLV73312PDQNR",
+      "region": "controller",
+      "low_g": 0.0005,
+      "nominal_g": 0.001,
+      "high_g": 0.0016,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "U7 TLV73328PDQNR",
+      "region": "controller",
+      "low_g": 0.0005,
+      "nominal_g": 0.001,
+      "high_g": 0.0016,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "U101 ESP32-P4NRW16X",
+      "region": "controller",
+      "low_g": 0.135,
+      "nominal_g": 0.18,
+      "high_g": 0.23,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "U102 W25Q32JVUUIQ TR",
+      "region": "controller",
+      "low_g": 0.01,
+      "nominal_g": 0.017,
+      "high_g": 0.026,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "U103 TLV62569DRLR",
+      "region": "controller",
+      "low_g": 0.0015,
+      "nominal_g": 0.0025,
+      "high_g": 0.004,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "U104 TLV62569DRLR",
+      "region": "controller",
+      "low_g": 0.0015,
+      "nominal_g": 0.0025,
+      "high_g": 0.004,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "U105 USBLC6-2P6",
+      "region": "controller",
+      "low_g": 0.001,
+      "nominal_g": 0.002,
+      "high_g": 0.003,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "Y1 X1G004171003100",
+      "region": "head",
+      "low_g": 0.006,
+      "nominal_g": 0.01,
+      "high_g": 0.015,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "Y101 ECS-400-10-37B2-CKM-TR",
+      "region": "controller",
+      "low_g": 0.004,
+      "nominal_g": 0.008,
+      "high_g": 0.012,
+      "basis": "Engineering interval; component not weighed"
+    },
+    {
+      "name": "FR4 supports",
+      "region": "complete module",
+      "low_g": 0.017297499999999997,
+      "nominal_g": 0.018314999999999994,
+      "high_g": 0.019332499999999992,
+      "basis": "Exact support volumes including capacitor windows and head ring; generic FR4 density range."
+    },
+    {
+      "name": "Support adhesive",
+      "region": "complete module",
+      "low_g": 0.004578749999999999,
+      "nominal_g": 0.006104999999999998,
+      "high_g": 0.007631249999999998,
+      "basis": "Exact 0.05 mm adhesive geometry; density is an engineering assumption."
+    },
+    {
+      "name": "Compact optics holder",
+      "region": "complete module",
+      "low_g": 0.05065340480116609,
+      "nominal_g": 0.05788960548704695,
+      "high_g": 0.06753787306822144,
+      "basis": "Exact CAD volume; assumed solid lightweight polymer. No qualified material/process."
+    },
+    {
+      "name": "Lens including its barrel",
+      "region": "complete module",
+      "low_g": 0.04,
+      "nominal_g": 0.085,
+      "high_g": 0.15,
+      "basis": "Inherited lightweight lens allowance; no qualified optical assembly or measured mass. This interval is not an exhaustive upper bound."
+    },
+    {
+      "name": "IR filter",
+      "region": "complete module",
+      "low_g": 0.009344353188837485,
+      "nominal_g": 0.010618583169133507,
+      "high_g": 0.012742299802960207,
+      "basis": "5.2 mm diameter \u00d7 0.2 mm envelope; glass-density screening only. Coating and spectral performance unqualified."
+    },
+    {
+      "name": "Holder bond and lens retention",
+      "region": "complete module",
+      "low_g": 0.0019787499999999996,
+      "nominal_g": 0.004305,
+      "high_g": 0.01163125,
+      "basis": "Holder bond geometry plus 1/3/10 mg locking allowance; retention method provisional."
+    }
+  ],
+  "limitations": [
+    "Component masses are engineering intervals except the cited typical buck-inductor mass.",
+    "Density, solder, finish and polymer-volume scenarios are not fabrication tolerances or probabilistic bounds.",
+    "Optics remain unspecified; even the high scenario is not a guaranteed maximum.",
+    "Finished CAD board envelopes already contain copper and must not be added as extra material.",
+    "The complete module is not demonstrated under one gram; no physical mass measurement exists."
+  ],
+  "source_sha256": {
+    "generated\\ov9281-r11-electronics\\camera.kicad_pcb": "989a2008743212d3f9cea44e2643b0584b22613322b7a8450575f173e29f1fb7",
+    "generated\\ov9281-r11-electronics\\native-geometry.json": "4684632785b8cceb7274237e2cf2222dfdb8d4536dea2c30d4b0424465539e5d",
+    "designs\\eye-camera-ov9281\\electronics\\r11\\components.json": "768d6c65164f19172ee9684eb64266113712d56688639c7c35a803746b90c471",
+    "designs\\eye-camera-ov9281\\electronics\\r11\\material-geometry.json": "0ee738fddd503ae98ebb15bc70d225ff0cdc8b7f7adfd8429ae6a54e42b29ec6",
+    "generated\\ov9281-r11-mechanics\\OV9281-R11-MATCHED.FCStd": "cba97827bfa72f36fbca9075133d826c875242a75db0d79cb6767934eb36066c",
+    "generated\\ov9281-r11-mechanics\\validation.json": "6d0afd80c2795ada5d6381371703dff8c422541afb1117a081514888aeba9dfa"
+  }
+}

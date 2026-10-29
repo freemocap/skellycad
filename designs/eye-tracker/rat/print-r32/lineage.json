@@ -1,0 +1,34 @@
+{
+  "units": "mm",
+  "anatomy_source": "Existing R27 printable skull derivative retained without remeshing",
+  "skull_derivative_sha256": "12429e5d683ceba5eb8550ccb70c1abd8108ef05a1da103d1604c326fcb15e6d",
+  "r32_skull_matches_r27_geometry": true,
+  "u1_template": "generated/eye-tracker/rat/print-r27/anatomy/RAT-R27-Snapmaker-U1.3mf",
+  "u1_template_sha256": "ec6d9e3b76dfe46d567799681aff1625f6c9728da5320456e7b38ae5b1636b49",
+  "baseplate_world_shift_from_R27_mm": [
+    0,
+    0,
+    -2
+  ],
+  "source_checkpoint": {
+    "revision": "ET-RAT-COMPACT-BINOCULAR-R32",
+    "units": "mm",
+    "native_checkpoint": "designs/eye-tracker/rat/compact-binocular-r32/checkpoints/ET-RAT-COMPACT-BINOCULAR-R32.FCStd",
+    "native_sha256": "b1bab67befa6205fbfc6f987b225f5ccacbd00731d4c3c57fa5e5d71ebe56363",
+    "source": "lowering.json",
+    "recipe": "recipe.json",
+    "ribbons": "ribbons.json",
+    "arms": "arms.json",
+    "validation": "validation.json",
+    "containment": "containment.json",
+    "comparison": "comparison.json",
+    "status": "Compact binocular review; rearward ordered protective arms; static validation passed; physical fit pending",
+    "physical_fit_verified": false,
+    "print_release": false,
+    "deferred": [
+      "skull Boolean cut",
+      "junction finishing",
+      "cap"
+    ]
+  }
+}

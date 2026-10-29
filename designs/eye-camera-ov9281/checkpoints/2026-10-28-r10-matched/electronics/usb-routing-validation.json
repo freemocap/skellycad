@@ -1,0 +1,1746 @@
+{
+  "sha256": "de0f3dff1a932e2852bc63079b28c99ab9df04517b2e59d6920c2318159182c2",
+  "pad_net_checks": 316,
+  "routes": [
+    {
+      "path_length_mm": 4.223775067317602,
+      "length_by_layer_mm": {
+        "F.Cu": 4.223775067317602
+      },
+      "path": [
+        {
+          "kind": "trace",
+          "uuid": "8262bab2-cdeb-4a4a-8518-100e3bef9932",
+          "layer": "F.Cu",
+          "a": [
+            12.825,
+            5.125
+          ],
+          "b": [
+            12.825,
+            4.8
+          ],
+          "from": [
+            "F.Cu",
+            12.825,
+            5.125
+          ],
+          "to": [
+            "F.Cu",
+            12.825,
+            4.8
+          ]
+        },
+        {
+          "kind": "trace",
+          "uuid": "4b745051-f92c-4069-9b1a-3111138f0b24",
+          "layer": "F.Cu",
+          "a": [
+            12.825,
+            4.8
+          ],
+          "b": [
+            12.575,
+            4.45
+          ],
+          "from": [
+            "F.Cu",
+            12.825,
+            4.8
+          ],
+          "to": [
+            "F.Cu",
+            12.575,
+            4.45
+          ]
+        },
+        {
+          "kind": "trace",
+          "uuid": "b6724365-939b-4b29-b01a-42f859922c73",
+          "layer": "F.Cu",
+          "a": [
+            12.575,
+            4.45
+          ],
+          "b": [
+            12.575,
+            4.4
+          ],
+          "from": [
+            "F.Cu",
+            12.575,
+            4.45
+          ],
+          "to": [
+            "F.Cu",
+            12.575,
+            4.4
+          ]
+        },
+        {
+          "kind": "trace",
+          "uuid": "5e2fcfb2-8834-4da7-b048-3f5c1c837e1d",
+          "layer": "F.Cu",
+          "a": [
+            12.575,
+            4.4
+          ],
+          "b": [
+            11.883495,
+            4.4
+          ],
+          "from": [
+            "F.Cu",
+            12.575,
+            4.4
+          ],
+          "to": [
+            "F.Cu",
+            11.883495,
+            4.4
+          ]
+        },
+        {
+          "kind": "trace",
+          "uuid": "eb90fa01-10e5-4dd5-8a31-803849bbaff5",
+          "layer": "F.Cu",
+          "a": [
+            11.883495,
+            4.4
+          ],
+          "b": [
+            11.883495,
+            4.15
+          ],
+          "from": [
+            "F.Cu",
+            11.883495,
+            4.4
+          ],
+          "to": [
+            "F.Cu",
+            11.883495,
+            4.15
+          ]
+        },
+        {
+          "kind": "trace",
+          "uuid": "86cbb2b4-ac32-4721-a76f-99b59d2319dd",
+          "layer": "F.Cu",
+          "a": [
+            11.883495,
+            4.15
+          ],
+          "b": [
+            12.575,
+            4.15
+          ],
+          "from": [
+            "F.Cu",
+            11.883495,
+            4.15
+          ],
+          "to": [
+            "F.Cu",
+            12.575,
+            4.15
+          ]
+        },
+        {
+          "kind": "trace",
+          "uuid": "39de6c98-7d9a-471c-b2f9-43d9c9333730",
+          "layer": "F.Cu",
+          "a": [
+            12.575,
+            4.15
+          ],
+          "b": [
+            12.575,
+            3.025
+          ],
+          "from": [
+            "F.Cu",
+            12.575,
+            4.15
+          ],
+          "to": [
+            "F.Cu",
+            12.575,
+            3.025
+          ]
+        },
+        {
+          "kind": "trace",
+          "uuid": "7046e222-759f-4449-9d84-a23ee63610a3",
+          "layer": "F.Cu",
+          "a": [
+            12.575,
+            3.025
+          ],
+          "b": [
+            12.3,
+            3.025
+          ],
+          "from": [
+            "F.Cu",
+            12.575,
+            3.025
+          ],
+          "to": [
+            "F.Cu",
+            12.3,
+            3.025
+          ]
+        },
+        {
+          "kind": "trace",
+          "uuid": "fc942a8a-d425-4167-b8a4-18e72843f988",
+          "layer": "F.Cu",
+          "a": [
+            12.3,
+            3.025
+          ],
+          "b": [
+            12.21,
+            3.4
+          ],
+          "from": [
+            "F.Cu",
+            12.3,
+            3.025
+          ],
+          "to": [
+            "F.Cu",
+            12.21,
+            3.4
+          ]
+        }
+      ],
+      "path_via_uuids": [],
+      "inventory_length_mm": 4.223775067317602,
+      "board": "controller",
+      "net": "/USB_DP_CHIP",
+      "ports": [
+        {
+          "uuid": "e3a4f850-d021-49fe-8d07-8a1dcd7a54e4",
+          "ref": "U101",
+          "number": "50",
+          "value": "ESP32-P4NRW16X / v3.x",
+          "net": "/USB_DP_CHIP",
+          "xy": [
+            12.825,
+            5.125
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "rotation_deg": 180.0,
+          "layer": "F.Cu"
+        },
+        {
+          "uuid": "b8f0b588-4b82-417e-9b4a-0f98ff94536c",
+          "ref": "R110",
+          "number": "2",
+          "value": "0",
+          "net": "/USB_DP_CHIP",
+          "xy": [
+            12.21,
+            3.4
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "rotation_deg": 0.0,
+          "layer": "F.Cu"
+        }
+      ],
+      "graph_attachment": [
+        {
+          "xy": [
+            12.825,
+            5.125
+          ],
+          "layer": "F.Cu",
+          "center_offset_mm": 0.0
+        },
+        {
+          "xy": [
+            12.21,
+            3.4
+          ],
+          "layer": "F.Cu",
+          "center_offset_mm": 0.0
+        }
+      ],
+      "native_connected": true,
+      "segments": [
+        {
+          "uuid": "39de6c98-7d9a-471c-b2f9-43d9c9333730",
+          "net": "/USB_DP_CHIP",
+          "a": [
+            12.575,
+            4.15
+          ],
+          "b": [
+            12.575,
+            3.025
+          ],
+          "width_mm": 0.1,
+          "layer": "F.Cu"
+        },
+        {
+          "uuid": "4b745051-f92c-4069-9b1a-3111138f0b24",
+          "net": "/USB_DP_CHIP",
+          "a": [
+            12.825,
+            4.8
+          ],
+          "b": [
+            12.575,
+            4.45
+          ],
+          "width_mm": 0.1,
+          "layer": "F.Cu"
+        },
+        {
+          "uuid": "5e2fcfb2-8834-4da7-b048-3f5c1c837e1d",
+          "net": "/USB_DP_CHIP",
+          "a": [
+            12.575,
+            4.4
+          ],
+          "b": [
+            11.883495,
+            4.4
+          ],
+          "width_mm": 0.1,
+          "layer": "F.Cu"
+        },
+        {
+          "uuid": "7046e222-759f-4449-9d84-a23ee63610a3",
+          "net": "/USB_DP_CHIP",
+          "a": [
+            12.575,
+            3.025
+          ],
+          "b": [
+            12.3,
+            3.025
+          ],
+          "width_mm": 0.1,
+          "layer": "F.Cu"
+        },
+        {
+          "uuid": "8262bab2-cdeb-4a4a-8518-100e3bef9932",
+          "net": "/USB_DP_CHIP",
+          "a": [
+            12.825,
+            5.125
+          ],
+          "b": [
+            12.825,
+            4.8
+          ],
+          "width_mm": 0.1,
+          "layer": "F.Cu"
+        },
+        {
+          "uuid": "86cbb2b4-ac32-4721-a76f-99b59d2319dd",
+          "net": "/USB_DP_CHIP",
+          "a": [
+            11.883495,
+            4.15
+          ],
+          "b": [
+            12.575,
+            4.15
+          ],
+          "width_mm": 0.1,
+          "layer": "F.Cu"
+        },
+        {
+          "uuid": "b6724365-939b-4b29-b01a-42f859922c73",
+          "net": "/USB_DP_CHIP",
+          "a": [
+            12.575,
+            4.45
+          ],
+          "b": [
+            12.575,
+            4.4
+          ],
+          "width_mm": 0.1,
+          "layer": "F.Cu"
+        },
+        {
+          "uuid": "eb90fa01-10e5-4dd5-8a31-803849bbaff5",
+          "net": "/USB_DP_CHIP",
+          "a": [
+            11.883495,
+            4.4
+          ],
+          "b": [
+            11.883495,
+            4.15
+          ],
+          "width_mm": 0.1,
+          "layer": "F.Cu"
+        },
+        {
+          "uuid": "fc942a8a-d425-4167-b8a4-18e72843f988",
+          "net": "/USB_DP_CHIP",
+          "a": [
+            12.3,
+            3.025
+          ],
+          "b": [
+            12.21,
+            3.4
+          ],
+          "width_mm": 0.1,
+          "layer": "F.Cu"
+        }
+      ],
+      "vias": [],
+      "via_return_screen": [],
+      "reference_screen": [
+        {
+          "uuid": "8262bab2-cdeb-4a4a-8518-100e3bef9932",
+          "layer": "F.Cu",
+          "reference_layer": "In1.Cu",
+          "length_mm": 0.3250000000000002,
+          "covered_mm": 0.3250000000000002,
+          "gaps": []
+        },
+        {
+          "uuid": "4b745051-f92c-4069-9b1a-3111138f0b24",
+          "layer": "F.Cu",
+          "reference_layer": "In1.Cu",
+          "length_mm": 0.43011626335213105,
+          "covered_mm": 0.43011626335213105,
+          "gaps": []
+        },
+        {
+          "uuid": "b6724365-939b-4b29-b01a-42f859922c73",
+          "layer": "F.Cu",
+          "reference_layer": "In1.Cu",
+          "length_mm": 0.04999999999999982,
+          "covered_mm": 0.04999999999999982,
+          "gaps": []
+        },
+        {
+          "uuid": "5e2fcfb2-8834-4da7-b048-3f5c1c837e1d",
+          "layer": "F.Cu",
+          "reference_layer": "In1.Cu",
+          "length_mm": 0.6915049999999994,
+          "covered_mm": 0.6915049999999994,
+          "gaps": []
+        },
+        {
+          "uuid": "eb90fa01-10e5-4dd5-8a31-803849bbaff5",
+          "layer": "F.Cu",
+          "reference_layer": "In1.Cu",
+          "length_mm": 0.25,
+          "covered_mm": 0.25,
+          "gaps": []
+        },
+        {
+          "uuid": "86cbb2b4-ac32-4721-a76f-99b59d2319dd",
+          "layer": "F.Cu",
+          "reference_layer": "In1.Cu",
+          "length_mm": 0.6915049999999994,
+          "covered_mm": 0.6915049999999994,
+          "gaps": []
+        },
+        {
+          "uuid": "39de6c98-7d9a-471c-b2f9-43d9c9333730",
+          "layer": "F.Cu",
+          "reference_layer": "In1.Cu",
+          "length_mm": 1.1250000000000004,
+          "covered_mm": 1.1250000000000004,
+          "gaps": []
+        },
+        {
+          "uuid": "7046e222-759f-4449-9d84-a23ee63610a3",
+          "layer": "F.Cu",
+          "reference_layer": "In1.Cu",
+          "length_mm": 0.2749999999999986,
+          "covered_mm": 0.2749999999999986,
+          "gaps": []
+        },
+        {
+          "uuid": "fc942a8a-d425-4167-b8a4-18e72843f988",
+          "layer": "F.Cu",
+          "reference_layer": "In1.Cu",
+          "length_mm": 0.3856488039654732,
+          "covered_mm": 0.3856488039654732,
+          "gaps": []
+        }
+      ],
+      "reference_supported_mm": 4.223775067317602,
+      "reference_gap_mm": 0.0,
+      "reference_corridor_uncovered_samples": []
+    },
+    {
+      "path_length_mm": 6.351093517840428,
+      "length_by_layer_mm": {
+        "F.Cu": 6.351093517840428
+      },
+      "path": [
+        {
+          "kind": "trace",
+          "uuid": "2fb3e302-1913-4eaa-966c-a86017b77d4b",
+          "layer": "F.Cu",
+          "a": [
+            11.19,
+            3.4
+          ],
+          "b": [
+            10.1,
+            3.5375
+          ],
+          "from": [
+            "F.Cu",
+            11.19,
+            3.4
+          ],
+          "to": [
+            "F.Cu",
+            10.1,
+            3.5375
+          ]
+        },
+        {
+          "kind": "trace",
+          "uuid": "8cb378fe-9be0-4044-8e02-03484132ab65",
+          "layer": "F.Cu",
+          "a": [
+            10.1,
+            3.5375
+          ],
+          "b": [
+            8.4,
+            3.5375
+          ],
+          "from": [
+            "F.Cu",
+            10.1,
+            3.5375
+          ],
+          "to": [
+            "F.Cu",
+            8.4,
+            3.5375
+          ]
+        },
+        {
+          "kind": "trace",
+          "uuid": "2bb26b3f-d4b2-4c3d-b8d4-209ed4389c07",
+          "layer": "F.Cu",
+          "a": [
+            8.4,
+            3.5375
+          ],
+          "b": [
+            7.635,
+            3.5375
+          ],
+          "from": [
+            "F.Cu",
+            8.4,
+            3.5375
+          ],
+          "to": [
+            "F.Cu",
+            7.635,
+            3.5375
+          ]
+        },
+        {
+          "kind": "trace",
+          "uuid": "92fa12d6-de64-4aa5-a1cd-2ef4e16efe22",
+          "layer": "F.Cu",
+          "a": [
+            7.635,
+            3.5375
+          ],
+          "b": [
+            7.635,
+            4.875
+          ],
+          "from": [
+            "F.Cu",
+            7.635,
+            3.5375
+          ],
+          "to": [
+            "F.Cu",
+            7.635,
+            4.875
+          ]
+        },
+        {
+          "kind": "trace",
+          "uuid": "a4e6e022-ff8e-4451-a497-77d0ce83091b",
+          "layer": "F.Cu",
+          "a": [
+            7.635,
+            4.875
+          ],
+          "b": [
+            7.3,
+            4.875
+          ],
+          "from": [
+            "F.Cu",
+            7.635,
+            4.875
+          ],
+          "to": [
+            "F.Cu",
+            7.3,
+            4.875
+          ]
+        },
+        {
+          "kind": "trace",
+          "uuid": "f2eac708-ffe3-480b-ab42-f4a80784daa1",
+          "layer": "F.Cu",
+          "a": [
+            7.3,
+            4.875
+          ],
+          "b": [
+            6.25,
+            5.25
+          ],
+          "from": [
+            "F.Cu",
+            7.3,
+            4.875
+          ],
+          "to": [
+            "F.Cu",
+            6.25,
+            5.25
+          ]
+        }
+      ],
+      "path_via_uuids": [],
+      "inventory_length_mm": 6.351093517840428,
+      "board": "controller",
+      "net": "/USB_DP",
+      "ports": [
+        {
+          "uuid": "c600d41b-8543-4dcd-8d24-123074ab499a",
+          "ref": "R110",
+          "number": "1",
+          "value": "0",
+          "net": "/USB_DP",
+          "xy": [
+            11.19,
+            3.4
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "rotation_deg": 0.0,
+          "layer": "F.Cu"
+        },
+        {
+          "uuid": "d481b6c6-2093-4bed-9069-f2b125edc1f6",
+          "ref": "J101",
+          "number": "3",
+          "value": "USB / JST 4-contact candidate",
+          "net": "/USB_DP",
+          "xy": [
+            6.25,
+            5.25
+          ],
+          "size_mm": [
+            0.6,
+            1.55
+          ],
+          "rotation_deg": 270.0,
+          "layer": "F.Cu"
+        }
+      ],
+      "graph_attachment": [
+        {
+          "xy": [
+            11.19,
+            3.4
+          ],
+          "layer": "F.Cu",
+          "center_offset_mm": 0.0
+        },
+        {
+          "xy": [
+            6.25,
+            5.25
+          ],
+          "layer": "F.Cu",
+          "center_offset_mm": 0.0
+        }
+      ],
+      "native_connected": true,
+      "segments": [
+        {
+          "uuid": "2bb26b3f-d4b2-4c3d-b8d4-209ed4389c07",
+          "net": "/USB_DP",
+          "a": [
+            8.4,
+            3.5375
+          ],
+          "b": [
+            7.635,
+            3.5375
+          ],
+          "width_mm": 0.1,
+          "layer": "F.Cu"
+        },
+        {
+          "uuid": "2fb3e302-1913-4eaa-966c-a86017b77d4b",
+          "net": "/USB_DP",
+          "a": [
+            11.19,
+            3.4
+          ],
+          "b": [
+            10.1,
+            3.5375
+          ],
+          "width_mm": 0.1,
+          "layer": "F.Cu"
+        },
+        {
+          "uuid": "8cb378fe-9be0-4044-8e02-03484132ab65",
+          "net": "/USB_DP",
+          "a": [
+            10.1,
+            3.5375
+          ],
+          "b": [
+            8.4,
+            3.5375
+          ],
+          "width_mm": 0.1,
+          "layer": "F.Cu"
+        },
+        {
+          "uuid": "92fa12d6-de64-4aa5-a1cd-2ef4e16efe22",
+          "net": "/USB_DP",
+          "a": [
+            7.635,
+            3.5375
+          ],
+          "b": [
+            7.635,
+            4.875
+          ],
+          "width_mm": 0.1,
+          "layer": "F.Cu"
+        },
+        {
+          "uuid": "a4e6e022-ff8e-4451-a497-77d0ce83091b",
+          "net": "/USB_DP",
+          "a": [
+            7.635,
+            4.875
+          ],
+          "b": [
+            7.3,
+            4.875
+          ],
+          "width_mm": 0.1,
+          "layer": "F.Cu"
+        },
+        {
+          "uuid": "f2eac708-ffe3-480b-ab42-f4a80784daa1",
+          "net": "/USB_DP",
+          "a": [
+            7.3,
+            4.875
+          ],
+          "b": [
+            6.25,
+            5.25
+          ],
+          "width_mm": 0.1,
+          "layer": "F.Cu"
+        }
+      ],
+      "vias": [],
+      "via_return_screen": [],
+      "reference_screen": [
+        {
+          "uuid": "2fb3e302-1913-4eaa-966c-a86017b77d4b",
+          "layer": "F.Cu",
+          "reference_layer": "In1.Cu",
+          "length_mm": 1.0986383617915405,
+          "covered_mm": 1.0986383617915405,
+          "gaps": []
+        },
+        {
+          "uuid": "8cb378fe-9be0-4044-8e02-03484132ab65",
+          "layer": "F.Cu",
+          "reference_layer": "In1.Cu",
+          "length_mm": 1.6999999999999993,
+          "covered_mm": 1.6999999999999993,
+          "gaps": []
+        },
+        {
+          "uuid": "2bb26b3f-d4b2-4c3d-b8d4-209ed4389c07",
+          "layer": "F.Cu",
+          "reference_layer": "In1.Cu",
+          "length_mm": 0.7650000000000006,
+          "covered_mm": 0.7650000000000006,
+          "gaps": []
+        },
+        {
+          "uuid": "92fa12d6-de64-4aa5-a1cd-2ef4e16efe22",
+          "layer": "F.Cu",
+          "reference_layer": "In1.Cu",
+          "length_mm": 1.3375,
+          "covered_mm": 1.3375,
+          "gaps": []
+        },
+        {
+          "uuid": "a4e6e022-ff8e-4451-a497-77d0ce83091b",
+          "layer": "F.Cu",
+          "reference_layer": "In1.Cu",
+          "length_mm": 0.33499999999999996,
+          "covered_mm": 0.33499999999999996,
+          "gaps": []
+        },
+        {
+          "uuid": "f2eac708-ffe3-480b-ab42-f4a80784daa1",
+          "layer": "F.Cu",
+          "reference_layer": "In1.Cu",
+          "length_mm": 1.1149551560488877,
+          "covered_mm": 1.1149551560488877,
+          "gaps": []
+        }
+      ],
+      "reference_supported_mm": 6.351093517840428,
+      "reference_gap_mm": 0.0,
+      "reference_corridor_uncovered_samples": []
+    },
+    {
+      "path_length_mm": 3.405623550796056,
+      "length_by_layer_mm": {
+        "F.Cu": 3.405623550796056
+      },
+      "path": [
+        {
+          "kind": "trace",
+          "uuid": "c292e951-78e2-4bb1-b02e-2807b107a3c4",
+          "layer": "F.Cu",
+          "a": [
+            13.175,
+            5.125
+          ],
+          "b": [
+            13.175,
+            4.8
+          ],
+          "from": [
+            "F.Cu",
+            13.175,
+            5.125
+          ],
+          "to": [
+            "F.Cu",
+            13.175,
+            4.8
+          ]
+        },
+        {
+          "kind": "trace",
+          "uuid": "7d62637e-e41a-4b6c-b445-a05067256a23",
+          "layer": "F.Cu",
+          "a": [
+            13.175,
+            4.8
+          ],
+          "b": [
+            12.825,
+            4.45
+          ],
+          "from": [
+            "F.Cu",
+            13.175,
+            4.8
+          ],
+          "to": [
+            "F.Cu",
+            12.825,
+            4.45
+          ]
+        },
+        {
+          "kind": "trace",
+          "uuid": "d2457215-bd30-47b1-a7d9-3521a80920c2",
+          "layer": "F.Cu",
+          "a": [
+            12.825,
+            4.45
+          ],
+          "b": [
+            12.825,
+            2.775
+          ],
+          "from": [
+            "F.Cu",
+            12.825,
+            4.45
+          ],
+          "to": [
+            "F.Cu",
+            12.825,
+            2.775
+          ]
+        },
+        {
+          "kind": "trace",
+          "uuid": "d40d73af-1eac-440d-b31b-2507b4320dfe",
+          "layer": "F.Cu",
+          "a": [
+            12.825,
+            2.775
+          ],
+          "b": [
+            12.3,
+            2.775
+          ],
+          "from": [
+            "F.Cu",
+            12.825,
+            2.775
+          ],
+          "to": [
+            "F.Cu",
+            12.3,
+            2.775
+          ]
+        },
+        {
+          "kind": "trace",
+          "uuid": "f18051ee-bd72-42d6-8156-0dc3ac71a868",
+          "layer": "F.Cu",
+          "a": [
+            12.3,
+            2.775
+          ],
+          "b": [
+            12.21,
+            2.4
+          ],
+          "from": [
+            "F.Cu",
+            12.3,
+            2.775
+          ],
+          "to": [
+            "F.Cu",
+            12.21,
+            2.4
+          ]
+        }
+      ],
+      "path_via_uuids": [],
+      "inventory_length_mm": 3.405623550796056,
+      "board": "controller",
+      "net": "/USB_DM_CHIP",
+      "ports": [
+        {
+          "uuid": "643a7a79-aac7-4ec6-953c-bbaede99ce6d",
+          "ref": "U101",
+          "number": "49",
+          "value": "ESP32-P4NRW16X / v3.x",
+          "net": "/USB_DM_CHIP",
+          "xy": [
+            13.175,
+            5.125
+          ],
+          "size_mm": [
+            0.2,
+            0.65
+          ],
+          "rotation_deg": 180.0,
+          "layer": "F.Cu"
+        },
+        {
+          "uuid": "30e58997-1421-4ab5-a93f-900f6e552a5f",
+          "ref": "R109",
+          "number": "2",
+          "value": "0",
+          "net": "/USB_DM_CHIP",
+          "xy": [
+            12.21,
+            2.4
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "rotation_deg": 0.0,
+          "layer": "F.Cu"
+        }
+      ],
+      "graph_attachment": [
+        {
+          "xy": [
+            13.175,
+            5.125
+          ],
+          "layer": "F.Cu",
+          "center_offset_mm": 0.0
+        },
+        {
+          "xy": [
+            12.21,
+            2.4
+          ],
+          "layer": "F.Cu",
+          "center_offset_mm": 0.0
+        }
+      ],
+      "native_connected": true,
+      "segments": [
+        {
+          "uuid": "7d62637e-e41a-4b6c-b445-a05067256a23",
+          "net": "/USB_DM_CHIP",
+          "a": [
+            13.175,
+            4.8
+          ],
+          "b": [
+            12.825,
+            4.45
+          ],
+          "width_mm": 0.1,
+          "layer": "F.Cu"
+        },
+        {
+          "uuid": "c292e951-78e2-4bb1-b02e-2807b107a3c4",
+          "net": "/USB_DM_CHIP",
+          "a": [
+            13.175,
+            5.125
+          ],
+          "b": [
+            13.175,
+            4.8
+          ],
+          "width_mm": 0.1,
+          "layer": "F.Cu"
+        },
+        {
+          "uuid": "d2457215-bd30-47b1-a7d9-3521a80920c2",
+          "net": "/USB_DM_CHIP",
+          "a": [
+            12.825,
+            4.45
+          ],
+          "b": [
+            12.825,
+            2.775
+          ],
+          "width_mm": 0.1,
+          "layer": "F.Cu"
+        },
+        {
+          "uuid": "d40d73af-1eac-440d-b31b-2507b4320dfe",
+          "net": "/USB_DM_CHIP",
+          "a": [
+            12.825,
+            2.775
+          ],
+          "b": [
+            12.3,
+            2.775
+          ],
+          "width_mm": 0.1,
+          "layer": "F.Cu"
+        },
+        {
+          "uuid": "f18051ee-bd72-42d6-8156-0dc3ac71a868",
+          "net": "/USB_DM_CHIP",
+          "a": [
+            12.3,
+            2.775
+          ],
+          "b": [
+            12.21,
+            2.4
+          ],
+          "width_mm": 0.1,
+          "layer": "F.Cu"
+        }
+      ],
+      "vias": [],
+      "via_return_screen": [],
+      "reference_screen": [
+        {
+          "uuid": "c292e951-78e2-4bb1-b02e-2807b107a3c4",
+          "layer": "F.Cu",
+          "reference_layer": "In1.Cu",
+          "length_mm": 0.3250000000000002,
+          "covered_mm": 0.3250000000000002,
+          "gaps": []
+        },
+        {
+          "uuid": "7d62637e-e41a-4b6c-b445-a05067256a23",
+          "layer": "F.Cu",
+          "reference_layer": "In1.Cu",
+          "length_mm": 0.494974746830584,
+          "covered_mm": 0.49497474683058396,
+          "gaps": []
+        },
+        {
+          "uuid": "d2457215-bd30-47b1-a7d9-3521a80920c2",
+          "layer": "F.Cu",
+          "reference_layer": "In1.Cu",
+          "length_mm": 1.6750000000000003,
+          "covered_mm": 1.6750000000000003,
+          "gaps": []
+        },
+        {
+          "uuid": "d40d73af-1eac-440d-b31b-2507b4320dfe",
+          "layer": "F.Cu",
+          "reference_layer": "In1.Cu",
+          "length_mm": 0.5249999999999986,
+          "covered_mm": 0.5249999999999986,
+          "gaps": []
+        },
+        {
+          "uuid": "f18051ee-bd72-42d6-8156-0dc3ac71a868",
+          "layer": "F.Cu",
+          "reference_layer": "In1.Cu",
+          "length_mm": 0.3856488039654732,
+          "covered_mm": 0.3856488039654732,
+          "gaps": []
+        }
+      ],
+      "reference_supported_mm": 3.405623550796056,
+      "reference_gap_mm": 5.551115123125783e-17,
+      "reference_corridor_uncovered_samples": []
+    },
+    {
+      "path_length_mm": 7.169245543440167,
+      "length_by_layer_mm": {
+        "F.Cu": 7.169245543440167
+      },
+      "path": [
+        {
+          "kind": "trace",
+          "uuid": "df6040bd-ea84-418d-8adb-69342dc717b2",
+          "layer": "F.Cu",
+          "a": [
+            11.19,
+            2.4
+          ],
+          "b": [
+            10.1,
+            2.4625
+          ],
+          "from": [
+            "F.Cu",
+            11.19,
+            2.4
+          ],
+          "to": [
+            "F.Cu",
+            10.1,
+            2.4625
+          ]
+        },
+        {
+          "kind": "trace",
+          "uuid": "2bd8cee9-c793-4cbb-b876-a5ee33aea682",
+          "layer": "F.Cu",
+          "a": [
+            10.1,
+            2.4625
+          ],
+          "b": [
+            8.4,
+            2.4625
+          ],
+          "from": [
+            "F.Cu",
+            10.1,
+            2.4625
+          ],
+          "to": [
+            "F.Cu",
+            8.4,
+            2.4625
+          ]
+        },
+        {
+          "kind": "trace",
+          "uuid": "fcf933bb-4720-4518-aa82-a429fbae36da",
+          "layer": "F.Cu",
+          "a": [
+            8.4,
+            2.4625
+          ],
+          "b": [
+            7.385,
+            2.4625
+          ],
+          "from": [
+            "F.Cu",
+            8.4,
+            2.4625
+          ],
+          "to": [
+            "F.Cu",
+            7.385,
+            2.4625
+          ]
+        },
+        {
+          "kind": "trace",
+          "uuid": "c6712c1b-529d-419a-bd17-95f9d4953f91",
+          "layer": "F.Cu",
+          "a": [
+            7.385,
+            2.4625
+          ],
+          "b": [
+            7.385,
+            4.625
+          ],
+          "from": [
+            "F.Cu",
+            7.385,
+            2.4625
+          ],
+          "to": [
+            "F.Cu",
+            7.385,
+            4.625
+          ]
+        },
+        {
+          "kind": "trace",
+          "uuid": "57efedeb-9433-497a-b5be-81e2c9c55fb6",
+          "layer": "F.Cu",
+          "a": [
+            7.385,
+            4.625
+          ],
+          "b": [
+            7.3,
+            4.625
+          ],
+          "from": [
+            "F.Cu",
+            7.385,
+            4.625
+          ],
+          "to": [
+            "F.Cu",
+            7.3,
+            4.625
+          ]
+        },
+        {
+          "kind": "trace",
+          "uuid": "944baad2-7601-4eed-8782-e71154bdeba4",
+          "layer": "F.Cu",
+          "a": [
+            7.3,
+            4.625
+          ],
+          "b": [
+            6.25,
+            4.25
+          ],
+          "from": [
+            "F.Cu",
+            7.3,
+            4.625
+          ],
+          "to": [
+            "F.Cu",
+            6.25,
+            4.25
+          ]
+        }
+      ],
+      "path_via_uuids": [],
+      "inventory_length_mm": 7.169245543440168,
+      "board": "controller",
+      "net": "/USB_DM",
+      "ports": [
+        {
+          "uuid": "32821b29-6872-4e30-a9ea-6c1f02f70868",
+          "ref": "R109",
+          "number": "1",
+          "value": "0",
+          "net": "/USB_DM",
+          "xy": [
+            11.19,
+            2.4
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "rotation_deg": 0.0,
+          "layer": "F.Cu"
+        },
+        {
+          "uuid": "4d026ca0-a6a5-44ed-afea-53dd08c10436",
+          "ref": "J101",
+          "number": "2",
+          "value": "USB / JST 4-contact candidate",
+          "net": "/USB_DM",
+          "xy": [
+            6.25,
+            4.25
+          ],
+          "size_mm": [
+            0.6,
+            1.55
+          ],
+          "rotation_deg": 270.0,
+          "layer": "F.Cu"
+        }
+      ],
+      "graph_attachment": [
+        {
+          "xy": [
+            11.19,
+            2.4
+          ],
+          "layer": "F.Cu",
+          "center_offset_mm": 0.0
+        },
+        {
+          "xy": [
+            6.25,
+            4.25
+          ],
+          "layer": "F.Cu",
+          "center_offset_mm": 0.0
+        }
+      ],
+      "native_connected": true,
+      "segments": [
+        {
+          "uuid": "2bd8cee9-c793-4cbb-b876-a5ee33aea682",
+          "net": "/USB_DM",
+          "a": [
+            10.1,
+            2.4625
+          ],
+          "b": [
+            8.4,
+            2.4625
+          ],
+          "width_mm": 0.1,
+          "layer": "F.Cu"
+        },
+        {
+          "uuid": "57efedeb-9433-497a-b5be-81e2c9c55fb6",
+          "net": "/USB_DM",
+          "a": [
+            7.385,
+            4.625
+          ],
+          "b": [
+            7.3,
+            4.625
+          ],
+          "width_mm": 0.1,
+          "layer": "F.Cu"
+        },
+        {
+          "uuid": "944baad2-7601-4eed-8782-e71154bdeba4",
+          "net": "/USB_DM",
+          "a": [
+            7.3,
+            4.625
+          ],
+          "b": [
+            6.25,
+            4.25
+          ],
+          "width_mm": 0.1,
+          "layer": "F.Cu"
+        },
+        {
+          "uuid": "c6712c1b-529d-419a-bd17-95f9d4953f91",
+          "net": "/USB_DM",
+          "a": [
+            7.385,
+            2.4625
+          ],
+          "b": [
+            7.385,
+            4.625
+          ],
+          "width_mm": 0.1,
+          "layer": "F.Cu"
+        },
+        {
+          "uuid": "df6040bd-ea84-418d-8adb-69342dc717b2",
+          "net": "/USB_DM",
+          "a": [
+            11.19,
+            2.4
+          ],
+          "b": [
+            10.1,
+            2.4625
+          ],
+          "width_mm": 0.1,
+          "layer": "F.Cu"
+        },
+        {
+          "uuid": "fcf933bb-4720-4518-aa82-a429fbae36da",
+          "net": "/USB_DM",
+          "a": [
+            8.4,
+            2.4625
+          ],
+          "b": [
+            7.385,
+            2.4625
+          ],
+          "width_mm": 0.1,
+          "layer": "F.Cu"
+        }
+      ],
+      "vias": [],
+      "via_return_screen": [],
+      "reference_screen": [
+        {
+          "uuid": "df6040bd-ea84-418d-8adb-69342dc717b2",
+          "layer": "F.Cu",
+          "reference_layer": "In1.Cu",
+          "length_mm": 1.0917903873912793,
+          "covered_mm": 1.0917903873912793,
+          "gaps": []
+        },
+        {
+          "uuid": "2bd8cee9-c793-4cbb-b876-a5ee33aea682",
+          "layer": "F.Cu",
+          "reference_layer": "In1.Cu",
+          "length_mm": 1.6999999999999993,
+          "covered_mm": 1.6999999999999993,
+          "gaps": []
+        },
+        {
+          "uuid": "fcf933bb-4720-4518-aa82-a429fbae36da",
+          "layer": "F.Cu",
+          "reference_layer": "In1.Cu",
+          "length_mm": 1.0150000000000006,
+          "covered_mm": 1.0150000000000006,
+          "gaps": []
+        },
+        {
+          "uuid": "c6712c1b-529d-419a-bd17-95f9d4953f91",
+          "layer": "F.Cu",
+          "reference_layer": "In1.Cu",
+          "length_mm": 2.1625,
+          "covered_mm": 2.1625,
+          "gaps": []
+        },
+        {
+          "uuid": "57efedeb-9433-497a-b5be-81e2c9c55fb6",
+          "layer": "F.Cu",
+          "reference_layer": "In1.Cu",
+          "length_mm": 0.08499999999999996,
+          "covered_mm": 0.08499999999999996,
+          "gaps": []
+        },
+        {
+          "uuid": "944baad2-7601-4eed-8782-e71154bdeba4",
+          "layer": "F.Cu",
+          "reference_layer": "In1.Cu",
+          "length_mm": 1.1149551560488877,
+          "covered_mm": 1.1149551560488877,
+          "gaps": []
+        }
+      ],
+      "reference_supported_mm": 7.169245543440167,
+      "reference_gap_mm": 0.0,
+      "reference_corridor_uncovered_samples": []
+    }
+  ],
+  "lanes": [
+    {
+      "polarity": "DP",
+      "chip_mm": 4.223775067317602,
+      "connector_mm": 6.351093517840428,
+      "total_planar_mm": 10.574868585158029
+    },
+    {
+      "polarity": "DM",
+      "chip_mm": 3.405623550796056,
+      "connector_mm": 7.169245543440167,
+      "total_planar_mm": 10.574869094236224
+    }
+  ],
+  "esd_through_path": [
+    {
+      "pin": "3",
+      "net": "/USB_DP",
+      "pad_center_distance_mm": 0.0
+    },
+    {
+      "pin": "4",
+      "net": "/USB_DP",
+      "pad_center_distance_mm": 0.0
+    },
+    {
+      "pin": "1",
+      "net": "/USB_DM",
+      "pad_center_distance_mm": 0.0
+    },
+    {
+      "pin": "6",
+      "net": "/USB_DM",
+      "pad_center_distance_mm": 0.0
+    }
+  ],
+  "reference_gaps": [],
+  "difference_mm": 5.090781947103551e-07,
+  "pin_mapping": [
+    {
+      "pin": "1",
+      "net": "/USB_VBUS"
+    },
+    {
+      "pin": "2",
+      "net": "/USB_DM"
+    },
+    {
+      "pin": "3",
+      "net": "/USB_DP"
+    },
+    {
+      "pin": "4",
+      "net": "GND"
+    }
+  ],
+  "chip_proximity": {
+    "nearest_mate_centerline_mm": {
+      "min": 0.20461496511892163,
+      "median": 0.2967323099622129,
+      "p95": 0.9415049999999994,
+      "max": 0.9415049999999994
+    },
+    "length_without_any_mate_on_same_layer_mm": 0.0,
+    "scope": "Nearest geometry only; not coupling, corresponding path station or impedance."
+  },
+  "connector_proximity": {
+    "nearest_mate_centerline_mm": {
+      "min": 0.25,
+      "median": 0.8035515223934211,
+      "p95": 1.0750000000000002,
+      "max": 1.0750000000000002
+    },
+    "length_without_any_mate_on_same_layer_mm": 0.0,
+    "scope": "Nearest geometry only; not coupling, corresponding path station or impedance."
+  },
+  "all_pad_groups_connected": true,
+  "ground_guard_probes": [
+    {
+      "xy": [
+        7.184,
+        3.8
+      ],
+      "ground": true
+    },
+    {
+      "xy": [
+        7.184,
+        3.9
+      ],
+      "ground": true
+    },
+    {
+      "xy": [
+        7.184,
+        4.0
+      ],
+      "ground": true
+    },
+    {
+      "xy": [
+        7.184,
+        4.1
+      ],
+      "ground": true
+    },
+    {
+      "xy": [
+        7.184,
+        4.2
+      ],
+      "ground": true
+    },
+    {
+      "xy": [
+        7.184,
+        4.3
+      ],
+      "ground": true
+    },
+    {
+      "xy": [
+        7.836,
+        3.8
+      ],
+      "ground": true
+    },
+    {
+      "xy": [
+        7.836,
+        3.9
+      ],
+      "ground": true
+    },
+    {
+      "xy": [
+        7.836,
+        4.0
+      ],
+      "ground": true
+    },
+    {
+      "xy": [
+        7.836,
+        4.1
+      ],
+      "ground": true
+    },
+    {
+      "xy": [
+        7.836,
+        4.2
+      ],
+      "ground": true
+    },
+    {
+      "xy": [
+        7.836,
+        4.3
+      ],
+      "ground": true
+    },
+    {
+      "xy": [
+        13.026,
+        3.2
+      ],
+      "ground": true
+    },
+    {
+      "xy": [
+        13.026,
+        3.3000000000000003
+      ],
+      "ground": true
+    },
+    {
+      "xy": [
+        13.026,
+        3.4000000000000004
+      ],
+      "ground": true
+    },
+    {
+      "xy": [
+        13.026,
+        3.5
+      ],
+      "ground": true
+    },
+    {
+      "xy": [
+        13.026,
+        3.6
+      ],
+      "ground": true
+    },
+    {
+      "xy": [
+        13.026,
+        3.7
+      ],
+      "ground": true
+    },
+    {
+      "xy": [
+        13.026,
+        3.8000000000000003
+      ],
+      "ground": true
+    },
+    {
+      "xy": [
+        13.026,
+        3.9000000000000004
+      ],
+      "ground": true
+    },
+    {
+      "xy": [
+        13.026,
+        4.0
+      ],
+      "ground": true
+    },
+    {
+      "xy": [
+        13.026,
+        4.1000000000000005
+      ],
+      "ground": true
+    },
+    {
+      "xy": [
+        13.026,
+        4.2
+      ],
+      "ground": true
+    },
+    {
+      "xy": [
+        13.026,
+        4.300000000000001
+      ],
+      "ground": true
+    },
+    {
+      "xy": [
+        13.026,
+        4.4
+      ],
+      "ground": true
+    },
+    {
+      "xy": [
+        11.682494745460902,
+        4.25
+      ],
+      "ground": true
+    }
+  ],
+  "drc": {
+    "violations": 0,
+    "unconnected": 0
+  },
+  "exclusions": "Resistor and ESD package delays, contact travel and external cable; no USB compliance or hardware qualification."
+}

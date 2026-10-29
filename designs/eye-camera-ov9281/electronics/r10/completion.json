@@ -1,0 +1,11 @@
+{
+  "all_seven_tasks_verified": true,
+  "snapshot": "checkpoints/2026-10-28-r10-matched/snapshot.json",
+  "session_sha256": "c20959c4d38af3d2609dfa9f6bd79cb1152468eff1cee4e1025dc3cfa7094306",
+  "checklist_sha256": "9dea3b6a1e6109da83572033cb040e9d9bf1ec9610c888a5ada956bd0746f493",
+  "native_shape_checks": 125,
+  "native_erc_findings": 0,
+  "native_drc_findings": 0,
+  "audit_findings_reviewed": 21,
+  "fabrication_ready": false
+}

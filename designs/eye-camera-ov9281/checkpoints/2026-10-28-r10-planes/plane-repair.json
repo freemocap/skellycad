@@ -1,0 +1,1719 @@
+{
+  "source": {
+    "date": "2026-10-28",
+    "working_pcb_trial": "OV9281-P4-R09-data1p-03",
+    "fabrication_ready": false,
+    "scope": "PCB connectivity and native design rules only",
+    "snapshot": "checkpoints/2026-10-28-routing-complete/snapshot.json",
+    "selected_electrical_baseline": "OV9281-P4-R08",
+    "previous_matched_review": "working-review.json",
+    "mechanical_copper_updated": false,
+    "files": [
+      {
+        "path": "generated/ov9281-r09-data1p-03/controller.kicad_pcb",
+        "sha256": "04a2292f27f72b89caadb42594b5ea744b81143c3679996aaac16bfe54855be5"
+      },
+      {
+        "path": "generated/ov9281-r09-data1p-03/head.kicad_pcb",
+        "sha256": "de2fef7248318620c9cbe298fba39089304b454c9af35ba16dd6d1384c957562"
+      },
+      {
+        "path": "generated/ov9281-r09-data1p-03/flex-study.kicad_pcb",
+        "sha256": "52b315d55f15e14173298e533959e040e248c0e830c1fcb76628598c7fd21c6f"
+      },
+      {
+        "path": "generated/ov9281-r09-data1p-03/camera.kicad_sch",
+        "sha256": "b307a594304676204d24e58bcce617ebf770879fbdfe65a5e94134018c0c2991"
+      },
+      {
+        "path": "generated/ov9281-r09-data1p-03/OV9281-P4-R09-assembly.kicad_pcb",
+        "sha256": "2ddd0f3a27f0cd638a023c4a2c58a16c8d00d1519afa46e6f4d82628ff785be1"
+      }
+    ],
+    "approved_checklist": [
+      {
+        "text": "Connect U1.E4 (SCL) and verify it without introducing connectivity or DRC regressions.",
+        "complete": true,
+        "net": "/M1_CAM_SCL_1V8"
+      },
+      {
+        "text": "Connect U1.E8 (VH) and verify it without introducing connectivity or DRC regressions.",
+        "complete": true,
+        "net": "/M1_VH"
+      },
+      {
+        "text": "Connect U1.F7 (VN3) and verify it without introducing connectivity or DRC regressions.",
+        "complete": true,
+        "net": "/M1_VN3"
+      },
+      {
+        "text": "Connect U1.G4 (MIPI clock P) and verify it without introducing connectivity or DRC regressions.",
+        "complete": true,
+        "net": "/CAM_L_CLK_P"
+      },
+      {
+        "text": "Connect U1.G5 (MIPI data 1 P), verify the combined result, and save and open the checked PCB.",
+        "complete": true,
+        "net": "/CAM_L_D1_P"
+      }
+    ],
+    "desktop_verification": {
+      "method": "Direct process launch and command-line inspection",
+      "pid": 1348,
+      "title": "head \u2014 PCB Editor",
+      "visual_inspection": false
+    },
+    "limits": [
+      "MIPI differential impedance, skew and return paths unqualified",
+      "New In1 signal routes interrupt the ground pour; explicit tracks restore DC connectivity only",
+      "No hardware operation demonstrated"
+    ]
+  },
+  "boards": {
+    "head": {
+      "moved_segments": [
+        {
+          "uuid": "0369895d-9429-4f8b-a331-4c66223247bd",
+          "net": "/IR_K",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "71e5091d-b556-4ebc-973c-d28f8247bfab",
+          "net": "/IR_K",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "80d77a3d-7fa6-474d-bcfc-ff228af89ff7",
+          "net": "/IR_K",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "f38c7b05-ac77-4e46-bbde-bb4eede2475b",
+          "net": "/IR_K",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "0eda08b2-7bc5-4ad1-ab9f-a4f48ca5f2ea",
+          "net": "+3V3",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "7bfd5104-f0d2-41b5-9414-8479eec663e6",
+          "net": "+3V3",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "8aa5e5d5-6f28-4b86-a826-1c7bb83839ac",
+          "net": "+3V3",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "3ac0141a-4d53-420f-b7cc-429ddaf6b39d",
+          "net": "/CAM_L_D0_N",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "4760e7df-0bf8-4e82-849d-48c0286ad72f",
+          "net": "/CAM_L_D0_N",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "78b2660a-25c8-43c3-b4b1-5939bd987e74",
+          "net": "/CAM_L_D0_N",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "9c083a94-ee08-416f-b95c-cc26e5eb7c5c",
+          "net": "/CAM_L_D0_N",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "e34ef235-8ff9-4f05-b28b-f1172b3ea958",
+          "net": "/CAM_L_D0_N",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "f750ba2e-f7cf-44c5-936c-76648d1550ae",
+          "net": "/CAM_L_D0_N",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "0c370eb4-8e22-45d4-bc5b-a2228a907574",
+          "net": "/CAM_L_D1_N",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "2c67cc00-2484-49ff-8a52-3560908e550c",
+          "net": "/CAM_L_D1_N",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "3ce7980a-1dc4-45c6-a86b-f733079fdb51",
+          "net": "/CAM_L_D1_N",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "5bfc3a95-7016-46d7-996c-1760f61cde20",
+          "net": "/CAM_L_D1_N",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "672fd0bd-ed9c-40bf-b997-fb521d6121a9",
+          "net": "/CAM_L_D1_N",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "b0097b34-eb1d-40d6-bbe9-32aa580c8af6",
+          "net": "/CAM_L_D1_N",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "c6ef7414-5424-4f5f-bdef-629e498d821e",
+          "net": "/CAM_L_D1_N",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "f354e92a-95d2-407f-a7e4-670046b1562f",
+          "net": "/CAM_L_D1_N",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "065866b4-2448-4671-ad89-0d0398ea1d79",
+          "net": "/CAM_L_D1_P",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "183cfff8-42ca-4ce1-bf8f-42ac52064870",
+          "net": "/CAM_L_D1_P",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "2a21ff02-3839-45c4-9a9b-d7582f530c6e",
+          "net": "/CAM_L_D1_P",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "3ddd8a73-124c-436c-8536-0370c0c24f67",
+          "net": "/CAM_L_D1_P",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "4ccd026a-02bf-439d-afae-c0c1df54177f",
+          "net": "/CAM_L_D1_P",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "6439e152-b935-4d6c-8ab1-1ce7143b1e99",
+          "net": "/CAM_L_D1_P",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "73d62a93-76aa-4ab1-bb5e-455c9b4cb651",
+          "net": "/CAM_L_D1_P",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "89b5d1bc-9431-40b7-bbc7-894ec6c55f6d",
+          "net": "/CAM_L_D1_P",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "9da4ff62-c719-4313-9b88-d931566c36a8",
+          "net": "/CAM_L_D1_P",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "9e2a6178-4f84-4799-8b15-ebc7ac9c5b2b",
+          "net": "/CAM_L_D1_P",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "a78b8743-6977-4205-b8a1-53e3d776b848",
+          "net": "/CAM_L_D1_P",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "b4464ac6-4ee6-4bc2-90de-2b04e01ab6db",
+          "net": "/CAM_L_D1_P",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "c9a78f5a-7a11-46d5-a081-b407f9db3826",
+          "net": "/CAM_L_D1_P",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "d1d44417-3b12-4b6d-8dbb-ad6190cafd0a",
+          "net": "/CAM_L_D1_P",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "de636070-8046-4a65-8042-51164c8d03d1",
+          "net": "/CAM_L_D1_P",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "e6095758-871d-4d0d-b6b2-db2dfcee6523",
+          "net": "/CAM_L_D1_P",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "1d649213-72ce-4efd-a8d3-d202cdf09810",
+          "net": "/M1_CAM_SCL_1V8",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "42cac2ee-f57f-460c-962f-dcc646dc5de1",
+          "net": "/M1_CAM_SCL_1V8",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "fe19a465-6c8e-400c-93b9-b67d75b4ede5",
+          "net": "/M1_CAM_SCL_1V8",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "057e1c9b-324f-4a45-86bb-6d1f0654f40d",
+          "net": "/M1_CAM_SDA_1V8",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "6711433a-3d1e-47f4-9d3b-3dc090d49d93",
+          "net": "/M1_CAM_SDA_1V8",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "7e1f91b9-4d94-461f-a9b2-e6457d02960b",
+          "net": "/M1_CAM_SDA_1V8",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "e01fcd8b-2f0c-4bec-ba30-e777afd7de3b",
+          "net": "/M1_CAM_SDA_1V8",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "4ead6c7c-1852-454f-a059-b503141dd9ec",
+          "net": "/CAM_NRST_1V8",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "6735c173-ce4f-4f51-a15a-a0c5fe802241",
+          "net": "/CAM_NRST_1V8",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "1738809b-e603-40ee-bc59-7da6db2fdb5e",
+          "net": "/M1_VSYNC_1V8_M",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "62e015c4-438a-4ec4-8609-550040893024",
+          "net": "/M1_VSYNC_1V8_M",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "699e9cda-d152-4b88-b9a2-02a322e8bb7b",
+          "net": "/M1_VSYNC_1V8_M",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "70be50f7-6722-4ebe-8f7b-efe123e5f59e",
+          "net": "/M1_VSYNC_1V8_M",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "9f5fe3b7-e21e-4978-bd30-ad7c21976583",
+          "net": "/M1_VSYNC_1V8_M",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "ca366a35-60bb-4e6b-9548-7845ae95b716",
+          "net": "/M1_VSYNC_1V8_M",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "e9244a3f-09df-4b17-bd4e-d92aef12b1cf",
+          "net": "/M1_VSYNC_1V8_M",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "1e05c64b-768d-41fd-8789-36f9cd80a7c5",
+          "net": "+2V8",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "47b3d86e-5a8b-4abf-9392-59047a24b4ff",
+          "net": "+2V8",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "acd1a1a7-36e8-40ea-8256-9d09505c4f88",
+          "net": "+2V8",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "cec10e90-26fb-475f-b623-b64d09f60c4f",
+          "net": "+2V8",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "f10eaa02-bb5c-4daf-a224-216450f2f0ce",
+          "net": "+2V8",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "3867adf9-3fbe-4312-a367-bf7ebda6e634",
+          "net": "/LED_PWM",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "53faa934-3180-4516-ac32-576737aeca43",
+          "net": "/LED_PWM",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "6cd59808-58b6-489b-a5cd-81d28ffc242a",
+          "net": "/LED_PWM",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "8e68ed2e-f225-47fb-9567-4644c14d0be0",
+          "net": "/LED_PWM",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "f7f5952a-e4ea-4c17-81e4-4f5c89ed165b",
+          "net": "/LED_PWM",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "896dccf0-54d5-44f9-ac7c-1c80bf7a3133",
+          "net": "/IR_BASE",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "909bc79c-aa3d-4c22-9683-6901ea05813f",
+          "net": "/IR_BASE",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "d6fedf84-3f85-4b3f-9ae4-a850a320d6b2",
+          "net": "/IR_BASE",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "eaed53ed-859a-427b-931e-f3cdae31aa46",
+          "net": "/IR_BASE",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "3b5fb807-2e24-4f0b-917e-41db463124a0",
+          "net": "/M1_DVDD",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "4c1da7ee-006e-4b3e-a3cb-f1b26c5c6d3c",
+          "net": "/M1_DVDD",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "4cdfede8-c722-4857-8d52-73cad5cd6506",
+          "net": "/M1_DVDD",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "70f281cd-9f56-4314-a5c5-70ddb6a9517b",
+          "net": "/M1_DVDD",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "a0da2a84-0221-4096-a31a-e173e6435634",
+          "net": "/M1_DVDD",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "d3fcaa3d-52fd-4912-b5dc-a5f243587572",
+          "net": "/M1_DVDD",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "572a159f-790d-4d1a-abe9-07ad24978dd4",
+          "net": "/M1_DVDD",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "5c653ece-0397-4eae-b441-d6a1c68fecd6",
+          "net": "/M1_DVDD",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "7e30078e-bede-438a-9fb2-6744278d0f06",
+          "net": "/M1_DVDD",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "81860bb5-d35e-463e-8361-76e0195bff6e",
+          "net": "/M1_DVDD",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "a8e99629-3605-4757-acae-5cc0e75ac687",
+          "net": "/M1_DVDD",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "d9c248e6-5132-47fc-828c-36e87dfb34f9",
+          "net": "/M1_DVDD",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "26b3772c-223a-40da-9d02-67060381a32c",
+          "net": "/M1_DOVDD",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "34365b9e-fa34-4c31-bd63-6dcdb3641830",
+          "net": "/M1_DOVDD",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "38e5304e-0ded-45e4-9451-88f81a17128b",
+          "net": "/M1_DOVDD",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "5c96e81f-f28c-40f4-a815-439272519f82",
+          "net": "/M1_DOVDD",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "697e4a2a-5f2b-4b38-8909-9204d63912cf",
+          "net": "/M1_DOVDD",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "731ab46c-b642-4fa6-be15-75d2221f6199",
+          "net": "/M1_DOVDD",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "9ccd6d85-2616-4e05-bf68-024a15764528",
+          "net": "/M1_DOVDD",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "a2afe6ba-d35f-4834-bf40-edf69b3ffec5",
+          "net": "/M1_DOVDD",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "adaaf7fa-648b-41f7-b8b4-e21f566bfcc1",
+          "net": "/M1_DOVDD",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "bbc6f0ca-ee58-40a9-b10e-d81929618368",
+          "net": "/M1_DOVDD",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "f3fbb2a9-d875-4168-b34c-3e95bf27a086",
+          "net": "/M1_DOVDD",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "f8515c85-8500-42d1-8c53-e474e0fb52aa",
+          "net": "/M1_DOVDD",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "210987e8-7b06-44fc-8fd5-9bcffc4a0f39",
+          "net": "/M1_DOVDD",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "90cee25c-4936-4dfb-8d24-a3533e0975d9",
+          "net": "/M1_DOVDD",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "a978ec4b-5c16-4a4f-9597-162d61d20611",
+          "net": "/M1_DOVDD",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "bd3636d9-55a0-4faf-9320-4af5cc570262",
+          "net": "/M1_DOVDD",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "bd68485a-ce82-453a-8d3b-47b0af3fcce4",
+          "net": "/M1_DOVDD",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "0fee9f66-ef5f-40c8-b464-106877c6e730",
+          "net": "/M1_AVDD",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "5af88230-e000-45ed-8719-4deda21a55da",
+          "net": "/M1_AVDD",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "24be082d-b071-41d5-85c4-ee29e606f0f4",
+          "net": "/M1_AVDD",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "2e701e81-2b10-4e41-9849-712c134fdeab",
+          "net": "/M1_AVDD",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "9c9a5593-9381-47a8-a1ae-61374d304bcf",
+          "net": "/M1_AVDD",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "88ceeedb-ade7-4c51-a047-0199bba59549",
+          "net": "/M1_VN1",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "b45267e8-5fa2-4996-883e-04c7db199f09",
+          "net": "/M1_VN1",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "37936eeb-9a8f-4b18-8e47-a50b163ec056",
+          "net": "/M1_VN1",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "531e3847-dba2-420d-99f2-cf0d8eb04146",
+          "net": "/M1_VN1",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "689942e7-3d95-491f-8150-559f4db32ae5",
+          "net": "/M1_VN1",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "b863a803-0903-4e55-8d9c-a8d0f8649093",
+          "net": "/M1_VN1",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "c2f29d93-2e36-477c-b79c-fe1fe188233a",
+          "net": "/M1_VN1",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "034894a2-6e7d-47a5-a36c-3c7b9655b37c",
+          "net": "/M1_SID",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "12efcaed-2cee-45c7-9c1a-3c30fcc7ace0",
+          "net": "/M1_SID",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "505c4004-b2a2-4be8-afd8-0095e33b6f53",
+          "net": "/M1_SID",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "51021d0e-3a97-48ff-a914-e657eb75fb0f",
+          "net": "/M1_SID",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "5a38f202-7891-4af6-b44f-0a90e95218b6",
+          "net": "/M1_SID",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "6e2a647a-e966-4ce3-84d6-c49d7a588b0f",
+          "net": "/M1_SID",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "cd7e5784-a13f-464a-b5f7-940afe5eef0f",
+          "net": "/M1_SID",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "e5b2399f-f34b-473e-9eae-1761ca7564f6",
+          "net": "/M1_SID",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "e825435b-efa1-4d3c-8cd3-cf160b5e2aa1",
+          "net": "/M1_SID",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "6bfc3dc2-4c1a-456a-9a0f-b3fbaa4f6a6e",
+          "net": "/M1_VH",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "6d501240-63e9-4b09-99b2-29aec30b237f",
+          "net": "/M1_VH",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "9c012a29-819b-4084-923e-069cd38b66e0",
+          "net": "/M1_VH",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "ac4d6b55-b0b4-4392-a83e-7c1c128d746e",
+          "net": "/M1_VH",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "d965082d-ecb8-4716-b5d2-97a7ae27e4a0",
+          "net": "/M1_VH",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "e0e046fa-f333-4e26-b8b6-ad39130b4942",
+          "net": "/M1_VH",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "f241e8e4-2468-41fd-8649-d8a7f99c8cef",
+          "net": "/M1_VH",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        }
+      ],
+      "all_pad_groups_preserved": true,
+      "ground_planes": [
+        "In1.Cu",
+        "In4.Cu"
+      ],
+      "drc_violations": 0,
+      "unconnected_items": 0,
+      "sha256": "44b1d246f9a4ec1c988aa0e782f33ca9c715ba916490fbf6325be65574226556"
+    },
+    "controller": {
+      "moved_segments": [
+        {
+          "uuid": "0c5fb95c-7c00-4293-b061-475df5784e76",
+          "net": "/P4_VDD_HP",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "26fb649c-0535-440b-8a5d-09162041a52a",
+          "net": "/P4_VDD_HP",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "43c74235-fde7-4b1f-87f8-188bc0854b13",
+          "net": "/P4_VDD_HP",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "52f09a8d-f53a-4019-bb4e-03f7265bf2cf",
+          "net": "/P4_VDD_HP",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "fdddef50-eaad-4ac6-86ab-8fd0104819e2",
+          "net": "/P4_VDD_HP",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "522f39ab-aab9-449c-9512-e87efe6be020",
+          "net": "/P4_VDD_HP",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "56eb39d9-015a-4e36-a424-57211ab0c163",
+          "net": "/P4_VDD_HP",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "760feb00-4a3a-419b-b520-71c41f151ac7",
+          "net": "/P4_VDD_HP",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "d24feb41-b22c-4a49-a158-c0edd2acd7a7",
+          "net": "/P4_VDD_HP",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "dbf07fd5-7749-40bd-8997-d3f096a48c26",
+          "net": "/P4_VDD_HP",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "dec69990-3224-4fe2-a325-b5e89cff22d2",
+          "net": "/P4_VDD_HP",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "fc16b2ac-c326-45a6-adb6-ecfebb3363ee",
+          "net": "/P4_VDD_HP",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "7072cd21-cb62-4549-a5be-250b9681a1ee",
+          "net": "/USB_VBUS",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "e02b480d-cde0-49c9-904d-07488125e115",
+          "net": "/USB_VBUS",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "19c2b25c-7d1a-40a7-8cfa-515aa82138ec",
+          "net": "/P4_FB",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "7129565f-1165-4c3b-a9ac-c52c27438a0e",
+          "net": "/P4_FB",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "e3c6a2b7-4fa9-411d-b9cd-4e9c7b1e506b",
+          "net": "/P4_FB",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "0dd4b6bc-aa0e-40e8-9b70-1c0fb008f866",
+          "net": "+3V3",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "1ec7f3ac-2f05-4a94-9181-99f9d9c90f55",
+          "net": "+3V3",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "333006f8-8198-4ac3-bdd5-5af970ae028d",
+          "net": "+3V3",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "45462b64-a403-4b11-8500-8978c2ceea4e",
+          "net": "+3V3",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "81321a25-d778-4bb0-972a-ccffd9a0a25d",
+          "net": "+3V3",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "8f75be41-3e9b-444a-bf9d-6e0c2adead1a",
+          "net": "+3V3",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "8ff8c27f-f47d-4062-92fe-b84d96db521a",
+          "net": "+3V3",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "98c3d636-1f45-4f99-9e79-a3e2a1247671",
+          "net": "+3V3",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "d86a5b34-be80-4ac3-b52f-02165302298b",
+          "net": "+3V3",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "1f7d69b6-de0d-4f51-b2e0-f509b71228f8",
+          "net": "+3V3",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "69a02088-064b-43a7-b2dc-e78f220b389c",
+          "net": "+3V3",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "f33972b5-72e3-4b5c-a681-8401814223f7",
+          "net": "+3V3",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "1d605ba0-39f4-4990-8c90-08ce4b724f9e",
+          "net": "/CAM_L_D0_P",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "4a8b7cf6-7c14-4d59-ba84-c67520f4b6a2",
+          "net": "/CAM_L_D0_P",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "8346c3fe-af96-47a4-8bbb-f4121ebeb606",
+          "net": "/CAM_L_D0_P",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "9c8d20c0-1807-4316-94eb-a172a6c05576",
+          "net": "/CAM_L_D0_P",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "d365a655-a36b-4ca0-96ed-68d6fa0fffe5",
+          "net": "/CAM_L_D0_P",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "06a3628c-9c10-4b22-ad7b-03c5b7d8c301",
+          "net": "/CAM_L_CLK_N",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "230c8c50-2b19-468d-9a9c-c70ad2e037d6",
+          "net": "/CAM_L_CLK_N",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "38b1c8b8-9678-44f3-ad00-b32ad88a4427",
+          "net": "/CAM_L_CLK_N",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "4e16fc51-1010-4417-9c69-f516085e6cc3",
+          "net": "/CAM_L_CLK_N",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "51bd2c40-16c8-49bf-b194-82d0bd13b4c6",
+          "net": "/CAM_L_CLK_N",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "85b910d6-afca-4dca-b1c0-e2f98d1a0760",
+          "net": "/CAM_L_CLK_N",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "a19ec6f9-c2e1-4f99-a909-79b330135e4b",
+          "net": "/CAM_L_CLK_N",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "af0e9b7c-fb5d-43d9-9465-6f2ed5d070e8",
+          "net": "/CAM_L_CLK_N",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "d931339e-a632-4115-aef6-d359aaf5159e",
+          "net": "/CAM_L_CLK_N",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "e895cf25-62d8-4b91-a3be-00dd4624c164",
+          "net": "/CAM_L_CLK_N",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "561f18e1-ac05-4295-b1d9-ad8e9d83798e",
+          "net": "/CAM_L_CLK_P",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "562f15f1-5e2d-4644-b99b-f919aac8b8f0",
+          "net": "/CAM_L_CLK_P",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "62fc8ee1-5fe4-4e52-b51d-931171dafbc4",
+          "net": "/CAM_L_CLK_P",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "72adabb8-1255-4340-9a4a-553f16e1f781",
+          "net": "/CAM_L_CLK_P",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "7b3df65d-3de0-45cc-b3a3-a25f108a0584",
+          "net": "/CAM_L_CLK_P",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "8c8856b6-122d-4cf7-8d2d-1c53c6ece47b",
+          "net": "/CAM_L_CLK_P",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "cdabd77c-bef5-4e20-97a9-3a124f494b8a",
+          "net": "/CAM_L_CLK_P",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "214f75d5-7437-4717-82e7-25ed23d909b7",
+          "net": "/CAM_L_D1_N",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "399e19a5-6523-4b61-a3cc-1255e2eae834",
+          "net": "/CAM_L_D1_N",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "5b550e4e-8ea9-46fc-8b1c-1e46bc75018d",
+          "net": "/CAM_L_D1_N",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "c3df6e50-9f64-4dc4-8e13-f0964ae29fc6",
+          "net": "/CAM_L_D1_N",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "d5af695f-8f8e-4064-8187-669636b53db8",
+          "net": "/CAM_L_D1_N",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "fe5fe2ca-8e18-4705-8df2-046c7934cbcb",
+          "net": "/CAM_L_D1_N",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "fea23d2b-6dda-4410-be43-1a7e4ae15bf6",
+          "net": "/CAM_L_D1_N",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "ff359376-165d-426f-bf54-1a7b89a0d536",
+          "net": "/CAM_L_D1_N",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "4df2780c-638d-45a2-8265-45c4c42f720e",
+          "net": "/CAM_L_D1_P",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "53e9ab80-225b-41e6-baef-712b8f62dd51",
+          "net": "/CAM_L_D1_P",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "6b4481f4-29cb-4af3-b099-10907d598b7c",
+          "net": "/CAM_L_D1_P",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "787d69d8-b03a-4fd9-a290-6793bc3e8e09",
+          "net": "/CAM_L_D1_P",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "df85f34e-3b84-41f6-bb46-5abb179d3cfb",
+          "net": "/CAM_L_D1_P",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "ebb7264e-2298-45ff-ad57-98eb015d22af",
+          "net": "/CAM_L_D1_P",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "fbc7797b-e489-4a32-8947-939cb58ee524",
+          "net": "/CAM_L_D1_P",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "aea33566-722e-4bcc-9c86-640a6fede2bc",
+          "net": "/M1_CAM_SCL_1V8",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "b9a8a0a9-f56b-4d10-80e5-54c0d0a9a883",
+          "net": "/M1_CAM_SCL_1V8",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "c6ef0b4e-9973-4124-aa03-e44cf1df4257",
+          "net": "/M1_CAM_SCL_1V8",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "a9601396-7cf1-4e2b-bca3-2042a4d31244",
+          "net": "/M1_CAM_SDA_1V8",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "fb093cba-849e-4bf7-ae55-80c37afc1537",
+          "net": "/M1_CAM_SDA_1V8",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "95f9676a-203e-426d-ae34-c64c192394bd",
+          "net": "/CAM_NRST_1V8",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "9b611581-7082-45d6-8ae1-c46e49c5632a",
+          "net": "/CAM_NRST_1V8",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "c5f180c7-97b1-4b21-a186-877016f1dbd4",
+          "net": "/CAM_NRST_1V8",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "85a928c4-0fb4-496b-804f-c509e3a33a2a",
+          "net": "/M1_VSYNC_1V8_M",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "c201e81e-114a-4420-a56a-9724b2008f3d",
+          "net": "/M1_VSYNC_1V8_M",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "09bb5d5e-f4ff-4f91-a420-9814c25c1ca7",
+          "net": "+2V8",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "12239f45-c1aa-4123-ad96-43c880358e06",
+          "net": "+2V8",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "22ddd7a8-b56e-4c1a-abf0-c236e88663e0",
+          "net": "/CAM_RESET_ASSERT",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "825b2d42-c069-4922-adc3-f5761a39754d",
+          "net": "/CAM_RESET_ASSERT",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "43503f3c-44ba-42c6-9eaa-1fcbe5ba7646",
+          "net": "/CAM_SCL_3V3",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "4928de25-3d75-4006-88f9-646ca24eda9f",
+          "net": "/CAM_SCL_3V3",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "5e28a092-9630-46b6-9db6-a2f99a1fce5f",
+          "net": "/CAM_SCL_3V3",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "f66408e8-54d7-4a56-8832-8982cee8c9c9",
+          "net": "/CAM_SCL_3V3",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "097e9e27-0368-40f2-8166-cd8f3736afe0",
+          "net": "/CAM_SDA_3V3",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "0c09cd4f-8f1e-42e2-95c0-14898e52f23a",
+          "net": "/CAM_SDA_3V3",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "bb75e1e9-fd91-4ca1-804d-3621aeda4a1f",
+          "net": "/CAM_SDA_3V3",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "bd3d9778-d55d-4d6a-bf21-3a3d1ee194c2",
+          "net": "/CAM_SDA_3V3",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "0fddd96b-2db8-449e-973b-1693ab77f456",
+          "net": "/FLASH_WP",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "6ac70484-0128-4611-843b-ee232650b5a8",
+          "net": "/FLASH_WP",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "9f93c2f5-d758-4291-ab9c-85d75fe02dda",
+          "net": "/FLASH_WP",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "08c02248-87b8-4bf8-a3ea-384089bb6bc2",
+          "net": "/P4_FLASH_VDD",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "0c7a59b9-e003-4281-8837-f8674eb0d7b1",
+          "net": "/P4_FLASH_VDD",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "0d3ae153-44dd-4dab-8939-560452ca5dc9",
+          "net": "/P4_FLASH_VDD",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "1598887b-a333-4316-b1bd-7991d03df89b",
+          "net": "/P4_FLASH_VDD",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "1aee2cb5-3d18-488a-b9a3-72c2881cb66f",
+          "net": "/P4_FLASH_VDD",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "56941b59-3f42-433a-aa55-7e27f8e1390f",
+          "net": "/P4_FLASH_VDD",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "869c4195-1e77-4c43-915a-e641c6be3a16",
+          "net": "/P4_FLASH_VDD",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "89fbdafc-8eab-48fb-872e-1542e0bd24fd",
+          "net": "/P4_FLASH_VDD",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "8c1595dd-4465-4b57-89e3-49ccf347e275",
+          "net": "/P4_FLASH_VDD",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "9c42a3b3-19e9-4ee9-8d74-849122cf51d4",
+          "net": "/P4_FLASH_VDD",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "afa13833-e61e-4521-8c0c-9ead7f67afa6",
+          "net": "/P4_FLASH_VDD",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "d5121a0f-0b56-41cf-bf19-c374988a456f",
+          "net": "/P4_FLASH_VDD",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "f68300c4-691e-40e6-a73f-dd3891b2b518",
+          "net": "/P4_FLASH_VDD",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "fe0d700a-e538-4ae0-a2ce-51b2d61a41ac",
+          "net": "/P4_FLASH_VDD",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "12e08850-458a-43ab-8302-63843b26c2c0",
+          "net": "/FLASH_HOLD",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "2cba6347-9239-4b92-8ab9-2d49d9ca12c6",
+          "net": "/FLASH_HOLD",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "9974a930-3708-4820-9c08-d3f0ac81be0b",
+          "net": "/FLASH_HOLD",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "62e14c8d-85be-464c-9098-3d793c1347a0",
+          "net": "/FLASH_CLK",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "a188a4ae-76b0-49cd-9661-8c1286cb524a",
+          "net": "/FLASH_CLK",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "a33bc275-ba76-4d4c-be3f-513ebbdb5132",
+          "net": "/FLASH_CLK",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "a9858eb7-7550-427b-a417-79c0c00d2d77",
+          "net": "/FLASH_CLK",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "a9e9fdd8-4570-4654-a466-15d4bc83a706",
+          "net": "/FLASH_CLK",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "f67d9697-bfc6-49b7-9d9f-3a4af89482a2",
+          "net": "/FLASH_CLK",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "10ad118b-373d-4901-b84f-626601a7a3ac",
+          "net": "/P4_MIPI_2V5",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "20877c02-ec21-4183-8b31-6250bded6c9c",
+          "net": "/P4_MIPI_2V5",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "223dc779-f35f-41c8-b2ad-41f542102fab",
+          "net": "/P4_MIPI_2V5",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "2d3edfd2-51ae-4e36-ad38-c8563d705b0e",
+          "net": "/P4_MIPI_2V5",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "46c4e057-8a38-4e59-bac7-8623e7660f13",
+          "net": "/P4_MIPI_2V5",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "7e2b9c6f-b93b-4dc9-a169-37a43d380682",
+          "net": "/P4_MIPI_2V5",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "9575720c-e394-4e6f-a4c3-7cf9da5aa0ed",
+          "net": "/P4_MIPI_2V5",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "c7a4e5b3-5f90-45b3-954c-4b07ee3bb5ec",
+          "net": "/P4_MIPI_2V5",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "fcdad638-ee4d-45c0-8e35-ea5584416bc3",
+          "net": "/P4_MIPI_2V5",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "914b2392-b3dc-4b2b-8d40-c11154f9e780",
+          "net": "/P4_PSRAM_VDD",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "fc9b0e74-d1f7-44d2-aa22-4f273d13b6c2",
+          "net": "/P4_PSRAM_VDD",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "0fca0574-2fc9-44ce-b5d2-5d686e254246",
+          "net": "/P4_BOOT",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "28f554ee-7b38-4a28-9771-37fe9d7a5cf1",
+          "net": "/P4_BOOT",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "9a659de1-7745-499d-9c3b-ec7e80642192",
+          "net": "/P4_BOOT",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "e8668ad5-f340-4543-af98-24b24f5aec56",
+          "net": "/P4_BOOT",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "fe761dfc-892b-44f8-a602-aee6f63aa2db",
+          "net": "/P4_BOOT",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "a516211f-932c-4f00-af7b-b7539c1344fd",
+          "net": "/P4_DOWNLOAD_ENABLE",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "fbbe52d7-c9ee-4c4c-9f57-b7734fa77058",
+          "net": "/P4_DOWNLOAD_ENABLE",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "11e0ade0-4ae4-406b-b3df-c96ba30e57d4",
+          "net": "/P4_UART_TX",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "14f934d1-2c2a-4e9a-9e1c-5358c5072ad5",
+          "net": "/P4_UART_TX",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "19cc35bc-c524-49ee-b612-c90d105bff99",
+          "net": "/P4_UART_TX",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "557a6d1a-ab8b-4410-9ac0-550520a7cdeb",
+          "net": "/P4_UART_RX",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "c107c0ab-c9dd-4145-9d6c-9f2739079652",
+          "net": "/P4_UART_RX",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "0fa0b80b-6fcd-4780-88db-35ba13041305",
+          "net": "/P4_LDO4_UNUSED",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "2f8c5ee1-e777-4057-a273-53857e85a04c",
+          "net": "/P4_LDO4_UNUSED",
+          "from": "In1.Cu",
+          "to": "In2.Cu"
+        },
+        {
+          "uuid": "09e135b2-7007-44f1-9d1c-1bec4bb6dc93",
+          "net": "/P4_EN_DCDC",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "135a0f89-795c-4810-b62c-b68c9eaaf9fa",
+          "net": "/P4_EN_DCDC",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "39c9f0d8-79aa-4b4c-8aff-eee2573dd87f",
+          "net": "/P4_EN_DCDC",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "56388a42-d2a9-457e-b47c-8f4115bbe141",
+          "net": "/P4_EN_DCDC",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "6420cfed-f712-412d-9bba-e46192a9bc0c",
+          "net": "/P4_EN_DCDC",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "a9e3811f-1ca9-4ec4-ab18-ec91f82d6548",
+          "net": "/P4_EN_DCDC",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        },
+        {
+          "uuid": "dbfbda10-59c2-4cf9-9cc8-9164a0543783",
+          "net": "/P4_EN_DCDC",
+          "from": "In2.Cu",
+          "to": "In3.Cu"
+        }
+      ],
+      "all_pad_groups_preserved": true,
+      "ground_planes": [
+        "In1.Cu",
+        "In4.Cu"
+      ],
+      "drc_violations": 0,
+      "unconnected_items": 0,
+      "sha256": "aef4fbc9b6a073ed306b9fc2b6f51fd64e377c0ca6a6a66ceb607edf24bffe96"
+    }
+  },
+  "scope": "Plane restoration; pair rerouting still pending"
+}

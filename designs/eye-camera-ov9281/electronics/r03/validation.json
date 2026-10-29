@@ -1,0 +1,68 @@
+{
+  "status": "Placement-envelope checks pass; routing and fabrication qualification incomplete",
+  "footprints": 99,
+  "pad_net_checks": 408,
+  "all_placed_pads_preserve_source_nets": true,
+  "same_side_bounding_boxes_do_not_overlap": true,
+  "footprint_geometry_inside_outline": true,
+  "schematic_erc_errors": 0,
+  "schematic_erc_warnings": 0,
+  "boards": {
+    "controller": {
+      "dimensions_mm": [
+        32,
+        20
+      ],
+      "footprints_by_side": {
+        "front": 6,
+        "back": 70
+      },
+      "drc_violations_by_type": {
+        "clearance": 103
+      },
+      "unconnected_items": 193
+    },
+    "head": {
+      "dimensions_mm": [
+        14,
+        14
+      ],
+      "footprints_by_side": {
+        "front": 1,
+        "back": 22
+      },
+      "drc_violations_by_type": {},
+      "unconnected_items": 71
+    }
+  },
+  "interboard_nets": [
+    "+1V2",
+    "+1V8",
+    "+2V8",
+    "/CAM_L_CLK_N",
+    "/CAM_L_CLK_P",
+    "/CAM_L_D0_N",
+    "/CAM_L_D0_P",
+    "/CAM_L_D1_N",
+    "/CAM_L_D1_P",
+    "/CAM_NRST_1V8",
+    "/M1_CAM_SCL_1V8",
+    "/M1_CAM_SDA_1V8",
+    "/M1_VSYNC_1V8_M",
+    "GND"
+  ],
+  "sha256": {
+    "head.kicad_pcb": "a5fd5c0779c16273e2d9bd1592ad36b9369cb8a4444285aa1df5a2c804100c70",
+    "controller.kicad_pcb": "e65cff0a5d556e7a6b848c01c9e68f192f695ef5f8fe57b0815854b90560a025",
+    "assembly-placement.kicad_pcb": "86ae42d31b24c2f6014be00ab755b6a37b26985137db84aba20e44b0da032b04",
+    "camera.kicad_sch": "8e34f1ef7b889de6ac5bc20b2daa5af315c60a548270ee63e55dc27f1a183716"
+  },
+  "not_validated": [
+    "physical assembly fit",
+    "lens or emitter compatibility",
+    "flex geometry or contact mapping",
+    "trace escape and impedance",
+    "thermal performance",
+    "final board size"
+  ]
+}

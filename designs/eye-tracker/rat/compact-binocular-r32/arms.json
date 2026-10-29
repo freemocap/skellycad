@@ -1,0 +1,228 @@
+{
+  "RightUpperSupport": {
+    "poles_mm": [
+      [
+        3.1,
+        16.5,
+        16.8
+      ],
+      [
+        -10.9,
+        16.5,
+        36.8
+      ],
+      [
+        -2.390382612396973,
+        14.054309640059566,
+        34.2815837485597
+      ],
+      [
+        20.72160984799012,
+        7.970150108441134,
+        32.08640555423772
+      ]
+    ],
+    "minimum_caudal_offset_mm": 3.3083025317647925,
+    "upper_lower_order_gap_mm": null,
+    "routing_check": "Arm centerline remains at least 0.5 mm caudal to corresponding ribbon centerline samples over 25-65 percent of its span",
+    "seating_mm3": {
+      "central": 2.762409726096504,
+      "socket": 1.2689036465811665
+    },
+    "ribbon_gap_mm": 0.6850756927674314,
+    "checks_mm3": {
+      "RightPCB": 0.0,
+      "RightJST_4pin": 0.0,
+      "Rightcamera_pcb": 0.0,
+      "RightM4_lens": 0.0,
+      "RightIR_LED": 0.0,
+      "RightIR_LED_001": 0.0,
+      "Rightribbon": 0.0,
+      "Righteye_primary_Holder": 0.0,
+      "Righteye_primary_Clip": 0.0,
+      "LeftPCB": 0.0,
+      "LeftJST_4pin": 0.0,
+      "Leftcamera_pcb": 0.0,
+      "LeftM4_lens": 0.0,
+      "LeftIR_LED": 0.0,
+      "LeftIR_LED_001": 0.0,
+      "Leftribbon": 0.0,
+      "Lefteye_primary_Holder": 0.0,
+      "Lefteye_primary_Clip": 0.0
+    },
+    "free_span_gaps_mm": []
+  },
+  "RightLowerSupport": {
+    "poles_mm": [
+      [
+        3.1,
+        7.0,
+        16.8
+      ],
+      [
+        -10.9,
+        7.0,
+        36.8
+      ],
+      [
+        2.6342341514926844,
+        -11.855930578237672,
+        48.02577081823288
+      ],
+      [
+        21.490836294481415,
+        6.016839141482488,
+        33.02601554799974
+      ]
+    ],
+    "minimum_caudal_offset_mm": 0.8680081070165704,
+    "upper_lower_order_gap_mm": 1.9533109669586457,
+    "routing_check": "Arm centerline remains at least 0.5 mm caudal to corresponding ribbon centerline samples over 25-65 percent of its span",
+    "seating_mm3": {
+      "central": 2.508263556409328,
+      "socket": 1.2714527623043672
+    },
+    "ribbon_gap_mm": 1.3153410163040269,
+    "checks_mm3": {
+      "RightPCB": 0.0,
+      "RightJST_4pin": 0.0,
+      "Rightcamera_pcb": 0.0,
+      "RightM4_lens": 0.0,
+      "RightIR_LED": 0.0,
+      "RightIR_LED_001": 0.0,
+      "Rightribbon": 0.0,
+      "Righteye_primary_Holder": 0.0,
+      "Righteye_primary_Clip": 0.0,
+      "LeftPCB": 0.0,
+      "LeftJST_4pin": 0.0,
+      "Leftcamera_pcb": 0.0,
+      "LeftM4_lens": 0.0,
+      "LeftIR_LED": 0.0,
+      "LeftIR_LED_001": 0.0,
+      "Leftribbon": 0.0,
+      "Lefteye_primary_Holder": 0.0,
+      "Lefteye_primary_Clip": 0.0
+    },
+    "free_span_gaps_mm": [
+      0.5609069883740498
+    ]
+  },
+  "LeftUpperSupport": {
+    "poles_mm": [
+      [
+        3.4741279929460607,
+        16.5,
+        -16.877075880640408
+      ],
+      [
+        3.4741279929460607,
+        16.5,
+        -20.877075880640408
+      ],
+      [
+        -14.725872007053939,
+        16.5,
+        -42.877075880640405
+      ],
+      [
+        6.775246925260387,
+        21.36489479314039,
+        -27.864058291525332
+      ],
+      [
+        21.860528921026045,
+        3.833728929139048,
+        -34.274400759529875
+      ]
+    ],
+    "minimum_caudal_offset_mm": 0.6640567634112532,
+    "upper_lower_order_gap_mm": null,
+    "routing_check": "Arm centerline remains at least 0.5 mm caudal to corresponding ribbon centerline samples over 25-65 percent of its span",
+    "seating_mm3": {
+      "central": 4.435578298138932,
+      "socket": 1.322931910922205
+    },
+    "ribbon_gap_mm": 1.222245593457323,
+    "checks_mm3": {
+      "RightPCB": 0.0,
+      "RightJST_4pin": 0.0,
+      "Rightcamera_pcb": 0.0,
+      "RightM4_lens": 0.0,
+      "RightIR_LED": 0.0,
+      "RightIR_LED_001": 0.0,
+      "Rightribbon": 0.0,
+      "Righteye_primary_Holder": 0.0,
+      "Righteye_primary_Clip": 0.0,
+      "LeftPCB": 0.0,
+      "LeftJST_4pin": 0.0,
+      "Leftcamera_pcb": 0.0,
+      "LeftM4_lens": 0.0,
+      "LeftIR_LED": 0.0,
+      "LeftIR_LED_001": 0.0,
+      "Leftribbon": 0.0,
+      "Lefteye_primary_Holder": 0.0,
+      "Lefteye_primary_Clip": 0.0
+    },
+    "free_span_gaps_mm": []
+  },
+  "LeftLowerSupport": {
+    "poles_mm": [
+      [
+        3.4741279929460607,
+        7.0,
+        -16.877075880640408
+      ],
+      [
+        3.4741279929460607,
+        7.0,
+        -20.877075880640408
+      ],
+      [
+        -14.725872007053939,
+        7.0,
+        -42.877075880640405
+      ],
+      [
+        5.683307199201536,
+        1.2912944463367586,
+        -39.744640632111995
+      ],
+      [
+        21.091302460186935,
+        2.045274267832273,
+        -35.49903155139941
+      ]
+    ],
+    "minimum_caudal_offset_mm": 0.7182462289329143,
+    "upper_lower_order_gap_mm": 1.7884546613067753,
+    "routing_check": "Arm centerline remains at least 0.5 mm caudal to corresponding ribbon centerline samples over 25-65 percent of its span",
+    "seating_mm3": {
+      "central": 3.7796457640893637,
+      "socket": 1.2685673200593544
+    },
+    "ribbon_gap_mm": 1.0920530376474433,
+    "checks_mm3": {
+      "RightPCB": 0.0,
+      "RightJST_4pin": 0.0,
+      "Rightcamera_pcb": 0.0,
+      "RightM4_lens": 0.0,
+      "RightIR_LED": 0.0,
+      "RightIR_LED_001": 0.0,
+      "Rightribbon": 0.0,
+      "Righteye_primary_Holder": 0.0,
+      "Righteye_primary_Clip": 0.0,
+      "LeftPCB": 0.0,
+      "LeftJST_4pin": 0.0,
+      "Leftcamera_pcb": 0.0,
+      "LeftM4_lens": 0.0,
+      "LeftIR_LED": 0.0,
+      "LeftIR_LED_001": 0.0,
+      "Leftribbon": 0.0,
+      "Lefteye_primary_Holder": 0.0,
+      "Lefteye_primary_Clip": 0.0
+    },
+    "free_span_gaps_mm": [
+      0.545024663013832
+    ]
+  }
+}

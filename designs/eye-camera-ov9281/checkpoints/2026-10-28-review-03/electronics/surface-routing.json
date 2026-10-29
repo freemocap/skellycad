@@ -1,0 +1,1332 @@
+{
+  "revision": "OV9281-P4-R07",
+  "parent_sha256": {
+    "controller.kicad_pcb": "bdcad1fb5a47477558600bb679a9ad9c7fc30fe325483bab2920b40f8c0eb997",
+    "head.kicad_pcb": "cfdf5d2a5fb16ef924f725857f787c94e1b0c3d234356aab7c069a3a30c6af6a",
+    "flex-study.kicad_pcb": "52b315d55f15e14173298e533959e040e248c0e830c1fcb76628598c7fd21c6f",
+    "camera.kicad_sch": "76b776682e36d0c54c405be53c132b6f491bbe708292ca7edee9031474bc4298",
+    "assembly-interconnect-study.kicad_pcb": "eb5ff589d592639a98543ab9dbb0a75d60ca0126ffa723ce165375a93a1f9639"
+  },
+  "units": "mm",
+  "boards": {
+    "controller": {
+      "routes": [
+        {
+          "net": "/P4_FB",
+          "layer": "F.Cu",
+          "width_mm": 0.15,
+          "points_mm": [
+            [
+              6.48,
+              9.75
+            ],
+            [
+              6.6375,
+              11.55
+            ]
+          ],
+          "length_mm": 1.8069,
+          "from_uuid": "ae50b84a-bab3-47d1-af5e-c8ea0f9506d8",
+          "to_uuid": "2bfe015f-c9ec-4ccd-9970-cb8a3f5ba442"
+        },
+        {
+          "net": "/P4_FB",
+          "layer": "F.Cu",
+          "width_mm": 0.15,
+          "points_mm": [
+            [
+              6.48,
+              9.75
+            ],
+            [
+              5.7,
+              13.100000000000001
+            ],
+            [
+              5.7,
+              13.950000000000001
+            ],
+            [
+              5.75,
+              14.0
+            ],
+            [
+              8.950000000000001,
+              15.600000000000001
+            ],
+            [
+              9.3,
+              15.55
+            ],
+            [
+              11.625,
+              14.375
+            ]
+          ],
+          "length_mm": 10.8966,
+          "from_uuid": "ae50b84a-bab3-47d1-af5e-c8ea0f9506d8",
+          "to_uuid": "92f25da9-9395-4203-b60f-5a63120aa0c7"
+        },
+        {
+          "net": "/CAM_SCL_3V3",
+          "layer": "B.Cu",
+          "width_mm": 0.15,
+          "points_mm": [
+            [
+              15.0,
+              8.0625
+            ],
+            [
+              15.51,
+              11.75
+            ]
+          ],
+          "length_mm": 3.7226,
+          "from_uuid": "2721b677-e1d4-47d7-b8b5-83e82044d99a",
+          "to_uuid": "00ce3518-7bd0-4c6e-a55e-3f633cfcbdc8"
+        },
+        {
+          "net": "/P4_EN_DCDC",
+          "layer": "F.Cu",
+          "width_mm": 0.15,
+          "points_mm": [
+            [
+              12.125,
+              14.875
+            ],
+            [
+              11.9,
+              15.350000000000001
+            ],
+            [
+              11.700000000000001,
+              15.55
+            ],
+            [
+              10.3,
+              16.45
+            ],
+            [
+              10.100000000000001,
+              16.5
+            ],
+            [
+              6.7,
+              15.55
+            ],
+            [
+              5.4,
+              14.100000000000001
+            ],
+            [
+              5.300000000000001,
+              12.0
+            ],
+            [
+              5.25,
+              11.950000000000001
+            ],
+            [
+              4.3625,
+              11.55
+            ]
+          ],
+          "length_mm": 11.3032,
+          "from_uuid": "f30606ab-694e-4b24-b12f-e8f1e5d2d939",
+          "to_uuid": "ab153ece-b2b1-4a49-af2b-a0a71d05f076"
+        },
+        {
+          "net": "/CAM_SDA_3V3",
+          "layer": "B.Cu",
+          "width_mm": 0.15,
+          "points_mm": [
+            [
+              17.76,
+              6.25
+            ],
+            [
+              17.9375,
+              3.75
+            ]
+          ],
+          "length_mm": 2.5063,
+          "from_uuid": "e3db731a-0773-402e-aa53-d58d6754da9e",
+          "to_uuid": "13285dce-29e0-43c3-887c-830cdbf8d71d"
+        },
+        {
+          "net": "/FLASH_CS",
+          "layer": "B.Cu",
+          "width_mm": 0.15,
+          "points_mm": [
+            [
+              27.905,
+              9.0875
+            ],
+            [
+              28.450000000000003,
+              9.450000000000001
+            ],
+            [
+              28.700000000000003,
+              9.5
+            ],
+            [
+              29.74,
+              9.0
+            ]
+          ],
+          "length_mm": 2.0634,
+          "from_uuid": "e76f21a5-13ee-438c-aa3b-ec4b91cb04da",
+          "to_uuid": "594f8d07-e871-4020-a4ec-93eb201e443d"
+        },
+        {
+          "net": "/P4_BOOT",
+          "layer": "B.Cu",
+          "width_mm": 0.15,
+          "points_mm": [
+            [
+              10.5,
+              18.0
+            ],
+            [
+              9.75,
+              18.75
+            ],
+            [
+              8.05,
+              19.1
+            ],
+            [
+              4.3500000000000005,
+              19.1
+            ],
+            [
+              4.3500000000000005,
+              16.35
+            ],
+            [
+              4.45,
+              16.2
+            ],
+            [
+              4.55,
+              14.75
+            ],
+            [
+              6.6000000000000005,
+              14.600000000000001
+            ],
+            [
+              7.1000000000000005,
+              12.950000000000001
+            ],
+            [
+              6.75,
+              8.1
+            ],
+            [
+              6.65,
+              7.95
+            ],
+            [
+              6.7,
+              7.0
+            ],
+            [
+              7.25,
+              6.49
+            ]
+          ],
+          "length_mm": 21.4039,
+          "from_uuid": "1d742a17-fe34-4a58-9c56-0298b2f41dba",
+          "to_uuid": "76d31e5f-6d58-4de5-a82e-52a9b8c2cfe6"
+        },
+        {
+          "net": "/M1_CAM_SDA_1V8",
+          "layer": "B.Cu",
+          "width_mm": 0.15,
+          "points_mm": [
+            [
+              16.0625,
+              2.8
+            ],
+            [
+              17.51,
+              1.25
+            ]
+          ],
+          "length_mm": 2.1208,
+          "from_uuid": "904b4e21-9eb1-4974-9b92-8e38aaadccf9",
+          "to_uuid": "d0d4d6af-4c1b-4be9-a553-6e4517b6818c"
+        },
+        {
+          "net": "/USB_VBUS",
+          "layer": "F.Cu",
+          "width_mm": 0.635,
+          "points_mm": [
+            [
+              2.8625,
+              11.375
+            ],
+            [
+              2.8625,
+              9.425
+            ],
+            [
+              4.7625,
+              9.425
+            ]
+          ],
+          "length_mm": 3.85,
+          "from_uuid": "aea03766-49f9-4028-b9df-0afc75c62486",
+          "to_uuid": "2925bbbd-b455-473a-adab-1421d4652813"
+        },
+        {
+          "net": "/USB_VBUS",
+          "layer": "F.Cu",
+          "width_mm": 0.635,
+          "points_mm": [
+            [
+              6.25,
+              3.25
+            ],
+            [
+              5.0,
+              3.45
+            ],
+            [
+              4.05,
+              7.3500000000000005
+            ],
+            [
+              4.1000000000000005,
+              7.800000000000001
+            ],
+            [
+              4.7625,
+              9.425
+            ]
+          ],
+          "length_mm": 7.4876,
+          "from_uuid": "90b413b8-db46-46be-853d-bd61eb25bd5a",
+          "to_uuid": "2925bbbd-b455-473a-adab-1421d4652813"
+        },
+        {
+          "net": "/M1_CAM_SCL_1V8",
+          "layer": "B.Cu",
+          "width_mm": 0.15,
+          "points_mm": [
+            [
+              14.05,
+              9.9375
+            ],
+            [
+              14.450000000000001,
+              7.1000000000000005
+            ],
+            [
+              15.0,
+              6.800000000000001
+            ],
+            [
+              15.51,
+              6.25
+            ]
+          ],
+          "length_mm": 4.2421,
+          "from_uuid": "7ef8a94b-c17c-4e5f-9753-af5dc0cfc781",
+          "to_uuid": "134f7d16-ae45-422e-a559-5b3a8884b4c2"
+        },
+        {
+          "net": "/P4_EN",
+          "layer": "B.Cu",
+          "width_mm": 0.15,
+          "points_mm": [
+            [
+              9.0,
+              18.0
+            ],
+            [
+              9.75,
+              17.25
+            ],
+            [
+              15.600000000000001,
+              17.25
+            ],
+            [
+              15.75,
+              17.05
+            ],
+            [
+              17.45,
+              17.05
+            ],
+            [
+              17.650000000000002,
+              17.25
+            ],
+            [
+              19.25,
+              17.45
+            ],
+            [
+              19.76,
+              18.0
+            ]
+          ],
+          "length_mm": 11.506,
+          "from_uuid": "93910a2e-f34a-4b3f-b621-635e28e7cf7d",
+          "to_uuid": "d28781e4-2b3c-4fcc-82fd-8bb3c3abfc33"
+        },
+        {
+          "net": "+1V8",
+          "layer": "B.Cu",
+          "width_mm": 0.254,
+          "points_mm": [
+            [
+              16.0625,
+              4.7
+            ],
+            [
+              14.950000000000001,
+              5.65
+            ],
+            [
+              14.49,
+              6.25
+            ]
+          ],
+          "length_mm": 2.219,
+          "from_uuid": "5771e691-c6e4-4d58-b639-8a09021e0e25",
+          "to_uuid": "92e48064-891a-472a-8c58-34fa4fa263fb"
+        },
+        {
+          "net": "+1V8",
+          "layer": "B.Cu",
+          "width_mm": 0.254,
+          "points_mm": [
+            [
+              14.49,
+              6.25
+            ],
+            [
+              14.950000000000001,
+              5.65
+            ],
+            [
+              15.100000000000001,
+              5.6000000000000005
+            ],
+            [
+              16.05,
+              5.6000000000000005
+            ],
+            [
+              16.1,
+              5.800000000000001
+            ],
+            [
+              16.05,
+              8.35
+            ],
+            [
+              15.950000000000001,
+              8.700000000000001
+            ],
+            [
+              15.95,
+              9.9375
+            ]
+          ],
+          "length_mm": 6.2223,
+          "from_uuid": "92e48064-891a-472a-8c58-34fa4fa263fb",
+          "to_uuid": "768a5d8a-a5cc-4a4a-af57-f6bf0579e112"
+        },
+        {
+          "net": "+3V3",
+          "layer": "F.Cu",
+          "width_mm": 0.15,
+          "points_mm": [
+            [
+              19.825,
+              14.875
+            ],
+            [
+              20.175,
+              14.875
+            ]
+          ],
+          "length_mm": 0.35,
+          "from_uuid": "3716c7aa-7983-462b-9f32-956457140458",
+          "to_uuid": "5e627117-2077-476e-b6aa-94e46094a1c3"
+        },
+        {
+          "net": "+3V3",
+          "layer": "B.Cu",
+          "width_mm": 0.254,
+          "points_mm": [
+            [
+              19.7,
+              10.1375
+            ],
+            [
+              19.35,
+              11.100000000000001
+            ],
+            [
+              18.150000000000002,
+              11.100000000000001
+            ],
+            [
+              17.8,
+              10.1375
+            ]
+          ],
+          "length_mm": 3.2483,
+          "from_uuid": "f2fa36e5-1090-4fc0-84eb-75b65d133a88",
+          "to_uuid": "75662f50-dddf-4a5d-a3aa-c332e17cface"
+        },
+        {
+          "net": "+3V3",
+          "layer": "B.Cu",
+          "width_mm": 0.254,
+          "points_mm": [
+            [
+              25.75,
+              15.2
+            ],
+            [
+              23.6375,
+              16.55
+            ]
+          ],
+          "length_mm": 2.507,
+          "from_uuid": "e30ba9f0-9175-4af0-912c-401c8583fead",
+          "to_uuid": "a9a19945-da7c-4580-a988-ed86aafec720"
+        }
+      ],
+      "unresolved_searched_nets": [
+        {
+          "net": "/P4_CSI_REXT",
+          "remaining_anchor_groups": 2,
+          "attempted_pairs": 0
+        },
+        {
+          "net": "/M1_VSYNC_1V8_M",
+          "remaining_anchor_groups": 2,
+          "attempted_pairs": 0
+        },
+        {
+          "net": "/FLASH_D",
+          "remaining_anchor_groups": 2,
+          "attempted_pairs": 0
+        },
+        {
+          "net": "/LED_PWM",
+          "remaining_anchor_groups": 2,
+          "attempted_pairs": 1
+        },
+        {
+          "net": "/P4_UART_RX",
+          "remaining_anchor_groups": 2,
+          "attempted_pairs": 0
+        },
+        {
+          "net": "/FLASH_WP",
+          "remaining_anchor_groups": 2,
+          "attempted_pairs": 0
+        },
+        {
+          "net": "/P4_DOWNLOAD_ENABLE",
+          "remaining_anchor_groups": 2,
+          "attempted_pairs": 0
+        },
+        {
+          "net": "/P4_LDO4_UNUSED",
+          "remaining_anchor_groups": 2,
+          "attempted_pairs": 1
+        },
+        {
+          "net": "/FLASH_CLK",
+          "remaining_anchor_groups": 2,
+          "attempted_pairs": 0
+        },
+        {
+          "net": "/P4_UART_TX",
+          "remaining_anchor_groups": 2,
+          "attempted_pairs": 0
+        },
+        {
+          "net": "/FLASH_Q",
+          "remaining_anchor_groups": 2,
+          "attempted_pairs": 0
+        },
+        {
+          "net": "/CAM_SCL_3V3",
+          "remaining_anchor_groups": 2,
+          "attempted_pairs": 1
+        },
+        {
+          "net": "/FLASH_HOLD",
+          "remaining_anchor_groups": 2,
+          "attempted_pairs": 0
+        },
+        {
+          "net": "/CAM_SDA_3V3",
+          "remaining_anchor_groups": 2,
+          "attempted_pairs": 1
+        },
+        {
+          "net": "/P4_PSRAM_VDD",
+          "remaining_anchor_groups": 3,
+          "attempted_pairs": 12
+        },
+        {
+          "net": "/FLASH_CS",
+          "remaining_anchor_groups": 2,
+          "attempted_pairs": 1
+        },
+        {
+          "net": "/P4_BOOT",
+          "remaining_anchor_groups": 2,
+          "attempted_pairs": 1
+        },
+        {
+          "net": "/CAM_RESET_ASSERT",
+          "remaining_anchor_groups": 3,
+          "attempted_pairs": 1
+        },
+        {
+          "net": "/M1_CAM_SDA_1V8",
+          "remaining_anchor_groups": 2,
+          "attempted_pairs": 1
+        },
+        {
+          "net": "/USB_VBUS",
+          "remaining_anchor_groups": 2,
+          "attempted_pairs": 12
+        },
+        {
+          "net": "/M1_CAM_SCL_1V8",
+          "remaining_anchor_groups": 2,
+          "attempted_pairs": 1
+        },
+        {
+          "net": "/P4_EN",
+          "remaining_anchor_groups": 3,
+          "attempted_pairs": 3
+        },
+        {
+          "net": "+1V8",
+          "remaining_anchor_groups": 2,
+          "attempted_pairs": 12
+        },
+        {
+          "net": "/CAM_NRST_1V8",
+          "remaining_anchor_groups": 3,
+          "attempted_pairs": 1
+        },
+        {
+          "net": "/P4_VDD_HP",
+          "remaining_anchor_groups": 2,
+          "attempted_pairs": 12
+        },
+        {
+          "net": "+3V3",
+          "remaining_anchor_groups": 3,
+          "attempted_pairs": 12
+        }
+      ]
+    },
+    "head": {
+      "routes": [
+        {
+          "net": "/M1_CAM_SDA_1V8",
+          "layer": "F.Cu",
+          "width_mm": 0.15,
+          "points_mm": [
+            [
+              7.25,
+              12.25
+            ],
+            [
+              7.1000000000000005,
+              10.75
+            ],
+            [
+              6.95,
+              10.55
+            ],
+            [
+              6.9,
+              10.200000000000001
+            ],
+            [
+              5.550000000000001,
+              8.85
+            ],
+            [
+              4.3,
+              8.85
+            ],
+            [
+              4.1000000000000005,
+              8.700000000000001
+            ],
+            [
+              3.85,
+              8.15
+            ],
+            [
+              3.5500000000000003,
+              7.8500000000000005
+            ],
+            [
+              3.35,
+              7.800000000000001
+            ],
+            [
+              3.1500000000000004,
+              7.6000000000000005
+            ],
+            [
+              3.1,
+              7.050000000000001
+            ],
+            [
+              3.1,
+              3.45
+            ],
+            [
+              3.2,
+              3.25
+            ],
+            [
+              3.4000000000000004,
+              3.0500000000000003
+            ],
+            [
+              4.15,
+              3.0500000000000003
+            ],
+            [
+              6.25,
+              3.1500000000000004
+            ],
+            [
+              6.45,
+              3.3000000000000003
+            ],
+            [
+              6.6000000000000005,
+              3.5
+            ],
+            [
+              6.765,
+              4.257
+            ]
+          ],
+          "length_mm": 15.8235,
+          "from_uuid": "9cd29736-c4f5-4310-ad3a-70ab8b65a5b4",
+          "to_uuid": "56c1f566-76df-4301-87a6-46e20009b71f"
+        },
+        {
+          "net": "/M1_DVDD",
+          "layer": "F.Cu",
+          "width_mm": 0.254,
+          "points_mm": [
+            [
+              5.485,
+              6.757
+            ],
+            [
+              6.125,
+              6.757
+            ]
+          ],
+          "length_mm": 0.64,
+          "from_uuid": "b341c80b-e29d-4e4d-a507-88c0fc1059dc",
+          "to_uuid": "c4b71df6-7a4f-473b-bae7-deb432a1e70e"
+        },
+        {
+          "net": "/M1_DVDD",
+          "layer": "F.Cu",
+          "width_mm": 0.254,
+          "points_mm": [
+            [
+              5.235,
+              3.757
+            ],
+            [
+              4.45,
+              3.85
+            ],
+            [
+              4.45,
+              4.65
+            ],
+            [
+              4.845,
+              4.757
+            ]
+          ],
+          "length_mm": 1.9997,
+          "from_uuid": "f742c57d-7452-45ad-9576-74f21a8bde4d",
+          "to_uuid": "a4ef3a88-d939-4299-be7e-9f23b6564a37"
+        },
+        {
+          "net": "/M1_AVDD",
+          "layer": "F.Cu",
+          "width_mm": 0.254,
+          "points_mm": [
+            [
+              8.685,
+              7.257
+            ],
+            [
+              9.325,
+              7.257
+            ]
+          ],
+          "length_mm": 0.64,
+          "from_uuid": "df09e80a-7163-4d9e-95da-23305c3ba8b8",
+          "to_uuid": "c2990c8f-5b49-408e-bd1c-daf01aa82568"
+        },
+        {
+          "net": "/M1_AVDD",
+          "layer": "F.Cu",
+          "width_mm": 0.254,
+          "points_mm": [
+            [
+              9.325,
+              4.757
+            ],
+            [
+              12.15,
+              4.425
+            ]
+          ],
+          "length_mm": 2.8444,
+          "from_uuid": "37625ae3-dae7-4bad-bf5b-2d5db0958ad8",
+          "to_uuid": "4da6cc1a-3b6a-484f-a229-5ea99c86724b"
+        },
+        {
+          "net": "/M1_AVDD",
+          "layer": "F.Cu",
+          "width_mm": 0.254,
+          "points_mm": [
+            [
+              1.4625,
+              7.375
+            ],
+            [
+              1.4625,
+              10.235
+            ],
+            [
+              4.97,
+              10.235
+            ]
+          ],
+          "length_mm": 6.3675,
+          "from_uuid": "dc00e80a-b3aa-48d2-901b-529b34a99cde",
+          "to_uuid": "c38bd939-0145-430f-8986-6dc6d04ffbd7"
+        },
+        {
+          "net": "GND",
+          "layer": "F.Cu",
+          "width_mm": 0.15,
+          "points_mm": [
+            [
+              8.045,
+              6.257
+            ],
+            [
+              8.045,
+              6.757
+            ]
+          ],
+          "length_mm": 0.5,
+          "from_uuid": "0d7baacc-0e51-453f-827b-76e1ece90481",
+          "to_uuid": "3fa836d8-c1cb-4572-bd54-d7881e4bf9a4"
+        },
+        {
+          "net": "GND",
+          "layer": "F.Cu",
+          "width_mm": 0.15,
+          "points_mm": [
+            [
+              7.405,
+              6.257
+            ],
+            [
+              8.045,
+              6.257
+            ]
+          ],
+          "length_mm": 0.64,
+          "from_uuid": "90a18eb6-7ec4-40f1-a3b4-0c62854c1dfb",
+          "to_uuid": "0d7baacc-0e51-453f-827b-76e1ece90481"
+        },
+        {
+          "net": "/M1_DVDD",
+          "layer": "F.Cu",
+          "width_mm": 0.1,
+          "points_mm": [
+            [
+              6.125,
+              4.757
+            ],
+            [
+              5.800000000000001,
+              4.55
+            ],
+            [
+              5.800000000000001,
+              4.45
+            ],
+            [
+              5.235,
+              3.757
+            ]
+          ],
+          "length_mm": 1.3795,
+          "from_uuid": "9184b079-ad7b-479a-8362-4cd15923fc55",
+          "to_uuid": "f742c57d-7452-45ad-9576-74f21a8bde4d",
+          "purpose": "Local sensor fan-out",
+          "region_mm": [
+            3.3,
+            2.75,
+            10.8,
+            9.25
+          ]
+        },
+        {
+          "net": "/M1_DVDD",
+          "layer": "F.Cu",
+          "width_mm": 0.1,
+          "points_mm": [
+            [
+              7.405,
+              5.257
+            ],
+            [
+              7.1000000000000005,
+              5.45
+            ],
+            [
+              7.075,
+              7.7
+            ],
+            [
+              7.28,
+              8.132
+            ]
+          ],
+          "length_mm": 3.0892,
+          "from_uuid": "a9fc64eb-b324-46e2-a18b-33a265e6c95d",
+          "to_uuid": "236946e8-78ed-43ad-9aad-ad20e0f9d462",
+          "purpose": "Local sensor fan-out",
+          "region_mm": [
+            3.3,
+            2.75,
+            10.8,
+            9.25
+          ]
+        },
+        {
+          "net": "/M1_DVDD",
+          "layer": "F.Cu",
+          "width_mm": 0.1,
+          "points_mm": [
+            [
+              5.485,
+              6.757
+            ],
+            [
+              5.800000000000001,
+              6.95
+            ],
+            [
+              5.800000000000001,
+              8.05
+            ],
+            [
+              5.9625,
+              8.25
+            ]
+          ],
+          "length_mm": 1.7271,
+          "from_uuid": "b341c80b-e29d-4e4d-a507-88c0fc1059dc",
+          "to_uuid": "be1ae748-58b6-4131-9e36-0729e83356f6",
+          "purpose": "Local sensor fan-out",
+          "region_mm": [
+            3.3,
+            2.75,
+            10.8,
+            9.25
+          ]
+        },
+        {
+          "net": "/M1_DVDD",
+          "layer": "F.Cu",
+          "width_mm": 0.1,
+          "points_mm": [
+            [
+              8.045,
+              7.257
+            ],
+            [
+              7.7250000000000005,
+              7.45
+            ],
+            [
+              7.7250000000000005,
+              7.550000000000001
+            ],
+            [
+              7.28,
+              8.132
+            ]
+          ],
+          "length_mm": 1.2063,
+          "from_uuid": "8bf807b3-9ae2-48b2-9447-56284f17cde7",
+          "to_uuid": "236946e8-78ed-43ad-9aad-ad20e0f9d462",
+          "purpose": "Local sensor fan-out",
+          "region_mm": [
+            3.3,
+            2.75,
+            10.8,
+            9.25
+          ]
+        },
+        {
+          "net": "GND",
+          "layer": "F.Cu",
+          "width_mm": 0.1,
+          "points_mm": [
+            [
+              5.485,
+              4.757
+            ],
+            [
+              5.175000000000001,
+              4.95
+            ],
+            [
+              5.15,
+              6.575
+            ],
+            [
+              4.05,
+              6.575
+            ],
+            [
+              3.595,
+              6.507
+            ]
+          ],
+          "length_mm": 3.5504,
+          "from_uuid": "ba180810-8e85-4884-b9ba-37144db7ec80",
+          "to_uuid": "f9ad3406-0b26-4972-a1d9-3d8e6abc7b76",
+          "purpose": "Local sensor fan-out",
+          "region_mm": [
+            3.3,
+            2.75,
+            10.8,
+            9.25
+          ]
+        },
+        {
+          "net": "GND",
+          "layer": "F.Cu",
+          "width_mm": 0.1,
+          "points_mm": [
+            [
+              5.485,
+              5.757
+            ],
+            [
+              5.175000000000001,
+              5.95
+            ],
+            [
+              5.15,
+              6.575
+            ],
+            [
+              3.7,
+              6.550000000000001
+            ],
+            [
+              3.595,
+              6.507
+            ]
+          ],
+          "length_mm": 2.5543,
+          "from_uuid": "ba180c37-ab2b-43ab-944a-e9dcfa830ace",
+          "to_uuid": "f9ad3406-0b26-4972-a1d9-3d8e6abc7b76",
+          "purpose": "Local sensor fan-out",
+          "region_mm": [
+            3.3,
+            2.75,
+            10.8,
+            9.25
+          ]
+        },
+        {
+          "net": "GND",
+          "layer": "F.Cu",
+          "width_mm": 0.1,
+          "points_mm": [
+            [
+              6.125,
+              6.257
+            ],
+            [
+              5.800000000000001,
+              6.050000000000001
+            ],
+            [
+              5.800000000000001,
+              5.95
+            ],
+            [
+              5.175000000000001,
+              5.95
+            ],
+            [
+              5.15,
+              6.575
+            ],
+            [
+              3.7750000000000004,
+              6.550000000000001
+            ],
+            [
+              3.595,
+              6.507
+            ]
+          ],
+          "length_mm": 3.2961,
+          "from_uuid": "c07fea68-f1a5-4408-84f5-25c9ef095d4b",
+          "to_uuid": "f9ad3406-0b26-4972-a1d9-3d8e6abc7b76",
+          "purpose": "Local sensor fan-out",
+          "region_mm": [
+            3.3,
+            2.75,
+            10.8,
+            9.25
+          ]
+        },
+        {
+          "net": "GND",
+          "layer": "F.Cu",
+          "width_mm": 0.1,
+          "points_mm": [
+            [
+              7.405,
+              6.257
+            ],
+            [
+              7.7,
+              6.075
+            ],
+            [
+              7.7250000000000005,
+              6.050000000000001
+            ],
+            [
+              7.7250000000000005,
+              3.95
+            ],
+            [
+              8.17,
+              3.695
+            ]
+          ],
+          "length_mm": 2.9949,
+          "from_uuid": "90a18eb6-7ec4-40f1-a3b4-0c62854c1dfb",
+          "to_uuid": "ea69c9ac-c935-4927-9511-97d7a236d8c4",
+          "purpose": "Local sensor fan-out",
+          "region_mm": [
+            3.3,
+            2.75,
+            10.8,
+            9.25
+          ]
+        },
+        {
+          "net": "GND",
+          "layer": "F.Cu",
+          "width_mm": 0.1,
+          "points_mm": [
+            [
+              6.765,
+              6.757
+            ],
+            [
+              6.45,
+              6.575
+            ],
+            [
+              6.45,
+              4.325
+            ],
+            [
+              6.125,
+              3.632
+            ]
+          ],
+          "length_mm": 3.3792,
+          "from_uuid": "5ab2ca7e-b24e-4e5a-a93f-d8e6f3496361",
+          "to_uuid": "c7e67d54-d2e8-4a32-ac32-6072a0d79eb3",
+          "purpose": "Local sensor fan-out",
+          "region_mm": [
+            3.3,
+            2.75,
+            10.8,
+            9.25
+          ]
+        },
+        {
+          "net": "GND",
+          "layer": "F.Cu",
+          "width_mm": 0.1,
+          "points_mm": [
+            [
+              5.485,
+              7.257
+            ],
+            [
+              5.175000000000001,
+              7.075
+            ],
+            [
+              5.15,
+              6.95
+            ],
+            [
+              3.595,
+              6.507
+            ]
+          ],
+          "length_mm": 2.1038,
+          "from_uuid": "6aee5e78-cbfd-40d8-8a20-05ab78b4ef5b",
+          "to_uuid": "f9ad3406-0b26-4972-a1d9-3d8e6abc7b76",
+          "purpose": "Local sensor fan-out",
+          "region_mm": [
+            3.3,
+            2.75,
+            10.8,
+            9.25
+          ]
+        }
+      ],
+      "unresolved_searched_nets": [
+        {
+          "net": "/M1_MCLK",
+          "remaining_anchor_groups": 2,
+          "attempted_pairs": 0
+        },
+        {
+          "net": "/M1_VN3",
+          "remaining_anchor_groups": 2,
+          "attempted_pairs": 0
+        },
+        {
+          "net": "/M1_VN2",
+          "remaining_anchor_groups": 2,
+          "attempted_pairs": 0
+        },
+        {
+          "net": "+1V2",
+          "remaining_anchor_groups": 2,
+          "attempted_pairs": 1
+        },
+        {
+          "net": "/M1_VH",
+          "remaining_anchor_groups": 2,
+          "attempted_pairs": 0
+        },
+        {
+          "net": "/M1_VN1",
+          "remaining_anchor_groups": 2,
+          "attempted_pairs": 0
+        },
+        {
+          "net": "/M1_CAM_SCL_1V8",
+          "remaining_anchor_groups": 2,
+          "attempted_pairs": 1
+        },
+        {
+          "net": "/M1_PVDD",
+          "remaining_anchor_groups": 3,
+          "attempted_pairs": 1
+        },
+        {
+          "net": "/M1_VSYNC_1V8_M",
+          "remaining_anchor_groups": 2,
+          "attempted_pairs": 1
+        },
+        {
+          "net": "/CAM_NRST_1V8",
+          "remaining_anchor_groups": 2,
+          "attempted_pairs": 1
+        },
+        {
+          "net": "/M1_DVDD",
+          "remaining_anchor_groups": 7,
+          "attempted_pairs": 12
+        },
+        {
+          "net": "/M1_DOVDD",
+          "remaining_anchor_groups": 6,
+          "attempted_pairs": 12
+        },
+        {
+          "net": "/M1_AVDD",
+          "remaining_anchor_groups": 3,
+          "attempted_pairs": 12
+        },
+        {
+          "net": "+1V8",
+          "remaining_anchor_groups": 2,
+          "attempted_pairs": 4
+        },
+        {
+          "net": "/M1_SID",
+          "remaining_anchor_groups": 3,
+          "attempted_pairs": 1
+        },
+        {
+          "net": "GND",
+          "remaining_anchor_groups": 7,
+          "attempted_pairs": 12
+        }
+      ]
+    }
+  },
+  "limits": [
+    "Partial routing only; not for fabrication",
+    "No MIPI or USB pair routing added",
+    "Surface power necks and flash/clock timing remain unqualified",
+    "No component moves, new vias or reduced clearances"
+  ],
+  "fine_sensor_escape_rule": {
+    "width_mm": 0.1,
+    "clearance_mm": 0.15,
+    "max_path_length_mm": 4,
+    "region_mm": [
+      3.3,
+      2.75,
+      10.8,
+      9.25
+    ],
+    "status": "Candidate trace process; land pattern and complete stackup require fabrication review",
+    "sources": [
+      "jlcThinPcbCapabilities"
+    ]
+  }
+}

@@ -1,13 +1,20 @@
 # KiCad foundations: circuit to fitted board
 
+**Current route:** [From circuit to camera module](lessons/walkthrough.html).
+The user condensed the tour into four stages and made the camera the target.
+The longer learning route below is retained as a topic inventory, not the active
+sequence. No quizzes or prediction prompts; keep explanations concise.
+
 Learn enough electronics design to create, inspect and revise a small PCB, then
 fit it into a FreeCAD holder. Follow the existing CAD Foundations teaching rhythm:
 explain intent, predict the result, make one visible change, inspect it, validate
 it and preserve a checkpoint. A completed automated build is not evidence that
 the learner has completed a lesson.
 
-Status on 2026-10-27: course planned; installation and offline board/STEP smoke
-test passed. No lessons completed and no accepted circuit checkpoints yet.
+Status on 2026-10-27: [lesson 01](lessons/0001-circuit-and-board.html) and its
+[editable indicator schematic](indicator-board/README.md) are ready for discussion.
+KiCad parsed the generated schematic, exported the three intended nets and
+reported zero ERC violations. Learner understanding has not yet been assessed.
 See [integration plan and control evidence](../../docs/kicad-integration.md).
 
 ## Teaching project
@@ -26,7 +33,7 @@ in `indicator-board/integration/`. Create these directories as work begins.
 
 | Step | Major concepts | Visible exercise and completion evidence |
 | --- | --- | --- |
-| 0. Project and control | Manager, schematic editor, PCB editor, libraries, native files | Open the intended project; prove a reversible board edit and a schematic GUI edit |
+| 0. Project and control | Manager, schematic editor, PCB editor, libraries, native files | Generate native files with Python; verify with CLI; user opens the project for inspection |
 | 1. A circuit is connectivity | Voltage, current, resistance, polarity, symbols, pins, wires, nets and labels | Explain the LED current path; wire one branch and predict an open connection |
 | 2. Parts have multiple representations | Symbol vs footprint vs 3D model; references, values and pin-to-pad mapping | Inspect one component across all three representations; verify its pin mapping |
 | 3. Schematic checks | Electrical rules check (ERC), power intent, intentional unused pins | Introduce one known error, read its diagnostic, fix it and save a checkpoint |
@@ -46,6 +53,8 @@ do not present a finished board before teaching the decisions that created it.
 Use code where it makes intent clearer and the GUI to inspect the resulting
 design. Ask a short prediction or interpretation question before moving on.
 Adapt the pace to the user's answers rather than treating the table as a quiz.
+The user operates the desktop. Agent work uses Python and files; live PCB IPC is
+optional, not a prerequisite for lessons. Do not use desktop automation.
 
 Preserve numbered native checkpoints with the source files required to reopen
 them, brief change notes and validation results. Record learner progress only

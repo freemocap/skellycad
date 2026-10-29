@@ -1,0 +1,124 @@
+{
+  "Right": {
+    "centerline_length_mm": 32.849999999982835,
+    "minimum_sampled_centerline_radius_mm": 5.6933180528421214,
+    "centerline_poles_mm": [
+      [
+        4.4370639964730305,
+        11.78,
+        16.5
+      ],
+      [
+        4.4370639964730305,
+        11.78,
+        24.53769564370448
+      ],
+      [
+        5.557721063981795,
+        19.99742558276494,
+        29.682370706794597
+      ],
+      [
+        1.3876568993234604,
+        3.518605420277876,
+        40.088338408284045
+      ],
+      [
+        6.623583103627896,
+        1.2693584315530881,
+        29.36124217452965
+      ],
+      [
+        14.736432191175368,
+        0.8530578585439832,
+        27.597407736765597
+      ]
+    ],
+    "distributed_twist_deg": -139.11139618019268,
+    "width_mm": 4,
+    "thickness_mm": 0.25,
+    "checks_mm3": {
+      "central": 0.0,
+      "RightPCB": 0.0,
+      "RightJST_4pin": 0.0,
+      "Rightcamera_pcb": 0.0,
+      "RightM4_lens": 0.0,
+      "RightIR_LED": 0.0,
+      "RightIR_LED_001": 0.0,
+      "Righteye_primary_Holder": 0.0,
+      "Righteye_primary_Clip": 0.0,
+      "RightRetainedSocket": 0.0,
+      "LeftPCB": 0.0,
+      "LeftJST_4pin": 0.0,
+      "Leftcamera_pcb": 0.0,
+      "LeftM4_lens": 0.0,
+      "LeftIR_LED": 0.0,
+      "LeftIR_LED_001": 0.0,
+      "Lefteye_primary_Holder": 0.0,
+      "Lefteye_primary_Clip": 0.0,
+      "LeftRetainedSocket": 0.0
+    },
+    "model_limit": "Relaxed geometric strip; centerline length and sampled curvature constrained; not an inextensible shell or physical ribbon validation"
+  },
+  "Left": {
+    "centerline_length_mm": 32.850000000025005,
+    "minimum_sampled_centerline_radius_mm": 6.61758766811244,
+    "centerline_poles_mm": [
+      [
+        2.1370639964730307,
+        11.78,
+        -16.577075880640407
+      ],
+      [
+        2.1370639964730307,
+        11.78,
+        -24.752565929806487
+      ],
+      [
+        -5.35776308725095,
+        13.645059711886894,
+        -29.894767064390308
+      ],
+      [
+        2.9794863437854895,
+        0.5033150745983184,
+        -37.60248492801907
+      ],
+      [
+        6.655368298460499,
+        1.4211777869719526,
+        -29.342653342782967
+      ],
+      [
+        14.725552920307788,
+        1.0070664869699562,
+        -27.588094691251186
+      ]
+    ],
+    "distributed_twist_deg": -68.8681860642638,
+    "width_mm": 4,
+    "thickness_mm": 0.25,
+    "checks_mm3": {
+      "central": 0.0,
+      "RightPCB": 0.0,
+      "RightJST_4pin": 0.0,
+      "Rightcamera_pcb": 0.0,
+      "RightM4_lens": 0.0,
+      "RightIR_LED": 0.0,
+      "RightIR_LED_001": 0.0,
+      "Righteye_primary_Holder": 0.0,
+      "Righteye_primary_Clip": 0.0,
+      "RightRetainedSocket": 0.0,
+      "LeftPCB": 0.0,
+      "LeftJST_4pin": 0.0,
+      "Leftcamera_pcb": 0.0,
+      "LeftM4_lens": 0.0,
+      "LeftIR_LED": 0.0,
+      "LeftIR_LED_001": 0.0,
+      "Lefteye_primary_Holder": 0.0,
+      "Lefteye_primary_Clip": 0.0,
+      "LeftRetainedSocket": 0.0
+    },
+    "model_limit": "Relaxed geometric strip; centerline length and sampled curvature constrained; not an inextensible shell or physical ribbon validation"
+  }
+}

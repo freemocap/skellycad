@@ -1,0 +1,26 @@
+{
+  "head": [
+    {
+      "layer": "In1.Cu",
+      "outlines": 1,
+      "area_mm2": 148.932153843327
+    },
+    {
+      "layer": "In4.Cu",
+      "outlines": 1,
+      "area_mm2": 148.932153843327
+    }
+  ],
+  "controller": [
+    {
+      "layer": "In1.Cu",
+      "outlines": 1,
+      "area_mm2": 559.516447724645
+    },
+    {
+      "layer": "In4.Cu",
+      "outlines": 1,
+      "area_mm2": 559.516447724645
+    }
+  ]
+}

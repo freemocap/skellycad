@@ -1,0 +1,7795 @@
+{
+  "variants": [
+    {
+      "id": "A",
+      "name": "Thin modular boards",
+      "controller_mm": [
+        32,
+        16
+      ],
+      "head_mm": [
+        14,
+        14
+      ],
+      "free_flex_mm": [
+        30.3,
+        12.5
+      ],
+      "rigid_thickness_mm": 0.4,
+      "flex_thickness_mm": 0.168,
+      "parts": [
+        {
+          "board": "controller",
+          "reference": "J101",
+          "value": "USB / JST 4-contact candidate",
+          "source_footprint": "JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal",
+          "source_side": "F",
+          "courtyard_mm": [
+            6.5600000000000005,
+            7.800000000000001
+          ],
+          "height_mm": 3.0,
+          "mass_g": [
+            0.025,
+            0.045,
+            0.075
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            0.25,
+            0.25,
+            6.56,
+            7.8
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "J102",
+          "value": "FH34SRJ-24S-0.5SH(99)",
+          "source_footprint": "Hirose_FH34SRJ_24S_0.5SH_R05",
+          "source_side": "F",
+          "courtyard_mm": [
+            4.449999999999999,
+            14.5
+          ],
+          "height_mm": 1.0,
+          "mass_g": [
+            0.04,
+            0.075,
+            0.12
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            27.3,
+            0.75,
+            4.45,
+            14.5
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "U101",
+          "value": "ESP32-P4NRW16X / v3.x",
+          "source_footprint": "ESP32-P4",
+          "source_side": "F",
+          "courtyard_mm": [
+            11.200000000000001,
+            11.2
+          ],
+          "height_mm": 1.0,
+          "mass_g": [
+            0.135,
+            0.18,
+            0.23
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            7.2,
+            2.4000000000000004,
+            11.2,
+            11.2
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "U103",
+          "value": "TLV62569DBV / core",
+          "source_footprint": "SOT-23-5",
+          "source_side": "F",
+          "courtyard_mm": [
+            4.1,
+            3.3999999999999986
+          ],
+          "height_mm": 1.2,
+          "mass_g": [
+            0.009,
+            0.012,
+            0.018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            18.48,
+            0.25,
+            4.1,
+            3.3999999999999986
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "Y101",
+          "value": "40 MHz / CL TBD",
+          "source_footprint": "Crystal_SMD_2016-4Pin_2.0x1.6mm",
+          "source_side": "F",
+          "courtyard_mm": [
+            3.0,
+            2.6000000000000014
+          ],
+          "height_mm": 0.9,
+          "mass_g": [
+            0.004,
+            0.008,
+            0.012
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            22.66,
+            0.25,
+            3.0,
+            2.6000000000000014
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C106",
+          "value": "22u",
+          "source_footprint": "C_0805_2012Metric",
+          "source_side": "F",
+          "courtyard_mm": [
+            3.8000000000000003,
+            1.8599999999999994
+          ],
+          "height_mm": 1.3,
+          "mass_g": [
+            0.004,
+            0.009,
+            0.016
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            6.89,
+            0.25,
+            3.8000000000000003,
+            1.8599999999999994
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "U105",
+          "value": "USBLC6-2P6",
+          "source_footprint": "SOT-666",
+          "source_side": "F",
+          "courtyard_mm": [
+            3.0,
+            2.1999999999999997
+          ],
+          "height_mm": 0.7,
+          "mass_g": [
+            0.001,
+            0.002,
+            0.003
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            22.66,
+            2.93,
+            3.0,
+            2.1999999999999997
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "L101",
+          "value": "2.2u / Isat TBD",
+          "source_footprint": "L_0805_2012Metric",
+          "source_side": "F",
+          "courtyard_mm": [
+            3.5,
+            1.700000000000001
+          ],
+          "height_mm": 1.3,
+          "mass_g": [
+            0.006,
+            0.011,
+            0.018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            10.77,
+            0.25,
+            3.5,
+            1.700000000000001
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C105",
+          "value": "4.7u",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "F",
+          "courtyard_mm": [
+            1.3000000000000007,
+            2.5
+          ],
+          "height_mm": 0.9,
+          "mass_g": [
+            0.002,
+            0.0035,
+            0.006
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            14.35,
+            0.25,
+            2.5,
+            1.3000000000000007
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R115",
+          "value": "4.7k",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "F",
+          "courtyard_mm": [
+            1.8599999999999994,
+            0.9400000000000013
+          ],
+          "height_mm": 0.5,
+          "mass_g": [
+            0.0002,
+            0.00035,
+            0.0006
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            16.93,
+            0.25,
+            0.9400000000000013,
+            1.8599999999999994
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R106",
+          "value": "499k",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "F",
+          "courtyard_mm": [
+            0.9400000000000013,
+            1.8599999999999994
+          ],
+          "height_mm": 0.5,
+          "mass_g": [
+            0.0002,
+            0.00035,
+            0.0006
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            25.74,
+            0.25,
+            0.9400000000000013,
+            1.8599999999999994
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R105",
+          "value": "499k",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "F",
+          "courtyard_mm": [
+            0.9400000000000013,
+            1.8599999999999994
+          ],
+          "height_mm": 0.5,
+          "mass_g": [
+            0.0002,
+            0.00035,
+            0.0006
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            25.74,
+            2.19,
+            0.9400000000000013,
+            1.8599999999999994
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R109",
+          "value": "0",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "F",
+          "courtyard_mm": [
+            1.8600000000000012,
+            0.9400000000000002
+          ],
+          "height_mm": 0.5,
+          "mass_g": [
+            0.0002,
+            0.00035,
+            0.0006
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            18.48,
+            3.73,
+            1.8600000000000012,
+            0.9400000000000002
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R110",
+          "value": "0",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "F",
+          "courtyard_mm": [
+            1.8600000000000012,
+            0.94
+          ],
+          "height_mm": 0.5,
+          "mass_g": [
+            0.0002,
+            0.00035,
+            0.0006
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            20.42,
+            3.73,
+            1.8600000000000012,
+            0.94
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C101",
+          "value": "CL_TBD",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "F",
+          "courtyard_mm": [
+            1.8200000000000003,
+            0.9200000000000017
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            18.48,
+            4.75,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C107",
+          "value": "22p",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "F",
+          "courtyard_mm": [
+            1.8200000000000003,
+            0.9200000000000017
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            20.38,
+            4.75,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C102",
+          "value": "CL_TBD",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "F",
+          "courtyard_mm": [
+            0.9200000000000017,
+            1.8200000000000003
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            25.74,
+            4.13,
+            0.9200000000000017,
+            1.8200000000000003
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "U102",
+          "value": "W25Q32JVSS (4 MB candidate)",
+          "source_footprint": "SOIC-8_5.3x5.3mm_P1.27mm",
+          "source_side": "B",
+          "courtyard_mm": [
+            5.799999999999997,
+            9.3
+          ],
+          "height_mm": 2.0,
+          "mass_g": [
+            0.07,
+            0.11,
+            0.15
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            0.25,
+            0.25,
+            9.3,
+            5.799999999999997
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "U5",
+          "value": "TLV73318PDBVT",
+          "source_footprint": "SOT-23-5",
+          "source_side": "B",
+          "courtyard_mm": [
+            4.100000000000001,
+            3.3999999999999986
+          ],
+          "height_mm": 1.2,
+          "mass_g": [
+            0.009,
+            0.012,
+            0.018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            9.63,
+            0.25,
+            4.100000000000001,
+            3.3999999999999986
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "U7",
+          "value": "TLV73328PDBVT",
+          "source_footprint": "SOT-23-5",
+          "source_side": "B",
+          "courtyard_mm": [
+            4.100000000000001,
+            3.3999999999999986
+          ],
+          "height_mm": 1.2,
+          "mass_g": [
+            0.009,
+            0.012,
+            0.018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            13.81,
+            0.25,
+            4.100000000000001,
+            3.3999999999999986
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "U6",
+          "value": "TLV73312PDBVT",
+          "source_footprint": "SOT-23-5",
+          "source_side": "B",
+          "courtyard_mm": [
+            3.3999999999999986,
+            4.1000000000000005
+          ],
+          "height_mm": 1.2,
+          "mass_g": [
+            0.009,
+            0.012,
+            0.018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            17.99,
+            0.25,
+            4.1000000000000005,
+            3.3999999999999986
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "U104",
+          "value": "TLV62569DBV / system",
+          "source_footprint": "SOT-23-5",
+          "source_side": "B",
+          "courtyard_mm": [
+            4.1,
+            3.3999999999999986
+          ],
+          "height_mm": 1.2,
+          "mass_g": [
+            0.009,
+            0.012,
+            0.018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            22.17,
+            0.25,
+            4.1,
+            3.3999999999999986
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "Q102",
+          "value": "BSS138",
+          "source_footprint": "SOT-23",
+          "source_side": "B",
+          "courtyard_mm": [
+            3.86,
+            3.4000000000000004
+          ],
+          "height_mm": 1.2,
+          "mass_g": [
+            0.006,
+            0.009,
+            0.014
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            26.35,
+            0.25,
+            3.86,
+            3.4000000000000004
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "Q103",
+          "value": "BSS138 / reset asserted HIGH",
+          "source_footprint": "SOT-23",
+          "source_side": "B",
+          "courtyard_mm": [
+            3.3999999999999995,
+            3.8599999999999994
+          ],
+          "height_mm": 1.2,
+          "mass_g": [
+            0.006,
+            0.009,
+            0.014
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            9.63,
+            3.73,
+            3.8599999999999994,
+            3.3999999999999995
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "Q101",
+          "value": "BSS138",
+          "source_footprint": "SOT-23",
+          "source_side": "B",
+          "courtyard_mm": [
+            3.3999999999999986,
+            3.8599999999999994
+          ],
+          "height_mm": 1.2,
+          "mass_g": [
+            0.006,
+            0.009,
+            0.014
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            13.57,
+            3.73,
+            3.8599999999999994,
+            3.3999999999999986
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C124",
+          "value": "10u",
+          "source_footprint": "C_0805_2012Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            3.8000000000000007,
+            1.8599999999999994
+          ],
+          "height_mm": 1.3,
+          "mass_g": [
+            0.004,
+            0.009,
+            0.016
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            17.51,
+            3.73,
+            3.8000000000000007,
+            1.8599999999999994
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C123",
+          "value": "10u",
+          "source_footprint": "C_0805_2012Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8599999999999994,
+            3.8000000000000003
+          ],
+          "height_mm": 1.3,
+          "mass_g": [
+            0.004,
+            0.009,
+            0.016
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            21.39,
+            3.73,
+            3.8000000000000003,
+            1.8599999999999994
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C109",
+          "value": "22u",
+          "source_footprint": "C_0805_2012Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            3.8000000000000007,
+            1.8599999999999994
+          ],
+          "height_mm": 1.3,
+          "mass_g": [
+            0.004,
+            0.009,
+            0.016
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            25.27,
+            3.73,
+            3.8000000000000007,
+            1.8599999999999994
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C1",
+          "value": "C_4u7_0805",
+          "source_footprint": "C_0805_2012Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8599999999999994,
+            3.799999999999999
+          ],
+          "height_mm": 1.3,
+          "mass_g": [
+            0.004,
+            0.009,
+            0.016
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            17.51,
+            5.67,
+            3.799999999999999,
+            1.8599999999999994
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C3",
+          "value": "C_4u7_0805",
+          "source_footprint": "C_0805_2012Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            3.799999999999997,
+            1.8599999999999994
+          ],
+          "height_mm": 1.3,
+          "mass_g": [
+            0.004,
+            0.009,
+            0.016
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            29.15,
+            3.73,
+            1.8599999999999994,
+            3.799999999999997
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C2",
+          "value": "C_4u7_0805",
+          "source_footprint": "C_0805_2012Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            3.799999999999997,
+            1.8599999999999994
+          ],
+          "height_mm": 1.3,
+          "mass_g": [
+            0.004,
+            0.009,
+            0.016
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            21.39,
+            5.67,
+            3.799999999999997,
+            1.8599999999999994
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "L102",
+          "value": "2.2u / Isat TBD",
+          "source_footprint": "L_0805_2012Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            3.5,
+            1.6999999999999993
+          ],
+          "height_mm": 1.3,
+          "mass_g": [
+            0.006,
+            0.011,
+            0.018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            25.27,
+            5.67,
+            3.5,
+            1.6999999999999993
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C5",
+          "value": "C_1u_0603",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            2.5,
+            1.3000000000000007
+          ],
+          "height_mm": 0.9,
+          "mass_g": [
+            0.002,
+            0.0035,
+            0.006
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            30.29,
+            0.25,
+            1.3000000000000007,
+            2.5
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C133",
+          "value": "1u",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            2.5,
+            1.3000000000000007
+          ],
+          "height_mm": 0.9,
+          "mass_g": [
+            0.002,
+            0.0035,
+            0.006
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            0.25,
+            6.13,
+            2.5,
+            1.3000000000000007
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C108",
+          "value": "4.7u",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.2999999999999998,
+            2.5
+          ],
+          "height_mm": 0.9,
+          "mass_g": [
+            0.002,
+            0.0035,
+            0.006
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            2.83,
+            6.13,
+            2.5,
+            1.2999999999999998
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C126",
+          "value": "1u",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            2.5,
+            1.299999999999999
+          ],
+          "height_mm": 0.9,
+          "mass_g": [
+            0.002,
+            0.0035,
+            0.006
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            5.41,
+            6.13,
+            2.5,
+            1.299999999999999
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C127",
+          "value": "1u",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.299999999999999,
+            2.5
+          ],
+          "height_mm": 0.9,
+          "mass_g": [
+            0.002,
+            0.0035,
+            0.006
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            7.99,
+            7.21,
+            2.5,
+            1.299999999999999
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C136",
+          "value": "4.7u",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            2.5,
+            1.299999999999999
+          ],
+          "height_mm": 0.9,
+          "mass_g": [
+            0.002,
+            0.0035,
+            0.006
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            10.57,
+            7.21,
+            2.5,
+            1.299999999999999
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C4",
+          "value": "C_1u_0603",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            2.5,
+            1.299999999999999
+          ],
+          "height_mm": 0.9,
+          "mass_g": [
+            0.002,
+            0.0035,
+            0.006
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            13.15,
+            7.21,
+            2.5,
+            1.299999999999999
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C125",
+          "value": "1u",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            2.5,
+            1.299999999999999
+          ],
+          "height_mm": 0.9,
+          "mass_g": [
+            0.002,
+            0.0035,
+            0.006
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            25.27,
+            7.45,
+            2.5,
+            1.299999999999999
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C104",
+          "value": "1u",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.2999999999999972,
+            2.5
+          ],
+          "height_mm": 0.9,
+          "mass_g": [
+            0.002,
+            0.0035,
+            0.006
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            0.25,
+            7.51,
+            2.5,
+            1.2999999999999972
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C6",
+          "value": "C_1u_0603",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.2999999999999972,
+            2.5
+          ],
+          "height_mm": 0.9,
+          "mass_g": [
+            0.002,
+            0.0035,
+            0.006
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            2.83,
+            7.51,
+            2.5,
+            1.2999999999999972
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R112",
+          "value": "4.7k",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8599999999999994,
+            0.9400000000000013
+          ],
+          "height_mm": 0.5,
+          "mass_g": [
+            0.0002,
+            0.00035,
+            0.0006
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            5.41,
+            7.51,
+            1.8599999999999994,
+            0.9400000000000013
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R113",
+          "value": "4.7k",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8599999999999994,
+            0.9400000000000013
+          ],
+          "height_mm": 0.5,
+          "mass_g": [
+            0.0002,
+            0.00035,
+            0.0006
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            15.73,
+            7.61,
+            1.8599999999999994,
+            0.9400000000000013
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R117",
+          "value": "10k",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8599999999999994,
+            0.9400000000000013
+          ],
+          "height_mm": 0.5,
+          "mass_g": [
+            0.0002,
+            0.00035,
+            0.0006
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            17.67,
+            7.61,
+            1.8599999999999994,
+            0.9400000000000013
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R101",
+          "value": "10k",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8599999999999994,
+            0.9400000000000013
+          ],
+          "height_mm": 0.5,
+          "mass_g": [
+            0.0002,
+            0.00035,
+            0.0006
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            19.61,
+            7.61,
+            1.8599999999999994,
+            0.9400000000000013
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R107",
+          "value": "453k",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.86,
+            0.9400000000000004
+          ],
+          "height_mm": 0.5,
+          "mass_g": [
+            0.0002,
+            0.00035,
+            0.0006
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            21.55,
+            7.61,
+            1.86,
+            0.9400000000000004
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R108",
+          "value": "100k",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8599999999999999,
+            0.9400000000000004
+          ],
+          "height_mm": 0.5,
+          "mass_g": [
+            0.0002,
+            0.00035,
+            0.0006
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            27.85,
+            7.61,
+            1.8599999999999999,
+            0.9400000000000004
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R111",
+          "value": "4.02k 1%",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8599999999999994,
+            0.9400000000000004
+          ],
+          "height_mm": 0.5,
+          "mass_g": [
+            0.0002,
+            0.00035,
+            0.0006
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            29.79,
+            7.61,
+            1.8599999999999994,
+            0.9400000000000004
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R114",
+          "value": "4.7k",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8599999999999994,
+            0.94
+          ],
+          "height_mm": 0.5,
+          "mass_g": [
+            0.0002,
+            0.00035,
+            0.0006
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            5.41,
+            8.53,
+            1.8599999999999994,
+            0.94
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R103",
+          "value": "10k",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            0.9399999999999995,
+            1.8599999999999994
+          ],
+          "height_mm": 0.5,
+          "mass_g": [
+            0.0002,
+            0.00035,
+            0.0006
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            23.49,
+            7.61,
+            0.9399999999999995,
+            1.8599999999999994
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R116",
+          "value": "100k",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8599999999999994,
+            0.9399999999999995
+          ],
+          "height_mm": 0.5,
+          "mass_g": [
+            0.0002,
+            0.00035,
+            0.0006
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            7.35,
+            8.59,
+            1.8599999999999994,
+            0.9399999999999995
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R104",
+          "value": "10k",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            0.9399999999999995,
+            1.8599999999999994
+          ],
+          "height_mm": 0.5,
+          "mass_g": [
+            0.0002,
+            0.00035,
+            0.0006
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            9.29,
+            8.59,
+            1.8599999999999994,
+            0.9399999999999995
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R118",
+          "value": "10k",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            0.9399999999999977,
+            1.8599999999999994
+          ],
+          "height_mm": 0.5,
+          "mass_g": [
+            0.0002,
+            0.00035,
+            0.0006
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            11.23,
+            8.59,
+            1.8599999999999994,
+            0.9399999999999977
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R102",
+          "value": "10k",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8599999999999994,
+            0.9399999999999977
+          ],
+          "height_mm": 0.5,
+          "mass_g": [
+            0.0002,
+            0.00035,
+            0.0006
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            13.17,
+            8.59,
+            1.8599999999999994,
+            0.9399999999999977
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C122",
+          "value": "100n / U101.102",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            0.9200000000000017,
+            1.8200000000000003
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            15.11,
+            8.63,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C115",
+          "value": "100n / U101.75",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8200000000000003,
+            0.9200000000000017
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            17.01,
+            8.63,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C130",
+          "value": "100n / U101.67",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8200000000000003,
+            0.9200000000000017
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            18.91,
+            8.63,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C110",
+          "value": "100n / U101.9",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8200000000000003,
+            0.9200000000000017
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            20.81,
+            8.63,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C132",
+          "value": "100n",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            0.9200000000000017,
+            1.8200000000000003
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            27.85,
+            8.63,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C118",
+          "value": "100n / U101.85",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            0.9200000000000017,
+            1.8200000000000003
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            29.75,
+            8.63,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C116",
+          "value": "100n / U101.76",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8200000000000003,
+            0.9200000000000017
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            24.51,
+            8.83,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C117",
+          "value": "100n / U101.77",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            0.9200000000000017,
+            1.8200000000000003
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            0.25,
+            8.89,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C114",
+          "value": "100n / U101.62",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8200000000000003,
+            0.9200000000000017
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            2.15,
+            8.89,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C119",
+          "value": "100n / U101.91",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            0.9200000000000017,
+            1.8200000000000003
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            4.05,
+            9.55,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C120",
+          "value": "100n / U101.96",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            0.9200000000000017,
+            1.8200000000000003
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            5.95,
+            9.61,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C121",
+          "value": "100n / U101.101",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            0.9200000000000017,
+            1.8200000000000003
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            7.85,
+            9.61,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C135",
+          "value": "100n",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            0.9200000000000017,
+            1.8200000000000003
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            9.75,
+            9.61,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C128",
+          "value": "100n / U101.30",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            0.9200000000000017,
+            1.8200000000000003
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            11.65,
+            9.61,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C134",
+          "value": "10n",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            0.9200000000000017,
+            1.8200000000000003
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            13.55,
+            9.63,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C103",
+          "value": "100n",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            0.9200000000000017,
+            1.82
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            15.45,
+            9.63,
+            1.82,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C129",
+          "value": "100n / U101.59",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8200000000000003,
+            0.9200000000000008
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            17.35,
+            9.63,
+            1.8200000000000003,
+            0.9200000000000008
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C112",
+          "value": "100n / U101.26",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8200000000000003,
+            0.9199999999999999
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            19.25,
+            9.63,
+            1.8200000000000003,
+            0.9199999999999999
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C131",
+          "value": "10n",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8200000000000003,
+            0.9199999999999999
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            21.15,
+            9.63,
+            1.8200000000000003,
+            0.9199999999999999
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C111",
+          "value": "100n / U101.21",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8200000000000003,
+            0.9199999999999999
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            26.41,
+            9.63,
+            1.8200000000000003,
+            0.9199999999999999
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C113",
+          "value": "100n / U101.54",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8200000000000003,
+            0.9199999999999999
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            28.31,
+            9.63,
+            1.8200000000000003,
+            0.9199999999999999
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "U1",
+          "value": "ImageSensor_OV9281",
+          "source_footprint": "OV9281",
+          "source_side": "F",
+          "courtyard_mm": [
+            5.736,
+            4.964
+          ],
+          "height_mm": 1.0,
+          "mass_g": [
+            0.02,
+            0.035,
+            0.055
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            3.884499999999999,
+            4.553999999999999,
+            5.736,
+            4.964
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "D202",
+          "value": "AP1608F3C",
+          "source_footprint": "Kingbright_AP1608F3C_R09",
+          "source_side": "F",
+          "courtyard_mm": [
+            2.950000000000001,
+            1.4
+          ],
+          "height_mm": 1.0,
+          "mass_g": [
+            0.0015,
+            0.0025,
+            0.004
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            2.58,
+            0.25,
+            2.950000000000001,
+            1.4
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "D201",
+          "value": "AP1608F3C",
+          "source_footprint": "Kingbright_AP1608F3C_R09",
+          "source_side": "F",
+          "courtyard_mm": [
+            2.9499999999999997,
+            1.4
+          ],
+          "height_mm": 1.0,
+          "mass_g": [
+            0.0015,
+            0.0025,
+            0.004
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            5.61,
+            0.25,
+            2.9499999999999997,
+            1.4
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "R201",
+          "value": "1k 1%",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "F",
+          "courtyard_mm": [
+            0.94,
+            1.8599999999999999
+          ],
+          "height_mm": 0.5,
+          "mass_g": [
+            0.0002,
+            0.00035,
+            0.0006
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            8.64,
+            0.25,
+            1.8599999999999999,
+            0.94
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "R203",
+          "value": "2.2k 1%",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "F",
+          "courtyard_mm": [
+            0.94,
+            1.8599999999999994
+          ],
+          "height_mm": 0.5,
+          "mass_g": [
+            0.0002,
+            0.00035,
+            0.0006
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            10.58,
+            0.25,
+            1.8599999999999994,
+            0.94
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "R204",
+          "value": "100k 1%",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "F",
+          "courtyard_mm": [
+            0.94,
+            1.8599999999999994
+          ],
+          "height_mm": 0.5,
+          "mass_g": [
+            0.0002,
+            0.00035,
+            0.0006
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            12.52,
+            0.25,
+            0.94,
+            1.8599999999999994
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "R202",
+          "value": "1k 1%",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "F",
+          "courtyard_mm": [
+            0.9399999999999995,
+            1.8599999999999999
+          ],
+          "height_mm": 0.5,
+          "mass_g": [
+            0.0002,
+            0.00035,
+            0.0006
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            8.64,
+            1.27,
+            1.8599999999999999,
+            0.9399999999999995
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "Q201",
+          "value": "MMBT3904,215",
+          "source_footprint": "SOT-23",
+          "source_side": "B",
+          "courtyard_mm": [
+            3.3999999999999986,
+            3.8599999999999994
+          ],
+          "height_mm": 1.2,
+          "mass_g": [
+            0.006,
+            0.009,
+            0.014
+          ],
+          "assumption": "Retained package",
+          "placement_change": "Moved to underside for optical support clearance",
+          "rect_mm": [
+            0.25,
+            0.25,
+            3.8599999999999994,
+            3.3999999999999986
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "Y1",
+          "value": "SG-210STF 24.0000ML",
+          "source_footprint": "Epson_SG210STF_2.5x2.0mm_R09",
+          "source_side": "B",
+          "courtyard_mm": [
+            3.3,
+            2.7
+          ],
+          "height_mm": 1.0,
+          "mass_g": [
+            0.006,
+            0.01,
+            0.015
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            4.19,
+            0.25,
+            3.3,
+            2.7
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "L1",
+          "value": "MLP2012S3R3MT",
+          "source_footprint": "L_0805_2012Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            3.5,
+            1.7
+          ],
+          "height_mm": 1.3,
+          "mass_g": [
+            0.006,
+            0.011,
+            0.018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            7.57,
+            0.25,
+            3.5,
+            1.7
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "L2",
+          "value": "MLP2012S3R3MT",
+          "source_footprint": "L_0805_2012Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            3.5,
+            1.6999999999999997
+          ],
+          "height_mm": 1.3,
+          "mass_g": [
+            0.006,
+            0.011,
+            0.018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            7.57,
+            2.03,
+            3.5,
+            1.6999999999999997
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "L3",
+          "value": "MLP2012S3R3MT",
+          "source_footprint": "L_0805_2012Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            3.5000000000000004,
+            1.6999999999999993
+          ],
+          "height_mm": 1.3,
+          "mass_g": [
+            0.006,
+            0.011,
+            0.018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            11.15,
+            0.25,
+            1.6999999999999993,
+            3.5000000000000004
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "C7",
+          "value": "C_1u_0603",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            2.5000000000000004,
+            1.3000000000000003
+          ],
+          "height_mm": 0.9,
+          "mass_g": [
+            0.002,
+            0.0035,
+            0.006
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            4.19,
+            3.03,
+            2.5000000000000004,
+            1.3000000000000003
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "C18",
+          "value": "C_1u_0603",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            2.5000000000000004,
+            1.3000000000000003
+          ],
+          "height_mm": 0.9,
+          "mass_g": [
+            0.002,
+            0.0035,
+            0.006
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            0.25,
+            3.73,
+            2.5000000000000004,
+            1.3000000000000003
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "C33",
+          "value": "C_1u_0603",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            2.500000000000001,
+            1.2999999999999998
+          ],
+          "height_mm": 0.9,
+          "mass_g": [
+            0.002,
+            0.0035,
+            0.006
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            6.77,
+            3.81,
+            2.500000000000001,
+            1.2999999999999998
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "C19",
+          "value": "C_1u_0603",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            2.5,
+            1.3000000000000003
+          ],
+          "height_mm": 0.9,
+          "mass_g": [
+            0.002,
+            0.0035,
+            0.006
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            9.35,
+            3.83,
+            2.5,
+            1.3000000000000003
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "C8",
+          "value": "C_1u_0603",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            2.5,
+            1.3000000000000003
+          ],
+          "height_mm": 0.9,
+          "mass_g": [
+            0.002,
+            0.0035,
+            0.006
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            2.83,
+            4.41,
+            2.5,
+            1.3000000000000003
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "C13",
+          "value": "C_1u_0603",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            2.5000000000000004,
+            1.2999999999999998
+          ],
+          "height_mm": 0.9,
+          "mass_g": [
+            0.002,
+            0.0035,
+            0.006
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            11.93,
+            3.83,
+            1.2999999999999998,
+            2.5000000000000004
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "C10",
+          "value": "C_1u_0603",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            2.5,
+            1.2999999999999998
+          ],
+          "height_mm": 0.9,
+          "mass_g": [
+            0.002,
+            0.0035,
+            0.006
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            0.25,
+            5.11,
+            2.5,
+            1.2999999999999998
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "C21",
+          "value": "C_1u_0603",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            2.5,
+            1.299999999999999
+          ],
+          "height_mm": 0.9,
+          "mass_g": [
+            0.002,
+            0.0035,
+            0.006
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            5.41,
+            5.19,
+            2.5,
+            1.299999999999999
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "C12",
+          "value": "C_1u_0603",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            2.5,
+            1.299999999999999
+          ],
+          "height_mm": 0.9,
+          "mass_g": [
+            0.002,
+            0.0035,
+            0.006
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            7.99,
+            5.21,
+            2.5,
+            1.299999999999999
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "R9",
+          "value": "R_0R_0402",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8600000000000012,
+            0.9399999999999995
+          ],
+          "height_mm": 0.5,
+          "mass_g": [
+            0.0002,
+            0.00035,
+            0.0006
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            2.83,
+            5.79,
+            1.8600000000000012,
+            0.9399999999999995
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "R7",
+          "value": "R_0R_0402",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8599999999999999,
+            0.9399999999999995
+          ],
+          "height_mm": 0.5,
+          "mass_g": [
+            0.0002,
+            0.00035,
+            0.0006
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            10.57,
+            5.21,
+            0.9399999999999995,
+            1.8599999999999999
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "R8",
+          "value": "R_0R_0402",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8599999999999994,
+            0.9399999999999995
+          ],
+          "height_mm": 0.5,
+          "mass_g": [
+            0.0002,
+            0.00035,
+            0.0006
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            11.59,
+            6.41,
+            1.8599999999999994,
+            0.9399999999999995
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "C15",
+          "value": "C_100n_6V3_0402",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8200000000000003,
+            0.9199999999999999
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            0.25,
+            6.49,
+            1.8200000000000003,
+            0.9199999999999999
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "C17",
+          "value": "C_100n_6V3_0402",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8200000000000003,
+            0.9199999999999999
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            4.77,
+            6.57,
+            1.8200000000000003,
+            0.9199999999999999
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "C14",
+          "value": "C_100n_6V3_0402",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8199999999999998,
+            0.9199999999999999
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            6.67,
+            6.59,
+            1.8199999999999998,
+            0.9199999999999999
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "C20",
+          "value": "C_100n_6V3_0402",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8199999999999998,
+            0.9199999999999999
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            8.57,
+            6.59,
+            1.8199999999999998,
+            0.9199999999999999
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "C16",
+          "value": "C_100n_6V3_0402",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8199999999999994,
+            0.9199999999999999
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            2.15,
+            6.81,
+            1.8199999999999994,
+            0.9199999999999999
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "C9",
+          "value": "C_100n_6V3_0402",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8199999999999994,
+            0.9199999999999999
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            10.47,
+            7.43,
+            1.8199999999999994,
+            0.9199999999999999
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "board": "controller",
+          "side": "F",
+          "count": 17,
+          "in_outline": true,
+          "courtyard_overlap_count": 0
+        },
+        {
+          "board": "controller",
+          "side": "B",
+          "count": 59,
+          "in_outline": true,
+          "courtyard_overlap_count": 0
+        },
+        {
+          "board": "head",
+          "side": "F",
+          "count": 7,
+          "in_outline": true,
+          "courtyard_overlap_count": 0
+        },
+        {
+          "board": "head",
+          "side": "B",
+          "count": 23,
+          "in_outline": true,
+          "courtyard_overlap_count": 0
+        }
+      ],
+      "total_flat_length_mm": 76.3,
+      "optical_center_head_mm": [
+        7.0,
+        7.0
+      ],
+      "height_semantics": "Courtyard prisms reserve space, not exact package CAD. Separate front/back populations. Lens/holder are unqualified study envelopes.",
+      "tether_exit_reservation_mm": [
+        -8,
+        0.25,
+        8,
+        7.8
+      ],
+      "module_mass_excludes_tether": true
+    },
+    {
+      "id": "B",
+      "name": "Custom ultrathin rigid-flex",
+      "controller_mm": [
+        24,
+        12
+      ],
+      "head_mm": [
+        12,
+        12
+      ],
+      "free_flex_mm": [
+        32.85,
+        8
+      ],
+      "rigid_thickness_mm": 0.25,
+      "flex_thickness_mm": 0.12,
+      "parts": [
+        {
+          "board": "controller",
+          "reference": "J101",
+          "value": "USB / JST 4-contact candidate",
+          "source_footprint": "JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal",
+          "source_side": "F",
+          "courtyard_mm": [
+            6.5600000000000005,
+            7.800000000000001
+          ],
+          "height_mm": 3.0,
+          "mass_g": [
+            0.025,
+            0.045,
+            0.075
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            0.25,
+            0.25,
+            6.56,
+            7.8
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "U101",
+          "value": "ESP32-P4NRW16X / v3.x",
+          "source_footprint": "ESP32-P4",
+          "source_side": "F",
+          "courtyard_mm": [
+            11.200000000000001,
+            11.2
+          ],
+          "height_mm": 1.0,
+          "mass_g": [
+            0.135,
+            0.18,
+            0.23
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            7.2,
+            0.40000000000000036,
+            11.2,
+            11.2
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "Y101",
+          "value": "40 MHz / CL TBD",
+          "source_footprint": "Crystal_SMD_2016-4Pin_2.0x1.6mm",
+          "source_side": "F",
+          "courtyard_mm": [
+            3.0,
+            2.6000000000000014
+          ],
+          "height_mm": 0.9,
+          "mass_g": [
+            0.004,
+            0.008,
+            0.012
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            18.48,
+            0.25,
+            3.0,
+            2.6000000000000014
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "U105",
+          "value": "USBLC6-2P6",
+          "source_footprint": "SOT-666",
+          "source_side": "F",
+          "courtyard_mm": [
+            3.0,
+            2.1999999999999997
+          ],
+          "height_mm": 0.7,
+          "mass_g": [
+            0.001,
+            0.002,
+            0.003
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            18.48,
+            2.93,
+            3.0,
+            2.1999999999999997
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "U103",
+          "value": "TLV62569DBV / core",
+          "source_footprint": "SOT-23-5",
+          "source_side": "F",
+          "courtyard_mm": [
+            2.5,
+            2.5
+          ],
+          "height_mm": 0.8,
+          "mass_g": [
+            0.002,
+            0.004,
+            0.008
+          ],
+          "assumption": "Small DFN/WCSP regulator equivalent, not selected",
+          "rect_mm": [
+            18.48,
+            5.21,
+            2.5,
+            2.5
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "L101",
+          "value": "2.2u / Isat TBD",
+          "source_footprint": "L_0805_2012Metric",
+          "source_side": "F",
+          "courtyard_mm": [
+            3.5,
+            1.700000000000001
+          ],
+          "height_mm": 1.3,
+          "mass_g": [
+            0.006,
+            0.011,
+            0.018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            21.56,
+            0.25,
+            1.700000000000001,
+            3.5
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C106",
+          "value": "22u",
+          "source_footprint": "C_0805_2012Metric",
+          "source_side": "F",
+          "courtyard_mm": [
+            2.4,
+            1.4
+          ],
+          "height_mm": 1.0,
+          "mass_g": [
+            0.002,
+            0.0045,
+            0.008
+          ],
+          "assumption": "0603-class capacitor, rating and DC bias must be checked",
+          "rect_mm": [
+            21.56,
+            3.83,
+            1.4,
+            2.4
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C105",
+          "value": "4.7u",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "F",
+          "courtyard_mm": [
+            1.9,
+            1.0
+          ],
+          "height_mm": 0.6,
+          "mass_g": [
+            0.0007,
+            0.0015,
+            0.003
+          ],
+          "assumption": "0402-class capacitor, effective capacitance must be checked",
+          "rect_mm": [
+            21.06,
+            6.31,
+            1.9,
+            1.0
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C101",
+          "value": "CL_TBD",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "F",
+          "courtyard_mm": [
+            1.8200000000000003,
+            0.9200000000000017
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            21.06,
+            7.39,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C107",
+          "value": "22p",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "F",
+          "courtyard_mm": [
+            1.8200000000000003,
+            0.9200000000000017
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            18.48,
+            7.79,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C102",
+          "value": "CL_TBD",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "F",
+          "courtyard_mm": [
+            0.9200000000000017,
+            1.8200000000000003
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            0.25,
+            8.13,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R110",
+          "value": "0",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "F",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            2.15,
+            8.13,
+            1.1,
+            0.8
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R115",
+          "value": "4.7k",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "F",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            3.33,
+            8.13,
+            1.1,
+            0.8
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R106",
+          "value": "499k",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "F",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            4.51,
+            8.13,
+            1.1,
+            0.8
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R109",
+          "value": "0",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "F",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            5.69,
+            8.13,
+            1.1,
+            0.8
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R105",
+          "value": "499k",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "F",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            20.38,
+            8.39,
+            1.1,
+            0.8
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "U102",
+          "value": "W25Q32JVSS (4 MB candidate)",
+          "source_footprint": "SOIC-8_5.3x5.3mm_P1.27mm",
+          "source_side": "B",
+          "courtyard_mm": [
+            4.0,
+            3.0
+          ],
+          "height_mm": 0.8,
+          "mass_g": [
+            0.006,
+            0.012,
+            0.025
+          ],
+          "assumption": "Small flash package equivalent, not selected",
+          "rect_mm": [
+            0.25,
+            0.25,
+            4.0,
+            3.0
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "U6",
+          "value": "TLV73312PDBVT",
+          "source_footprint": "SOT-23-5",
+          "source_side": "B",
+          "courtyard_mm": [
+            2.5,
+            2.5
+          ],
+          "height_mm": 0.8,
+          "mass_g": [
+            0.002,
+            0.004,
+            0.008
+          ],
+          "assumption": "Small DFN/WCSP regulator equivalent, not selected",
+          "rect_mm": [
+            4.33,
+            0.25,
+            2.5,
+            2.5
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "U5",
+          "value": "TLV73318PDBVT",
+          "source_footprint": "SOT-23-5",
+          "source_side": "B",
+          "courtyard_mm": [
+            2.5,
+            2.5
+          ],
+          "height_mm": 0.8,
+          "mass_g": [
+            0.002,
+            0.004,
+            0.008
+          ],
+          "assumption": "Small DFN/WCSP regulator equivalent, not selected",
+          "rect_mm": [
+            6.91,
+            0.25,
+            2.5,
+            2.5
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "U104",
+          "value": "TLV62569DBV / system",
+          "source_footprint": "SOT-23-5",
+          "source_side": "B",
+          "courtyard_mm": [
+            2.5,
+            2.5
+          ],
+          "height_mm": 0.8,
+          "mass_g": [
+            0.002,
+            0.004,
+            0.008
+          ],
+          "assumption": "Small DFN/WCSP regulator equivalent, not selected",
+          "rect_mm": [
+            9.49,
+            0.25,
+            2.5,
+            2.5
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "U7",
+          "value": "TLV73328PDBVT",
+          "source_footprint": "SOT-23-5",
+          "source_side": "B",
+          "courtyard_mm": [
+            2.5,
+            2.5
+          ],
+          "height_mm": 0.8,
+          "mass_g": [
+            0.002,
+            0.004,
+            0.008
+          ],
+          "assumption": "Small DFN/WCSP regulator equivalent, not selected",
+          "rect_mm": [
+            12.07,
+            0.25,
+            2.5,
+            2.5
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "L102",
+          "value": "2.2u / Isat TBD",
+          "source_footprint": "L_0805_2012Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            3.5,
+            1.6999999999999993
+          ],
+          "height_mm": 1.3,
+          "mass_g": [
+            0.006,
+            0.011,
+            0.018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            14.65,
+            0.25,
+            3.5,
+            1.6999999999999993
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "Q102",
+          "value": "BSS138",
+          "source_footprint": "SOT-23",
+          "source_side": "B",
+          "courtyard_mm": [
+            2.1,
+            1.8
+          ],
+          "height_mm": 0.8,
+          "mass_g": [
+            0.001,
+            0.0025,
+            0.005
+          ],
+          "assumption": "Small DFN transistor/diode equivalent, not selected",
+          "rect_mm": [
+            18.23,
+            0.25,
+            2.1,
+            1.8
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "Q101",
+          "value": "BSS138",
+          "source_footprint": "SOT-23",
+          "source_side": "B",
+          "courtyard_mm": [
+            2.1,
+            1.8
+          ],
+          "height_mm": 0.8,
+          "mass_g": [
+            0.001,
+            0.0025,
+            0.005
+          ],
+          "assumption": "Small DFN transistor/diode equivalent, not selected",
+          "rect_mm": [
+            20.41,
+            0.25,
+            2.1,
+            1.8
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "Q103",
+          "value": "BSS138 / reset asserted HIGH",
+          "source_footprint": "SOT-23",
+          "source_side": "B",
+          "courtyard_mm": [
+            2.1,
+            1.8
+          ],
+          "height_mm": 0.8,
+          "mass_g": [
+            0.001,
+            0.0025,
+            0.005
+          ],
+          "assumption": "Small DFN transistor/diode equivalent, not selected",
+          "rect_mm": [
+            14.65,
+            2.03,
+            2.1,
+            1.8
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C1",
+          "value": "C_4u7_0805",
+          "source_footprint": "C_0805_2012Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            2.4,
+            1.4
+          ],
+          "height_mm": 1.0,
+          "mass_g": [
+            0.002,
+            0.0045,
+            0.008
+          ],
+          "assumption": "0603-class capacitor, rating and DC bias must be checked",
+          "rect_mm": [
+            16.83,
+            2.13,
+            2.4,
+            1.4
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C124",
+          "value": "10u",
+          "source_footprint": "C_0805_2012Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            2.4,
+            1.4
+          ],
+          "height_mm": 1.0,
+          "mass_g": [
+            0.002,
+            0.0045,
+            0.008
+          ],
+          "assumption": "0603-class capacitor, rating and DC bias must be checked",
+          "rect_mm": [
+            19.31,
+            2.13,
+            2.4,
+            1.4
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C123",
+          "value": "10u",
+          "source_footprint": "C_0805_2012Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            2.4,
+            1.4
+          ],
+          "height_mm": 1.0,
+          "mass_g": [
+            0.002,
+            0.0045,
+            0.008
+          ],
+          "assumption": "0603-class capacitor, rating and DC bias must be checked",
+          "rect_mm": [
+            4.33,
+            2.83,
+            2.4,
+            1.4
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C3",
+          "value": "C_4u7_0805",
+          "source_footprint": "C_0805_2012Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            2.4,
+            1.4
+          ],
+          "height_mm": 1.0,
+          "mass_g": [
+            0.002,
+            0.0045,
+            0.008
+          ],
+          "assumption": "0603-class capacitor, rating and DC bias must be checked",
+          "rect_mm": [
+            6.81,
+            2.83,
+            2.4,
+            1.4
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C109",
+          "value": "22u",
+          "source_footprint": "C_0805_2012Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            2.4,
+            1.4
+          ],
+          "height_mm": 1.0,
+          "mass_g": [
+            0.002,
+            0.0045,
+            0.008
+          ],
+          "assumption": "0603-class capacitor, rating and DC bias must be checked",
+          "rect_mm": [
+            9.29,
+            2.83,
+            2.4,
+            1.4
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C2",
+          "value": "C_4u7_0805",
+          "source_footprint": "C_0805_2012Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            2.4,
+            1.4
+          ],
+          "height_mm": 1.0,
+          "mass_g": [
+            0.002,
+            0.0045,
+            0.008
+          ],
+          "assumption": "0603-class capacitor, rating and DC bias must be checked",
+          "rect_mm": [
+            11.77,
+            2.83,
+            2.4,
+            1.4
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C108",
+          "value": "4.7u",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.9,
+            1.0
+          ],
+          "height_mm": 0.6,
+          "mass_g": [
+            0.0007,
+            0.0015,
+            0.003
+          ],
+          "assumption": "0402-class capacitor, effective capacitance must be checked",
+          "rect_mm": [
+            22.59,
+            0.25,
+            1.0,
+            1.9
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C126",
+          "value": "1u",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.9,
+            1.0
+          ],
+          "height_mm": 0.6,
+          "mass_g": [
+            0.0007,
+            0.0015,
+            0.003
+          ],
+          "assumption": "0402-class capacitor, effective capacitance must be checked",
+          "rect_mm": [
+            21.79,
+            2.23,
+            1.9,
+            1.0
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C127",
+          "value": "1u",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.9,
+            1.0
+          ],
+          "height_mm": 0.6,
+          "mass_g": [
+            0.0007,
+            0.0015,
+            0.003
+          ],
+          "assumption": "0402-class capacitor, effective capacitance must be checked",
+          "rect_mm": [
+            21.79,
+            3.31,
+            1.9,
+            1.0
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C104",
+          "value": "1u",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.9,
+            1.0
+          ],
+          "height_mm": 0.6,
+          "mass_g": [
+            0.0007,
+            0.0015,
+            0.003
+          ],
+          "assumption": "0402-class capacitor, effective capacitance must be checked",
+          "rect_mm": [
+            0.25,
+            3.33,
+            1.9,
+            1.0
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C5",
+          "value": "C_1u_0603",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.9,
+            1.0
+          ],
+          "height_mm": 0.6,
+          "mass_g": [
+            0.0007,
+            0.0015,
+            0.003
+          ],
+          "assumption": "0402-class capacitor, effective capacitance must be checked",
+          "rect_mm": [
+            2.23,
+            3.33,
+            1.9,
+            1.0
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C133",
+          "value": "1u",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.9,
+            1.0
+          ],
+          "height_mm": 0.6,
+          "mass_g": [
+            0.0007,
+            0.0015,
+            0.003
+          ],
+          "assumption": "0402-class capacitor, effective capacitance must be checked",
+          "rect_mm": [
+            16.83,
+            3.61,
+            1.9,
+            1.0
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C136",
+          "value": "4.7u",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.9,
+            1.0
+          ],
+          "height_mm": 0.6,
+          "mass_g": [
+            0.0007,
+            0.0015,
+            0.003
+          ],
+          "assumption": "0402-class capacitor, effective capacitance must be checked",
+          "rect_mm": [
+            18.81,
+            3.61,
+            1.9,
+            1.0
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C6",
+          "value": "C_1u_0603",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.9,
+            1.0
+          ],
+          "height_mm": 0.6,
+          "mass_g": [
+            0.0007,
+            0.0015,
+            0.003
+          ],
+          "assumption": "0402-class capacitor, effective capacitance must be checked",
+          "rect_mm": [
+            14.25,
+            3.91,
+            1.9,
+            1.0
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C4",
+          "value": "C_1u_0603",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.9,
+            1.0
+          ],
+          "height_mm": 0.6,
+          "mass_g": [
+            0.0007,
+            0.0015,
+            0.003
+          ],
+          "assumption": "0402-class capacitor, effective capacitance must be checked",
+          "rect_mm": [
+            4.21,
+            4.31,
+            1.9,
+            1.0
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C125",
+          "value": "1u",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.9,
+            1.0
+          ],
+          "height_mm": 0.6,
+          "mass_g": [
+            0.0007,
+            0.0015,
+            0.003
+          ],
+          "assumption": "0402-class capacitor, effective capacitance must be checked",
+          "rect_mm": [
+            6.19,
+            4.31,
+            1.9,
+            1.0
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C122",
+          "value": "100n / U101.102",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            0.9200000000000017,
+            1.8200000000000003
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            8.17,
+            4.31,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C115",
+          "value": "100n / U101.75",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8200000000000003,
+            0.9200000000000017
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            10.07,
+            4.31,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C130",
+          "value": "100n / U101.67",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8200000000000003,
+            0.9200000000000017
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            11.97,
+            4.31,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C110",
+          "value": "100n / U101.9",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8200000000000003,
+            0.9200000000000017
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            20.79,
+            4.39,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C132",
+          "value": "100n",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            0.9200000000000017,
+            1.8200000000000003
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            0.25,
+            4.41,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C118",
+          "value": "100n / U101.85",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            0.9200000000000017,
+            1.8200000000000003
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            2.15,
+            4.41,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C116",
+          "value": "100n / U101.76",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8200000000000003,
+            0.9200000000000017
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            16.23,
+            4.69,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C117",
+          "value": "100n / U101.77",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            0.9200000000000017,
+            1.8200000000000003
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            18.13,
+            4.69,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C114",
+          "value": "100n / U101.62",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8200000000000003,
+            0.9200000000000017
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            13.87,
+            4.99,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C119",
+          "value": "100n / U101.91",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            0.9200000000000017,
+            1.8200000000000003
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            22.69,
+            4.39,
+            0.9200000000000017,
+            1.8200000000000003
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C120",
+          "value": "100n / U101.96",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            0.9200000000000017,
+            1.8200000000000003
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            8.17,
+            5.31,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C121",
+          "value": "100n / U101.101",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            0.9200000000000017,
+            1.8200000000000003
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            10.07,
+            5.31,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C135",
+          "value": "100n",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            0.9200000000000017,
+            1.8200000000000003
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            11.97,
+            5.31,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C128",
+          "value": "100n / U101.30",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            0.9200000000000017,
+            1.8200000000000003
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            4.05,
+            5.39,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C134",
+          "value": "10n",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            0.9200000000000017,
+            1.8200000000000003
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            5.95,
+            5.39,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C103",
+          "value": "100n",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            0.9200000000000017,
+            1.82
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            20.03,
+            5.39,
+            1.82,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C129",
+          "value": "100n / U101.59",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8200000000000003,
+            0.9200000000000008
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            0.25,
+            5.41,
+            1.8200000000000003,
+            0.9200000000000008
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C112",
+          "value": "100n / U101.26",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8200000000000003,
+            0.9199999999999999
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            2.15,
+            5.41,
+            1.8200000000000003,
+            0.9199999999999999
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C131",
+          "value": "10n",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8200000000000003,
+            0.9199999999999999
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            15.77,
+            5.69,
+            1.8200000000000003,
+            0.9199999999999999
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C111",
+          "value": "100n / U101.21",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8200000000000003,
+            0.9199999999999999
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            17.67,
+            5.69,
+            1.8200000000000003,
+            0.9199999999999999
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C113",
+          "value": "100n / U101.54",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8200000000000003,
+            0.9199999999999999
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            13.87,
+            5.99,
+            1.8200000000000003,
+            0.9199999999999999
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R118",
+          "value": "10k",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            21.93,
+            6.29,
+            1.1,
+            0.8
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R111",
+          "value": "4.02k 1%",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            7.85,
+            6.31,
+            1.1,
+            0.8
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R112",
+          "value": "4.7k",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            9.03,
+            6.31,
+            1.1,
+            0.8
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R113",
+          "value": "4.7k",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            10.21,
+            6.31,
+            1.1,
+            0.8
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R117",
+          "value": "10k",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            11.39,
+            6.31,
+            1.1,
+            0.8
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R108",
+          "value": "100k",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            12.57,
+            6.31,
+            1.1,
+            0.8
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R101",
+          "value": "10k",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            4.05,
+            6.39,
+            1.1,
+            0.8
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R103",
+          "value": "10k",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            5.23,
+            6.39,
+            1.1,
+            0.8
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R116",
+          "value": "100k",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            6.41,
+            6.39,
+            1.1,
+            0.8
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R104",
+          "value": "10k",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            19.57,
+            6.39,
+            1.1,
+            0.8
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R114",
+          "value": "4.7k",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            20.75,
+            6.39,
+            1.1,
+            0.8
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R102",
+          "value": "10k",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            0.25,
+            6.41,
+            1.1,
+            0.8
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R107",
+          "value": "453k",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            1.43,
+            6.41,
+            1.1,
+            0.8
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "U1",
+          "value": "ImageSensor_OV9281",
+          "source_footprint": "OV9281",
+          "source_side": "F",
+          "courtyard_mm": [
+            5.736,
+            4.964
+          ],
+          "height_mm": 1.0,
+          "mass_g": [
+            0.02,
+            0.035,
+            0.055
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            2.884499999999999,
+            3.5539999999999994,
+            5.736,
+            4.964
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "D202",
+          "value": "AP1608F3C",
+          "source_footprint": "Kingbright_AP1608F3C_R09",
+          "source_side": "F",
+          "courtyard_mm": [
+            2.950000000000001,
+            1.4
+          ],
+          "height_mm": 1.0,
+          "mass_g": [
+            0.0015,
+            0.0025,
+            0.004
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            0.25,
+            0.25,
+            2.950000000000001,
+            1.4
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "D201",
+          "value": "AP1608F3C",
+          "source_footprint": "Kingbright_AP1608F3C_R09",
+          "source_side": "F",
+          "courtyard_mm": [
+            2.9499999999999997,
+            1.4
+          ],
+          "height_mm": 1.0,
+          "mass_g": [
+            0.0015,
+            0.0025,
+            0.004
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            3.28,
+            0.25,
+            2.9499999999999997,
+            1.4
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "R201",
+          "value": "1k 1%",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "F",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            6.31,
+            0.25,
+            1.1,
+            0.8
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "R203",
+          "value": "2.2k 1%",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "F",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            7.49,
+            0.25,
+            1.1,
+            0.8
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "R204",
+          "value": "100k 1%",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "F",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            8.67,
+            0.25,
+            1.1,
+            0.8
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "R202",
+          "value": "1k 1%",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "F",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            9.85,
+            0.25,
+            1.1,
+            0.8
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "Y1",
+          "value": "SG-210STF 24.0000ML",
+          "source_footprint": "Epson_SG210STF_2.5x2.0mm_R09",
+          "source_side": "B",
+          "courtyard_mm": [
+            3.3,
+            2.7
+          ],
+          "height_mm": 1.0,
+          "mass_g": [
+            0.006,
+            0.01,
+            0.015
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            0.25,
+            0.25,
+            3.3,
+            2.7
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "L1",
+          "value": "MLP2012S3R3MT",
+          "source_footprint": "L_0805_2012Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            3.5,
+            1.7
+          ],
+          "height_mm": 1.3,
+          "mass_g": [
+            0.006,
+            0.011,
+            0.018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            3.63,
+            0.25,
+            3.5,
+            1.7
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "L2",
+          "value": "MLP2012S3R3MT",
+          "source_footprint": "L_0805_2012Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            3.5,
+            1.6999999999999997
+          ],
+          "height_mm": 1.3,
+          "mass_g": [
+            0.006,
+            0.011,
+            0.018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            7.21,
+            0.25,
+            3.5,
+            1.6999999999999997
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "L3",
+          "value": "MLP2012S3R3MT",
+          "source_footprint": "L_0805_2012Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            3.5000000000000004,
+            1.6999999999999993
+          ],
+          "height_mm": 1.3,
+          "mass_g": [
+            0.006,
+            0.011,
+            0.018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            3.63,
+            2.03,
+            3.5000000000000004,
+            1.6999999999999993
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "Q201",
+          "value": "MMBT3904,215",
+          "source_footprint": "SOT-23",
+          "source_side": "B",
+          "courtyard_mm": [
+            2.1,
+            1.8
+          ],
+          "height_mm": 0.8,
+          "mass_g": [
+            0.001,
+            0.0025,
+            0.005
+          ],
+          "assumption": "Small DFN transistor/diode equivalent, not selected",
+          "placement_change": "Moved to underside for optical support clearance",
+          "rect_mm": [
+            7.21,
+            2.03,
+            2.1,
+            1.8
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "C21",
+          "value": "C_1u_0603",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.9,
+            1.0
+          ],
+          "height_mm": 0.6,
+          "mass_g": [
+            0.0007,
+            0.0015,
+            0.003
+          ],
+          "assumption": "0402-class capacitor, effective capacitance must be checked",
+          "rect_mm": [
+            9.39,
+            2.03,
+            1.9,
+            1.0
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "C33",
+          "value": "C_1u_0603",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.9,
+            1.0
+          ],
+          "height_mm": 0.6,
+          "mass_g": [
+            0.0007,
+            0.0015,
+            0.003
+          ],
+          "assumption": "0402-class capacitor, effective capacitance must be checked",
+          "rect_mm": [
+            0.25,
+            3.03,
+            1.9,
+            1.0
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "C19",
+          "value": "C_1u_0603",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.9,
+            1.0
+          ],
+          "height_mm": 0.6,
+          "mass_g": [
+            0.0007,
+            0.0015,
+            0.003
+          ],
+          "assumption": "0402-class capacitor, effective capacitance must be checked",
+          "rect_mm": [
+            9.39,
+            3.11,
+            1.9,
+            1.0
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "C10",
+          "value": "C_1u_0603",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.9,
+            1.0
+          ],
+          "height_mm": 0.6,
+          "mass_g": [
+            0.0007,
+            0.0015,
+            0.003
+          ],
+          "assumption": "0402-class capacitor, effective capacitance must be checked",
+          "rect_mm": [
+            2.23,
+            3.81,
+            1.9,
+            1.0
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "C7",
+          "value": "C_1u_0603",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.9,
+            1.0
+          ],
+          "height_mm": 0.6,
+          "mass_g": [
+            0.0007,
+            0.0015,
+            0.003
+          ],
+          "assumption": "0402-class capacitor, effective capacitance must be checked",
+          "rect_mm": [
+            4.21,
+            3.81,
+            1.9,
+            1.0
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "C18",
+          "value": "C_1u_0603",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.9,
+            1.0
+          ],
+          "height_mm": 0.6,
+          "mass_g": [
+            0.0007,
+            0.0015,
+            0.003
+          ],
+          "assumption": "0402-class capacitor, effective capacitance must be checked",
+          "rect_mm": [
+            6.19,
+            3.91,
+            1.9,
+            1.0
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "C8",
+          "value": "C_1u_0603",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.9,
+            1.0
+          ],
+          "height_mm": 0.6,
+          "mass_g": [
+            0.0007,
+            0.0015,
+            0.003
+          ],
+          "assumption": "0402-class capacitor, effective capacitance must be checked",
+          "rect_mm": [
+            0.25,
+            4.11,
+            1.9,
+            1.0
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "C13",
+          "value": "C_1u_0603",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.9,
+            1.0
+          ],
+          "height_mm": 0.6,
+          "mass_g": [
+            0.0007,
+            0.0015,
+            0.003
+          ],
+          "assumption": "0402-class capacitor, effective capacitance must be checked",
+          "rect_mm": [
+            8.17,
+            4.19,
+            1.9,
+            1.0
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "C12",
+          "value": "C_1u_0603",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.9,
+            1.0
+          ],
+          "height_mm": 0.6,
+          "mass_g": [
+            0.0007,
+            0.0015,
+            0.003
+          ],
+          "assumption": "0402-class capacitor, effective capacitance must be checked",
+          "rect_mm": [
+            2.23,
+            4.89,
+            1.9,
+            1.0
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "C15",
+          "value": "C_100n_6V3_0402",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8200000000000003,
+            0.9199999999999999
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            4.21,
+            4.89,
+            1.8200000000000003,
+            0.9199999999999999
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "C17",
+          "value": "C_100n_6V3_0402",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8200000000000003,
+            0.9199999999999999
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            6.11,
+            4.99,
+            1.8200000000000003,
+            0.9199999999999999
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "C14",
+          "value": "C_100n_6V3_0402",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8199999999999998,
+            0.9199999999999999
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            10.15,
+            4.19,
+            0.9199999999999999,
+            1.8199999999999998
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "C20",
+          "value": "C_100n_6V3_0402",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8199999999999998,
+            0.9199999999999999
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            0.25,
+            5.19,
+            1.8199999999999998,
+            0.9199999999999999
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "C16",
+          "value": "C_100n_6V3_0402",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8199999999999994,
+            0.9199999999999999
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            8.01,
+            5.27,
+            1.8199999999999994,
+            0.9199999999999999
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "C9",
+          "value": "C_100n_6V3_0402",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8199999999999994,
+            0.9199999999999999
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            4.21,
+            5.89,
+            1.8199999999999994,
+            0.9199999999999999
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "R8",
+          "value": "R_0R_0402",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            10.79,
+            0.25,
+            0.8,
+            1.1
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "R7",
+          "value": "R_0R_0402",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            2.15,
+            5.97,
+            1.1,
+            0.8
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "R9",
+          "value": "R_0R_0402",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            6.11,
+            5.99,
+            1.1,
+            0.8
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "board": "controller",
+          "side": "F",
+          "count": 16,
+          "in_outline": true,
+          "courtyard_overlap_count": 0
+        },
+        {
+          "board": "controller",
+          "side": "B",
+          "count": 59,
+          "in_outline": true,
+          "courtyard_overlap_count": 0
+        },
+        {
+          "board": "head",
+          "side": "F",
+          "count": 7,
+          "in_outline": true,
+          "courtyard_overlap_count": 0
+        },
+        {
+          "board": "head",
+          "side": "B",
+          "count": 23,
+          "in_outline": true,
+          "courtyard_overlap_count": 0
+        }
+      ],
+      "total_flat_length_mm": 68.85,
+      "optical_center_head_mm": [
+        6.0,
+        6.0
+      ],
+      "height_semantics": "Courtyard prisms reserve space, not exact package CAD. Separate front/back populations. Lens/holder are unqualified study envelopes.",
+      "tether_exit_reservation_mm": [
+        -8,
+        0.25,
+        8,
+        7.8
+      ],
+      "module_mass_excludes_tether": true
+    },
+    {
+      "id": "C",
+      "name": "Published SLIM.flex construction",
+      "controller_mm": [
+        26,
+        12.5
+      ],
+      "head_mm": [
+        12.5,
+        12.5
+      ],
+      "free_flex_mm": [
+        32.85,
+        8
+      ],
+      "rigid_thickness_mm": 0.303,
+      "flex_thickness_mm": 0.166,
+      "parts": [
+        {
+          "board": "controller",
+          "reference": "J101",
+          "value": "USB / JST 4-contact candidate",
+          "source_footprint": "JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal",
+          "source_side": "F",
+          "courtyard_mm": [
+            6.5600000000000005,
+            7.800000000000001
+          ],
+          "height_mm": 3.0,
+          "mass_g": [
+            0.025,
+            0.045,
+            0.075
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            0.25,
+            0.25,
+            6.56,
+            7.8
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "U101",
+          "value": "ESP32-P4NRW16X / v3.x",
+          "source_footprint": "ESP32-P4",
+          "source_side": "F",
+          "courtyard_mm": [
+            11.200000000000001,
+            11.2
+          ],
+          "height_mm": 1.0,
+          "mass_g": [
+            0.135,
+            0.18,
+            0.23
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            7.2,
+            0.6500000000000004,
+            11.2,
+            11.2
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "Y101",
+          "value": "40 MHz / CL TBD",
+          "source_footprint": "Crystal_SMD_2016-4Pin_2.0x1.6mm",
+          "source_side": "F",
+          "courtyard_mm": [
+            3.0,
+            2.6000000000000014
+          ],
+          "height_mm": 0.9,
+          "mass_g": [
+            0.004,
+            0.008,
+            0.012
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            18.48,
+            0.25,
+            3.0,
+            2.6000000000000014
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "U105",
+          "value": "USBLC6-2P6",
+          "source_footprint": "SOT-666",
+          "source_side": "F",
+          "courtyard_mm": [
+            3.0,
+            2.1999999999999997
+          ],
+          "height_mm": 0.7,
+          "mass_g": [
+            0.001,
+            0.002,
+            0.003
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            21.56,
+            0.25,
+            3.0,
+            2.1999999999999997
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "U103",
+          "value": "TLV62569DBV / core",
+          "source_footprint": "SOT-23-5",
+          "source_side": "F",
+          "courtyard_mm": [
+            2.5,
+            2.5
+          ],
+          "height_mm": 0.8,
+          "mass_g": [
+            0.002,
+            0.004,
+            0.008
+          ],
+          "assumption": "Small DFN/WCSP regulator equivalent, not selected",
+          "rect_mm": [
+            21.56,
+            2.53,
+            2.5,
+            2.5
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "L101",
+          "value": "2.2u / Isat TBD",
+          "source_footprint": "L_0805_2012Metric",
+          "source_side": "F",
+          "courtyard_mm": [
+            3.5,
+            1.700000000000001
+          ],
+          "height_mm": 1.3,
+          "mass_g": [
+            0.006,
+            0.011,
+            0.018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            18.48,
+            2.93,
+            1.700000000000001,
+            3.5
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C106",
+          "value": "22u",
+          "source_footprint": "C_0805_2012Metric",
+          "source_side": "F",
+          "courtyard_mm": [
+            2.4,
+            1.4
+          ],
+          "height_mm": 1.0,
+          "mass_g": [
+            0.002,
+            0.0045,
+            0.008
+          ],
+          "assumption": "0603-class capacitor, rating and DC bias must be checked",
+          "rect_mm": [
+            24.14,
+            2.53,
+            1.4,
+            2.4
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C105",
+          "value": "4.7u",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "F",
+          "courtyard_mm": [
+            1.9,
+            1.0
+          ],
+          "height_mm": 0.6,
+          "mass_g": [
+            0.0007,
+            0.0015,
+            0.003
+          ],
+          "assumption": "0402-class capacitor, effective capacitance must be checked",
+          "rect_mm": [
+            24.64,
+            0.25,
+            1.0,
+            1.9
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C101",
+          "value": "CL_TBD",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "F",
+          "courtyard_mm": [
+            1.8200000000000003,
+            0.9200000000000017
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            20.26,
+            2.93,
+            0.9200000000000017,
+            1.8200000000000003
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C107",
+          "value": "22p",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "F",
+          "courtyard_mm": [
+            1.8200000000000003,
+            0.9200000000000017
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            20.26,
+            5.11,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C102",
+          "value": "CL_TBD",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "F",
+          "courtyard_mm": [
+            0.9200000000000017,
+            1.8200000000000003
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            22.16,
+            5.11,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R110",
+          "value": "0",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "F",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            24.14,
+            5.01,
+            1.1,
+            0.8
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R115",
+          "value": "4.7k",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "F",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            24.06,
+            5.89,
+            1.1,
+            0.8
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R106",
+          "value": "499k",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "F",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            20.26,
+            6.11,
+            1.1,
+            0.8
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R109",
+          "value": "0",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "F",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            21.44,
+            6.11,
+            1.1,
+            0.8
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R105",
+          "value": "499k",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "F",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            22.62,
+            6.11,
+            1.1,
+            0.8
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "U102",
+          "value": "W25Q32JVSS (4 MB candidate)",
+          "source_footprint": "SOIC-8_5.3x5.3mm_P1.27mm",
+          "source_side": "B",
+          "courtyard_mm": [
+            4.0,
+            3.0
+          ],
+          "height_mm": 0.8,
+          "mass_g": [
+            0.006,
+            0.012,
+            0.025
+          ],
+          "assumption": "Small flash package equivalent, not selected",
+          "rect_mm": [
+            0.25,
+            0.25,
+            4.0,
+            3.0
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "U6",
+          "value": "TLV73312PDBVT",
+          "source_footprint": "SOT-23-5",
+          "source_side": "B",
+          "courtyard_mm": [
+            2.5,
+            2.5
+          ],
+          "height_mm": 0.8,
+          "mass_g": [
+            0.002,
+            0.004,
+            0.008
+          ],
+          "assumption": "Small DFN/WCSP regulator equivalent, not selected",
+          "rect_mm": [
+            4.33,
+            0.25,
+            2.5,
+            2.5
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "U5",
+          "value": "TLV73318PDBVT",
+          "source_footprint": "SOT-23-5",
+          "source_side": "B",
+          "courtyard_mm": [
+            2.5,
+            2.5
+          ],
+          "height_mm": 0.8,
+          "mass_g": [
+            0.002,
+            0.004,
+            0.008
+          ],
+          "assumption": "Small DFN/WCSP regulator equivalent, not selected",
+          "rect_mm": [
+            17.88,
+            0.25,
+            2.5,
+            2.5
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "U104",
+          "value": "TLV62569DBV / system",
+          "source_footprint": "SOT-23-5",
+          "source_side": "B",
+          "courtyard_mm": [
+            2.5,
+            2.5
+          ],
+          "height_mm": 0.8,
+          "mass_g": [
+            0.002,
+            0.004,
+            0.008
+          ],
+          "assumption": "Small DFN/WCSP regulator equivalent, not selected",
+          "rect_mm": [
+            20.46,
+            0.25,
+            2.5,
+            2.5
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "U7",
+          "value": "TLV73328PDBVT",
+          "source_footprint": "SOT-23-5",
+          "source_side": "B",
+          "courtyard_mm": [
+            2.5,
+            2.5
+          ],
+          "height_mm": 0.8,
+          "mass_g": [
+            0.002,
+            0.004,
+            0.008
+          ],
+          "assumption": "Small DFN/WCSP regulator equivalent, not selected",
+          "rect_mm": [
+            23.04,
+            0.25,
+            2.5,
+            2.5
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "L102",
+          "value": "2.2u / Isat TBD",
+          "source_footprint": "L_0805_2012Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            3.5,
+            1.6999999999999993
+          ],
+          "height_mm": 1.3,
+          "mass_g": [
+            0.006,
+            0.011,
+            0.018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            17.88,
+            2.83,
+            3.5,
+            1.6999999999999993
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "Q102",
+          "value": "BSS138",
+          "source_footprint": "SOT-23",
+          "source_side": "B",
+          "courtyard_mm": [
+            2.1,
+            1.8
+          ],
+          "height_mm": 0.8,
+          "mass_g": [
+            0.001,
+            0.0025,
+            0.005
+          ],
+          "assumption": "Small DFN transistor/diode equivalent, not selected",
+          "rect_mm": [
+            4.33,
+            2.83,
+            2.1,
+            1.8
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "Q101",
+          "value": "BSS138",
+          "source_footprint": "SOT-23",
+          "source_side": "B",
+          "courtyard_mm": [
+            2.1,
+            1.8
+          ],
+          "height_mm": 0.8,
+          "mass_g": [
+            0.001,
+            0.0025,
+            0.005
+          ],
+          "assumption": "Small DFN transistor/diode equivalent, not selected",
+          "rect_mm": [
+            21.46,
+            2.83,
+            2.1,
+            1.8
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "Q103",
+          "value": "BSS138 / reset asserted HIGH",
+          "source_footprint": "SOT-23",
+          "source_side": "B",
+          "courtyard_mm": [
+            2.1,
+            1.8
+          ],
+          "height_mm": 0.8,
+          "mass_g": [
+            0.001,
+            0.0025,
+            0.005
+          ],
+          "assumption": "Small DFN transistor/diode equivalent, not selected",
+          "rect_mm": [
+            23.64,
+            2.83,
+            2.1,
+            1.8
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C1",
+          "value": "C_4u7_0805",
+          "source_footprint": "C_0805_2012Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            2.4,
+            1.4
+          ],
+          "height_mm": 1.0,
+          "mass_g": [
+            0.002,
+            0.0045,
+            0.008
+          ],
+          "assumption": "0603-class capacitor, rating and DC bias must be checked",
+          "rect_mm": [
+            0.25,
+            3.33,
+            2.4,
+            1.4
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C124",
+          "value": "10u",
+          "source_footprint": "C_0805_2012Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            2.4,
+            1.4
+          ],
+          "height_mm": 1.0,
+          "mass_g": [
+            0.002,
+            0.0045,
+            0.008
+          ],
+          "assumption": "0603-class capacitor, rating and DC bias must be checked",
+          "rect_mm": [
+            2.73,
+            3.33,
+            1.4,
+            2.4
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C123",
+          "value": "10u",
+          "source_footprint": "C_0805_2012Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            2.4,
+            1.4
+          ],
+          "height_mm": 1.0,
+          "mass_g": [
+            0.002,
+            0.0045,
+            0.008
+          ],
+          "assumption": "0603-class capacitor, rating and DC bias must be checked",
+          "rect_mm": [
+            17.88,
+            4.61,
+            2.4,
+            1.4
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C3",
+          "value": "C_4u7_0805",
+          "source_footprint": "C_0805_2012Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            2.4,
+            1.4
+          ],
+          "height_mm": 1.0,
+          "mass_g": [
+            0.002,
+            0.0045,
+            0.008
+          ],
+          "assumption": "0603-class capacitor, rating and DC bias must be checked",
+          "rect_mm": [
+            4.21,
+            4.71,
+            2.4,
+            1.4
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C109",
+          "value": "22u",
+          "source_footprint": "C_0805_2012Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            2.4,
+            1.4
+          ],
+          "height_mm": 1.0,
+          "mass_g": [
+            0.002,
+            0.0045,
+            0.008
+          ],
+          "assumption": "0603-class capacitor, rating and DC bias must be checked",
+          "rect_mm": [
+            20.36,
+            4.71,
+            2.4,
+            1.4
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C2",
+          "value": "C_4u7_0805",
+          "source_footprint": "C_0805_2012Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            2.4,
+            1.4
+          ],
+          "height_mm": 1.0,
+          "mass_g": [
+            0.002,
+            0.0045,
+            0.008
+          ],
+          "assumption": "0603-class capacitor, rating and DC bias must be checked",
+          "rect_mm": [
+            22.84,
+            4.71,
+            2.4,
+            1.4
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C108",
+          "value": "4.7u",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.9,
+            1.0
+          ],
+          "height_mm": 0.6,
+          "mass_g": [
+            0.0007,
+            0.0015,
+            0.003
+          ],
+          "assumption": "0402-class capacitor, effective capacitance must be checked",
+          "rect_mm": [
+            6.69,
+            2.83,
+            1.0,
+            1.9
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C126",
+          "value": "1u",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.9,
+            1.0
+          ],
+          "height_mm": 0.6,
+          "mass_g": [
+            0.0007,
+            0.0015,
+            0.003
+          ],
+          "assumption": "0402-class capacitor, effective capacitance must be checked",
+          "rect_mm": [
+            0.25,
+            4.81,
+            1.9,
+            1.0
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C127",
+          "value": "1u",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.9,
+            1.0
+          ],
+          "height_mm": 0.6,
+          "mass_g": [
+            0.0007,
+            0.0015,
+            0.003
+          ],
+          "assumption": "0402-class capacitor, effective capacitance must be checked",
+          "rect_mm": [
+            6.69,
+            4.81,
+            1.0,
+            1.9
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C104",
+          "value": "1u",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.9,
+            1.0
+          ],
+          "height_mm": 0.6,
+          "mass_g": [
+            0.0007,
+            0.0015,
+            0.003
+          ],
+          "assumption": "0402-class capacitor, effective capacitance must be checked",
+          "rect_mm": [
+            2.23,
+            5.81,
+            1.9,
+            1.0
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C5",
+          "value": "C_1u_0603",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.9,
+            1.0
+          ],
+          "height_mm": 0.6,
+          "mass_g": [
+            0.0007,
+            0.0015,
+            0.003
+          ],
+          "assumption": "0402-class capacitor, effective capacitance must be checked",
+          "rect_mm": [
+            0.25,
+            5.89,
+            1.9,
+            1.0
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C133",
+          "value": "1u",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.9,
+            1.0
+          ],
+          "height_mm": 0.6,
+          "mass_g": [
+            0.0007,
+            0.0015,
+            0.003
+          ],
+          "assumption": "0402-class capacitor, effective capacitance must be checked",
+          "rect_mm": [
+            17.88,
+            6.09,
+            1.9,
+            1.0
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C136",
+          "value": "4.7u",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.9,
+            1.0
+          ],
+          "height_mm": 0.6,
+          "mass_g": [
+            0.0007,
+            0.0015,
+            0.003
+          ],
+          "assumption": "0402-class capacitor, effective capacitance must be checked",
+          "rect_mm": [
+            4.21,
+            6.19,
+            1.9,
+            1.0
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C6",
+          "value": "C_1u_0603",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.9,
+            1.0
+          ],
+          "height_mm": 0.6,
+          "mass_g": [
+            0.0007,
+            0.0015,
+            0.003
+          ],
+          "assumption": "0402-class capacitor, effective capacitance must be checked",
+          "rect_mm": [
+            19.86,
+            6.19,
+            1.9,
+            1.0
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C4",
+          "value": "C_1u_0603",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.9,
+            1.0
+          ],
+          "height_mm": 0.6,
+          "mass_g": [
+            0.0007,
+            0.0015,
+            0.003
+          ],
+          "assumption": "0402-class capacitor, effective capacitance must be checked",
+          "rect_mm": [
+            21.84,
+            6.19,
+            1.9,
+            1.0
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C125",
+          "value": "1u",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.9,
+            1.0
+          ],
+          "height_mm": 0.6,
+          "mass_g": [
+            0.0007,
+            0.0015,
+            0.003
+          ],
+          "assumption": "0402-class capacitor, effective capacitance must be checked",
+          "rect_mm": [
+            23.82,
+            6.19,
+            1.9,
+            1.0
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C122",
+          "value": "100n / U101.102",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            0.9200000000000017,
+            1.8200000000000003
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            6.91,
+            0.25,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C115",
+          "value": "100n / U101.75",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8200000000000003,
+            0.9200000000000017
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            8.81,
+            0.25,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C130",
+          "value": "100n / U101.67",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8200000000000003,
+            0.9200000000000017
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            10.71,
+            0.25,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C110",
+          "value": "100n / U101.9",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8200000000000003,
+            0.9200000000000017
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            12.61,
+            0.25,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C132",
+          "value": "100n",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            0.9200000000000017,
+            1.8200000000000003
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            14.51,
+            0.25,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C118",
+          "value": "100n / U101.85",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            0.9200000000000017,
+            1.8200000000000003
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            2.23,
+            6.89,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C116",
+          "value": "100n / U101.76",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8200000000000003,
+            0.9200000000000017
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            0.25,
+            6.97,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C117",
+          "value": "100n / U101.77",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            0.9200000000000017,
+            1.8200000000000003
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            17.88,
+            7.17,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C114",
+          "value": "100n / U101.62",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8200000000000003,
+            0.9200000000000017
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            4.13,
+            7.27,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C119",
+          "value": "100n / U101.91",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            0.9200000000000017,
+            1.8200000000000003
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            19.78,
+            7.27,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C120",
+          "value": "100n / U101.96",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            0.9200000000000017,
+            1.8200000000000003
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            21.68,
+            7.27,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C121",
+          "value": "100n / U101.101",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            0.9200000000000017,
+            1.8200000000000003
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            23.58,
+            7.27,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C135",
+          "value": "100n",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            0.9200000000000017,
+            1.8200000000000003
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            6.19,
+            6.79,
+            0.9200000000000017,
+            1.8200000000000003
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C128",
+          "value": "100n / U101.30",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            0.9200000000000017,
+            1.8200000000000003
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            2.15,
+            7.89,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C134",
+          "value": "10n",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            0.9200000000000017,
+            1.8200000000000003
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            0.25,
+            7.97,
+            1.8200000000000003,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C103",
+          "value": "100n",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            0.9200000000000017,
+            1.82
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            17.88,
+            8.17,
+            1.82,
+            0.9200000000000017
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C129",
+          "value": "100n / U101.59",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8200000000000003,
+            0.9200000000000008
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            4.05,
+            8.27,
+            1.8200000000000003,
+            0.9200000000000008
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C112",
+          "value": "100n / U101.26",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8200000000000003,
+            0.9199999999999999
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            19.78,
+            8.27,
+            1.8200000000000003,
+            0.9199999999999999
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C131",
+          "value": "10n",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8200000000000003,
+            0.9199999999999999
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            21.68,
+            8.27,
+            1.8200000000000003,
+            0.9199999999999999
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C111",
+          "value": "100n / U101.21",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8200000000000003,
+            0.9199999999999999
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            23.58,
+            8.27,
+            1.8200000000000003,
+            0.9199999999999999
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "C113",
+          "value": "100n / U101.54",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8200000000000003,
+            0.9199999999999999
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            2.15,
+            8.89,
+            1.8200000000000003,
+            0.9199999999999999
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R118",
+          "value": "10k",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            16.41,
+            0.25,
+            1.1,
+            0.8
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R111",
+          "value": "4.02k 1%",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            6.91,
+            1.25,
+            0.8,
+            1.1
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R112",
+          "value": "4.7k",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            5.95,
+            8.69,
+            1.1,
+            0.8
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R113",
+          "value": "4.7k",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            0.25,
+            8.97,
+            1.1,
+            0.8
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R117",
+          "value": "10k",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            17.88,
+            9.17,
+            1.1,
+            0.8
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R108",
+          "value": "100k",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            19.06,
+            9.27,
+            1.1,
+            0.8
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R101",
+          "value": "10k",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            20.24,
+            9.27,
+            1.1,
+            0.8
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R103",
+          "value": "10k",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            21.42,
+            9.27,
+            1.1,
+            0.8
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R116",
+          "value": "100k",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            22.6,
+            9.27,
+            1.1,
+            0.8
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R104",
+          "value": "10k",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            23.78,
+            9.27,
+            1.1,
+            0.8
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R114",
+          "value": "4.7k",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            17.88,
+            10.05,
+            1.1,
+            0.8
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R102",
+          "value": "10k",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            19.06,
+            10.15,
+            1.1,
+            0.8
+          ]
+        },
+        {
+          "board": "controller",
+          "reference": "R107",
+          "value": "453k",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            20.24,
+            10.15,
+            1.1,
+            0.8
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "U1",
+          "value": "ImageSensor_OV9281",
+          "source_footprint": "OV9281",
+          "source_side": "F",
+          "courtyard_mm": [
+            5.736,
+            4.964
+          ],
+          "height_mm": 1.0,
+          "mass_g": [
+            0.02,
+            0.035,
+            0.055
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            3.134499999999999,
+            3.8039999999999994,
+            5.736,
+            4.964
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "D202",
+          "value": "AP1608F3C",
+          "source_footprint": "Kingbright_AP1608F3C_R09",
+          "source_side": "F",
+          "courtyard_mm": [
+            2.950000000000001,
+            1.4
+          ],
+          "height_mm": 1.0,
+          "mass_g": [
+            0.0015,
+            0.0025,
+            0.004
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            0.25,
+            0.25,
+            2.950000000000001,
+            1.4
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "D201",
+          "value": "AP1608F3C",
+          "source_footprint": "Kingbright_AP1608F3C_R09",
+          "source_side": "F",
+          "courtyard_mm": [
+            2.9499999999999997,
+            1.4
+          ],
+          "height_mm": 1.0,
+          "mass_g": [
+            0.0015,
+            0.0025,
+            0.004
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            3.28,
+            0.25,
+            2.9499999999999997,
+            1.4
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "R201",
+          "value": "1k 1%",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "F",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            6.31,
+            0.25,
+            1.1,
+            0.8
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "R203",
+          "value": "2.2k 1%",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "F",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            7.49,
+            0.25,
+            1.1,
+            0.8
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "R204",
+          "value": "100k 1%",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "F",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            8.67,
+            0.25,
+            1.1,
+            0.8
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "R202",
+          "value": "1k 1%",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "F",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            9.85,
+            0.25,
+            1.1,
+            0.8
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "Y1",
+          "value": "SG-210STF 24.0000ML",
+          "source_footprint": "Epson_SG210STF_2.5x2.0mm_R09",
+          "source_side": "B",
+          "courtyard_mm": [
+            3.3,
+            2.7
+          ],
+          "height_mm": 1.0,
+          "mass_g": [
+            0.006,
+            0.01,
+            0.015
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            3.08,
+            3.08,
+            3.3,
+            2.7
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "L1",
+          "value": "MLP2012S3R3MT",
+          "source_footprint": "L_0805_2012Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            3.5,
+            1.7
+          ],
+          "height_mm": 1.3,
+          "mass_g": [
+            0.006,
+            0.011,
+            0.018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            0.25,
+            0.25,
+            3.5,
+            1.7
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "L2",
+          "value": "MLP2012S3R3MT",
+          "source_footprint": "L_0805_2012Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            3.5,
+            1.6999999999999997
+          ],
+          "height_mm": 1.3,
+          "mass_g": [
+            0.006,
+            0.011,
+            0.018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            3.83,
+            0.25,
+            3.5,
+            1.6999999999999997
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "L3",
+          "value": "MLP2012S3R3MT",
+          "source_footprint": "L_0805_2012Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            3.5000000000000004,
+            1.6999999999999993
+          ],
+          "height_mm": 1.3,
+          "mass_g": [
+            0.006,
+            0.011,
+            0.018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            7.41,
+            0.25,
+            3.5000000000000004,
+            1.6999999999999993
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "Q201",
+          "value": "MMBT3904,215",
+          "source_footprint": "SOT-23",
+          "source_side": "B",
+          "courtyard_mm": [
+            2.1,
+            1.8
+          ],
+          "height_mm": 0.8,
+          "mass_g": [
+            0.001,
+            0.0025,
+            0.005
+          ],
+          "assumption": "Small DFN transistor/diode equivalent, not selected",
+          "placement_change": "Moved to underside for optical support clearance",
+          "rect_mm": [
+            0.25,
+            2.03,
+            1.8,
+            2.1
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "C21",
+          "value": "C_1u_0603",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.9,
+            1.0
+          ],
+          "height_mm": 0.6,
+          "mass_g": [
+            0.0007,
+            0.0015,
+            0.003
+          ],
+          "assumption": "0402-class capacitor, effective capacitance must be checked",
+          "rect_mm": [
+            10.99,
+            0.25,
+            1.0,
+            1.9
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "C33",
+          "value": "C_1u_0603",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.9,
+            1.0
+          ],
+          "height_mm": 0.6,
+          "mass_g": [
+            0.0007,
+            0.0015,
+            0.003
+          ],
+          "assumption": "0402-class capacitor, effective capacitance must be checked",
+          "rect_mm": [
+            10.33,
+            2.23,
+            1.9,
+            1.0
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "C19",
+          "value": "C_1u_0603",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.9,
+            1.0
+          ],
+          "height_mm": 0.6,
+          "mass_g": [
+            0.0007,
+            0.0015,
+            0.003
+          ],
+          "assumption": "0402-class capacitor, effective capacitance must be checked",
+          "rect_mm": [
+            6.46,
+            3.08,
+            1.9,
+            1.0
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "C10",
+          "value": "C_1u_0603",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.9,
+            1.0
+          ],
+          "height_mm": 0.6,
+          "mass_g": [
+            0.0007,
+            0.0015,
+            0.003
+          ],
+          "assumption": "0402-class capacitor, effective capacitance must be checked",
+          "rect_mm": [
+            10.33,
+            3.31,
+            1.9,
+            1.0
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "C7",
+          "value": "C_1u_0603",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.9,
+            1.0
+          ],
+          "height_mm": 0.6,
+          "mass_g": [
+            0.0007,
+            0.0015,
+            0.003
+          ],
+          "assumption": "0402-class capacitor, effective capacitance must be checked",
+          "rect_mm": [
+            6.46,
+            4.16,
+            1.9,
+            1.0
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "C18",
+          "value": "C_1u_0603",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.9,
+            1.0
+          ],
+          "height_mm": 0.6,
+          "mass_g": [
+            0.0007,
+            0.0015,
+            0.003
+          ],
+          "assumption": "0402-class capacitor, effective capacitance must be checked",
+          "rect_mm": [
+            0.25,
+            4.21,
+            1.9,
+            1.0
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "C8",
+          "value": "C_1u_0603",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.9,
+            1.0
+          ],
+          "height_mm": 0.6,
+          "mass_g": [
+            0.0007,
+            0.0015,
+            0.003
+          ],
+          "assumption": "0402-class capacitor, effective capacitance must be checked",
+          "rect_mm": [
+            10.33,
+            4.39,
+            1.9,
+            1.0
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "C13",
+          "value": "C_1u_0603",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.9,
+            1.0
+          ],
+          "height_mm": 0.6,
+          "mass_g": [
+            0.0007,
+            0.0015,
+            0.003
+          ],
+          "assumption": "0402-class capacitor, effective capacitance must be checked",
+          "rect_mm": [
+            6.46,
+            5.24,
+            1.9,
+            1.0
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "C12",
+          "value": "C_1u_0603",
+          "source_footprint": "C_0603_1608Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.9,
+            1.0
+          ],
+          "height_mm": 0.6,
+          "mass_g": [
+            0.0007,
+            0.0015,
+            0.003
+          ],
+          "assumption": "0402-class capacitor, effective capacitance must be checked",
+          "rect_mm": [
+            0.25,
+            5.29,
+            1.9,
+            1.0
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "C15",
+          "value": "C_100n_6V3_0402",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8200000000000003,
+            0.9199999999999999
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            8.44,
+            3.08,
+            0.9199999999999999,
+            1.8200000000000003
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "C17",
+          "value": "C_100n_6V3_0402",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8200000000000003,
+            0.9199999999999999
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            10.33,
+            5.47,
+            1.8200000000000003,
+            0.9199999999999999
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "C14",
+          "value": "C_100n_6V3_0402",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8199999999999998,
+            0.9199999999999999
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            3.08,
+            5.86,
+            1.8199999999999998,
+            0.9199999999999999
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "C20",
+          "value": "C_100n_6V3_0402",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8199999999999998,
+            0.9199999999999999
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            8.44,
+            4.98,
+            0.9199999999999999,
+            1.8199999999999998
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "C16",
+          "value": "C_100n_6V3_0402",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8199999999999994,
+            0.9199999999999999
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            4.98,
+            6.32,
+            1.8199999999999994,
+            0.9199999999999999
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "C9",
+          "value": "C_100n_6V3_0402",
+          "source_footprint": "C_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.8199999999999994,
+            0.9199999999999999
+          ],
+          "height_mm": 0.55,
+          "mass_g": [
+            0.0007,
+            0.0012,
+            0.0018
+          ],
+          "assumption": "Retained package",
+          "rect_mm": [
+            0.25,
+            6.37,
+            1.8199999999999994,
+            0.9199999999999999
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "R8",
+          "value": "R_0R_0402",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            6.88,
+            6.32,
+            1.1,
+            0.8
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "R7",
+          "value": "R_0R_0402",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            10.33,
+            6.47,
+            1.1,
+            0.8
+          ]
+        },
+        {
+          "board": "head",
+          "reference": "R9",
+          "value": "R_0R_0402",
+          "source_footprint": "R_0402_1005Metric",
+          "source_side": "B",
+          "courtyard_mm": [
+            1.1,
+            0.8
+          ],
+          "height_mm": 0.4,
+          "mass_g": [
+            8e-05,
+            0.00015,
+            0.0003
+          ],
+          "assumption": "0201-class resistor",
+          "rect_mm": [
+            3.08,
+            6.86,
+            1.1,
+            0.8
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "board": "controller",
+          "side": "F",
+          "count": 16,
+          "in_outline": true,
+          "courtyard_overlap_count": 0
+        },
+        {
+          "board": "controller",
+          "side": "B",
+          "count": 59,
+          "in_outline": true,
+          "courtyard_overlap_count": 0
+        },
+        {
+          "board": "head",
+          "side": "F",
+          "count": 7,
+          "in_outline": true,
+          "courtyard_overlap_count": 0
+        },
+        {
+          "board": "head",
+          "side": "B",
+          "count": 23,
+          "in_outline": true,
+          "courtyard_overlap_count": 0
+        }
+      ],
+      "total_flat_length_mm": 71.35,
+      "optical_center_head_mm": [
+        6.25,
+        6.25
+      ],
+      "height_semantics": "Courtyard prisms reserve space, not exact package CAD. Separate front/back populations. Lens/holder are unqualified study envelopes.",
+      "tether_exit_reservation_mm": [
+        -8,
+        0.25,
+        8,
+        7.8
+      ],
+      "module_mass_excludes_tether": true
+    }
+  ],
+  "units": "mm",
+  "packing_only": true,
+  "validated": [
+    "All 106 retained physical references in A; 105 in B/C after connector elimination",
+    "Board containment",
+    "Same-side courtyard non-overlap",
+    "Front optics keepout apart from the sensor",
+    "Separate connector exit reservation outside board"
+  ],
+  "not_validated": [
+    "Electrical routing or decoupling placement",
+    "Pin escape, impedance, power, thermal behavior or manufacturability",
+    "Thread strength, close focus, IR transmission, cable bend radius or strain relief strength",
+    "Physical fit, functioning camera or actual mass"
+  ]
+}

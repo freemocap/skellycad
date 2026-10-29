@@ -1,0 +1,28 @@
+Unsent technical information request — OC0TC integrated-optics module
+
+We selected an integrated sensor-and-optics module to avoid designing a custom
+lens assembly. Target: monochrome global shutter, 400 x 400 around 120 fps,
+940 nm eye imaging, a 30 mm flex, and USB 2.0 output.
+Please confirm:
+1. OC0TC1B-RAVA-001A monochrome ordering code, sample availability, MOQ and lead time.
+2. Complete XYZ package drawing, 16-pin pinout, land pattern and optical-axis datum.
+3. Focus distance/depth of field and suitability for close-up eye imaging;
+   optical coating/transmission at 940 nm and alternate factory focus options.
+4. Required rails, IO voltage, power sequence, decoupling and clock/reset circuit.
+5. One-lane D-PHY mode timings, RAW packing and initialization register sequence.
+6. Existing USB bridge reference board, firmware, evaluation kit or module-maker
+   partner. Prefer a supported complete solution; specifically identify whether
+   any CX3 example exists rather than assuming compatibility.
+7. Spectral transmission curve for the exact monochrome variant, preferably
+   400-1100 nm: visible blocking, 940 nm transmission, passband width/tolerance,
+   and incidence-angle behavior across the field of view. Clarify whether the
+   advertised 940 nm coating is a bandpass, longpass, AR coating or another type.
+   We require visible-cut / NIR-pass operation, not an IR-cut color-camera filter.
+8. Our spectral region of interest is 800-1000 nm. A factory 940 nm matched-filter
+   option is the proposed single-wavelength baseline; confirm 850 nm transmission
+   separately rather than assuming both wavelengths pass.
+9. Existing indoor eye-tracking illumination designs: compatible LED spectrum,
+   driver, synchronization, working distance and documented exposure conditions.
+10. Assembly, reflow, cleaning, handling and lens protection requirements.
+
+No message has been sent and no purchase has been made.

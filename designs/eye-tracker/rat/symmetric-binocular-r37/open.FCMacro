@@ -1,0 +1,31 @@
+"""Save and close obsolete rat task tabs; show the complete symmetric assembly."""
+from pathlib import Path
+import json,hashlib,zipfile,datetime,shutil
+import FreeCAD as A,FreeCADGui as G
+R=Path(__file__).resolve().parents[4];S=R/'designs/eye-tracker/rat/symmetric-binocular-r37';O=R/'generated/eye-tracker/rat/symmetric-binocular-r37'
+m=json.loads((S/'review.json').read_text());source=R/m['native_checkpoint'];assert hashlib.sha256(source.read_bytes()).hexdigest()==m['native_sha256']
+assert json.loads((O/'validation.json').read_text())['passed'];assert json.loads((O/'containment.json').read_text())['passed']
+recovery=O/'session-recovery'/datetime.datetime.now().strftime('%Y%m%d-%H%M%S');recovery.mkdir(parents=True,exist_ok=True);report={'saved_and_closed':[],'preserved':[],'errors':[]}
+def verify(p):
+ with zipfile.ZipFile(p) as z:assert z.testzip() is None and 'Document.xml' in z.namelist()
+for doc in list(A.listDocuments().values()):
+ original=doc.FileName
+ if '/eye-tracker/rat/' not in original.replace('\\','/').lower():report['preserved'].append(original);continue
+ try:
+  p=recovery/(doc.Name+'.FCStd');name=doc.Name;doc.saveAs(str(p));verify(p);A.closeDocument(name);report['saved_and_closed'].append({'original':original,'recovery':str(p)})
+ except Exception as e:report['errors'].append(str(e))
+p=O/'RAT-R37-current-complete-review.FCStd';shutil.copy2(source,p);d=A.openDocument(str(p));A.setActiveDocument(d.Name)
+for o in d.Objects:o.Visibility=o.TypeId=='App::Part'
+for name in ['RatDesignSkull','RatLeftSclera','RatLeftCornea','RatRightSclera','RatRightCornea','FinishedCarrier','Baseplate']:
+ o=d.getObject(name);o.Visibility=True
+ o.ViewObject.ShapeColor=(.85,.81,.65) if name=='RatDesignSkull' else ((.95,.95,.93) if name.endswith('Sclera') else ((.1,.6,.85) if name.endswith('Cornea') else (.65,.68,.72)))
+for side in ['Right','Left']:
+ cam=d.getObject(side+'Camera');cam.Visibility=True
+ for o,col in zip(cam.PhysicalParts,[(.9,.12,.1),(.12,.12,.14),(.94,.94,.9),(1.,.8,.02)]):o.Visibility=True;o.ViewObject.ShapeColor=col;o.ViewObject.DisplayMode='Shaded'
+ cam.OpticalAxis.Visibility=True;cam.OpticalAxis.ViewObject.LineColor=(0.,.65,.95);cam.OpticalAxis.ViewObject.LineWidth=3
+ for tail in ['eye_primary_Holder','eye_primary_Clip']:
+  o=d.getObject(side+tail);o.Visibility=True;o.ViewObject.ShapeColor=(.25,.48,.76)
+d.Label='RAT R37 - complete symmetric binocular assembly';d.recompute();v=G.activeDocument().activeView();v.viewAxonometric();v.fitAll();G.updateGui();d.save();verify(p)
+G.getMainWindow().showNormal();G.getMainWindow().raise_();G.getMainWindow().activateWindow();G.updateGui()
+report.update(current_review=str(p),remaining_documents=[{'name':o.Name,'path':o.FileName} for o in A.listDocuments().values()]);(O/'opened.json').write_text(json.dumps(report,indent=2))
+v.saveImage(str(O/'overview.png'),1600,1200,'White');v.viewTop();v.fitAll();G.updateGui();v.saveImage(str(O/'top.png'),1600,1200,'White');v.viewAxonometric();v.fitAll()

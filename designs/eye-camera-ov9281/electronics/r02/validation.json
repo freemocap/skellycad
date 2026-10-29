@@ -1,0 +1,17 @@
+{
+  "status": "Schematic checks passed; not hardware qualification",
+  "components": 101,
+  "controller_and_support_pins_checked": 236,
+  "retained_reference_components": 32,
+  "reference_topology_match": true,
+  "critical_mipi_and_power_checks": true,
+  "erc_errors": 0,
+  "erc_warnings": 0,
+  "limits": [
+    "No PCB routing or DRC",
+    "No power/thermal or signal-integrity simulation",
+    "No firmware or physical image test",
+    "Crystal, inductors, flex connector and LED drive not release-qualified",
+    "KiCad default disabled ERC checks retained; see erc.rpt"
+  ]
+}

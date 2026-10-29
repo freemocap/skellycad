@@ -54,8 +54,35 @@ Keep the running desktop FreeCAD window intact. Reuse an already-open document
 when its normalized absolute file path matches the requested review. Do not
 create multiple live documents that save to the same physical path. Build new
 revisions outside the review session where possible, then open the result once.
-Preserve existing tabs unless the user requests cleanup; do not accumulate
-duplicate tabs to preserve history. Frozen checkpoints provide that history.
+Keep only documents needed for the current review. Frozen checkpoints provide
+history; open tabs do not.
+
+### Save-and-close policy
+
+Agents must give new working documents a unique native `.FCStd` path under
+`generated/` as soon as they contain useful work. Save after each meaningful
+edit or successful build, before exports, and before handoff. Save changes to
+accepted checkpoints as new revisions, preserving the original files.
+
+Before finishing a CAD task, save and verify every document the task created or
+modified. Check that each saved file contains `Document.xml` and passes a ZIP
+integrity check; these checks establish file integrity, not geometry or physical
+fit. Close finished task-owned documents and temporary comparison tabs after
+their saves succeed. Leave only the saved current review and any explicitly
+requested comparisons open. Preserve unrelated user work. Report any save
+failure and leave the affected document open.
+
+Enable automatic recovery with a 2-minute interval in **Preferences > General >
+Document**, with recovery at startup enabled. FreeCAD writes recovery files;
+this does not replace the explicit saves above [@freecad114AutoSaver]. The
+interval is in minutes, and applying the Document preferences updates the live
+timer [@freecad114DocumentPreferences; @freecad114DocumentPreferencesUi].
+To apply these settings in a running session, send
+`tools/cad/configure_recovery.FCMacro` through `open_in_running.py` as described
+below. Verify `generated/session-recovery/recovery-settings.json` reports
+`applied_in_running_session: true`; an error means the live setting is unverified.
+
+### Existing session cleanup
 
 For user-requested session cleanup, first save each live version to a unique
 recovery filename and verify the saved document. Close a document only after its

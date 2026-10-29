@@ -1,0 +1,16 @@
+{
+  "revision": "OV9281-P4-R02",
+  "antmicro_commit": "ea69666fa06f66a0691e50eebff9356cc2a08e32",
+  "espressif_library_commit": "dd76561812ab300351234ba6e0ec1295641796f0",
+  "kicad_libraries": "Installed KiCad 10.0.7; CC-BY-SA-4.0 with design exception",
+  "espressif_library": "CC-BY-SA-4.0 with design exception; see included license",
+  "antmicro": "Apache-2.0; copyright Antmicro 2019-2025",
+  "status": "Connected draft; schematic and BOM validation incomplete; no routing or hardware test",
+  "schematic_sha256": "0c9da8e817c9bcac5ff6e6c79a0af49130e64d2d23e746a23cbbf165a30eb010",
+  "local_symbol_changes": "ESP32-P4X pins101/102 changed from bidirectional to power_in to match supply functions; names localized",
+  "source_assets": {
+    "reference\\espressif\\ESP32-P4.kicad_mod": "4ce6d922bf41161c3ab8107e5302a745023371feaff65479486ef6c5ea93d83a",
+    "reference\\espressif\\Espressif.kicad_sym": "0a45501f8ab4f51a29cb41331049bf3a444485500a818f22b087a235d2354e80",
+    "reference\\espressif\\LICENSE.md": "39a3698b6ce587d02de3f833b3701542132b762e73f1e70faffe67d9674c265b"
+  }
+}

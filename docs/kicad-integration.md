@@ -1,7 +1,8 @@
 # KiCad integration plan
 
-Status: proposed workflow, with installation and file automation checked on
-2026-10-27. Start with [KiCad foundations](../designs/kicad-foundations/README.md).
+Status: file-based schematic generation and validation demonstrated on 2026-10-27.
+The user chose Python/file automation without desktop takeover. Start with
+[KiCad foundations](../designs/kicad-foundations/README.md).
 Keep setup small enough to begin the first lesson before building more tooling.
 
 ## Installation and control evidence
@@ -24,8 +25,9 @@ The running manager was inspected through Windows Computer Use.
 | Route | Intended use | Current status |
 | --- | --- | --- |
 | `kicad-cli` | Electrical/design-rule checks, plots and manufacturing/STEP exports | Version and bare-board STEP export tested |
-| Official IPC API with `kicad-python` | Read and edit the board shown in the PCB editor | API disabled in saved settings; client absent from bundled Python; not tested |
-| Windows Computer Use | Editor navigation and schematic operations | Manager window inspection tested; design editing pending |
+| Official IPC API with `kicad-python` | Optional live PCB editing | Client 0.8.0 installed in tools/electronics/.venv; API connection not tested |
+| Python native schematic generation + CLI | Create editable circuit files without desktop control | Indicator lesson: exact netlist check, SVG export and zero reported ERC violations |
+| Windows Computer Use | Historical inspection only | User declined desktop takeover; do not use for lessons |
 | Bundled `pcbnew` Python | Temporary, version-specific offline board automation | Create/save/reload tested; deprecated, not the long-term foundation |
 
 KiCad 10's IPC API requires a running GUI, supports the PCB editor rather than
@@ -92,7 +94,12 @@ checkpoint together. Check electrical rules, PCB rules, geometric clearance and
 demonstrated physical fit separately. Start with explicit file exchange; evaluate
 StepUp only when repeated outline/placement exchanges justify another dependency.
 
-## Next session: prove control, then teach
+## Superseded live-control proposal
+
+The following was the original proposal. The user subsequently chose file-based
+automation without desktop control. The active workflow is the lesson's Python
+generator and CLI validator; the user opens native files for inspection. Do not
+perform the GUI steps below. IPC remains optional for later PCB work.
 
 1. Create a new foundations project in its own directory. Verify the default
    symbol and footprint tables resolve the selected lesson components.

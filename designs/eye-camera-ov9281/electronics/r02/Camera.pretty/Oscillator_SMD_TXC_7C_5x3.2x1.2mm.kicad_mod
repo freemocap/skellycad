@@ -1,0 +1,511 @@
+(footprint "Oscillator_SMD_TXC_7C_5x3.2x1.2mm"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "Y2"
+		(at 0.6663 3.091664 180)
+		(layer "F.SilkS")
+		(uuid "7d4558ad-2821-47ea-aba0-212029f4f838")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
+	(property "Value" "7C-24.000MBB-T"
+		(at 0 3.7 180)
+		(layer "F.Fab")
+		(uuid "3869d4cd-9174-42c3-886d-795ed045267e")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.15)
+			)
+			(justify right top)
+		)
+	)
+	(property "Datasheet" "http://www.txccorp.com/download/products/oscillators/2015TXC_7C_57.pdf"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8af51255-2e91-45a3-ac27-d652b177204a")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Oscillator, 24 MHz, 50 ppm, SMT, 5mm x 3.2mm, 3.3 V, 7C Series"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b57d55cc-8a3c-46a9-a504-5d8c06a77df6")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Author" "Antmicro"
+		(at 2.232964 227.250364 90)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "06f0dd3b-ed14-4063-8a7f-e680df9ffc1e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "License" "Apache-2.0"
+		(at 2.232964 227.250364 90)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "06c32388-fcc8-4666-9f0b-b8dc2e3f657d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN" "7C-24.000MBB-T"
+		(at 2.232964 227.250364 90)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "10a07b45-4963-4147-8bed-89b5b469342f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer" "TXC"
+		(at 2.232964 227.250364 90)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5c66ce1f-b021-42ea-826d-fbb85fab8403")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Val" "24 MHz"
+		(at 2.232964 227.250364 90)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5787e522-7aca-4a54-add1-ff95290d4e17")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(sheetname "/")
+	(sheetfile "ov9281-dual-camera-board.kicad_sch")
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.673 0.5)
+		(end -1.673 -0.45)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "2ed30037-d78e-4f06-9542-15120422eccb")
+	)
+	(fp_line
+		(start -0.373 -2.577)
+		(end 0.427 -2.577)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c19811ba-1c4f-48af-aff3-5a98b819bc28")
+	)
+	(fp_line
+		(start -0.373 2.623)
+		(end 0.427 2.623)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "67570a28-23a0-4f02-a16d-0779efaad91f")
+	)
+	(fp_line
+		(start 1.727 0.5)
+		(end 1.727 -0.45)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d49cd644-a95a-4c23-ac29-dfdf37cdd76d")
+	)
+	(fp_circle
+		(center -1.8 -2.1)
+		(end -1.75 -2.1)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "ef79d584-0a34-4f17-a03b-eaf7d5cb73d5")
+	)
+	(fp_rect
+		(start -2.04 -2.75)
+		(end 2.06 2.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "d167495b-03d2-490e-ab2f-3e638fe58c18")
+	)
+	(fp_rect
+		(start -1.6 -2.5)
+		(end 1.6 2.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "User.5")
+		(uuid "9b048841-f01f-46b2-87e1-a09ba2f2f63b")
+	)
+	(fp_line
+		(start -1.6 -1.569)
+		(end -1.6 -2.25)
+		(stroke
+			(width 0.02)
+			(type solid)
+		)
+		(layer "User.9")
+		(uuid "8ccaa633-8bdd-4b5c-bcf5-c78db6ea24fe")
+	)
+	(fp_line
+		(start -1.6 0.881)
+		(end -1.6 -0.871)
+		(stroke
+			(width 0.02)
+			(type solid)
+		)
+		(layer "User.9")
+		(uuid "8d9a5c9c-c275-4385-8fe4-5c4ed9ffc96d")
+	)
+	(fp_line
+		(start -1.6 2.25)
+		(end -1.6 1.579)
+		(stroke
+			(width 0.02)
+			(type solid)
+		)
+		(layer "User.9")
+		(uuid "e3ad7e70-0707-48fa-b01f-0b701691c4d9")
+	)
+	(fp_line
+		(start -1.35 -2.5)
+		(end 1.35 -2.5)
+		(stroke
+			(width 0.02)
+			(type solid)
+		)
+		(layer "User.9")
+		(uuid "fb0b407a-315b-4b65-9cf9-fb922f65cb1e")
+	)
+	(fp_line
+		(start -1.35 -2.25)
+		(end -1.423 -2.323)
+		(stroke
+			(width 0.02)
+			(type solid)
+		)
+		(layer "User.9")
+		(uuid "b1e63723-ac25-47ae-93e4-df85d0b73efa")
+	)
+	(fp_line
+		(start -1.35 -2.25)
+		(end -1.35 2.25)
+		(stroke
+			(width 0.02)
+			(type solid)
+		)
+		(layer "User.9")
+		(uuid "f26e7bd3-2b13-4384-ada9-779e99719fd8")
+	)
+	(fp_line
+		(start -1.35 2.25)
+		(end -1.423 2.323)
+		(stroke
+			(width 0.02)
+			(type solid)
+		)
+		(layer "User.9")
+		(uuid "ef61edf8-1b0c-46ec-8102-4c0cf814dbe2")
+	)
+	(fp_line
+		(start -1.35 2.25)
+		(end 1.35 2.25)
+		(stroke
+			(width 0.02)
+			(type solid)
+		)
+		(layer "User.9")
+		(uuid "76e1653e-55e8-41d5-8424-98318406a10e")
+	)
+	(fp_line
+		(start 1.35 -2.25)
+		(end -1.35 -2.25)
+		(stroke
+			(width 0.02)
+			(type solid)
+		)
+		(layer "User.9")
+		(uuid "f50daf37-bc71-464c-9bb2-d215126ae2f2")
+	)
+	(fp_line
+		(start 1.35 2.25)
+		(end 1.35 -2.25)
+		(stroke
+			(width 0.02)
+			(type solid)
+		)
+		(layer "User.9")
+		(uuid "c4e795f5-45e5-4f88-b46a-c941037f9646")
+	)
+	(fp_line
+		(start 1.35 2.5)
+		(end -1.35 2.5)
+		(stroke
+			(width 0.02)
+			(type solid)
+		)
+		(layer "User.9")
+		(uuid "edfbc099-77b5-41dd-b82b-492236c6bf01")
+	)
+	(fp_line
+		(start 1.423 -2.323)
+		(end 1.35 -2.25)
+		(stroke
+			(width 0.02)
+			(type solid)
+		)
+		(layer "User.9")
+		(uuid "5ef711f4-7221-4985-a948-06210bc0ab37")
+	)
+	(fp_line
+		(start 1.423 2.323)
+		(end 1.35 2.25)
+		(stroke
+			(width 0.02)
+			(type solid)
+		)
+		(layer "User.9")
+		(uuid "5830ee39-2c35-4ce2-9e89-925f7bc20822")
+	)
+	(fp_line
+		(start 1.6 -2.25)
+		(end 1.6 -1.569)
+		(stroke
+			(width 0.02)
+			(type solid)
+		)
+		(layer "User.9")
+		(uuid "1fda45a1-712f-41ce-a6e2-73f7a09cd8eb")
+	)
+	(fp_line
+		(start 1.6 -0.871)
+		(end 1.6 0.881)
+		(stroke
+			(width 0.02)
+			(type solid)
+		)
+		(layer "User.9")
+		(uuid "c47567fc-8f8c-4215-8cda-224f1e0747cd")
+	)
+	(fp_line
+		(start 1.6 1.579)
+		(end 1.6 2.25)
+		(stroke
+			(width 0.02)
+			(type solid)
+		)
+		(layer "User.9")
+		(uuid "47efd337-44b5-4c30-8e9a-15bfd18e8ede")
+	)
+	(fp_arc
+		(start -1.6 0.881)
+		(mid -1.557369 1.231175)
+		(end -1.600941 1.581234)
+		(stroke
+			(width 0.02)
+			(type solid)
+		)
+		(layer "User.9")
+		(uuid "1811d259-c43d-453b-869a-076fbda34643")
+	)
+	(fp_arc
+		(start -1.6 2.25)
+		(mid -1.423223 2.323223)
+		(end -1.35 2.5)
+		(stroke
+			(width 0.02)
+			(type solid)
+		)
+		(layer "User.9")
+		(uuid "0281c9a4-015e-4480-8f16-d6e754f9e396")
+	)
+	(fp_arc
+		(start -1.599059 -1.571234)
+		(mid -1.556428 -1.221059)
+		(end -1.6 -0.871)
+		(stroke
+			(width 0.02)
+			(type solid)
+		)
+		(layer "User.9")
+		(uuid "c7b71207-abf2-4853-b845-e90db1718cc2")
+	)
+	(fp_arc
+		(start -1.35 -2.5)
+		(mid -1.423223 -2.323223)
+		(end -1.6 -2.25)
+		(stroke
+			(width 0.02)
+			(type solid)
+		)
+		(layer "User.9")
+		(uuid "590d18ba-eb66-43f0-bdc0-b4258d5b69f9")
+	)
+	(fp_arc
+		(start 1.35 2.5)
+		(mid 1.423223 2.323223)
+		(end 1.6 2.25)
+		(stroke
+			(width 0.02)
+			(type solid)
+		)
+		(layer "User.9")
+		(uuid "a00862aa-80af-45c9-b764-419cfb29ee36")
+	)
+	(fp_arc
+		(start 1.599059 1.583234)
+		(mid 1.556428 1.233059)
+		(end 1.6 0.883)
+		(stroke
+			(width 0.02)
+			(type solid)
+		)
+		(layer "User.9")
+		(uuid "acb4da17-0202-4064-a826-3139347264d9")
+	)
+	(fp_arc
+		(start 1.6 -2.25)
+		(mid 1.423223 -2.323223)
+		(end 1.35 -2.5)
+		(stroke
+			(width 0.02)
+			(type solid)
+		)
+		(layer "User.9")
+		(uuid "33062a74-3bef-46bf-b4bd-158327e960f4")
+	)
+	(fp_arc
+		(start 1.6 -0.869)
+		(mid 1.557369 -1.219175)
+		(end 1.600941 -1.569234)
+		(stroke
+			(width 0.02)
+			(type solid)
+		)
+		(layer "User.9")
+		(uuid "86757e0f-159b-4973-b335-82bb158cb0f9")
+	)
+	(fp_text user "License: Apache-2.0"
+		(at -2.39 5.723 180)
+		(layer "F.Fab")
+		(uuid "ee450a8c-e7b3-4008-8dc4-37d28d1e0340")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.15)
+			)
+			(justify right top)
+		)
+	)
+	(fp_text user "Author: Antmicro"
+		(at -2.39 6.923 180)
+		(layer "F.Fab")
+		(uuid "cd34ffcf-fdae-4291-8f7a-15355dc6c003")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.15)
+			)
+			(justify right top)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at -2.39 8.123 180)
+		(layer "F.Fab")
+		(uuid "3db238d1-b5b3-4d0b-afb2-96b257106d4d")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.15)
+			)
+			(justify right top)
+		)
+	)
+	(pad "1" smd rect
+		(at -1.085 -1.245 270)
+		(size 1.4 1.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "eae097a2-5873-461e-aa86-1d2c6bd29683")
+	)
+	(pad "2" smd rect
+		(at -1.085 1.295 270)
+		(size 1.4 1.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "5725606f-a31e-4217-9773-83b60f5360c8")
+	)
+	(pad "3" smd rect
+		(at 1.115 1.295 270)
+		(size 1.4 1.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "26193c93-9c08-49d5-9c6e-c29da4281972")
+	)
+	(pad "4" smd rect
+		(at 1.115 -1.245 270)
+		(size 1.4 1.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "1f3a02e7-e785-487a-a9ec-8ef21ec4bfdb")
+	)
+	(embedded_fonts no)
+	(model "${ANT3DMDL}/Oscillator_SMD_TXC_7C_5x3.2x1.2mm.step"
+		(offset
+			(xyz 34.027 -39.683 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 90)
+		)
+	)
+)
