@@ -1,0 +1,62 @@
+{
+  "units": "mm",
+  "source_sha256": "06f68b4612d9611d3645c58548106a375f57cef960947105c70bb5895a37c29f",
+  "matrix_atlas_lps_to_assembly": [
+    [
+      0.05325944597480474,
+      -1.0630863229977225,
+      0.13883590961669626,
+      -8.832222696873874
+    ],
+    [
+      0.03383770347448533,
+      0.14060466496795676,
+      1.0636493061823935,
+      -12.564138586035426
+    ],
+    [
+      -1.0715796516206744,
+      -0.04839738189083746,
+      0.04048767946033344,
+      -10.666140780560667
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "parts": {
+    "right-mandible": {
+      "label": 2,
+      "source_voxels": 635162,
+      "discarded_dust_voxels": 71,
+      "filled_internal_voxels": 9477,
+      "smoothing_sigma_voxels": 1.0,
+      "closing_voxels": 1,
+      "simplification_source_mm": 0.015,
+      "removed_surface_volume_mm3": 0.00034792952731031837,
+      "volume_mm3": 34.863155712329366,
+      "faces": 17412,
+      "sha256": "611f996582ee6774d2f6af8345124b34d3031fa2f199c12ecdf63f4988b25f44"
+    },
+    "left-mandible": {
+      "label": 21,
+      "source_voxels": 627793,
+      "discarded_dust_voxels": 0,
+      "filled_internal_voxels": 7470,
+      "smoothing_sigma_voxels": 1.0,
+      "closing_voxels": 1,
+      "simplification_source_mm": 0.015,
+      "removed_surface_volume_mm3": 0.0065522127624497275,
+      "volume_mm3": 34.404900917552986,
+      "faces": 18080,
+      "sha256": "acf76bb29b3ca145fef2f6bc6761cb07bc654891945455fff7c4bf8a466898f5"
+    }
+  },
+  "sources": [
+    "magaMouseCTAtlasRepository"
+  ],
+  "additional_articulation_transform": "identity"
+}

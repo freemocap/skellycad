@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "boards": [
+    {
+      "path": "designs/cameras/ov9281/variants/slim-flex/checkpoints/2026-10-29-r11-slimflex/files/generated/ov9281-r11-electronics/camera.kicad_pcb",
+      "sha256": "989a2008743212d3f9cea44e2643b0584b22613322b7a8450575f173e29f1fb7",
+      "footprints": 106,
+      "nets": 63,
+      "tracks": 1920
+    },
+    {
+      "path": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/base/camera.kicad_pcb",
+      "sha256": "70a8b290a31dc1c531d823bb031cf90246d8b06ed258158d92f4490dbfff967c",
+      "footprints": 119,
+      "nets": 70,
+      "tracks": 0
+    },
+    {
+      "path": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/head-interface/camera.kicad_pcb",
+      "sha256": "60f7a8db51fcbb1d47f5f9b74357d85ea81005e914a389bdd70400d5c32dff08",
+      "footprints": 77,
+      "nets": 48,
+      "tracks": 0
+    }
+  ],
+  "fabrication_ready": false
+}

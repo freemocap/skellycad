@@ -3,12 +3,15 @@ from pathlib import Path
 import argparse
 import json
 import trimesh
+import sys
+sys.path.insert(0,str(Path(__file__).resolve().parents[2]/"designs/eye-tracker"))
+from shared.model import load_manifest
 
 ROOT = Path(__file__).resolve().parents[2]
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--manifest', type=Path, default=ROOT / 'designs/eye-tracker/mouse/active-model.json')
 args = parser.parse_args()
-manifest = json.loads(args.manifest.read_text())
+manifest, _ = load_manifest(args.manifest)
 folder = ROOT / manifest['print_directory']
 export = json.loads((folder / 'export.json').read_text())
 assert export['native_sha256'] == manifest['native_sha256']

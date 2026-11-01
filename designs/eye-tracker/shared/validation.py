@@ -1,5 +1,6 @@
 """Validate a composed assembly against the frozen mouse high-water mark."""
 from pathlib import Path
+from .paths import repository_path
 import hashlib
 
 ROOT = Path(__file__).resolve().parents[3]
@@ -8,7 +9,7 @@ ROOT = Path(__file__).resolve().parents[3]
 def compare_mouse_baseline(assembly):
     import FreeCAD as App
     reference = assembly.config['baseline']
-    path = ROOT / reference['checkpoint']
+    path = repository_path(reference['checkpoint'])
     assert hashlib.sha256(path.read_bytes()).hexdigest() == reference['sha256']
     existing = next((d for d in App.listDocuments().values() if d.FileName and Path(d.FileName).resolve() == path), None)
     baseline = existing or App.openDocument(str(path))

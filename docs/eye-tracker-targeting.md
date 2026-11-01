@@ -1,7 +1,7 @@
 # Place a camera relative to an animal eye
 
 Use this workflow when moving an eye camera, changing its anatomical target,
-or adapting an existing camera mount to another animal. The current seating example is [rat targeted R03](../../designs/eye-tracker/rat/targeted-r03/recipe.json).
+or adapting an existing camera mount to another animal. The current seating example is [rat targeted R03](../designs/eye-tracker/rat/variants/monocular/history/r003-targeted/recipe.json).
 The shared implementation is `designs/eye-tracker/shared/targeting`.
 
 ## Inputs and frames
@@ -68,10 +68,10 @@ user's 7 mm rod observation supplies the 3.5 mm minimum inside radius.
    the final GUI save; save the recipe and validation beside it.
 
 For a saved recipe, use the pinned FreeCAD Python runtime from
-[development.md](../development.md):
+[development.md](development.md):
 
 ```powershell
-& .cad-tools/FreeCAD_1.1.4-Windows-x86_64-py311/bin/python.exe designs/eye-tracker/shared/targeting/run.py designs/eye-tracker/rat/targeted-r03/recipe.json --out generated/eye-tracker/rat/targeted-r03
+& .cad-tools/FreeCAD_1.1.4-Windows-x86_64-py311/bin/python.exe designs/eye-tracker/shared/targeting/run.py designs/eye-tracker/rat/variants/monocular/history/r003-targeted/recipe.json --out generated/eye-tracker/rat/targeted-r03
 ```
 
 Use a new output directory for a new revision. The command rebuilds the saved

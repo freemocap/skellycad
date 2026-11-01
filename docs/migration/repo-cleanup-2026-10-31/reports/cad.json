@@ -1,0 +1,80 @@
+{
+  "passed": true,
+  "course": [
+    {
+      "lesson": "workflow-cube",
+      "file": "generated/cad-foundations/20261101T015646248128Z-workflow-cube-hole/model.FCStd"
+    },
+    {
+      "lesson": "practice-mount",
+      "file": "generated/cad-foundations/20261101T015653613351Z-practice-mount-fillet/model.FCStd"
+    },
+    {
+      "lesson": "fit-coupon",
+      "file": "generated/cad-foundations/20261101T015654427919Z-fit-coupon-labels/model.FCStd"
+    },
+    {
+      "lesson": "practice-camera-bracket",
+      "file": "generated/cad-foundations/20261101T015657013585Z-practice-camera-bracket-complete/model.FCStd"
+    }
+  ],
+  "r10_reconstruction": {
+    "baseline": "MH-T3-EYE-R10",
+    "revision": "ET-MOUSE-MONO-R01",
+    "parts": {
+      "Carrier": {
+        "symmetric_difference_mm3": 0.0,
+        "volume_mm3": 1246.3905491064168,
+        "volume_integration_difference_mm3": 0.00047857714730525913
+      },
+      "Holder": {
+        "symmetric_difference_mm3": 0.0,
+        "volume_mm3": 301.6317729979906,
+        "volume_integration_difference_mm3": 2.2737367544323206e-13
+      },
+      "Cap": {
+        "symmetric_difference_mm3": 0.0,
+        "volume_mm3": 697.9818477412352,
+        "volume_integration_difference_mm3": 1.2505552149377763e-12
+      },
+      "Clip": {
+        "symmetric_difference_mm3": 0.0,
+        "volume_mm3": 62.29604497992821,
+        "volume_integration_difference_mm3": 9.947598300641403e-14
+      },
+      "Baseplate": {
+        "symmetric_difference_mm3": 0.0,
+        "volume_mm3": 442.12802193929843,
+        "volume_integration_difference_mm3": 3.979039320256561e-13
+      }
+    },
+    "passed": true,
+    "anatomy_unchanged": true,
+    "sightline_unchanged": true,
+    "checkpoint_unchanged": true
+  },
+  "selected_revision": "ET-MOUSE-RAISED-TARGET-R19",
+  "selected_parts": {
+    "skull_mount_Baseplate": {
+      "object": "skull_mount_Baseplate",
+      "valid": true
+    },
+    "eye_primary_Holder": {
+      "object": "eye_primary_Holder",
+      "valid": true
+    },
+    "eye_primary_Cap": {
+      "object": "eye_primary_Cap",
+      "valid": true
+    },
+    "eye_primary_Clip": {
+      "object": "eye_primary_Clip",
+      "valid": true
+    },
+    "eye_primary_Carrier": {
+      "object": "FinishedCarrier",
+      "valid": true
+    }
+  },
+  "selected_checkpoint_unchanged": true
+}

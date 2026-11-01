@@ -1,0 +1,17 @@
+[
+  {
+    "from": "generated/replay/cleanup-verification/generated/replay-saves/build/EyeTrackerAssembly.FCStd",
+    "retained": "generated/verification/historical-replay/build/EyeTrackerAssembly.FCStd",
+    "sha256": "bedd1de1a30baae6f73dcc378fed618c459b43420542ff5a8a3ed707158a0a99"
+  },
+  {
+    "from": "generated/replay/cleanup-verification/generated/replay-saves/build/session-finalization.json",
+    "retained": "generated/verification/historical-replay/build/session-finalization.json",
+    "sha256": "85e1778f364ba34b8f50c4f735896fbb5ebd9ab21fba30b185187159866c6e80"
+  },
+  {
+    "from": "generated/replay/cleanup-verification/generated/replay-saves/_replay_exit_probe/ReplayExitProbe.FCStd",
+    "retained": "generated/verification/historical-replay/_replay_exit_probe/ReplayExitProbe.FCStd",
+    "sha256": "dcf56447f9095a819e6a1ca54956baa0e6b6e20b54cfb8a41e814483d9312c76"
+  }
+]

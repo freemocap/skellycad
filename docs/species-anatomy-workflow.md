@@ -1,6 +1,6 @@
 # Anatomical reference to species print pack
 
-Use this procedure for a new species or a new anatomical reference. The first rat application is [anatomy study R10](../designs/eye-tracker/rat/anatomy-study-r10/README.md). Mouse named landmarks R03, landmark eyes R04, mount R18, targeted assembly R19 and solid print R22 are worked examples. This procedure records modeling decisions; it is not a surgical protocol.
+Use this procedure for a new species or a new anatomical reference. The first rat application is [anatomy study R10](../designs/eye-tracker/rat/anatomy/history/r010-anatomy-study/README.md). Mouse named landmarks R03, landmark eyes R04, mount R18, targeted assembly R19 and solid print R22 are worked examples. This procedure records modeling decisions; it is not a surgical protocol.
 
 ## 1. Freeze the starting point
 

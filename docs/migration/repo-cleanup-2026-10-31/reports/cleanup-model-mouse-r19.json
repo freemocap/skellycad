@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "revision": "ET-MOUSE-RAISED-TARGET-R19",
+  "native_sha256": "05a11e2a9a0f8900cf22ad114194bc200bb6950e501fa8e4d8d163543ab0ea9c",
+  "objects": 78,
+  "matched_parts": {
+    "skull_mount_Baseplate": {
+      "object": "skull_mount_Baseplate",
+      "solids": 1,
+      "volume_mm3": 442.1280219392987
+    },
+    "eye_primary_Holder": {
+      "object": "eye_primary_Holder",
+      "solids": 1,
+      "volume_mm3": 301.6317729979908
+    },
+    "eye_primary_Cap": {
+      "object": "eye_primary_Cap",
+      "solids": 1,
+      "volume_mm3": 697.9818477412362
+    },
+    "eye_primary_Clip": {
+      "object": "eye_primary_Clip",
+      "solids": 1,
+      "volume_mm3": 62.296044979928155
+    },
+    "eye_primary_Carrier": {
+      "object": "FinishedCarrier",
+      "solids": 1,
+      "volume_mm3": 1243.4664652012646
+    }
+  },
+  "zip_integrity": true,
+  "physical_fit_demonstrated": false,
+  "exports": {}
+}

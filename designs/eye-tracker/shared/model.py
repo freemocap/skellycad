@@ -4,6 +4,7 @@ Species geometry and camera poses stay in the species design. FreeCAD imports
 are deferred so manifest checks can also run in ordinary Python.
 """
 from pathlib import Path
+from .paths import repository_path
 import hashlib
 import json
 
@@ -11,11 +12,20 @@ ROOT = Path(__file__).resolve().parents[3]
 
 
 def load_manifest(path):
-    manifest = json.loads(Path(path).read_text())
-    checkpoint = (ROOT / manifest['native_checkpoint']).resolve()
+    manifest = json.loads(repository_path(path).read_text())
+    seen = set()
+    while 'selection' in manifest:
+        target = str(repository_path(manifest['selection']))
+        if target in seen:
+            raise ValueError('Cyclic selection redirect')
+        seen.add(target)
+        manifest = json.loads(Path(target).read_text())
+    native = manifest['native_checkpoint']
+    checkpoint = repository_path(native['path'] if isinstance(native, dict) else native)
+    expected = native['sha256'] if isinstance(native, dict) else manifest['native_sha256']
     if not checkpoint.is_relative_to(ROOT):
         raise ValueError('Checkpoint must be within SkellyCAD')
-    if hashlib.sha256(checkpoint.read_bytes()).hexdigest() != manifest['native_sha256']:
+    if hashlib.sha256(checkpoint.read_bytes()).hexdigest() != expected:
         raise ValueError('Selected checkpoint hash mismatch')
     return manifest, checkpoint
 
@@ -23,7 +33,10 @@ def load_manifest(path):
 def open_selected(path):
     import FreeCAD as App
     manifest, checkpoint = load_manifest(path)
-    doc = App.openDocument(str(checkpoint))
+    doc = next((d for d in App.listDocuments().values()
+                if d.FileName and Path(d.FileName).resolve() == checkpoint), None)
+    if doc is None:
+        doc = App.openDocument(str(checkpoint))
     if 'label' in manifest:
         doc.Label = manifest['label']
     if doc.Revision.RevisionID != manifest['revision']:

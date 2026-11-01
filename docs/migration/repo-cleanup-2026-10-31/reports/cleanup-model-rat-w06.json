@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "revision": "ET-RAT-EYE-WORLD-PRINT-W06",
+  "native_sha256": "9399f230558d20e3428f8529b61012c8c0f68f68749f43084593f68a9f06435f",
+  "objects": 55,
+  "matched_parts": {},
+  "zip_integrity": true,
+  "physical_fit_demonstrated": false,
+  "exports": {}
+}

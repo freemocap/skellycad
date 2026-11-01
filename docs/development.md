@@ -23,30 +23,43 @@ baseline, and selected print export. It then checks exported meshes using the
 tooling environment. It leaves the user's desktop FreeCAD session intact.
 Reports go to `generated/verification/`.
 
-## Design revisions
+## Design revisions and validation
 
-Each active species design selects its complete assembly through
-`active-model.json`. Check the recorded hash before use. Keep immutable accepted
-checkpoints, source lineage and parameters with explicit units beside the
-design. Rebuild into `generated/`; review geometry and interfaces before selecting
-a new checkpoint. Git hashes identify source history; checkpoint hashes identify
-the exact native document. Large CAD assets use Git LFS.
+Use [the organization guide](organization-guide.md) to choose a project, animal
+and variant. Its `active-model.json` selects a complete assembly; a separate
+`review-model.json` identifies a candidate without promoting it. Root species
+selectors redirect to the authoritative variant manifest.
 
-For the mouse, `designs/eye-tracker/mouse/build.py` composes the shared camera and
-mount library using `assembly.json`, then compares the result against frozen R10. `export_print.py` exports the selected
-checkpoint with its matched cap, clip, holder and baseplate. Run these inside
-the pinned FreeCAD GUI Python context using `runpy.run_path`, not ordinary Python.
-`tools/cad/cad.ps1 validate` exercises both without changing the selection.
+`tools/cad/cad.ps1 validate` rebuilds the four preserved CAD lessons, compares the
+historical shared mouse reconstruction to its frozen R10 baseline, and checks
+and exports the separately selected R19 complete assembly. Mesh checks use the
+same selected export manifest. Reports go to `generated/verification/`.
 
-The existing Mouse Hats scripts preserve their historical relative paths. To
-restore their older generated inputs after a fresh checkout:
+For additional camera-instancing regression checks, run `tools/cad/validate_shared.py`
+with the pinned FreeCAD Python. `tools/cad/validate_rat.py` checks the original
+monocular rat against an independently verified R10 reconstruction, not the newer
+mouse R19 geometry. Both run in isolated hidden processes.
+
+To inspect a selected or candidate native file without changing it, use the
+pinned FreeCAD Python from the repository root:
 
 ```powershell
-python tools/migration/restore_legacy.py
+& '.cad-tools/FreeCAD_1.1.4-Windows-x86_64-py311/bin/python.exe' -B tools/cad/model.py designs/eye-tracker/rat/variants/binocular/review-model.json --report generated/verification/rat-r43.json
 ```
 
-Restoration preserves existing files. Historical `CURRENT` notes and individual
-arm revision numbers do not override an active complete-assembly manifest.
+`model.py` accepts `--export` with a fresh directory under `generated/` only when
+the manifest explicitly defines matched print groups. Candidate-specific print
+layouts still use their recorded exporters; W06 requires the corrected captive
+print-in-place package.
+
+Moved historical builders retain their original code and run through the
+isolated replay workflow in [the organization guide](organization-guide.md).
+Use a fresh replay workspace for a new reconstruction. Preserve inputs and
+checkpoints; do not overwrite an accepted checkpoint with a rebuild.
+
+Mouse Hats and CAD Foundations retain their existing source paths. Restore their
+older generated inputs with `python tools/migration/restore_legacy.py` when needed.
+Historical `CURRENT` notes do not override selected complete-assembly manifests.
 
 ## Desktop review and MCP
 

@@ -1,5 +1,11 @@
 # SkellyCAD working context
 
+Before creating or reorganizing design files, read docs/organization-guide.md.
+Use the project/species/variant README to find current source and selection.
+Keep routine edits in the existing source tree; preserve immutable checkpoints
+and matched parts. Run pre-cleanup builders through the documented isolated
+replay workflow. Record cleanup moves, retention decisions and verification.
+
 When research or external technical sources inform a change, follow CITATIONS.md:
 add the source to references.bib, cite its key beside the supported claim, record
 review scope and run the bibliography checker and its tests before handoff.
@@ -43,7 +49,7 @@ read docs/eye-tracker-targeting.md. Use an explicit targeting recipe and validat
 aim, fixed interfaces, ribbon collisions, arm seating and anatomy separately.
 
 For new Pupil Labs eye-camera geometry or camera mock-ups, read
-`designs/eye-tracker/shared/cameras/pupil-core-eye/README.md` and use its
+`designs/cameras/pupil-core-eye/README.md` and use its
 `active-model.json` selection through `shared.camera.add_camera`. Verify asset
 hashes and preserve the optical datum with the complete module. Existing species
 checkpoints retain their selected geometry; adaptations require a new revision.

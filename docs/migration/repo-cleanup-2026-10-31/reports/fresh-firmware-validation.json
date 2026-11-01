@@ -1,0 +1,14 @@
+[
+  {
+    "mode": "sensor",
+    "compiled": true,
+    "source_and_binary_hashes_verified": true,
+    "hardware_executed": false
+  },
+  {
+    "mode": "synthetic",
+    "compiled": true,
+    "source_and_binary_hashes_verified": true,
+    "hardware_executed": false
+  }
+]

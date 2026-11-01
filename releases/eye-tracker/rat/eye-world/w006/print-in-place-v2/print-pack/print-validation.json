@@ -1,0 +1,263 @@
+{
+  "revision": "RAT W06",
+  "units": "mm",
+  "source": {
+    "revision": "ET-RAT-EYE-WORLD-PRINT-W06",
+    "units": "mm",
+    "native_checkpoint": "generated\\eye-tracker\\rat\\eye-world-print-r06\\RAT-eye-world-W06.FCStd",
+    "native_sha256": "9399f230558d20e3428f8529b61012c8c0f68f68749f43084593f68a9f06435f",
+    "source": {
+      "revision": "ET-RAT-EYE-WORLD-TWO-SUPPORTS-R05",
+      "units": "mm",
+      "native_checkpoint": "generated\\eye-tracker\\rat\\eye-world-two-supports-r05\\RAT-eye-world-two-supports-R05.FCStd",
+      "native_sha256": "ff54abdd636b08953521a429571f2f6536d9a8449d9502d5f5b04ac4f0235291",
+      "source": {
+        "revision": "ET-RAT-EYE-WORLD-TOP-JOINT-R04",
+        "units": "mm",
+        "native_checkpoint": "generated\\eye-tracker\\rat\\eye-world-top-joint-r04\\RAT-eye-world-top-joint-R04.FCStd",
+        "native_sha256": "b88101d65f65848748ecd39cd742959d16c04f3ca6edbd0ef03c7901946f4d32",
+        "source": {
+          "revision": "ET-RAT-EYE-WORLD-TRAY-R03",
+          "units": "mm",
+          "native_checkpoint": "generated\\eye-tracker\\rat\\eye-world-tray-r03\\RAT-eye-world-tray-R03.FCStd",
+          "native_sha256": "6c4a23e4884bb75d84aa406b65ce29e9e37aa2d351d13c3c127d73b708c7295e",
+          "source": {
+            "revision": "ET-RAT-EYE-WORLD-RIBBON-R02",
+            "units": "mm",
+            "native_checkpoint": "generated\\eye-tracker\\rat\\eye-world-ribbon-r02\\RAT-eye-world-ribbon-R02.FCStd",
+            "native_sha256": "616775604b3a2a846cdb776e1c87ac34bb4369920b315b65b8e270708efc1d33",
+            "source": {
+              "revision": "ET-RAT-LOWERED-CAMERAS-R43",
+              "native_checkpoint": "generated\\eye-tracker\\rat\\lowered-cameras-r43\\ET-RAT-LOWERED-CAMERAS-R43.FCStd",
+              "native_sha256": "25a7167c54f47cdbb681aa3eefd4388bed8fd0cb812d4e657177873d73a17447"
+            },
+            "status": "Ribbon-driven placement review; world holder and supports need refit",
+            "physical_fit_verified": false,
+            "print_release": false
+          },
+          "camera_and_ribbon_pose_unchanged": true,
+          "new_object": "WorldCameraStemlessTray",
+          "status": "Restored PCB holder and stemless camera tray; world supports not designed",
+          "print_release": false
+        },
+        "lens_delta_world_mm": [
+          2.000000001311184,
+          -0.05022534665116485,
+          -1.6349552909073068
+        ],
+        "status": "Level forward camera, relocated original stem and socket, top carrier support; physical trial pending",
+        "print_release": false
+      },
+      "camera_and_ribbon_unchanged": true,
+      "world_support_count": 2,
+      "socket_approach_angle_degrees": 90.0,
+      "physical_fit_verified": false,
+      "print_release": false
+    },
+    "lens_delta_world_mm": [
+      2.0000000000022418,
+      1.6973089600469393e-12,
+      7.158718062783009e-13
+    ],
+    "status": "World camera advanced 2 mm; two supports retained; validated trial print pack",
+    "print_release": "W06 trial STL pack",
+    "physical_fit_verified": false
+  },
+  "unsliced": true,
+  "physical_fit_verified": false,
+  "carrier_bed_normal_world": [
+    -0.20747505048449125,
+    0.09299426040227543,
+    0.9738101308564683
+  ],
+  "carrier_length_weighted_rms_arm_angle_degrees": 23.47628110010739,
+  "carrier_requires_supports": true,
+  "files": {
+    "RAT-W06-PIP-carrier-with-captive-holders.stl": {
+      "sha256": "8ac1086de6a9e5903430d342e2a657374d43269d2c24bf67f9c04856c864df6d",
+      "shell_count": 3
+    },
+    "RAT-W06-PIP-all-hardware.stl": {
+      "sha256": "d202f7bd86334c2135504128633aa65db8ab6eb9b90d452ee48664d983e1bcb8",
+      "shell_count": 6
+    },
+    "RAT-W06-PIP-hardware-without-baseplate.stl": {
+      "sha256": "2aaf089dc3dc09093ded2c4f4bbf31d102c9b4a2f4e653dfabd3b6ba55fde19d",
+      "shell_count": 5
+    },
+    "RAT-W06-PIP-eye-clip.stl": {
+      "sha256": "95521e380230b2858c777002f497421ce3f028c5222e7e5bf6c262521ba7b666",
+      "shell_count": 1
+    },
+    "RAT-W06-PIP-world-clip.stl": {
+      "sha256": "88d6113bb5e5031858f5c6a333b3de768aa32185d1201c5a5f12f2fb2adb4c1f",
+      "shell_count": 1
+    },
+    "RAT-W06-PIP-baseplate.stl": {
+      "sha256": "e35804db1a3a63661d36c3057e588c664294c5d3944cd176470a75c07ae3eaf2",
+      "shell_count": 1
+    }
+  },
+  "parts": {
+    "carrier": {
+      "world_to_print_matrix": [
+        0.9781914704456078,
+        0.009774997387088057,
+        0.2074750504844907,
+        16.599247932434082,
+        0.009774997387088057,
+        0.9956186604108604,
+        -0.09299426040227518,
+        47.01985168457031,
+        -0.2074750504844907,
+        0.09299426040227518,
+        0.9738101308564683,
+        3.932224988937378,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "linear_deflection_mm": 0.04,
+      "angular_deflection_rad": 0.15,
+      "volume_mm3": 1618.1299609796163
+    },
+    "eye-holder": {
+      "world_to_print_matrix": [
+        0.9781914704456078,
+        0.009774997387088057,
+        0.2074750504844907,
+        16.599247932434082,
+        0.009774997387088057,
+        0.9956186604108604,
+        -0.09299426040227518,
+        47.01985168457031,
+        -0.2074750504844907,
+        0.09299426040227518,
+        0.9738101308564683,
+        3.932224988937378,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "linear_deflection_mm": 0.04,
+      "angular_deflection_rad": 0.15,
+      "volume_mm3": 286.29657844250715
+    },
+    "world-holder": {
+      "world_to_print_matrix": [
+        0.9781914704456078,
+        0.009774997387088057,
+        0.2074750504844907,
+        16.599247932434082,
+        0.009774997387088057,
+        0.9956186604108604,
+        -0.09299426040227518,
+        47.01985168457031,
+        -0.2074750504844907,
+        0.09299426040227518,
+        0.9738101308564683,
+        3.932224988937378,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "linear_deflection_mm": 0.04,
+      "angular_deflection_rad": 0.15,
+      "volume_mm3": 284.9899213453868
+    },
+    "eye-clip": {
+      "world_to_print_matrix": [
+        0.023930898693232172,
+        0.22050211773220188,
+        0.975092881813496,
+        9.16423749923706,
+        0.22050211773220188,
+        0.9501867399969004,
+        -0.22028158163967554,
+        110.8868579864502,
+        -0.975092881813496,
+        0.22028158163967554,
+        -0.02588236130986754,
+        21.57855796813965,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "linear_deflection_mm": 0.04,
+      "angular_deflection_rad": 0.15,
+      "volume_mm3": 72.4415315298088
+    },
+    "world-clip": {
+      "world_to_print_matrix": [
+        0.9660245629067045,
+        -0.1812026698304737,
+        -0.18428818819234963,
+        19.497305393218994,
+        -0.1812026698304737,
+        0.033583954680865724,
+        -0.9828721740055021,
+        98.03915786743164,
+        0.18428818819234963,
+        0.9828721740055021,
+        -0.0003914824124298111,
+        2.231877088546753,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "linear_deflection_mm": 0.04,
+      "angular_deflection_rad": 0.15,
+      "volume_mm3": 72.44153152980917
+    },
+    "baseplate": {
+      "world_to_print_matrix": [
+        0.48296687657336157,
+        -0.5176768857480905,
+        0.7062249203300106,
+        46.13131880760193,
+        -0.5176768857480905,
+        0.48167855037653806,
+        0.7071042469603158,
+        81.54287147521973,
+        -0.7062249203300106,
+        -0.7071042469603158,
+        -0.03535457305010037,
+        6.616534233093262,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "linear_deflection_mm": 0.04,
+      "angular_deflection_rad": 0.15,
+      "volume_mm3": 442.1280219392983
+    }
+  },
+  "print_revision": "W06 print-in-place v2",
+  "joints": {
+    "eye-holder": {
+      "overlap_mm3": 0.0,
+      "minimum_clearance_mm": 0.33316465223868247,
+      "relative_pose_preserved": true,
+      "print_clearance_mm": 0.33316465223868724
+    },
+    "world-holder": {
+      "overlap_mm3": 0.0,
+      "minimum_clearance_mm": 0.3331646522387135,
+      "relative_pose_preserved": true,
+      "print_clearance_mm": 0.3331646522387011
+    }
+  },
+  "layout_bounds_mm": [
+    50.6818733215332,
+    84.30199575424194,
+    29.97535924868879
+  ],
+  "clips_flat": true,
+  "assembled_print_group_shell_count": 3
+}

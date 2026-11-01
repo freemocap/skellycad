@@ -1,5 +1,6 @@
 """Create an exploded inspection document for a compatible camera/mount pair."""
 from pathlib import Path
+from .paths import repository_path
 import json
 from .assembly import HERE, ROOT, _hardware, _id
 
@@ -7,7 +8,7 @@ from .assembly import HERE, ROOT, _hardware, _id
 def build_catalog(camera_id='pupil-core-eye-inherited', mount_id='r10-monocular'):
     import FreeCAD as App
     import FreeCADGui as Gui
-    camera = json.loads((HERE / 'cameras' / _id(camera_id) / 'camera.json').read_text())
+    camera = json.loads((ROOT / 'designs/cameras' / _id(camera_id) / 'camera.json').read_text())
     mount = json.loads((HERE / 'mounts' / _id(mount_id) / 'mount.json').read_text())
     if camera_id not in mount['compatible_cameras']:
         raise ValueError('Camera and mount preset are incompatible')

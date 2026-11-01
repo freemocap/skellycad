@@ -1,8 +1,14 @@
 # Repository cleanup plan
 
+**Approved plan, retained for context.** The cleanup has been implemented. See
+[the working guide](organization-guide.md) and
+[execution and verification](migration/repo-cleanup-2026-10-31/README.md). The
+proposal below describes the pre-cleanup state and intended destinations.
+
 Proposed on 2026-10-31. This replaces the rat-only proposal with a repository-wide
-plan. No design files have been moved or deleted. The directory names below are
-proposed destinations, not existing paths or runnable instructions.
+plan. At proposal time, no design files had been moved or deleted. Treat the
+directory sketch below as the approved proposal; use the working guide for
+current paths and runnable instructions.
 
 ## Outcome and reasoning
 

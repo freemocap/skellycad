@@ -1,0 +1,10 @@
+{
+  "revision": "THREE-BOARD-E01",
+  "units": "mm",
+  "status": "Reviewed electrical draft and unrouted placement; not accepted for manufacture",
+  "selection_status": "review-candidate",
+  "native_checkpoint": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/THREE-BOARD-E01.FCStd",
+  "native_sha256": "9f2f26d3c440efd7b59566d636d44d561e8a7af78cbc44cd6f9a453c4e918de9",
+  "matched_files_record": "designs/cameras/ov9281/variants/three-board/src/review-manifest.json",
+  "physical_fit_verified": false
+}

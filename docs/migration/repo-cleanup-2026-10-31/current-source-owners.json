@@ -1,0 +1,10 @@
+{
+  "designs/cameras/ov9281/variants/slim-flex/src/electronics": "designs/eye-camera-ov9281/electronics/r11",
+  "designs/cameras/ov9281/variants/slim-flex/src/firmware": "designs/eye-camera-ov9281/firmware",
+  "designs/eye-tracker/mouse/variants/monocular/src": "designs/eye-tracker/mouse/raised-target-r19",
+  "designs/cameras/ov9281/variants/three-board/src": "designs/eye-camera-ov9281/electronics/three-board-e01",
+  "designs/eye-tracker/rat/variants/binocular/src": "designs/eye-tracker/rat/lowered-cameras-r43",
+  "designs/eye-tracker/rat/variants/eye-world/src": "designs/eye-tracker/rat/eye-world-print-r06",
+  "designs/cameras/ov9281/variants/slim-flex/src": "designs/eye-camera-ov9281",
+  "designs/cameras/ov9281/shared": "designs/eye-camera-ov9281"
+}

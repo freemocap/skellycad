@@ -1,0 +1,1047 @@
+{
+  "prefixes": {
+    "designs/cameras/ov9281/history/architecture/three-board-r01": "designs/cameras/ov9281/history/architecture/r001-three-board",
+    "designs/cameras/pupil-core-eye/pupil-core-eye-camera.blend": "designs/cameras/pupil-core-eye/references/inherited-geometry/pupil-core-eye-camera.blend",
+    "designs/cameras/pupil-core-eye/pupil-core-eye-camera.jpg": "designs/cameras/pupil-core-eye/references/inherited-geometry/pupil-core-eye-camera.jpg",
+    "designs/cameras/ov9281/finish_r10_controller_escapes.py": "designs/cameras/ov9281/history/electronics/r010/finish_r10_controller_escapes.py",
+    "designs/cameras/ov9281/refine_r10_controller_support.py": "designs/cameras/ov9281/history/electronics/r010/refine_r10_controller_support.py",
+    "designs/cameras/ov9281/history/packaging/selection-r01": "designs/cameras/ov9281/history/packaging/r001-selection",
+    "designs/cameras/ov9281/history/packaging/size-mass-r01": "designs/cameras/ov9281/history/packaging/r001-size-mass",
+    "designs/cameras/ov9281/close_r10_controller_support.py": "designs/cameras/ov9281/history/electronics/r010/close_r10_controller_support.py",
+    "designs/cameras/ov9281/export_reference_footprints.py": "designs/cameras/ov9281/history/tooling/export_reference_footprints.py",
+    "designs/cameras/ov9281/resolve_r11_render_recovery.py": "designs/cameras/ov9281/variants/slim-flex/src/resolve_r11_render_recovery.py",
+    "designs/cameras/ov9281/repair_r10_local_corridors.py": "designs/cameras/ov9281/history/electronics/r010/repair_r10_local_corridors.py",
+    "designs/cameras/ov9281/history/mechanics/optics-r01": "designs/cameras/ov9281/history/mechanics/r001-optics",
+    "designs/cameras/ov9281/build_interconnect_review.py": "designs/cameras/ov9281/history/tooling/build_interconnect_review.py",
+    "designs/cameras/ov9281/finish_r10_supply_escapes.py": "designs/cameras/ov9281/history/electronics/r010/finish_r10_supply_escapes.py",
+    "designs/cameras/ov9281/open_compact_review.FCMacro": "designs/cameras/ov9281/history/mechanics/r001-optics/open_compact_review.FCMacro",
+    "designs/cameras/ov9281/route_isolated_head_pads.py": "designs/cameras/ov9281/history/tooling/route_isolated_head_pads.py",
+    "designs/cameras/ov9281/finish_r10_head_escapes.py": "designs/cameras/ov9281/history/electronics/r010/finish_r10_head_escapes.py",
+    "designs/cameras/ov9281/open_optics_review.FCMacro": "designs/cameras/ov9281/history/mechanics/r001-optics/open_optics_review.FCMacro",
+    "designs/cameras/ov9281/prepare_r11_procurement.py": "designs/cameras/ov9281/variants/slim-flex/src/prepare_r11_procurement.py",
+    "designs/cameras/ov9281/test_interconnect_graph.py": "designs/cameras/ov9281/shared/test_interconnect_graph.py",
+    "designs/cameras/ov9281/validate_r10_controller.py": "designs/cameras/ov9281/history/electronics/r010/validate_r10_controller.py",
+    "designs/cameras/ov9281/annotate_r11_mechanics.py": "designs/cameras/ov9281/variants/slim-flex/src/annotate_r11_mechanics.py",
+    "designs/cameras/ov9281/build_r10_audit_review.py": "designs/cameras/ov9281/history/electronics/r010/build_r10_audit_review.py",
+    "designs/cameras/ov9281/check_routing_progress.py": "designs/cameras/ov9281/history/tooling/check_routing_progress.py",
+    "designs/cameras/ov9281/controller-selection.json": "designs/cameras/ov9281/history/electronics/r008/controller-selection.json",
+    "designs/cameras/ov9281/export_head_interfaces.py": "designs/cameras/ov9281/history/tooling/export_head_interfaces.py",
+    "designs/cameras/ov9281/finalize_r11_mechanics.py": "designs/cameras/ov9281/variants/slim-flex/src/finalize_r11_mechanics.py",
+    "designs/cameras/ov9281/prepare_r11_checkpoint.py": "designs/cameras/ov9281/variants/slim-flex/src/prepare_r11_checkpoint.py",
+    "designs/cameras/ov9281/validate_r11_schematic.py": "designs/cameras/ov9281/variants/slim-flex/src/validate_r11_schematic.py",
+    "designs/cameras/pupil-core-eye/pcb-envelope.brep": "designs/cameras/pupil-core-eye/references/inherited-geometry/pcb-envelope.brep",
+    "designs/cameras/ov9281/analyze_r11_impedance.py": "designs/cameras/ov9281/variants/slim-flex/src/analyze_r11_impedance.py",
+    "designs/cameras/ov9281/calculate_r10_stackup.py": "designs/cameras/ov9281/history/electronics/r010/calculate_r10_stackup.py",
+    "designs/cameras/ov9281/freeze_working_review.py": "designs/cameras/ov9281/history/tooling/freeze_working_review.py",
+    "designs/cameras/ov9281/repair_r09_clearances.py": "designs/cameras/ov9281/history/electronics/r009/repair_r09_clearances.py",
+    "designs/cameras/ov9281/select_r11_components.py": "designs/cameras/ov9281/variants/slim-flex/src/select_r11_components.py",
+    "designs/cameras/ov9281/verify_r11_checkpoint.py": "designs/cameras/ov9281/variants/slim-flex/src/verify_r11_checkpoint.py",
+    "designs/cameras/ov9281/build_compact_optics.py": "designs/cameras/ov9281/history/mechanics/r001-optics/build_compact_optics.py",
+    "designs/cameras/ov9281/export_r11_materials.py": "designs/cameras/ov9281/variants/slim-flex/src/export_r11_materials.py",
+    "designs/cameras/ov9281/route_r10_controller.py": "designs/cameras/ov9281/history/electronics/r010/route_r10_controller.py",
+    "designs/cameras/ov9281/test_routing_spatial.py": "designs/cameras/ov9281/shared/test_routing_spatial.py",
+    "designs/cameras/og0tc/build_electronics_r02.py": "designs/cameras/og0tc/history/electronics/r002/build_electronics_r02.py",
+    "designs/cameras/ov9281/build_optics_review.py": "designs/cameras/ov9281/history/electronics/r008/build_optics_review.py",
+    "designs/cameras/ov9281/build_r10_mechanics.py": "designs/cameras/ov9281/history/mechanics/r010/build_r10_mechanics.py",
+    "designs/cameras/ov9281/build_r11_mechanics.py": "designs/cameras/ov9281/variants/slim-flex/src/build_r11_mechanics.py",
+    "designs/cameras/ov9281/build_r11_schematic.py": "designs/cameras/ov9281/variants/slim-flex/src/build_r11_schematic.py",
+    "designs/cameras/ov9281/export_r11_geometry.py": "designs/cameras/ov9281/variants/slim-flex/src/export_r11_geometry.py",
+    "designs/cameras/ov9281/prune_routing_stubs.py": "designs/cameras/ov9281/history/tooling/prune_routing_stubs.py",
+    "designs/cameras/ov9281/route_r11_highspeed.py": "designs/cameras/ov9281/variants/slim-flex/src/route_r11_highspeed.py",
+    "designs/cameras/ov9281/route_r11_remaining.py": "designs/cameras/ov9281/variants/slim-flex/src/route_r11_remaining.py",
+    "designs/cameras/ov9281/tune_r10_controller.py": "designs/cameras/ov9281/history/electronics/r010/tune_r10_controller.py",
+    "designs/cameras/ov9281/verify_r11_firmware.py": "designs/cameras/ov9281/variants/slim-flex/src/verify_r11_firmware.py",
+    "designs/cameras/og0tc/build_mechanical_r02.py": "designs/cameras/og0tc/history/mechanical/r002/build_mechanical_r02.py",
+    "designs/cameras/ov9281/audit_interconnect.py": "designs/cameras/ov9281/history/tooling/audit_interconnect.py",
+    "designs/cameras/ov9281/calculate_r11_mass.py": "designs/cameras/ov9281/variants/slim-flex/src/calculate_r11_mass.py",
+    "designs/cameras/ov9281/interconnect_graph.py": "designs/cameras/ov9281/shared/interconnect_graph.py",
+    "designs/cameras/ov9281/reroute_head_dovdd.py": "designs/cameras/ov9281/history/tooling/reroute_head_dovdd.py",
+    "designs/cameras/ov9281/review_r06.FCMacro.in": "designs/cameras/ov9281/history/electronics/r006/review_r06.FCMacro.in",
+    "designs/cameras/ov9281/test_cross_section.py": "designs/cameras/ov9281/shared/test_cross_section.py",
+    "designs/cameras/ov9281/validate_placement.py": "designs/cameras/ov9281/history/electronics/r003/validate_placement.py",
+    "designs/cameras/ov9281/validate_r11_board.py": "designs/cameras/ov9281/variants/slim-flex/src/validate_r11_board.py",
+    "designs/cameras/ov9281/add_r11_teardrops.py": "designs/cameras/ov9281/variants/slim-flex/src/add_r11_teardrops.py",
+    "designs/cameras/ov9281/analyze_r11_power.py": "designs/cameras/ov9281/variants/slim-flex/src/analyze_r11_power.py",
+    "designs/cameras/ov9281/clean_r11_routing.py": "designs/cameras/ov9281/variants/slim-flex/src/clean_r11_routing.py",
+    "designs/cameras/ov9281/escape_r11_sensor.py": "designs/cameras/ov9281/variants/slim-flex/src/escape_r11_sensor.py",
+    "designs/cameras/ov9281/export_r06_review.py": "designs/cameras/ov9281/history/electronics/r006/export_r06_review.py",
+    "designs/cameras/ov9281/route_head_data1p.py": "designs/cameras/ov9281/history/tooling/route_head_data1p.py",
+    "designs/cameras/ov9281/route_r10_support.py": "designs/cameras/ov9281/history/electronics/r010/route_r10_support.py",
+    "designs/cameras/ov9281/validate_r10_flex.py": "designs/cameras/ov9281/history/electronics/r010/validate_r10_flex.py",
+    "designs/cameras/ov9281/validate_r10_head.py": "designs/cameras/ov9281/history/electronics/r010/validate_r10_head.py",
+    "designs/cameras/ov9281/verify_r11_native.py": "designs/cameras/ov9281/variants/slim-flex/src/verify_r11_native.py",
+    "designs/cameras/ov9281/balance_r10_head.py": "designs/cameras/ov9281/history/electronics/r010/balance_r10_head.py",
+    "designs/cameras/ov9281/build_r10_planes.py": "designs/cameras/ov9281/history/electronics/r010/build_r10_planes.py",
+    "designs/cameras/ov9281/build_r10_review.py": "designs/cameras/ov9281/history/electronics/r010/build_r10_review.py",
+    "designs/cameras/ov9281/build_r11_review.py": "designs/cameras/ov9281/variants/slim-flex/src/build_r11_review.py",
+    "designs/cameras/ov9281/copper_retention.py": "designs/cameras/ov9281/shared/copper_retention.py",
+    "designs/cameras/ov9281/export_inventory.py": "designs/cameras/ov9281/history/tooling/export_inventory.py",
+    "designs/cameras/ov9281/open_mipi_escape.py": "designs/cameras/ov9281/history/tooling/open_mipi_escape.py",
+    "designs/cameras/ov9281/route_head_clock.py": "designs/cameras/ov9281/history/tooling/route_head_clock.py",
+    "designs/cameras/ov9281/route_head_dovdd.py": "designs/cameras/ov9281/history/tooling/route_head_dovdd.py",
+    "designs/cameras/ov9281/routing-review.json": "designs/cameras/ov9281/history/electronics/r009/routing-review.json",
+    "designs/cameras/ov9281/routing_geometry.py": "designs/cameras/ov9281/shared/routing_geometry.py",
+    "designs/cameras/ov9281/validate_r10_usb.py": "designs/cameras/ov9281/history/electronics/r010/validate_r10_usb.py",
+    "designs/cameras/ov9281/working-review.json": "designs/cameras/ov9281/variants/slim-flex/history/r011-working-review/working-review.json",
+    "designs/cameras/og0tc/build_electronics.py": "designs/cameras/og0tc/history/electronics/r001/build_electronics.py",
+    "designs/cameras/ov9281/build_placement.py": "designs/cameras/ov9281/history/electronics/r002/build_placement.py",
+    "designs/cameras/ov9281/prepare_r11_pdn.py": "designs/cameras/ov9281/variants/slim-flex/src/prepare_r11_pdn.py",
+    "designs/cameras/ov9281/refine_r10_head.py": "designs/cameras/ov9281/history/electronics/r010/refine_r10_head.py",
+    "designs/cameras/ov9281/repair_r10_head.py": "designs/cameras/ov9281/history/electronics/r010/repair_r10_head.py",
+    "designs/cameras/ov9281/route_head_vias.py": "designs/cameras/ov9281/history/tooling/route_head_vias.py",
+    "designs/cameras/ov9281/route_r10_inner.py": "designs/cameras/ov9281/history/electronics/r010/route_r10_inner.py",
+    "designs/cameras/ov9281/routing_spatial.py": "designs/cameras/ov9281/shared/routing_spatial.py",
+    "designs/cameras/ov9281/system_analysis.py": "designs/cameras/ov9281/shared/system_analysis.py",
+    "designs/cameras/og0tc/build_mechanical.py": "designs/cameras/og0tc/history/mechanical/r001/build_mechanical.py",
+    "designs/cameras/ov9281/build_overview.py": "designs/cameras/ov9281/history/electronics/r008/build_overview.py",
+    "designs/cameras/ov9281/export_r11_pdn.py": "designs/cameras/ov9281/variants/slim-flex/src/export_r11_pdn.py",
+    "designs/cameras/ov9281/refine_r10_usb.py": "designs/cameras/ov9281/history/electronics/r010/refine_r10_usb.py",
+    "designs/cameras/ov9281/route_head_scl.py": "designs/cameras/ov9281/history/tooling/route_head_scl.py",
+    "designs/cameras/ov9281/route_head_vn3.py": "designs/cameras/ov9281/history/tooling/route_head_vn3.py",
+    "designs/cameras/ov9281/route_r10_flex.py": "designs/cameras/ov9281/history/electronics/r010/route_r10_flex.py",
+    "designs/cameras/ov9281/route_r10_head.py": "designs/cameras/ov9281/history/electronics/r010/route_r10_head.py",
+    "designs/cameras/ov9281/verify_offline.py": "designs/cameras/ov9281/history/electronics/r008/verify_offline.py",
+    "designs/cameras/ov9281/WORKING-REVIEW.md": "designs/cameras/ov9281/variants/slim-flex/history/r011-working-review/WORKING-REVIEW.md",
+    "designs/cameras/ov9281/cross_section.py": "designs/cameras/ov9281/shared/cross_section.py",
+    "designs/cameras/ov9281/route_head_vh.py": "designs/cameras/ov9281/history/tooling/route_head_vh.py",
+    "designs/cameras/ov9281/route_r10_usb.py": "designs/cameras/ov9281/history/electronics/r010/route_r10_usb.py",
+    "designs/cameras/ov9281/solve_r11_pdn.py": "designs/cameras/ov9281/variants/slim-flex/src/solve_r11_pdn.py",
+    "designs/cameras/ov9281/extract_head.py": "designs/cameras/ov9281/history/electronics/r001/extract_head.py",
+    "designs/cameras/ov9281/validate_r02.py": "designs/cameras/ov9281/history/electronics/r002/validate_r02.py",
+    "designs/cameras/ov9281/validate_r04.py": "designs/cameras/ov9281/history/electronics/r004/validate_r04.py",
+    "designs/cameras/ov9281/validate_r05.py": "designs/cameras/ov9281/history/electronics/r005/validate_r05.py",
+    "designs/cameras/ov9281/validate_r06.py": "designs/cameras/ov9281/history/electronics/r006/validate_r06.py",
+    "designs/cameras/ov9281/validate_r09.py": "designs/cameras/ov9281/history/electronics/r009/validate_r09.py",
+    "designs/cameras/og0tc/open_r02.FCMacro": "designs/cameras/og0tc/history/integration/r002/open_r02.FCMacro",
+    "designs/cameras/ov9281/routing_r11.py": "designs/cameras/ov9281/variants/slim-flex/src/routing_r11.py",
+    "designs/cameras/ov9281/refine_r08.py": "designs/cameras/ov9281/history/electronics/r008/refine_r08.py",
+    "designs/cameras/ov9281/build_r02.py": "designs/cameras/ov9281/history/electronics/r002/build_r02.py",
+    "designs/cameras/ov9281/build_r04.py": "designs/cameras/ov9281/history/electronics/r004/build_r04.py",
+    "designs/cameras/ov9281/build_r05.py": "designs/cameras/ov9281/history/electronics/r005/build_r05.py",
+    "designs/cameras/ov9281/build_r06.py": "designs/cameras/ov9281/history/electronics/r006/build_r06.py",
+    "designs/cameras/ov9281/build_r07.py": "designs/cameras/ov9281/history/electronics/r007/build_r07.py",
+    "designs/cameras/ov9281/build_r08.py": "designs/cameras/ov9281/history/electronics/r008/build_r08.py",
+    "designs/cameras/ov9281/build_r09.py": "designs/cameras/ov9281/history/electronics/r009/build_r09.py",
+    "designs/cameras/ov9281/place_r11.py": "designs/cameras/ov9281/variants/slim-flex/src/place_r11.py",
+    "designs/cameras/ov9281/route_r09.py": "designs/cameras/ov9281/history/electronics/r009/route_r09.py",
+    "designs/cameras/og0tc/open.FCMacro": "designs/cameras/og0tc/history/integration/r001/open.FCMacro",
+    "designs/cameras/ov9281/STATUS.md": "designs/cameras/ov9281/variants/slim-flex/history/r011-working-review/STATUS.md"
+  },
+  "files": [
+    {
+      "old": "designs/cameras/ov9281/history/architecture/three-board-r01/budgets.json",
+      "new": "designs/cameras/ov9281/history/architecture/r001-three-board/budgets.json",
+      "sha256": "624c1d1c19128478657b70b7d18a646eb1b4d1ed5ec687490de656594292ed9d"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/architecture/three-board-r01/BUDGETS.md",
+      "new": "designs/cameras/ov9281/history/architecture/r001-three-board/BUDGETS.md",
+      "sha256": "8c65f0b94d2403fe848f934b2c6c0b03a7bb4b08333fed0b2ee921bf8a32949e"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/architecture/three-board-r01/build_cad.py",
+      "new": "designs/cameras/ov9281/history/architecture/r001-three-board/build_cad.py",
+      "sha256": "64eb92cb3bacfbbe3eb25dee234e3c91cd2fd084b0a4ef8f7ab73ae0a4736bce"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/architecture/three-board-r01/build_layout.py",
+      "new": "designs/cameras/ov9281/history/architecture/r001-three-board/build_layout.py",
+      "sha256": "89507cfb6b0638843032429e18aa8279cd180381d9c35633502ebcf8072a6c21"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/architecture/three-board-r01/calculate.py",
+      "new": "designs/cameras/ov9281/history/architecture/r001-three-board/calculate.py",
+      "sha256": "44a822c325e16ef0e70704b98738fe01b5ba94460de3c4f0ccc8ef7c9c121b24"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/architecture/three-board-r01/CHECKLIST.md",
+      "new": "designs/cameras/ov9281/history/architecture/r001-three-board/CHECKLIST.md",
+      "sha256": "18b5a7c97f0c7686fc31c3cc8d2e8198d060b7480b20c8750d574a0d2525e712"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/architecture/three-board-r01/component-chain.json",
+      "new": "designs/cameras/ov9281/history/architecture/r001-three-board/component-chain.json",
+      "sha256": "ae4985f9df352c98fc0bd69e7d48f8b87f2dc0e819b75187610435ff8c8752c1"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/architecture/three-board-r01/COMPONENT-CHAIN.md",
+      "new": "designs/cameras/ov9281/history/architecture/r001-three-board/COMPONENT-CHAIN.md",
+      "sha256": "6945f29d2ab649a0828e94449dcc2db41e837e04e09b6cca39165d86334f1a93"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/architecture/three-board-r01/index.html",
+      "new": "designs/cameras/ov9281/history/architecture/r001-three-board/index.html",
+      "sha256": "5dda03a1d3f03c801963ca8587dcaac5a10f87b960b9b53355761e59444e0c59"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/architecture/three-board-r01/open-review.FCMacro",
+      "new": "designs/cameras/ov9281/history/architecture/r001-three-board/open-review.FCMacro",
+      "sha256": "5a68f5d591a15b4f8a09831c700124e56ad798d669f3d67c9e4a09d88c63e9e0"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/architecture/three-board-r01/placement.json",
+      "new": "designs/cameras/ov9281/history/architecture/r001-three-board/placement.json",
+      "sha256": "d124810b7922a8050bd0019be54cf41dc67483cd033d33705b3de5173339472b"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/architecture/three-board-r01/r11-preservation.json",
+      "new": "designs/cameras/ov9281/history/architecture/r001-three-board/r11-preservation.json",
+      "sha256": "793ec3e9e4c0577178ca6d7d556af25697dde17ceb0519af71ece3a6c700d74f"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/architecture/three-board-r01/README.md",
+      "new": "designs/cameras/ov9281/history/architecture/r001-three-board/README.md",
+      "sha256": "d000ba8dbf6aee8b06d9beebb7fc1031579c276a5d57834aa927f6e74679fcfc"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/architecture/three-board-r01/requirements.json",
+      "new": "designs/cameras/ov9281/history/architecture/r001-three-board/requirements.json",
+      "sha256": "127baace61f2d050fd790f0b95f3bb6f7e19b950467915eb89672b1e56a204cc"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/architecture/three-board-r01/REQUIREMENTS.md",
+      "new": "designs/cameras/ov9281/history/architecture/r001-three-board/REQUIREMENTS.md",
+      "sha256": "e1c549845ca092970cf6c9e1416ab9202db0b52da7c329ee1d3d961fce5f6926"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/architecture/three-board-r01/review-validation.json",
+      "new": "designs/cameras/ov9281/history/architecture/r001-three-board/review-validation.json",
+      "sha256": "dd642a3be0b7ee785fd0363284a5464689a635f9eb3c34c681217c2a88a00271"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/architecture/three-board-r01/review_html.cjs",
+      "new": "designs/cameras/ov9281/history/architecture/r001-three-board/review_html.cjs",
+      "sha256": "8e95eba900013fa8802cb3a456a7133883895791613befef30dd6f91b2dfe887"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/architecture/three-board-r01/session.json",
+      "new": "designs/cameras/ov9281/history/architecture/r001-three-board/session.json",
+      "sha256": "f798768fe9fa09c648fa5e7b4e198d2ccfa1f69d4256c5b10d97bf5591240a74"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/architecture/three-board-r01/validate_package.py",
+      "new": "designs/cameras/ov9281/history/architecture/r001-three-board/validate_package.py",
+      "sha256": "8f111d34a07d46c39b3d935efd627633e53f62a20a4e377640b2256ec322a132"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/architecture/three-board-r01/VALIDATION.md",
+      "new": "designs/cameras/ov9281/history/architecture/r001-three-board/VALIDATION.md",
+      "sha256": "0493e9ab59879664e1a5f0a7086249d7ff20e1c0f451bf7030e21c66fca05846"
+    },
+    {
+      "old": "designs/cameras/pupil-core-eye/pupil-core-eye-camera.blend",
+      "new": "designs/cameras/pupil-core-eye/references/inherited-geometry/pupil-core-eye-camera.blend",
+      "sha256": "0aa9976185a013c6b4ead17c18a4252f19973e0845e8a4a503eff84fec75913e"
+    },
+    {
+      "old": "designs/cameras/pupil-core-eye/pupil-core-eye-camera.jpg",
+      "new": "designs/cameras/pupil-core-eye/references/inherited-geometry/pupil-core-eye-camera.jpg",
+      "sha256": "dffe020ae19a60535e4fefdaecf6a51b190dea2005ef371c424b3404292a644d"
+    },
+    {
+      "old": "designs/cameras/ov9281/finish_r10_controller_escapes.py",
+      "new": "designs/cameras/ov9281/history/electronics/r010/finish_r10_controller_escapes.py",
+      "sha256": "21a3c59a57358c81bf62ac740e5628778ba19c9fdc99db9cee6f3abe25dbf457"
+    },
+    {
+      "old": "designs/cameras/ov9281/refine_r10_controller_support.py",
+      "new": "designs/cameras/ov9281/history/electronics/r010/refine_r10_controller_support.py",
+      "sha256": "b8b243d246f2575da4c1259371cf2c9ca3fcfd552b10935c70ee2f1501ae6146"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/packaging/selection-r01/decision.json",
+      "new": "designs/cameras/ov9281/history/packaging/r001-selection/decision.json",
+      "sha256": "c861ad7c486919cf453068d88aef467136ec67ff1436eb24ae9e7f42b09db553"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/packaging/selection-r01/DECISION.md",
+      "new": "designs/cameras/ov9281/history/packaging/r001-selection/DECISION.md",
+      "sha256": "0a231402b7fb667fc9e46255d48e55d26e34980187b38cdc90ad1d26c2c179c4"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/packaging/size-mass-r01/build_study.py",
+      "new": "designs/cameras/ov9281/history/packaging/r001-size-mass/build_study.py",
+      "sha256": "4c04b1247f2526228cea553fe10f346dc23ab2e331a9e96cf7110b24061580e6"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/packaging/size-mass-r01/candidate-A.svg",
+      "new": "designs/cameras/ov9281/history/packaging/r001-size-mass/candidate-A.svg",
+      "sha256": "9ad44866c8d2bce2409f9432f952334f271b3a5ca30eabe0e06317947682c6d2"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/packaging/size-mass-r01/candidate-B.svg",
+      "new": "designs/cameras/ov9281/history/packaging/r001-size-mass/candidate-B.svg",
+      "sha256": "c4326b1b9aab15c35641a72cc28bb6f9a8a40d524e9ae365fdd2f95cb7541ea0"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/packaging/size-mass-r01/candidate-C.svg",
+      "new": "designs/cameras/ov9281/history/packaging/r001-size-mass/candidate-C.svg",
+      "sha256": "e925d8add47073ca4cb272758f50bdc9a6878b2afb077e5fdbb4a133503a08dd"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/packaging/size-mass-r01/CHECKLIST.md",
+      "new": "designs/cameras/ov9281/history/packaging/r001-size-mass/CHECKLIST.md",
+      "sha256": "613611375f09916ecb7560e1b1149f25bbdc6705680a99ddd1a49c4603b3e748"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/packaging/size-mass-r01/checkpoint.json",
+      "new": "designs/cameras/ov9281/history/packaging/r001-size-mass/checkpoint.json",
+      "sha256": "f5286dcdaaf56e7df083426cb612475be71ea54409878a694913b68cf027dd64"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/packaging/size-mass-r01/compare_options.py",
+      "new": "designs/cameras/ov9281/history/packaging/r001-size-mass/compare_options.py",
+      "sha256": "ee5d60fe3fff8da971e4be19b05efc6a81678d9dac82d58700462e0af0fac79a"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/packaging/size-mass-r01/completion.json",
+      "new": "designs/cameras/ov9281/history/packaging/r001-size-mass/completion.json",
+      "sha256": "b80067361d78472ea57c45c840b5bc233aa252aaa75a4065376903e157b6c19e"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/packaging/size-mass-r01/component-budget.csv",
+      "new": "designs/cameras/ov9281/history/packaging/r001-size-mass/component-budget.csv",
+      "sha256": "aa5b5be989d5edab18b1286e78adda1e0872db89a716342ec4bbc06da868e811"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/packaging/size-mass-r01/component-budget.json",
+      "new": "designs/cameras/ov9281/history/packaging/r001-size-mass/component-budget.json",
+      "sha256": "289e169e6edca2c3dc9a57ead87f4a1801e1d514203a22d19d9b267f267bf10b"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/packaging/size-mass-r01/extract_native.py",
+      "new": "designs/cameras/ov9281/history/packaging/r001-size-mass/extract_native.py",
+      "sha256": "b01ab4cad46dc5bf8b44d534d32a7a172109010bd51c295340cc952e8087171c"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/packaging/size-mass-r01/geometry-validation.json",
+      "new": "designs/cameras/ov9281/history/packaging/r001-size-mass/geometry-validation.json",
+      "sha256": "5dc6e35dc8649325ea5938f8fdee9314eb989d3ae225fd400bd0804de7dc0be1"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/packaging/size-mass-r01/index.html",
+      "new": "designs/cameras/ov9281/history/packaging/r001-size-mass/index.html",
+      "sha256": "08dc5cda0dd87b31475638976466a0e63ec889f01021c75bf8148c77ba1f1c73"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/packaging/size-mass-r01/mass-budget.json",
+      "new": "designs/cameras/ov9281/history/packaging/r001-size-mass/mass-budget.json",
+      "sha256": "9899d187dfd1558a0ac11cb21c816c543d8c990e3179e930516b850233a9ba8b"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/packaging/size-mass-r01/mass-validation.json",
+      "new": "designs/cameras/ov9281/history/packaging/r001-size-mass/mass-validation.json",
+      "sha256": "312ed5a158b1302ee16511df208e5487879a738010fee15948a15178a35d8a7b"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/packaging/size-mass-r01/MASS.md",
+      "new": "designs/cameras/ov9281/history/packaging/r001-size-mass/MASS.md",
+      "sha256": "d1ca37f480f61133ac480dd8030779763e5483ddf79b4902cfa2d998ea4074e5"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/packaging/size-mass-r01/mass_budget.py",
+      "new": "designs/cameras/ov9281/history/packaging/r001-size-mass/mass_budget.py",
+      "sha256": "846d2bd0a0dee97cbdbe9170a9ffd730af3f873501906a767f2c2ea94df1cde9"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/packaging/size-mass-r01/native-geometry.json",
+      "new": "designs/cameras/ov9281/history/packaging/r001-size-mass/native-geometry.json",
+      "sha256": "c9bd951694a5a8d062ef520e8bf21ada699fdc1b6d6769e36c7a79b6cf67e005"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/packaging/size-mass-r01/optical-volumes.json",
+      "new": "designs/cameras/ov9281/history/packaging/r001-size-mass/optical-volumes.json",
+      "sha256": "2b60ff18741a493e531a7e22b29fc06ce99b7fd0833f1867cca829ba38a97cf4"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/packaging/size-mass-r01/options.json",
+      "new": "designs/cameras/ov9281/history/packaging/r001-size-mass/options.json",
+      "sha256": "17bd1cde8401c9d72b898d0c673281b308cd1a34d1f6fd761cfd15b6e7577ca4"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/packaging/size-mass-r01/OPTIONS.md",
+      "new": "designs/cameras/ov9281/history/packaging/r001-size-mass/OPTIONS.md",
+      "sha256": "555c18638ae26b2e220aece17e8dde7a42e37a7fc735e9f252612cb5d3fb53c8"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/packaging/size-mass-r01/packing.json",
+      "new": "designs/cameras/ov9281/history/packaging/r001-size-mass/packing.json",
+      "sha256": "556ace786e084cc8039835b4744b47ee3f6290796ad070cd37f39e245364cfbe"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/packaging/size-mass-r01/PACKING.md",
+      "new": "designs/cameras/ov9281/history/packaging/r001-size-mass/PACKING.md",
+      "sha256": "4ff32dd60e716c72ec259901ed321e785ccc4b1ee730a65748990e89fae917e7"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/packaging/size-mass-r01/pack_candidates.py",
+      "new": "designs/cameras/ov9281/history/packaging/r001-size-mass/pack_candidates.py",
+      "sha256": "64d9cbaa59c44f16beeeba75a13d94ca5dd49567b460189ceb83e0c7f1d6b781"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/packaging/size-mass-r01/pupil-electronics-envelopes.json",
+      "new": "designs/cameras/ov9281/history/packaging/r001-size-mass/pupil-electronics-envelopes.json",
+      "sha256": "85c540dec0f2bb6682c8c62bc6a7d8a495207be859e269b81424db0154cfe319"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/packaging/size-mass-r01/RECOMMENDATION.md",
+      "new": "designs/cameras/ov9281/history/packaging/r001-size-mass/RECOMMENDATION.md",
+      "sha256": "06a231b4064132deabcc8812e00f851ff28c1b33a9d4f4d858d1fdc168f9a998"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/packaging/size-mass-r01/render_review.py",
+      "new": "designs/cameras/ov9281/history/packaging/r001-size-mass/render_review.py",
+      "sha256": "3b7ca6b6b1d0bfd817fbd9df7405ed091cc898b6fde44f7d06dbab7ff80d8c40"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/packaging/size-mass-r01/review.FCMacro",
+      "new": "designs/cameras/ov9281/history/packaging/r001-size-mass/review.FCMacro",
+      "sha256": "2e026ec770b6129a7a9ed7b6f6652379edfc81d4a7d1cbec84eaea414bca04d8"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/packaging/size-mass-r01/session.json",
+      "new": "designs/cameras/ov9281/history/packaging/r001-size-mass/session.json",
+      "sha256": "6bb1268a30e9139d113796b4c61b8cf77e78d212d783929bc8a5664102869830"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/packaging/size-mass-r01/source-hashes.json",
+      "new": "designs/cameras/ov9281/history/packaging/r001-size-mass/source-hashes.json",
+      "sha256": "35a677654f9c01724150df76ed46d35b2990634936ea38a415e6afc8be13fdc3"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/packaging/size-mass-r01/study-validation.json",
+      "new": "designs/cameras/ov9281/history/packaging/r001-size-mass/study-validation.json",
+      "sha256": "98fcfaceae0e0628fbf9e3c8911af3343f9aef14e19035436da2ca5e16734bb5"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/packaging/size-mass-r01/targets.json",
+      "new": "designs/cameras/ov9281/history/packaging/r001-size-mass/targets.json",
+      "sha256": "4554df1723278371d86a65f84e144b6399d237b4ef4dabc71d6f4cb2cd5cc91e"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/packaging/size-mass-r01/TARGETS.md",
+      "new": "designs/cameras/ov9281/history/packaging/r001-size-mass/TARGETS.md",
+      "sha256": "f8210791d61f6ea3819a954e21fbd2d2432e0064ef925a55344e68648c3c181d"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/packaging/size-mass-r01/tether-budget.json",
+      "new": "designs/cameras/ov9281/history/packaging/r001-size-mass/tether-budget.json",
+      "sha256": "749bbb0cb0d1f2a8a378ddac514064fd5e9c7c7a78537a922a40d9a70e8379fe"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/packaging/size-mass-r01/validate_study.py",
+      "new": "designs/cameras/ov9281/history/packaging/r001-size-mass/validate_study.py",
+      "sha256": "6cc9f0f164643c40c2e62bed7d0a9c3c6ff92d32f02812c57525806886c561bc"
+    },
+    {
+      "old": "designs/cameras/ov9281/close_r10_controller_support.py",
+      "new": "designs/cameras/ov9281/history/electronics/r010/close_r10_controller_support.py",
+      "sha256": "eb134a43493f3269b7fc48518aef322115cea267b7b7ab3b499db9cc14859974"
+    },
+    {
+      "old": "designs/cameras/ov9281/export_reference_footprints.py",
+      "new": "designs/cameras/ov9281/history/tooling/export_reference_footprints.py",
+      "sha256": "3db94dae5fee55ac94d4a2d4b9a76c83a7e197dd7ce87b38e805c49bb23ab95f"
+    },
+    {
+      "old": "designs/cameras/ov9281/resolve_r11_render_recovery.py",
+      "new": "designs/cameras/ov9281/variants/slim-flex/src/resolve_r11_render_recovery.py",
+      "sha256": "260c51e008e3f5f66fd75857d1ebf72995796d9c259e7f669ae8ecd5fac3d5aa"
+    },
+    {
+      "old": "designs/cameras/ov9281/repair_r10_local_corridors.py",
+      "new": "designs/cameras/ov9281/history/electronics/r010/repair_r10_local_corridors.py",
+      "sha256": "d5d585f352eb3cd6029e058f8b55194f0501f5772507cff873a58f5f141cf77d"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/mechanics/optics-r01/active-model.json",
+      "new": "designs/cameras/ov9281/history/mechanics/r001-optics/active-model.json",
+      "sha256": "aac031c9528afd676a3a1e452674665e4978a6f6f24003dbf779a53ebeadaf03"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/mechanics/optics-r01/README.md",
+      "new": "designs/cameras/ov9281/history/mechanics/r001-optics/README.md",
+      "sha256": "70618244c716d9b0344da1c29da3b9c8f5fbf5703d4aa421acfe01d6321dda49"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/mechanics/optics-r01/validation.json",
+      "new": "designs/cameras/ov9281/history/mechanics/r001-optics/validation.json",
+      "sha256": "bc92517251a44e71d2ea20cab76fc0de6f347ae38b25eca164573d8f3ce75258"
+    },
+    {
+      "old": "designs/cameras/ov9281/history/mechanics/optics-r01/checkpoints/OV9281-CIL829-FIT-STUDY.FCStd",
+      "new": "designs/cameras/ov9281/history/mechanics/r001-optics/checkpoints/OV9281-CIL829-FIT-STUDY.FCStd",
+      "sha256": "00df5842c2e018e23a755f2b95318b376458a743067eb7c1faf4a301afe2c0e7"
+    },
+    {
+      "old": "designs/cameras/ov9281/build_interconnect_review.py",
+      "new": "designs/cameras/ov9281/history/tooling/build_interconnect_review.py",
+      "sha256": "486b451af8eb5c45bf7cb4931b6a191459b71ab0ba8cbc69d40ddf50ff986277"
+    },
+    {
+      "old": "designs/cameras/ov9281/finish_r10_supply_escapes.py",
+      "new": "designs/cameras/ov9281/history/electronics/r010/finish_r10_supply_escapes.py",
+      "sha256": "12f26786fc51729089c1e76f92cea73638a43af8a769db2bd18a604f383c18b5"
+    },
+    {
+      "old": "designs/cameras/ov9281/open_compact_review.FCMacro",
+      "new": "designs/cameras/ov9281/history/mechanics/r001-optics/open_compact_review.FCMacro",
+      "sha256": "a1987c811676898665aa841ced829e328847b6df158639a89387155396eebdf1"
+    },
+    {
+      "old": "designs/cameras/ov9281/route_isolated_head_pads.py",
+      "new": "designs/cameras/ov9281/history/tooling/route_isolated_head_pads.py",
+      "sha256": "46f65f8ef98a60a89d43920755c4358b48d17753a383fa3da0eac94374914f96"
+    },
+    {
+      "old": "designs/cameras/ov9281/finish_r10_head_escapes.py",
+      "new": "designs/cameras/ov9281/history/electronics/r010/finish_r10_head_escapes.py",
+      "sha256": "d78265da77d7db6fcf54524758faef8909bb6ed1f3547c20d776fa779544d364"
+    },
+    {
+      "old": "designs/cameras/ov9281/open_optics_review.FCMacro",
+      "new": "designs/cameras/ov9281/history/mechanics/r001-optics/open_optics_review.FCMacro",
+      "sha256": "1148e68834b0c7ddd6c94806f7355a7cd8b2cb7e09ccccc3c661238dfe0c933b"
+    },
+    {
+      "old": "designs/cameras/ov9281/prepare_r11_procurement.py",
+      "new": "designs/cameras/ov9281/variants/slim-flex/src/prepare_r11_procurement.py",
+      "sha256": "4be1d0acaac3e98bcaf7a3bc4eedfee23e135b2cf6a42ac6f307c39e9353a551"
+    },
+    {
+      "old": "designs/cameras/ov9281/test_interconnect_graph.py",
+      "new": "designs/cameras/ov9281/shared/test_interconnect_graph.py",
+      "sha256": "85a36cad05f03dac2f5f708389cd5d257b11d459170efcffe39840cf17dbffe4"
+    },
+    {
+      "old": "designs/cameras/ov9281/validate_r10_controller.py",
+      "new": "designs/cameras/ov9281/history/electronics/r010/validate_r10_controller.py",
+      "sha256": "5e63cf991511ba501a52df5adcd7683bb14bfbdb5a07a27f511b002d47671020"
+    },
+    {
+      "old": "designs/cameras/ov9281/annotate_r11_mechanics.py",
+      "new": "designs/cameras/ov9281/variants/slim-flex/src/annotate_r11_mechanics.py",
+      "sha256": "8963e1ccf01e3e22163cc27130e17aa02e5c5c76c9cd9f443142bc5042bf7f97"
+    },
+    {
+      "old": "designs/cameras/ov9281/build_r10_audit_review.py",
+      "new": "designs/cameras/ov9281/history/electronics/r010/build_r10_audit_review.py",
+      "sha256": "253ae494d9884c3616744e1816802e206c95f68916e4e8bda3ade83232aaa170"
+    },
+    {
+      "old": "designs/cameras/ov9281/check_routing_progress.py",
+      "new": "designs/cameras/ov9281/history/tooling/check_routing_progress.py",
+      "sha256": "809c68848aee3ae42b3b059b7973d3e663fa6d46e0884a147971f199d5613149"
+    },
+    {
+      "old": "designs/cameras/ov9281/controller-selection.json",
+      "new": "designs/cameras/ov9281/history/electronics/r008/controller-selection.json",
+      "sha256": "d70217b3538faaa28e6a2bd3ab34dc0a171b5a1c707ffbe2d61ddd2a05bcf69a"
+    },
+    {
+      "old": "designs/cameras/ov9281/export_head_interfaces.py",
+      "new": "designs/cameras/ov9281/history/tooling/export_head_interfaces.py",
+      "sha256": "082896610c3dbe82a69912fe009ba1615fe23ec9913da86f44c9782e7d6e4ac6"
+    },
+    {
+      "old": "designs/cameras/ov9281/finalize_r11_mechanics.py",
+      "new": "designs/cameras/ov9281/variants/slim-flex/src/finalize_r11_mechanics.py",
+      "sha256": "13730a223bf849c4d9d71e96794609720623699cbb2aed301b365a39f8a4c5c4"
+    },
+    {
+      "old": "designs/cameras/ov9281/prepare_r11_checkpoint.py",
+      "new": "designs/cameras/ov9281/variants/slim-flex/src/prepare_r11_checkpoint.py",
+      "sha256": "a0c453a44bce580da6c6d0a69049494c3363681cdfdb386191b5ecbbc2d5ea81"
+    },
+    {
+      "old": "designs/cameras/ov9281/validate_r11_schematic.py",
+      "new": "designs/cameras/ov9281/variants/slim-flex/src/validate_r11_schematic.py",
+      "sha256": "c3c4985f7517af9d7929e9386b2a71f05925aad4b8e172e8316e469295b724f8"
+    },
+    {
+      "old": "designs/cameras/pupil-core-eye/pcb-envelope.brep",
+      "new": "designs/cameras/pupil-core-eye/references/inherited-geometry/pcb-envelope.brep",
+      "sha256": "b46f5b460c0c21c4d83dd598dbd1cfd91cdce71288e09a190d794e3c946574d4"
+    },
+    {
+      "old": "designs/cameras/ov9281/analyze_r11_impedance.py",
+      "new": "designs/cameras/ov9281/variants/slim-flex/src/analyze_r11_impedance.py",
+      "sha256": "f19d7ef315c4db2ed7ffe60283550187f1a5d6a377aa1af5b97dedd6421f7085"
+    },
+    {
+      "old": "designs/cameras/ov9281/calculate_r10_stackup.py",
+      "new": "designs/cameras/ov9281/history/electronics/r010/calculate_r10_stackup.py",
+      "sha256": "b566022f37efc814b2c20dd02d2cbdb971153b824a7577342f0cc03ef7eab9d7"
+    },
+    {
+      "old": "designs/cameras/ov9281/freeze_working_review.py",
+      "new": "designs/cameras/ov9281/history/tooling/freeze_working_review.py",
+      "sha256": "218f6e9babda286c1587c786e85765c254a53718236a2817f103706ef65a088e"
+    },
+    {
+      "old": "designs/cameras/ov9281/repair_r09_clearances.py",
+      "new": "designs/cameras/ov9281/history/electronics/r009/repair_r09_clearances.py",
+      "sha256": "85cb30326b6f201d86f63844d252df9a0d2044405ffb1481971a8474899e2b14"
+    },
+    {
+      "old": "designs/cameras/ov9281/select_r11_components.py",
+      "new": "designs/cameras/ov9281/variants/slim-flex/src/select_r11_components.py",
+      "sha256": "ad421fc19c9f66bd4b1ef3ba5deaa9c5120cf97a43d5c447f6d1c36f1b12ebae"
+    },
+    {
+      "old": "designs/cameras/ov9281/verify_r11_checkpoint.py",
+      "new": "designs/cameras/ov9281/variants/slim-flex/src/verify_r11_checkpoint.py",
+      "sha256": "c88172b1e94b348f9e60bcbd14666b79c9cde70273f34e07c0f3604532a81726"
+    },
+    {
+      "old": "designs/cameras/ov9281/build_compact_optics.py",
+      "new": "designs/cameras/ov9281/history/mechanics/r001-optics/build_compact_optics.py",
+      "sha256": "c32d9562e64db49945ca8c8504da662f7e399e8faafc05d4f24bfd270f612dac"
+    },
+    {
+      "old": "designs/cameras/ov9281/export_r11_materials.py",
+      "new": "designs/cameras/ov9281/variants/slim-flex/src/export_r11_materials.py",
+      "sha256": "474683ab922e21adfce4b696b9be7f0e50bc2304df9db03a4bf5c6c39796501e"
+    },
+    {
+      "old": "designs/cameras/ov9281/route_r10_controller.py",
+      "new": "designs/cameras/ov9281/history/electronics/r010/route_r10_controller.py",
+      "sha256": "f92016361c8705395392a4b8293c5a1bf119ae14b4c95cf3594bef86d0d34f67"
+    },
+    {
+      "old": "designs/cameras/ov9281/test_routing_spatial.py",
+      "new": "designs/cameras/ov9281/shared/test_routing_spatial.py",
+      "sha256": "f3f6039f27e7ee71cac1e2a51693b48dc3eb809ab4e3d50f534a816d3980dd20"
+    },
+    {
+      "old": "designs/cameras/og0tc/build_electronics_r02.py",
+      "new": "designs/cameras/og0tc/history/electronics/r002/build_electronics_r02.py",
+      "sha256": "48ada3f72625414fedf1824ffdbbfe99f4f55a2353ef1b28ffca39e33c75b3c5"
+    },
+    {
+      "old": "designs/cameras/ov9281/build_optics_review.py",
+      "new": "designs/cameras/ov9281/history/electronics/r008/build_optics_review.py",
+      "sha256": "41f1f31fcbce098aef4719dad53e515995f7bcb41715dbb039286fbc95e4cf87"
+    },
+    {
+      "old": "designs/cameras/ov9281/build_r10_mechanics.py",
+      "new": "designs/cameras/ov9281/history/mechanics/r010/build_r10_mechanics.py",
+      "sha256": "bd69f8de5d58e5e5d614c29b49e5b10cbdfc0b74e2303bf4b571ae5be153d1ff"
+    },
+    {
+      "old": "designs/cameras/ov9281/build_r11_mechanics.py",
+      "new": "designs/cameras/ov9281/variants/slim-flex/src/build_r11_mechanics.py",
+      "sha256": "e89d02c50e069039e96914b17a7713e3e4807fbbc7c586bfe48d28fb65ffebe0"
+    },
+    {
+      "old": "designs/cameras/ov9281/build_r11_schematic.py",
+      "new": "designs/cameras/ov9281/variants/slim-flex/src/build_r11_schematic.py",
+      "sha256": "259a4b790705aa5a9f2efc2107db1851640d33109836c5f6fe5e9f175a4147ab"
+    },
+    {
+      "old": "designs/cameras/ov9281/export_r11_geometry.py",
+      "new": "designs/cameras/ov9281/variants/slim-flex/src/export_r11_geometry.py",
+      "sha256": "07c83f9d267b1a5fa695005c994bc8d92fe0c6514bdf60219dee99be1968086f"
+    },
+    {
+      "old": "designs/cameras/ov9281/prune_routing_stubs.py",
+      "new": "designs/cameras/ov9281/history/tooling/prune_routing_stubs.py",
+      "sha256": "d5401616fd5c365b85253120517541aee33b42b77f9f50a946993feb06eb17e0"
+    },
+    {
+      "old": "designs/cameras/ov9281/route_r11_highspeed.py",
+      "new": "designs/cameras/ov9281/variants/slim-flex/src/route_r11_highspeed.py",
+      "sha256": "f7d0ce17a4cda87a59a192f54097e8574f6d018a250ccf6ed2cc0463b1891586"
+    },
+    {
+      "old": "designs/cameras/ov9281/route_r11_remaining.py",
+      "new": "designs/cameras/ov9281/variants/slim-flex/src/route_r11_remaining.py",
+      "sha256": "113c19e9ca142c350d891c800ccb2a1a8b639bba0ce614eebeb1db83f29e337b"
+    },
+    {
+      "old": "designs/cameras/ov9281/tune_r10_controller.py",
+      "new": "designs/cameras/ov9281/history/electronics/r010/tune_r10_controller.py",
+      "sha256": "11a1025492b429fe3a117b2f9c88758464231c8a2757d81ab2ec2b840441dc74"
+    },
+    {
+      "old": "designs/cameras/ov9281/verify_r11_firmware.py",
+      "new": "designs/cameras/ov9281/variants/slim-flex/src/verify_r11_firmware.py",
+      "sha256": "b9792a0b7db666f0804cc2da94d4e2f89687f8f3a95bffe4530d536afeef07f6"
+    },
+    {
+      "old": "designs/cameras/og0tc/build_mechanical_r02.py",
+      "new": "designs/cameras/og0tc/history/mechanical/r002/build_mechanical_r02.py",
+      "sha256": "da385da54494bc4d4e2309049426c5a53416eb86762be39ea586f496ffd78826"
+    },
+    {
+      "old": "designs/cameras/ov9281/audit_interconnect.py",
+      "new": "designs/cameras/ov9281/history/tooling/audit_interconnect.py",
+      "sha256": "95999f2cf7318135db56a3af9313067447e785cc736d9aba72009267cfeaf4f8"
+    },
+    {
+      "old": "designs/cameras/ov9281/calculate_r11_mass.py",
+      "new": "designs/cameras/ov9281/variants/slim-flex/src/calculate_r11_mass.py",
+      "sha256": "6bbd85b291581ed063547e6c1641725c0adaada70e1badebdcbd9c574d25a7be"
+    },
+    {
+      "old": "designs/cameras/ov9281/interconnect_graph.py",
+      "new": "designs/cameras/ov9281/shared/interconnect_graph.py",
+      "sha256": "d29fce0c2a494374adf16fb52e22a46cd98dd6723011a94f8c7779c332530b71"
+    },
+    {
+      "old": "designs/cameras/ov9281/reroute_head_dovdd.py",
+      "new": "designs/cameras/ov9281/history/tooling/reroute_head_dovdd.py",
+      "sha256": "4b19861f5f5b18fdae2cfb6808b186b57d52f76a9b9ae3932d1c822ebe10b994"
+    },
+    {
+      "old": "designs/cameras/ov9281/review_r06.FCMacro.in",
+      "new": "designs/cameras/ov9281/history/electronics/r006/review_r06.FCMacro.in",
+      "sha256": "eb471d16bb5e99e3a9511923f5d12b33646b9185b2272c66feada7ba2f56215c"
+    },
+    {
+      "old": "designs/cameras/ov9281/test_cross_section.py",
+      "new": "designs/cameras/ov9281/shared/test_cross_section.py",
+      "sha256": "5c824a12c1c1a955285d200693a9d5724c83dea632a164d0d50dceef740d6efc"
+    },
+    {
+      "old": "designs/cameras/ov9281/validate_placement.py",
+      "new": "designs/cameras/ov9281/history/electronics/r003/validate_placement.py",
+      "sha256": "942e187a0ff14ba8cfc5d52a4f2d1576bab6713f11e6e2aef12519db6b72f2d4"
+    },
+    {
+      "old": "designs/cameras/ov9281/validate_r11_board.py",
+      "new": "designs/cameras/ov9281/variants/slim-flex/src/validate_r11_board.py",
+      "sha256": "2513104e183e0df960b24328d50b529403ad5c057bd81deea9c611f51368d9fd"
+    },
+    {
+      "old": "designs/cameras/ov9281/add_r11_teardrops.py",
+      "new": "designs/cameras/ov9281/variants/slim-flex/src/add_r11_teardrops.py",
+      "sha256": "736264dad98682ac89aab099f0412806c5435253489265f8a853fedef7b63522"
+    },
+    {
+      "old": "designs/cameras/ov9281/analyze_r11_power.py",
+      "new": "designs/cameras/ov9281/variants/slim-flex/src/analyze_r11_power.py",
+      "sha256": "b1e07aa625b323e662fda131c27962f56bc0e0eba1e41ac3ac712c26a6598e7a"
+    },
+    {
+      "old": "designs/cameras/ov9281/clean_r11_routing.py",
+      "new": "designs/cameras/ov9281/variants/slim-flex/src/clean_r11_routing.py",
+      "sha256": "4d4c6d37d692ef9a2e4102b69cdb0f045ab0c809340773392da8985040a21001"
+    },
+    {
+      "old": "designs/cameras/ov9281/escape_r11_sensor.py",
+      "new": "designs/cameras/ov9281/variants/slim-flex/src/escape_r11_sensor.py",
+      "sha256": "8816a51229b8dd045d15bd2df13d45625340464302f8b34ffcdc10c3c591d6d9"
+    },
+    {
+      "old": "designs/cameras/ov9281/export_r06_review.py",
+      "new": "designs/cameras/ov9281/history/electronics/r006/export_r06_review.py",
+      "sha256": "1585998ac3d4b3cbd090f14a30e264ba855c4d492c43d7f27ec5ebfe803407f9"
+    },
+    {
+      "old": "designs/cameras/ov9281/route_head_data1p.py",
+      "new": "designs/cameras/ov9281/history/tooling/route_head_data1p.py",
+      "sha256": "96257ff5cdf478dccd727214326f4df89fd75e5023af4539a3496a8e38ab93bd"
+    },
+    {
+      "old": "designs/cameras/ov9281/route_r10_support.py",
+      "new": "designs/cameras/ov9281/history/electronics/r010/route_r10_support.py",
+      "sha256": "1dc58f30929a0ee92c5bfd2a5e94ff1f1530cef852e1415a4148b8a3e75ade7e"
+    },
+    {
+      "old": "designs/cameras/ov9281/validate_r10_flex.py",
+      "new": "designs/cameras/ov9281/history/electronics/r010/validate_r10_flex.py",
+      "sha256": "1f2d732ff12e40adda2701f14b057ace87481afaf924158c956817fdb41d02ca"
+    },
+    {
+      "old": "designs/cameras/ov9281/validate_r10_head.py",
+      "new": "designs/cameras/ov9281/history/electronics/r010/validate_r10_head.py",
+      "sha256": "f58f904f9554d3ffe45c3339c337aa346bcf06632a92ee341487a5bb18836c5f"
+    },
+    {
+      "old": "designs/cameras/ov9281/verify_r11_native.py",
+      "new": "designs/cameras/ov9281/variants/slim-flex/src/verify_r11_native.py",
+      "sha256": "834d135c53f02ca8572d673bc8edc4592c08f1548f62579887da8adf25188e3f"
+    },
+    {
+      "old": "designs/cameras/ov9281/balance_r10_head.py",
+      "new": "designs/cameras/ov9281/history/electronics/r010/balance_r10_head.py",
+      "sha256": "6d5577a5265689d408df967a8c6c7755db7ed346cb50086aaab063d73c1a4e31"
+    },
+    {
+      "old": "designs/cameras/ov9281/build_r10_planes.py",
+      "new": "designs/cameras/ov9281/history/electronics/r010/build_r10_planes.py",
+      "sha256": "b6e19f946e1a3abbda84653797b9691418923d7371b4ee1ddb689211255ac934"
+    },
+    {
+      "old": "designs/cameras/ov9281/build_r10_review.py",
+      "new": "designs/cameras/ov9281/history/electronics/r010/build_r10_review.py",
+      "sha256": "d5aaf87e067de07581985db343f3975985b28a9a49344584ab30f6c83c97c3db"
+    },
+    {
+      "old": "designs/cameras/ov9281/build_r11_review.py",
+      "new": "designs/cameras/ov9281/variants/slim-flex/src/build_r11_review.py",
+      "sha256": "dfcb79cdc190f74ea06a842f2256e08d3253a249dc28dca927269b7a417b4503"
+    },
+    {
+      "old": "designs/cameras/ov9281/copper_retention.py",
+      "new": "designs/cameras/ov9281/shared/copper_retention.py",
+      "sha256": "a92601c6dfac77e8b88ac09024672a023c80939170429984618350bc054ff732"
+    },
+    {
+      "old": "designs/cameras/ov9281/export_inventory.py",
+      "new": "designs/cameras/ov9281/history/tooling/export_inventory.py",
+      "sha256": "a3f3dd89136b56ad7922584ca790068136ca529a156ea8b7889694cd5683bad6"
+    },
+    {
+      "old": "designs/cameras/ov9281/open_mipi_escape.py",
+      "new": "designs/cameras/ov9281/history/tooling/open_mipi_escape.py",
+      "sha256": "8084b958535772829bbeef885ba24a1c4576681c4be21bd2dab4f6ef412fec73"
+    },
+    {
+      "old": "designs/cameras/ov9281/route_head_clock.py",
+      "new": "designs/cameras/ov9281/history/tooling/route_head_clock.py",
+      "sha256": "43f4045903f49a7949afb3d5777c2443f876ec2ee4d83cfce22f716daa66383f"
+    },
+    {
+      "old": "designs/cameras/ov9281/route_head_dovdd.py",
+      "new": "designs/cameras/ov9281/history/tooling/route_head_dovdd.py",
+      "sha256": "c213c5e13ce5b75142e7771af8bf357b15793c8baf260d4d32e8c139bba17491"
+    },
+    {
+      "old": "designs/cameras/ov9281/routing-review.json",
+      "new": "designs/cameras/ov9281/history/electronics/r009/routing-review.json",
+      "sha256": "db771d11225ddf99a8dfe97286e6a00eca74630195ae5316a31a4190a64811e4"
+    },
+    {
+      "old": "designs/cameras/ov9281/routing_geometry.py",
+      "new": "designs/cameras/ov9281/shared/routing_geometry.py",
+      "sha256": "2d3f50dc126da32ae585591523ba18cd7b2ceadde77bceae742746ec472e9ad6"
+    },
+    {
+      "old": "designs/cameras/ov9281/validate_r10_usb.py",
+      "new": "designs/cameras/ov9281/history/electronics/r010/validate_r10_usb.py",
+      "sha256": "134910285125558498d5fab99a8e4104fec180823aac357e5da0c7d83d1451a5"
+    },
+    {
+      "old": "designs/cameras/ov9281/working-review.json",
+      "new": "designs/cameras/ov9281/variants/slim-flex/history/r011-working-review/working-review.json",
+      "sha256": "92a1509e246ff3faadb919cd84455a779549b621f92b89300792daf3dd86fc4a"
+    },
+    {
+      "old": "designs/cameras/og0tc/build_electronics.py",
+      "new": "designs/cameras/og0tc/history/electronics/r001/build_electronics.py",
+      "sha256": "0dcfd879e3ec5e3f384bc883a2893f56c9311dc8d10be9cba672c5c0ea699b06"
+    },
+    {
+      "old": "designs/cameras/ov9281/build_placement.py",
+      "new": "designs/cameras/ov9281/history/electronics/r002/build_placement.py",
+      "sha256": "687d22909798c320698003419db24ac0b900ff2c9ee69c78a08906d4758cb4ee"
+    },
+    {
+      "old": "designs/cameras/ov9281/prepare_r11_pdn.py",
+      "new": "designs/cameras/ov9281/variants/slim-flex/src/prepare_r11_pdn.py",
+      "sha256": "7ca3509b35af744971097506b153095e9b04fa89a2b43a811882123776d90c28"
+    },
+    {
+      "old": "designs/cameras/ov9281/refine_r10_head.py",
+      "new": "designs/cameras/ov9281/history/electronics/r010/refine_r10_head.py",
+      "sha256": "dce9c6708b8131bb733f4d5cdbab60ecdd9ae6a6b42a069a56c19d75a144a31a"
+    },
+    {
+      "old": "designs/cameras/ov9281/repair_r10_head.py",
+      "new": "designs/cameras/ov9281/history/electronics/r010/repair_r10_head.py",
+      "sha256": "2f39fcaf974ba8a07daa47598525418351aa2d2471227a90abbe4cdf6f0adb03"
+    },
+    {
+      "old": "designs/cameras/ov9281/route_head_vias.py",
+      "new": "designs/cameras/ov9281/history/tooling/route_head_vias.py",
+      "sha256": "ae9082620017c9b443742f76fae3133b82de80bb2f90975ed13735fa7729f07c"
+    },
+    {
+      "old": "designs/cameras/ov9281/route_r10_inner.py",
+      "new": "designs/cameras/ov9281/history/electronics/r010/route_r10_inner.py",
+      "sha256": "423f321cbb455f550e3eb702c5190971dda21b0a4e588c0b8190796e201121bb"
+    },
+    {
+      "old": "designs/cameras/ov9281/routing_spatial.py",
+      "new": "designs/cameras/ov9281/shared/routing_spatial.py",
+      "sha256": "1c513f4dd2b63d0444430efc46021570784fbe562b4c3b9639819fadfff33a79"
+    },
+    {
+      "old": "designs/cameras/ov9281/system_analysis.py",
+      "new": "designs/cameras/ov9281/shared/system_analysis.py",
+      "sha256": "c8bc1741500964d322b90885763fdf79f4c3fb261e994c987b2b2c8ae48306b2"
+    },
+    {
+      "old": "designs/cameras/og0tc/build_mechanical.py",
+      "new": "designs/cameras/og0tc/history/mechanical/r001/build_mechanical.py",
+      "sha256": "934fc2226cdd512be54db653343b7133a6a4917cc750ed3d16abd34a3e9d7097"
+    },
+    {
+      "old": "designs/cameras/ov9281/build_overview.py",
+      "new": "designs/cameras/ov9281/history/electronics/r008/build_overview.py",
+      "sha256": "3644b0f0009349b1e81cc1c660b8eaea9b12879abcb38b8aba6a3d1802d712c0"
+    },
+    {
+      "old": "designs/cameras/ov9281/export_r11_pdn.py",
+      "new": "designs/cameras/ov9281/variants/slim-flex/src/export_r11_pdn.py",
+      "sha256": "d1f3b2ebeaee83b9b40e0a13eb287b00a2dd9b4b7bd770d3abe169287fa3aaa9"
+    },
+    {
+      "old": "designs/cameras/ov9281/refine_r10_usb.py",
+      "new": "designs/cameras/ov9281/history/electronics/r010/refine_r10_usb.py",
+      "sha256": "eab6f389bd5e1276fb96101f00fe62e55d8195eb8e5ecb0fe099385f5d5a0149"
+    },
+    {
+      "old": "designs/cameras/ov9281/route_head_scl.py",
+      "new": "designs/cameras/ov9281/history/tooling/route_head_scl.py",
+      "sha256": "e9d1038e612158d3d640afc2f88cc488fa77354b99a1bce965cb4f069fbd7f04"
+    },
+    {
+      "old": "designs/cameras/ov9281/route_head_vn3.py",
+      "new": "designs/cameras/ov9281/history/tooling/route_head_vn3.py",
+      "sha256": "d8f9b0b782ad645c3e9e529ed3037e3d1c2e937363f655a6c2e92522d42ffde7"
+    },
+    {
+      "old": "designs/cameras/ov9281/route_r10_flex.py",
+      "new": "designs/cameras/ov9281/history/electronics/r010/route_r10_flex.py",
+      "sha256": "8fb95b599cfe1b944578ad446e8ad812d72cae4e8a3a24146138e3445c7c511b"
+    },
+    {
+      "old": "designs/cameras/ov9281/route_r10_head.py",
+      "new": "designs/cameras/ov9281/history/electronics/r010/route_r10_head.py",
+      "sha256": "d0774164447feed89ec33012ff32952a74e09533d589f0d283d659b163329331"
+    },
+    {
+      "old": "designs/cameras/ov9281/verify_offline.py",
+      "new": "designs/cameras/ov9281/history/electronics/r008/verify_offline.py",
+      "sha256": "53e276f956a39264cc12a9b32083a3a7d0b203d922e71fc0afd67421a1c9f4b4"
+    },
+    {
+      "old": "designs/cameras/ov9281/WORKING-REVIEW.md",
+      "new": "designs/cameras/ov9281/variants/slim-flex/history/r011-working-review/WORKING-REVIEW.md",
+      "sha256": "5da5f4824594abf8547bd3a2fa6834f6dbda43bbab0981d522e2415f3d824224"
+    },
+    {
+      "old": "designs/cameras/ov9281/cross_section.py",
+      "new": "designs/cameras/ov9281/shared/cross_section.py",
+      "sha256": "300565183e12371e10addfb77e553e28dba5c48f5ec2b3c3fd503c71ddcc07de"
+    },
+    {
+      "old": "designs/cameras/ov9281/route_head_vh.py",
+      "new": "designs/cameras/ov9281/history/tooling/route_head_vh.py",
+      "sha256": "e1a87758b97c263a870d7d2345a6559c37876d441ab9f638e59731241fd96201"
+    },
+    {
+      "old": "designs/cameras/ov9281/route_r10_usb.py",
+      "new": "designs/cameras/ov9281/history/electronics/r010/route_r10_usb.py",
+      "sha256": "6e9780ce0d3f37d2a0177afaa9e007500370f5f2576b4e4c13bb4aeeff4d26ff"
+    },
+    {
+      "old": "designs/cameras/ov9281/solve_r11_pdn.py",
+      "new": "designs/cameras/ov9281/variants/slim-flex/src/solve_r11_pdn.py",
+      "sha256": "b65596748508ab81a5f9875d2ac7603542b5208ef31eabd902bcc5d1ffdbfd1c"
+    },
+    {
+      "old": "designs/cameras/ov9281/extract_head.py",
+      "new": "designs/cameras/ov9281/history/electronics/r001/extract_head.py",
+      "sha256": "5724358dae7e6a8da494f7294d9fac5029ff6f3da2b10f15531f197208f1ff4b"
+    },
+    {
+      "old": "designs/cameras/ov9281/validate_r02.py",
+      "new": "designs/cameras/ov9281/history/electronics/r002/validate_r02.py",
+      "sha256": "493bbfea2b1574f0bcae4839f817ad133904697df690b743f566d56cec560338"
+    },
+    {
+      "old": "designs/cameras/ov9281/validate_r04.py",
+      "new": "designs/cameras/ov9281/history/electronics/r004/validate_r04.py",
+      "sha256": "649a4a3b084925b11442c1d1f591b35b62b8f891b331e28544018fae4acba519"
+    },
+    {
+      "old": "designs/cameras/ov9281/validate_r05.py",
+      "new": "designs/cameras/ov9281/history/electronics/r005/validate_r05.py",
+      "sha256": "01d274ba3483815ce744301b87a1940234fdb7c14edcd72444b01666679a77b8"
+    },
+    {
+      "old": "designs/cameras/ov9281/validate_r06.py",
+      "new": "designs/cameras/ov9281/history/electronics/r006/validate_r06.py",
+      "sha256": "758c5560a5343e2fbd0ead50a664301f12e4ec00935bda8662472ee5b8ca5df7"
+    },
+    {
+      "old": "designs/cameras/ov9281/validate_r09.py",
+      "new": "designs/cameras/ov9281/history/electronics/r009/validate_r09.py",
+      "sha256": "a0df9cd34f74140bc0b6bee9ebdfc44be0d8150a4247af8811ec4a393f3e6878"
+    },
+    {
+      "old": "designs/cameras/og0tc/open_r02.FCMacro",
+      "new": "designs/cameras/og0tc/history/integration/r002/open_r02.FCMacro",
+      "sha256": "906f109e8c14911f6eef69140110d335285c3c2c3ecddec936626d52aa723dae"
+    },
+    {
+      "old": "designs/cameras/ov9281/routing_r11.py",
+      "new": "designs/cameras/ov9281/variants/slim-flex/src/routing_r11.py",
+      "sha256": "6d4a7610ff80aa73dbdc6a9ff49faff3ad8293d64bb0d95d8abdd64e6bbb8041"
+    },
+    {
+      "old": "designs/cameras/ov9281/refine_r08.py",
+      "new": "designs/cameras/ov9281/history/electronics/r008/refine_r08.py",
+      "sha256": "4cb8835573a445a21a65e93bb32cd8f8f9d76601b46e20dfdfa88431165e6e34"
+    },
+    {
+      "old": "designs/cameras/ov9281/build_r02.py",
+      "new": "designs/cameras/ov9281/history/electronics/r002/build_r02.py",
+      "sha256": "cea2aea56a47c7ff0d0a934bbb1065842a1e4fe26e5af0e9ff03eb403facb1a9"
+    },
+    {
+      "old": "designs/cameras/ov9281/build_r04.py",
+      "new": "designs/cameras/ov9281/history/electronics/r004/build_r04.py",
+      "sha256": "e39bf9d6d514fae8481df86d50fb92fd4a6520096c26adf1ea70880841a31284"
+    },
+    {
+      "old": "designs/cameras/ov9281/build_r05.py",
+      "new": "designs/cameras/ov9281/history/electronics/r005/build_r05.py",
+      "sha256": "4559c0aa8311bf627c173cbd291885df8785cbc514e6c1ec65916c86847fd3fa"
+    },
+    {
+      "old": "designs/cameras/ov9281/build_r06.py",
+      "new": "designs/cameras/ov9281/history/electronics/r006/build_r06.py",
+      "sha256": "a778c77eaee0c154d0f6014e3e38252c7da668fa94bd802d152eafee4590ff1f"
+    },
+    {
+      "old": "designs/cameras/ov9281/build_r07.py",
+      "new": "designs/cameras/ov9281/history/electronics/r007/build_r07.py",
+      "sha256": "ed58a7ec509d8b5f6762d245fcb352e75d4ab6b3ec72385f5b00bb94c3038dc1"
+    },
+    {
+      "old": "designs/cameras/ov9281/build_r08.py",
+      "new": "designs/cameras/ov9281/history/electronics/r008/build_r08.py",
+      "sha256": "7c1f75688b984c2207e311682fb53968dac6e237adc97f6b8d4467164c175c65"
+    },
+    {
+      "old": "designs/cameras/ov9281/build_r09.py",
+      "new": "designs/cameras/ov9281/history/electronics/r009/build_r09.py",
+      "sha256": "257fb22667405138c853798c7f03e5dfdba0443f36428014299b664408b00c0e"
+    },
+    {
+      "old": "designs/cameras/ov9281/place_r11.py",
+      "new": "designs/cameras/ov9281/variants/slim-flex/src/place_r11.py",
+      "sha256": "690fe16b48f76bf2c8f3cafaa15ff4304e6acd678ae0278324871f52dd83a6cc"
+    },
+    {
+      "old": "designs/cameras/ov9281/route_r09.py",
+      "new": "designs/cameras/ov9281/history/electronics/r009/route_r09.py",
+      "sha256": "af560cc4bd343bd3e84ffe2b50e05f3e26eb11052ea6ce3a8dadb9ecb0db3a25"
+    },
+    {
+      "old": "designs/cameras/og0tc/open.FCMacro",
+      "new": "designs/cameras/og0tc/history/integration/r001/open.FCMacro",
+      "sha256": "b08774f7522d94bbe6602996e9ae1a95be4cbe3b1f40fbd811306c3c46615dfa"
+    },
+    {
+      "old": "designs/cameras/ov9281/STATUS.md",
+      "new": "designs/cameras/ov9281/variants/slim-flex/history/r011-working-review/STATUS.md",
+      "sha256": "76f59498cc839873c01a7bab70be86f914e5a1b83953b54aad101afd0ebc7830"
+    }
+  ]
+}

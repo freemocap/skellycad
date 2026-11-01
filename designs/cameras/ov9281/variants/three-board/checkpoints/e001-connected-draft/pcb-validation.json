@@ -1,0 +1,37 @@
+{
+  "boards": [
+    {
+      "file": "generated\\three-board-e01\\head-interface\\camera.kicad_pcb",
+      "footprints": 77,
+      "tracks": 0,
+      "copper_layers": 4,
+      "sha256": "60f7a8db51fcbb1d47f5f9b74357d85ea81005e914a389bdd70400d5c32dff08",
+      "drc": {
+        "violations": {},
+        "unconnected_items": {
+          "unconnected_items": 190
+        },
+        "schematic_parity": {}
+      }
+    },
+    {
+      "file": "generated\\three-board-e01\\base\\camera.kicad_pcb",
+      "footprints": 119,
+      "tracks": 0,
+      "copper_layers": 4,
+      "sha256": "70a8b290a31dc1c531d823bb031cf90246d8b06ed258158d92f4490dbfff967c",
+      "drc": {
+        "violations": {},
+        "unconnected_items": {
+          "unconnected_items": 298
+        },
+        "schematic_parity": {}
+      }
+    }
+  ],
+  "placement_clearance_mm": 0.1,
+  "placement_collisions": [],
+  "routing_complete": false,
+  "rules": "0.10 mm clearance / 0.20 mm copper-edge screening values; fabricator approval pending",
+  "free_flex": "Inner copper, vias and footprints excluded by native rule areas; global board thickness does not encode the regional flex stack"
+}

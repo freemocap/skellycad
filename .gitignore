@@ -227,8 +227,8 @@ __marimo__/
 *.FCBak
 *.kicad_prl
 *.lck
-/designs/eye-camera-ov9281/firmware/managed_components/
-/designs/eye-camera-ov9281/firmware/dependencies.lock
+/designs/cameras/ov9281/variants/slim-flex/src/firmware/managed_components/
+/designs/cameras/ov9281/variants/slim-flex/src/firmware/dependencies.lock
 *.kicad_sch~
 *.kicad_pcb~
 /designs/kicad-foundations/**/indicator-backups/

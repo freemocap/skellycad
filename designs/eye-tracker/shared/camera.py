@@ -1,5 +1,6 @@
 """Load the selected complete camera without changing historical mount recipes."""
 from pathlib import Path
+from .paths import repository_path
 import hashlib
 import json
 
@@ -8,7 +9,7 @@ ROOT = HERE.parents[2]
 
 
 def checked_asset(record):
-    path = (ROOT / record['path']).resolve()
+    path = repository_path(record['path'])
     if not path.is_relative_to(ROOT):
         raise ValueError('Camera asset must be inside the repository')
     if hashlib.sha256(path.read_bytes()).hexdigest() != record['sha256']:
@@ -18,8 +19,8 @@ def checked_asset(record):
 
 def selected_model():
     defaults = json.loads((HERE / 'cameras/defaults.json').read_text())
-    path = (HERE / 'cameras' / defaults['selection']).resolve()
-    if not path.is_relative_to(HERE / 'cameras'):
+    path = (ROOT / 'designs/cameras' / defaults['selection']).resolve()
+    if not path.is_relative_to(ROOT / 'designs/cameras'):
         raise ValueError('Camera selection must be inside the camera library')
     model = json.loads(path.read_text())
     if model['units'] != 'mm' or model['schema_version'] != 1:

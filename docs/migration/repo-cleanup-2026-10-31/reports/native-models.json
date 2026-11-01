@@ -1,0 +1,51 @@
+[
+  {
+    "model": "mouse-r19",
+    "manifest": "designs/eye-tracker/mouse/active-model.json",
+    "exit_code": 0,
+    "report": "generated/verification/cleanup-model-mouse-r19.json",
+    "log": "generated/verification/cleanup-model-mouse-r19.log"
+  },
+  {
+    "model": "rat-r01",
+    "manifest": "designs/eye-tracker/rat/active-model.json",
+    "exit_code": 0,
+    "report": "generated/verification/cleanup-model-rat-r01.json",
+    "log": "generated/verification/cleanup-model-rat-r01.log"
+  },
+  {
+    "model": "rat-r43",
+    "manifest": "designs/eye-tracker/rat/variants/binocular/review-model.json",
+    "exit_code": 0,
+    "report": "generated/verification/cleanup-model-rat-r43.json",
+    "log": "generated/verification/cleanup-model-rat-r43.log"
+  },
+  {
+    "model": "rat-w06",
+    "manifest": "designs/eye-tracker/rat/variants/eye-world/review-model.json",
+    "exit_code": 0,
+    "report": "generated/verification/cleanup-model-rat-w06.json",
+    "log": "generated/verification/cleanup-model-rat-w06.log"
+  },
+  {
+    "model": "pupil-r08",
+    "manifest": "designs/cameras/pupil-core-eye/active-model.json",
+    "exit_code": 0,
+    "report": "generated/verification/cleanup-model-pupil-r08.json",
+    "log": "generated/verification/cleanup-model-pupil-r08.log"
+  },
+  {
+    "model": "ov9281-e01",
+    "manifest": "designs/cameras/ov9281/variants/three-board/review-model.json",
+    "exit_code": 0,
+    "report": "generated/verification/cleanup-model-ov9281-e01.json",
+    "log": "generated/verification/cleanup-model-ov9281-e01.log"
+  },
+  {
+    "model": "ov9281-r11",
+    "manifest": "designs/cameras/ov9281/variants/slim-flex/review-model.json",
+    "exit_code": 0,
+    "report": "generated/verification/cleanup-model-ov9281-r11.json",
+    "log": "generated/verification/cleanup-model-ov9281-r11.log"
+  }
+]

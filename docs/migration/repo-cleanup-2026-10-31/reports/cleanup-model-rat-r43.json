@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "revision": "ET-RAT-LOWERED-CAMERAS-R43",
+  "native_sha256": "25a7167c54f47cdbb681aa3eefd4388bed8fd0cb812d4e657177873d73a17447",
+  "objects": 50,
+  "matched_parts": {},
+  "zip_integrity": true,
+  "physical_fit_demonstrated": false,
+  "exports": {}
+}

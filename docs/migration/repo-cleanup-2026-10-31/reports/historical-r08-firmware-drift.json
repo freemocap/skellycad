@@ -1,0 +1,38 @@
+[
+  {
+    "mode": "sensor",
+    "source_drift": [
+      {
+        "file": "main\\camera_main.c",
+        "expected": "eef6752796510b9d24170e25b49f273189f7f7a7ecb18d8dff4c53a357317569",
+        "pre_cleanup_sha256": "5d884f30aacb46de960e7b94637f9b7b5b60cadee2f368aae604797c12c83568",
+        "matching_preserved_sources": []
+      },
+      {
+        "file": "sdkconfig.defaults",
+        "expected": "0a9d66d8c139fbb0dd66d169243751422862f67693601c915086f9cfcf4b8b47",
+        "pre_cleanup_sha256": "2479dd6497de15748d263632d7f9c4b4c2cb19577e9ca8a3748e1d22c06649ba",
+        "matching_preserved_sources": []
+      }
+    ],
+    "binary_hashes_verified": true
+  },
+  {
+    "mode": "synthetic",
+    "source_drift": [
+      {
+        "file": "main\\camera_main.c",
+        "expected": "eef6752796510b9d24170e25b49f273189f7f7a7ecb18d8dff4c53a357317569",
+        "pre_cleanup_sha256": "5d884f30aacb46de960e7b94637f9b7b5b60cadee2f368aae604797c12c83568",
+        "matching_preserved_sources": []
+      },
+      {
+        "file": "sdkconfig.defaults",
+        "expected": "0a9d66d8c139fbb0dd66d169243751422862f67693601c915086f9cfcf4b8b47",
+        "pre_cleanup_sha256": "2479dd6497de15748d263632d7f9c4b4c2cb19577e9ca8a3748e1d22c06649ba",
+        "matching_preserved_sources": []
+      }
+    ],
+    "binary_hashes_verified": true
+  }
+]

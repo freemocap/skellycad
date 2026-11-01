@@ -36,7 +36,7 @@ switch ($Task) {
         New-Item -ItemType Directory -Force $env:FREECAD_USER_HOME | Out-Null
         & (Join-Path $fcBin 'python.exe') (Join-Path $PSScriptRoot 'validate_workspace.py')
         if ($LASTEXITCODE -ne 0) { throw 'CAD workspace validation failed' }
-        & $python (Join-Path $PSScriptRoot 'validate_meshes.py')
+        & $python (Join-Path $PSScriptRoot 'validate_meshes.py') --manifest (Join-Path $repo 'generated/verification/mouse-export-selection.json')
     }
     'start-freecad' {
         $profile = Join-Path $localTools 'freecad-profile'

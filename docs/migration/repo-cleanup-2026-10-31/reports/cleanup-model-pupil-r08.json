@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "revision": "CAMERA-DUMMY-R08",
+  "native_sha256": "2096c198eff2faf4fe826d94910f6b49a731f5408f350de9bd45ebf9dc9c26d0",
+  "objects": 16,
+  "matched_parts": {},
+  "zip_integrity": true,
+  "physical_fit_demonstrated": false,
+  "exports": {}
+}

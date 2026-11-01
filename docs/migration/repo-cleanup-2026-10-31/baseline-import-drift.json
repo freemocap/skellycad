@@ -1,0 +1,8 @@
+[
+  {
+    "path": "designs/README.md",
+    "expected": "3bd2b381df18696adbb24d63f041fce2d4c81ad528a005566b9d41c56ea9a5d8",
+    "actual": "3b76042b4f91cac4aa6f6784deb87f3420f4b70aaa023777f62ee38678d83e0b",
+    "import_source": "designs/README.md"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "designs/README.md": {
+    "previous_recorded_sha256": "3bd2b381df18696adbb24d63f041fce2d4c81ad528a005566b9d41c56ea9a5d8",
+    "pre_cleanup_sha256": "3b76042b4f91cac4aa6f6784deb87f3420f4b70aaa023777f62ee38678d83e0b",
+    "sha256": "8ba241a9c397ef9fcc064a7f0f56acd3fcd7fb854e333a7cf3ce92b72322037b",
+    "reason": "Replace stale design index with repository catalog; prior index is preserved in source-before archive and original-navigation."
+  },
+  "tools/cad/cad.ps1": {
+    "previous_recorded_sha256": "f96201e48d400c4c3a1885441669551d5f926e261aff76d4c37705cfec03b118",
+    "sha256": "dcf5df9851ff5afcd13746796240fd75e30d0271e9ba2ba7ccecc9310120a971",
+    "reason": "Update canonical validation entry point after path migration; previous bytes retained in source-before archive."
+  },
+  "releases/README.md": {
+    "previous_recorded_sha256": "81660851955c7de38f4843ae7276b65f851485969316838c8c19834db5500f70",
+    "sha256": "22e0d015f8f70d263033783a76dff7dee1d53a9a0ad9a65485a8ac48f32a6efe",
+    "reason": "Add current matched trial packages to distribution index; previous bytes retained in source archive."
+  }
+}

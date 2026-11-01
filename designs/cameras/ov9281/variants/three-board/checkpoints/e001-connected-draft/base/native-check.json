@@ -1,0 +1,7 @@
+{
+  "components": 119,
+  "connected_pins_checked": 358,
+  "connectivity_errors": [],
+  "erc_violations": 0,
+  "scope": "Native schematic parsing and intended-pin net equivalence; not hardware validation."
+}

@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "archive_bytes_checked": false,
+  "original_files": 28073,
+  "source_files": 8905,
+  "generated_inputs": 19168,
+  "source_edits": 79,
+  "checkpoint_records": 65,
+  "unique_checkpoints": 64,
+  "matched_package_files": 145,
+  "archived_original_files": 28073,
+  "audited_removals": 16720,
+  "retained_local_files": 2596,
+  "navigation_links": 295
+}

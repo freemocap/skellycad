@@ -1,0 +1,53 @@
+{
+  "source_active_checkpoint": "ET-MOUSE-MONO-R01",
+  "source_active_sha256": "0bdd4c6cef0c4448a49fae67e398d1a34e8d1cd60c597a42ebff54f94af35a3e",
+  "source_anatomy_sha256": "9618734a12773f330ba44627375b39d8349935bc7fb9eab65d5e6dad0832b332",
+  "existing_skull_path": "designs\\eye-tracker\\mouse\\references\\skull\\Skull.stl",
+  "existing_skull_sha256": "37473a2754e8c4ee4509b24926cad9d0d7920c4bd0c0b2e46110964ccf2ab0eb",
+  "atlas_faces_before_decimation": 3552316,
+  "atlas_faces": 30000,
+  "existing_faces": 84560,
+  "atlas_watertight": false,
+  "matrix_atlas_lps_to_assembly": [
+    [
+      0.05325944597480474,
+      -1.0630863229977225,
+      0.13883590961669626,
+      -8.832222696873874
+    ],
+    [
+      0.03383770347448533,
+      0.14060466496795676,
+      1.0636493061823935,
+      -12.564138586035426
+    ],
+    [
+      -1.0715796516206744,
+      -0.04839738189083746,
+      0.04048767946033344,
+      -10.666140780560667
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "uniform_scale": 1.0734358427635344,
+  "registration_landmark_target_error_mm": null,
+  "landmark_target_error_reason": "No independently measured target landmarks exist. Surface residual is not landmark error.",
+  "coordinate_roundtrip_max_mm": 3.552713678800501e-15,
+  "atlas_to_existing_surface_mm": {
+    "median": 0.20686378998380678,
+    "p95": 1.1471765019041726,
+    "max": 2.0881588417410635,
+    "samples": 2500
+  },
+  "existing_to_atlas_surface_mm": {
+    "median": 0.11447047511138021,
+    "p95": 2.841244746990638,
+    "max": 4.421962508652778,
+    "samples": 2500
+  }
+}

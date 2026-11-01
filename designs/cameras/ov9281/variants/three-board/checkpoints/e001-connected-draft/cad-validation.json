@@ -1,0 +1,14 @@
+{
+  "status": "pass",
+  "native": "THREE-BOARD-E01.FCStd",
+  "sha256": "9f2f26d3c440efd7b59566d636d44d561e8a7af78cbc44cd6f9a453c4e918de9",
+  "placement_sha256": "0552c09e73ada28c713dfdc212bfc61c7f4698051681727e7cc999e1f7fe6e06",
+  "solid_objects": 203,
+  "populated_package_objects": 190,
+  "body_intersections": [],
+  "zip_integrity": true,
+  "saved_reloaded_volumes_match": true,
+  "task_documents_closed": true,
+  "physical_fit_verified": false,
+  "routing_verified": false
+}

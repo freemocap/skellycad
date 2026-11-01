@@ -1,0 +1,32 @@
+{
+  "RAT-W06-PIP-carrier-with-captive-holders.stl": {
+    "watertight": true,
+    "winding_consistent": true,
+    "shell_count": 3
+  },
+  "RAT-W06-PIP-all-hardware.stl": {
+    "watertight": true,
+    "winding_consistent": true,
+    "shell_count": 6
+  },
+  "RAT-W06-PIP-hardware-without-baseplate.stl": {
+    "watertight": true,
+    "winding_consistent": true,
+    "shell_count": 5
+  },
+  "RAT-W06-PIP-eye-clip.stl": {
+    "watertight": true,
+    "winding_consistent": true,
+    "shell_count": 1
+  },
+  "RAT-W06-PIP-world-clip.stl": {
+    "watertight": true,
+    "winding_consistent": true,
+    "shell_count": 1
+  },
+  "RAT-W06-PIP-baseplate.stl": {
+    "watertight": true,
+    "winding_consistent": true,
+    "shell_count": 1
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "revision": "ET-MOUSE-RAISED-TARGET-R19",
+  "files": {
+    "ET-MOUSE-RAISED-TARGET-R19-skull_mount-baseplate.stl": {
+      "watertight": true,
+      "consistent_winding": true,
+      "shells": 1
+    },
+    "ET-MOUSE-RAISED-TARGET-R19-eye_primary-carrier-and-holder.stl": {
+      "watertight": true,
+      "consistent_winding": true,
+      "shells": 2
+    },
+    "ET-MOUSE-RAISED-TARGET-R19-eye_primary-matching-cap.stl": {
+      "watertight": true,
+      "consistent_winding": true,
+      "shells": 1
+    },
+    "ET-MOUSE-RAISED-TARGET-R19-eye_primary-camera-clip.stl": {
+      "watertight": true,
+      "consistent_winding": true,
+      "shells": 1
+    }
+  }
+}

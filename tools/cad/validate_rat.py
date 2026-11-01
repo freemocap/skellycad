@@ -1,3 +1,4 @@
+import os
 """Build and validate Monocular rat in an isolated hidden FreeCAD GUI."""
 from pathlib import Path
 import hashlib
@@ -16,9 +17,9 @@ EYE = ROOT / 'designs/eye-tracker'
 sys.path.insert(0, str(EYE))
 from shared.assembly import build_assembly, _asset
 from shared.model import open_selected
-from shared.validation import validate_selected
+from shared.validation import validate_selected, compare_mouse_baseline
 
-OUT = ROOT / 'generated/eye-tracker/rat/monocular-r01'
+OUT = ROOT / 'generated/verification/rat'
 OUT.mkdir(parents=True, exist_ok=True)
 Gui.showMainWindow()
 Gui.getMainWindow().hide()
@@ -37,7 +38,9 @@ def verify():
         rat = build_assembly(EYE / 'rat/assembly.json', OUT)
         doc = rat.document
         validate_selected(doc, rat.manifest)
-        mouse_manifest, mouse = open_selected(EYE / 'mouse/active-model.json')
+        reference = build_assembly(EYE / 'mouse/assembly.json', OUT / 'mouse-r10-reference')
+        compare_mouse_baseline(reference)
+        mouse_manifest, mouse = reference.manifest, reference.document
         report['mouse_reference_sha256'] = mouse_manifest['native_sha256']
         report['parts'] = {}
         assert len(rat.manifest['camera_instances']) == 1
@@ -85,6 +88,7 @@ def verify():
         Gui.activeDocument().activeView().viewAxonometric()
         Gui.activeDocument().activeView().fitAll()
         Gui.activeDocument().activeView().saveImage(str(OUT / 'monocular-rat.png'), 1400, 1100, 'White')
+        reopened.save()
         report.update(passed=True, saved_native_reopened=True, supplied_assets_unchanged=True,
                       native_sha256=hashlib.sha256(saved.read_bytes()).hexdigest())
         exit_code = 0
@@ -96,7 +100,8 @@ def verify():
         for name in list(App.listDocuments()):
             App.closeDocument(name)
         print('MONOCULAR_RAT_OK' if report['passed'] else 'MONOCULAR_RAT_FAILED', flush=True)
-        app.quit()
+        from process_lifecycle import finish_isolated
+        finish_isolated(exit_code)
 
 
 QtCore.QTimer.singleShot(0, verify)

@@ -6,6 +6,7 @@ manifest. Camera count, role, hardware choice and rigid placement are data.
 """
 from dataclasses import dataclass
 from pathlib import Path
+from .paths import repository_path
 import hashlib
 import json
 import math
@@ -29,7 +30,7 @@ def _id(value):
 
 
 def _asset(record):
-    path = (ROOT / record['path']).resolve()
+    path = repository_path(record['path'])
     if not path.is_relative_to(ROOT):
         raise ValueError('Asset must be within the repository')
     if hashlib.sha256(path.read_bytes()).hexdigest() != record['sha256']:
@@ -87,13 +88,13 @@ def build_assembly(config_path, output_dir=None):
     import FreeCADGui as Gui
     import Part
 
-    config_path = Path(config_path).resolve()
+    config_path = repository_path(config_path)
     config = json.loads(config_path.read_text())
     if config['schema_version'] != 1 or config['units'] != 'mm':
         raise ValueError('Expected assembly schema 1 with millimetre units')
     if not config['cameras']:
         raise ValueError('An eye tracker requires at least one camera instance')
-    anatomy_path = (config_path.parent / config['anatomy']).resolve()
+    anatomy_path = repository_path(config_path.parent / config['anatomy'])
     if not anatomy_path.is_relative_to(ROOT):
         raise ValueError('Anatomy must be within the repository')
     anatomy = json.loads(anatomy_path.read_text())
@@ -111,7 +112,7 @@ def build_assembly(config_path, output_dir=None):
         if instance['baseplate'] not in base_ids:
             raise ValueError('Camera references an unknown baseplate instance')
         camera_id, mount_id = _id(instance['camera']), _id(instance['mount'])
-        camera = json.loads((HERE / 'cameras' / camera_id / 'camera.json').read_text())
+        camera = json.loads((ROOT / 'designs/cameras' / camera_id / 'camera.json').read_text())
         mount = json.loads((HERE / 'mounts' / mount_id / 'mount.json').read_text())
         if camera['id'] != camera_id or mount['id'] != mount_id or camera_id not in mount['compatible_cameras']:
             raise ValueError('Camera and mount preset are incompatible')

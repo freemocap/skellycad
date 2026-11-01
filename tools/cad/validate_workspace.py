@@ -1,69 +1,58 @@
-"""Exercise relocated CAD workflows in a hidden GUI process without RPC."""
+"""Validate preserved courses, R10 reconstruction and the selected mouse separately."""
 from pathlib import Path
-import hashlib
-import json
-import os
-import runpy
-import sys
-import traceback
+import hashlib,json,os,runpy,sys,traceback,zipfile
 import FreeCAD as App
 import FreeCADGui as Gui
-from PySide import QtCore, QtWidgets
-
-ROOT = Path(__file__).resolve().parents[2]
-OUT = ROOT / 'generated/verification'
-OUT.mkdir(parents=True, exist_ok=True)
-os.environ['CAD_PLAYGROUND_ROOT'] = str(ROOT)
-Gui.showMainWindow()
-Gui.getMainWindow().hide()
-app = QtWidgets.QApplication.instance()
-app.setQuitOnLastWindowClosed(False)
-exit_code = 1
-
+from PySide import QtCore,QtWidgets
+ROOT=Path(__file__).resolve().parents[2]
+OUT=ROOT/'generated/verification';OUT.mkdir(parents=True,exist_ok=True)
+sys.path.insert(0,str(ROOT/'designs/eye-tracker'))
+from shared.assembly import build_assembly
+from shared.validation import compare_mouse_baseline,validate_selected
+from shared.model import load_manifest,open_selected,export_selected
+os.environ['CAD_PLAYGROUND_ROOT']=str(ROOT)
+Gui.showMainWindow();Gui.getMainWindow().hide()
+app=QtWidgets.QApplication.instance();app.setQuitOnLastWindowClosed(False)
+sys.stdout=sys.__stdout__;sys.stderr=sys.__stderr__
+exit_code=1
 
 def verify():
     global exit_code
-    report = {'passed': False, 'freecad': App.Version(), 'course': [], 'parts': {}}
+    report={'passed':False,'course':[]}
     try:
-        course = runpy.run_path(str(ROOT / 'designs/cad-foundations/replay.py'))
+        course=runpy.run_path(str(ROOT/'designs/cad-foundations/replay.py'))
         for lesson in course['STAGES']:
-            doc = course['main'](lesson)
-            report['course'].append({'lesson': lesson, 'file': Path(doc.FileName).relative_to(ROOT).as_posix()})
+            doc=course['main'](lesson)
+            with zipfile.ZipFile(doc.FileName) as z:
+                assert z.testzip() is None and 'Document.xml' in z.namelist()
+            report['course'].append({'lesson':lesson,'file':Path(doc.FileName).relative_to(ROOT).as_posix()})
             App.closeDocument(doc.Name)
-        mouse = ROOT / 'designs/eye-tracker/mouse'
-        manifest = json.loads((mouse / 'active-model.json').read_text())
-        checkpoint = ROOT / manifest['native_checkpoint']
-        assert hashlib.sha256(checkpoint.read_bytes()).hexdigest() == manifest['native_sha256']
-        rebuilt = runpy.run_path(str(mouse / 'build.py'))['doc']
-        baseline = App.openDocument(str(checkpoint))
-        for name in manifest['parts'].values():
-            a, b = rebuilt.getObject(name).Shape, baseline.getObject(name).Shape
-            delta = a.cut(b).Volume + b.cut(a).Volume
-            assert a.isValid() and len(a.Solids) == 1
-            assert delta < 1e-6, (name, delta)
-            report['parts'][name] = {'symmetric_difference_mm3': delta, 'volume_mm3': a.Volume}
-        for name in ('Skull', 'Eye1', 'Eye2'):
-            a, b = rebuilt.getObject(name), baseline.getObject(name)
-            assert a.Mesh.Topology == b.Mesh.Topology, name
-            assert a.Placement == b.Placement, name
-        report['anatomy_unchanged'] = True
-        runpy.run_path(str(mouse / 'export_print.py'))
-        assert hashlib.sha256(checkpoint.read_bytes()).hexdigest() == manifest['native_sha256']
-        report['checkpoint_unchanged'] = True
-        report['revision'] = manifest['revision']
-        report['passed'] = True
-        exit_code = 0
+        rebuilt=build_assembly(ROOT/'designs/eye-tracker/mouse/assembly.json',OUT/'mouse-r10-rebuild')
+        report['r10_reconstruction']=compare_mouse_baseline(rebuilt)
+        App.closeDocument(rebuilt.document.Name)
+        selected=ROOT/'designs/eye-tracker/mouse/active-model.json'
+        manifest,checkpoint=load_manifest(selected)
+        before=hashlib.sha256(checkpoint.read_bytes()).hexdigest()
+        # The selected R19 is a different design from the historical R10 reconstruction.
+        # Check its exact matched parts and export its own explicit groups.
+        manifest,doc=open_selected(selected)
+        report['selected_revision']=manifest['revision']
+        report['selected_parts']={role:{'object':name,'valid':doc.getObject(name).Shape.isValid()} for role,name in manifest['parts'].items()}
+        export_manifest=dict(manifest);export_manifest['print_directory']='generated/verification/mouse-selected'
+        export_path=OUT/'mouse-export-selection.json';export_path.write_text(json.dumps(export_manifest,indent=2))
+        export_selected(export_path,lambda current: validate_selected(current,manifest))
+        assert hashlib.sha256(checkpoint.read_bytes()).hexdigest()==before
+        report['selected_checkpoint_unchanged']=True
+        report['passed']=True;exit_code=0
     except Exception:
-        report['error'] = traceback.format_exc()
-        print(report['error'], flush=True)
+        report['error']=traceback.format_exc();print(report['error'],flush=True)
     finally:
-        (OUT / 'cad.json').write_text(json.dumps(report, indent=2) + '\n')
+        (OUT/'cad.json').write_text(json.dumps(report,indent=2))
         for name in list(App.listDocuments()):
+            print('CLOSING',name,flush=True)
             App.closeDocument(name)
-        print('CAD_WORKSPACE_OK' if report['passed'] else 'CAD_WORKSPACE_FAILED', flush=True)
-        app.quit()
-
-
-QtCore.QTimer.singleShot(0, verify)
-app.exec()
-sys.exit(exit_code)
+            print('CLOSED',name,flush=True)
+        print('CAD_WORKSPACE_OK' if report['passed'] else 'CAD_WORKSPACE_FAILED',flush=True)
+        from process_lifecycle import finish_isolated
+        finish_isolated(exit_code)
+QtCore.QTimer.singleShot(0,verify);app.exec();sys.exit(exit_code)

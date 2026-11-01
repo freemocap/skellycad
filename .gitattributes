@@ -1,8 +1,8 @@
 # CAD sources, releases and historical evidence are stored through Git LFS.
 # Preserve byte-level hashes in frozen checkpoints and camera design records.
 **/checkpoints/** -text eol=lf
-designs/eye-camera-ov9281/** -text
-designs/eye-camera-og0tc/** -text
+designs/cameras/ov9281/** -text
+designs/cameras/og0tc/** -text
 *.FCStd filter=lfs diff=lfs merge=lfs -text
 *.fcstd filter=lfs diff=lfs merge=lfs -text
 *.f3d filter=lfs diff=lfs merge=lfs -text
@@ -17,3 +17,6 @@ designs/eye-camera-og0tc/** -text
 *.brp filter=lfs diff=lfs merge=lfs -text
 *.3mf filter=lfs diff=lfs merge=lfs -text
 *.zip filter=lfs diff=lfs merge=lfs -text
+
+# Bounded-size volumes of the immutable cleanup retention archives.
+*.zip.[0-9][0-9][0-9] filter=lfs diff=lfs merge=lfs -text

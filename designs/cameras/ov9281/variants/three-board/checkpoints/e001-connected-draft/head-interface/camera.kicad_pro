@@ -1,0 +1,21 @@
+{
+  "board": {
+    "design_settings": {
+      "rules": {
+        "min_clearance": 0.1,
+        "min_copper_edge_clearance": 0.2
+      }
+    }
+  },
+  "net_settings": {
+    "classes": [
+      {
+        "name": "Default",
+        "clearance": 0.1,
+        "track_width": 0.15,
+        "via_diameter": 0.5,
+        "via_drill": 0.25
+      }
+    ]
+  }
+}

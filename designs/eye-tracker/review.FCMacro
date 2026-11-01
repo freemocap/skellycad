@@ -13,10 +13,11 @@ ROOT = HERE.parents[1]
 if str(HERE) not in sys.path:
     sys.path.insert(0, str(HERE))
 from shared.model import open_selected
+from shared.paths import repository_path
 from shared.preview import build_catalog
 
-config = json.loads((HERE / 'mouse/assembly.json').read_text())
-baseline_path = ROOT / config['baseline']['checkpoint']
+config = json.loads(repository_path(HERE / 'mouse/assembly.json').read_text())
+baseline_path = repository_path(config['baseline']['checkpoint'])
 if not any(d.FileName and Path(d.FileName).resolve() == baseline_path for d in App.listDocuments().values()):
     App.openDocument(str(baseline_path))
 catalog_path = ROOT / 'generated/eye-tracker/shared/hardware-catalog.FCStd'

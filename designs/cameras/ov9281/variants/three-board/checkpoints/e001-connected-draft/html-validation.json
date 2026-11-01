@@ -1,0 +1,31 @@
+{
+  "status": "pass",
+  "http_status": 200,
+  "images": [
+    {
+      "src": "/generated/three-board-e01/head-top.png",
+      "ok": true
+    },
+    {
+      "src": "/generated/three-board-e01/head-interface/placement.svg",
+      "ok": true
+    },
+    {
+      "src": "/generated/three-board-e01/base/placement.svg",
+      "ok": true
+    }
+  ],
+  "script_errors": [],
+  "view_switches": 4,
+  "bom_rows": 196,
+  "mobile_overflow": false,
+  "checklist_states": [
+    "done",
+    "done",
+    "done",
+    "done",
+    "done",
+    "done",
+    "done"
+  ]
+}

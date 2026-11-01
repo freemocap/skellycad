@@ -1,0 +1,457 @@
+[
+  {
+    "manifest": "designs/eye-camera-ov9281/mechanics/optics-r01/active-model.json",
+    "checkpoint": "generated/ov9281-optics-fit-01/OV9281-CIL829-FIT-STUDY.FCStd",
+    "expected": "00df5842c2e018e23a755f2b95318b376458a743067eb7c1faf4a301afe2c0e7",
+    "actual": "00df5842c2e018e23a755f2b95318b376458a743067eb7c1faf4a301afe2c0e7",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/mouse/active-model.json",
+    "checkpoint": "designs/eye-tracker/mouse/raised-target-r19/checkpoints/ET-MOUSE-RAISED-TARGET-R19.FCStd",
+    "expected": "05a11e2a9a0f8900cf22ad114194bc200bb6950e501fa8e4d8d163543ab0ea9c",
+    "actual": "05a11e2a9a0f8900cf22ad114194bc200bb6950e501fa8e4d8d163543ab0ea9c",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/rat/active-model.json",
+    "checkpoint": "designs/eye-tracker/rat/checkpoints/ET-RAT-MONO-R01.FCStd",
+    "expected": "ad74a3f14aaa709880039c927690475f6119d074f73b0a550a3064383394762e",
+    "actual": "9c81ed0189cfa4be9fec9e01cc48621c92a28be2dde8c5535c1e609df22c3bf7",
+    "matches": false
+  },
+  {
+    "manifest": "designs/eye-tracker/mouse/adult-anatomy-r11/review.json",
+    "checkpoint": "designs/eye-tracker/mouse/adult-anatomy-r11/checkpoints/ET-MOUSE-ADULT-R11.FCStd",
+    "expected": "0a2cb04a505a5eacd83d2afbbdaa611c70db078dffee635c8e5ce9c28dc7b61a",
+    "actual": "0a2cb04a505a5eacd83d2afbbdaa611c70db078dffee635c8e5ce9c28dc7b61a",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/mouse/anatomical-mount-r17/review.json",
+    "checkpoint": "designs/eye-tracker/mouse/anatomical-mount-r17/checkpoints/ET-MOUSE-MOUNT-STUDY-R17.FCStd",
+    "expected": "b5f9e64eb104172818f914ff5f2fcd7095cba2931c88432b357261924e2b3c03",
+    "actual": "b5f9e64eb104172818f914ff5f2fcd7095cba2931c88432b357261924e2b3c03",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/mouse/compact-guard-r12/review.json",
+    "checkpoint": "designs/eye-tracker/mouse/compact-guard-r12/checkpoints/ET-MOUSE-GUARD-R12.FCStd",
+    "expected": "c3e88c722526d7f2acf7bcd876850131a83e2ff8e28bb70620fde1f79d4ba0a2",
+    "actual": "c3e88c722526d7f2acf7bcd876850131a83e2ff8e28bb70620fde1f79d4ba0a2",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/mouse/compact-guard-r13/review.json",
+    "checkpoint": "designs/eye-tracker/mouse/compact-guard-r13/checkpoints/ET-MOUSE-GUARD-R13.FCStd",
+    "expected": "f6f4a2b9c7945100ebe43076df77bd0c66b44758579040ce37deb2b2691fd87f",
+    "actual": "f6f4a2b9c7945100ebe43076df77bd0c66b44758579040ce37deb2b2691fd87f",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/mouse/compact-guard-r16/review.json",
+    "checkpoint": "designs/eye-tracker/mouse/compact-guard-r16/checkpoints/ET-MOUSE-GUARD-R16.FCStd",
+    "expected": "dba2bd05f7549eec3e5caa02ef15fbfa72181b5109147c6615f79e0eec542738",
+    "actual": "dba2bd05f7549eec3e5caa02ef15fbfa72181b5109147c6615f79e0eec542738",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/mouse/detailed-camera-r09/review.json",
+    "checkpoint": "designs/eye-tracker/mouse/detailed-camera-r09/checkpoints/ET-MOUSE-DETAILED-R09.FCStd",
+    "expected": "8d2956df88830b042076fdfc1563b9ec5071007ddfc086978dcceeb3070c0ef5",
+    "actual": "8d2956df88830b042076fdfc1563b9ec5071007ddfc086978dcceeb3070c0ef5",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/mouse/eye-axis-review-r10/review.json",
+    "checkpoint": "designs/eye-tracker/mouse/eye-axis-review-r10/checkpoints/ET-MOUSE-EYE-AXES-R10.FCStd",
+    "expected": "407b3bd7baf4a28314c1815a9656ee902347528d40e90b950d98f1104e667b7b",
+    "actual": "407b3bd7baf4a28314c1815a9656ee902347528d40e90b950d98f1104e667b7b",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/mouse/landmark-eye-placement-r14/review.json",
+    "checkpoint": "designs/eye-tracker/mouse/landmark-eye-placement-r14/checkpoints/ET-MOUSE-EYE-PLACEMENT-R14.FCStd",
+    "expected": "87968bc3ee0cc14f149bd4db04a45554c265cb7480565408990b4e4a2c0f848d",
+    "actual": "87968bc3ee0cc14f149bd4db04a45554c265cb7480565408990b4e4a2c0f848d",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/mouse/landmark-eyes-r04/review.json",
+    "checkpoint": "designs/eye-tracker/mouse/landmark-eyes-r04/checkpoints/ET-MOUSE-LANDMARK-EYES-R04.FCStd",
+    "expected": "74577ef9d5652badd43241910e4363717993dbfcc38796de3759d5199ca701d3",
+    "actual": "74577ef9d5652badd43241910e4363717993dbfcc38796de3759d5199ca701d3",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/mouse/landmark-review-r02/review.json",
+    "checkpoint": "designs/eye-tracker/mouse/landmark-review-r02/checkpoints/ET-MOUSE-LANDMARK-REVIEW-R02.FCStd",
+    "expected": "4502757566c690dc89f52af260c37b66eeb24b0a611d375c7bc90f3d81c7b45e",
+    "actual": "4502757566c690dc89f52af260c37b66eeb24b0a611d375c7bc90f3d81c7b45e",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/mouse/named-landmarks-r03/review.json",
+    "checkpoint": "designs/eye-tracker/mouse/named-landmarks-r03/checkpoints/ET-MOUSE-NAMED-LANDMARKS-R03.FCStd",
+    "expected": "a771f18aad77b0ff6d0eb70918e089004368e0fe2c6b4797130e5d916e5f818d",
+    "actual": "a771f18aad77b0ff6d0eb70918e089004368e0fe2c6b4797130e5d916e5f818d",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/mouse/nasal-camera-r15/review.json",
+    "checkpoint": "designs/eye-tracker/mouse/nasal-camera-r15/checkpoints/ET-MOUSE-NASAL-R15.FCStd",
+    "expected": "8368c1a743e055c62d63e5e02aa2ff1257d6b6ece7742ae2622bdb8c957dcd4a",
+    "actual": "8368c1a743e055c62d63e5e02aa2ff1257d6b6ece7742ae2622bdb8c957dcd4a",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/mouse/raised-target-r19/review.json",
+    "checkpoint": "designs/eye-tracker/mouse/raised-target-r19/checkpoints/ET-MOUSE-RAISED-TARGET-R19.FCStd",
+    "expected": "05a11e2a9a0f8900cf22ad114194bc200bb6950e501fa8e4d8d163543ab0ea9c",
+    "actual": "05a11e2a9a0f8900cf22ad114194bc200bb6950e501fa8e4d8d163543ab0ea9c",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/mouse/registered-eyes-study-r01/review.json",
+    "checkpoint": "designs/eye-tracker/mouse/registered-eyes-study-r01/checkpoints/ET-MOUSE-REGISTERED-EYES-STUDY-R01.FCStd",
+    "expected": "ab1fe889d2af1da50bd3b8add36dcd7942f42cccec4ae80edb44fb63bcd9122d",
+    "actual": "ab1fe889d2af1da50bd3b8add36dcd7942f42cccec4ae80edb44fb63bcd9122d",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/mouse/skull-clearance-r18/review.json",
+    "checkpoint": "designs/eye-tracker/mouse/skull-clearance-r18/checkpoints/ET-MOUSE-BASEPLATE-R18.FCStd",
+    "expected": "f586d970ea8044eb2394a838440ebe533c8037ae4c70b2f18963afa981051b34",
+    "actual": "f586d970ea8044eb2394a838440ebe533c8037ae4c70b2f18963afa981051b34",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/rat/adult-anatomy-r07/review.json",
+    "checkpoint": "designs/eye-tracker/rat/adult-anatomy-r07/checkpoints/ET-RAT-ADULT-R07.FCStd",
+    "expected": "9dedb5b1571d4c9b450e6dbcd5a6dc162189b38691bec916d458eade80b86ef7",
+    "actual": "9dedb5b1571d4c9b450e6dbcd5a6dc162189b38691bec916d458eade80b86ef7",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/rat/aligned-tip-r27/review.json",
+    "checkpoint": "designs/eye-tracker/rat/aligned-tip-r27/checkpoints/ET-RAT-ALIGNED-TIP-R27.FCStd",
+    "expected": "320921e03d42a1bd8a16b3a11b7b6d6c1cd6817b4b6286475f1c9db59127be8d",
+    "actual": "320921e03d42a1bd8a16b3a11b7b6d6c1cd6817b4b6286475f1c9db59127be8d",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/rat/anatomy-study-r10/review.json",
+    "checkpoint": "designs/eye-tracker/rat/anatomy-study-r10/checkpoints/ET-RAT-ANATOMY-STUDY-R10.FCStd",
+    "expected": "1e0c6565cec3acbe328f6ccfac5b4a7fb5ff9cb529c79ed9dc29c7fb6da02e02",
+    "actual": "1e0c6565cec3acbe328f6ccfac5b4a7fb5ff9cb529c79ed9dc29c7fb6da02e02",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/rat/binocular-r31/review.json",
+    "checkpoint": "designs/eye-tracker/rat/binocular-r31/checkpoints/ET-RAT-BINOCULAR-R31.FCStd",
+    "expected": "e73906a7335191b2043e10ac43ebf354977d342e5da554b3da491961343b3506",
+    "actual": "e73906a7335191b2043e10ac43ebf354977d342e5da554b3da491961343b3506",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/rat/blended-arm-r26/review.json",
+    "checkpoint": "designs/eye-tracker/rat/blended-arm-r26/checkpoints/ET-RAT-BLENDED-ARM-R26.FCStd",
+    "expected": "3dc5e9b92a819b96f85406fc8111e7d41415ba241b683593ada1f93b4ee2a1df",
+    "actual": "3dc5e9b92a819b96f85406fc8111e7d41415ba241b683593ada1f93b4ee2a1df",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/rat/bregma-baseplate-r17/review.json",
+    "checkpoint": "designs/eye-tracker/rat/bregma-baseplate-r17/checkpoints/ET-RAT-BREGMA-BASEPLATE-R17.FCStd",
+    "expected": "4dc5d561888f1006ddb156111db1ceccdf789d751ab577545412f40ba9948c6a",
+    "actual": "4dc5d561888f1006ddb156111db1ceccdf789d751ab577545412f40ba9948c6a",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/rat/clean-reference-r11/review.json",
+    "checkpoint": "designs/eye-tracker/rat/clean-reference-r11/checkpoints/ET-RAT-CLEAN-REFERENCE-R11.FCStd",
+    "expected": "10c64b12645faa2e5eb23f77951441a1a0892084dea3e5ee6ca14df6f599b2f9",
+    "actual": "10c64b12645faa2e5eb23f77951441a1a0892084dea3e5ee6ca14df6f599b2f9",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/rat/clear-view-r41/review.json",
+    "checkpoint": "generated\\eye-tracker\\rat\\clear-view-r41\\ET-RAT-CLEAR-VIEW-R41.FCStd",
+    "expected": "7e44f5ed7dd44b3a5637bbcb174c4e4aa4cdae09986cb5a420b2e9ab519c73ed",
+    "actual": "7e44f5ed7dd44b3a5637bbcb174c4e4aa4cdae09986cb5a420b2e9ab519c73ed",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/rat/compact-binocular-r32/review.json",
+    "checkpoint": "designs/eye-tracker/rat/compact-binocular-r32/checkpoints/ET-RAT-COMPACT-BINOCULAR-R32.FCStd",
+    "expected": "b1bab67befa6205fbfc6f987b225f5ccacbd00731d4c3c57fa5e5d71ebe56363",
+    "actual": "b1bab67befa6205fbfc6f987b225f5ccacbd00731d4c3c57fa5e5d71ebe56363",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/rat/compact-guard-r08/review.json",
+    "checkpoint": "designs/eye-tracker/rat/compact-guard-r08/checkpoints/ET-RAT-GUARD-R08.FCStd",
+    "expected": "031484ca335dee56513c9ef56a65c86f2c22a1203eb1c73c60d56ede17f4f004",
+    "actual": "031484ca335dee56513c9ef56a65c86f2c22a1203eb1c73c60d56ede17f4f004",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/rat/compact-guard-r09/review.json",
+    "checkpoint": "designs/eye-tracker/rat/compact-guard-r09/checkpoints/ET-RAT-GUARD-R09.FCStd",
+    "expected": "52b3e4216c869a89652fdb428414021e2f5bd7738eda6e4b54e6bfb05bb811c5",
+    "actual": "52b3e4216c869a89652fdb428414021e2f5bd7738eda6e4b54e6bfb05bb811c5",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/rat/compact-guard-r19/review.json",
+    "checkpoint": "designs/eye-tracker/rat/compact-guard-r19/checkpoints/ET-RAT-COMPACT-GUARD-R19.FCStd",
+    "expected": "cdebc08d6e7355a63c97082cbf138cade9f0b53883a5b028f4bca215fae04c15",
+    "actual": "cdebc08d6e7355a63c97082cbf138cade9f0b53883a5b028f4bca215fae04c15",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/rat/detailed-camera-r05/review.json",
+    "checkpoint": "designs/eye-tracker/rat/detailed-camera-r05/checkpoints/ET-RAT-DETAILED-R05.FCStd",
+    "expected": "4c2c4003e17bdbd8c289de6199d729e1631177db3eefa41c83933bf85b0a4bdb",
+    "actual": "4c2c4003e17bdbd8c289de6199d729e1631177db3eefa41c83933bf85b0a4bdb",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/rat/eye-axis-review-r06/review.json",
+    "checkpoint": "designs/eye-tracker/rat/eye-axis-review-r06/checkpoints/ET-RAT-EYE-AXES-R06.FCStd",
+    "expected": "0665dc05ec0348ef0b44c33ac9360e5d5643cd72194174e86dfbf649ee7429bf",
+    "actual": "0665dc05ec0348ef0b44c33ac9360e5d5643cd72194174e86dfbf649ee7429bf",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/rat/eye-world-print-r06/review.json",
+    "checkpoint": "generated\\eye-tracker\\rat\\eye-world-print-r06\\RAT-eye-world-W06.FCStd",
+    "expected": "9399f230558d20e3428f8529b61012c8c0f68f68749f43084593f68a9f06435f",
+    "actual": "9399f230558d20e3428f8529b61012c8c0f68f68749f43084593f68a9f06435f",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/rat/eye-world-ribbon-r02/review.json",
+    "checkpoint": "generated\\eye-tracker\\rat\\eye-world-ribbon-r02\\RAT-eye-world-ribbon-R02.FCStd",
+    "expected": "616775604b3a2a846cdb776e1c87ac34bb4369920b315b65b8e270708efc1d33",
+    "actual": "616775604b3a2a846cdb776e1c87ac34bb4369920b315b65b8e270708efc1d33",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/rat/eye-world-top-joint-r04/review.json",
+    "checkpoint": "generated\\eye-tracker\\rat\\eye-world-top-joint-r04\\RAT-eye-world-top-joint-R04.FCStd",
+    "expected": "b88101d65f65848748ecd39cd742959d16c04f3ca6edbd0ef03c7901946f4d32",
+    "actual": "b88101d65f65848748ecd39cd742959d16c04f3ca6edbd0ef03c7901946f4d32",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/rat/eye-world-tray-r03/review.json",
+    "checkpoint": "generated\\eye-tracker\\rat\\eye-world-tray-r03\\RAT-eye-world-tray-R03.FCStd",
+    "expected": "6c4a23e4884bb75d84aa406b65ce29e9e37aa2d351d13c3c127d73b708c7295e",
+    "actual": "6c4a23e4884bb75d84aa406b65ce29e9e37aa2d351d13c3c127d73b708c7295e",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/rat/eye-world-two-supports-r05/review.json",
+    "checkpoint": "generated\\eye-tracker\\rat\\eye-world-two-supports-r05\\RAT-eye-world-two-supports-R05.FCStd",
+    "expected": "ff54abdd636b08953521a429571f2f6536d9a8449d9502d5f5b04ac4f0235291",
+    "actual": "ff54abdd636b08953521a429571f2f6536d9a8449d9502d5f5b04ac4f0235291",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/rat/forward-mount-r39/review.json",
+    "checkpoint": "generated\\eye-tracker\\rat\\forward-mount-r39\\ET-RAT-FORWARD-MOUNT-R39.FCStd",
+    "expected": "d0e0cbf4dc0f0278d3bbc1974b851c4ec655abe9ec7ecbf64c430743a877dcff",
+    "actual": "d0e0cbf4dc0f0278d3bbc1974b851c4ec655abe9ec7ecbf64c430743a877dcff",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/rat/joined-arm-r25/review.json",
+    "checkpoint": "designs/eye-tracker/rat/joined-arm-r25/checkpoints/ET-RAT-JOINED-ARM-R25.FCStd",
+    "expected": "67b141909dca5e17fca6c3f16a2c86d249ee248263e8d3745a4abb091f8c1bc5",
+    "actual": "67b141909dca5e17fca6c3f16a2c86d249ee248263e8d3745a4abb091f8c1bc5",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/rat/labeled-spine-r36/review.json",
+    "checkpoint": "generated\\eye-tracker\\rat\\labeled-spine-r36\\RAT-R36-labeled-spine-review.FCStd",
+    "expected": "76dfb7515cc4f9ffefc051355575a34af8e89a06737f783866fa64efb3801837",
+    "actual": "76dfb7515cc4f9ffefc051355575a34af8e89a06737f783866fa64efb3801837",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/rat/lowered-cameras-r43/review.json",
+    "checkpoint": "generated\\eye-tracker\\rat\\lowered-cameras-r43\\ET-RAT-LOWERED-CAMERAS-R43.FCStd",
+    "expected": "25a7167c54f47cdbb681aa3eefd4388bed8fd0cb812d4e657177873d73a17447",
+    "actual": "25a7167c54f47cdbb681aa3eefd4388bed8fd0cb812d4e657177873d73a17447",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/rat/neutral-camera-r20/review.json",
+    "checkpoint": "designs/eye-tracker/rat/neutral-camera-r20/checkpoints/ET-RAT-NEUTRAL-R20.FCStd",
+    "expected": "df58b75617b0e1ca068d915e0bb557211465c06a67ec3e594e0b38bb92e92c1f",
+    "actual": "df58b75617b0e1ca068d915e0bb557211465c06a67ec3e594e0b38bb92e92c1f",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/rat/open-spine-r33/review.json",
+    "checkpoint": "generated\\eye-tracker\\rat\\open-spine-r33\\RAT-R33-open-spine-review.FCStd",
+    "expected": "05720b3168a232a8a0dcb3f690bd134805da591629cb606c0dd1993a44af5a18",
+    "actual": "05720b3168a232a8a0dcb3f690bd134805da591629cb606c0dd1993a44af5a18",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/rat/open-supports-r40/review.json",
+    "checkpoint": "generated\\eye-tracker\\rat\\open-supports-r40\\ET-RAT-OPEN-SUPPORTS-R40.FCStd",
+    "expected": "99e577224b116e3f667467ab6702e25c660799223b921ce504e5180cc72e97be",
+    "actual": "99e577224b116e3f667467ab6702e25c660799223b921ce504e5180cc72e97be",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/rat/orthogonal-arms-r42/review.json",
+    "checkpoint": "generated\\eye-tracker\\rat\\orthogonal-arms-r42\\ET-RAT-ORTHOGONAL-ARMS-R42.FCStd",
+    "expected": "aaa9779824515e08839429ea9d5fd9383824bbf4a07543efb1c0fea292caa92f",
+    "actual": "aaa9779824515e08839429ea9d5fd9383824bbf4a07543efb1c0fea292caa92f",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/rat/outer-arms-r29/review.json",
+    "checkpoint": "designs/eye-tracker/rat/outer-arms-r29/checkpoints/ET-RAT-OUTER-ARMS-R29.FCStd",
+    "expected": "6c6c6b2f53ac39ce937e549a9f01d5b021cd139fb505c09098bdb9421ba4649d",
+    "actual": "6c6c6b2f53ac39ce937e549a9f01d5b021cd139fb505c09098bdb9421ba4649d",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/rat/oval-camera-r21/review.json",
+    "checkpoint": "designs/eye-tracker/rat/oval-camera-r21/checkpoints/ET-RAT-OVAL-R21.FCStd",
+    "expected": "32059ddfa844999852db6143b067276bce35cf8e647ed3e529464271e5f855ce",
+    "actual": "32059ddfa844999852db6143b067276bce35cf8e647ed3e529464271e5f855ce",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/rat/refined-supports-r38/review.json",
+    "checkpoint": "generated\\eye-tracker\\rat\\refined-supports-r38\\ET-RAT-REFINED-SUPPORTS-R38.FCStd",
+    "expected": "3859f6f6caf81d1bab3ecf31816e98a887448d8e543559bf567de8f7f7471c3d",
+    "actual": "3859f6f6caf81d1bab3ecf31816e98a887448d8e543559bf567de8f7f7471c3d",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/rat/registered-eyes-r14/review.json",
+    "checkpoint": "designs/eye-tracker/rat/registered-eyes-r14/checkpoints/ET-RAT-REGISTERED-EYES-R14.FCStd",
+    "expected": "5a9495e51fc661f8e05590fc776eacbd2c366c92530c47074aa5c401a3a9cbf8",
+    "actual": "5a9495e51fc661f8e05590fc776eacbd2c366c92530c47074aa5c401a3a9cbf8",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/rat/ribbon-led-r23/review.json",
+    "checkpoint": "designs/eye-tracker/rat/ribbon-led-r23/checkpoints/ET-RAT-RIBBON-LED-R23.FCStd",
+    "expected": "20a949b09b44012ca21de25065936dd7d0757fe9877794a40778b6547da68d40",
+    "actual": "20a949b09b44012ca21de25065936dd7d0757fe9877794a40778b6547da68d40",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/rat/rounded-spine-r34/review.json",
+    "checkpoint": "generated\\eye-tracker\\rat\\rounded-spine-r34\\RAT-R34-rounded-spine-review.FCStd",
+    "expected": "12b87e843023ec25bff197564617fd1512b610e4c3517db67c5fc7972ad96eb8",
+    "actual": "12b87e843023ec25bff197564617fd1512b610e4c3517db67c5fc7972ad96eb8",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/rat/rounded-spine-r35/review.json",
+    "checkpoint": "generated\\eye-tracker\\rat\\rounded-spine-r35\\RAT-R35-rounded-spine-review.FCStd",
+    "expected": "5d76482aa76944df70e3d3ef52152521abb8cfdc3c8800f805d626f8eea1872b",
+    "actual": "5d76482aa76944df70e3d3ef52152521abb8cfdc3c8800f805d626f8eea1872b",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/rat/separated-arms-r30/review.json",
+    "checkpoint": "designs/eye-tracker/rat/separated-arms-r30/checkpoints/ET-RAT-SEPARATED-ARMS-R30.FCStd",
+    "expected": "d91f843e5961dda48b2b207c70a0e5160231d82d1ced3f4ac6b903de39e722eb",
+    "actual": "d91f843e5961dda48b2b207c70a0e5160231d82d1ced3f4ac6b903de39e722eb",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/rat/skull-registration-r12/review.json",
+    "checkpoint": "designs/eye-tracker/rat/skull-registration-r12/checkpoints/ET-RAT-SKULL-REGISTRATION-R12.FCStd",
+    "expected": "7562620facba3ba6bfee16e9150d8754f6096e1634027cba12f5395310dbe847",
+    "actual": "7562620facba3ba6bfee16e9150d8754f6096e1634027cba12f5395310dbe847",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/rat/smooth-arm-r24/review.json",
+    "checkpoint": "designs/eye-tracker/rat/smooth-arm-r24/checkpoints/ET-RAT-SMOOTH-ARM-R24.FCStd",
+    "expected": "6c0ed87035eaf17c735e0e7ba14f9567f84bd01bc3ad7cd9b1b6410a5129aca7",
+    "actual": "6c0ed87035eaf17c735e0e7ba14f9567f84bd01bc3ad7cd9b1b6410a5129aca7",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/rat/surface-landmarks-r13/review.json",
+    "checkpoint": "designs/eye-tracker/rat/surface-landmarks-r13/checkpoints/ET-RAT-SURFACE-LANDMARKS-R13.FCStd",
+    "expected": "7d5f5a2c70effb287d88f7af235e3dcb4dd5c4ddee05d63227bab76d6ae15b10",
+    "actual": "7d5f5a2c70effb287d88f7af235e3dcb4dd5c4ddee05d63227bab76d6ae15b10",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/rat/symmetric-binocular-r37/review.json",
+    "checkpoint": "generated\\eye-tracker\\rat\\symmetric-binocular-r37\\ET-RAT-SYMMETRIC-BINOCULAR-R37.FCStd",
+    "expected": "66f1f7b6b42c183c1ee531d16e6f7fca4e1c368791c3af577c1827986d8e2d93",
+    "actual": "66f1f7b6b42c183c1ee531d16e6f7fca4e1c368791c3af577c1827986d8e2d93",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/rat/symmetric-design-r16/review.json",
+    "checkpoint": "designs/eye-tracker/rat/symmetric-design-r16/checkpoints/ET-RAT-SYMMETRIC-DESIGN-R16.FCStd",
+    "expected": "e4531571560d10cdf80f84b92f2ebdde8a6d2b5e5c0de786a45eeef3cb7d5986",
+    "actual": "e4531571560d10cdf80f84b92f2ebdde8a6d2b5e5c0de786a45eeef3cb7d5986",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/rat/symmetry-review-r15/review.json",
+    "checkpoint": "designs/eye-tracker/rat/symmetry-review-r15/checkpoints/ET-RAT-SYMMETRY-REVIEW-R15.FCStd",
+    "expected": "5721c763381b00b2dfc9ec5a6b11185735fc80d6d3f3e97868f2a3a23adc02a4",
+    "actual": "5721c763381b00b2dfc9ec5a6b11185735fc80d6d3f3e97868f2a3a23adc02a4",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/rat/targeted-r02/review.json",
+    "checkpoint": "designs/eye-tracker/rat/targeted-r02/checkpoints/ET-RAT-MONO-TARGET-R02.FCStd",
+    "expected": "94023ceb01e38a23c619fce2e8ad011af2e1e6e45b40393005b4cb7026162b70",
+    "actual": "94023ceb01e38a23c619fce2e8ad011af2e1e6e45b40393005b4cb7026162b70",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/rat/targeted-r03/review.json",
+    "checkpoint": "designs/eye-tracker/rat/targeted-r03/checkpoints/ET-RAT-MONO-TARGET-R03.FCStd",
+    "expected": "96a39057a734f7a84cfa5ad5e3c774133cdf8e5ad1ec5f8677427eb262c428d1",
+    "actual": "96a39057a734f7a84cfa5ad5e3c774133cdf8e5ad1ec5f8677427eb262c428d1",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/rat/targeted-r18/review.json",
+    "checkpoint": "designs/eye-tracker/rat/targeted-r18/checkpoints/ET-RAT-TARGETED-R18.FCStd",
+    "expected": "bcffdf5e3a5981d41e54dd22b2c7867f1e2e9a9d6b019a6b1b2ead63b11d0849",
+    "actual": "bcffdf5e3a5981d41e54dd22b2c7867f1e2e9a9d6b019a6b1b2ead63b11d0849",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/rat/two-arm-r28/review.json",
+    "checkpoint": "designs/eye-tracker/rat/two-arm-r28/checkpoints/ET-RAT-TWO-ARM-R28.FCStd",
+    "expected": "bc92ee921590c60b9e40ec01959da73eef18ccc62c63093af4d568d0df84b8dd",
+    "actual": "bc92ee921590c60b9e40ec01959da73eef18ccc62c63093af4d568d0df84b8dd",
+    "matches": true
+  },
+  {
+    "manifest": "designs/eye-tracker/shared/cameras/pupil-core-eye/active-model.json",
+    "checkpoint": "designs/eye-tracker/shared/cameras/pupil-core-eye/checkpoints/CAMERA-DUMMY-R08/CAMERA-DUMMY-R08.FCStd",
+    "expected": "2096c198eff2faf4fe826d94910f6b49a731f5408f350de9bd45ebf9dc9c26d0",
+    "actual": "2096c198eff2faf4fe826d94910f6b49a731f5408f350de9bd45ebf9dc9c26d0",
+    "matches": true
+  },
+  {
+    "manifest": "designs/mouse-hats/current/active-model.json",
+    "checkpoint": "designs/mouse-hats/current/checkpoints/MH-T3-EYE-R10.FCStd",
+    "expected": "8bc7974226c8df0892f3c174f46bc34318605ea2ab5ab697c71a745af0d88111",
+    "actual": "8bc7974226c8df0892f3c174f46bc34318605ea2ab5ab697c71a745af0d88111",
+    "matches": true
+  }
+]

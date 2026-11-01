@@ -5,16 +5,19 @@ import numpy as np
 import FreeCAD as A,Part
 from poses import aim_sensor,axis_error,rigid
 ROOT=Path(__file__).resolve().parents[4]
+sys.path.insert(0,str(ROOT/'designs/eye-tracker'))
+from shared.paths import repository_path
+from shared.model import load_manifest
 import importlib.util
 _spec=importlib.util.spec_from_file_location('_skellycad_flared_arm',ROOT/'designs/mouse-hats/b-flared-loop-r07/flared_arm.py')
 _arm=importlib.util.module_from_spec(_spec);_spec.loader.exec_module(_arm)
 geometry,rectangle,unit=_arm.geometry,_arm.rectangle,_arm.unit
 
 def verified_asset(record):
- p=ROOT/record['path'];assert hashlib.sha256(p.read_bytes()).hexdigest()==record['sha256'],str(p);return p
+ p=repository_path(record['path']);assert hashlib.sha256(p.read_bytes()).hexdigest()==record['sha256'],str(p);return p
 
 def checkpoint(manifest):
- m=json.loads((ROOT/manifest).read_text());return verified_asset({'path':m['native_checkpoint'],'sha256':m['native_sha256']}),m
+ m,p=load_manifest(manifest);return p,m
 
 def placement(T):
  T=rigid(T);m=A.Matrix(*T.ravel().tolist());return A.Placement(m)

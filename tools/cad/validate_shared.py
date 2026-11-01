@@ -1,9 +1,11 @@
+import os
 """Regression checks for shared hardware composition and camera instancing."""
 from pathlib import Path
 import copy
 import json
 import sys
 import traceback
+import zipfile
 import FreeCAD as App
 import FreeCADGui as Gui
 from PySide import QtCore, QtWidgets
@@ -28,10 +30,10 @@ def verify():
     global exit_code
     report = {'passed': False}
     try:
-        mouse = build_assembly(EYE / 'mouse/assembly.json', ROOT / 'generated/eye-tracker/mouse/shared-r01')
+        mouse = build_assembly(EYE / 'mouse/assembly.json', OUT / 'mouse-r10-rebuild')
         report['mouse'] = compare_mouse_baseline(mouse)
         validate_selected(mouse.document, mouse.manifest)
-        export_selected(ROOT / 'generated/eye-tracker/mouse/shared-r01/manifest.json',
+        export_selected(OUT / 'mouse-r10-rebuild/manifest.json',
                         lambda doc: validate_selected(doc, mouse.manifest))
         # A spatial fixture, not a proposed rat design. Exercise two independent
         # instances and a world-camera role, including nonidentity rotation.
@@ -89,9 +91,15 @@ def verify():
     finally:
         (OUT / 'validation.json').write_text(json.dumps(report, indent=2) + '\n')
         for name in list(App.listDocuments()):
+            doc=App.getDocument(name)
+            if not doc.FileName:
+                doc.saveAs(str(OUT/(name+'.FCStd')))
+                with zipfile.ZipFile(doc.FileName) as z:
+                    assert z.testzip() is None and 'Document.xml' in z.namelist()
             App.closeDocument(name)
         print('SHARED_ASSEMBLY_OK' if report['passed'] else 'SHARED_ASSEMBLY_FAILED', flush=True)
-        app.quit()
+        from process_lifecycle import finish_isolated
+        finish_isolated(exit_code)
 
 
 QtCore.QTimer.singleShot(0, verify)

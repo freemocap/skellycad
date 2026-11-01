@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "source_root": "C:\\Users\\jonma\\code-stuff\\github\\freemocap\\other\\skellycad",
+  "current_sources": true,
+  "overlaid_sources": [
+    "designs/cameras/ov9281/variants/three-board/src/audit.py",
+    "designs/cameras/ov9281/variants/three-board/src/base-components.json",
+    "designs/cameras/ov9281/variants/three-board/src/bom.json",
+    "designs/cameras/ov9281/variants/three-board/src/budget.py",
+    "designs/cameras/ov9281/variants/three-board/src/build_cad.py",
+    "designs/cameras/ov9281/variants/three-board/src/CHECKLIST.md",
+    "designs/cameras/ov9281/variants/three-board/src/check_native.py",
+    "designs/cameras/ov9281/variants/three-board/src/circuits.py",
+    "designs/cameras/ov9281/variants/three-board/src/COMPONENT-BASIS.md",
+    "designs/cameras/ov9281/variants/three-board/src/electrical-audit.json",
+    "designs/cameras/ov9281/variants/three-board/src/ELECTRICAL-REVIEW.md",
+    "designs/cameras/ov9281/variants/three-board/src/head-interface-components.json",
+    "designs/cameras/ov9281/variants/three-board/src/index.html",
+    "designs/cameras/ov9281/variants/three-board/src/mass-budget.json",
+    "designs/cameras/ov9281/variants/three-board/src/open-review.FCMacro",
+    "designs/cameras/ov9281/variants/three-board/src/place.py",
+    "designs/cameras/ov9281/variants/three-board/src/placement.json",
+    "designs/cameras/ov9281/variants/three-board/src/preservation.json",
+    "designs/cameras/ov9281/variants/three-board/src/publish.py",
+    "designs/cameras/ov9281/variants/three-board/src/README.md",
+    "designs/cameras/ov9281/variants/three-board/src/REQUIREMENTS.md",
+    "designs/cameras/ov9281/variants/three-board/src/review-manifest.json",
+    "designs/cameras/ov9281/variants/three-board/src/review_html.cjs",
+    "designs/cameras/ov9281/variants/three-board/src/review_pcb.py",
+    "designs/cameras/ov9281/variants/three-board/src/ROUTING-HANDOFF.md",
+    "designs/cameras/ov9281/variants/three-board/src/session.json",
+    "designs/cameras/ov9281/variants/three-board/src/session.py",
+    "designs/cameras/ov9281/variants/three-board/src/validate_package.py",
+    "designs/cameras/ov9281/variants/three-board/src/validation.json"
+  ],
+  "source_owners": [
+    "designs/cameras/ov9281/variants/three-board/src"
+  ],
+  "runtime_path_adaptation": true,
+  "r01_exact_recovery": "ad74a3f14aaa709880039c927690475f6119d074f73b0a550a3064383394762e"
+}

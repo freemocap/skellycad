@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "units": "mm",
+  "material_slots_suggested": {
+    "Red_PLA_boards": 1,
+    "Black_PLA_lens": 2,
+    "White_PLA_connector_LEDs": 3,
+    "Yellow_TPU_ribbon": 4
+  },
+  "sliced": false,
+  "physical_print_verified": false,
+  "files": {
+    "Black_PLA_lens.stl": "eeaf14802fb536e08bdde53160c89766f4c97188fe1a93f2dfacb413409aaf56",
+    "CAMERA-DUMMY-R08-four-materials.3mf": "c8d27ae3aae9901e6f358964cfbbe31bec331a5ea111973dd91684999330c64b",
+    "CAMERA-DUMMY-R08.FCStd": "baf66ae2d828e2a2fc888f6ef5a2d40663a013378721fda999b3157bc58c6380",
+    "CAMERA-DUMMY-R08.step": "8761a218ed438e33d84e839ee92efd5b0f215b035e0438accff428b52c6452fd",
+    "Red_PLA_boards.stl": "a81588c82c40851a86125cfd49be55f81cc6a967a8a114293ed01e22f98b1b9d",
+    "White_PLA_connector_LEDs.stl": "c960284240f5964d946a73f3d03da8c22bca3c308bf0671cbb0862ee95252780",
+    "Yellow_TPU_ribbon.stl": "a5c96ec0accb719ef8b4b6342da81f341a763780d47a4f0aff2bd99e616f9122"
+  }
+}

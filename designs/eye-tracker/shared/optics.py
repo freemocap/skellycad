@@ -7,7 +7,7 @@ from pathlib import Path
 import json
 import math
 
-PARAMETERS = Path(__file__).parent / 'cameras/pupil-core-eye/optics-r02/parameters.json'
+PARAMETERS = Path(__file__).resolve().parents[3] / 'designs/cameras/pupil-core-eye/history/r002-optics/parameters.json'
 
 
 def parameters():

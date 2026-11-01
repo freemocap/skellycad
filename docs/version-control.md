@@ -44,3 +44,17 @@ ignore all STL or STEP files; reference anatomy and source geometry use them.
    and the repository owner's remaining allowance have not been checked locally.
 4. Verify a fresh clone can fetch LFS objects, pass the migration verifier and
    rebuild the mouse design before deleting the original local playground copy.
+
+## Cleanup retention archives
+
+The repository-wide cleanup retains the exact starting sources and generated
+inputs in bounded-size archive volumes under
+`docs/migration/repo-cleanup-2026-10-31/`. All volumes are required for restoration
+and use Git LFS. `archive-volumes.json` records their order and hashes. Do not
+repack these immutable archives during normal work.
+
+The main tree contains navigable current sources, checkpoints and history.
+Historical replay restores its required original layout into `generated/replay/`.
+This conservative retention preserves experiments whose inputs are not yet fully
+parametric; it does not imply that every intermediate file should remain visible
+in the active source tree. See the organization guide before adding new copies.

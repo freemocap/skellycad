@@ -1,0 +1,63 @@
+{
+  "revision": "ET-RAT-EYE-WORLD-PRINT-W06",
+  "units": "mm",
+  "native_checkpoint": "designs/eye-tracker/rat/variants/eye-world/checkpoints/w006-eye-world-print/RAT-eye-world-W06.FCStd",
+  "native_sha256": "9399f230558d20e3428f8529b61012c8c0f68f68749f43084593f68a9f06435f",
+  "source": {
+    "revision": "ET-RAT-EYE-WORLD-TWO-SUPPORTS-R05",
+    "units": "mm",
+    "native_checkpoint": "designs/eye-tracker/rat/variants/eye-world/history/r005-eye-world-two-supports/checkpoints/RAT-eye-world-two-supports-R05.FCStd",
+    "native_sha256": "ff54abdd636b08953521a429571f2f6536d9a8449d9502d5f5b04ac4f0235291",
+    "source": {
+      "revision": "ET-RAT-EYE-WORLD-TOP-JOINT-R04",
+      "units": "mm",
+      "native_checkpoint": "designs/eye-tracker/rat/variants/eye-world/history/r004-eye-world-top-joint/checkpoints/RAT-eye-world-top-joint-R04.FCStd",
+      "native_sha256": "b88101d65f65848748ecd39cd742959d16c04f3ca6edbd0ef03c7901946f4d32",
+      "source": {
+        "revision": "ET-RAT-EYE-WORLD-TRAY-R03",
+        "units": "mm",
+        "native_checkpoint": "designs/eye-tracker/rat/variants/eye-world/history/r003-eye-world-tray/checkpoints/RAT-eye-world-tray-R03.FCStd",
+        "native_sha256": "6c4a23e4884bb75d84aa406b65ce29e9e37aa2d351d13c3c127d73b708c7295e",
+        "source": {
+          "revision": "ET-RAT-EYE-WORLD-RIBBON-R02",
+          "units": "mm",
+          "native_checkpoint": "designs/eye-tracker/rat/variants/eye-world/history/r002-eye-world-ribbon/checkpoints/RAT-eye-world-ribbon-R02.FCStd",
+          "native_sha256": "616775604b3a2a846cdb776e1c87ac34bb4369920b315b65b8e270708efc1d33",
+          "source": {
+            "revision": "ET-RAT-LOWERED-CAMERAS-R43",
+            "native_checkpoint": "designs/eye-tracker/rat/variants/binocular/checkpoints/r043-lowered-cameras/ET-RAT-LOWERED-CAMERAS-R43.FCStd",
+            "native_sha256": "25a7167c54f47cdbb681aa3eefd4388bed8fd0cb812d4e657177873d73a17447"
+          },
+          "status": "Ribbon-driven placement review; world holder and supports need refit",
+          "physical_fit_verified": false,
+          "print_release": false
+        },
+        "camera_and_ribbon_pose_unchanged": true,
+        "new_object": "WorldCameraStemlessTray",
+        "status": "Restored PCB holder and stemless camera tray; world supports not designed",
+        "print_release": false
+      },
+      "lens_delta_world_mm": [
+        2.000000001311184,
+        -0.05022534665116485,
+        -1.6349552909073068
+      ],
+      "status": "Level forward camera, relocated original stem and socket, top carrier support; physical trial pending",
+      "print_release": false
+    },
+    "camera_and_ribbon_unchanged": true,
+    "world_support_count": 2,
+    "socket_approach_angle_degrees": 90.0,
+    "physical_fit_verified": false,
+    "print_release": false
+  },
+  "lens_delta_world_mm": [
+    2.0000000000022418,
+    1.6973089600469393e-12,
+    7.158718062783009e-13
+  ],
+  "status": "World camera advanced 2 mm; two supports retained; validated trial print pack",
+  "print_release": "W06 trial STL pack",
+  "physical_fit_verified": false,
+  "selection_status": "review-candidate; not a selected complete assembly"
+}

@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "part_tools": {
+    "Red_PLA_boards": "1",
+    "Black_PLA_lens": "2",
+    "White_PLA_connector_LEDs": "3",
+    "Yellow_TPU_ribbon": "4"
+  },
+  "filament_types": [
+    "PLA",
+    "PLA",
+    "PLA",
+    "TPU"
+  ],
+  "filament_colors": [
+    "#FF201A",
+    "#202024",
+    "#F0F0E6",
+    "#FFCC05"
+  ],
+  "TPU_profile": "Installed Snapmaker Generic TPU preset; spool tuning unverified",
+  "printer": "Snapmaker U1 (0.4 nozzle)",
+  "geometry_unchanged": true,
+  "gui_verified": false,
+  "sliced": false,
+  "sha256": "5d627d84a24576768f376bd594c8e007dd0a23655f035043d686db6d1ff00671"
+}

@@ -1,0 +1,9 @@
+{
+  "designs/README.md": "docs/migration/repo-cleanup-2026-10-31/original-navigation/designs/README.md",
+  "designs/eye-camera-og0tc/README.md": "designs/cameras/og0tc/history/overview-before-cleanup.md",
+  "designs/eye-camera-ov9281/README.md": "designs/cameras/ov9281/history/overview-before-cleanup.md",
+  "designs/eye-tracker/README.md": "docs/migration/repo-cleanup-2026-10-31/original-navigation/designs/eye-tracker/README.md",
+  "designs/eye-tracker/mouse/README.md": "designs/eye-tracker/mouse/history/overview-before-cleanup.md",
+  "designs/eye-tracker/rat/README.md": "designs/eye-tracker/rat/history/overview-before-cleanup.md",
+  "designs/eye-tracker/shared/cameras/pupil-core-eye/README.md": "designs/cameras/pupil-core-eye/history/overview-before-cleanup.md"
+}

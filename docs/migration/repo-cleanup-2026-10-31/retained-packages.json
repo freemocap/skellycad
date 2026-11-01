@@ -1,0 +1,727 @@
+[
+  {
+    "source": "generated/three-board-e01/assembly-top.png",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/assembly-top.png",
+    "sha256": "1e776cf6ca0daf1154f73183932f2e48e3fed978f94cc0540f3ac3c302e1eb90"
+  },
+  {
+    "source": "generated/three-board-e01/assembly.png",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/assembly.png",
+    "sha256": "0f7206a82f1e86a7e0f7c893dd788d864740eb34b3cde1fa8f33374c2a8e8a4e"
+  },
+  {
+    "source": "generated/three-board-e01/base-top.png",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/base-top.png",
+    "sha256": "0a6a24eef9f0c342a877ab5a9e60fb3e5a96c1ee7638be1bc09394768be8f248"
+  },
+  {
+    "source": "generated/three-board-e01/cad-validation.json",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/cad-validation.json",
+    "sha256": "b9f80e8ce8399b93cc868d8a939681578e7d1b64843804e057fd1f3dbadefa24"
+  },
+  {
+    "source": "generated/three-board-e01/desktop-kicad.json",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/desktop-kicad.json",
+    "sha256": "5697372801c45d296ae67fb7bb47efa5713edfd3cca9a23290fa6f6ca236993d"
+  },
+  {
+    "source": "generated/three-board-e01/desktop-review.json",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/desktop-review.json",
+    "sha256": "7a4084d9fa9bc455c7bb1a859b43574cd5f0761128f2a56ac76608793eb79891"
+  },
+  {
+    "source": "generated/three-board-e01/head-top.png",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/head-top.png",
+    "sha256": "76ae2939cafc482f08ff622020595c6432d63c127be4c0f1062429082d973234"
+  },
+  {
+    "source": "generated/three-board-e01/html-validation.json",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/html-validation.json",
+    "sha256": "39c4e47a53fb82aba22d93c24e563d6e712c93f358a2c9278c5da172cf4d148d"
+  },
+  {
+    "source": "generated/three-board-e01/pcb-validation.json",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/pcb-validation.json",
+    "sha256": "8fde11da9d7723e20f49325c07bd08fb63ace7b1c6baccde63392e209baecbcc"
+  },
+  {
+    "source": "generated/three-board-e01/review-desktop.png",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/review-desktop.png",
+    "sha256": "e67d16310df39308923559bbcadfb0113f560603ca53abf814070b0491e42236"
+  },
+  {
+    "source": "generated/three-board-e01/review-mobile.png",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/review-mobile.png",
+    "sha256": "6c0f1f1cbc5547c9077def96e28ae6a86759fc2fafbffb3630eded9756589c95"
+  },
+  {
+    "source": "generated/three-board-e01/THREE-BOARD-E01.FCStd",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/THREE-BOARD-E01.FCStd",
+    "sha256": "9f2f26d3c440efd7b59566d636d44d561e8a7af78cbc44cd6f9a453c4e918de9"
+  },
+  {
+    "source": "generated/three-board-e01/THREE-BOARD-E01.step",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/THREE-BOARD-E01.step",
+    "sha256": "317274a12e9476ed987d5e6b634f59e511c4b7fcec2100580bfae3ecd049249f"
+  },
+  {
+    "source": "generated/three-board-e01/base/cad-pads.json",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/base/cad-pads.json",
+    "sha256": "e5f4ec3710b08bd5e397aeecc74d8a7b2d29a3ceeb7081a4ad426e045312fcf8"
+  },
+  {
+    "source": "generated/three-board-e01/base/camera.kicad_pcb",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/base/camera.kicad_pcb",
+    "sha256": "70a8b290a31dc1c531d823bb031cf90246d8b06ed258158d92f4490dbfff967c"
+  },
+  {
+    "source": "generated/three-board-e01/base/camera.kicad_prl",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/base/camera.kicad_prl",
+    "sha256": "43d316e87b7372029d541b98c8b5b22bd80092ef9c903a3acced8af414b86de3"
+  },
+  {
+    "source": "generated/three-board-e01/base/camera.kicad_pro",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/base/camera.kicad_pro",
+    "sha256": "daceadf425f480d8db4b04ab16a94e0daf692a3245b3d8dd5046470eb689988c"
+  },
+  {
+    "source": "generated/three-board-e01/base/camera.kicad_sch",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/base/camera.kicad_sch",
+    "sha256": "9d58b5c875d63ba011fa93befe24c9f73cb2b9eeac324503b81466296ccbb7db"
+  },
+  {
+    "source": "generated/three-board-e01/base/Camera.kicad_sym",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/base/Camera.kicad_sym",
+    "sha256": "96d7f81e70a81a9393d95bd7c014e3cd6489392326d67cd9cf2328546eb3936c"
+  },
+  {
+    "source": "generated/three-board-e01/base/camera.pdf",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/base/camera.pdf",
+    "sha256": "11c239f9360fad20bc9d9efcac7de055614f697b4b490f447474eadd96a21df5"
+  },
+  {
+    "source": "generated/three-board-e01/base/drc.json",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/base/drc.json",
+    "sha256": "7a4ea0b2842a279831fb295c3fc92a9c3dbdd16bb6473ce97d842976d6d86a7f"
+  },
+  {
+    "source": "generated/three-board-e01/base/erc.json",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/base/erc.json",
+    "sha256": "cc5a9d4859550949f687aab914d8c26a9d7db38d8ca49c1a2c91741898918788"
+  },
+  {
+    "source": "generated/three-board-e01/base/expected-connections.json",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/base/expected-connections.json",
+    "sha256": "4049b4edd1854a8f8284d3c07cf0e32af41e0f23c2e00754cfaa5c628e4387da"
+  },
+  {
+    "source": "generated/three-board-e01/base/fp-lib-table",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/base/fp-lib-table",
+    "sha256": "69e179b3eca0a0b396223fa6852004b8829d3987699964a59302a4e232ac574e"
+  },
+  {
+    "source": "generated/three-board-e01/base/LICENSE-Antmicro",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/base/LICENSE-Antmicro",
+    "sha256": "fb2b23b5e5b3cb244991a8f239b91dfc362e2ecf51d06b7f0329f0ef88a52f47"
+  },
+  {
+    "source": "generated/three-board-e01/base/LICENSE-Espressif-library.md",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/base/LICENSE-Espressif-library.md",
+    "sha256": "39a3698b6ce587d02de3f833b3701542132b762e73f1e70faffe67d9674c265b"
+  },
+  {
+    "source": "generated/three-board-e01/base/native-check.json",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/base/native-check.json",
+    "sha256": "9ba16091c28aec1a341a2b40c593022cbda7c6262e7e640228547571e5751686"
+  },
+  {
+    "source": "generated/three-board-e01/base/netlist.xml",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/base/netlist.xml",
+    "sha256": "fc8121552468fd56f960d7ac945bb986a4cbc5f368e8718794964385b6ea37e0"
+  },
+  {
+    "source": "generated/three-board-e01/base/placement.svg",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/base/placement.svg",
+    "sha256": "09104930716bf8430af72c4ac348b3b53452a5856c742f3ac10b2b554c8c5840"
+  },
+  {
+    "source": "generated/three-board-e01/base/sym-lib-table",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/base/sym-lib-table",
+    "sha256": "b5eaf7f943f92b0e66f15ab820d6082d39e8f8be426feda46fb1698d9acc86d2"
+  },
+  {
+    "source": "generated/three-board-e01/head-interface/cad-pads.json",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/head-interface/cad-pads.json",
+    "sha256": "b2b18a3841dd54bd0b54e8127033e4efa166c4b26c63a8a20d06a5b46d6f8ab7"
+  },
+  {
+    "source": "generated/three-board-e01/head-interface/camera.kicad_pcb",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/head-interface/camera.kicad_pcb",
+    "sha256": "60f7a8db51fcbb1d47f5f9b74357d85ea81005e914a389bdd70400d5c32dff08"
+  },
+  {
+    "source": "generated/three-board-e01/head-interface/camera.kicad_prl",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/head-interface/camera.kicad_prl",
+    "sha256": "43d316e87b7372029d541b98c8b5b22bd80092ef9c903a3acced8af414b86de3"
+  },
+  {
+    "source": "generated/three-board-e01/head-interface/camera.kicad_pro",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/head-interface/camera.kicad_pro",
+    "sha256": "daceadf425f480d8db4b04ab16a94e0daf692a3245b3d8dd5046470eb689988c"
+  },
+  {
+    "source": "generated/three-board-e01/head-interface/camera.kicad_sch",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/head-interface/camera.kicad_sch",
+    "sha256": "3cf6c3cb43566de178e0019fc848e0902803924952d48905286c0b25947b2e3e"
+  },
+  {
+    "source": "generated/three-board-e01/head-interface/Camera.kicad_sym",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/head-interface/Camera.kicad_sym",
+    "sha256": "265348eefc2560dc61e2e5f7ff2a7fd5d4a72c57f8f80150c2b02f57b55892a2"
+  },
+  {
+    "source": "generated/three-board-e01/head-interface/camera.pdf",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/head-interface/camera.pdf",
+    "sha256": "880170073554423e996e1ba79c8a552f3a923b3689b72a9c5b943324ee7dc567"
+  },
+  {
+    "source": "generated/three-board-e01/head-interface/drc.json",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/head-interface/drc.json",
+    "sha256": "6e92fa63e0dfac01237c7880e34ad001f4a91e564943062675f036517ddb6f23"
+  },
+  {
+    "source": "generated/three-board-e01/head-interface/erc.json",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/head-interface/erc.json",
+    "sha256": "db9c88c5e7b8f10112b6cf4a6bacdda345dac1c261515ef2adef69ae510c9769"
+  },
+  {
+    "source": "generated/three-board-e01/head-interface/expected-connections.json",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/head-interface/expected-connections.json",
+    "sha256": "8d587c0efbf8907b0a89c4b001aaedc1f53b6aae5fa206a0e51ecf345a26bf89"
+  },
+  {
+    "source": "generated/three-board-e01/head-interface/fp-lib-table",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/head-interface/fp-lib-table",
+    "sha256": "69e179b3eca0a0b396223fa6852004b8829d3987699964a59302a4e232ac574e"
+  },
+  {
+    "source": "generated/three-board-e01/head-interface/LICENSE-Antmicro",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/head-interface/LICENSE-Antmicro",
+    "sha256": "fb2b23b5e5b3cb244991a8f239b91dfc362e2ecf51d06b7f0329f0ef88a52f47"
+  },
+  {
+    "source": "generated/three-board-e01/head-interface/LICENSE-Espressif-library.md",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/head-interface/LICENSE-Espressif-library.md",
+    "sha256": "39a3698b6ce587d02de3f833b3701542132b762e73f1e70faffe67d9674c265b"
+  },
+  {
+    "source": "generated/three-board-e01/head-interface/native-check.json",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/head-interface/native-check.json",
+    "sha256": "fbaad3e0e21cfb510d14b5576c411e3a853f31b7f562a0c9e379d64b945014ce"
+  },
+  {
+    "source": "generated/three-board-e01/head-interface/netlist.xml",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/head-interface/netlist.xml",
+    "sha256": "6998718371396b2cf420ca0326e7547fc9e51402693dfc2107c0f6b4356de74a"
+  },
+  {
+    "source": "generated/three-board-e01/head-interface/placement.svg",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/head-interface/placement.svg",
+    "sha256": "eaa673686d0b2339d27bb86282df607dd90734561143204c62dab63c1e458a42"
+  },
+  {
+    "source": "generated/three-board-e01/head-interface/sym-lib-table",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/head-interface/sym-lib-table",
+    "sha256": "b5eaf7f943f92b0e66f15ab820d6082d39e8f8be426feda46fb1698d9acc86d2"
+  },
+  {
+    "source": "generated/three-board-e01/head-interface/~camera.kicad_pcb.lck",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/head-interface/~camera.kicad_pcb.lck",
+    "sha256": "87573218d6ceb639ae7f4fa490f4ba619bff098793b499adc8895a281a4fe262"
+  },
+  {
+    "source": "generated/three-board-e01/head-interface/~camera.kicad_pro.lck",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/head-interface/~camera.kicad_pro.lck",
+    "sha256": "87573218d6ceb639ae7f4fa490f4ba619bff098793b499adc8895a281a4fe262"
+  },
+  {
+    "source": "generated/three-board-e01/references/953.pdf",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/references/953.pdf",
+    "sha256": "8840d3a37ab6a179b6f0a4fa70161d345853fc2d6d405c95c66e87383d7159ec"
+  },
+  {
+    "source": "generated/three-board-e01/references/953.txt",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/references/953.txt",
+    "sha256": "dab6e8cd936b552502d6fa5b7dd370f300e4a8ad758814940e3d647a77b53349"
+  },
+  {
+    "source": "generated/three-board-e01/references/954.pdf",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/references/954.pdf",
+    "sha256": "8de3c5048f9755a77e00a745b8de96109cd2b3870d4372c97ebd17516d066350"
+  },
+  {
+    "source": "generated/three-board-e01/references/954.txt",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/references/954.txt",
+    "sha256": "44612ae73f938b91e5b61a70cbb60f5ceb17589a78a9ad91dec1a7ce9529e7b5"
+  },
+  {
+    "source": "generated/three-board-e01/references/tps2553.pdf",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/references/tps2553.pdf",
+    "sha256": "d30a12e7b91a23f82b4fdf0d1d00c891534486da9e19ac2c22c42143d4d3d1c0"
+  },
+  {
+    "source": "generated/three-board-e01/references/tps2553.txt",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/references/tps2553.txt",
+    "sha256": "5834a0303ed09182ad57bc1fd4b3d9d3ceeea934d7cb7305d62f1de7e4f98327"
+  },
+  {
+    "source": "generated/three-board-e01/base/Camera.pretty/C_0402_1005Metric.kicad_mod",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/base/Camera.pretty/C_0402_1005Metric.kicad_mod",
+    "sha256": "3d8a1dc70b71dbc3a5786560f7f9d0cabe99f1182653b072cde5046e4e3f6fc4"
+  },
+  {
+    "source": "generated/three-board-e01/base/Camera.pretty/C_0603_1608Metric.kicad_mod",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/base/Camera.pretty/C_0603_1608Metric.kicad_mod",
+    "sha256": "d45eebd5cb9faace255d4ec95a0f9484efde898359507b02e2ba9bbb3ef6d857"
+  },
+  {
+    "source": "generated/three-board-e01/base/Camera.pretty/C_0805_2012Metric.kicad_mod",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/base/Camera.pretty/C_0805_2012Metric.kicad_mod",
+    "sha256": "e890bdf55fa18fc6df6878eb1b5251a991e1b93985509175eb269d3d002880b4"
+  },
+  {
+    "source": "generated/three-board-e01/base/Camera.pretty/DFN-6-1EP_2x2mm_P0.65mm_EP1x1.6mm.kicad_mod",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/base/Camera.pretty/DFN-6-1EP_2x2mm_P0.65mm_EP1x1.6mm.kicad_mod",
+    "sha256": "be736f272192fa5e74a7d52c836f0f5deef2d07e7702bcaee4dfebd233a97d0b"
+  },
+  {
+    "source": "generated/three-board-e01/base/Camera.pretty/D_0402_1005Metric.kicad_mod",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/base/Camera.pretty/D_0402_1005Metric.kicad_mod",
+    "sha256": "8125ef861993ff72fbe4206aa5592cf8b9d3676953c420ca8854aa9055033f86"
+  },
+  {
+    "source": "generated/three-board-e01/base/Camera.pretty/ECS_ECX1637B2_R11.kicad_mod",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/base/Camera.pretty/ECS_ECX1637B2_R11.kicad_mod",
+    "sha256": "8d186b8cf831119b0e930d4aa4b50cb28c83ed4d099efac47f37bdbaf4e1ee40"
+  },
+  {
+    "source": "generated/three-board-e01/base/Camera.pretty/Epson_SG210STF_2.5x2.0mm_R09.kicad_mod",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/base/Camera.pretty/Epson_SG210STF_2.5x2.0mm_R09.kicad_mod",
+    "sha256": "1047c93523b3e08b071c220ce1cfb0ab4bf67921ad49ef858dd8d025a563e507"
+  },
+  {
+    "source": "generated/three-board-e01/base/Camera.pretty/ESP32-P4.kicad_mod",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/base/Camera.pretty/ESP32-P4.kicad_mod",
+    "sha256": "63e9642f1b8e483e40f68dff5839a5f8f4c23ca45c180de5eed167bf348671d2"
+  },
+  {
+    "source": "generated/three-board-e01/base/Camera.pretty/JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal.kicad_mod",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/base/Camera.pretty/JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal.kicad_mod",
+    "sha256": "a069a407f8dc31be24091af862cede7c081ddcd623c80d9326df418c09ac392a"
+  },
+  {
+    "source": "generated/three-board-e01/base/Camera.pretty/L_0603_1608Metric.kicad_mod",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/base/Camera.pretty/L_0603_1608Metric.kicad_mod",
+    "sha256": "3fcbaea27d33b968bc9da19e1fb7973635671eb634e8d84dbc897255cfda1478"
+  },
+  {
+    "source": "generated/three-board-e01/base/Camera.pretty/Murata_DFE252012F_R11.kicad_mod",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/base/Camera.pretty/Murata_DFE252012F_R11.kicad_mod",
+    "sha256": "585f9dacba3fadafad62f9193149e61353bd4f21cdc1852a653bf3643f79f698"
+  },
+  {
+    "source": "generated/three-board-e01/base/Camera.pretty/ProgrammingPads_5x1mm_P1.5mm.kicad_mod",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/base/Camera.pretty/ProgrammingPads_5x1mm_P1.5mm.kicad_mod",
+    "sha256": "16cbccd7d33b73757eff01e12713e1d635606dd724a1fe30d0b809890c373f3e"
+  },
+  {
+    "source": "generated/three-board-e01/base/Camera.pretty/R_0402_1005Metric.kicad_mod",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/base/Camera.pretty/R_0402_1005Metric.kicad_mod",
+    "sha256": "6ed88b70926af431471c0ccaf6a55485f8cedab01cce4d1d4f3298a6cb6cef2c"
+  },
+  {
+    "source": "generated/three-board-e01/base/Camera.pretty/SOT-666.kicad_mod",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/base/Camera.pretty/SOT-666.kicad_mod",
+    "sha256": "49be652b5a07fdd6143cdd4566e366168b1768a96ab0414c94ecbf69263b031c"
+  },
+  {
+    "source": "generated/three-board-e01/base/Camera.pretty/SOT-883.kicad_mod",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/base/Camera.pretty/SOT-883.kicad_mod",
+    "sha256": "ac9a376f2fa78fd5786581d661de8e8dcb8fdecc03cd59c4fc9f6a76071a5aec"
+  },
+  {
+    "source": "generated/three-board-e01/base/Camera.pretty/TestPoint_Pad_1.0x1.0mm.kicad_mod",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/base/Camera.pretty/TestPoint_Pad_1.0x1.0mm.kicad_mod",
+    "sha256": "597af43807f0c0b9075ae0e12e8bc556d468aee3c293bab031434922cae05fb7"
+  },
+  {
+    "source": "generated/three-board-e01/base/Camera.pretty/TI_DRL0006A_R11.kicad_mod",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/base/Camera.pretty/TI_DRL0006A_R11.kicad_mod",
+    "sha256": "04efa690fde6f84dd4852488d655852888cfdd425fefe00f33360edf60986ae1"
+  },
+  {
+    "source": "generated/three-board-e01/base/Camera.pretty/TI_DRV0006A_E01.kicad_mod",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/base/Camera.pretty/TI_DRV0006A_E01.kicad_mod",
+    "sha256": "b008a3291f25cd72fec21b8a9a7bb9f51d1e802c7cfff9be1d5c677372af17d9"
+  },
+  {
+    "source": "generated/three-board-e01/base/Camera.pretty/TI_RGZ0048B_E01.kicad_mod",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/base/Camera.pretty/TI_RGZ0048B_E01.kicad_mod",
+    "sha256": "e55e58f6fd096988b729ebc97dba3ed09fcf0dc994789914c9af766d83b27d1e"
+  },
+  {
+    "source": "generated/three-board-e01/base/Camera.pretty/Winbond_USON-8-2EP_3x4mm_P0.8mm_EP0.2x0.8mm.kicad_mod",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/base/Camera.pretty/Winbond_USON-8-2EP_3x4mm_P0.8mm_EP0.2x0.8mm.kicad_mod",
+    "sha256": "bbeb7b60c135d1c471fec4cdca5d4eb6f697885d9ce984ca8456a65303e9ded3"
+  },
+  {
+    "source": "generated/three-board-e01/head-interface/Camera.pretty/C_0402_1005Metric.kicad_mod",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/head-interface/Camera.pretty/C_0402_1005Metric.kicad_mod",
+    "sha256": "3d8a1dc70b71dbc3a5786560f7f9d0cabe99f1182653b072cde5046e4e3f6fc4"
+  },
+  {
+    "source": "generated/three-board-e01/head-interface/Camera.pretty/C_0603_1608Metric.kicad_mod",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/head-interface/Camera.pretty/C_0603_1608Metric.kicad_mod",
+    "sha256": "d45eebd5cb9faace255d4ec95a0f9484efde898359507b02e2ba9bbb3ef6d857"
+  },
+  {
+    "source": "generated/three-board-e01/head-interface/Camera.pretty/C_0805_2012Metric.kicad_mod",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/head-interface/Camera.pretty/C_0805_2012Metric.kicad_mod",
+    "sha256": "e890bdf55fa18fc6df6878eb1b5251a991e1b93985509175eb269d3d002880b4"
+  },
+  {
+    "source": "generated/three-board-e01/head-interface/Camera.pretty/D_0402_1005Metric.kicad_mod",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/head-interface/Camera.pretty/D_0402_1005Metric.kicad_mod",
+    "sha256": "8125ef861993ff72fbe4206aa5592cf8b9d3676953c420ca8854aa9055033f86"
+  },
+  {
+    "source": "generated/three-board-e01/head-interface/Camera.pretty/Epson_SG210STF_2.5x2.0mm_R09.kicad_mod",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/head-interface/Camera.pretty/Epson_SG210STF_2.5x2.0mm_R09.kicad_mod",
+    "sha256": "1047c93523b3e08b071c220ce1cfb0ab4bf67921ad49ef858dd8d025a563e507"
+  },
+  {
+    "source": "generated/three-board-e01/head-interface/Camera.pretty/JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal.kicad_mod",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/head-interface/Camera.pretty/JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal.kicad_mod",
+    "sha256": "a069a407f8dc31be24091af862cede7c081ddcd623c80d9326df418c09ac392a"
+  },
+  {
+    "source": "generated/three-board-e01/head-interface/Camera.pretty/Kingbright_AP1608F3C_R09.kicad_mod",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/head-interface/Camera.pretty/Kingbright_AP1608F3C_R09.kicad_mod",
+    "sha256": "e6d4cc2e52a7172e26b103c1d70ee2a886f386edbb55d3381d5dc5e59224a9fd"
+  },
+  {
+    "source": "generated/three-board-e01/head-interface/Camera.pretty/L_0603_1608Metric.kicad_mod",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/head-interface/Camera.pretty/L_0603_1608Metric.kicad_mod",
+    "sha256": "3fcbaea27d33b968bc9da19e1fb7973635671eb634e8d84dbc897255cfda1478"
+  },
+  {
+    "source": "generated/three-board-e01/head-interface/Camera.pretty/L_0805_2012Metric.kicad_mod",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/head-interface/Camera.pretty/L_0805_2012Metric.kicad_mod",
+    "sha256": "15dfbe449e081e5b3f763a98cb582b4a639ec3d0287bce64fc216072cb85d03e"
+  },
+  {
+    "source": "generated/three-board-e01/head-interface/Camera.pretty/Murata_DFE252012F_R11.kicad_mod",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/head-interface/Camera.pretty/Murata_DFE252012F_R11.kicad_mod",
+    "sha256": "585f9dacba3fadafad62f9193149e61353bd4f21cdc1852a653bf3643f79f698"
+  },
+  {
+    "source": "generated/three-board-e01/head-interface/Camera.pretty/OV9281.kicad_mod",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/head-interface/Camera.pretty/OV9281.kicad_mod",
+    "sha256": "61adfc2c17d4a3cbe3693c812b57693c27e804bce50b9406c70aa32d97e23340"
+  },
+  {
+    "source": "generated/three-board-e01/head-interface/Camera.pretty/R_0402_1005Metric.kicad_mod",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/head-interface/Camera.pretty/R_0402_1005Metric.kicad_mod",
+    "sha256": "6ed88b70926af431471c0ccaf6a55485f8cedab01cce4d1d4f3298a6cb6cef2c"
+  },
+  {
+    "source": "generated/three-board-e01/head-interface/Camera.pretty/SOT-883.kicad_mod",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/head-interface/Camera.pretty/SOT-883.kicad_mod",
+    "sha256": "ac9a376f2fa78fd5786581d661de8e8dcb8fdecc03cd59c4fc9f6a76071a5aec"
+  },
+  {
+    "source": "generated/three-board-e01/head-interface/Camera.pretty/TestPoint_Pad_1.0x1.0mm.kicad_mod",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/head-interface/Camera.pretty/TestPoint_Pad_1.0x1.0mm.kicad_mod",
+    "sha256": "597af43807f0c0b9075ae0e12e8bc556d468aee3c293bab031434922cae05fb7"
+  },
+  {
+    "source": "generated/three-board-e01/head-interface/Camera.pretty/Texas_X2SON-4_1x1mm_P0.65mm.kicad_mod",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/head-interface/Camera.pretty/Texas_X2SON-4_1x1mm_P0.65mm.kicad_mod",
+    "sha256": "afc70d9e4f94ed9245485a778afbfdee582ec40bd375d61ea5c57a18a6486c60"
+  },
+  {
+    "source": "generated/three-board-e01/head-interface/Camera.pretty/TI_DRL0006A_R11.kicad_mod",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/head-interface/Camera.pretty/TI_DRL0006A_R11.kicad_mod",
+    "sha256": "04efa690fde6f84dd4852488d655852888cfdd425fefe00f33360edf60986ae1"
+  },
+  {
+    "source": "generated/three-board-e01/head-interface/Camera.pretty/TI_RHB0032P_E01.kicad_mod",
+    "retained": "designs/cameras/ov9281/variants/three-board/checkpoints/e001-connected-draft/head-interface/Camera.pretty/TI_RHB0032P_E01.kicad_mod",
+    "sha256": "72f771017367d38686badbb884c165e6139de882c3ab2a98b24fb893525b2fdd"
+  },
+  {
+    "source": "generated/eye-tracker/rat/eye-world-print-r06/print-in-place-v2/preview-success.json",
+    "retained": "releases/eye-tracker/rat/eye-world/w006/print-in-place-v2/preview-success.json",
+    "sha256": "c09b4603edcd27562998490f7125ee34cab7d6797f002876e3f8b3bb168634d9"
+  },
+  {
+    "source": "generated/eye-tracker/rat/eye-world-print-r06/print-in-place-v2/print-validation.json",
+    "retained": "releases/eye-tracker/rat/eye-world/w006/print-in-place-v2/print-validation.json",
+    "sha256": "0cbed01657a5f315934fb9e087d202b7133adc3d43f4898226d175b8fc96351b"
+  },
+  {
+    "source": "generated/eye-tracker/rat/eye-world-print-r06/print-in-place-v2/RAT-W06-PIP-print-pack.zip",
+    "retained": "releases/eye-tracker/rat/eye-world/w006/print-in-place-v2/RAT-W06-PIP-print-pack.zip",
+    "sha256": "b5ba09bd7039844a1008f89f1bd5044ed80d1457679834339312f5164346658f"
+  },
+  {
+    "source": "generated/eye-tracker/rat/eye-world-print-r06/print-in-place-v2/RAT-W06-print-in-place.FCStd",
+    "retained": "releases/eye-tracker/rat/eye-world/w006/print-in-place-v2/RAT-W06-print-in-place.FCStd",
+    "sha256": "78e1222ee145bd7f821af015cd328b9f13c4862ec5d8ecd23430969072c3fdd1"
+  },
+  {
+    "source": "generated/eye-tracker/rat/eye-world-print-r06/print-in-place-v2/print-pack/independent-validation.json",
+    "retained": "releases/eye-tracker/rat/eye-world/w006/print-in-place-v2/print-pack/independent-validation.json",
+    "sha256": "1f6039a27426c64d2dd6eb34c343e7fb8833829afbbe9e80de3b94eff784717c"
+  },
+  {
+    "source": "generated/eye-tracker/rat/eye-world-print-r06/print-in-place-v2/print-pack/print-layout.png",
+    "retained": "releases/eye-tracker/rat/eye-world/w006/print-in-place-v2/print-pack/print-layout.png",
+    "sha256": "9d38b01cacc6f1e39af90750a52e18bcb3673353611637cfa2f42448a40fcd9b"
+  },
+  {
+    "source": "generated/eye-tracker/rat/eye-world-print-r06/print-in-place-v2/print-pack/print-validation.json",
+    "retained": "releases/eye-tracker/rat/eye-world/w006/print-in-place-v2/print-pack/print-validation.json",
+    "sha256": "0cbed01657a5f315934fb9e087d202b7133adc3d43f4898226d175b8fc96351b"
+  },
+  {
+    "source": "generated/eye-tracker/rat/eye-world-print-r06/print-in-place-v2/print-pack/RAT-W06-PIP-all-hardware.stl",
+    "retained": "releases/eye-tracker/rat/eye-world/w006/print-in-place-v2/print-pack/RAT-W06-PIP-all-hardware.stl",
+    "sha256": "d202f7bd86334c2135504128633aa65db8ab6eb9b90d452ee48664d983e1bcb8"
+  },
+  {
+    "source": "generated/eye-tracker/rat/eye-world-print-r06/print-in-place-v2/print-pack/RAT-W06-PIP-baseplate.stl",
+    "retained": "releases/eye-tracker/rat/eye-world/w006/print-in-place-v2/print-pack/RAT-W06-PIP-baseplate.stl",
+    "sha256": "e35804db1a3a63661d36c3057e588c664294c5d3944cd176470a75c07ae3eaf2"
+  },
+  {
+    "source": "generated/eye-tracker/rat/eye-world-print-r06/print-in-place-v2/print-pack/RAT-W06-PIP-carrier-with-captive-holders.stl",
+    "retained": "releases/eye-tracker/rat/eye-world/w006/print-in-place-v2/print-pack/RAT-W06-PIP-carrier-with-captive-holders.stl",
+    "sha256": "8ac1086de6a9e5903430d342e2a657374d43269d2c24bf67f9c04856c864df6d"
+  },
+  {
+    "source": "generated/eye-tracker/rat/eye-world-print-r06/print-in-place-v2/print-pack/RAT-W06-PIP-eye-clip.stl",
+    "retained": "releases/eye-tracker/rat/eye-world/w006/print-in-place-v2/print-pack/RAT-W06-PIP-eye-clip.stl",
+    "sha256": "95521e380230b2858c777002f497421ce3f028c5222e7e5bf6c262521ba7b666"
+  },
+  {
+    "source": "generated/eye-tracker/rat/eye-world-print-r06/print-in-place-v2/print-pack/RAT-W06-PIP-hardware-without-baseplate.stl",
+    "retained": "releases/eye-tracker/rat/eye-world/w006/print-in-place-v2/print-pack/RAT-W06-PIP-hardware-without-baseplate.stl",
+    "sha256": "2aaf089dc3dc09093ded2c4f4bbf31d102c9b4a2f4e653dfabd3b6ba55fde19d"
+  },
+  {
+    "source": "generated/eye-tracker/rat/eye-world-print-r06/print-in-place-v2/print-pack/RAT-W06-PIP-world-clip.stl",
+    "retained": "releases/eye-tracker/rat/eye-world/w006/print-in-place-v2/print-pack/RAT-W06-PIP-world-clip.stl",
+    "sha256": "88d6113bb5e5031858f5c6a333b3de768aa32185d1201c5a5f12f2fb2adb4c1f"
+  },
+  {
+    "source": "generated/eye-tracker/rat/eye-world-print-r06/print-in-place-v2/print-pack/README.txt",
+    "retained": "releases/eye-tracker/rat/eye-world/w006/print-in-place-v2/print-pack/README.txt",
+    "sha256": "23244ca768c7cf65173e5f4c88269fac96d6fc2c92374a6ee57744788cac7f21"
+  },
+  {
+    "source": "generated/eye-tracker/mouse/print-r23/anatomy/Baseplate.stl",
+    "retained": "releases/eye-tracker/mouse/monocular/r023/anatomy/Baseplate.stl",
+    "sha256": "e061936822166b8d177c9945786cb1071205c750710fcb4911d80a7ddc7629c0"
+  },
+  {
+    "source": "generated/eye-tracker/mouse/print-r23/anatomy/Cornea.stl",
+    "retained": "releases/eye-tracker/mouse/monocular/r023/anatomy/Cornea.stl",
+    "sha256": "7505821608f7a6abe6f89ab592bf2dc6289cd455cb669b0d9738fee5b8fcb915"
+  },
+  {
+    "source": "generated/eye-tracker/mouse/print-r23/anatomy/mouse-eyes-embedded-baseplate.stl",
+    "retained": "releases/eye-tracker/mouse/monocular/r023/anatomy/mouse-eyes-embedded-baseplate.stl",
+    "sha256": "b8763b70ff7f798d0d06ab8afed16889b1cfcc75cdc5afc9a9083cbee39dc1d0"
+  },
+  {
+    "source": "generated/eye-tracker/mouse/print-r23/anatomy/mouse-eyes.stl",
+    "retained": "releases/eye-tracker/mouse/monocular/r023/anatomy/mouse-eyes.stl",
+    "sha256": "35a0949f23c7fb2fee99fd34097460d3a793cb36457642282a78d7a54fafe7dc"
+  },
+  {
+    "source": "generated/eye-tracker/mouse/print-r23/anatomy/MOUSE-R23-four-colors.3mf",
+    "retained": "releases/eye-tracker/mouse/monocular/r023/anatomy/MOUSE-R23-four-colors.3mf",
+    "sha256": "ff241f8adcfa46c2bf2705dab8713fe9ea64b412c5872066325222613bc5f998"
+  },
+  {
+    "source": "generated/eye-tracker/mouse/print-r23/anatomy/MOUSE-R23-Snapmaker-U1.3mf",
+    "retained": "releases/eye-tracker/mouse/monocular/r023/anatomy/MOUSE-R23-Snapmaker-U1.3mf",
+    "sha256": "be987bcc9baabaa99990e53dcb866e73e08d2662c0fa9177ffa5ce7a7bba4b40"
+  },
+  {
+    "source": "generated/eye-tracker/mouse/print-r23/anatomy/Sclera.stl",
+    "retained": "releases/eye-tracker/mouse/monocular/r023/anatomy/Sclera.stl",
+    "sha256": "4f5637faf66fa92fa9362256fd455bf5efd9f35fa9a2dc108c423287d1f65bff"
+  },
+  {
+    "source": "generated/eye-tracker/mouse/print-r23/anatomy/Skull-and-bridge.stl",
+    "retained": "releases/eye-tracker/mouse/monocular/r023/anatomy/Skull-and-bridge.stl",
+    "sha256": "2057e1ab4cc4a6ea84a520e53cb4ef68c604db09abfa9b3ccce6afc3aff54f69"
+  },
+  {
+    "source": "generated/eye-tracker/mouse/print-r23/hardware/MOUSE-R23-camera-clip.stl",
+    "retained": "releases/eye-tracker/mouse/monocular/r023/hardware/MOUSE-R23-camera-clip.stl",
+    "sha256": "744babe3506d849d795592d2d2ab1cede87917c830aabf9c9b04452c4d461aa1"
+  },
+  {
+    "source": "generated/eye-tracker/mouse/print-r23/hardware/MOUSE-R23-carrier-and-holder.stl",
+    "retained": "releases/eye-tracker/mouse/monocular/r023/hardware/MOUSE-R23-carrier-and-holder.stl",
+    "sha256": "63f7ba791e4aa6f2c2217e3b736fa39134bb57847d5f8e67b530792600c4515b"
+  },
+  {
+    "source": "generated/eye-tracker/mouse/print-r23/source/35_mic_23strain_mus_template_UCHAR-label.nii.gz",
+    "retained": "releases/eye-tracker/mouse/monocular/r023/source/35_mic_23strain_mus_template_UCHAR-label.nii.gz",
+    "sha256": "06f68b4612d9611d3645c58548106a375f57cef960947105c70bb5895a37c29f"
+  },
+  {
+    "source": "generated/eye-tracker/mouse/print-r23/source/accepted-eye-placement.json",
+    "retained": "releases/eye-tracker/mouse/monocular/r023/source/accepted-eye-placement.json",
+    "sha256": "f32f946757f8f577d26f8dfb030195c043917fa0243c734ddc7ed02efac361b5"
+  },
+  {
+    "source": "generated/eye-tracker/mouse/print-r23/source/atlas-registration.json",
+    "retained": "releases/eye-tracker/mouse/monocular/r023/source/atlas-registration.json",
+    "sha256": "a5478fe8e302412e1ad2937edab3d8ad52b3cc2e9a11f2392260b75ffb57e052"
+  },
+  {
+    "source": "generated/eye-tracker/mouse/print-r23/source/build_anatomy.py",
+    "retained": "releases/eye-tracker/mouse/monocular/r023/source/build_anatomy.py",
+    "sha256": "3c6fb2ccc2e1cf7b2dd07b71e800679d501c628c0cf143bf85351646f92ab5fa"
+  },
+  {
+    "source": "generated/eye-tracker/mouse/print-r23/source/connect_jaw.py",
+    "retained": "releases/eye-tracker/mouse/monocular/r023/source/connect_jaw.py",
+    "sha256": "4158cd8ac15c0620b94171456607fbbad5d927733c5a9678d0659f5afdcb1710"
+  },
+  {
+    "source": "generated/eye-tracker/mouse/print-r23/source/extract_mandibles.py",
+    "retained": "releases/eye-tracker/mouse/monocular/r023/source/extract_mandibles.py",
+    "sha256": "ec0b54b8984a65cda5c0d8554753f322fa78968def4e5d3ffcca1c21fbe5200f"
+  },
+  {
+    "source": "generated/eye-tracker/mouse/print-r23/source/inspect_jaw.py",
+    "retained": "releases/eye-tracker/mouse/monocular/r023/source/inspect_jaw.py",
+    "sha256": "002980a8ec5f1944c67d56d486cb279ede04d028574548aae2bf7fdf0c361673"
+  },
+  {
+    "source": "generated/eye-tracker/mouse/print-r23/source/left-mandible-world.stl",
+    "retained": "releases/eye-tracker/mouse/monocular/r023/source/left-mandible-world.stl",
+    "sha256": "acf76bb29b3ca145fef2f6bc6761cb07bc654891945455fff7c4bf8a466898f5"
+  },
+  {
+    "source": "generated/eye-tracker/mouse/print-r23/source/LICENSE",
+    "retained": "releases/eye-tracker/mouse/monocular/r023/source/LICENSE",
+    "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+  },
+  {
+    "source": "generated/eye-tracker/mouse/print-r23/source/lineage.json",
+    "retained": "releases/eye-tracker/mouse/monocular/r023/source/lineage.json",
+    "sha256": "310706fabedb4a8d3498e73091ba7d8886676102c65f7499595e082f1b014400"
+  },
+  {
+    "source": "generated/eye-tracker/mouse/print-r23/source/main.R",
+    "retained": "releases/eye-tracker/mouse/monocular/r023/source/main.R",
+    "sha256": "97af7934b16af1a036721648c0674cac29237c30a1bd0f9eea7d26f807d80395"
+  },
+  {
+    "source": "generated/eye-tracker/mouse/print-r23/source/package.py",
+    "retained": "releases/eye-tracker/mouse/monocular/r023/source/package.py",
+    "sha256": "6e82c3badb6236e37315776f7987eca15db4e95681cf978cbfe393ecd4654d6a"
+  },
+  {
+    "source": "generated/eye-tracker/mouse/print-r23/source/prepare_inputs.py",
+    "retained": "releases/eye-tracker/mouse/monocular/r023/source/prepare_inputs.py",
+    "sha256": "503466071f4856b10e0ddf3f2801dbd98a1649acfdcc4d211d8bd7e223e3f56a"
+  },
+  {
+    "source": "generated/eye-tracker/mouse/print-r23/source/print-connections-world.stl",
+    "retained": "releases/eye-tracker/mouse/monocular/r023/source/print-connections-world.stl",
+    "sha256": "ddf1dac957887348cd3ecc5248ccffdeecaf7630acc363b06a2a7170c3285a28"
+  },
+  {
+    "source": "generated/eye-tracker/mouse/print-r23/source/render.py",
+    "retained": "releases/eye-tracker/mouse/monocular/r023/source/render.py",
+    "sha256": "a10d66e91b71ae781096ada8666be9fbcc04e2201ac52546abdbe752f033bedb"
+  },
+  {
+    "source": "generated/eye-tracker/mouse/print-r23/source/right-mandible-world.stl",
+    "retained": "releases/eye-tracker/mouse/monocular/r023/source/right-mandible-world.stl",
+    "sha256": "611f996582ee6774d2f6af8345124b34d3031fa2f199c12ecdf63f4988b25f44"
+  },
+  {
+    "source": "generated/eye-tracker/mouse/print-r23/README.md",
+    "retained": "releases/eye-tracker/mouse/monocular/r023/README.md",
+    "sha256": "55c0a83cccc582cbf132ba123b6f7df46e7f18056114591640c1e44e6a8b2314"
+  },
+  {
+    "source": "generated/eye-tracker/mouse/print-r23/anatomy-validation.json",
+    "retained": "releases/eye-tracker/mouse/monocular/r023/anatomy-validation.json",
+    "sha256": "099388dc100a356955f4ec38fd7adcbffcbdcad8d655a21baade633175a5d726"
+  },
+  {
+    "source": "generated/eye-tracker/mouse/print-r23/hardware-validation.json",
+    "retained": "releases/eye-tracker/mouse/monocular/r023/hardware-validation.json",
+    "sha256": "614fb16ff2c31035c3d02e65f0a5b238f641bd3c7f0c4b5083983fe34468015d"
+  },
+  {
+    "source": "generated/eye-tracker/mouse/print-r23/hardware-mesh-validation.json",
+    "retained": "releases/eye-tracker/mouse/monocular/r023/hardware-mesh-validation.json",
+    "sha256": "bf16b132eed0097d86ecf0b76305cace6990d9c9b66c9fc028b5454ce6793462"
+  },
+  {
+    "source": "generated/eye-tracker/mouse/print-r23/mandible-extraction.json",
+    "retained": "releases/eye-tracker/mouse/monocular/r023/mandible-extraction.json",
+    "sha256": "ac091a93f974585d1d7c358c58365941a79d0e126d357ab07500e8da80620f02"
+  },
+  {
+    "source": "generated/eye-tracker/mouse/print-r23/jaw-connections.json",
+    "retained": "releases/eye-tracker/mouse/monocular/r023/jaw-connections.json",
+    "sha256": "3ac1ce83cc9627f28b747a3f1a4d0cebc6ee48fab2a1b34d1ef53ff0a1d35c02"
+  },
+  {
+    "source": "generated/eye-tracker/mouse/print-r23/preservation-validation.json",
+    "retained": "releases/eye-tracker/mouse/monocular/r023/preservation-validation.json",
+    "sha256": "104475ff80beca7fa86942deb95473e8dd1c905b86e8b5f5a214a9ef17c0087d"
+  },
+  {
+    "source": "generated/eye-tracker/mouse/print-r23/anatomy-preview.png",
+    "retained": "releases/eye-tracker/mouse/monocular/r023/anatomy-preview.png",
+    "sha256": "069ea6419e2b2472d4470cea73d31c0ac310a281ee2f2c58eee44404b4c3151c"
+  },
+  {
+    "source": "generated/eye-tracker/mouse/print-r23/jaw-side-view.png",
+    "retained": "releases/eye-tracker/mouse/monocular/r023/jaw-side-view.png",
+    "sha256": "0fac885c2c83eb2050a409f814b9423610de8abd4deff61b38818d77c4d66f6e"
+  },
+  {
+    "source": "generated/eye-tracker/mouse/print-r23/jaw-front-view.png",
+    "retained": "releases/eye-tracker/mouse/monocular/r023/jaw-front-view.png",
+    "sha256": "d5a8bc3d2be926a73719256ffe48da41cd06dce5637bb31d7bb92ed801b3e396"
+  },
+  {
+    "source": "generated/eye-tracker/mouse/print-r23/jaw-registration-review.png",
+    "retained": "releases/eye-tracker/mouse/monocular/r023/jaw-registration-review.png",
+    "sha256": "ef86d56b6dc0f3ac0a150b53e9362d6ff56d4d38844c4da25df4644c022d7a89"
+  },
+  {
+    "source": "generated/eye-tracker/mouse/print-r23/README.md",
+    "retained": "releases/eye-tracker/mouse/monocular/r023/README.md",
+    "sha256": "55c0a83cccc582cbf132ba123b6f7df46e7f18056114591640c1e44e6a8b2314"
+  },
+  {
+    "source": "generated/eye-tracker/mouse/print-r23/manifest.json",
+    "retained": "releases/eye-tracker/mouse/monocular/r023/manifest.json",
+    "sha256": "b91b34b97aff1488709c19aba8f0af2123f6b2b1a4623039ac200513b61d6f16"
+  }
+]

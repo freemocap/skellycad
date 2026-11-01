@@ -1,0 +1,11 @@
+[
+  {
+    "path": "designs/eye-tracker/rat/checkpoints/ET-RAT-MONO-R01.FCStd",
+    "before_sha256": "9c81ed0189cfa4be9fec9e01cc48621c92a28be2dde8c5535c1e609df22c3bf7",
+    "after_sha256": "ad74a3f14aaa709880039c927690475f6119d074f73b0a550a3064383394762e",
+    "preserved_previous": "designs/eye-tracker/rat/checkpoints/ET-RAT-MONO-R01-local-edited-before-cleanup.FCStd",
+    "source": "designs/eye-tracker/rat/checkpoints/ET-RAT-MONO-R01.20261013-134340.FCBak",
+    "reason": "Recover exact originally selected bytes; preserve later local edit separately.",
+    "retained_previous": "designs/eye-tracker/rat/variants/monocular/checkpoints/r001-baseline/ET-RAT-MONO-R01-local-edited-before-cleanup.FCStd"
+  }
+]

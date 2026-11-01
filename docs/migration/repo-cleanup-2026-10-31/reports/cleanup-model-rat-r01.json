@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "revision": "ET-RAT-MONO-R01",
+  "native_sha256": "ad74a3f14aaa709880039c927690475f6119d074f73b0a550a3064383394762e",
+  "objects": 17,
+  "matched_parts": {
+    "skull_mount_Baseplate": {
+      "object": "skull_mount_Baseplate",
+      "solids": 1,
+      "volume_mm3": 442.12802193929843
+    },
+    "eye_primary_Holder": {
+      "object": "eye_primary_Holder",
+      "solids": 1,
+      "volume_mm3": 301.6317729979906
+    },
+    "eye_primary_Cap": {
+      "object": "eye_primary_Cap",
+      "solids": 1,
+      "volume_mm3": 697.9818477412352
+    },
+    "eye_primary_Clip": {
+      "object": "eye_primary_Clip",
+      "solids": 1,
+      "volume_mm3": 62.296044979928205
+    },
+    "eye_primary_Carrier": {
+      "object": "eye_primary_Carrier",
+      "solids": 1,
+      "volume_mm3": 1246.3905491064168
+    }
+  },
+  "zip_integrity": true,
+  "physical_fit_demonstrated": false,
+  "exports": {}
+}

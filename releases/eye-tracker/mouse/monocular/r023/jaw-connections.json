@@ -1,0 +1,79 @@
+{
+  "units": "mm",
+  "parent_skull_sha256": "ae81503b0e33c51ff99e35e35b7db062f6f1d5e0d07fa55e664f73e0b2895023",
+  "connections": [
+    {
+      "name": "right-posterior-attachment",
+      "diameter_mm": 1.2,
+      "endpoints_world_mm": [
+        [
+          2.8647403717041016,
+          -6.892902851104736,
+          5.053055286407471
+        ],
+        [
+          2.872706651687622,
+          -6.853429794311523,
+          4.9927473068237305
+        ]
+      ],
+      "surface_gap_mm": 0.07251645489713958,
+      "contact_volumes_mm3": [
+        0.22002476190557535,
+        0.5384609988408999
+      ]
+    },
+    {
+      "name": "left-posterior-attachment",
+      "diameter_mm": 1.2,
+      "endpoints_world_mm": [
+        [
+          3.225621223449707,
+          -6.984577655792236,
+          -4.820152282714844
+        ],
+        [
+          3.19193172454834,
+          -6.932760715484619,
+          -4.769517421722412
+        ]
+      ],
+      "surface_gap_mm": 0.07989910379216565,
+      "contact_volumes_mm3": [
+        0.22117166017956721,
+        0.49398749197510133
+      ]
+    },
+    {
+      "name": "anterior-midline-attachment",
+      "diameter_mm": 1.2,
+      "endpoints_world_mm": [
+        [
+          14.458541870117188,
+          -11.256101608276367,
+          0.6054869294166565
+        ],
+        [
+          14.46072006225586,
+          -11.254717826843262,
+          0.5616655349731445
+        ]
+      ],
+      "surface_gap_mm": 0.04389731179720964,
+      "contact_volumes_mm3": [
+        0.34488460270858495,
+        0.34396312319381994
+      ]
+    }
+  ],
+  "added_connection_volume_mm3": 0.749876484769889,
+  "combined_volume_mm3": 976.2057723718267,
+  "connected_shells": 1,
+  "watertight": true,
+  "parent_skull_removed_volume_mm3": -3.8192792895960475e-06,
+  "mandible_removed_volume_mm3": [
+    -1.3758825585796788e-08,
+    -1.0150414927632362e-07
+  ],
+  "status": "Fixed atlas pose; engineering bridges; unsliced and unprinted"
+}

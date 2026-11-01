@@ -1,0 +1,4288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\jonma\code-stuff\github\freemocap\other\skellycad\generated\three-board-e01\head-interface\camera.kicad_sch</source>
+    <date>2026-10-29T13:15:41</date>
+    <tool>Eeschema 10.0.7</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>camera.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C7">
+      <value>1u</value>
+      <footprint>Camera:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">GRM188R71C105KA12D</field>
+        <field name="Region">head</field>
+        <field name="Footprint">Camera:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_C7" description="SMD Multilayer Ceramic Capacitor, 1 µF, 16 V, 0603 [1608 Metric], ± 10%, X5R, AVX 0603 MLCC"/>
+      <property name="MPN" value="GRM188R71C105KA12D"/>
+      <property name="Region" value="head"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="0603, SMT, CAPACITOR, PASSIVE, MLCC"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>18dc10f1-0439-54ca-b1b9-ad3b1f60d706</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C8">
+      <value>1u</value>
+      <footprint>Camera:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">GRM188R71C105KA12D</field>
+        <field name="Region">head</field>
+        <field name="Footprint">Camera:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_C8" description="SMD Multilayer Ceramic Capacitor, 1 µF, 16 V, 0603 [1608 Metric], ± 10%, X5R, AVX 0603 MLCC"/>
+      <property name="MPN" value="GRM188R71C105KA12D"/>
+      <property name="Region" value="head"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="0603, SMT, CAPACITOR, PASSIVE, MLCC"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b6630da3-e351-5ad1-a226-86a5293d5af1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C9">
+      <value>100n</value>
+      <footprint>Camera:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R71C104KA88D</field>
+        <field name="Region">head</field>
+        <field name="Footprint">Camera:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_C9" description="SMT Multilayer Ceramic Capacitor, 0.1 µF, 6.3 V, 0402 [1005 Metric], ± 10%, X5R, Walsin MLCC"/>
+      <property name="MPN" value="GRM155R71C104KA88D"/>
+      <property name="Region" value="head"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="0402, SMT, CAPACITOR, PASSIVE"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>448aee59-68bf-5bbf-91e7-7a54ca9fb3ec</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C10">
+      <value>1u</value>
+      <footprint>Camera:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">GRM188R71C105KA12D</field>
+        <field name="Region">head</field>
+        <field name="Footprint">Camera:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_C10" description="SMD Multilayer Ceramic Capacitor, 1 µF, 16 V, 0603 [1608 Metric], ± 10%, X5R, AVX 0603 MLCC"/>
+      <property name="MPN" value="GRM188R71C105KA12D"/>
+      <property name="Region" value="head"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="0603, SMT, CAPACITOR, PASSIVE, MLCC"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1785a0d0-d5c1-5605-9c6a-4736f7412a8a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C12">
+      <value>1u</value>
+      <footprint>Camera:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">GRM188R71C105KA12D</field>
+        <field name="Region">head</field>
+        <field name="Footprint">Camera:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_C12" description="SMD Multilayer Ceramic Capacitor, 1 µF, 16 V, 0603 [1608 Metric], ± 10%, X5R, AVX 0603 MLCC"/>
+      <property name="MPN" value="GRM188R71C105KA12D"/>
+      <property name="Region" value="head"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="0603, SMT, CAPACITOR, PASSIVE, MLCC"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f7049747-960a-53c3-845f-bae9bb4e9969</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C13">
+      <value>1u</value>
+      <footprint>Camera:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">GRM188R71C105KA12D</field>
+        <field name="Region">head</field>
+        <field name="Footprint">Camera:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_C13" description="SMD Multilayer Ceramic Capacitor, 1 µF, 16 V, 0603 [1608 Metric], ± 10%, X5R, AVX 0603 MLCC"/>
+      <property name="MPN" value="GRM188R71C105KA12D"/>
+      <property name="Region" value="head"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="0603, SMT, CAPACITOR, PASSIVE, MLCC"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6664b368-3a82-5367-a03c-70264cb0c88f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C14">
+      <value>100n</value>
+      <footprint>Camera:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R71C104KA88D</field>
+        <field name="Region">head</field>
+        <field name="Footprint">Camera:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_C14" description="SMT Multilayer Ceramic Capacitor, 0.1 µF, 6.3 V, 0402 [1005 Metric], ± 10%, X5R, Walsin MLCC"/>
+      <property name="MPN" value="GRM155R71C104KA88D"/>
+      <property name="Region" value="head"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="0402, SMT, CAPACITOR, PASSIVE"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f6ba0bd6-8a4e-59b7-84a0-505a7d35fc01</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C15">
+      <value>100n</value>
+      <footprint>Camera:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R71C104KA88D</field>
+        <field name="Region">head</field>
+        <field name="Footprint">Camera:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_C15" description="SMT Multilayer Ceramic Capacitor, 0.1 µF, 6.3 V, 0402 [1005 Metric], ± 10%, X5R, Walsin MLCC"/>
+      <property name="MPN" value="GRM155R71C104KA88D"/>
+      <property name="Region" value="head"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="0402, SMT, CAPACITOR, PASSIVE"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ac5a92ce-60f8-56b3-874a-6cec77cc5a1e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C16">
+      <value>100n</value>
+      <footprint>Camera:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R71C104KA88D</field>
+        <field name="Region">head</field>
+        <field name="Footprint">Camera:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_C16" description="SMT Multilayer Ceramic Capacitor, 0.1 µF, 6.3 V, 0402 [1005 Metric], ± 10%, X5R, Walsin MLCC"/>
+      <property name="MPN" value="GRM155R71C104KA88D"/>
+      <property name="Region" value="head"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="0402, SMT, CAPACITOR, PASSIVE"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>49c1f30a-dc20-52e6-b51a-bcf1f0e1e236</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C17">
+      <value>100n</value>
+      <footprint>Camera:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R71C104KA88D</field>
+        <field name="Region">head</field>
+        <field name="Footprint">Camera:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_C17" description="SMT Multilayer Ceramic Capacitor, 0.1 µF, 6.3 V, 0402 [1005 Metric], ± 10%, X5R, Walsin MLCC"/>
+      <property name="MPN" value="GRM155R71C104KA88D"/>
+      <property name="Region" value="head"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="0402, SMT, CAPACITOR, PASSIVE"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>debab184-2184-5a47-a87f-55c472105ea2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C18">
+      <value>1u</value>
+      <footprint>Camera:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">GRM188R71C105KA12D</field>
+        <field name="Region">head</field>
+        <field name="Footprint">Camera:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_C18" description="SMD Multilayer Ceramic Capacitor, 1 µF, 16 V, 0603 [1608 Metric], ± 10%, X5R, AVX 0603 MLCC"/>
+      <property name="MPN" value="GRM188R71C105KA12D"/>
+      <property name="Region" value="head"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="0603, SMT, CAPACITOR, PASSIVE, MLCC"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>09adcd12-ba1f-567c-9a1b-f098b73cc147</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C19">
+      <value>1u</value>
+      <footprint>Camera:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">GRM188R71C105KA12D</field>
+        <field name="Region">head</field>
+        <field name="Footprint">Camera:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_C19" description="SMD Multilayer Ceramic Capacitor, 1 µF, 16 V, 0603 [1608 Metric], ± 10%, X5R, AVX 0603 MLCC"/>
+      <property name="MPN" value="GRM188R71C105KA12D"/>
+      <property name="Region" value="head"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="0603, SMT, CAPACITOR, PASSIVE, MLCC"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cdaed2e8-4fc8-5391-841a-70e4800b833e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C20">
+      <value>100n</value>
+      <footprint>Camera:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R71C104KA88D</field>
+        <field name="Region">head</field>
+        <field name="Footprint">Camera:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_C20" description="SMT Multilayer Ceramic Capacitor, 0.1 µF, 6.3 V, 0402 [1005 Metric], ± 10%, X5R, Walsin MLCC"/>
+      <property name="MPN" value="GRM155R71C104KA88D"/>
+      <property name="Region" value="head"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="0402, SMT, CAPACITOR, PASSIVE"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e44fc9e1-d715-5971-a9a6-e711f302826f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C21">
+      <value>1u</value>
+      <footprint>Camera:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">GRM188R71C105KA12D</field>
+        <field name="Region">head</field>
+        <field name="Footprint">Camera:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_C21" description="SMD Multilayer Ceramic Capacitor, 1 µF, 16 V, 0603 [1608 Metric], ± 10%, X5R, AVX 0603 MLCC"/>
+      <property name="MPN" value="GRM188R71C105KA12D"/>
+      <property name="Region" value="head"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="0603, SMT, CAPACITOR, PASSIVE, MLCC"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a9f92112-8d59-5d5d-a344-c40a655a89e3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C33">
+      <value>1u</value>
+      <footprint>Camera:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">GRM188R71C105KA12D</field>
+        <field name="Region">head</field>
+        <field name="Footprint">Camera:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_C33" description="SMD Multilayer Ceramic Capacitor, 1 µF, 16 V, 0603 [1608 Metric], ± 10%, X5R, AVX 0603 MLCC"/>
+      <property name="MPN" value="GRM188R71C105KA12D"/>
+      <property name="Region" value="head"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="0603, SMT, CAPACITOR, PASSIVE, MLCC"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9b783ed1-0983-5f60-bc0b-dc0c330a1d3b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C401">
+      <value>1u</value>
+      <footprint>Camera:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">GRM188R71C105KA12D</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_C401" description="SMD Multilayer Ceramic Capacitor, 1 µF, 16 V, 0603 [1608 Metric], ± 10%, X5R, AVX 0603 MLCC"/>
+      <property name="MPN" value="GRM188R71C105KA12D"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="0603, SMT, CAPACITOR, PASSIVE, MLCC"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cfaef94c-68e8-539f-bb4c-043df932f1cb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C402">
+      <value>10n</value>
+      <footprint>Camera:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R71C103KA01D</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_C402" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM155R71C103KA01D"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>32973c91-7f73-5f1e-bfd6-6667f6076520</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C403">
+      <value>1u</value>
+      <footprint>Camera:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">GRM188R71C105KA12D</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_C403" description="SMD Multilayer Ceramic Capacitor, 1 µF, 16 V, 0603 [1608 Metric], ± 10%, X5R, AVX 0603 MLCC"/>
+      <property name="MPN" value="GRM188R71C105KA12D"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="0603, SMT, CAPACITOR, PASSIVE, MLCC"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>41c6e290-ad30-5c57-bab2-e48325a45e9b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C404">
+      <value>10n</value>
+      <footprint>Camera:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R71C103KA01D</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_C404" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM155R71C103KA01D"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d09d1ba9-9311-50b6-bcac-0db9f1fcf484</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C405">
+      <value>1u</value>
+      <footprint>Camera:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">GRM188R71C105KA12D</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_C405" description="SMD Multilayer Ceramic Capacitor, 1 µF, 16 V, 0603 [1608 Metric], ± 10%, X5R, AVX 0603 MLCC"/>
+      <property name="MPN" value="GRM188R71C105KA12D"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="0603, SMT, CAPACITOR, PASSIVE, MLCC"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3e52644f-e9b8-561c-8721-6e831c42699e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C406">
+      <value>10n</value>
+      <footprint>Camera:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R71C103KA01D</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_C406" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM155R71C103KA01D"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>be0d009e-d5a6-5446-9126-445156252ace</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C407">
+      <value>10u</value>
+      <footprint>Camera:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="MPN">GRM21BR61A106KE19L</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_C407" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM21BR61A106KE19L"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a5e9b2e9-4809-557b-bf37-d22b51aa9d73</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C408">
+      <value>100n</value>
+      <footprint>Camera:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R71C104KA88D</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_C408" description="SMT Multilayer Ceramic Capacitor, 0.1 µF, 6.3 V, 0402 [1005 Metric], ± 10%, X5R, Walsin MLCC"/>
+      <property name="MPN" value="GRM155R71C104KA88D"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="0402, SMT, CAPACITOR, PASSIVE"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8ddfbb68-fd8c-5094-9fb6-8d8ba3adf5eb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C409">
+      <value>10n</value>
+      <footprint>Camera:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R71C103KA01D</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_C409" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM155R71C103KA01D"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f27e214b-d4c9-5b15-9b9b-0d4cb2cfdc4f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C410">
+      <value>10u</value>
+      <footprint>Camera:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="MPN">GRM21BR61A106KE19L</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_C410" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM21BR61A106KE19L"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9daca60a-9c53-5630-9eca-b1276eff8c4f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C411">
+      <value>100n</value>
+      <footprint>Camera:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R71C104KA88D</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_C411" description="SMT Multilayer Ceramic Capacitor, 0.1 µF, 6.3 V, 0402 [1005 Metric], ± 10%, X5R, Walsin MLCC"/>
+      <property name="MPN" value="GRM155R71C104KA88D"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="0402, SMT, CAPACITOR, PASSIVE"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>740f70ce-0406-5a20-a2ba-4e32cdd493b1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C412">
+      <value>10n</value>
+      <footprint>Camera:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R71C103KA01D</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_C412" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM155R71C103KA01D"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9931ba95-99e9-523e-8273-eb60f04df008</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C413">
+      <value>10u</value>
+      <footprint>Camera:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="MPN">GRM21BR61A106KE19L</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_C413" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM21BR61A106KE19L"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0dd24062-b15d-58b2-bf30-2db15d5eb4e5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C414">
+      <value>100n</value>
+      <footprint>Camera:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R71C104KA88D</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_C414" description="SMT Multilayer Ceramic Capacitor, 0.1 µF, 6.3 V, 0402 [1005 Metric], ± 10%, X5R, Walsin MLCC"/>
+      <property name="MPN" value="GRM155R71C104KA88D"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="0402, SMT, CAPACITOR, PASSIVE"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>df5feda5-b971-5cda-9071-fec6619f3501</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C415">
+      <value>10n</value>
+      <footprint>Camera:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R71C103KA01D</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_C415" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM155R71C103KA01D"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ae10eebb-d234-571a-82d0-6ec9cd4e8178</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C416">
+      <value>22n</value>
+      <footprint>Camera:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R71H223KA12D</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_C416" description="SMT Multilayer Ceramic Capacitor, 0.1 µF, 6.3 V, 0402 [1005 Metric], ± 10%, X5R, Walsin MLCC"/>
+      <property name="MPN" value="GRM155R71H223KA12D"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="0402, SMT, CAPACITOR, PASSIVE"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fda73929-afb7-5645-8e42-60d77e63c5ef</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C417">
+      <value>100n</value>
+      <footprint>Camera:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R71C104KA88D</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_C417" description="SMT Multilayer Ceramic Capacitor, 0.1 µF, 6.3 V, 0402 [1005 Metric], ± 10%, X5R, Walsin MLCC"/>
+      <property name="MPN" value="GRM155R71C104KA88D"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="0402, SMT, CAPACITOR, PASSIVE"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bd7186e0-1de4-5078-9cc6-722b7c086246</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C418">
+      <value>100n</value>
+      <footprint>Camera:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R71C104KA88D</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_C418" description="SMT Multilayer Ceramic Capacitor, 0.1 µF, 6.3 V, 0402 [1005 Metric], ± 10%, X5R, Walsin MLCC"/>
+      <property name="MPN" value="GRM155R71C104KA88D"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="0402, SMT, CAPACITOR, PASSIVE"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>60a5c943-74d6-5d60-a543-567695097648</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C419">
+      <value>100n/50V</value>
+      <footprint>Camera:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R71H104KE14D</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_C419" description="SMT Multilayer Ceramic Capacitor, 0.1 µF, 6.3 V, 0402 [1005 Metric], ± 10%, X5R, Walsin MLCC"/>
+      <property name="MPN" value="GRM155R71H104KE14D"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="0402, SMT, CAPACITOR, PASSIVE"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3a1e72f7-e8c3-5d4e-859f-90d582cd8cfa</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C420">
+      <value>100n/50V</value>
+      <footprint>Camera:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">GRM155R71H104KE14D</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_C420" description="SMT Multilayer Ceramic Capacitor, 0.1 µF, 6.3 V, 0402 [1005 Metric], ± 10%, X5R, Walsin MLCC"/>
+      <property name="MPN" value="GRM155R71H104KE14D"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="0402, SMT, CAPACITOR, PASSIVE"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a705b86a-a510-5991-8389-76ffb8ff68bf</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C421">
+      <value>4.7u</value>
+      <footprint>Camera:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">GRM188R61A475KE15D</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_C421" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM188R61A475KE15D"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>66e9e047-8eb9-5aa9-9fd4-6943e8c54d72</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C422">
+      <value>22u</value>
+      <footprint>Camera:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="MPN">GRM21BR61A226ME44L</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_C422" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM21BR61A226ME44L"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dff70dff-3b72-5d77-858e-d40c44610216</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C423">
+      <value>1u</value>
+      <footprint>Camera:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">GRM188R71C105KA12D</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_C423" description="SMD Multilayer Ceramic Capacitor, 1 µF, 16 V, 0603 [1608 Metric], ± 10%, X5R, AVX 0603 MLCC"/>
+      <property name="MPN" value="GRM188R71C105KA12D"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="0603, SMT, CAPACITOR, PASSIVE, MLCC"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>803d1b44-04c3-554c-904d-afd4cfbfd1fc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C424">
+      <value>1u</value>
+      <footprint>Camera:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">GRM188R71C105KA12D</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_C424" description="SMD Multilayer Ceramic Capacitor, 1 µF, 16 V, 0603 [1608 Metric], ± 10%, X5R, AVX 0603 MLCC"/>
+      <property name="MPN" value="GRM188R71C105KA12D"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="0603, SMT, CAPACITOR, PASSIVE, MLCC"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4e0321e7-5633-5c7b-8808-2bd15e47ee76</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C425">
+      <value>1u</value>
+      <footprint>Camera:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">GRM188R71C105KA12D</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_C425" description="SMD Multilayer Ceramic Capacitor, 1 µF, 16 V, 0603 [1608 Metric], ± 10%, X5R, AVX 0603 MLCC"/>
+      <property name="MPN" value="GRM188R71C105KA12D"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="0603, SMT, CAPACITOR, PASSIVE, MLCC"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3eaea888-e051-5b7c-88de-1972232d4a9e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C426">
+      <value>1u</value>
+      <footprint>Camera:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">GRM188R71C105KA12D</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_C426" description="SMD Multilayer Ceramic Capacitor, 1 µF, 16 V, 0603 [1608 Metric], ± 10%, X5R, AVX 0603 MLCC"/>
+      <property name="MPN" value="GRM188R71C105KA12D"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="0603, SMT, CAPACITOR, PASSIVE, MLCC"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ae8b4ffd-3e32-53fe-825a-c57bc47a1cf6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D201">
+      <value>AP1608F3C</value>
+      <footprint>Camera:Kingbright_AP1608F3C_R09</footprint>
+      <fields>
+        <field name="MPN">AP1608F3C</field>
+        <field name="Region">head</field>
+        <field name="Footprint">Camera:Kingbright_AP1608F3C_R09</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_D201" description="Light emitting diode"/>
+      <property name="MPN" value="AP1608F3C"/>
+      <property name="Region" value="head"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="LED* LED_SMD:* LED_THT:*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>24ef1761-c62d-5d5e-be6c-4a40e5a4f6f3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D202">
+      <value>AP1608F3C</value>
+      <footprint>Camera:Kingbright_AP1608F3C_R09</footprint>
+      <fields>
+        <field name="MPN">AP1608F3C</field>
+        <field name="Region">head</field>
+        <field name="Footprint">Camera:Kingbright_AP1608F3C_R09</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_D202" description="Light emitting diode"/>
+      <property name="MPN" value="AP1608F3C"/>
+      <property name="Region" value="head"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="LED* LED_SMD:* LED_THT:*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>87413a6f-674f-597b-a8a1-114fd2a93f53</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D203">
+      <value>TPD1E01B04 / 0.20pF typ</value>
+      <footprint>Camera:D_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">TPD1E01B04DPYR</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:D_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_D203" description=""/>
+      <property name="MPN" value="TPD1E01B04DPYR"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>11d952e4-1dc6-53d8-800a-27ffd2f153f7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D204">
+      <value>TPD1E01B04 / 0.20pF typ</value>
+      <footprint>Camera:D_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">TPD1E01B04DPYR</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:D_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_D204" description=""/>
+      <property name="MPN" value="TPD1E01B04DPYR"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>22a1d2d9-0991-5edd-a361-f68709aac048</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="FB401">
+      <value>120R@100MHz</value>
+      <footprint>Camera:L_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">BLM18SG121TN1D</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:L_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_FB401" description="Multilayer Inductor, 3.3 µH, 0.19 ohm, 900 mA, 0805 [2012 Metric], MLP"/>
+      <property name="MPN" value="BLM18SG121TN1D"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="SMT, INDUCTOR, PASSIVE"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5684e58f-e1a9-5c8c-ba49-68228df2f8bc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="FB402">
+      <value>120R@100MHz</value>
+      <footprint>Camera:L_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">BLM18SG121TN1D</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:L_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_FB402" description="Multilayer Inductor, 3.3 µH, 0.19 ohm, 900 mA, 0805 [2012 Metric], MLP"/>
+      <property name="MPN" value="BLM18SG121TN1D"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="SMT, INDUCTOR, PASSIVE"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2753f1dc-4160-5230-b534-f8e74c146156</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="FB403">
+      <value>120R@100MHz</value>
+      <footprint>Camera:L_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">BLM18SG121TN1D</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:L_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_FB403" description="Multilayer Inductor, 3.3 µH, 0.19 ohm, 900 mA, 0805 [2012 Metric], MLP"/>
+      <property name="MPN" value="BLM18SG121TN1D"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="SMT, INDUCTOR, PASSIVE"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f1b5cdab-7655-5b7d-88da-c2d4483b2811</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J201">
+      <value>TETHER: 1=5V 2=N 3=P 4=GND; NOT USB</value>
+      <footprint>Camera:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal</footprint>
+      <fields>
+        <field name="MPN">SM04B-SRSS-TB(LF)(SN)</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_J201" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="MPN" value="SM04B-SRSS-TB(LF)(SN)"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>630b216f-e86b-520c-a75d-aa5b2b51dd9d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L1">
+      <value>3.3u</value>
+      <footprint>Camera:L_0805_2012Metric</footprint>
+      <fields>
+        <field name="MPN">MLP2012S3R3MT0S1</field>
+        <field name="Region">head</field>
+        <field name="Footprint">Camera:L_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_L1" description="Multilayer Inductor, 3.3 µH, 0.19 ohm, 900 mA, 0805 [2012 Metric], MLP"/>
+      <property name="MPN" value="MLP2012S3R3MT0S1"/>
+      <property name="Region" value="head"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="SMT, INDUCTOR, PASSIVE"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1f2c5e0d-21bd-5aa8-83dc-21ba845e698b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L2">
+      <value>3.3u</value>
+      <footprint>Camera:L_0805_2012Metric</footprint>
+      <fields>
+        <field name="MPN">MLP2012S3R3MT0S1</field>
+        <field name="Region">head</field>
+        <field name="Footprint">Camera:L_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_L2" description="Multilayer Inductor, 3.3 µH, 0.19 ohm, 900 mA, 0805 [2012 Metric], MLP"/>
+      <property name="MPN" value="MLP2012S3R3MT0S1"/>
+      <property name="Region" value="head"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="SMT, INDUCTOR, PASSIVE"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>39dd142e-ea79-5a73-b1b3-719e99622cb8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L3">
+      <value>3.3u</value>
+      <footprint>Camera:L_0805_2012Metric</footprint>
+      <fields>
+        <field name="MPN">MLP2012S3R3MT0S1</field>
+        <field name="Region">head</field>
+        <field name="Footprint">Camera:L_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_L3" description="Multilayer Inductor, 3.3 µH, 0.19 ohm, 900 mA, 0805 [2012 Metric], MLP"/>
+      <property name="MPN" value="MLP2012S3R3MT0S1"/>
+      <property name="Region" value="head"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="SMT, INDUCTOR, PASSIVE"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e2a21f4e-220e-51e0-be66-705a22e4f1c6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L202">
+      <value>2.2u / 3.3 A Isat</value>
+      <footprint>Camera:Murata_DFE252012F_R11</footprint>
+      <fields>
+        <field name="MPN">DFE252012F-2R2M=P2</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:Murata_DFE252012F_R11</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_L202" description="Inductor"/>
+      <property name="MPN" value="DFE252012F-2R2M=P2"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <property name="ki_fp_filters" value="Choke_* *Coil* Inductor_* L_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2dd50d31-fb76-58e6-8fb9-8a159dc56ad8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q201">
+      <value>PMZB200UNE</value>
+      <footprint>Camera:SOT-883</footprint>
+      <fields>
+        <field name="MPN">PMZB200UNEYL</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:SOT-883</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_Q201" description="50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23"/>
+      <property name="MPN" value="PMZB200UNEYL"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="N-Channel MOSFET"/>
+      <property name="ki_fp_filters" value="SOT?23*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>91414c2b-3b24-5158-bba6-77862384db51</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R7">
+      <value>0</value>
+      <footprint>Camera:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402JR-070RL</field>
+        <field name="Region">head</field>
+        <field name="Footprint">Camera:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_R7" description="SMD Chip Resistor, Jumper, 0 ohm, 100 mW, 0402 [1005 Metric], Thick Film, General Purpose"/>
+      <property name="MPN" value="RC0402JR-070RL"/>
+      <property name="Region" value="head"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="0402, SMT, RESISTOR, PASSIVE"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1e0ca0c2-bf1e-5f11-bb78-fac9c0973c5a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R8">
+      <value>0</value>
+      <footprint>Camera:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402JR-070RL</field>
+        <field name="Region">head</field>
+        <field name="Footprint">Camera:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_R8" description="SMD Chip Resistor, Jumper, 0 ohm, 100 mW, 0402 [1005 Metric], Thick Film, General Purpose"/>
+      <property name="MPN" value="RC0402JR-070RL"/>
+      <property name="Region" value="head"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="0402, SMT, RESISTOR, PASSIVE"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e08a416e-70de-56d3-9dcb-c022d4123345</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R9">
+      <value>0</value>
+      <footprint>Camera:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402JR-070RL</field>
+        <field name="Region">head</field>
+        <field name="Footprint">Camera:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_R9" description="SMD Chip Resistor, Jumper, 0 ohm, 100 mW, 0402 [1005 Metric], Thick Film, General Purpose"/>
+      <property name="MPN" value="RC0402JR-070RL"/>
+      <property name="Region" value="head"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="0402, SMT, RESISTOR, PASSIVE"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>85942ecc-e9ea-5f15-98e2-9b33947581b5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R201">
+      <value>2.2k</value>
+      <footprint>Camera:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-072K2L</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_R201" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-072K2L"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>044782cd-9de9-5b4d-8055-b593c239cc7f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R202">
+      <value>2.2k</value>
+      <footprint>Camera:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-072K2L</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_R202" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-072K2L"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c7f30d3c-6f19-5924-b892-244e75d468db</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R203">
+      <value>2.2k</value>
+      <footprint>Camera:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-072K2L</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_R203" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-072K2L"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0a8f0192-46fc-5b96-af01-dc69b055e233</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R204">
+      <value>100k</value>
+      <footprint>Camera:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-07100KL</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_R204" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-07100KL"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>398fad96-a546-5190-a966-b5df4af96743</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R401">
+      <value>10k</value>
+      <footprint>Camera:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-0710KL</field>
+        <field name="Region">head</field>
+        <field name="Footprint">Camera:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_R401" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-0710KL"/>
+      <property name="Region" value="head"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6a5445c7-dce8-54b0-b3eb-4d1be60754ff</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R402">
+      <value>10k</value>
+      <footprint>Camera:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-0710KL</field>
+        <field name="Region">head</field>
+        <field name="Footprint">Camera:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_R402" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-0710KL"/>
+      <property name="Region" value="head"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>67cc40c4-b7ae-59b1-9fbe-2577073cc59a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R403">
+      <value>4.7k</value>
+      <footprint>Camera:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-074K7L</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_R403" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-074K7L"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d43dcea2-96e8-54f7-a37b-149fcde24fb1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R404">
+      <value>4.7k</value>
+      <footprint>Camera:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-074K7L</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_R404" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-074K7L"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bf7d3a1e-fea6-54ab-9c5d-2c8ad4866d11</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R405">
+      <value>10k</value>
+      <footprint>Camera:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-0710KL</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_R405" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-0710KL"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>72a302bf-06bd-5509-bc26-f499eaedc655</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R406">
+      <value>40.2k</value>
+      <footprint>Camera:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-0740K2L</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_R406" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-0740K2L"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2ecef9b5-faaa-53c0-bae1-759407f1f3f6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R407">
+      <value>100k</value>
+      <footprint>Camera:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-07100KL</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_R407" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-07100KL"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>538110af-2902-5a12-b5c6-c7b619a0e4d8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R408">
+      <value>200k</value>
+      <footprint>Camera:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-07200KL</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_R408" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-07200KL"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5f778ade-9932-5da7-99a3-504b3a4f5671</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R409">
+      <value>100k</value>
+      <footprint>Camera:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-07100KL</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_R409" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-07100KL"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>eddda625-b79c-5475-b65b-e76d63181919</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP201">
+      <value>Shield termination</value>
+      <footprint>Camera:TestPoint_Pad_1.0x1.0mm</footprint>
+      <fields>
+        <field name="MPN">PCB solder land</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:TestPoint_Pad_1.0x1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_TP201" description=""/>
+      <property name="MPN" value="PCB solder land"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d0956774-ab23-533d-973a-c9f6dde79860</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U1">
+      <value>OV9281</value>
+      <footprint>Camera:OV9281</footprint>
+      <fields>
+        <field name="MPN">OV09281-H64A</field>
+        <field name="Region">head</field>
+        <field name="Footprint">Camera:OV9281</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_U1" description="B&amp;W CMOS 1 Megapixel (1280x800) Image Sensor with OmniPixel®3‑GS Technology"/>
+      <property name="MPN" value="OV09281-H64A"/>
+      <property name="Region" value="head"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="SENSOR, CMOS"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f223fc60-0066-5d49-b581-cec8438d05a3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="C1"/>
+            <pin num="G7"/>
+            <pin num="B8"/>
+            <pin num="G8"/>
+            <pin num="A2"/>
+            <pin num="D8"/>
+            <pin num="B1"/>
+            <pin num="B3"/>
+            <pin num="G6"/>
+            <pin num="G1"/>
+            <pin num="C5"/>
+            <pin num="F2"/>
+            <pin num="D3"/>
+            <pin num="H6"/>
+            <pin num="H2"/>
+            <pin num="B7"/>
+            <pin num="H5"/>
+            <pin num="F3"/>
+            <pin num="E8"/>
+            <pin num="D5"/>
+            <pin num="D7"/>
+            <pin num="E7"/>
+            <pin num="F7"/>
+            <pin num="E5"/>
+            <pin num="E3"/>
+            <pin num="H7"/>
+            <pin num="C8"/>
+            <pin num="D2"/>
+            <pin num="F8"/>
+            <pin num="A3"/>
+            <pin num="B2"/>
+            <pin num="A7"/>
+            <pin num="G2"/>
+            <pin num="F4"/>
+            <pin num="F6"/>
+            <pin num="F1"/>
+            <pin num="A1"/>
+            <pin num="A8"/>
+            <pin num="H1"/>
+            <pin num="H8"/>
+            <pin num="G4"/>
+            <pin num="H4"/>
+            <pin num="G5"/>
+            <pin num="F5"/>
+            <pin num="G3"/>
+            <pin num="H3"/>
+            <pin num="E4"/>
+            <pin num="A4"/>
+            <pin num="C2"/>
+            <pin num="E2"/>
+            <pin num="A5"/>
+            <pin num="B6"/>
+            <pin num="B5"/>
+            <pin num="D6"/>
+            <pin num="C3"/>
+            <pin num="D4"/>
+            <pin num="C4"/>
+            <pin num="B4"/>
+            <pin num="C6"/>
+            <pin num="E6"/>
+            <pin num="D1"/>
+            <pin num="E1"/>
+            <pin num="C7"/>
+            <pin num="A6"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U6">
+      <value>TLV73312PDQNR</value>
+      <footprint>Camera:Texas_X2SON-4_1x1mm_P0.65mm</footprint>
+      <fields>
+        <field name="MPN">TLV73312PDQNR</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:Texas_X2SON-4_1x1mm_P0.65mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_U6" description="Fixed LDO Voltage Regulator, 1.4V to 5.5V, 122mV Dropout, 1.2Vout, 300mAout, SOT-23-5"/>
+      <property name="MPN" value="TLV73312PDQNR"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="SMT, PMIC, IC, LDO, LINEAR, VOLTAGE, REGULATOR"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>44cea1f9-bc86-54b0-b961-4fd24ea015cf</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="4"/>
+            <pin num="3"/>
+            <pin num="5"/>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U7">
+      <value>TLV73328PDQNR</value>
+      <footprint>Camera:Texas_X2SON-4_1x1mm_P0.65mm</footprint>
+      <fields>
+        <field name="MPN">TLV73328PDQNR</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:Texas_X2SON-4_1x1mm_P0.65mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_U7" description="Fixed LDO Voltage Regulator, 1.4V to 5.5V, 122mV Dropout, 2.8Vout, 300mAout, SOT-23-5"/>
+      <property name="MPN" value="TLV73328PDQNR"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="SMT, PMIC, IC, LDO, LINEAR, VOLTAGE, REGULATOR"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8f795b60-9394-50ce-acea-232ef489d69c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="4"/>
+            <pin num="3"/>
+            <pin num="5"/>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U201">
+      <value>DS90UB953-Q1</value>
+      <footprint>Camera:TI_RHB0032P_E01</footprint>
+      <fields>
+        <field name="MPN">DS90UB953TRHBRQ1</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:TI_RHB0032P_E01</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_U201" description=""/>
+      <property name="MPN" value="DS90UB953TRHBRQ1"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>632b0786-7ab6-5a49-afeb-bfda526e748e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
+            <pin num="20"/>
+            <pin num="21"/>
+            <pin num="22"/>
+            <pin num="23"/>
+            <pin num="24"/>
+            <pin num="25"/>
+            <pin num="26"/>
+            <pin num="27"/>
+            <pin num="28"/>
+            <pin num="29"/>
+            <pin num="30"/>
+            <pin num="31"/>
+            <pin num="32"/>
+            <pin num="33"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U202">
+      <value>TLV62569DRLR</value>
+      <footprint>Camera:TI_DRL0006A_R11</footprint>
+      <fields>
+        <field name="MPN">TLV62569DRLR</field>
+        <field name="Region">interface</field>
+        <field name="Footprint">Camera:TI_DRL0006A_R11</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_U202" description="High Efficiency Synchronous Buck Converter, Adjustable Output 0.6V-5.5V, 2A, SOT-23-5"/>
+      <property name="MPN" value="TLV62569DRLR"/>
+      <property name="Region" value="interface"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="Step-Down Buck DC-DC Regulator Adjustable"/>
+      <property name="ki_fp_filters" value="SOT?23*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4d8a333a-53b1-51ca-883e-f78d6d27268c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="3"/>
+            <pin num="5"/>
+            <pin num="2"/>
+            <pin num="4"/>
+            <pin num="1"/>
+            <pin num="6"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Y1">
+      <value>SG-210STF 24.0000ML</value>
+      <footprint>Camera:Epson_SG210STF_2.5x2.0mm_R09</footprint>
+      <fields>
+        <field name="MPN">X1G004171003100</field>
+        <field name="Region">head</field>
+        <field name="Footprint">Camera:Epson_SG210STF_2.5x2.0mm_R09</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Camera" part="E01_Y1" description="Oscillator, 24 MHz, 50 ppm, SMT, 5mm x 3.2mm, 3.3 V, 7C Series"/>
+      <property name="MPN" value="X1G004171003100"/>
+      <property name="Region" value="head"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="camera.kicad_sch"/>
+      <property name="ki_keywords" value="OSCILLATOR"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8379a1a5-8efe-53a0-98eb-a8ce5b611b4f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="4"/>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Camera" part="E01_C10">
+      <description>SMD Multilayer Ceramic Capacitor, 1 µF, 16 V, 0603 [1608 Metric], ± 10%, X5R, AVX 0603 MLCC</description>
+      <docs>https://spicat.kyocera-avx.com/product/mlcc/chartview/0603YD105KAT2A/</docs>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_1u_0603</field>
+        <field name="Footprint">Camera:C_0603_1608Metric</field>
+        <field name="Datasheet">https://spicat.kyocera-avx.com/product/mlcc/chartview/0603YD105KAT2A/</field>
+        <field name="Description">SMD Multilayer Ceramic Capacitor, 1 µF, 16 V, 0603 [1608 Metric], ± 10%, X5R, AVX 0603 MLCC</field>
+        <field name="MPN">0603YD105KAT2A</field>
+        <field name="Manufacturer">KYOCERA AVX</field>
+        <field name="License">Apache-2.0</field>
+        <field name="Author">Antmicro</field>
+        <field name="Val">1u</field>
+        <field name="Voltage"/>
+        <field name="Dielectric"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_C12">
+      <description>SMD Multilayer Ceramic Capacitor, 1 µF, 16 V, 0603 [1608 Metric], ± 10%, X5R, AVX 0603 MLCC</description>
+      <docs>https://spicat.kyocera-avx.com/product/mlcc/chartview/0603YD105KAT2A/</docs>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_1u_0603</field>
+        <field name="Footprint">Camera:C_0603_1608Metric</field>
+        <field name="Datasheet">https://spicat.kyocera-avx.com/product/mlcc/chartview/0603YD105KAT2A/</field>
+        <field name="Description">SMD Multilayer Ceramic Capacitor, 1 µF, 16 V, 0603 [1608 Metric], ± 10%, X5R, AVX 0603 MLCC</field>
+        <field name="MPN">0603YD105KAT2A</field>
+        <field name="Manufacturer">KYOCERA AVX</field>
+        <field name="License">Apache-2.0</field>
+        <field name="Author">Antmicro</field>
+        <field name="Val">1u</field>
+        <field name="Voltage"/>
+        <field name="Dielectric"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_C13">
+      <description>SMD Multilayer Ceramic Capacitor, 1 µF, 16 V, 0603 [1608 Metric], ± 10%, X5R, AVX 0603 MLCC</description>
+      <docs>https://spicat.kyocera-avx.com/product/mlcc/chartview/0603YD105KAT2A/</docs>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_1u_0603</field>
+        <field name="Footprint">Camera:C_0603_1608Metric</field>
+        <field name="Datasheet">https://spicat.kyocera-avx.com/product/mlcc/chartview/0603YD105KAT2A/</field>
+        <field name="Description">SMD Multilayer Ceramic Capacitor, 1 µF, 16 V, 0603 [1608 Metric], ± 10%, X5R, AVX 0603 MLCC</field>
+        <field name="MPN">0603YD105KAT2A</field>
+        <field name="Manufacturer">KYOCERA AVX</field>
+        <field name="License">Apache-2.0</field>
+        <field name="Author">Antmicro</field>
+        <field name="Val">1u</field>
+        <field name="Voltage"/>
+        <field name="Dielectric"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_C14">
+      <description>SMT Multilayer Ceramic Capacitor, 0.1 µF, 6.3 V, 0402 [1005 Metric], ± 10%, X5R, Walsin MLCC</description>
+      <docs>https://www.passivecomponent.com/wp-content/uploads/datasheet/WTC_MLCC_General_Purpose.pdf</docs>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_100n_6V3_0402</field>
+        <field name="Footprint">Camera:C_0402_1005Metric</field>
+        <field name="Datasheet">https://www.passivecomponent.com/wp-content/uploads/datasheet/WTC_MLCC_General_Purpose.pdf</field>
+        <field name="Description">SMT Multilayer Ceramic Capacitor, 0.1 µF, 6.3 V, 0402 [1005 Metric], ± 10%, X5R, Walsin MLCC</field>
+        <field name="MPN">0402X104K6R3CT</field>
+        <field name="Manufacturer">Walsin</field>
+        <field name="License">Apache-2.0</field>
+        <field name="Author">Antmicro</field>
+        <field name="Val">100n</field>
+        <field name="Voltage"/>
+        <field name="Dielectric"/>
+        <field name="Public">False</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_C15">
+      <description>SMT Multilayer Ceramic Capacitor, 0.1 µF, 6.3 V, 0402 [1005 Metric], ± 10%, X5R, Walsin MLCC</description>
+      <docs>https://www.passivecomponent.com/wp-content/uploads/datasheet/WTC_MLCC_General_Purpose.pdf</docs>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_100n_6V3_0402</field>
+        <field name="Footprint">Camera:C_0402_1005Metric</field>
+        <field name="Datasheet">https://www.passivecomponent.com/wp-content/uploads/datasheet/WTC_MLCC_General_Purpose.pdf</field>
+        <field name="Description">SMT Multilayer Ceramic Capacitor, 0.1 µF, 6.3 V, 0402 [1005 Metric], ± 10%, X5R, Walsin MLCC</field>
+        <field name="MPN">0402X104K6R3CT</field>
+        <field name="Manufacturer">Walsin</field>
+        <field name="License">Apache-2.0</field>
+        <field name="Author">Antmicro</field>
+        <field name="Val">100n</field>
+        <field name="Voltage"/>
+        <field name="Dielectric"/>
+        <field name="Public">False</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_C16">
+      <description>SMT Multilayer Ceramic Capacitor, 0.1 µF, 6.3 V, 0402 [1005 Metric], ± 10%, X5R, Walsin MLCC</description>
+      <docs>https://www.passivecomponent.com/wp-content/uploads/datasheet/WTC_MLCC_General_Purpose.pdf</docs>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_100n_6V3_0402</field>
+        <field name="Footprint">Camera:C_0402_1005Metric</field>
+        <field name="Datasheet">https://www.passivecomponent.com/wp-content/uploads/datasheet/WTC_MLCC_General_Purpose.pdf</field>
+        <field name="Description">SMT Multilayer Ceramic Capacitor, 0.1 µF, 6.3 V, 0402 [1005 Metric], ± 10%, X5R, Walsin MLCC</field>
+        <field name="MPN">0402X104K6R3CT</field>
+        <field name="Manufacturer">Walsin</field>
+        <field name="License">Apache-2.0</field>
+        <field name="Author">Antmicro</field>
+        <field name="Val">100n</field>
+        <field name="Voltage"/>
+        <field name="Dielectric"/>
+        <field name="Public">False</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_C17">
+      <description>SMT Multilayer Ceramic Capacitor, 0.1 µF, 6.3 V, 0402 [1005 Metric], ± 10%, X5R, Walsin MLCC</description>
+      <docs>https://www.passivecomponent.com/wp-content/uploads/datasheet/WTC_MLCC_General_Purpose.pdf</docs>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_100n_6V3_0402</field>
+        <field name="Footprint">Camera:C_0402_1005Metric</field>
+        <field name="Datasheet">https://www.passivecomponent.com/wp-content/uploads/datasheet/WTC_MLCC_General_Purpose.pdf</field>
+        <field name="Description">SMT Multilayer Ceramic Capacitor, 0.1 µF, 6.3 V, 0402 [1005 Metric], ± 10%, X5R, Walsin MLCC</field>
+        <field name="MPN">0402X104K6R3CT</field>
+        <field name="Manufacturer">Walsin</field>
+        <field name="License">Apache-2.0</field>
+        <field name="Author">Antmicro</field>
+        <field name="Val">100n</field>
+        <field name="Voltage"/>
+        <field name="Dielectric"/>
+        <field name="Public">False</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_C18">
+      <description>SMD Multilayer Ceramic Capacitor, 1 µF, 16 V, 0603 [1608 Metric], ± 10%, X5R, AVX 0603 MLCC</description>
+      <docs>https://spicat.kyocera-avx.com/product/mlcc/chartview/0603YD105KAT2A/</docs>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_1u_0603</field>
+        <field name="Footprint">Camera:C_0603_1608Metric</field>
+        <field name="Datasheet">https://spicat.kyocera-avx.com/product/mlcc/chartview/0603YD105KAT2A/</field>
+        <field name="Description">SMD Multilayer Ceramic Capacitor, 1 µF, 16 V, 0603 [1608 Metric], ± 10%, X5R, AVX 0603 MLCC</field>
+        <field name="MPN">0603YD105KAT2A</field>
+        <field name="Manufacturer">KYOCERA AVX</field>
+        <field name="License">Apache-2.0</field>
+        <field name="Author">Antmicro</field>
+        <field name="Val">1u</field>
+        <field name="Voltage"/>
+        <field name="Dielectric"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_C19">
+      <description>SMD Multilayer Ceramic Capacitor, 1 µF, 16 V, 0603 [1608 Metric], ± 10%, X5R, AVX 0603 MLCC</description>
+      <docs>https://spicat.kyocera-avx.com/product/mlcc/chartview/0603YD105KAT2A/</docs>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_1u_0603</field>
+        <field name="Footprint">Camera:C_0603_1608Metric</field>
+        <field name="Datasheet">https://spicat.kyocera-avx.com/product/mlcc/chartview/0603YD105KAT2A/</field>
+        <field name="Description">SMD Multilayer Ceramic Capacitor, 1 µF, 16 V, 0603 [1608 Metric], ± 10%, X5R, AVX 0603 MLCC</field>
+        <field name="MPN">0603YD105KAT2A</field>
+        <field name="Manufacturer">KYOCERA AVX</field>
+        <field name="License">Apache-2.0</field>
+        <field name="Author">Antmicro</field>
+        <field name="Val">1u</field>
+        <field name="Voltage"/>
+        <field name="Dielectric"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_C20">
+      <description>SMT Multilayer Ceramic Capacitor, 0.1 µF, 6.3 V, 0402 [1005 Metric], ± 10%, X5R, Walsin MLCC</description>
+      <docs>https://www.passivecomponent.com/wp-content/uploads/datasheet/WTC_MLCC_General_Purpose.pdf</docs>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_100n_6V3_0402</field>
+        <field name="Footprint">Camera:C_0402_1005Metric</field>
+        <field name="Datasheet">https://www.passivecomponent.com/wp-content/uploads/datasheet/WTC_MLCC_General_Purpose.pdf</field>
+        <field name="Description">SMT Multilayer Ceramic Capacitor, 0.1 µF, 6.3 V, 0402 [1005 Metric], ± 10%, X5R, Walsin MLCC</field>
+        <field name="MPN">0402X104K6R3CT</field>
+        <field name="Manufacturer">Walsin</field>
+        <field name="License">Apache-2.0</field>
+        <field name="Author">Antmicro</field>
+        <field name="Val">100n</field>
+        <field name="Voltage"/>
+        <field name="Dielectric"/>
+        <field name="Public">False</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_C21">
+      <description>SMD Multilayer Ceramic Capacitor, 1 µF, 16 V, 0603 [1608 Metric], ± 10%, X5R, AVX 0603 MLCC</description>
+      <docs>https://spicat.kyocera-avx.com/product/mlcc/chartview/0603YD105KAT2A/</docs>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_1u_0603</field>
+        <field name="Footprint">Camera:C_0603_1608Metric</field>
+        <field name="Datasheet">https://spicat.kyocera-avx.com/product/mlcc/chartview/0603YD105KAT2A/</field>
+        <field name="Description">SMD Multilayer Ceramic Capacitor, 1 µF, 16 V, 0603 [1608 Metric], ± 10%, X5R, AVX 0603 MLCC</field>
+        <field name="MPN">0603YD105KAT2A</field>
+        <field name="Manufacturer">KYOCERA AVX</field>
+        <field name="License">Apache-2.0</field>
+        <field name="Author">Antmicro</field>
+        <field name="Val">1u</field>
+        <field name="Voltage"/>
+        <field name="Dielectric"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_C33">
+      <description>SMD Multilayer Ceramic Capacitor, 1 µF, 16 V, 0603 [1608 Metric], ± 10%, X5R, AVX 0603 MLCC</description>
+      <docs>https://spicat.kyocera-avx.com/product/mlcc/chartview/0603YD105KAT2A/</docs>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_1u_0603</field>
+        <field name="Footprint">Camera:C_0603_1608Metric</field>
+        <field name="Datasheet">https://spicat.kyocera-avx.com/product/mlcc/chartview/0603YD105KAT2A/</field>
+        <field name="Description">SMD Multilayer Ceramic Capacitor, 1 µF, 16 V, 0603 [1608 Metric], ± 10%, X5R, AVX 0603 MLCC</field>
+        <field name="MPN">0603YD105KAT2A</field>
+        <field name="Manufacturer">KYOCERA AVX</field>
+        <field name="License">Apache-2.0</field>
+        <field name="Author">Antmicro</field>
+        <field name="Val">1u</field>
+        <field name="Voltage"/>
+        <field name="Dielectric"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_C401">
+      <description>SMD Multilayer Ceramic Capacitor, 1 µF, 16 V, 0603 [1608 Metric], ± 10%, X5R, AVX 0603 MLCC</description>
+      <docs>https://spicat.kyocera-avx.com/product/mlcc/chartview/0603YD105KAT2A/</docs>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_1u_0603</field>
+        <field name="Footprint">Camera:C_0603_1608Metric</field>
+        <field name="Datasheet">https://spicat.kyocera-avx.com/product/mlcc/chartview/0603YD105KAT2A/</field>
+        <field name="Description">SMD Multilayer Ceramic Capacitor, 1 µF, 16 V, 0603 [1608 Metric], ± 10%, X5R, AVX 0603 MLCC</field>
+        <field name="MPN">0603YD105KAT2A</field>
+        <field name="Manufacturer">KYOCERA AVX</field>
+        <field name="License">Apache-2.0</field>
+        <field name="Author">Antmicro</field>
+        <field name="Val">1u</field>
+        <field name="Voltage"/>
+        <field name="Dielectric"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_C402">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_C403">
+      <description>SMD Multilayer Ceramic Capacitor, 1 µF, 16 V, 0603 [1608 Metric], ± 10%, X5R, AVX 0603 MLCC</description>
+      <docs>https://spicat.kyocera-avx.com/product/mlcc/chartview/0603YD105KAT2A/</docs>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_1u_0603</field>
+        <field name="Footprint">Camera:C_0603_1608Metric</field>
+        <field name="Datasheet">https://spicat.kyocera-avx.com/product/mlcc/chartview/0603YD105KAT2A/</field>
+        <field name="Description">SMD Multilayer Ceramic Capacitor, 1 µF, 16 V, 0603 [1608 Metric], ± 10%, X5R, AVX 0603 MLCC</field>
+        <field name="MPN">0603YD105KAT2A</field>
+        <field name="Manufacturer">KYOCERA AVX</field>
+        <field name="License">Apache-2.0</field>
+        <field name="Author">Antmicro</field>
+        <field name="Val">1u</field>
+        <field name="Voltage"/>
+        <field name="Dielectric"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_C404">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_C405">
+      <description>SMD Multilayer Ceramic Capacitor, 1 µF, 16 V, 0603 [1608 Metric], ± 10%, X5R, AVX 0603 MLCC</description>
+      <docs>https://spicat.kyocera-avx.com/product/mlcc/chartview/0603YD105KAT2A/</docs>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_1u_0603</field>
+        <field name="Footprint">Camera:C_0603_1608Metric</field>
+        <field name="Datasheet">https://spicat.kyocera-avx.com/product/mlcc/chartview/0603YD105KAT2A/</field>
+        <field name="Description">SMD Multilayer Ceramic Capacitor, 1 µF, 16 V, 0603 [1608 Metric], ± 10%, X5R, AVX 0603 MLCC</field>
+        <field name="MPN">0603YD105KAT2A</field>
+        <field name="Manufacturer">KYOCERA AVX</field>
+        <field name="License">Apache-2.0</field>
+        <field name="Author">Antmicro</field>
+        <field name="Val">1u</field>
+        <field name="Voltage"/>
+        <field name="Dielectric"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_C406">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_C407">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_C408">
+      <description>SMT Multilayer Ceramic Capacitor, 0.1 µF, 6.3 V, 0402 [1005 Metric], ± 10%, X5R, Walsin MLCC</description>
+      <docs>https://www.passivecomponent.com/wp-content/uploads/datasheet/WTC_MLCC_General_Purpose.pdf</docs>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_100n_6V3_0402</field>
+        <field name="Footprint">Camera:C_0402_1005Metric</field>
+        <field name="Datasheet">https://www.passivecomponent.com/wp-content/uploads/datasheet/WTC_MLCC_General_Purpose.pdf</field>
+        <field name="Description">SMT Multilayer Ceramic Capacitor, 0.1 µF, 6.3 V, 0402 [1005 Metric], ± 10%, X5R, Walsin MLCC</field>
+        <field name="MPN">0402X104K6R3CT</field>
+        <field name="Manufacturer">Walsin</field>
+        <field name="License">Apache-2.0</field>
+        <field name="Author">Antmicro</field>
+        <field name="Val">100n</field>
+        <field name="Voltage"/>
+        <field name="Dielectric"/>
+        <field name="Public">False</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_C409">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_C410">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_C411">
+      <description>SMT Multilayer Ceramic Capacitor, 0.1 µF, 6.3 V, 0402 [1005 Metric], ± 10%, X5R, Walsin MLCC</description>
+      <docs>https://www.passivecomponent.com/wp-content/uploads/datasheet/WTC_MLCC_General_Purpose.pdf</docs>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_100n_6V3_0402</field>
+        <field name="Footprint">Camera:C_0402_1005Metric</field>
+        <field name="Datasheet">https://www.passivecomponent.com/wp-content/uploads/datasheet/WTC_MLCC_General_Purpose.pdf</field>
+        <field name="Description">SMT Multilayer Ceramic Capacitor, 0.1 µF, 6.3 V, 0402 [1005 Metric], ± 10%, X5R, Walsin MLCC</field>
+        <field name="MPN">0402X104K6R3CT</field>
+        <field name="Manufacturer">Walsin</field>
+        <field name="License">Apache-2.0</field>
+        <field name="Author">Antmicro</field>
+        <field name="Val">100n</field>
+        <field name="Voltage"/>
+        <field name="Dielectric"/>
+        <field name="Public">False</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_C412">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_C413">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_C414">
+      <description>SMT Multilayer Ceramic Capacitor, 0.1 µF, 6.3 V, 0402 [1005 Metric], ± 10%, X5R, Walsin MLCC</description>
+      <docs>https://www.passivecomponent.com/wp-content/uploads/datasheet/WTC_MLCC_General_Purpose.pdf</docs>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_100n_6V3_0402</field>
+        <field name="Footprint">Camera:C_0402_1005Metric</field>
+        <field name="Datasheet">https://www.passivecomponent.com/wp-content/uploads/datasheet/WTC_MLCC_General_Purpose.pdf</field>
+        <field name="Description">SMT Multilayer Ceramic Capacitor, 0.1 µF, 6.3 V, 0402 [1005 Metric], ± 10%, X5R, Walsin MLCC</field>
+        <field name="MPN">0402X104K6R3CT</field>
+        <field name="Manufacturer">Walsin</field>
+        <field name="License">Apache-2.0</field>
+        <field name="Author">Antmicro</field>
+        <field name="Val">100n</field>
+        <field name="Voltage"/>
+        <field name="Dielectric"/>
+        <field name="Public">False</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_C415">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_C416">
+      <description>SMT Multilayer Ceramic Capacitor, 0.1 µF, 6.3 V, 0402 [1005 Metric], ± 10%, X5R, Walsin MLCC</description>
+      <docs>https://www.passivecomponent.com/wp-content/uploads/datasheet/WTC_MLCC_General_Purpose.pdf</docs>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_100n_6V3_0402</field>
+        <field name="Footprint">Camera:C_0402_1005Metric</field>
+        <field name="Datasheet">https://www.passivecomponent.com/wp-content/uploads/datasheet/WTC_MLCC_General_Purpose.pdf</field>
+        <field name="Description">SMT Multilayer Ceramic Capacitor, 0.1 µF, 6.3 V, 0402 [1005 Metric], ± 10%, X5R, Walsin MLCC</field>
+        <field name="MPN">0402X104K6R3CT</field>
+        <field name="Manufacturer">Walsin</field>
+        <field name="License">Apache-2.0</field>
+        <field name="Author">Antmicro</field>
+        <field name="Val">100n</field>
+        <field name="Voltage"/>
+        <field name="Dielectric"/>
+        <field name="Public">False</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_C417">
+      <description>SMT Multilayer Ceramic Capacitor, 0.1 µF, 6.3 V, 0402 [1005 Metric], ± 10%, X5R, Walsin MLCC</description>
+      <docs>https://www.passivecomponent.com/wp-content/uploads/datasheet/WTC_MLCC_General_Purpose.pdf</docs>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_100n_6V3_0402</field>
+        <field name="Footprint">Camera:C_0402_1005Metric</field>
+        <field name="Datasheet">https://www.passivecomponent.com/wp-content/uploads/datasheet/WTC_MLCC_General_Purpose.pdf</field>
+        <field name="Description">SMT Multilayer Ceramic Capacitor, 0.1 µF, 6.3 V, 0402 [1005 Metric], ± 10%, X5R, Walsin MLCC</field>
+        <field name="MPN">0402X104K6R3CT</field>
+        <field name="Manufacturer">Walsin</field>
+        <field name="License">Apache-2.0</field>
+        <field name="Author">Antmicro</field>
+        <field name="Val">100n</field>
+        <field name="Voltage"/>
+        <field name="Dielectric"/>
+        <field name="Public">False</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_C418">
+      <description>SMT Multilayer Ceramic Capacitor, 0.1 µF, 6.3 V, 0402 [1005 Metric], ± 10%, X5R, Walsin MLCC</description>
+      <docs>https://www.passivecomponent.com/wp-content/uploads/datasheet/WTC_MLCC_General_Purpose.pdf</docs>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_100n_6V3_0402</field>
+        <field name="Footprint">Camera:C_0402_1005Metric</field>
+        <field name="Datasheet">https://www.passivecomponent.com/wp-content/uploads/datasheet/WTC_MLCC_General_Purpose.pdf</field>
+        <field name="Description">SMT Multilayer Ceramic Capacitor, 0.1 µF, 6.3 V, 0402 [1005 Metric], ± 10%, X5R, Walsin MLCC</field>
+        <field name="MPN">0402X104K6R3CT</field>
+        <field name="Manufacturer">Walsin</field>
+        <field name="License">Apache-2.0</field>
+        <field name="Author">Antmicro</field>
+        <field name="Val">100n</field>
+        <field name="Voltage"/>
+        <field name="Dielectric"/>
+        <field name="Public">False</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_C419">
+      <description>SMT Multilayer Ceramic Capacitor, 0.1 µF, 6.3 V, 0402 [1005 Metric], ± 10%, X5R, Walsin MLCC</description>
+      <docs>https://www.passivecomponent.com/wp-content/uploads/datasheet/WTC_MLCC_General_Purpose.pdf</docs>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_100n_6V3_0402</field>
+        <field name="Footprint">Camera:C_0402_1005Metric</field>
+        <field name="Datasheet">https://www.passivecomponent.com/wp-content/uploads/datasheet/WTC_MLCC_General_Purpose.pdf</field>
+        <field name="Description">SMT Multilayer Ceramic Capacitor, 0.1 µF, 6.3 V, 0402 [1005 Metric], ± 10%, X5R, Walsin MLCC</field>
+        <field name="MPN">0402X104K6R3CT</field>
+        <field name="Manufacturer">Walsin</field>
+        <field name="License">Apache-2.0</field>
+        <field name="Author">Antmicro</field>
+        <field name="Val">100n</field>
+        <field name="Voltage"/>
+        <field name="Dielectric"/>
+        <field name="Public">False</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_C420">
+      <description>SMT Multilayer Ceramic Capacitor, 0.1 µF, 6.3 V, 0402 [1005 Metric], ± 10%, X5R, Walsin MLCC</description>
+      <docs>https://www.passivecomponent.com/wp-content/uploads/datasheet/WTC_MLCC_General_Purpose.pdf</docs>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_100n_6V3_0402</field>
+        <field name="Footprint">Camera:C_0402_1005Metric</field>
+        <field name="Datasheet">https://www.passivecomponent.com/wp-content/uploads/datasheet/WTC_MLCC_General_Purpose.pdf</field>
+        <field name="Description">SMT Multilayer Ceramic Capacitor, 0.1 µF, 6.3 V, 0402 [1005 Metric], ± 10%, X5R, Walsin MLCC</field>
+        <field name="MPN">0402X104K6R3CT</field>
+        <field name="Manufacturer">Walsin</field>
+        <field name="License">Apache-2.0</field>
+        <field name="Author">Antmicro</field>
+        <field name="Val">100n</field>
+        <field name="Voltage"/>
+        <field name="Dielectric"/>
+        <field name="Public">False</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_C421">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_C422">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_C423">
+      <description>SMD Multilayer Ceramic Capacitor, 1 µF, 16 V, 0603 [1608 Metric], ± 10%, X5R, AVX 0603 MLCC</description>
+      <docs>https://spicat.kyocera-avx.com/product/mlcc/chartview/0603YD105KAT2A/</docs>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_1u_0603</field>
+        <field name="Footprint">Camera:C_0603_1608Metric</field>
+        <field name="Datasheet">https://spicat.kyocera-avx.com/product/mlcc/chartview/0603YD105KAT2A/</field>
+        <field name="Description">SMD Multilayer Ceramic Capacitor, 1 µF, 16 V, 0603 [1608 Metric], ± 10%, X5R, AVX 0603 MLCC</field>
+        <field name="MPN">0603YD105KAT2A</field>
+        <field name="Manufacturer">KYOCERA AVX</field>
+        <field name="License">Apache-2.0</field>
+        <field name="Author">Antmicro</field>
+        <field name="Val">1u</field>
+        <field name="Voltage"/>
+        <field name="Dielectric"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_C424">
+      <description>SMD Multilayer Ceramic Capacitor, 1 µF, 16 V, 0603 [1608 Metric], ± 10%, X5R, AVX 0603 MLCC</description>
+      <docs>https://spicat.kyocera-avx.com/product/mlcc/chartview/0603YD105KAT2A/</docs>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_1u_0603</field>
+        <field name="Footprint">Camera:C_0603_1608Metric</field>
+        <field name="Datasheet">https://spicat.kyocera-avx.com/product/mlcc/chartview/0603YD105KAT2A/</field>
+        <field name="Description">SMD Multilayer Ceramic Capacitor, 1 µF, 16 V, 0603 [1608 Metric], ± 10%, X5R, AVX 0603 MLCC</field>
+        <field name="MPN">0603YD105KAT2A</field>
+        <field name="Manufacturer">KYOCERA AVX</field>
+        <field name="License">Apache-2.0</field>
+        <field name="Author">Antmicro</field>
+        <field name="Val">1u</field>
+        <field name="Voltage"/>
+        <field name="Dielectric"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_C425">
+      <description>SMD Multilayer Ceramic Capacitor, 1 µF, 16 V, 0603 [1608 Metric], ± 10%, X5R, AVX 0603 MLCC</description>
+      <docs>https://spicat.kyocera-avx.com/product/mlcc/chartview/0603YD105KAT2A/</docs>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_1u_0603</field>
+        <field name="Footprint">Camera:C_0603_1608Metric</field>
+        <field name="Datasheet">https://spicat.kyocera-avx.com/product/mlcc/chartview/0603YD105KAT2A/</field>
+        <field name="Description">SMD Multilayer Ceramic Capacitor, 1 µF, 16 V, 0603 [1608 Metric], ± 10%, X5R, AVX 0603 MLCC</field>
+        <field name="MPN">0603YD105KAT2A</field>
+        <field name="Manufacturer">KYOCERA AVX</field>
+        <field name="License">Apache-2.0</field>
+        <field name="Author">Antmicro</field>
+        <field name="Val">1u</field>
+        <field name="Voltage"/>
+        <field name="Dielectric"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_C426">
+      <description>SMD Multilayer Ceramic Capacitor, 1 µF, 16 V, 0603 [1608 Metric], ± 10%, X5R, AVX 0603 MLCC</description>
+      <docs>https://spicat.kyocera-avx.com/product/mlcc/chartview/0603YD105KAT2A/</docs>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_1u_0603</field>
+        <field name="Footprint">Camera:C_0603_1608Metric</field>
+        <field name="Datasheet">https://spicat.kyocera-avx.com/product/mlcc/chartview/0603YD105KAT2A/</field>
+        <field name="Description">SMD Multilayer Ceramic Capacitor, 1 µF, 16 V, 0603 [1608 Metric], ± 10%, X5R, AVX 0603 MLCC</field>
+        <field name="MPN">0603YD105KAT2A</field>
+        <field name="Manufacturer">KYOCERA AVX</field>
+        <field name="License">Apache-2.0</field>
+        <field name="Author">Antmicro</field>
+        <field name="Val">1u</field>
+        <field name="Voltage"/>
+        <field name="Dielectric"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_C7">
+      <description>SMD Multilayer Ceramic Capacitor, 1 µF, 16 V, 0603 [1608 Metric], ± 10%, X5R, AVX 0603 MLCC</description>
+      <docs>https://spicat.kyocera-avx.com/product/mlcc/chartview/0603YD105KAT2A/</docs>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_1u_0603</field>
+        <field name="Footprint">Camera:C_0603_1608Metric</field>
+        <field name="Datasheet">https://spicat.kyocera-avx.com/product/mlcc/chartview/0603YD105KAT2A/</field>
+        <field name="Description">SMD Multilayer Ceramic Capacitor, 1 µF, 16 V, 0603 [1608 Metric], ± 10%, X5R, AVX 0603 MLCC</field>
+        <field name="MPN">0603YD105KAT2A</field>
+        <field name="Manufacturer">KYOCERA AVX</field>
+        <field name="License">Apache-2.0</field>
+        <field name="Author">Antmicro</field>
+        <field name="Val">1u</field>
+        <field name="Voltage"/>
+        <field name="Dielectric"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_C8">
+      <description>SMD Multilayer Ceramic Capacitor, 1 µF, 16 V, 0603 [1608 Metric], ± 10%, X5R, AVX 0603 MLCC</description>
+      <docs>https://spicat.kyocera-avx.com/product/mlcc/chartview/0603YD105KAT2A/</docs>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_1u_0603</field>
+        <field name="Footprint">Camera:C_0603_1608Metric</field>
+        <field name="Datasheet">https://spicat.kyocera-avx.com/product/mlcc/chartview/0603YD105KAT2A/</field>
+        <field name="Description">SMD Multilayer Ceramic Capacitor, 1 µF, 16 V, 0603 [1608 Metric], ± 10%, X5R, AVX 0603 MLCC</field>
+        <field name="MPN">0603YD105KAT2A</field>
+        <field name="Manufacturer">KYOCERA AVX</field>
+        <field name="License">Apache-2.0</field>
+        <field name="Author">Antmicro</field>
+        <field name="Val">1u</field>
+        <field name="Voltage"/>
+        <field name="Dielectric"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_C9">
+      <description>SMT Multilayer Ceramic Capacitor, 0.1 µF, 6.3 V, 0402 [1005 Metric], ± 10%, X5R, Walsin MLCC</description>
+      <docs>https://www.passivecomponent.com/wp-content/uploads/datasheet/WTC_MLCC_General_Purpose.pdf</docs>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_100n_6V3_0402</field>
+        <field name="Footprint">Camera:C_0402_1005Metric</field>
+        <field name="Datasheet">https://www.passivecomponent.com/wp-content/uploads/datasheet/WTC_MLCC_General_Purpose.pdf</field>
+        <field name="Description">SMT Multilayer Ceramic Capacitor, 0.1 µF, 6.3 V, 0402 [1005 Metric], ± 10%, X5R, Walsin MLCC</field>
+        <field name="MPN">0402X104K6R3CT</field>
+        <field name="Manufacturer">Walsin</field>
+        <field name="License">Apache-2.0</field>
+        <field name="Author">Antmicro</field>
+        <field name="Val">100n</field>
+        <field name="Voltage"/>
+        <field name="Dielectric"/>
+        <field name="Public">False</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_D201">
+      <description>Light emitting diode</description>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Light emitting diode</field>
+        <field name="Sim.Pins">1=K 2=A</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_D202">
+      <description>Light emitting diode</description>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Light emitting diode</field>
+        <field name="Sim.Pins">1=K 2=A</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_D203">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">E01_D203</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="IO" type="passive"/>
+        <pin num="2" name="IO_GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_D204">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">E01_D204</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="IO" type="passive"/>
+        <pin num="2" name="IO_GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_FB401">
+      <description>Multilayer Inductor, 3.3 µH, 0.19 ohm, 900 mA, 0805 [2012 Metric], MLP</description>
+      <docs>https://product.tdk.com/en/system/files?file=dam/doc/product/inductor/inductor/smd/catalog/inductor_commercial_power_mlp2012_en.pdf</docs>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L_3u3_0.9A_0805</field>
+        <field name="Footprint">Camera:L_0805_2012Metric</field>
+        <field name="Datasheet">https://product.tdk.com/en/system/files?file=dam/doc/product/inductor/inductor/smd/catalog/inductor_commercial_power_mlp2012_en.pdf</field>
+        <field name="Description">Multilayer Inductor, 3.3 µH, 0.19 ohm, 900 mA, 0805 [2012 Metric], MLP</field>
+        <field name="Val">3u3/0.9A</field>
+        <field name="Manufacturer">TDK</field>
+        <field name="MPN">MLP2012S3R3MT</field>
+        <field name="ISat">0.9 A</field>
+        <field name="IMax">0.9 A</field>
+        <field name="Size">2.0x1.2</field>
+        <field name="Author">Antmicro</field>
+        <field name="License">Apache-2.0</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_FB402">
+      <description>Multilayer Inductor, 3.3 µH, 0.19 ohm, 900 mA, 0805 [2012 Metric], MLP</description>
+      <docs>https://product.tdk.com/en/system/files?file=dam/doc/product/inductor/inductor/smd/catalog/inductor_commercial_power_mlp2012_en.pdf</docs>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L_3u3_0.9A_0805</field>
+        <field name="Footprint">Camera:L_0805_2012Metric</field>
+        <field name="Datasheet">https://product.tdk.com/en/system/files?file=dam/doc/product/inductor/inductor/smd/catalog/inductor_commercial_power_mlp2012_en.pdf</field>
+        <field name="Description">Multilayer Inductor, 3.3 µH, 0.19 ohm, 900 mA, 0805 [2012 Metric], MLP</field>
+        <field name="Val">3u3/0.9A</field>
+        <field name="Manufacturer">TDK</field>
+        <field name="MPN">MLP2012S3R3MT</field>
+        <field name="ISat">0.9 A</field>
+        <field name="IMax">0.9 A</field>
+        <field name="Size">2.0x1.2</field>
+        <field name="Author">Antmicro</field>
+        <field name="License">Apache-2.0</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_FB403">
+      <description>Multilayer Inductor, 3.3 µH, 0.19 ohm, 900 mA, 0805 [2012 Metric], MLP</description>
+      <docs>https://product.tdk.com/en/system/files?file=dam/doc/product/inductor/inductor/smd/catalog/inductor_commercial_power_mlp2012_en.pdf</docs>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L_3u3_0.9A_0805</field>
+        <field name="Footprint">Camera:L_0805_2012Metric</field>
+        <field name="Datasheet">https://product.tdk.com/en/system/files?file=dam/doc/product/inductor/inductor/smd/catalog/inductor_commercial_power_mlp2012_en.pdf</field>
+        <field name="Description">Multilayer Inductor, 3.3 µH, 0.19 ohm, 900 mA, 0805 [2012 Metric], MLP</field>
+        <field name="Val">3u3/0.9A</field>
+        <field name="Manufacturer">TDK</field>
+        <field name="MPN">MLP2012S3R3MT</field>
+        <field name="ISat">0.9 A</field>
+        <field name="IMax">0.9 A</field>
+        <field name="Size">2.0x1.2</field>
+        <field name="Author">Antmicro</field>
+        <field name="License">Apache-2.0</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_J201">
+      <description>Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x04</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_L1">
+      <description>Multilayer Inductor, 3.3 µH, 0.19 ohm, 900 mA, 0805 [2012 Metric], MLP</description>
+      <docs>https://product.tdk.com/en/system/files?file=dam/doc/product/inductor/inductor/smd/catalog/inductor_commercial_power_mlp2012_en.pdf</docs>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L_3u3_0.9A_0805</field>
+        <field name="Footprint">Camera:L_0805_2012Metric</field>
+        <field name="Datasheet">https://product.tdk.com/en/system/files?file=dam/doc/product/inductor/inductor/smd/catalog/inductor_commercial_power_mlp2012_en.pdf</field>
+        <field name="Description">Multilayer Inductor, 3.3 µH, 0.19 ohm, 900 mA, 0805 [2012 Metric], MLP</field>
+        <field name="Val">3u3/0.9A</field>
+        <field name="Manufacturer">TDK</field>
+        <field name="MPN">MLP2012S3R3MT</field>
+        <field name="ISat">0.9 A</field>
+        <field name="IMax">0.9 A</field>
+        <field name="Size">2.0x1.2</field>
+        <field name="Author">Antmicro</field>
+        <field name="License">Apache-2.0</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_L2">
+      <description>Multilayer Inductor, 3.3 µH, 0.19 ohm, 900 mA, 0805 [2012 Metric], MLP</description>
+      <docs>https://product.tdk.com/en/system/files?file=dam/doc/product/inductor/inductor/smd/catalog/inductor_commercial_power_mlp2012_en.pdf</docs>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L_3u3_0.9A_0805</field>
+        <field name="Footprint">Camera:L_0805_2012Metric</field>
+        <field name="Datasheet">https://product.tdk.com/en/system/files?file=dam/doc/product/inductor/inductor/smd/catalog/inductor_commercial_power_mlp2012_en.pdf</field>
+        <field name="Description">Multilayer Inductor, 3.3 µH, 0.19 ohm, 900 mA, 0805 [2012 Metric], MLP</field>
+        <field name="Val">3u3/0.9A</field>
+        <field name="Manufacturer">TDK</field>
+        <field name="MPN">MLP2012S3R3MT</field>
+        <field name="ISat">0.9 A</field>
+        <field name="IMax">0.9 A</field>
+        <field name="Size">2.0x1.2</field>
+        <field name="Author">Antmicro</field>
+        <field name="License">Apache-2.0</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_L202">
+      <description>Inductor</description>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Inductor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_L3">
+      <description>Multilayer Inductor, 3.3 µH, 0.19 ohm, 900 mA, 0805 [2012 Metric], MLP</description>
+      <docs>https://product.tdk.com/en/system/files?file=dam/doc/product/inductor/inductor/smd/catalog/inductor_commercial_power_mlp2012_en.pdf</docs>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L_3u3_0.9A_0805</field>
+        <field name="Footprint">Camera:L_0805_2012Metric</field>
+        <field name="Datasheet">https://product.tdk.com/en/system/files?file=dam/doc/product/inductor/inductor/smd/catalog/inductor_commercial_power_mlp2012_en.pdf</field>
+        <field name="Description">Multilayer Inductor, 3.3 µH, 0.19 ohm, 900 mA, 0805 [2012 Metric], MLP</field>
+        <field name="Val">3u3/0.9A</field>
+        <field name="Manufacturer">TDK</field>
+        <field name="MPN">MLP2012S3R3MT</field>
+        <field name="ISat">0.9 A</field>
+        <field name="IMax">0.9 A</field>
+        <field name="Size">2.0x1.2</field>
+        <field name="Author">Antmicro</field>
+        <field name="License">Apache-2.0</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_Q201">
+      <description>50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23</description>
+      <docs>https://www.onsemi.com/pub/Collateral/BSS138-D.PDF</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">BSS138</field>
+        <field name="Footprint">Camera:SOT-23</field>
+        <field name="Datasheet">https://www.onsemi.com/pub/Collateral/BSS138-D.PDF</field>
+        <field name="Description">50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_R201">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_R202">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_R203">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_R204">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_R401">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_R402">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_R403">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_R404">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_R405">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_R406">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_R407">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_R408">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_R409">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_R7">
+      <description>SMD Chip Resistor, Jumper, 0 ohm, 100 mW, 0402 [1005 Metric], Thick Film, General Purpose</description>
+      <docs>https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C301.pdf</docs>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_0R_0402</field>
+        <field name="Footprint">Camera:R_0402_1005Metric</field>
+        <field name="Datasheet">https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C301.pdf</field>
+        <field name="Description">SMD Chip Resistor, Jumper, 0 ohm, 100 mW, 0402 [1005 Metric], Thick Film, General Purpose</field>
+        <field name="MPN">ERJ2GE0R00X</field>
+        <field name="Manufacturer">Panasonic</field>
+        <field name="License">Apache-2.0</field>
+        <field name="Author">Antmicro</field>
+        <field name="Val">0R</field>
+        <field name="Tolerance"/>
+        <field name="Current">1A</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_R8">
+      <description>SMD Chip Resistor, Jumper, 0 ohm, 100 mW, 0402 [1005 Metric], Thick Film, General Purpose</description>
+      <docs>https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C301.pdf</docs>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_0R_0402</field>
+        <field name="Footprint">Camera:R_0402_1005Metric</field>
+        <field name="Datasheet">https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C301.pdf</field>
+        <field name="Description">SMD Chip Resistor, Jumper, 0 ohm, 100 mW, 0402 [1005 Metric], Thick Film, General Purpose</field>
+        <field name="MPN">ERJ2GE0R00X</field>
+        <field name="Manufacturer">Panasonic</field>
+        <field name="License">Apache-2.0</field>
+        <field name="Author">Antmicro</field>
+        <field name="Val">0R</field>
+        <field name="Tolerance"/>
+        <field name="Current">1A</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_R9">
+      <description>SMD Chip Resistor, Jumper, 0 ohm, 100 mW, 0402 [1005 Metric], Thick Film, General Purpose</description>
+      <docs>https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C301.pdf</docs>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_0R_0402</field>
+        <field name="Footprint">Camera:R_0402_1005Metric</field>
+        <field name="Datasheet">https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C301.pdf</field>
+        <field name="Description">SMD Chip Resistor, Jumper, 0 ohm, 100 mW, 0402 [1005 Metric], Thick Film, General Purpose</field>
+        <field name="MPN">ERJ2GE0R00X</field>
+        <field name="Manufacturer">Panasonic</field>
+        <field name="License">Apache-2.0</field>
+        <field name="Author">Antmicro</field>
+        <field name="Val">0R</field>
+        <field name="Tolerance"/>
+        <field name="Current">1A</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_TP201">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">E01_TP201</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="SHIELD" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_U1">
+      <description>B&amp;W CMOS 1 Megapixel (1280x800) Image Sensor with OmniPixel®3‑GS Technology</description>
+      <docs>https://www.ovt.com/wp-content/uploads/2022/01/OV9281-OV9282-PB-v1.3-WEB.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">OV9281</field>
+        <field name="Footprint">Camera:OV9281</field>
+        <field name="Datasheet">https://www.ovt.com/wp-content/uploads/2022/01/OV9281-OV9282-PB-v1.3-WEB.pdf</field>
+        <field name="Description">B&amp;W CMOS 1 Megapixel (1280x800) Image Sensor with OmniPixel®3‑GS Technology</field>
+        <field name="MPN">OV9281</field>
+        <field name="Manufacturer">OmniVision</field>
+        <field name="Author">Antmicro</field>
+        <field name="License">Apache-2.0</field>
+      </fields>
+      <pins>
+        <pin num="A1" name="" type="no_connect"/>
+        <pin num="A2" name="DVDD" type="passive"/>
+        <pin num="A3" name="DOGND" type="power_in"/>
+        <pin num="A4" name="SDA" type="passive"/>
+        <pin num="A5" name="XSHUTDOWN" type="passive"/>
+        <pin num="A6" name="ILPWM" type="passive"/>
+        <pin num="A7" name="DOGND" type="passive"/>
+        <pin num="A8" name="" type="no_connect"/>
+        <pin num="B1" name="DVDD" type="passive"/>
+        <pin num="B2" name="DOGND" type="passive"/>
+        <pin num="B3" name="DVDD" type="passive"/>
+        <pin num="B4" name="D8" type="passive"/>
+        <pin num="B5" name="FSIN/VSYNC" type="passive"/>
+        <pin num="B6" name="STROBE" type="passive"/>
+        <pin num="B7" name="DOVDD" type="passive"/>
+        <pin num="B8" name="AVDD" type="passive"/>
+        <pin num="C1" name="AVDD" type="passive"/>
+        <pin num="C2" name="PCLK" type="passive"/>
+        <pin num="C3" name="GPIO1" type="passive"/>
+        <pin num="C4" name="D9" type="passive"/>
+        <pin num="C5" name="DVDD" type="passive"/>
+        <pin num="C6" name="ULPM" type="passive"/>
+        <pin num="C7" name="TEST" type="passive"/>
+        <pin num="C8" name="AGND" type="passive"/>
+        <pin num="D1" name="HREF" type="passive"/>
+        <pin num="D2" name="AGND" type="passive"/>
+        <pin num="D3" name="DOVDD" type="passive"/>
+        <pin num="D4" name="GPIO0" type="passive"/>
+        <pin num="D5" name="PVDD" type="passive"/>
+        <pin num="D6" name="GPIO2" type="passive"/>
+        <pin num="D7" name="VN1" type="passive"/>
+        <pin num="D8" name="DVDD" type="passive"/>
+        <pin num="E1" name="SID" type="passive"/>
+        <pin num="E2" name="XVCLK" type="passive"/>
+        <pin num="E3" name="EGND" type="passive"/>
+        <pin num="E4" name="SCL" type="passive"/>
+        <pin num="E5" name="EGND" type="passive"/>
+        <pin num="E6" name="TM" type="passive"/>
+        <pin num="E7" name="VN2" type="passive"/>
+        <pin num="E8" name="VH" type="passive"/>
+        <pin num="F1" name="DOGND" type="passive"/>
+        <pin num="F2" name="DVDD" type="passive"/>
+        <pin num="F3" name="EVDD" type="passive"/>
+        <pin num="F4" name="DOGND" type="passive"/>
+        <pin num="F5" name="MD1N" type="passive"/>
+        <pin num="F6" name="DOGND" type="passive"/>
+        <pin num="F7" name="VN3" type="passive"/>
+        <pin num="F8" name="AGND" type="passive"/>
+        <pin num="G1" name="DVDD" type="passive"/>
+        <pin num="G2" name="DOGND" type="passive"/>
+        <pin num="G3" name="MDP0" type="passive"/>
+        <pin num="G4" name="MDCP" type="passive"/>
+        <pin num="G5" name="MDP1" type="passive"/>
+        <pin num="G6" name="DVDD" type="passive"/>
+        <pin num="G7" name="AVDD" type="passive"/>
+        <pin num="G8" name="AVDD" type="passive"/>
+        <pin num="H1" name="" type="no_connect"/>
+        <pin num="H2" name="DOVDD" type="passive"/>
+        <pin num="H3" name="MDN0" type="passive"/>
+        <pin num="H4" name="MDCN" type="passive"/>
+        <pin num="H5" name="EVDD" type="passive"/>
+        <pin num="H6" name="DOVDD" type="passive"/>
+        <pin num="H7" name="AGND" type="passive"/>
+        <pin num="H8" name="" type="no_connect"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_U201">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">E01_U201</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="CSI_D1P" type="input"/>
+        <pin num="2" name="CSI_D1N" type="input"/>
+        <pin num="3" name="CSI_D0P" type="input"/>
+        <pin num="4" name="CSI_D0N" type="input"/>
+        <pin num="5" name="CSI_CLKP" type="input"/>
+        <pin num="6" name="CSI_CLKN" type="input"/>
+        <pin num="7" name="RES0" type="input"/>
+        <pin num="8" name="PDB" type="input"/>
+        <pin num="9" name="LPF1" type="passive"/>
+        <pin num="10" name="VDDPLL_CAP" type="power_out"/>
+        <pin num="11" name="VDDPLL" type="power_in"/>
+        <pin num="12" name="LPF2" type="passive"/>
+        <pin num="13" name="DOUT_N" type="bidirectional"/>
+        <pin num="14" name="DOUT_P" type="bidirectional"/>
+        <pin num="15" name="VDDDRV_CAP" type="power_out"/>
+        <pin num="16" name="VDDDRV" type="power_in"/>
+        <pin num="17" name="GPIO0" type="bidirectional"/>
+        <pin num="18" name="GPIO1" type="bidirectional"/>
+        <pin num="19" name="CLK_OUT_IDX" type="bidirectional"/>
+        <pin num="20" name="CLKIN" type="input"/>
+        <pin num="21" name="MODE" type="input"/>
+        <pin num="22" name="RES1" type="input"/>
+        <pin num="23" name="I2C_SDA" type="bidirectional"/>
+        <pin num="24" name="I2C_SCL" type="bidirectional"/>
+        <pin num="25" name="VDDD" type="power_in"/>
+        <pin num="26" name="VDDD_CAP" type="power_out"/>
+        <pin num="27" name="GPIO2" type="bidirectional"/>
+        <pin num="28" name="GPIO3" type="bidirectional"/>
+        <pin num="29" name="CSI_D3P" type="input"/>
+        <pin num="30" name="CSI_D3N" type="input"/>
+        <pin num="31" name="CSI_D2P" type="input"/>
+        <pin num="32" name="CSI_D2N" type="input"/>
+        <pin num="33" name="EP" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_U202">
+      <description>High Efficiency Synchronous Buck Converter, Adjustable Output 0.6V-5.5V, 2A, SOT-23-5</description>
+      <docs>http://www.ti.com/lit/ds/symlink/tlv62569.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TLV62569DBV</field>
+        <field name="Footprint">Camera:SOT-23-5</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/tlv62569.pdf</field>
+        <field name="Description">High Efficiency Synchronous Buck Converter, Adjustable Output 0.6V-5.5V, 2A, SOT-23-5</field>
+      </fields>
+      <pins>
+        <pin num="1" name="FB" type="input"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="VIN" type="power_in"/>
+        <pin num="4" name="SW" type="power_out"/>
+        <pin num="5" name="EN" type="input"/>
+        <pin num="6" name="NC" type="no_connect"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_U6">
+      <description>Fixed LDO Voltage Regulator, 1.4V to 5.5V, 122mV Dropout, 1.2Vout, 300mAout, SOT-23-5</description>
+      <docs>https://www.ti.com/lit/ds/symlink/tlv733p.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&amp;ts=1676978230940&amp;ref_url=https%253A%252F%252Fwww.mouser.com%252F</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TLV73312PDBVT</field>
+        <field name="Footprint">Camera:SOT-23-5</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tlv733p.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&amp;ts=1676978230940&amp;ref_url=https%253A%252F%252Fwww.mouser.com%252F</field>
+        <field name="Description">Fixed LDO Voltage Regulator, 1.4V to 5.5V, 122mV Dropout, 1.2Vout, 300mAout, SOT-23-5</field>
+        <field name="MPN">TLV73312PDBVT</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="Author">Antmicro</field>
+        <field name="License">Apache-2.0</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VOUT" type="power_out"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="EN" type="input"/>
+        <pin num="4" name="VIN" type="power_in"/>
+        <pin num="5" name="EP" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_U7">
+      <description>Fixed LDO Voltage Regulator, 1.4V to 5.5V, 122mV Dropout, 2.8Vout, 300mAout, SOT-23-5</description>
+      <docs>https://www.ti.com/lit/ds/symlink/tlv733p.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TLV73328PDBVT</field>
+        <field name="Footprint">Camera:SOT-23-5</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tlv733p.pdf</field>
+        <field name="Description">Fixed LDO Voltage Regulator, 1.4V to 5.5V, 122mV Dropout, 2.8Vout, 300mAout, SOT-23-5</field>
+        <field name="MPN">TLV73328PDBVT</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="Author">Antmicro</field>
+        <field name="License">Apache-2.0</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VOUT" type="power_out"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="EN" type="input"/>
+        <pin num="4" name="VIN" type="power_in"/>
+        <pin num="5" name="EP" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Camera" part="E01_Y1">
+      <description>Oscillator, 24 MHz, 50 ppm, SMT, 5mm x 3.2mm, 3.3 V, 7C Series</description>
+      <docs>http://www.txccorp.com/download/products/oscillators/2015TXC_7C_57.pdf</docs>
+      <fields>
+        <field name="Reference">Y</field>
+        <field name="Value">Oscillator_24MHz_TXC_7C</field>
+        <field name="Footprint">Camera:Oscillator_SMD_TXC_7C_5x3.2x1.2mm</field>
+        <field name="Datasheet">http://www.txccorp.com/download/products/oscillators/2015TXC_7C_57.pdf</field>
+        <field name="Description">Oscillator, 24 MHz, 50 ppm, SMT, 5mm x 3.2mm, 3.3 V, 7C Series</field>
+        <field name="MPN">7C-24.000MBB-T</field>
+        <field name="Manufacturer">TXC</field>
+        <field name="Val">24 MHz</field>
+        <field name="Author">Antmicro</field>
+        <field name="License">Apache-2.0</field>
+      </fields>
+      <pins>
+        <pin num="1" name="EN" type="input"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="OUT" type="output"/>
+        <pin num="4" name="VDD" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Camera">
+      <uri>${KIPRJMOD}/Camera.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/CAM_L_CLK_N" class="Default">
+      <node ref="U1" pin="H4" pinfunction="MDCN_H4" pintype="passive"/>
+      <node ref="U201" pin="6" pinfunction="CSI_CLKN_6" pintype="input"/>
+    </net>
+    <net code="2" name="/CAM_L_CLK_P" class="Default">
+      <node ref="U1" pin="G4" pinfunction="MDCP_G4" pintype="passive"/>
+      <node ref="U201" pin="5" pinfunction="CSI_CLKP_5" pintype="input"/>
+    </net>
+    <net code="3" name="/CAM_L_D0_N" class="Default">
+      <node ref="U1" pin="H3" pinfunction="MDN0_H3" pintype="passive"/>
+      <node ref="U201" pin="4" pinfunction="CSI_D0N_4" pintype="input"/>
+    </net>
+    <net code="4" name="/CAM_L_D0_P" class="Default">
+      <node ref="U1" pin="G3" pinfunction="MDP0_G3" pintype="passive"/>
+      <node ref="U201" pin="3" pinfunction="CSI_D0P_3" pintype="input"/>
+    </net>
+    <net code="5" name="/CAM_L_D1_N" class="Default">
+      <node ref="U1" pin="F5" pinfunction="MD1N_F5" pintype="passive"/>
+      <node ref="U201" pin="2" pinfunction="CSI_D1N_2" pintype="input"/>
+    </net>
+    <net code="6" name="/CAM_L_D1_P" class="Default">
+      <node ref="U1" pin="G5" pinfunction="MDP1_G5" pintype="passive"/>
+      <node ref="U201" pin="1" pinfunction="CSI_D1P_1" pintype="input"/>
+    </net>
+    <net code="7" name="/CAM_NRST_1V8" class="Default">
+      <node ref="R401" pin="1" pintype="passive"/>
+      <node ref="U1" pin="A5" pinfunction="XSHUTDOWN_A5" pintype="passive"/>
+      <node ref="U201" pin="17" pinfunction="GPIO0_17" pintype="bidirectional"/>
+    </net>
+    <net code="8" name="/H1V2" class="Default">
+      <node ref="C423" pin="1" pintype="passive"/>
+      <node ref="L1" pin="1" pintype="passive"/>
+      <node ref="U6" pin="1" pinfunction="VOUT_1" pintype="power_out"/>
+    </net>
+    <net code="9" name="/H1V8" class="Default">
+      <node ref="C33" pin="1" pintype="passive"/>
+      <node ref="C422" pin="1" pintype="passive"/>
+      <node ref="C424" pin="1" pintype="passive"/>
+      <node ref="FB401" pin="1" pintype="passive"/>
+      <node ref="FB402" pin="1" pintype="passive"/>
+      <node ref="FB403" pin="1" pintype="passive"/>
+      <node ref="L2" pin="1" pintype="passive"/>
+      <node ref="L202" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R403" pin="1" pintype="passive"/>
+      <node ref="R404" pin="1" pintype="passive"/>
+      <node ref="R407" pin="1" pintype="passive"/>
+      <node ref="R408" pin="1" pintype="passive"/>
+      <node ref="U6" pin="3" pinfunction="EN_3" pintype="input"/>
+      <node ref="U6" pin="4" pinfunction="VIN_4" pintype="power_in"/>
+      <node ref="Y1" pin="1" pinfunction="EN_1" pintype="input"/>
+      <node ref="Y1" pin="4" pinfunction="VDD_4" pintype="power_in"/>
+    </net>
+    <net code="10" name="/H2V8" class="Default">
+      <node ref="C425" pin="1" pintype="passive"/>
+      <node ref="L3" pin="1" pintype="passive"/>
+      <node ref="U7" pin="1" pinfunction="VOUT_1" pintype="power_out"/>
+    </net>
+    <net code="11" name="/H5V" class="Default">
+      <node ref="C421" pin="1" pintype="passive"/>
+      <node ref="C426" pin="1" pintype="passive"/>
+      <node ref="J201" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="R201" pin="1" pintype="passive"/>
+      <node ref="R202" pin="1" pintype="passive"/>
+      <node ref="U202" pin="3" pinfunction="VIN_3" pintype="power_in"/>
+      <node ref="U202" pin="5" pinfunction="EN_5" pintype="input"/>
+      <node ref="U7" pin="3" pinfunction="EN_3" pintype="input"/>
+      <node ref="U7" pin="4" pinfunction="VIN_4" pintype="power_in"/>
+    </net>
+    <net code="12" name="/IR_A1" class="Default">
+      <node ref="D201" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="R201" pin="2" pintype="passive"/>
+    </net>
+    <net code="13" name="/IR_A2" class="Default">
+      <node ref="D202" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="R202" pin="2" pintype="passive"/>
+    </net>
+    <net code="14" name="/IR_GATE" class="Default">
+      <node ref="Q201" pin="1" pinfunction="G_1" pintype="input"/>
+      <node ref="R203" pin="2" pintype="passive"/>
+      <node ref="R204" pin="1" pintype="passive"/>
+    </net>
+    <net code="15" name="/IR_K" class="Default">
+      <node ref="D201" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D202" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="Q201" pin="3" pinfunction="D_3" pintype="passive"/>
+    </net>
+    <net code="16" name="/LINK_N" class="Default">
+      <node ref="C420" pin="2" pintype="passive"/>
+      <node ref="D204" pin="1" pinfunction="IO_1" pintype="passive"/>
+      <node ref="J201" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+    </net>
+    <net code="17" name="/LINK_P" class="Default">
+      <node ref="C419" pin="2" pintype="passive"/>
+      <node ref="D203" pin="1" pinfunction="IO_1" pintype="passive"/>
+      <node ref="J201" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+    </net>
+    <net code="18" name="/M1_AVDD" class="Default">
+      <node ref="C18" pin="1" pintype="passive"/>
+      <node ref="C19" pin="1" pintype="passive"/>
+      <node ref="C20" pin="1" pintype="passive"/>
+      <node ref="L3" pin="2" pintype="passive"/>
+      <node ref="R9" pin="2" pintype="passive"/>
+      <node ref="U1" pin="B8" pinfunction="AVDD_B8" pintype="passive"/>
+      <node ref="U1" pin="C1" pinfunction="AVDD_C1" pintype="passive"/>
+      <node ref="U1" pin="G7" pinfunction="AVDD_G7" pintype="passive"/>
+      <node ref="U1" pin="G8" pinfunction="AVDD_G8" pintype="passive"/>
+    </net>
+    <net code="19" name="/M1_CAM_SCL_1V8" class="Default">
+      <node ref="R403" pin="2" pintype="passive"/>
+      <node ref="U1" pin="E4" pinfunction="SCL_E4" pintype="passive"/>
+      <node ref="U201" pin="24" pinfunction="I2C_SCL_24" pintype="bidirectional"/>
+    </net>
+    <net code="20" name="/M1_CAM_SDA_1V8" class="Default">
+      <node ref="R404" pin="2" pintype="passive"/>
+      <node ref="U1" pin="A4" pinfunction="SDA_A4" pintype="passive"/>
+      <node ref="U201" pin="23" pinfunction="I2C_SDA_23" pintype="bidirectional"/>
+    </net>
+    <net code="21" name="/M1_DOVDD" class="Default">
+      <node ref="C13" pin="1" pintype="passive"/>
+      <node ref="C15" pin="1" pintype="passive"/>
+      <node ref="C16" pin="1" pintype="passive"/>
+      <node ref="L2" pin="2" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="U1" pin="B7" pinfunction="DOVDD_B7" pintype="passive"/>
+      <node ref="U1" pin="D3" pinfunction="DOVDD_D3" pintype="passive"/>
+      <node ref="U1" pin="H2" pinfunction="DOVDD_H2" pintype="passive"/>
+      <node ref="U1" pin="H6" pinfunction="DOVDD_H6" pintype="passive"/>
+    </net>
+    <net code="22" name="/M1_DVDD" class="Default">
+      <node ref="C12" pin="1" pintype="passive"/>
+      <node ref="C14" pin="1" pintype="passive"/>
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="L1" pin="2" pintype="passive"/>
+      <node ref="U1" pin="A2" pinfunction="DVDD_A2" pintype="passive"/>
+      <node ref="U1" pin="B1" pinfunction="DVDD_B1" pintype="passive"/>
+      <node ref="U1" pin="B3" pinfunction="DVDD_B3" pintype="passive"/>
+      <node ref="U1" pin="C5" pinfunction="DVDD_C5" pintype="passive"/>
+      <node ref="U1" pin="D8" pinfunction="DVDD_D8" pintype="passive"/>
+      <node ref="U1" pin="F2" pinfunction="DVDD_F2" pintype="passive"/>
+      <node ref="U1" pin="F3" pinfunction="EVDD_F3" pintype="passive"/>
+      <node ref="U1" pin="G1" pinfunction="DVDD_G1" pintype="passive"/>
+      <node ref="U1" pin="G6" pinfunction="DVDD_G6" pintype="passive"/>
+      <node ref="U1" pin="H5" pinfunction="EVDD_H5" pintype="passive"/>
+    </net>
+    <net code="23" name="/M1_MCLK" class="Default">
+      <node ref="U1" pin="E2" pinfunction="XVCLK_E2" pintype="passive"/>
+      <node ref="Y1" pin="3" pinfunction="OUT_3" pintype="output"/>
+    </net>
+    <net code="24" name="/M1_PVDD" class="Default">
+      <node ref="C17" pin="1" pintype="passive"/>
+      <node ref="R9" pin="1" pintype="passive"/>
+      <node ref="U1" pin="D5" pinfunction="PVDD_D5" pintype="passive"/>
+    </net>
+    <net code="25" name="/M1_SID" class="Default">
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+      <node ref="U1" pin="E1" pinfunction="SID_E1" pintype="passive"/>
+    </net>
+    <net code="26" name="/M1_VH" class="Default">
+      <node ref="C21" pin="1" pintype="passive"/>
+      <node ref="U1" pin="E8" pinfunction="VH_E8" pintype="passive"/>
+    </net>
+    <net code="27" name="/M1_VN1" class="Default">
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="U1" pin="D7" pinfunction="VN1_D7" pintype="passive"/>
+    </net>
+    <net code="28" name="/M1_VN2" class="Default">
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="U1" pin="E7" pinfunction="VN2_E7" pintype="passive"/>
+    </net>
+    <net code="29" name="/M1_VN3" class="Default">
+      <node ref="C10" pin="1" pintype="passive"/>
+      <node ref="U1" pin="F7" pinfunction="VN3_F7" pintype="passive"/>
+    </net>
+    <net code="30" name="/M1_VSYNC_1V8_M" class="Default">
+      <node ref="R402" pin="1" pintype="passive"/>
+      <node ref="U1" pin="B5" pinfunction="FSIN/VSYNC_B5" pintype="passive"/>
+    </net>
+    <net code="31" name="/SER_DOUT_N" class="Default">
+      <node ref="C420" pin="1" pintype="passive"/>
+      <node ref="U201" pin="13" pinfunction="DOUT_N_13" pintype="bidirectional"/>
+    </net>
+    <net code="32" name="/SER_DOUT_P" class="Default">
+      <node ref="C419" pin="1" pintype="passive"/>
+      <node ref="U201" pin="14" pinfunction="DOUT_P_14" pintype="bidirectional"/>
+    </net>
+    <net code="33" name="/SER_DRV_CAP" class="Default">
+      <node ref="C410" pin="1" pintype="passive"/>
+      <node ref="C411" pin="1" pintype="passive"/>
+      <node ref="C412" pin="1" pintype="passive"/>
+      <node ref="U201" pin="15" pinfunction="VDDDRV_CAP_15" pintype="power_out"/>
+    </net>
+    <net code="34" name="/SER_D_CAP" class="Default">
+      <node ref="C413" pin="1" pintype="passive"/>
+      <node ref="C414" pin="1" pintype="passive"/>
+      <node ref="C415" pin="1" pintype="passive"/>
+      <node ref="U201" pin="26" pinfunction="VDDD_CAP_26" pintype="power_out"/>
+    </net>
+    <net code="35" name="/SER_IDX" class="Default">
+      <node ref="R406" pin="1" pintype="passive"/>
+      <node ref="U201" pin="19" pinfunction="CLK_OUT_IDX_19" pintype="bidirectional"/>
+    </net>
+    <net code="36" name="/SER_LED_PWM" class="Default">
+      <node ref="R203" pin="1" pintype="passive"/>
+      <node ref="U201" pin="18" pinfunction="GPIO1_18" pintype="bidirectional"/>
+    </net>
+    <net code="37" name="/SER_LPF1" class="Default">
+      <node ref="C416" pin="1" pintype="passive"/>
+      <node ref="U201" pin="9" pinfunction="LPF1_9" pintype="passive"/>
+    </net>
+    <net code="38" name="/SER_LPF2" class="Default">
+      <node ref="C417" pin="1" pintype="passive"/>
+      <node ref="U201" pin="12" pinfunction="LPF2_12" pintype="passive"/>
+    </net>
+    <net code="39" name="/SER_MODE" class="Default">
+      <node ref="R405" pin="1" pintype="passive"/>
+      <node ref="U201" pin="21" pinfunction="MODE_21" pintype="input"/>
+    </net>
+    <net code="40" name="/SER_PDB" class="Default">
+      <node ref="C418" pin="1" pintype="passive"/>
+      <node ref="R407" pin="2" pintype="passive"/>
+      <node ref="U201" pin="8" pinfunction="PDB_8" pintype="input"/>
+    </net>
+    <net code="41" name="/SER_PLL_CAP" class="Default">
+      <node ref="C407" pin="1" pintype="passive"/>
+      <node ref="C408" pin="1" pintype="passive"/>
+      <node ref="C409" pin="1" pintype="passive"/>
+      <node ref="U201" pin="10" pinfunction="VDDPLL_CAP_10" pintype="power_out"/>
+    </net>
+    <net code="42" name="/SER_VDDD" class="Default">
+      <node ref="C401" pin="1" pintype="passive"/>
+      <node ref="C402" pin="1" pintype="passive"/>
+      <node ref="FB401" pin="2" pintype="passive"/>
+      <node ref="U201" pin="25" pinfunction="VDDD_25" pintype="power_in"/>
+    </net>
+    <net code="43" name="/SER_VDDDRV" class="Default">
+      <node ref="C403" pin="1" pintype="passive"/>
+      <node ref="C404" pin="1" pintype="passive"/>
+      <node ref="FB402" pin="2" pintype="passive"/>
+      <node ref="U201" pin="16" pinfunction="VDDDRV_16" pintype="power_in"/>
+    </net>
+    <net code="44" name="/SER_VDDPLL" class="Default">
+      <node ref="C405" pin="1" pintype="passive"/>
+      <node ref="C406" pin="1" pintype="passive"/>
+      <node ref="C416" pin="2" pintype="passive"/>
+      <node ref="FB403" pin="2" pintype="passive"/>
+      <node ref="U201" pin="11" pinfunction="VDDPLL_11" pintype="power_in"/>
+    </net>
+    <net code="45" name="/U202_FB" class="Default">
+      <node ref="R408" pin="2" pintype="passive"/>
+      <node ref="R409" pin="1" pintype="passive"/>
+      <node ref="U202" pin="1" pinfunction="FB_1" pintype="input"/>
+    </net>
+    <net code="46" name="/U202_SW" class="Default">
+      <node ref="L202" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U202" pin="4" pinfunction="SW_4" pintype="power_out"/>
+    </net>
+    <net code="47" name="GND" class="Default">
+      <node ref="C10" pin="2" pintype="passive"/>
+      <node ref="C12" pin="2" pintype="passive"/>
+      <node ref="C13" pin="2" pintype="passive"/>
+      <node ref="C14" pin="2" pintype="passive"/>
+      <node ref="C15" pin="2" pintype="passive"/>
+      <node ref="C16" pin="2" pintype="passive"/>
+      <node ref="C17" pin="2" pintype="passive"/>
+      <node ref="C18" pin="2" pintype="passive"/>
+      <node ref="C19" pin="2" pintype="passive"/>
+      <node ref="C20" pin="2" pintype="passive"/>
+      <node ref="C21" pin="2" pintype="passive"/>
+      <node ref="C33" pin="2" pintype="passive"/>
+      <node ref="C401" pin="2" pintype="passive"/>
+      <node ref="C402" pin="2" pintype="passive"/>
+      <node ref="C403" pin="2" pintype="passive"/>
+      <node ref="C404" pin="2" pintype="passive"/>
+      <node ref="C405" pin="2" pintype="passive"/>
+      <node ref="C406" pin="2" pintype="passive"/>
+      <node ref="C407" pin="2" pintype="passive"/>
+      <node ref="C408" pin="2" pintype="passive"/>
+      <node ref="C409" pin="2" pintype="passive"/>
+      <node ref="C410" pin="2" pintype="passive"/>
+      <node ref="C411" pin="2" pintype="passive"/>
+      <node ref="C412" pin="2" pintype="passive"/>
+      <node ref="C413" pin="2" pintype="passive"/>
+      <node ref="C414" pin="2" pintype="passive"/>
+      <node ref="C415" pin="2" pintype="passive"/>
+      <node ref="C417" pin="2" pintype="passive"/>
+      <node ref="C418" pin="2" pintype="passive"/>
+      <node ref="C421" pin="2" pintype="passive"/>
+      <node ref="C422" pin="2" pintype="passive"/>
+      <node ref="C423" pin="2" pintype="passive"/>
+      <node ref="C424" pin="2" pintype="passive"/>
+      <node ref="C425" pin="2" pintype="passive"/>
+      <node ref="C426" pin="2" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="D203" pin="2" pinfunction="IO_GND_2" pintype="passive"/>
+      <node ref="D204" pin="2" pinfunction="IO_GND_2" pintype="passive"/>
+      <node ref="J201" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
+      <node ref="Q201" pin="2" pinfunction="S_2" pintype="passive"/>
+      <node ref="R204" pin="2" pintype="passive"/>
+      <node ref="R401" pin="2" pintype="passive"/>
+      <node ref="R402" pin="2" pintype="passive"/>
+      <node ref="R405" pin="2" pintype="passive"/>
+      <node ref="R406" pin="2" pintype="passive"/>
+      <node ref="R409" pin="2" pintype="passive"/>
+      <node ref="R8" pin="2" pintype="passive"/>
+      <node ref="TP201" pin="1" pinfunction="SHIELD_1" pintype="passive"/>
+      <node ref="U1" pin="A3" pinfunction="DOGND_A3" pintype="power_in"/>
+      <node ref="U1" pin="A7" pinfunction="DOGND_A7" pintype="passive"/>
+      <node ref="U1" pin="B2" pinfunction="DOGND_B2" pintype="passive"/>
+      <node ref="U1" pin="C8" pinfunction="AGND_C8" pintype="passive"/>
+      <node ref="U1" pin="D2" pinfunction="AGND_D2" pintype="passive"/>
+      <node ref="U1" pin="E3" pinfunction="EGND_E3" pintype="passive"/>
+      <node ref="U1" pin="E5" pinfunction="EGND_E5" pintype="passive"/>
+      <node ref="U1" pin="E6" pinfunction="TM_E6" pintype="passive"/>
+      <node ref="U1" pin="F1" pinfunction="DOGND_F1" pintype="passive"/>
+      <node ref="U1" pin="F4" pinfunction="DOGND_F4" pintype="passive"/>
+      <node ref="U1" pin="F6" pinfunction="DOGND_F6" pintype="passive"/>
+      <node ref="U1" pin="F8" pinfunction="AGND_F8" pintype="passive"/>
+      <node ref="U1" pin="G2" pinfunction="DOGND_G2" pintype="passive"/>
+      <node ref="U1" pin="H7" pinfunction="AGND_H7" pintype="passive"/>
+      <node ref="U201" pin="33" pinfunction="EP_33" pintype="power_in"/>
+      <node ref="U201" pin="7" pinfunction="RES0_7" pintype="input"/>
+      <node ref="U202" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="U6" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="U6" pin="5" pinfunction="EP_5" pintype="power_in"/>
+      <node ref="U7" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="U7" pin="5" pinfunction="EP_5" pintype="power_in"/>
+      <node ref="Y1" pin="2" pinfunction="GND_2" pintype="power_in"/>
+    </net>
+    <net code="48" name="unconnected-(U1-D8-PadB4)" class="Default">
+      <node ref="U1" pin="B4" pinfunction="D8_B4" pintype="passive+no_connect"/>
+    </net>
+    <net code="49" name="unconnected-(U1-D9-PadC4)" class="Default">
+      <node ref="U1" pin="C4" pinfunction="D9_C4" pintype="passive+no_connect"/>
+    </net>
+    <net code="50" name="unconnected-(U1-GPIO0-PadD4)" class="Default">
+      <node ref="U1" pin="D4" pinfunction="GPIO0_D4" pintype="passive+no_connect"/>
+    </net>
+    <net code="51" name="unconnected-(U1-GPIO1-PadC3)" class="Default">
+      <node ref="U1" pin="C3" pinfunction="GPIO1_C3" pintype="passive+no_connect"/>
+    </net>
+    <net code="52" name="unconnected-(U1-GPIO2-PadD6)" class="Default">
+      <node ref="U1" pin="D6" pinfunction="GPIO2_D6" pintype="passive+no_connect"/>
+    </net>
+    <net code="53" name="unconnected-(U1-HREF-PadD1)" class="Default">
+      <node ref="U1" pin="D1" pinfunction="HREF_D1" pintype="passive+no_connect"/>
+    </net>
+    <net code="54" name="unconnected-(U1-ILPWM-PadA6)" class="Default">
+      <node ref="U1" pin="A6" pinfunction="ILPWM_A6" pintype="passive+no_connect"/>
+    </net>
+    <net code="55" name="unconnected-(U1-PCLK-PadC2)" class="Default">
+      <node ref="U1" pin="C2" pinfunction="PCLK_C2" pintype="passive+no_connect"/>
+    </net>
+    <net code="56" name="unconnected-(U1-PadA1)" class="Default">
+      <node ref="U1" pin="A1" pintype="no_connect"/>
+    </net>
+    <net code="57" name="unconnected-(U1-PadA8)" class="Default">
+      <node ref="U1" pin="A8" pintype="no_connect"/>
+    </net>
+    <net code="58" name="unconnected-(U1-PadH1)" class="Default">
+      <node ref="U1" pin="H1" pintype="no_connect"/>
+    </net>
+    <net code="59" name="unconnected-(U1-PadH8)" class="Default">
+      <node ref="U1" pin="H8" pintype="no_connect"/>
+    </net>
+    <net code="60" name="unconnected-(U1-STROBE-PadB6)" class="Default">
+      <node ref="U1" pin="B6" pinfunction="STROBE_B6" pintype="passive+no_connect"/>
+    </net>
+    <net code="61" name="unconnected-(U1-TEST-PadC7)" class="Default">
+      <node ref="U1" pin="C7" pinfunction="TEST_C7" pintype="passive+no_connect"/>
+    </net>
+    <net code="62" name="unconnected-(U1-ULPM-PadC6)" class="Default">
+      <node ref="U1" pin="C6" pinfunction="ULPM_C6" pintype="passive+no_connect"/>
+    </net>
+    <net code="63" name="unconnected-(U201-CLKIN-Pad20)" class="Default">
+      <node ref="U201" pin="20" pinfunction="CLKIN_20" pintype="input+no_connect"/>
+    </net>
+    <net code="64" name="unconnected-(U201-CSI_D2N-Pad32)" class="Default">
+      <node ref="U201" pin="32" pinfunction="CSI_D2N_32" pintype="input+no_connect"/>
+    </net>
+    <net code="65" name="unconnected-(U201-CSI_D2P-Pad31)" class="Default">
+      <node ref="U201" pin="31" pinfunction="CSI_D2P_31" pintype="input+no_connect"/>
+    </net>
+    <net code="66" name="unconnected-(U201-CSI_D3N-Pad30)" class="Default">
+      <node ref="U201" pin="30" pinfunction="CSI_D3N_30" pintype="input+no_connect"/>
+    </net>
+    <net code="67" name="unconnected-(U201-CSI_D3P-Pad29)" class="Default">
+      <node ref="U201" pin="29" pinfunction="CSI_D3P_29" pintype="input+no_connect"/>
+    </net>
+    <net code="68" name="unconnected-(U201-GPIO2-Pad27)" class="Default">
+      <node ref="U201" pin="27" pinfunction="GPIO2_27" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="69" name="unconnected-(U201-GPIO3-Pad28)" class="Default">
+      <node ref="U201" pin="28" pinfunction="GPIO3_28" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="70" name="unconnected-(U201-RES1-Pad22)" class="Default">
+      <node ref="U201" pin="22" pinfunction="RES1_22" pintype="input+no_connect"/>
+    </net>
+    <net code="71" name="unconnected-(U202-NC-Pad6)" class="Default">
+      <node ref="U202" pin="6" pinfunction="NC_6" pintype="no_connect"/>
+    </net>
+  </nets>
+</export>

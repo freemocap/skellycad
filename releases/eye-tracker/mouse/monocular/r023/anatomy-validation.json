@@ -1,0 +1,105 @@
+{
+  "units": "mm",
+  "revision": "MOUSE R23",
+  "source_checkpoint": "ET-MOUSE-RAISED-TARGET-R19",
+  "skull_source_sha256": "f6aeb1598240d4aa4c41aa455639fee85b0b995e7fa1b0aed440f5d93d26443f",
+  "bridge_diameter_mm": 2.25,
+  "bridge_comparison": "Mouse print R20 bridge 3 mm; diameter reduced 25 percent",
+  "bridge_material": "Skull-and-bridge",
+  "bridge_endpoints_world_mm": [
+    [
+      7.737534314542989,
+      -4.551988922700623,
+      4.255893980446201
+    ],
+    [
+      7.970105528826422,
+      -4.741040423358816,
+      -4.078696342316636
+    ]
+  ],
+  "world_to_anatomical_print_frame": [
+    [
+      0.9921278211110711,
+      0.12232445409136623,
+      0.02681631049655186,
+      -3.04928121523917
+    ],
+    [
+      0.026349700043119158,
+      0.005430912495183055,
+      -0.9996380337387666,
+      -0.07557372610903328
+    ],
+    [
+      -0.12242581380181179,
+      0.9924753060508452,
+      0.0021649467072450547,
+      2.2584468236962714
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "common_print_translation_mm": [
+    -2.5354209214773,
+    0.11466956406721529,
+    12.497594034737197
+  ],
+  "parts": {
+    "Skull-and-bridge": {
+      "watertight": true,
+      "shells": 1,
+      "volume_mm3": 917.1366819952905,
+      "sha256": "2057e1ab4cc4a6ea84a520e53cb4ef68c604db09abfa9b3ccce6afc3aff54f69"
+    },
+    "Sclera": {
+      "watertight": true,
+      "shells": 2,
+      "volume_mm3": 31.563204583974535,
+      "sha256": "4f5637faf66fa92fa9362256fd455bf5efd9f35fa9a2dc108c423287d1f65bff"
+    },
+    "Cornea": {
+      "watertight": true,
+      "shells": 2,
+      "volume_mm3": 4.839401150337764,
+      "sha256": "7505821608f7a6abe6f89ab592bf2dc6289cd455cb669b0d9738fee5b8fcb915"
+    },
+    "Baseplate": {
+      "watertight": true,
+      "shells": 1,
+      "volume_mm3": 442.12790580546925,
+      "sha256": "e061936822166b8d177c9945786cb1071205c750710fcb4911d80a7ddc7629c0"
+    },
+    "mouse-eyes": {
+      "watertight": true,
+      "shells": 1,
+      "volume_mm3": 1019.0353496867893,
+      "sha256": "35a0949f23c7fb2fee99fd34097460d3a793cb36457642282a78d7a54fafe7dc"
+    },
+    "mouse-eyes-embedded-baseplate": {
+      "watertight": true,
+      "shells": 1,
+      "volume_mm3": 1395.6671936418343,
+      "sha256": "b8763b70ff7f798d0d06ab8afed16889b1cfcc75cdc5afc9a9083cbee39dc1d0"
+    }
+  },
+  "overlap_mm3": {
+    "Skull-and-bridge/Sclera": 3.700743415417188e-17,
+    "Skull-and-bridge/Cornea": 0.0,
+    "Skull-and-bridge/Baseplate": 1.850371707708594e-17,
+    "Sclera/Cornea": 0.0,
+    "Sclera/Baseplate": 0.0,
+    "Cornea/Baseplate": 0.0
+  },
+  "filament_slots": {
+    "Skull-and-bridge": 1,
+    "Sclera": 3,
+    "Cornea": 2,
+    "Baseplate": 4
+  },
+  "printer_settings_id": "Snapmaker U1 (0.4 nozzle)"
+}

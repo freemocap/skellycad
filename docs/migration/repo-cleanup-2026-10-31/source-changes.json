@@ -1,0 +1,720 @@
+[
+  {
+    "old": ".gitattributes",
+    "new": ".gitattributes",
+    "before_sha256": "a0b666f69ce2ffdc9cea738cf662a99efe7da16846daa6f66a6d483d38aff219",
+    "after_sha256": "2baeeecff4c8ac249d639630bbf230eba6f47b9af3cf786ca62be3e0d55d2039",
+    "reason": "Update ownership paths and LFS treatment after migration.",
+    "original_archive": "source-before.zip",
+    "original_member": ".gitattributes"
+  },
+  {
+    "old": ".gitignore",
+    "new": ".gitignore",
+    "before_sha256": "516258e1ea7d92e08374eac89a01cb2b3fce9d3021853856ad9f4ed9147adc2c",
+    "after_sha256": "72f17a292f3534c11cdc8b6420735a2ddd5c3ff05fe39a34835ccd24c055ea11",
+    "reason": "Update ownership paths and LFS treatment after migration.",
+    "original_archive": "source-before.zip",
+    "original_member": ".gitignore"
+  },
+  {
+    "old": "AGENTS.md",
+    "new": "AGENTS.md",
+    "before_sha256": "dca4e8c516e9ef4ea163fa7c32bc33b441d89fa0369fd85234ccacf668fd65ad",
+    "after_sha256": "cb44fc7797d4763c3ff75ceed9afcc605c2b5c71189704ee3761b1b4e530d244",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "AGENTS.md"
+  },
+  {
+    "old": "README.md",
+    "new": "README.md",
+    "before_sha256": "740050dbe58ea6f3417ff564e517dca9cf0aae3c08bfea80eb665597e94e87b2",
+    "after_sha256": "6effd2c5b1c3ed7a9cee7d0b28706c53c65c32f5331df7c9c694e90bf015aa0c",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "README.md"
+  },
+  {
+    "old": "designs/README.md",
+    "new": "designs/README.md",
+    "before_sha256": "3b76042b4f91cac4aa6f6784deb87f3420f4b70aaa023777f62ee38678d83e0b",
+    "after_sha256": "8ba241a9c397ef9fcc064a7f0f56acd3fcd7fb854e333a7cf3ce92b72322037b",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/README.md",
+    "original_copy": "docs/migration/repo-cleanup-2026-10-31/original-navigation/designs/README.md"
+  },
+  {
+    "old": "designs/enclosure/capture-study-r03/README.md",
+    "new": "designs/enclosure/history/r003-capture-study/README.md",
+    "before_sha256": "83fb0fc67a3b0926fc8a159aa658a9dd156090ae4e7a488fb627c98bce124702",
+    "after_sha256": "cf1cb1d68b4ef395e1d373d94c282c48bce0617b2c0a7d5156c2e9d6c2063e9a",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/enclosure/capture-study-r03/README.md"
+  },
+  {
+    "old": "designs/enclosure/capture-study-r04/README.md",
+    "new": "designs/enclosure/history/r004-capture-study/README.md",
+    "before_sha256": "dfc986831ff7ebc1febe692167b7548fb986790b6ab0b0dcf158cb7e4cb9664d",
+    "after_sha256": "9598a18b151936332d2c9d17382f461d24ec32cccfb6032f55b952cea2531309",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/enclosure/capture-study-r04/README.md"
+  },
+  {
+    "old": "designs/eye-camera-og0tc/README.md",
+    "new": "designs/cameras/og0tc/README.md",
+    "before_sha256": "7a0b6c48f39e455a34e18b53d1b9b635d87642f4aeadb4cbd9ea009960fe74bb",
+    "after_sha256": "29af159ff2bd2517ee41f7ce09afe8734e2f320d44387f3432c20b317780e843",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-camera-og0tc/README.md",
+    "original_copy": "designs/cameras/og0tc/history/overview-before-cleanup.md"
+  },
+  {
+    "old": "designs/eye-camera-og0tc/integration/custom-camera-build.md",
+    "new": "designs/cameras/og0tc/history/integration/custom-camera-build.md",
+    "before_sha256": "5ceb613013fba8942e1507c8cec380558330f385058e367b182edb5a2dfb7b9e",
+    "after_sha256": "ac766b7fc588c3188e8bb6a48df1313ad1d0a38559330b0937fbf6b328e8fc1a",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-camera-og0tc/integration/custom-camera-build.md"
+  },
+  {
+    "old": "designs/eye-camera-ov9281/README.md",
+    "new": "designs/cameras/ov9281/README.md",
+    "before_sha256": "bedf97c2be7fcaf0587e946c98eca9e78e62b81b9c4be7836ccd206fff8fa2bb",
+    "after_sha256": "a4d83b0ede5bb105f5bfe86d23c1829a8c657a90762b5f06a16ce698e0aa623d",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-camera-ov9281/README.md",
+    "original_copy": "designs/cameras/ov9281/history/overview-before-cleanup.md"
+  },
+  {
+    "old": "designs/eye-camera-ov9281/ROADMAP.md",
+    "new": "designs/cameras/ov9281/ROADMAP.md",
+    "before_sha256": "362c9d2da69f660f0a97b5bc0fe52d31ca375020ba698d7f47c4b0bf83f59c61",
+    "after_sha256": "3f413abd48133d16c78a4ee6f5262da5b9052e51b11d7a17a5b6f0331808d4b2",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-camera-ov9281/ROADMAP.md"
+  },
+  {
+    "old": "designs/eye-camera-ov9281/STATUS.md",
+    "new": "designs/cameras/ov9281/variants/slim-flex/history/r011-working-review/STATUS.md",
+    "before_sha256": "25afdc288933d188ae19023605c2a98bffa3ca23730776e0ed059a660bd4e56e",
+    "after_sha256": "c1ac83d5ffe294a93f834fa5c55e0a3072b287bf1be4253e7d913ae83d56782a",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-camera-ov9281/STATUS.md"
+  },
+  {
+    "old": "designs/eye-camera-ov9281/WORKING-REVIEW.md",
+    "new": "designs/cameras/ov9281/variants/slim-flex/history/r011-working-review/WORKING-REVIEW.md",
+    "before_sha256": "e9fe097f0b14c2c34ffe39983c3ffb2e9264bfc02eeb014f180ffd361987fcdb",
+    "after_sha256": "164e7c6cff3e4bf4d73b83b9ae7542b99d88e79bb611a76ce8b16a197c2f302e",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-camera-ov9281/WORKING-REVIEW.md"
+  },
+  {
+    "old": "designs/eye-camera-ov9281/audits/2026-10-28-corrective-routing/REPORT.md",
+    "new": "designs/cameras/ov9281/history/audits/2026-10-28-corrective-routing/REPORT.md",
+    "before_sha256": "4b00e9f9d7d4961e508e6d3a934832a8e25fa47ed1fe142ad9393f5d1a7f06f5",
+    "after_sha256": "2ff5220dba7f7902c0ba0ea3bfc4b26de9fe34ad05e9c515864c2c1d0eff8ade",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-camera-ov9281/audits/2026-10-28-corrective-routing/REPORT.md"
+  },
+  {
+    "old": "designs/eye-camera-ov9281/firmware/build.py",
+    "new": "designs/cameras/ov9281/variants/slim-flex/src/firmware/build.py",
+    "before_sha256": "e8ebce778b4b554f29d78d1e02cb303f9e257279f5667046cee4297812359081",
+    "after_sha256": "5df19d2b75affb3ca92784b2b6d17ba9ba4133eb8495aa2732fb3530d6e83a02",
+    "reason": "Resolve the repository and pinned dependency paths independently of the deeper source directory.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-camera-ov9281/firmware/build.py"
+  },
+  {
+    "old": "designs/eye-camera-ov9281/firmware/CMakeLists.txt",
+    "new": "designs/cameras/ov9281/variants/slim-flex/src/firmware/CMakeLists.txt",
+    "before_sha256": "d41756ed6436d72d7c716d86faa5b98577e8c41a52bb315ea12b7bdf0052cae7",
+    "after_sha256": "7dd90afe642ab243c5ac883a997cb445e1f888dac054249fff70385c0e3b8824",
+    "reason": "Resolve the repository and pinned dependency paths independently of the deeper source directory.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-camera-ov9281/firmware/CMakeLists.txt"
+  },
+  {
+    "old": "designs/eye-camera-ov9281/firmware/README.md",
+    "new": "designs/cameras/ov9281/variants/slim-flex/src/firmware/README.md",
+    "before_sha256": "f34ab0ce8387180a080008da16470c405e9176bb2617df53dc48e3f40d049534",
+    "after_sha256": "da34d0ab46c6adf5d8c28435969378969a45dd0ae815d49dc190dd497c61ab95",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-camera-ov9281/firmware/README.md"
+  },
+  {
+    "old": "designs/eye-camera-ov9281/mechanics/compact-optics.md",
+    "new": "designs/cameras/ov9281/history/mechanics/compact-optics.md",
+    "before_sha256": "f39eca18a408371e859678020a13a5673ac9543192b4cdd5c3651f9611a96b2b",
+    "after_sha256": "65098badb8e9b5b2d00fd1353b72e00b123c5cd8e0d558b7cc6eda41a2bf6ea7",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-camera-ov9281/mechanics/compact-optics.md"
+  },
+  {
+    "old": "designs/eye-tracker/README.md",
+    "new": "designs/eye-tracker/README.md",
+    "before_sha256": "c7912ce6e9eb0a03777b50a9a89f6f472b63f30ef243515f2b28680e264a1548",
+    "after_sha256": "8312f4a225d52d3a25ce0765718ed3285d83974f9ba7404b4701074d91d2550d",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-tracker/README.md",
+    "original_copy": "docs/migration/repo-cleanup-2026-10-31/original-navigation/designs/eye-tracker/README.md"
+  },
+  {
+    "old": "designs/eye-tracker/review.FCMacro",
+    "new": "designs/eye-tracker/review.FCMacro",
+    "before_sha256": "ee8f2dfc5f5630c6be89843f6aaa19116ac01db1e07e739e2dd04b0521b28a5a",
+    "after_sha256": "d9815ab5628de73faacdaa05924847ac0a2c7aa6e1fde26cf7e6a927901293c0",
+    "reason": "Adapt maintained loading, verification or entry points to the new paths and isolated save-and-close workflow.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-tracker/review.FCMacro"
+  },
+  {
+    "old": "designs/eye-tracker/marmoset/README.md",
+    "new": "designs/eye-tracker/marmoset/README.md",
+    "before_sha256": "ab05dc762756da74c80c2dd93649f18a0017bc753b356dd808130fed1f35d7ac",
+    "after_sha256": "85b161fe5a58bbcf592585b361ad73966ce26233c1490a0e9e9f5ec6dc3d9615",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-tracker/marmoset/README.md"
+  },
+  {
+    "old": "designs/eye-tracker/marmoset/skull-print-r01/README.md",
+    "new": "designs/eye-tracker/marmoset/anatomy/print-layouts/r001-skull-print/README.md",
+    "before_sha256": "9cccddca2e4ec11003676d5695d11475179ca436f8e33dd7efd37a1d247f53eb",
+    "after_sha256": "6b15bdadaf7ff3e13f8af88bd604cda6c1f1e14ca0bcb8bb94f34658806ac6cd",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-tracker/marmoset/skull-print-r01/README.md"
+  },
+  {
+    "old": "designs/eye-tracker/marmoset/skull-print-r02/README.md",
+    "new": "designs/eye-tracker/marmoset/anatomy/print-layouts/r002-skull-print/README.md",
+    "before_sha256": "c2c7321911dad9b53316bb256f5325d8d9328dbd4ff664cc123dcec91e657d47",
+    "after_sha256": "a995e5e5b596fc60ee9227c0ae91918295d675ed7f9b63635d54d5e48980ec03",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-tracker/marmoset/skull-print-r02/README.md"
+  },
+  {
+    "old": "designs/eye-tracker/mouse/active-model.json",
+    "new": "designs/eye-tracker/mouse/active-model.json",
+    "before_sha256": "0722463d3494ee52cb2ab8c57e8c20181a47abddf2a01a40823982c2cfa42cfa",
+    "after_sha256": "c8e6ff17bed5450ec112e12b7721cbcacb36a3b34ca4f040b33a7a7d67b61f6b",
+    "reason": "Redirect or relocate the same selected checkpoint; no candidate promotion.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-tracker/mouse/active-model.json"
+  },
+  {
+    "old": "designs/eye-tracker/mouse/README.md",
+    "new": "designs/eye-tracker/mouse/README.md",
+    "before_sha256": "37b9506379684fb43844d66d1b231b6ff1d6ea7b9322128a259eaaa143573055",
+    "after_sha256": "e86e9bdcc8eb989437c7e05a456e767e91d55b3c85a459f1251d325f7dcdf471",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-tracker/mouse/README.md",
+    "original_copy": "designs/eye-tracker/mouse/history/overview-before-cleanup.md"
+  },
+  {
+    "old": "designs/eye-tracker/mouse/adult-anatomy-r11/README.md",
+    "new": "designs/eye-tracker/mouse/anatomy/history/r011-adult-anatomy/README.md",
+    "before_sha256": "b203d9e0a6969a82c9f9afaa86d7dc082894ad7abb475d911f1f95d84381c2fc",
+    "after_sha256": "396f263a32101f94a35bc9dee2374c1886a67d749a8eac22212a9b3bfd96ca8e",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-tracker/mouse/adult-anatomy-r11/README.md"
+  },
+  {
+    "old": "designs/eye-tracker/mouse/camera-fit-r01/ROUTING.md",
+    "new": "designs/eye-tracker/mouse/variants/monocular/history/r001-camera-fit/ROUTING.md",
+    "before_sha256": "9dcdeeb6c5f824aca1d13cdb43eca5bdb5e356a57c6b61a5cd8a59508a79b2bc",
+    "after_sha256": "227014a14ecd559419abb0104c741b24ae8f8240fce6c2cd18d2e4c4e6c0564e",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-tracker/mouse/camera-fit-r01/ROUTING.md"
+  },
+  {
+    "old": "designs/eye-tracker/mouse/compact-guard-r12/README.md",
+    "new": "designs/eye-tracker/mouse/variants/monocular/history/r012-compact-guard/README.md",
+    "before_sha256": "186da1b49e62aff66965e557b9da17b490b851aa1246dfe697fbfa8c3769b871",
+    "after_sha256": "5e976cd1fb3c785323ac73aabab8ab17360efc9ad31fe99f73240b8f8a20da30",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-tracker/mouse/compact-guard-r12/README.md"
+  },
+  {
+    "old": "designs/eye-tracker/mouse/compact-guard-r13/README.md",
+    "new": "designs/eye-tracker/mouse/variants/monocular/history/r013-compact-guard/README.md",
+    "before_sha256": "263469b49add5d674fff63ffae4eb1340463b12b7d291249923bf412cc753a82",
+    "after_sha256": "1693480faaac8a29deecf5a34a2738963848d236dffb7d7fd16ba02ef139b572",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-tracker/mouse/compact-guard-r13/README.md"
+  },
+  {
+    "old": "designs/eye-tracker/mouse/detailed-camera-r09/README.md",
+    "new": "designs/eye-tracker/mouse/variants/monocular/history/r009-detailed-camera/README.md",
+    "before_sha256": "d604e391124aafd6a144f04de5b9595f7511bfaaadfefcdb43626d70ca28f4e0",
+    "after_sha256": "b40df96c7eda00ce9c31fc4b0555a5cea00330bf81fdcfe5c15ea41a9725e362",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-tracker/mouse/detailed-camera-r09/README.md"
+  },
+  {
+    "old": "designs/eye-tracker/mouse/eye-axis-review-r10/README.md",
+    "new": "designs/eye-tracker/mouse/variants/monocular/history/r010-eye-axis-review/README.md",
+    "before_sha256": "e90c0479c09e3a26e10d7e66c59fbd982ce2beac8d83a325d7841e6fc6d762ad",
+    "after_sha256": "f6fba14e6db414581ec3280a65a2c5ba37fd3d82aa292a09cef46fc50550688c",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-tracker/mouse/eye-axis-review-r10/README.md"
+  },
+  {
+    "old": "designs/eye-tracker/mouse/landmark-eye-placement-r14/README.md",
+    "new": "designs/eye-tracker/mouse/anatomy/history/r014-landmark-eye-placement/README.md",
+    "before_sha256": "dbc4cb066a6b350016003312c69175d678aef237614608379a04a756311a8efb",
+    "after_sha256": "2faccfb2f861389f48c0900df6a170959d734c42f589f52ce47b0b589399e8b8",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-tracker/mouse/landmark-eye-placement-r14/README.md"
+  },
+  {
+    "old": "designs/eye-tracker/mouse/landmark-eyes-r04/README.md",
+    "new": "designs/eye-tracker/mouse/anatomy/history/r004-landmark-eyes/README.md",
+    "before_sha256": "2fb294e7f4a917ab138fa7919df1dc9125654d4f83f6d781851930e6a9bef820",
+    "after_sha256": "aa5dd40a62e1fed5a20c7664982bd58311c009457f7465d16eddf394d871e88f",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-tracker/mouse/landmark-eyes-r04/README.md"
+  },
+  {
+    "old": "designs/eye-tracker/mouse/ribbon-layout-r02/README.md",
+    "new": "designs/eye-tracker/mouse/variants/monocular/history/r002-ribbon-layout/README.md",
+    "before_sha256": "418b14923ccfbaa735a00ba53740405ea6e386c0d1760b8338fd12137777ce67",
+    "after_sha256": "c88387a3c99ed2f0a5d14596fa2acda489461f0f609453d9e5a8334c492ab1b4",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-tracker/mouse/ribbon-layout-r02/README.md"
+  },
+  {
+    "old": "designs/eye-tracker/mouse/stem-arms-r04/README.md",
+    "new": "designs/eye-tracker/mouse/variants/monocular/history/r004-stem-arms/README.md",
+    "before_sha256": "c8e59d74c270f5c2af427d301827538eea466c368a448d5b581b6348563ffc30",
+    "after_sha256": "c7bfdfda6316eb3cb8a2c27e1c08991e4c6ddc9b5e3289626246b923ff6ad973",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-tracker/mouse/stem-arms-r04/README.md"
+  },
+  {
+    "old": "designs/eye-tracker/rat/active-model.json",
+    "new": "designs/eye-tracker/rat/active-model.json",
+    "before_sha256": "5cf898f9a1a2e3a377f71de75f5ac7a7ab87975f0bd236ed5d74898cd2fcdfb4",
+    "after_sha256": "9b97524a3d917c74ec5a2b81b01c005b73bd6d739b741fdb1840a3fec9eb4ae3",
+    "reason": "Redirect or relocate the same selected checkpoint; no candidate promotion.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-tracker/rat/active-model.json"
+  },
+  {
+    "old": "designs/eye-tracker/rat/README.md",
+    "new": "designs/eye-tracker/rat/README.md",
+    "before_sha256": "c0c5dd205817aa803e596a1c0fd46c9e4e7ce4c726a76e665a7adf5e68157065",
+    "after_sha256": "b2d4905b7a8615d962ff17848cd8b0b4b9cb88dcc5c8009d6fe190b71cda7370",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-tracker/rat/README.md",
+    "original_copy": "designs/eye-tracker/rat/history/overview-before-cleanup.md"
+  },
+  {
+    "old": "designs/eye-tracker/rat/adult-anatomy-r07/README.md",
+    "new": "designs/eye-tracker/rat/anatomy/history/r007-adult-anatomy/README.md",
+    "before_sha256": "931759bd7146d8f7d5c6f68ca32433f8a965ef6f898a4a97384657701768740f",
+    "after_sha256": "2399bca008c9306b215404de87f28501f6397968d6aec7ee5c4726b4d3bc4d82",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-tracker/rat/adult-anatomy-r07/README.md"
+  },
+  {
+    "old": "designs/eye-tracker/rat/anatomy-study-r10/README.md",
+    "new": "designs/eye-tracker/rat/anatomy/history/r010-anatomy-study/README.md",
+    "before_sha256": "b756723195f197ee515b993a109e56bf901dbba09b9c6718a12b645f8a90b2fb",
+    "after_sha256": "d4e17bead9f2b05a083b2968c1b437e37e0a138a87c9e283735d7a80d7daf9d9",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-tracker/rat/anatomy-study-r10/README.md"
+  },
+  {
+    "old": "designs/eye-tracker/rat/checkpoints/ET-RAT-MONO-R01.FCStd",
+    "new": "designs/eye-tracker/rat/variants/monocular/checkpoints/r001-baseline/ET-RAT-MONO-R01.FCStd",
+    "before_sha256": "9c81ed0189cfa4be9fec9e01cc48621c92a28be2dde8c5535c1e609df22c3bf7",
+    "after_sha256": "ad74a3f14aaa709880039c927690475f6119d074f73b0a550a3064383394762e",
+    "reason": "Restore the exact selected R01; keep the later edit as a separate native file.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-tracker/rat/checkpoints/ET-RAT-MONO-R01.FCStd"
+  },
+  {
+    "old": "designs/eye-tracker/rat/compact-binocular-r32/README.md",
+    "new": "designs/eye-tracker/rat/variants/binocular/history/r032-compact-binocular/README.md",
+    "before_sha256": "ae2b899dffcecd656d68090a834bd4d29b50ee60d1d2bb34c4f008c36e0036c8",
+    "after_sha256": "7f089cb612100da25642f22fdd379b6b50cbca4d11d31ba49e0fd907b1d3065b",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-tracker/rat/compact-binocular-r32/README.md"
+  },
+  {
+    "old": "designs/eye-tracker/rat/compact-guard-r08/README.md",
+    "new": "designs/eye-tracker/rat/variants/monocular/history/r008-compact-guard/README.md",
+    "before_sha256": "0240ee5eead9c6a775fcb8b8e66a93621cf34c129bba8ed3d231ddff526fa9ac",
+    "after_sha256": "38c86a4ba6daa0f6c0fcca2c64489eaa3e2185a988af1a21f3cd50201b0e427e",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-tracker/rat/compact-guard-r08/README.md"
+  },
+  {
+    "old": "designs/eye-tracker/rat/compact-guard-r09/README.md",
+    "new": "designs/eye-tracker/rat/variants/monocular/history/r009-compact-guard/README.md",
+    "before_sha256": "3f28cacf6a9eed55101a62515617e823f05d66ce0c5f0255f657ef70d4457806",
+    "after_sha256": "a73e2ab975b854a14d537c648e3e03944d25bfb7d17675e6931002579ead0047",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-tracker/rat/compact-guard-r09/README.md"
+  },
+  {
+    "old": "designs/eye-tracker/rat/detailed-camera-r05/README.md",
+    "new": "designs/eye-tracker/rat/variants/monocular/history/r005-detailed-camera/README.md",
+    "before_sha256": "20bc7f561eca6da0fe09cda34bb1b9d6581c06b56ff9ea06f6366c5b2e4c43e6",
+    "after_sha256": "b4267bafd40dd6da39fa55e720cb19982a5ea0768f3834f42a616f9674503b27",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-tracker/rat/detailed-camera-r05/README.md"
+  },
+  {
+    "old": "designs/eye-tracker/rat/eye-axis-review-r06/README.md",
+    "new": "designs/eye-tracker/rat/variants/monocular/history/r006-eye-axis-review/README.md",
+    "before_sha256": "07d3d2ae607e7ef63e03d510e82a4da6ed2eaa3ee2f6ce3ad1fd2bc970feade3",
+    "after_sha256": "1ea82c89522101e0941a15d2ad1c27e0f774532a5c6a1f85c9585ad943025ada",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-tracker/rat/eye-axis-review-r06/README.md"
+  },
+  {
+    "old": "designs/eye-tracker/rat/print-r27/README.md",
+    "new": "designs/eye-tracker/rat/variants/monocular/history/print-layouts/r027-print/README.md",
+    "before_sha256": "e19de164e0daedf5edd253bf863b406bb1a4f8bd0aac49503791401d664d324a",
+    "after_sha256": "eb7ae746d1b79c9ead880ba251b0777ca8fee9120ec61260ee86be602c881d79",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-tracker/rat/print-r27/README.md"
+  },
+  {
+    "old": "designs/eye-tracker/rat/registered-eyes-r14/README.md",
+    "new": "designs/eye-tracker/rat/anatomy/history/r014-registered-eyes/README.md",
+    "before_sha256": "bbce95bc5622fe62405d3c57cdcad7c9a345fdd430c62428e576ce73aadd2d3a",
+    "after_sha256": "97359483160980f698b496c4a48b1ea58182337386d07cee3a979c3e06281906",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-tracker/rat/registered-eyes-r14/README.md"
+  },
+  {
+    "old": "designs/eye-tracker/rat/targeted-r02/README.md",
+    "new": "designs/eye-tracker/rat/variants/monocular/history/r002-targeted/README.md",
+    "before_sha256": "e1b54e8e2736ff128bd8957345bd5cedf899be2556e5b7a85c68c857645ee1fa",
+    "after_sha256": "3411e8e49510a9546330783fd3eb6902b1e81f30133e56e23c775f6637cfa3d2",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-tracker/rat/targeted-r02/README.md"
+  },
+  {
+    "old": "designs/eye-tracker/rat/targeted-r03/README.md",
+    "new": "designs/eye-tracker/rat/variants/monocular/history/r003-targeted/README.md",
+    "before_sha256": "c4f519d7f2891f1f14a1b6dea568ab39cc69ac048f66e63585d5b62ffdef2a8a",
+    "after_sha256": "cc2937d33b9744a0dac41a859f6497b5d0f4756c1fffc0f15a7d65ea675a3ad2",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-tracker/rat/targeted-r03/README.md"
+  },
+  {
+    "old": "designs/eye-tracker/rat/two-arm-r28/README.md",
+    "new": "designs/eye-tracker/rat/variants/monocular/history/r028-two-arm/README.md",
+    "before_sha256": "0fdd678f59085d333391d64fe609b00927eedf65057064b42388ec83fb8506d9",
+    "after_sha256": "7fbb9ff8e0153bf135d1165cbd1c19478677275010b82eb7ffe62ee7f2bde0a4",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-tracker/rat/two-arm-r28/README.md"
+  },
+  {
+    "old": "designs/eye-tracker/shared/assembly.py",
+    "new": "designs/eye-tracker/shared/assembly.py",
+    "before_sha256": "3c677f11394aa9f9cf20dec87c59018f2a453ec7523dda3b4301e07dd55e790d",
+    "after_sha256": "8cd54a65440be88030196ff4c8ebe492c80f92016ee5b16a7244ee4caca33a19",
+    "reason": "Adapt maintained loading, verification or entry points to the new paths and isolated save-and-close workflow.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-tracker/shared/assembly.py"
+  },
+  {
+    "old": "designs/eye-tracker/shared/camera.py",
+    "new": "designs/eye-tracker/shared/camera.py",
+    "before_sha256": "d9dca807a432a1c3b3cc289784f3c4d9885a298569ce8c85f0c19c6289bcee93",
+    "after_sha256": "67c3a4ff9904ee344077434ca89813ab36ae8ab26dee6aa0a9563852535ecec6",
+    "reason": "Adapt maintained loading, verification or entry points to the new paths and isolated save-and-close workflow.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-tracker/shared/camera.py"
+  },
+  {
+    "old": "designs/eye-tracker/shared/model.py",
+    "new": "designs/eye-tracker/shared/model.py",
+    "before_sha256": "6a8db74df9ccaa87b696b93f7155670c50f59ce7df921398da32878629ab37d5",
+    "after_sha256": "4dc0263fd174977fe9200cfca1228e6603476d660ef09a583ba320999fe0a91f",
+    "reason": "Adapt maintained loading, verification or entry points to the new paths and isolated save-and-close workflow.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-tracker/shared/model.py"
+  },
+  {
+    "old": "designs/eye-tracker/shared/optics.py",
+    "new": "designs/eye-tracker/shared/optics.py",
+    "before_sha256": "20d763f65e32839e5b80b3e05328d3a9314195692f9b7b98ab7968d18433f05a",
+    "after_sha256": "8ea31e5dd7cde3392d985858e8172fb11068e72443b2f14f0af9c15d0e773bb5",
+    "reason": "Adapt maintained loading, verification or entry points to the new paths and isolated save-and-close workflow.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-tracker/shared/optics.py"
+  },
+  {
+    "old": "designs/eye-tracker/shared/optics_r01.py",
+    "new": "designs/eye-tracker/shared/optics_r01.py",
+    "before_sha256": "a9895223fa9c55660d39b9bbca343bdb40620b017ed933aa199690081f4c6da2",
+    "after_sha256": "a442a6c38e5fe41f6cff4b785c6239ec0ae3cfddfabd3b9f8dc3c1a1590c73e4",
+    "reason": "Adapt maintained loading, verification or entry points to the new paths and isolated save-and-close workflow.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-tracker/shared/optics_r01.py"
+  },
+  {
+    "old": "designs/eye-tracker/shared/preview.py",
+    "new": "designs/eye-tracker/shared/preview.py",
+    "before_sha256": "3e8b653b96acb0afce508ba53271bbb64ead8a75f5b44985a7e81e9728733d45",
+    "after_sha256": "476cfeb39c6a1803e16a729b79ac59978f461b5db3696ed2cc2cab0bdf370af7",
+    "reason": "Adapt maintained loading, verification or entry points to the new paths and isolated save-and-close workflow.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-tracker/shared/preview.py"
+  },
+  {
+    "old": "designs/eye-tracker/shared/README.md",
+    "new": "designs/eye-tracker/shared/README.md",
+    "before_sha256": "8ec73c435f7048f73dd952cafeaa017ae3f0333b54bebab53ac2b261072e5fcb",
+    "after_sha256": "a37b9df0da243060a1807dd92875248abdae925b5653c0e492a06be410b3610c",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-tracker/shared/README.md"
+  },
+  {
+    "old": "designs/eye-tracker/shared/validation.py",
+    "new": "designs/eye-tracker/shared/validation.py",
+    "before_sha256": "231b1ecb98b9747c52c3b42ffab880b63ca2b65e60da3dbef2cda337f2ab3c07",
+    "after_sha256": "db7d9a7ae1c9a36d83f86667a62985fc90236604bbb9713c4d452dfa905cace2",
+    "reason": "Adapt maintained loading, verification or entry points to the new paths and isolated save-and-close workflow.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-tracker/shared/validation.py"
+  },
+  {
+    "old": "designs/eye-tracker/shared/adult-eyes-r01/README.md",
+    "new": "designs/eye-tracker/shared/history/r001-adult-eyes/README.md",
+    "before_sha256": "7b2c0db7e0ed5dae65bd4d7a718384a7bd65a38bd36f386235ed965b01652fcf",
+    "after_sha256": "a3e644a332a9650b505bc5aaa44de264aa758695280339241e17c2b3acac8cf4",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-tracker/shared/adult-eyes-r01/README.md"
+  },
+  {
+    "old": "designs/eye-tracker/shared/cameras/pupil-core-eye/active-model.json",
+    "new": "designs/cameras/pupil-core-eye/active-model.json",
+    "before_sha256": "c167939feec847adc5196a279f941e7df36c52cffe8623c64a6c9c6bc868408c",
+    "after_sha256": "e34904712245d3603601338dfb4d805bf821ae5e6ae48eee2830b7602f51ae7f",
+    "reason": "Redirect or relocate the same selected checkpoint; no candidate promotion.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-tracker/shared/cameras/pupil-core-eye/active-model.json"
+  },
+  {
+    "old": "designs/eye-tracker/shared/cameras/pupil-core-eye/open.FCMacro",
+    "new": "designs/cameras/pupil-core-eye/open.FCMacro",
+    "before_sha256": "a131457ee2d540d1a326f44a2c0c6ebbd0161d04a7d242d22bf00f3330f52530",
+    "after_sha256": "7c908599acbd9f3a508594733a7f2c5344964a0f820c10e690955a04e40663f0",
+    "reason": "Adapt maintained loading, verification or entry points to the new paths and isolated save-and-close workflow.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-tracker/shared/cameras/pupil-core-eye/open.FCMacro"
+  },
+  {
+    "old": "designs/eye-tracker/shared/cameras/pupil-core-eye/README.md",
+    "new": "designs/cameras/pupil-core-eye/README.md",
+    "before_sha256": "b3f91a63b7800053662dfb7e76d75b8c9b93dc29ccb4cfe2a9c62ce98bf6ca1f",
+    "after_sha256": "778195c8686450f23022052f65770d3c6225823d0e2a12302b8ca836ab01de0a",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-tracker/shared/cameras/pupil-core-eye/README.md",
+    "original_copy": "designs/cameras/pupil-core-eye/history/overview-before-cleanup.md"
+  },
+  {
+    "old": "designs/eye-tracker/shared/cameras/pupil-core-eye/optics-r02/README.md",
+    "new": "designs/cameras/pupil-core-eye/history/r002-optics/README.md",
+    "before_sha256": "23dff58e79ec3e39dfda44520e13376db5a56d0d8e0f9f98ef54e2046c125047",
+    "after_sha256": "7daca0c234fe538995a25f333e604aeb80102bbf7c62f1ea571c3e9da889ecc5",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-tracker/shared/cameras/pupil-core-eye/optics-r02/README.md"
+  },
+  {
+    "old": "designs/eye-tracker/shared/targeting/prepare.py",
+    "new": "designs/eye-tracker/shared/targeting/prepare.py",
+    "before_sha256": "c2abf3eaedbec8cd979244227ba82b710df3651bc9ebafabc58689eaac02a150",
+    "after_sha256": "75adbcb08d54c1fb35460c4a184b9140e4fabbb3c8f6bb74c259c267e6af8486",
+    "reason": "Adapt maintained loading, verification or entry points to the new paths and isolated save-and-close workflow.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-tracker/shared/targeting/prepare.py"
+  },
+  {
+    "old": "designs/eye-tracker/shared/targeting/run.py",
+    "new": "designs/eye-tracker/shared/targeting/run.py",
+    "before_sha256": "5650c8fc0da70b5de6d26a8ecaa65e69745793e5b85d4fc9b8775e89b8388a90",
+    "after_sha256": "4ba2a040d7b92c1c968623bc7053d660ccf5ae43a69cbe882784c57a7f6f4be2",
+    "reason": "Adapt maintained loading, verification or entry points to the new paths and isolated save-and-close workflow.",
+    "original_archive": "source-before.zip",
+    "original_member": "designs/eye-tracker/shared/targeting/run.py"
+  },
+  {
+    "old": "docs/development.md",
+    "new": "docs/development.md",
+    "before_sha256": "6f03eeb157539d460397ba346ede6e57a9d61950bade0e691b946473ab2b1f22",
+    "after_sha256": "9fca38477d71a551e76385039325b6c501d32e0a2b8a9216dbb3c3bec6d5af20",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "docs/development.md"
+  },
+  {
+    "old": "docs/eye-tracker-targeting.md",
+    "new": "docs/eye-tracker-targeting.md",
+    "before_sha256": "59c1168bc0d8e3d28d3d5bacb77dfeef34514f0187887ad5acd91f74e562abe3",
+    "after_sha256": "72c571c735656b221010577e82ed3d35cb754b10c41f5ed3d30cbabda4f7cf5e",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "docs/eye-tracker-targeting.md"
+  },
+  {
+    "old": "docs/repository-organization.md",
+    "new": "docs/repository-organization.md",
+    "before_sha256": "2003b4003d7745e692d0e4bcdde560119ceacb58a6b0ce0c6219fa24fbb287e5",
+    "after_sha256": "3a99eca1761bba531703f9177851ad29e70dafbdb6955eadfe862cd0502e27ef",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "docs/repository-organization.md"
+  },
+  {
+    "old": "docs/species-anatomy-workflow.md",
+    "new": "docs/species-anatomy-workflow.md",
+    "before_sha256": "a3d0cae980e44ac2d3b88be7cd0e364c986df1e941aa4ee7bcbaeea59fa533a5",
+    "after_sha256": "e05880717054710ae4cb477f5001c9fb53fe78c966fd5e362f1739eed995f8ae",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "docs/species-anatomy-workflow.md"
+  },
+  {
+    "old": "docs/version-control.md",
+    "new": "docs/version-control.md",
+    "before_sha256": "3831dfb566ceb905796d0be4a965b3ab92321370b9bf0fb2c8863893b86d9fa1",
+    "after_sha256": "798bf5e567deb1cf69eaa92bd71d7ab56cf970ec91a3d138e4301216d4e29b34",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "docs/version-control.md"
+  },
+  {
+    "old": "releases/README.md",
+    "new": "releases/README.md",
+    "before_sha256": "81660851955c7de38f4843ae7276b65f851485969316838c8c19834db5500f70",
+    "after_sha256": "22e0d015f8f70d263033783a76dff7dee1d53a9a0ad9a65485a8ac48f32a6efe",
+    "reason": "Update navigation, operating guidance or relative links; original narrative remains in the source archive.",
+    "original_archive": "source-before.zip",
+    "original_member": "releases/README.md"
+  },
+  {
+    "old": "tools/cad/cad.ps1",
+    "new": "tools/cad/cad.ps1",
+    "before_sha256": "f96201e48d400c4c3a1885441669551d5f926e261aff76d4c37705cfec03b118",
+    "after_sha256": "dcf5df9851ff5afcd13746796240fd75e30d0271e9ba2ba7ccecc9310120a971",
+    "reason": "Adapt maintained loading, verification or entry points to the new paths and isolated save-and-close workflow.",
+    "original_archive": "source-before.zip",
+    "original_member": "tools/cad/cad.ps1"
+  },
+  {
+    "old": "tools/cad/validate_camera.py",
+    "new": "tools/cad/validate_camera.py",
+    "before_sha256": "cba846f85d55d5cf97f3e3b53638be500b2501241cff35d9e7c6714b65c09f3c",
+    "after_sha256": "db6238db0a585499583ada6d0821a658e0ca5b786f6ca2135f707e5cf1e32d2e",
+    "reason": "Adapt maintained loading, verification or entry points to the new paths and isolated save-and-close workflow.",
+    "original_archive": "source-before.zip",
+    "original_member": "tools/cad/validate_camera.py"
+  },
+  {
+    "old": "tools/cad/validate_meshes.py",
+    "new": "tools/cad/validate_meshes.py",
+    "before_sha256": "3d9855079eed61366f369f9578ad82c5c2b39bbb0c57cfb183b57d9861bf7f4c",
+    "after_sha256": "efa0aa9b3488a98c5dad22a69d495865aec9ca22705ea401bbe1f5d1dff704b3",
+    "reason": "Adapt maintained loading, verification or entry points to the new paths and isolated save-and-close workflow.",
+    "original_archive": "source-before.zip",
+    "original_member": "tools/cad/validate_meshes.py"
+  },
+  {
+    "old": "tools/cad/validate_rat.py",
+    "new": "tools/cad/validate_rat.py",
+    "before_sha256": "7d95cfbffa64e54d042e478de0546e2263a2a8fb9f55e868baf4c4800ab9e168",
+    "after_sha256": "594ea552fcf194ba322c1272746638802db10db9a713516b37109a2197463a95",
+    "reason": "Adapt maintained loading, verification or entry points to the new paths and isolated save-and-close workflow.",
+    "original_archive": "source-before.zip",
+    "original_member": "tools/cad/validate_rat.py"
+  },
+  {
+    "old": "tools/cad/validate_shared.py",
+    "new": "tools/cad/validate_shared.py",
+    "before_sha256": "fdbd4623a966a2a101133eeb3c2df62024fa0a087661c7af8360d14a40b95bc8",
+    "after_sha256": "46970c14d32f456365feeeb89a6509e8f667af2326fabcff0bf3a343483140d3",
+    "reason": "Adapt maintained loading, verification or entry points to the new paths and isolated save-and-close workflow.",
+    "original_archive": "source-before.zip",
+    "original_member": "tools/cad/validate_shared.py"
+  },
+  {
+    "old": "tools/cad/validate_workspace.py",
+    "new": "tools/cad/validate_workspace.py",
+    "before_sha256": "181d1a86dd4bad5da631c5561d179f05e32d1ec1de991d24dd1fc50c8b96fc0d",
+    "after_sha256": "c21547ffc5772f18fbe4c88650301143f0e8f15a69ab2307df3fb6928d350976",
+    "reason": "Adapt maintained loading, verification or entry points to the new paths and isolated save-and-close workflow.",
+    "original_archive": "source-before.zip",
+    "original_member": "tools/cad/validate_workspace.py"
+  },
+  {
+    "old": "tools/migration/inventory_cleanup.py",
+    "new": "tools/migration/inventory_cleanup.py",
+    "before_sha256": "d0ab7ec3731819f05f450b3b8501ec9d3062cf72be661f7d7816570e4c956c1e",
+    "reason": "Prevent the one-time inventory command from overwriting completed preservation evidence.",
+    "original_archive": "source-before.zip",
+    "original_member": "tools/migration/inventory_cleanup.py",
+    "after_sha256": "3510ca608849894e5aa2719f7524b6a700bdc072973bcd8ba86433c252f5c1a2"
+  },
+  {
+    "old": "tools/migration/verify.py",
+    "new": "tools/migration/verify.py",
+    "before_sha256": "f4407ad0eb4f96a56f3a78ba4359dce062be6134fad6f3e5654efc30497f51b1",
+    "after_sha256": "3c6b13f919aedb4d5987548408c213aa25a3061957d89dde8be1c783ece150a1",
+    "reason": "Adapt maintained loading, verification or entry points to the new paths and isolated save-and-close workflow.",
+    "original_archive": "source-before.zip",
+    "original_member": "tools/migration/verify.py"
+  }
+]
