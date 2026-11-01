@@ -30,11 +30,13 @@ def selected_model():
     return model
 
 
-def add_camera(document, name='PupilCoreEye', placement=None):
+def add_camera(document, name='PupilCoreEye', placement=None, optics=False):
     """Return an App::Part with four material regions and its optical datum.
 
     Placement maps the saved R08 print frame into the caller's assembly frame.
     All geometry and datum properties are local to the returned group.
+    Set optics=True for the single mean optics-r02 reference overlay.
+    The explicit optics='r01' option replays the historical two-frustum review.
     """
     import FreeCAD as App
     import Part
@@ -89,6 +91,14 @@ def add_camera(document, name='PupilCoreEye', placement=None):
     group.addProperty('App::PropertyLinkList', 'PhysicalParts').PhysicalParts = physical
     group.addProperty('App::PropertyLink', 'OpticalAxis').OpticalAxis = axis
     group.addProperty('App::PropertyLink', 'SensorFrame').SensorFrame = frame
+    if optics:
+        if optics == 'r01':
+            from .optics_r01 import add_optics
+        else:
+            from .optics import add_optics
+        overlay = add_optics(document, sensor, direction, App.Vector(1, 0, 0),
+                             name=name + '_Optics', parent=group)
+        group.addProperty('App::PropertyLink', 'Optics').Optics = overlay
     if placement is not None:
         group.Placement = placement
     if App.GuiUp:

@@ -1,5 +1,7 @@
 # Monocular rat
 
+**Binocular review R41:** [clear eye views and paired rear supports](clear-view-r41/README.md). Two arms per camera are required. R41 corrects R40's one-arm substitution and left-ribbon view obstruction, and moves the left printed holder's stem to the opposite side. Review candidate; physical fit is unverified. The historical selected checkpoint below is unchanged.
+
 **Detailed camera review:** [detailed-camera-r05](detailed-camera-r05/README.md) replaces the simplified camera with the selected R08 geometry and optical datum. Holder and ribbon clearance issues are recorded for the next fit revision.
 
 **Binocular exploration: [concept study R01](binocular-study-r01/README.md).** Three back-to-back board and removable-cover options; not print designs.
@@ -151,3 +153,7 @@ Compact binocular review: [R32](compact-binocular-r32/README.md) lowers the hard
 R32 trial print pack: [print-r32](print-r32/README.md) updates the established four-color Snapmaker U1 skull project to the lowered R32 baseplate and includes a five-shell hardware STL with the binocular carrier, both matched holders and two detached clips. Exported meshes and inherited U1 settings are verified; files are unsliced.
 
 R32 print layout L02: [print-r32-l02](print-r32-l02/README.md) lays both clips on their broad U-shaped faces at Z=0, with their arms in XY. The all-hardware STL and ZIP are updated; the mechanism and U1 skull project are unchanged. The first layout remains preserved.
+
+Orthogonal binocular supports: [R42](orthogonal-arms-r42/README.md) replaces the R41 support routing with two planar arms per camera, 90-degree socket approaches, rounded carrier attachment areas and concave junction blends. Camera and ribbon poses remain fixed. Static geometry and clearance checks pass; physical fit remains unverified.
+
+Lowered binocular cameras: [R43](lowered-cameras-r43/README.md) lowers both R42 lens datums by 3 mm, preserves their world X/Y positions, re-aims them at the same eye centres, and refits both ribbons and paired supports. Static checks pass; physical fit remains unverified.

@@ -1,0 +1,200 @@
+{
+  "parameters": {
+    "height_mm": 100,
+    "alternating_height_mm": 0,
+    "aim_height_mm": 180,
+    "horizontal_fov_deg": 110,
+    "aspect_ratio": 1.7777777777777777,
+    "roll_deg": 0,
+    "top_fov_deg": 85,
+    "note": "Symmetric sweep seed; cameras contain final independent pose refinement"
+  },
+  "cameras": [
+    {
+      "id": "C1",
+      "position_mm": [
+        45,
+        45,
+        75
+      ],
+      "target_mm": [
+        250,
+        250,
+        180
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ],
+      "roll_deg": 0,
+      "sensor_mm": [
+        7.392,
+        4.16
+      ],
+      "pixels": [
+        1848,
+        1040
+      ],
+      "focal_mm": 2.587967061223088,
+      "near_mm": 70,
+      "far_mm": 1000,
+      "edge_margin": 0.05
+    },
+    {
+      "id": "C2",
+      "position_mm": [
+        455,
+        45,
+        75
+      ],
+      "target_mm": [
+        250,
+        250,
+        180
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ],
+      "roll_deg": 0,
+      "sensor_mm": [
+        7.392,
+        4.16
+      ],
+      "pixels": [
+        1848,
+        1040
+      ],
+      "focal_mm": 2.587967061223088,
+      "near_mm": 70,
+      "far_mm": 1000,
+      "edge_margin": 0.05
+    },
+    {
+      "id": "C3",
+      "position_mm": [
+        455,
+        455,
+        75
+      ],
+      "target_mm": [
+        250,
+        250,
+        180
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ],
+      "roll_deg": 0,
+      "sensor_mm": [
+        7.392,
+        4.16
+      ],
+      "pixels": [
+        1848,
+        1040
+      ],
+      "focal_mm": 2.587967061223088,
+      "near_mm": 70,
+      "far_mm": 1000,
+      "edge_margin": 0.05
+    },
+    {
+      "id": "C4",
+      "position_mm": [
+        45,
+        455,
+        100
+      ],
+      "target_mm": [
+        250,
+        250,
+        180
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ],
+      "roll_deg": 0,
+      "sensor_mm": [
+        7.392,
+        4.16
+      ],
+      "pixels": [
+        1848,
+        1040
+      ],
+      "focal_mm": 2.587967061223088,
+      "near_mm": 70,
+      "far_mm": 1000,
+      "edge_margin": 0.05
+    },
+    {
+      "id": "Top",
+      "position_mm": [
+        250,
+        250,
+        450
+      ],
+      "target_mm": [
+        250,
+        250,
+        0
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "roll_deg": 0,
+      "sensor_mm": [
+        5.2992,
+        5.2992
+      ],
+      "pixels": [
+        1536,
+        1536
+      ],
+      "focal_mm": 2.8915310044331415,
+      "near_mm": 70,
+      "far_mm": 1000,
+      "edge_margin": 0.05
+    }
+  ],
+  "score_priority": 113.77916553271962,
+  "score_cube": 109.27588235633108,
+  "metrics": {
+    "floor": {
+      "sample_count": 400,
+      "visible_ge2_pct": 100.0,
+      "visible_ge3_pct": 99.0,
+      "visible_all5_pct": 1.0,
+      "qualified_pair_pct": 100.0,
+      "redundant_pairs_pct": 99.0,
+      "second_view_px_per_mm_p10": 1.780410141057008
+    },
+    "lower": {
+      "sample_count": 3200,
+      "visible_ge2_pct": 99.5,
+      "visible_ge3_pct": 99.1875,
+      "visible_all5_pct": 55.03125,
+      "qualified_pair_pct": 99.5,
+      "redundant_pairs_pct": 99.1875,
+      "second_view_px_per_mm_p10": 1.915714123019887
+    },
+    "cube": {
+      "sample_count": 8000,
+      "visible_ge2_pct": 99.52499999999999,
+      "visible_ge3_pct": 81.575,
+      "visible_all5_pct": 31.912499999999998,
+      "qualified_pair_pct": 98.35000000000001,
+      "redundant_pairs_pct": 79.6375,
+      "second_view_px_per_mm_p10": 1.1848529425324297
+    }
+  }
+}

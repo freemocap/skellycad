@@ -1,0 +1,22 @@
+from pathlib import Path
+import json,hashlib,zipfile,shutil,datetime
+import FreeCAD as A,FreeCADGui as G
+from PySide import QtCore
+from pivy import coin
+R=Path(__file__).resolve().parents[4];S=Path(__file__).resolve().parent;O=R/'generated/eye-tracker/rat/eye-world-top-joint-r04'
+m=json.loads((S/'review.json').read_text());src=R/m['native_checkpoint'];assert hashlib.sha256(src.read_bytes()).hexdigest()==m['native_sha256'];assert json.loads((O/'final-validation.json').read_text())['passed']
+p=O/'RAT-eye-world-R04-current-review.FCStd'
+def verify(p):
+ with zipfile.ZipFile(p) as z:assert z.testzip() is None and 'Document.xml' in z.namelist()
+closed=[]
+for d in list(A.listDocuments().values()):
+ path=d.FileName.replace('\\','/')
+ if not any(k in path for k in ['/eye-world-study-r01/','/eye-world-ribbon-r02/','/eye-world-tray-r03/']):continue
+ recovery=O/'session-recovery'/datetime.datetime.now().strftime('%Y%m%d-%H%M%S');recovery.mkdir(parents=True,exist_ok=True);backup=recovery/(d.Name+'.FCStd');d.saveAs(str(backup));verify(backup);closed.append(path);A.closeDocument(d.Name)
+d=next((d for d in A.listDocuments().values() if d.FileName and Path(d.FileName).resolve()==p.resolve()),None)
+if d is None:shutil.copy2(src,p);d=A.openDocument(str(p))
+A.setActiveDocument(d.Name);v=G.activeDocument().activeView();v.viewRight();v.fitAll();v.getCameraNode().nearDistance.setValue(.01);v.getCameraNode().farDistance.setValue(10000)
+G.getMainWindow().showNormal();G.getMainWindow().raise_();G.getMainWindow().activateWindow();G.updateGui();d.save();verify(p)
+def capture():
+ G.updateGui();v.saveImage(str(O/'desktop-review.png'),1600,1200,'White');(O/'opened.json').write_text(json.dumps({'current_review':str(p),'saved_and_closed':closed,'saved':True,'documents':[d.FileName for d in A.listDocuments().values()]},indent=2))
+QtCore.QTimer.singleShot(1500,capture)

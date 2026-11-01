@@ -1,0 +1,13 @@
+from pathlib import Path
+import FreeCAD as A,FreeCADGui as G
+from PySide import QtCore
+R=Path(__file__).resolve().parents[4];O=R/'generated/eye-tracker/rat/clear-view-r41'
+d=next(x for x in A.listDocuments().values() if x.FileName.replace('\\','/').endswith('/RAT-R41-current-complete-review.FCStd'))
+for side in ['Right','Left']:
+ o=d.getObject(side+'EyeViewClearance');o.Visibility=True;o.ViewObject.ShapeColor=(.1,.9,.75);o.ViewObject.Transparency=80
+A.setActiveDocument(d.Name);v=G.activeDocument().activeView();v.viewRight();v.fitAll()
+def capture():
+ v.fitAll();G.updateGui();v.saveImage(str(O/'review-view-clearance.png'),1600,1200,'White')
+ for side in ['Right','Left']:d.getObject(side+'EyeViewClearance').Visibility=False
+ d.save()
+QtCore.QTimer.singleShot(1500,capture)

@@ -1,0 +1,86 @@
+{
+  "revision": "CAPTURE-R03",
+  "units": "mm",
+  "arena_mm": [
+    500,
+    500,
+    500
+  ],
+  "world_offset_mm": [
+    20,
+    20,
+    20
+  ],
+  "priority": "floor and lower 200 mm",
+  "weights": {
+    "floor": 0.45,
+    "lower": 0.45,
+    "cube": 0.1
+  },
+  "feature_mm": 3,
+  "min_feature_pixels": 3,
+  "pixel_sigma": 0.5,
+  "min_pair_angle_deg": 20,
+  "body_occlusion": true,
+  "edge_margin": 0.05,
+  "near_mm": 70,
+  "far_mm": 1000,
+  "corner_inset_mm": 45,
+  "top_optical_height_mm": 450,
+  "corner_pixel_count": 1920000,
+  "corner_pixel_pitch_um": 4,
+  "top_pixels": [
+    1536,
+    1536
+  ],
+  "top_sensor_mm": [
+    5.2992,
+    5.2992
+  ],
+  "sensor_status": "Idealized options for geometry, not a selected purchasable sensor or camera",
+  "search": {
+    "height_mm": [
+      250,
+      275,
+      300
+    ],
+    "alternating_height_mm": [
+      0,
+      25
+    ],
+    "aim_height_mm": [
+      30,
+      100,
+      180,
+      260
+    ],
+    "horizontal_fov_deg": [
+      65,
+      80,
+      95,
+      110
+    ],
+    "aspect_ratio": [
+      1,
+      1.3333333333333333,
+      1.7777777777777777
+    ],
+    "roll_deg": [
+      0,
+      90
+    ],
+    "top_fov_deg": [
+      65,
+      85,
+      105
+    ],
+    "coarse_spacing_mm": 100,
+    "shortlist_count_per_objective": 16,
+    "refinement_spacing_mm": 25,
+    "verification_spacing_mm": 12.5
+  },
+  "corner_height_bounds_mm": [
+    250,
+    300
+  ]
+}

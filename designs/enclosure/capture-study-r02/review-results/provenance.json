@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-29",
+  "status": "First idealized geometry study; not physical qualification",
+  "source_sha256": {
+    "build_cad.py": "51cbc70ca7fbdafe634698d935d36134e02a6236c2e82f037c2f85e342368514",
+    "geometry.py": "846c4971dd71ea57e5367f0b19eb50eab494b533d3414d969424d8bff95f6e93",
+    "optimize.py": "3b95f40cf7b8a58ba85b0766e5790022621cfd87bfedc4d5b32747e086237f32",
+    "README.md": "24b2f7cd4343665cac744442ab53d33ad2f9ab8b8b383dd7abce88e98fa27510",
+    "report.py": "afcbf7399b7ccfc6d48b27742751a8c9b69844ca9316e6402c473ed057387291",
+    "RESEARCH.md": "5dcca2614b2aed9527e438e8f9b1eff6ddc6ed0860e2341d6a0cf3e1495b5b6b",
+    "sensor-options.json": "415cfa277c57e43d60a29e65e4892e627b328bad8bf09e2e2ce7071ed9ab7e8d",
+    "study.json": "36a2923b155afad8754fc1dd09e197516b1c0109151c69c3023fafcc9e19deb5",
+    "test_geometry.py": "7e1ea18405f9d4e3a1c88c589aa0017c13457d9f34f335824ff488445007e333"
+  },
+  "native_relative_path": "generated/enclosure/capture-study-r02/capture-study-r02.FCStd",
+  "native_sha256": "6f7c9d6e5d4a6f614a2174639e535dec873d30a56fe8265a54302c6168150b09",
+  "geometry_tests_passed": 9,
+  "bibliography_tests_passed": 8,
+  "analytic_CAD_point_checks": 600
+}

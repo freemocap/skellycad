@@ -1,0 +1,65 @@
+"""Open the validated mouse optics review through native existing-session IPC."""
+from pathlib import Path
+from datetime import datetime
+import hashlib
+import json
+import traceback
+import zipfile
+import FreeCAD as App
+import FreeCADGui as Gui
+
+ROOT = Path(__file__).resolve().parents[6]
+OUT = ROOT/'generated/eye-tracker/shared/optics-r01'
+
+
+def verify(path):
+    with zipfile.ZipFile(path) as archive:
+        assert 'Document.xml' in archive.namelist() and archive.testzip() is None
+
+
+try:
+    validation = json.loads((OUT/'validation.json').read_text())
+    assert validation['passed'], 'Build must pass before desktop review'
+    record = validation['mouse']
+    path = (ROOT/record['path']).resolve()
+    assert hashlib.sha256(path.read_bytes()).hexdigest() == record['sha256']
+    verify(path)
+    matches = [d for d in App.listDocuments().values()
+               if d.FileName and Path(d.FileName).resolve() == path]
+    assert len(matches) <= 1, 'Duplicate live documents use this review path'
+    doc = matches[0] if matches else App.openDocument(str(path))
+    # Replace only this chat's preceding mouse baseline review, after recovery save.
+    baseline = (ROOT/validation['mouse_source']['path']).resolve()
+    backups = []
+    for previous in list(App.listDocuments().values()):
+        if previous == doc or not previous.FileName or Path(previous.FileName).resolve() != baseline:
+            continue
+        backup = ROOT/'generated/session-recovery'/('mouse-r19-before-optics-' + datetime.now().strftime('%Y%m%d-%H%M%S-%f') + '.FCStd')
+        backup.parent.mkdir(parents=True, exist_ok=True)
+        previous.saveAs(str(backup))
+        verify(backup)
+        backups.append({'original': str(baseline), 'recovery': str(backup)})
+        App.closeDocument(previous.Name)
+    App.setActiveDocument(doc.Name)
+    view = Gui.activeDocument().activeView()
+    view.viewAxonometric()
+    view.fitAll()
+    Gui.updateGui()
+    assert doc.MouseCameraOptics.Frustum192.ViewObject.Visibility
+    assert doc.MouseCameraOptics.Frustum400Comparison.ViewObject.Visibility
+    doc.save()
+    verify(path)
+    validation['mouse']['sha256'] = hashlib.sha256(path.read_bytes()).hexdigest()
+    (OUT/'validation.json').write_text(json.dumps(validation, indent=2)+'\n')
+    view.saveImage(str(OUT/'desktop-preview.png'), 1400, 1000, 'White')
+    Gui.getMainWindow().showNormal()
+    Gui.getMainWindow().raise_()
+    (OUT/'desktop-review.json').write_text(json.dumps({
+        'active_file': doc.FileName, 'both_frusta_visible': True,
+        'primary_mode': '400 x 400', 'saved_and_zip_verified': True,
+        'recovery_backups': backups,
+        'open_documents': [{'name': d.Name, 'path': d.FileName} for d in App.listDocuments().values()]
+    }, indent=2)+'\n')
+except Exception:
+    (OUT/'desktop-review-error.txt').write_text(traceback.format_exc())
+    raise

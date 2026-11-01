@@ -1,0 +1,12 @@
+from pathlib import Path
+import sys
+import FreeCAD as A,FreeCADGui as G,Part
+from PySide import QtCore
+from pivy import coin
+R=Path(__file__).resolve().parents[4];O=R/'generated/eye-tracker/rat/lowered-cameras-r43';sys.path.insert(0,str(R/'designs/eye-tracker/rat/lowered-cameras-r43'))
+from support import local
+assembly=A.activeDocument();shape=local(assembly.FinishedCarrier);detail=shape.common(Part.makeBox(15,15,9,A.Vector(-5,5,-23)));assert detail.Volume>0
+d=A.newDocument('R43JunctionReview');f=d.addObject('PartDesign::Feature','CarrierJunctions');f.Shape=detail;f.ViewObject.ShapeColor=(.65,.68,.72);f.Visibility=True;d.recompute();v=G.activeDocument().activeView();v.viewAxonometric();v.fitAll();v.getCameraNode().nearDistance.setValue(.01);v.getCameraNode().farDistance.setValue(10000);G.updateGui()
+def capture():
+ v.saveImage(str(O/'left-junction-detail.png'),1400,1000,'White');d.saveAs(str(O/'R43-left-junction-review.FCStd'));A.closeDocument(d.Name);A.setActiveDocument(assembly.Name);G.activeDocument().activeView().viewAxonometric();G.activeDocument().activeView().fitAll()
+QtCore.QTimer.singleShot(1500,capture)

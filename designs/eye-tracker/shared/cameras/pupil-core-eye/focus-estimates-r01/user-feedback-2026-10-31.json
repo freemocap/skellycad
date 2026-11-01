@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-31",
+  "source": "User report in project chat",
+  "configuration_context": "Current mouse R19 with optics R02 review; exact physical test setup not recorded",
+  "observation": "User tested focus and reports that some distances appear in focus and focus seems in range for this configuration.",
+  "status": "Provisional qualitative physical focus evidence",
+  "tested_distances_mm": null,
+  "focus_setting": null,
+  "resolution": null,
+  "quantified_depth_of_field": false,
+  "physical_mount_fit_confirmed": false
+}

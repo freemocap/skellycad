@@ -1,0 +1,76 @@
+[
+  {
+    "id": "ov9281-native-with-ar0234-square-top",
+    "corner_focal_mm": 1.3443984733626428,
+    "top_focal_mm": 1.9643553019246887,
+    "metrics": {
+      "floor": {
+        "sample_count": 400,
+        "visible_ge2_pct": 100.0,
+        "visible_ge3_pct": 99.0,
+        "visible_all5_pct": 6.0,
+        "qualified_pair_pct": 99.0,
+        "redundant_pairs_pct": 84.0,
+        "second_view_px_per_mm_p10": 1.2331845132862393,
+        "ideal_sigma_p95_mm": 0.4541089153942024
+      },
+      "lower": {
+        "sample_count": 3200,
+        "visible_ge2_pct": 99.5,
+        "visible_ge3_pct": 99.1875,
+        "visible_all5_pct": 58.21875,
+        "qualified_pair_pct": 99.1875,
+        "redundant_pairs_pct": 89.28125,
+        "second_view_px_per_mm_p10": 1.3682715654286235,
+        "ideal_sigma_p95_mm": 0.4183818201031291
+      },
+      "cube": {
+        "sample_count": 8000,
+        "visible_ge2_pct": 99.75,
+        "visible_ge3_pct": 87.675,
+        "visible_all5_pct": 33.4375,
+        "qualified_pair_pct": 84.275,
+        "redundant_pairs_pct": 51.9625,
+        "second_view_px_per_mm_p10": 0.8739241028617162,
+        "ideal_sigma_p95_mm": 0.4574447772570264
+      }
+    }
+  },
+  {
+    "id": "ar0234-native-with-ar0234-square-top",
+    "corner_focal_mm": 2.0165977100439645,
+    "top_focal_mm": 1.9643553019246887,
+    "metrics": {
+      "floor": {
+        "sample_count": 400,
+        "visible_ge2_pct": 100.0,
+        "visible_ge3_pct": 99.0,
+        "visible_all5_pct": 6.0,
+        "qualified_pair_pct": 100.0,
+        "redundant_pairs_pct": 99.0,
+        "second_view_px_per_mm_p10": 1.4550780014256952,
+        "ideal_sigma_p95_mm": 0.32725003754827753
+      },
+      "lower": {
+        "sample_count": 3200,
+        "visible_ge2_pct": 99.5,
+        "visible_ge3_pct": 99.1875,
+        "visible_all5_pct": 58.21875,
+        "qualified_pair_pct": 99.5,
+        "redundant_pairs_pct": 99.1875,
+        "second_view_px_per_mm_p10": 1.7581077339494022,
+        "ideal_sigma_p95_mm": 0.28927037841719555
+      },
+      "cube": {
+        "sample_count": 8000,
+        "visible_ge2_pct": 99.75,
+        "visible_ge3_pct": 87.675,
+        "visible_all5_pct": 33.4375,
+        "qualified_pair_pct": 99.575,
+        "redundant_pairs_pct": 86.5375,
+        "second_view_px_per_mm_p10": 1.310886154292574,
+        "ideal_sigma_p95_mm": 0.7450382725621782
+      }
+    }
+  }
+]

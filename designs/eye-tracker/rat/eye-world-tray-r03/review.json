@@ -1,0 +1,24 @@
+{
+  "revision": "ET-RAT-EYE-WORLD-TRAY-R03",
+  "units": "mm",
+  "native_checkpoint": "generated\\eye-tracker\\rat\\eye-world-tray-r03\\RAT-eye-world-tray-R03.FCStd",
+  "native_sha256": "6c4a23e4884bb75d84aa406b65ce29e9e37aa2d351d13c3c127d73b708c7295e",
+  "source": {
+    "revision": "ET-RAT-EYE-WORLD-RIBBON-R02",
+    "units": "mm",
+    "native_checkpoint": "generated\\eye-tracker\\rat\\eye-world-ribbon-r02\\RAT-eye-world-ribbon-R02.FCStd",
+    "native_sha256": "616775604b3a2a846cdb776e1c87ac34bb4369920b315b65b8e270708efc1d33",
+    "source": {
+      "revision": "ET-RAT-LOWERED-CAMERAS-R43",
+      "native_checkpoint": "generated\\eye-tracker\\rat\\lowered-cameras-r43\\ET-RAT-LOWERED-CAMERAS-R43.FCStd",
+      "native_sha256": "25a7167c54f47cdbb681aa3eefd4388bed8fd0cb812d4e657177873d73a17447"
+    },
+    "status": "Ribbon-driven placement review; world holder and supports need refit",
+    "physical_fit_verified": false,
+    "print_release": false
+  },
+  "camera_and_ribbon_pose_unchanged": true,
+  "new_object": "WorldCameraStemlessTray",
+  "status": "Restored PCB holder and stemless camera tray; world supports not designed",
+  "print_release": false
+}

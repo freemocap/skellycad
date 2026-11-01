@@ -1,0 +1,16 @@
+from pathlib import Path
+import FreeCAD as A,FreeCADGui as G
+from PySide import QtCore
+O=Path('C:\\Users\\jonma\\code-stuff\\github\\freemocap\\other\\skellycad\\generated\\eye-tracker\\rat\\eye-world-print-r06')
+G.getMainWindow().hide()
+source=A.openDocument(str(O/'RAT-W06-print-layout.FCStd'));d=A.newDocument('RatW06PrintReview')
+for old in source.Objects:
+ if hasattr(old,'Shape'):
+  fresh=d.addObject('Part::Feature',old.Name);fresh.Shape=old.Shape;fresh.Label=old.Label
+A.closeDocument(source.Name);A.setActiveDocument(d.Name);d.saveAs(str(O/'RAT-W06-print-layout.FCStd'))
+for o in d.Objects:
+ if hasattr(o,'Shape'):o.ViewObject.ShapeColor=(.72,.78,.84);o.ViewObject.Visibility=True
+v=G.activeDocument().activeView();d.recompute();G.updateGui();v.viewAxonometric();v.fitAll();v.getCameraNode().nearDistance.setValue(.01);v.getCameraNode().farDistance.setValue(10000);G.updateGui()
+def finish():
+ v.fitAll();v.getCameraNode().nearDistance.setValue(.01);v.getCameraNode().farDistance.setValue(10000);G.updateGui();v.saveImage(str(O/'print-pack/print-layout.png'),1600,1200,'White');d.save();A.closeDocument(d.Name);G.getMainWindow().close()
+QtCore.QTimer.singleShot(2000,finish)

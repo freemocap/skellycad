@@ -1,0 +1,63 @@
+{
+  "units": "mm",
+  "source": {
+    "revision": "ET-RAT-LOWERED-CAMERAS-R43",
+    "native_checkpoint": "generated\\eye-tracker\\rat\\lowered-cameras-r43\\ET-RAT-LOWERED-CAMERAS-R43.FCStd",
+    "native_sha256": "25a7167c54f47cdbb681aa3eefd4388bed8fd0cb812d4e657177873d73a17447"
+  },
+  "purpose": "Placement and suspension concepts only; no printable hardware or solved world ribbon",
+  "candidates": [
+    {
+      "id": "A-centered",
+      "lens_world_mm": [
+        12.0,
+        0.0,
+        12.0
+      ],
+      "axis_world": [
+        1,
+        0,
+        0
+      ],
+      "socket_axis_world": [
+        0,
+        0,
+        1
+      ],
+      "native": "generated\\eye-tracker\\rat\\eye-world-study-r01\\A-centered.FCStd",
+      "native_sha256": "214e6d6a58a4ca0f4e4e86753ca96187cb3800b0ee573cc48569003fd82e1f82",
+      "ribbon_guide_length_mm": 41.43554946709652,
+      "ribbon_stock_length_mm": 32.85,
+      "ribbon_solved": false,
+      "arm_seating_validated": false,
+      "anatomy_clearance_validated": false,
+      "physical_fit_verified": false
+    },
+    {
+      "id": "B-offset",
+      "lens_world_mm": [
+        12.0,
+        10.0,
+        12.0
+      ],
+      "axis_world": [
+        1,
+        0,
+        0
+      ],
+      "socket_axis_world": [
+        0,
+        0,
+        1
+      ],
+      "native": "generated\\eye-tracker\\rat\\eye-world-study-r01\\B-offset.FCStd",
+      "native_sha256": "2353eae9a7fe45a5aa2ac398106303432d5eaa62068edbba9970ef3cac7feef1",
+      "ribbon_guide_length_mm": 30.707971387518363,
+      "ribbon_stock_length_mm": 32.85,
+      "ribbon_solved": false,
+      "arm_seating_validated": false,
+      "anatomy_clearance_validated": false,
+      "physical_fit_verified": false
+    }
+  ]
+}

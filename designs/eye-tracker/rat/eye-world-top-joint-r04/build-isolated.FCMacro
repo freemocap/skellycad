@@ -1,0 +1,15 @@
+import runpy, traceback
+from PySide import QtCore
+import FreeCAD as A, FreeCADGui as G
+from pathlib import Path
+G.getMainWindow().hide()
+def work():
+ try:
+  ns=runpy.run_path('C:\\Users\\jonma\\code-stuff\\github\\freemocap\\other\\skellycad\\designs\\eye-tracker\\rat\\eye-world-top-joint-r04\\build.py',run_name="study")
+  ns["build"]()
+ except Exception:
+  Path('C:\\Users\\jonma\\code-stuff\\github\\freemocap\\other\\skellycad\\generated\\eye-tracker\\rat\\eye-world-top-joint-r04\\native-error.txt').write_text(traceback.format_exc())
+ finally:
+  for d in list(A.listDocuments().values()): A.closeDocument(d.Name)
+  G.getMainWindow().close()
+QtCore.QTimer.singleShot(1000,work)

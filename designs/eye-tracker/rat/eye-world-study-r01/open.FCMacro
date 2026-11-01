@@ -1,0 +1,31 @@
+from pathlib import Path
+import json, hashlib, zipfile, shutil
+import FreeCAD as A, FreeCADGui as G
+from PySide import QtCore
+from pivy import coin
+
+R=Path(__file__).resolve().parents[4]
+S=Path(__file__).resolve().parent
+O=R/'generated/eye-tracker/rat/eye-world-study-r01'
+m=json.loads((S/'lineage.json').read_text())
+c=next(c for c in m['candidates'] if c['id']=='B-offset')
+source=R/c['native']
+assert hashlib.sha256(source.read_bytes()).hexdigest()==c['native_sha256']
+p=O/'RAT-eye-world-B-current-review.FCStd'
+d=next((d for d in A.listDocuments().values() if d.FileName and Path(d.FileName).resolve()==p.resolve()),None)
+if d is None:
+ shutil.copy2(source,p)
+ d=A.openDocument(str(p))
+A.setActiveDocument(d.Name)
+d.Label='RAT eye + world camera - offset concept B'
+v=G.activeDocument().activeView()
+v.viewAxonometric();v.fitAll()
+v.getCameraNode().nearDistance.setValue(.01)
+v.getCameraNode().farDistance.setValue(10000)
+G.getMainWindow().showNormal();G.getMainWindow().raise_();G.getMainWindow().activateWindow()
+G.updateGui();d.save()
+with zipfile.ZipFile(p) as z:assert z.testzip() is None and 'Document.xml' in z.namelist()
+def capture():
+ G.updateGui();v.saveImage(str(O/'current-desktop-review.png'),1400,1050,'White')
+ (O/'opened.json').write_text(json.dumps({'current_review':str(p),'document':d.Name,'saved':True,'visible_objects':[o.Name for o in d.Objects if o.ViewObject.Visibility]},indent=2))
+QtCore.QTimer.singleShot(1500,capture)

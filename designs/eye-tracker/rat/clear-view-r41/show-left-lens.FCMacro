@@ -1,0 +1,20 @@
+import traceback
+try:
+ from pathlib import Path
+ import FreeCAD as A,FreeCADGui as G
+ from PySide import QtCore
+ from pivy import coin
+ import json
+ R=Path(__file__).resolve().parents[4];O=R/'generated/eye-tracker/rat/clear-view-r41'
+ d=next(x for x in A.listDocuments().values() if x.FileName.replace('\\','/').endswith('/RAT-R41-current-complete-review.FCStd'))
+ A.setActiveDocument(d.Name);v=G.activeDocument().activeView();saved={o.Name:o.Visibility for o in d.Objects}
+ for name in ['RatDesignSkull','RatLeftSclera','RatLeftCornea','RatRightSclera','RatRightCornea']:saved[name]=True;d.getObject(name).Visibility=False
+ for side in ['Right','Left']:saved[d.getObject(side+'Camera').OpticalAxis.Name]=True;d.getObject(side+'Camera').OpticalAxis.Visibility=False
+ rec=json.loads((O/'validation.json').read_text())['aim']['Left'];axis=A.Vector(*rec['axis_world']);lens=A.Vector(*rec['lens_world_mm']);eye=lens+axis*rec['stand_off_mm'];v.setCameraType('Orthographic');v.setCameraOrientation(A.Rotation(A.Vector(0,0,1),axis).Q);c=v.getCameraNode();c.position.setValue(*list(eye));c.height.setValue(14);c.nearDistance.setValue(.01);c.farDistance.setValue(100);c.focalDistance.setValue(rec['stand_off_mm']);G.updateGui()
+ def capture():
+  v.saveImage(str(O/'review-left-lens-from-eye.png'),1400,1400,'White')
+  for name,visible in saved.items():d.getObject(name).Visibility=visible
+  v.viewAxonometric();v.fitAll();d.save();G.updateGui()
+ QtCore.QTimer.singleShot(1500,capture)
+except Exception:
+ Path('generated/eye-tracker/rat/clear-view-r41/lens-view-error.txt').write_text(traceback.format_exc())

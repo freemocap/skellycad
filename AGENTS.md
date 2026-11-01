@@ -5,6 +5,12 @@ add the source to references.bib, cite its key beside the supported claim, recor
 review scope and run the bibliography checker and its tests before handoff.
 
 Before CAD setup, builds, exports or desktop review, read docs/development.md.
+Control and inspect FreeCAD through code: its Python API, macros, and the
+repository's existing-session IPC or verified RPC bridge. Use code for document
+loading, view changes, visibility checks, and image capture. Do not invoke
+computer-use tools for FreeCAD or ask the user to authorize computer use for it.
+If a code path fails, diagnose or repair that path; keep FreeCAD interaction
+code-based. Follow docs/development.md for session ownership and preservation.
 For every CAD task, follow its save-and-close policy: save work during the task
 and close finished task-owned documents before handoff.
 For eye-tracker work, read designs/eye-tracker/README.md and the species README.

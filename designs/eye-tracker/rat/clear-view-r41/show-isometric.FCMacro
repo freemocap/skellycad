@@ -1,0 +1,10 @@
+from pathlib import Path
+import FreeCAD as A,FreeCADGui as G
+from PySide import QtCore
+from pivy import coin
+R=Path(__file__).resolve().parents[4];O=R/'generated/eye-tracker/rat/clear-view-r41'
+d=next(x for x in A.listDocuments().values() if x.FileName.replace('\\','/').endswith('/RAT-R41-current-complete-review.FCStd'))
+A.setActiveDocument(d.Name);v=G.activeDocument().activeView();v.viewAxonometric();v.fitAll();v.getCameraNode().nearDistance.setValue(.01);v.getCameraNode().farDistance.setValue(10000);G.updateGui()
+def capture():
+ G.updateGui();v.saveImage(str(O/'review-isometric.png'),1600,1200,'White');d.save()
+QtCore.QTimer.singleShot(1500,capture)

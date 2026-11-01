@@ -1,0 +1,16 @@
+from pathlib import Path
+import json, zipfile
+import FreeCAD as App
+import FreeCADGui as Gui
+root=Path(__file__).resolve().parents[3]
+out=root/'generated/enclosure/capture-study-r04'
+out.mkdir(parents=True,exist_ok=True)
+doc=App.ActiveDocument
+assert doc and 'capture-study-r03' in doc.FileName.lower()
+camera=Gui.activeDocument().activeView().getCamera()
+original=doc.FileName
+backup=out/'r03-user-review.FCStd'
+assert not backup.exists(), 'Preserve existing review backup'
+doc.saveAs(str(backup))
+with zipfile.ZipFile(backup) as z:assert z.testzip() is None and 'Document.xml' in z.namelist()
+(out/'user-view.json').write_text(json.dumps({'camera':camera,'original':original,'backup':str(backup),'document':doc.Name},indent=2))

@@ -1,5 +1,9 @@
 # Preferred Pupil Labs eye-camera model
 
+**Optical coverage review:** [optics R02](optics-r02/README.md) uses one mean
+frustum estimate for both resolutions, with 400 mode preferred for acquisition.
+Focus at the modeled eye distance remains unverified; physical R08 remains selected.
+
 **Selected checkpoint: CAMERA-DUMMY-R08.** Use [active-model.json](active-model.json)
 for new Pupil Labs Core eye-camera geometry and mock-ups. The complete module
 includes both PCBs, the flat ribbon, JST connector, LEDs, the notched straight

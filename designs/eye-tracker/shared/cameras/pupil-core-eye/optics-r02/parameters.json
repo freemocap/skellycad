@@ -1,0 +1,61 @@
+{
+  "revision": "PUPIL-CORE-OPTICS-R02",
+  "units": "mm",
+  "physical_checkpoint": "CAMERA-DUMMY-R08",
+  "focal_length_mm": 1.7,
+  "sensor_active_width_mm": 1.15,
+  "sensor_active_height_mm": 1.15,
+  "resolution_px": [
+    192,
+    192
+  ],
+  "frame_rate_hz": 200,
+  "preferred_mode_px": [
+    400,
+    400
+  ],
+  "show_both_frusta": false,
+  "far_display_distance_mm": 20.0,
+  "user_evidence": {
+    "received_on": "2026-10-30",
+    "kind": "User-transcribed excerpt of Pupil Labs email; original email and camera serial/model ID not inspected",
+    "quote": "Image sensor size (at 192x192 pixel): 1,15 mm x 1,15 mm; Focal length: 1,7 mm",
+    "focus_observation_2026_10_30": "User reports this particular lens is not glued and can be screwed in/out; treat focus as adjustable. Generic manufacturer glued-lens guidance does not describe this unit."
+  },
+  "comparison_400": {
+    "camera_family": "Pupil Cam2",
+    "resolution_px": [
+      400,
+      400
+    ],
+    "frame_rate_hz": 120,
+    "fx_px": 561.471804,
+    "fy_px": 562.494105,
+    "cx_px": 200.0,
+    "cy_px": 200.0,
+    "source": "pupilCoreEyeIntrinsics2026",
+    "status": "Conditional family-default estimate; applicability to user's camera unconfirmed"
+  },
+  "comparison_192": {
+    "camera_family": "Pupil Cam2",
+    "fx_px": 282.976877,
+    "fy_px": 283.561467,
+    "cx_px": 96.0,
+    "cy_px": 96.0,
+    "source": "pupilCoreEyeIntrinsics2026"
+  },
+  "assumptions": {
+    "projection": "Ideal pinhole; centered principal point; distortion unmodeled",
+    "sensor_position": "Inherited hypothetical sensor datum on PCB top",
+    "projection_center": "Schematic sensor center plus 1.7 mm along optical axis; not a measured entrance pupil or mechanical lens spacing",
+    "roll": "R08 local X or projected existing lens local X; image-to-hardware roll uncalibrated",
+    "display_extent": "20 mm is a drawing limit, not focus distance or depth of field",
+    "readout_method": "Unconfirmed; do not assert binning or cropping from resolution alone"
+  },
+  "sources": [
+    "pupilCore200Hz",
+    "pupilCoreEyeIntrinsics2026",
+    "opencvCalibR02"
+  ],
+  "combination": "Arithmetic mean of the R01 email-derived 192 and conditional Cam2 400 full angles, separately for horizontal and vertical"
+}

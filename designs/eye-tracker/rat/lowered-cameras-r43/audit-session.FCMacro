@@ -1,0 +1,4 @@
+from pathlib import Path
+import json,FreeCAD as A
+R=Path(__file__).resolve().parents[4];O=R/'generated/eye-tracker/rat/lowered-cameras-r43'
+(O/'session-final.json').write_text(json.dumps([{'name':d.Name,'path':d.FileName,'label':d.Label} for d in A.listDocuments().values()],indent=2))

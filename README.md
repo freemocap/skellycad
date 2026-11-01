@@ -13,6 +13,8 @@ Reproducible CAD designs, reference anatomy, and tools for long-term development
   walkthrough and [electronics integration](docs/kicad-integration.md).
 - [Development](docs/development.md): setup, validation, exports, and desktop review.
 - [Version control](docs/version-control.md): what to retain, ignore, and store with Git LFS.
+- [Repository cleanup plan](docs/repository-organization.md): full-repository layout,
+  retention decisions, working guidance, and migration sequence (not yet applied).
 - [References](CITATIONS.md): citation conventions and evidence in `references.bib`.
 - [Migration record](docs/migration/README.md): retained files, exclusions,
   checksums, and restoring historical replay inputs.

@@ -1,0 +1,29 @@
+{
+  "status": "pass",
+  "baseline_sha256": "767503d764f21d3b8b0d270a2c3807f7adef68d63e14c6b11f3018b1b849fa45",
+  "native_sha256": "6f7c9d6e5d4a6f614a2174639e535dec873d30a56fe8265a54302c6168150b09",
+  "frame_solids_copied": 31,
+  "camera_count": 5,
+  "body_frame_collisions": [],
+  "membership_cells": 25,
+  "partition_volume_error_mm3": 2.2351741790771484e-07,
+  "analytic_CAD_classification_checks": 600,
+  "exact_geometric_coverage": {
+    "2": {
+      "cube_pct": 99.84351066815572,
+      "lower_pct": 100.00000000000007
+    },
+    "3": {
+      "cube_pct": 81.46459349782536,
+      "lower_pct": 99.84806187161104
+    },
+    "5": {
+      "cube_pct": 31.75003444997903,
+      "lower_pct": 55.32286611985838
+    }
+  },
+  "zip_integrity": true,
+  "reopen_valid": true,
+  "task_documents_closed": true,
+  "scope": "Exact frustum overlap only; does not include body occlusion, feature size, ray angle, animals, tether or optics errors"
+}

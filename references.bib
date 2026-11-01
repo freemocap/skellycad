@@ -119,8 +119,8 @@
   url = {https://www.towinlens.com/de/product/cctv-objektiv-m406014003845},
   urldate = {2026-10-13},
   review = {excerpt},
-  claim = {One commercial miniature camera lens specifies an M4x0.35 mount, demonstrating that thread pitch accompanies the M4 diameter designation.},
-  note = {Reviewed product description and specifications. This is an example, not an identified Pupil camera lens or a source for its holder dimensions. No model from this product was used.}
+  claim = {One commercial miniature camera lens specifies an M4x0.35 mount, 6 mm focal length, f/4.5, 0.2 m minimum object distance and 9.7 mm total track length.},
+  note = {Product description and specifications rechecked 2026-10-30; supplementary total track length says 9.83 mm. This is an example, not an identified Pupil camera lens or a source for its holder dimensions. No model from this product was used.}
 }
 @misc{scipyConstrainedMinimize,
   author = {{SciPy contributors}},
@@ -193,8 +193,8 @@
  url = {https://www.iadiy.com/image/catalog/IADIY/products/optical-lenses/optical-lenses-datasheet/M5-board-lens-CL5P1.6.pdf},
  urldate = {2026-10-14},
  review = {excerpt},
- claim = {Page 2 provides 6.0 and 6.5 mm square holder drawings, heights, pin dimensions and M5 x 0.35 sectional thread callout. Page 1 specifies a 3.6 mm image circle, default IR-cut filter and optional other filters.},
- note = {Visually inspected supplied PDF page 2. Public PDF text for optical format and filtering rechecked 2026-10-27. Reconstructed CAD uses approximated thread profile and pin arrangement; not manufacturer CAD. Table P3.5 conflicts with drawing and page 1 P0.35; use P0.35.}
+ claim = {Page 2 provides 6.0 and 6.5 mm square holder drawings, heights, pin dimensions and M5 x 0.35 sectional thread callout. The datasheet specifies a 3.6 mm image circle, default IR-cut filter with average transmission at most 3 percent over 700-1000 nm, and optional other filters.},
+ note = {Visually inspected supplied PDF page 2. Public PDF text for optical format and filtering rechecked 2026-10-30, pages 1-2. Reconstructed CAD uses approximated thread profile and pin arrangement; not manufacturer CAD. Table P3.5 conflicts with drawing and page 1 P0.35; use P0.35.}
 }
 @misc{chuanganCh2021a,
  author = {{Fuzhou ChuangAn Optics Co., Ltd.}},
@@ -854,6 +854,46 @@
  note = {Equations and stated limits for multi-element objectives reviewed. Local estimates use principal-plane distances, not mechanical clearance or verified working distance}
 }
 
+@misc{edmundAiryFocus2026,
+ title = {The Airy Disk and Diffraction Limit},
+ author = {Greg Hollows and Nicholas James},
+ url = {https://www.edmundoptics.com/knowledge-center/application-notes/imaging/limitations-on-resolution-and-contrast-the-airy-disk/},
+ urldate = {2026-10-30},
+ review = {excerpt},
+ claim = {Ideal circular-aperture Airy disk diameter scales as 2.44 times wavelength times f-number; smaller apertures increase diffraction blur.},
+ note = {Reviewed Equation 1 and adjacent resolution limitations. Local near-focus estimates use a thin-lens effective f-number with unit pupil magnification and an assumed 850 nm wavelength, not a measured camera spectrum.}
+}
+
+@misc{iadiyM5OpticalCandidates2026,
+ title = {M5 Board Lenses for 3.6 mm Image Circle},
+ author = {{IADIY}},
+ url = {https://www.iadiy.com/M5-board-lens},
+ urldate = {2026-10-30},
+ review = {excerpt},
+ claim = {Miniature M5 family includes 1.75 mm f/2.4 with TTL 3.05 mm and BFL 0.70 mm, plus 2.2 mm f/2.2, 2.5 mm f/2.8 and 2.9 mm f/2.8 alternatives.},
+ note = {Reviewed product specification table. Minimum object distance and close-range image quality were not specified; no physical fit, NIR performance or stock availability established.}
+}
+
+@misc{towinM4ShortLens2026,
+ title = {Low-distortion lens M401916006520},
+ author = {{Towin}},
+ url = {https://www.towinlens.com/product/low-distortion-lens-m401916006520},
+ urldate = {2026-10-30},
+ review = {excerpt},
+ claim = {Manufacturer table lists 1.9 mm focal length, f/2.0, M4 x 0.25 mount, 3.2 mm TTL, 0.60 mm mechanical BFL and 0.2 m minimum object distance.},
+ note = {Reviewed specification table and supplementary fields; supplementary TTL is 3.3 mm. No verified NIR transmission or close-focus performance at 13 mm.}
+}
+
+@misc{towinM5CloseLens2026,
+ title = {Low-distortion lens M502716504436F},
+ author = {{Towin}},
+ url = {https://www.towinlens.com/product/low-distortion-lens-m502716504436f},
+ urldate = {2026-10-30},
+ review = {excerpt},
+ claim = {Manufacturer table lists 2.7 mm focal length, f/3.6, M5 x 0.35 mount, 0.97 mm BFL, 18 mm minimum object distance and built-in IR-cut filter.},
+ note = {Reviewed specification table. Minimum-distance datum is unspecified; supplementary aperture field says f/3.5. No demonstrated compatibility at the proposed 13 mm optical distance.}
+}
+
 @misc{commonlandsCil829,
  title = {CIL829 small 2.8 mm M8 lens},
  author = {{Commonlands}},
@@ -893,6 +933,36 @@
  review = {full-text},
  claim = {ESP32-P4 example describes camera capture, JPEG/H264 encoding and USB video output},
  note = {Example documentation reviewed; documented sensors differ from OV9281; dependency licensing and target performance not qualified}
+}
+
+@misc{pupilCoreEyeIntrinsics2026,
+ title = {Pupil camera models: default eye-camera intrinsics},
+ author = {{Pupil Labs}},
+ url = {https://raw.githubusercontent.com/pupil-labs/pupil/master/pupil_src/shared_modules/camera_models.py},
+ urldate = {2026-10-30},
+ review = {source-code},
+ claim = {Pupil Cam2 eye defaults use focal lengths near 283 pixels at 192 square and 562 pixels at 400 square; principal points are image centers and distortion coefficients are zero placeholders.},
+ note = {Reviewed default_intrinsics eye-camera block and its caveats, lines 241-310 as accessed. Cam3 has different defaults. These are family estimates, not calibration of the user's camera, and do not identify the sensor readout mechanism.}
+}
+
+@misc{pupilCoreFixedFocus2026,
+ title = {Pupil Core Hardware: Focus Cameras},
+ author = {{Pupil Labs}},
+ url = {https://docs.pupil-labs.com/core/hardware/},
+ urldate = {2026-10-30},
+ review = {excerpt},
+ claim = {The 200 Hz eye-camera lens is glued in place and not user-focusable; twisting can break its mount. The separately described older 120 Hz eye camera has adjustable focus.},
+ note = {Reviewed Focus Cameras sections. No numerical near-focus distance or depth-of-field specification found on this page; choosing 120 fps on the 200 Hz camera does not identify the older hardware.}
+}
+
+@misc{baslerBinning2026,
+ title = {Binning},
+ author = {{Basler}},
+ url = {https://docs.baslerweb.com/binning},
+ urldate = {2026-10-30},
+ review = {excerpt},
+ claim = {Binning combines adjacent sensor pixel values by summation or averaging, reducing output data and potentially increasing frame rate.},
+ note = {Reviewed How It Works, binning factors and binning modes. General mechanism only; not evidence that Pupil Labs uses binning.}
 }
 
 @misc{pupilCore200Hz,
@@ -1815,4 +1885,180 @@
   review = {excerpt},
   claim = {Nominal 20 by 20 mm metric profile with four open T-slots, 20-series fastener compatibility, and displayed pricing of USD 0.0131 per millimeter plus a USD 3.00 cut charge.},
   note = {Reviewed product description and pricing excerpt for the enclosure R01 concept. CAD slot internals and connectors are illustrative rather than reproduced vendor geometry. Pricing is a dated reference, excludes hardware and delivery, and is not a confirmed cart quote.}
+}
+@misc{optitrackPlacementR02,
+  title = {Camera Placement},
+  author = {{OptiTrack}},
+  url = {https://docs.optitrack.com/hardware/camera-placement},
+  urldate = {2026-10-29},
+  review = {excerpt},
+  claim = {Distributed overlapping views, synchronized observations, elevation diversity and coverage versus detail are relevant to optical motion-capture camera placement.},
+  note = {Reviewed placement guidance; primarily marker-based tracking, not a quantified animal self-occlusion model. Angle thresholds in the enclosure study are local engineering choices.}
+}
+
+@misc{opencvCalibR02,
+  title = {Camera Calibration and 3D Reconstruction},
+  author = {{OpenCV}},
+  url = {https://docs.opencv.org/4.13.0/d9/d0c/group__calib3d.html},
+  urldate = {2026-10-29},
+  review = {excerpt},
+  claim = {Pinhole projection combines camera intrinsics with world-to-camera rotation and translation; real lenses require distortion modeling and calibration.},
+  note = {Reviewed introduction and projection/distortion equations; no claim of physical calibration or implementation validation.}
+}
+
+@misc{edmundFovR02,
+  title = {Understanding Focal Length and Field of View},
+  author = {Gregory Hollows and Nicholas James},
+  url = {https://www.edmundoptics.com/knowledge-center/application-notes/imaging/understanding-focal-length-and-field-of-view/},
+  urldate = {2026-10-29},
+  review = {excerpt},
+  claim = {Angular field of view relates sensor dimension and focal length by twice the arctangent of their half-ratio; optical principal planes limit simple mechanical working-distance interpretations.},
+  note = {Reviewed Equation 1 and adjacent working-distance caveat. Cube footprint calculations are local ideal-pinhole derivations.}
+}
+
+@misc{waveshareOv9281R02,
+  title = {OV9281 1MP Mono USB Camera (A)},
+  author = {{Waveshare}},
+  url = {https://www.waveshare.com/product/ai/cameras/ov9281-1mp-usb-camera-a.htm},
+  urldate = {2026-10-29},
+  review = {excerpt},
+  claim = {SKU 31671 is advertised as a mono global-shutter USB2 camera, 1280 by 720 at 120 fps, with 1.65 mm M7 fixed-focus lens and no IR filter, at USD 25.99.},
+  note = {Manufacturer search-index excerpt reviewed; direct fetch returned 403. FOV axis, trigger support, close focus and sustained multi-camera delivery were not verified.}
+}
+
+@misc{arducamB0495R02,
+  title = {B0495 AR0234 Global Shutter USB3.0 Camera Module Datasheet},
+  author = {{Arducam}},
+  url = {https://www.arducam.com/downloads/datasheet/B0495_AR0234_Global_Shutter_USB3.0_Camera_Module_Datasheet.pdf},
+  urldate = {2026-10-29},
+  review = {excerpt},
+  claim = {Manufacturer datasheet excerpt lists color global shutter, 1920 by 1200 at 50 fps, 960 by 600 at 80 fps, 3 micrometer pixels, manual-focus M12 lens and integral IR-cut filter.},
+  note = {Indexed technical-parameter table reviewed; direct PDF fetch returned 404. Price and external trigger unverified. Default focus listed as 2 m to infinity requires enclosure-distance verification.}
+}
+
+@misc{econ24CugR02,
+  title = {See3CAM 24CUG: AR0234CS Full HD Color Global Shutter Camera},
+  author = {{e-con Systems}},
+  url = {https://www.e-consystems.com/industrial-cameras/ar0234-usb3-global-shutter-camera.asp},
+  urldate = {2026-10-29},
+  review = {excerpt},
+  claim = {USB3 color global-shutter AR0234 camera offers external hardware trigger, M12 holder, 1920 by 1200 sensor array and 3 micrometer pixels; specification table lists HD 120 fps and FHD 60 fps.},
+  note = {Reviewed specifications and ordering excerpts. Overview's 120 fps full-resolution claim conflicts with the mode table. USD 99 is a volume starting price, not a verified single-unit quote. Filter interchange and close focus unverified.}
+}
+
+@misc{rpiGsIntegrationR02,
+  title = {Global Shutter Camera: integration documentation},
+  author = {{Raspberry Pi}},
+  url = {https://www.raspberrypi.com/documentation/accessories/global-shutter-camera.html},
+  urldate = {2026-10-29},
+  review = {excerpt},
+  claim = {IMX296 camera has 1456 by 1088 pixels, C/CS mount and external trigger synchronization; installed IR-cut filter removal is permanent and voids warranty.},
+  note = {Reviewed introductory specifications, transmission characteristics and external trigger sections. Wiring is model-specific; no hardware integration performed.}
+}
+
+@misc{rpiGsLaunchR02,
+  title = {New Raspberry Pi Global Shutter Camera for machine vision and more},
+  author = {Eben Upton},
+  year = {2023},
+  url = {https://www.raspberrypi.com/news/new-raspberry-pi-global-shutter-camera/},
+  urldate = {2026-10-29},
+  review = {excerpt},
+  claim = {Raspberry Pi announced the IMX296 global-shutter camera at USD 50 on 9 March 2023.},
+  note = {Historical launch-price context only, not a current complete camera/lens/host quote.}
+}
+
+@misc{edmundApertureR05,
+ title = {System Throughput, f-number, and Numerical Aperture},
+ author = {Gregory Hollows and Nicholas James},
+ url = {https://www.edmundoptics.com/knowledge-center/application-notes/imaging/lens-iris-aperture-setting/},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {F-number is focal length divided by effective aperture diameter; aperture changes affect light throughput, depth of field and resolution.},
+ note = {Reviewed definitions and throughput tradeoffs. Local focus calculations are idealized, not manufacturer measurements of the user's lens.}
+}
+@misc{edmundDofR05,
+ title = {Depth of Field and Depth of Focus},
+ author = {Gregory Hollows and Nicholas James},
+ url = {https://www.edmundoptics.com/knowledge-center/application-notes/imaging/depth-of-field-and-depth-of-focus/},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {Depth of field requires a specified resolution and contrast criterion; stopping down trades increased depth of field against diffraction-limited detail.},
+ note = {Reviewed depth-of-field and f-number sections. No exact lens characterization or physical focus test performed.}
+}
+@misc{edmundMountsR05,
+ title = {Lens Mounts},
+ author = {{Edmund Optics}},
+ url = {https://www.edmundoptics.com/knowledge-center/application-notes/imaging/lens-mounts/},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {CS mount has a shorter flange distance than C mount; matching threads alone does not establish optical mounting compatibility.},
+ note = {Manufacturer indexed mount-standard excerpt reviewed. Exact user lens mount and rear clearance have not been measured.}
+}
+
+@misc{iadiyUsbR06,
+ title = {2M USB Global Shutter Camera Module - CM2M60M12QG},
+ author = {{IADIY}},
+ url = {https://www.iadiy.com/global-shutter-camera-module-CM2M60M12QG},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {Budget USB camera baseline with selectable M12 focal lengths, filters and color option; storefront base price USD 98 and listed 7-21 day availability.},
+ note = {Reviewed specifications, options and price. Variant surcharges, exact 30 fps negotiation and actual stock fulfillment not tested.}
+}
+@misc{iadiyUsbDatasheetR06,
+ title = {CM2M60M12QG USB camera module datasheet},
+ author = {{IADIY}},
+ url = {https://www.iadiy.com/image/catalog/IADIY/products/camera-module/CM2M60M12QG/usb-camera-sensor-module-CM2M60M12QG.pdf},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {OG02B10 global shutter, 3 micrometer pixels, 1600 by 1200 MJPEG at 60 fps, YUV at 5 fps, USB UVC and M12 lens holder.},
+ note = {Reviewed text of pages 1-2, version 1.2. Mechanical drawing not used; native stream pixel mapping, lens distortion and hardware operation unverified.}
+}
+
+@misc{elpAmazonL21R06,
+ title = {ELP High Speed Wide Angle Global Shutter USB Camera Module with 2.1mm Lens AR0234},
+ author = {{ELP USB CAMERA}},
+ url = {https://www.amazon.com/dp/B0C3C459JT},
+ urldate = {2026-10-29},
+ review = {excerpt},
+ claim = {Amazon-listed USB UVC AR0234 camera with 2.1 mm lens; live price USD 72.99, in stock and fulfilled by Amazon.},
+ note = {Read live seller listing and buy box through browser. Quantity selector includes five. Delivery shown for default Nashville 37217, not user's address. Hardware specifications are seller claims; no purchase or bench test.}
+}
+@misc{oshwaSharingPractices,
+ title = {Best Practices for Open Source Hardware 1.0},
+ author = {{Open Source Hardware Association}},
+ url = {https://oshwa.org/resources/sharing-best-practices/},
+ urldate = {2026-10-31},
+ review = {excerpt},
+ claim = {Open hardware documentation should include an overview, editable original designs, auxiliary exports, bill of materials and assembly guidance; exports do not substitute for original designs.},
+ note = {Reviewed overview, original and auxiliary files, BOM, instructions, hosting and distribution sections. Repository layout is a local proposal, not an OSHWA mandated directory standard.}
+}
+
+@misc{stanfordDataOrganization,
+ title = {Data Management and Sharing: Organizing Data},
+ author = {{Stanford Medicine Lane Medical Library}},
+ url = {https://laneguides.stanford.edu/DataManagement/Organizing},
+ urldate = {2026-10-31},
+ review = {excerpt},
+ claim = {Meaningful consistent file names, documented version differences, descriptive directories and a top-level README help readers navigate research files.},
+ note = {Reviewed naming and structuring sections. Revision-first directory names and three-digit padding are local choices, not requirements stated by this source.}
+}
+
+@misc{githubAboutReleases,
+ title = {About releases},
+ author = {{GitHub}},
+ url = {https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases},
+ urldate = {2026-10-31},
+ review = {excerpt},
+ claim = {Releases package notes and binary assets around a Git tag; inclusion of LFS objects in repository archives is configurable.},
+ note = {Reviewed release and archive behavior. CAD release contents are a local application of the software release mechanism; no release was published.}
+}
+
+@misc{githubAboutLfs,
+ title = {About Git Large File Storage},
+ author = {{GitHub}},
+ url = {https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage},
+ urldate = {2026-10-31},
+ review = {excerpt},
+ claim = {Git LFS retains pointer files in Git and stores large objects separately.},
+ note = {Reviewed storage and pointer behavior. LFS does not itself define repository organization or checkpoint selection.}
 }

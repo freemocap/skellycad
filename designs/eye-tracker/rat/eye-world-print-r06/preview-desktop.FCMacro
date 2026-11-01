@@ -1,0 +1,20 @@
+import FreeCAD as A,FreeCADGui as G,traceback,json
+from pathlib import Path
+from PySide import QtCore
+O=Path('C:\\Users\\jonma\\code-stuff\\github\\freemocap\\other\\skellycad\\generated\\eye-tracker\\rat\\eye-world-print-r06')
+def render_pack():
+ try:
+  previous=A.ActiveDocument.Name
+  src=A.openDocument(str(O/'RAT-W06-print-layout.FCStd'))
+  doc=A.newDocument('W06PlatePreview')
+  for old in src.Objects:
+   if hasattr(old,'Shape'):
+    obj=doc.addObject('Part::Feature',old.Name);obj.Shape=old.Shape;obj.ViewObject.Visibility=True;obj.ViewObject.ShapeColor=(.72,.78,.84)
+  A.closeDocument(src.Name);doc.recompute();doc.saveAs(str(O/'RAT-W06-print-layout.FCStd'));A.setActiveDocument(doc.Name);view=G.activeDocument().activeView();view.viewAxonometric();view.fitAll();G.updateGui()
+  def capture():
+   try:
+    view.fitAll();view.getCameraNode().nearDistance.setValue(.01);view.getCameraNode().farDistance.setValue(10000);G.updateGui();view.saveImage(str(O/'print-pack/print-layout.png'),1600,1200,'White');doc.save();A.closeDocument(doc.Name);A.setActiveDocument(previous);G.updateGui();(O/'preview-success.json').write_text(json.dumps({'saved':True,'closed':True}))
+   except Exception:(O/'preview-error.txt').write_text(traceback.format_exc())
+  QtCore.QTimer.singleShot(1500,capture)
+ except Exception:(O/'preview-error.txt').write_text(traceback.format_exc())
+render_pack()

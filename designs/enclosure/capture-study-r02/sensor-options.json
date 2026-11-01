@@ -1,0 +1,8 @@
+{
+  "status": "Sensor geometry options, not approved camera purchases. See RESEARCH.md for product-level limitations.",
+  "options": [
+    {"id": "ov9281-native", "sensor_mm": [3.84, 2.4], "pixels": [1280, 800], "spectral": "mono", "global_shutter": true, "source": "ov9281ProductA01", "camera_delivered_fps": null, "unit_price_usd": null},
+    {"id": "ar0234-native", "sensor_mm": [5.76, 3.6], "pixels": [1920, 1200], "spectral": "color", "global_shutter": true, "source": "econ24CugR02", "camera_delivered_fps": null, "unit_price_usd": null},
+    {"id": "ar0234-square-crop", "sensor_mm": [3.6, 3.6], "pixels": [1200, 1200], "spectral": "color", "global_shutter": true, "source": "econ24CugR02", "camera_delivered_fps": null, "unit_price_usd": null, "note": "Derived centered crop; hardware ROI mode and output rate unverified"}
+  ]
+}

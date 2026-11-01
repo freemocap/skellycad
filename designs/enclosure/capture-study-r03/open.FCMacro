@@ -1,0 +1,23 @@
+"""Open the saved elevated-camera review without duplicating documents."""
+from pathlib import Path
+import os
+import json
+import runpy
+import FreeCAD as App
+import FreeCADGui as Gui
+
+root=Path(__file__).resolve().parents[3]
+out=root/'generated/enclosure/capture-study-r03'
+path=(out/'capture-study-r03.FCStd').resolve()
+matches=[d for d in App.listDocuments().values() if d.FileName and os.path.normcase(str(Path(d.FileName).resolve()))==os.path.normcase(str(path))]
+assert len(matches)<=1, 'Multiple documents already own this path'
+doc=matches[0] if matches else App.openDocument(str(path))
+App.setActiveDocument(doc.Name)
+Gui.getMainWindow().showNormal()
+Gui.getMainWindow().raise_()
+Gui.getMainWindow().activateWindow()
+Gui.updateGui()
+(out/'desktop-review.json').write_text(json.dumps({'pid':os.getpid(),'path':str(path),'document':doc.Name,
+    'window_visible':Gui.getMainWindow().isVisible(),
+    'frustums':[{'name':o.Name,'label':o.Label,'visible':o.Visibility,'color':list(o.ViewObject.ShapeColor)[:3]} for o in doc.ClippedViews.Group]},indent=2)+'\n')
+runpy.run_path(str(root/'tools/cad/configure_recovery.FCMacro'))

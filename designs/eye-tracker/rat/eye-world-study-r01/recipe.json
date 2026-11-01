@@ -1,0 +1,33 @@
+{
+  "revision": "ET-RAT-EYE-WORLD-STUDY-R01",
+  "units": "mm",
+  "source_complete_assembly": {
+    "revision": "ET-RAT-LOWERED-CAMERAS-R43",
+    "native_checkpoint": "generated\\eye-tracker\\rat\\lowered-cameras-r43\\ET-RAT-LOWERED-CAMERAS-R43.FCStd",
+    "native_sha256": "25a7167c54f47cdbb681aa3eefd4388bed8fd0cb812d4e657177873d73a17447"
+  },
+  "right_eye": "R43 unchanged",
+  "left_camera_role": "world",
+  "forward_axis_world": [
+    1,
+    0,
+    0
+  ],
+  "stem": "top of tray, vertical",
+  "socket_opening": "upward",
+  "pcb_layout": "R43 back-to-back, fixed",
+  "candidate_lens_world_mm": {
+    "A-centered": [
+      12.0,
+      0.0,
+      12.0
+    ],
+    "B-offset": [
+      12.0,
+      10.0,
+      12.0
+    ]
+  },
+  "stage": "placement concepts, not printable",
+  "next": "Solve finite-width ribbon before detailed holder and paired support design"
+}

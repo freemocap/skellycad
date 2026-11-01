@@ -1,0 +1,188 @@
+{
+  "without_C1": {
+    "floor": {
+      "sample_count": 400,
+      "visible_ge2_pct": 99.75,
+      "visible_ge3_pct": 62.0,
+      "visible_all5_pct": 0.0,
+      "qualified_pair_pct": 99.75,
+      "redundant_pairs_pct": 62.0,
+      "second_view_px_per_mm_p10": 1.5285323517093141
+    },
+    "lower": {
+      "sample_count": 3200,
+      "visible_ge2_pct": 99.5,
+      "visible_ge3_pct": 91.625,
+      "visible_all5_pct": 0.0,
+      "qualified_pair_pct": 99.5,
+      "redundant_pairs_pct": 91.625,
+      "second_view_px_per_mm_p10": 1.755924359603369
+    },
+    "cube": {
+      "sample_count": 8000,
+      "visible_ge2_pct": 90.6125,
+      "visible_ge3_pct": 57.9125,
+      "visible_all5_pct": 0.0,
+      "qualified_pair_pct": 89.03750000000001,
+      "redundant_pairs_pct": 57.4375,
+      "second_view_px_per_mm_p10": 0.9608418945960533
+    }
+  },
+  "without_C2": {
+    "floor": {
+      "sample_count": 400,
+      "visible_ge2_pct": 99.75,
+      "visible_ge3_pct": 62.0,
+      "visible_all5_pct": 0.0,
+      "qualified_pair_pct": 99.75,
+      "redundant_pairs_pct": 62.0,
+      "second_view_px_per_mm_p10": 1.5655872576451852
+    },
+    "lower": {
+      "sample_count": 3200,
+      "visible_ge2_pct": 99.53125,
+      "visible_ge3_pct": 91.25,
+      "visible_all5_pct": 0.0,
+      "qualified_pair_pct": 99.53125,
+      "redundant_pairs_pct": 91.25,
+      "second_view_px_per_mm_p10": 1.7539945603291591
+    },
+    "cube": {
+      "sample_count": 8000,
+      "visible_ge2_pct": 89.7375,
+      "visible_ge3_pct": 58.537499999999994,
+      "visible_all5_pct": 0.0,
+      "qualified_pair_pct": 88.41250000000001,
+      "redundant_pairs_pct": 58.15,
+      "second_view_px_per_mm_p10": 0.0
+    }
+  },
+  "without_C3": {
+    "floor": {
+      "sample_count": 400,
+      "visible_ge2_pct": 99.75,
+      "visible_ge3_pct": 62.0,
+      "visible_all5_pct": 0.0,
+      "qualified_pair_pct": 99.75,
+      "redundant_pairs_pct": 62.0,
+      "second_view_px_per_mm_p10": 1.5285323517093141
+    },
+    "lower": {
+      "sample_count": 3200,
+      "visible_ge2_pct": 99.5,
+      "visible_ge3_pct": 91.625,
+      "visible_all5_pct": 0.0,
+      "qualified_pair_pct": 99.5,
+      "redundant_pairs_pct": 91.625,
+      "second_view_px_per_mm_p10": 1.755924359603369
+    },
+    "cube": {
+      "sample_count": 8000,
+      "visible_ge2_pct": 90.6125,
+      "visible_ge3_pct": 57.9125,
+      "visible_all5_pct": 0.0,
+      "qualified_pair_pct": 89.03750000000001,
+      "redundant_pairs_pct": 57.4375,
+      "second_view_px_per_mm_p10": 0.9608418945960533
+    }
+  },
+  "without_C4": {
+    "floor": {
+      "sample_count": 400,
+      "visible_ge2_pct": 99.75,
+      "visible_ge3_pct": 62.0,
+      "visible_all5_pct": 0.0,
+      "qualified_pair_pct": 99.75,
+      "redundant_pairs_pct": 62.0,
+      "second_view_px_per_mm_p10": 1.5655872576451852
+    },
+    "lower": {
+      "sample_count": 3200,
+      "visible_ge2_pct": 99.40625,
+      "visible_ge3_pct": 92.15625,
+      "visible_all5_pct": 0.0,
+      "qualified_pair_pct": 99.40625,
+      "redundant_pairs_pct": 92.15625,
+      "second_view_px_per_mm_p10": 1.7597967255965397
+    },
+    "cube": {
+      "sample_count": 8000,
+      "visible_ge2_pct": 91.4625,
+      "visible_ge3_pct": 59.275,
+      "visible_all5_pct": 0.0,
+      "qualified_pair_pct": 89.71249999999999,
+      "redundant_pairs_pct": 58.675,
+      "second_view_px_per_mm_p10": 0.9894969622688957
+    }
+  },
+  "without_Top": {
+    "floor": {
+      "sample_count": 400,
+      "visible_ge2_pct": 99.0,
+      "visible_ge3_pct": 25.0,
+      "visible_all5_pct": 0.0,
+      "qualified_pair_pct": 99.0,
+      "redundant_pairs_pct": 25.0,
+      "second_view_px_per_mm_p10": 1.3034626351221021
+    },
+    "lower": {
+      "sample_count": 3200,
+      "visible_ge2_pct": 99.4375,
+      "visible_ge3_pct": 88.75,
+      "visible_all5_pct": 0.0,
+      "qualified_pair_pct": 99.4375,
+      "redundant_pairs_pct": 88.75,
+      "second_view_px_per_mm_p10": 1.5730331587709436
+    },
+    "cube": {
+      "sample_count": 8000,
+      "visible_ge2_pct": 99.55000000000001,
+      "visible_ge3_pct": 77.4125,
+      "visible_all5_pct": 0.0,
+      "qualified_pair_pct": 98.375,
+      "redundant_pairs_pct": 75.47500000000001,
+      "second_view_px_per_mm_p10": 1.181885420615272
+    }
+  },
+  "synthetic_central_box": {
+    "floor": {
+      "sample_count": 392,
+      "visible_ge2_pct": 96.93877551020408,
+      "visible_ge3_pct": 45.91836734693878,
+      "visible_all5_pct": 0.0,
+      "qualified_pair_pct": 96.93877551020408,
+      "redundant_pairs_pct": 45.91836734693878,
+      "second_view_px_per_mm_p10": 1.7385049664739394
+    },
+    "lower": {
+      "sample_count": 3176,
+      "visible_ge2_pct": 99.18136020151134,
+      "visible_ge3_pct": 95.05667506297229,
+      "visible_all5_pct": 46.59949622166247,
+      "qualified_pair_pct": 99.18136020151134,
+      "redundant_pairs_pct": 95.05667506297229,
+      "second_view_px_per_mm_p10": 1.915714123019887
+    },
+    "cube": {
+      "sample_count": 7976,
+      "visible_ge2_pct": 99.39819458375125,
+      "visible_ge3_pct": 79.87713139418254,
+      "visible_all5_pct": 28.48545636910732,
+      "qualified_pair_pct": 98.21965897693079,
+      "redundant_pairs_pct": 77.93380140421263,
+      "second_view_px_per_mm_p10": 1.1843102152927307
+    },
+    "box_mm": [
+      [
+        200,
+        220,
+        0
+      ],
+      [
+        300,
+        280,
+        70
+      ]
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+from pathlib import Path
+import os,json,zipfile,hashlib
+import FreeCAD as App
+import FreeCADGui as Gui
+root=Path(__file__).resolve().parents[3];out=root/'generated/enclosure/capture-study-r04'
+record=json.loads((out/'user-view.json').read_text())
+previous=App.getDocument(record['document']) if record['document'] in App.listDocuments() else None
+camera=Gui.getDocument(previous.Name).activeView().getCamera() if previous else record['camera']
+if previous:
+    assert Path(previous.FileName).resolve()==Path(record['backup']).resolve()
+    previous.save()
+    with zipfile.ZipFile(previous.FileName) as z:assert z.testzip() is None
+path=(out/'capture-study-r04.FCStd').resolve()
+matches=[d for d in App.listDocuments().values() if d.FileName and Path(d.FileName).resolve()==path]
+assert len(matches)<=1
+doc=matches[0] if matches else App.openDocument(str(path))
+App.setActiveDocument(doc.Name)
+Gui.activeDocument().activeView().setCamera(camera)
+Gui.Selection.clearSelection()
+Gui.getMainWindow().raise_();Gui.getMainWindow().activateWindow();Gui.updateGui()
+doc.save()
+with zipfile.ZipFile(path) as z:assert z.testzip() is None and 'Document.xml' in z.namelist()
+assert doc.getObject('AtLeast4Views_GeometricOnly') is not None
+assert doc.getObject('AtLeast5Views_GeometricOnly').Visibility
+if previous:App.closeDocument(previous.Name)
+Gui.activeDocument().activeView().saveImage(str(out/'desktop-review.png'),1400,1000,'White')
+check=json.loads((out/'cad-validation.json').read_text());check['build_native_sha256']=check['native_sha256'];check['native_sha256']=hashlib.sha256(path.read_bytes()).hexdigest();check['user_view_preserved']=True
+(out/'cad-validation.json').write_text(json.dumps(check,indent=2)+'\n')
+(out/'desktop-review.json').write_text(json.dumps({'pid':os.getpid(),'path':str(path),'view_preserved':True,'four_view_available':True,'five_view_visible':True,'previous_saved_copy':record['backup']},indent=2)+'\n')
