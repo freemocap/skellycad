@@ -20,3 +20,4 @@ designs/cameras/og0tc/** -text
 
 # Bounded-size volumes of the immutable cleanup retention archives.
 *.zip.[0-9][0-9][0-9] filter=lfs diff=lfs merge=lfs -text
+designs/ultraskelly/references/** -text

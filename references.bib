@@ -2073,3 +2073,97 @@
  claim = {The Pi 5 board is 85 by 56 mm, with four 2.7 mm mounting holes on a 58 by 49 mm pattern 3.5 mm from the board edges, each on a 6 mm pad. The drawing states that all dimensions are approximate and for reference only.},
  note = {Inspected the one-page drawing visually and as extracted text. The year is the file's 6 October 2025 update date. The 6 mm pad is a reading of an unlabelled dimension beside the holes. The drawing gives no tolerances, underside component heights or active cooler envelope.}
 }
+
+@misc{raspberrypi2026Pi5Step,
+ title = {Raspberry Pi 5 STEP model},
+ author = {{Raspberry Pi Ltd}},
+ year = {2026},
+ url = {https://datasheets.raspberrypi.com/rpi5/RaspberryPi5-step.zip},
+ urldate = {2026-11-02},
+ review = {excerpt},
+ claim = {The archive holds rpi-5b_no_graphics.step under an MIT licence from Raspberry Pi Ltd, which says the model is for guidance only and that fitment needs measurement of the physical product. FreeCAD 1.1.4 reads it as 2689 solids within an 88.5 by 57.63 by 18.98 mm box, the 85 by 56 mm board plus overhanging ports.},
+ note = {Read the archive listing and LICENSE.txt, then loaded the STEP model in FreeCAD 1.1.4 for its bounding box only. Component placement inside the model was not reviewed.}
+}
+
+@misc{raspberrypi2024AiHatBrief,
+ title = {Raspberry Pi AI HAT+ product brief},
+ author = {{Raspberry Pi Ltd}},
+ year = {2024},
+ url = {https://datasheets.raspberrypi.com/ai-hat-plus/raspberry-pi-ai-hat-plus-product-brief.pdf},
+ urldate = {2026-11-02},
+ review = {full-text},
+ claim = {The AI HAT+ board is 65 by 56.5 mm with mounting holes on the 58 by 49 mm pattern 3.5 mm from the board edges and a 17 by 17 mm Hailo package. It ships with a 16 mm stacking header, spacers and screws for fitting over the Raspberry Pi Active Cooler, and its ambient operating range is 0 to 50 degrees C.},
+ note = {Read all six pages. Dimensions come from the page 4 physical specification drawing, which states that they are approximate. The brief gives no component heights or ribbon routing.}
+}
+
+@misc{adafruitMotorHatStep,
+ title = {2348 Adafruit Motor HAT STEP model},
+ author = {{Adafruit Industries}},
+ url = {https://raw.githubusercontent.com/adafruit/Adafruit_CAD_Parts/6c5cd9e3e65252bb5d5339608cf8d3cdabcef251/2348%20Adafruit%20Motor%20HAT/2348%20Adafruit%20Motor%20HAT.step},
+ urldate = {2026-11-02},
+ review = {excerpt},
+ claim = {MIT-licensed STEP model of the Adafruit DC and Stepper Motor HAT, product 2348. FreeCAD 1.1.4 reads it as 103 solids within a 65.0 by 56.5 by 7.21 mm box.},
+ note = {Retrieved from Adafruit_CAD_Parts at the commit in the URL and loaded in FreeCAD for its bounding box only. Whether the model includes the screw terminals and stacking header at full height was not checked.}
+}
+
+@misc{adafruitServoHatBoard,
+ title = {Adafruit Servo HAT rev A board layout},
+ author = {{Adafruit Industries}},
+ url = {https://raw.githubusercontent.com/adafruit/Adafruit-Servo-HAT-Bonnet-PCB/b15611b66fcf0dffc06f1d888e84cd751dda3e4a/Adafruit%20Servo%20HAT%20rev%20A.brd},
+ urldate = {2026-11-02},
+ review = {source-code},
+ claim = {The EAGLE layout of the 16-Channel PWM/Servo HAT, product 2327, is published under CC BY-SA. Its outline is 65.0 by 56.5 mm, with 2.8 mm mounting holes at 3.5 and 61.5 mm by 3.5 and 52.5 mm.},
+ note = {Parsed the Dimension layer and holes of the board and its placed packages with designs/ultraskelly/src/vendor.py. Component heights are not in the layout. The rev A layout may differ from the revision fitted to the robot.}
+}
+
+@misc{stereolabs2026ZedMiniDatasheet,
+ title = {ZED Mini camera overview and datasheet, Rev 1.3},
+ author = {{Stereolabs}},
+ year = {2026},
+ url = {https://cdn.sanity.io/files/s18ewfw4/staging/14fab5dad2a9f36ce7f1e8024c3959a9611b990a.pdf/ZED-Mini-Datasheet.pdf},
+ urldate = {2026-11-02},
+ review = {full-text},
+ claim = {The ZED Mini is 124.5 by 30.5 by 26.5 mm with a 63 mm baseline and a maximum field of view of 102 by 57 degrees, 118 degrees diagonal. Two M2x0.4 mounting holes 56 mm apart on the top face accept screws at most 2.3 mm into the camera. It draws about 1.9 W over USB-C and operates from 0 to 45 degrees C.},
+ note = {Read all five pages. The page 4 drawing gives 125.2 mm overall width and 30.25 mm depth including the lens barrels; holes on the other faces are drawn but only partly dimensioned.}
+}
+
+@misc{stereolabsZedMiniStep,
+ title = {ZED Mini 3D model},
+ author = {{Stereolabs}},
+ url = {https://cdn.sanity.io/files/s18ewfw4/staging/608b5b0dae4a90d239f30fc24bce6fbc8f24479f.step/ZEDM.step},
+ urldate = {2026-11-02},
+ review = {excerpt},
+ claim = {STEP model of the ZED Mini from the Stereolabs 3D models page. FreeCAD 1.1.4 reads it as one solid within a 126.02 by 30.25 by 27.45 mm box whose X range is -65.26 to 60.76 mm.},
+ note = {Linked from the ZED Mini row of https://www.stereolabs.com/3dmodels and loaded in FreeCAD for its bounding box only. No licence is stated, so the repository keeps only the URL and SHA-256. Lens axes and hole positions in the model were not yet reviewed.}
+}
+
+@misc{luxonis2022Oak1Datasheet,
+ title = {OAK-1 (USB boot) datasheet},
+ author = {{Luxonis}},
+ year = {2022},
+ url = {https://raw.githubusercontent.com/luxonis/oak-hardware/3c24531dca1ac0e7595f7a9e5c4d3826990ab80d/BW1093_USB3C/Datasheet/OAK-1_Datasheet.pdf},
+ urldate = {2026-11-02},
+ review = {full-text},
+ claim = {The OAK-1 is 36 by 54.5 by 27.88 mm. Its IMX378 colour camera has a 69 by 55 degree field of view, 81 degrees diagonal. The back has two M4 holes 8 mm deep spaced 25 mm apart and a 1/4-20 thread 7 mm deep. It needs up to 7.5 W at 5 V and a maximum ambient temperature of 50 degrees C.},
+ note = {Read all five pages of the January 2022 datasheet. Its size table gives 35 mm width while its drawing gives 36 mm. The drawing places the camera centre 32.4 mm from one end of the 54.5 mm face; which end was not confirmed against the STEP model.}
+}
+
+@misc{luxonisOak1PcbaStep,
+ title = {OAK-1 PCBA STEP model},
+ author = {{Luxonis}},
+ url = {https://oak-files.fra1.cdn.digitaloceanspaces.com/OAK-1/OAK-1_PCBA.STEP},
+ urldate = {2026-11-02},
+ review = {excerpt},
+ claim = {Luxonis states that all USB OAK-1 cameras share this PCBA. FreeCAD 1.1.4 reads it as 558 solids within a 30.0 by 44.28 by 7.50 mm box.},
+ note = {Linked from BW1093_USB3C/Mechanical/README.md in luxonis/oak-hardware at commit 3c24531. No licence is stated at the download location, so the repository keeps only the URL and SHA-256. Loaded in FreeCAD for its bounding box only.}
+}
+
+@misc{luxonisOak1EnclosureStep,
+ title = {OAK-1 enclosure STEP model},
+ author = {{Luxonis}},
+ url = {https://oak-files.fra1.cdn.digitaloceanspaces.com/OAK-1/OAK-1_ENCLOSURE.step},
+ urldate = {2026-11-02},
+ review = {excerpt},
+ claim = {Luxonis states that all USB OAK-1 cameras share this enclosure. FreeCAD 1.1.4 reads it as 11 solids within a 36.11 by 54.59 by 28.52 mm box.},
+ note = {Linked from BW1093_USB3C/Mechanical/README.md in luxonis/oak-hardware at commit 3c24531. No licence is stated at the download location, so the repository keeps only the URL and SHA-256. Loaded in FreeCAD for its bounding box only; lens axis and hole positions not yet reviewed.}
+}
