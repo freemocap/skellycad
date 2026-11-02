@@ -15,7 +15,7 @@ physical fit is unverified.
 | --- | --- |
 | Fit coupon | Scripted print test for the Pi 5 hole pattern, M2.5 pilot holes and zip-tie slots. Not yet printed. |
 | Camera bracket | Planned. Holds the ZED Mini at the eye sockets and the OAK-1 at the nose hole, and defines each sensor's pose in the head frame. |
-| Pi 5 stack mount | Planned. Holds the Pi 5, its HAT stack and the PCA9685 servo driver board on the neck/spine bar or outside the skull, with strain relief for USB, I2C and power leads. The PCA9685 board's jumper wires are the first priority: a loose connection there silenced the board and disturbed the I2C bus on 2026-11-02. |
+| Electronics shelf (`mount`) | First design, not printed. A plate clamps to the 1 inch spine tube with a collar and two M3 set screws. It carries the community OMT Pi 5 case cut down to 30 mm (open top), the PCA9685 on bosses beside it with short I2C jumpers, and zip-tie slots for the bundle into the skull. The PCA9685 jumpers came loose on 2026-11-02, which is why they get a fixed place. |
 
 ## Layout
 
@@ -48,9 +48,11 @@ into it from the repository root:
 - `hardware_view` lays every board, camera, actuator and supply flat and draws
   their connections: USB, PCIe, I2C jumpers, servo and motor leads and power.
   It uses the vendor models where `references/vendor.json` has them.
-
 - `case_view` places the Pi 5, AI HAT+ and Motor HAT in the community OMT
   Pi 5 case with its lid off [@omtPi5Case].
+
+- `mount` builds the electronics shelf and exports `shelf-plate.stl` and
+  `omt-case-cut.stl` for printing.
 
 Each run saves a new folder under `generated/ultraskelly/` and leaves the
 document open for review. `snapshot` saves the active view as a PNG.
