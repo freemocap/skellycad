@@ -1,0 +1,17 @@
+{
+  "units": "mm",
+  "purpose": "Print test for the Pi 5 stack mount: hole pattern, M2.5 pilot sizes and zip-tie slots. Values are print hypotheses, not validated fits.",
+  "pi5": {
+    "board": [85.0, 56.0],
+    "hole_pattern": [58.0, 49.0],
+    "hole_edge_offset": 3.5,
+    "hole_diameter": 2.7,
+    "pad_diameter": 6.0,
+    "source": "Raspberry Pi 5 mechanical drawing; approximate reference dimensions [@raspberrypi2025Pi5Drawing]"
+  },
+  "rail": {"width": 5.0, "thickness": 2.0},
+  "boss": {"outer_diameter": 6.0, "height_above_rail": 5.0},
+  "pilot_diameters": [2.2, 2.4, 2.6, 2.9],
+  "index_mark": {"diameter": 1.2, "depth": 0.6, "pitch": 2.2},
+  "tie_tab": {"width": 14.0, "length": 14.0, "slot_length": 5.2, "slot_width": 2.2, "slot_spacing": 8.0}
+}
