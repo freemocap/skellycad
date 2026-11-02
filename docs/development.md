@@ -8,6 +8,13 @@ verify and extract the pinned FreeCAD archive, and install the pinned bridge.
 Set `CAD_BLENDER` when Blender is installed at a different location. Virtual
 environments and runtime installations are rebuilt rather than moved.
 
+The bootstrap needs a `uv` release that can install the pinned Python 3.12.14:
+uv 0.11.7 cannot, and uv 0.13.6 can. If the installed `uv` is older, put a newer
+`uv.exe` first on `PATH` for the bootstrap. The bootstrap extracts the FreeCAD
+`.7z` archive with `tar`, which must be the Windows `tar` from `C:\Windows\System32`;
+Git's `tar` cannot read `.7z`. Both scripts run in Windows PowerShell 5.1 and in
+PowerShell 7.
+
 Commands from the repository root:
 
 ```powershell

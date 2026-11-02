@@ -17,9 +17,10 @@ $env:MPLCONFIGDIR = Join-Path $localTools 'matplotlib'
 switch ($Task) {
     'doctor' {
         if (!(Test-Path $python)) { throw 'Run tools/cad/bootstrap.ps1 first' }
-        & $python -c 'import sys, trimesh, scipy, matplotlib, freecad_mcp; print("CAD Python:",sys.version); print("trimesh:",trimesh.__version__)'
+        # Single-quoted Python strings: Windows PowerShell 5.1 strips embedded double quotes from native arguments.
+        & $python -c 'import sys, trimesh, scipy, matplotlib, freecad_mcp; print(''CAD Python:'',sys.version); print(''trimesh:'',trimesh.__version__)'
         if ($LASTEXITCODE -ne 0) { throw 'CAD Python import check failed' }
-        & (Join-Path $fcBin 'python.exe') -c 'import FreeCAD, Part; print("FreeCAD:",FreeCAD.Version()); assert Part.makeBox(1,2,3).Volume == 6'
+        & (Join-Path $fcBin 'python.exe') -c 'import FreeCAD, Part; print(''FreeCAD:'',FreeCAD.Version()); assert Part.makeBox(1,2,3).Volume == 6'
         if ($LASTEXITCODE -ne 0) { throw 'FreeCAD import check failed' }
         if (!(Test-Path $BlenderPath)) { throw 'Set CAD_BLENDER to the installed blender.exe path' }
         $blenderVersion = & $BlenderPath --version
@@ -42,7 +43,7 @@ switch ($Task) {
         $profile = Join-Path $localTools 'freecad-profile'
         New-Item -ItemType Directory -Force $profile | Out-Null
         # Refuse duplicate listeners instead of silently controlling another instance.
-        & $python -c 'import socket; s=socket.socket(); s.settimeout(1); busy=s.connect_ex(("127.0.0.1",9875))==0; s.close(); raise SystemExit(1 if busy else 0)'
+        & $python -c 'import socket; s=socket.socket(); s.settimeout(1); busy=s.connect_ex((''127.0.0.1'',9875))==0; s.close(); raise SystemExit(1 if busy else 0)'
         if ($LASTEXITCODE -ne 0) { throw 'Port 9875 is already in use. Run test-mcp or stop the existing project instance.' }
         $env:FREECAD_USER_HOME = $profile
         $arguments = @('-u', ('"' + (Join-Path $PSScriptRoot 'freecad_runtime.py') + '"'))
