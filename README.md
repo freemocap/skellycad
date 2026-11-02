@@ -9,6 +9,7 @@ review candidates and available print packages.
 | Eye trackers | [Mouse, rat, marmoset and human](designs/eye-tracker/README.md) |
 | Camera modules | [Pupil reference and camera development](designs/cameras/README.md) |
 | Capture enclosure | [Frame and capture studies](designs/enclosure/README.md) |
+| UltraSkelly mounts | [Camera bracket and Pi 5 stack mount](designs/ultraskelly/README.md) |
 | Preserved Mouse Hats | [Historical designs and replay](designs/mouse-hats/README.md) |
 | CAD Foundations | [FreeCAD lessons](designs/cad-foundations/README.md) |
 | KiCad Foundations | [Electronics lessons](designs/kicad-foundations/README.md) |
