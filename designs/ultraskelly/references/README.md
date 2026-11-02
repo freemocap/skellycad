@@ -16,6 +16,7 @@ and SHA-256.
 | Raspberry Pi 5 STEP archive (`pi5/`) | Repository (Git LFS) | MIT, inside the archive |
 | Adafruit DC and Stepper Motor HAT STEP (`adafruit/`) | Repository (Git LFS) | MIT, `adafruit/LICENSE.txt` |
 | Adafruit PCA9685 16-channel servo driver breakout STEP (`adafruit/`) | Repository (Git LFS) | MIT, `adafruit/LICENSE.txt` |
+| OMT Raspberry Pi 5 case 3MF (`omt-case/`), community design | Repository (Git LFS) | MIT, `omt-case/LICENSE.txt` |
 | Raspberry Pi 5 mechanical drawing | Fetch | None stated |
 | Raspberry Pi AI HAT+ product brief | Fetch | None stated |
 | Stereolabs ZED Mini STEP and datasheet | Fetch | None stated |

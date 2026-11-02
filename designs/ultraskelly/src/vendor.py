@@ -92,6 +92,54 @@ def shape(item_id):
     return result
 
 
+def mesh_3mf(item_id):
+    """Meshes of a 3MF project by build item, in its print-bed coordinates (mm).
+
+    Reads the 3MF core XML directly: object meshes, components and build transforms. Items are
+    named from the slicer's model settings when present.
+    """
+    import xml.etree.ElementTree as ET
+    import FreeCAD as App
+    import Mesh
+    ns = {'m': 'http://schemas.microsoft.com/3dmanufacturing/core/2015/02'}
+    part_attr = '{http://schemas.microsoft.com/3dmanufacturing/production/2015/06}path'
+
+    def matrix(text):
+        v = [float(x) for x in (text or '1 0 0 0 1 0 0 0 1 0 0 0').split()]
+        return App.Matrix(v[0], v[3], v[6], v[9], v[1], v[4], v[7], v[10], v[2], v[5], v[8], v[11], 0, 0, 0, 1)
+
+    def objects_in(archive, member):
+        found = {}
+        for obj in ET.fromstring(archive.read(member.lstrip('/'))).iterfind('.//m:object', ns):
+            mesh = obj.find('m:mesh', ns)
+            if mesh is not None:
+                points = [(float(v.get('x')), float(v.get('y')), float(v.get('z'))) for v in mesh.iterfind('m:vertices/m:vertex', ns)]
+                found[obj.get('id')] = [points[int(t.get(k))] for t in mesh.iterfind('m:triangles/m:triangle', ns)
+                                        for k in ('v1', 'v2', 'v3')]
+        return found
+
+    result = {}
+    with zipfile.ZipFile(path(item_id)) as archive:
+        names = {}
+        if 'Metadata/model_settings.config' in archive.namelist():
+            for obj in ET.fromstring(archive.read('Metadata/model_settings.config')).iterfind('object'):
+                names[obj.get('id')] = next((m.get('value') for m in obj.iterfind('metadata') if m.get('key') == 'name'), None)
+        root = ET.fromstring(archive.read('3D/3dmodel.model'))
+        objects = {o.get('id'): o for o in root.iterfind('m:resources/m:object', ns)}
+        cache = {}
+        for item in root.iterfind('m:build/m:item', ns):
+            world, merged = matrix(item.get('transform')), Mesh.Mesh()
+            for comp in objects[item.get('objectid')].iterfind('m:components/m:component', ns):
+                member = comp.get(part_attr)
+                if member not in cache:
+                    cache[member] = objects_in(archive, member)
+                piece = Mesh.Mesh(cache[member][comp.get('objectid')])
+                piece.transform(world.multiply(matrix(comp.get('transform'))))
+                merged.addMesh(piece)
+            result[names.get(item.get('objectid')) or item.get('objectid')] = merged
+    return result
+
+
 def step_extents(item_id):
     """Bounding box of a STEP model in its own coordinates, millimetres."""
     shape_ = shape(item_id)

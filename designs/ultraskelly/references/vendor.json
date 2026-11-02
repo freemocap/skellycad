@@ -117,6 +117,18 @@
       "bytes": 10557527,
       "license": "No licence stated at the download location",
       "source": "[@luxonisOak1EnclosureStep]"
+    },
+    {
+      "id": "omt-case-3mf",
+      "description": "OMT Raspberry Pi 5 case 1.0 (case and lid), Bambu Studio 3MF; community open-source case",
+      "retention": "repository",
+      "path": "omt-case/omt-pi5-case-1.0-bambu.3mf",
+      "source_name": "OMT Pi 5 Case 1.0 Bambu.3mf",
+      "url": "https://raw.githubusercontent.com/openmediatransport/omtcase/48e730c0ce9ae3b1b3d44a35e58674325431a42a/OMT%20Pi%205%20Case%201.0%20Bambu.3mf",
+      "sha256": "19ccdc15b168ccf52dc507f37d14e8ed1732c6e8b4cd6447544988d3add7f811",
+      "bytes": 797915,
+      "license": "MIT, Open Media Transport Contributors (omt-case/LICENSE.txt)",
+      "source": "[@omtPi5Case]"
     }
   ]
 }

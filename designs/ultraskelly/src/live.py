@@ -24,10 +24,11 @@ def main():
     parser.add_argument('--timeout', type=float, default=900)
     args, rest = parser.parse_known_args()
     check()  # the endpoint must belong to this repository's FreeCAD runtime
-    code = (f"import sys, importlib\n"
+    code = (f"import sys, importlib, os\n"
             f"sys.path.insert(0, {str(SRC)!r}) if {str(SRC)!r} not in sys.path else None\n"
-            f"import cadkit, {args.builder}\n"
-            f"importlib.reload(cadkit); importlib.reload({args.builder})\n"
+            f"for _m in [m for m in list(sys.modules.values()) if os.path.dirname(getattr(m, '__file__', '') or '') == {str(SRC)!r}]:\n"
+            f"    importlib.reload(_m)  # pick up edits to every UltraSkelly source module\n"
+            f"import {args.builder}\n"
             f"{args.builder}.main({rest!r})\n")
     server = xmlrpc.client.ServerProxy('http://127.0.0.1:9875', allow_none=True)
     result = server.execute_code(code, args.timeout)

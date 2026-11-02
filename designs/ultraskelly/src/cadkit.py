@@ -64,14 +64,18 @@ def add(doc, name, shape, color=None, transparency=0, label=None, line_width=Non
 
 
 def close_saved_runs(folder):
-    """Close live documents saved under a working folder, so each review has one open run."""
+    """Close earlier runs saved under a working folder, so each review has one open run.
+
+    These documents are builder-owned; any later change (view styling marks them modified)
+    is saved to their own run file before closing, so nothing is discarded.
+    """
     folder = Path(folder).resolve()
     for doc in list(App.listDocuments().values()):
         if doc.FileName and folder in Path(doc.FileName).resolve().parents:
             if App.GuiUp:
                 import FreeCADGui as Gui
                 if Gui.getDocument(doc.Name).Modified:
-                    continue  # unsaved work stays open
+                    save_verified(doc, doc.FileName)
             App.closeDocument(doc.Name)
 
 

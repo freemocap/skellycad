@@ -49,6 +49,9 @@ into it from the repository root:
   their connections: USB, PCIe, I2C jumpers, servo and motor leads and power.
   It uses the vendor models where `references/vendor.json` has them.
 
+- `case_view` places the Pi 5, AI HAT+ and Motor HAT in the community OMT
+  Pi 5 case with its lid off [@omtPi5Case].
+
 Each run saves a new folder under `generated/ultraskelly/` and leaves the
 document open for review. `snapshot` saves the active view as a PNG.
 
