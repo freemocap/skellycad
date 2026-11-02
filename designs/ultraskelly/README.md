@@ -22,7 +22,7 @@ physical fit is unverified.
 | --- | --- |
 | `src/` | Scripted FreeCAD builders and their parameters. |
 | `references/` | Vendor CAD, datasheets and measurement photos, with provenance. |
-| `anatomy/` | Measured skull dimensions and the head frame shared by all mounts. |
+| `anatomy/` | The [head frame](anatomy/README.md) shared by all mounts, and the measured skull dimensions. |
 
 Working builds go to `generated/ultraskelly/<part>/<run>/`. Read the
 [working guide](../../docs/organization-guide.md) and the
