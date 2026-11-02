@@ -10,28 +10,127 @@
     "evidence": "Photo file names under ../references/photos/ or a description of the reading."
   },
   "measurements": [
-    {"id": "socket_spacing", "endpoints": "Center of the left eye-socket opening to center of the right, across the face.", "value": null},
-    {"id": "socket_left_width", "endpoints": "Left eye-socket opening, widest horizontal span inside the rim.", "value": null},
-    {"id": "socket_left_height", "endpoints": "Left eye-socket opening, tallest vertical span inside the rim.", "value": null},
-    {"id": "socket_right_width", "endpoints": "Right eye-socket opening, widest horizontal span inside the rim.", "value": null},
-    {"id": "socket_right_height", "endpoints": "Right eye-socket opening, tallest vertical span inside the rim.", "value": null},
-    {"id": "socket_rim_wall", "endpoints": "Skull wall thickness at the eye-socket rim.", "value": null},
-    {"id": "nose_hole_width", "endpoints": "Nose hole, widest horizontal span.", "value": null},
-    {"id": "nose_hole_height", "endpoints": "Nose hole, tallest vertical span.", "value": null},
-    {"id": "nose_hole_drop", "endpoints": "Vertical distance from the line through both eye-socket centers down to the nose-hole center.", "value": null},
-    {"id": "cavity_width", "endpoints": "Inside width of the skull, left to right, at eye level.", "value": null},
-    {"id": "cavity_depth", "endpoints": "Inside depth from just behind the eye sockets to the inside of the back wall, at eye level.", "value": null},
-    {"id": "cavity_height", "endpoints": "Inside height from the neck opening up to the inside of the dome.", "value": null},
-    {"id": "neck_opening", "endpoints": "Neck opening at the base of the skull, width and depth.", "value": null},
-    {"id": "neck_bar_section", "endpoints": "Neck/spine bar cross-section: outer diameter of a tube, or width and depth of a bar.", "value": null},
-    {"id": "neck_bar_free_length", "endpoints": "Free length of the neck/spine bar between the shoulders and the head mechanism.", "value": null},
-    {"id": "pan_axis", "endpoints": "Pan axis position: distance behind and below the eye-socket centers.", "value": null},
-    {"id": "tilt_axis", "endpoints": "Tilt axis position: distance behind and below the eye-socket centers.", "value": null},
-    {"id": "skull_bosses", "endpoints": "Screw bosses or holes inside the skull: count, locations and hole size; whether the skull separates into parts.", "value": null},
-    {"id": "hat_stack", "endpoints": "Board order and spacing in the Pi 5 stack, bottom to top, including any cooler.", "value": null}
+    {
+      "id": "socket_spacing",
+      "endpoints": "Center of the left eye-socket opening to center of the right, across the face.",
+      "value": null
+    },
+    {
+      "id": "socket_left_width",
+      "endpoints": "Left eye-socket opening, widest horizontal span inside the rim.",
+      "value": null
+    },
+    {
+      "id": "socket_left_height",
+      "endpoints": "Left eye-socket opening, tallest vertical span inside the rim.",
+      "value": null
+    },
+    {
+      "id": "socket_right_width",
+      "endpoints": "Right eye-socket opening, widest horizontal span inside the rim.",
+      "value": null
+    },
+    {
+      "id": "socket_right_height",
+      "endpoints": "Right eye-socket opening, tallest vertical span inside the rim.",
+      "value": null
+    },
+    {
+      "id": "socket_rim_wall",
+      "endpoints": "Skull wall thickness at the eye-socket rim.",
+      "value": null
+    },
+    {
+      "id": "nose_hole_width",
+      "endpoints": "Nose hole, widest horizontal span.",
+      "value": null
+    },
+    {
+      "id": "nose_hole_height",
+      "endpoints": "Nose hole, tallest vertical span.",
+      "value": null
+    },
+    {
+      "id": "nose_hole_drop",
+      "endpoints": "Vertical distance from the line through both eye-socket centers down to the nose-hole center.",
+      "value": null
+    },
+    {
+      "id": "cavity_width",
+      "endpoints": "Inside width of the skull, left to right, at eye level.",
+      "value": null
+    },
+    {
+      "id": "cavity_depth",
+      "endpoints": "Inside depth from just behind the eye sockets to the inside of the back wall, at eye level.",
+      "value": null
+    },
+    {
+      "id": "cavity_height",
+      "endpoints": "Inside height from the neck opening up to the inside of the dome.",
+      "value": null
+    },
+    {
+      "id": "neck_opening",
+      "endpoints": "Neck opening at the base of the skull, width and depth.",
+      "value": null
+    },
+    {
+      "id": "neck_bar_section",
+      "endpoints": "Neck/spine bar cross-section: outer diameter of a tube, or width and depth of a bar.",
+      "value": null
+    },
+    {
+      "id": "neck_bar_free_length",
+      "endpoints": "Free length of the neck/spine bar between the shoulders and the head mechanism.",
+      "value": null
+    },
+    {
+      "id": "pan_axis",
+      "endpoints": "Pan axis position: distance behind and below the eye-socket centers.",
+      "value": null
+    },
+    {
+      "id": "tilt_axis",
+      "endpoints": "Tilt axis position: distance behind and below the eye-socket centers.",
+      "value": null
+    },
+    {
+      "id": "skull_bosses",
+      "endpoints": "Screw bosses or holes inside the skull: count, locations and hole size; whether the skull separates into parts.",
+      "value": null
+    },
+    {
+      "id": "hat_stack",
+      "endpoints": "Pi 5 stack, bottom to top: Pi 5, any cooler, Hailo AI HAT+, Adafruit DC and Stepper Motor HAT; board-to-board spacing and total height.",
+      "value": null
+    },
+    {
+      "id": "pca9685_board",
+      "endpoints": "Separate PCA9685 servo driver board: maker or markings, outline length and width, mounting-hole spacing and diameter, and where it sits now.",
+      "value": null
+    },
+    {
+      "id": "pca9685_wiring",
+      "endpoints": "PCA9685 connections: how the 3.3 V VCC, GND, SDA and SCL jumpers attach at each end (header pins, Dupont sockets, screw terminals), their length, and the servo power source and connector.",
+      "value": null
+    }
   ],
   "observations": [
-    {"date": "2026-11-02", "source": "W2 stereo workstream, ZED Mini frames captured on the robot", "note": "The skull's nose bridge blocks the inner side of each ZED eye image: about the right 30 percent of the left image (wider at the bottom) and the left 20 percent of the right image. The bracket should bring the lenses forward or outward to reduce this."},
-    {"date": "2026-11-02", "source": "W1 motion workstream, one OAK-1 frame captured on the robot", "note": "A dark, defocused frame showed an object a few centimetres from the OAK-1 lens before the user cleared it. The bracket should keep the nose aperture clear."}
+    {
+      "date": "2026-11-02",
+      "source": "W2 stereo workstream, ZED Mini frames captured on the robot",
+      "note": "The skull's nose bridge blocks the inner side of each ZED eye image: about the right 30 percent of the left image (wider at the bottom) and the left 20 percent of the right image. The bracket should bring the lenses forward or outward to reduce this."
+    },
+    {
+      "date": "2026-11-02",
+      "source": "W1 motion workstream, one OAK-1 frame captured on the robot",
+      "note": "A dark, defocused frame showed an object a few centimetres from the OAK-1 lens before the user cleared it. The bracket should keep the nose aperture clear."
+    },
+    {
+      "date": "2026-11-02",
+      "source": "Coordinator, after the user inspected the robot",
+      "note": "The PCA9685 board's jumper connection to the stack was knocked loose while USB devices were swapped. The board went silent, and the half-attached wiring disturbed the I2C bus. Reseating the connection and a power cycle at 15:46 fixed it. Secure the board and relieve strain on its four logic wires and its servo power."
+    }
   ]
 }

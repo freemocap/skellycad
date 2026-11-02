@@ -14,8 +14,8 @@ and SHA-256.
 | Vendor file | Retention | Licence |
 | --- | --- | --- |
 | Raspberry Pi 5 STEP archive (`pi5/`) | Repository (Git LFS) | MIT, inside the archive |
-| Adafruit DC and Stepper Motor HAT STEP (`motor-hat/`) | Repository (Git LFS) | MIT, `motor-hat/LICENSE.txt` |
-| Adafruit 16-Channel PWM/Servo HAT board layout (`servo-hat/`) | Repository | CC BY-SA, `servo-hat/README-adafruit.md` |
+| Adafruit DC and Stepper Motor HAT STEP (`adafruit/`) | Repository (Git LFS) | MIT, `adafruit/LICENSE.txt` |
+| Adafruit PCA9685 16-channel servo driver breakout STEP (`adafruit/`) | Repository (Git LFS) | MIT, `adafruit/LICENSE.txt` |
 | Raspberry Pi 5 mechanical drawing | Fetch | None stated |
 | Raspberry Pi AI HAT+ product brief | Fetch | None stated |
 | Stereolabs ZED Mini STEP and datasheet | Fetch | None stated |
@@ -44,8 +44,7 @@ From the repository root:
    ```
 
    Each line reports `ok`, `missing` or `MISMATCH`.
-3. Optional: record STEP bounding boxes and the servo HAT outline with the
-   pinned FreeCAD Python:
+3. Optional: record STEP bounding boxes with the pinned FreeCAD Python:
 
    ```powershell
    & '.cad-tools/FreeCAD_1.1.4-Windows-x86_64-py311/bin/python.exe' -B designs/ultraskelly/src/vendor.py extents

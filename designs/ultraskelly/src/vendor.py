@@ -8,14 +8,13 @@ Run from the repository root:
     python -B designs/ultraskelly/src/vendor.py verify    # check every file against its SHA-256
     .cad-tools/FreeCAD_1.1.4-Windows-x86_64-py311/bin/python.exe -B designs/ultraskelly/src/vendor.py extents
 
-`extents` needs the pinned FreeCAD Python. It writes STEP bounding boxes and the servo HAT
-board outline to generated/ultraskelly/vendor/extents.json.
+`extents` needs the pinned FreeCAD Python. It writes the STEP models' bounding boxes to
+generated/ultraskelly/vendor/extents.json.
 """
 import argparse
 import hashlib
 import json
 import urllib.request
-import xml.etree.ElementTree as ET
 import zipfile
 from pathlib import Path
 
@@ -89,41 +88,6 @@ def step_extents(item_id, member=None):
             'size_mm': [round(v, 3) for v in (box.XLength, box.YLength, box.ZLength)]}
 
 
-def board_outline(item_id):
-    """Board outline (EAGLE Dimension layer 20) and holes, from the board and its placed packages.
-
-    Outline extents use wire end points, which bound convex corner arcs. Mirrored (bottom-side)
-    packages are skipped unless they carry outline wires or holes, which are then rejected.
-    """
-    import math
-    board = ET.parse(path(item_id)).getroot().find('drawing/board')
-    packages = {(lib.get('name'), pkg.get('name')): pkg
-                for lib in board.iterfind('libraries/library') for pkg in lib.iterfind('packages/package')}
-    placed = [(board.find('plain'), 0.0, 0.0, 0.0)]
-    for element in board.iterfind('elements/element'):
-        package = packages[element.get('library'), element.get('package')]
-        rotation = element.get('rot') or 'R0'
-        if rotation.startswith('M'):
-            if package.find('wire[@layer="20"]') is not None or package.find('hole') is not None:
-                raise ValueError(f"{element.get('name')}: mirrored package with outline or holes")
-            continue
-        placed.append((package, float(element.get('x')), float(element.get('y')),
-                       math.radians(float(rotation[1:]))))
-    points, holes = [], []
-    for container, dx, dy, angle in placed:
-        c, s = math.cos(angle), math.sin(angle)
-        move = lambda x, y: (round(dx + c * x - s * y, 4), round(dy + s * x + c * y, 4))
-        for wire in container.iterfind('wire[@layer="20"]'):
-            points += [move(float(wire.get('x1')), float(wire.get('y1'))),
-                       move(float(wire.get('x2')), float(wire.get('y2')))]
-        holes += [[*move(float(h.get('x')), float(h.get('y'))), float(h.get('drill'))]
-                  for h in container.iterfind('hole')]
-    xs, ys = [p[0] for p in points], [p[1] for p in points]
-    return {'outline_min_mm': [min(xs), min(ys)], 'outline_max_mm': [max(xs), max(ys)],
-            'outline_size_mm': [round(max(xs) - min(xs), 3), round(max(ys) - min(ys), 3)],
-            'holes_x_y_drill_mm': sorted(holes)}
-
-
 def main():
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument('command', choices=['fetch', 'verify', 'extents'])
@@ -144,10 +108,10 @@ def main():
         report = {'units': 'mm', 'steps': {
             'pi5-step': step_extents('pi5-step', 'rpi-5b_no_graphics.step'),
             'motor-hat-step': step_extents('motor-hat-step'),
+            'pca9685-step': step_extents('pca9685-step'),
             'zed-mini-step': step_extents('zed-mini-step'),
             'oak1-pcba-step': step_extents('oak1-pcba-step'),
-            'oak1-enclosure-step': step_extents('oak1-enclosure-step')},
-            'servo-hat-board': board_outline('servo-hat-board')}
+            'oak1-enclosure-step': step_extents('oak1-enclosure-step')}}
         CACHE.mkdir(parents=True, exist_ok=True)
         (CACHE / 'extents.json').write_text(json.dumps(report, indent=2) + '\n', encoding='utf-8')
         print(json.dumps(report, indent=1))

@@ -2106,16 +2106,6 @@
  note = {Retrieved from Adafruit_CAD_Parts at the commit in the URL and loaded in FreeCAD for its bounding box only. Whether the model includes the screw terminals and stacking header at full height was not checked.}
 }
 
-@misc{adafruitServoHatBoard,
- title = {Adafruit Servo HAT rev A board layout},
- author = {{Adafruit Industries}},
- url = {https://raw.githubusercontent.com/adafruit/Adafruit-Servo-HAT-Bonnet-PCB/b15611b66fcf0dffc06f1d888e84cd751dda3e4a/Adafruit%20Servo%20HAT%20rev%20A.brd},
- urldate = {2026-11-02},
- review = {source-code},
- claim = {The EAGLE layout of the 16-Channel PWM/Servo HAT, product 2327, is published under CC BY-SA. Its outline is 65.0 by 56.5 mm, with 2.8 mm mounting holes at 3.5 and 61.5 mm by 3.5 and 52.5 mm.},
- note = {Parsed the Dimension layer and holes of the board and its placed packages with designs/ultraskelly/src/vendor.py. Component heights are not in the layout. The rev A layout may differ from the revision fitted to the robot.}
-}
-
 @misc{stereolabs2026ZedMiniDatasheet,
  title = {ZED Mini camera overview and datasheet, Rev 1.3},
  author = {{Stereolabs}},
@@ -2166,4 +2156,14 @@
  review = {excerpt},
  claim = {Luxonis states that all USB OAK-1 cameras share this enclosure. FreeCAD 1.1.4 reads it as 11 solids within a 36.11 by 54.59 by 28.52 mm box.},
  note = {Linked from BW1093_USB3C/Mechanical/README.md in luxonis/oak-hardware at commit 3c24531. No licence is stated at the download location, so the repository keeps only the URL and SHA-256. Loaded in FreeCAD for its bounding box only; lens axis and hole positions not yet reviewed.}
+}
+
+@misc{adafruitPca9685BreakoutStep,
+ title = {815 Servo Driver 16 Channel STEP model},
+ author = {{Adafruit Industries}},
+ url = {https://raw.githubusercontent.com/adafruit/Adafruit_CAD_Parts/6c5cd9e3e65252bb5d5339608cf8d3cdabcef251/815%20Servo%20Driver%2016%20Channel/815%20Servo%20Driver%2016%20Channel.step},
+ urldate = {2026-11-02},
+ review = {excerpt},
+ claim = {MIT-licensed STEP model of the Adafruit 16-channel PCA9685 PWM/servo driver breakout, product 815. FreeCAD 1.1.4 reads it as 100 solids. Its 1.57 mm board is 62.23 by 25.4 mm with four 2.5 mm mounting holes on a 55.88 by 19.05 mm pattern, and the parts span 12.1 mm in height.},
+ note = {Retrieved from Adafruit_CAD_Parts at the commit in the URL. Board size and holes come from the largest solid's outline and vertical cylindrical faces; other parts were not reviewed. The robot's PCA9685 board may follow another maker's layout; confirm against the physical board.}
 }

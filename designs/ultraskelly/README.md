@@ -2,7 +2,8 @@
 
 3D-printable mounts that hold UltraSkelly's cameras and electronics in fixed,
 known positions. UltraSkelly is an Ultra Skelly animatronic skeleton fitted with
-a Raspberry Pi 5, a Hailo-8 AI HAT+, Adafruit servo and DC motor HATs, a
+a Raspberry Pi 5 carrying a Hailo-8 AI HAT+ and an Adafruit DC and Stepper Motor
+HAT, a separate PCA9685 servo driver board wired to the stack by jumpers, a
 Stereolabs ZED Mini behind the eye sockets and a Luxonis OAK-1 behind a hole in
 the nasal cavity. The robot software lives in
 [freemocap/ultraskelly](https://github.com/freemocap/ultraskelly).
@@ -14,7 +15,7 @@ physical fit is unverified.
 | --- | --- |
 | Fit coupon | Scripted print test for the Pi 5 hole pattern, M2.5 pilot holes and zip-tie slots. Not yet printed. |
 | Camera bracket | Planned. Holds the ZED Mini at the eye sockets and the OAK-1 at the nose hole, and defines each sensor's pose in the head frame. |
-| Pi 5 stack mount | Planned. Holds the Pi 5 and its HAT stack on the neck/spine bar or outside the skull, with strain relief for USB, I2C and power leads. |
+| Pi 5 stack mount | Planned. Holds the Pi 5, its HAT stack and the PCA9685 servo driver board on the neck/spine bar or outside the skull, with strain relief for USB, I2C and power leads. The PCA9685 board's jumper wires are the first priority: a loose connection there silenced the board and disturbed the I2C bus on 2026-11-02. |
 
 ## Layout
 
