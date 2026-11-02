@@ -1,0 +1,24 @@
+{
+  "units": "mm",
+  "frame": "Body frame: origin on the floor below the spine axis, +X forward (the face), +Y the skeleton's left, +Z up.",
+  "status": "Estimates for planning: overall height from the vendor, everything else assumed. Replace with robot measurements when they matter.",
+  "height": {"value": 1981, "source": "6.5 ft overall height [@homedepotUltraSkelly]"},
+  "spine_tube": {"outside": 25.4, "wall": 1.6, "bottom": 1000, "top": 1700, "note": "1 inch square steel tube, per the user"},
+  "neck_drive": {"block": [50, 45, 70], "post_diameter": 12, "post_top": 1815, "note": "pan and tilt servos at the tube top; the post enters the skull's neck hole"},
+  "skull": {
+    "cranium_center": [0, 0, 1880], "cranium_semi_axes": [100, 75, 85],
+    "face_center": [62, 0, 1838], "face_semi_axes": [45, 55, 45],
+    "wall": 4,
+    "eye_socket": {"diameter": 42, "spacing": 64, "height": 1880, "depth": 35},
+    "nose_hole": {"diameter": 24, "height": 1840},
+    "neck_hole_diameter": 55,
+    "jaw": {"center": [55, 0, 1785], "semi_axes": [55, 58, 22]}
+  },
+  "body": {
+    "shoulder_bar": {"height": 1600, "width": 380, "depth": 40, "thickness": 30},
+    "ribcage": {"center": [0, 0, 1420], "semi_axes": [110, 150, 190]},
+    "pelvis": {"height": 980, "size": [120, 260, 40]},
+    "waist_drive": {"diameter": 60, "height": 40},
+    "limb_diameter": 30, "leg_spacing": 180, "arm_bottom": 1080
+  }
+}

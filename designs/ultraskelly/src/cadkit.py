@@ -47,3 +47,42 @@ def export_stl(shape, path, linear_deflection=0.01, angular_deflection=0.1):
 def write_report(path, report):
     report = {'freecad': App.Version()[:4], **report}
     Path(path).write_text(json.dumps(report, indent=2) + '\n', encoding='utf-8')
+
+
+def add(doc, name, shape, color=None, transparency=0, label=None, line_width=None):
+    """Add a shape as a Part::Feature; style it when the GUI is up."""
+    obj = doc.addObject('Part::Feature', name)
+    obj.Shape = shape
+    obj.Label = label or name
+    if App.GuiUp and color is not None:
+        view = obj.ViewObject
+        view.ShapeColor = view.LineColor = view.PointColor = tuple(color)
+        view.Transparency = transparency
+        if line_width:
+            view.LineWidth = line_width
+    return obj
+
+
+def close_saved_runs(folder):
+    """Close live documents saved under a working folder, so each review has one open run."""
+    folder = Path(folder).resolve()
+    for doc in list(App.listDocuments().values()):
+        if doc.FileName and folder in Path(doc.FileName).resolve().parents:
+            if App.GuiUp:
+                import FreeCADGui as Gui
+                if Gui.getDocument(doc.Name).Modified:
+                    continue  # unsaved work stays open
+            App.closeDocument(doc.Name)
+
+
+def present(doc, view='isometric'):
+    """Show a document in the live window: Blender navigation, chosen view, fit all."""
+    if not App.GuiUp:
+        return
+    import FreeCADGui as Gui
+    App.setActiveDocument(doc.Name)
+    Gui.ActiveDocument = Gui.getDocument(doc.Name)
+    active = Gui.ActiveDocument.ActiveView
+    active.setNavigationType('Gui::BlenderNavigationStyle')
+    getattr(active, 'view' + view.capitalize())()
+    active.fitAll()

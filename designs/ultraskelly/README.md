@@ -29,6 +29,29 @@ Working builds go to `generated/ultraskelly/<part>/<run>/`. Read the
 [working guide](../../docs/organization-guide.md) and the
 [development guide](../../docs/development.md) before building or exporting.
 
+## Live FreeCAD views
+
+Start the pinned FreeCAD window with its localhost code bridge, then build
+into it from the repository root:
+
+```powershell
+./tools/cad/cad.ps1 start-freecad
+./tools/cad/cad.ps1 show-freecad
+& 'tools/cad/.venv/Scripts/python.exe' -B designs/ultraskelly/src/live.py mockup --run r001
+& 'tools/cad/.venv/Scripts/python.exe' -B designs/ultraskelly/src/live.py hardware_view --run r001
+```
+
+- `mockup` draws a simple Ultra Skelly: the 1 inch square spine tube, the neck
+  drive and post, the skull with the head frame, and placeholder body parts.
+  Its sizes in `src/mockup.json` are estimates around the published 6.5 ft
+  height [@homedepotUltraSkelly].
+- `hardware_view` lays every board, camera, actuator and supply flat and draws
+  their connections: USB, PCIe, I2C jumpers, servo and motor leads and power.
+  It uses the vendor models where `references/vendor.json` has them.
+
+Each run saves a new folder under `generated/ultraskelly/` and leaves the
+document open for review. `snapshot` saves the active view as a PNG.
+
 ## Build the fit coupon
 
 The coupon tests the printer before the Pi 5 stack mount is designed. Bosses 1

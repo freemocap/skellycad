@@ -68,21 +68,35 @@ def path(item_id):
     return target
 
 
-def step_extents(item_id, member=None):
-    """Bounding box of a STEP model in its own coordinates, millimetres."""
+MEMBERS = {'pi5-step': 'rpi-5b_no_graphics.step'}  # STEP inside a vendor archive
+
+
+def shape(item_id):
+    """Vendor STEP model as a Part shape in its own coordinates (mm), cached as BREP after the first read."""
     import FreeCAD  # noqa: F401  # adds FreeCAD's module paths before Part
     import Part
     source = path(item_id)
-    if member:
-        extracted = CACHE / item_id / Path(member).name
+    cached = CACHE / item_id / (source.stem + '.' + sha256(source)[:12] + '.brep')
+    if cached.exists():
+        return Part.read(str(cached))
+    if item_id in MEMBERS:
+        extracted = CACHE / item_id / Path(MEMBERS[item_id]).name
         if not extracted.exists():
             with zipfile.ZipFile(source) as archive:
                 extracted.parent.mkdir(parents=True, exist_ok=True)
-                extracted.write_bytes(archive.read(member))
+                extracted.write_bytes(archive.read(MEMBERS[item_id]))
         source = extracted
-    shape = Part.read(str(source))
-    box = shape.BoundBox
-    return {'file': source.name, 'solids': len(shape.Solids),
+    result = Part.read(str(source))
+    cached.parent.mkdir(parents=True, exist_ok=True)
+    result.exportBrep(str(cached))
+    return result
+
+
+def step_extents(item_id):
+    """Bounding box of a STEP model in its own coordinates, millimetres."""
+    shape_ = shape(item_id)
+    box = shape_.BoundBox
+    return {'file': path(item_id).name, 'solids': len(shape_.Solids),
             'min_mm': [round(v, 3) for v in (box.XMin, box.YMin, box.ZMin)],
             'max_mm': [round(v, 3) for v in (box.XMax, box.YMax, box.ZMax)],
             'size_mm': [round(v, 3) for v in (box.XLength, box.YLength, box.ZLength)]}
@@ -106,7 +120,7 @@ def main():
         raise SystemExit(1 if failures else 0)
     else:
         report = {'units': 'mm', 'steps': {
-            'pi5-step': step_extents('pi5-step', 'rpi-5b_no_graphics.step'),
+            'pi5-step': step_extents('pi5-step'),
             'motor-hat-step': step_extents('motor-hat-step'),
             'pca9685-step': step_extents('pca9685-step'),
             'zed-mini-step': step_extents('zed-mini-step'),
