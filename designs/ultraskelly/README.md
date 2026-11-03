@@ -53,6 +53,8 @@ into it from the repository root:
 
 - `mount` builds the electronics shelf and exports `shelf-plate.stl` and
   `omt-case-cut.stl` for printing.
+- `assembly` places the shelf on the mock-up's spine tube and reports its
+  gaps to the estimated shoulders, neck drive and jaw.
 
 Each run saves a new folder under `generated/ultraskelly/` and leaves the
 document open for review. `snapshot` saves the active view as a PNG.

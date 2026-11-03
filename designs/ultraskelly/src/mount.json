@@ -8,7 +8,7 @@
   "set_screws": {"clearance": 3.4, "nut_flats": 5.9, "nut_slot": 3.0, "nut_slot_x": 16.0, "heights": [10, 24],
                  "note": "M3 screws through captured nuts push the tube against the collar's back wall"},
   "case": {"cut_height": 30, "rotation_deg": -90, "pi_origin": [-82, 38],
-           "note": "OMT case cut at 30 mm: clears the Pi's ports with a bridge above their cut-outs and leaves the Motor HAT above the walls"},
+           "note": "OMT case cut at 30 mm: keeps a 4 mm bridge over the port cut-outs (they reach 26 mm) and a 2 mm band over the far-end vents (28 mm); the Motor HAT stays above the walls"},
   "case_screws": {"clearance": 3.0, "counterbore": 5.6, "counterbore_depth": 2.6,
                   "note": "M2.5 x 16-18 mm from below through plate, case stand-off and Pi into the AI HAT+ spacers"},
   "lip": {"height": 2.0, "wall": 1.6, "offset": 0.5, "corner_gap": 12},
