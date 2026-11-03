@@ -68,7 +68,9 @@ def clamp_u(p, g):
     cutters = []
     for s in (1, -1):
         for z in c['bolt_heights']:
-            cutters.append(Part.makeCylinder(c['bolt_clearance'] / 2, g['x_arm_front'] + 9, V(g['x_arm_front'] + 1, s * c['bolt_y'], z), V(-1, 0, 0)))
+            # Through to the back face, so M3 screws from 25 to 40 mm all fit.
+            cutters.append(Part.makeCylinder(c['bolt_clearance'] / 2, g['x_arm_front'] - g['x_back'] + 2,
+                                             V(g['x_arm_front'] + 1, s * c['bolt_y'], z), V(-1, 0, 0)))
             y_a, y_b = s * (c['bolt_y'] - 3.4), s * (g['y_out'] + 1)
             cutters.append(box(c['nut_slot_x'], c['nut_slot_x'] + c['nut_slot'], min(y_a, y_b), max(y_a, y_b),
                                z - c['nut_flats'] / 2, z + c['nut_flats'] / 2))
@@ -158,6 +160,7 @@ def validate(p, g, parts):
     for s in (1, -1):
         for z in c['bolt_heights']:
             assert not inside(u, 5, s * c['bolt_y'], z) and not inside(bar, g['x_bar'][0] + 1, s * c['bolt_y'], z)
+            assert not inside(u, g['x_back'] + 0.5, s * c['bolt_y'], z), 'bolt hole does not reach the back face'
             assert not inside(u, c['nut_slot_x'] + 1.5, s * (c['bolt_y'] + 2), z), 'nut slot missing'
     assert not inside(back, g['x_back'] - c['tongue_depth'] / 2, 0, g['H'] / 2), 'channel blocked'
     assert not inside(back, g['pin'][0], 0, g['pin'][1]), 'lock pin hole blocked'
@@ -212,10 +215,10 @@ def build(doc, p, dz=0.0, lift=0.0, tube=True):
 
 
 def print_shapes(parts):
-    """Print orientation: clamp U standing, bar flat, enclosure back standing on its lower end, case open side up."""
+    """Print orientation: clamp U standing, bar flat with its head recesses up, enclosure back on its lower end."""
     u = parts['clamp_u'].copy()
     bar = parts['clamp_bar'].copy()
-    bar.rotate(V(0, 0, 0), V(0, 1, 0), 90)
+    bar.rotate(V(0, 0, 0), V(0, 1, 0), -90)  # front face, with the screw-head recesses, faces up
     back = parts['enclosure_back'].copy()
     out = {'clamp-u.stl': u, 'clamp-bar.stl': bar, 'enclosure-back.stl': back}
     for shape in out.values():
