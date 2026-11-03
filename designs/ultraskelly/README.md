@@ -59,6 +59,8 @@ into it from the repository root:
 - `enclosure` builds the neck clamp, the enclosure back and the cut case
   around the Pi stack and PCA9685. `--lifted` shows the quick release and
   `--skeleton-z` places it on the mock-up and reports gaps.
+- `print_review` lays out a print checkpoint's STL files on a bed outline,
+  after checking them against the checkpoint's manifest hashes.
 
 Each run saves a new folder under `generated/ultraskelly/` and leaves the
 document open for review. `snapshot` saves the active view as a PNG.
