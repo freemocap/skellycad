@@ -29,6 +29,9 @@ def save_verified(doc, path):
     with zipfile.ZipFile(path) as archive:
         if archive.testzip() is not None or 'Document.xml' not in archive.namelist():
             raise RuntimeError(f'{path} failed the FCStd integrity check')
+    if App.GuiUp and not doc.isTouched():
+        import FreeCADGui as Gui
+        Gui.getDocument(doc.Name).Modified = False  # a Python save leaves the window's flag set in FreeCAD 1.1.4
     return sha256(path)
 
 
