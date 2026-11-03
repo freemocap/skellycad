@@ -15,7 +15,7 @@ physical fit is unverified.
 | --- | --- |
 | Fit coupon | Scripted print test for the Pi 5 hole pattern, M2.5 pilot holes and zip-tie slots. Not yet printed. |
 | Camera bracket | Planned. Holds the ZED Mini at the eye sockets and the OAK-1 at the nose hole, and defines each sensor's pose in the head frame. |
-| Neck clamp and enclosure (`enclosure`) | Concept approved on 2026-11-02, sized on 2026-11-03 for the measured 13.35 mm square tube, and lightened the same day to well under half of the material, with shapes and print settings checked against published FDM guidance. All four printed parts are released as one set, [US-NECK-MOUNT-R006](checkpoints/r006-neck-mount/README.md), and none needs supports. A U clamp and front bar (4 x M3) stay on the square tube. The enclosure back is a light frame that carries the Pi on a four-standoff carrier, the Pi stack with its long axis along the tube and the USB end up, and the PCA9685 on a side wing; it slides down onto the clamp's dovetail and one M3 pin locks it, so the electronics lift off without touching the clamp. |
+| Neck clamp and enclosure (`enclosure`) | Concept approved on 2026-11-02, lightened on 2026-11-03 with shapes and print settings checked against published FDM guidance, and resized the same day for the 1 inch (25.4 mm) square tube after a test print showed the 13.35 mm clamp was too small. All four printed parts are released as one set, [US-NECK-MOUNT-R007](checkpoints/r007-neck-mount/README.md), and none needs supports; its enclosure back and Pi carrier are byte-identical to the earlier set. A U clamp and front bar (4 x M3) stay on the square tube. The enclosure back is a light frame that carries the Pi on a four-standoff carrier, the Pi stack with its long axis along the tube and the USB end up, and the PCA9685 on a side wing; it slides down onto the clamp's dovetail and one M3 pin locks it, so the electronics lift off without touching the clamp. |
 
 ## Layout
 
@@ -44,8 +44,8 @@ into it from the repository root:
 - `mockup` draws a simple Ultra Skelly: the 1 inch square spine tube, the neck
   drive and post, the skull with the head frame, and placeholder body parts.
   Its sizes in `src/mockup.json` are estimates around the published 6.5 ft
-  height [@homedepotUltraSkelly]. Its 1 inch spine does not match the measured
-  13.35 mm tube, so the mount does not use the mock-up for clearances.
+  height [@homedepotUltraSkelly]. Its sizes are guesses, so the mount does not use
+  the mock-up for clearances.
 - `hardware_view` lays every board, camera, actuator and supply flat and draws
   their connections: USB, PCIe, I2C jumpers, servo and motor leads and power.
   It uses the vendor models where `references/vendor.json` has them.

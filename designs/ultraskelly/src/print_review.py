@@ -3,7 +3,7 @@
 Each file is checked against the SHA-256 in the checkpoint's manifest.json before it is shown.
 Run live in the project FreeCAD window:
 
-    tools/cad/.venv/Scripts/python.exe -B designs/ultraskelly/src/live.py print_review --checkpoint r006-neck-mount --run r002
+    tools/cad/.venv/Scripts/python.exe -B designs/ultraskelly/src/live.py print_review --checkpoint r007-neck-mount --run r002
 """
 import argparse
 import json
