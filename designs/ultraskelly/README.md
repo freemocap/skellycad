@@ -15,7 +15,7 @@ physical fit is unverified.
 | --- | --- |
 | Fit coupon | Scripted print test for the Pi 5 hole pattern, M2.5 pilot holes and zip-tie slots. Not yet printed. |
 | Camera bracket | Planned. Holds the ZED Mini at the eye sockets and the OAK-1 at the nose hole, and defines each sensor's pose in the head frame. |
-| Neck clamp and enclosure (`enclosure`) | Concept approved on 2026-11-02 and sized on 2026-11-03 for the measured 13.35 mm square tube. All four printed parts are released as one set, [US-NECK-MOUNT-R004](checkpoints/r004-neck-mount/README.md). A U clamp and front bar (4 x M3) stay on the square tube. The enclosure back carries the community OMT case, 30 mm deep (shortened in the CAD), the Pi stack with its long axis along the tube and the USB end up, and the PCA9685 on a side wing; it slides down onto the clamp's dovetail and one M3 pin locks it, so the electronics lift off without touching the clamp. |
+| Neck clamp and enclosure (`enclosure`) | Concept approved on 2026-11-02, sized on 2026-11-03 for the measured 13.35 mm square tube and lightened the same day to about a third of the material. All four printed parts are released as one set, [US-NECK-MOUNT-R005](checkpoints/r005-neck-mount/README.md), and none needs supports. A U clamp and front bar (4 x M3) stay on the square tube. The enclosure back is a light frame that carries the Pi on a four-standoff carrier, the Pi stack with its long axis along the tube and the USB end up, and the PCA9685 on a side wing; it slides down onto the clamp's dovetail and one M3 pin locks it, so the electronics lift off without touching the clamp. |
 
 ## Layout
 
@@ -52,7 +52,7 @@ into it from the repository root:
 - `case_view` places the Pi 5, AI HAT+ and Motor HAT in the community OMT
   Pi 5 case with its lid off [@omtPi5Case].
 
-- `enclosure` builds the neck clamp, the enclosure back and the 30 mm deep Pi case
+- `enclosure` builds the neck clamp, the enclosure back and the Pi carrier
   around the Pi stack and PCA9685. `--lifted` shows the quick release.
   `--skeleton-z` places it on the mock-up and reports gaps; it stops while the
   mock-up's spine and the clamp's tube differ.
@@ -60,6 +60,8 @@ into it from the repository root:
   after checking them against the checkpoint's manifest hashes.
 - `part_images` renders one image per printed part, alone on a bed square, and
   `part_titles` adds a large name band above each image.
+- `compare_images` renders each part of an earlier and a new print set at one
+  scale, and `compare_sheet` lays the pairs out with their names and grams.
 
 Each run saves a new folder under `generated/ultraskelly/` and leaves the
 document open for review. `snapshot` saves the active view as a PNG.

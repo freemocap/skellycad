@@ -1,0 +1,356 @@
+{
+  "schema_version": 1,
+  "id": "US-NECK-MOUNT-R005",
+  "units": "mm",
+  "date": "2026-11-03",
+  "status": "Released for printing as one complete set of four parts for the measured 13.35 mm square tube. Same mechanism, fits and hardware as R004 with about a third of the material. Geometry checks pass; physical fit, grip and print accuracy are unverified.",
+  "approval": "On 2026-11-03 the user asked to cut material and print time while keeping the design generally as it is (relayed by the coordinator).",
+  "source": {
+    "builder": "designs/ultraskelly/src/enclosure.py",
+    "parameters": "designs/ultraskelly/src/enclosure.json",
+    "parameters_sha256": "7ba228c56d6b6696d91e00bd95785a7149f4e4ca2d4a4ea3e555e7e19e51fc7a",
+    "run": "generated/ultraskelly/enclosure/r011",
+    "native": {
+      "path": "enclosure.FCStd",
+      "sha256": "612c9177b4d054cf97b863d922659bebf199cccc3649ace6f95d3485e3943ee1"
+    },
+    "freecad": [
+      "1",
+      "1",
+      "4",
+      "20260928 (Git shallow)"
+    ],
+    "images": "designs/ultraskelly/src/part_images.py and part_titles.py, run generated/ultraskelly/part-images/r011",
+    "before_after": "designs/ultraskelly/src/compare_images.py and compare_sheet.py, run generated/ultraskelly/compare-images/r011",
+    "commit": "The commit that adds this checkpoint."
+  },
+  "parts": {
+    "clamp-u.stl": {
+      "part": "Clamp U with the dovetail tongue, for the 13.35 mm square tube",
+      "sha256": "949c8b925c19f00b6703d8164e114e1450d25d14da7cf7e757da8b489b0d5081",
+      "bytes": 207884,
+      "extents_mm": [
+        22.25,
+        32.15,
+        40.0
+      ],
+      "volume_cm3": 17.63,
+      "shells": 1,
+      "watertight": true,
+      "orientation": "Standing on its lower end, tube opening vertical, dovetail tongue on the back; as exported.",
+      "supports": "none",
+      "settings": {
+        "walls": 4,
+        "top_bottom_layers": 4,
+        "infill": "25 % gyroid"
+      },
+      "estimate_g": 17.0,
+      "image": {
+        "file": "clamp-u.png",
+        "sha256": "d09b71bb8dcb0e77350f7ee3fe53dce8025edb7148d247cf67bcd60f02e93d6d"
+      }
+    },
+    "clamp-bar.stl": {
+      "part": "Clamp bar",
+      "sha256": "d2864bc0d1b3fbfed6e99a904c7617c091625c193f1842c4e02f070d02d3173f",
+      "bytes": 203084,
+      "extents_mm": [
+        40.0,
+        32.15,
+        6.0
+      ],
+      "volume_cm3": 7.23,
+      "shells": 1,
+      "watertight": true,
+      "orientation": "Flat, with the four screw-head recesses facing up; as exported.",
+      "supports": "none",
+      "settings": {
+        "walls": 4,
+        "top_bottom_layers": 4,
+        "infill": "25 % gyroid"
+      },
+      "estimate_g": 6.3,
+      "image": {
+        "file": "clamp-bar.png",
+        "sha256": "c0c4c3fcb7a060a9b5ecd798aaaa4b2f3ff9ebea4c7cdd1c06a529c2e9a1f837"
+      }
+    },
+    "enclosure-back.stl": {
+      "part": "Enclosure back: frame plate, dovetail channel with a 45 degree chamfer, PCA9685 wing and tie tab",
+      "sha256": "992155dd33e6d9016466bc2cfffeb8156bbef6749a669062e2fa0e6c5365bcb6",
+      "bytes": 472284,
+      "extents_mm": [
+        41.7,
+        71.0,
+        104.0
+      ],
+      "volume_cm3": 25.69,
+      "shells": 1,
+      "watertight": true,
+      "orientation": "Standing on its lower end; as exported. Add a 5 mm brim.",
+      "supports": "none",
+      "settings": {
+        "walls": 3,
+        "top_bottom_layers": 4,
+        "infill": "15 % gyroid"
+      },
+      "estimate_g": 30.1,
+      "image": {
+        "file": "enclosure-back.png",
+        "sha256": "8eb5b46a69bdf736481681c5f96971c01017db044a7397a607ad09b0bde7f248"
+      }
+    },
+    "pi-carrier.stl": {
+      "part": "Pi carrier: rail frame with four standoffs on the Pi 5 hole pattern",
+      "sha256": "3b41b45eeebca073f588288d183a2c412b3fb4dc4fb913763d6b051263819ab2",
+      "bytes": 206084,
+      "extents_mm": [
+        64.0,
+        55.0,
+        7.5
+      ],
+      "volume_cm3": 2.19,
+      "shells": 1,
+      "watertight": true,
+      "orientation": "Flat, standoffs facing up; as exported.",
+      "supports": "none",
+      "settings": {
+        "walls": 3,
+        "top_bottom_layers": 3,
+        "infill": "15 % gyroid"
+      },
+      "estimate_g": 2.8,
+      "image": {
+        "file": "pi-carrier.png",
+        "sha256": "2488de02bff71cf7bcbc1e7fc7761061be060b9ea2b7e2c4f9bf425338fc1a63"
+      }
+    }
+  },
+  "before_after": {
+    "file": "before-after.png",
+    "sha256": "2c6ca4b32ff49592fe6f3d9452f3ca9c5b81d2e55222562d3a5531e2a0b71246",
+    "compares": {
+      "clamp-u": {
+        "r004_sha256": "bcf8ead0c66d627d2d2d319744140f6daf75adb28d412d5fcd3fd7d177f1acc9",
+        "r005_sha256": "949c8b925c19f00b6703d8164e114e1450d25d14da7cf7e757da8b489b0d5081"
+      },
+      "clamp-bar": {
+        "r004_sha256": "ea128714f51647a5ee3a5232a0a2f516dbee6c5ed4b3aa7342653b17105bf287",
+        "r005_sha256": "d2864bc0d1b3fbfed6e99a904c7617c091625c193f1842c4e02f070d02d3173f"
+      },
+      "enclosure-back": {
+        "r004_sha256": "1113c9afe49a3c55ddf5139cf8f15f3f5c642d2eef7454258d7bab0b25d063a1",
+        "r005_sha256": "992155dd33e6d9016466bc2cfffeb8156bbef6749a669062e2fa0e6c5365bcb6"
+      },
+      "pi-carrier": {
+        "r004_sha256": "3b6f31732b0f7cdeb5b433f7a90c1327c38884f5289c9bab7c53cc0f21ffe7ad",
+        "r005_sha256": "3b41b45eeebca073f588288d183a2c412b3fb4dc4fb913763d6b051263819ab2"
+      }
+    }
+  },
+  "changes_from_r004": [
+    "Clamp 40 mm tall instead of 50, base 4 mm instead of 6, arms 9 mm instead of 10, bar 6 mm instead of 8; bolt rows at 9 and 31 mm.",
+    "Enclosure back: 3 mm frame plate sized to the Pi board, with windows between rails through the Pi screw rows; channel walls 4 mm instead of 5; a 45 degree chamfer under the dovetail block, so no supports; case lips removed; PCA9685 wing shortened to its bosses, with a window.",
+    "Pi carrier (four standoffs on a rail frame) instead of the community case, holding the Pi at the same 7.5 mm.",
+    "Lighter per-part print settings."
+  ],
+  "kept_from_r004": [
+    "0.4 mm tube clearance per side and the 1.5 mm bar take-up",
+    "0.3 mm dovetail clearance and the tongue shape",
+    "nut slots and blind M3 holes",
+    "M3 x 16 clamp screws",
+    "M3 lock pin",
+    "M2.5 x 16 Pi screws into the AI HAT+ spacers",
+    "PCA9685 position and M2.5 x 6 screws"
+  ],
+  "print_settings": {
+    "material": "PETG",
+    "layer_height_mm": 0.2,
+    "per_part": {
+      "clamp-u.stl": {
+        "walls": 4,
+        "top_bottom_layers": 4,
+        "infill": "25 % gyroid"
+      },
+      "clamp-bar.stl": {
+        "walls": 4,
+        "top_bottom_layers": 4,
+        "infill": "25 % gyroid"
+      },
+      "enclosure-back.stl": {
+        "walls": 3,
+        "top_bottom_layers": 4,
+        "infill": "15 % gyroid"
+      },
+      "pi-carrier.stl": {
+        "walls": 3,
+        "top_bottom_layers": 3,
+        "infill": "15 % gyroid"
+      }
+    },
+    "supports": "none",
+    "brim": "5 mm on the enclosure back",
+    "bed_min_mm": [
+      120,
+      120
+    ]
+  },
+  "estimate": {
+    "filament_g": 56.2,
+    "print_hours": [
+      1.2,
+      2.1
+    ],
+    "r004_filament_g": 157.0,
+    "r004_print_hours": [
+      3.4,
+      5.7
+    ],
+    "r004_at_these_settings_g": 128.6,
+    "method": "Not sliced; the Snapmaker Orca command line crashed with the U1 profiles. Per part: side area x walls x 0.45 mm plus flat area x top/bottom layers x 0.2 mm, capped at the solid volume, plus infill in the rest; PETG at 1.27 g/cm3. Time at an average 6 to 10 mm3/s, as on a fast printer such as the U1. R004 is estimated the same way at its own settings (4 walls, 5 layers, 40 % infill)."
+  },
+  "hardware": [
+    {
+      "qty": 4,
+      "item": "M3 x 16 mm socket-head screw",
+      "use": "Clamp bar to the U",
+      "check": "validate() fits M3 screws from 13.7 to 16.7 mm on a 13.35 mm tube"
+    },
+    {
+      "qty": 5,
+      "item": "M3 hex nut, 5.5 mm across flats",
+      "use": "4 in the U side slots, 1 on the lock pin"
+    },
+    {
+      "qty": 1,
+      "item": "M3 x 40 mm screw (35 mm also fits)",
+      "use": "Lock pin through the 30.6 mm enclosure block"
+    },
+    {
+      "qty": 4,
+      "item": "M2.5 x 16 mm socket-head screw",
+      "use": "Front face of the enclosure back, through the carrier standoffs and the Pi, into the AI HAT+ spacers"
+    },
+    {
+      "qty": 4,
+      "item": "M2.5 x 16 mm spacer, supplied with the AI HAT+ [@raspberrypi2024AiHatBrief]",
+      "use": "Pi to AI HAT+; assumed threaded at both ends"
+    },
+    {
+      "qty": 4,
+      "item": "M2.5 male-female spacer, about 11 mm (estimate)",
+      "use": "AI HAT+ to Motor HAT"
+    },
+    {
+      "qty": 4,
+      "item": "M2.5 x 6 mm screw",
+      "use": "Motor HAT onto its spacers"
+    },
+    {
+      "qty": 4,
+      "item": "M2.5 x 6 mm screw",
+      "use": "PCA9685 into the printed 2.4 mm pilots"
+    },
+    {
+      "qty": "2 or more",
+      "item": "Zip tie, up to 4.8 mm wide",
+      "use": "Wire bundle through the tie-tab slots"
+    }
+  ],
+  "tube_fit_mm": {
+    "tube": 13.35,
+    "clearance_sides_and_back_per_side": 0.4,
+    "pocket_width": 14.15,
+    "bar_takeup_gap": 1.5,
+    "takeup_left_after_tightening": 1.1,
+    "fits_tube_per_side": [
+      12.5,
+      14.0
+    ],
+    "screw_hole_back_wall": 2.0
+  },
+  "measure_before_printing": [
+    "Tube: square, 12.5 to 14 mm per side (measured 13.35 mm).",
+    "Bare tube: 40 mm for the clamp, with nothing fixed to any of its four faces.",
+    "Space: the mount is 104 mm tall, 81 mm wide and 80 mm deep; it hangs behind the tube from 17.5 mm below the clamp to 46.5 mm above it."
+  ],
+  "envelope_mm": {
+    "frame": "Clamp frame: origin on the tube axis at the clamp lower end; tube faces at +/-6.675.",
+    "overall": {
+      "front_to_back": 80.4,
+      "side_to_side": 81.1,
+      "height": 104.0
+    },
+    "x_range": [
+      -67.7,
+      12.7
+    ],
+    "y_range": [
+      -31.5,
+      49.6
+    ],
+    "z_range": [
+      -17.5,
+      86.5
+    ],
+    "clamp": {
+      "width": 32.2,
+      "height": 40.0,
+      "bar_in_front_of_tube": 6.0
+    },
+    "behind_tube_back_face": 61.0
+  },
+  "interfaces": {
+    "tube": "13.35 mm square tube; 0.4 mm clearance at the sides and back; the bar closes a 1.5 mm gap at the front",
+    "dovetail": "Tongue root 16, tip 22, depth 6, height 40; mates the enclosure back channel (0.3 mm clearance)",
+    "pi": "Pi 5 board underside 7.5 mm behind the plate on the carrier standoffs, as on the R004 case"
+  },
+  "geometry_validation": {
+    "valid": true,
+    "clash_mm3": {
+      "clamp_u-back": 0.0,
+      "clamp_u-bar": 0.0,
+      "carrier-back": 0.0,
+      "pca-back": 0.0
+    },
+    "volumes_mm3": {
+      "clamp_u": 17626.9,
+      "clamp_bar": 7227.9,
+      "enclosure_back": 25689.9,
+      "carrier": 2185.4
+    },
+    "clamp_screw_length_mm": [
+      13.7,
+      16.7
+    ]
+  },
+  "overhangs": "Checked on the exported meshes: the enclosure back has only 45 degree chamfers, small holes and bridges up to 22 mm; the other parts have only small holes or none.",
+  "robot_clearance": "Not assessed. Only the mount size (envelope_mm) and the bare tube length are given.",
+  "not_established": [
+    "tube size: one measurement of a flat side",
+    "printed dimensions, the tube and dovetail fits, the nut slots and the M2.5 threads in the PCA9685 bosses",
+    "strength of the lighter parts and settings, the clamp grip, and the lock pin under robot motion",
+    "Motor HAT spacer height (11 mm estimated) and the AI HAT+ spacer threads",
+    "wiring: drawn schematically; cable lengths and the bundle route",
+    "Pi 5 and AI HAT+ temperatures",
+    "print time and filament: estimated, not sliced"
+  ],
+  "removed_on_2026-11-03": {
+    "reason": "Superseded by this lighter set; the user asked for superseded models to be deleted, not kept.",
+    "tracked": {
+      "paths": [
+        "designs/ultraskelly/checkpoints/r004-neck-mount (US-NECK-MOUNT-R004, the first test print)"
+      ],
+      "source": "git commit 4ab9ca0"
+    },
+    "untracked": {
+      "paths": [
+        "generated/ultraskelly/enclosure/r008",
+        "generated/ultraskelly/part-images/r008",
+        "generated/ultraskelly/releases/audit-r004"
+      ],
+      "where": "Windows Recycle Bin; rebuildable from git commit 4ab9ca0"
+    },
+    "kept_elsewhere": "The R004 print pack in the ultraskelly repository (var/print-packs) is the coordinator’s."
+  }
+}

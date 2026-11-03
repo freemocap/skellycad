@@ -28,9 +28,8 @@ BED = (0.84, 0.84, 0.86)
 PARTS = {
     'clamp-u': ('1  Clamp U', (0.95, 0.55, 0.15), (1.0, -0.9, 1.1), 'no supports'),
     'clamp-bar': ('2  Clamp bar', (0.95, 0.55, 0.15), (0.6, -1.0, 1.3), 'no supports'),
-    'enclosure-back': ('3  Enclosure back', (0.3, 0.6, 0.85), (1.0, 0.9, 0.7),
-                       'supports under the dovetail block only, 5 mm brim'),
-    'pi-case-30mm': ('4  Pi case, 30 mm deep', (0.72, 0.74, 0.78), (0.6, -1.0, 1.2), 'no supports'),
+    'enclosure-back': ('3  Enclosure back', (0.3, 0.6, 0.85), (1.0, 0.9, 0.7), 'no supports, 5 mm brim'),
+    'pi-carrier': ('4  Pi carrier', (0.72, 0.74, 0.78), (0.6, -1.0, 1.2), 'no supports'),
 }
 
 

@@ -25,25 +25,6 @@ HOLES = [(3.5, 3.5), (61.5, 3.5), (3.5, 52.5), (61.5, 52.5)]
 CASE_COLOR, BRASS = (0.85, 0.86, 0.88), (0.8, 0.65, 0.3)
 
 
-def cut_case(height):
-    """OMT case body in Pi-origin coordinates, cut at a wall height; cached as BREP."""
-    source = vendor.path('omt-case-3mf')
-    cached = vendor.CACHE / 'omt-case-3mf' / f'case-cut-{height:g}.{vendor.sha256(source)[:12]}.brep'
-    if cached.exists():
-        return Part.read(str(cached))
-    mesh = vendor.mesh_3mf('omt-case-3mf')['Pi Case v11.step']
-    mesh.translate(*CASE_TO_PI)
-    shape = Part.Shape()
-    shape.makeShapeFromMesh(mesh.Topology, 0.01)
-    solid = Part.makeSolid(shape)  # one face per mesh triangle; refining took minutes for little gain
-    b = solid.BoundBox
-    result = solid.common(cadkit.box(b.XMin - 5, b.XMax + 5, b.YMin - 5, b.YMax + 5, b.ZMin - 1, height))
-    assert result.isValid() and len(result.Solids) == 1, 'case cut is not one valid solid'
-    cached.parent.mkdir(parents=True, exist_ok=True)
-    result.exportBrep(str(cached))
-    return result
-
-
 def stack_heights():
     pi_z = STANDOFF_TOP - PI_BOARD[0]
     pi_top = pi_z + PI_BOARD[1]
