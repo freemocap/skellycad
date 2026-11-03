@@ -1,0 +1,22 @@
+{
+  "units": "mm",
+  "frame": "Clamp frame: origin on the spine tube axis at the clamp's lower end; +X toward the skeleton's front, +Y its left, +Z up. The enclosure hangs behind the tube (-X).",
+  "status": "Concept for review; geometry checks only. Fasteners and clearances are print hypotheses.",
+  "tube": {"outside": 25.4, "clearance": 0.3},
+  "clamp": {"height": 50, "base": 6.0, "arm": 10.0, "bar": 8.0, "bar_gap": 1.0,
+            "bolt_y": 18.5, "bolt_heights": [12, 38], "bolt_clearance": 3.4, "bolt_head": 6.2, "bolt_head_depth": 3.2,
+            "nut_flats": 5.9, "nut_slot": 3.0, "nut_slot_x": -6.0,
+            "tongue_root": 16.0, "tongue_tip": 22.0, "tongue_depth": 6.0,
+            "note": "U around the tube's back and sides; a front bar with 4 x M3 x 25 screws into captured nuts squeezes the tube"},
+  "channel": {"gap": 0.3, "clearance": 0.3, "walls": 5.0, "floor": 2.4, "cap": 4.0, "below": 8.0, "pin_clearance": 3.4,
+              "note": "Female dovetail on the enclosure: slides down over the clamp's tongue and rests on its top; an M3 pin below the tongue stops it lifting"},
+  "plate": {"thickness": 4.0, "margin": 2.5, "tie_tab": 14.0, "tie_slot": [2.2, 5.2], "tie_spacing": 12.0},
+  "case": {"cut_height": 30, "pi_origin_y": -29.0, "pi_origin_z": -15.0,
+           "note": "Pi long axis vertical with the USB end up; open side faces back"},
+  "lip": {"height": 2.0, "wall": 1.6, "offset": 0.5, "corner_gap": 12},
+  "wing": {"thickness": 2.0, "gap": 0.5},
+  "pca9685": {"origin_x": -53.5, "origin_z": -10.0, "boss_length": 4.0, "boss_diameter": 5.4, "pilot": 2.4,
+              "holes_local": [[1.27, -3.302], [57.15, -3.302], [1.27, 15.748], [57.15, 15.748]],
+              "note": "Adafruit 815 layout on the wing beside the GPIO edge: control header at the bottom near the I2C pins, servo connectors facing out"},
+  "lift_for_view": 70.0
+}
