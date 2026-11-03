@@ -1,14 +1,15 @@
 """Neck clamp and quick-release enclosure for UltraSkelly's Pi 5 stack and PCA9685.
 
-A U clamp and front bar stay on the 1 inch spine tube. The enclosure back carries the
+A U clamp and front bar stay on the square neck tube. The enclosure back carries the
 community OMT case (30 mm deep, open side facing back), the Pi stack with its long axis along
 the tube and the USB end up, and the PCA9685 on a side wing. It slides down onto the clamp's
 dovetail and is locked by one M3 pin, so the electronics lift off without touching the clamp.
 Clamp frame and parameters are in enclosure.json. Run live in the project FreeCAD window:
 
-    tools/cad/.venv/Scripts/python.exe -B designs/ultraskelly/src/live.py enclosure --run r001
-    tools/cad/.venv/Scripts/python.exe -B designs/ultraskelly/src/live.py enclosure --run r002 --lifted
-    tools/cad/.venv/Scripts/python.exe -B designs/ultraskelly/src/live.py enclosure --run r003 --skeleton-z 1645
+    tools/cad/.venv/Scripts/python.exe -B designs/ultraskelly/src/live.py enclosure --run r007
+    tools/cad/.venv/Scripts/python.exe -B designs/ultraskelly/src/live.py enclosure --run r008 --lifted
+
+--skeleton-z also draws the mock-up; it stops if the mock-up's spine tube differs from the clamp's tube.
 """
 import argparse
 import json
@@ -51,6 +52,12 @@ def geometry(p):
     g['block_w'] = c['tongue_tip'] + 2 * ch['clearance'] + 2 * ch['walls']
     g['z_block'] = (-ch['below'], c['height'] + ch['cap'])
     g['pin'] = (g['x_back'] - c['tongue_depth'] / 2, -ch['below'] / 2)
+    g['bolt_y'] = half + c['bolt_y_inset']
+    g['nut_slot_x'] = g['x_arm_front'] - c['nut_slot_setback'] - c['nut_slot']
+    g['hole_end_x'] = g['x_arm_front'] - c['bolt_hole_depth']
+    # Arms are thinned from the outside between the base and the screw holes, to save material.
+    g['x_thin'] = (g['x_back'] + c['base'] + 4, g['hole_end_x'] - 3)
+    g['pca_x'] = g['x_plate_back'] + p['pca9685']['origin_x_from_plate']
     return g
 
 
@@ -67,12 +74,15 @@ def clamp_u(p, g):
     body = body.fuse(dovetail(x_in, tongue_width(p, g, x_in), x_tip, c['tongue_tip'], 0, H))
     cutters = []
     for s in (1, -1):
+        if g['x_thin'][1] - g['x_thin'][0] > 5:
+            y_a, y_b = s * (half + c['arm_thin']), s * (g['y_out'] + 1)
+            cutters.append(box(*g['x_thin'], min(y_a, y_b), max(y_a, y_b), -1, H + 1))
         for z in c['bolt_heights']:
-            # Through to the back face, so M3 screws from 25 to 40 mm all fit.
-            cutters.append(Part.makeCylinder(c['bolt_clearance'] / 2, g['x_arm_front'] - g['x_back'] + 2,
-                                             V(g['x_arm_front'] + 1, s * c['bolt_y'], z), V(-1, 0, 0)))
-            y_a, y_b = s * (c['bolt_y'] - 3.4), s * (g['y_out'] + 1)
-            cutters.append(box(c['nut_slot_x'], c['nut_slot_x'] + c['nut_slot'], min(y_a, y_b), max(y_a, y_b),
+            # Blind holes from the arm front, deep enough for the screw lengths that validate() reports.
+            cutters.append(Part.makeCylinder(c['bolt_clearance'] / 2, c['bolt_hole_depth'] + 1,
+                                             V(g['x_arm_front'] + 1, s * g['bolt_y'], z), V(-1, 0, 0)))
+            y_a, y_b = s * (g['bolt_y'] - 3.4), s * (g['y_out'] + 1)
+            cutters.append(box(g['nut_slot_x'], g['nut_slot_x'] + c['nut_slot'], min(y_a, y_b), max(y_a, y_b),
                                z - c['nut_flats'] / 2, z + c['nut_flats'] / 2))
     body = body.cut(Part.makeCompound(cutters)).removeSplitter()
     return Part.Solid(body.Solids[0])
@@ -84,8 +94,8 @@ def clamp_bar(p, g):
     cutters = []
     for s in (1, -1):
         for z in c['bolt_heights']:
-            cutters.append(Part.makeCylinder(c['bolt_clearance'] / 2, x1 - x0 + 2, V(x0 - 1, s * c['bolt_y'], z), V(1, 0, 0)))
-            cutters.append(Part.makeCylinder(c['bolt_head'] / 2, c['bolt_head_depth'] + 1, V(x1 - c['bolt_head_depth'], s * c['bolt_y'], z), V(1, 0, 0)))
+            cutters.append(Part.makeCylinder(c['bolt_clearance'] / 2, x1 - x0 + 2, V(x0 - 1, s * g['bolt_y'], z), V(1, 0, 0)))
+            cutters.append(Part.makeCylinder(c['bolt_head'] / 2, c['bolt_head_depth'] + 1, V(x1 - c['bolt_head_depth'], s * g['bolt_y'], z), V(1, 0, 0)))
     return Part.Solid(bar.cut(Part.makeCompound(cutters)).removeSplitter().Solids[0])
 
 
@@ -97,12 +107,12 @@ def case_matrix(p, g):
 
 def pca_matrix(p, g, wing_outer):
     q = p['pca9685']
-    return App.Matrix(0, 1, 0, q['origin_x'], 0, 0, 1, wing_outer + q['boss_length'], 1, 0, 0, q['origin_z'], 0, 0, 0, 1)
+    return App.Matrix(0, 1, 0, g['pca_x'], 0, 0, 1, wing_outer + q['boss_length'], 1, 0, 0, q['origin_z'], 0, 0, 0, 1)
 
 
-def pca_holes(p):
+def pca_holes(p, g):
     q = p['pca9685']
-    return [(q['origin_x'] + hy, q['origin_z'] + hx) for hx, hy in q['holes_local']]
+    return [(g['pca_x'] + hy, q['origin_z'] + hx) for hx, hy in q['holes_local']]
 
 
 def pi_holes(p):
@@ -126,7 +136,7 @@ def enclosure_back(p, g, case_box):
     solids += [box(xl, xb + 0.5, cy0 - w, cy0, cz0 + gap, cz1 - gap), box(xl, xb + 0.5, cy0 + gap, cy1 - gap, cz0 - w, cz0),
                box(xl, xb + 0.5, cy0 + gap, cy1 - gap, cz1, cz1 + w)]
     solids += [Part.makeCylinder(q['boss_diameter'] / 2, q['boss_length'] + 0.5, V(x, y_wing1 - 0.5, z), V(0, 1, 0))
-               for x, z in pca_holes(p)]
+               for x, z in pca_holes(p, g)]
     body = solids[0].fuse(solids[1:])
     x_mouth, x_bottom = g['x_block_front'] + 1, g['x_back'] - c['tongue_depth'] - ch['clearance']
     cutters = [dovetail(x_mouth, tongue_width(p, g, x_mouth) + 2 * ch['clearance'], x_bottom,
@@ -136,7 +146,7 @@ def enclosure_back(p, g, case_box):
         cutters += [Part.makeCylinder(1.5, pl['thickness'] + 2, V(xf + 1, y, z), V(-1, 0, 0)),
                     Part.makeCylinder(2.8, 2.6 + 1, V(xf + 1, y, z), V(-1, 0, 0))]
     cutters += [Part.makeCylinder(q['pilot'] / 2, wing['thickness'] + q['boss_length'] + 2, V(x, y_wing0 - 1, z), V(0, 1, 0))
-                for x, z in pca_holes(p)]
+                for x, z in pca_holes(p, g)]
     sw, sl = pl['tie_slot']
     for y in (-pl['tie_spacing'] / 2, pl['tie_spacing'] / 2):
         cutters.append(box(xb - 1, xf + 1, y - sw / 2, y + sw / 2, z1 + pl['tie_tab'] / 2 - sl / 2, z1 + pl['tie_tab'] / 2 + sl / 2))
@@ -159,9 +169,18 @@ def validate(p, g, parts):
     assert inside(u, g['x_back'] - c['tongue_depth'] / 2, 0, g['H'] / 2), 'dovetail tongue missing'
     for s in (1, -1):
         for z in c['bolt_heights']:
-            assert not inside(u, 5, s * c['bolt_y'], z) and not inside(bar, g['x_bar'][0] + 1, s * c['bolt_y'], z)
-            assert not inside(u, g['x_back'] + 0.5, s * c['bolt_y'], z), 'bolt hole does not reach the back face'
-            assert not inside(u, c['nut_slot_x'] + 1.5, s * (c['bolt_y'] + 2), z), 'nut slot missing'
+            y = s * g['bolt_y']
+            assert not inside(u, g['x_arm_front'] - 1, y, z) and not inside(bar, g['x_bar'][0] + 1, y, z), 'bolt hole missing'
+            assert not inside(u, g['hole_end_x'] + 0.5, y, z), 'bolt hole too short'
+            assert inside(u, g['hole_end_x'] - 1, y, z), 'bolt hole runs past its depth'
+            assert not inside(u, g['nut_slot_x'] + 1.5, s * (g['bolt_y'] + 2), z), 'nut slot missing'
+            assert inside(u, g['x_thin'][1] - 1, s * (half + c['arm_thin'] - 0.5), z), 'thinned arm missing'
+    # Screw lengths: the tip passes the nut by 1.5 mm with the clamp loose, and stops 1.5 mm short of the
+    # hole end with the clamp tight (the U then sits tube-clearance further forward).
+    head = g['x_bar'][1] - c['bolt_head_depth']
+    nut_back = g['nut_slot_x'] + c['nut_slot'] - c['nut_thickness']
+    screws = (round(head - nut_back + 1.5, 1), round(head - g['hole_end_x'] - p['tube']['clearance'] - 1.5, 1))
+    assert screws[0] < screws[1], f'no clamp screw length fits: {screws}'
     assert not inside(back, g['x_back'] - c['tongue_depth'] / 2, 0, g['H'] / 2), 'channel blocked'
     assert not inside(back, g['pin'][0], 0, g['pin'][1]), 'lock pin hole blocked'
     assert g['pin'][1] + p['channel']['pin_clearance'] / 2 < 0, 'lock pin would hit the seated tongue'
@@ -170,7 +189,8 @@ def validate(p, g, parts):
     for name, volume in clashes.items():
         assert volume < 1e-3, f'{name} overlap {volume:.3f} mm3'
     return {'valid': True, 'clash_mm3': {k: round(v, 4) for k, v in clashes.items()},
-            'volumes_mm3': {k: round(parts[k].Volume, 1) for k in ('clamp_u', 'clamp_bar', 'enclosure_back')}}
+            'volumes_mm3': {k: round(parts[k].Volume, 1) for k in ('clamp_u', 'clamp_bar', 'enclosure_back')},
+            'clamp_screw_length_mm': list(screws)}
 
 
 def build(doc, p, dz=0.0, lift=0.0, tube=True):
@@ -202,15 +222,8 @@ def build(doc, p, dz=0.0, lift=0.0, tube=True):
     pin = Part.makeCylinder(1.5, g['block_w'] + 6, V(g['pin'][0], -g['block_w'] / 2 - 3, g['pin'][1]), V(0, 1, 0))
     add('LockPin', pin, PIN, 'M3 lock pin', offset=lifted)
     if tube:
-        add('SpineTube', box(-12.7, 12.7, -12.7, 12.7, -60, 140), STEEL, 'Spine tube, 1 in square', 40)
-    if App.GuiUp:
-        notes = [('note_clamp', ['U clamp + bar stay on the tube', '4 x M3 screws, captured nuts'], (30, -45, 10)),
-                 ('note_slide', ['Enclosure slides down onto the dovetail', 'one M3 pin locks it'], (-40, -45, -25)),
-                 ('note_pca', ['PCA9685 on the side wing', 'servo plugs face out'], (-60, 50, 55)),
-                 ('note_usb', ['USB end up: cables go into the head'], (-60, -30, 80))]
-        for name, lines, (x, y, zz) in notes:
-            text = hardware_view.label(doc, name, lines, x, y, 4)
-            text.Placement.Base = V(x, y, zz + dz + (lift if name != 'note_clamp' else 0))
+        w = p['tube']['outside'] / 2
+        add('SpineTube', box(-w, w, -w, w, -60, 140), STEEL, f"Neck tube, {p['tube']['outside']} mm square", 40)
     return parts, checks
 
 
@@ -238,7 +251,12 @@ def main(argv=None):
     doc = App.newDocument('UltraSkellyEnclosure')
     dz = 0.0
     if args.skeleton_z is not None:
-        mockup.build(doc, json.loads((HERE / 'mockup.json').read_text(encoding='utf-8')))
+        body = json.loads((HERE / 'mockup.json').read_text(encoding='utf-8'))
+        if body['spine_tube']['outside'] != params['tube']['outside']:
+            App.closeDocument(doc.Name)
+            raise SystemExit(f"mockup.json spine tube is {body['spine_tube']['outside']} mm but the clamp fits a "
+                             f"{params['tube']['outside']} mm tube; robot gaps against it would be meaningless")
+        mockup.build(doc, body)
         dz = args.skeleton_z
     parts, checks = build(doc, params, dz, params['lift_for_view'] if args.lifted else 0.0, tube=args.skeleton_z is None)
     gaps = {}

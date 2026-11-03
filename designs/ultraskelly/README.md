@@ -15,7 +15,7 @@ physical fit is unverified.
 | --- | --- |
 | Fit coupon | Scripted print test for the Pi 5 hole pattern, M2.5 pilot holes and zip-tie slots. Not yet printed. |
 | Camera bracket | Planned. Holds the ZED Mini at the eye sockets and the OAK-1 at the nose hole, and defines each sensor's pose in the head frame. |
-| Neck clamp and enclosure (`enclosure`) | Concept approved on 2026-11-02. All four printed parts are released as one set, [US-NECK-MOUNT-R002](checkpoints/r002-neck-mount/README.md), which includes the clamp files of [US-NECK-CLAMP-R001](checkpoints/r001-neck-clamp/README.md). A U clamp and front bar (4 x M3) stay on the 1 inch spine tube. The enclosure back carries the community OMT case, 30 mm deep (shortened in the CAD), the Pi stack with its long axis along the tube and the USB end up, and the PCA9685 on a side wing; it slides down onto the clamp's dovetail and one M3 pin locks it, so the electronics lift off without touching the clamp. |
+| Neck clamp and enclosure (`enclosure`) | Concept approved on 2026-11-02 and resized on 2026-11-03 for the measured 133.5 mm square neck tube. All four printed parts are released as one set, [US-NECK-MOUNT-R003](checkpoints/r003-neck-mount/README.md). A U clamp and front bar (4 x M3) stay on the neck tube. The enclosure back carries the community OMT case, 30 mm deep (shortened in the CAD), the Pi stack with its long axis along the tube and the USB end up, and the PCA9685 on a side wing; it slides down onto the clamp's dovetail and one M3 pin locks it, so the electronics lift off without touching the clamp. |
 | Electronics shelf (`mount`) | Superseded after review on 2026-11-02: the collar was not removable, the flat shelf stuck out, and the PCA9685 took too much space. `mount.py` still holds helpers the enclosure uses. |
 
 ## Layout
@@ -45,7 +45,8 @@ into it from the repository root:
 - `mockup` draws a simple Ultra Skelly: the 1 inch square spine tube, the neck
   drive and post, the skull with the head frame, and placeholder body parts.
   Its sizes in `src/mockup.json` are estimates around the published 6.5 ft
-  height [@homedepotUltraSkelly].
+  height [@homedepotUltraSkelly]. Its 1 inch spine does not match the measured
+  133.5 mm square neck tube, so the mock-up is not used for clearances.
 - `hardware_view` lays every board, camera, actuator and supply flat and draws
   their connections: USB, PCIe, I2C jumpers, servo and motor leads and power.
   It uses the vendor models where `references/vendor.json` has them.
@@ -57,10 +58,13 @@ into it from the repository root:
 - `assembly` places the shelf on the mock-up's spine tube and reports its
   gaps to the estimated shoulders, neck drive and jaw.
 - `enclosure` builds the neck clamp, the enclosure back and the 30 mm deep Pi case
-  around the Pi stack and PCA9685. `--lifted` shows the quick release and
-  `--skeleton-z` places it on the mock-up and reports gaps.
+  around the Pi stack and PCA9685. `--lifted` shows the quick release.
+  `--skeleton-z` places it on the mock-up and reports gaps; it stops while the
+  mock-up's spine and the clamp's tube differ.
 - `print_review` lays out a print checkpoint's STL files on a bed outline,
   after checking them against the checkpoint's manifest hashes.
+- `part_images` renders one image per printed part, alone on a bed square, and
+  `part_titles` adds a large name band above each image.
 
 Each run saves a new folder under `generated/ultraskelly/` and leaves the
 document open for review. `snapshot` saves the active view as a PNG.

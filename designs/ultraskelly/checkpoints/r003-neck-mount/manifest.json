@@ -1,0 +1,266 @@
+{
+  "schema_version": 1,
+  "id": "US-NECK-MOUNT-R003",
+  "units": "mm",
+  "date": "2026-11-03",
+  "status": "Released for printing as one complete set of four parts, sized for the measured 133.5 mm square neck tube. Geometry checks pass; physical fit, grip and print accuracy are unverified, and clearances to the rest of the robot are unchecked.",
+  "approval": "The user approved the clamp-and-enclosure concept on 2026-11-02 (relayed by the coordinator). On 2026-11-03 the user measured the square neck tube at 13.35 cm per face and asked for the models to be updated with sufficient clearance.",
+  "source": {
+    "builder": "designs/ultraskelly/src/enclosure.py",
+    "parameters": "designs/ultraskelly/src/enclosure.json",
+    "parameters_sha256": "0e3ce297cde7e455527343a184aaaf61ace8ddf724631e88189c09764f65abc9",
+    "run": "generated/ultraskelly/enclosure/r007",
+    "native": {
+      "path": "enclosure.FCStd",
+      "sha256": "daf02af10eda7c5c68e58d5414cdeed3b10341fbe1db41c0611245de541e3170"
+    },
+    "freecad": [
+      "1",
+      "1",
+      "4",
+      "20260928 (Git shallow)"
+    ],
+    "images": "designs/ultraskelly/src/part_images.py and part_titles.py, run generated/ultraskelly/part-images/r007",
+    "case_reference": "designs/ultraskelly/references/omt-case [@omtPi5Case]",
+    "commit": "The commit that adds this checkpoint."
+  },
+  "parts": {
+    "clamp-u.stl": {
+      "part": "Clamp U with the dovetail tongue, for the 133.5 mm square neck tube",
+      "sha256": "5709d174c8768b1737408bd371b25f32c9ee9c4bd7d8069f25ffb54d1df5f0e8",
+      "bytes": 209484,
+      "extents_mm": [
+        143.0,
+        156.5,
+        50.0
+      ],
+      "volume_cm3": 144.5,
+      "shells": 1,
+      "watertight": true,
+      "orientation": "Standing on its lower end, tube opening vertical, dovetail tongue on the back; as exported.",
+      "supports": "none",
+      "image": {
+        "file": "clamp-u.png",
+        "sha256": "6e7e646dc4d028d10c941f4ed1a653e09795d8537b4dd79f4b953e3a8541a44e"
+      }
+    },
+    "clamp-bar.stl": {
+      "part": "Clamp bar",
+      "sha256": "a69a81f9b9eceaea8a4456e84c1716b825fc74baed215d4f0b515bf93b04bf47",
+      "bytes": 203084,
+      "extents_mm": [
+        50.0,
+        156.5,
+        8.0
+      ],
+      "volume_cm3": 62.0,
+      "shells": 1,
+      "watertight": true,
+      "orientation": "Flat, with the four screw-head recesses facing up; as exported.",
+      "supports": "none",
+      "image": {
+        "file": "clamp-bar.png",
+        "sha256": "5787b164e39d303e8111e94135a6236b1451f412990589a9181f3f279d1917fc"
+      }
+    },
+    "enclosure-back.stl": {
+      "part": "Enclosure back with the dovetail channel, Pi case lips, PCA9685 wing and tie tab",
+      "sha256": "1133bbbbc6084464608f0954607fe9cfda29d9bdabdddb946ea67509fa30113b",
+      "bytes": 468484,
+      "extents_mm": [
+        42.7,
+        75.0,
+        121.0
+      ],
+      "volume_cm3": 50.0,
+      "shells": 1,
+      "watertight": true,
+      "orientation": "Standing on its lower end; as exported. Add a 5 mm brim.",
+      "supports": "Under the dovetail block only: it starts 22 mm above the bed and sticks out 9 mm. Support on build plate only; keep supports out of the dovetail channel.",
+      "image": {
+        "file": "enclosure-back.png",
+        "sha256": "dc5ead370a1bbc1319e98219d3b3a9883d1e6d511cc1620d5fe937c24ae0e6dd"
+      }
+    },
+    "pi-case-30mm.stl": {
+      "part": "Pi case, 30 mm deep (already shortened in the CAD), from the OMT Raspberry Pi 5 case",
+      "sha256": "3b6f31732b0f7cdeb5b433f7a90c1327c38884f5289c9bab7c53cc0f21ffe7ad",
+      "bytes": 3172284,
+      "extents_mm": [
+        102.0,
+        66.0,
+        30.0
+      ],
+      "volume_cm3": 44.1,
+      "shells": 1,
+      "watertight": true,
+      "orientation": "Floor on the bed, open side up; as exported.",
+      "supports": "none; the wall openings print as bridges, the longest 54 mm",
+      "image": {
+        "file": "pi-case-30mm.png",
+        "sha256": "7dc720fb623f8d44d2b4fe56406225fb6f7455adbabf37ea0c64eefa411b01a3"
+      }
+    }
+  },
+  "print_settings": {
+    "material": "PETG",
+    "layer_height_mm": 0.2,
+    "walls": 4,
+    "top_bottom_layers": 5,
+    "infill": "40 % gyroid",
+    "supports": "Enclosure back only, under the dovetail block; none for the other parts",
+    "brim": "5 mm on the enclosure back",
+    "bed_min_mm": [
+      170,
+      160
+    ]
+  },
+  "estimate": {
+    "filament_g": 293,
+    "print_hours": [
+      8,
+      21
+    ],
+    "method": "Not sliced. Printed volume from the model: a 1.4 mm shell plus 40 % infill, 230 cm3 in total, PETG at 1.27 g/cm3. Time at an average 8 mm3/s (fast current printer) to 3 mm3/s (older printer)."
+  },
+  "hardware": [
+    {
+      "qty": 4,
+      "item": "M3 x 30 mm socket-head screw (25 mm also fits)",
+      "use": "Clamp bar to the U",
+      "check": "validate() fits M3 screws from 22.7 to 35.8 mm on a 133.5 mm tube"
+    },
+    {
+      "qty": 5,
+      "item": "M3 hex nut, 5.5 mm across flats",
+      "use": "4 in the U side slots, 1 on the lock pin"
+    },
+    {
+      "qty": 1,
+      "item": "M3 x 40 mm screw",
+      "use": "Lock pin through the 32.6 mm enclosure block, below the tongue"
+    },
+    {
+      "qty": 4,
+      "item": "M2.5 x 16 mm socket-head screw",
+      "use": "Front face of the enclosure back, through the case floor and the Pi, into the AI HAT+ spacers"
+    },
+    {
+      "qty": 4,
+      "item": "M2.5 x 16 mm spacer, supplied with the AI HAT+ [@raspberrypi2024AiHatBrief]",
+      "use": "Pi to AI HAT+; assumed threaded at both ends"
+    },
+    {
+      "qty": 4,
+      "item": "M2.5 male-female spacer, about 11 mm (estimate)",
+      "use": "AI HAT+ to Motor HAT"
+    },
+    {
+      "qty": 4,
+      "item": "M2.5 x 6 mm screw",
+      "use": "Motor HAT onto its spacers"
+    },
+    {
+      "qty": 4,
+      "item": "M2.5 x 6 mm screw",
+      "use": "PCA9685 into the printed 2.4 mm pilots; a longer screw comes through the wing toward the case"
+    },
+    {
+      "qty": "2 or more",
+      "item": "Zip tie, up to 4.8 mm wide",
+      "use": "Wire bundle through the tie-tab slots"
+    }
+  ],
+  "tube_fit_mm": {
+    "tube": 133.5,
+    "clearance_sides_and_back_per_side": 1.5,
+    "bar_takeup_gap": 4.0,
+    "takeup_left_after_tightening": 2.5,
+    "fits_depth": [
+      131.0,
+      140.0
+    ],
+    "fits_width_max": 136.0
+  },
+  "measure_before_printing": [
+    "Tube: 131 to 140 mm deep (front to back) and up to 136 mm wide.",
+    "At least 127 mm of tube with nothing fixed to its back face; the clamp needs the 50 mm starting 33.5 mm above the lower end of that length bare on all four faces.",
+    "Clear space over the mount height: 66 mm behind the tube plus room for wires, 12 mm beside each side face and 9 mm in front over the clamp."
+  ],
+  "envelope_mm": {
+    "frame": "Clamp frame: origin on the tube axis at the clamp lower end; tube faces at +/-66.75.",
+    "behind_tube_back_face": 65.1,
+    "beside_each_side_face": 11.5,
+    "in_front_of_front_face": 8.0,
+    "height": {
+      "below_clamp": 30.5,
+      "above_clamp_bottom": 90.5,
+      "clamp": 50.0
+    }
+  },
+  "interfaces": {
+    "tube": "133.5 mm square tube; 1.5 mm clearance at the sides and back; the bar closes a 4 mm gap at the front",
+    "dovetail": "Tongue root 16, tip 22, depth 6, height 50; mates the enclosure back channel (0.3 mm clearance)"
+  },
+  "geometry_validation": {
+    "valid": true,
+    "clash_mm3": {
+      "clamp_u-back": 0.0,
+      "clamp_u-bar": 0.0,
+      "case-back": 0.0,
+      "pca-back": 0.0
+    },
+    "volumes_mm3": {
+      "clamp_u": 144510.1,
+      "clamp_bar": 62039.2,
+      "enclosure_back": 49987.8
+    },
+    "clamp_screw_length_mm": [
+      22.7,
+      35.8
+    ]
+  },
+  "robot_clearance": "Unchecked. designs/ultraskelly/src/mockup.json models a 25.4 mm (1 inch) spine with a 50 x 45 mm neck drive, a 55 mm skull neck hole and a 40 mm deep shoulder bar; a 133.5 mm tube is wider than all three, so the mock-up cannot give these clearances. enclosure.py refuses --skeleton-z while the mock-up and the clamp disagree.",
+  "internal_fits_mm": {
+    "tube_sides_and_back_per_side": 1.5,
+    "bar_takeup_gap": 4.0,
+    "dovetail_per_side": 0.3,
+    "case_in_lips": 0.5,
+    "wing_to_case": 0.5,
+    "lock_pin_nut_below_U": 0.8
+  },
+  "not_established": [
+    "tube depth and the space around the tube: only the face width was measured",
+    "clearances to the rest of the robot",
+    "printed dimensions, the tube and dovetail fits, the nut slots and the M2.5 threads in the PCA9685 bosses",
+    "clamp grip and slip resistance on the tube",
+    "whether one M3 pin holds the enclosure while the robot moves",
+    "Motor HAT spacer height (11 mm estimated) and the AI HAT+ spacer threads",
+    "wiring: drawn schematically; cable lengths and the bundle route",
+    "Pi 5 and AI HAT+ temperatures in the case",
+    "print time and filament: estimated, not sliced"
+  ],
+  "removed_on_2026-11-03": {
+    "reason": "The user asked for superseded models to be deleted, not kept or renamed.",
+    "tracked": {
+      "paths": [
+        "designs/ultraskelly/checkpoints/r001-neck-clamp (US-NECK-CLAMP-R001, 1 inch tube)",
+        "designs/ultraskelly/checkpoints/r002-neck-mount (US-NECK-MOUNT-R002, 1 inch tube)",
+        "designs/ultraskelly/src/explain.py and caption.py (exploded and step views with overlapping labels; replaced by part_images.py and part_titles.py)"
+      ],
+      "source": "git history up to commit 5d89108"
+    },
+    "untracked": {
+      "paths": [
+        "generated/ultraskelly/enclosure check01 and r001 to r006",
+        "generated/ultraskelly/explain",
+        "generated/ultraskelly/print-review/r001-neck-clamp",
+        "generated/ultraskelly/mount/r001",
+        "generated/ultraskelly/assembly/r001",
+        "generated/ultraskelly/print-pack/US-NECK-MOUNT-R002.zip",
+        "generated/ultraskelly/releases/audit-r002"
+      ],
+      "where": "Windows Recycle Bin; each can be rebuilt by its builder from git history"
+    }
+  }
+}

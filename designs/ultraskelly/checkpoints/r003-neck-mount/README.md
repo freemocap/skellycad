@@ -1,35 +1,45 @@
-# US-NECK-MOUNT-R002: neck mount print set
+# US-NECK-MOUNT-R003: neck mount print set
 
 This checkpoint is the complete set of printed parts for the neck mount. The
-clamp grips the 1 inch spine tube. The enclosure carries the Pi 5 stack and the
-PCA9685, and it slides onto the clamp. Print all four files. `manifest.json`
-records the source, file hashes, checks and the items that are still
-unverified. The clamp U and bar are byte-identical to the files in
-[US-NECK-CLAMP-R001](../r001-neck-clamp/README.md).
+mount is sized for the measured 133.5 mm square neck tube. The clamp grips the
+tube, and the enclosure carries the Pi 5 stack and the PCA9685 and slides onto
+the clamp. Print all four files. `manifest.json` records the source, file
+hashes, checks and the items that are still unverified. Each part has an image
+with the same name as its STL file.
 
 ## Before printing: check the robot
 
-The robot in the CAD is an estimated mock-up. Take two measurements with a
-ruler:
+The parts in the CAD are fitted to a 133.5 mm square tube. Before printing,
+check the following on the robot:
 
-1. Measure the bare spine tube between the top of the shoulder piece and the
-   bottom of the neck drive. It must be at least 70 mm; the mock-up assumes
-   85 mm.
-2. Measure how far the neck drive and the shoulder piece stick out behind the
-   back face of the tube. Each must be no more than 12 mm, because the
-   enclosure passes 15 mm behind the tube, beside both parts.
+1. **Tube size.** The clamp fits a tube 131 to 140 mm deep (front to back) and
+   up to 136 mm wide (side to side).
+2. **Free length.** You need at least 127 mm of tube with nothing fixed to its
+   back face: the mount is 121 mm tall, plus 3 mm above and below. The clamp
+   occupies 50 mm of that length, starting 33.5 mm above its lower end, and
+   needs all four faces of the tube bare there.
+3. **Space around the tube.** Over the mount's height, keep these distances
+   clear:
 
-If either measurement is outside its limit, do not print. Send the
-measurement, and the CAD will be adjusted to fit.
+   | Where | Clear space needed (mm) | Part that needs it |
+   | --- | --- | --- |
+   | Behind the back face of the tube | 66, plus room for the wires | Enclosure, Pi case and HAT stack |
+   | Beside each side face | 12 | Clamp arms, over the clamp's 50 mm |
+   | In front of the front face | 9 | Clamp bar, over the clamp's 50 mm |
+
+If the robot does not meet one of these checks, do not print. Send the
+measurement, and the CAD will be changed to fit.
 
 ## Print
 
 | # | File | Part | Orientation, as exported | Supports | Size (mm) |
 | --- | --- | --- | --- | --- | --- |
-| 1 | `clamp-u.stl` | Clamp U with the dovetail tongue | Standing on its lower end, tube channel vertical | None | 36.7 × 46 × 50 |
-| 2 | `clamp-bar.stl` | Clamp bar | Flat, screw-head recesses up | None | 50 × 46 × 8 |
+| 1 | `clamp-u.stl` | Clamp U with the dovetail tongue | Standing on its lower end, tube opening vertical | None | 143 × 156.5 × 50 |
+| 2 | `clamp-bar.stl` | Clamp bar | Flat, screw-head recesses up | None | 50 × 156.5 × 8 |
 | 3 | `enclosure-back.stl` | Enclosure back with the dovetail channel and the PCA9685 wing | Standing on its lower end | Under the dovetail block only | 42.7 × 75 × 121 |
 | 4 | `pi-case-30mm.stl` | Pi case, 30 mm deep (already shortened in the CAD) [@omtPi5Case] | Floor on the bed, open side up | None | 102 × 66 × 30 |
+
+The clamp U needs a print bed of at least 170 × 160 mm.
 
 Use PETG with 0.2 mm layers, 4 walls, 5 top and bottom layers and 40 % gyroid
 infill. Add a 5 mm brim to the enclosure back, because it is tall and stands on
@@ -45,16 +55,15 @@ The Pi case prints without supports. The openings in its walls print as
 bridges; the longest is 54 mm, over the opening at one end. It can sag slightly,
 but no other part fits against it.
 
-All four parts together take about 165 g of PETG and 4.5 to 12 hours of
-printing: about 4.5 hours on a fast current printer and up to 12 hours on an
-older one. These figures are estimated from the model volume, not sliced; your
-slicer gives the actual time.
+All four parts together take about 293 g of PETG. Printing takes about 8 hours
+on a fast current printer and up to 21 hours on an older one. These figures are
+estimated from the model volume, not sliced; your slicer gives the actual time.
 
 ## Hardware
 
 | Qty | Item | Use |
 | --- | --- | --- |
-| 4 | M3 × 25 mm socket-head screw (25 to 35 mm fits) | Clamp bar to the U |
+| 4 | M3 × 30 mm socket-head screw (25 mm also fits) | Clamp bar to the U |
 | 5 | M3 hex nut, 5.5 mm across flats | 4 in the U's side slots, 1 on the lock pin |
 | 1 | M3 × 40 mm screw | Lock pin through the enclosure, below the tongue |
 | 4 | M2.5 × 16 mm socket-head screw | From the front face of the enclosure back, through the case floor and the Pi, into the AI HAT+ spacers |
@@ -66,12 +75,14 @@ slicer gives the actual time.
 
 ## Assembly
 
-1. Push one M3 nut into each of the four side slots in the U.
-2. Place the U behind the spine tube, with the dovetail tongue facing the back
-   of the robot. Hold the bar against the front of the tube, and put the four
-   M3 × 25 screws through the bar into the nuts.
-3. Leave 9 mm between the top of the U and the bottom of the neck drive. Tighten
-   the four screws evenly until the clamp does not slide or turn.
+1. Push one M3 nut into each of the four side slots near the open end of the
+   U.
+2. Place the U behind the neck tube, with the dovetail tongue facing the back of
+   the robot and the arms along the sides of the tube. Hold the bar across the
+   front of the tube, and put the four M3 × 30 screws through the bar into the
+   nuts.
+3. Slide the clamp to its height within the free length. Tighten the four screws
+   evenly until the clamp does not slide or turn.
 4. Put the case against the back of the enclosure back, inside the lips, and put
    the Pi in the case. Insert the four M2.5 × 16 screws from the front face of
    the enclosure back, through the case and the Pi, into the AI HAT+ spacers.
@@ -89,29 +100,20 @@ The clamp stays on the tube.
 
 ## Clearances
 
-The gaps below were measured in the CAD against the estimated mock-up, with
-9 mm between the top of the U and the neck drive.
+The clamp leaves 1.5 mm between the tube and the U at the sides and at the
+back, so the U slides along the tube before you tighten it. The arms stop 4 mm
+short of the tube's front face, so the bar always bears on the tube. On a
+133.5 mm tube, 2.5 mm of that gap remains after tightening. The other fits are
+0.3 mm in the dovetail, and 0.5 mm around the case and beside the PCA9685 wing.
 
-| Robot part | Gap (mm) | Closest point |
-| --- | --- | --- |
-| Neck drive | 3.0 | The enclosure back passes behind the drive. The top of the dovetail block is 5.0 mm below it. |
-| Shoulder piece | 8.0 | The lower end of the enclosure back passes behind it. |
-| Ribcage | 6.2 | Below the lower end of the enclosure back. |
-| Jaw | 52 or more | Above the enclosure back. |
-| Skull | 62 or more | Above the enclosure back. |
-
-The first on-robot check placed the U 5 mm below the neck drive. There, the top
-of the dovetail block was only 1.0 mm from the drive; the 9 mm placement gives
-it 5.0 mm, and the other gaps stay at 3 mm or more.
-
-The fits between printed parts are deliberate: 0.3 mm around the tube and in
-the dovetail, a 1 mm take-up gap between the bar and the U, and 0.5 mm around
-the case and beside the PCA9685 wing.
+Clearances to the rest of the robot are unchecked. This project's skeleton
+mock-up was built around a 1 inch spine, so it does not match the 133.5 mm tube.
+The space table under "Before printing" replaces that check.
 
 ## Not verified
 
-- The robot parts are an estimated mock-up, so every gap above is an estimate
-  until the two measurements under "Before printing" are taken.
+- The tube size comes from one measurement of a flat face; the depth of the tube
+  and the space around it are unchecked.
 - Printed fits: the tube and dovetail fits, the nut slots, and the M2.5 threads
   in the PCA9685 bosses.
 - The clamp's grip on the tube, and whether one M3 pin holds the enclosure while

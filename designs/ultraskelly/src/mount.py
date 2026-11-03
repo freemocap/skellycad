@@ -1,7 +1,7 @@
 """Spine-tube shelf for UltraSkelly's electronics, with the cut-down OMT case and the PCA9685.
 
 One printed plate clamps to the 1 inch square spine tube with a collar and two M3 set screws.
-The community OMT Pi 5 case, cut down to open its top, screws to the plate with the Pi's own
+The community OMT Pi 5 case, shortened in the CAD to open its top, screws to the plate with the Pi's own
 M2.5 screws. Bosses hold the PCA9685 beside the case, and slot pairs anchor zip ties. Shelf
 frame and parameters are in mount.json. Run live in the project FreeCAD window:
 
