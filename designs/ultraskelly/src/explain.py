@@ -32,7 +32,7 @@ HERE = Path(__file__).resolve().parent
 PROJECT = HERE.parent
 STATE = cadkit.GENERATED / 'explain' / 'current.json'
 V = App.Vector
-NOW, LATER = (0.95, 0.55, 0.15), (0.3, 0.6, 0.85)
+CLAMP_COLOR, BACK_COLOR = (0.95, 0.55, 0.15), (0.3, 0.6, 0.85)
 STEEL, BRASS, METAL = (0.55, 0.57, 0.6), (0.8, 0.65, 0.3), (0.3, 0.3, 0.33)
 DOC, PRINTS_DOC = 'UltraSkellyExploded', 'UltraSkellyWhatYouPrint'
 
@@ -66,10 +66,10 @@ def parts(p):
     z = case_view.stack_heights()
     out = {
         'SpineTube': (mount.box(-12.7, 12.7, -12.7, 12.7, -70, 150), STEEL, 'Spine tube (robot)', 'tube'),
-        'ClampU': (enclosure.clamp_u(p, g), NOW, '1 Clamp U - PRINT NOW', 'clamp'),
-        'ClampBar': (enclosure.clamp_bar(p, g), NOW, '2 Clamp bar - PRINT NOW', 'clamp'),
-        'EnclosureBack': (back, LATER, '3 Enclosure back - print later', 'enclosure'),
-        'CaseCut': (case_shape, (0.88, 0.88, 0.9), '4 Pi case, cut down - print later', 'enclosure'),
+        'ClampU': (enclosure.clamp_u(p, g), CLAMP_COLOR, '1 Clamp U', 'clamp'),
+        'ClampBar': (enclosure.clamp_bar(p, g), CLAMP_COLOR, '2 Clamp bar', 'clamp'),
+        'EnclosureBack': (back, BACK_COLOR, '3 Enclosure back', 'enclosure'),
+        'CaseCut': (case_shape, (0.88, 0.88, 0.9), '4 Pi case, 30 mm deep', 'enclosure'),
     }
     screws = [screw(3, 25, 5.5, 3, (g['x_bar'][1], s * c['bolt_y'], h), (-1, 0, 0)) for s in (1, -1) for h in c['bolt_heights']]
     out['ClampScrews'] = (Part.makeCompound(screws), METAL, 'M3x25 screws (4)', 'clamp')
@@ -115,9 +115,9 @@ def parts(p):
     # Thin horizontal slices through the clamp joint, for the cut-through view of the dovetail.
     slab = mount.box(-70, 40, -60, 60, 29, 31)
     for name, source, color, label in (('SectionTube', 'SpineTube', STEEL, 'Spine tube (cut)'),
-                                       ('SectionU', 'ClampU', NOW, '1 Clamp U (cut): dovetail tongue at its back'),
-                                       ('SectionBar', 'ClampBar', NOW, '2 Clamp bar (cut)'),
-                                       ('SectionBack', 'EnclosureBack', LATER, '3 Enclosure back (cut): dovetail channel')):
+                                       ('SectionU', 'ClampU', CLAMP_COLOR, '1 Clamp U (cut): dovetail tongue at its back'),
+                                       ('SectionBar', 'ClampBar', CLAMP_COLOR, '2 Clamp bar (cut)'),
+                                       ('SectionBack', 'EnclosureBack', BACK_COLOR, '3 Enclosure back (cut): dovetail channel')):
         out[name] = (out[source][0].common(slab), color, label, 'section')
     top = case_shape.BoundBox.ZMax
     out['Bundle'] = (Part.makePolygon([V(-50, 0, top + 2), V(-50, 0, top + 60), V(-20, 0, top + 120)]), (0.2, 0.2, 0.2),
@@ -149,7 +149,7 @@ EXPLODED = dict({'SpineTube': (0, 0, 0), 'ClampU': (-45, 0, 0), 'ClampBar': (40,
                  'PCAScrews': (-45, 75, UP + 70)}, **nuts(-45, 22))
 
 POSES = {  # name: (caption, pose, camera direction from the model, parts to fit or None, parts to label or None)
-    'exploded': ('Exploded view: every part pulled apart along the direction it assembles. Orange = print now, blue and grey = print later, dark grey = screws and nuts, boards = bought parts.',
+    'exploded': ('Exploded view: every part pulled apart along the direction it assembles. Orange = clamp, blue = enclosure back, light grey = Pi case, dark grey = screws and nuts, boards = bought parts.',
                  EXPLODED, SIDE, None, None),
     'step1-u-onto-tube': ("Step 1. The neck clamp U goes around the spine tube from behind. Its dovetail tongue faces the skeleton's back.",
                           {'SpineTube': (0, 0, 0), 'ClampU': (-45, 0, 0)}, (-0.9, -1.0, 0.8), None, None),
@@ -264,29 +264,29 @@ def activate(name):
 
 
 def build_prints(folder):
-    """The exact STL files, print-now versus later."""
+    """The exact STL files of the print checkpoint, after checking their hashes."""
     doc = App.newDocument(PRINTS_DOC)
-    clamp = PROJECT / 'checkpoints' / 'r001-neck-clamp'
-    manifest = json.loads((clamp / 'manifest.json').read_text(encoding='utf-8'))
-    later = cadkit.GENERATED / 'enclosure' / 'r005'
-    files = [(clamp / 'clamp-u.stl', NOW, '1 clamp-u.stl', 'PRINT NOW'), (clamp / 'clamp-bar.stl', NOW, '2 clamp-bar.stl', 'PRINT NOW'),
-             (later / 'enclosure-back.stl', LATER, '3 enclosure-back.stl', 'LATER'),
-             (later / 'omt-case-cut.stl', (0.88, 0.88, 0.9), '4 omt-case-cut.stl', 'LATER')]
+    pack = PROJECT / 'checkpoints' / 'r002-neck-mount'
+    manifest = json.loads((pack / 'manifest.json').read_text(encoding='utf-8'))
+    files = [(pack / 'clamp-u.stl', CLAMP_COLOR, '1 clamp-u.stl', 'Clamp U'),
+             (pack / 'clamp-bar.stl', CLAMP_COLOR, '2 clamp-bar.stl', 'Clamp bar'),
+             (pack / 'enclosure-back.stl', BACK_COLOR, '3 enclosure-back.stl', 'Enclosure back'),
+             (pack / 'pi-case-30mm.stl', (0.88, 0.88, 0.9), '4 pi-case-30mm.stl', 'Pi case, 30 mm deep')]
     x, sources = 0.0, {}
-    for path, color, title, when in files:
-        if path.parent == clamp and cadkit.sha256(path) != manifest['parts'][path.name]['sha256']:
+    for path, color, title, part in files:
+        if cadkit.sha256(path) != manifest['parts'][path.name]['sha256']:
             raise ValueError(f'{path} differs from its manifest')
         mesh = Mesh.Mesh(str(path))
         b = mesh.BoundBox
         mesh.translate(x - b.XMin, -b.YMin, -b.ZMin)
         obj = doc.addObject('Mesh::Feature', path.stem.replace('-', '_'))
         obj.Mesh = mesh
-        obj.Label = f'{title} - {when}'
+        obj.Label = f'{title} - {part}'
         obj.ViewObject.ShapeColor = color
-        label = hardware_view.label(doc, 'label_' + obj.Name, [title, when], x, -20, 22)
+        label = hardware_view.label(doc, 'label_' + obj.Name, [title, part], x, -20, 22)
         label.ViewObject.DisplayMode = 'Screen'
         label.Placement = App.Placement(V(x, -20, 0), App.Rotation())
-        sources[path.name] = {'path': path.relative_to(cadkit.ROOT).as_posix(), 'sha256': cadkit.sha256(path), 'when': when}
+        sources[path.name] = {'path': path.relative_to(cadkit.ROOT).as_posix(), 'sha256': cadkit.sha256(path), 'part': part}
         x += b.XLength + 50
     doc.recompute()
     sha = cadkit.save_verified(doc, folder / 'what-you-print.FCStd')
@@ -315,7 +315,7 @@ def build(args):
     native = folder / 'exploded.FCStd'
     sha = cadkit.save_verified(doc, native)
     captions = {f'{name}.png': entry[0] for name, entry in POSES.items()}
-    captions['what-you-print.png'] = 'What you print: 1 and 2 (orange) print now for the clamp test; 3 and 4 (blue, grey) print later, after the clamp test. These are the exact STL files.'
+    captions['what-you-print.png'] = 'What you print: the four STL files of US-NECK-MOUNT-R002, as exported. 1 and 2 (orange) are the clamp, 3 (blue) is the enclosure back and 4 (grey) is the Pi case, 30 mm deep.'
     (folder / 'captions.json').write_text(json.dumps(captions, indent=2) + '\n', encoding='utf-8')
     cadkit.write_report(folder / 'build-report.json', {
         'part': 'explain', 'run': args.run, 'units': 'mm', 'native': {'path': native.name, 'sha256': sha},

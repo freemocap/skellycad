@@ -1,7 +1,7 @@
 """Neck clamp and quick-release enclosure for UltraSkelly's Pi 5 stack and PCA9685.
 
 A U clamp and front bar stay on the 1 inch spine tube. The enclosure back carries the
-community OMT case (cut down, open side facing back), the Pi stack with its long axis along
+community OMT case (30 mm deep, open side facing back), the Pi stack with its long axis along
 the tube and the USB end up, and the PCA9685 on a side wing. It slides down onto the clamp's
 dovetail and is locked by one M3 pin, so the electronics lift off without touching the clamp.
 Clamp frame and parameters are in enclosure.json. Run live in the project FreeCAD window:
@@ -192,7 +192,7 @@ def build(doc, p, dz=0.0, lift=0.0, tube=True):
     add('ClampU', parts['clamp_u'], CLAMP, 'U clamp with dovetail (print)')
     add('ClampBar', parts['clamp_bar'], CLAMP, 'Clamp bar, 4 x M3 (print)')
     add('EnclosureBack', back, BACK, 'Enclosure back with dovetail channel and PCA9685 wing (print)', offset=lifted)
-    add('CaseCut', case_shape, CASE, f"OMT case cut to {p['case']['cut_height']} mm (print)", 30, offset=lifted)
+    add('CaseCut', case_shape, CASE, f"Pi case, {p['case']['cut_height']} mm deep (print)", 30, offset=lifted)
     z = case_view.stack_heights()
     for name, shape, height, color in (('Pi5', vendor.shape('pi5-step'), z['pi_z'], hardware_view.PCB_GREEN),
                                        ('AIHat', hardware_view.ai_hat(), z['ai_hat_bottom'], hardware_view.PCB_GREEN),
@@ -253,7 +253,8 @@ def main(argv=None):
     native = folder / 'enclosure.FCStd'
     native_sha = cadkit.save_verified(doc, native)
     prints = {name: cadkit.export_stl(shape, folder / name) for name, shape in print_shapes(parts).items()}
-    prints['omt-case-cut.stl'] = cadkit.export_stl(mount.cut_case(params['case']['cut_height']), folder / 'omt-case-cut.stl')
+    case_name = f"pi-case-{params['case']['cut_height']}mm.stl"
+    prints[case_name] = cadkit.export_stl(mount.cut_case(params['case']['cut_height']), folder / case_name)
     cadkit.write_report(folder / 'build-report.json', {
         'part': 'enclosure', 'run': args.run, 'units': 'mm', 'parameters_sha256': cadkit.sha256(source),
         'native': {'path': native.name, 'sha256': native_sha}, 'prints': prints, 'geometry_validation': checks,
