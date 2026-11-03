@@ -26,8 +26,11 @@ def main():
     check()  # the endpoint must belong to this repository's FreeCAD runtime
     code = (f"import sys, importlib, os\n"
             f"sys.path.insert(0, {str(SRC)!r}) if {str(SRC)!r} not in sys.path else None\n"
-            f"for _m in [m for m in list(sys.modules.values()) if os.path.dirname(getattr(m, '__file__', '') or '') == {str(SRC)!r}]:\n"
-            f"    importlib.reload(_m)  # pick up edits to every UltraSkelly source module\n"
+            f"for _n, _m in [(n, m) for n, m in list(sys.modules.items()) if os.path.dirname(getattr(m, '__file__', '') or '') == {str(SRC)!r}]:\n"
+            f"    if os.path.exists(_m.__file__):\n"
+            f"        importlib.reload(_m)  # pick up edits to every UltraSkelly source module\n"
+            f"    else:\n"
+            f"        del sys.modules[_n]  # its source file was removed\n"
             f"import {args.builder}\n"
             f"{args.builder}.main({rest!r})\n")
     server = xmlrpc.client.ServerProxy('http://127.0.0.1:9875', allow_none=True)

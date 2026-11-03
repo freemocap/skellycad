@@ -1,6 +1,6 @@
 """Neck clamp and quick-release enclosure for UltraSkelly's Pi 5 stack and PCA9685.
 
-A U clamp and front bar stay on the square neck tube. The enclosure back carries the
+A U clamp and front bar stay on the square tube. The enclosure back carries the
 community OMT case (30 mm deep, open side facing back), the Pi stack with its long axis along
 the tube and the USB end up, and the PCA9685 on a side wing. It slides down onto the clamp's
 dovetail and is locked by one M3 pin, so the electronics lift off without touching the clamp.
@@ -54,7 +54,7 @@ def geometry(p):
     g['pin'] = (g['x_back'] - c['tongue_depth'] / 2, -ch['below'] / 2)
     g['bolt_y'] = half + c['bolt_y_inset']
     g['nut_slot_x'] = g['x_arm_front'] - c['nut_slot_setback'] - c['nut_slot']
-    g['hole_end_x'] = g['x_arm_front'] - c['bolt_hole_depth']
+    g['hole_end_x'] = g['x_back'] + c['bolt_hole_back_wall']  # blind: screws cannot reach the enclosure
     # Arms are thinned from the outside between the base and the screw holes, to save material.
     g['x_thin'] = (g['x_back'] + c['base'] + 4, g['hole_end_x'] - 3)
     g['pca_x'] = g['x_plate_back'] + p['pca9685']['origin_x_from_plate']
@@ -66,6 +66,11 @@ def tongue_width(p, g, x):
     return c['tongue_root'] + (g['x_back'] - x) * (c['tongue_tip'] - c['tongue_root']) / c['tongue_depth']
 
 
+def thinned(g):
+    """Arms are thinned only where there is room between the base and the screw holes."""
+    return g['x_thin'][1] - g['x_thin'][0] > 5
+
+
 def clamp_u(p, g):
     c, half, H = p['clamp'], g['half'], g['H']
     body = box(g['x_back'], g['x_arm_front'], -g['y_out'], g['y_out'], 0, H).cut(
@@ -74,12 +79,12 @@ def clamp_u(p, g):
     body = body.fuse(dovetail(x_in, tongue_width(p, g, x_in), x_tip, c['tongue_tip'], 0, H))
     cutters = []
     for s in (1, -1):
-        if g['x_thin'][1] - g['x_thin'][0] > 5:
+        if thinned(g):
             y_a, y_b = s * (half + c['arm_thin']), s * (g['y_out'] + 1)
             cutters.append(box(*g['x_thin'], min(y_a, y_b), max(y_a, y_b), -1, H + 1))
         for z in c['bolt_heights']:
             # Blind holes from the arm front, deep enough for the screw lengths that validate() reports.
-            cutters.append(Part.makeCylinder(c['bolt_clearance'] / 2, c['bolt_hole_depth'] + 1,
+            cutters.append(Part.makeCylinder(c['bolt_clearance'] / 2, g['x_arm_front'] + 1 - g['hole_end_x'],
                                              V(g['x_arm_front'] + 1, s * g['bolt_y'], z), V(-1, 0, 0)))
             y_a, y_b = s * (g['bolt_y'] - 3.4), s * (g['y_out'] + 1)
             cutters.append(box(g['nut_slot_x'], g['nut_slot_x'] + c['nut_slot'], min(y_a, y_b), max(y_a, y_b),
@@ -174,7 +179,7 @@ def validate(p, g, parts):
             assert not inside(u, g['hole_end_x'] + 0.5, y, z), 'bolt hole too short'
             assert inside(u, g['hole_end_x'] - 1, y, z), 'bolt hole runs past its depth'
             assert not inside(u, g['nut_slot_x'] + 1.5, s * (g['bolt_y'] + 2), z), 'nut slot missing'
-            assert inside(u, g['x_thin'][1] - 1, s * (half + c['arm_thin'] - 0.5), z), 'thinned arm missing'
+            assert not thinned(g) or inside(u, g['x_thin'][1] - 1, s * (half + c['arm_thin'] - 0.5), z), 'thinned arm missing'
     # Screw lengths: the tip passes the nut by 1.5 mm with the clamp loose, and stops 1.5 mm short of the
     # hole end with the clamp tight (the U then sits tube-clearance further forward).
     head = g['x_bar'][1] - c['bolt_head_depth']
@@ -223,7 +228,7 @@ def build(doc, p, dz=0.0, lift=0.0, tube=True):
     add('LockPin', pin, PIN, 'M3 lock pin', offset=lifted)
     if tube:
         w = p['tube']['outside'] / 2
-        add('SpineTube', box(-w, w, -w, w, -60, 140), STEEL, f"Neck tube, {p['tube']['outside']} mm square", 40)
+        add('SpineTube', box(-w, w, -w, w, -60, 140), STEEL, f"Square tube, {p['tube']['outside']} mm", 40)
     return parts, checks
 
 

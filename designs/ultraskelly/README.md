@@ -15,7 +15,7 @@ physical fit is unverified.
 | --- | --- |
 | Fit coupon | Scripted print test for the Pi 5 hole pattern, M2.5 pilot holes and zip-tie slots. Not yet printed. |
 | Camera bracket | Planned. Holds the ZED Mini at the eye sockets and the OAK-1 at the nose hole, and defines each sensor's pose in the head frame. |
-| Neck clamp and enclosure (`enclosure`) | Concept approved on 2026-11-02 and resized on 2026-11-03 for the measured 133.5 mm square neck tube. All four printed parts are released as one set, [US-NECK-MOUNT-R003](checkpoints/r003-neck-mount/README.md). A U clamp and front bar (4 x M3) stay on the neck tube. The enclosure back carries the community OMT case, 30 mm deep (shortened in the CAD), the Pi stack with its long axis along the tube and the USB end up, and the PCA9685 on a side wing; it slides down onto the clamp's dovetail and one M3 pin locks it, so the electronics lift off without touching the clamp. |
+| Neck clamp and enclosure (`enclosure`) | Concept approved on 2026-11-02 and sized on 2026-11-03 for the measured 13.35 mm square tube. All four printed parts are released as one set, [US-NECK-MOUNT-R004](checkpoints/r004-neck-mount/README.md). A U clamp and front bar (4 x M3) stay on the square tube. The enclosure back carries the community OMT case, 30 mm deep (shortened in the CAD), the Pi stack with its long axis along the tube and the USB end up, and the PCA9685 on a side wing; it slides down onto the clamp's dovetail and one M3 pin locks it, so the electronics lift off without touching the clamp. |
 | Electronics shelf (`mount`) | Superseded after review on 2026-11-02: the collar was not removable, the flat shelf stuck out, and the PCA9685 took too much space. `mount.py` still holds helpers the enclosure uses. |
 
 ## Layout
@@ -46,7 +46,7 @@ into it from the repository root:
   drive and post, the skull with the head frame, and placeholder body parts.
   Its sizes in `src/mockup.json` are estimates around the published 6.5 ft
   height [@homedepotUltraSkelly]. Its 1 inch spine does not match the measured
-  133.5 mm square neck tube, so the mock-up is not used for clearances.
+  13.35 mm tube, so the mount does not use the mock-up for clearances.
 - `hardware_view` lays every board, camera, actuator and supply flat and draws
   their connections: USB, PCIe, I2C jumpers, servo and motor leads and power.
   It uses the vendor models where `references/vendor.json` has them.
