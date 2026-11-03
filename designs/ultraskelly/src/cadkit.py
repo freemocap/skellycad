@@ -1,10 +1,13 @@
-"""Shared FreeCAD helpers for UltraSkelly builders: run folders, verified saves and STL export."""
+"""Shared FreeCAD helpers for UltraSkelly builders: boxes, rigid moves, run folders, verified saves and STL export."""
 import hashlib
 import json
 import zipfile
 from pathlib import Path
 
 import FreeCAD as App
+import Part
+
+V = App.Vector
 
 ROOT = Path(__file__).resolve().parents[3]
 GENERATED = ROOT / 'generated' / 'ultraskelly'
@@ -21,6 +24,17 @@ def run_folder(part, run):
 
 def sha256(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+
+
+def box(x0, x1, y0, y1, z0, z1):
+    return Part.makeBox(x1 - x0, y1 - y0, z1 - z0, V(x0, y0, z0))
+
+
+def moved(shape, matrix):
+    """Rigidly moved copy; keeps exact geometry, unlike transformGeometry."""
+    shape = shape.copy()
+    shape.transformShape(matrix)
+    return shape
 
 
 def save_verified(doc, path):

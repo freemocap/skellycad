@@ -22,12 +22,11 @@ import cadkit
 import case_view
 import hardware_view
 import mockup
-import mount
 import vendor
 
 HERE = Path(__file__).resolve().parent
 V = App.Vector
-box = mount.box
+box = cadkit.box
 CLAMP, BACK, CASE, STEEL, PIN = (0.95, 0.55, 0.15), (0.3, 0.6, 0.85), (0.88, 0.88, 0.9), (0.55, 0.57, 0.6), (0.8, 0.8, 0.82)
 
 
@@ -201,9 +200,9 @@ def validate(p, g, parts):
 def build(doc, p, dz=0.0, lift=0.0, tube=True):
     g = geometry(p)
     m = case_matrix(p, g)
-    case_shape = mount.moved(mount.cut_case(p['case']['cut_height']), m)
+    case_shape = cadkit.moved(case_view.cut_case(p['case']['cut_height']), m)
     back, wing_outer = enclosure_back(p, g, case_shape.BoundBox)
-    pca = mount.moved(vendor.shape('pca9685-step'), pca_matrix(p, g, wing_outer))
+    pca = cadkit.moved(vendor.shape('pca9685-step'), pca_matrix(p, g, wing_outer))
     parts = {'clamp_u': clamp_u(p, g), 'clamp_bar': clamp_bar(p, g), 'enclosure_back': back, 'case': case_shape, 'pca9685': pca}
     checks = validate(p, g, parts)
     up = V(0, 0, dz)
@@ -222,7 +221,7 @@ def build(doc, p, dz=0.0, lift=0.0, tube=True):
     for name, shape, height, color in (('Pi5', vendor.shape('pi5-step'), z['pi_z'], hardware_view.PCB_GREEN),
                                        ('AIHat', hardware_view.ai_hat(), z['ai_hat_bottom'], hardware_view.PCB_GREEN),
                                        ('MotorHat', vendor.shape('motor-hat-step'), z['motor_hat_bottom'], hardware_view.HAT_BLUE)):
-        add(name, mount.moved(hardware_view.placed(shape, 0, 0, height), m), color, name, offset=lifted)
+        add(name, cadkit.moved(hardware_view.placed(shape, 0, 0, height), m), color, name, offset=lifted)
     add('PCA9685', pca, hardware_view.PCA_BLUE, 'PCA9685 on the side wing', offset=lifted)
     pin = Part.makeCylinder(1.5, g['block_w'] + 6, V(g['pin'][0], -g['block_w'] / 2 - 3, g['pin'][1]), V(0, 1, 0))
     add('LockPin', pin, PIN, 'M3 lock pin', offset=lifted)
@@ -277,7 +276,7 @@ def main(argv=None):
     native_sha = cadkit.save_verified(doc, native)
     prints = {name: cadkit.export_stl(shape, folder / name) for name, shape in print_shapes(parts).items()}
     case_name = f"pi-case-{params['case']['cut_height']}mm.stl"
-    prints[case_name] = cadkit.export_stl(mount.cut_case(params['case']['cut_height']), folder / case_name)
+    prints[case_name] = cadkit.export_stl(case_view.cut_case(params['case']['cut_height']), folder / case_name)
     cadkit.write_report(folder / 'build-report.json', {
         'part': 'enclosure', 'run': args.run, 'units': 'mm', 'parameters_sha256': cadkit.sha256(source),
         'native': {'path': native.name, 'sha256': native_sha}, 'prints': prints, 'geometry_validation': checks,
