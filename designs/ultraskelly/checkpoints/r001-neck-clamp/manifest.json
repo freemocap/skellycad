@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "id": "US-NECK-CLAMP-R001",
+  "units": "mm",
+  "date": "2026-11-02",
+  "status": "Released for a grip test on the robot spine tube. Physical fit, grip and print accuracy are unverified.",
+  "approval": "The user approved the clamp-and-enclosure concept (views of skellycad 3ff9794), relayed by the coordinator on 2026-11-02.",
+  "source": {
+    "commit": "da70c3d",
+    "builder": "designs/ultraskelly/src/enclosure.py",
+    "parameters": "designs/ultraskelly/src/enclosure.json",
+    "parameters_sha256": "1724b7c312bf4023bf41045d1f6e7789ee72b1b41098277ff3f183fbdcdd3ead",
+    "run": "generated/ultraskelly/enclosure/r004",
+    "freecad": [
+      "1",
+      "1",
+      "4",
+      "20260928 (Git shallow)"
+    ]
+  },
+  "parts": {
+    "clamp-u.stl": {
+      "sha256": "3f5e17341b8701da9a670799db30a20cd9b699a0a323126c782fbbc23a9fc6ec",
+      "bytes": 208684,
+      "extents_mm": [
+        36.7,
+        46.0,
+        50.0
+      ],
+      "shells": 1,
+      "watertight": true,
+      "orientation": "Standing on its lower end, tube channel vertical, dovetail tongue on the back; as exported."
+    },
+    "clamp-bar.stl": {
+      "sha256": "ef4cfaf72fcedba7e70f6c2f2e2bcbcf6b2d44e026ec2eb250f931fa6d2c1d6c",
+      "bytes": 203084,
+      "extents_mm": [
+        50.0,
+        46.0,
+        8.0
+      ],
+      "shells": 1,
+      "watertight": true,
+      "orientation": "Flat, with the four screw-head recesses facing up; as exported."
+    }
+  },
+  "print_settings": {
+    "material": "PETG preferred (PLA acceptable for a fit test)",
+    "layer_height_mm": 0.2,
+    "walls": 4,
+    "top_bottom_layers": 5,
+    "infill": "40 % gyroid",
+    "supports": "none",
+    "estimate": "About 1 to 1.5 h and 50 g of PETG for both parts, estimated from model volume; not sliced."
+  },
+  "hardware": [
+    "4 x M3 socket-head screws, 25 to 40 mm",
+    "4 x M3 hex nuts, 5.5 mm across flats (side slots in the U)"
+  ],
+  "interfaces": {
+    "tube": "1 inch (25.4 mm) square tube; 0.3 mm clearance per side; the bar closes a 1 mm gap when tightened",
+    "dovetail": "Tongue root 16, tip 22, depth 6, height 50; mates the enclosure back channel (0.3 mm clearance)"
+  },
+  "geometry_validation": {
+    "valid": true,
+    "clash_mm3": {
+      "clamp_u-back": 0.0,
+      "clamp_u-bar": 0.0,
+      "case-back": 0.0,
+      "pca-back": 0.0
+    },
+    "volumes_mm3": {
+      "clamp_u": 42634.7,
+      "clamp_bar": 17839.2,
+      "enclosure_back": 49987.8
+    }
+  },
+  "not_established": [
+    "printed dimensions",
+    "nut fit in the slots",
+    "grip and slip resistance on the tube",
+    "fit of the enclosure channel on the printed tongue"
+  ]
+}
