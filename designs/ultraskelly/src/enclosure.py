@@ -75,12 +75,30 @@ def tongue_width(p, g, x):
     return c['tongue_root'] + (g['x_back'] - x) * (c['tongue_tip'] - c['tongue_root']) / c['tongue_depth']
 
 
+def bed_fit_edges(shape, g):
+    """Edges on the bed (z = 0) of the tube pocket and the dovetail tongue: the faces whose fit matters."""
+    half, tol = g['half'], 1e-4
+    picked = []
+    for e in shape.Edges:
+        if max(abs(v.Point.z) for v in e.Vertexes) > tol:
+            continue
+        m = e.valueAt((e.FirstParameter + e.LastParameter) / 2)
+        pocket_side = abs(abs(m.y) - half) < tol and -half - tol <= m.x <= g['x_arm_front'] + tol
+        pocket_back = abs(m.x + half) < tol and abs(m.y) <= half + tol
+        tongue = m.x < g['x_back'] - tol
+        if pocket_side or pocket_back or tongue:
+            picked.append(e)
+    return picked
+
+
 def clamp_u(p, g):
     c, half, H = p['clamp'], g['half'], g['H']
     body = box(g['x_back'], g['x_arm_front'], -g['y_out'], g['y_out'], 0, H).cut(
         box(-half, g['x_arm_front'] + 1, -half, half, -1, H + 1))
     x_in, x_tip = g['x_back'] + 0.5, g['x_back'] - c['tongue_depth']
-    body = body.fuse(dovetail(x_in, tongue_width(p, g, x_in), x_tip, c['tongue_tip'], 0, H))
+    body = body.fuse(dovetail(x_in, tongue_width(p, g, x_in), x_tip, c['tongue_tip'], 0, H)).removeSplitter()
+    # A 45 degree chamfer where the pocket and tongue meet the bed keeps the first layer's flare out of the fits.
+    body = body.makeChamfer(c['bed_chamfer'], bed_fit_edges(body, g))
     cutters = []
     for s in (1, -1):
         for z in c['bolt_heights']:
@@ -152,6 +170,30 @@ def plate_windows(p, g):
     return [w for w in windows if w[1] - w[0] > 4 and w[3] - w[2] > 4]
 
 
+def peaked(u0, u1, z0, z1):
+    """Window outline (u, z) with a 45 degree peak instead of a flat top, so it prints without bridging."""
+    rise = min((u1 - u0) / 2, z1 - z0)
+    return [(u0, z0), (u1, z0), (u1, z1 - rise), ((u0 + u1) / 2, z1), (u0, z1 - rise)]
+
+
+def plate_window(x0, x1, ya, yb, za, zb):
+    points = [V(x0, y, z) for y, z in peaked(ya, yb, za, zb)]
+    return Part.Face(Part.makePolygon(points + points[:1])).extrude(V(x1 - x0, 0, 0))
+
+
+def wing_window_cutter(y0, y1, xa, xb, za, zb):
+    points = [V(x, y0, z) for x, z in peaked(xa, xb, za, zb)]
+    return Part.Face(Part.makePolygon(points + points[:1])).extrude(V(0, y1 - y0, 0))
+
+
+def teardrop_boss(r, length, x, y0, z):
+    """Horizontal boss along +Y with a 45 degree point underneath, so its underside needs no support."""
+    k = r / 2 ** 0.5
+    points = [V(x - k, y0, z - k), V(x + k, y0, z - k), V(x, y0, z - r * 2 ** 0.5)]
+    point = Part.Face(Part.makePolygon(points + points[:1])).extrude(V(0, length, 0))
+    return Part.makeCylinder(r, length, V(x, y0, z), V(0, 1, 0)).fuse(point)
+
+
 def wing_window(p, g):
     """Window through the PCA9685 wing, inside its four bosses."""
     m = p['pca9685']['boss_diameter'] / 2 + p['wing']['margin']
@@ -177,8 +219,7 @@ def enclosure_back(p, g):
               box(x_wall, g['x_block_front'], -bw / 2, bw / 2, zb0, zb1),
               gusset(x_wall, g['x_block_front'], zb0, -bw / 2, bw / 2),
               box(xb - w['depth'], xb + 0.5, yw0, yw1, *zw)]
-    solids += [Part.makeCylinder(q['boss_diameter'] / 2, q['boss_length'] + 0.5, V(x, yw1 - 0.5, z), V(0, 1, 0))
-               for x, z in holes]
+    solids += [teardrop_boss(q['boss_diameter'] / 2, q['boss_length'] + 0.5, x, yw1 - 0.5, z) for x, z in holes]
     body = solids[0].fuse(solids[1:])
     x_mouth, x_bottom = g['x_block_front'] + 1, g['x_back'] - c['tongue_depth'] - ch['clearance']
     cutters = [dovetail(x_mouth, tongue_width(p, g, x_mouth) + 2 * ch['clearance'], x_bottom,
@@ -188,14 +229,16 @@ def enclosure_back(p, g):
     for y, z in pi_holes(p):
         cutters += [Part.makeCylinder(1.5, pl['thickness'] + 2, V(xf + 1, y, z), V(-1, 0, 0)),
                     Part.makeCylinder(2.8, seat + 1, V(xf + 1, y, z), V(-1, 0, 0))]
-    cutters += [Part.makeCylinder(q['pilot'] / 2, w['thickness'] + q['boss_length'] + 2, V(x, yw0 - 1, z), V(0, 1, 0))
-                for x, z in holes]
+    cb_d, cb_depth = q['pilot_counterbore']  # guides the screw and relieves the boss edge
+    boss_end = yw1 + q['boss_length']
+    for x, z in holes:
+        cutters += [Part.makeCylinder(q['pilot'] / 2, w['thickness'] + q['boss_length'] + 2, V(x, yw0 - 1, z), V(0, 1, 0)),
+                    Part.makeCylinder(cb_d / 2, cb_depth + 1, V(x, boss_end - cb_depth, z), V(0, 1, 0))]
     sw, sl = pl['tie_slot']
     for y in (-pl['tie_spacing'] / 2, pl['tie_spacing'] / 2):
         cutters.append(box(xb - 1, xf + 1, y - sw / 2, y + sw / 2, z1 + pl['tie_tab'] / 2 - sl / 2, z1 + pl['tie_tab'] / 2 + sl / 2))
-    cutters += [box(xb - 1, xf + 1, ya, yb, za, zb) for ya, yb, za, zb in plate_windows(p, g)]
-    xa, xz, za, zb = wing_window(p, g)
-    cutters.append(box(xa, xz, yw0 - 1, yw1 + 1, za, zb))
+    cutters += [plate_window(xb - 1, xf + 1, ya, yb, za, zb) for ya, yb, za, zb in plate_windows(p, g)]
+    cutters.append(wing_window_cutter(yw0 - 1, yw1 + 1, *wing_window(p, g)))
     body = body.cut(Part.makeCompound(cutters)).removeSplitter()
     assert len(body.Solids) == 1, 'enclosure back is not one solid'
     return Part.Solid(body.Solids[0]), yw1
@@ -237,6 +280,14 @@ def validate(p, g, parts):
         assert inside(back, g['x_plate_back'] + 0.5, y + (4.0 if y > 0 else -4.0), z), 'plate missing around a Pi screw'
     for ya, yb, za, zb in plate_windows(p, g):
         assert not inside(back, g['x_plate_back'] + 1.5, (ya + yb) / 2, (za + zb) / 2), 'plate window missing'
+    for x, z in pca_holes(p, g):
+        assert not inside(back, x, g['wing_y'][1] + 1, z), 'PCA9685 pilot missing'
+        r = p['pca9685']['boss_diameter'] / 2
+        assert inside(back, x, g['wing_y'][1] + 1, z - r * 1.2), 'teardrop under a PCA9685 boss missing'
+    k = c['bed_chamfer']
+    assert not inside(u, -half - k / 3, 0, k / 3), 'pocket edge on the bed not chamfered'
+    assert not inside(u, g['x_back'] - c['tongue_depth'] + k / 3, 0, k / 3), 'tongue edge on the bed not chamfered'
+    assert inside(u, -half - 2 * k, 0, k / 3), 'U base missing behind the pocket chamfer'
     clashes = {'clamp_u-back': u.common(back).Volume, 'clamp_u-bar': u.common(bar).Volume,
                'carrier-back': parts['carrier'].common(back).Volume, 'pca-back': parts['pca9685'].common(back).Volume}
     for name, volume in clashes.items():

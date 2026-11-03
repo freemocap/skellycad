@@ -2188,3 +2188,93 @@
  claim = {MIT-licensed 3D-printable Pi 5 case body and lid. The body is 102 by 66 by 44 mm; its four stand-offs sit on the Pi's 58 by 49 mm hole pattern with 3.0 mm screw holes counterbored from below, and the board rests 7.5 mm above the case underside.},
  note = {Parsed the Bambu Studio 3MF at commit 48e730c and sectioned the case mesh in FreeCAD 1.1.4; read the README and licence. The case is designed for a Pi 5 with the PoE HAT; its fit with the UltraSkelly HAT stack is a CAD estimate, not a print test.}
 }
+
+@misc{prusaModelingFor3dPrinting,
+ title = {Modeling with 3D printing in mind},
+ author = {{Prusa Research}},
+ url = {https://help.prusa3d.com/article/modeling-with-3d-printing-in-mind_164135},
+ urldate = {2026-11-03},
+ review = {full-text},
+ claim = {A 0.4 mm nozzle prints overhangs of 45 to 60 degrees cleanly without supports; chamfers rather than fillets should face the bed; one perimeter is about 0.45 mm wide (2, 3 and 4 perimeters about 0.9, 1.35 and 1.8 mm) and walls thinner than one perimeter are not printable; moving fits start at 0.3 mm clearance; FFF prints are stronger in one direction, so structural parts should be oriented for their load.},
+ note = {Read the article body through the multi-material section, fetched as text. The angle limits are for Prusa printers and settings; the article gives no bridge length.}
+}
+
+@misc{prusaLayersAndPerimeters,
+ title = {Layers and perimeters},
+ author = {{Prusa Research}},
+ url = {https://help.prusa3d.com/article/layers-and-perimeters_1748},
+ urldate = {2026-11-03},
+ review = {excerpt},
+ claim = {A print's strength is mostly defined by its number of perimeters, not its infill; Prusa profiles use at least two perimeters; at least three top layers are suggested because top solid infill bridges over sparse infill and sags.},
+ note = {Read the Perimeters, Recommended thin wall thickness and top and bottom solid layer sections. Guidance for PrusaSlicer profiles; applied here to Snapmaker Orca settings by analogy.}
+}
+
+@misc{prusaInfill,
+ title = {Infill},
+ author = {{Prusa Research}},
+ url = {https://help.prusa3d.com/article/infill_42},
+ urldate = {2026-11-03},
+ review = {excerpt},
+ claim = {Most models can be printed with 10 to 15 percent infill and rarely need more than 30 percent; strength comes mostly from perimeters, while infill adds compression resistance.},
+ note = {Read the infill density and Increasing model strength sections.}
+}
+
+@misc{prusaInfillPatterns,
+ title = {Infill patterns},
+ author = {{Prusa Research}},
+ url = {https://help.prusa3d.com/article/infill-patterns_177130},
+ urldate = {2026-11-03},
+ review = {excerpt},
+ claim = {Gyroid infill is three-dimensional with equal strength in all directions, a good strength-to-weight ratio, relatively quick printing and low material use.},
+ note = {Read the Gyroid section. The page gives no measured comparison between patterns.}
+}
+
+@misc{hubsFdmDesign,
+ title = {How to design parts for FDM 3D printing},
+ author = {{Protolabs Network}},
+ url = {https://www.hubs.com/knowledge-base/how-design-parts-fdm-3d-printing/},
+ urldate = {2026-11-03},
+ review = {full-text},
+ claim = {Overhangs print without support up to about 45 degrees; some sag or support marks remain on bridges unless they are shorter than 5 mm; vertical holes print undersized; edges touching the build plate need a 45 degree chamfer or radius where fit matters, because of elephant's foot; FDM parts are weaker across layers, and reorienting holes avoids support.},
+ note = {Read the article body and its rules of thumb, fetched as text. Hubs is now Protolabs Network; figures are general FDM guidance, not material-specific limits.}
+}
+
+@misc{hubsKeyDesign3dPrinting,
+ title = {Key design considerations for 3D printing},
+ author = {{Protolabs Network}},
+ url = {https://www.hubs.com/knowledge-base/key-design-considerations-3d-printing/},
+ urldate = {2026-11-03},
+ review = {excerpt},
+ claim = {All 3D printers in the Protolabs Network can print walls thicker than 0.8 mm.},
+ note = {Read the wall thickness section and its answer on minimum wall thickness.}
+}
+
+@misc{cncKitchenExtrusionWidth,
+ title = {The effect of Extrusion Width on Strength and Quality of 3D prints},
+ author = {Hermann, Stefan},
+ url = {https://www.cnckitchen.com/blog/the-effect-of-extrusion-width-on-strength-and-quality-of-3d-prints},
+ urldate = {2026-11-03},
+ review = {excerpt},
+ claim = {In PLA test hooks with 20 percent infill, 2 perimeters failed at about 20 kg, 4 perimeters at 33 kg, 3 perimeters at 133 percent width at 37 kg and 2 perimeters at 200 percent width at 39 kg: thicker walls raise strength far more than the reference settings.},
+ note = {Read the summary and the hook test section of the CNC Kitchen blog. Measured on one printer and one PLA; used here for the direction of the effect, not its size in PETG.}
+}
+
+@misc{cncKitchenPrintsVsWood,
+ title = {What's STRONGER - 3D Prints or Wood?!},
+ author = {Hermann, Stefan},
+ url = {https://www.cnckitchen.com/blog/whats-stronger-3d-prints-or-wood},
+ urldate = {2026-11-03},
+ review = {excerpt},
+ claim = {FDM prints are strong in the print plane and weak between layers; 30 percent infill with 3 perimeters is the author's usual setting for mechanically loaded parts; a PETG hook held 110 kg at 100 percent infill and 54 kg at 30 percent infill with 3 perimeters.},
+ note = {Read the summary, the material and setting description and the hook results of the CNC Kitchen blog.}
+}
+
+@misc{semblexDeltaPt,
+ title = {DELTA PT screw for thermoplastics: boss design guidelines},
+ author = {{Semblex}},
+ url = {https://www.semblex.com/en/technologies/delta-pt/},
+ urldate = {2026-11-03},
+ review = {excerpt},
+ claim = {For thread-forming screws in thermoplastics the most favourable hole diameter is 0.8 times the screw's nominal diameter; a counterbore at the boss entry prevents boss cracking and guides the screw.},
+ note = {Read the Boss Design Guidelines section. The guidance is from laboratory tests on injection-moulded bosses with DELTA PT screws; this mount uses M2.5 machine screws in printed PETG, and the page gives no engagement depth.}
+}
