@@ -50,14 +50,19 @@ def gusset(x_wall, x_front, z_top, y0, y1):
 
 def geometry(p):
     t, c, ch, pl, pi, w = p['tube'], p['clamp'], p['channel'], p['plate'], p['pi'], p['wing']
-    half = t['outside'] / 2 + t['clearance']
-    g = {'half': half, 'H': c['height'], 'x_back': -half - c['base'], 'x_arm_front': t['outside'] / 2 - c['bar_gap'],
+    t_min, t_max = t['range']
+    half = t_max / 2 + t['clearance']  # pocket half-width: the largest tube in the range still slides in
+    x_tube_back = -t['outside'] / 2  # the nominal tube is centred on the axis, its back face on the base (tight)
+    g = {'half': half, 'H': c['height'], 'H_tongue': c['tongue_height'], 'x_tube_back': x_tube_back,
+         'x_back': x_tube_back - c['base'],
+         # The arms stop short of the smallest tube's front face, so the bar always bears on the tube.
+         'x_arm_front': x_tube_back + t_min - c['takeup_min'],
          'y_out': half + c['arm'], 'x_bar': (t['outside'] / 2, t['outside'] / 2 + c['bar'])}
     g['x_block_front'] = g['x_back'] - ch['gap']
     g['x_plate_front'] = g['x_block_front'] - c['tongue_depth'] - ch['clearance'] - ch['floor']
     g['x_plate_back'] = g['x_plate_front'] - pl['thickness']
     g['block_w'] = c['tongue_tip'] + 2 * ch['clearance'] + 2 * ch['walls']
-    g['z_block'] = (-ch['below'], c['height'] + ch['cap'])
+    g['z_block'] = (-ch['below'], c['tongue_height'] + ch['cap'])
     g['pin'] = (g['x_back'] - c['tongue_depth'] / 2, -ch['below'] / 2)
     g['bolt_y'] = half + c['bolt_y_inset']
     g['nut_slot_x'] = g['x_arm_front'] - c['nut_slot_setback'] - c['nut_slot']
@@ -83,20 +88,35 @@ def bed_fit_edges(shape, g):
         if max(abs(v.Point.z) for v in e.Vertexes) > tol:
             continue
         m = e.valueAt((e.FirstParameter + e.LastParameter) / 2)
-        pocket_side = abs(abs(m.y) - half) < tol and -half - tol <= m.x <= g['x_arm_front'] + tol
-        pocket_back = abs(m.x + half) < tol and abs(m.y) <= half + tol
+        pocket_side = abs(abs(m.y) - half) < tol and g['x_tube_back'] - tol <= m.x <= g['x_arm_front'] + tol
+        pocket_back = abs(m.x - g['x_tube_back']) < tol and abs(m.y) <= half + tol
         tongue = m.x < g['x_back'] - tol
         if pocket_side or pocket_back or tongue:
             picked.append(e)
     return picked
 
 
+def edges_along(shape, axis, keep):
+    """Straight edges parallel to an axis (0 = X, 2 = Z) whose midpoint passes keep(midpoint)."""
+    picked = []
+    for e in shape.Edges:
+        a, b = e.Vertexes[0].Point, e.Vertexes[-1].Point
+        d = b - a
+        if d.Length > 1e-6 and abs(abs([d.x, d.y, d.z][axis]) - d.Length) < 1e-6 and keep((a + b) * 0.5):
+            picked.append(e)
+    return picked
+
+
 def clamp_u(p, g):
     c, half, H = p['clamp'], g['half'], g['H']
-    body = box(g['x_back'], g['x_arm_front'], -g['y_out'], g['y_out'], 0, H).cut(
-        box(-half, g['x_arm_front'] + 1, -half, half, -1, H + 1))
+    outer = box(g['x_back'], g['x_arm_front'], -g['y_out'], g['y_out'], 0, H)
+    # Rounded outer corners: vertical edges print as walls, so the fillets need no support.
+    outer = outer.makeFillet(c['corner_radius'], edges_along(outer, 2, lambda m: abs(abs(m.y) - g['y_out']) < 1e-6))
+    body = outer.cut(box(g['x_tube_back'], g['x_arm_front'] + 1, -half, half, -1, H + 1))
+    # The tongue keeps its full height so the printed enclosure still seats and locks on it; above the
+    # clamp body it stands on its own.
     x_in, x_tip = g['x_back'] + 0.5, g['x_back'] - c['tongue_depth']
-    body = body.fuse(dovetail(x_in, tongue_width(p, g, x_in), x_tip, c['tongue_tip'], 0, H)).removeSplitter()
+    body = body.fuse(dovetail(x_in, tongue_width(p, g, x_in), x_tip, c['tongue_tip'], 0, g['H_tongue'])).removeSplitter()
     # A 45 degree chamfer where the pocket and tongue meet the bed keeps the first layer's flare out of the fits.
     body = body.makeChamfer(c['bed_chamfer'], bed_fit_edges(body, g))
     cutters = []
@@ -115,6 +135,8 @@ def clamp_u(p, g):
 def clamp_bar(p, g):
     c, (x0, x1) = p['clamp'], g['x_bar']
     bar = box(x0, x1, -g['y_out'], g['y_out'], 0, g['H'])
+    # Rounded corners seen from the front; these edges stand vertical when the bar prints flat.
+    bar = bar.makeFillet(c['corner_radius'], edges_along(bar, 0, lambda m: True))
     cutters = []
     for s in (1, -1):
         for z in c['bolt_heights']:
@@ -223,7 +245,7 @@ def enclosure_back(p, g):
     body = solids[0].fuse(solids[1:])
     x_mouth, x_bottom = g['x_block_front'] + 1, g['x_back'] - c['tongue_depth'] - ch['clearance']
     cutters = [dovetail(x_mouth, tongue_width(p, g, x_mouth) + 2 * ch['clearance'], x_bottom,
-                        tongue_width(p, g, x_bottom) + 2 * ch['clearance'], zb0 - drop - 1, g['H']),
+                        tongue_width(p, g, x_bottom) + 2 * ch['clearance'], zb0 - drop - 1, g['H_tongue']),
                Part.makeCylinder(ch['pin_clearance'] / 2, bw + 2, V(g['pin'][0], -bw / 2 - 1, g['pin'][1]), V(0, 1, 0))]
     seat = pl['thickness'] - pl['head_seat']  # counterbore depth for the M2.5 heads on the front face
     for y, z in pi_holes(p):
@@ -254,8 +276,13 @@ def validate(p, g, parts):
     u, bar, back = parts['clamp_u'], parts['clamp_bar'], parts['enclosure_back']
     for name in ('clamp_u', 'clamp_bar', 'enclosure_back', 'carrier'):
         assert parts[name].isValid() and len(parts[name].Solids) == 1, f'{name} is not one valid solid'
-    assert not inside(u, 0, 0, g['H'] / 2) and not inside(u, half - 0.05, half - 0.05, 5), 'tube passage blocked'
-    assert inside(u, g['x_back'] - c['tongue_depth'] / 2, 0, g['H'] / 2), 'dovetail tongue missing'
+    assert not inside(u, 0, 0, g['H'] / 2), 'tube passage blocked'
+    for s in (1, -1):
+        assert not inside(u, g['x_tube_back'] + 0.05, s * (half - 0.05), g['H'] / 2), 'pocket narrower than the largest tube'
+    for z in (g['H'] / 2, g['H_tongue'] - 1):
+        assert inside(u, g['x_back'] - c['tongue_depth'] / 2, 0, z), 'dovetail tongue missing'
+    t_min, t_max = p['tube']['range']
+    assert g['x_arm_front'] < g['x_tube_back'] + t_min, 'arms reach the front face of the smallest tube'
     for s in (1, -1):
         for z in c['bolt_heights']:
             y = s * g['bolt_y']
@@ -263,14 +290,14 @@ def validate(p, g, parts):
             assert not inside(u, g['hole_end_x'] + 0.5, y, z), 'bolt hole too short'
             assert inside(u, g['hole_end_x'] - 1, y, z), 'bolt hole runs past its depth'
             assert not inside(u, g['nut_slot_x'] + 1.5, s * (g['bolt_y'] + 2), z), 'nut slot missing'
-    # Screw lengths: the tip passes the nut by 1.5 mm with the clamp loose, and stops 1.5 mm short of the
-    # hole end with the clamp tight (the U then sits tube-clearance further forward).
-    head = g['x_bar'][1] - c['bolt_head_depth']
+    # Screw lengths across the tube range, clamped: the tip passes the nut by 1.5 mm on the largest tube and
+    # stops 1.5 mm short of the hole end on the smallest.
+    head = lambda t: g['x_tube_back'] + t + c['bar'] - c['bolt_head_depth']
     nut_back = g['nut_slot_x'] + c['nut_slot'] - c['nut_thickness']
-    screws = (round(head - nut_back + 1.5, 1), round(head - g['hole_end_x'] - p['tube']['clearance'] - 1.5, 1))
+    screws = (round(head(t_max) - nut_back + 1.5, 1), round(head(t_min) - g['hole_end_x'] - 1.5, 1))
     assert screws[0] < screws[1], f'no clamp screw length fits: {screws}'
     zb0 = g['z_block'][0]
-    assert not inside(back, g['x_back'] - c['tongue_depth'] / 2, 0, g['H'] / 2), 'channel blocked'
+    assert not inside(back, g['x_back'] - c['tongue_depth'] / 2, 0, g['H_tongue'] / 2), 'channel blocked'
     assert not inside(back, g['x_back'] - c['tongue_depth'] / 2, 0, zb0 - 2), 'channel closed below the block'
     assert inside(back, g['x_plate_front'] + 0.5, g['block_w'] / 2 - 1, zb0 - 1.5), 'chamfer under the block missing'
     assert not inside(back, g['pin'][0], 0, g['pin'][1]), 'lock pin hole blocked'
@@ -285,9 +312,9 @@ def validate(p, g, parts):
         r = p['pca9685']['boss_diameter'] / 2
         assert inside(back, x, g['wing_y'][1] + 1, z - r * 1.2), 'teardrop under a PCA9685 boss missing'
     k = c['bed_chamfer']
-    assert not inside(u, -half - k / 3, 0, k / 3), 'pocket edge on the bed not chamfered'
+    assert not inside(u, g['x_tube_back'] - k / 3, 0, k / 3), 'pocket edge on the bed not chamfered'
     assert not inside(u, g['x_back'] - c['tongue_depth'] + k / 3, 0, k / 3), 'tongue edge on the bed not chamfered'
-    assert inside(u, -half - 2 * k, 0, k / 3), 'U base missing behind the pocket chamfer'
+    assert inside(u, g['x_tube_back'] - 2 * k, 0, k / 3), 'U base missing behind the pocket chamfer'
     clashes = {'clamp_u-back': u.common(back).Volume, 'clamp_u-bar': u.common(bar).Volume,
                'carrier-back': parts['carrier'].common(back).Volume, 'pca-back': parts['pca9685'].common(back).Volume}
     for name, volume in clashes.items():

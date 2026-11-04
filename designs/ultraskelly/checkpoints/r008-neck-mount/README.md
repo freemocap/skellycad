@@ -1,29 +1,30 @@
-# US-NECK-MOUNT-R007: light Pi mount print set for the 1 inch tube
+# US-NECK-MOUNT-R008: light Pi mount print set for the 18.6 mm tube
 
-**The enclosure back and Pi carrier are byte-identical to R006, so a printed R006
-set needs only the new clamp U and clamp bar.**
+**The enclosure back and Pi carrier are byte-identical to R006 and R007, so a
+printed set needs only the new clamp U and clamp bar.**
 
 This checkpoint is the complete set of printed parts for the Pi mount on the
-1 inch (25.4 mm) square tube. It is R006 with the clamp U and bar resized for
-the 1 inch tube; the 13.35 mm clamp in R006 was too small for it. The fits,
-the dovetail tongue, the hardware and the print settings stay as in R006, whose
-shapes and settings follow published FDM design guidance. No part needs
-supports.
+square tube of about 18.6 mm per side. The clamp U and bar are new: half as
+tall, slimmer and with rounded corners, and they fit any tube from 18.2 to
+19.2 mm. The dovetail tongue, the hardware and the print settings stay as in
+R006, whose shapes and settings follow published FDM design guidance. No part
+needs supports.
 
 `manifest.json` records the source, file hashes, checks and the items that are
 still unverified. Each part has an image with the same name as its STL file.
 
 ## Before printing: check the tube and the space
 
-1. **Tube size.** The clamp fits a square tube from 24.5 to 26 mm per side. It
-   is sized for the 1 inch (25.4 mm) tube.
-2. **Bare tube.** The clamp needs 40 mm of bare tube, with nothing fixed to any
-   of its four faces.
+1. **Tube size.** The clamp fits a square tube from 18.2 to 19.2 mm per side,
+   around the measured 18.6 mm.
+2. **Bare tube.** The clamp needs 20 mm of bare tube, with nothing fixed to any
+   of its four faces. Its dovetail tongue rises 20 mm higher behind the tube
+   without touching it.
 3. **Space for the mount.** The whole mount is 104 mm tall, 81 mm wide and
-   92 mm deep, from the front of the clamp bar to the back of the HAT stack.
+   85 mm deep, from the front of the clamp bar to the back of the HAT stack.
    It hangs behind the tube from 17.5 mm below the bottom of the clamp to
-   46.5 mm above its top. The clamp is 46 mm wide, and its bar sits 6 mm in
-   front of the tube.
+   86.5 mm above it. The clamp is 39 mm wide, and its bar sits 6 mm in front
+   of the tube.
 
 If the tube or the space does not match, do not print. Send the measurement,
 and the CAD will be changed to fit.
@@ -32,8 +33,8 @@ and the CAD will be changed to fit.
 
 | # | File | Part | Orientation, as exported | Supports | Size (mm) |
 | --- | --- | --- | --- | --- | --- |
-| 1 | `clamp-u.stl` | Clamp U with the dovetail tongue, for the 1 inch tube | Standing on its lower end, tube opening vertical | None | 34.3 × 46.2 × 40 |
-| 2 | `clamp-bar.stl` | Clamp bar, for the 1 inch tube | Flat, screw-head recesses up | None | 40 × 46.2 × 6 |
+| 1 | `clamp-u.stl` | Clamp U, 20 mm tall, with the 40 mm dovetail tongue | Standing on its lower end, tube opening vertical | None | 27.2 × 38.8 × 40 |
+| 2 | `clamp-bar.stl` | Clamp bar, 20 mm tall | Flat, screw-head recesses up | None | 20 × 38.8 × 6 |
 | 3 | `enclosure-back.stl` | Enclosure back: frame, dovetail channel and PCA9685 wing (R006 file) | Standing on its lower end | None | 41.7 × 71 × 104 |
 | 4 | `pi-carrier.stl` | Pi carrier: frame with four standoffs (R006 file) | Flat, standoffs up | None | 64 × 55 × 7.5 |
 
@@ -42,14 +43,15 @@ default line width for a 0.4 mm nozzle, and these settings:
 
 | Part | Perimeters | Top and bottom layers | Gyroid infill | Note |
 | --- | --- | --- | --- | --- |
-| Clamp U and clamp bar | 6 | 5 | 25 % | They take the screw load, so they get the strongest settings. |
+| Clamp U and clamp bar | 6 | 5 | 25 % | They take the screw load; at 6 perimeters their slim walls print solid. |
 | Enclosure back | 3 | 4 | 15 % | Add a 5 mm brim: the part is tall and stands on a narrow edge. |
 | Pi carrier | 3 | 3 | 15 % | |
 
-The new clamp U and bar take about 46 g of PETG and about 1 to 1.7 hours on a
-fast printer such as the Snapmaker U1. All four parts take about 80 g and 1.7 to
-3 hours. These figures are estimated from the models at the settings above, not
-sliced; your slicer gives the actual numbers.
+The new clamp U and bar take about 22 g of PETG, compared with about 46 g for
+the R007 clamp, and about 30 to 50 minutes on a fast printer such as the
+Snapmaker U1. All four parts take about 56 g. These figures are estimated from
+the models at the settings above, not sliced; your slicer gives the actual
+numbers.
 
 ## Design guidance used
 
@@ -68,10 +70,11 @@ sliced; your slicer gives the actual numbers.
    [@prusaLayersAndPerimeters]. The parts use 3 to 5.
 4. **Minimum wall.** A wall thinner than one perimeter, about 0.45 mm, cannot
    print [@prusaModelingFor3dPrinting]. Walls over 0.8 mm print on any printer
-   [@hubsKeyDesign3dPrinting]. The 10 mm clamp arms leave 1.4 mm, or three
-   perimeters, beside each screw-head recess in the bar. The thinnest walls
-   are 1.4 mm at those recesses, 1.55 mm around the carrier bores and 2 mm in
-   the PCA9685 wing.
+   [@hubsKeyDesign3dPrinting]. The clamp arms are slimmed to 9.5 mm, the least
+   that keeps three perimeters (1.35 mm or more) around every screw feature:
+   1.6 mm between each nut slot and the tube pocket and 1.4 mm beside each
+   screw-head recess in the bar. Elsewhere the thinnest walls are 1.55 mm
+   around the carrier bores and 2 mm in the PCA9685 wing.
 5. **Overhangs.** Overhangs up to 45° print without supports
    [@hubsFdmDesign; @prusaModelingFor3dPrinting]. Prusa allows 45 to 60°; R006
    uses the stricter 45° for three features:
@@ -106,8 +109,15 @@ sliced; your slicer gives the actual numbers.
    - The enclosure back's hanging load crosses layers only in its lightly loaded
      lower frame.
 10. **Sliding fits.** Moving fits start at 0.3 mm of clearance
-    [@prusaModelingFor3dPrinting]. This agrees with the 0.3 mm dovetail and
-    0.4 mm tube clearances.
+    [@prusaModelingFor3dPrinting]. The tube pocket is 19.8 mm wide: 0.3 mm per
+    side on a 19.2 mm tube, the top of the range, and more on smaller tubes.
+    The clamp grips front to back, so side play does not loosen it. The arms
+    stop 1 mm short of an 18.2 mm tube's front face, so the bar always bears on
+    the tube. The dovetail keeps its 0.3 mm clearance.
+11. **Rounded corners.** Prusa recommends chamfers rather than fillets on edges
+    that face the bed [@prusaModelingFor3dPrinting]. The clamp's rounded
+    corners are on edges that stand vertical as printed, so they print as
+    walls; the edges on the bed keep 0.5 mm chamfers.
 
 The sources I read do not cover these points, so the earlier choices stay:
 
@@ -121,12 +131,15 @@ The sources I read do not cover these points, so the earlier choices stay:
   back follows the perimeter rule above instead: material goes into thin rails
   and walls rather than solid blocks.
 - **Snap fits.** This design has none.
+- **Clamp height.** No source gives a minimum height for a screw clamp. The
+  clamp body is 20 mm, the least that fits two rows of M3 nut slots with 2 mm
+  of plastic above, between and below them.
 
 ## Hardware
 
 | Qty | Item | Use |
 | --- | --- | --- |
-| 4 | M3 × 16 mm socket-head screw (20 or 25 mm also fits) | Clamp bar to the U |
+| 4 | M3 × 16 mm socket-head screw (20 mm also fits) | Clamp bar to the U |
 | 5 | M3 hex nut, 5.5 mm across flats | 4 in the U's side slots, 1 on the lock pin |
 | 1 | M3 × 40 mm screw (35 mm also fits) | Lock pin through the enclosure, below the tongue |
 | 4 | M2.5 × 16 mm socket-head screw | From the front face of the enclosure back, through the carrier's standoffs and the Pi, into the AI HAT+ spacers |
@@ -163,13 +176,13 @@ The clamp stays on the tube.
 
 ## Clearances
 
-These fits are the same as in R006:
+These are the fits:
 
-- The clamp leaves 0.4 mm between the tube and the U at the sides and at the
-  back, so the U slides along the tube before you tighten it.
-- The arms stop 1.5 mm short of the tube's front face, so the bar always bears
-  on the tube. On a 25.4 mm tube, 1.1 mm of that gap remains after
-  tightening.
+- The tube pocket is 19.8 mm wide, so a tube from 18.2 to 19.2 mm slides in
+  with at least 0.3 mm per side.
+- The arms stop short of the tube's front face, so the bar always bears on the
+  tube. After tightening, the gap between the bar and the arms is 1 mm on an
+  18.2 mm tube, 1.4 mm on an 18.6 mm tube and 2 mm on a 19.2 mm tube.
 - The screw holes end 2 mm before the back of the U, so no screw reaches the
   enclosure.
 - The dovetail has 0.3 mm of clearance.
@@ -181,8 +194,8 @@ beside the Pi board.
 
 ## Not verified
 
-- The 1 inch tube size is the user's correction after the 13.35 mm test print;
-  the new clamp itself is unprinted.
+- The tube size is the user's estimate of 18.6 mm or so; the new clamp itself
+  is unprinted.
 - Printed fits: the tube and dovetail fits, the nut slots, and the M2.5 threads
   in the 2.1 mm PCA9685 pilot holes.
 - The strength of the lighter parts: the clamp's grip on the tube, the
