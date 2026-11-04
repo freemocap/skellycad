@@ -24,9 +24,13 @@ def main():
     parser.add_argument('--timeout', type=float, default=900)
     args, rest = parser.parse_known_args()
     check()  # the endpoint must belong to this repository's FreeCAD runtime
+    # Paths are compared normalised: a module imported through 'C:/...' would otherwise never match 'C:\\...'
+    # and would silently keep running stale code.
     code = (f"import sys, importlib, os\n"
+            f"_norm = lambda path: os.path.normcase(os.path.normpath(path))\n"
             f"sys.path.insert(0, {str(SRC)!r}) if {str(SRC)!r} not in sys.path else None\n"
-            f"for _n, _m in [(n, m) for n, m in list(sys.modules.items()) if os.path.dirname(getattr(m, '__file__', '') or '') == {str(SRC)!r}]:\n"
+            f"for _n, _m in [(n, m) for n, m in list(sys.modules.items())\n"
+            f"               if getattr(m, '__file__', None) and _norm(os.path.dirname(m.__file__)) == _norm({str(SRC)!r})]:\n"
             f"    if os.path.exists(_m.__file__):\n"
             f"        importlib.reload(_m)  # pick up edits to every UltraSkelly source module\n"
             f"    else:\n"

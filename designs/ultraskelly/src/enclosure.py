@@ -3,7 +3,8 @@
 A U clamp and front bar stay on the square tube. The enclosure back is a light frame that
 carries the Pi carrier (four standoffs on a frame), the Pi stack with its long axis along the
 tube and the USB end up, and the PCA9685 on a side wing. It slides down onto the clamp's
-dovetail and is locked by one M3 pin, so the electronics lift off without touching the clamp.
+dovetail and is locked by one M2.5 screw through the enclosure into the tongue, so the electronics lift
+off without touching the clamp.
 Every printed part prints without supports. Clamp frame and parameters are in enclosure.json.
 Run live in the project FreeCAD window:
 
@@ -64,6 +65,10 @@ def geometry(p):
     g['block_w'] = c['tongue_tip'] + 2 * ch['clearance'] + 2 * ch['walls']
     g['z_block'] = (-ch['below'], c['tongue_height'] + ch['cap'])
     g['pin'] = (g['x_back'] - c['tongue_depth'] / 2, -ch['below'] / 2)
+    # The clamp body and tongue start body_drop below the enclosure's seat datum, so the tongue reaches the
+    # enclosure's pin hole and takes the lock screw, while the U still stands on one flat bottom.
+    g['z_bed'] = -c['body_drop']
+    g['bolt_z'] = [g['z_bed'] + z for z in c['bolt_heights']]
     g['bolt_y'] = half + c['bolt_y_inset']
     g['nut_slot_x'] = g['x_arm_front'] - c['nut_slot_setback'] - c['nut_slot']
     g['hole_end_x'] = g['x_back'] + c['bolt_hole_back_wall']  # blind: screws cannot reach the enclosure
@@ -85,7 +90,7 @@ def bed_fit_edges(shape, g):
     half, tol = g['half'], 1e-4
     picked = []
     for e in shape.Edges:
-        if max(abs(v.Point.z) for v in e.Vertexes) > tol:
+        if max(abs(v.Point.z - g['z_bed']) for v in e.Vertexes) > tol:
             continue
         m = e.valueAt((e.FirstParameter + e.LastParameter) / 2)
         pocket_side = abs(abs(m.y) - half) < tol and g['x_tube_back'] - tol <= m.x <= g['x_arm_front'] + tol
@@ -109,37 +114,41 @@ def edges_along(shape, axis, keep):
 
 def clamp_u(p, g):
     c, half, H = p['clamp'], g['half'], g['H']
-    outer = box(g['x_back'], g['x_arm_front'], -g['y_out'], g['y_out'], 0, H)
+    zb = g['z_bed']
+    outer = box(g['x_back'], g['x_arm_front'], -g['y_out'], g['y_out'], zb, zb + H)
     # Rounded outer corners: vertical edges print as walls, so the fillets need no support.
     outer = outer.makeFillet(c['corner_radius'], edges_along(outer, 2, lambda m: abs(abs(m.y) - g['y_out']) < 1e-6))
-    body = outer.cut(box(g['x_tube_back'], g['x_arm_front'] + 1, -half, half, -1, H + 1))
-    # The tongue keeps its full height so the printed enclosure still seats and locks on it; above the
-    # clamp body it stands on its own.
+    body = outer.cut(box(g['x_tube_back'], g['x_arm_front'] + 1, -half, half, zb - 1, zb + H + 1))
+    # The tongue reaches up to the enclosure's seat on its top and down to the bed, past the enclosure's pin
+    # hole; above the clamp body it stands on its own.
     x_in, x_tip = g['x_back'] + 0.5, g['x_back'] - c['tongue_depth']
-    body = body.fuse(dovetail(x_in, tongue_width(p, g, x_in), x_tip, c['tongue_tip'], 0, g['H_tongue'])).removeSplitter()
+    body = body.fuse(dovetail(x_in, tongue_width(p, g, x_in), x_tip, c['tongue_tip'], zb, g['H_tongue'])).removeSplitter()
     # A 45 degree chamfer where the pocket and tongue meet the bed keeps the first layer's flare out of the fits.
     body = body.makeChamfer(c['bed_chamfer'], bed_fit_edges(body, g))
     cutters = []
     for s in (1, -1):
-        for z in c['bolt_heights']:
+        for z in g['bolt_z']:
             # Blind holes from the arm front, deep enough for the screw lengths that validate() reports.
             cutters.append(Part.makeCylinder(c['bolt_clearance'] / 2, g['x_arm_front'] + 1 - g['hole_end_x'],
                                              V(g['x_arm_front'] + 1, s * g['bolt_y'], z), V(-1, 0, 0)))
-            y_a, y_b = s * (g['bolt_y'] - 3.4), s * (g['y_out'] + 1)
+            y_a, y_b = s * (g['bolt_y'] - c['nut_slot_inner']), s * (g['y_out'] + 1)
             cutters.append(box(g['nut_slot_x'], g['nut_slot_x'] + c['nut_slot'], min(y_a, y_b), max(y_a, y_b),
                                z - c['nut_flats'] / 2, z + c['nut_flats'] / 2))
+    # Pilot across the tongue for the lock screw, in line with the enclosure's pin hole (behind the U, so it
+    # only cuts the tongue).
+    cutters.append(Part.makeCylinder(c['lock_pilot'] / 2, 2 * g['y_out'] + 2, V(g['pin'][0], -g['y_out'] - 1, g['pin'][1]), V(0, 1, 0)))
     body = body.cut(Part.makeCompound(cutters)).removeSplitter()
     return Part.Solid(body.Solids[0])
 
 
 def clamp_bar(p, g):
     c, (x0, x1) = p['clamp'], g['x_bar']
-    bar = box(x0, x1, -g['y_out'], g['y_out'], 0, g['H'])
+    bar = box(x0, x1, -g['y_out'], g['y_out'], g['z_bed'], g['z_bed'] + g['H'])
     # Rounded corners seen from the front; these edges stand vertical when the bar prints flat.
     bar = bar.makeFillet(c['corner_radius'], edges_along(bar, 0, lambda m: True))
     cutters = []
     for s in (1, -1):
-        for z in c['bolt_heights']:
+        for z in g['bolt_z']:
             cutters.append(Part.makeCylinder(c['bolt_clearance'] / 2, x1 - x0 + 2, V(x0 - 1, s * g['bolt_y'], z), V(1, 0, 0)))
             cutters.append(Part.makeCylinder(c['bolt_head'] / 2, c['bolt_head_depth'] + 1, V(x1 - c['bolt_head_depth'], s * g['bolt_y'], z), V(1, 0, 0)))
     return Part.Solid(bar.cut(Part.makeCompound(cutters)).removeSplitter().Solids[0])
@@ -276,20 +285,21 @@ def validate(p, g, parts):
     u, bar, back = parts['clamp_u'], parts['clamp_bar'], parts['enclosure_back']
     for name in ('clamp_u', 'clamp_bar', 'enclosure_back', 'carrier'):
         assert parts[name].isValid() and len(parts[name].Solids) == 1, f'{name} is not one valid solid'
-    assert not inside(u, 0, 0, g['H'] / 2), 'tube passage blocked'
+    zm = g['z_bed'] + g['H'] / 2
+    assert not inside(u, 0, 0, zm), 'tube passage blocked'
     for s in (1, -1):
-        assert not inside(u, g['x_tube_back'] + 0.05, s * (half - 0.05), g['H'] / 2), 'pocket narrower than the largest tube'
-    for z in (g['H'] / 2, g['H_tongue'] - 1):
+        assert not inside(u, g['x_tube_back'] + 0.05, s * (half - 0.05), zm), 'pocket narrower than the largest tube'
+    for z in (zm, g['H_tongue'] - 1):
         assert inside(u, g['x_back'] - c['tongue_depth'] / 2, 0, z), 'dovetail tongue missing'
     t_min, t_max = p['tube']['range']
     assert g['x_arm_front'] < g['x_tube_back'] + t_min, 'arms reach the front face of the smallest tube'
     for s in (1, -1):
-        for z in c['bolt_heights']:
+        for z in g['bolt_z']:
             y = s * g['bolt_y']
             assert not inside(u, g['x_arm_front'] - 1, y, z) and not inside(bar, g['x_bar'][0] + 1, y, z), 'bolt hole missing'
             assert not inside(u, g['hole_end_x'] + 0.5, y, z), 'bolt hole too short'
             assert inside(u, g['hole_end_x'] - 1, y, z), 'bolt hole runs past its depth'
-            assert not inside(u, g['nut_slot_x'] + 1.5, s * (g['bolt_y'] + 2), z), 'nut slot missing'
+            assert not inside(u, g['nut_slot_x'] + c['nut_slot'] / 2, s * (g['bolt_y'] + 2), z), 'nut slot missing'
     # Screw lengths across the tube range, clamped: the tip passes the nut by 1.5 mm on the largest tube and
     # stops 1.5 mm short of the hole end on the smallest.
     head = lambda t: g['x_tube_back'] + t + c['bar'] - c['bolt_head_depth']
@@ -301,7 +311,13 @@ def validate(p, g, parts):
     assert not inside(back, g['x_back'] - c['tongue_depth'] / 2, 0, zb0 - 2), 'channel closed below the block'
     assert inside(back, g['x_plate_front'] + 0.5, g['block_w'] / 2 - 1, zb0 - 1.5), 'chamfer under the block missing'
     assert not inside(back, g['pin'][0], 0, g['pin'][1]), 'lock pin hole blocked'
-    assert g['pin'][1] + ch['pin_clearance'] / 2 < 0, 'lock pin would hit the seated tongue'
+    # The lock screw passes the enclosure's pin hole in one wall and threads into the tongue's pilot.
+    assert not inside(u, g['pin'][0], 0, g['pin'][1]), 'lock pilot missing in the tongue'
+    assert g['pin'][1] - c['lock_pilot'] / 2 - g['z_bed'] >= 1.35, 'under three perimeters below the lock pilot'
+    tongue_here = tongue_width(p, g, g['pin'][0])
+    wall = g['block_w'] / 2 - (tongue_here / 2 + ch['clearance'])  # enclosure side wall at the pin
+    lock_engagement = c['lock_screw'] - wall - ch['clearance']
+    assert 2 * 2.5 <= lock_engagement < tongue_here - 1, f'lock screw engagement {lock_engagement:.1f} mm'
     for y, z in pi_holes(p):
         assert not inside(back, g['x_plate_back'] + 0.5, y, z), 'Pi screw hole missing'
         assert inside(back, g['x_plate_back'] + 0.5, y + (4.0 if y > 0 else -4.0), z), 'plate missing around a Pi screw'
@@ -312,16 +328,17 @@ def validate(p, g, parts):
         r = p['pca9685']['boss_diameter'] / 2
         assert inside(back, x, g['wing_y'][1] + 1, z - r * 1.2), 'teardrop under a PCA9685 boss missing'
     k = c['bed_chamfer']
-    assert not inside(u, g['x_tube_back'] - k / 3, 0, k / 3), 'pocket edge on the bed not chamfered'
-    assert not inside(u, g['x_back'] - c['tongue_depth'] + k / 3, 0, k / 3), 'tongue edge on the bed not chamfered'
-    assert inside(u, g['x_tube_back'] - 2 * k, 0, k / 3), 'U base missing behind the pocket chamfer'
+    zk = g['z_bed'] + k / 3
+    assert not inside(u, g['x_tube_back'] - k / 3, 0, zk), 'pocket edge on the bed not chamfered'
+    assert not inside(u, g['x_back'] - c['tongue_depth'] + k / 3, 0, zk), 'tongue edge on the bed not chamfered'
+    assert inside(u, g['x_tube_back'] - 2 * k, 0, zk), 'U base missing behind the pocket chamfer'
     clashes = {'clamp_u-back': u.common(back).Volume, 'clamp_u-bar': u.common(bar).Volume,
                'carrier-back': parts['carrier'].common(back).Volume, 'pca-back': parts['pca9685'].common(back).Volume}
     for name, volume in clashes.items():
         assert volume < 1e-3, f'{name} overlap {volume:.3f} mm3'
     return {'valid': True, 'clash_mm3': {k: round(v, 4) for k, v in clashes.items()},
             'volumes_mm3': {k: round(parts[k].Volume, 1) for k in ('clamp_u', 'clamp_bar', 'enclosure_back', 'carrier')},
-            'clamp_screw_length_mm': list(screws)}
+            'clamp_screw_length_mm': list(screws), 'lock_screw_engagement_mm': round(lock_engagement, 1)}
 
 
 def build(doc, p, dz=0.0, lift=0.0, tube=True):
@@ -343,7 +360,7 @@ def build(doc, p, dz=0.0, lift=0.0, tube=True):
         return cadkit.add(doc, name, shape, color, transparency, label=label)
 
     add('ClampU', parts['clamp_u'], CLAMP, 'U clamp with dovetail (print)')
-    add('ClampBar', parts['clamp_bar'], CLAMP, 'Clamp bar, 4 x M3 (print)')
+    add('ClampBar', parts['clamp_bar'], CLAMP, 'Clamp bar, 4 x M2.5 (print)')
     add('EnclosureBack', back, BACK, 'Enclosure back with dovetail channel and PCA9685 wing (print)', offset=lifted)
     add('PiCarrier', carrier_shape, CARRIER, 'Pi carrier: frame and four standoffs (print)', offset=lifted)
     z = case_view.stack_heights()
@@ -352,8 +369,10 @@ def build(doc, p, dz=0.0, lift=0.0, tube=True):
                                        ('MotorHat', vendor.shape('motor-hat-step'), z['motor_hat_bottom'], hardware_view.HAT_BLUE)):
         add(name, cadkit.moved(hardware_view.placed(shape, 0, 0, height), m), color, name, offset=lifted)
     add('PCA9685', pca, hardware_view.PCA_BLUE, 'PCA9685 on the side wing', offset=lifted)
-    pin = Part.makeCylinder(1.5, g['block_w'] + 6, V(g['pin'][0], -g['block_w'] / 2 - 3, g['pin'][1]), V(0, 1, 0))
-    add('LockPin', pin, PIN, 'M3 lock pin', offset=lifted)
+    y_wall = -g['block_w'] / 2
+    lock = Part.makeCylinder(1.25, p['clamp']['lock_screw'], V(g['pin'][0], y_wall, g['pin'][1]), V(0, 1, 0)).fuse(
+        Part.makeCylinder(2.25, 2.5, V(g['pin'][0], y_wall - 2.5, g['pin'][1]), V(0, 1, 0)))
+    add('LockPin', lock, PIN, f"M2.5 x {p['clamp']['lock_screw']} lock screw into the tongue", offset=lifted)
     if tube:
         w = p['tube']['outside'] / 2
         add('SpineTube', box(-w, w, -w, w, -60, 140), STEEL, f"Square tube, {p['tube']['outside']} mm", 40)

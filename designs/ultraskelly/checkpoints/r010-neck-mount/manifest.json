@@ -1,0 +1,503 @@
+{
+  "schema_version": 1,
+  "id": "US-NECK-MOUNT-R010",
+  "units": "mm",
+  "date": "2026-11-04",
+  "status": "Reprint the clamp U and clamp bar only: they take M2.5 hardware. The enclosure back and Pi carrier are byte-identical to R006 to R009, which the user has printed.",
+  "fastener_size": {
+    "size": "M2.5",
+    "screw_lengths_mm": [
+      6,
+      16
+    ],
+    "reason": "The Pi 5 mounting holes are 2.7 mm, too small for M3 [@raspberrypi2025Pi5Drawing]; the AI HAT+, the Motor HAT and the PCA9685 already mount with M2.5. Only the clamp and its lock used M3."
+  },
+  "fit_test": {
+    "result": "U1 (18.9 mm pocket), chosen by the user from U1-U5 on the tube on 2026-11-03; kept in R010",
+    "tube_mm": [
+      18.0,
+      18.6
+    ],
+    "follow_up": "If U1 wobbles sideways once the bar is tight, the next step is a pocket 0.3 mm tighter (18.6 mm)."
+  },
+  "source": {
+    "builder": "designs/ultraskelly/src/enclosure.py",
+    "parameters": "designs/ultraskelly/src/enclosure.json (U1 kept: tube range 18.0 to 18.6, clearance 0.15, arm 9.95, bolt inset 5.45. M2.5: clearance 2.9, head recess 5.1 by 2.7, nut slot 5.4 by 2.6 reaching 3.2 past the axis, body_drop 7.5, lock pilot 2.1, lock screw 16)",
+    "parameters_sha256": "c9321a1d1b6222d7eb65e6e1663a748ef9767979cd99b9896581fb83d3cefcba",
+    "build": {
+      "run": "generated/ultraskelly/enclosure/r017",
+      "native": {
+        "path": "enclosure.FCStd",
+        "sha256": "577c2d98e2529ddf470a8e1e96f428e55d15fa3dc646792b23bc662d9412cf90"
+      },
+      "freecad": [
+        "1",
+        "1",
+        "4",
+        "20260928 (Git shallow)"
+      ]
+    },
+    "clamp_files": "clamp-u.stl and clamp-bar.stl as exported by the build, byte for byte",
+    "kept_files": "enclosure-back.stl, pi-carrier.stl and their images copied from R009 (the R006 files)",
+    "mesh_audit": "generated/ultraskelly/releases/audit-r010 (trimesh: one watertight volume each)",
+    "images": "clamp images rendered from the released files with part_images.py and part_titles.py, run generated/ultraskelly/part-images/r017; enclosure back and carrier images from R006",
+    "live_reload": "live.py compares module paths normalised, so source edits reload in the running FreeCAD. Build r016 ran stale code before this fix and was discarded.",
+    "commit": "The commit that adds this checkpoint."
+  },
+  "parts": {
+    "clamp-u.stl": {
+      "part": "Clamp U: U1 pocket (18.9 mm), 20 mm body, 47.5 mm dovetail tongue, M2.5 nut slots and holes, lock pilot",
+      "reprint": true,
+      "sha256": "d13c90af570cfd544a3818d7a085fb525223803d3b680282818fb1511f7a6af9",
+      "bytes": 266084,
+      "triangles": 5320,
+      "watertight": true,
+      "shells": 1,
+      "extents_mm": [
+        27.0,
+        38.8,
+        47.5
+      ],
+      "volume_cm3": 14.49,
+      "pocket_mm": 18.9,
+      "fits_tube_mm": [
+        18.0,
+        18.6
+      ],
+      "walls_mm": {
+        "nut_slot_to_pocket": 2.25,
+        "beside_bar_head_recess": 1.95,
+        "lock_pilot_to_tongue_tip": 1.95,
+        "lock_pilot_to_bed": 2.45,
+        "nut_slot_to_body_top_and_bottom": 2.3,
+        "between_nut_slots": 4.6
+      },
+      "m25_screw_length_mm": [
+        13.9,
+        21.8
+      ],
+      "lock_pilot_mm": 2.1,
+      "lock_screw_engagement_mm": 10.2,
+      "changes_from_r009": "Pocket, arms and dovetail profile kept. M2.5 clearance holes (2.9 mm), nut slots (5.4 by 2.6 mm) and a 2.1 mm lock pilot across the tongue; body and tongue start 7.5 mm lower, so the tongue is 47.5 mm tall and reaches the enclosure lock hole. No engraved number.",
+      "orientation": "Standing on its lower end, tube opening vertical; as exported.",
+      "supports": "none",
+      "settings": {
+        "walls": 6,
+        "top_bottom_layers": 5,
+        "infill": "25 % gyroid"
+      },
+      "estimate_g": 18.4,
+      "image": {
+        "file": "clamp-u.png",
+        "sha256": "75f17462e16db24831e24fa7fb732e5e526279c7500ee1fd92ee8936dfc1a82e"
+      }
+    },
+    "clamp-bar.stl": {
+      "part": "Clamp bar, 20 mm tall, with M2.5 holes and head recesses",
+      "reprint": true,
+      "sha256": "2995bb3261dfa10601da1e93a28f3a07417524f108cda8e260474b263fd67482",
+      "bytes": 228684,
+      "triangles": 4572,
+      "watertight": true,
+      "shells": 1,
+      "extents_mm": [
+        20.0,
+        38.8,
+        6.0
+      ],
+      "volume_cm3": 4.33,
+      "holes_mm": {
+        "clearance": 2.9,
+        "head_recess": [
+          5.1,
+          2.7
+        ]
+      },
+      "changes_from_r009": "Same outline; M2.5 holes and recesses. No engraved number.",
+      "orientation": "Flat, screw-head recesses up; as exported.",
+      "supports": "none",
+      "settings": {
+        "walls": 6,
+        "top_bottom_layers": 5,
+        "infill": "25 % gyroid"
+      },
+      "estimate_g": 5.3,
+      "image": {
+        "file": "clamp-bar.png",
+        "sha256": "39abf4d40beb01822e36cf68d4a285257f3942cd8ce38c8d71e23aefedc888b5"
+      }
+    },
+    "enclosure-back.stl": {
+      "part": "Enclosure back: frame plate, dovetail channel with a 45 degree chamfer, PCA9685 wing and tie tab",
+      "sha256": "a67544b2ccab5952a3ab7bff235883f3965b94094bfff3ddeac66fc25cf311c6",
+      "bytes": 551884,
+      "extents_mm": [
+        41.7,
+        71.0,
+        104.0
+      ],
+      "volume_cm3": 26.53,
+      "shells": 1,
+      "watertight": true,
+      "orientation": "Standing on its lower end; as exported. Add a 5 mm brim.",
+      "supports": "none",
+      "settings": {
+        "walls": 3,
+        "top_bottom_layers": 4,
+        "infill": "15 % gyroid"
+      },
+      "estimate_g": 30.9,
+      "image": {
+        "file": "enclosure-back.png",
+        "sha256": "2dde50a82efc081bea008f96d6130ca16bff5ae596fbc2bd96d02c931d4b882a"
+      },
+      "from_r006": {
+        "commit": "09219d0",
+        "checkpoint": "designs/ultraskelly/checkpoints/r006-neck-mount"
+      },
+      "reprint": false,
+      "reproduced": "The file keeps the R006 frame. The R010 build (generated/ultraskelly/enclosure/r017) exports the same mesh moved 2.075 mm along -X: equal vertex and face counts, largest vertex difference 3.1e-06 mm after the shift (float32 rounding)."
+    },
+    "pi-carrier.stl": {
+      "part": "Pi carrier: rail frame with four standoffs on the Pi 5 hole pattern",
+      "sha256": "3b41b45eeebca073f588288d183a2c412b3fb4dc4fb913763d6b051263819ab2",
+      "bytes": 206084,
+      "extents_mm": [
+        64.0,
+        55.0,
+        7.5
+      ],
+      "volume_cm3": 2.19,
+      "shells": 1,
+      "watertight": true,
+      "orientation": "Flat, standoffs facing up; as exported.",
+      "supports": "none",
+      "settings": {
+        "walls": 3,
+        "top_bottom_layers": 3,
+        "infill": "15 % gyroid"
+      },
+      "estimate_g": 2.8,
+      "image": {
+        "file": "pi-carrier.png",
+        "sha256": "2488de02bff71cf7bcbc1e7fc7761061be060b9ea2b7e2c4f9bf425338fc1a63"
+      },
+      "from_r006": {
+        "commit": "09219d0",
+        "checkpoint": "designs/ultraskelly/checkpoints/r006-neck-mount"
+      },
+      "reprint": false,
+      "reproduced": "The R010 build (generated/ultraskelly/enclosure/r017) exports this file byte-identically."
+    }
+  },
+  "design_guidance": [
+    {
+      "rule": "Strength comes mostly from perimeters; most parts need 10 to 15 % infill, rarely over 30 %; thicker walls raise strength more than infill.",
+      "sources": "[@prusaLayersAndPerimeters; @prusaInfill; @cncKitchenExtrusionWidth; @cncKitchenPrintsVsWood]",
+      "change": "Clamp 6 perimeters with 25 % infill; enclosure back and carrier 3 perimeters with 15 % infill."
+    },
+    {
+      "rule": "Gyroid infill has equal strength in all directions and a good strength-to-weight ratio.",
+      "sources": "[@prusaInfillPatterns]",
+      "change": "Gyroid for every part."
+    },
+    {
+      "rule": "At least 3 top layers over sparse infill.",
+      "sources": "[@prusaLayersAndPerimeters]",
+      "change": "3 to 5 top and bottom layers."
+    },
+    {
+      "rule": "Walls thinner than one perimeter (about 0.45 mm) do not print; walls over 0.8 mm print on any printer.",
+      "sources": "[@prusaModelingFor3dPrinting; @hubsKeyDesign3dPrinting]",
+      "change": "At least three perimeters (1.35 mm) around every clamp screw feature; see parts.clamp-u.stl.walls_mm."
+    },
+    {
+      "rule": "Overhangs up to 45 degrees print without supports (Prusa allows 45 to 60).",
+      "sources": "[@hubsFdmDesign; @prusaModelingFor3dPrinting]",
+      "change": "45 degree chamfer under the dovetail block, peaked window tops and teardrop PCA9685 bosses."
+    },
+    {
+      "rule": "Bridges sag unless shorter than 5 mm.",
+      "sources": "[@hubsFdmDesign]",
+      "change": "Peaked window tops; horizontal holes 5.6 mm or smaller; 2.6 mm nut-slot tops; the 20 mm dovetail cap kept as the one bridge."
+    },
+    {
+      "rule": "Edges on the build plate flare; chamfer them where fit matters.",
+      "sources": "[@hubsFdmDesign]",
+      "change": "0.5 mm chamfers on the clamp U tube opening and dovetail tongue at the bed."
+    },
+    {
+      "rule": "Thread-forming screws in thermoplastics: pilot 0.8 x diameter with an entry counterbore; printed holes come out undersized.",
+      "sources": "[@semblexDeltaPt; @hubsFdmDesign]",
+      "change": "PCA9685 pilots and the tongue lock pilot 2.1 mm (0.84 x 2.5 mm); 2.9 by 0.5 mm counterbores on the PCA9685 bosses; none on the lock pilot, which enters the solid tongue."
+    },
+    {
+      "rule": "FDM parts are weaker between layers; orient structural parts for their load.",
+      "sources": "[@prusaModelingFor3dPrinting; @hubsFdmDesign; @cncKitchenPrintsVsWood]",
+      "change": "Clamp loads run along the layers; the bar takes head pressure across them."
+    },
+    {
+      "rule": "Printers are accurate to about 0.2 mm; moving fits start at 0.3 mm clearance.",
+      "sources": "[@prusaModelingFor3dPrinting]",
+      "change": "U1 pocket 18.9 mm: 0.15 to 0.45 mm per side on an 18.0 to 18.6 mm tube; 0.3 mm dovetail clearance."
+    },
+    {
+      "rule": "Chamfers rather than fillets on edges facing the bed.",
+      "sources": "[@prusaModelingFor3dPrinting]",
+      "change": "Rounded corners only on edges that stand vertical as printed; bed edges keep 0.5 mm chamfers."
+    },
+    {
+      "rule": "Moving fits start at 0.3 mm clearance; vertical holes print undersized.",
+      "sources": "[@prusaModelingFor3dPrinting; @hubsFdmDesign]",
+      "change": "M2.5 clearance holes 2.9 mm, 0.4 mm over the screw as R006 used 3.4 mm for M3; head recesses 5.1 by 2.7 mm for the 4.5 by 2.5 mm head; the enclosure lock hole stays 3.4 mm."
+    }
+  ],
+  "not_covered_by_sources": [
+    "nut-trap sizes (M2.5 slots 5.4 by 2.6 mm for a 5.0 by 2.0 mm nut: R006 allowance of 0.4 mm over the flats and 0.6 mm over the thickness; narrower than the 5.8 mm across corners, so the nut cannot turn)",
+    "screw engagement and boss size in printed parts (PCA9685: about 1.8 x d engagement, 2.2 x d boss; lock screw 10.2 mm, 4.1 x d)",
+    "FDM rib rules",
+    "snap fits (none in this design)",
+    "minimum clamp height (20 mm body kept; the M2.5 nut slots leave 2.3 mm above and below and 4.6 mm between)"
+  ],
+  "print_settings": {
+    "material": "PETG",
+    "layer_height_mm": 0.2,
+    "per_part": {
+      "clamp-u.stl": {
+        "walls": 6,
+        "top_bottom_layers": 5,
+        "infill": "25 % gyroid"
+      },
+      "clamp-bar.stl": {
+        "walls": 6,
+        "top_bottom_layers": 5,
+        "infill": "25 % gyroid"
+      },
+      "enclosure-back.stl": {
+        "walls": 3,
+        "top_bottom_layers": 4,
+        "infill": "15 % gyroid"
+      },
+      "pi-carrier.stl": {
+        "walls": 3,
+        "top_bottom_layers": 3,
+        "infill": "15 % gyroid"
+      }
+    },
+    "supports": "none",
+    "brim": "5 mm on the enclosure back",
+    "bed_min_mm": [
+      120,
+      120
+    ]
+  },
+  "estimate": {
+    "reprint_g": 23.7,
+    "reprint_minutes_at_10_to_6_mm3_s": [
+      31,
+      52
+    ],
+    "set_filament_g": 57.4,
+    "set_hours_at_10_to_6_mm3_s": [
+      1.3,
+      2.1
+    ],
+    "method": "Not sliced; the Snapmaker Orca command line crashed with the U1 profiles. Per part: side area x walls x 0.45 mm plus flat area x top/bottom layers x 0.2 mm, capped at the solid volume, plus infill in the rest; PETG at 1.27 g/cm3. Time at an average 6 to 10 mm3/s, as on a fast printer such as the U1."
+  },
+  "hardware": [
+    {
+      "qty": 4,
+      "length_mm": 16,
+      "item": "M2.5 socket-head cap screw",
+      "use": "Clamp bar to the U, into the captured nuts",
+      "check": "validate() fits M2.5 screws from 13.9 to 21.8 mm across 18.0 to 18.6 mm tubes"
+    },
+    {
+      "qty": 4,
+      "length_mm": 16,
+      "item": "M2.5 socket-head cap screw",
+      "use": "Front face of the enclosure back, through the carrier standoffs and the Pi, into the AI HAT+ spacers"
+    },
+    {
+      "qty": 1,
+      "length_mm": 16,
+      "item": "M2.5 socket-head cap screw",
+      "use": "Lock: through the 3.4 mm hole in the enclosure dovetail block into the 2.1 mm tongue pilot",
+      "check": "10.2 mm engagement in a 19.0 mm tongue"
+    },
+    {
+      "qty": 4,
+      "length_mm": 6,
+      "item": "M2.5 socket-head cap screw",
+      "use": "Motor HAT onto its standoffs"
+    },
+    {
+      "qty": 4,
+      "length_mm": 6,
+      "item": "M2.5 socket-head cap screw",
+      "use": "PCA9685 into the printed 2.1 mm pilots"
+    },
+    {
+      "qty": 4,
+      "length_mm": null,
+      "item": "M2.5 hex nut, 5.0 mm across flats, 2.0 mm thick",
+      "use": "In the U side slots"
+    },
+    {
+      "qty": 4,
+      "length_mm": [
+        10,
+        12
+      ],
+      "item": "M2.5 male-female standoff",
+      "use": "AI HAT+ to Motor HAT; measure the header gap: 10 mm for a gap up to 10 mm, 12 mm up to 12 mm"
+    },
+    {
+      "qty": 4,
+      "length_mm": 16,
+      "item": "M2.5 spacer, supplied with the AI HAT+ [@raspberrypi2024AiHatBrief]",
+      "use": "Pi to AI HAT+; assumed threaded at both ends; nothing to buy"
+    }
+  ],
+  "other_items": [
+    {
+      "qty": "2 or more",
+      "item": "Zip tie, up to 4.8 mm wide",
+      "use": "Wire bundle through the tie-tab slots"
+    }
+  ],
+  "buy": {
+    "screws": "M2.5 socket-head cap screws, 6 and 16 mm (at least 8 and 9)",
+    "nuts": "M2.5 hex nuts, 5.0 mm across flats (at least 4)",
+    "standoffs": "M2.5 male-female standoffs, 10 and 12 mm (4 of the length that fits)",
+    "longest_screw_mm": 16
+  },
+  "tube_fit_mm": {
+    "pocket_width": 18.9,
+    "fits_tube_per_side": [
+      18.0,
+      18.6
+    ],
+    "play_per_side": [
+      0.15,
+      0.45
+    ],
+    "arm_short_of_smallest_tube_front": 1.0,
+    "bar_to_arm_gap_after_tightening": {
+      "18.0": 1.0,
+      "18.3": 1.3,
+      "18.6": 1.6
+    },
+    "screw_hole_back_wall": 2.0,
+    "clamp_screw_length_mm": [
+      13.9,
+      21.8
+    ]
+  },
+  "envelope_mm": {
+    "frame": "Builder frame: origin on the axis of an 18.3 mm tube; z = 0 is the enclosure seat datum, the clamp lower end up to R009. The R010 clamp starts 7.5 mm lower, at z = -7.5 (clamp.body_drop).",
+    "measured": "Union of the part and board bounding boxes in the r017 document, without the tube.",
+    "overall": {
+      "front_to_back": 84.9,
+      "side_to_side": 81.1,
+      "height": 104.0
+    },
+    "x_range": [
+      -69.74,
+      15.15
+    ],
+    "y_range": [
+      -31.5,
+      49.59
+    ],
+    "z_range": [
+      -17.5,
+      86.5
+    ],
+    "relative_to_clamp_lower_end": {
+      "below": 10.0,
+      "above": 94.0
+    },
+    "clamp": {
+      "width": 38.8,
+      "body_height": 20,
+      "body_z": [
+        -7.5,
+        12.5
+      ],
+      "tongue_height": 47.5,
+      "tongue_z": [
+        -7.5,
+        40.0
+      ],
+      "tongue_above_body": 27.5,
+      "bar_in_front_of_tube": 6.0
+    },
+    "behind_tube_back_face": 60.6
+  },
+  "interfaces": {
+    "tube": "Square tube of 18.0 to 18.6 mm: 18.9 mm pocket; the bar takes up the front-to-back slack",
+    "dovetail": "Tongue root 16, tip 22, depth 6, height 47.5 (z -7.5 to 40), 0.5 mm bed chamfer; mates the unchanged enclosure back channel (0.3 mm clearance)",
+    "lock": "M2.5 x 16 through the 3.4 mm hole in the enclosure block (axis x -16.15, z -4) into a 2.1 mm pilot right across the tongue: 5.5 mm wall, 0.3 mm gap, 10.2 mm engagement in a 19.0 mm tongue; from either side",
+    "pi": "Pi 5 board underside 7.5 mm behind the plate on the carrier standoffs, as on the R004 case"
+  },
+  "geometry_validation": {
+    "valid": true,
+    "clash_mm3": {
+      "clamp_u-back": 0.0,
+      "clamp_u-bar": 0.0,
+      "carrier-back": 0.0,
+      "pca-back": 0.0
+    },
+    "volumes_mm3": {
+      "clamp_u": 14490.3,
+      "clamp_bar": 4327.6,
+      "enclosure_back": 26526.9,
+      "carrier": 2185.4
+    },
+    "clamp_screw_length_mm": [
+      13.9,
+      21.8
+    ],
+    "lock_screw_engagement_mm": 10.2
+  },
+  "overhangs": "Checked on the exported meshes: 45 degree chamfers, peaks and teardrops, holes of 5.6 mm or less, 2.6 mm nut-slot tops, and one 20 mm bridge under the dovetail cap; no supports needed.",
+  "clamp_u_downward_faces_mm2_by_z": {
+    "0.0": 31.2,
+    "4.0": 18.4,
+    "5.0": 12.5,
+    "6.0": 75.9,
+    "8.0": 40.0,
+    "16.0": 75.9,
+    "18.0": 40.0
+  },
+  "robot_clearance": "Not assessed. Only the mount size (envelope_mm) and the bare tube length are given.",
+  "not_established": [
+    "the M2.5 clamp U and bar are unprinted; they keep U1 pocket, chosen by hand on the tube; grip under the robot motion untested",
+    "printed dimensions, the tube and dovetail fits, the M2.5 nut slots, and the M2.5 threads in the 2.1 mm PCA9685 and tongue pilots",
+    "strength of the lighter parts and settings, the clamp grip, and the M2.5 lock screw under robot motion; wear of its thread in the tongue with repeated removal",
+    "M2.5 machine screws in the 2.1 mm printed pilots: the 0.8 x d rule is for moulded bosses and thread-forming screws",
+    "Motor HAT standoff length (10 or 12 mm, chosen at assembly) and the AI HAT+ spacer threads",
+    "wiring: drawn schematically; cable lengths and the bundle route",
+    "Pi 5 and AI HAT+ temperatures",
+    "print time and filament: estimated, not sliced"
+  ],
+  "removed_on_2026-11-04": {
+    "reason": "Superseded by the M2.5 set; the user asked for superseded models to be deleted, not kept.",
+    "tracked": {
+      "paths": [
+        "designs/ultraskelly/checkpoints/r009-neck-mount (US-NECK-MOUNT-R009, M3 clamp and lock pin; its enclosure back and carrier continue here byte-identical)"
+      ],
+      "source": "git commit 3052fc6"
+    },
+    "untracked": {
+      "paths": [
+        "generated/ultraskelly/enclosure/r015",
+        "generated/ultraskelly/enclosure/r016",
+        "generated/ultraskelly/part-images/r009",
+        "generated/ultraskelly/print-pack/US-NECK-MOUNT-R009.zip"
+      ],
+      "where": "Windows Recycle Bin; r015 and the R009 files rebuild from git commit 3052fc6"
+    }
+  }
+}
