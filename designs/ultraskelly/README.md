@@ -15,7 +15,7 @@ physical fit is unverified.
 | --- | --- |
 | Fit coupon | Scripted print test for the Pi 5 hole pattern, M2.5 pilot holes and zip-tie slots. Not yet printed. |
 | Camera bracket | Planned. Holds the ZED Mini at the eye sockets and the OAK-1 at the nose hole, and defines each sensor's pose in the head frame. |
-| Neck clamp and enclosure (`enclosure`) | Concept approved on 2026-11-02, lightened on 2026-11-03 with shapes and print settings checked against published FDM guidance, and given a smaller, rounded clamp the same day for the square tube of about 18.6 mm (it fits 18.2 to 19.2 mm) after test prints of larger clamps. All four printed parts are released as one set, [US-NECK-MOUNT-R008](checkpoints/r008-neck-mount/README.md), and none needs supports; its enclosure back and Pi carrier are byte-identical to the earlier sets. A U clamp and front bar (4 x M3) stay on the square tube. The enclosure back is a light frame that carries the Pi on a four-standoff carrier, the Pi stack with its long axis along the tube and the USB end up, and the PCA9685 on a side wing; it slides down onto the clamp's dovetail and one M3 pin locks it, so the electronics lift off without touching the clamp. |
+| Neck clamp and enclosure (`enclosure`) | Concept approved on 2026-11-02, lightened on 2026-11-03 with shapes and print settings checked against published FDM guidance, and given a smaller, rounded clamp the same day for the square tube of about 18.6 mm (it fits 18.2 to 19.2 mm) after test prints of larger clamps. All four printed parts are released as one set, [US-NECK-MOUNT-R008](checkpoints/r008-neck-mount/README.md), and none needs supports; its enclosure back and Pi carrier are byte-identical to the earlier sets. A numbered [clamp fit set](checkpoints/r008-clamp-fit-set/README.md) adds five clamp U sizes (18.9 to 20.1 mm pockets) and one bar for all of them, to print together and keep the U that fits. A U clamp and front bar (4 x M3) stay on the square tube. The enclosure back is a light frame that carries the Pi on a four-standoff carrier, the Pi stack with its long axis along the tube and the USB end up, and the PCA9685 on a side wing; it slides down onto the clamp's dovetail and one M3 pin locks it, so the electronics lift off without touching the clamp. |
 
 ## Layout
 
@@ -62,6 +62,9 @@ into it from the repository root:
   `part_titles` adds a large name band above each image.
 - `compare_images` renders each part of an earlier and a new print set at one
   scale, and `compare_sheet` lays the pairs out with their names and grams.
+- `clamp_set` builds the numbered clamp fit set from `src/enclosure.json`: five
+  U sizes with sunk numbers and one bar, laid out on one plate. `plate_files`
+  joins the parts into the plate STL and a 3MF with one named object per part.
 
 Each run saves a new folder under `generated/ultraskelly/` and leaves the
 document open for review. `snapshot` saves the active view as a PNG.
