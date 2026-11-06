@@ -1,0 +1,15 @@
+{
+  "units": "mm",
+  "part": "Tube splice: one U channel and two front bars that hold two pieces of the square tube end to end.",
+  "profile": "Cross-section from enclosure.json (tube and clamp sections): the fit-tested U1 pocket (18.9 mm) with the M2.5 clearance holes, captured-nut slots and head recesses of US-NECK-MOUNT-R010.",
+  "grip": 30.0,
+  "split_gap": 0.5,
+  "row_inset": 5.0,
+  "screw": 16,
+  "notes": {
+    "grip": "Length of U that holds each tube piece; the tube ends meet at z = grip, the middle of the U. 30 mm is 1.5 times the neck clamp's 20 mm: the pocket's 0.3 to 0.9 mm of sideways play then lets a piece rock at most 0.6 to 1.7 degrees before the arms stop it, instead of 0.9 to 2.6.",
+    "split_gap": "Space between the two bars at the split, so each bar tightens on its own tube piece.",
+    "row_inset": "Each bar's two screw rows sit this far from its ends.",
+    "screw": "M2.5 socket-head screw length, checked against the clamp's screw window."
+  }
+}

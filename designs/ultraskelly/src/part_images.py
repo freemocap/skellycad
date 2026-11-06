@@ -9,7 +9,9 @@ per step so the window redraws between images:
     tools/cad/.venv/Scripts/python.exe -B designs/ultraskelly/src/live.py part_images finish
     tools/cad/.venv/Scripts/python.exe -B designs/ultraskelly/src/part_titles.py generated/ultraskelly/part-images/r007
 
-`build` checks each STL against its build report before loading it.
+`build` loads the STL files listed in the run's build report, after checking each against its
+hash there. Images go to generated/ultraskelly/part-images/<run> for an enclosure run and to
+part-images/<part>-<run> for other parts, such as part-images/splice-r001.
 """
 import argparse
 import json
@@ -30,6 +32,8 @@ PARTS = {
     'clamp-bar': ('2  Clamp bar', (0.95, 0.55, 0.15), (0.6, -1.0, 1.3), 'no supports'),
     'enclosure-back': ('3  Enclosure back', (0.3, 0.6, 0.85), (1.0, 0.9, 0.7), 'no supports, 5 mm brim'),
     'pi-carrier': ('4  Pi carrier', (0.72, 0.74, 0.78), (0.6, -1.0, 1.2), 'no supports'),
+    'splice-u': ('1  Splice U', (0.95, 0.55, 0.15), (1.0, -0.9, 1.1), 'no supports'),
+    'splice-bar': ('2  Splice bar, print 2', (0.95, 0.55, 0.15), (0.6, -1.0, 1.3), 'no supports'),
 }
 
 
@@ -60,13 +64,19 @@ def camera(view, look_from):
 
 def build(stl_folder):
     report = json.loads((stl_folder / 'build-report.json').read_text(encoding='utf-8'))
-    out = cadkit.GENERATED / 'part-images' / stl_folder.name
+    stems = [name[:-len('.stl')] for name in report['prints']]
+    unknown = [stem for stem in stems if stem not in PARTS]
+    if unknown:
+        raise ValueError(f'no image settings for {unknown}; add them to PARTS')
+    run = stl_folder.name if report['part'] == 'enclosure' else f"{report['part']}-{stl_folder.name}"
+    out = cadkit.GENERATED / 'part-images' / run
     out.mkdir(parents=True, exist_ok=False)
     if DOC in App.listDocuments():
         raise RuntimeError(f'{DOC} is already open; finish or close it first')
     doc = App.newDocument(DOC)
     titles = {}
-    for stem, (title, color, _view, supports) in PARTS.items():
+    for stem in stems:
+        title, color, _view, supports = PARTS[stem]
         path = stl_folder / f'{stem}.stl'
         sha = cadkit.sha256(path)
         if sha != report['prints'][path.name]['sha256']:
