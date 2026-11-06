@@ -11,7 +11,7 @@ per step so the window redraws between images:
 
 `build` loads the STL files listed in the run's build report, after checking each against its
 hash there. Images go to generated/ultraskelly/part-images/<run> for an enclosure run and to
-part-images/<part>-<run> for other parts, such as part-images/splice-r001.
+part-images/<part>-<run> for other parts, such as part-images/splice-r002.
 """
 import argparse
 import json
@@ -33,7 +33,7 @@ PARTS = {
     'enclosure-back': ('3  Enclosure back', (0.3, 0.6, 0.85), (1.0, 0.9, 0.7), 'no supports, 5 mm brim'),
     'pi-carrier': ('4  Pi carrier', (0.72, 0.74, 0.78), (0.6, -1.0, 1.2), 'no supports'),
     'splice-u': ('1  Splice U', (0.95, 0.55, 0.15), (1.0, -0.9, 1.1), 'no supports'),
-    'splice-bar': ('2  Splice bar, print 2', (0.95, 0.55, 0.15), (0.6, -1.0, 1.3), 'no supports'),
+    'splice-plate': ('2  Splice plate', (0.95, 0.55, 0.15), (0.6, -1.0, 1.3), 'no supports'),
 }
 
 

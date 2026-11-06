@@ -1,0 +1,360 @@
+{
+  "schema_version": 1,
+  "id": "US-TUBE-SPLICE-R002",
+  "units": "mm",
+  "date": "2026-11-06",
+  "status": "Revision for review: print one splice U and one splice plate, both solid. Unprinted; geometry checks only.",
+  "request": "Make the splice stronger and beefier for a joint that flexes a lot: a thicker base, and one top plate in place of the two bars, closed by four screws and nuts at the corners, at the same size.",
+  "parent": {
+    "checkpoint": "US-TUBE-SPLICE-R001 (removed from the tree; in git history at commit 7dee43b)",
+    "profile": "Clamp U cross-section of US-NECK-MOUNT-R010 (designs/ultraskelly/src/enclosure.json, commit c49c6a1)",
+    "fit_test": "U1 (18.9 mm pocket), chosen by the user on the tube on 2026-11-03"
+  },
+  "changes_from_parent": [
+    "U base 4 -> 8 mm; plate 8 mm (R001 bars 6 mm), head recesses 2.7 -> 4.7 mm deep so M2.5 x 16 still fits",
+    "One plate across the joint in place of two bars; four screws at the corners, 6 mm from the ends, in place of eight (R001 rows 5.25 mm either side of the joint)",
+    "U prints on its back (layers along the tube) in place of standing on one end",
+    "Both parts print at 100 % infill in place of 25 % gyroid",
+    "Length 60 mm and width 38.8 mm kept"
+  ],
+  "source": {
+    "builder": "designs/ultraskelly/src/splice.py",
+    "parameters": {
+      "splice.json": "grip 30 per tube piece, base 8, plate 8, 3.3 under each head, holes end 2 below the pocket, row inset 6, screw 16",
+      "enclosure.json": "tube and clamp sections: the U1 pocket, arms and M2.5 holes, nut slots and recesses"
+    },
+    "parameters_sha256": {
+      "splice.json": "f1543e157f5604bfc1427858556d5164bec42e4601a697e738334054a0e7b5dd",
+      "enclosure.json": "c9321a1d1b6222d7eb65e6e1663a748ef9767979cd99b9896581fb83d3cefcba"
+    },
+    "build": {
+      "run": "generated/ultraskelly/splice/r002",
+      "native": {
+        "path": "splice.FCStd",
+        "sha256": "64ca6eac0f5b312ad88d89b75125e10638073d53e7169050d7974d7381597ab5"
+      },
+      "freecad": [
+        "1",
+        "1",
+        "4",
+        "20260928 (Git shallow)"
+      ]
+    },
+    "files": "splice-u.stl and splice-plate.stl as exported by the build, byte for byte",
+    "images": "rendered from the released files with part_images.py and part_titles.py, run generated/ultraskelly/part-images/splice-r002",
+    "mesh_audit": "generated/ultraskelly/releases/audit-splice-r002 (tools/cad/inspect_mesh.py: one watertight volume each)",
+    "section_comparison": "R001's U rebuilt with splice.py and splice.json from commit 7dee43b and cut across the tube at the joint and at its two screw rows nearest the joint; R002's U and plate cut at the joint with splice.section. Disjoint outlines are summed about their common centroid.",
+    "commit": "The commit that adds this checkpoint."
+  },
+  "parts": {
+    "splice-u.stl": {
+      "part": "Splice U: U1 pocket (18.9 mm), 8 mm base, 60 mm long, four M2.5 captured-nut slots",
+      "qty": 1,
+      "sha256": "a29c2cfc209ed737e828ab57db2fd6f8adf758345cc95a32eb9c761d3c7be966",
+      "bytes": 232684,
+      "triangles": 4652,
+      "watertight": true,
+      "shells": 1,
+      "extents_mm": [
+        60.0,
+        38.8,
+        25.0
+      ],
+      "volume_cm3": 37.97,
+      "orientation": "On its back, pocket open upward; as exported.",
+      "supports": "none",
+      "settings": {
+        "walls": 6,
+        "top_bottom_layers": 5,
+        "infill": "100 %"
+      },
+      "estimate_g_each": 48.2,
+      "image": {
+        "file": "splice-u.png",
+        "sha256": "f5c50e3ca8c14057acbb4b54f57065afadcfb0348ba61885f2d3afea4c26d036"
+      }
+    },
+    "splice-plate.stl": {
+      "part": "Splice plate, 8 mm thick, M2.5 hole and head recess at each corner",
+      "qty": 1,
+      "sha256": "7d699d52dc11833aeb997ea46fd8770e5c027e7c3c1227f588f200f62e575064",
+      "bytes": 228684,
+      "triangles": 4572,
+      "watertight": true,
+      "shells": 1,
+      "extents_mm": [
+        60.0,
+        38.8,
+        8.0
+      ],
+      "volume_cm3": 18.13,
+      "orientation": "Flat, screw-head recesses up; as exported.",
+      "supports": "none",
+      "settings": {
+        "walls": 6,
+        "top_bottom_layers": 5,
+        "infill": "100 %"
+      },
+      "estimate_g_each": 23.0,
+      "image": {
+        "file": "splice-plate.png",
+        "sha256": "77382b8f032c03d7ac30a240298f06845c79f6a3b91f82bf857862a492ece2df"
+      }
+    }
+  },
+  "print_settings": {
+    "material": "PETG",
+    "layer_height_mm": 0.2,
+    "per_part": {
+      "splice-u.stl": {
+        "walls": 6,
+        "top_bottom_layers": 5,
+        "infill": "100 %"
+      },
+      "splice-plate.stl": {
+        "walls": 6,
+        "top_bottom_layers": 5,
+        "infill": "100 %"
+      }
+    },
+    "supports": "none",
+    "bed_min_mm": [
+      120,
+      120
+    ]
+  },
+  "estimate": {
+    "set_filament_g": 71.2,
+    "set_hours_at_10_to_6_mm3_s": [
+      1.6,
+      2.6
+    ],
+    "per_part_g": {
+      "splice-u": 48.2,
+      "splice-plate": 23.0
+    },
+    "method": "Not sliced; the Snapmaker Orca command line crashed with the U1 profiles. Per part: side area x walls x 0.45 mm plus flat area x top/bottom layers x 0.2 mm, capped at the solid volume, plus infill in the rest; PETG at 1.27 g/cm3. Time at an average 6 to 10 mm3/s, as on a fast printer such as the U1."
+  },
+  "hardware": [
+    {
+      "qty": 4,
+      "length_mm": 16,
+      "item": "M2.5 socket-head cap screw",
+      "use": "Plate to U, one at each corner, into the captured nuts",
+      "check": "validate() fits M2.5 screws from 13.9 to 21.8 mm across 18.0 to 18.6 mm tubes"
+    },
+    {
+      "qty": 4,
+      "length_mm": null,
+      "item": "M2.5 hex nut, 5.0 mm across flats, 2.0 mm thick (plain, not nylon-insert)",
+      "use": "In the U side slots (5.4 by 2.6 mm)"
+    }
+  ],
+  "buy": {
+    "screws": "M2.5 socket-head cap screws, 16 mm (at least 4)",
+    "nuts": "M2.5 hex nuts, 5.0 mm across flats (at least 4)",
+    "with_neck_mount_r010": {
+      "m25x16": 13,
+      "m25x6": 8,
+      "nuts": 8,
+      "standoffs_10_or_12": 4
+    }
+  },
+  "interfaces": {
+    "tube": "Square tube of 18.0 to 18.6 mm: 18.9 mm pocket, 0.3 to 0.9 mm of sideways play; the plate takes up both pieces front to back",
+    "joint": "Tube ends butt at z = 30, halfway along the U; the plate spans the joint",
+    "bare_tube_per_piece_mm": 30.0,
+    "matched_parts": "The plate holes match this U only; print both from this checkpoint."
+  },
+  "envelope_mm": {
+    "length": 60.0,
+    "width": 38.8,
+    "depth_on_18.3_tube": 34.3,
+    "u": [
+      60.0,
+      38.8,
+      25.0
+    ],
+    "plate": [
+      60.0,
+      38.8,
+      8.0
+    ]
+  },
+  "geometry_validation": {
+    "valid": true,
+    "clash_mm3": {
+      "u-plate": 0.0
+    },
+    "volumes_mm3": {
+      "splice_u": 37970.4,
+      "splice_plate": 18125.3
+    },
+    "length_mm": 60.0,
+    "split_z_mm": 30.0,
+    "screw_rows_z_mm": [
+      6.0,
+      54.0
+    ],
+    "base_mm": 8.0,
+    "plate_mm": 8.0,
+    "head_recess_depth_mm": 4.7,
+    "walls_mm": {
+      "nut_slot_to_pocket": 2.25,
+      "nut_slot_to_u_ends": 3.3,
+      "nut_slot_to_arm_front": 5.5,
+      "hole_end_to_u_back": 6.0,
+      "beside_plate_head_recess": 1.95,
+      "head_recess_to_plate_ends": 3.45,
+      "plate_under_screw_head": 3.3
+    },
+    "joint_section": {
+      "splice_u": {
+        "area_mm2": 648.7,
+        "front_back_mm4": 35096,
+        "sideways_mm4": 112125,
+        "front_back_modulus_mm3": 2424,
+        "sideways_modulus_mm3": 5780
+      },
+      "splice_plate": {
+        "area_mm2": 310.4,
+        "front_back_mm4": 1655,
+        "sideways_mm4": 38941,
+        "front_back_modulus_mm3": 414,
+        "sideways_modulus_mm3": 2007
+      }
+    },
+    "clamp_screw_length_mm": [
+      13.9,
+      21.8
+    ],
+    "sideways_play_mm": [
+      0.3,
+      0.9
+    ],
+    "sideways_rock_limit_deg": [
+      0.57,
+      1.72
+    ]
+  },
+  "joint_sections": {
+    "r001_u_at_joint": {
+      "area_mm2": 490.1,
+      "front_back_mm4": 19731,
+      "sideways_mm4": 91421,
+      "front_back_modulus_mm3": 1670,
+      "sideways_modulus_mm3": 4712,
+      "outlines": 1
+    },
+    "r001_u_at_nearest_screw_rows": {
+      "24.75": {
+        "area_mm2": 354.9,
+        "front_back_mm4": 14779,
+        "sideways_mm4": 60357,
+        "front_back_modulus_mm3": 1147,
+        "sideways_modulus_mm3": 3111,
+        "outlines": 3
+      },
+      "35.25": {
+        "area_mm2": 354.9,
+        "front_back_mm4": 14779,
+        "sideways_mm4": 60357,
+        "front_back_modulus_mm3": 1147,
+        "sideways_modulus_mm3": 3111,
+        "outlines": 3
+      }
+    },
+    "r001_bars_at_joint": "none: the bars stop 0.25 mm either side of the joint",
+    "r002_u_at_joint": {
+      "area_mm2": 648.7,
+      "front_back_mm4": 35096,
+      "sideways_mm4": 112125,
+      "front_back_modulus_mm3": 2424,
+      "sideways_modulus_mm3": 5780,
+      "outlines": 1
+    },
+    "r002_plate_at_joint": {
+      "area_mm2": 310.4,
+      "front_back_mm4": 1655,
+      "sideways_mm4": 38941,
+      "front_back_modulus_mm3": 414,
+      "sideways_modulus_mm3": 2007
+    },
+    "ratios_u_r002_over_r001_joint": {
+      "area_mm2": 1.32,
+      "front_back_mm4": 1.78,
+      "sideways_mm4": 1.23,
+      "front_back_modulus_mm3": 1.45,
+      "sideways_modulus_mm3": 1.23
+    },
+    "ratios_u_r002_joint_over_r001_screw_row": {
+      "area_mm2": 1.83,
+      "front_back_mm4": 2.37,
+      "sideways_mm4": 1.86,
+      "front_back_modulus_mm3": 2.11,
+      "sideways_modulus_mm3": 1.86
+    }
+  },
+  "clamp_fit_mm": {
+    "pocket_width": 18.9,
+    "fits_tube_per_side": [
+      18.0,
+      18.6
+    ],
+    "play_per_side": [
+      0.15,
+      0.45
+    ],
+    "arm_short_of_smallest_tube_front": 1.0,
+    "plate_to_arm_gap_after_tightening": {
+      "18.0": 1.0,
+      "18.3": 1.3,
+      "18.6": 1.6
+    }
+  },
+  "design_guidance": [
+    {
+      "rule": "FDM parts are weaker between layers; orient structural parts for their load.",
+      "sources": "[@prusaModelingFor3dPrinting; @hubsFdmDesign; @cncKitchenPrintsVsWood]",
+      "change": "U prints on its back and the plate flat, so bending at the joint runs along their layers; the screw clamping crosses the U layers (untested)."
+    },
+    {
+      "rule": "Strength comes mostly from perimeters; most parts need 10 to 15 % infill, rarely over 30 %. A PETG hook held 110 kg at 100 % infill and 54 kg at 30 % with 3 perimeters.",
+      "sources": "[@prusaLayersAndPerimeters; @prusaInfill; @cncKitchenExtrusionWidth; @cncKitchenPrintsVsWood]",
+      "change": "6 perimeters and 100 % infill, because the joint flexes."
+    },
+    {
+      "rule": "Walls thinner than one perimeter (about 0.45 mm) do not print.",
+      "sources": "[@prusaModelingFor3dPrinting]",
+      "change": "At least three perimeters (1.35 mm) around every screw feature; see geometry_validation.walls_mm."
+    },
+    {
+      "rule": "Moving fits start at 0.3 mm clearance; vertical holes print undersized.",
+      "sources": "[@prusaModelingFor3dPrinting; @hubsFdmDesign]",
+      "change": "2.9 mm clearance holes, all vertical as printed; U1 pocket 18.9 mm with 0.15 to 0.45 mm per side."
+    },
+    {
+      "rule": "Chamfers rather than fillets facing the bed; edges on the bed flare where fit matters.",
+      "sources": "[@prusaModelingFor3dPrinting; @hubsFdmDesign]",
+      "change": "Rounded corners only on edges vertical as printed; bed edges square; no fit surface touches the bed."
+    },
+    {
+      "rule": "Overhangs up to 45 degrees print without supports; bridges sag unless shorter than 5 mm.",
+      "sources": "[@hubsFdmDesign]",
+      "change": "Only the four nut-slot ceilings face down: 5.4 mm bridges, with 0.6 mm of slot over the nut for sag."
+    }
+  ],
+  "not_covered_by_sources": [
+    "base and plate thickness (8 and 8 mm, from the joint cross-sections)",
+    "splice grip length (30 mm per piece, from the pocket play: rock limit 0.57 to 1.72 degrees)",
+    "nut-trap sizes (the neck clamp allowance: 5.4 by 2.6 mm slots for a 5.0 by 2.0 mm nut)"
+  ],
+  "robot_clearance": "Not assessed. Only the splice size and the bare tube per piece are given.",
+  "not_established": [
+    "grip of two screws per tube piece and the joint strength under the robot loads (not load-tested)",
+    "tube fit of a U printed on its back (the fit-tested U1 printed standing)",
+    "printed fit of the M2.5 nut slots and the clearance holes",
+    "screw clamping across the U layers",
+    "print time and filament: estimated, not sliced"
+  ]
+}

@@ -16,7 +16,7 @@ physical fit is unverified.
 | Fit coupon | Scripted print test for the Pi 5 hole pattern, M2.5 pilot holes and zip-tie slots. Not yet printed. |
 | Camera bracket | Planned. Holds the ZED Mini at the eye sockets and the OAK-1 at the nose hole, and defines each sensor's pose in the head frame. |
 | Neck clamp and enclosure (`enclosure`) | Concept approved on 2026-11-02, lightened on 2026-11-03 with shapes and print settings checked against published FDM guidance, and given a smaller, rounded clamp the same day. A numbered fit set of five clamp sizes was printed on the robot's tube, and the user chose U1 (18.9 mm pocket, for an 18.0 to 18.6 mm tube). On 2026-11-04 the clamp and its lock were converted to M2.5, so the whole mount takes one screw size in two lengths, M2.5 x 16 and M2.5 x 6. The current set is [US-NECK-MOUNT-R010](checkpoints/r010-neck-mount/README.md): reprint only the clamp U and bar, keep the printed R006 enclosure back and carrier, and no part needs supports. A U clamp and front bar (4 x M2.5 into captured nuts) stay on the square tube. The enclosure back is a light frame that carries the Pi on a four-standoff carrier, the Pi stack with its long axis along the tube and the USB end up, and the PCA9685 on a side wing; it slides down onto the clamp's dovetail and one M2.5 screw through the enclosure into the tongue locks it, so the electronics lift off without touching the clamp. |
-| Tube splice (`splice`) | Added on 2026-11-06 to join two pieces of the square tube end to end. [US-TUBE-SPLICE-R001](checkpoints/r001-tube-splice/README.md) is the neck clamp's U1 cross-section made 60 mm long, with one bar per tube piece (8 x M2.5 x 16 into captured nuts), so each piece is gripped over 30 mm. Print one U and two bars; no part needs supports. Unprinted; geometry checks only. |
+| Tube splice (`splice`) | Added on 2026-11-06 to join two pieces of the square tube end to end, and made stronger the same day for a joint that flexes. [US-TUBE-SPLICE-R002](checkpoints/r002-tube-splice/README.md) is the neck clamp's U1 cross-section made 60 mm long with an 8 mm base, and one 8 mm plate across both tube pieces with an M2.5 x 16 screw into a captured nut at each corner, so each piece is gripped over 30 mm. The U prints on its back, so bending at the joint runs along its layers, and both parts print solid without supports. Unprinted; geometry checks only. |
 
 ## Layout
 
@@ -58,8 +58,8 @@ into it from the repository root:
   `--skeleton-z` places it on the mock-up and reports gaps; it stops while the
   mock-up's spine and the clamp's tube differ.
 - `splice` builds the tube splice: the clamp U's cross-section from
-  `src/enclosure.json`, made as long as `src/splice.json` sets, with two bars,
-  shown on two tube pieces.
+  `src/enclosure.json`, with the base, plate and length that `src/splice.json`
+  sets, shown on two tube pieces. It reports the cross-section at the joint.
 - `print_review` lays out a print checkpoint's STL files on a bed outline,
   after checking them against the checkpoint's manifest hashes.
 - `part_images` renders one image per printed part of a run, alone on a bed

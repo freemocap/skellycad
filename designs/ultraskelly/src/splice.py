@@ -1,14 +1,16 @@
-"""Tube splice for UltraSkelly: one U channel and two front bars hold two pieces of the square tube end to end.
+"""Tube splice for UltraSkelly: one U channel and one top plate hold two pieces of the square tube end to end.
 
-The U has the fit-tested neck clamp's cross-section (U1 pocket, M2.5 screws into captured nuts), made long
-enough to grip both pieces. The tube ends meet at its middle, and each piece has its own bar with four
-screws, so each side tightens on its own tube. The cross-section comes from enclosure.json; the lengths
-along the tube are in splice.json. Both parts print without supports. Run live in the project FreeCAD
-window from the repository root:
+The U has the fit-tested neck clamp's cross-section (U1 pocket and arms, M2.5 screws into captured nuts)
+with a thicker base, made long enough to grip both pieces. The tube ends meet at its middle. One plate
+covers both pieces, with a screw at each corner. The cross-section comes from enclosure.json; the
+thicknesses and lengths along the tube are in splice.json. Both parts print flat without supports: the U
+lies on its back, so bending at the joint runs along its layers. Run live in the project FreeCAD window
+from the repository root:
 
-    tools/cad/.venv/Scripts/python.exe -B designs/ultraskelly/src/live.py splice --run r001
+    tools/cad/.venv/Scripts/python.exe -B designs/ultraskelly/src/live.py splice --run r002
 """
 import argparse
+import copy
 import json
 import math
 from pathlib import Path
@@ -27,28 +29,32 @@ ORANGE, STEEL = (0.95, 0.55, 0.15), (0.55, 0.57, 0.6)
 
 
 def layout(p, s):
-    """Cross-section from the neck clamp; positions along the tube (z) from splice.json.
+    """The neck clamp's cross-section with the splice's base, plate and recess depth; positions along the tube.
 
-    The U stands on its lower end (z = 0) and the tube ends meet at z = grip. Each bar is grip minus half
-    the split gap long, with its screw rows row_inset from both ends, so the two bars are one part.
+    Returns the adjusted parameters, the geometry and the layout. The parts are built with the tube along z:
+    the U's ends at z = 0 and z = length, the tube ends meeting at z = grip, and a screw at each corner,
+    row_inset from the ends.
     """
-    g = enclosure.geometry(p)
-    g['z_bed'] = 0.0  # no tongue or lock here: the whole U starts on the bed
-    bar_length = s['grip'] - s['split_gap'] / 2
-    bar_rows = [s['row_inset'], bar_length - s['row_inset']]
-    bar_z = [0.0, s['grip'] + s['split_gap'] / 2]
-    return g, {'length': 2 * s['grip'], 'split': s['grip'], 'bar_length': bar_length, 'bar_rows': bar_rows,
-               'bar_z': bar_z, 'rows': [z0 + r for z0 in bar_z for r in bar_rows]}
+    q = copy.deepcopy(p)
+    c = q['clamp']
+    c['base'], c['bar'] = s['base'], s['plate']
+    # Deeper head recesses keep each screw head where it sits on the neck clamp, so the same screw fits.
+    c['bolt_head_depth'] = s['plate'] - s['under_head']
+    g = enclosure.geometry(q)
+    g['z_bed'] = 0.0  # no tongue or lock here
+    # The blind holes end under the pocket floor, not near the back, so the thicker base stays solid.
+    g['hole_end_x'] = g['x_tube_back'] - s['hole_end_below_pocket']
+    length = 2 * s['grip']
+    return q, g, {'length': length, 'split': s['grip'], 'rows': [s['row_inset'], length - s['row_inset']]}
 
 
 def splice_u(p, g, lay):
     c, half, length = p['clamp'], g['half'], lay['length']
     outer = box(g['x_back'], g['x_arm_front'], -g['y_out'], g['y_out'], 0, length)
-    # Rounded outer corners: vertical edges print as walls, so the fillets need no support.
-    outer = outer.makeFillet(c['corner_radius'], enclosure.edges_along(outer, 2, lambda m: abs(abs(m.y) - g['y_out']) < 1e-6))
+    # The U prints on its back (x up), so only its corner edges along x stand vertical; they are rounded.
+    # The other edges stay square: a fillet on an edge at the bed would print as an overhang.
+    outer = outer.makeFillet(c['corner_radius'], enclosure.edges_along(outer, 0, lambda m: True))
     body = outer.cut(box(g['x_tube_back'], g['x_arm_front'] + 1, -half, half, -1, length + 1)).removeSplitter()
-    # A 45 degree chamfer where the pocket meets the bed keeps the first layer's flare out of the tube fit.
-    body = body.makeChamfer(c['bed_chamfer'], enclosure.bed_fit_edges(body, g))
     cutters = []
     for side in (1, -1):
         for z in lay['rows']:
@@ -62,53 +68,77 @@ def splice_u(p, g, lay):
     return Part.Solid(body.Solids[0])
 
 
-def splice_bar(p, g, lay):
+def splice_plate(p, g, lay):
     c, (x0, x1) = p['clamp'], g['x_bar']
-    bar = box(x0, x1, -g['y_out'], g['y_out'], 0, lay['bar_length'])
-    # Rounded corners seen from the front; these edges stand vertical when the bar prints flat.
-    bar = bar.makeFillet(c['corner_radius'], enclosure.edges_along(bar, 0, lambda m: True))
+    plate = box(x0, x1, -g['y_out'], g['y_out'], 0, lay['length'])
+    # Rounded corners seen from the front; these edges stand vertical when the plate prints flat.
+    plate = plate.makeFillet(c['corner_radius'], enclosure.edges_along(plate, 0, lambda m: True))
     cutters = []
     for side in (1, -1):
-        for z in lay['bar_rows']:
+        for z in lay['rows']:
             cutters.append(Part.makeCylinder(c['bolt_clearance'] / 2, x1 - x0 + 2, V(x0 - 1, side * g['bolt_y'], z), V(1, 0, 0)))
             cutters.append(Part.makeCylinder(c['bolt_head'] / 2, c['bolt_head_depth'] + 1,
                                              V(x1 - c['bolt_head_depth'], side * g['bolt_y'], z), V(1, 0, 0)))
-    return Part.Solid(bar.cut(Part.makeCompound(cutters)).removeSplitter().Solids[0])
+    return Part.Solid(plate.cut(Part.makeCompound(cutters)).removeSplitter().Solids[0])
 
 
 def inside(shape, x, y, z):
     return shape.isInside(V(x, y, z), 1e-6, True)
 
 
-def validate(p, g, s, lay, u, bars):
-    """Geometry checks only: printed fit, grip and joint stiffness are untested."""
+def section(shape, z):
+    """Area and second moments of area of a part's cross-section across the tube at z.
+
+    front_back is the integral of x squared about the centroid (the joint bending toward the plate or the
+    base); sideways is the integral of y squared. Each modulus divides by the farthest fibre.
+    """
+    wires = shape.slice(V(0, 0, 1), z)
+    assert len(wires) == 1, f'section at z = {z} has {len(wires)} outlines, expected one with no holes'
+    face = Part.Face(wires[0])
+    m, com, b = face.MatrixOfInertia, face.CenterOfMass, face.BoundBox
+    i_fb, i_side = m.A22, m.A11
+    return {'area_mm2': round(face.Area, 1), 'front_back_mm4': round(i_fb), 'sideways_mm4': round(i_side),
+            'front_back_modulus_mm3': round(i_fb / max(b.XMax - com.x, com.x - b.XMin)),
+            'sideways_modulus_mm3': round(i_side / max(b.YMax - com.y, com.y - b.YMin))}
+
+
+def validate(p, g, s, lay, u, plate):
+    """Geometry checks only: printed fit, grip and the joint's strength are untested."""
     c, half = p['clamp'], g['half']
     t_min, t_max = p['tube']['range']
-    for name, shape in (('splice_u', u), ('bar_1', bars[0]), ('bar_2', bars[1])):
+    for name, shape in (('splice_u', u), ('splice_plate', plate)):
         assert shape.isValid() and len(shape.Solids) == 1, f'{name} is not one valid solid'
-    for zm in (lay['split'] / 2, lay['split'] * 1.5):  # the middle of each tube piece's grip
+    for zm in (lay['split'] / 2, lay['split'], lay['split'] * 1.5):  # each piece's grip and the joint
         assert not inside(u, 0, 0, zm), 'tube passage blocked'
         for side in (1, -1):
             assert not inside(u, g['x_tube_back'] + 0.05, side * (half - 0.05), zm), 'pocket narrower than the largest tube'
             assert inside(u, g['x_tube_back'] + 1, side * (half + 0.05), zm), 'pocket wider than designed'
+        assert inside(u, g['x_back'] + 0.05, 0, zm) and inside(u, g['x_tube_back'] - 0.05, 0, zm), 'base thinner than designed'
     assert g['x_arm_front'] < g['x_tube_back'] + t_min, 'arms reach the front face of the smallest tube'
     for side in (1, -1):
+        y = side * g['bolt_y']
+        # The joint is solid: the screws and nut slots are only at the corners.
+        assert inside(u, g['nut_slot_x'] + c['nut_slot'] / 2, y, lay['split']), 'hole or slot at the joint'
+        assert inside(plate, g['x_bar'][1] - 0.5, y, lay['split']), 'hole at the joint in the plate'
         for z in lay['rows']:
-            y = side * g['bolt_y']
             assert not inside(u, g['x_arm_front'] - 1, y, z), 'bolt hole missing'
             assert not inside(u, g['hole_end_x'] + 0.5, y, z), 'bolt hole too short'
             assert inside(u, g['hole_end_x'] - 1, y, z), 'bolt hole runs past its depth'
             assert not inside(u, g['nut_slot_x'] + c['nut_slot'] / 2, side * (g['bolt_y'] + 2), z), 'nut slot missing'
-            bar = bars[0] if z < lay['split'] else bars[1]
-            assert not inside(bar, g['x_bar'][0] + 1, y, z), 'bar hole not in line with the U'
-            assert inside(bar, g['x_bar'][0] + 1, y, z + c['bolt_head'] / 2 + 0.5), 'bar missing around its hole'
-    rows = sorted(lay['rows'])
+            assert not inside(plate, g['x_bar'][0] + 1, y, z), 'plate hole not in line with the U'
+            ring = side * (g['bolt_y'] + c['bolt_head'] / 2 - 0.3)  # inside the head recess, outside the hole
+            assert not inside(plate, g['x_bar'][1] - c['bolt_head_depth'] + 0.3, ring, z), 'head recess missing'
+            assert inside(plate, g['x_bar'][1] - c['bolt_head_depth'] - 0.3, ring, z), 'head recess deeper than designed'
+            assert inside(plate, g['x_bar'][0] + 1, y, z + c['bolt_head'] / 2 + 0.5), 'plate missing around its hole'
+    rows = lay['rows']
     walls = {
         'nut_slot_to_pocket': g['bolt_y'] - c['nut_slot_inner'] - half,
-        'beside_bar_head_recess': g['y_out'] - g['bolt_y'] - c['bolt_head'] / 2,
         'nut_slot_to_u_ends': min(rows[0], lay['length'] - rows[-1]) - c['nut_flats'] / 2,
-        'between_nut_slots': min(b - a for a, b in zip(rows, rows[1:])) - c['nut_flats'],
-        'head_recess_to_bar_ends': min(lay['bar_rows'][0], lay['bar_length'] - lay['bar_rows'][-1]) - c['bolt_head'] / 2,
+        'nut_slot_to_arm_front': g['x_arm_front'] - g['nut_slot_x'] - c['nut_slot'],
+        'hole_end_to_u_back': g['hole_end_x'] - g['x_back'],
+        'beside_plate_head_recess': g['y_out'] - g['bolt_y'] - c['bolt_head'] / 2,
+        'head_recess_to_plate_ends': min(rows[0], lay['length'] - rows[-1]) - c['bolt_head'] / 2,
+        'plate_under_screw_head': g['x_bar'][1] - g['x_bar'][0] - c['bolt_head_depth'],
     }
     assert min(walls.values()) >= 1.35, f'wall under three perimeters: {walls}'
     # Screw lengths across the tube range, clamped: the tip passes the nut by 1.5 mm on the largest tube and
@@ -117,19 +147,15 @@ def validate(p, g, s, lay, u, bars):
     nut_back = g['nut_slot_x'] + c['nut_slot'] - c['nut_thickness']
     screws = (round(head(t_max) - nut_back + 1.5, 1), round(head(t_min) - g['hole_end_x'] - 1.5, 1))
     assert screws[0] <= s['screw'] <= screws[1], f"M2.5 x {s['screw']} does not fit the window {screws}"
-    k = c['bed_chamfer']
-    assert not inside(u, g['x_tube_back'] - k / 3, 0, k / 3), 'pocket edge on the bed not chamfered'
-    assert inside(u, g['x_tube_back'] - 2 * k, 0, k / 3), 'U base missing behind the pocket chamfer'
-    assert abs(bars[1].BoundBox.ZMin - bars[0].BoundBox.ZMax - s['split_gap']) < 1e-6, 'bar gap at the split'
-    clashes = {'u-bar_1': u.common(bars[0]).Volume, 'u-bar_2': u.common(bars[1]).Volume,
-               'bar_1-bar_2': bars[0].common(bars[1]).Volume}
-    for name, volume in clashes.items():
-        assert volume < 1e-3, f'{name} overlap {volume:.3f} mm3'
+    clash = u.common(plate).Volume
+    assert clash < 1e-3, f'U and plate overlap {clash:.3f} mm3'
     play = (round(2 * half - t_max, 2), round(2 * half - t_min, 2))
-    return {'valid': True, 'clash_mm3': {k: round(v, 4) for k, v in clashes.items()},
-            'volumes_mm3': {'splice_u': round(u.Volume, 1), 'splice_bar': round(bars[0].Volume, 1)},
-            'length_mm': lay['length'], 'split_z_mm': lay['split'], 'bar_length_mm': lay['bar_length'],
-            'screw_rows_z_mm': rows, 'walls_mm': {k: round(v, 2) for k, v in walls.items()},
+    return {'valid': True, 'clash_mm3': {'u-plate': round(clash, 4)},
+            'volumes_mm3': {'splice_u': round(u.Volume, 1), 'splice_plate': round(plate.Volume, 1)},
+            'length_mm': lay['length'], 'split_z_mm': lay['split'], 'screw_rows_z_mm': rows,
+            'base_mm': s['base'], 'plate_mm': s['plate'], 'head_recess_depth_mm': round(c['bolt_head_depth'], 2),
+            'walls_mm': {k: round(v, 2) for k, v in walls.items()},
+            'joint_section': {'splice_u': section(u, lay['split']), 'splice_plate': section(plate, lay['split'])},
             'clamp_screw_length_mm': list(screws), 'sideways_play_mm': list(play),
             'sideways_rock_limit_deg': [round(math.degrees(math.atan(x / s['grip'])), 2) for x in play]}
 
@@ -140,39 +166,35 @@ def main(argv=None):
     args = parser.parse_args(argv)
     p = json.loads((HERE / 'enclosure.json').read_text(encoding='utf-8'))
     s = json.loads((HERE / 'splice.json').read_text(encoding='utf-8'))
-    g, lay = layout(p, s)
+    q, g, lay = layout(p, s)
     if DOC in App.listDocuments():
         raise RuntimeError(f'{DOC} is already open; close it first')
     folder = cadkit.run_folder('splice', args.run)
-    u, bar = splice_u(p, g, lay), splice_bar(p, g, lay)
-    bars = []
-    for z0 in lay['bar_z']:
-        placed = bar.copy()
-        placed.translate(V(0, 0, z0))
-        bars.append(placed)
-    checks = validate(p, g, s, lay, u, bars)
+    u, plate = splice_u(q, g, lay), splice_plate(q, g, lay)
+    checks = validate(q, g, s, lay, u, plate)
     doc = App.newDocument(DOC)
     cadkit.add(doc, 'SpliceU', u, ORANGE, label='Splice U (print 1)')
-    for i, placed in enumerate(bars, start=1):
-        cadkit.add(doc, f'SpliceBar{i}', placed, ORANGE, label=f"Splice bar {i} of 2, 4 x M2.5 x {s['screw']} (print 2)")
+    cadkit.add(doc, 'SplicePlate', plate, ORANGE, label=f"Splice plate, 4 x M2.5 x {s['screw']} (print 1)")
     w = p['tube']['outside'] / 2
     for i, (z0, z1) in enumerate(((-40.0, lay['split']), (lay['split'], lay['length'] + 40.0)), start=1):
         cadkit.add(doc, f'TubePiece{i}', box(-w, w, -w, w, z0, z1), STEEL, 40,
                    label=f"Tube piece {i}, {p['tube']['outside']} mm (not printed)")
     doc.recompute()
     native_sha = cadkit.save_verified(doc, folder / 'splice.FCStd')
-    flat_bar = bar.copy()
-    flat_bar.rotate(V(0, 0, 0), V(0, 1, 0), -90)  # front face, with the head recesses, up
     prints = {}
-    for name, shape in (('splice-u.stl', u.copy()), ('splice-bar.stl', flat_bar)):
-        shape.translate(V(0, 0, -shape.BoundBox.ZMin))
-        prints[name] = cadkit.export_stl(shape, folder / name)
+    for name, shape in (('splice-u.stl', u), ('splice-plate.stl', plate)):
+        flat = shape.copy()
+        # x up: the U lies on its back with the pocket open upward; the plate's tube face is on the bed and
+        # its head recesses are up.
+        flat.rotate(V(0, 0, 0), V(0, 1, 0), -90)
+        flat.translate(V(0, 0, -flat.BoundBox.ZMin))
+        prints[name] = cadkit.export_stl(flat, folder / name)
     cadkit.write_report(folder / 'build-report.json', {
         'part': 'splice', 'run': args.run, 'units': 'mm',
         'parameters_sha256': {'splice.json': cadkit.sha256(HERE / 'splice.json'),
                               'enclosure.json': cadkit.sha256(HERE / 'enclosure.json')},
         'native': {'path': 'splice.FCStd', 'sha256': native_sha}, 'prints': prints,
-        'quantities': {'splice-u.stl': 1, 'splice-bar.stl': 2}, 'geometry_validation': checks,
+        'quantities': {'splice-u.stl': 1, 'splice-plate.stl': 1}, 'geometry_validation': checks,
         'status': 'Concept for review; geometry checks only.'})
     if App.GuiUp:
         cadkit.present(doc, 'isometric')

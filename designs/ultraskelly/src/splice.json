@@ -1,15 +1,21 @@
 {
   "units": "mm",
-  "part": "Tube splice: one U channel and two front bars that hold two pieces of the square tube end to end.",
-  "profile": "Cross-section from enclosure.json (tube and clamp sections): the fit-tested U1 pocket (18.9 mm) with the M2.5 clearance holes, captured-nut slots and head recesses of US-NECK-MOUNT-R010.",
+  "part": "Tube splice: one U channel and one top plate that hold two pieces of the square tube end to end.",
+  "profile": "Cross-section from enclosure.json (tube and clamp sections): the fit-tested U1 pocket (18.9 mm) and arms, with the M2.5 clearance holes, captured-nut slots and head recesses of US-NECK-MOUNT-R010. base and plate below replace the clamp's 4 mm base and 6 mm bar.",
   "grip": 30.0,
-  "split_gap": 0.5,
-  "row_inset": 5.0,
+  "base": 8.0,
+  "plate": 8.0,
+  "under_head": 3.3,
+  "hole_end_below_pocket": 2.0,
+  "row_inset": 6.0,
   "screw": 16,
   "notes": {
-    "grip": "Length of U that holds each tube piece; the tube ends meet at z = grip, the middle of the U. 30 mm is 1.5 times the neck clamp's 20 mm: the pocket's 0.3 to 0.9 mm of sideways play then lets a piece rock at most 0.6 to 1.7 degrees before the arms stop it, instead of 0.9 to 2.6.",
-    "split_gap": "Space between the two bars at the split, so each bar tightens on its own tube piece.",
-    "row_inset": "Each bar's two screw rows sit this far from its ends.",
+    "grip": "Length of U that holds each tube piece; the U is twice this long and the tube ends meet at its middle. 30 mm is 1.5 times the neck clamp's 20 mm: the pocket's 0.3 to 0.9 mm of sideways play then lets a piece rock at most 0.6 to 1.7 degrees before the arms stop it, instead of 0.9 to 2.6.",
+    "base": "Thickness of the U behind the tube: twice the neck clamp's 4 mm, because the joint flexes.",
+    "plate": "Thickness of the one top plate, which covers both tube pieces and has a screw at each corner: 2 mm more than the neck clamp's bar, because it spans the joint between its screws.",
+    "under_head": "Plate left under each screw head, as on the neck clamp's bar (6 - 2.7 mm). The head recesses are plate - under_head deep, so the heads sit where they do on the neck clamp and the same screw length fits.",
+    "hole_end_below_pocket": "The blind screw holes end this far below the pocket floor, as on R001, so the thicker base stays solid under them.",
+    "row_inset": "The four screws sit this far from the U's ends, one at each corner of the plate.",
     "screw": "M2.5 socket-head screw length, checked against the clamp's screw window."
   }
 }
