@@ -2,12 +2,13 @@
 
 The U has the fit-tested neck clamp's cross-section (U1 pocket and arms, M2.5 screws into captured nuts)
 with a thicker base, made long enough to grip both pieces. The tube ends meet at its middle. One plate
-covers both pieces, with a screw at each corner. The cross-section comes from enclosure.json; the
-thicknesses and lengths along the tube are in splice.json. Both parts print flat without supports: the U
-lies on its back, so bending at the joint runs along its layers. Run live in the project FreeCAD window
-from the repository root:
+covers both pieces, with a screw at each corner. A tongue on the plate reaches between the arms, which
+stand past the tube, and presses on both pieces. The cross-section comes from enclosure.json; the
+thicknesses and lengths are in splice.json. Both parts print flat without supports: the U lies on its back,
+so bending at the joint runs along its layers, and the plate prints tongue up. Run live in the project
+FreeCAD window from the repository root:
 
-    tools/cad/.venv/Scripts/python.exe -B designs/ultraskelly/src/live.py splice --run r002
+    tools/cad/.venv/Scripts/python.exe -B designs/ultraskelly/src/live.py splice --run r003
 """
 import argparse
 import copy
@@ -29,11 +30,11 @@ ORANGE, STEEL = (0.95, 0.55, 0.15), (0.55, 0.57, 0.6)
 
 
 def layout(p, s):
-    """The neck clamp's cross-section with the splice's base, plate and recess depth; positions along the tube.
+    """The neck clamp's cross-section with the splice's base, plate, tongue and recess depth; positions along the tube.
 
     Returns the adjusted parameters, the geometry and the layout. The parts are built with the tube along z:
     the U's ends at z = 0 and z = length, the tube ends meeting at z = grip, and a screw at each corner,
-    row_inset from the ends.
+    row_inset from the ends. The plate is placed on the nominal tube: its tongue face on the tube's front face.
     """
     q = copy.deepcopy(p)
     c = q['clamp']
@@ -41,7 +42,16 @@ def layout(p, s):
     # Deeper head recesses keep each screw head where it sits on the neck clamp, so the same screw fits.
     c['bolt_head_depth'] = s['plate'] - s['under_head']
     g = enclosure.geometry(q)
-    g['z_bed'] = 0.0  # no tongue or lock here
+    g['z_bed'] = 0.0  # no dovetail tongue or lock here
+    # The plate's tongue reaches into the channel, so the arms rise by its height: they stand past the largest
+    # tube's front face, and the plate still clears them by takeup_min on the smallest tube. The nut slots rise
+    # with the arm fronts, so the screw window stays the neck clamp's.
+    g['x_arm_front'] = g['x_tube_back'] + q['tube']['range'][0] + s['tongue'] - c['takeup_min']
+    g['nut_slot_x'] = g['x_arm_front'] - c['nut_slot_setback'] - c['nut_slot']
+    face = q['tube']['outside'] / 2
+    g['x_tongue'] = (face, face + s['tongue'])
+    g['x_bar'] = (face + s['tongue'], face + s['tongue'] + s['plate'])
+    g['tongue_half'] = g['half'] - s['tongue_clearance']
     # The blind holes end under the pocket floor, not near the back, so the thicker base stays solid.
     g['hole_end_x'] = g['x_tube_back'] - s['hole_end_below_pocket']
     length = 2 * s['grip']
@@ -69,10 +79,14 @@ def splice_u(p, g, lay):
 
 
 def splice_plate(p, g, lay):
-    c, (x0, x1) = p['clamp'], g['x_bar']
-    plate = box(x0, x1, -g['y_out'], g['y_out'], 0, lay['length'])
+    c, (x0, x1), length = p['clamp'], g['x_bar'], lay['length']
+    plate = box(x0, x1, -g['y_out'], g['y_out'], 0, length)
     # Rounded corners seen from the front; these edges stand vertical when the plate prints flat.
     plate = plate.makeFillet(c['corner_radius'], enclosure.edges_along(plate, 0, lambda m: True))
+    # The tongue runs the plate's length between the arms and bears on both tube pieces. It overlaps the
+    # plate by 1 mm so the two fuse into one solid.
+    w = g['tongue_half']
+    plate = plate.fuse(box(g['x_tongue'][0], x0 + 1, -w, w, 0, length)).removeSplitter()
     cutters = []
     for side in (1, -1):
         for z in lay['rows']:
@@ -114,7 +128,20 @@ def validate(p, g, s, lay, u, plate):
             assert not inside(u, g['x_tube_back'] + 0.05, side * (half - 0.05), zm), 'pocket narrower than the largest tube'
             assert inside(u, g['x_tube_back'] + 1, side * (half + 0.05), zm), 'pocket wider than designed'
         assert inside(u, g['x_back'] + 0.05, 0, zm) and inside(u, g['x_tube_back'] - 0.05, 0, zm), 'base thinner than designed'
-    assert g['x_arm_front'] < g['x_tube_back'] + t_min, 'arms reach the front face of the smallest tube'
+        xt, w = sum(g['x_tongue']) / 2, g['tongue_half']
+        for side in (1, -1):
+            assert inside(plate, xt, side * (w - 0.05), zm), 'tongue narrower than designed'
+            assert not inside(plate, xt, side * (w + 0.05), zm), 'tongue wider than designed'
+        assert inside(plate, g['x_tongue'][0] + 0.05, 0, zm), 'tongue shorter than designed'
+        assert not inside(plate, g['x_tongue'][0] - 0.05, 0, zm), 'tongue taller than designed'
+    # Tightened on any tube in range, the tongue bears on the tube with the plate still clear of the arms, and
+    # the arms stand past the tube's front face, so the tongue sits inside the channel.
+    face = lambda tube: g['x_tube_back'] + tube
+    gap = lambda tube: face(tube) + s['tongue'] - g['x_arm_front']  # plate to arm fronts, tightened
+    assert gap(t_min) >= c['takeup_min'] - 1e-9, 'plate meets the arms before the tongue bears on the smallest tube'
+    assert g['x_arm_front'] > face(t_max), 'arms stop short of the largest tube: the tongue would not enter the channel'
+    tongue_side = half - g['tongue_half']
+    assert tongue_side >= 0.3 - 1e-9, 'tongue tighter in the channel than a 0.3 mm moving fit'
     for side in (1, -1):
         y = side * g['bolt_y']
         # The joint is solid: the screws and nut slots are only at the corners.
@@ -143,17 +170,26 @@ def validate(p, g, s, lay, u, plate):
     assert min(walls.values()) >= 1.35, f'wall under three perimeters: {walls}'
     # Screw lengths across the tube range, clamped: the tip passes the nut by 1.5 mm on the largest tube and
     # stops 1.5 mm short of the hole end on the smallest (the neck clamp's rule).
-    head = lambda tube: g['x_tube_back'] + tube + c['bar'] - c['bolt_head_depth']
+    head = lambda tube: face(tube) + s['tongue'] + c['bar'] - c['bolt_head_depth']
     nut_back = g['nut_slot_x'] + c['nut_slot'] - c['nut_thickness']
     screws = (round(head(t_max) - nut_back + 1.5, 1), round(head(t_min) - g['hole_end_x'] - 1.5, 1))
     assert screws[0] <= s['screw'] <= screws[1], f"M2.5 x {s['screw']} does not fit the window {screws}"
-    clash = u.common(plate).Volume
-    assert clash < 1e-3, f'U and plate overlap {clash:.3f} mm3'
+    # The plate as built sits on the nominal tube; also check it tightened on the smallest tube.
+    low = plate.copy()
+    low.translate(V(t_min - p['tube']['outside'], 0, 0))
+    clash = {'u-plate': u.common(plate).Volume, 'u-plate_on_smallest_tube': u.common(low).Volume}
+    assert max(clash.values()) < 1e-3, f'U and plate overlap: {clash}'
     play = (round(2 * half - t_max, 2), round(2 * half - t_min, 2))
-    return {'valid': True, 'clash_mm3': {'u-plate': round(clash, 4)},
+    tubes = (t_min, p['tube']['outside'], t_max)
+    return {'valid': True, 'clash_mm3': {k: round(v, 4) for k, v in clash.items()},
             'volumes_mm3': {'splice_u': round(u.Volume, 1), 'splice_plate': round(plate.Volume, 1)},
             'length_mm': lay['length'], 'split_z_mm': lay['split'], 'screw_rows_z_mm': rows,
             'base_mm': s['base'], 'plate_mm': s['plate'], 'head_recess_depth_mm': round(c['bolt_head_depth'], 2),
+            'tongue': {'height_mm': s['tongue'], 'width_mm': round(2 * g['tongue_half'], 2),
+                       'clearance_each_side_mm': round(tongue_side, 2),
+                       'into_channel_mm': {str(t): round(g['x_arm_front'] - face(t), 2) for t in tubes},
+                       'plate_to_arm_gap_tightened_mm': {str(t): round(gap(t), 2) for t in tubes}},
+            'arm_height_above_pocket_floor_mm': round(g['x_arm_front'] - g['x_tube_back'], 2),
             'walls_mm': {k: round(v, 2) for k, v in walls.items()},
             'joint_section': {'splice_u': section(u, lay['split']), 'splice_plate': section(plate, lay['split'])},
             'clamp_screw_length_mm': list(screws), 'sideways_play_mm': list(play),
@@ -182,11 +218,11 @@ def main(argv=None):
     doc.recompute()
     native_sha = cadkit.save_verified(doc, folder / 'splice.FCStd')
     prints = {}
-    for name, shape in (('splice-u.stl', u), ('splice-plate.stl', plate)):
+    # The U prints x up: on its back with the pocket open upward. The plate prints x down: its outer face with
+    # the head recesses on the bed and its tongue up, so the tongue needs no support.
+    for name, shape, turn in (('splice-u.stl', u, -90), ('splice-plate.stl', plate, 90)):
         flat = shape.copy()
-        # x up: the U lies on its back with the pocket open upward; the plate's tube face is on the bed and
-        # its head recesses are up.
-        flat.rotate(V(0, 0, 0), V(0, 1, 0), -90)
+        flat.rotate(V(0, 0, 0), V(0, 1, 0), turn)
         flat.translate(V(0, 0, -flat.BoundBox.ZMin))
         prints[name] = cadkit.export_stl(flat, folder / name)
     cadkit.write_report(folder / 'build-report.json', {

@@ -11,7 +11,7 @@ per step so the window redraws between images:
 
 `build` loads the STL files listed in the run's build report, after checking each against its
 hash there. Images go to generated/ultraskelly/part-images/<run> for an enclosure run and to
-part-images/<part>-<run> for other parts, such as part-images/splice-r002.
+part-images/<part>-<run> for other parts, such as part-images/splice-r003.
 """
 import argparse
 import json
